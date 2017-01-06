@@ -1,0 +1,1 @@
+#allHTML.sh freiesMagazin
