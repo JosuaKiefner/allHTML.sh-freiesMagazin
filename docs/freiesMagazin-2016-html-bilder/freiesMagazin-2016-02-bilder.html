@@ -1,0 +1,3659 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                 
+<title>freiesMagazin 02/2016</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="dCore | Kurztipp: Unerwünschte grep-Ausgaben vermeiden | Der Jahreswechsel im Kernelrückblick | Einführung in Typo3 | GitLab Continuous Integration | Review: Steam Controller | Rezension: Professional Python | Rezension: Open Source und Schule – Warum Bildung Offenheit braucht | Rezension: Das Sketchnote-Arbeitsbuch | Rezension: Linux-Server – Das umfassende Handbuch | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 02/2016" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2016-02-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2016-02.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+          
+
+
+
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>Februar 2016</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Themen dieser Ausgabe sind u.&nbsp;a.</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_dCore">dCore</a></font> <br />
+    Die leichtgewichtige Distribution dCore basiert auf Tiny Core und greift auf den Softwarebestand von Ubuntu bzw. Debian zu. Nach einer allgemeinen Einführung wird in dem Artikel eine schrittweise Anleitung für eine Testinstallation auf einem USB-Stick gegeben. (<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_dCore">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_typo3">Einführung in Typo3</a></font> <br />
+    In dem Artikel wird die Geschichte von Typo3 und die Installation dieses Content Management Systems auf einem lokalen Rechner mit Linux Mint beschrieben. (<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_typo3">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_steam_controller">Review: Steam Controller</a></font> <br />
+    Mit dem Steam Controller möchte Valve seine Steamboxen mit Steam OS wohnzimmertauglich machen. Ob die außergewöhnlichen Bedienkonzepte auch unter Ubuntu funktionieren, soll in dem Artikel geklärt werden. (<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_steam_controller">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_toc" name="fm_toc">Inhalt</a></font></h1><!-- CONTENT -->
+
+
+    &nbsp;<br /> <b>Linux allgemein</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_dCore">dCore</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_kurztipp_grep">Kurztipp: Unerwünschte grep-Ausgaben vermeiden</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_kernel">Der Jahreswechsel im Kernelrückblick</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Anleitungen</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_typo3">Einführung in Typo3</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_gitlab_continuous_integration">GitLab Continuous Integration</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Hardware</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_steam_controller">Review: Steam Controller</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Community</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_professional_python">Rezension: Professional Python</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_open_source_und_schule">Rezension: Open Source und Schule – Warum Bildung Offenheit braucht</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_sketchnote_arbeitsbuch">Rezension: Das Sketchnote-Arbeitsbuch</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_linux-server">Rezension: Linux-Server – Das umfassende Handbuch</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Magazin</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-02-bilder.html#fm_16_02_impressum">Impressum</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_editorial" name="fm_16_02_editorial">Editorial</a></font></h1>
+
+
+
+<h2>Ubuntu-Tablet</h2>
+
+
+Was iOS und Android mit Universal Apps schon länger kennen, führte letztes Jahr
+Microsoft mit Continuum ebenfalls ein: Smartphone-Apps, die als Universal App
+entwickelt wurden, lassen sich mit angeschlossenem Monitor auch auf einem
+Desktop-PC darstellen und nutzen, wobei das Smartphone als zweites Display
+dient. Unter Ubuntu wird diese Funktion Convergence heißen und soll für
+Smartphones und Tablets verfügbar sein. Während der spanische Hersteller BQ
+schon letztes Jahr zwei Smartphones mit dem Ubuntu-Betriebssystem auf den Markt
+gebracht hat (siehe auch <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 04/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-04">[1]</a>
+und 08/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-08">[2]</a> für
+ausführliche Reviews), wurde Anfang Februar das Aquaris M10-Tablet mit Ubuntu
+als Betriebssystem vorgestellt&nbsp;<a href="https://insights.ubuntu.com/2016/02/04/canonical-reinvents-the-personal-mobile-computing-experience/">[3]</a>. 
+Auch das Tablet wird wieder von BQ hergestellt und soll im zweiten Quartal 2016 
+erscheinen. Convergence wird nicht auf Tablets beschränkt bleiben, sondern
+soll demnächst auch mit den Ubuntu Phones funktionieren. 
+
+<div class="p"><!----></div>
+
+<h2>Interview</h2>
+Klaus Gürtler, Redakteur und Freier Journalist, hat ein Interview
+mit Dominik Wagenführ u.a., Chefredakteur von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> geführt, um Einsteigern in die
+Linux-Welt ein paar Tipps an die Hand zu geben. Die Artikel wurden im Südkurier&nbsp;<a href="http://techniknotizen.de/?p=489">[4]</a>
+und in der Saarbrücker Zeitung&nbsp;<a href="http://www.suedkurier.de/nachrichten/digital/Digitale-Zukunft-mit-Pinguin;art1182640,8440597">[5]</a>
+veröffentlicht.
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://insights.ubuntu.com/2016/02/04/canonical-reinvents-the-personal-mobile-computing-experience/"><tt class="big">https://insights.ubuntu.com/2016/02/04/canonical-reinvents-the-personal-mobile-computing-experience/</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-04"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-04</tt></a><br />
+[3] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-08"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-08</tt></a><br />
+[4] <a href="http://techniknotizen.de/?p=489"><tt class="big">http://techniknotizen.de/?p=489</tt></a><br />
+[5] <a href="http://www.suedkurier.de/nachrichten/digital/Digitale-Zukunft-mit-Pinguin;art1182640,8440597"><tt class="big">http://www.suedkurier.de/nachrichten/digital/Digitale-Zukunft-mit-Pinguin;art1182640,8440597</tt></a><br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Editorial&amp;body=freiesMagazin 02/2016%0AEditorial%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Editorial#comment-form">Beitrag kommentieren</a><br /><br /></i><a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_dCore" name="fm_16_02_dCore">dCore</a></font></h1>von Stefan Müller
+
+<div class="p"><!----></div>
+    <b>D</b><b>ie leichtgewichtige Distribution dCore basiert auf Tiny Core und greift
+auf den Softwarebestand von Ubuntu bzw. Debian zu. Nach einer allgemeinen Einführung
+wird hier eine Anleitung für eine Testinstallation auf einem
+USB-Stick gegeben.</b>
+
+<div class="p"><!----></div>
+
+<h2>Einführung</h2>
+
+
+Distributionen, die im RAM laufen (vgl. Anhang „InitRD“), gibt es unter
+Linux
+in stattlicher Zahl. Zu den bekanntesten Vertretern dieser Zunft zählen Knoppix
+sowie die Live-Versionen von diversen Distributionen. Daneben gibt es eine ganze
+Schar speziell leichtgewichtiger Distributionen wie Puppy Linux oder
+Tiny Core
+Linux. Der jüngste Spross in dieser Familie hört auf den Namen dCore und stammt
+ebenfalls aus dem Hause Tiny Core.
+
+<div class="p"><!----></div>
+
+
+Der Name ist ein Zusammenzug aus Debian und Tiny Core und deutet auf das neue
+Konzept hin. Dabei wird das gesamte Grundsystem von dCore von Tiny Core
+übernommen und dem
+Benutzer somit eine minimalistische Linux-Umgebung zur Verfügung
+gestellt, die er nach
+eigenen Wünschen modular ausbauen kann. Wo Tiny Core jedoch eigene Paketquellen
+verwendet, greift dCore hingegen auf die Bestände von Debian oder Ubuntu zurück.
+Dadurch steht dem Benutzer ein außerordentlich schlankes Grundsystem mit einer
+überwältigenden Auswahl an aktueller Software zur Verfügung.
+
+<div class="p"><!----></div>
+Für die x86-Architektur existiert dCore derzeit (November 2015) in den Debian-
+bzw. Ubuntu-basierten Ausprägungen Jessie und Wheezy beziehungsweise Trusty,
+Utopic, Vivid und Wily mit den entsprechenden Kernel-Versionen. Nach gut
+zweijähriger Entwicklung ist dCore den Kinderschuhen entwachsen und bietet eine
+höchst interessante Plattform für fortgeschrittene Linux-Benutzer.
+
+<div class="p"><!----></div>
+
+<h3>Informationen</h3>
+
+
+Die Installationsdateien&nbsp;<a href="http://tinycorelinux.net/dCore/x86/release/">[1]</a> befinden
+sich etwas versteckt im Download-Bereich der Website von
+Tiny Core&nbsp;<a href="http://tinycorelinux.net/downloads.html">[2]</a>.
+Im Tiny-Core-Wiki existiert ein separater Bereich für
+dCore&nbsp;<a href="http://wiki.tinycorelinux.net/dcore:welcome">[3]</a>. Daneben wird das
+dCore-Forum&nbsp;<a href="http://forum.tinycorelinux.net/index.php/board,66.0.html">[4]</a> sehr aktiv
+genutzt.
+
+<div class="p"><!----></div>
+
+<h2>Modularität</h2>
+
+
+dCore lädt den Linux-Kern sowie eine InitRD, die das Wurzeldateisystem
+umfasst. Diese beiden Dateien sind zusammen weniger als 15 MB groß und stellen
+ein minimales Linux-System mit Almquist-Shell (Ash) und Busybox zur Verfügung.
+Zusätzliche Software-Pakete werden in Form von sogenannten Erweiterungen
+importiert und können nach Bedarf geladen werden. So kann sich der Benutzer sein
+System nach eigenen Wünschen zusammenstellen.
+
+<div class="p"><!----></div>
+
+<h3>Erweiterungen</h3>
+
+
+Erweiterungen sind SquashFS-Dateien, d.&nbsp;h. in eine Datei gepackte Dateisysteme,
+mit Dateiendung <b><tt class="big">.sce</tt></b>. Darin sind alle zur Erweiterung gehörigen Dateien
+enthalten. Auf dem System vorhandene Erweiterungen werden durch den Befehl
+<b><tt class="big">sce-load</tt></b> gemountet, der auch alle Dateien als symbolische Links ins
+Wurzeldateisystem kopiert. Somit stehen sie im normalen Pfad zur Verfügung.
+Nötigenfalls werden auch Startskripte ausgeführt. Danach kann die importierte
+Applikation normal gestartet werden.
+
+<div class="p"><!----></div>
+
+<h3>Erweiterungen importieren</h3>
+
+
+Zuerst müssen die Erweiterungen importiert werden. Der Befehl <b><tt class="big">sce-import</tt></b>
+aktualisiert die Paketverzeichnisse und durchsucht sie nach passenden Namen. Man
+wählt das gewünschte Paket aus einer Trefferliste, worauf es samt Abhängigkeiten
+heruntergeladen und in eine sce-Datei umgewandelt wird.
+
+<div class="p"><!----></div>
+Um Plattenspeicher zu sparen, lässt sich die Größe von Erweiterungen
+reduzieren, indem sie von anderen abhängig gemacht werden. Das Flag <b><tt class="big">-d</tt></b> zu
+<b><tt class="big">sce-import</tt></b> erlaubt die Auswahl von vorausgesetzten Abhängigkeiten. Einerseits
+werden deren Dateien beim Import ignoriert. Andererseits wird beim Laden
+der Erweiterung sichergestellt, dass alle Abhängigkeiten vorrangig geladen
+werden.
+
+<div class="p"><!----></div>
+
+<h3>Erweiterungslisten</h3>
+
+
+Sollen mehrere Erweiterungen stets zusammen geladen werden, bietet es sich
+an, sie zu einer einzigen Erweiterung zu kombinieren. Mit dem Flag <b><tt class="big">-l</tt></b> liest
+<b><tt class="big">sce-import</tt></b> die Paketnamen aus einer Textdatei und erzeugt daraus eine
+Erweiterung.
+
+<div class="p"><!----></div>
+
+<h3>Erweiterungen laden</h3>
+
+
+Neben dem manuellen Laden können Erweiterungen auch beim Systemstart automatisch
+geladen werden, was für systemnahe Software wie zum Beispiel
+Wireless-Unterstützung oder Window-Manager beziehungsweise Desktop-Umgebungen
+sinnvoll ist. Andererseits lassen sich Programme auch bei Bedarf („on demand“)
+laden, was besonders in graphischen Umgebungen den Bedienungskomfort erhöht.
+
+<div class="p"><!----></div>
+
+<h2>Persistenz</h2>
+
+
+Das Grundsystem und auch alle Erweiterungen bestehen aus ausschließlich
+lesbaren Dateisystemen. Deshalb braucht es einen speziellen Mechanismus, um
+persistente Veränderungen bspw. an Konfigurationsdateien vorzunehmen. Im
+Gegensatz zu vielen anderen Live-Systemen setzt dCore, wie auch Tiny Core, nicht
+auf Overlay-Dateisysteme (vgl. Anhang „Persistenz“).
+
+<div class="p"><!----></div>
+In der einfachsten Installationsvariante werden alle Benutzerdaten – und dazu
+zählen auch individuelle Systemeinstellungen – ins Archiv <b><tt class="big">/opt/mydata.tgz</tt></b>
+gepackt. Die Datei <b><tt class="big">/opt/.filetool.lst</tt></b> regelt, welche Dateien darin aufgenommen
+werden. 
+
+<div class="p"><!----></div>
+Konfigurationsdateien beispielsweise unter <b><tt class="big">/etc/</tt></b> können durch Eintrag in
+diese Datei persistent 
+
+gemacht werden. Die Originalversion wird beim Systemstart
+durch die in <b><tt class="big">mydata.tgz</tt></b> gespeicherte überschrieben.
+
+<div class="p"><!----></div>
+Neben dem Home-Verzeichnis wird in der Grundeinstellung auch <b><tt class="big">/opt/</tt></b> persistent
+gemacht. Es enthält die internen Konfigurationsdateien für dCore. Dazu zählen
+Listen mit Paketquellen sowie die Dateien <b><tt class="big">bootlocal</tt></b> und <b><tt class="big">bootsync</tt></b>. Diese
+Shell-Skripte werden im Verlauf des Systemstarts ausgeführt und können
+individuell angepasst werden.
+
+<div class="p"><!----></div>
+
+<h2>Beispielinstallation</h2>
+
+
+Um ein Gefühl für die Funktionsweise von dCore zu erhalten, wird hier eine LXDE
+Desktop-Umgebung mit aktuellen Versionen von LibreOffice und Firefox samt
+deutschsprachiger Lokalisierung installiert. Diese Applikationen werden aus dem
+Software-Bestand von Ubuntu Trusty stammen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/dCore_LX-Menue.jpg" alt="dCore_LX-Menue.jpg" style="max-width:100%" /><br /><em>dCore mit LXDE. Das geöffnete Startmenü zeigt Rubriken für geladene Erweiterungen. Rechts im Panel sichtbar: NetworkManager, OwnCloud, Tastaturlayout, sowie Starter für Bereitschafts- und Ruhezustand sowie Herunterfahren.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>USB-Stick vorbereiten</h3>
+
+
+Man nehme einen leeren USB-Stick mit einer Ext-formatierten Partition
+<b><tt class="big">/dev/sdXn</tt></b>, der boot-bar ist. Auf dieser erstellt man mit
+Root-Berechtigung einen Ordner namens <b><tt class="big">boot/</tt></b>.
+
+<div class="p"><!----></div>
+Falls kein Boot-Loader vorhanden ist, schreibt man einen solchen von einer
+bestehenden Linux-Installation aus auf den Stick (bevorzugt Extlinux,
+das an über die Paketverwaltung installiert).
+
+<div class="p"><!----></div>
+Mit den folgenden Befehlen installiert man als Root den Boot-Loader
+samt benötigtem Hilfsmodul und passendem „master boot record“ auf dem Stick. 
+Weiter werden der Linux-Kern sowie die InitRD heruntergeladen und überprüft.
+
+<div class="p"><!----></div>
+
+<div class="command"># mount /dev/sdXn/ /mnt/<br />
+# mkdir /mnt/boot/<br />
+# extlinux --install /mnt/boot/<br />
+# cp /usr/lib/syslinux/menu.c32 /mnt/boot/<br />
+# dd if=/usr/lib/extlinux/mbr.bin of=/dev/sdX<br />
+# cd /mnt/boot/<br />
+# repo="http://tinycorelinux.net/dCore/x86/release/dCore-trusty"<br />
+# for file in dCore-trusty.gz vmlinuz-trusty ; do<br />
+#     wget $repo/$file<br />
+#     wget $repo/$file.md5.txt<br />
+#     cat $file.md5.txt &#62;&#62; md5.txt<br />
+# done<br />
+# md5sum -c md5.txt<br />
+# rm md5.txt</div>
+
+<div class="p"><!----></div>
+
+
+Im Ordner <b><tt class="big">boot/</tt></b> erstellt man anschließend die Datei <b><tt class="big">extlinux.conf</tt></b> wie im folgenden Listing <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/extlinux.conf"><b><tt class="big">extlinux.conf</tt></b></a> angegeben. Hierzu wird die UUID der Partition benötigt,
+welche sich mit dem Befehl <b><tt class="big">sudo blkid /dev/sdXn</tt></b> herausfinden
+lässt.
+
+<div class="p"><!----></div>
+
+<div class="listing">DEFAULT menu.c32<br />
+PROMPT 0<br />
+LABEL dCore<br />
+&nbsp;&nbsp;&nbsp;&nbsp;KERNEL vmlinuz-trusty<br />
+&nbsp;&nbsp;&nbsp;&nbsp;INITRD dCore-trusty.gz<br />
+&nbsp;&nbsp;&nbsp;&nbsp;APPEND waitusb=10 tce=UUID=&lt;UUID&#62; home=UUID=&lt;UUID&#62; opt=UUID=&lt;UUID&#62; tz="CET-1CEST,M3.5.0,M10.5.0/3"</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/extlinux.conf">extlinux.conf</a></i>
+
+<div class="p"><!----></div>
+
+
+Für Extlinux von Version kleiner als 3.70 müssen die Dateinamen im Format
+DOS-8.3 
+angegeben werden, d.&nbsp;h. als <b><tt class="big">vmlinu~1</tt></b> bzw. <b><tt class="big">dcore-~1.gz</tt></b>. Je nach Reaktionsfreudigkeit des USB-Sticks
+kann die Sekundenzahl des
+Boot-Parameters <b><tt class="big">waitusb</tt></b> auch verkürzt werden.
+
+<div class="p"><!----></div>
+
+<h3>Erster Start</h3>
+
+
+Vor dem ersten Start versichere man sich, dass keine andere Installation die
+Swap-Partition der Festplatte für den Ruhezustand benützt, denn diese Daten
+könnten überschrieben werden! 
+
+<div class="p"><!----></div>
+Das System bootet in eine Almquist-Shell (Ash), welche zusammen mit den
+weiteren
+grundlegenden Kommandozeilenwerkzeugen durch BusyBox bereitgestellt wird. Die
+bildet mit InitRD das Wurzeldateisystem und liegt vollständig im RAM. Der einzige
+Benutzer heißt tc und kann mittels <b><tt class="big">sudo</tt></b> Root-Berechtigung erlangen.
+
+<div class="p"><!----></div>
+Besonders viel bietet das System noch nicht. Während des Startvorgangs wurden
+jedoch diverse Skripte ausgeführt, die u.&nbsp;a. die Boot-Parameter „tce“,
+„opt“
+und „home“ dahingehend interpretierten, dass die entsprechenden Ordner auf der
+angegebenen Partition angelegt werden sollten. 
+
+<div class="p"><!----></div>
+Im Verzeichnis <b><tt class="big">/tce/</tt></b> werden die Erweiterungen abgespeichert. Von der
+dCore-Installation aus ist dieses Verzeichnis unter <b><tt class="big">/etc/sysconfig/tcedir</tt></b>
+verlinkt.
+
+<div class="p"><!----></div>
+
+<h3>„Side-loading“ von Erweiterungen</h3>
+
+
+Hat man eine funktionierende Ethernet-Schnittstelle zur Verfügung kann man nun
+gleich loslegen und Erweiterungen installieren. Andernfalls müssen zuerst
+geeignete Erweiterungen geladen werden, um die kabellose Netzwerkschnittstelle
+zu betreiben. 
+
+<div class="p"><!----></div>
+Hierfür muss das System zunächst heruntergefahren werden, damit die passenden Dateien auf
+den USB-Stick gebracht werden können. Die folgenden Befehle müssen genauso wie
+die ursprüngliche Installation mit Root-Rechten ausgeführt werden.
+
+<div class="p"><!----></div>
+
+<div class="command"># mount /dev/sdXn/ /mnt/<br />
+# cd /mnt/tce/sce/<br />
+# repo="http://tinycorelinux.net/dCore/x86/release/dCore-trusty"<br />
+# for file in wireless-3.16.6-tinycore wireless ; do<br />
+#     for ext in sce sce.list sce.md5.txt ; do<br />
+#         wget $repo/sce/$file.$ext<br />
+#     done<br />
+#     cat $file.sce.md5.txt &#62;&#62; md5.txt<br />
+# done<br />
+# md5sum -c md5.txt<br />
+# rm md5.txt</div>
+
+<div class="p"><!----></div>
+
+
+Die erste Erweiterung liefert alle verfügbaren Treiber inklusive Firmware, die
+zweite Werkzeuge für den Umgang mit kabellosen Netzwerken. Zusätzlich stünde
+auch NdisWrapper zur Verfügung, falls keine Linux-Treiber für die Netzwerkkarte
+existieren sollten.
+
+<div class="p"><!----></div>
+
+<h4>Wireless</h4>
+
+
+Beim zweiten Start wird mit dem Befehl <b><tt class="big">sudo wifi.sh</tt></b> eine Auswahlliste der
+erkannten WLAN-Netzwerke angezeigt, worauf eventuell benötigte Passwörter abgefragt
+werden. Diese werden in der Datei <b><tt class="big">~/Wifi.db</tt></b> abgelegt und später von dort
+automatisch abgerufen.
+
+<div class="p"><!----></div>
+
+<h3>X11-Desktop</h3>
+
+
+Um eine einfache X11-Umgebung aufzuziehen werden folgende Erweiterungen benötigt:
+<b>graphics-3.16.6-tinycore</b>, <b>xorg-all</b> und <b>flwm</b>. Sie werden
+einzeln importiert. Die Erweiterung 
+<b>graphics-3.16.6-tinycore</b> wird von dCore zur
+Verfügung gestellt, die anderen von Ubuntu.
+
+<div class="p"><!----></div>
+Der Befehl <b><tt class="big">sce-import</tt></b> fragt nach dem Anfang des Paketnamens, worauf eine
+Auswahlliste aller passenden Pakete präsentiert wird. Nach der Auswahl werden alle Abhängigkeiten aufgelöst. Die Pakete
+werden heruntergeladen und zu einer Erweiterung mit Dateiendung <b><tt class="big">.sce</tt></b> in
+<b><tt class="big">/etc/sysconfig/tcedir</tt></b> zusammengefasst.
+
+<div class="p"><!----></div>
+Für den Start des graphischen Desktops, muss die Boot-Loader-Konfiguration
+angepasst werden. Zu diesem Zweck wird mittels <b><tt class="big">sce-import nano</tt></b> der Editor
+Nano importiert. Alternativ steht die BusyBox-Version von Vi zur Verfügung.
+
+<div class="p"><!----></div>
+Diese Erweiterung wird mittels <b><tt class="big">sce-load nano</tt></b> geladen. Danach kann mittels
+<b><tt class="big">sudo nano /mnt/sdXn/boot/extlinux.conf</tt></b> der Boot-Code <b><tt class="big">desktop=flwm</tt></b> zum
+Eintrag <b><tt class="big">append</tt></b> hinzugefügt werden. 
+Da sich erst später um die Internationalisierung gekümmert wird,
+muss mit der US-amerikanischen Tastaturbelegung gearbeitet werden – 
+insbesondere muss für den Schrägstrich die Bindestrich-Taste gedrückt werden.
+
+<div class="p"><!----></div>
+Die drei importierten Erweiterungen müssen beim Booten automatisch geladen
+werden. Hierzu werden sie aufgelistet in der Datei <b><tt class="big">/etc/sysconfig/tcedir/sceboot.lst</tt></b>.
+
+<div class="p"><!----></div>
+Nach einem Neustart zeigt sich ein graphischer Desktop mit dem minimalistischen
+Fenstermanager FLWM. Dessen Menü ist über einen Rechtsklick auf den Desktop
+zugänglich. Diese Umgebung ist sehr minimalistisch und wird hier nicht weiter
+betrachtet. Stattdessen soll die etwas leistungsfähigere Desktop-Umgebung LXDE installiert werden.
+
+<div class="p"><!----></div>
+
+<h3>LXDE</h3>
+Mittels Rechtsklick auf den Desktop kehrt man zur Kommandozeile zurück („<em>Exit to Prompt</em>“).
+Dort importiert man das Paket <b>lxde</b> und ersetzt in der Datei 
+<b><tt class="big">/etc/sysconfig/tcedir/sceboot.lst</tt></b> den Eintrag <b><tt class="big">flwm</tt></b> durch <b><tt class="big">lxde</tt></b>. 
+
+<div class="p"><!----></div>
+In <b><tt class="big">/mnt/sdXn/boot/extlinux.conf</tt></b> verändert man den den Boot-Parameter zu
+<b><tt class="big">desktop=startlxde</tt></b>.
+Nach einem Neustart erscheint daraufhin eine funkelnagelneue LXDE-Arbeitsfläche.
+
+<div class="p"><!----></div>
+
+<h4>Tastaturbelegung</h4>
+
+
+LXDE stellt ein eigenes Verwaltungsprogramm für die Tastaturbelegung zur
+Verfügung. Mittels Rechtsklick auf die LXDE-Leiste fügt man „<em>Keyboard Layout
+Handler</em>“ als neues Panel-Applet hinzu. 
+
+<div class="p"><!----></div>
+Mit Rechtsklick auf das Flaggensymbol können daraufhin die Einstellungen
+angepasst werden. Bevor eine neue Belegung hinzugefügt werden kann, muss die
+Option „<em>Keep system layouts</em>“ deaktiviert werden.
+
+<div class="p"><!----></div>
+
+<h4>Applikationen</h4>
+
+
+Applikationen bestehen typischerweise aus einem Grund- sowie ergänzenden Paketen
+beispielsweise für die Internationalisierung. Diese werden zu einer einzigen
+Erweiterung zusammengefasst, sodass sie zusammen geladen werden. 
+
+<div class="p"><!----></div>
+Hierzu erstellt man zum Beispiel eine Liste namens <b><tt class="big">libreoffice.liste</tt></b>:
+
+<div class="p"><!----></div>
+
+<div class="listing">libreoffice<br />
+libreoffice-help-de<br />
+libreoffice-l10n-de</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/libreoffice.liste">libreoffice.liste</a></i>
+
+<div class="p"><!----></div>
+
+
+Mittels <b><tt class="big">sce-import -l libreoffice.liste</tt></b> werden die zugehörigen Pakete
+zusammengesucht und zu einer Erweiterung gebündelt. Die Liste kann danach
+gelöscht werden, denn sie wurde in den Ordner <b><tt class="big">tce/</tt></b> übernommen.
+
+<div class="p"><!----></div>
+Mittels <b><tt class="big">sce-load libreoffice</tt></b> wird die Erweiterung geladen und steht danach im
+Startmenü von LXDE zur Verfügung.
+
+<div class="p"><!----></div>
+
+<h4>On demand</h4>
+Eine rein graphische Art Applikationen zu starten, bietet der sogenannte
+„on demand“-Mechanismus. Mittels <b><tt class="big">ondemand libreoffice</tt></b> wird ein Startskript
+angelegt, das mit einem Menüeintrag verbunden ist.
+
+<div class="p"><!----></div>
+Leider wird LXDE jedoch nicht direkt unterstützt, weshalb das entsprechende Menü
+fehlt. dCore unterstützt diverse Fenstermanager, darunter Openbox. Da LXDE
+wiederum auf Openbox aufsetzt, lässt es sich mit etwas Handarbeit passend
+einrichten.
+
+<div class="p"><!----></div>
+
+<h4>LXDE &amp; Openbox</h4>
+
+
+Zunächst ist es notwendig in der Konfigurationsdatei <b><tt class="big">/mnt/sdXn/boot/extlinux.conf</tt></b> den Boot-Parameter
+<b><tt class="big">desktop=openbox</tt></b> abzuändern. Damit wird die angesprochene Unterstützung durch
+dCore aktiviert.
+
+<div class="p"><!----></div>
+
+
+Um trotzdem LXDE zu starten, wird in der Datei <b><tt class="big">~/.xinitrc</tt></b> die Zeile
+
+<div class="p"><!----></div>
+
+<div class="listing">$DESKTOP 2&#62;/tmp/wm_errors &amp;</div>
+
+<div class="p"><!----></div>
+
+
+geändert zu:
+
+<div class="p"><!----></div>
+
+<div class="listing">startlxde 2&#62;/tmp/wm_errors &amp;</div>
+
+<div class="p"><!----></div>
+
+
+Nach einem Neustart, der mit „<em>System Tools -&#62; Exit</em>“ eingeleitet
+wird, hat sich scheinbar nichts geändert. Nach wie vor strahlt einem ein
+LXDE-Desktop entgegen, und von einem Ondemand-Menü ist nichts zu sehen.
+Hierfür ist es zuerst einmal notwendig, das Openbox-Menü anzeigen zu lassen. Im
+Abschnitt „<em>Advanced</em>“ von „<em>Preferences -&#62; Desktop Preferences</em>“ kann man die
+Anzeige des Fenstermanagermenüs bei Rechtsklick auf den Desktop erlauben.
+
+<div class="p"><!----></div>
+In der Standardeinstellung enthält dieses Menü nichts Neues. Weiter muss in der
+Datei <b><tt class="big">~/.config/openbox/lxde-rc.xml</tt></b> die Zeile <b><tt class="big">&lt;file&#62;/usr/share/lxde/openbox/menu.xml&lt;/file&#62;</tt></b>
+durch die vier Zeilen des folgenden Listings ersetzt werden. Am schnellsten 
+findet man diese Zeile durch Suche nach <b><tt class="big">&lt;file&#62;</tt></b>.
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;file&#62;/usr/local/tce.openbox.xml&lt;/file&#62;<br />
+&lt;file&#62;ondemand.xml&lt;/file&#62;<br />
+&lt;file&#62;system-tools.xml&lt;/file&#62;<br />
+&lt;file&#62;menu.xml&lt;/file&#62;</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/lxde-rc.xml">lxde-rc.xml</a></i>
+
+<div class="p"><!----></div>
+
+
+Danach wählt man im Openbox-Menü „<em>Reconfigure Openbox</em>“, worauf das
+„on demand“-Menü mit dem Eintrag „<em>libreoffice</em>“ erscheint. Damit kann diese
+Erweiterung geladen und gestartet werden.
+
+<div class="p"><!----></div>
+Um das Openbox-Menü stets zugänglich zu halten, lohnt es sich, an einem Rand des
+Desktops
+
+ein Pixel frei zu halten, sodass dort stets ein Rechtsklick auf den
+Desktop möglich ist. Diese Einstellung kann im Bereich „Margins“ des
+Openbox Konfigurationsmanagers getätigt werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/dCore_Openbox-exit_menu.png" alt="dCore_Openbox-exit_menu.png" style="max-width:100%" /><br /><em>Das Openbox-Menü zeigt den
+„korrekten“ Exit-Befehl, der für dCore benötigt wird. Insbesondere
+werden dabei auch die persistenten Dateien gespeichert.</em><br />
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/dCore_Openbox-menu_ondemand.png" alt="dCore_Openbox-menu_ondemand.png" style="max-width:100%" /><br /><em>Vom Untermenü „Ondemand“ aus können Erweiterungen geladen werden, damit sie nachher im LXDE-Startmenü verfügbar sind.</em><br />
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/dCore_Openbox-menu.png" alt="dCore_Openbox-menu.png" style="max-width:100%" /><br /><em>Das Openbox-Menü muss extra aktiviert werden, damit es bei Rechtsklick auf den Desktop angezeigt wird.</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Individuelle Startskripte</h4>
+
+
+Möchte man zum Beispiel den Browser Firefox nutzen, so ist man auf eine funktionierende
+Netzwerkverbindung angewiesen. Angenommen, man verwendet WLAN, so muss zuerst
+diese Verbindung aufgebaut werden, bevor Firefox genutzt werden kann. Somit
+müssen zwei Erweiterungen geladen und gestartet werden, was von Hand mit der
+Zeit mühselig erscheint. Mit dem „on demand“-Mechanismus lässt sich dies elegant
+vereinfachen.
+
+<div class="p"><!----></div>
+Zunächst erstellt man die Liste <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/firefox.liste"><b><tt class="big">firefox.liste</tt></b></a> und
+erstellt anschließend daraus mittels der Eingabe <b><tt class="big">sce-import -l firefox.liste</tt></b> eine Erweiterung.
+
+<div class="p"><!----></div>
+
+<div class="listing">firefox<br />
+firefox-locale-de</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/firefox.liste">firefox.liste</a></i>
+
+<div class="p"><!----></div>
+
+
+Mit dem Befehl <b><tt class="big">ondemand firefox</tt></b> wird unter <b><tt class="big">/etc/sysconfig/tcedir/ondemand/</tt></b> das
+Skript <b><tt class="big">firefox</tt></b> angelegt. Dessen Inhalt wird angepasst wie im Listing
+<a href="http://www.freiesmagazin.de/mobil/2016-02-listings/firefox"><b><tt class="big">firefox</tt></b></a> angegeben, um vor dem Start des Browsers die WLAN-Verbindung 
+aufzubauen.
+
+<div class="p"><!----></div>
+
+<div class="listing">#!/bin/sh<br />
+sce-load wireless-3.16.6-tinycore<br />
+sce-load wireless<br />
+cliorx sudo wifi.sh<br />
+ondemand -e firefox.sce</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/firefox">firefox</a></i>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Einschätzung</h2>
+
+
+Nach Aussage von Hauptentwickler Jason Williams ist dCore „<em>a fast moving target</em>“.
+Mittlerweile bewegt es sich jedoch in recht ruhigen Schritten voran,
+sodass es als stabil bezeichnet werden darf. Neben dCore wird auch Tiny Core
+aktiv weiter entwickelt; gegenwärtig ist Version 6.4 aktuell (Stand November
+2015).
+
+<div class="p"><!----></div>
+dCore bietet ein außerordentlich stabiles, leichtgewichtiges System,
+das
+nach eigenen Wünschen zusammengestellt und eingerichtet werden kann. Der
+Kompromiss zwischen Geschwindigkeit und Komfort fällt sehr positiv ins Gewicht.
+Im Gegensatz zu den großen Distributionen laufen nur diejenigen Programme,
+die man wirklich benötigt, und im Gegensatz zu anderen leichtgewichtigen
+Distributionen hat man Zugriff auf dasselbe Angebot an Applikationen wie bei
+einer großen Distribution.
+
+<div class="p"><!----></div>
+
+<h3>Upgrade</h3>
+
+
+Das dCore-Basissystem besteht zur Hauptsache aus dem Linux-Kern sowie den
+Startskripten. Die verschiedenen Versionen unterscheiden sich praktisch nicht in
+der Installation, und ein nachträgliches Upgrade von Kernel und InitRD ist
+problemlos. Beim Software-Stand stehen einem jedoch aktuellere Applikationen zur
+Verfügung.
+
+<div class="p"><!----></div>
+So gesehen gibt es keinen Grund, die Beispielinstallation auf Ubuntu Trusty
+ruhen zu lassen. Es sei dem geneigten Leser als Übungsaufgabe überlassen, selber
+Hand anzulegen. Nach erfolgtem Austausch von Kernel und InitRD werden die
+Applikationen mit <b><tt class="big">sce-update</tt></b> aktualisiert.
+
+<div class="p"><!----></div>
+dCore eignet sich sehr gut zur Installation auf älteren Maschinen. Es ist eine
+wahre Freude zu sehen, wie flüssig die Arbeit auch auf „ehrenwerten“ Geräten
+vonstatten geht. Für den alltäglichen Gebrauch wird man die Installation auf
+einer Festplatte vornehmen. Das Vorgehen ist identisch mit dem hier
+vorgestellten und ist im Wiki&nbsp;<a href="http://wiki.tinycorelinux.net/dcore:welcome">[3]</a>
+ausführlich beschrieben.
+
+<div class="p"><!----></div>
+
+<h3>dCore mit LXDE</h3>
+
+
+Der hier behandelte LXDE-Desktop zeigt, was man diesbezüglich erwarten kann. Da
+es sich um eine Beispielinstallation handelt, wurden etliche Punkte weggelassen,
+die u.&nbsp;a. im
+dCore-Wiki&nbsp;<a href="http://wiki.tinycorelinux.net/dcore:welcome">[3]</a>
+detailliert besprochen werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Bereitschafts- oder Ruhezustand</li>
+<li> NetworkManager zur komfortableren Verwaltung der Netzwerkverbindungen</li>
+<li> Angepasste Konfiguration des LXDE-Desktops (insbesondere ein
+Exit-Button anstatt desjenigen von LXDE, der nicht funktioniert)</li>
+<li> Verwendung weiterer Paketquellen inkl. PPAs</li>
+<li> Java und Flash im Browser</li>
+<li> OwnCloud-Synchronisation</li>
+</ul>
+
+<div class="p"><!----></div>
+Eine solche Installation entspricht ungefähr einer aktuellen
+Lubuntu-Installation. Im Gegenteil zu einer solchen lässt sie aber auch ein
+betagtes Netbook noch respektable Sprünge vollführen. Dank der Modularität von
+dCore lässt sich der Software-Stand einer aktuellen Ubuntu-Version erreichen,
+ohne dass man ein derart schwergewichtiges System installieren müsste.
+
+<div class="p"><!----></div>
+
+<h3>dCore mit Window-Manager</h3>
+
+
+Bei der hier vorgestellten Installation handelt es sich um die „Luxusversion“
+eines leichtgewichtigen Systems. Anstatt LXDE können selbstverständlich
+einfachere Window-Manager eingesetzt werden, um das System zu entschlacken 
+und zu optimieren.
+
+<div class="p"><!----></div>
+Dabei gilt es zu beachten, dass der „on demand“-Mechanismus nur für die folgenden 
+Window-Manager eingerichtet ist: Fluxbox, FLWM, Hackedbox, Icewm, Jwm-snapshot,
+Jwm und Openbox. Diese Einschränkung stammt von Tiny Core, von dem dCore
+diese
+Funktionalität übernimmt.
+
+<div class="p"><!----></div>
+Standard ist FLWM&nbsp;<a href="https://en.wikipedia.org/wiki/FLWM">[5]</a> mit Wbar als Panel, zu
+dem falls nötig ein Dock hinzugefügt werden kann.
+
+<div class="p"><!----></div>
+
+<h3>Einschränkung</h3>
+
+
+Das Grundkonzept, einer minimalen Basisinstallation Zugriff auf die riesigen
+Bestände der Ubuntu- beziehungsweise Debian-Quellen zu geben, entkoppelt die
+Software vom jeweiligen Grundsystem. Anstatt eines vorkonfigurierten
+Wolkenkratzers mit Betonsockel baut man sich sein eigenes Mobil-Home, indem man
+einzelne Wohneinheiten auf einen Laster auflädt. Wie gesehen gewinnt man dabei
+an Flexibilität. Die Modularität jedoch geht auf Kosten des Kitts, der
+die
+Einheiten mit den Sockel verbindet.
+Konkret geht es um die Start- und Installationsskripte, die teilweise
+angepasst werden müssen, bevor sie auf den dCore-eigenen Repositorien verfügbar
+sind. Dies betrifft jedoch längst nicht alle Applikationen, sodass sich der
+Aufwand für Entwickler und Community in Grenzen hält.
+
+<div class="p"><!----></div>
+
+<h3>Weitere Informationsquellen</h3>
+Die Readme-Seiten&nbsp;<a href="http://tinycorelinux.net/dCore/x86/README/">[6]</a> zur Installation
+geben konkrete Zusatzhinweise.
+
+<div class="p"><!----></div>
+Das Wiki&nbsp;<a href="http://wiki.tinycorelinux.net/dcore:welcome">[3]</a> enthält weitere
+Beispielinstallationen sowie ausführliche Informationen zur Arbeit mit
+Erweiterungen.
+
+<div class="p"><!----></div>
+Für direkte Anfragen eignet sich das
+dCore-Forum&nbsp;<a href="http://forum.tinycorelinux.net/index.php/board,66.0.html">[4]</a> besonders
+gut. Man kann mit einer umgehenden Antwort der beteiligten Entwickler rechnen.
+
+<div class="p"><!----></div>
+Als technische Referenz eignet sich das
+Core-Book&nbsp;<a href="http://distro.ibiblio.org/tinycorelinux/corebook.pdf">[7]</a> besonders für
+die mannigfaltigen Boot-Codes. Zwar bezieht es sich auf Tiny Core, dessen
+Basisinstallation jedoch quasi baugleich mit derjenigen von dCore ist.
+
+<div class="p"><!----></div>
+
+<h2>Anhang</h2>
+
+<h3>InitRD</h3>
+
+
+Die meisten „regulären“ Distributionen verwenden eine initiale RAM-Disk
+(InitRD), um dem Linux-Kern in der Startphase zusätzliche Treibermodule zur
+Verfügung zu stellen. Damit kann auch ein generischer Kern das Wurzeldateisystem
+beispielsweise auch von LVM, RAID oder verschlüsselten Partitionen laden.
+
+<div class="p"><!----></div>
+Die InitRD umfasst ein gepacktes Dateisystem, das vom Kern im RAM
+entpackt
+und einhängt wird. Daraufhin wird der darin enthaltene Init-Prozess gestartet.
+Üblicherweise hängt dieser ein beschreibbares Wurzeldateisystem von einem
+Datenträger ein, und lässt sich durch den eigentlichen Init-Prozess ablösen.
+
+<div class="p"><!----></div>
+Ein System, das im RAM läuft, verlässt die InitRD jedoch nicht und belässt das
+Wurzeldateisystem im RAM. Damit gewinnt man Geschwindigkeit, weil die vielen
+Systemdateien nicht einzeln von einem Datenträger geladen werden müssen.
+Andererseits können die Dateien nicht verändert werden, weil die InitRD
+grundsätzlich nur lesbar ist.
+
+<div class="p"><!----></div>
+Letzteres bringt zunächst die Einschränkungen mit sich, dass
+Konfigurationsdateien, zum Beispiel unter <b><tt class="big">/etc/</tt></b> nicht dauerhaft verändert
+werden können. Prinzipiell sind solche Systeme dadurch sozusagen „unkaputtbar“,
+weil das Grundsystem nach jedem Neustart wieder in den Ursprungszustand
+zurückkehrt. Methoden, um trotzdem Dateien dauerhaft im System zu
+speichern, werden unten diskutiert.
+
+<div class="p"><!----></div>
+Zuletzt muss noch erwähnt werden, dass die Größe der InitRD natürlich gering
+gehalten werden sollte, damit das Entpacken in annehmbarer Zeit geschieht.
+Deshalb wird das Grundsystem minimal gehalten, was sich zum Beispiel darin
+zeigt, dass oftmals Busybox anstelle der GNU Coreutils zum Einsatz kommt. Die
+InitRD von dCore ist ca. 10 MB groß.
+
+<div class="p"><!----></div>
+
+<h3>Persistenz</h3>
+
+
+Ein Live-System kann mit verschiedenen Methoden um ein persistentes Dateisystem
+ergänzt werden. Am gebräuchlichsten ist ein beschreibbares
+Overlay-Dateisystem&nbsp;<a href="https://en.wikipedia.org/wiki/Category:Union_file_systems">[8]</a>.
+Ein solches kann transparent über das Wurzeldateisystem gelegt werden. Geänderte
+oder gelöschte Dateien werden punktuell überdeckt, sodass im Gesamten der
+Eindruck eines beschreibbaren Wurzeldateisystems entsteht.
+
+<div class="p"><!----></div>
+dCore beschreitet einen anderen Weg. Da alle Dateien in einem RAM-Dateisystem
+liegen, können sie im Betrieb direkt verändert werden. Um Dateien oder Ordner
+persistent zu machen, listet der Benutzer ihren Namen (ohne führenden
+Schrägstrich!) in der Datei <b><tt class="big">/opt/.filetool.lst</tt></b>. Beim Herunterfahren werden
+diese Dateien ins Archiv <b><tt class="big">/opt/mydata.tgz</tt></b> gepackt – sofern vor dem eigentlichen
+Shutdown-Kommando das Skript <b><tt class="big">backup.sh</tt></b> aufgerufen wird. Beim grafischen
+Abmeldedialog ist das der Fall, auf der Kommandozeile muss das Skript jedoch
+manuell aufgerufen werden.
+
+<div class="p"><!----></div>
+Beim Hochfahren werden die Dateien wieder ins RAM-Dateisystem geschrieben und
+stehen so zur Verfügung. In der Grundeinstellung werden <b><tt class="big">/home/</tt></b> und <b><tt class="big">/opt/</tt></b>
+persistent gemacht. Letzteres enthält insbesondere alle importierten
+Erweiterungen, weshalb beide Verzeichnisse recht umfangreich sein können. 
+
+<div class="p"><!----></div>
+Da das Ver- und Entpacken eines tar-Archivs recht zeitaufwändig ist, wird man
+beide Verzeichnisse gerne von einem herkömmlichen Dateisystem einbinden wie in
+der besprochenen Beispielinstallation.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://tinycorelinux.net/dCore/x86/release/"><tt class="big">http://tinycorelinux.net/dCore/x86/release/</tt></a><br />
+[2] <a href="http://tinycorelinux.net/downloads.html"><tt class="big">http://tinycorelinux.net/downloads.html</tt></a><br />
+[3] <a href="http://wiki.tinycorelinux.net/dcore:welcome"><tt class="big">http://wiki.tinycorelinux.net/dcore:welcome</tt></a><br />
+[4] <a href="http://forum.tinycorelinux.net/index.php/board,66.0.html"><tt class="big">http://forum.tinycorelinux.net/index.php/board,66.0.html</tt></a><br />
+[5] <a href="https://en.wikipedia.org/wiki/FLWM"><tt class="big">https://en.wikipedia.org/wiki/FLWM</tt></a><br />
+[6] <a href="http://tinycorelinux.net/dCore/x86/README/"><tt class="big">http://tinycorelinux.net/dCore/x86/README/</tt></a><br />
+[7] <a href="http://distro.ibiblio.org/tinycorelinux/corebook.pdf"><tt class="big">http://distro.ibiblio.org/tinycorelinux/corebook.pdf</tt></a><br />
+[8] <a href="https://en.wikipedia.org/wiki/Category:Union_file_systems"><tt class="big">https://en.wikipedia.org/wiki/Category:Union_file_systems</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Stefan Müller</b>
+verwendet gerne Linux-Installationen auf Tablet PCs. Beruflich versucht
+er jungen Menschen die Freiheit in der (Informatik-)Welt näher zu
+bringen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=dCore&amp;body=freiesMagazin 02/2016%0AdCore%0AStefan Müller%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=dCore#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_kurztipp_grep" name="fm_16_02_kurztipp_grep">Kurztipp: Unerwünschte grep-Ausgaben vermeiden</a></font></h1>von Hans-Joachim Baader
+
+<div class="p"><!----></div>
+    
+
+<b>S</b><b>elbst über bekannte Programme lässt sich oft noch einiges lernen. 
+Man muss sich nur gründlich mit ihnen auseinandersetzen. Dieser 
+Artikel zeigt wie die eingebauten Hilfsmittel von <b><tt class="big">grep</tt></b> dabei helfen 
+unerwünschte Ausgaben zu vermeiden.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Unerwünschte grep-Ausgaben vermeiden“ erschien 
+erstmals bei  Pro-Linux&nbsp;<a href="http://www.pro-linux.de/kurztipps/2/1809/unerwuenschte-grep-ausgaben-vermeiden.html">[1]</a>.</i>
+
+<div class="p"><!----></div>
+Die folgende Situation ist vielen bekannt. Auf die Schnelle möchte man wissen, ob eine 
+bestimmte Zeichenfolge (z.B. ein Name) in einer Datei (ggf. auch in welcher) im 
+Verzeichnis <b><tt class="big">/etc/</tt></b> vorkommt. Natürlich benutzt 
+man dafür keinen Dateimanager und erst recht keine Desktop-Suche, sondern 
+<b><tt class="big">grep</tt></b>. Die Suche ist so viel einfacher und schneller,
+aber das Ergebnis versteckt 
+zwischen einem Wust von Ausgaben nach dem Muster:
+
+<div class="p"><!----></div>
+
+<div class="command">$ grep samba /etc/*<br />
+grep: /etc/acpi: Ist ein Verzeichnis<br />
+...</div>
+
+<div class="p"><!----></div>
+
+
+Wie nicht anders zu erwarten, gibt es eine Reihe von Bordmitteln, um die 
+unerwünschten Ausgaben zu unterdrücken, die den Blick aufs Wesentliche 
+verstellen. Zum Beispiel eine Kommandooption von <b><tt class="big">grep</tt></b> oder eine 
+Shell-Funktionalität.
+<div class="p"><!----></div>
+
+<div class="command">$ grep -s samba /etc/*<br />
+$ grep samba /etc/* 2&#62; /dev/null<br />
+$ grep -d skip -D skip samba /etc/*</div>
+
+<div class="p"><!----></div>
+
+
+
+
+Die drei Kommandos liefern, abhängig von der <b><tt class="big">grep</tt></b>- bzw. Shell-Version, eine ähnliche Ausgabe. 
+Je nach Implementierung (selbstgeschrieben, traditionelle Unix- oder BSD-Variante) 
+treten Unterschiede auf. Am portabelsten ist das Konstrukt 
+<b><tt class="big">2&#62;</tt></b>, welches die <b><tt class="big">grep</tt></b>-Warnungen in den virtuellen Schredder 
+umleitet.
+<div class="p"><!----></div>
+Gemäß Handbuch ist die Option <b><tt class="big">-s</tt></b> POSIX-konform und wird somit auf entsprechenden Systemen unterstützt.
+Kein Glück hat man dagegen bei alten <b><tt class="big">grep</tt></b>-Versionen.
+Diese kennen die Option gar nicht. Bei wiederum Anderen wirkt sie 
+wie <b><tt class="big">-q</tt></b> (umgekehrt des erwünschten Verhaltens). Die Optionen 
+<b><tt class="big">-d</tt></b> und <b><tt class="big">-D</tt></b> gibt es dagegen nur bei GNU Grep. (Es könnten noch weitere
+Fälle auftreten, bei denen <b><tt class="big">-s</tt></b> schweigt, die anderen jedoch nicht.)
+
+<div class="p"><!----></div>
+Auf GNU/Linux-Systemen ist es in der Regel egal, 
+welche Variante man wählt. Die Verzeichnismeldung wird übrigens auch 
+unterdrückt, wenn man die Option <b><tt class="big">-R</tt></b>/<b><tt class="big">-r</tt></b> zum rekursiven Suchen (mit 
+bzw. ohne Folgen von symbolischen Links) verwendet.
+
+<div class="p"><!----></div>
+
+
+Bequemer kann die Arbeit werden, wenn die häufig verwendete Art des Aufrufs 
+mit einer speziellen Shell-Funktion umgesetzt ist. Diese ist im eigenen 
+Profil (z.B. <b><tt class="big">~/.bashrc</tt></b>) zu speichern, um möglichst wenig tippen zu müssen. 
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ lg() { grep -s "$@"; }      # Funktion<br />
+$ lg samba /etc/*             # Aufruf</div>
+
+<div class="p"><!----></div>
+
+
+Und rekursiv wäre das Folgende denkbar:
+
+<div class="p"><!----></div>
+
+<div class="command">$ rg() { grep -R -s "$@"; }<br />
+$ rg samba /etc/*</div>
+
+<div class="p"><!----></div>
+
+
+In beiden Fällen werden alle angegebenen Parameter mittels <b><tt class="big">$@</tt></b> an <b><tt class="big">grep</tt></b> 
+übergeben, sodass nichts an Flexibilität verloren geht. Der Vollständigkeit 
+halber soll auch noch erwähnt werden, dass man Optionen an GNU Grep mit der 
+Umgebungsvariable <b><tt class="big">GREP_OPTIONS</tt></b> übergeben kann. In einem Skript
+sähe dies so aus:
+
+<div class="p"><!----></div>
+
+<div class="command">$ export GREP_OPTIONS='-d skip -D skip'<br />
+$ grep samba /etc/*</div>
+
+<div class="p"><!----></div>
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.pro-linux.de/kurztipps/2/1809/unerwuenschte-grep-ausgaben-vermeiden.html"><tt class="big">http://www.pro-linux.de/kurztipps/2/1809/unerwuenschte-grep-ausgaben-vermeiden.html</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Hans-Joachim Baader</b>&nbsp;(<a href="http://www.pro-linux.de/">Webseite</a>)
+arbeitet seit 1993 mit Linux und ist einer 
+der Betreiber von Pro-Linux.de. 
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Kurztipp: grep&amp;body=freiesMagazin 02/2016%0AKurztipp: grep%0AHans-Joachim Baader%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Kurztipp: grep#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_kernel" name="fm_16_02_kernel">Der Jahreswechsel im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 4.4 entwickelt sich</h2>
+
+
+Zum Nikolaustag
+wurde die
+vierte Entwicklerversion von Linux 4.4
+vorgelegt&nbsp;<a href="https://lkml.org/lkml/2015/12/6/137">[1]</a>. Der Löwenanteil des 
+eingebrachten Codes entfiel auf einen neuen Ethernet-Treiber. Dieser soll
+NB8800-Controller von Aurora VLSI ansteuern und wurde auf Basis der Treiber für
+Embedded-Prozessoren der Firma Sigma Designs entwickelt, welche auch über einen
+eingebauten Netzwerk-Controller verfügen.
+
+<div class="p"><!----></div>
+Linux 4.4-rc5&nbsp;<a href="https://lkml.org/lkml/2015/12/13/228">[2]</a> kam wieder mit etwas
+weniger Änderungen daher, von denen das Meiste auf Korrekturen entfiel. Davon
+konnte unter anderem der dwc2-Treiber profitieren, dem ein Kernel Oops, also ein
+Fehler des Kernels, der nicht zum vollständigen Systemabsturz führt, behoben
+wurde. Dieser Treiber unterstützt einen 
+USB-On-the-Go-Controller 
+und ermöglicht es, dass USB-Geräte andere USB-Geräte ansteuern können, wie
+beispielsweise ein Smartphone eine per USB-OTG angeschlossene Tastatur verwenden
+kann.
+
+<div class="p"><!----></div>
+Auch die kurz vor Weihnachten erschienene sechste
+Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2015/12/20/193">[3]</a> wies keine größeren
+Änderungen auf, auch wenn deren Gesamtzahl wieder ein wenig angestiegen war. Am
+Treiber für die Netzwerk-Virtualisierung
+VXLAN&nbsp;<a href="https://de.wikipedia.org/wiki/Virtual_Extensible_LAN">[4]</a> wurde die Berechnung
+von Netzwerk-Routen für IPv6-Pakete in eine eigene Funktion verlagert wodurch
+künftige Optimierungen einfacher umsetzbar sind. Unter den Korrekturen fand sich
+auch eine, die das Verhalten der WLAN-Infrastruktur beim Aufwachen aus dem
+Suspend korrigiert. War das System beim „Einschlafen“ gerade mit der Suche nach
+neuen WLAN-Netzen beschäftigt, so brach dieser ab und das System wartete
+vergeblich auf dessen Vollendung. Künftig wird nun geprüft, ob ein solcher
+Zustand vorliegt und der Scan-Auftrag dann gegebenenfalls gelöscht.
+
+<div class="p"><!----></div>
+Die beiden folgenden Entwicklerversion fielen dann ziemlich klein
+(-rc7)&nbsp;<a href="https://lkml.org/lkml/2015/12/27/215">[5]</a> und extra klein
+(-rc8)&nbsp;<a href="https://lkml.org/lkml/2016/1/3/261">[6]</a> aus – kein Wunder, auch manche
+Kernel-Entwickler machen über Weihnachten und den Jahreswechsel Urlaub. So
+hielten sich auch die Korrekturen in einem sehr überschaubaren Rahmen. Unter den
+hervorstechenden fand sich beispielsweise die Behebung eines Fehlers bei der
+Speicherbehandlung der Prozessor-eigenen Funktionen der
+Sparc64-Architektur, indem der Kernel neue Funktionen erhielt, um diese Fehler
+erkennen und umgehen zu können.
+
+<div class="p"><!----></div>
+Linux 4.4&nbsp;<a href="https://lkml.org/lkml/2016/1/10/305">[7]</a> wurde eine Woche
+später freigegeben. Auch hier hielten sich die Änderungen gegenüber der letzten
+Entwicklerversion in Grenzen. Nutzer künftiger Android-Versionen können sich
+über die Korrektur eines Fehlers im Umgang mit SYSENTER freuen. Diese Funktion
+dient bei x84-Systemen dazu, Funktionsaufrufe in einem geschützten Betriebsmodus
+(Protected Mode)
+ohne aufwändige
+Prüfungen der Rechte des aufrufenden Prozesses durchzuführen und kann somit
+schneller erfolgen als ein direkter Funktionsaufruf. Ob die korrekte Nutzung von
+SYSENTER die Schwuppdizität auf Systemen mit beschränkter Leistung (sprich:
+Smartphones) dann tatsächlich spürbar erhöht, ist allerdings fraglich.
+
+<div class="p"><!----></div>
+
+<h2>Die Veröffentlichung von Linux 4.4</h2>
+
+
+Seit Veröffentlichung von Linux 4.3 Anfang November waren 69 Tage vergangen und
+knapp über 14.000 Änderungen haben die Linux-Entwickler beigesteuert. Damit
+zählt der neue Kernel zu den größeren der letzten fünf Jahre. Die meisten der
+eingebrachten Änderungen zielen auch diesmal wieder darauf, Fehler zu beheben
+und doch sind ein paar bemerkenswerte Neuerungen mit dabei, wenn auch die
+meisten davon für den Nutzer eher verborgen bleiben.
+
+<div class="p"><!----></div>
+
+<h3>„Kopfloser“ Speicher</h3>
+
+
+So wurde nun mit LightNVM&nbsp;<a href="http://lightnvm.io/">[8]</a> die Unterstützung für 
+Open-Channel SSDs aufgenommen. Diese verfügen über keinen vollwertigen Controller
+für die enthaltenen Flash-Speicherchips sondern überlassen die Speicherzuweisung 
+dem Betriebssystem. Dadurch lassen sich zum einen generische Treiber entwickeln, 
+die nicht auf unterschiedliche Controller Rücksicht nehmen müssen, aber es sind 
+auch Optimierungen der Schreib- und Lesevorgänge möglich und letztlich könnten 
+hier solche Dinge wie DAX (Direct Access, siehe „Der April im Kernelrückblick“,
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 05/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-05">[9]</a>)
+einfacher umgesetzt werden, die direkten Zugriff auf den Flash-Speicher des
+Datenträgers erwarten. Letztlich ist es auch nicht allzu weit hergeholt, die
+Verwaltung von Flash-Speichern dem Betriebssystem zu überlassen, haben dessen
+Entwickler mit Arbeitsspeicher doch schon Erfahrung. 
+<div class="p"><!----></div>
+
+<h3>Schnellerer Aufbau</h3>
+
+
+Verbesserungen am Netzwerkstack hatten direkte Auswirkungen auf den Aufbau von
+Netzwerkverbindungen. Die Umsetzung des 
+TCP-Protokolls
+kommt
+nun ohne Locking für die Bearbeitung eingehender Verbindungen aus. Das bedeutet,
+dass keine Sperren auf Ressourcen des Kernels gesetzt werden müssen, wobei
+gegebenenfalls auf die Freigabe einer zuvor von einem anderen Prozess gesetzten
+Sperren gewartet werden muss. Diese Wartezyklen fallen nun weg, wodurch sich die
+Menge der Verbindungsanfragen, die nun verarbeitet werden kann, erheblich
+angestiegen ist. Davon profitieren in erster Linie die Betreiber von
+Serverdiensten, da nun Verbindungen (etwas) schneller und mit weniger Belastung
+des Systems aufgebaut werden können. Ob dann natürlich die dahinterstehende
+Anwendung die Anfragen ebenso schnell bedienen kann, ist eine andere Geschichte.
+
+<div class="p"><!----></div>
+
+<h3>Erweiterer eBPF</h3>
+
+
+Unter Paketfilter verstehen zumindest Netzwerk-affine Menschen eine der
+Kernkompetenzen von Firewalls. Im Gegensatz dazu stellt der Berkeley Paket
+Filter (BPF&nbsp;<a href="https://de.wikipedia.org/wiki/Berkeley_Paket_Filter">[10]</a>)
+beziehungsweise dessen Linux-Umsetzung eBPF eine Möglichkeit zur Fehlersuche
+innerhalb eines Systems dar. eBPF erlaubt es in den Netzwerk-Stack
+eines Linux-Systems zu greifen und dort Datenpakete zu analysieren. Um nicht
+allen Netzwerkverkehr an die anfordernde Anwendung zurückliefern zu müssen,
+bietet eBPF umfangreiche Filterfunktionen, die als Programme geschrieben und
+mittels eines eigenen Interpreters&nbsp;<a href="https://de.wikipedia.org/wiki/Interpreter">[11]</a>
+ausgeführt werden.
+
+<div class="p"><!----></div>
+Unter Linux 4.4 wurden nun zwei große Verbesserungen eingeführt. Zum einen
+können nun auch Programme, die im Benutzerkontext laufen, auf eBPF zugreifen.
+Und zum anderen können nun in eBPF erzeugte Filter dauerhaft abgelegt werden und
+bleiben damit auch nach Beendigung des zugehörigen Prozesses verfügbar.
+
+<div class="p"><!----></div>
+Und auch die Betreuer anderer Komponenten des Kernels haben eBPF als nützliches
+Tool erkannt. Deshalb haben die Entwickler der Messwerkzeug-Sammlung „perf“ nun
+Unterstützung für eBPF eingebaut. Wird perf künftig eine C-Quellcode-Datei
+übergeben, die eBPF-Programmcode enthält, so wird dieser automatisch geprüft. 
+<div class="p"><!----></div>
+
+<h3>Virtuelles 3-D und himbeerige Grafik</h3>
+
+
+Die Kernel-eigene Infrastruktur für den Betrieb virtueller Systeme wurde um die
+Unterstützung für 3-D-Beschleunigung erweitert. Dadurch können nun mittels
+QEMU&nbsp;<a href="http://wiki.qemu.org/">[12]</a> virtualisierte Systeme ebenfalls in den
+Genuss eventuell vorhandener 3-D-Kapazitäten der Grafikhardware des Host-Systems
+kommen. Nutzer, die beispielsweise ISO-Dateien mittels Ubuntu
+Testdrive&nbsp;<a href="https://wiki.ubuntuusers.de/TestDrive/">[13]</a> ausprobieren, könnten hiervon
+in Zukunft profitieren.
+
+<div class="p"><!----></div>
+Nicht vergessen werden sollte der neue Broadcom VC4-Treibers, welcher nun von
+Haus aus die Grafikeinheit der BCM2835-Prozessoren unterstützt. Den meisten
+Bastlern dürften diese ARM-Prozessoren aus dem Raspberry Pi 1 und Raspberry Pi
+Zero sowie dem Compute Module geläufig sein. VC4 erlaubt jedoch nur die
+Grundfunktionen, 3-D-Beschleunigung ist außen vor. Dennoch werden Systeme auf
+entsprechenden Prozessoren davon profitieren, da auf zusätzlich einzubindende
+Treiber verzichtet werden kann. Eine Erweiterung um 3-D-Unterstützung war für
+Linux 4.5 vorgesehen, wurde aber bis zum jetzigen Zeitpunkt noch nicht
+aufgenommen. 
+
+<div class="p"><!----></div>
+Eine vollständige Übersicht mit Verlinkungen zu den entsprechenden Commits oder
+Mailing-List-Beiträgen liefert hierzu auch die englischsprachige Seite
+LinuxChanges.org&nbsp;<a href="http://kernelnewbies.org/Linux_4.4">[14]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Die Entwicklung von Linux 4.5 startet</h2>
+
+
+Mit der Freigabe von Linux 4.4 startete auch wieder der Entwicklungszyklus des
+Nachfolgers mit dem Merge Window. In diesem Zeitraum nimmt Torvalds Änderungen
+in seinen Entwicklungszweig auf, die ihm Entwickler oder die Betreuer der
+verschiedenen Bereich des Kernels vorlegen. Einige Entwickler hatten bereits im
+Vorfeld ihre Merge Requests gestellt, sodass die Zahl der eingebrachten
+Änderungen rasch anwuchs. Mit Freigabe der ersten
+Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2016/1/24/196">[15]</a> nach 14 Tagen kamen
+so 11.000 Änderungen zusammen und platzierte Linux 4.5 damit – rein auf diesen
+Aspekt bezogen – im Mittelfeld.
+
+<div class="p"><!----></div>
+Anders sieht es bei den dadurch geänderten Quelltext-Zeilen aus. Nur wenige
+Kernel-Versionen der letzten Zeit überschritten einen Wert von 1 Million
+geänderter Zeilen, 4.5-rc1 erreicht sogar 1,9 Millionen. Allerdings liegt der
+Hauptgrund hierfür wieder einmal im Bestreben der Entwickler, Ordnung in die
+Struktur des Kernel-Codes zu bringen und diesmal waren die Netzwerk-Treiber
+dran. Ein großer Teil der WLAN-Treiber wurde umsortiert, sodass die einzelnen
+Treiber sich nun einfacher dem jeweiligen Hersteller zuordnen lassen. Innerhalb
+der Versionsverwaltung Git&nbsp;<a href="https://de.wikipedia.org/wiki/Git">[16]</a> lässt sich dies
+bequem mittels rename, also einer Umbenennung der Datei und des Dateipfades
+abbilden, sobald allerdings ein Patch erstellt wird, wie dies auf
+Kernel.org&nbsp;<a href="https://kernel.org/">[17]</a> geschieht werden diese Dateien zuerst an
+einer Stelle entfernt und danach an anderer Stelle eingefügt. Sie schlagen sich
+somit sowohl in der Zahl der gelöschten als auch der aufgenommenen Codezeilen
+nieder und landen damit gleich zweimal im Patch, was diesen dann entsprechend
+aufbläht. Lange Rede kurzer Sinn: Es wurden sehr viele Codezeilen angefasst,
+doch mit verhältnismäßig wenig Wirkung dahinter. 
+
+<div class="p"><!----></div>
+Immerhin einige Neuerungen kamen hinzu, so soll
+PowerPlay&nbsp;<a href="https://de.wikipedia.org/wiki/ATI_PowerPlay">[18]</a> künftig für eine
+effizientere Nutzung von ATI/AMD-Grafik-Prozessoren sorgen und ARM-Freunde
+können künftig generische Kernel für ARMv6- und ARMv7-Plattformen bauen, die
+jeweiligen Eigenheiten der Hardware werden dem Kernel dann über Device
+Tree&nbsp;<a href="https://en.wikipedia.org/wiki/Device_tree">[19]</a>, eine Datenstruktur für die
+Beschreibung verfügbarer Hardware, bekannt gemacht. Und wer plant, auf einem
+Surface Pro 4&nbsp;<a href="https://de.wikipedia.org/wiki/Microsoft_Surface#Vierte_Generation">[20]</a>
+Windows gegen Linux auszutauschen, wird mit Linux 4.5 auch Unterstützung für die
+(wenigen) Hardware-Buttons erhalten. 
+
+<div class="p"><!----></div>
+Linux 4.5-rc2&nbsp;<a href="https://lkml.org/lkml/2016/1/31/231">[21]</a> liegt ein wenig über dem
+Durchschnitt, was die Zahl der Änderungen eines -rc2 betrifft. Immerhin lief der
+größte Teil unter der Kategorie Korrekturen, wobei insbesondere die 
+Kernel-eigenen Werkzeuge für die Leistungsmessung profitieren konnten. Diese 
+„perf-tools“ können Kernel- und Anwendungsentwicklern bei der Optimierung ihres 
+Codes dienen, indem sie die Auswirkungen von Modulen und Funktionen auf den
+Ressourcenbedarf des Kernels messen. Hinzugekommen sind dagegen ein paar
+Testwerkzeuge für virtio, einen Treiber aus dem Virtualisierungsumfeld um QEMU
+und KVM&nbsp;<a href="https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine">[22]</a>.
+
+<div class="p"><!----></div>
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://lkml.org/lkml/2015/12/6/137"><tt class="big">https://lkml.org/lkml/2015/12/6/137</tt></a><br />
+[2] <a href="https://lkml.org/lkml/2015/12/13/228"><tt class="big">https://lkml.org/lkml/2015/12/13/228</tt></a><br />
+[3] <a href="https://lkml.org/lkml/2015/12/20/193"><tt class="big">https://lkml.org/lkml/2015/12/20/193</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Virtual_Extensible_LAN"><tt class="big">https://de.wikipedia.org/wiki/Virtual_Extensible_LAN</tt></a><br />
+[5] <a href="https://lkml.org/lkml/2015/12/27/215"><tt class="big">https://lkml.org/lkml/2015/12/27/215</tt></a><br />
+[6] <a href="https://lkml.org/lkml/2016/1/3/261"><tt class="big">https://lkml.org/lkml/2016/1/3/261</tt></a><br />
+[7] <a href="https://lkml.org/lkml/2016/1/10/305"><tt class="big">https://lkml.org/lkml/2016/1/10/305</tt></a><br />
+[8] <a href="http://lightnvm.io/"><tt class="big">http://lightnvm.io/</tt></a><br />
+[9] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-05"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-05</tt></a><br />
+[10] <a href="https://de.wikipedia.org/wiki/Berkeley_Paket_Filter"><tt class="big">https://de.wikipedia.org/wiki/Berkeley_Paket_Filter</tt></a><br />
+[11] <a href="https://de.wikipedia.org/wiki/Interpreter"><tt class="big">https://de.wikipedia.org/wiki/Interpreter</tt></a><br />
+[12] <a href="http://wiki.qemu.org/"><tt class="big">http://wiki.qemu.org/</tt></a><br />
+[13] <a href="https://wiki.ubuntuusers.de/TestDrive/"><tt class="big">https://wiki.ubuntuusers.de/TestDrive/</tt></a><br />
+[14] <a href="http://kernelnewbies.org/Linux_4.4"><tt class="big">http://kernelnewbies.org/Linux_4.4</tt></a><br />
+[15] <a href="https://lkml.org/lkml/2016/1/24/196"><tt class="big">https://lkml.org/lkml/2016/1/24/196</tt></a><br />
+[16] <a href="https://de.wikipedia.org/wiki/Git"><tt class="big">https://de.wikipedia.org/wiki/Git</tt></a><br />
+[17] <a href="https://kernel.org/"><tt class="big">https://kernel.org/</tt></a><br />
+[18] <a href="https://de.wikipedia.org/wiki/ATI_PowerPlay"><tt class="big">https://de.wikipedia.org/wiki/ATI_PowerPlay</tt></a><br />
+[19] <a href="https://en.wikipedia.org/wiki/Device_tree"><tt class="big">https://en.wikipedia.org/wiki/Device_tree</tt></a><br />
+[20] <a href="https://de.wikipedia.org/wiki/Microsoft_Surface#Vierte_Generation"><tt class="big">https://de.wikipedia.org/wiki/Microsoft_Surface#Vierte_Generation</tt></a><br />
+[21] <a href="https://lkml.org/lkml/2016/1/31/231"><tt class="big">https://lkml.org/lkml/2016/1/31/231</tt></a><br />
+[22] <a href="https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine"><tt class="big">https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem Laufenden zu bleiben und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Der Jahreswechsel im Kernelr%C3%BCckblick&amp;body=freiesMagazin 02/2016%0ADer Jahreswechsel im Kernelr%C3%BCckblick%0AMathias Menzer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Der Jahreswechsel im Kernelr%C3%BCckblick#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_typo3" name="fm_16_02_typo3">Einführung in Typo3</a></font></h1>von Martin Stock
+
+<div class="p"><!----></div>
+    
+
+<b>I</b><b>n dem nachfolgenden Artikel wird die Geschichte von Typo3&nbsp;<a href="http://www.typo3.org/">[1]</a> und
+die Installation dieses Content Management Systems auf einem lokalen Rechner mit
+Linux Mint beschrieben. </b>
+
+<div class="p"><!----></div>
+
+<h2>Content Management Systeme</h2>
+
+
+Ein Content Management System (CMS) ist eine Software, die online auf einem
+Webspace installiert wird. Mit solch einem System kann man Inhalte erstellen 
+und bearbeiten, um diese dann auf Webseiten online zu stellen.
+Benutzer können nach dem Anmelden am System in ihren zugehörigen Bereichen
+arbeiten oder alle Bereiche nutzen. Das liegt an den Zugriffsrechten, die intern
+vergeben werden können.
+
+<div class="p"><!----></div>
+Die Bearbeitung von Inhalten geht genauso einfach wie eine E-Mail zu schreiben.
+Online-Texteditoren unterstützen den Benutzer bei dieser Arbeit. Mit einem CMS
+kann man auch ohne HTML-Kenntnisse Webseiten erstellen, die modern und
+barrierefrei gestaltet sind.
+
+<div class="p"><!----></div>
+
+<h2>Historisches</h2>
+
+
+Typo3 CMS ist ein von Kasper Skårhøj im Jahr 1997 entwickeltes Open Source CMS,
+das unter der GNU/GPL Lizenz veröffentlicht wird. Das CMS ist gerade in
+Deutschland ein sehr beliebtes Werkzeug, das nicht nur bei Unternehmen
+und
+politischen Parteien eingesetzt wird, sondern auch für Vereine und
+Organisationen geeignet ist. 
+Im Jahr 2000 kam die erste Beta-Version heraus und 2001 wurde dem System der
+Open-Source-Standard eingeräumt&nbsp;<a href="http://typo3.org/about/the-history-of-typo3/">[2]</a>.
+In den darauffolgenden Jahren gab es immer mehr Meetings, Code-Sprints,
+Entwicklertreffen und unterstützende Artikel in diversen Fachmagazinen, die dem
+System zu dem gemacht haben, was es heute ist – ein
+Content Management System mit Enterprise-Charakter im
+Open-Source-Bereich!
+
+<div class="p"><!----></div>
+Finanzielle Unterstützung bekommt das System von der im Jahre 2004 gegründeten
+Typo3 Association aus der Schweiz. Das ist eine nicht-profitorientierte Organisation, welche sich
+durch Mitgliedsbeiträge, Spenden und der jährlich stattfindenden Konferenz
+finanziert. Jeder Nutzer und Freund von Typo3 kann natürlich unabhängig von dieser Institution jederzeit für
+das Projekt spenden.
+
+<div class="p"><!----></div>
+Seit 2012 ist Typo3 eine geschützte Marke. Darunter sind weitere Produkte wie
+zum Beispiel Flow und Neos entwickelt worden. 
+
+<h2>Einsatz von Typo3</h2>
+
+
+Typo3 CMS genießt weltweit einen sehr guten Ruf. Die Community ist online sehr
+aktiv und unterstützt sich gegenseitig. Verschiedene Agenturen und freie
+Entwickler steuern zusätzlich zur allgemeinen Hilfe auch Erweiterungen bei, die
+dem System Leben einhauchen und kostenlos zur Verfügung stehen. Man geht davon
+aus, dass das System bisher über 500.000 Mal zum Einsatz gekommen 
+ist&nbsp;<a href="https://typo3.org/home/typo3-in-numbers/">[3]</a>. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-beispielseite.png" alt="typo3-beispielseite.png" style="max-width:100%" /><br /><em>Beispielseite von Typo3 CMS.</em><br />
+
+<div class="p"><!----></div>
+Das System hat hohe Ansprüche an den verwendeten Webserver. Nicht alle Anbieter
+von Webservern können Typo3-Webseiten hosten. Bevor man 
+
+sich für einen Anbieter
+entscheidet, sollte man diesen genau fragen, ob es möglich ist, ohne
+Einschränkungen Typo3 auf deren Webspace zu nutzen. Allerdings kann man das
+System auch lokal auf dem heimischen Computer in einem bereits installierten
+Webserver testen.
+
+<div class="p"><!----></div>
+
+<h2>Aufbau von Typo3</h2>
+
+
+Das CMS basiert auf PHP. Die Dateien werden auf einem Webserver
+abgelegt.
+Inhalte, die auf 
+den Webseiten angezeigt werden sollen, werden in Datenbanken
+gespeichert.
+
+<div class="p"><!----></div>
+Typo3 CMS ist in zwei Hauptteile aufgeteilt. Das sogenannte Backend ist der
+Bereich, in dem sich der Administrator oder Redakteur anmeldet, um 
+an der Seite
+zu arbeiten und Konfigurationen im Hintergrund vorzunehmen. Der Frontend-Bereich
+ist die veröffentlichte Webseite.
+
+<div class="p"><!----></div>
+Im Backend werden durch die jeweiligen Verantwortlichen unter anderem folgende Aufgaben durchgeführt: 
+das Erstellen von Inhalten (z.&nbsp;B. Texte, Bilder, Videos, Tabellen, Links zu anderen Webseiten),
+das Setzen von Zugriffsrechten, das Ein- und Ausblenden von Inhalten, wie zum Beispiel Statistiken, und
+vieles mehr. Mit den sogenannten Erweiterungen werden z.&nbsp;B. Gästebücher,
+Nachrichtenbereiche, Community-Funktionen, Newsletter oder Foren erstellt. Es
+sind einem fast keine Grenzen gesetzt, bei dem was man machen und darstellen möchte. Von
+einfachen bis hin zu komplexen Inhalten ist dieses CMS perfekt für die
+Darstellung von
+Webseiten geeignet.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-backend-loginscreen.png" alt="typo3-backend-loginscreen.png" style="max-width:100%" /><br /><em>Login-Bereich zum Backend von Typo3 CMS 7.6.0.</em><br />
+
+<div class="p"><!----></div>
+Die Inhalte der Webseite können in Typo3 getrennt vom Design erstellt werden.
+Wie bei fast allen modernen Systemen kann das Design angepasst werden, ohne den
+Inhalt zu verändern. Jede einzelne Seite kann ein eigenständiges Template
+erhalten.
+
+<div class="p"><!----></div>
+
+<h2>Installation des Systems</h2>
+
+
+Da die Dateien des Systems lokal oder online auf einem Webserver gespeichert
+werden und über den Webbrowser abrufbar sind, ist vor einer Installation
+zu
+prüfen, welche Systemvoraussetzungen der Server haben muss, um mit Typo3 CMS
+ohne Fehler arbeiten zu können. Diese sind wie folgt (Stand Dezember 2015): PHP
+in den Versionen 5.5.x – 5.6.x, PHP memory_limit von 128M, PHP
+max_execution_time von 240&nbsp;s und Internetbrowser wie der Internet
+Explorer 9
+oder höher sowie aktuelle Browser anderer Hersteller.
+
+<div class="p"><!----></div>
+Im Verzeichnis <b><tt class="big">/var/</tt></b> der lokalen Verzeichnisstruktur
+des GNU/Linux-Betriebssystems
+befindet sich der Ordner <b><tt class="big">www</tt></b>. In diesem Ordner kann ein Benutzer mit entsprechenden Zugriffsberechtigungen (Achtung!! Sinnvoll einsetzen!) nun den Ordner <b><tt class="big">typo3</tt></b>
+erstellen, der alle Dateien des CMS speichert. Das kann man über den
+Dateimanager machen oder über die Konsole.
+
+<div class="p"><!----></div>
+Für das Herunterladen und Installieren der CMS-Dateien benötigt man nun die
+Konsole. Am besten man öffnet diese mit Root-Rechten und wechselt in den Ordner
+<b><tt class="big">typo3</tt></b>:
+
+<div class="p"><!----></div>
+
+
+
+
+
+<div class="command">$ cd /var/www/typo3<br />
+/var/www/typo3</div>
+
+<div class="p"><!----></div>
+
+
+Da Typo3 CMS regelmäßig Sicherheitsupdates und Fehlerbehebungen bekommt, ist es
+ratsam, die herunterzuladenen Dateien direkt von der Downloadseite von Typo3&nbsp;<a href="http://www.typo3.org/download/">[4]</a>
+zu speichern. 
+
+<div class="p"><!----></div>
+Die folgende Anweisung holt den Code vom Server und speichert die zu
+entpackenden Dateien im aktuellen Arbeitsverzeichnis (<b><tt class="big">/var/www/typo3</tt></b>).
+
+<div class="p"><!----></div>
+
+
+
+
+
+<div class="command"># wget get.typo3.org/6.2 -O typo3_src-6.2.x.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+Damit Typo3 einwandfrei funktioniert, 
+benötigt das System Symlinks auf das
+Verzeichnis <b><tt class="big">typo3</tt></b>, 
+die <b><tt class="big">index.php</tt></b> und den Ordner <b><tt class="big">typo3_src</tt></b>.
+
+<div class="p"><!----></div>
+Die folgenden vier Kommandos erledigen dies am Beispiel der Version Typo3 CMS 7.6.0.
+
+<div class="p"><!----></div>
+
+<div class="command"># cd htdocs<br />
+# ln -s ../typo3_src-7.6.0 typo3_src<br />
+# ln -s typo3_src/index.php index.php<br />
+# ln -s typo3_src/typo3 typo3</div>
+
+<div class="p"><!----></div>
+
+
+Danach muss im Root-Verzeichnis der Installation eine leere Datei mit dem Namen
+<b><tt class="big">FIRST_INSTALL</tt></b> gespeichert werden. Typo3 CMS benötigt dies für die Installation
+des Systems und die Freigabe des Installationswerkzeuges.
+
+<div class="p"><!----></div>
+Zusätzlich wird die <b><tt class="big">.htaccess</tt></b>-Datei in das Hauptverzeichnis der
+Typo3-Installation kopiert.
+
+<div class="p"><!----></div>
+
+<div class="command"># cp typo3_src/_.htaccess .htaccess</div>
+
+<div class="p"><!----></div>
+
+
+Die Struktur der Installation sollte dann so sein.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">typo3_src-7.6.0/<br />
+typo3/typo3_src -&#62; ../typo3_src-7.6.0/<br />
+typo3/typo3 -&#62; typo3_src/typo3/<br />
+typo3/index.php -&#62; typo3_src/index.php<br />
+typo3/.htaccess</div>
+
+<div class="p"><!----></div>
+
+
+Tipp: Mit dem Kommando <b><tt class="big">tree</tt></b> (aus dem gleichnamigen Paket) lässt sich
+die Ordnerstruktur einfach und übersichtlich (in Farbe) auf der Kommandozeile
+überprüfen – auch misslungene Links.
+
+<div class="p"><!----></div>
+Nun kann man die lokale Typo3-Installation durchführen, indem man folgende URL
+im Browser aufruft: <a href="http://localhost/typo3/typo3_src-7.6.0/"><tt class="big">http://localhost/typo3/typo3_src-7.6.0/</tt></a>
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-760-install-systemcheck.png" alt="typo3-760-install-systemcheck.png" style="max-width:100%" /><br /><em>Systemcheck vor der Typo3-Installation.</em><br />
+
+<div class="p"><!----></div>
+Daraufhin sieht man hoffentlich, dass das System bisher richtig installiert ist
+und es keine Fehler gab. Dann kann man weiterklicken. Es kann auch vorkommen,
+dass es zu Notizen kommt, die auf fehlende PHP-Module oder -Einstellungen
+hinweisen.
+
+<div class="p"><!----></div>
+Wenn Fehlermeldungen angezeigt werden, so ist das meistens eine der
+Folgenden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> „<em>PHP OpenSSL extension not working</em>“: Diese Fehlermeldung sagt, dass das Modul OpenSSL nicht konfiguriert ist. Man sollte daraufhin nachschauen, ob das Apache-Modul „ssl_module“ aktiviert ist. In der <b><tt class="big">php.ini</tt></b> muss die Funktion „extension=php_openssl.dll“ aktiviert werden. Ist das auch nicht die Ursache des Fehlers, dann müsste man zum Schluss den Ordner <b><tt class="big">sysext</tt></b> nach den Unterordnern <b><tt class="big">rsaauth</tt></b> und <b><tt class="big">saltedpasswords</tt></b> absuchen, denn diese sind ebenso wichtig.</li>
+<li> „<em>PHP Maximum upload filesize too small upload_max=2M</em>“: In der <b><tt class="big">php.ini</tt></b> sind folgende Änderungen der Upload-Größe vorzunehmen: upload_max_filesize=12M und post_max_size=12M. Man sollte diese Werte nicht zu niedrig halten, sonst wird diese Meldung immer wieder erscheinen&nbsp;<a href="http://haraldwingerter.de/?p=1">[5]</a>.</li>
+<li> „<em>Low PHP script execution time</em>“: Da steht dann meistens ein Wert von „max_execution_time=30“. Ein höherer Wert ist besser, da Typo3 durch die vielen Ressourcen eine längere Zeit zum Laden von Skripten benötigt. Ein guter Wert ist zum Beispiel „240“.</li>
+<li> „<em>PHP extension fileinfo not loaded</em>“: In der <b><tt class="big">php.ini</tt></b> Datei sollte man dann das Semikolon vor „extension=php_fileinfo.dll“ entfernen.</li>
+</ul>
+
+<div class="p"><!----></div>
+Obwohl die Fehlermeldungen angezeigt werden, kann man die Installation
+trotzdem fortführen. Diese Fehler werden auch im sogenannten „Install-
+Tool“ im Backend
+angezeigt und könnten auch dort bearbeitet werden.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Nach jeder Änderung ist es wichtig, den Server neu zu starten. 
+
+<div class="p"><!----></div>
+In der nächsten Maske wählt man die Datenbankverbindung aus. Hierzu benötigt man
+einen Datenbank-Benutzernamen 
+und das 
+dazugehörige
+Passwort. Diese Daten sollte
+man unbedingt lokal wie online einrichten, das erhöht die Sicherheit des
+Systems.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-install-datenbank.png" alt="typo3-install-datenbank.png" style="max-width:100%" /><br /><em>Datenbankverbindungsdaten eingeben.</em><br />
+
+<div class="p"><!----></div>
+Wenn man die richtigen Daten eingegeben hat, wird man zur nächsten Maske
+weitergeleitet, die die Datenbankauswahl zulässt. Dort kann man eine schon
+existierende Datenbank auswählen oder eine neue Datenbank auswählen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-install-datenbankauswahl.png" alt="typo3-install-datenbankauswahl.png" style="max-width:100%" /><br /><em>Datenbankauswahl oder neue Datenbank auswählen.</em><br />
+
+<div class="p"><!----></div>
+Ist das erledigt, wird in der folgenden Einstellungsmaske 
+der erste Backend-Benutzer festgelegt.
+Hier sollte auf sichere Authtifizierungsmerkmale geachtet werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-install-benutzer-erstellen.png" alt="typo3-install-benutzer-erstellen.png" style="max-width:100%" /><br /><em>Backend-Benutzer erstellen und Webseitennamen vergeben.</em><br />
+
+<div class="p"><!----></div>
+Zusätzlich kann ein Seitenname der Typo3-Installation gewählt werden.
+Standard
+ist immer „New TYPO3 site“. Diese Einstellung lässt sich aber jederzeit ändern.
+
+<div class="p"><!----></div>
+Danach wird dem Benutzer die letzte Maske mit Installationsschritten angezeigt. 
+Auf ihr werden drei verschiedene Optionen, von denen eine auszuwählen ist, angezeigt.
+Man kann das Backend von Typo3 CMS mit einem Weiterklick erreichen, 
+
+
+eine
+einfache Testseite automatisch vom System erstellen oder eine komplette und
+größere Beispielseite mit Inhalten und Einstellungen einrichten lassen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-install-paketauswahl.png" alt="typo3-install-paketauswahl.png" style="max-width:100%" /><br /><em>Vorkonfigurierte Distribution oder leere Seite erstellen.</em><br />
+
+<div class="p"><!----></div>
+Egal, welche Option man wählt, der Benutzer wird dadurch sofort im Backend des Systems
+angemeldet und auf dessen Interface weitergeleitet.
+
+<div class="p"><!----></div>
+
+<h2>Typo3 einrichten</h2>
+
+
+Im Backend gibt es eine Menüleiste, die folgende Funktionen
+enthält:
+„<em>Caches löschen</em>“, „<em>Hilfe</em>“, „<em>bereits bearbeitete Dokumente öffnen</em>“,
+„<em>Benutzerkontoeinstellungen</em>“, „<em>Logout</em>“ und „<em>Suchfunktion</em>“.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/typo3-backend-startseite.png" alt="typo3-backend-startseite.png" style="max-width:100%" /><br /><em>Startseite des Backends von Typo3 CMS 7.6.0.</em><br />
+
+<div class="p"><!----></div>
+In der linken Spalte befinden sich verschiedene Funktionen des Systems, um
+Inhalte verwalten und Einstellungen vornehmen zu können.
+
+<div class="p"><!----></div>
+Die Standardsprache des Systems ist Englisch. Da Typo3 CMS weltweit eingesetzt
+wird und auch Benutzer der verschiedenen Sprachen daran arbeiten können, kann man im Backendbereich die eigene Sprache festlegen.
+Das geht ganz einfach. Im Bereich „<em>Admin Tools</em>“ in der linken Menüspalte findet
+man den Punkt „<em>Language</em>“. Klickt man darauf, lädt eine Übersichtsseite mit den
+vielen Sprachen, die das System anbietet. Dort sucht man zum Beispiel „<em>German</em>“
+für Deutsch aus und klickt auf das Plus-Symbol. Nun wird die Seite ins Deutsche
+übersetzt.
+
+<div class="p"><!----></div>
+Doch dadurch ist die deutsche Anzeige noch nicht sichtbar. In der
+„<em>Benutzerkontoeinstellung</em>“, im oberen Menü, kann man auf den „<em>Benutzernamen</em>“ und
+auf „<em>Einstellungen</em>“ klicken. Es öffnet sich die Einstellungsseite, auf der man weiter unten die Sprache auf Deutsch einstellen kann. Erst nach dem
+Abspeichern wird
+die Seite im Backend komplett in deutscher Sprache angezeigt.
+
+<div class="p"><!----></div>
+
+
+
+<h2>TypoScript</h2>
+
+
+Neben der Konfiguration und Einstellung von Inhaltselementen auf der Webseite
+durch die verschiedenen Erweiterungen kann man auch mit der
+Konfigurationssprache TypoScript arbeiten. 
+TypoScript ist ein mächtiges Werkzeug und wird die eingegebenen Konfigurationen
+in ein PHP-Array umwandeln. Dieses wird PHP-Befehle ausführen, die
+bestimmte
+Elemente auf der Seite auch global darstellen können. 
+
+<div class="p"><!----></div>
+
+
+TypoScript wird in einer objektorientierten Syntax geschrieben. Solche Objekte werden durch diverse Code-Wörter und
+Zeilen dargestellt, die man zum Beispiel verwenden kann, um einen Satz wie „Hello World!“
+auszugeben.
+
+<div class="p"><!----></div>
+
+<div class="listing">page = PAGE<br />
+&nbsp;page.10 = TEXT<br />
+&nbsp;page.10.value = Hello World<br />
+&nbsp;page.10.wrap = &lt;h1&#62;|&lt;/h1&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Mit dem <b><tt class="big">page</tt></b>-Objekt wird definiert, was und wie Inhalte auf der Webseite
+dargestellt werden. In der zweiten Zeile des Codeblocks sieht man die Angabe
+<b><tt class="big">TEXT</tt></b>. Der auszugebende Text steht eine
+Zeile darunter und heißt <b><tt class="big">Hello World</tt></b>. Die letzte Zeile konfiguriert die
+Ausgabe des HTML-Quellcodes, der um den Satz herum platziert wird.
+
+<div class="p"><!----></div>
+Das ist allerdings nur ein einfaches Beispiel, um die Ausgabe eines einfachen
+Textes zu veranlassen. Es sind mit TypoScript natürlich auch wesentlich komplexere 
+Darstellungen möglich. 
+<div class="p"><!----></div>
+TypoScript wird auch dazu verwendet, Benutzereinstellungen im Backend
+vorzunehmen oder die weiteren Konfigurationen der Seite einzustellen. Mit „<em>User TSConfig</em>“
+werden Backendbenutzereinstellungen vorgenommen und mit „<em>Page TSConfig</em>“
+die Einstellungen der Seiten und Unterseiten. 
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Als Typo3-Nutzer sollte man sich nicht darauf verlassen, alle Einstellungen und
+Darstellungen mit Erweiterungen zu erledigen. Nicht nur die allgemeine
+Handhabung des Systems muss man verstehen, sondern auch die Art und Weise, wie
+man mit TypoScript arbeitet. 
+<div class="p"><!----></div>
+
+
+Typo3 CMS ist ein System, das man vollständig ausreizen kann. Wenn man dazu
+bereit ist, ein neues und umfassendes CMS kennenzulernen, keine sehr lange
+Einarbeitungszeit scheut und viele Erfolge damit erleben möchte, sollte man
+dieses Produkt ausprobieren. 
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.typo3.org/"><tt class="big">http://www.typo3.org/</tt></a><br />
+[2] <a href="http://typo3.org/about/the-history-of-typo3/"><tt class="big">http://typo3.org/about/the-history-of-typo3/</tt></a><br />
+[3] <a href="https://typo3.org/home/typo3-in-numbers/"><tt class="big">https://typo3.org/home/typo3-in-numbers/</tt></a><br />
+[4] <a href="http://www.typo3.org/download/"><tt class="big">http://www.typo3.org/download/</tt></a><br />
+[5] <a href="http://haraldwingerter.de/?p=1"><tt class="big">http://haraldwingerter.de/?p=1</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Martin Stock</b>
+beschäftigt sich privat mit der
+Erstellung von Webseiten und seit 2007 mit Typo3 CMS.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Typo3&amp;body=freiesMagazin 02/2016%0ATypo3%0AMartin Stock%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Typo3#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_gitlab_continuous_integration" name="fm_16_02_gitlab_continuous_integration">GitLab Continuous Integration</a></font></h1>von Christian Stankowic
+
+<div class="p"><!----></div>
+    <b>M</b><b>it der neuen Hauptversion 8 wurde GitLab&nbsp;<a href="https://about.gitlab.com/">[1]</a> 
+offiziell um eine eigene Continuous Integration 
+(CI&nbsp;<a href="https://de.wikipedia.org/wiki/Continuous_Integration">[2]</a>) Komponente 
+ergänzt, die bisher als dediziertes Projekt gepflegt wurde. Während man 
+früher externe Lösungen wie beispielsweise 
+Jenkins&nbsp;<a href="https://jenkins-ci.org/">[3]</a> verwenden musste, kann man nun 
+gepflegte Projekte leicht automatisiert übersetzen, testen, etc.</b>
+
+<div class="p"><!----></div>
+Doch wozu dient eine CI? CI findet hauptsächlich in der professionellen 
+Anwendungsentwicklung Verwendung und automatisiert maßgeblich Teilschritte 
+zur Programmübersetzung und Erhöhung der Quellcode-Qualität. Um mal einige 
+praktikable Beispiele zu nennen:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Übersetzung von Teilprogrammen</li>
+<li> Zusammensetzen des Gesamtprogramms</li>
+<li> Tests von Teilprogrammen anhand Spezifikationen (Test-Units)</li>
+<li> Datei-Replikation auf andere Systeme (z.&nbsp;B. andere Entwicklungssysteme)</li>
+</ul>
+
+<div class="p"><!----></div>
+Dabei integriert sich die CI in eine Versionsverwaltung, um sich 
+beispielsweise auf die neuesten Commits zu beziehen oder automatisiert auf 
+Code-Änderungen zu reagieren.
+
+<div class="p"><!----></div>
+Ich habe bisher GitLab in Kombination mit Jenkins verwendet, um 
+automatisiert RPM-Pakete für mehrere Enterprise-Linux-Architekturen 
+und
+
+-Versionen zu erstellen. Jenkins bietet dabei gegenüber GitLab CI eindeutig 
+mehr Flexibilität und die größere Feature-Auswahl, ist aber auch deutlich 
+komplexer zu konfigurieren. Bei der Implementation seinerzeit gab es viel 
+Nachlesebedarf.
+GitLab CI ist simpler und dürfte sich deswegen vermutlich 
+nicht für alle Kundengrößen eignen; für das unten stehende Szenario war es 
+aber die bessere Wahl und ließ sich binnen weniger Stunden implementieren 
+und testen.
+
+<div class="p"><!----></div>
+Die meisten CI-Lösungen verwenden auf einem oder mehreren Build-Systemen 
+entsprechende Agenten bzw. Runner-Prozesse, um die Prozesse (Code 
+kompilieren, Dateien verteilen …) zu steuern. Während Jenkins eine 
+Java-Anwendung nutzt, bietet GitLab CI mehrere Runner an.
+
+<div class="p"><!----></div>
+
+<h2>Vorbereitungen</h2>
+
+
+Um GitLab CI zu verwenden, muss GitLab in der Version 8.0 oder höher 
+installiert sein. Das Feature wird projektweise aktiviert und konfiguriert. 
+Für die Steuerung der einzelnen Prozesse wird eine simple YAML-Datei mit dem 
+Namen <b><tt class="big">.gitlab-ci.yml</tt></b> im Hauptordner des Projekts erstellt – dazu gleich 
+mehr.
+
+<div class="p"><!----></div>
+
+<h3>Projekt-Einstellungen</h3>
+
+
+Um CI für ein GitLab-Projekt zu aktivieren, genügen die folgenden Schritte:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> Auswahl des Projekts, Anklicken von „<em>Settings</em>“ und „<em>Project Settings</em>“.</li>
+<li> Anklicken von „<em>Builds</em>“ und „<em>Save Changes</em>“.</li>
+<li> Auswahl von „<em>CI Settings</em>“, um erweiterte Parameter zu setzen. Dazu zählen 
+u.&nbsp;a. Timeouts und automatische Builds.</li>
+<li> Anklicken von „<em>Save Changes</em>“.</li>
+<li> Auswahl von „<em>Runners</em>“, Notieren/Kopieren der „<em>CI-URL</em>“ und dem „<em>CI-Token</em>“ – diese
+Informationen werden später benötigt, um die Runner zu registrieren.</li>
+</ol>
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/GitLabCIConfig.jpg" alt="GitLabCIConfig.jpg" style="max-width:100%" /><br /><em>CI Runner-Konfiguration.</em><br />
+
+<div class="p"><!----></div>
+Zur Steuerung der
+einzelnen Schritte auf dem Runner muss die 
+YAML-Konfiguration erstellt werden. In dieser werden einzelne Teilschritte, 
+Skripte und eventuelle Abhängigkeiten zu Runnern anhand von Tags definiert.
+
+<div class="p"><!----></div>
+Ein einfaches Beispiel sieht wie folgt aus:
+
+<div class="p"><!----></div>
+
+<div class="listing">before_script:<br />
+&nbsp;&nbsp;- hostname<br />
+<br />
+build:<br />
+&nbsp;&nbsp;script:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- "javac *.java"<br />
+<br />
+clean:<br />
+&nbsp;&nbsp;script:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- "find . -type f -name '*.tmp' -exec rm {} \;"</div>
+
+<div class="p"><!----></div>
+
+
+In diesem Beispiel werden zwei Jobs definiert:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b><tt class="big">build</tt></b> – Skript zur Kompilierung aller Java-Quellcodes im aktuellen 
+Verzeichnis</li>
+<li> <b><tt class="big">clean</tt></b> – Entfernen aller Dateien, die mit <b><tt class="big">.tmp</tt></b> enden</li>
+</ul>
+
+<div class="p"><!----></div>
+Vor dem Ausführen der Jobs wird das <b><tt class="big">hostname</tt></b>-Kommando ausgeführt. Der Job 
+wird auf einem System aus dem Pool für das Projekt verfügbarer Runner 
+ausgeführt. Durch die Verwendung von Tags kann man dieses Verhalten einschränken:
+
+<div class="p"><!----></div>
+
+<div class="listing">before_script:<br />
+&nbsp;&nbsp;- hostname<br />
+<br />
+build_stable_jars:<br />
+&nbsp;&nbsp;script:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- "javac *.java"<br />
+&nbsp;&nbsp;tags:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- java<br />
+&nbsp;&nbsp;only:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- master<br />
+<br />
+build_hipster_swag:<br />
+&nbsp;&nbsp;script:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- "bundle exec swag"</div>
+
+<div class="p"><!----></div>
+
+
+
+
+
+In diesem Beispiel gibt es erneut zwei Jobs:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b><tt class="big">build_stable_jars</tt></b> – Übersetzen von Java-Quellcodes aus der master-Branch 
+des Repositorys; wird lediglich auf Runnern mit dem <b><tt class="big">java</tt></b>-Tag ausgeführt.</li>
+<li> <b><tt class="big">build_hipster_swag</tt></b> – Paketieren von Ruby-Anwendungen; kann auf allen 
+Runnern ausgeführt werden und beschränkt sich auf keinen Branch</li>
+</ul>
+
+<div class="p"><!----></div>
+Auf der GitLab-Seite gibt es weitere 
+Beispiele&nbsp;<a href="http://doc.gitlab.com/ce/ci/yaml/">[4]</a>.
+
+<div class="p"><!----></div>
+
+<h3>Runner-Einstellungen</h3>
+
+
+Für die Runner-Anwendung empfiehlt sich die Erstellung eines dedizierten 
+System-Benutzers. Für diesen Benutzer müssen auch ein Passwort gesetzt und 
+ein SSH-Key generiert werden. Beim SSH-Key ist wichtig, dass keine 
+Passphrase angegeben wird, um ein passwortloses Steuern zu ermöglichen. 
+Diese Informationen werden nachher in GitLab hinterlegt, um den 
+Runner-Prozess zu kontrollieren:
+
+<div class="p"><!----></div>
+
+<div class="command"># useradd --comment "GitLab service user" --system -m su-gitlab-ci<br />
+# passwd su-gitlab-ci<br />
+# su - su-gitlab-ci<br />
+$ ssh-keygen</div>
+
+<div class="p"><!----></div>
+
+
+Für GitLab CI stehen mehrere 
+Clients&nbsp;<a href="https://about.gitlab.com/gitlab-ci/#gitlab-runner">[5]</a> zur 
+Verfügung. Neben dem offiziellen, in Go entwickelten Client gibt es auch 
+einen in Scala/Java&nbsp;<a href="https://github.com/nafg/gitlab-ci-runner-scala">[6]</a>.
+
+<div class="p"><!----></div>
+
+
+Der offizielle Client unterstützt neben Windows, OS X und FreeBSD auch 
+Debian- und Red-Hat-Enterprise-Linux-basierende 
+Distributionen&nbsp;<a href="https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/linux-repository.md">[7]</a>.
+Alternativ gibt es auch distributionsunabhängige 
+Binärpakete&nbsp;<a href="https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/linux-manually.md">[8]</a>. 
+Für unterstützte Linux-Distributionen empfiehlt GitLab die Verwendung eines 
+Skripts zur automatischen Konfiguration der Paketquellen. Hier im Artikel 
+wird diese Konfiguration selbst vorgenommen und die in der Tabelle 
+aufgeführten Repository-URLs zur Konfiguration der Paketquellen verwendet.
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Repository-URLs zur Konfiguration der Paketquellen</b></td></tr>
+<tr><td><b>Release/Architektur</b> </td><td align="left"><b>URL</b> </td></tr>
+<tr><td>Enterprise Linux 7, x86_64 </td><td align="left"><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner/el/7/x86_64"><tt class="big">https://packages.gitlab.com/runner/gitlab-ci-multi-runner/el/7/x86_64</tt></a> </td></tr>
+<tr><td>Enterprise Linux 6, x86_64 </td><td align="left"><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner/el/6/x86_64"><tt class="big">https://packages.gitlab.com/runner/gitlab-ci-multi-runner/el/6/x86_64</tt></a> </td></tr>
+<tr><td>Enterprise Linux 6, i686 </td><td align="left"><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner/el/6/i686"><tt class="big">https://packages.gitlab.com/runner/gitlab-ci-multi-runner/el/6/i686</tt></a> </td></tr>
+<tr><td>Fedora 23, x86_64 </td><td align="left"><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/23/x86_64"><tt class="big">https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/23/x86_64</tt></a> </td></tr>
+<tr><td>Fedora 23, i686 </td><td align="left"><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/23/i686"><tt class="big">https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/23/i686</tt></a> </td></tr>
+<tr><td>Fedora 22, x86_64 </td><td align="left"><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/22/x86_64"><tt class="big">https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/22/x86_64</tt></a> </td></tr>
+<tr><td>Fedora 22, i686 </td><td align="left"><a href="https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/22/i686"><tt class="big">https://packages.gitlab.com/runner/gitlab-ci-multi-runner/fedora/22/i686</tt></a> </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+Der GPG-Key für die Paketsignierung ist unter
+<a href="https://packages.gitlab.com/gpg.key"><tt class="big">https://packages.gitlab.com/gpg.key</tt></a> zu finden.
+
+<div class="p"><!----></div>
+
+
+
+
+
+
+Zur Installation genügt der folgende Yum-Aufruf:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># yum install gitlab-ci-multi-runner</div>
+
+<div class="p"><!----></div>
+
+
+
+
+Nachdem alle Runner installiert wurden, müssen diese mit GitLab registriert 
+werden. Dazu wird das <b><tt class="big">gitlab-runner</tt></b>-Kommando auf dem Build-System 
+ausgeführt. Während der Konfiguration werden die CI-URL und der dazugehörige 
+Token angegeben. Darüber hinaus können pro System Tags vergeben werden. 
+Insbesondere bei Projekten, die auf unterschiedlichen Systemen erstellt 
+werden sollen (z.&nbsp;B. RPM-Paketebau) ist das äußerst hilfreich. Zur Steuerung 
+des Runners stehen lokale Shells, SSH, Parallels (für VMs) oder Docker zur 
+Verfügung. Bei der Verwendung von SSH müssen gültige Login-Daten und der 
+zuvor generierte SSH-Key angegeben werden.
+
+<div class="p"><!----></div>
+<div class="command"># gitlab-runner register
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/ci):
+http://gitlab.localdomain.loc/ci
+Please enter the gitlab-ci token for this runner:
+xxx
+Please enter the gitlab-ci description for this runner:
+[gitlab.localdomain.loc]:
+Please enter the gitlab-ci tags for this runner (comma separated):
+rpm764,generic
+INFO[0035] 7ab95543 Registering runner... succeeded
+Please enter the executor: ssh, shell, parallels, docker, docker-ssh:
+ssh
+Please enter the SSH server address (eg. my.server.com):
+gitlab.localdomain.loc
+Please enter the SSH server port (eg. 22):
+22
+Please enter the SSH user (eg. root):
+su-gitlab-ci
+Please enter the SSH password (eg. docker.io):
+myPassword
+Please enter path to SSH identity file (eg. /home/user/.ssh/id_rsa):
+/home/su-gitlab-ci/.ssh/id_rsa
+INFO[0143] Runner registered successfully. Feel free to start it, but if  it's running already the config should be automatically reloaded!
+</div>
+
+<div class="p"><!----></div>
+
+<h2>Der erste Build</h2>
+
+
+Zeit, mit etwas Einfachem zu beginnen. Als Beispiel dient eine einfache 
+kleine C-Anwendung namens <b><tt class="big">test.c</tt></b>:
+
+<div class="p"><!----></div>
+
+<div class="listing">#include&lt;stdio.h&#62;<br />
+<br />
+int main() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;printf("GitLab CI rocks!\n");<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br />
+}</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-02-listings/test.c">test.c</a></i>
+
+<div class="p"><!----></div>
+
+
+Die CI-Konfigurationsdatei <b><tt class="big">.gitlab-ci.yml</tt></b> sieht wie folgt aus:
+
+<div class="p"><!----></div>
+
+<div class="listing">build:<br />
+&nbsp;&nbsp;script:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- "rm *.out || true"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;- "gcc *.c"</div>
+
+<div class="p"><!----></div>
+
+
+In diesem Beispiel wird ein Job <b><tt class="big">build</tt></b> definiert, der zwei Kommandos 
+ausführt. Das erste Kommando löscht eventuell vorher übersetzte
+
+C-Programme, 
+während der zweite Aufruf den Quellcode übersetzt.
+
+<div class="p"><!----></div>
+Nach einem erfolgten Commit wird automatisch die CI ausgelöst. Ersichtlich 
+ist das durch einen Eintrag links im „<em>Builds</em>“-Menü – hier ist im Idealfall 
+eine 1 zu sehen (für einen aktuell laufenden
+Build-Prozess). Ein Klick auf 
+das Menü öffnet die Übersicht aktueller und vergangener Builds. Mit einem 
+Klick auf einzelne Builds lassen sich 
+Konsolenausgaben und Git-Informationen 
+(Commit-Nummer, Branch, Autor) anzeigen. Per Mausklick auf das entsprechende 
+Symbol lassen sich Builds wiederholen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/GitLabCI1.jpg" alt="GitLabCI1.jpg" style="max-width:100%" /><br /><em>Übersicht aktueller und vergangener Builds.</em><br />
+
+<div class="p"><!----></div>
+GitLab bietet auch die Möglichkeit, Build zeitgesteuert auszuführen – z.&nbsp;B. 
+spätestens alle fünf Stunden. In diesem Fall würde nach einer gewissen Zeit 
+ein Build ausgelöst werden, sofern kein Commit erfolgt. Dieses Verhalten 
+kann in den Projekt-Einstellungen unterhalb „<em>CI Settings</em>“ konfiguriert 
+werden („<em>Build Schedule</em>“).
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/GitLabCI3.jpg" alt="GitLabCI3.jpg" style="max-width:100%" /><br /><em>Einbindung der <b><tt class="big">README.md</tt></b>-Datei des Repositorys.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+
+
+Mit meinem Jenkins gab es häufig Probleme – nicht zuletzt wegen Java. Häufige 
+Updates und Re-Konfigurationen waren die Folge. GitLab CI
+integriert sich 
+wunderbar in die Oberfläche, die ohnehin schon zum Entwickeln benutzt wird. 
+Das bedeutet weniger Administrations- und Verwaltungsaufwand.
+Die integrierte CI-Lösung ist ggf. nicht allen Anforderungen 
+gewachsen, aber vor allem für kleinere Setups ist sie ideal.
+
+<div class="p"><!----></div>
+
+
+Auf der GitLab-Webseite gibt es weitere 
+Infos&nbsp;<a href="http://doc.gitlab.com/ce/ci/quick_start/">[9]</a>.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://about.gitlab.com/"><tt class="big">https://about.gitlab.com/</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Continuous_Integration"><tt class="big">https://de.wikipedia.org/wiki/Continuous_Integration</tt></a><br />
+[3] <a href="https://jenkins-ci.org/"><tt class="big">https://jenkins-ci.org/</tt></a><br />
+[4] <a href="http://doc.gitlab.com/ce/ci/yaml/"><tt class="big">http://doc.gitlab.com/ce/ci/yaml/</tt></a><br />
+[5] <a href="https://about.gitlab.com/gitlab-ci/#gitlab-runner"><tt class="big">https://about.gitlab.com/gitlab-ci/#gitlab-runner</tt></a><br />
+[6] <a href="https://github.com/nafg/gitlab-ci-runner-scala"><tt class="big">https://github.com/nafg/gitlab-ci-runner-scala</tt></a><br />
+[7] <a href="https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/linux-repository.md"><tt class="big">https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/linux-repository.md</tt></a><br />
+[8] <a href="https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/linux-manually.md"><tt class="big">https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/blob/master/docs/install/linux-manually.md</tt></a><br />
+[9] <a href="http://doc.gitlab.com/ce/ci/quick_start/"><tt class="big">http://doc.gitlab.com/ce/ci/quick_start/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Christian Stankowic</b>&nbsp;(<a href="http://www.stankowic-development.net/">Webseite</a>)
+beschäftigt sich seit 2006 mit Linux. Als Fachinformatiker widmet er sich seit 2009 u.&nbsp;a.
+RHEL/CentOS, Spacewalk und Icinga.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=GitLab Continuous Integration&amp;body=freiesMagazin 02/2016%0AGitLab Continuous Integration%0AChristian Stankowic%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=GitLab Continuous Integration#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_steam_controller" name="fm_16_02_steam_controller">Review: Steam Controller</a></font></h1>von Robert Kurz
+
+<div class="p"><!----></div>
+    <b>M</b><b>it dem Steam Controller&nbsp;<a href="http://store.steampowered.com/universe/controller">[1]</a> 
+möchte Valve seine Steamboxen mit Steam OS wohnzimmertauglich machen. Ob die 
+außergewöhnlichen Bedienkonzepte auch unter Ubuntu funktionieren, soll in 
+diesem Artikel geklärt werden.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Review: Steam Controller“ erschien erstmals in 
+Ikhaya auf 
+ubuntuusers.de&nbsp;<a href="https://ikhaya.ubuntuusers.de/2015/12/29/review-steam-controller/">[2]</a>.</i>
+
+<div class="p"><!----></div>
+Alles was Valve&nbsp;<a href="http://valvesoftware.com/">[3]</a> anfasst wird zu Gold, so war 
+zumindest die langläufige Meinung. Denn egal worum es geht, ein DRM-System 
+wie Steam, Mikrotransaktionen in Spielen wie Dota 2, Counterstrike und Team Fortress 2, 
+aber auch E-Sport-Veranstaltungen mit Millionenpreisgeldern wie 
+„The International“ werden immer zu Erfolgen. Doch mit Steam OS und den 
+zugehörigen Steamboxen sowie dem Controller könnte sich Valve etwas 
+übernommen haben.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/steamcontroller.jpg" alt="steamcontroller.jpg" style="max-width:100%" /><br /><em>Der Steam-Controller.</em><br />
+
+<div class="p"><!----></div>
+Obwohl mittlerweile viele AAA-Spiele für Linux erscheinen – was zweifelsohne 
+ein Erfolg des Unternehmens aus Seattle ist – wird ihr Betriebssystem noch lange 
+nicht von der breiten Masse angenommen.
+
+<div class="p"><!----></div>
+Valve verfolgt mit dem neuen Steam Controller ebenfalls ein ambitioniertes 
+Ziel: Er soll als erster Controller so präzise wie Maus und Tastatur sein. 
+Kann er diese Anforderungen wirklich erfüllen?
+
+Wie schwierig ist es, ihn 
+unter Linux zu betreiben?
+
+<div class="p"><!----></div>
+
+<h2>Aufbau</h2>
+
+
+Für den Aufbau geht Valve einen unkonventionellen Weg, denn statt der 
+Analogsticks sind in dem Controller zwei Touch-/Trackpads verbaut. Damit 
+kann entweder eine Mausbewegung durchgeführt oder eine Controllerbedienung 
+wie ein Analogstick oder „Digipad“ emuliert werden. Für das nötige Feedback 
+sorgen zwei Motoren unter den Trackpads, die mit Vibrationen ein haptisches 
+Feedback erzeugen. Die Stärke der Vibration lässt sich in den Einstellungen 
+verändern und alternativ auch komplett abschalten. Eine auf den ersten Blick 
+unsichtbare Komponente stellt der Gyrosensor dar. 
+Mit ihm sollen sich vor 
+allem First-Person-Spiele besser steuern lassen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/steamcontroller-trackpad.jpg" alt="steamcontroller-trackpad.jpg" style="max-width:100%" /><br /><em>Das Trackpad des Controllers.</em><br />
+
+<div class="p"><!----></div>
+Neben dieser auffälligen Neuerung hat Valve auch an anderen Stellen das 
+konventionelle 
+
+Controllerdesign über den Haufen geworfen. Auf der Rückseite 
+verbergen sich zwei große Tasten, die mit den Ring- oder Zeigefingern 
+bedient werden können.
+
+<div class="p"><!----></div>
+Ganz nett, aber nicht weltbewegend, ist zudem die Möglichkeit, den Controller 
+sowohl kabellos als auch über ein 
+MicroUSB-Kabel mit dem Computer zu 
+verbinden. Das erspart die Notwendigkeit, ein eigenes Adapterkabel für den 
+Controller kaufen zu müssen, wie es bei einigen Konkurrenten der Fall ist.
+
+<div class="p"><!----></div>
+Bei allem anderen hat sich Valve auf bewährte Konzepte verlassen.
+Die Schultertasten haben einen 
+angenehmen Widerstand und sind ergonomisch an die Form eines gekrümmten 
+Fingers angepasst. Auch die  vier üblichen Aktionstasten sind vorhanden und 
+mit den Buchstaben A, B, X und Y 
+beschriftet.
+Mittig angeordnet hat der Controller zwei Tasten.
+Mit der rechten lässt sich das jeweilige Spielmenü öffnen,
+die linke ist meist frei belegbar. Zwischen 
+ihnen befindet sich der An-/Aus-Schalter mit einem beleuchteten Steam-Logo,
+der in Spielen das Steam-Overlay öffnet.
+
+<div class="p"><!----></div>
+Zu guter Letzt hat auch der Steam Controller einen Analogstick spendiert 
+bekommen, der sich leicht versetzt unter dem linken Trackpad befindet.
+
+<div class="p"><!----></div>
+Hinter den auf der Rückseite befindlichen Tasten steckt auf jeder Seite ein 
+Batteriefach für jeweils eine AA-Batterie. Diese werden mit einem 
+durchdachten Mechanismus an ihrem Platz gehalten. Nett wäre es gewesen, 
+anstatt der Batterien zwei Akkus mitzuliefern, was bei dem Preis möglich 
+gewesen sein sollte. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/steamcontroller-rueckseite.jpg" alt="steamcontroller-rueckseite.jpg" style="max-width:100%" /><br /><em>Die Rückseite des Steam Controllers.</em><br />
+
+<div class="p"><!----></div>
+Generell macht die Verarbeitung des Controllers einen sehr guten Eindruck; 
+lediglich die drei mittigen Tasten könnten einen etwas festeren Druckpunkt 
+haben.
+
+<div class="p"><!----></div>
+
+<h2>Verbindung</h2>
+
+
+Der Steam Controller verbindet sich wahlweise über einen Micro-USB-Anschluss 
+oder kabellos mit dem PC. Ein USB-Empfänger sowie ein Verstärker für längere 
+Verbindungen werden mitgeliefert. Die Reichweite des Controllers ist 
+vollkommen ausreichend; er funkt sogar durch Wände noch sehr stabil. Das 
+enthaltene USB-Kabel ist 
+allerdings unbrauchbar, da es mit 1,5 Meter Länge 
+vor allem für den Wohnzimmereinsatz viel zu kurz ist. Als Micro-USB-Kabel 
+findet es aber auch bei anderen Geräten eine neue Verwendung.
+
+<div class="p"><!----></div>
+Ob man gleichzeitig mehrere Controller an einem Gerät benutzen kann, konnte 
+nicht getestet werden. Zumindest bei der Benutzung von mehreren 
+unterschiedlichen Controllern an einem System kann es zu Problemen bei 
+unterschiedlichen Tastenbelegungen kommen. 
+
+<div class="p"><!----></div>
+
+<h2>Big-Picture-Modus ist Pflicht</h2>
+
+
+Der „Big-Picture-Modus“ ist eine Bedienoberfläche im Vollbild, die besonders 
+auf die Steuerung mit Controllern ausgelegt ist. Sie ähnelt der 
+Bedienoberfläche des KODI-Mediencenters&nbsp;<a href="http://kodi.tv/">[4]</a> (ehemals XBMC). 
+In diesem Modus sind sowohl der Steam Store, die eigene Spielebibliothek, 
+der Community-Hub, als auch ein eigener rudimentärer Browser enthalten. Der 
+Big-Picture-Modus lässt sich sowohl mit dem Steam Controller als auch mit 
+jedem anderen gängigen Controller bedienen. 
+An vielen Stellen fühlt sich die Bedienoberfläche für PC-Nutzer des 
+Steam-Clients noch sehr beschränkt an. Auch dass der Zugriff auf eine 
+Kommandozeile nicht möglich ist, ist in dem Fall wohl selbstredend.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/steamcontroller-bpm.jpg" alt="steamcontroller-bpm.jpg" style="max-width:100%" /><br /><em>Der Big-Picture-Modus.</em><br />
+
+<div class="p"><!----></div>
+Der Controller lässt sich seit einem Update vor einigen Wochen zwar indirekt 
+auch ohne Steam benutzen. Allerdings wird er außerhalb von Steam kaum von 
+Spielen nativ unterstützt. Zudem kann die Tastenbelegung nur über Steam im 
+Big-Picture-Modus umgestellt werden. Deshalb ist der Einsatz des Controllers 
+ohne den Wohnzimmermodus des Steam-Clients nur eingeschränkt möglich.
+
+<div class="p"><!----></div>
+Um ein steamfremdes Spiel auch mit dem Steam Controller spielen zu können, muss man 
+es im Menü über den Punkt „<em>Ein steamfremdes Spiel hinzufügen</em>“ verknüpfen. 
+Danach kann es auch über den 
+Big-Picture-Modus gespielt und die Tastenbelegung über das Menü umgestellt 
+werden. 
+
+<div class="p"><!----></div>
+Hat man den Modus erst einmal aktiviert, entfaltet der Steam Controller sein 
+volles Potenzial. Die Navigation mit dem rechten Trackpad und der rechten 
+Schultertaste geht leicht von der Hand. Das ist nach einer kurzen 
+Eingewöhnungszeit deutlich komfortabler als mit einem herkömmlichen 
+Controller durch lange Listen zu navigieren. Die Genauigkeit der 
+Maussteuerung erreicht der Controller bisher noch nicht.
+
+<div class="p"><!----></div>
+Durchdacht ist auch das Schreiben mit dem Steam Controller. Dazu wird die 
+Tastatur auf beide Touchpads aufgeteilt und die Buchstaben werden mit einem 
+einfachen Druck auf die entsprechende Stelle des Trackpads ausgeführt. Auch 
+das ist deutlich komfortabler als das Auswählen der einzelnen Buchstaben mit 
+dem Analogstick wie es bisher bei handelsüblichen Controllern der Fall war. 
+Mit etwas Übung geht das Schreiben von Nachrichten recht schnell von der 
+Hand. Sobald es sich dabei allerdings um mehr als ein paar Sätze handelt ist 
+ein Griff zur Tastatur trotzdem sehr verlockend. Das Wechseln zwischen 
+Tastatur und Controller ist immer möglich und auch die Maus bleibt die ganze 
+Zeit aktiviert. Für den normalen Gebrauch reicht der Controller allerdings 
+vollkommen aus.
+
+<div class="p"><!----></div>
+Doch nun zu einem der laut Valve weiteren Alleinstellungsmerkmale. In der 
+Präsentation des 
+
+Controllers wird mit dem hochtrabenden Slogan
+„<em>fully customizable control schemes</em>“
+geworben – und zumindest damit behält die 
+Marketingabteilung der Spieleplattform recht. Jeder Button lässt sich 
+beliebig belegen und auch für die beiden Trackpads gibt es unzählige 
+Konfigurationsmöglichkeiten. Ob das alles sinnvoll ist, ist natürlich eine 
+ganz andere Frage. Doch alleine die Möglichkeit, so viele Einstellungen zu 
+haben, ist für die „Frickler“ unter den Spielern ein wahrer Segen. 
+Ungeduldige Spieler können über den Big-Picture-Modus auch die 
+Konfigurationen anderer 
+Spieler übernehmen. Leider lassen sich diese 
+jedoch nicht nach Bewertungen sortieren. So müssen Spieler auch hier 
+viel ausprobieren, welche Einstellungen am besten zu ihnen passen. Seit 
+einem Update wird bei der Auswahl der Community-Profile immerhin die 
+Anzahl der Downloads eines bestimmten Profils angezeigt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-02-bilder-Dateien/steamcontroller-settings.jpg" alt="steamcontroller-settings.jpg" style="max-width:100%" /><br /><em>Die Einstellungsmöglichkeiten.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Linux-Kompatibilität</h2>
+
+
+Egal ob Windows oder Linux, der Steam Controller lässt sich unter beiden 
+Systemen problemlos via Plug&amp;Play verwenden. Sobald der kabellose Adapter 
+eingesteckt ist, lässt sich der Steam Controller über den Valve-Button 
+anschalten. Wenn der Big-Picture-Modus gestartet ist, lässt sich mit dem 
+Controller potenziell jedes der aktuell 
+3352&nbsp;<a href="http://store.steampowered.com/search/?sort_by=Name&amp;sort_order=ASC&amp;os=linux">[5]</a>
+linuxkompatiblen Spiele steuern. Wer auf Nummer sicher gehen möchte, greift 
+lieber nur zu Spielen, die bereits eine native Controller-Unterstützung 
+anbieten. Unter diesem Kriterium bleiben noch knapp 
+1100&nbsp;<a href="http://store.steampowered.com/search/?sort_by=Name&amp;sort_order=ASC&amp;os=linux#sort_by=Name&amp;category2=28&amp;os=linux&amp;page=1">[6]</a> 
+Spiele zur Auswahl. Die Auswahl der AAA-Titel mit Linux-Unterstützung ist 
+allerdings immer noch sehr gering.
+
+<div class="p"><!----></div>
+
+<h2>Allgemeine Erfahrungen</h2>
+
+
+Mit einem Preis von etwa 55 Euro plus Versandkosten ist der Steam Controller 
+definitiv kein Schnäppchen, auch wenn Microsoft mit seinem neuen 
+„Elite-Controller“&nbsp;<a href="http://www.heise.de/-2721411">[7]</a> in ganz andere Preissphären 
+vorstößt. Für den Preis fühlt sich Valves Controller ordentlich verarbeitet 
+an. Einige einzelne Buttons könnten allerdings einen etwas festeren 
+Druckpunkt haben.
+
+<div class="p"><!----></div>
+Die verbauten Touchpads überraschen sowohl in positiver als auch negativer 
+Hinsicht. Negativ ist, dass der Steam Controller in First-Person-Spielen in 
+einigen Fällen sogar noch schlechter zu bedienen ist als ein  
+herkömmlicher Controller. Das war beispielsweise bei Bioshock Infinite der 
+Fall. In Portal 2 schlug sich der Controller recht wacker, alles andere wäre 
+für ein hauseigenes Spiel auch ziemlich peinlich. Der im Controller verbaute 
+Bewegungssensor kann bei einigen Shootern zwar hilfreich sein, um kleine 
+Korrekturbewegungen zum genaueren Zielen zu machen, gerade gegenüber dem 
+Zielen mit der Maus ist diese Methode trotzdem recht langsam.
+
+<div class="p"><!----></div>
+Seine Stärken konnte der Controller vor allem in Rundenstrategiespielen und 
+anderen eher langsamen Titeln entfalten. Paradebeispiele hierbei sind vor 
+allem „Civilisation 5“ und das Indiespiel „Papers, Please“ (siehe 
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 06/2014&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2014-06">[8]</a>). 
+Erstaunlich gut funktionierte außerdem die Weltraumsimulation „Elite 
+Dangerous“, auch wenn dieser Titel leider nicht für Linux erhältlich ist.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Der Steam Controller funktioniert unter Linux besser als gedacht. Das 
+Bedienkonzept mit den zwei Trackpads ist ein sehr guter Ansatz und 
+funktioniert vor allem in der Bedienung des Big-Picture-Modus sehr gut. 
+Weniger gut ist die Implementierung in den Spielen. Auch wenn die Bedienung 
+etwas besser funktioniert als mit einem herkömmlichen Controller, gibt es 
+immer noch zu viele Totalausfälle à la Dota 2, die sich mit einem Controller 
+etwa so gut spielen wie auf einem USB-Toaster. Doch für das Genre der 
+MOBAs&nbsp;<a href="https://de.wikipedia.org/wiki/Multiplayer_Online_Battle_Arena">[9]</a> 
+ist der 
+Controller nicht gemacht. Definitiv auch nicht für reaktionsschnelle Shooter 
+ohne „aim assist“ im Stil von Battlefield, Counterstrike oder Quake. Eine 
+zum Test gespielte Runde Counterstrike im Matchmaking endete mit zwei Kills 
+und einem Downrank. Selbst mit dem seit einiger Zeit verbesserten 
+Gyrosensor zieht man mit dem Controller gegen gleichwertige Spieler mit Maus 
+und Tastatur meistens den kürzeren.
+
+<div class="p"><!----></div>
+Seine vollen Fähigkeiten entfaltet der Controller erst bei 
+controlleroptimierten Spielen oder Rundenstrategietiteln wie Civilisation 5. 
+Maus und Tastatur bleiben trotzdem immer unangefochten die besten 
+Eingabegeräte. Das Eingabegerät von Valve eignet sich dafür gut als 
+Ergänzung für das Sofa oder zurückgelehntes Spielen. Dass der Controller auch 
+dafür noch nicht perfekt ist, merkt man an den wöchentlich mehrmals 
+erscheinenden Patches. In ihnen nimmt Valve teilweise noch große Änderungen 
+an den Bedienkonzepten vor. Löblich ist, dass auf Feedback der Community sehr 
+schnell reagiert wird.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://store.steampowered.com/universe/controller"><tt class="big">http://store.steampowered.com/universe/controller</tt></a><br />
+[2] <a href="https://ikhaya.ubuntuusers.de/2015/12/29/review-steam-controller/"><tt class="big">https://ikhaya.ubuntuusers.de/2015/12/29/review-steam-controller/</tt></a><br />
+[3] <a href="http://valvesoftware.com/"><tt class="big">http://valvesoftware.com/</tt></a><br />
+[4] <a href="http://kodi.tv/"><tt class="big">http://kodi.tv/</tt></a><br />
+[5] <a href="http://store.steampowered.com/search/?sort_by=Name&amp;sort_order=ASC&amp;os=linux"><tt class="big">http://store.steampowered.com/search/?sort_by=Name&amp;sort_order=ASC&amp;os=linux</tt></a><br />
+[6] <a href="http://store.steampowered.com/search/?sort_by=Name&amp;sort_order=ASC&amp;os=linux#sort_by=Name&amp;category2=28&amp;os=linux&amp;page=1"><tt class="big">http://store.steampowered.com/search/?sort_by=Name&amp;sort_order=ASC&amp;os=linux#sort_by=Name&amp;category2=28&amp;os=linux&amp;page=1</tt></a><br />
+[7] <a href="http://www.heise.de/-2721411"><tt class="big">http://www.heise.de/-2721411</tt></a><br />
+[8] <a href="http://www.freiesmagazin.de/freiesMagazin-2014-06"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2014-06</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/Multiplayer_Online_Battle_Arena"><tt class="big">https://de.wikipedia.org/wiki/Multiplayer_Online_Battle_Arena</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Robert Kurz</b>
+spielt auf seinem Linux-PC schon seit er als Kind herausgefunden hat,
+wie man SuperTux installiert.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Review: Steam Controller&amp;body=freiesMagazin 02/2016%0AReview: Steam Controller%0ARobert Kurz%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Review: Steam Controller#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_rezension_professional_python" name="fm_16_02_rezension_professional_python">Rezension: Professional Python</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>P</b><b>ython gilt als Programmiersprache, welche sich besonders gut für
+Programmieranfänger eignet. Allerdings bietet Python noch weit mehr, auch für
+professionelle Programmierer beziehungsweise „große“ Projekte. Diesen
+fortgeschrittenen Themen widmet sich das vorliegende, englischsprachige Buch
+„Professional Python“&nbsp;<a href="http://www.wiley-vch.de/publish/dt/books/ISBN1-119-07085-6/">[1]</a>.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Wiley-VCH für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Gemäß einleitendem Text auf der ersten Seite des Buchs ist das Buch für
+Python-Programmierer gedacht, welche bereits Erfahrung mit der Sprache haben und
+jetzt einen Blick auf die fortgeschrittenen Konzepte und Möglichkeiten der
+Programmiersprache werfen möchten.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+In der ersten Hälfte des Buch werden in sieben Kapiteln verschiedene
+fortgeschrittene Möglichkeiten von Python vorgestellt, namentlich Dekoratoren,
+Context Manager, Generatoren, „Magic Methods“, Metaklassen, „Class Factories“ und
+das Konzept der „Abstract Base Classes“.
+
+<div class="p"><!----></div>
+In der zweiten Hälfte des Buchs widmet sich der Autor dann Themen wie den
+Unterschieden zwischen Python 2 und 3, regulären Ausdrücken, Unit Testing, den
+Bibliotheken optparse und argparse zum Parsen von Kommandozeilenoptionen sowie
+der relativ neuen Bibliothek asyncio. Den Abschluss des Buchs machen dann ein
+paar Seiten mit allgemeinen Tipps zum Schreiben von les- und wartbaren
+Python-Programmen sowie zu gutem Programmierstil.
+
+<div class="p"><!----></div>
+Das komplette Inhaltsverzeichnis des Buchs ist auch auf der Webseite des
+Verlags&nbsp;<a href="http://www.wiley-vch.de/publish/dt/books/ISBN1-119-07085-6/">[1]</a> einzusehen.
+
+<div class="p"><!----></div>
+
+<h2>Gute Abdeckung</h2>
+
+
+Gut ist, dass das Buch auf alle Python-Versionen eingeht, welche zum Zeitpunkt
+des Schreibens „in der freien Wildbahn“ vorzufinden sind, also Python 2.6 und
+2.7 sowie die Version 3.2, 3.3 und 3.4. Auf das Thema „Python 2 vs. Python 3“
+wird in zwei eigenen Kapiteln eingegangen, nämlich denen zu den Datentypen
+String, Byte und Unicode sowie in einem Kapitel, was sonstige Änderungen und
+Unterschiede zwischen den Versionen aufzeigt und erläutert. In letzterem wird
+auch häufig auf die externe Bibliothek six&nbsp;<a href="https://pypi.python.org/pypi/six/">[2]</a>
+eingegangen, welche das Portieren von Python 2.x auf Python 3 erleichtert.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Insgesamt liest sich das Buch recht flüssig, wobei das verwendete Englisch schon
+etwas anspruchsvoller ist und über das Niveau von Schulenglisch hinausgeht.
+
+<div class="p"><!----></div>
+Der Autor verwendet viele Beispiele, um die vorgestellten Möglichkeiten und
+Konzepte zu zeigen und dann zu erläutern. Alle Listings sind komplett im Buch
+abgedruckt. Leider sind einige Codebeispiele recht kurz gehalten und wirken
+dadurch etwas abstrakt bzw. nicht besonders praxisnah – was letztendlich das
+Nachvollziehen erschwert.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Kritik</h2>
+
+
+Dem selbst gestellten Anspruch, in fortgeschrittene Sprachmittel von Python
+einzuführen, wird das Buch meiner Meinung nach nur in der ersten Hälfte gerecht.
+Die in der zweiten Hälfte behandelten Themen wie z.&nbsp;B. die Datentypen String,
+Byte und Unicode oder reguläre Ausdrücke werden in ähnlichem Umfang und in
+ähnlicher Tiefe auch in manchen (umfangreicheren) Einsteigerbüchern behandelt.
+
+<div class="p"><!----></div>
+Hier wäre es meiner Meinung nach deutlich besser gewesen, die ersten Hälfte des
+Buchs zu vertiefen, z.&nbsp;B. durch ausführlichere und mehr Beispiele. Das Konzept
+der „klassischen“ Co-Routinen, welche Python ebenfalls kennt, wird 
+gar nicht
+behandelt, beziehungsweise nur kurz im Rahmen der asyncio-Co-Routinen.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch „Professional Python“ führt in der ersten Hälfte kompakt in einige
+fortgeschrittene Möglichkeiten von Python ein, in der zweiten Hälfte fällt der
+Anspruch dann aber ab. Bei einem Umfang von ca. 250 Seiten und einem Preis von
+45,50 € (für die gedruckte Ausgabe) ist das Buch selbst für ein IT-Fachbuch
+sehr teuer. Vor dem Kauf sollte man also für sich selber prüfen, ob der Inhalt
+den Preis rechtfertigt.
+
+<div class="p"><!----></div>
+Eine Alternative zu dem Buch wäre „Fluent Python“
+aus dem Verlag O'Reilly&nbsp;<a href="http://shop.oreilly.com/product/0636920032519.do">[3]</a>,
+welches die gleiche Zielgruppe wie das vorliegende Buch hat, bei dreifachem
+Umfang aber deutlich mehr Themen bei einer besseren Abdeckung und Tiefe bietet.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i>
+Da es schade wäre, wenn das Buch bei Jochen Schnelle nur im
+Regal steht, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Wie im Artikel erwähnt ist das Python-Modul asyncio relativ neu. 
+Seit welcher Python-Version befindet es sich in der Standardbibliothek?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>14. Februar 2016, 23:59 Uhr</b>
+über die Kommentarfunktion oder per E-Mail an <img src="freiesMagazin-2016-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />
+geschickt werden. Die Kommentare werden bis zum Ende der
+Verlosung nicht freigeschaltet. Das Buch wird unter allen
+Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Professional Python&nbsp;<a href="http://www.wiley-vch.de/publish/dt/books/ISBN1-119-07085-6/">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Luke Sneeringer </td></tr>
+<tr><td><b>Verlag</b> </td><td>Wiley-VCH  </td></tr>
+<tr><td><b>Umfang</b> </td><td>Umfang: 260 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1-119-07085-6 </td></tr>
+<tr><td><b>Preis</b> </td><td>45,50 € (Taschenbuch),  34,99 € (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.wiley-vch.de/publish/dt/books/ISBN1-119-07085-6/"><tt class="big">http://www.wiley-vch.de/publish/dt/books/ISBN1-119-07085-6/</tt></a><br />
+[2] <a href="https://pypi.python.org/pypi/six/"><tt class="big">https://pypi.python.org/pypi/six/</tt></a><br />
+[3] <a href="http://shop.oreilly.com/product/0636920032519.do"><tt class="big">http://shop.oreilly.com/product/0636920032519.do</tt></a><br />
+
+
+<div class="p"><!----></div>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.com/">Webseite</a>)
+programmiert bevorzugt in Python.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Professional Python&amp;body=freiesMagazin 02/2016%0ARezension: Professional Python%0AJochen Schnelle%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Rezension: Professional Python#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_rezension_open_source_und_schule" name="fm_16_02_rezension_open_source_und_schule">Rezension: Open Source und Schule – Warum Bildung Offenheit braucht</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+    
+
+<b>D</b><b>ie meisten Menschen wurden in ihrer Schulzeit 
+hauptsächlich mit proprietären Programmen konfrontiert: Microsoft Windows, 
+MS Office, Adobe, Oracle und Co. Selbst im Studium setzt sich das meist 
+fort. Dabei gibt es inzwischen sehr oft freie Alternativen, die zum einen 
+meistens kostenlos sind, zum anderen aber auch noch frei verteilt werden 
+dürfen. Das Buch „Open Source und Schule“&nbsp;<a href="http://s-seitz.de/index.php/buch/">[1]</a> 
+zeigt einige der Anwendungsbereiche und welche Hürden auftreten können.</b>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Inhalt</h2>
+
+
+Wichtig zu wissen ist, dass dieses Buch nicht aus einer Feder stammt, 
+sondern mehrere Autoren beteiligt waren.
+Der Herausgeber, Sebastian Seitz hat insgesamt sieben weitere Autoren gefunden,
+die etwas beizutragen hatten.
+
+<div class="p"><!----></div>
+Das Buch gliedert sich in drei Bereiche: „Primar- und Sekundarstufe“, „Aus- 
+und Weiterbildung“ sowie „Administration“. Die IT-Betreuer und Lehrer 
+berichten über den Einsatz diverser Open-Source-Programme in ihrem 
+jeweiligen Umfeld. Meist zeigt sich, dass für derlei 
+Betreuung kein Geld zur Verfügung steht. Woraufhin die  
+betroffenen Lehrkräfte ihr Hobby mit an den Arbeitplatz bringen, um  
+Möglichkeiten aufzuzeigen. Im besten Fall werden ihnen dabei keine Steine in den Weg 
+gelegt. Sehr oft behindern auch äußere Vorgaben (wie zum Beispiel die 
+eingesetzten Betriebssysteme in den privaten Haushalten) den Umstieg.
+
+<div class="p"><!----></div>
+Dennoch zeigt das Buch neben den Hindernissen auch Erfolge.
+Dabei werden die vorgestellten Lösungen weder schöngeredet, noch Nachteile 
+verschwiegen und die oft überwiegenden Vorteile motivieren dazu, sich 
+aufgetretenen Problemen etwas später zu widmen.
+
+<div class="p"><!----></div>
+
+<h2>Zielgruppe</h2>
+
+
+Zielgruppe sind ganz klar Pädagogen und Techniker, die Open-Source-Software 
+in ihrem Umfeld einsetzen wollen. Da die Autoren aus den gleichen 
+Berufen kommen, liest sich das Buch entsprechend wissenschaftlich bzw. 
+technisch, was das Verständnis nicht immer erleichtert.
+
+<div class="p"><!----></div>
+Sehr gut ist, dass auch für Außenstehende ohne Open-Source-Erfahrung
+entsprechende Verweise als Fußnote genau erklärt 
+werden oder zumindest mit einem Link versehen sind. 
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch lässt sich angenehm lesen, da die verschiedenen Beiträge 
+interessant geschrieben sind, auch wenn natürlich der Schreibstil je
+nach Autor variiert. Inhaltlich wirken die Artikel sehr fundiert als 
+Erfahrungsbericht mit zahlreichen Fakten und nicht nur als bloße 
+Meinungsdarstellung. Einzig der Beitrag von Wolf-Dieter Zimmermann fällt 
+etwas ab, da nicht immer ersichtlich ist, was nun Fakt und was nur bloße 
+Meinung des Autors ist. Dennoch hat Herausgeber Sebastian Seitz eine sehr 
+gute Mischung an Beiträgen gefunden. 
+<div class="p"><!----></div>
+
+
+Das Buch unterliegt der Creative-Commons-Lizenz 
+Attribution-ShareAlike&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/de/">[2]</a>, 
+sodass die Texte mit Angabe der Autoren entsprechend frei weiter 
+verteilt werden können. Auf der Webseite des 
+Herausgebers&nbsp;<a href="http://s-seitz.de/index.php/buch/">[1]</a> findet man das Buch im PDF- 
+oder E-Book-Format als kostenlosen Download,
+wobei die E-Book-Version einige, kleinere Darstellungsfehler hat.
+Auch den TeX-Quellcode, mit dem das 
+Buch gesetzt wurde, findet man dort.
+
+<div class="p"><!----></div>
+
+
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Open Source und Schule – Warum Bildung Offenheit braucht&nbsp;<a href="http://s-seitz.de/index.php/buch/">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Sebastian Seitz und weitere </td></tr>
+<tr><td><b>Verlag</b> </td><td>Liberio GmbH </td></tr>
+<tr><td><b>Umfang</b> </td><td>139 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-86373-034-5 </td></tr>
+<tr><td><b>Preis</b> </td><td>kostenlos (PDF und EPUB)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://s-seitz.de/index.php/buch/"><tt class="big">http://s-seitz.de/index.php/buch/</tt></a><br />
+[2] <a href="http://creativecommons.org/licenses/by-sa/3.0/de/"><tt class="big">http://creativecommons.org/licenses/by-sa/3.0/de/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+freut sich über den Einsatz Freie Software im Bildungsbereich.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Open Source und Schule&amp;body=freiesMagazin 02/2016%0ARezension: Open Source und Schule%0ADominik Wagenführ%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Rezension: Open Source und Schule#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_rezension_sketchnote_arbeitsbuch" name="fm_16_02_rezension_sketchnote_arbeitsbuch">Rezension: Das Sketchnote-Arbeitsbuch</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+    <b>N</b><b>achdem Mike Rohde&nbsp;<a href="http://rohdesign.com/">[1]</a> in seinem Handbuch erklärt hat, was 
+die Essenz einer Sketchnote ist (siehe <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 
+09/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-09">[2]</a>), 
+geht es im Sketchnote-Arbeitsbuch&nbsp;<a href="http://www.mitp.de/Business-Marketing/Sketchnotes/Das-Sketchnote-Arbeitsbuch.html">[3]</a> 
+an die harte Arbeit. Das, was im Handbuch gefehlt hat, wird diesmal erklärt – nämlich 
+die Anwendungsgebiete für Sketchnotes.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem mitp-Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Anwendungen von Sketchnotes</h2>
+
+
+Nach einer (sehr) kurzen Einführung, die einige der wichtigsten Aspekte aus dem 
+Sketchnote-Handbuch noch einmal zusammenfasst, stellt Mike Rohde in den weiteren 
+Kapitel dar, wozu Sketchnotes nützlich sein können außer für das bloße 
+Aufzeichnen von Meetings oder Vorträgen.
+
+<div class="p"><!----></div>
+Zu den Anwendungsgebieten zählen Ideenfindung/Brainstorming, Urlaubs- und 
+Auftragsplanung, Dokumentation von Ereignissen und Reisen, Festhalten von 
+Eindrücken aus Film, TV und anderen Medien.
+
+<div class="p"><!----></div>
+Zum Abschluss stellt der Autor noch einige erweiterte Techniken vor, die man bei 
+der Erstellung von Sketchnotes anwenden kann.
+
+<div class="p"><!----></div>
+Das Buch ist dabei wie das Sketchnote-Handbuch mit Übungen gespickt, die zum 
+Mitmachen einladen, und enthält wieder zahlreiche Sketchnote-Beispiele von 
+bekannten Sketchnoters aus aller Welt.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Im Gegensatz zum Sketchnote-Handbuch muss man das Sketchnote-Arbeitsbuch nicht 
+zwingend von vorne nach hinten durchlesen. Man kann sich z.&nbsp;B. kurz vor der 
+Urlaubsvorbereitung auch einfach noch einmal das Kapitel zur Urlaubsplanung 
+durchlesen und die Tipps entsprechend anwenden.
+
+<div class="p"><!----></div>
+Wichtig ist, dass man ohne Sketchnote-Kenntnisse vermutlich überfordert ist, 
+die Hinweise umzusetzen. Die Einführung fasst auf 10 Seiten zusammen, was das 
+Sketchnote-Handbuch auf 210 Seiten erklärte. Es sollte klar sein, dass die 
+Einführung daher wirklich nur der kurzen Wiederholung dient.
+
+<div class="p"><!----></div>
+Auch die Übungen sind um einiges schwieriger umzusetzen. Sollte man zuvor noch 
+simple Grafiken, Icons oder Schriften zeichnen, verlangt das Buch jetzt von 
+einem, mit einer kompletten Geschäftsidee für einen Limo-Stand oder einem 
+Baumhaus aufzuwarten.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Sketchnote-Arbeitsbuch zeigt das, was ich in der Rezension zum 
+Sketchnote-Handbuch noch bemängelte: Es zeigt die Anwendungsfälle, wo man 
+Sketchnotes einsetzen kann und gibt auch einige Tipps, worauf man dabei achten 
+sollte. Damit ist es eine gute Ergänzung zum Sketchnote-Handbuch und sollte 
+sogar nicht alleine ohne dieses gelesen werden, um die verschiedenen Techniken 
+anwenden zu können.
+
+<div class="p"><!----></div>
+Die Übungen sind recht schwer, denn selbst wer die Kreativität hat, sich 
+beispielsweise auszudenken, wie ein
+Baumhaus aussehen könnte, wird ggf. an der 
+kreativen Umsetzung mit Stift und Papier scheitern. Natürlich gibt es auch 
+wieder „leichtere“ Übungen, bei denen man kleine Bildchen zeichnen soll. Aber 
+wie stellt man „Missachtung des Gerichts“ oder „Opportunitätskosten“ dar? Hier 
+ist die Messlatte also deutlich höher. 
+<div class="p"><!----></div>
+Insgesamt bleibt aber ein positiver Eindruck zurück, auch wenn man vielleicht nicht 
+alles aus dem Buch im Alltag oder Arbeitsleben anwenden kann. 
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i> Da es schade wäre, wenn das Buch bei Dominik Wagenführ nur im
+Regal steht, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Welches Tier war in der Sketchnote-Rezension zum Sketchnote-Handbuch abgebildet?</em>“
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2016-02-bilder-Dateien/Sketchnote-Arbeitsbuch.jpg" alt="Sketchnote-Arbeitsbuch.jpg" style="max-width:100%" /><br /><em>Inhalte des Sketchnote-Arbeitsbuches.</em><br />
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>14. Februar 2016, 23:59 Uhr</b>
+über die Kommentarfunktion oder per E-Mail an <img src="freiesMagazin-2016-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />
+geschickt werden. Die Kommentare werden bis zum Ende der
+Verlosung nicht freigeschaltet. Das Buch wird unter allen
+Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Das Sketchnote-Arbeitsbuch&nbsp;<a href="http://www.mitp.de/Business-Marketing/Sketchnotes/Das-Sketchnote-Arbeitsbuch.html">[3]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Mike Rohde  </td></tr>
+<tr><td><b>Verlag</b> </td><td>mitp, 1. Auflage 2014  </td></tr>
+<tr><td><b>Umfang</b> </td><td>208 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8266-8493-7 </td></tr>
+<tr><td><b>Preis</b> </td><td>24,99 Euro (Druck), 21,99 Euro (PDF) 
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://rohdesign.com/"><tt class="big">http://rohdesign.com/</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-09"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-09</tt></a><br />
+[3] <a href="http://www.mitp.de/Business-Marketing/Sketchnotes/Das-Sketchnote-Arbeitsbuch.html"><tt class="big">http://www.mitp.de/Business-Marketing/Sketchnotes/Das-Sketchnote-Arbeitsbuch.html</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+nimmt an vielen (meist technischen) Meetings teil und versucht die Inhalte 
+inzwischen mehr mitzuzeichnen als zu schreiben. 
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Das Sketchnote-Arbeitsbuch&amp;body=freiesMagazin 02/2016%0ARezension: Das Sketchnote-Arbeitsbuch%0ADominik Wagenführ%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Rezension: Das Sketchnote-Arbeitsbuch#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_rezension_linux-server" name="fm_16_02_rezension_linux-server">Rezension: Linux-Server – Das umfassende Handbuch</a></font></h1>von Matthias Sitte
+
+<div class="p"><!----></div>
+    <b>L</b><b>inux-Server erfreuen sich immer größerer Beliebtheit, sowohl im 
+High-End-Bereich, in dem sie immer weiter Mainframes ablösen, als auch in 
+kleinen und mittleren Unternehmen (KMU) und bei Privatanwendern.  Das 
+vorliegende Buch „Linux-Server – Das umfassende 
+Handbuch“&nbsp;<a href="https://www.rheinwerk-verlag.de/linux-server_3685/">[1]</a> (in der 
+dritten Auflage) hat sich dabei zum Ziel gesetzt, fortgeschrittene 
+Administratoren dabei zu unterstützen, Linux eben noch besser und 
+effizienter einzusetzen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Rheinwerk Verlag (vormals Galileo Press) für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Einige Bemerkungen vorab</h2>
+
+
+Das vorliegende Buch „Linux-Server“ ist in vielerlei Hinsicht facettenreich: 
+Jedes der 27 Kapitel ist von einem der fünf Autoren (Dirk Deimeke, Stefan 
+Kania, Charly Kühnast, Daniel van Soest und, neu hinzugekommen, Peer 
+Heinlein) geschrieben worden, wodurch sich die Kapitel sowohl in Gestaltung, 
+Stil und Umfang unterscheiden. 
+
+<div class="p"><!----></div>
+Einige Kapitel erscheinen zwar eher knapp, 
+sind aber trotzdem sehr aussagekräftig, weil der Autor sich stets auf die 
+wesentlichen Informationen beschränkt und diese eben sehr gut vorstellt. 
+Andere Kapitel sind sehr ausführlich und enthalten viele und umfangreiche 
+Informationen, die man aber nicht unbedingt alle auf einmal braucht.
+
+<div class="p"><!----></div>
+Ebenfalls wichtig bei einem Buch über „Linux-Server“ ist die Wahl der 
+Distribution. Hier haben die Autoren die folgenden Distributionen ausgewählt: Debian Wheezy, SUSE Linux Enterprise Server 11 und 
+Ubuntu-Server 14.04 LTS.  Diese Distributionen sind allesamt sehr 
+verbreitet, kommen oft auch in Unternehmen zum Einsatz und nutzen allesamt 
+RPM- oder DEB-Pakete für die Software-Paketverwaltung.
+
+<div class="p"><!----></div>
+Nach Einleitung und Vorwort erläutert zunächst das einleitende Kapitel 1 
+(„Der Administrator“, 20 Seiten) aus Sicht der Autoren den Beruf des 
+Administrators, seine Aufgaben im Unternehmen sowie sein Verhältnis zu 
+Nutzern.  Den Abschluß dieses Kapitels bildet ein Überblick über den „System 
+Administrators' Code of Ethics“ der LISA („Special Interest Group for 
+System Administrators“ innerhalb der „Usenix Association“) – ein 
+Verhaltenskodex, der eigentlich nicht nur für Administratoren, sondern für 
+jeden Arbeitnehmer gilt.
+
+<div class="p"><!----></div>
+Die folgenden Kapitel sind thematisch in sieben verschiedene Teile  
+gegliedert: Grundlagen, Aufgaben, Dienste, Infrastruktur, Kommunikation, 
+Automatisierung und Sicherheit. 
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+
+<h3>Grundlagen</h3>
+
+
+Kapitel 2 („Bootvorgang“, 28 Seiten) gibt einen allgemeinen Einblick in den 
+Startvorgang eines Linux-Systems vom Bootloader (GRUB, GRUB2) über die 
+initiale Ramdisk („initrd“) bis hin zum Start der eigentlichen Dienste 
+mittels Init-Skripten. Eine kurze Einführung zum Thema „eventgesteuertes 
+Starten und Stoppen von Diensten“ mittels Upstart schließt das Kapitel ab.
+
+<div class="p"><!----></div>
+In Kapitel 3 („Festplatten und andere Devices“, 46 Seiten) geht es um 
+„Geräte“ (engl. „devices“) im Allgemeinen.  Neben RAID-Systemen wird auch 
+erklärt, wie der „Logical Volume Manager“ (LVM) funktioniert.  Weitere 
+Inhalte des Kapitels sind das <b><tt class="big">/proc</tt></b>-Dateisystem sowie <b><tt class="big">udev</tt></b>.
+
+<div class="p"><!----></div>
+Kapitel 4 („Dateisysteme“, 14 Seiten) gibt als Erstes eine Einführung in 
+Dateisysteme und beschreibt, was diese eigentlich genau 
+machen.  Danach werden verschiedene Dateisysteme (Ext2/3, ReiserFS, XFS, 
+BtrFS) im Detail besprochen und sowohl Vor- als auch Nachteile angerissen.
+
+<div class="p"><!----></div>
+Kapitel 5 („Berechtigungen“, 36 Seiten) rundet Teil I ab.  Hier geht es aber 
+nicht nur um Benutzer, Gruppen und Berechtigungen auf dem Level des 
+Dateisystems, sondern auch um den Einsatz von erweiterten „Access Control 
+Lists“ (ACL). Weitere Themen sind Quotas und „Pluggable 
+Authentication Modules“ (PAM) sowie die Beschränkung von Systemressourcen 
+mittels <b><tt class="big">ulimit</tt></b>.
+
+<div class="p"><!----></div>
+
+<h3>Aufgaben</h3>
+
+
+Teil II des Buches besteht nur aus zwei Kapiteln. Das erste der beiden, 
+Kapitel 6 („Paketmanagement“, 42 Seiten) beschreibt sehr ausführlich den 
+Umgang mit Paketmanagern und Quellcode.  Hier erfährt man eigentlich alles, 
+was man braucht, um Software vom Quellcode in ein Paket (rpm oder deb) zu 
+packen, Update-Pakete zu erstellen, oder zwischen verschiedenen 
+Paketformaten mit <b><tt class="big">alien</tt></b> zu konvertieren.  Darüber hinaus werden die 
+Paketmanager der gängigen Distributionen (<b><tt class="big">yum</tt></b>, <b><tt class="big">yast</tt></b>, <b><tt class="big">apt</tt></b>) beschrieben. Den 
+Abschluss des Kapitels bildet ein Überblick über verschiedene Proxy-, Cache- 
+und Mirror-Lösungen.
+
+<div class="p"><!----></div>
+In
+Kapitel 7 („Backup und Recovery“, 48 Seiten)
+werden
+verschiedene Backup-Strategien ausführlich 
+beschrieben. Neben Tipps zum Erstellen von effektiven Backups mit 
+einfachen Bordmitteln (<b><tt class="big">tar</tt></b>, <b><tt class="big">rsync</tt></b>, <b><tt class="big">dd</tt></b>) wird auch das Open-Source-Programm 
+„ReaR“ vorgestellt – ein Recovery-Programm, mit dem sich das komplette 
+Grundsystem des Servers automatisch wiederherstellen lässt.  Zum Schluss 
+werden noch „Bacula“ und „Bareos“ als Enterprise-taugliche Backupsysteme 
+vorgestellt.
+
+<div class="p"><!----></div>
+
+<h3>Dienste</h3>
+
+
+Teil III ist der längste und umfassendstes Teil des Buches, der die gängigen 
+Serverdienste beschreibt. In Kapitel 8 („Webserver“, 26 Seiten) geht es 
+zunächst um die klassischen Webserver Apache, LightHttpd und Nginx sowie die 
+Auswertung der Logfiles.
+
+<div class="p"><!----></div>
+Kapitel 9 („FTP-Server“, 8 Seiten) beschreibt zunächst das FTP-Protokoll 
+mitsamt Vor- und Nachteilen, Schwächen sowie seinen Erweiterungen. Als 
+FTP-Server wird „vsftpd“ verwendet, für den im Folgenden 
+Beispielkonfigurationen als Download-Server oder für den Zugriff der User 
+auf Home-Verzeichnisse beschrieben werden. Den Abschluss des Kapitels bilden 
+„FTP over SSL“ (FTPS) sowie die Anbindung an LDAP.
+
+<div class="p"><!----></div>
+In Kapitel 10 („Mailserver“, 44 Seiten) wird ein klassischer Mailserver mit 
+Postfix als STMP-Server und Dovecot als POP3/IMAP-Server eingerichtet, der 
+von einigen weiteren Programmen wie Amavisd-new, ClamAV und Spamassassin zur 
+Abwehr von Viren und Spam unterstützt wird. Monitoring und Logfiles runden 
+das Kapitel ab.
+
+<div class="p"><!----></div>
+Kapitel 11 („Datenbank“, 26 Seiten) beschreibt Basisstrategien für 
+Datenbanken und Aufgaben, auf die man bei Datenbanken regelmäßig trifft. 
+Dies umfasst neben Tuning auch das Backup sowie „Point-In-Time Recovery“ von 
+Datenbanken.
+
+<div class="p"><!----></div>
+Kapitel 12 („Syslog“, 18 Seiten) beschreibt den allgemeinen Aufbau 
+von Syslog-Nachrichten und stellt die drei Syslog-Server „SyslogD“, 
+„Syslog-ng“, „Rsyslog“ und deren Konfiguration vor.
+
+<div class="p"><!----></div>
+In Kapitel 13 („Proxy-Server“, 56 Seiten) erfährt man alles über 
+Proxy-Server, womit aber nicht nur HTTP/HTTPS-Proxies, sondern auch andere 
+Dienste wie z.&nbsp;B. FTP, NTP, NNTP oder SMTP gemeint sind. Nach einer kurzen 
+Einführung werden am Beispiel von Squid werden verschiedene 
+Herangehensweisen und Vorüberlegungen sowie die Grundkonfiguration mitsamt 
+Authentifizierung beschrieben. Hilfsprogramme zur Log-Auswertung sowie 
+fortgeschrittene Themen wie „transparent proxy“, „delay_pools“ und 
+„Sibling/Parent“ runden das Kapitel ab.
+
+<div class="p"><!----></div>
+In Kapitel 14 („Kerberos“, 42 Seiten) wird Kerberos als 
+Single-Sign-On-Dienst (SSO) zur Authentifizierung an verschiedenen Diensten 
+beschrieben. Nach einer Beschreibung der generellen Funktionsweise folgen 
+Installation und Konfiguration des Kerberos-Servers sowie die Verbindung von 
+Kerberos und PAM. Anschließend kann man Benutzer, Hosts und Dienste 
+einrichten sowie Kerberos-Clients konfigurieren.  Die fortgeschritteneren 
+Themen „Replikation“, „Kerberos Policies“ und „Kerberos und LDAP“ bilden den 
+Abschluss des Kapitels.
+
+<div class="p"><!----></div>
+Wer kennt nicht sie nicht – heterogene Unternehmensnetzwerke, in denen 
+sowohl Windows-Server als auch Linux-Server gemeinsam verschiedene Aufgaben 
+übernehmen.  Kapitel 15 („Samba“, 96 Seiten) ist das längste Kapitel des 
+Buches und führt ausführlich in die Welt von SMB und NetBIOS sowie Samba als 
+Fileserver ein.  Nicht fehlen dürfen natürlich die Themen 
+Benutzerverwaltung, Passwort-Backends („passdb backends“), 
+Domänencontroller, Winbind, Printserver und Samba/Kerberos.
+
+<div class="p"><!----></div>
+Ein eigenes Kapitel („Samba 4“, 54 Seiten) bekommen die neuen Funktionen von 
+Samba 4. Hier geht es nicht nur um den Aufbau einer 
+Active-Directory-Struktur mit Domaincontroller und deren Verwaltung, sondern 
+auch um die Benutzer- und Gruppenverwaltung mitsamt Gruppenrichtlinien.
+
+<div class="p"><!----></div>
+Kapitel 17 („NFS“, 20 Seiten) beschreibt detailliert, wie man mit „NFSv4“ 
+einen Dienst einrichtet, der Daten für Linux-Clients auf einem Dateiserver 
+bereitstellen kann.  Hier wird zuerst auf die Unterschiede zwischen „NFSv3“ 
+und „NFSv4“ eingegangen, woran sich eine Übersicht über die Funktionsweise 
+des NFS-Servers anschließt.  Die Einrichtung des Servers sowie die 
+Konfiguration der Clients mitsamt Optimierung und Anbindung an Kerberos sind 
+weitere Inhalte dieses Kapitels.
+
+<div class="p"><!----></div>
+Im zweitlängsten Kapitel 18 („LDAP“, 90 Seiten) wird der Verzeichnisdienst 
+„OpenLDAP“ vorgestellt, der es ermöglicht, die Verwaltung der Ressourcen 
+zentral zu steuern und an mehrere Stellen zu replizieren. OpenLDAP ist ein 
+Dienst, der alle Ressourcen in einer hierarchischen Struktur abgelegt, die 
+der Struktur eines Unternehmens entspricht und somit die Verwaltung und 
+Kontrolle der Resourcen effizient und einfach gestaltet. Daher werden 
+zunächst die Grundlagen des Dienstes sowie die Unterschiede in den 
+verschiedenen Distributionen diskutiert. Die Konfiguration des LDAP-Clients 
+sowie grafische Werkzeuge für die LDAP-Verwaltung sind neben der Absicherung 
+der Verbindung über TLS nur einige weitere Themen, die im Kapitel diskutiert 
+werden.
+
+<div class="p"><!----></div>
+Kapitel 19 („Druckserver“, 18 Seiten) schließt Teil III des Buches ab. Hier 
+wird das Drucksystem rund um „CUPS“ betrachtet. Neben der Einrichtung 
+des Printservers, Druckern, Klassen und Policies werden ebenfalls 
+PPD-Treiberdateien, Druck-Quotas und die Anbindung an Kerberos erklärt.
+
+<div class="p"><!----></div>
+
+<h3>Infrastruktur</h3>
+
+
+Teil IV besteht ebenfalls nur aus zwei Kapiteln. Zunächst geht es in Kapitel 
+20 („Hochverfügbarkeit“, 26 Seiten) um Hochverfügbarkeitscluster. Hier wird 
+ein Beispiel-Setup beschrieben, in dem ein Aktiv/Passiv-Cluster mit 
+hochverfügbarem Plattenplatz erstellt und betrieben wird. Neben der 
+Grundkonfiguration von Clusterkomponenten ist daher „Shared Storage mit 
+DRBD“ ein wesentlicher Teil des Kapitels.
+
+<div class="p"><!----></div>
+Kapitel 21 („Virtualisierung“, 34 Seiten) beschreibt zuerst die Unterschiede 
+zwischen Gast- und Wirt-Systemen sowie verschiedene Ansätze zur 
+Virtualisierung (KVM, Xen). Anschließend werden Installation, Management, 
+Netzwerkgrundlagen und Live Migration von Desktop- und 
+Server-Virtualisierungen beschrieben.
+
+<div class="p"><!----></div>
+
+<h3>Kommunikation</h3>
+
+
+Kapitel 22 („Netzwerk“, 84 Seiten) beleuchtet im Detail die verschiedenen 
+Aspekte der Netzwerkkonfiguration und -einrichtung unter Linux. Neben der 
+Netzwerkkonfiguration mit <b><tt class="big">ip</tt></b> werden die Unterschiede zwischen <b><tt class="big">ifconfig</tt></b>, 
+<b><tt class="big">route</tt></b> und <b><tt class="big">arp</tt></b>, das „Bonding“ von Netzwerkkarten sowie „Policy Based 
+Routing“ (PBR) und IPv6 erläutert. Firewalls mit <b><tt class="big">netfilter</tt></b> und <b><tt class="big">iptables</tt></b> 
+werden ebenfalls erörtert. Den Abschluss des Kapitels bilden die beiden 
+wichtigen Dienste DHCP und DNS.
+
+<div class="p"><!----></div>
+Kapitel 23 („OpenSSH“, 12 Seiten) beschreibt den fortgeschrittenen Umgang 
+mit dem OpenSSH-Client sowie dem OpenSSH-Server. Neben Public Key 
+Authorization werden auch X11-Forwarding, Portweiterleitung und Tunneling 
+beschrieben.
+
+<div class="p"><!----></div>
+In Kapitel 24 („Administrationstools“, 34 Seiten) werden verschiedene, für 
+die Administration sehr nützliche Programme beschrieben, die sonst eher 
+stiefmütterlich behandelt werden. Dies umfasst u.&nbsp;a. <b><tt class="big">rsync</tt></b>, <b><tt class="big">screen</tt></b>, <b><tt class="big">nmap</tt></b>, 
+<b><tt class="big">netstat</tt></b>, <b><tt class="big">lsof</tt></b>, <b><tt class="big">top</tt></b>, <b><tt class="big">strace</tt></b>, <b><tt class="big">traceroute</tt></b> und <b><tt class="big">ipcalc</tt></b>.
+
+<div class="p"><!----></div>
+Kapitel 25 („Versionskontrolle“, 16 Seiten) beschreibt 
+Versionskontrollsysteme (engl. „version control system“, VCS), allerdings 
+nur als Mittel zur Verwaltung von Konfigurationsdateien. Das Thema rund um 
+Konflikte beim Zusammenführen („Mergen“) von unterschiedlichen 
+Versionsständen wird dabei bewusst ausgespart.  Nach einer Einführung in die 
+allgemeine Philosophie von Versionskontrollsystemen werden die verschiedenen 
+gängigen Programme wie CVS, Subversion, Bazaar, Mercurial und Git 
+beschrieben.  Eine tabellarische Übersicht stellt die Kommandos der 
+einzelnen Versionskontrollsysteme gegenüber und rundet das Kapitel ab.
+
+<div class="p"><!----></div>
+
+<h3>Automatisierung</h3>
+
+
+Kapitel 26 („Scripting“, 22 Seiten) ist das erste von zwei Kapitel in Teil IV des Buches.  Hier findet man einige wertvolle Tipps, Tricks und Hinweise zum Umgang mit der Kommandozeile und zum Scripting.
+
+<div class="p"><!----></div>
+Kapitel 27 („Monitoring“, 32 Seiten) führt in die Installation und Konfiguration von Nagios ein.  Am Beispiel eines Webservers wird die 
+Überwachung von Serverdiensten und freiem Festplattenplatz gezeigt, wobei 
+Messwerte durch PNP4Nagios graphisch aufbereitet werden.  Den Abschluss 
+bildet ein Ausblick zum Monitoring mit Munin.
+
+<div class="p"><!----></div>
+
+<h3>Sicherheit</h3>
+
+
+Der siebte und letzte Teil des Buches widmet sich dem Thema „Sicherheit“.  
+In Kapitel 28 („Sicherheit“, 54 Seiten) werden Maßnahmen vorgestellt, wie 
+man den Linux-Server weiter absichern kann. Dies umfasst vor 
+allem <b><tt class="big">chroot</tt></b>, AppArmor, Einmalpasswörter, OpenVPN sowie „Intrusion 
+Dectection Systems“ (IDS) und „Intrusion Prevention Systems“ (IPS).
+
+<div class="p"><!----></div>
+Im letzten Kapitel des Buches („Verschlüsselung und Zertifikate“, 36 Seiten) 
+geht es um elementare sicherheitsrelevante Themen.  Nach einer Einführung in 
+die Geschichte der Kryptologie wird umfassend die Verwendung einer eigenen 
+Certificate Authority (CA) bis hin zu vollständig verschlüsselten Systemen 
+mitsamt „Public Key Infrastructure“ (PKI) und X.509 beschrieben.  Den 
+Abschluss des Kapitels bildet ein Abschnitt „Rechtliches“, in dem auf die 
+aktuellere Gesetzgebung rund um das Signaturgesetz und Signaturverordnung 
+der BRD eingegangen wird.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das 1163 Seiten starke Buch gibt einen wirklich umfassenden und sehr guten 
+Einblick in das Thema „Linux-Server“, bei dem kaum ein Thema außen vor 
+bleibt.  Die einzelnen Kapitel lesen sich allesamt sehr gut, wobei der Grat 
+zwischen zu wenig Informationen und zu vielen Details recht schmal ist. 
+Obwohl man den einzelnen Kapiteln anmerkt, dass sie von verschiedenen 
+Autoren geschrieben wurden, stört dies den Lesefluss nicht. Erfahrene 
+Administratoren finden eher wenig Neues in diesem Buch. Will man sich in 
+eines der hier vorgestellten Programme tiefer einarbeiten, muss man ohnehin 
+zu Spezialliteratur greifen.
+
+<div class="p"><!----></div>
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://www.rheinwerk-verlag.de/linux-server_3685/"><tt class="big">https://www.rheinwerk-verlag.de/linux-server_3685/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Matthias Sitte</b>&nbsp;(<a href="https://www.familie-sitte.org/">Webseite</a>)
+ist Redakteur bei <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> und beschäftigt sich sowohl beruflich als auch privat
+seit vielen Jahren mit Linux
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Linux-Server&amp;body=freiesMagazin 02/2016%0ARezension: Linux-Server%0AMatthias Sitte%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Rezension: Linux-Server#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_leserbriefe" name="fm_16_02_leserbriefe">Leserbriefe</a></font></h1>
+
+
+    <b>Für Leserbriefe steht unsere E-Mailadresse
+        <img src="freiesMagazin-2016-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+        Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+    An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+    uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+    sehr viel Lob (was uns natürlich freut), aber vor allem durch
+    Kritik und neue Ideen können wir uns verbessern.
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>openSUSE 42.1</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Nicht das erste, eher abschreckende Review für openSUSE 42.1, sodass ich 
+vermutlich bis zum Schluss bei openSUSE 13.2 mit KDE 4 bleiben werde. Ich 
+hoffe, die KDE-Entwickler geben nicht auf. Die Screenshots von Plasma 5 
+sehen vielversprechend aus.
+        &nbsp;<br /><b>Matthias</b> &nbsp;(<a href="http://www.freiesmagazin.de/20160103-januarausgabe-erschienen#comment-3639">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Kernelrückblick</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Vielen Dank für die neue Ausgabe. Ist mal wieder Topp. Danke an die 
+Schreiber, die ihre Texte für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> schreiben bzw. zur Verfügung stellen. 
+Etwas enttäuscht war ich, dass kein Kernelrückblick von Herrn Menzer dabei 
+ist. Hoffe, er ist in der nächsten Ausgabe wieder drin.
+        &nbsp;<br /><b>Anonym</b> &nbsp;(<a href="http://www.freiesmagazin.de/20160103-januarausgabe-erschienen#comment-3635">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Ja, der Kernelrückblick für den Januar verspricht auch etwas umfangreicher 
+zu werden als nur „RC drei, vier, fünf, sechs und sieben sind erschienen“ – 
+Es ist auch die Acht dabei. ;-)
+        &nbsp;<br /><b><i>Mathias Menzer</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Let's Encrypt</h3>
+
+
+
+
+
+
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Danke für diesen tollen Beitrag! Besonders toll fand ich die Abschnitte mit 
+einer beispielhaften Konfiguration und die Erklärung der einzelnen 
+Konfigurationsoptionen. :)
+        &nbsp;<br /><b>Gast</b> &nbsp;(<a href="http://www.freiesmagazin.de/20160103-januarausgabe-erschienen#comment-3642">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Ich wollte zu dem Artikel noch anmerken, dass der auf Seite 15 genannte 
+Rewrite der URL von den Apache-Entwicklern nicht empfohlen 
+wird&nbsp;<a href="https://wiki.apache.org/httpd/RewriteHTTPToHTTPS">[1]</a>. Empfohlen 
+ist dies über die Redirect-Direktive&nbsp;<a href="https://wiki.apache.org/httpd/RedirectSSL">[2]</a>.
+        &nbsp;<br /><b>Christian</b> 
+
+
+<div class="p"><!----></div>
+
+<h3>Linux Presentation Day</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ein Kommentar aus Chemnitz. Weder der lokale Chaostreff noch die lokale LUG 
+hat sich für die Teilnahme am LPD entschieden. Der Hauptgrund ist die Frage 
+warum man gerade den LPD und nicht den Software Freedom 
+Day&nbsp;<a href="https://de.wikipedia.org/wiki/Software_Freedom_Day">[3]</a>, den Document 
+Freedom Day&nbsp;<a href="http://documentfreedom.org/index.de.html">[4]</a> oder den 
+14. Februar (I love free software day&nbsp;<a href="https://fsfe.org/campaigns/ilovefs/ilovefs.de.html">[5]</a>) 
+unterstützen sollte. 
+Ich persönlich veranstalte lieber zu einem der anderen Tage etwas. Das finde 
+ich unterstützenswerter, da nicht ein spezielles Softwareprodukt sondern 
+eine Idee&nbsp;/&nbsp;Einstellung beworben wird.
+        &nbsp;<br /><b>txt.file</b> &nbsp;(<a href="http://www.freiesmagazin.de/20160103-januarausgabe-erschienen#comment-3645">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Vi für typische nano-Nutzer</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Vielen Dank für diesen Artikel, denn er stimmt: Ich nutze nano und schrecke jedes mal auf, wenn auf einer fremden Shell kein nano sondern einzig vi(m) zu finden ist. Dank Eurem Artikel hat der/das Schrecken bald ein Ende: Ich will auch mit wachsen.
+        &nbsp;<br /><b>Matthias</b> &nbsp;(<a href="http://www.freiesmagazin.de/20160103-januarausgabe-erschienen#comment-3647">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://wiki.apache.org/httpd/RewriteHTTPToHTTPS"><tt class="big">https://wiki.apache.org/httpd/RewriteHTTPToHTTPS</tt></a><br />
+[2] <a href="https://wiki.apache.org/httpd/RedirectSSL"><tt class="big">https://wiki.apache.org/httpd/RedirectSSL</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Software_Freedom_Day"><tt class="big">https://de.wikipedia.org/wiki/Software_Freedom_Day</tt></a><br />
+[4] <a href="http://documentfreedom.org/index.de.html"><tt class="big">http://documentfreedom.org/index.de.html</tt></a><br />
+[5] <a href="https://fsfe.org/campaigns/ilovefs/ilovefs.de.html"><tt class="big">https://fsfe.org/campaigns/ilovefs/ilovefs.de.html</tt></a><br />
+
+
+<div class="p"><!----></div>
+    Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+    kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Leserbriefe&amp;body=freiesMagazin 02/2016%0ALeserbriefe%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-02%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/458?edit[subject]=Leserbriefe#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_veranstaltungen" name="fm_16_02_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+         
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+Hack Im Pott </td><td>Essen </td><td align="left">26.02.2016 </td><td>13,37 EUR </td><td align="left"><a href="https://events.ccc.de/congress/2015"><tt class="big">https://events.ccc.de/congress/2015</tt></a> </td></tr>
+<tr><td align="left">Chemnitzer Linux-Tage </td><td>Chemnitz </td><td align="left">19.03.–20.03.2016 </td><td>– </td><td align="left"><a href="http://chemnitzer.linux-tage.de/"><tt class="big">http://chemnitzer.linux-tage.de/</tt></a> </td></tr>
+<tr><td align="left">Easterhegg </td><td>Salzburg </td><td align="left">25.03.–29.03.2016 </td><td>42 EUR </td><td align="left"><a href="https://eh16.easterhegg.eu/"><tt class="big">https://eh16.easterhegg.eu/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Wien </td><td>Wien </td><td align="left">28.04.–30.04.2016 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">Grazer Linuxtage </td><td>Graz </td><td align="left">29.04.–30.04.2016 </td><td>frei </td><td align="left"><a href="http://www.linuxtage.at/"><tt class="big">http://www.linuxtage.at/</tt></a> </td></tr>
+<tr><td align="left">VCF Europa </td><td>München </td><td align="left">30.04.–01.05.2016 </td><td>– </td><td align="left"><a href="http://www.vcfe.org/"><tt class="big">http://www.vcfe.org/</tt></a> </td></tr>
+<tr><td align="left">LUG-Camp </td><td>Bruchsal </td><td align="left">05.05.–08.05.2016 </td><td>75 EUR </td><td align="left"><a href="https://lugcamp.lugbruchsal.de/"><tt class="big">https://lugcamp.lugbruchsal.de/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Eisenstadt </td><td>Eisenstadt </td><td align="left">20.05.–21.05.2016 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2016-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_vorschau" name="fm_16_02_vorschau">Vorschau</a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint am ersten Sonntag eines Monats. Die März-Ausgabe
+    wird voraussichtlich am 6. März u.&nbsp;a. mit folgenden Themen veröffentlicht:
+    
+<ul>
+<li> Kurztipp: Freie Welten</li>
+<li> Rezension: GIMP 2.8 – Für digitale Fotografie und Webdesign
+    </li>
+</ul>
+    Es kann leider vorkommen, dass wir aus internen Gründen angekündigte
+    Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_konventionen" name="fm_16_02_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                         hier auch einfach in einer normalen Shell ein
+                         <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                        <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+        <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_02_impressum" name="fm_16_02_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 7. Februar 2016<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2016-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Hans-Joachim Baader </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_kurztipp_grep">Kurztipp: Unerwünschte grep-Ausgaben vermeiden</a> </td></tr>
+<tr><td align="left">Robert Kurz </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_steam_controller">Review: Steam Controller</a> </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_kernel">Der Jahreswechsel im Kernelrückblick</a> </td></tr>
+<tr><td align="left">Stefan Müller </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_dCore">dCore</a> </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_professional_python">Rezension: Professional Python</a> </td></tr>
+<tr><td align="left">Matthias Sitte </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_linux-server">Rezension: Linux-Server – Das umfassende Handbuch</a> </td></tr>
+<tr><td align="left">Christian Stankowic </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_gitlab_continuous_integration">GitLab Continuous Integration</a> </td></tr>
+<tr><td align="left">Martin Stock </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_typo3">Einführung in Typo3</a> </td></tr>
+<tr><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_open_source_und_schule">Rezension: Open Source und Schule – Warum Bildung Offenheit braucht</a>, <a href="freiesMagazin-2016-02-bilder.html#fm_16_02_rezension_sketchnote_arbeitsbuch">Rezension: Das Sketchnote-Arbeitsbuch</a> </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Satz und Layout</b></td></tr>
+<tr><td align="left">Benedict Leskovar </td><td align="left">Thomas Schwemm </td></tr>
+<tr><td align="left">Kai Welke </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+    </td></tr></table>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. 
+    Die Kommentar- und Empfehlen-Icons wurden von Maren Hachmann erstellt
+    und unterliegen ebenfalls der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>.
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2016-02-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  7 Feb 2016, 13:49.</small>
+</div>
+</body></html>

@@ -1,0 +1,1572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Distributionen aktuell | Neues aus der Welt der Mobilgeräte | Zweite Version von Linutop auf dem Markt | Kernel Bug #9924 | Ab in die Gruft! | Neues Projekt zur Förderung der Barrierefreiheit gestartet | Video-Wettbewerb des EU-Projekts ,,Self'' | Vorbereitungen für Googles ,,Summer of Code'' laufen | Wird OOXML doch ein ISO-Standard? | Into the Sun, Teil 2 | AMDs Performance Library unter freier Lizenz veröffentlicht | Mehrkern-Prozessoren mit make ausnutzen | Bildschirm mit einem Klick ausschalten | Samsung-Druckertreiber im Test | C.U.O.N. im täglichen Büroeinsatz | Fernsehen übers Internet mit Zattoo | Multimediatastaturen mit xbindkeys zähmen | Paketverwaltung – von APT und RPM | Webzwonull plus GPL: die AGPL | Rezension: Freie Software | 2008 ist das Jahr des Linux-Desktops | Veranstaltungen | Editorial | Leserbriefe | Konventionen | Vorschau | Impressum" />
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2008-03-bilder-Dateien/fm_mobil_2016_05.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.79">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;}
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                                                                                                                                                    <font size="+4">
+<title>freiesMagazin 03/2008</title>
+<div id="content_idx"><font size="5">Eine Version ohne Bilder findet man unter <a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2008-03.html">diesem Link</a>.</font><hr />
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font></font>&nbsp;<font color="#595959"><font size="+4"><b>März 2008</b></font></font> <br />
+<font color="#595959"><font size="+3"><b>Topthemen dieser Ausgabe</b></font></font><br />
+<font size="+1">Samsung-Druckertreiber im Test</font> <br />
+Die Funktionalität von Hardware unter Linux steht und fällt vor allem mit den Treibern. Sehr oft stellen Hardwarehersteller nur Windows-Treiber zur Verfügung. Samsung ist hier eine Ausnahme, da sie selbst proprietäre Treiber anbieten. Daneben gibt es aber auch noch andere freie Treiberprojekte. Der Artikel erklärt die Installation der Treiber und vergleicht sie miteinander. (<a href="freiesMagazin-2008-03-bilder.html#08_03_samsung">weiterlesen</a>) <br />
+<br />
+<font size="+1">C.U.O.N. im täglichen Büroeinsatz</font> <br />
+Das C.U.O.N.-System sowie der Client pyCuon sind Auftragsbearbeitung, Warenwirtschaft und allgemeine Datenverwaltung in einem. Außerdem beinhaltet C.U.O.N. ein Document Management System (DMS). Linux ist reif für den Desktop und dieser Bericht soll die Möglichkeiten dazu aufzeigen. (<a href="freiesMagazin-2008-03-bilder.html#08_03_cuon">weiterlesen</a>) <br />
+<br />
+<font size="+1">Fernsehen übers Internet mit Zattoo</font> <br />
+Fernsehen auf dem PC ist schon lange keine Besonderheit mehr. Normalerweise wird aber zusätzliche Hardware benötigt, um den Kabelanschluss oder DVB-T nutzen zu können, es sei denn, man greift auf die Streaming-Angebote der Sender oder auf Sendungsarchive zurück. Der Nachteil besteht darin, dass Sendungen erst nach dem regulären Sendetermin abgerufen werden können. Mit dem TV-Player Zattoo ist es möglich, werbefinanziert das Programm ausgewählter Sender ,,live'' über das Internet anzuschauen. (<a href="freiesMagazin-2008-03-bilder.html#08_03_zattoo">weiterlesen</a>) <br />
+<br />
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<a name="index">
+</a><font color="#595959"><b><font size="+2"><a name="08_03_inhalt">Inhalt</a><a name="08_03_inhalt">
+</a></font></b></font><br /><b>Nachrichten</b><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_distributionen">Distributionen aktuell</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_mobil">Neues aus der Welt der Mobilgeräte</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_linutop">Zweite Version von Linutop auf dem Markt</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_kernelbug">Kernel Bug #9924</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_truecrypt">Ab in die Gruft!</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_gnome-barrierefreiheit">Neues Projekt zur Förderung der Barrierefreiheit gestartet</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_self-contest">Video-Wettbewerb des EU-Projekts ,,Self''</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_google-soc">Vorbereitungen für Googles ,,Summer of Code'' laufen</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_ooxml">Wird OOXML doch ein ISO-Standard?</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_innotek">Into the Sun, Teil 2</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_amd">AMDs Performance Library unter freier Lizenz veröffentlicht</a><br />
+<br />
+<b>Anleitungen</b><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_make">Mehrkern-Prozessoren mit make ausnutzen</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_bildschirm_ausschalten">Bildschirm mit einem Klick ausschalten</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_samsung">Samsung-Druckertreiber im Test</a><br />
+
+<div class="p"><!----></div>
+<b>Software</b><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_cuon">C.U.O.N. im täglichen Büroeinsatz</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_zattoo">Fernsehen übers Internet mit Zattoo</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_xbindkeys">Multimediatastaturen mit xbindkeys zähmen</a><br />
+<br />
+<b>Linux allgemein</b><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_apt_rpm">Paketverwaltung – von APT und RPM</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_agpl">Webzwonull plus GPL: die AGPL</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_rez_grassmuck">Rezension: Freie Software</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_jahr_des_linux_desktops">2008 ist das Jahr des Linux-Desktops</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_veranstaltungen">Veranstaltungen</a><br />
+<br />
+<b>Interna</b><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_editorial">Editorial</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_leserbriefe">Leserbriefe</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_konventionen">Konventionen</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_vorschau">Vorschau</a><br />
+<a href="freiesMagazin-2008-03-bilder.html#08_03_impressum">Impressum</a><br />
+
+<div class="p"><!----></div>
+<font size="-1">Soweit nicht anders angegeben, stehen alle Artikel und Beiträge in <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> unter der <a href="http://www.gnu.org/copyleft/fdl.html">GNU-Lizenz für freie Dokumentation (FDL)</a>. Das Copyright liegt beim jeweiligen Autor. <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> unterliegt als Gesamtwerk ebenso der <a href="http://www.gnu.org/copyleft/fdl.html">GNU-Lizenz für freie Dokumentation (FDL)</a> mit Ausnahme von Beiträgen, die unter einer anderen Lizenz hierin veröffentlicht werden. Das Copyright liegt bei Eva Drud. Es wird die Erlaubnis gewährt, das Werk/die Werke (ohne unveränderliche Abschnitte, ohne vordere und ohne hintere Umschlagtexte) unter den Bestimmungen der GNU Free Documentation License, Version 1.2 oder jeder späteren Version, veröffentlicht von der Free Software Foundation, zu kopieren, zu verteilen und/oder zu modifizieren. Die xkcd-Comics stehen separat unter der <a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative Commons-Lizenz CC-BY-NC</a>. Das Copyright liegt bei <a href="http://www.xkcd.com/">Randall Munroe</a>.<br /></font>
+<br /><br />
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_editorial">Editorial</a><a name="08_03_editorial">
+</a></font></b></font><br />
+
+<div class="p"><!----></div>
+<font size="+1"><b>Liebe Leserin, lieber Leser!</b></font>
+
+<div class="p"><!----></div>
+Lassen Sie die Korken knallen, denn diesen Monat haben wir ein kleines Jubiläum zu feiern! <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> ist zwei Jahre alt geworden. Rückblickend hat sich viel verändert - sowohl am Layout als auch beim Inhalt. Bei einem direkten Vergleich mit der ersten Ausgabe von Februar/März 2006 erkennt man <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> kaum wieder. Im zweiten Erscheinungsjahr sind viele kleine Änderungen eingeflossen, die uns vor allem intern die Arbeit sehr erleichtert haben (siehe <span class="roman"><span class="roman">L</span><sup><span class="roman">A</span></sup><span class="roman">T</span><sub><span class="roman">E</span></sub><span class="roman">X</span></span>-Quellcode (<a href="http://www.freiesmagazin.de/extras">Link</a>)). Darüber hinaus hatten wir uns Ende des Jahres 2007 entschlossen, etwas weltoffener zu werden und das Magazin nicht mehr so sehr auf Ubuntu auszurichten. Neben den offensichtlichen Änderungen am Magazin selbst hat sich auch die Zusammensetzung des Teams verändert. Aus einem einzigen Korrektor sind inzwischen drei geworden, die Redaktion hat ein Mitglied gewonnen und eines verloren und es wurde ein extra Server-Team gegründet. Die Downloadzahlen von <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> sind im Laufe des letzten Jahres leicht gestiegen, einzig der Umzug auf einen eigenen Server im September 2007 sorgte mit seinem anfänglichen Ausfall für einen kleineren Einbruch. Gleichzeitig haben wir uns den Wunsch einer eigenen Internetpräsenz erfüllt, sodass man alle Nachrichten und Ankündigungen zum Magazin sowie einige Extras wie Link-Buttons auf der Webseite <a href="http://www.freiesmagazin.de">http://www.freiesmagazin.de</a> (<a href="http://www.freiesmagazin.de">Link</a>) findet.
+
+<div class="p"><!----></div>
+Daher freuen wir uns auch besonders über die Neuigkeit, dass wir ab sofort mit zwei anderen Open-Source-Projekten zusammenarbeiten. Zum einen wurde die Januar-Ausgabe von <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> (<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-01.pdf">Link</a>) auf die beiliegende CD des Print-Magazins T3N (<a href="http://t3n.yeebase.com/">Link</a>) gepresst, welches seit dem 29.&nbsp;Februar im gut sortierten Zeitschriftenhandel zu finden ist. Zum anderen wollen wir in Zukunft mehr mit dem Team von Pro-Linux (<a href="http://www.pro-linux.de">Link</a>) kooperieren. Viele unserer Nachrichten basieren bereits auf Meldungen des Internetportals, wir tauschen nun aber auch Artikel aus, sodass ab und an <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>-Artikel bei Pro-Linux erscheinen und umgekehrt Pro-Linux-Artikel in <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> abgedruckt werden.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/fm-zusammen.png" /><br />
+<em><b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> im Wandel der Zeit.</em><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Wir hatten letzten Monat (<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">Link</a>) auf die geringen Downloadzahlen der Mobilausgabe hingewiesen und dies auf die fehlenden Bilder in der Version zurückgeführt. Zum einen waren die Downloadzahlen anscheinend gar nicht so niedrig, wie angenommen - unser Server hatte nur ein kleines Problem mit den Logdateien. Zum anderen haben uns die aktuellen Zahlen aber dennoch gezeigt, dass die HTML-Version mit Bildern mit über 20.000 Downloads sehr beliebt ist. Darüber freuen wir uns natürlich sehr und haben diesen Monat als kleine Ergänzung die einzelnen Artikel zur besseren Abgrenzung mit einer extra Linie versehen und einen Link zurück zum Inhaltsverzeichnis eingefügt. So sollte die Navigation im Mobilgerät noch etwas komfortabler ablaufen. Zusätzlich haben wir eine separate mobile Übersichtsseite <a href="http://www.freiesmagazin.de/mobil/">http://www.freiesmagazin.de/mobil/</a> (<a href="http://www.freiesmagazin.de/mobil/">Link</a>) eingerichtet, über die man auch die alten Mobilausgaben leicht erreichen kann.
+
+<div class="p"><!----></div>
+Auch in dieser Ausgabe haben wir an unserem Layout gefeilt, wie Sie sicher sehen werden. Am Auffälligsten sind die neu eingeführten Unterkategorien oben rechts. Dies soll leichter erkennbar machen, worum es in einem Artikel geht. Eine auf den ersten Blick nicht sichtbare, aber nützliche Änderung haben wir bei der Schriftart, die in den Befehls- und Textboxen verwendet wird, vorgenommen: Die Befehle lassen sich nun ohne Fehler per Maus markieren und direkt in ein Terminal einfügen.
+
+<div class="p"><!----></div>
+Zum Abschluss möchten wir wieder etwas von Ihnen wissen: Welches Verhältnis zwischen Nachrichten und Artikeln wünschen Sie sich in <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>? Sind die Nachrichten in <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> überhaupt noch interessant oder schon längst ,,kalter Kaffee''? Dabei wollen wir vor allem auf Zusammenfassungen wie die Distributionsübersicht dort (<a href="freiesMagazin-2008-03-bilder.html#08_03_distributionen">Link</a>) hinweisen, die einen Überblick über die Veränderungen im letzten Monat geben. Schreiben Sie uns doch Ihre Meinung per E-Mail an <img src="freiesMagazin-2008-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<div class="p"><!----></div>
+Wir wünschen viel Spaß mit dieser Ausgabe, Ihre
+
+
+<div class="p"><!----></div>
+
+<table>
+<tr><td width="39"></td><td> </td><td width="39"></td><td></td></tr>
+<tr><td width="39"></td><td><b>D. Wagenführ</b> </td><td width="39"></td><td><b>E. Drud</b>
+</td></tr></table>
+
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.freiesmagazin.de/extras">http://www.freiesmagazin.de/extras</a><br />
+<a href="http://www.freiesmagazin.de">http://www.freiesmagazin.de</a><br />
+<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-01.pdf">ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-01.pdf</a><br />
+<a href="http://t3n.yeebase.com/">http://t3n.yeebase.com/</a><br />
+<a href="http://www.pro-linux.de">http://www.pro-linux.de</a><br />
+<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf</a><br />
+<a href="http://www.freiesmagazin.de/mobil/">http://www.freiesmagazin.de/mobil/</a><br />
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_leserbriefe">Leserbriefe</a><a name="08_03_leserbriefe">
+</a></font></b></font><br /><font size="-1"><b>Für Leserbriefe steht unsere E-Mailadresse <img src="freiesMagazin-2008-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob, Kritik und Anregungen zum Magazin.</b><br />
+
+<div class="p"><!----></div>
+An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern, uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen sehr viel Lob (was uns natürlich freut), aber nur durch Kritik können wir uns verbessern.
+</font><br />
+
+<div class="p"><!----></div>
+<b>Mobile Ausgabe</b><br />
+Ich habe eine Anregung zur mobilen <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>-Ausgabe: Die Version ohne Bilder war bei mir 50 KB groß - das ist zwar noch akzeptabel, für andere aber vielleicht schon zu groß. Außerdem dürfte es für Nutzer mit normalen Handys ziemlich schwierig sein, sich zurechtzufinden. Gerade, wenn man nicht alles lesen möchte, sondern sich nur Teile herauspickt, ist das etwas problematisch.<br />
+Daher schlage ich vor, dass die eine große Datei in mehrere aufgespalten wird. Idealerweise würde die Startseite nur aus einem Inhaltsverzeichnis bestehen. Eventuell wäre ein einleitender Satz zu den längeren Artikeln, z.&nbsp;B. den Anleitungen, hilfreich, aber unbedingt nötig wäre das nicht. So könnte man sich genau das heraussuchen, was man lesen möchte. Und mit einem Tastendruck auf ,,Zurück'' ist man wieder im Inhaltsverzeichnis und kann sich dem nächsten Artikel widmen.
+<br /><b>Dominic Lyons</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Vielen Dank für die Anregung. Eine Aufsplittung in mehrere HTML-Seiten ist ein sehr großer Aufwand. Zur besseren Navigation und optischen Trennung haben wir aber jeden Artikel durch eine Linie getrennt und einen Link zum Inhaltsverzeichnis unter jedem Beitrag hinzugefügt.</i>
+
+<div class="p"><!----></div>
+<b>Veranstaltungen</b><br />
+Ich möchte mich erstmal für Eure interessanten Beiträge in <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> bedanken. Durch Zufall fand ich den Link beim Surfen in einem Forum. Leider habe ich erst heute entdeckt, dass Ihr auch Veranstaltungen bekannt gebt. So möchte ich die Möglichkeit nutzen und die Linux-Gruppe von Eisenach und Umgebung kurz vorstellen.
+<br /><b>Thomas Warlich</b>
+
+<div class="p"><!----></div>
+Ich möchte auf unseren Linux-User-Group-Treff der LUG Kreuzlingen (CH) aufmerksam machen. Auf <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> wird bei uns jedes Mal hingewiesen. Eine tolle Sache. Ich persönlich begrüße die Öffnung zu anderen Distris, auch wenn ich K/Ubuntuuser bin. Weiter so!
+<br /><b>Esra Kummer</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Vielen Dank für das Lob und für die Mitteilung der beiden Anwendertreffen. Wir freuen uns über jede neue Veranstaltung, die wir in unserer Liste dort (<a href="freiesMagazin-2008-03-bilder.html#08_03_veranstaltungen">Link</a>) veröffentlichen können,
+auch wenn sie diesen Monat leider ausgefallen ist. Wenn Sie also ein Treffen kennen, das wir noch nicht aufführen, schreiben Sie einfach eine Mail an .</i>
+
+<div class="p"><!----></div>
+<b>Titelseite</b><br />
+Bitte nicht böse sein, aber welche Titelseite sprecht Ihr im Editorial an? Bei aller Liebe, aber eine Titelseite muss schon etwas mehr bieten! Wenn ich könnte, würde ich etwas beitragen (guckt Euch mal gängige Titelseiten diverser Print-Magazine oder Eures ,,Mitbewerbers'' Yalm an), aber da ich es nicht kann, beschränke ich mich aufs Kritisieren.
+<br /><b>Dirk Sohler</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Unsere Titelseite ist bewusst sehr schlicht gestaltet. Einerseits soll sie zu unserem schlichten und klaren Layout passen, andererseits müssen wir im Gegensatz zu Print-Magazinen keinen Blickfang im Regal liefern, damit jemand <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> kauft. Titelseiten wie bei Yalm oder Full Circle Magazine würden einfach nicht zu unserem Stil passen. Trotzdem heißt das nicht, dass unsere Titelseite für alle Zeiten so bleiben wird. Wie bisher werden wir sicher auch die Titelseite immer wieder kleinen Änderungen unterwerfen - irgendwann vielleicht einmal so, dass auch Sie sie als Titelseite definieren würden.</i>
+
+<div class="p"><!----></div>
+Zur Titelseite in der PDF-Version: Es dürften ruhig auch drei Artikel genannt werden. Das fände ich irgendwie ästhetischer, aber es kann natürlich sein, dass es Euch anders geht. :-)
+<br /><b>Dominic Lyons</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Wir versuchen immer drei Artikel als Topthema aufzulisten, aber letzten Monat war einfach kein dritter dabei. Wir haben intern festgelegt, dass wir auf der ersten Seite wirklich nur wichtige und ,,große'' Titel stehen haben möchten. Qualität vor Quantität!</i>
+
+<div class="p"><!----></div>
+<b>Nachwort zu Venezuela</b><br />
+Nur noch ein kurzes Nachwort zu den beiden Leserbriefen bzgl. der ,,Diktatur des Hugo Chavez''. Die ,,zwangsweise dichtgemachte TV-Anstalt'' darf auch weiterhin über Satellit und Kabelfernsehen senden, nur nicht als staatlicher Kanal. Gründe dafür gibt es genug, da reicht schon ein Blick in Wikipedia in die Beschreibung des Senders RCTV (<a href="http://de.wikipedia.org/wiki/RCTV">Link</a>). Alternativ bei ein wenig Zeit kann man sich natürlich auch noch Quellen abseits der Tagesschau (die damals genauso reißerisch berichtete) zu Gemüte führen (<a href="http://politblog.net/nachrichten/2007/05/27/1027-wahrnehmungsmanagement-in-der-praxis-das-beispiel-venezuela/">Link</a>).<br />
+Ansonsten viel Erfolg weiterhin bei <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>!
+<br /><b>Alexander Reelsen</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Vielen Dank für den Leserbrief. Das wird einige unserer Leser sicher interessieren.</i>
+
+<div class="p"><!----></div>
+Mein Artikel über Freie Software in Venezuela hat ja einigen Wirbel verursacht - die Leserbriefe zu diesem Text möchte ich an dieser Stelle jedoch nicht kommentieren. Sehr verwundert hat mich Eure Reaktion darauf in der Februar-Ausgabe:
+,,<i>Danke für Ihre beiden Reaktionen. Wie Sie sehen, polarisiert das Thema und wir können es wahrscheinlich nicht allen Lesern recht machen. Wie wir letzten Monat schrieben, wollen wir Themen, zu denen uns eine einseitige politische Berichterstattung vorgeworfen werden könnte, nicht mehr aufgreifen. Dies hat aber nicht zwingend etwas mit Nichtbeachtung oder Zensur zu tun. <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> beschäftigt sich mit Themen rund um Linux und Open Source. Politische Artikel haben hier keinen Platz.</i>''<br />
+Nach meinem Verständnis ist Freie Software - und die Werte, die sie transportiert - per se politisch und daher ist es auch gar nicht möglich über Freie Software zu schreiben ohne auch über Politik zu schreiben.<br />
+Natürlich ist <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> nicht die junge (GNU/Linux) Welt und auch nicht die taz oder Indymedia und wenn die gesellschaftliche Dimension von Freier Software für Euch keine Relevanz besitzt, ist das auch ok, denn schließlich ist <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> ja Euer ,,Baby'' - ich fände eine solche Haltung einfach nur traurig...
+<br /><b>Andreas Henrichs</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>In unseren Augen gibt es Unterschiede zwischen Parteipolitik, Umweltpolitik und Open-Source-Politik, wenn man dies so nennen will. Der Venezuela-Artikel hat die Leser aufgerieben, weil die Parteipolitik für den ein oder anderen mit hinein spielte. Und auf diese wollen wir in Zukunft verzichten.<br />
+Unserer Meinung nach hat <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> nichts mit derartiger Politik zu tun. Und wir wollen mit unserem Magazin auch weder gegen die ,,bösen'', großen, proprietären Hersteller und Magazine kämpfen, noch ,,missionieren'', sondern einfach nur den Menschen eine Möglichkeit geben, sich über Open-Source- und Linux-Themen zu informieren. Wir finden es einfach sehr ermüdend, wenn es wegen bestimmter Themen böse Leserbriefe hagelt, und wir uns dafür rechtfertigen müssen. Es wäre auch uns lieber, wenn alle
+Leser den Artikel als Bericht und nicht als Wertung aufgefasst hätten. Wie Sie aber selbst gelesen haben, haben doch einige den Artikel als ,,Beweihräucherung'' der Politik von Chavez' gesehen.<br />
+Daher haben wir uns zu obiger Aussage entschlossen, an der wir auch festhalten werden.</i>
+
+<div class="p"><!----></div>
+<b>MOC'n'Roll: audiophil mit der Konsole (<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> 02/2008)</b><br />
+Ich hab Euer Magazin erst jetzt gerade durch Pro-Linux kennengelernt und bin recht begeistert. Insbesondere den Artikel ,,MOC'n'Roll: audiophil mit der Konsole'' habe ich mir gerade mal kurz durchgelesen, weil ich auch absoluter MOC-Fan bin. Dazu muss ich aber direkt mal einen kleinen Kritikpunkt loswerden. Die beiden mit Abstand wichtigsten Features habt Ihr nämlich leider vergessen zu nennen. MOC bringt den meiner Meinung nach besten Sound im Vergleich zu allen anderen Musik-Playern für Linux, die ich kenne. Das Ding klingt irgendwie noch viel besser als meine alte HiFi-Anlage.<br />
+Das zweite nicht erwähnte Feature ist der Songwechsel ohne Pause, für den man bei allen anderen Playern zusätzliche Plugins braucht oder an irgendwelchen Cache-Einstellungen herumbasteln muss, die dann doch nicht so wirklich gut funktionieren.<br />
+Aber ansonsten trifft es der Artikel auf den Punkt. Und das Interview mit Damian Pietras ist auch recht interessant.
+<br /><b>Heiko Baums</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Vielen Dank für das Lob am Magazin. Es ist schön zu hören, dass sich die Arbeit lohnt. Wir haben den Leserbrief veröffentlicht, da die beiden Features sicher auch andere Leser interessieren. Vielen Dank für die Information.</i>
+
+<div class="p"><!----></div>
+<b>Links und Fehlerteufel</b><br />
+Ich habe Euer Magazin diesen Monat erst entdeckt und es hat mir im Ganzen sehr gut gefallen. Negativ fielen mir allerdings die Quellenverweise auf. Meiner Meinung nach stechen diese mit dem Blau zu sehr hervor, ich würde eher für die Verweise dieselbe Farbe wie für den übrigen Text verwenden.<br />
+Ein Fehler ist mir aufgefallen in der Rubrik ,,Veranstaltungskalender''. Der Eintritt für die Chemnitzer Linux-Tage ist nicht ganz umsonst sondern beträgt 5 bzw. 3 (ermäßigt) Euro.
+<br /><b>Armin Eulenstein</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Wir haben überlegt, ob und wie wir die Links ändern können. Die gleiche Farbe wie bei den internen Verweisen zu benutzen, wäre aber nicht so gut, da wir bewusst Wert auf eine Differenzierung legen. Wir haben dafür in dieser Ausgabe das Blau etwas abgedunkelt.<br />
+Den Fehler bei den Veranstaltungen haben wir nachträglich ausgebessert. Vielen Dank für den Hinweis.</i>
+
+<div class="p"><!----></div>
+<b>Lob</b><br />
+Ich schau immer mal wieder auf der ubuntuusers-Seite vorbei, denn es ist eine der besten Quellen für ,,Wie kriege ich was hin?'' oder ,,Was gibt es für Software, die xyz kann?'', und schau dabei auch immer mal Euer <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> an. Und was soll ich sagen - ich find's einfach gut, speziell auch die Offenheit. :-) Selber kann ich gerade noch nicht mitmachen, aber vielleicht später. Mal schauen! Wollte einfach sagen: Ihr macht eine super Arbeit!
+<br /><b>Thomas Stegmaier</b>
+
+<div class="p"><!----></div>
+<b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font>: <i>Vielen Dank für die motivierende Mail voller Lob! Wenn Sie Zeit zum Mitmachen haben, können Sie sich gerne bei uns melden. Wir freuen uns über jeden Artikel. Dabei auch gleich der Aufruf an alle anderen potentiellen Autoren, die ihre Beiträge und auch Ideen an <img src="freiesMagazin-2008-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> senden können.</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://de.wikipedia.org/wiki/RCTV">http://de.wikipedia.org/wiki/RCTV</a><br />
+<a href="http://politblog.net/nachrichten/2007/05/27/1027-wahrnehmungsmanagement-in-der-praxis-das-beispiel-venezuela/">http://politblog.net/nachrichten/2007/05/27/1027-wahrnehmungsmanagement-in-der-praxis-das-beispiel-venezuela/</a><br />
+
+
+
+
+<div class="p"><!----></div>
+<font size="-1">Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu kürzen.</font><br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<br />
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_distributionen">Distributionen aktuell</a><a name="08_03_distributionen">
+</a></font></b></font><br />Es gab letzten Monat viele neue Versionen der verschiedensten Linux-Distributionen. Der Artikel soll die Neuigkeiten kurz zusammenfassen.
+
+<div class="p"><!----></div>
+<b>CentOS</b><br />
+CentOS ist ein Enterprise-Linux, welches aus den GPL-Quellen von Red Hat Enterprise Linux (RHEL) ein neues System erstellt. Mit Hilfe der Live-CD-Tools des Fedora-Projektes haben die CentOS-Macher nun Version 5.1 ihrer Distribution auf eine Live-CD gebannt (<a href="https://projects.centos.org/trac/livecd/">Link</a>). Darauf zu finden sind u.&nbsp;a. OpenOffice.org, Firefox und Thunderbird, aber auch für die Systemrettung wichtige Programme wie Samba, LVM und Raid-Unterstützung (<a href="http://www.pro-linux.de/news/2008/12354.html">Link</a>).
+
+<div class="p"><!----></div>
+<b>Darkstar Linux</b><br />
+Auf einer DVD kommt die finale Version 2008.1 von Darkstar Linux daher (<a href="http://www.darkstarlinux.ro/">Link</a>). Das auf Slackware basierende Betriebssystem will sich vorrangig an Linux-Einsteiger wenden. Die DVD bringt KDE und Xfce als Fenstermanager sowie zahlreiche Programme mit. Einzig die Hardwareunterstützung scheint nicht immer so gut zu sein, wie dieser Bericht (<a href="http://www.linux.com/feature/125813">Link</a>) zeigt.
+
+<div class="p"><!----></div>
+<b>Debian</b><br />
+Das Debian-Team hält an seinem Plan fest, nach dem Debian ,,Lenny'' im September 2008 erscheinen soll. Aktuell gibt es aber noch über 400 systemkritische Fehler, die ausgebessert werden müssen (<a href="http://www.pro-linux.de/news/2008/12293.html">Link</a>).<br />
+Zusätzlich ist für Debian 4.0 ,,Etch'' das dritte Update erschienen, welches Sicherheitsupdates und Fehlerkorrekturen der letzten zwei Monate mitbringt. Daneben hat auch ein neuer Kernel für eine bessere Hardwareunterstützung Einzug in die Distribution gefunden. Wichtig für viele Anwender ist die Verschiebung von Adobe Flash in die Debian-Backports (<a href="http://www.linux-magazin.de/news/debian_update_bringt_sicherheit_verbannt_adobe_flash">Link</a>).<br />
+Ende des Monats haben die Debian-Entwickler auch bekannt gegeben, dass die Unterstützung für Debian 3.1 ,,Sarge'' Ende März eingestellt wird. Es wird empfohlen, auf eine neuere Version zu aktualisieren (<a href="http://www.heise.de/open/news/meldung/104303">Link</a>).
+
+<div class="p"><!----></div>
+<b>Dreamlinux</b><br />
+Die auf Morphix aufbauende Distribution Dreamlinux hat Mitte Februar ihre dritte Beta-Version herausgegeben (<a href="http://dreamlinuxnews.blogspot.com/2008/02/dreamlinux-30-beta-3-released.html">Link</a>). Der erste Release Candidate steht aber bereits in den Startlöchern, sodass die finale Version Ende März erscheinen soll. Als Fenstermanager kommen GNOME und Xfce auf der Live-CD zum Einsatz, die man beim CD-Start auswählen kann. Ein erster Test der Beta-Version liegt auch vor (<a href="http://news.softpedia.com/news/Dreamlinux-3-0-Beta-3-Testdrive-78943.shtml">Link</a>).
+
+<div class="p"><!----></div>
+<b>Fedora</b><br />
+Das Fedora-Projekt veröffentlichte die erste Alpha-Version von Fedora 9 mit KDE 4.0, GNOME 2.22 Beta und Firefox 3 Beta. Vor der Veröffentlichung im April sind noch eine Beta-Version und ein Release Candidate geplant (<a href="http://www.golem.de/0802/57507.html">Link</a>). Daneben wird für Fedora 8 nun auch ein Xfce-Spin als Live-CD neben GNOME und KDE angeboten (<a href="http://www.pro-linux.de/news/2008/12335.html">Link</a>). Aber auch hinter den Kulissen gibt es etwas Neues. So plant man aktuell die Zusammenfassung der verschiedenen Fremdrepositories zu einer großen Quelle namens ,,RPM Fusion''. Zusätzlich gibt es von der Community  Bestrebungen, mit der ,,Eeedora'' getauften Distribution Fedora auf den Asus EeePC zu bringen (<a href="http://www.linux-magazin.de/news/neues_bei_fedora_rpm_fusion_und_eee_pc">Link</a>).
+
+<div class="p"><!----></div>
+<b>Gentoo</b><br />
+Nachdem es bei Gentoo letzten Monat einige Probleme gab (<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">Link</a>), hat sich das Projekt inzwischen reorganisiert. So wurden die notwendigen Dokumente eingereicht, damit die Stiftung wieder ihre Zulassung erhalten kann. Weiter hat sich das PR-Team neu zusammengesetzt und will in Zukunft besser über den aktuellen Entwicklungsstand informieren. Für März ist eine Beta-Version des kommenden Gentoo 2008.0 geplant (<a href="http://www.heise.de/open/news/meldung/102992">Link</a>).
+
+<div class="p"><!----></div>
+<b>GoblinX</b><br />
+GoblinX (<a href="http://www.goblinx.com.br/en/">Link</a>), eine auf Slackware basierende Live-Distribution, ist in Version 2.6 in verschiedenen Editionen erschienen. ,,Micro'' liefert nur Fluxbox als Fenstermanager und einige GTK/GTK2-Anwendungen mit, ist dafür aber nur 100 MB klein. Die Edition ,,Mini'' mit 153 MB liefert Xfce als Fenstermanager aus. Die ,,Standard''-Version ist immer noch 310 MB klein, hat dafür fünf verschiedene Fenstermanager im Gepäck: KDE, Fluxbox, Xfce, Enlightenment und WindowMaker. Damit sollte für jeden etwas dabei sein. Es gibt auch bereits einen Test der Mini-Edition (<a href="http://www.linuxlove.org/2008/02/04/first-look-at-goblinx-26-mini/">Link</a>).
+
+<div class="p"><!----></div>
+<b>Linpus Linux</b><br />
+Mit einer neuen Live-CD, die im Januar erschienen ist, will Linpus Linux mit zwei verschiedenen Oberflächen sowohl Einsteiger als auch Profis zu ihrem System bringen. Demnach kann man leicht zwischen beiden Modi umschalten und das Design und Aufmachung der Distribution passt sich entsprechend an. Einsteiger sehen einfachere Symbole und weniger Menüelemente. Erfahrene Anwender können dagegen alle Optionen nutzen. Zusätzlich ist die Linpus Linux Lite für Mobilgeräte wie UMPCs und MIDs geeignet (<a href="http://www.linuxdevices.com/news/NS8787050045.html">Link</a>).
+
+<div class="p"><!----></div>
+<b>Mandriva</b><br />
+Von der im April erscheinenden Distribution Mandriva 2008.1 Spring (<a href="http://wiki.mandriva.com/en/2008.1_Beta_2">Link</a>) ist die zweite Beta-Version mit Codename ,,Orchis'' erschienen. Sehr schön ist, dass der Installer versucht andere Distributionen ins Boot-Menü zu integrieren. Zum Download stehen die Free Edition (ohne proprietäre Programme) und Mandriva One als KDE- und GNOME-Version bereit (<a href="http://www.heise.de/open/news/meldung/103617">Link</a>).
+
+<div class="p"><!----></div>
+<b>OpenSUSE</b><br />
+Von OpenSUSE 11.0 ist die zweite Alpha-Version erschienen. Neu ist vor allem, dass das alte KDE 3.5.8 durch das brandneue KDE 4.0.1 ersetzt wurde. Auch von GNOME 2.22 wurde die neueste Beta-Version integriert. Die finale Version von OpenSUSE 11.0 ist für den 19. Juni geplant. Unter Umständen ist bis dahin auch schon KDE 4.1 integriert (<a href="http://www.pro-linux.de/news/2008/12314.html">Link</a>).
+
+<div class="p"><!----></div>
+<b>Ubuntu</b><br />
+Von Ubuntu 8.04 LTS ,,Hardy Heron'' ist die fünfte Alpha-Version erschienen. Neben Fehlerausbesserungen ist die Beta-Version von Firefox 3 und der Windows-Installer Wubi dazu gekommen. Ab jetzt werden keine neuen Funktionen mehr eingebaut. CDs/DVDs gibt es für Ubuntu, Kubuntu, Edubuntu, Xubuntu, Gubuntu, Ubuntu JeOS und Ubuntu Studio (<a href="http://ubuntuusers.de/ikhaya/923/">Link</a>). Auch von Mythbuntu 8.04 ist eine zweite Alpha-Version erschienen, die vor allem viele Fehler aus Version 7.10 behebt (<a href="http://www.mythbuntu.org/hardyalpha2">Link</a>).<br />
+Extra veröffentlicht wurde die erste Alpha-Version von Kubuntu 8.04 mit KDE 4.0.1 als Fenstermanager. Weil KDE 4 noch im Entwicklungsstadium ist, wird Kubuntu 8.04 keine Langzeitunterstützung erhalten (<a href="http://ubuntuusers.de/ikhaya/928/">Link</a>).<br />
+Zusätzlich hat Canonical das Augenmerk auf Ubuntu Mobile gelenkt. Die Distribution für Mobile Internet Devices (MIDs) soll nach der Veröffentlichung von Ubuntu 8.04 im April erscheinen. Die Version soll auf den Intel-Plattformen ,,McCaslin'' und später auch ,,Menlow'' laufen (<a href="http://www.electronista.com/articles/08/02/26/ubuntu.mobile/">Link</a>).<br />
+Mark Shuttleworth von Canonical hat auch die neue Version Ubuntu 8.10 mit dem Codenamen ,,Intrepid Ibex'' (,,unerschrockener Steinbock'') angekündigt, die im Oktober 2008 erscheinen soll.
+Die Weichen für die Entwicklung werden auf dem Ubuntu Developer Summit Ende Mai in Prag gestellt (<a href="http://www.jonobacon.org/?p=1139">Link</a>).
+
+<div class="p"><!----></div>
+<b>Wichtiger Hinweis:</b> Alpha- und Beta-Versionen sind nicht für den täglichen Einsatz, sondern nur für Entwickler und Tester gedacht! <i>(dwa)</i>
+
+<div class="p"><!----></div>
+<br /> <font color="#595959"><font size="+1">Links</font></font><br />
+
+<a href="https://projects.centos.org/trac/livecd/">https://projects.centos.org/trac/livecd/</a><br />
+<a href="http://www.pro-linux.de/news/2008/12354.html">http://www.pro-linux.de/news/2008/12354.html</a><br />
+<a href="http://www.darkstarlinux.ro/">http://www.darkstarlinux.ro/</a><br />
+<a href="http://www.linux.com/feature/125813">http://www.linux.com/feature/125813</a><br />
+<a href="http://www.pro-linux.de/news/2008/12293.html">http://www.pro-linux.de/news/2008/12293.html</a><br />
+<a href="http://www.linux-magazin.de/news/debian_update_bringt_sicherheit_verbannt_adobe_flash">http://www.linux-magazin.de/news/debian_update_bringt_sicherheit_verbannt_adobe_flash</a><br />
+
+<a href="http://www.heise.de/open/news/meldung/104303">http://www.heise.de/open/news/meldung/104303</a><br />
+<a href="http://dreamlinuxnews.blogspot.com/2008/02/dreamlinux-30-beta-3-released.html">http://dreamlinuxnews.blogspot.com/2008/02/dreamlinux-30-beta-3-released.html</a><br />
+
+<a href="http://news.softpedia.com/news/Dreamlinux-3-0-Beta-3-Testdrive-78943.shtml">http://news.softpedia.com/news/Dreamlinux-3-0-Beta-3-Testdrive-78943.shtml</a><br />
+
+<a href="http://www.golem.de/0802/57507.html">http://www.golem.de/0802/57507.html</a><br />
+<a href="http://www.pro-linux.de/news/2008/12335.html">http://www.pro-linux.de/news/2008/12335.html</a><br />
+<a href="http://www.linux-magazin.de/news/neues_bei_fedora_rpm_fusion_und_eee_pc">http://www.linux-magazin.de/news/neues_bei_fedora_rpm_fusion_und_eee_pc</a><br />
+
+<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf</a><br />
+
+<a href="http://www.heise.de/open/news/meldung/102992">http://www.heise.de/open/news/meldung/102992</a><br />
+<a href="http://www.goblinx.com.br/en/">http://www.goblinx.com.br/en/</a><br />
+<a href="http://www.linuxlove.org/2008/02/04/first-look-at-goblinx-26-mini/">http://www.linuxlove.org/2008/02/04/first-look-at-goblinx-26-mini/</a><br />
+
+<a href="http://www.linuxdevices.com/news/NS8787050045.html">http://www.linuxdevices.com/news/NS8787050045.html</a><br />
+
+<a href="http://wiki.mandriva.com/en/2008.1_Beta_2">http://wiki.mandriva.com/en/2008.1_Beta_2</a><br />
+<a href="http://www.heise.de/open/news/meldung/103617">http://www.heise.de/open/news/meldung/103617</a><br />
+<a href="http://www.pro-linux.de/news/2008/12314.html">http://www.pro-linux.de/news/2008/12314.html</a><br />
+<a href="http://ubuntuusers.de/ikhaya/923/">http://ubuntuusers.de/ikhaya/923/</a><br />
+<a href="http://www.mythbuntu.org/hardyalpha2">http://www.mythbuntu.org/hardyalpha2</a><br />
+<a href="http://ubuntuusers.de/ikhaya/928/">http://ubuntuusers.de/ikhaya/928/</a><br />
+<a href="http://www.electronista.com/articles/08/02/26/ubuntu.mobile/">http://www.electronista.com/articles/08/02/26/ubuntu.mobile/</a><br />
+
+<a href="http://www.jonobacon.org/?p=1139">http://www.jonobacon.org/?p=1139</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_mobil">Neues aus der Welt der Mobilgeräte</a><a name="08_03_mobil">
+</a></font></b></font><br />Es gibt immer mehr Handys, die eine Linux-Version als Betriebssystem einsetzen. Auf Basis der Spezifikationen der LiMo-Foundation (,,Linux Mobile'') (<a href="http://www.limofoundation.org/">Link</a>), welche die erste Version ihres Systems im März vorstellen wollen, wurden auf dem ,,Mobile World Congress'' in Barcelona 18 Linux-Handys von 7 Herstellern vorgestellt bzw. angekündigt, darunter unter anderem Modelle von Samsung, LG, Motorola, NEC und Panasonic (<a href="http://www.linuxworld.com/news/2008/021108-mwc-razr-others-designated-limo.html">Link</a>). Des Weiteren soll von NXP in Zusammenarbeit mit Purple Labs ein UMTS-Smartphone mit MP3-Player, Webbrowser sowie Video-Telefonie und -Streams für unter 100 Dollar hergestellt werden, welches Linux einsetzt (<a href="http://www.pro-linux.de/news/2008/12291.html">Link</a>). Und auch Sony Ericsson arbeitet aktuell an einer neuen Smartphone-Plattform namens U380 für offene Systeme. Sowohl das System der LiMo-Foundation als auch Googles Android sollen dazu kompatibel sein. Anfang 2009 soll es die ersten Geräte geben (<a href="http://www.heise.de/open/news/meldung/103241">Link</a>).
+
+<div class="p"><!----></div>
+Neben dem System der LiMo-Foundation gibt es auch noch die schon erwähnte Android-Plattform von Google, von der eine neue Version erschienen ist. Dabei ist man vor allem auf die Wünsche der Entwickler eingegangen, die die Plattform nutzen (<a href="http://www.linux-magazin.de/news/google_android_sdk_aktualisiert">Link</a>). Dass die Plattform auch Anwendung finden wird, sieht man an den Ankündigungen von Samsung, die für 2009 erste Mobiltelefone mit diesem System herausbringen wollen (<a href="http://www.pcpro.co.uk/news/164865/samsung-readies-android-and-linux-handsets.html">Link</a>). Dabei will Samsung anscheinend zweigleisig fahren, da sie auch auf das System der LiMo-Foundation setzen (siehe oben). Daneben hat auch die Firma Wind River in Zusammenarbeit mit NEC eine Version von Google Android auf dem NEC-Chip Medity M2 umgesetzt. Zusätzlich gab es aber auch eine Portierung der NEC-eigenen platformOViA auf den Chip (<a href="http://www.linux-magazin.de/news/wind_river_portiert_android_auf_3g_chip_von_nec">Link</a>).
+
+<div class="p"><!----></div>
+Die Entwicklung der Anwendungen und Betriebssysteme für Mobilgeräte steht ebenfalls nicht still, Quellcode wird freigegeben und neue Entwicklungslattformen werden zur Verfügung gestellt. Neben Googles Android (siehe oben) will auch SYSOPENDIGIA den Quellcode für die Software seines Handys 3g, welche auf Linux und Qtopia basiert, demnächst bei SourceForge freigeben (<a href="http://www.pro-linux.de/news/2008/12310.html">Link</a>). Und auch bei der Limo-Foundation steht die Zeit nicht still. Für die zweite Hälfte von 2008 wurden diverse Software Developer Kits angekündigt, mit denen Programmierer Anwendungen für LiMo-basierte Handys entwickeln können (<a href="http://www.golem.de/0802/57608.html">Link</a>).
+
+<div class="p"><!----></div>
+Eine Entwicklerplattform, die aus Hard- und Software besteht, hat Navicron mit ,,Fusion'' vorgestellt. Damit sollen Firmen drahtlose mobile und eingebettete Endgeräte wie Smartphones, Navigationssysteme oder mobile Surfstationen herstellen können. Als Softwarebasis kommt Linux zum Einsatz (<a href="http://www.linux-magazin.de/news/linux_entwicklerplattform_fuer_drahtlose_endgeraete">Link</a>).
+
+<div class="p"><!----></div>
+Neben Handys nimmt auch die Zahl der Niedrigpreis-Laptops zu. Ende Februar wurde mit dem Elonex ONE (<a href="http://www.elonex.com/laptop/">Link</a>) ein Laptop für unter 100 britische Pfund vorgestellt. Bisher gibt es aber nicht so viele Informationen über das kleine und ca. 1 kg leichte Gerät. Als Speicher wird eine 1 GB große Flash-Disk eingesetzt und das 7-Zoll-Display soll abnehmbar sein. Es ist geplant, das Mininotebook vor allem im Bildungssektor einzusetzen. Als Software werden die üblichen Komponenten wie Office-Suite, Browser, Instant-Messaging- und E-Mail-Client vorinstalliert sein. Über das Portal ,,ONEunion'' soll man ab Verkaufsstart leicht neue Programme nachinstallieren können (<a href="http://www.pro-linux.de/news/2008/12353.html">Link</a>). <i>(dwa)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.limofoundation.org/">http://www.limofoundation.org/</a><br />
+<a href="http://www.linuxworld.com/news/2008/021108-mwc-razr-others-designated-limo.html">http://www.linuxworld.com/news/2008/021108-mwc-razr-others-designated-limo.html</a><br />
+
+<a href="http://www.pro-linux.de/news/2008/12291.html">http://www.pro-linux.de/news/2008/12291.html</a><br />
+<a href="http://www.heise.de/open/news/meldung/103241">http://www.heise.de/open/news/meldung/103241</a><br />
+<a href="http://www.linux-magazin.de/news/google_android_sdk_aktualisiert">http://www.linux-magazin.de/news/google_android_sdk_aktualisiert</a><br />
+
+<a href="http://www.pcpro.co.uk/news/164865/samsung-readies-android-and-linux-handsets.html">http://www.pcpro.co.uk/news/164865/samsung-readies-android-and-linux-handsets.html</a><br />
+
+<a href="http://www.linux-magazin.de/news/wind_river_portiert_android_auf_3g_chip_von_nec">http://www.linux-magazin.de/news/wind_river_portiert_android_auf_3g_chip_von_nec</a><br />
+
+<a href="http://www.pro-linux.de/news/2008/12310.html">http://www.pro-linux.de/news/2008/12310.html</a><br />
+<a href="http://www.golem.de/0802/57608.html">http://www.golem.de/0802/57608.html</a><br />
+<a href="http://www.linux-magazin.de/news/linux_entwicklerplattform_fuer_drahtlose_endgeraete">http://www.linux-magazin.de/news/linux_entwicklerplattform_fuer_drahtlose_endgeraete</a><br />
+
+<a href="http://www.elonex.com/laptop/">http://www.elonex.com/laptop/</a><br />
+<a href="http://www.pro-linux.de/news/2008/12353.html">http://www.pro-linux.de/news/2008/12353.html</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_linutop">Zweite Version von Linutop auf dem Markt</a><a name="08_03_linutop">
+</a></font></b></font><br />Inzwischen ist die zweite, deutlich größer dimensionierte Version des lautlosen Mini-PCs ,,Linutop'' für 280&nbsp;€ verfügbar (<a href="http://www.linutop.com/linutop2/shop/index.en.html">Link</a>). Ausgestattet mit 512&nbsp;MB RAM, 1&nbsp;GB internem Flash-Speicher, der bereits ,,Linutop OS'', welches auf Xubuntu (<a href="http://www.xubuntu.org/">Link</a>) basiert, an Bord hat (es verbleiben daher nur 400&nbsp;MB für weitere Software und Daten). Der verwendete Prozessor mit nur 500&nbsp;MHz (AMD Geode LX800) zeigt, dass der Linutop nicht als Desktop-PC-Ersatz, sondern als Medienzentrum im Wohnzimmer oder Surfstation gedacht ist.
+
+<div class="p"><!----></div>
+Anstelle des lokal installierten kann auch ein auf einem Server befindliches Betriebssystem über die PXE-Boot-Option gestartet werden, damit ist der Linutop auch als Thin-Client in Schulen o.&nbsp;Ä. einsetzbar. Mit nur 8&nbsp;W Leistungsaufnahme ist der Linutop auch noch sehr sparsam, was ihn auch unter dem Gesichtspunkt zu einer interessanten Alternative zum ausgedienten PC als Surfstation macht. Die vier USB-Anschlüsse sind nicht gerade üppig, sollten aber für den beabsichtigten Einsatzbereich ausreichend sein. <i>(edr)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.linutop.com/linutop2/shop/index.en.html">http://www.linutop.com/linutop2/shop/index.en.html</a><br />
+
+<a href="http://www.xubuntu.org/">http://www.xubuntu.org/</a><br />
+<a href="http://www.linux-magazin.de/news/lautloser_linux_zwerg_linutop_in_version_2">http://www.linux-magazin.de/news/lautloser_linux_zwerg_linutop_in_version_2</a><br />
+
+
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_kernelbug">Kernel Bug #9924</a><a name="08_03_kernelbug">
+</a></font></b></font><br />Mitte Februar sorgte ein Fehler im Linux-Kernel für reichlich Wirbel (<a href="http://bugzilla.kernel.org/show_bug.cgi?id=9924">Link</a>). Eine fehlende Pointer-Prüfung beim Aufruf der Funktion <tt>vmsplice</tt> ermöglichte es, dass ein angemeldeter Benutzer höhere Rechte erlang - bis hin zu Superuser-Berechtigungen. Dabei fiel vor allem die hohe Anzahl betroffener Versionen ins Gewicht, da die Funktion bereits im Kernel 2.6.17 eingeführt und der Fehler etwa eineinhalb Jahre lang weitervererbt wurde. Dadurch war wiederum eine große Anzahl von Distributionen und Systemen anfällig.
+
+<div class="p"><!----></div>
+Die Beseitigung des Problems ließ dann auch wieder Verwirrung aufkommen. Bereits am 8.&nbsp;Februar wurde <tt>vmsplice</tt> im Kernel-Release 2.6.24.1 (<a href="http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.1">Link</a>) als geheilt erklärt. Leider etwas voreilig, denn nach kurzer Zeit fanden sich abermals Proof-of-Concept-Exploits, die wieder erfolgreich waren. Also wurde zwei Tage später Version 2.6.24.2 (<a href="http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.2">Link</a>) nachgelegt und diesmal schien man <tt>vmsplice</tt> den Fehler tatsächlich ausgetrieben zu haben, auch wenn im Changelog die weitere Betrachtung der Fehlerursache angekündigt wurde. Natürlich wurden auch die Vorgängerversionen bis hinunter zu Kernel 2.6.17 mit dem entsprechenden Patch versehen.
+
+<div class="p"><!----></div>
+In der Zwischenzeit wurde schon Version 2.6.24.3 (<a href="http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.3">Link</a>) auf die Linux-Welt losgelassen. Mit an Bord befindet sich ein Patch, der die Behandlung der <tt>get_user_pages</tt>-Funktion gegen die Übergabe falscher Werte gefeit machen soll. Damit würde auch der Exploit des bereits beseitigten Fehlers in <tt>vmsplice</tt> ins Leere laufen. <i>(mme)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://bugzilla.kernel.org/show_bug.cgi?id=9924">http://bugzilla.kernel.org/show_bug.cgi?id=9924</a><br />
+<a href="http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.1">http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.1</a><br />
+
+<a href="http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.2">http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.2</a><br />
+
+<a href="http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.3">http://kernel.org/pub/linux/kernel/v2.6/ChangeLog-2.6.24.3</a><br />
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_truecrypt">Ab in die Gruft!</a><a name="08_03_truecrypt">
+</a></font></b></font><br />Nach fast einem Jahr hat das TrueCrypt-Projekt eine neue Version seiner Verschlüsselungssoftware veröffentlicht. Die Anzahl der Neuerungen hält sich zwar in einem übersichtlichen Rahmen, deren Art jedoch bedeutet einen weiten Schritt nach vorne.
+
+<div class="p"><!----></div>
+So hat die Linux-Version eine graphische Benutzeroberfläche ähnlich zu der bisherigen Windows-Version erhalten, womit dem normalen Anwender die Handhabung der Software nun erheblich vereinfacht wird. Weiterhin wurde sie überarbeitet, sodass Änderungen des Linux-Kernels sie nicht mehr beeinträchtigen. Eine Version für Mac OS X steht nun erstmals zur Verfügung.
+
+<div class="p"><!----></div>
+Im Hintergrund wurde auf XTS umgestellt, ein Betriebsmodus für verschlüsselte Partitionen und Laufwerke (<a href="http://www.truecrypt.org/docs/?s=modes-of-operation">Link</a>). XTS wurde von der IEEE als Standard für Verschlüsselung von Daten auf Block-Geräten (IEEE 1619) anerkannt. Zudem soll dieser Modus schneller und sicherer sein als der zuletzt verwendete LRW. Ebenso soll der Wechsel von SHA-1 zu SHA-512 als Hash-Algorithmus für mehr Sicherheit sorgen.
+
+<div class="p"><!----></div>
+Speziell für Windows-Nutzer bietet TrueCrypt nun die Möglichkeit, Systempartitionen zu verschlüsseln und das System mit einer Authentifizierung vor dem Bootvorgang abzusichern. Weitere Informationen zu den Änderungen in Version 5 bietet die Versions-Historie (<a href="http://www.truecrypt.org/docs/?s=version-history">Link</a>).
+
+<div class="p"><!----></div>
+TrueCrypt steht natürlich im Quelltext sowie vorkompiliert für Windows, verschiedene Mac OS X Versionen und die Linux-Derivate openSUSE und Ubuntu, jedoch nur für x86-Architekturen, zur Verfügung (<a href="http://www.truecrypt.org/downloads.php">Link</a>). <i>(mme)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.truecrypt.org/docs/?s=modes-of-operation">http://www.truecrypt.org/docs/?s=modes-of-operation</a><br />
+
+<a href="http://www.truecrypt.org/docs/?s=version-history">http://www.truecrypt.org/docs/?s=version-history</a><br />
+
+<a href="http://www.truecrypt.org/downloads.php">http://www.truecrypt.org/downloads.php</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_gnome-barrierefreiheit">Neues Projekt zur Förderung der Barrierefreiheit gestartet</a><a name="08_03_gnome-barrierefreiheit">
+</a></font></b></font><br />Canonical (die Firma hinter Ubuntu), Google (siehe auch Nachricht zum ,,Summer of Code'' auf dort (<a href="freiesMagazin-2008-03-bilder.html#08_03_google-soc">Link</a>)), Mozilla, Novell und die GNOME-Foundation haben ein neues Projekt zur Förderung der Barrierefreiheit gestartet (<a href="http://www.gnome.org/projects/outreach/a11y/">Link</a>). Für das sogenannte ,,Outreach Program'' werden von der GNOME-Foundation insgesamt 50&nbsp;000 US$ zur Verfügung gestellt, was aber kein Einzelpreis ist, sondern unter den Entwicklern aufgeteilt wird. Seit dem 1.&nbsp;März können Vorschläge zur Verbesserung der Barrierefreiheit eingereicht werden. Im ersten Teil des Projekts bekommen Entwickler 6&nbsp;000 US$, wenn sie die nominierten Vorschläge innerhalb von sechs Monaten umsetzen. Neben diesen Neuentwicklungen sollen auch vorhandene Probleme beseitigt werden. Welche das sind, wird von einer Jury bestimmt. 1&nbsp;000 US$ winken demjenigen, der fünf davon korrigiert. Für die GNOME-Foundation ist die Barrierearmut ein genauso wichtiges Ziel wie Internationalisierung und Benutzbarkeit. Obwohl in diesem Bereich bereits einiges getan wurde, verspricht sich die Foundation durch die finanziellen Anreize verstärkte Entwicklertätigkeiten. Das Projekt hat neben den eigentlichen Verbesserungen auch das Ziel, bei den Entwicklern ein Bewusstsein für die Probleme zu schaffen, die Anwender mit Behinderungen im Umgang mit Software haben, und die vorhandenen Hilfsmittel in GNOME zu verbessern. <i>(edr)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.gnome.org/projects/outreach/a11y/">http://www.gnome.org/projects/outreach/a11y/</a><br />
+<a href="http://www.golem.de/0802/57995.html">http://www.golem.de/0802/57995.html</a><br />
+<a href="http://www.pro-linux.de/news/2008/12386.html">http://www.pro-linux.de/news/2008/12386.html</a><br />
+
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_self-contest">Video-Wettbewerb des EU-Projekts ,,Self''</a><a name="08_03_self-contest">
+</a></font></b></font><br />Über den ,,Documentary Contest'' des EU-Projektes Self (Science, Education and Learning in Freedom) können bis zum 31.&nbsp;Mai 5-minütige Kurzvideos eingesendet werden (<a href="http://www.selfproject.eu/en/contest">Link</a>). Die Filme sollten entweder auf Englisch sein oder zumindest mit englischsprachigen Untertiteln versehen werden. Als Format wird Ogg-Theora gewünscht, außerdem müssen die Dokumentationen unter der Creative-Commons-BY-SA-Lizenz oder der Free-Art-License stehen. Es geht bei dem Wettbewerb um die ,,Interpretation und Präsentation der Philosophie und Prinzipien des Self-Projekts sowie der Ideologie des Freien Wissens, aber auch die Originalität, künstlerische Leistung und Kreativität''. <i>(edr)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.selfproject.eu/en/contest">http://www.selfproject.eu/en/contest</a><br />
+<a href="http://www.linux-magazin.de/news/eu_video_wettbewerb_freies_wissen">http://www.linux-magazin.de/news/eu_video_wettbewerb_freies_wissen</a><br />
+
+
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_google-soc">Vorbereitungen für Googles ,,Summer of Code'' laufen</a><a name="08_03_google-soc">
+</a></font></b></font><br />Viele kennen Google nur als Suchmaschine, aber Google fördert auch Open Source. Dieses Jahr findet der mittlerweile vierte ,,Summer of Code'' (SoC) (<a href="http://code.google.com/soc/2008/">Link</a>) statt. Google vergibt hier jährlich Stipendien an Studenten,  wobei  die Mitarbeit an einem Open-Source-Projekt gefördert wird. Ab dem 3.&nbsp;März können sich Open-Source-Projekte, die während des SoC als Mentoren fungieren, bei Google anmelden. Nicht nur die Studenten erhalten Geld (4500 US$), sondern auch die Open-Source-Projekte selbst (500 US$). Damit können beispielsweise Server oder der entstehende Datenverkehr finanziert werden. Wer am SoC 2008 teilnehmen will und Student ist, kann seinen Vorschlag ab dem 24.&nbsp;März einreichen. Die Verbesserungsvorschläge müssen sich dabei konkret auf die angemeldeten Projekte beziehen (darum beginnt die Anmeldefrist für Projekte vor der für Studenten). Bei Fragen hilft einerseits eine FAQ (<a href="http://code.google.com/soc/2008/faqs.html">Link</a>) weiter, andererseits kann man auch den Channel <b>#gsoc</b> auf <b>irc.freenode.net</b> besuchen oder in die Diskussionsliste (<a href="http://groups.google.com/group/google-summer-of-code-discuss">Link</a>) eintragen und mitdiskutieren. <i>(edr)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://code.google.com/soc/2008/">http://code.google.com/soc/2008/</a><br />
+<a href="http://code.google.com/soc/2008/faqs.html">http://code.google.com/soc/2008/faqs.html</a><br />
+<a href="http://groups.google.com/group/google-summer-of-code-discuss">http://groups.google.com/group/google-summer-of-code-discuss</a><br />
+
+<a href="http://www.pro-linux.de/news/2008/12384.html">http://www.pro-linux.de/news/2008/12384.html</a><br />
+
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+ <font color="#595959"><b><font size="+2"><a name="08_03_ooxml">Wird OOXML doch ein ISO-Standard?</a><a name="08_03_ooxml">
+</a></font></b></font><br />Vom 25.-29.&nbsp;Februar fanden sich in Genf, Schweiz, 37 Delegationen ein, um auf einem ,,Ballot Resolution Meeting'' über die ISO-Standardisierung von Microsoft Office OpenXML zu diskutieren. Bei der ersten Wahl am 2.&nbsp;September 2007 wurde nur knapp die Hälfte der Mitglieder überzeugt, für eine Standardisierung zu stimmen. Es gab zirka 1100 Anmerkungen, was alles noch an OOXML verbessert werden muss. Man will jetzt darüber entscheiden, ob Microsoft diese Ausbesserungen getätigt hat und wie fortgefahren wird. Andy Updegrove war in dieser Woche dabei und berichtet, wie die einzelnen Länder entschieden haben (<a href="http://www.consortiuminfo.org/standardsblog/article.php?story=20080229055319727">Link</a>). Bis zum 30.&nbsp;März haben alle 87 nationalen Gremien Zeit, ihre damalige Nein-Stimme oder Enthaltung zu ändern. Erst dann wird es eine entgültige Entscheidung geben (<a href="http://www.iso.org/iso/pressrelease.htm?refid=Ref1114">Link</a>).
+
+<div class="p"><!----></div>
+Microsoft hat im Vorfeld auch kräftig die Werbetrommel gerührt und ein ,,Fact-Sheet'' vorgelegt, das zwischen Fakt und FUD (,,Fear, Uncertainty, Doubt'' - ,,Furcht, Unsicherheit, Zweifel'') unterscheiden soll. Man hat dabei aber einige Fakten weggelassen, die das bereits ISO-standardisierte Open Document Format angehen (<a href="http://www.heise.de/open/news/meldung/103162">Link</a>). So ist es auch verständlich, wenn viele Firmen gegen eine Standardisierung von OOXML sind. Vor allem IBM und allen voran Bob Sutor, der zuständig ist für Standards und Open Source, wettern gegen das Format, da sich selbst Microsoft in ihrer aktuellen Office 2007-Version nicht an die bei der ISO eingereichten Richtlinien halte (<a href="http://arstechnica.com/news.ars/post/20080204-ibm-responds-to-microsoft-ooxml-is-technically-inferior.html">Link</a>) (<a href="http://www.heise.de/open/news/meldung/103791">Link</a>). Und auch Google bezeichnet OOXML als ungenügend und vor allem unnötig (<a href="http://news.zdnet.co.uk/software/0,1000000121,39348282,00.htm">Link</a>). Da ist es hilfreich, wenn einige Seiten die technischen Aspekte von OOXML noch einmal auflisten und welche Probleme gegebenenfalls mit einer Standardisierung verbunden sind (<a href="http://www.fanaticattack.com/2008/a-deluge-of-facts-kos-ooxml-office-open-xml.html">Link</a>) (<a href="http://www.ibm.com/developerworks/library/x-ooxmlstandard.html?ca=dgr-lnxw02OOXMLBigDeal">Link</a>).
+
+<div class="p"><!----></div>
+Aber wen verwundern die Reaktionen, wenn Microsoft ihre Dokumentationen unter der eigenen ,,Open Specification Promise'' (OSP) (<a href="http://www.microsoft.com/interop/osp/">Link</a>) veröffentlicht (<a href="http://www.heise.de/open/news/meldung/103679">Link</a>)? Zum einen ist die ,,Lizenz'' sehr schwammig formuliert und kommt nur dem Versprechen gleich: ,,<i>Wir werden Dich nicht verklagen.</i>'' Selbst Anwälte würden sie nicht verstehen (<a href="http://www.zdnetasia.com/news/software/0,39044164,62037862,00.htm">Link</a>). Scheinbar sind die veröffentlichten Spezifikationen aber sowieso nicht vollständig (<a href="http://www.zdnet.com.au/news/software/soa/Microsoft-publishes-incomplete-OOXML-specs/0,130061733,339286057,00.htm">Link</a>).
+
+<div class="p"><!----></div>
+Neben der Dokumentation für Binärformate hat Microsoft auch angekündigt, in Zukunft Dokumentationen für .Net-Framework, Windows Server 2008, SQL Server 2008, Office 2007, Exchange Server 2007 und Office SharePoint Server 2007 für nicht-kommerzielle Zwecke frei zur Verfügung zu stellen. Kommerzielle Anwendungen würden eine ,,geringe'' Lizenzgebühr erfordern. Zusätzlich will man angeben, welche Patente mit den Spezifikationen verbunden sind (<a href="http://www.pro-linux.de/news/2008/12367.html">Link</a>). Die Reaktionen auf die Ankündigung sind aber eher verhalten (<a href="http://www.linux-magazin.de/news/die_branche_kommentiert_microsofts_ankuendigung">Link</a>) (<a href="http://www.linux-magazin.de/news/fsfe_aus_redmond_nichts_neues">Link</a>). Selbst die Marktforscher von Gartner raten von einer Benutzung der Dokumentation ab, da es noch zu viel Unsicherheit bezüglich Patentverletzungen gebe (<a href="http://www.linux-magazin.de/news/gartner_skeptisch_gegenueber_microsofts_versprechen">Link</a>).
+
+<div class="p"><!----></div>
+Vor allem aber die EU-Kommission zeigte sich recht unbeeindruckt von diesen Ankündigungen, zumal Microsoft in der Vergangenheit mehrfach solche Worte sprach, ohne Taten folgen zu lassen. Deswegen muss Microsoft nun auch 899 Millionen Euro Strafe zahlen, da sie sich nicht an die Auflagen gehalten haben (<a href="http://www.news.com/8301-10784_3-9880256-7.html">Link</a>). Und dabei geht es noch um das Gerichtsurteil des Europäischen Gerichtshof von 2004. Interessanter werden die Entscheidungen zu den zwei aktuell angestrebten Klagen bezüglich Internet-Explorer-Bündelung und der ,,Offenheit'' von OOXML (<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">Link</a>). Zusätzlich darf sich die EU-Kommission auch mit den Ungereimtheiten von August und September 2007 beschäftigen. Bei der ersten Abstimmung traten sehr plötzlich viele Microsoft-Partner in nationale Gremien ein und wählten pro OOXML (<a href="http://www.golem.de/0802/57580.html">Link</a>). Auch die Danish Unix User Group (DUUG) hat eine Beschwerde bei der EU vorgelegt. Man will damit eine Annullierung der Zustimmung vom September erreichen (<a href="http://www.groklaw.net/article.php?story=20080226164131724">Link</a>).
+
+<div class="p"><!----></div>
+Man kann gespannt sein, wie sich die Situation in diesem Monat weiterentwickelt. <i>(dwa)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.consortiuminfo.org/standardsblog/article.php?story=20080229055319727">http://www.consortiuminfo.org/standardsblog/article.php?story=20080229055319727</a><br />
+
+<a href="http://www.iso.org/iso/pressrelease.htm?refid=Ref1114">http://www.iso.org/iso/pressrelease.htm?refid=Ref1114</a><br />
+
+<a href="http://www.heise.de/open/news/meldung/103162">http://www.heise.de/open/news/meldung/103162</a><br />
+<a href="http://arstechnica.com/news.ars/post/20080204-ibm-responds-to-microsoft-ooxml-is-technically-inferior.html">http://arstechnica.com/news.ars/post/20080204-ibm-responds-to-microsoft-ooxml-is-technically-inferior.html</a><br />
+
+
+<a href="http://www.heise.de/open/news/meldung/103791">http://www.heise.de/open/news/meldung/103791</a><br />
+<a href="http://news.zdnet.co.uk/software/0,1000000121,39348282,00.htm">http://news.zdnet.co.uk/software/0,1000000121,39348282,00.htm</a><br />
+
+<a href="http://www.fanaticattack.com/2008/a-deluge-of-facts-kos-ooxml-office-open-xml.html">http://www.fanaticattack.com/2008/a-deluge-of-facts-kos-ooxml-office-open-xml.html</a><br />
+
+<a href="http://www.ibm.com/developerworks/library/x-ooxmlstandard.html?ca=dgr-lnxw02OOXMLBigDeal">http://www.ibm.com/developerworks/library/x-ooxmlstandard.html?ca=dgr-lnxw02OOXMLBigDeal</a><br />
+
+
+<a href="http://www.microsoft.com/interop/osp/">http://www.microsoft.com/interop/osp/</a><br />
+<a href="http://www.heise.de/open/news/meldung/103679">http://www.heise.de/open/news/meldung/103679</a><br />
+<a href="http://www.zdnetasia.com/news/software/0,39044164,62037862,00.htm">http://www.zdnetasia.com/news/software/0,39044164,62037862,00.htm</a><br />
+
+<a href="http://www.zdnet.com.au/news/software/soa/Microsoft-publishes-incomplete-OOXML-specs/0,130061733,339286057,00.htm">http://www.zdnet.com.au/news/software/soa/Microsoft-publishes-incomplete-OOXML-specs/0,130061733,339286057,00.htm</a><br />
+
+
+<a href="http://www.pro-linux.de/news/2008/12367.html">http://www.pro-linux.de/news/2008/12367.html</a><br />
+<a href="http://www.linux-magazin.de/news/die_branche_kommentiert_microsofts_ankuendigung">http://www.linux-magazin.de/news/die_branche_kommentiert_microsofts_ankuendigung</a><br />
+
+<a href="http://www.linux-magazin.de/news/fsfe_aus_redmond_nichts_neues">http://www.linux-magazin.de/news/fsfe_aus_redmond_nichts_neues</a><br />
+
+<a href="http://www.linux-magazin.de/news/gartner_skeptisch_gegenueber_microsofts_versprechen">http://www.linux-magazin.de/news/gartner_skeptisch_gegenueber_microsofts_versprechen</a><br />
+
+<a href="http://www.news.com/8301-10784_3-9880256-7.html">http://www.news.com/8301-10784_3-9880256-7.html</a><br />
+
+<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf</a><br />
+
+<a href="http://www.golem.de/0802/57580.html">http://www.golem.de/0802/57580.html</a><br />
+<a href="http://www.groklaw.net/article.php?story=20080226164131724">http://www.groklaw.net/article.php?story=20080226164131724</a><br />
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+<font color="#595959"><b><font size="+2"><a name="08_03_innotek">Into the Sun, Teil 2</a><a name="08_03_innotek">
+</a></font></b></font><br />Nachdem Sun Microsystems Mitte Januar bereits den Datenbankspezialisten MySQL AB (<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">Link</a>) ins eigene Reich holte, wurde die Einkaufstour nun fortgesetzt.
+Diesmal traf es den Stuttgarter Software-Produzenten Innotek, der insbesondere durch die Virtualisierungslösung VirtualBox bekannt ist. Auch diesmal sind Suns Bestrebungen zur Erweiterung des eigenen Produktportfolios Grund des Zukaufs. So sollen Innoteks Erfahrungen der Sun-eigenen xVM-Plattform auf die Sprünge helfen. In der Presseerklärung (<a href="http://www.sun.com/aboutsun/pr/2008-02/sunflash.20080212.1.xml">Link</a>) wird auch der Nutzen von Suns Ressourcen für VirtualBox und dessen Weiterentwicklung hervorgehoben. Insbesondere die große Entwicklergemeinde der xVM-Plattform, Suns Partner und Kunden sollen dem beliebten Virtualisierungsprogramm zugutekommen.
+
+<div class="p"><!----></div>
+In jedem Fall scheint die Übernahme bislang keine negativen Auswirkungen zu haben. In der Zwischenzeit wurde eine neue Version 1.5.6 (<a href="http://www.virtualbox.org/wiki/Downloads">Link</a>) von VirtualBox veröffentlicht, die jedoch in erster Linie mit Fehlerkorrekturen und Verbesserungen und weniger mit Neuerungen aufwartet. <i>(mme)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf">ftp://ftp.freiesmagazin.de/2008/freiesMagazin-2008-02.pdf</a><br />
+
+<a href="http://www.sun.com/aboutsun/pr/2008-02/sunflash.20080212.1.xml">http://www.sun.com/aboutsun/pr/2008-02/sunflash.20080212.1.xml</a><br />
+
+<a href="http://www.virtualbox.org/wiki/Downloads">http://www.virtualbox.org/wiki/Downloads</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_amd">AMDs Performance Library unter freier Lizenz veröffentlicht</a><a name="08_03_amd">
+</a></font></b></font><br />AMD hat seine Performance Library (APL) mit dem Namen ,,Framewave'' (<a href="http://framewave.sourceforge.net/">Link</a>) unter der Apache-Lizenz veröffentlicht. Zwar sollen auch aus der Open-Source-Gemeinschaft stammende Verbesserungen mit aufgenommen werden, die Hauptentwicklungsarbeit soll aber weiterhin von AMDs eigenen Programmierern geleistet werden. Framewave ist nicht identisch mit der ursprünglichen APL, sondern wurde in drei Jahren weiterentwickelt und für den Einsatz auf x86-Prozessoren optimiert. Die Bibliothek zur Bild- und Signalverarbeitung steht für Visual C/C++ und GCC zur Verfügung und soll vor allem bei Mehrkernprozessoren auftrumpfen können.
+
+<div class="p"><!----></div>
+Außerdem hat AMD, wie versprochen, die Dokumentation der 3-D-Algorithmen ihres R500-Chipsatzes veröffentlicht, wobei die Details teilweise auch für R300/R400-Chips gelten (<a href="http://www.phoronix.com/scan.php?page=article&item=amd_tcore_release&num=1">Link</a>). Die Dokumentation für den R600 soll in etwa drei Wochen folgen. <i>(edr)</i>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://framewave.sourceforge.net/">http://framewave.sourceforge.net/</a><br />
+<a href="http://www.phoronix.com/scan.php?page=article&item=amd_tcore_release&num=1">http://www.phoronix.com/scan.php?page=article</td><td width="150">
+item=amd_tcore_release</td><td width="150">
+num=1</a><br />
+
+<a href="http://www.pro-linux.de/news/2008/12360.html">http://www.pro-linux.de/news/2008/12360.html</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Programmierung">Mehrkern-Prozessoren mit make ausnutzen</a><a name="Programmierung">
+</a></font> &nbsp;&nbsp;&nbsp;von Adrian Böhmichen</b></font><br /><b>D</b><b>as Kompilieren mit dem bekannten Dreischritt <tt>./configure &amp;&amp; make &amp;&amp; make install</tt> dauert je nach Anwendung relativ lange. Wenn man in den Luxus eines Mehrkern-Prozessors kommt, kann man durch folgenden Tipp den Kompilierprozess wesentlich beschleunigen.</b>
+
+<div class="p"><!----></div>
+make bietet viele Optionen, eine nützliche davon ist
+
+<div class="p"><!----></div>
+<tt>$ make -jobs[=ANZAHL]</tt><br />
+
+<div class="p"><!----></div>
+oder kurz
+
+<div class="p"><!----></div>
+<tt>$ make -j [ANZAHL]</tt><br />
+
+<div class="p"><!----></div>
+Dadurch werden so viele Prozesse/Jobs parallel ausgeführt, wie man als <tt>ANZAHL</tt> angibt und wenn möglich auf die einzelnen Prozessoren aufgeteilt.
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Gibt man keine Anzahl an, werden alle Prozesse auf einmal ausgeführt. Ein Prozessor(kern) hat bei der Ausführung mehrerer Jobs aber den Nachteil, dass er diese zuerst koordinieren muss, wodurch der Vorgang länger dauert. Man sollte also als <tt>ANZAHL</tt> immer nur die echte Zahl der Prozessoren/Prozessorkerne angeben.
+
+<div class="p"><!----></div>
+Die Anwendung bei dem bekannten Kompilier-Dreischritt ist denkbar einfach. Nach <tt>./configure</tt> gibt man einfach
+
+<div class="p"><!----></div>
+<tt>$ make -j [ANZAHL]</tt><br />
+
+<div class="p"><!----></div>
+ein. Hat man z.&nbsp;B. zwei CPUs bzw. einen Dual-Core-Prozessor:
+
+<div class="p"><!----></div>
+<tt>$ make -j 2</tt><br />
+
+<div class="p"><!----></div>
+Danach fährt man mit dem gewohnten <tt>make install</tt> fort. Dies muss man nicht auf mehrere Prozessoren verteilen, da es mehr die Festplatte beansprucht, als die CPU.
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Hardware">Bildschirm mit einem Klick ausschalten</a><a name="Hardware">
+</a></font> &nbsp;&nbsp;&nbsp;von Christoph Langner</b></font><br />Manchmal ist es praktisch, den Bildschirm sofort abschalten zu können, ohne beispielsweise den Deckel des Notebooks schließen zu müssen. So kann man die Akkulaufzeit noch um ein paar Minuten erhöhen. In einem Terminal kann man dies mit dem Befehl
+
+<div class="p"><!----></div>
+<tt>$ xset dpms force off</tt><br />
+
+<div class="p"><!----></div>
+machen.
+
+<div class="p"><!----></div>
+Um sich die Eingabe des Befehls zu sparen, kann man einen Starter im Panel ablegen. In GNOME legt man diesen mittels Rechtsklick auf ein Panel und dann ,,<i>Zum Panel hinzufügen &#187; Benutzerdefinierter Anwendungsstarter</i>'' an, gibt als Befehl das Kommando von oben ein und nutzt als Icon beispielsweise <tt>/usr/share/icons/gnome/32x32/apps/xscre</tt> <tt>ensaver.png</tt>. Von nun an kann man mit einem Klick den Bildschirm komplett abschalten.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/turnoffscreen.png" /><br />
+<em>Bildschirm mit einem Klick abschalten.</em><br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Hardware">Samsung-Druckertreiber im Test</a><a name="Hardware">
+</a></font> &nbsp;&nbsp;&nbsp;von Dominik Wagenführ</b></font><br /><b>D</b><b>ie Funktionalität von Hardware unter Linux steht und fällt vor allem mit den Treibern. Sehr oft stellen Hardwarehersteller nur Windows-Treiber zur Verfügung. Samsung ist hier eine Ausnahme, da sie selbst proprietäre Treiber anbieten. Daneben gibt es aber auch noch andere freie Treiberprojekte.</b>
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Samsung Unified Linux Driver</b></font></font><br />
+Im Samsung Download-Center (<a href="http://support.samsung.de/support/support_down_main.aspx">Link</a>) findet man beim jeweiligen Druckermodell die ,,Unified Linux Driver''. Die Installation ist sehr einfach, man sollte nur die Installationshinweise (<a href="http://ubuntuforums.org/showthread.php?t=341621">Link</a>) beachten, da der Treiber ansonsten fehlerhafte Rechte auf einige System-Verzeichnisse setzt.
+
+<div class="p"><!----></div>
+Nach dem Herunterladen und Speichern der Datei <tt>VERSION-UnifiedLinuxDriver.tar.gz</tt> im Homeverzeichnis entpackt man das Archiv, so dass das Verzeichnis <tt>cdroot</tt> entsteht. Um Probleme mit den Berechtigungen zu vermeiden, öffnet man ein Terminal, bewegt sich in das Verzeichnis und passt die Rechte an:
+
+<div class="p"><!----></div>
+<tt>$ cd &#126;/cdroot
+<div class="p"><!----></div>
+# chown -R root:root *</tt><br />
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Vergisst man dies, wird für Verzeichnisse wie <tt>/etc</tt> oder <tt>/usr</tt> der angemeldete Benutzer als Eigentümer gesetzt!
+
+<div class="p"><!----></div>
+Als Voraussetzung für die Installation muss CUPS, SANE, GhostScript und ein C++-Kompiler (Paket <b>build-essential</b>) installiert sein. Die Installation weist aber bei einem Fehlen darauf hin.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-unified.png" /><br />
+<em>Samsungs ,,Unified Linux Driver''-Installer.</em><br />
+
+<div class="p"><!----></div>
+Jetzt kann man das Installationsprogramm per
+
+<div class="p"><!----></div>
+<tt># ./autorun</tt><br />
+
+<div class="p"><!----></div>
+starten. Während der Installation muss der Drucker angeschlossen und eingeschaltet sein, sodass dieser vom Installationsprogramm korrekt erkannt wird. Nach der Treiberauswahl ,,MODELLNUMMER (SPL-C)'' sollte das Gerät bereits funktionieren.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>SpliX</b></font></font><br />
+Wer den proprietären Samsung-Treiber nicht nutzen möchte, kann sich an das freie SpliX-Projekt (SPL Driver for Linux) (<a href="http://splix.ap2c.org/">Link</a>) halten. Die Entwickler haben größtenteils durch Reverse-Engineering die Treiberfunktionen für einige Samsung- und Xerox-Drucker implementiert. In vielen Distributionen ist der Treiber bereits enthalten und wird automatisch für Samsung-Drucker benutzt. Er kann gegebenenfalls über das Paket <b>splix</b> nachinstalliert werden.
+
+<div class="p"><!----></div>
+Wer sich den Treiber selbst kompilieren möchte, benötigt folgende Pakete:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b>build-essential</b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b>cupsddk</b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b>libcupsimage2-dev</b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b>libcupsys2-dev</b>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Zusätzlich benötigt man ab Treiber-Version 1.1.0 das JBIG-KIT (<a href="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">Link</a>). Man lädt dazu das jbig-Archiv herunter und entpackt es ins Homeverzeichnis. Danach kompiliert man das Kit und verschiebt die Dateien an die korrekte Stelle:
+
+
+<div class="p"><!----></div>
+<tt>$ cd &#126;/jbigkit/
+<div class="p"><!----></div>
+$ make
+<div class="p"><!----></div>
+# cp libjbig/libjbig.a /usr/lib/
+<div class="p"><!----></div>
+# cp libjbig/jbig.h /usr/include/</tt><br />
+
+<div class="p"><!----></div>
+Jetzt kann man das SpliX-Treiberarchiv herunterladen und entpackt es ins Homeverzeichnis. Man wechselt in das entstandene Verzeichnis (hier: Version 1.1.1) und kompiliert/installiert den Treiber mittels
+
+<div class="p"><!----></div>
+<tt>$ cd &#126;/splix-1.1.1
+<div class="p"><!----></div>
+$ make
+<div class="p"><!----></div>
+# make install</tt><br />
+
+<div class="p"><!----></div>
+Anstelle <tt>make install</tt> ist es empfehlenswert <tt>checkinstall</tt> zu nutzen, soweit das System dies zulässt. Nach einem Neustart von CUPS mittels
+
+<div class="p"><!----></div>
+<tt># /etc/init.d/cupsys restart</tt><br />
+
+<div class="p"><!----></div>
+kann man den Drucker über den Treiber ,,MODELLNUMMER 1.1.0'' dann im System einrichten.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>foo2qpdl</b></font></font><br />
+Der foo2qpdl-Treiber (<a href="http://foo2qpdl.rkkda.com/">Link</a>) ist ein Linux-Druckertreiber für das QPDL-Protokoll. Er kann als Alternative zu SpliX gesehen werden, unterstützt aber weniger Druckermodelle. Der Treiber ist in den meisten Distributionen schon vorinstalliert.
+
+<div class="p"><!----></div>
+Für die Kompilierung benötigt man einen C++-Kompiler (Paket <b>build-essential</b>). Danach lädt man sich den Treiber (<a href="http://foo2zjs.rkkda.com/foo2zjs.tar.gz">Link</a>) herunter und entpackt das Archiv ins Homeverzeichnis. Mit
+
+<div class="p"><!----></div>
+<tt>$ cd &#126;/foo2zjs
+<div class="p"><!----></div>
+$ make</tt><br />
+
+<div class="p"><!----></div>
+kompiliert man ein Hilfsprogramm. Dann muss man die Treiberdateien über
+
+<div class="p"><!----></div>
+<tt>$ ./getweb MODELLNUMMER</tt><br />
+
+<div class="p"><!----></div>
+mit der jeweiligen Drucker-Modellnummer herunterladen. Diese können per
+
+<div class="p"><!----></div>
+<tt>$ ./getweb</tt><br />
+
+<div class="p"><!----></div>
+abgefragt werden. Ein
+
+<div class="p"><!----></div>
+<tt># make install
+<div class="p"><!----></div>
+# make cups</tt><br />
+
+<div class="p"><!----></div>
+installiert danach die Treiber und startet das Drucksystem CUPS neu. Der Drucker kann dann über die normale Druckerkonfiguration mit dem Treiber ,,MODELLNUMMER Foomatic/foo2qpdl'' eingerichtet werden.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Treiber-Qualität</b></font></font><br />
+Jeder der drei Treiber hat seine Vor- und Nachteile, die kurz aufgezeigt werden sollen. Als Beispiel wurde der Farblaserdrucker Samsung CLP-300 unter Ubuntu 7.10 ,,Gutsy Gibbon'' mit allen drei Treibern, die alle manuell installiert wurden, getestet. Die in Ubuntu 7.10 enthaltenen SpliX- und foo2qpdl-Treiber sind zu alt und unterstützen den CLP-300 nicht optimal.
+
+<div class="p"><!----></div>
+<b>Schwarz&nbsp;/&nbsp;Weiß</b><br />
+Was in den Abbildungen nicht so gut zu erkennen ist: Der foo2qpdl-Treiber hat ein klein wenig besseres Schriftbild als der SpliX-Treiber. Über die Qualität des Samsung-eigenen Treibers im Farbmodus braucht man nicht reden, der Graustufenmodus sieht aber gut aus und ist mit dem SpliX-Treiber vergleichbar. Der CLP-300-Drucker in Verbindung mit dem CLP-600-Unified-Treiber erzielt ein recht gutes Ergebnis, auch wenn ein leichter Schatten um die Buchstaben bleibt.
+
+<div class="p"><!----></div>
+
+<table border="1">
+<tr><td colspan="2" align="center"><font size="+1"><font face="helvetica"><b>Schwarz&nbsp;/&nbsp;Weiß</b></font></font></td></tr>
+<tr><td width="138">
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-foo2zjs-sw.png" /></td></tr>
+<tr><td width="138"><em>foo2qpdl-Treiber.</em></td></tr>
+<tr><td width="138"></td><td width="138">
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-splix-sw.png" /></td></tr>
+<tr><td width="138"><em>SpliX-Treiber.</em></td></tr>
+<tr><td width="138"></td></tr>
+<tr><td width="138"><img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-unified-sw1.png" /></td></tr>
+<tr><td width="138"><em>Unified-Treiber (CLP-300, Farbmodus).</em></td></tr>
+<tr><td width="138"></td><td width="138"><img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-unified-sw2.png" /></td></tr>
+<tr><td width="138"><em>Unified-Treiber (CLP-300, Graumodus).</em></td></tr>
+<tr><td width="138"></td></tr>
+<tr><td colspan="2" width="dth=">
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-unified-sw3.png" /></td></tr>
+<tr><td width="138"><em>Unified-Treiber (CLP-600, Farbmodus).</em></td></tr> </td></tr>
+<tr><td width="138"></td></tr></table>
+
+
+<div class="p"><!----></div>
+<b>Farbe</b><br />
+Im Farbmodus ist das Bild etwas divergenter und der kleine hier gezeigte Ausschnitt kann das Gesamtbild nicht exakt widerspiegeln. Beim foo2qpdl-Treiber sieht man die einzelnen Druckpunkte, ein Ausdruck wirkt wie in Entwurfsqualität, die Farben werden aber korrekt wiedergegeben. Noch schlechter ist der Ausdruck beim SpliX-Treiber. Die Farben sind viel zu intensiv und etwas verwischt. Ein dunkles Grau wird so zu einem reinen Schwarz. Beim Samsung-Unified-Treiber wirken die Farben sehr kräftig. Leider sind die Buchstaben etwas verwaschen und in Verbindung mit schwarzer Schrift (siehe oben) ist das Gesamtergebnis unbrauchbar. Eine Besonderheit ist der CLP-600-Treiber für den Samsung CLP-300-Drucker. Die Farben wirken nicht ganz so kräftig, so wird ein Hellgrau gleich zu Weiß. Zusätzlich bleibt ein leichter Schatten um jeden Buchstaben. In Verbindung mit schwarzer Schrift (siehe oben) ist das Ergebnis aber annehmbar.
+
+<div class="p"><!----></div>
+
+<table border="1">
+<tr><td colspan="2" align="center"><font size="+1"><font face="helvetica"><b>Farbe</b></font></font></td></tr>
+<tr><td width="138">
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-foo2zjs-col.png" /></td></tr>
+<tr><td width="138"><em>foo2qpdl-Treiber.</em></td></tr>
+<tr><td width="138"></td><td width="138">
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-splix-col.png" /></td></tr>
+<tr><td width="138"><em>SpliX-Treiber.</em></td></tr>
+<tr><td width="138"></td></tr>
+<tr><td width="138"><img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-unified-col1.png" /></td></tr>
+<tr><td width="138"><em>Unified-Treiber (CLP-300).</em></td></tr>
+<tr><td width="138"></td><td width="138"><img border="0" src="freiesMagazin-2008-03-bilder-Dateien/samsung-unified-col2.png" /></td></tr>
+<tr><td width="138"><em>Unified-Treiber (CLP-600).</em></td></tr>
+<tr><td width="138"></td></tr>
+<tr><td width="138"></td></tr></table>
+
+
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Fazit</b></font></font><br />
+Da nur ein Drucker getestet wurde, kann man natürlich keine allgemeingültige Aussage treffen. Dafür, dass Samsung aber über die Spezifikationen der eigenen Drucker verfügt, ist das Ergebnis des Unified-Treibers schlecht. Die freien Treiber liegen vor allem bei schwarzer Schrift meilenweit vorne. Und auch bei der Farbe ist der foo2qpdl-Treiber nicht perfekt, aber im Vergleich mit dem Linux-Unified-Treiber wesentlich farbtreuer.
+
+<div class="p"><!----></div>
+Es bleibt zu sagen, dass die Unterstützung seitens Samsung besser sein könnte. Wer sich einen Samsung-Drucker kaufen möchte, sollte vorher genau überprüfen, welcher Treiber welches Modell unterstützt und gegebenenfalls vorher in der Gemeinschaft nach der Druckqualität fragen. Denn was ich gelernt habe: Die Aussage ,,Treiber funktioniert'' heißt nicht unbedingt, dass das Druckergebnis verwertbar ist.
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://support.samsung.de/support/support_down_main.aspx">http://support.samsung.de/support/support_down_main.aspx</a><br />
+
+<a href="http://ubuntuforums.org/showthread.php?t=341621">http://ubuntuforums.org/showthread.php?t=341621</a><br />
+
+<a href="http://splix.ap2c.org/">http://splix.ap2c.org/</a><br />
+<a href="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">http://www.cl.cam.ac.uk/&nbsp;mgk25/jbigkit/</a><br />
+<a href="http://foo2qpdl.rkkda.com/">http://foo2qpdl.rkkda.com/</a><br />
+<a href="http://foo2zjs.rkkda.com/foo2zjs.tar.gz">http://foo2zjs.rkkda.com/foo2zjs.tar.gz</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Office">C.U.O.N. im täglichen Büroeinsatz</a><a name="Office">
+</a></font> &nbsp;&nbsp;&nbsp;von Jürgen Hamel</b></font><br /><b>D</b><b>as <i>C.U.O.N.</i>-System sowie der Client pyCuon bilden ein System zur Auftragsbearbeitung, Warenwirtschaft und allgemeinen Datenverwaltung. Außerdem ist ein  Document Management System (DMS) integriert. Das komplette System steht unter der GPLv3. Linux ist reif für den Desktop und dieser Bericht soll die Möglichkeiten dazu aufzeigen.</b>
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Vorwort</b></font></font><br />
+<b>Effektiveres Arbeiten mit C.U.O.N.</b><br />
+Nach mehreren Jahren Entwicklung ist <i>C.U.O.N.</i> jetzt hervorragend geeignet für den Einsatz auf dem Linux-Desktop. Durch den Einsatz dieser Software werden viele Arbeitsabläufe gestrafft und vereinfacht. Das Zusammenspiel der verschiedenen Office-, Grafik-, Sound-, Text- Internet- und Spezialprogramme sowie der Daten im SQL-Server wird koordiniert und damit transparenter für den Anwender. Hier nun ein fiktiver Tagesablauf mit <i>C.U.O.N.</i>
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Vormittags</b></font></font><br />
+<b>C.U.O.N. starten</b><br />
+Als Erstes starte ich morgens <i>C.U.O.N.</i> und logge mich ein. Ein Kontakt von gestern, den ich nicht mehr geschafft habe, öffnet sich automatisch.
+
+<div class="p"><!----></div>
+Ich klicke auf ,,<i>Gehe zu Adresse</i>'', um mir die Notizen zu dieser Adresse durchzulesen. Aha, mein Gesprächspartner ist erst ab 14.00 Uhr erreichbar. Ich setze im Kontakt die Uhrzeit auf 14.00 Uhr und mit ,,<i>sleeps</i>'' schließt sich der Kontakt.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/cuon-contact.png" /><br />
+<em>Ein Kontakt öffnet sich.</em><br />
+
+<div class="p"><!----></div>
+<b>Briefe und E-Mail</b><br />
+Jetzt geht es an das Lesen der E-Mails und der Briefpost. Bei den E-Mails ist ein neues Datenblatt zu einem Trigger-Baustein. Ich speichere das PDF-Dokument und öffne in <i>C.U.O.N.</i> die Artikelverwaltung und suche den passenden Eintrag. Dort speichere ich das PDF im DMS. So kann ich es mir ohne langes Suchen bei Bedarf ansehen. Da diese Information für einige meiner Kunden wichtig ist, klicke ich in der Adressverwaltung auf Newsletter, füge das Kürzel ,,Tr001'' ein und nehme als Anhang die PDF-Datei. Noch ein kurzer Text und der Newsletter wird per E-Mail verschickt. Mit der Newsletterfunktion ist es möglich, verschiedene Adressaten blitzschnell zu erreichen, sei es per E-Mail oder als Print-Version.
+
+<div class="p"><!----></div>
+Die nächste E-Mail hat einen Windows-Word-Anhang. Kein Problem, OpenOffice.org öffnet ihn und ich sehe mir das mal an. Sieht interessant genug aus und ich speichere es im ODF-Format und hinterlege es in <i>C.U.O.N.</i> bei der Adresse. Für eine standardisierte Antwort klicke ich auf ,,<i>Brief</i>'' und suche mir aus den Vorlagen im DMS das passende Dokument heraus. OpenOffice.org öffnet sich und die Vorlage ist schon mit allen relevanten Daten aus der Adressverwaltung gefüllt. Ich brauche sie nur noch per E-Mail zu versenden.
+
+<div class="p"><!----></div>
+Bei der Briefpost ist die neue ,,Linux-Zeitschrift''. Mal sehen, was es Interessantes gibt. Nach dem ersten Durchblättern gebe ich in der Literaturverwaltung von <i>C.U.O.N.</i> die wichtigsten Artikelüberschriften mit ein paar Stichpunkten ein. Außerdem ist ein interessantes Python-Skript darin, das ich kurz im DMS einscanne.
+
+<div class="p"><!----></div>
+<b>Eine neue Idee</b><br />
+Plötzlich fällt mir zu der neuen Website etwas ein. Da ich jetzt nur wenig Zeit habe, kann ich nur hoffen, dass ich mich morgen noch daran erinnere, oder besser noch, ich trage es sofort in <i>C.U.O.N.</i> ein! Also öffne ich die Ideenverwaltung, gehe zur Webseitengestaltung und füge im Mindmap-Tool meine Idee ein. So ist es schön übersichtlich und ich kann morgen sicher sein, alle wichtigen Ideen für die neue Website zusammenzuhaben. So, jetzt erstmal Mittagspause machen.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/cuon-idee.png" /><br />
+<em>Meine Idee eintragen.</em><br />
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Nachmittags</b></font></font><br />
+<b>Termine nachsehen</b><br />
+Jetzt schaue ich mir zuerst einmal an, welche Termine ich im Rest der Woche habe. Das kann ich direkt in <i>C.U.O.N.</i> machen, ist zwar ein wenig spartanisch, dafür kann ich aber jeden Termin sofort anklicken und mir alle Infos anschauen. Je nach Einstellung kann ich auch die Termine anderer Mitarbeiter ansehen. Da <i>C.U.O.N.</i> die Termine auch als iCal-Format zur Verfügung stellt, kann man sie sehr übersichtlich im Mozilla Sunbird oder ähnlichen Programmen darstellen.
+
+<div class="p"><!----></div>
+14.00 Uhr - pünktlich poppt der Kontakt von heute Morgen auf. Ich klicke auf die Adresse und rufe an. Während des Gesprächs tippe ich gleich die wichtigsten Bemerkungen bei den Notizen ein. Da ein Gesprächstermin gewünscht wird, gehe ich zum ,,<i>Gesprächspartner</i>''-Tab und lege Frau Musterfrau an. Dann klicke ich auf ,,<i>Termine</i>'' und lege den Termin fest. Nach dem Gespräch schicke ich mit <i>C.U.O.N.</i> noch eine Terminbestätigung per E-Mail raus. Auch da fügt das DMS alle Daten wie Adresse, Gesprächspartner, Mitarbeiter, Außendienstmitarbeiter, Termin, Uhrzeit etc. ein.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/cuon-mahnliste.png" /><br />
+<em>Mahnliste.</em><br />
+
+<div class="p"><!----></div>
+<b>Aufträge bearbeiten</b><br />
+So, jetzt noch zwei neue Aufträge erfassen, Lieferschein und Rechnung drucken. Dazu gehe ich in <i>C.U.O.N.</i> auf die Adresse und klicke dort auf ,,<i>neuer Auftrag</i>''. Ein neues Auftragsfenster öffnet sich und viele Daten sind schon ausgefüllt. Ich gehe zu den Positionen und füge über die Schnellauswahl die Artikel hinzu. Dann zum Drucken. Da ich für Rechnung und Lieferschein zwei verschiedene Drucker voreingestellt habe, wird der Lieferschein direkt im Lager gedruckt, während die Rechnung aus dem Drucker im Nebenraum kommt.
+
+<div class="p"><!----></div>
+Es ist nun Zeit, die Bankauszüge zu kontrollieren und die Zahlungen direkt in <i>C.U.O.N.</i> einzutragen. Zur Kontrolle noch die ,,<i>offenen Posten</i>'' anschauen - sieht alles gut aus.
+
+<div class="p"><!----></div>
+<b>Kundenbetreuung</b><br />
+Nun gilt es noch eine Anfrage eines Interessenten zu beantworten. Als Erstes trage ich die Daten in der Adressverwaltung ein und rufe dann an. Leider ist meine Ansprechpartnerin erst ab Montag wieder da. Also setze ich einen Kontakt für Montag, 10.00 Uhr, der mich dann pünktlich an den Anruf erinnern wird. Außerdem trage ich noch den Gesprächspartner und ein paar Notizen ein. So bin ich dann beim nächsten Gespräch sofort auf dem Laufenden.
+
+<div class="p"><!----></div>
+<b>Beim Kunden</b><br />
+Kurzbesuch bei einen Kunden. Da ich den Weg nicht genau kenne, klicke ich im DMS die Wegbeschreibung an. Google Earth öffnet sich und ich kann die Wegbeschreibung ausdrucken. Also kann ich losfahren. Beim Kunden erfahre ich, dass ihn die Daten des neuen Triggerbausteins interessieren. Mit meinem Linux-Notebook, dem Internet und <i>C.U.O.N.</i> kein Problem, denn das neue Datenblatt habe ich ja heute Morgen hinterlegt. Der PDF-Viewer öffnet sich und ich habe die Daten vor mir. Ich sehe außerdem, dass ein anderer Mitarbeiter vor fünf Minuten noch ein Zusatzblatt hinterlegt hat. Ich klicke es an und automatisch öffnet sich GIMP, um die Zeichnung darzustellen. So kann ich absolut aktuell auf alle verfügbaren Daten zugreifen.
+
+<div class="p"><!----></div>
+<b>Ein neues Projekt</b><br />
+Der Kunde hat bestellt und da es sich um ein größeres Vorhaben handelt, lege ich in der Projektverwaltung ein neues Projekt an. Dazu gehe ich in <i>C.U.O.N.</i> zur Adresse und klicke ,,<i>neues Projekt</i>'' an. Es öffnet sich das Projektfenster mit den Kundendaten. Als Erstes gehe ich zur ,,<i>Zusatzinformation</i>'' und scanne den Vertrag ein. Als Rechte setze ich ,,<i>Nur lesen</i>'' für User und Gruppe, da dieses Dokument nicht verändert werden soll.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/cuon-projekt.png" /><br />
+<em>Personalressourcen für das Projekt.</em><br />
+
+<div class="p"><!----></div>
+In den nächsten Tagen werde ich entsprechende Einträge bei den Personal- und Material-Ressourcen tätigen, jeweils die kalkulierten und tatsächlichen Werte. So kann ich dann jederzeit sehen, ob das Projekt noch im veranschlagten Kostenrahmen ist oder irgendetwas aus dem Ruder läuft. Jetzt ist aber endgültig Feierabend.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Abends</b></font></font><br />
+Nach dem Abendessen schaue ich mir im Internet an, was es Neues auf Pro-Linux gibt. Dann will ich noch ein paar Zeilen programmieren. Dabei überlege ich mir Möglichkeiten, das Python-Skript von heute Morgen zu nutzen. Also öffne ich <i>C.U.O.N.</i> und gehe zur Literaturverwaltung. Ich klicke auf die ,,<i>Zusatzinformation</i>'' und habe das Skript am Bildschirm.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/cuon-termin.png" /><br />
+<em>Terminbestätigung faxen.</em><br />
+
+<div class="p"><!----></div>
+Plötzlich fällt mir siedendheiß ein, dass ich vergessen habe, eine Terminbestätigung rauszufaxen. Aber eigentlich kein Problem, denn über <i>C.U.O.N.</i> kann ich mit wenigen Klicks die Terminbestätigung direkt über den Faxserver der Firma versenden. Das DMS sorgt für ein korrekt ausgefülltes Formular, und mit einem Klick wird es zum Firmen-Faxserver übertragen - ok, erledigt.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Fazit</b></font></font><br />
+Linux ist auf dem Desktop der Firmen längst angekommen. Mit Programmen wie OpenOffice.org, Evolution, KMail, Mozilla Firefox, Mozilla Sunbird, VYM, vielen anderen und natürlich <i>C.U.O.N.</i> lässt sich schnell und einfach alles im Büro erledigen. Fast alle der von uns betreuten Firmen setzen inzwischen Linux auf dem Desktop ein. Für proprietäre Windows-Programme gibt es entweder einen Windows-Terminalserver oder VirtualBox bzw. VMware. Aber immer seltener wird Windows benötigt.
+
+<div class="p"><!----></div>
+Gerade die hervorragenden Netzwerkeigenschaften von <i>C.U.O.N.</i> sorgen dafür, dass das Arbeitsleben in einer mobilen Gesellschaft viel reibungsloser funktioniert. Daten, die von einem Außendienstmitarbeiter erfasst werden, können sofort weiter bearbeitet und genutzt werden. Dokumente und Daten sind überall verfügbar. Mein Arbeitsplatz im Büro oder auf dem Notebook funktioniert genauso wie ein Arbeitsplatz zu Hause. Mit dem PDA kann ich im Lager direkt Daten eingeben. Durch die Nutzung verschiedener GUIs lässt sich <i>C.U.O.N.</i> sehr flexibel anpassen. Jeder Anwender kann eigene Masken benutzen. Vorlagen, Listen und Reports sind individuell anpassbar und können sogar für Mandant oder Benutzer zugeschnitten werden. Da der Client neben Linux auch andere Betriebssysteme wie Microsoft Windows oder Maemo (Nokia N800) unterstützt, steht einem universellen Einsatz von <i>C.U.O.N.</i> im Unternehmen nichts entgegen.
+
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Hilfe, Dokumentation, Sourcen</b></font></font><br />
+Ein umfangreiches Wiki mit dem Adminhandbuch und dem Benutzerhandbuch (beides in Deutsch) ist auf der Homepage (<a href="http://www.cuon.org/">Link</a>) vorhanden. Dort ist auch die API-Dokumentation sowie ein Schaubild vorhanden. Ebenfalls stehen dort sowie auf Berlios (<a href="http://developer.berlios.de/projects/cuon/">Link</a>) Downloadmöglichkeiten zur Verfügung. Auf www.cuon.org (<a href="http://www.cuon.org/">Link</a>) stehen ebenfalls Cuon-Clients für Linux und Windows mit grafischem Installer zur Verfügung.
+
+<div class="p"><!----></div>
+Aktuelle Schnappschüsse kann man übers SVN von Berlios beziehen.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.cuon.org/">http://www.cuon.org/</a><br />
+<a href="http://developer.berlios.de/projects/cuon/">http://developer.berlios.de/projects/cuon/</a><br />
+<a href="http://www.cuon.org/">http://www.cuon.org/</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Multimedia">Fernsehen übers Internet mit Zattoo</a><a name="Multimedia">
+</a></font> &nbsp;&nbsp;&nbsp;von Eva Drud</b></font><br /><b>F</b><b>ernsehen auf dem PC ist schon lange keine Besonderheit mehr. Normalerweise wird aber zusätzliche Hardware benötigt, um den Kabelanschluss oder DVB-T nutzen zu können, es sei denn, man nutzt die Streaming-Angebote der öffentlich-rechtlichen Sender (wie die ZDF-Mediathek (<a href="http://www.zdf.de/ZDFmediathek/content/9602?inPopup=true">Link</a>)) oder Sendungsarchive wie die von RTL (<a href="http://rtl-now.rtl.de/">Link</a>). Der Nachteil besteht darin, dass Sendungen erst nach dem regulären Sendetermin abgerufen werden können. Mit dem TV-Player <i>Zattoo</i> (<a href="http://zattoo.com/">Link</a>) ist es möglich, werbefinanziert das Programm ausgewählter Sender ,,live'' über das Internet anzuschauen.</b>
+
+<div class="p"><!----></div>
+Die Player-Software ist nach einer Anmeldung für Mac, Windows und verschiedene Linux-Distributionen verfügbar (<a href="https://zattoo.com/download">Link</a>), die Installation des Adobe Flash-Plugins ist stets erforderlich. Für Ubuntu/Debian gibt es ein fertiges Paket, was bei der Installation wenig Probleme bereiten sollte - zumindest Ubuntu Edgy Eft und Debian Etch werden als ,,unterstützte Distributionen'' aufgeführt. Nutzer anderer Distributionen haben die Wahl zwischen einem DEB-Paket, einem RPM-Paket und einem Archiv, dessen Inhalt nach <tt>/usr</tt> kopiert werden muss. Es gibt eine allgemeine Anleitung sowie spezielle Hinweise für Fedora Core 6 und OpenSUSE mit GNOME oder KDE (<a href="https://zattoo.com/downloadlinux">Link</a>). Zusätzlich müssen je nach Distribution einige weitere Schritte durchgeführt werden, wie zum Beispiel das Anlegen von Symlinks. Auf jeden Fall muss das Paket <b>libgtkglext1</b> (Name kann je nach Distribution leicht abweichen) installiert sein.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/zattoo-icon.png" /><br />
+<em>Das Zattoo-Icon.</em><br />
+
+<div class="p"><!----></div>
+Man installiert dann entweder das RPM- oder DEB-Paket oder verschiebt die im Archiv enthaltenen Dateien an den entsprechenden Platz in <tt>/usr</tt>. Dann lädt man sich <b>xulrunner</b> herunter (<a href="http://download.zattoo.com//xulrunner-1.8.0.4.en-US.linux-i686.tar.gz">Link</a>), es wird empfohlen, den Ordner nach <tt>/usr/lib/zattoo</tt> zu kopieren. Schließlich müssen noch Symlinks von den Bezeichnungen der xulrunner-Bibliotheken auf die eigentlichen Namen gesetzt werden:
+
+<div class="p"><!----></div>
+<tt>$ cd /usr/lib/zattoo/
+<div class="p"><!----></div>
+# ln -s xulrunner/libgtkembedmoz.
+so libgtkembedmoz.so.0d
+<div class="p"><!----></div>
+# ln -s xulrunner/libmozjs.so
+libmozjs.so.0d
+<div class="p"><!----></div>
+# ln -s xulrunner/libnspr4.so
+libnspr4.so.0d
+<div class="p"><!----></div>
+# ln -s xulrunner/libplc4.so
+libplc4.so.0d
+<div class="p"><!----></div>
+# ln -s xulrunner/libplds4.so
+libplds4.so.0d</tt><br />
+
+<div class="p"><!----></div>
+<tt># ln -s xulrunner/libxpcom.so
+libxpcom.so.0d
+<div class="p"><!----></div>
+# ln -s xulrunner/libxul.so
+libxul.so.0d
+<div class="p"><!----></div>
+# ldconfig /usr/lib/zattoo</tt><br />
+
+<div class="p"><!----></div>
+Sollte nach dem Start trotz installiertem Flash-Plugin dieses nicht gefunden werden, muss man sich von (<a href="http://www.adobe.com/shockwave/download/download.cgi?P1\_Prod\_Version=ShockwaveFlash\&promoid=BIOW">Link</a>) die Archivdatei herunterladen und anschließend die Datei <tt>libflashplayer.so</tt> in das Verzeichnis <tt>&#126;/.mozilla/plugins</tt> kopieren (der Ordner <tt>plugins</tt> muss ggf. angelegt werden) (<a href="http://wiki.ubuntuusers.de/Zattoo">Link</a>). Der Flash-Player wird benötigt, um die vor jedem Programmwechsel eingeblendete Werbung darzustellen.
+
+<div class="p"><!----></div>
+Diese Anleitung funktioniert auf jeden Fall für Ubuntu Gutsy Gibbon, wie bereits gesagt, gibt es einige spezielle Anleitungen für weitere Distributionen.
+
+<div class="p"><!----></div>
+Zur Zeit stehen 19 verschiedensprachige Sender zur Verfügung, darunter auch ,,Das Vierte'', ,,Comedy Central'', ,,MTV'', ,,DSF'' und ,,CNN''. Um in den vollen TV-Genuss zu kommen, ist DSL allein allerdings nicht ausreichend, selbst eine 2&nbsp;MBit-Leitung führt zu Fehlermeldungen, es braucht also eine sehr schnelle Verbindung. Die genaue Bandbreite, die notwendig ist, ist allerdings nicht genauer spezifiziert - dass mit 12&nbsp;MBit keine Probleme auftreten, zeigt, dass das Problem nicht serverseitig zu suchen ist. Ein weiterer Nachteil liegt in der geringen Sendequalität, die Auflösung lässt nur ein kleines Playerfenster zu (siehe Screenshot).
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/zattoo_player.jpg" /><br />
+<em>Das Zattoo-Playerfenster.</em><br />
+
+<div class="p"><!----></div>
+Die Anwendung liegt wohl eher darin, neben der Arbeit eine Sportsendung verfolgen zu können, als sich gemütlich auf dem Sofa einen Film anzuschauen - selbst in dem kleinen Playerfenster fällt die mangelhafte Bildqualität auf (Treppeneffekt an schrägen Linien).
+
+<div class="p"><!----></div>
+Neben der aktuellen stabilen Version ist auch noch eine ,,Technical Preview'' verfügbar, die unter anderem auch eine Programmübersicht bietet (siehe Screenshot). Die Programmübersicht wird von tvtv (<a href="http://www.tvtv.de">Link</a>) bereitgestellt und bietet neben einer relativ ausführlichen Sendungsbeschreibung auch weitere Informationen zu Besetzung und bisherigen Bewertung durch andere Zuschauer.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/zattoo_programm.png" /><br />
+<em>Der elektronische Programmführer der kommenden Zattoo-Version.</em><br />
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.zdf.de/ZDFmediathek/content/9602?inPopup=true">http://www.zdf.de/ZDFmediathek/content/9602?inPopup=true</a><br />
+
+<a href="http://rtl-now.rtl.de/">http://rtl-now.rtl.de/</a><br />
+<a href="http://zattoo.com/">http://zattoo.com/</a><br />
+<a href="https://zattoo.com/download">https://zattoo.com/download</a><br />
+<a href="https://zattoo.com/downloadlinux">https://zattoo.com/downloadlinux</a><br />
+<a href="http://download.zattoo.com//xulrunner-1.8.0.4.en-US.linux-i686.tar.gz">http://download.zattoo.com//xulrunner-1.8.0.4.en-US.linux-i686.tar.gz</a><br />
+
+<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&promoid=BIOW">http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash</td><td width="150">
+promoid=BIOW</a><br />
+
+
+<a href="http://wiki.ubuntuusers.de/Zattoo">http://wiki.ubuntuusers.de/Zattoo</a><br />
+<a href="http://www.tvtv.de">http://www.tvtv.de</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Hardware">Multimediatastaturen mit xbindkeys zähmen</a><a name="Hardware">
+</a></font> &nbsp;&nbsp;&nbsp;von Thorsten Schmidt</b></font><br /><b>O</b><b>ft steckt der Teufel im Detail. Da sitzt man nun vor seinem Keyboard mit den vielen Multimediatasten, aber sie bleiben unerkannt. Genau hier leistet das Programm <i>xbindkeys</i> Abhilfe: Tastatur- und Maussignale unter X mitschneiden und ihnen eigene Kommandos zuordnen ist die Devise.</b>
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Installation</b></font></font><br />
+Philippe Brochards <i>xbindkeys</i> (<a href="http://hocwp.free.fr/xbindkeys/xbindkeys.de.html">Link</a>) existiert seit 2001, ist also ein Klassiker. Dementsprechend sollte <i>xbindkeys</i> in den Paketquellen vieler Distributionen vorhanden und über deren Paketverwaltung (Paket <b>xbindkeys</b>) zu installieren sein. Der Versionsstand des Projektes liegt zum gegenwärtigen Zeitpunkt bei 1.8.2.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/xbindkeys.jpg" /><br />
+<em>Multimedia-Tasten. <br /><a href="http://commons.wikimedia.org/wiki/Image:Multimediakb.jpg">&#169; Mac</a> (<a href="http://en.wikipedia.org/wiki/Public_domain">Public Domain</a>)</em><br />
+
+<div class="p"><!----></div>
+Nach der Installation stellt sich die Frage: Wie funktioniert das jetzt? Hier das Kochrezept: Zuallererst benötigt <i>xbindkeys</i> eine Konfigurationsdatei, in die  der Nutzer später seine Tastencodes und Kommandos eintragen kann. Dank des Befehls
+
+<div class="p"><!----></div>
+<tt>$ xbindkeys -d &#62; &#126;/.xbindkeysrc</tt><br />
+
+<div class="p"><!----></div>
+in einem Terminal samt seiner Umleitung stellt das kein Problem dar - et voilà. Damit liegt nun eine Datei mit beispielhaften Konfigurationen vor.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Tastaturcodes ermitteln</b></font></font><br />
+Bevor die Tastaturcodes ermittelt werden, sollte man die Datei <tt>&#126;/.xbindkeysrc</tt> mit einem Editor öffnen. So erspart man sich ein umständliches Notieren, indem man dort die Ergebnisse gleich kopiert und einfügt. Anschließend wird ein zweites Terminal geöffnet und dort
+
+<div class="p"><!----></div>
+<tt>$ xbindkeys -k</tt><br />
+
+<div class="p"><!----></div>
+für eine einzelne Taste und mit den Schaltern <tt>-mk</tt> für eine Kombination von zwei oder mehr Tasten gestartet. Nun öffnet sich ein kleines Fenster, und man zieht es halb aufs Terminal, sodass der Prompt verblasst. Jetzt heißt es Tastendrücken oder aufs kleine Fenster klicken und das Ergebnis im Terminal verfolgen. Ein anschauliches Beispiel? Hier das Resultat für Strg&nbsp;+&nbsp;F&nbsp;:
+
+<div class="p"><!----></div>
+a)<br />
+<tt>(Scheme function)
+<div class="p"><!----></div>
+m:0x4 + c:41
+<div class="p"><!----></div>
+Control + f</tt><br />
+
+<div class="p"><!----></div>
+An dieser Abfolge sollte sich später der Eintrag in der <tt>&#126;/.xbindkeysrc</tt> orientieren: Unter der <tt>(Scheme function)</tt> steht eine Zeile mit der Tastenkombination entweder als Tastencode (<tt>m:0x4 + c:41</tt>) oder als Keysymbol (<tt>Control + f</tt>).
+
+<div class="p"><!----></div>
+Nun zu den bislang unerkannt gebliebenen Multimediatasten. Hier könnte das Ergebnis einer Taste so aussehen:
+
+<div class="p"><!----></div>
+b)<br />
+<tt>(Scheme function)
+<div class="p"><!----></div>
+m:0x0 + c:200
+<div class="p"><!----></div>
+NoSymbol</tt><br />
+
+<div class="p"><!----></div>
+Klar, dass man hier die Zeile mit dem Tastencode für <tt>&#126;/.xbindkeys</tt> benutzen möchte. Vorerst festgehalten: <i>xbindkeys</i> liefert demnach immer eine <tt>(Scheme function)</tt>, also eine auf unsere Tastenkombination auszuführende Aktion, und die Tastenkombination (oder Taste) selbst. Beides wird jetzt miteinander in Bezug gebracht.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>.xbindkeysrc editieren</b></font></font><br />
+Nun muss man für beide Beispiele die <tt>&#126;/.xbindkeysrc</tt> entsprechend editieren. Über den Editor fügt man das gewünschte Kommando und die Tastenkombination ein, wobei das Kommando immer in Anführungszeichen steht. Solange die auszuführenden Dateien in <tt>$PATH</tt> (<a href="http://linuxwiki.de/PATH">Link</a>) liegen, reicht der bloße Datei- bzw. Programmname. Ist das nicht der Fall, muss man den absoluten Pfad zur auszuführenden Datei angeben. Sollte man eine der nur mit Tastaturcodes bezeichneten Multimediatasten benutzen wollen, empfiehlt es sich, einen Kommentar anzufügen.
+
+<div class="p"><!----></div>
+<tt>#a)Lautstärke um 5% heben
+<div class="p"><!----></div>
+amixer -c 0 set PCM 5%+
+<div class="p"><!----></div>
+Control + f</tt><br />
+
+<div class="p"><!----></div>
+<tt>#b)Funktionstaste 1 rechts
+<div class="p"><!----></div>
+claws-mail
+<div class="p"><!----></div>
+m:0x0 + c:200</tt><br />
+
+<div class="p"><!----></div>
+Welche Aktion der Tastendruck auslöst, ist mehr oder weniger offensichtlich. Aber welche Tastenkombination dazu dient, könnte später Probleme aufwerfen - wie bei b), wenn Claws-Mail via <tt>m:0x0 + c:200</tt> starten soll. Bei temporärem Gedächtnisverlust hilft einem ein
+
+<div class="p"><!----></div>
+<tt>$ cat &#126;/.xbindkeysrc</tt><br />
+
+<div class="p"><!----></div>
+wieder auf die Sprünge und zeigt die Tastenkombinationen samt Kommentar, während ein
+
+<div class="p"><!----></div>
+<tt>$ xbindkeys_show</tt><br />
+
+<div class="p"><!----></div>
+nur die <tt>Scheme Function</tt> und die Tastenkombination liefert.
+
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>xbindkeys automatisch starten</b></font></font><br />
+So weit, so gut. Nun möchte man <i>xbindkeys</i> als Dämon bei jedem Start von X mit aufrufen. Hierzu bietet sich ein Eintrag in die <tt>&#126;/.xinitrc</tt> an: Über einen Editor wird die Datei geöffnet und
+
+<div class="p"><!----></div>
+<tt>xbindkeys &amp;</tt><br />
+
+<div class="p"><!----></div>
+hinzugefügt. Gleiches erreicht man bei den beiden großen Desktopumgebungen KDE und GNOME über einen Eintrag in deren jeweilige Sitzungsverwaltung (<a href="http://wiki.ubuntuusers.de/Autostart">Link</a>). Beim nächsten Login bzw. Start des X-Servers sollten dann die Tastaturfunktionen wieder vorhanden sein. Wer das - aus welchen Gründen auch immer - nicht möchte, startet <i>xbindkeys</i> nach dem Login manuell im Terminal über <tt>xbindkeys</tt>.
+
+<div class="p"><!----></div>
+Auf meinem Keyboard ,,Cherry CyMotion Master Express (USB auf PS2)'' bleiben leider einige Funktionstasten am rechten und linken Rand des Keyboards unerkannt. Nach kurzer Recherche bin ich auf folgende Lösung gestoßen: Sie funktioniert nur bei PS/2-Keyboards, aber sehr gut im Verbund mit <i>xbindkeys</i> (<a href="http://gentoo-wiki.com/HOWTO_Use_Multimedia_Keys#Finding_raw_scan_codes_-_PS.2F2_keyboards">Link</a>).
+
+<div class="p"><!----></div>
+Eine Alternative zu <i>xbindkeys</i> findet man in <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> Ausgabe 08/2007 mit dem Programm keyTouch (<a href="ftp://ftp.freiesmagazin.de/2007/freiesMagazin-2007-08.pdf">Link</a>).
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://hocwp.free.fr/xbindkeys/xbindkeys.de.html">http://hocwp.free.fr/xbindkeys/xbindkeys.de.html</a><br />
+<a href="http://linuxwiki.de/PATH">http://linuxwiki.de/PATH</a><br />
+<a href="http://wiki.ubuntuusers.de/Autostart">http://wiki.ubuntuusers.de/Autostart</a><br />
+<a href="http://gentoo-wiki.com/HOWTO_Use_Multimedia_Keys#Finding_raw_scan_codes_-_PS.2F2_keyboards">http://gentoo-wiki.com/HOWTO_Use_Multimedia_Keys#Finding_raw_scan_codes_-_PS.2F2_keyboards</a><br />
+
+
+<a href="ftp://ftp.freiesmagazin.de/2007/freiesMagazin-2007-08.pdf">ftp://ftp.freiesmagazin.de/2007/freiesMagazin-2007-08.pdf</a><br />
+
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Paketverwaltung">Paketverwaltung – von APT und RPM</a><a name="Paketverwaltung">
+</a></font> &nbsp;&nbsp;&nbsp;von Matthias Kietzke</b></font><br /><b>S</b><b>oftware unter Linux einspielen ist mehr, als eine Datei mit Setup-Routine aufzurufen. Eine Variante ist das Übersetzen von Quellcodes in ausführbare Formate (Kompilieren). Eine andere nutzt fertige Binärformate, welche bereits für bestimmte Distributionen und Systemarchitekturen vorkonfiguriert sind. Paketmanager spielen dabei eine wichtige Rolle. Im folgenden Artikel sollen zwei wichtige Paketmanager vorgestellt werden, RPM und DPKG.</b>
+
+<div class="p"><!----></div>
+RPM steht für RPM Package Manager (früher Red Hat Packet Manager) und wurde von Red Hat entwickelt. Es ist eine freie Software und steht unter der GPL. DPKG steht für Debian Package Manager und wurde von Debian entwickelt. Es steht ebenfalls unter der GPL. Da sich jeder Distributionshersteller für einen bestimmten Paketmanager entscheidet, hat der Anwender hier nicht die Wahl. Fedora, SUSE und Red Hat nutzen RPM, Debian und Ubuntu hingegen DPKG.  Darüber hinaus gibt es noch weitere Systeme u.&nbsp;a. von Gentoo Linux.
+
+<div class="p"><!----></div>
+Die Aufgabe eines Paketmanagers ist die Verwaltung der installierten Software. Dazu gehören unter anderem der Linuxkernel, Bibliotheken, Anwenderprogramme und Dokumentationen.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Gemeinsamkeiten</b></font></font><br />
+Die zur Verfügung gestellten Binärpakete enthalten neben den komprimierten Programmdateien diverse Metainformationen, wie Programmversion, Installationspfade und Abhängigkeiten zu anderen Programmen. Diese Abhängigkeiten sind typisch für Linux-Software. So basieren Programme auf gemeinsamen Bibliotheken oder Funktionalitäten in anderen Programmen. Diese Verflechtung ermöglicht eine modulare Softwareumgebung, den Austausch von Funktionalitäten mit denen anderer Programme und einer Minimierung des Speicherplatzes. Die Software ist also kein monolithischer Block, sondern eine lose Kopplung von Funktionalitäten über Programme hinweg.
+Leider können die Paketmanager Abhängigkeiten nicht automatisch auflösen und keine Software  nachladen. Die benötigten Programme müssen manuell besorgt und installiert werden. Zahlreiche Aufsätze (Frontends) lösen dieses Manko jedoch.
+Bedient werden beide Systeme über die Kommandozeile. Es gibt aber auch grafische Programme, auf die später eingegangen wird. Die Dokumentation ist ebenfalls sehr umfassend und in mehreren Sprachen verfügbar.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Unterschiede</b></font></font><br />
+Zunächst gibt es Unterschiede in den entsprechenden Binärformaten. Zu erkennen sind RPM-Pakete an der Endung .rpm und DPKG-Pakete an der Endung .deb. Das eine System kann mit den jeweils anderen Formaten nicht umgehen. Es gibt jedoch Konvertierungstools wie beispielsweise alien, das zwischen den Formaten umwandeln kann (<a href="http://www.linux-community.de/Neues/story?storyid=20149">Link</a>).
+
+<div class="p"><!----></div>
+Weiterhin unterscheiden sich beide Systeme in den Bedienungsparametern. Diese sind so unterschiedlich, dass der Anwender, der ein System gewohnt ist, eine kurze Eingewöhnung auf dem anderen System bedarf. Die Tabelle zeigt eine Auswahl an einigen Beispielen.
+
+<div class="p"><!----></div>
+
+<table border="1">
+<tr><td colspan="3" align="center"><font size="+1"><font face="helvetica"><b>Bedienungsparameter</b></font></font></td></tr>
+<tr><td></td><td width="0"><b>DPKG</b> </td><td><b>RPM</b></td></tr>
+<tr><td><b>Paket installieren</b> </td><td width="0">dpkg -i foo.deb </td><td>rpm -i foo.rpm</td></tr>
+<tr><td><b>Paket deinstallieren</b> </td><td width="0">dpkg -r foo </td><td>rpm -e foo</td></tr>
+<tr><td><b>Paketinformationen abfragen</b> </td><td width="0">dpkg -p foo </td><td>rpm -qi foo</td></tr>
+<tr><td><b>Alle installierten Pakete anzeigen</b> </td><td width="0">dpkg -l </td><td>rpm -qa</td></tr>
+<tr><td></td></tr></table>
+
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Frontends</b></font></font><br />
+Da die Bedienung der Paketmanager etwas umständlich und wenig komfortabel ist, wurden Frontends entwickelt, die auf den Paketmanagern aufsetzen und um Funktionalitäten erweitern. Diese können auf Paketquellen im Internet, auf DVD oder im Firmennetzwerk zugreifen (Repository) und Pakete von dort nachladen.
+Weiterhin können sie Abhängigkeiten zwischen den Paketen automatisch auflösen und benötigte Pakete gegebenenfalls nachladen und mit installieren.
+
+<div class="p"><!----></div>
+Die bekanntesten Frontends für Debian-basierte Systeme sind apt-get und dessen Alternative aptitude (<a href="ftp://ftp.freiesmagazin.de/2007/freiesMagazin-2007-01.pdf">Link</a>). apt-get installiert bei der Installation eines Paketes automatisch weitere Pakete, die für den Betrieb notwendig sind. Darüber hinaus schlägt apt-get Pakete zur Installation vor. Diese sind zum Programmbetrieb nicht zwingend notwendig, ermöglichen jedoch eine bessere Funktionalität, beispielsweise Dokumentationen oder eine Rechtschreibprüfung.
+Mit apt-get ist es auch möglich, bestimmte Programmversionen aus verschiedenen Repositories in einem System zu installieren (Pinning). So kann der Linuxkernel beispielsweise aus dem Stable-Zweig kommen, während das X-Window-System mit einer neueren Version aus dem Testing-Repository installiert wird.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Neben kommandozeilenbasierten Frontends gibt es auch grafische Aufsätze. Für Debian-Distributionen sei hier dselect genannt. Mit Hilfe der Pfeiltasten kann durch eine Paketliste navigiert und Software zum Installieren und Entfernen markiert werden.
+Ubuntu verwendet Synaptic, welches einsteigerfreundlich und optisch ansprechend gestaltet ist. SUSE nutzt Yast2 und Fedora yum. Alle Programme sind ähnlich zu bedienen und haben einen vergleichbaren Funktionsumfang.
+Da die meisten Frontends individuelle Daten in eigenen Datenbanken speichern, ist es sinnvoll, sich für ein System zu entscheiden und dieses dann durchgängig zu nutzen. Der ständige Wechsel zwischen verschiedenen Paketverwaltungen kann zu Inkonsistenzen und einem instabilen System führen.
+Ein Projekt zur Vereinheitlichung der verschiedenen Verfahren ist der Smart Package Manager (<a href="http://labix.org/smart">Link</a>). Dieser ist seit 2004 in Entwicklung und kann mit diversen Binärformaten und Repositories umgehen.
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Zusammenfassung</b></font></font><br />
+Die heutigen Paketverwaltungen funktionieren sehr gut und jede Distribution hat hier ihren eigenen Weg gefunden. Schade ist, dass Binärpakete oft nur für wenige große Distributionen verfügbar sind, während Nutzer von kleineren Systemen oft selbst kompilieren müssen. Projekte wie der Smart Package Manager helfen, einen gemeinsamen Konsens zu entwickeln und die Paketverwaltung distributionsunabhängig zu vereinheitlichen.
+Man sollte sich bei seiner Distribution für ein Frontend entscheiden und, um Inkonsistenzen zu vermeiden, dieses dann durchgängig nutzen.
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.linux-community.de/Neues/story?storyid=20149">http://www.linux-community.de/Neues/story?storyid=20149</a><br />
+
+<a href="http://labix.org/smart">http://labix.org/smart</a><br />
+<a href="http://www.linuxhaven.de/dlhp/HOWTO/DE-RPM-HOWTO-3.html">http://www.linuxhaven.de/dlhp/HOWTO/DE-RPM-HOWTO-3.html</a><br />
+
+<a href="http://xinux.de/docs/linux/rpm/">http://xinux.de/docs/linux/rpm/</a><br />
+<a href="http://xgen.iit.edu/cgi-bin/man/man2html?dpkg">http://xgen.iit.edu/cgi-bin/man/man2html?dpkg</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Lizenz">Webzwonull plus GPL: die AGPL</a><a name="Lizenz">
+</a></font> &nbsp;&nbsp;&nbsp;von Christian Soeder</b></font><br /><b>D</b><b>ie GPL wurde in Zeiten geschrieben, in denen Webanwendungen bei weitem nicht die gleiche Relevanz wie heute hatten: Programme wie EyeOS, die ein eigenes Betriebssystem im Browser simulieren, Google Documents, Gmail und andere waren nicht im Entferntesten vorstellbar.</b>
+
+<div class="p"><!----></div>
+Dieser Sachverhalt führt zu folgendem Problem: Traditionell muss man Programme auf GPL-Basis, wenn man sie bearbeitet und weitergibt, ebenfalls unter die GPL stellen und den Quelltext mitliefern. Dies jedoch trifft auf moderne Webprogramme wie Drupal, Wordpress, Joomla und andere nur bedingt zu. Hier hat man die Möglichkeit, die GPL ein Stück weit ,,auszutricksen'': Man kann ein CMS wie WordPress verwenden, von der Arbeit anderer profitieren und muss Verbesserungen trotzdem nicht weitergeben, auch wenn man andere daran indirekt teilhaben lässt. Ein extrem aufgebohrtes WordPress mit Funktionen, die auch anderen zugutekommen, jedoch nur dem Autor bekannt sind, ist juristisch gesehen vollständig GPL-konform; moralisch gesehen kann man hier anderer Meinung sein.
+
+<div class="p"><!----></div>
+Diese Lücke versucht die AGPL, die GNU Affero General Public Licence (<a href="http://www.fsf.org/licensing/licenses/agpl-3.0.html">Link</a>), zu schließen. Frühere Versionen wurden nicht von der Free Software Foundation veröffentlicht, die aktuelle Version, die AGPLv3, jedoch schon. Dies hat den Vorteil, dass man nun zum ersten Mal GPLv3- und AGPLv3-Programme gemeinsam verwenden kann, da die Lizenzen nicht mehr komplett inkompatibel sind. Frühere Versionen der AGPL und der GPL waren zueinander inkompatibel, obwohl die eine auf der anderen basierte. Eine reichlich paradoxe Situation, die jedoch dem starken Copyleft der GPL bzw. der AGPL geschuldet ist. Auch die aktuellen Versionen der AGPL und der GPL können nicht beliebig kombiniert werden: Ein GPLv3-Programm kann niemals ein AGPLv3-Programm werden bzw. umgekehrt - durch das starke Copyleft muss ein GPLv3-Programm immer ein GPLv3-Programm bleiben und ein AGPLv3-Programm immer ein AGPLv3-Programm.
+
+<div class="p"><!----></div>
+Bei der Kombination von GPLv3- und AGPLv3-Programmen verbleiben die AGPLv3-Teile weiterhin AGPLv3, das gemeinsame Werk fällt hingegen unter die GPLv3. Die ,,Bevorzugung'' der GPL ist hierbei kein Versehen oder gar Zufall, sondern gewollt.
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.fsf.org/licensing/licenses/agpl-3.0.html">http://www.fsf.org/licensing/licenses/agpl-3.0.html</a><br />
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Rezension">Rezension: Freie Software - Zwischen Privat- und Gemeineigentum</a><a name="Rezension">
+</a></font> &nbsp;&nbsp;&nbsp;von Thorsten Schmidt</b></font><br /><b>W</b><b>ie gelingt es einer Gesellschaft, ,,<i>die Balance zwischen Wissen als Ware und Wissen als öffentlichem Gut</i>'' zu halten? Mit dieser Frage steckt Grassmuck das allgemeine Thema in seinem Buch ,,Freie Software zwischen Privat- und Gemeineigentum'' ab. Unschwer zu erkennen, erfährt dieses Thema späterhin eine Einschränkung auf das Wissen rund um Software. Grassmuck nähert sich seinem Thema in zwei Schritten in Teil 1 und 2 des Buches.</b>
+
+<div class="p"><!----></div>
+Im ersten Teil beleuchtet Grassmuck in einer historischen Rückschau das allgemeine Thema. Dazu wählt er als Ausgangspunkt das Wesen der Allmende (<a href="http://de.wikipedia.org/wiki/Allmende">Link</a>). Anhand der Allmende stellt Grassmuck materielle Eigentumsverhältnisse zur Zeit des Mittelalters dar: Eigentum ist zu dieser Zeit meist kollektives Eigentum und bezieht sich dabei auf natürliche Ressourcen (Boden und Gewässer etc.), die die Gemeinde bewirtschaftet. Grassmuck schildert den schrittweisen Zerfall der Allmende und ihre Transformation in Privateigentum.
+
+<div class="p"><!----></div>
+Parallel zum Zerfall der Allmende bricht mit Gutenberg (<a href="http://de.wikipedia.org/wiki/Johannes_Gutenberg">Link</a>) nicht nur die Zeit des Buchdrucks im Europa des 15. Jahrhunderts an, sondern auch die Phase anderer tiefgreifender Umwälzungen. Buchdruckergilden, Autoren und Erfinder betreten die öffentliche Bühne - man befindet sich an der Schwelle zum Urheberrecht. Wie Grassmuck weiter schreibt, erkennt man nun folgende Problemlage: Einerseits sollen die Produkte des Erschaffers gewürdigt und geschützt werden, sodass er daraus einen finanziellen Vorteil ziehen kann, andererseits soll die Öffentlichkeit auch aus den Neuerungen ihren Nutzen ziehen: als Lehre und Inspiration. Das Entstehen des Urheber- und Patentrecht ist eine erste Antwort hierauf. Grassmuck schildert weiterführend die Entwicklungslinien des ,,Droit d'auteur'' (<a href="http://i31www.ira.uka.de/docs/mm+ep/11_RECHT/node5.html">Link</a>) wie auch des ,,Copyright'' als kontinentaleuropäische respektive angloamerikanische Tradition des Urheberrechts und zeigt deren Unterschiede und Gemeinsamkeiten auf.
+
+<div class="p"><!----></div>
+Doch das Problem des Interessenausgleichs zwischen Urhebern und Öffentlichkeit scheint aber nur gelöst. Denn einen Schritt weiter - und mehrere Jahrhunderte später - skizziert Grassmuck, wie sich die Situation unter der technischen Entwicklung der Reproduktionsmittel rasant zuspitzt. Mit der Erfindung des Computers und späterhin seinem massenhaften Verkauf als PC wie auch seiner weltumspannenden Vernetzung sehen sich Urheberrechtsschützer und Rechteverwerter unter Zugzwang geraten. Ihr Problem in der digitalen Ära: Ihnen entgleitet die Kontrolle über die urheberrechtlich geschützten Werke. Der Träger des Werkes ist beliebig, die Kopie mehr als erschwinglich und schnell übers Netz verteilt, ganz im Gegenteil zur analogen Zeit. Die Bemühungen seitens der Rechteverwerter laufen jetzt darauf hinaus, den ,,Allzweckrechner mit Allzweckbetriebssystemen'' in ein hardwaregestütztes Softwaregefängnis zu verwandeln. Rechtekontrollsysteme sind das Stichwort. Und Grassmuck schildert auf beunruhigende Weise einige Varianten davon und zeigt ebenso auf, wie sich das Urheberrecht in den letzten 30 Jahren mehr und mehr zum Investitionsschutz der daran beteiligten Rechteindustrie verwandelt.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/grassmuck.jpg" /><br />
+<em>Das 400-seitige Buch ist als kostenloses PDF oder gebunden erhältlich.<br /><a href="http://freie-software.bpb.de/">&#169; bpb</a> (<a href="http://creativecommons.org/licenses/by-sa/2.0/de/">Creative Commons Attribution-ShareAlike 2.0  License</a>)</em><br />
+
+<div class="p"><!----></div>
+Im zweiten Teil seines Buches lässt Grassmuck die letzten 40 Jahre Revue passieren und beschreibt eine gegenläufige Bewegung. Freies Wissen im Sektor der Softwareentwicklung ist das Stichwort. Volker Grassmuck zeigt, wie mit der Entwicklung des Internets - wenn auch ursprünglich in militärischer Absicht, aber bereits dort - eine Phase der Wissens- und Technikerzeugung beginnt, die auf Offenheit setzt. Von der Idee der ,,Requests for Comments'' (RFCs) (<a href="http://de.wikipedia.org/wiki/Request_for_Comments">Link</a>) bis zur Entwicklung des TCP/IP (<a href="http://de.wikipedia.org/wiki/TCP/IP">Link</a>), setzt eine Entwicklung ein, die darauf zielt, möglichst wenig Rechner vom Netz auszuschließen. Man erreicht dies, indem man eine breite Schicht von potentiellen Nutzern schon frühzeitig in die Entwicklung der Standards miteinbezieht, sodass sich später die brauchbarste Lösung durchsetzen kann. Grassmuck berichtet weiter über die Anfänge der Softwareentwicklung am Beispiel des AI-Lab am MIT (<a href="http://de.wikipedia.org/wiki/Massachusetts_Institute_of_Technology">Link</a>) Anfang der 70er Jahre. Der Autor schildert die dort vorherrschende liberale Atmosphäre des freien Austausches von Quellcode und dessen spätere Einschränkung zum Ende der 70er, als die Magie des ,,sharing spririt'' langsam zum Industriegeheimnis durch Binärformate, Geheimhaltungsverträge und Copyright etc. verkümmert (<a href="http://www.oreilly.com/openbook/freedom/ch01.html">Link</a>). Damit zeigt Grassmuck auch die Geburt des GNU-Projektes (<a href="http://de.wikipedia.org/wiki/GNU-Projekt">Link</a>) aus der Frustration Richard Stallmans (<a href="http://de.wikipedia.org/wiki/Richard_Stallman">Link</a>), der zu jener Zeit am MIT arbeitet und sich nicht mit diesen Einschränkungen abfindet. Wenn nun, Grassmucks Worten folgend, Urheber- und Verwertungsrechte das Spannungsfeld zwischen Wissen als Ware und Wissen als öffentlichem Gut markieren, so gewinnt mit Stallmans GPL die Idee eines rechtlich geschützten und gemeinschaftlich nutzbaren, freien Wissens  wieder an Überzeugungskraft. Innerhalb Grassmucks Analogie bleibend, könnte man sagen: Die ,,Allmendianer'' sind zurück. Über diese Phase hinaus gibt Grassmuck Einblick in erfolgreiche Open-Source- und Freie-Software-Projekte: von Apache (<a href="http://de.wikipedia.org/wiki/Apache_HTTP_Server">Link</a>) über GNU/Linux (<a href="http://www.gnu.org/gnu/linux-and-gnu.de.html">Link</a>) bis Xfree86 (<a href="http://de.wikipedia.org/wiki/XFree86">Link</a>), zeigt deren Organisationsformen, schildert wie diese und andere freie Softwareprojekte funktionieren. Schließlich berichtet Grassmuck sehr detailliert über verschiedene Varianten freier Softwarelizenzen.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/gnu.png" /><br />
+<em>Das GNU-Maskottchen auf einer Briefmarke.<br /><a href="http://www.gnu.org/graphics/gnu-post/">&#169; Etienne Suvasa, Peter Garwinski,<br />Tomasz W. Kozłowski</a> (<a href="http://www.gnu.org/licenses/gpl.html">GPL</a>)</em><br />
+
+<div class="p"><!----></div>
+<font size="+1"><font color="#595959"><b>Fazit</b></font></font><br />
+Grassmuck liefert mit seinem Buch auf über 400 Seiten eine sehr faktenreiche Darstellung zum Thema Wissen, Freie Software und Gesellschaft. Bemerkenswert daran: Indem er das Urheberrecht stets innerhalb seines gesellschaftshistorisch technischen Zusammenhangs darstellt, macht Grassmuck die zeittypischen Probleme des Urheberrechts sehr deutlich.
+Trotzdem ist Vorsicht geboten. Man muss wissen, dass Volker Grassmuck sein Buch, wie er selbst schreibt, ,,modular'' aufgebaut hat, heißt: Man kann in der Mitte, ganz hinten oder vorne anfangen zu lesen. Empfehlenswert für den kapitelweisen Zugriff - weniger empfehlenswert, um es in einem Rutsch von vorne nach hinten durchzulesen, da es an einigen Stellen aufgrund der Faktenfülle zu Wiederholungen kommt, in denen auch der rote Faden verloren zu gehen droht.
+Das Buch ist 2004 bei der Bundeszentrale für politische Bildung (BpB, Bonn) erschienen und lässt sich auf folgender Webseite (<a href="http://freie-software.bpb.de/">Link</a>) entweder gegen einen Betrag von 2&nbsp;Euro bestellen oder direkt als PDF herunterladen.
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://de.wikipedia.org/wiki/Allmende">http://de.wikipedia.org/wiki/Allmende</a><br />
+<a href="http://de.wikipedia.org/wiki/Johannes_Gutenberg">http://de.wikipedia.org/wiki/Johannes_Gutenberg</a><br />
+<a href="http://i31www.ira.uka.de/docs/mm+ep/11_RECHT/node5.html">http://i31www.ira.uka.de/docs/mm+ep/11_RECHT/node5.html</a><br />
+
+<a href="http://de.wikipedia.org/wiki/Request_for_Comments">http://de.wikipedia.org/wiki/Request_for_Comments</a><br />
+
+<a href="http://de.wikipedia.org/wiki/TCP/IP">http://de.wikipedia.org/wiki/TCP/IP</a><br />
+<a href="http://de.wikipedia.org/wiki/Massachusetts_Institute_of_Technology">http://de.wikipedia.org/wiki/Massachusetts_Institute_of_Technology</a><br />
+
+<a href="http://www.oreilly.com/openbook/freedom/ch01.html">http://www.oreilly.com/openbook/freedom/ch01.html</a><br />
+
+<a href="http://de.wikipedia.org/wiki/GNU-Projekt">http://de.wikipedia.org/wiki/GNU-Projekt</a><br />
+<a href="http://de.wikipedia.org/wiki/Richard_Stallman">http://de.wikipedia.org/wiki/Richard_Stallman</a><br />
+<a href="http://de.wikipedia.org/wiki/Apache_HTTP_Server">http://de.wikipedia.org/wiki/Apache_HTTP_Server</a><br />
+
+<a href="http://www.gnu.org/gnu/linux-and-gnu.de.html">http://www.gnu.org/gnu/linux-and-gnu.de.html</a><br />
+<a href="http://de.wikipedia.org/wiki/XFree86">http://de.wikipedia.org/wiki/XFree86</a><br />
+<a href="http://freie-software.bpb.de/">http://freie-software.bpb.de/</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="Meinung">2008 ist das Jahr des Linux-Desktops</a><a name="Meinung">
+</a></font> &nbsp;&nbsp;&nbsp;von Christian Soeder</b></font><br /><b>D</b><b>er Titel mag ironisch erscheinen, wird doch schon seit mindestens 2000 propagiert, dass das jeweilige Folgejahr das ,,Jahr des Linux-Desktops'' sei beziehungsweise dass Linux endlich im Massenmarkt ankommen würde. Unnötig zu erwähnen, dass alle diese Vorhersagen bisher falsch lagen.</b>
+
+<div class="p"><!----></div>
+Doch dieses Mal ist vieles anders: GNU/Linux-Distributoren wie Red Hat und Novell machen Gewinn (<a href="http://www.pro-linux.de/news/2007/11774.html">Link</a>) (<a href="http://www.pro-linux.de/news/2007/12103.html">Link</a>); diverse große und angesehene Unternehmen wie beispielsweise die New Yorker Börse wechseln zu Linux-Servern (<a href="http://www.computerwoche.de/knowledge_center/linux/1850812/">Link</a>); Google fördert stetig die Entwicklung von FLOSS im Rahmen des ,,Google Summer of Code'' (<a href="http://code.google.com/soc/">Link</a>) (siehe Nachricht dort (<a href="freiesMagazin-2008-03-bilder.html#08_03_google-soc">Link</a>)). Die verschiedensten Technikgeräte sind Linux-basiert: es gibt Handhelds, Internet Tablets und Navigationsgeräte auf Linux-Basis, irgendwann im Laufe dieses Jahres soll auch das erste komplett freie Handy mit Linux-Basis erscheinen (<a href="http://de.wikipedia.org/wiki/OpenMoko">Link</a>) (siehe Nachricht dort (<a href="freiesMagazin-2008-03-bilder.html#08_03_mobil">Link</a>)). Die OLPC-Initiative hat eine wahre Lawine von Mini-Notebooks mit GNU/Linux-Distributionen ausgelöst - momentaner Höhepunkt: der Deutschlandstart des EeePC von Asus (<a href="http://eeepc.asus.com/de/news02052008.htm">Link</a>).
+
+<div class="p"><!----></div>
+Auch die Tatsache, dass sich immer mehr Firmen darum kümmern Linux-Treiber zur Verfügung zu stellen, zeigt, dass Linux nicht mehr nur in dunklen Hinterzimmern vertreten, sondern im ,,Mainstream'' angekommen ist. Hier ist als Paradebeispiel die Initiative von AMD zu nennen, zukünftig freie Treiber für ATI-Grafikkarten zu entwickeln (<a href="http://www.pro-linux.de/news/2007/11718.html">Link</a>) (siehe Nachricht dort (<a href="freiesMagazin-2008-03-bilder.html#08_03_amd">Link</a>)).
+
+<div class="p"><!----></div>
+Zu all diesen Faktoren kommen zwei weitere gewichtige dazu: Windows Vista, das neue Flaggschiff Microsofts, ist ein Flop (<a href="http://www.welt.de/webwelt/article1047382/Acer_haelt_Windows_Vista_fuer_einen_Flop.html">Link</a>). Die Treiberprobleme und Imkompatibilitäten sind höher als beim Wechsel von Windows 9.x zu Windows NT, die Mehrheit der Nutzer hat kein Interesse den Rechner aufzurüsten, nur damit das Betriebssystem flüssig läuft. Und zu guter Letzt ist hier auch Ubuntu zu nennen: die GNU/Linux-Distribution, gesponsert von Mark Shuttleworth, Milliardär aus Afrika, hat es geschafft, neue Nutzer zum Wechsel zu Ubuntu zu bewegen (<a href="http://www.golem.de/0802/57662.html">Link</a>). Ubuntu mag nicht die schnellste Distribution sein, aber sie ist eine der anfängerfreundlichsten - und das Marketing ist hervorragend. Die Philosophie hinter Ubuntu, ein ,,Linux für Menschen'' zu machen, kommt einfach gut an.
+
+<div class="p"><!----></div>
+Alle diese Faktoren beweisen, dass FLOSS im Allgemeinen und Linux im Besonderen auf einem guten Weg sind: es ist gar nicht nötig, dass GNU/Linux-Systeme plötzlich massenhaft Windows ersetzen - der Prozess ist unaufhaltsam. Gleichzeitig heißt dies jedoch nicht, dass Microsoft plötzlich keine ernstzunehmende Gefahr mehr darstellt: eine Riesenfirma wie Microsoft verschwindet nicht so plötzlich vom Markt. Microsoft wird weiter versuchen, die eigenen ,,Standards'' zu etablieren und somit Anwender wirklicher Wahlfreiheit zu berauben.
+
+<div class="p"><!----></div>
+2008 ist das Jahr des Linux-Desktops - aber es kommt anders daher, als zu erwarten war.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2008-03-bilder-Dateien/tux.png" /><br />
+<em>Tux, das Linux-Maskottchen.<br /><a href="http://commons.wikimedia.org/wiki/Image:Tux.svg">&#169; Larry Ewing, Simon Budig, Anja Gerwinski</a> </em><br />
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+1">Links</font></font><br />
+<a href="http://www.pro-linux.de/news/2007/11774.html">http://www.pro-linux.de/news/2007/11774.html</a><br />
+<a href="http://www.pro-linux.de/news/2007/12103.html">http://www.pro-linux.de/news/2007/12103.html</a><br />
+<a href="http://www.computerwoche.de/knowledge_center/linux/1850812/">http://www.computerwoche.de/knowledge_center/linux/1850812/</a><br />
+
+<a href="http://code.google.com/soc/">http://code.google.com/soc/</a><br />
+<a href="http://de.wikipedia.org/wiki/OpenMoko">http://de.wikipedia.org/wiki/OpenMoko</a><br />
+<a href="http://eeepc.asus.com/de/news02052008.htm">http://eeepc.asus.com/de/news02052008.htm</a><br />
+<a href="http://www.pro-linux.de/news/2007/11718.html">http://www.pro-linux.de/news/2007/11718.html</a><br />
+<a href="http://www.welt.de/webwelt/article1047382/Acer_haelt_Windows_Vista_fuer_einen_Flop.html">http://www.welt.de/webwelt/article1047382/Acer_haelt_Windows_Vista_fuer_einen_Flop.html</a><br />
+
+
+<a href="http://www.golem.de/0802/57662.html">http://www.golem.de/0802/57662.html</a><br />
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_veranstaltungen">Veranstaltungskalender</a><a name="08_03_veranstaltungen">
+</a></font></b></font><br />Jeden Monat gibt es zahlreiche Messen in Deutschland und viele davon sogar in Ihrer Umgebung. Mit diesem Kalender verpassen Sie davon keine mehr.
+
+<div class="p"><!----></div>
+
+<table border="1">
+<tr><td colspan="5" align="center"><font size="+1"><font face="helvetica"><b>Messen</b></font></font></td></tr>
+<tr><td><font face="helvetica"><b>Veranstaltung</b></font> </td><td width="0"><font face="helvetica"><b>Ort</b></font> </td><td><font face="helvetica"><b>Datum</b></font> </td><td width="0"><font face="helvetica"><b>Eintritt</b></font> </td><td><font face="helvetica"><b>Link</b></font> </td></tr>
+
+<tr><td> <font face="helvetica">CeBIT - Linux Park</font> </td><td width="0"><font face="helvetica">Hannover</font> </td><td><font face="helvetica">04.03.-09.03.08</font> </td><td width="0"><font face="helvetica">38,- EUR</font> </td><td><font face="helvetica"><a href="http://www.cebit.de/linuxpark_d">http://www.cebit.de/linuxpark_d</a></font> </td></tr>
+<tr><td><font face="helvetica">OpenExpo Bern</font> </td><td width="0"><font face="helvetica">Bern (Schweiz)</font> </td><td><font face="helvetica">12.03.-13.03.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://www.openexpo.ch/openexpo-2008-bern">http://www.openexpo.ch/openexpo-2008-bern</a></font> </td></tr>
+<tr><td> <font face="helvetica">Linux-Infotag</font> </td><td width="0"><font face="helvetica">Augsburg</font> </td><td><font face="helvetica">29.03.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://www.luga.de">http://www.luga.de</a></font> </td></tr>
+<tr><td><font face="helvetica">FOSSGIS</font> </td><td width="0"><font face="helvetica">Freiburg</font> </td><td><font face="helvetica">01.04-03.04.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://www.fossgis.de">http://www.fossgis.de</a></font> </td></tr>
+<tr><td> <font face="helvetica">Linuxtag</font> </td><td width="0"><font face="helvetica">Krems (Österreich)</font> </td><td><font face="helvetica">15.04.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://lug.krems.cc/linuxtag2008/">http://lug.krems.cc/linuxtag2008/</a></font> </td></tr>
+<tr><td><font face="helvetica">Linuxtage</font> </td><td width="0"><font face="helvetica">Graz (Österreich)</font> </td><td><font face="helvetica">19.04.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://www.linuxtage.at/">http://www.linuxtage.at/</a></font> </td></tr>
+<tr><td> <font face="helvetica">Linux-Workshop</font> </td><td width="0"><font face="helvetica">Wolfsburg</font> </td><td><font face="helvetica">01.05.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://www.lug.wolfsburg.de">http://www.lug.wolfsburg.de</a></font> </td></tr>
+<tr><td><font face="helvetica">LUG Camp</font> </td><td width="0"><font face="helvetica">Flensburg</font> </td><td><font face="helvetica">01.05.-04.05.08</font> </td><td width="0"><font face="helvetica">-</font> </td><td><font face="helvetica"><a href="http://www.lug-camp-2008.de">http://www.lug-camp-2008.de</a></font> </td></tr>
+<tr><td> <font face="helvetica">LinuxTag</font> </td><td width="0"><font face="helvetica">Berlin</font> </td><td><font face="helvetica">28.05.-31.05.08</font> </td><td width="0"><font face="helvetica">-</font> </td><td><font face="helvetica"><a href="http://www.linuxtag.org">http://www.linuxtag.org</a></font> </td></tr>
+<tr><td><font face="helvetica">Linuxwochen</font> </td><td width="0"><font face="helvetica">Eisenstadt (Österreich)</font> </td><td><font face="helvetica">30.05.-31.05.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://eisenstadt.linuxwochen.at/">http://eisenstadt.linuxwochen.at/</a></font> </td></tr>
+<tr><td> <font face="helvetica">Linuxwochen</font> </td><td width="0"><font face="helvetica">Linz (Österreich)</font> </td><td><font face="helvetica">27.06.-29.06.08</font> </td><td width="0"><font face="helvetica">frei</font> </td><td><font face="helvetica"><a href="http://www.linuxwochen.at">http://www.linuxwochen.at</a></font> </td></tr>
+<tr><td></td></tr></table>
+
+<font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+Ein Strich (-) als Angabe bedeutet, dass diese Information zur Zeit der Veröffentlichung noch nicht vorhanden war.
+
+<div class="p"><!----></div>
+Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu Datum und Ort an .
+
+<div class="p"><!----></div>
+<b>Wichtiger Hinweis:</b> Leider können wir Ihnen diesen Monat aus internen Gründen keine Termine von Anwendertreffen präsentieren. Wir hoffen, diesen Service in der nächsten Ausgabe von <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> wieder anbieten zu können.
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_konventionen">Konventionen</a><a name="08_03_konventionen">
+</a></font></b></font><br />An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten Bedeutung. Diese sind hier zusammengefasst:<br />
+
+<div class="p"><!----></div>
+
+<table>
+<tr><td width="59"><tt>$</tt>: </td><td>Shell-Prompt</td></tr>
+<tr><td width="59"><tt>#</tt>: </td><td>Prompt einer Root-Shell - Ubuntu-Nutzer können  hier auch einfach in einer normalen Shell ein ,,sudo'' vor die Befehle setzen.</td></tr>
+<tr><td width="59">: </td><td>Kennzeichnet einen aus satztechnischen Gründen eingefügten Zeilenumbruch, der nicht eingegeben werden soll.</td></tr>
+<tr><td width="59"><tt>&#126;</tt>: </td><td>Abkürzung für das eigene Benutzerverzeichnis <tt>/home/BENUTZERNAME</tt> </td></tr></table>
+
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b><font size="+2"><a name="08_03_vorschau">Vorschau</a><a name="08_03_vorschau">
+</a></font></b></font><br /><b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> erscheint immer am ersten Sonntag eines Monats. Die April-Ausgabe wird voraussichtlich am 6. April unter anderem mit folgenden Themen veröffentlicht:
+
+<ul>
+<li> Firefox-Erweiterungen sichern mit CLEO
+<div class="p"><!----></div>
+</li>
+
+<li> Rezension: XHTML, HTML und CSS
+
+<div class="p"><!----></div>
+</li>
+</ul>
+Es kann leider vorkommen, dass wir aus internen Gründen angekündigte Artikel verschieben müssen. Wir bitten dafür um Verständnis.<br />
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+
+
+<div class="p"><!----></div>
+
+<span style="background: #D8D8D8;">
+
+<table>
+<tr><td colspan="2"><font color="#595959"><b><font size="+2"><a name="08_03_impressum">Impressum</a><a name="08_03_impressum">
+</a></font></b></font></td></tr>
+<tr><td colspan="2"><b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> erscheint als PDF und HTML einmal monatlich.</td></tr>
+<tr><td colspan="2">Redaktionsschluss für die April-Ausgabe: 26.&nbsp;März 2008 </td></tr>
+<tr><td></td></tr>
+<tr><td colspan="2"><font size="+0"><b>Redaktion</b></font></td></tr>
+<tr><td>Eva Drud ViSdP </td><td> </td></tr>
+<tr><td>Dominik Wagenführ </td><td> </td></tr>
+<tr><td></td><td></td></tr>
+<tr><td colspan="2"><font size="+0"><b>Satz und Layout</b></font></td></tr>
+<tr><td>Eva Drud </td><td> </td></tr>
+<tr><td></td><td></td></tr>
+<tr><td colspan="2"><font size="+0"><b>Kontakt</b></font></td></tr>
+<tr><td>E-Mail </td><td><img src="freiesMagazin-2008-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td>Postanschrift </td><td><b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> </td></tr>
+<tr><td></td><td>c/o Eva Drud </td></tr>
+<tr><td></td><td>Rübenkamp 88 </td></tr>
+<tr><td></td><td>22307 Hamburg </td></tr>
+<tr><td>Webpräsenz </td><td><a href="http://www.freiesmagazin.de">http://www.freiesmagazin.de</a> </td></tr>
+<tr><td></td><td></td></tr>
+<tr><td colspan="2"><font size="+0"><b>Logo-Design</b></font></td></tr>
+<tr><td>Arne Weinberg </td><td> </td></tr>
+<tr><td>Lizenz </td><td><a href="http://www.gnu.org/copyleft/fdl.html">GNU FDL</a> </td></tr></table>
+
+
+<div class="p"><!----></div>
+
+<table>
+<tr><td></td></tr>
+<tr><td colspan="2">Erscheinungsdatum: 2.&nbsp;März 2008</td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td colspan="2"><font size="+0"><b>Autoren dieser Ausgabe</b></font></td></tr>
+<tr><td>Adrian Böhmichen </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Eva Drud </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Ronny Fischer </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Jürgen Hamel </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Matthias Kietzke </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Christoph Langner </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Thorsten Schmidt </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Christian Soeder </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td>Dominik Wagenführ </td><td> </td><td align="right">&nbsp;&nbsp; </td></tr>
+<tr><td></td><td></td></tr>
+<tr><td colspan="2"><font size="+0"><b>Nachrichtenschreiber dieser Ausgabe</b></font></td></tr>
+<tr><td>Eva Drud <i>(edr)</i> </td><td> </td></tr>
+<tr><td>Mathias Menzer <i>(mme)</i> </td><td> </td></tr>
+<tr><td>Dominik Wagenführ <i>(dwa)</i> </td><td> </td></tr>
+<tr><td></td><td></td></tr>
+<tr><td colspan="2"><font size="+0"><b>Korrektorat</b></font></td></tr>
+<tr><td>Mathias Menzer </td><td> </td></tr>
+<tr><td>Thorsten Schmidt </td><td> </td></tr>
+<tr><td>Dominik Wagenführ </td><td> </td></tr>
+<tr><td>     </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit <span class="roman"><span class="roman">L</span><sup><span class="roman">A</span></sup><span class="roman">T</span><sub><span class="roman">E</span></sub><span class="roman">X</span></span> erstellt.<br />
+
+<div class="p"><!----></div>
+    Wenn Sie <b><font face="helvetica"><font color="#595959">freies</font></font></b><font face="helvetica"><font color="#FF630A">Magazin</font></font> ausdrucken möchten, dann denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die Bäume werden es Ihnen danken. ;-)<br />
+
+<div class="p"><!----></div>
+    Mit vollem Namen gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung der Redaktion wieder.<br />
+<a href="freiesMagazin-2008-03-bilder.html#index">Zum Index</a><br /><hr />
+</span>
+
+
+<div class="p"><!----></div>
+
+<br /><br /><hr /><small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.79.<br />On  2 Mar 2008, 09:35.</small>
+</div>
+</html>

@@ -1,0 +1,3405 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<meta name="description" content="Debian GNU/Linux 6.0 „Squeeze“ | Test: OpenDocument-Format für den Datenaustausch | Der März im Kernelrückblick | Eine Einführung in die Programmiersprache Pike | SpaceChem – Atome im Weltall | Rezension: Durchstarten mit HTML5 | Rezension: Essential SQLAlchemy | Editorial | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                       
+<title>freiesMagazin 04/2011</title><link type="text/css" rel="stylesheet" href="freiesMagazin-2011-04-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx"><body style="font: 0.85em Tahoma, sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2011-04.html">Zur Version ohne Bilder</a></font><hr />
+
+<div class="p"><!----></div>
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font></font>&nbsp;&nbsp;<font color="#595959"><font size="+4"><b>April 2011</b></font></font> <font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+3"><b>Topthemen dieser Ausgabe</b></font></font><br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2011-04-bilder.html#11_04_debian6">Debian GNU/Linux 6.0 „Squeeze“</a></font> <br />
+    Debian GNU/Linux bezeichnet sich als „das universelle Betriebssystem“ und ist zweifellos die größte Distribution, sowohl von der Entwickler- als auch der Anwenderzahl, die unabhängig von einem Unternehmen entwickelt wird. Debian steht auf eigenen Füßen und bildet die Basis für viele weitere Distributionen, ganz besonders Ubuntu. Mehrere sehr große Installationen wie das System der Münchner Stadtverwaltung oder das der spanischen Provinz Extremadura beruhen auf Debian. Dieser Artikel stellt Debian 6.0 „Squeeze“ mit einem Fokus auf die Neuheiten dieser Version vor. (<a href="freiesMagazin-2011-04-bilder.html#11_04_debian6">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2011-04-bilder.html#11_04_odf-test">Test: OpenDocument-Format für den Datenaustausch</a></font> <br />
+    Man liest ja des Öfteren in den Nachrichten, dass sich irgendeine Regierung der Welt dazu entschließt, das OpenDocument-Format (ODF) in Behörden zu akzeptieren bzw. zu nutzen. Als Vorteil von ODF wird – vor allem von Linux-Anhängern – oft genannt, dass sich das Format auf jedem Linux-Rechner öffnen lässt und immer gleich aussieht, weil es ja ein offener Standard ist. Sprich, das Problem wie bei Microsoft Office, dass ein Dokument (auch bei gleicher MS-Office-Version) auf jedem Rechner anders aussehen kann, gibt es angeblich nicht. Dieser These soll in diesem Artikel nachgegangen werden. (<a href="freiesMagazin-2011-04-bilder.html#11_04_odf-test">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2011-04-bilder.html#11_04_spacechem">SpaceChem – Atome im Weltall</a></font> <br />
+    Chemie zählt wahrscheinlich nur bei den wenigsten Menschen zum Lieblingsfach und kommt in der Beliebtheitsskala vermutlich gleich nach Mathematik. SpaceChem versucht dennoch mit diesem Thema die Spieler zu begeistern – und das, ohne dass man es wirklich merkt. (<a href="freiesMagazin-2011-04-bilder.html#11_04_spacechem">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                  
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a name="index">Inhalt</a><a name="index">
+</a></font></h1>
+
+<br />
+<b>Linux allgemein</b><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_debian6">Debian GNU/Linux 6.0 „Squeeze“</a><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_odf-test">Test: OpenDocument-Format für den Datenaustausch</a><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_kernel">Der März im Kernelrückblick</a><br />
+<br />
+<b>Anleitungen</b><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_pike">Eine Einführung in die Programmiersprache Pike</a><br />
+<br />
+<b>Software</b><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_spacechem">SpaceChem – Atome im Weltall</a><br />
+<br />
+<b>Community</b><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_html5">Rezension: Durchstarten mit HTML5</a><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_essential_sqlalchemy">Rezension: Essential SQLAlchemy</a><br />
+<br />
+<b>Magazin</b><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_editorial">Editorial</a><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_veranstaltungen">Veranstaltungen</a><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_vorschau">Vorschau</a><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_konventionen">Konventionen</a><br />
+<a href="freiesMagazin-2011-04-bilder.html#11_04_impressum">Impressum</a><br />
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_editorial">Editorial</a><a name="11_04_editorial">
+</a></font></h1>
+    <font size="+2">Willkommen im April</font>
+
+<div class="p"><!----></div>
+
+<h2>Aprilscherz</h2>
+
+<div class="p"><!----></div>
+Manche Leser hassen uns sicherlich dafür, dass wir ebenso wie viele
+andere Seiten im Netz den 1.&nbsp;April nicht einfach unbedacht
+vorüberziehen lassen konnten. Die Idee für den Scherz spukte in
+unseren Köpfen aber schon seit letztem Jahr herum, sodass wir es diesmal
+einfach wahr machen mussten&nbsp;<a href="http://www.freiesmagazin.de/20110401-limo-neuer-name-für-das-magazin">[1]</a>.
+
+<div class="p"><!----></div>
+Wir hoffen, der Schreck war nicht zu groß, dennoch zeigt die
+Resonanz aber, dass es sich um ein realistisches Szenario handelt,
+welches in der heutigen Zeit der Abmahnanwälte schnell Wahrheit
+werden kann.
+
+<div class="p"><!----></div>
+Glücklicherweise sind die Kollegen von Freies Magazin
+FM5&nbsp;<a href="http://fm5.at/">[2]</a> aus Österreich aber nicht so gemein wie
+in unserem Newsbeitrag unterstellt. Zusätzlich waren die Jungs und
+Mädels auch vorgewarnt, falls ein Sturm der Entrüstung unserer Leser
+auf sie hereinbrechen sollte. Vielen Dank also noch einmal besonders an
+Christian Stipkovits von FM5, dass er diesen Scherz indirekt
+mitgetragen hat.
+
+<div class="p"><!----></div>
+Wir drücken aber die Daumen und hoffen für die Zukunft, dass der
+Scherz niemals Wirklichkeit wird. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ist nun schon seit über fünf
+Jahren ein Begriff im Netz, sodass es schade wäre, wenn diese
+„Marke“ durch eine andere ersetzt werden müsste.
+
+<div class="p"><!----></div>
+
+<h2>Grafikwettbewerb zum Geburtstag</h2>
+
+<div class="p"><!----></div>
+Kein Aprilscherz, da auch bereits am 18. März 2011 angekündigt&nbsp;<a href="http://www.freiesmagazin.de/20110318-grafikwettbewerb-zum-fuenften-geburtstag">[3]</a>,
+ist der neue Wettbewerb von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>. Zum fünfjährigen
+Bestehen des Magazins, welches wir schon in der letzten Ausgabe
+angekündigt hatten, haben wir zu einem Grafikwettbewerb aufgerufen.
+Teils geschah das auch als Resonanz auf den letzten
+Programmierwettbewerb, da es unter unseren Lesern sicherlich auch
+zahlreiche Nicht-Programmierer gibt, die dafür umso besser mit einem
+Malstift oder Lightpen umgehen können.
+
+<div class="p"><!----></div>
+Die Aufgabe ist es, ein Bild zum Thema „<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> feiert 5. Geburtstag“
+zu erstellen. Dies kann entweder mit Open-Source-Software wie
+GIMP&nbsp;<a href="http://www.gimp.org/">[4]</a> oder Inkscape&nbsp;<a href="http://inkscape.org/">[5]</a>
+geschehen, aber auch das Malen mit Bleistift, Kohle oder Wasserfarben
+ist erlaubt. 
+
+<div class="p"><!----></div>
+Ebenfalls liegen Stil und Interpretation der Aufgabe ganz im
+Ermessen jedes Teilnehmers. Es soll dabei nicht auf jedem Bild eine
+Torte mit fünf Kerzen abgebildet sein. Lassen Sie Ihrer Kreativität
+freien Lauf!
+
+<div class="p"><!----></div>
+Einsendeschluss für die Bilder ist <b>Sonntag, der 24. April
+2011</b>. Alle Bilder müssen unter einer freien Lizenz bei uns
+eingehen. Senden Sie Ihre Bilder einfach bis zum Stichtag an <img src="freiesMagazin-2011-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+Mit der Einsendung eines Bildes versichern Sie, dass Sie keine
+
+Rechte Dritter damit verletzen. Jeder Teilnehmer darf dabei nur mit
+einem Bild vertreten sein. 
+<div class="p"><!----></div>
+Preise? Ja, richtig gehört. Wie immer gibt es auch eine Kleinigkeit
+zu gewinnen: Das schönste Bild wird mit einem 30-Euro-Gutschein von
+Amazon prämiert. Die Abkehr von
+Bookzilla, wie noch in der News zu lesen war, hat interne Gründe,
+die wir hier nicht näher erläutern wollen. Der zweite Platz erhält
+eine Ausgabe des Buches „GIMP – kurz&nbsp;&amp;&nbsp;gut“ von Karsten Günther
+(siehe Rezension in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 03/2010&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-03">[6]</a>).
+Und für das drittbeste Bild gibt es eine CD mit freier Musik von der
+Band „The Nuri“&nbsp;<a href="http://www.the-nuri.de/">[7]</a>.
+
+<div class="p"><!----></div>
+Die Preise sollen dabei nur als kleiner Anreiz dienen, jeder
+Teilnehmer soll vor allem aus Spaß an der Kunst an dem Wettbewerb
+teilnehmen. Wir freuen uns auf alle Bilder, die bei uns eingehen.
+
+<div class="p"><!----></div>
+
+<h2>Spenden für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font></h2>
+
+<div class="p"><!----></div>
+Keine Sorge, wir wollen an dieser Stelle nicht um Geld bitten, um
+den Anwalt des Aprilscherzes zu bezahlen. Ganz im
+Gegenteil erreichen uns ab und zu Leserbriefe, in denen Leser
+fragen, ob sie uns nicht finanziell unterstützen können. Wir freuen
+uns zwar darüber, müssen aber immer dankend ablehnen.
+
+<div class="p"><!----></div>
+Der Grund ist einfach, dass <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> zwar bei allen Beteiligten
+viel Zeit verschlingt, aber wenig Geld. Da unser Server
+freundlicherweise von x|encon&nbsp;<a href="http://www.xencon.net/">[8]</a>
+gesponsort wird, haben wir effektiv nur die Kosten für die
+Webadresse, welche über tiggersWelt.net&nbsp;<a href="http://tiggerswelt.net/">[9]</a>
+bezogen wird. (Und nein, auch aufgrund der Namensnennung erhalten
+wir keine Sonderkondition. ;)) Die Kosten halten sich damit
+glücklicherweise in Grenzen und <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> wird derzeit sicherlich
+nicht an übermäßigen Ausgaben zugrunde gehen. 
+
+<div class="p"><!----></div>
+Etwas besser könnte es aber bei der Artikelflut aussehen, die
+monatlich leider nicht über uns hereinbricht. Wie schon die Jahre davor,
+nimmt die Beteiligung in den wärmeren Monaten etwas ab, was sehr
+verständlich ist. Wer will schon bei 20 Grad und Sonnenschein drinnen
+am PC in die Tasten hauen? Dennoch sind Sie, werte Leser und
+potentielle Autoren, immer dazu aufgerufen, neue Artikel bei uns
+unter <img src="freiesMagazin-2011-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> einzureichen. Getreu dem Motto: „Wenn Sie etwas
+zu Ihrem Lieblingsthema lesen wollen, schreiben Sie einfach darüber.“
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/20110401-limo-neuer-name-für-das-magazin"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/20110401-limo-neuer-name-für-das-magazin</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://fm5.at/"><tt style="font-size: 1.3em;">http://fm5.at/</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.freiesmagazin.de/20110318-grafikwettbewerb-zum-fuenften-geburtstag"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/20110318-grafikwettbewerb-zum-fuenften-geburtstag</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://www.gimp.org/"><tt style="font-size: 1.3em;">http://www.gimp.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://inkscape.org/"><tt style="font-size: 1.3em;">http://inkscape.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-03"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2010-03</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://www.the-nuri.de/"><tt style="font-size: 1.3em;">http://www.the-nuri.de/</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://www.xencon.net/"><tt style="font-size: 1.3em;">http://www.xencon.net/</tt></a><br />
+
+<div class="p"><!----></div>
+[9] <a href="http://tiggerswelt.net/"><tt style="font-size: 1.3em;">http://tiggerswelt.net/</tt></a><br />
+
+<div class="p"><!----></div>
+                    <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_debian6">Debian GNU/Linux 6.0 „Squeeze“</a><a name="11_04_debian6">
+</a></font></h1>von Hans-Joachim Baader        
+<div class="p"><!----></div>
+<b>D</b><b>ebian GNU/Linux bezeichnet sich als „das universelle
+Betriebssystem“ und ist zweifellos die größte Distribution, sowohl
+von der Entwickler- als auch der Anwenderzahl, die unabhängig von
+einem Unternehmen entwickelt wird. Debian steht auf eigenen Füßen
+und bildet die Basis für viele weitere Distributionen, ganz
+besonders Ubuntu. Mehrere sehr große Installationen wie das System
+der Münchner Stadtverwaltung oder das der spanischen Provinz
+Extremadura beruhen auf Debian. Dieser Artikel stellt Debian 6.0
+„Squeeze“ mit einem Fokus auf die Neuheiten dieser Version vor.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Debian GNU/Linux 6.0 Squeeze“ erschien erstmals bei
+Pro-Linux&nbsp;<a href="http://www.pro-linux.de/artikel/2/1495/debian-gnulinux-60-squeeze.html">[1]</a>.</i>
+
+<div class="p"><!----></div>
+
+<h2>Vorwort</h2>
+
+<div class="p"><!----></div>
+Nun macht sich bei Debian eine gewisse Monotonie breit. Die Entwickler waren
+übereingekommen&nbsp;<a href="http://www.pro-linux.de/news/1/14519/debian-diskutiert-freeze-termin.html">[2]</a>,
+künftig alle zwei Jahre den Feature-Freeze einzuleiten, der
+erfahrungsgemäß ein halbes Jahr später zur Veröffentlichung einer
+neuen stabilen Version führt. Dabei kommt es den Entwicklern auf ein
+oder zwei Monate nicht an, da die Qualität über das Einhalten eines
+Zeitplans gestellt wird – und Qualität bedeutet nun einmal
+intensives Testen, das seine Zeit dauert, und das Beseitigen aller
+kritischen Fehler. Dennoch konnten die Entwickler die letzten
+Versionen fast im Zweijahrestakt veröffentlichen. So wurde auch
+Debian 6.0 „Squeeze“ fast genau zwei Jahre nach seinem Vorgänger
+„Lenny“ veröffentlicht (siehe „Debian GNU/Linux 5.0“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+05/2009&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2009-05">[3]</a>).
+Damit wird, sofern sich keine neuen Entwicklungen ergeben, der
+Support für Lenny im Februar 2012 eingestellt. Die Benutzer haben
+also noch reichlich Zeit für ein Update.
+
+<div class="p"><!----></div>
+Eigentlich wollte das Debian-Team die neue Version früher
+veröffentlichen, doch aus dem ursprünglich geplanten Freeze-Termin
+März 2010&nbsp;<a href="http://www.pro-linux.de/news/1/14986/debian-friert-im-maerz.html">[4]</a>
+wurde dann August. Zwischenzeitlich gab es noch
+Probleme&nbsp;<a href="http://www.pro-linux.de/news/1/15250/grafischer-debian-installer-in-der-schwebe.html">[5]</a>
+mit dem grafischen Installer, doch die angedrohte Entfernung der grafischen
+Version konnte schließlich abgewendet werden, es stand ja noch
+genügend Zeit zur Verfügung.
+
+<div class="p"><!----></div>
+Auch sonst tat sich im vergangenen Jahr im Debian-Projekt so einiges.
+Die Mitgliedschaft&nbsp;<a href="http://www.pro-linux.de/news/1/16295/debian-stimmt-fuer-erweiterte-mitgliedschaft.html">[6]</a>
+bei Debian steht nun auch Nicht-Entwicklern offen, was bereits jetzt
+als wichtiger Meilenstein gelten muss, der das Projekt wesentlich
+stärkt. Die „Archiv-Zeitmaschine“
+snapshot.debian.org&nbsp;<a href="http://www.pro-linux.de/news/1/15539/debian-startet-offizielle-archiv-zeitmaschine.html">[7]</a>
+wurde zum offiziellen Dienst von Debian, ebenso
+backports.debian.org&nbsp;<a href="http://www.pro-linux.de/news/1/16126/backportsorg-zieht-unter-dach-von-debian.html">[8]</a>
+(früher backports.org), das aktualisierte Software
+für die stabile Version bereitstellt, sofern sie in Debian Testing
+bereits erprobt wurde. Für Anwender, denen auch das nicht aktuell
+genug ist, wird über stabilere Schnappschüsse von Testing
+nachgedacht&nbsp;<a href="http://www.pro-linux.de/news/1/16207/vorschlag-fuer-zusaetzliche-aktuellere-debian-veroeffentlichungen.html">[9]</a>.
+Details dazu werden wahrscheinlich im Verlauf der Entwicklung von
+Debian 7.0 aufkommen; zurzeit gibt es erste Test-Schnappschüsse.
+
+<div class="p"><!----></div>
+Es sei angemerkt, dass es sich bei dem Artikel nicht um einen Test
+der Hardware-Kompatibilität handelt. Es ist bekannt, dass Linux mehr
+Hardware unterstützt als jedes andere Betriebssystem – und das
+überwiegend bereits im Standard-Lieferumfang. Ein Test ist damit
+überflüssig und es wäre zu viel Aufwand für wenig Nutzen, eine
+repräsentative Auswahl von Hardware zu beschaffen.
+
+<div class="p"><!----></div>
+Virtuelle Maschinen sind die einzige praktikable Möglichkeit,
+ein unverändertes System zu zeigen. Für den Artikel werden daher
+zwei identische virtuelle Maschinen, 64 Bit, unter KVM mit jeweils
+768 MB RAM verwendet.
+
+<div class="p"><!----></div>
+
+<h2>Unterstützte Systeme</h2>
+
+<div class="p"><!----></div>
+Anders als viele andere Distributionen beschränkt sich Debian nicht
+auf die x86-Architektur in ihren 32- und 64-Bit-Varianten. Auch wenn
+gegenüber Debian 5.0 drei veraltete Architekturen gestrichen wurden,
+nämlich HP-PA, Alpha und die ältere ARM-Portierung, werden immer
+noch SPARC, PowerPC, MIPS (in Big und Little Endian), Itanium, S/390
+und ARM EABI unterstützt. Dazu kommen nun als technische Vorschau
+kfreefsd-amd64 und kfreefsd-i386, bei denen der Linux-Kernel durch
+einen FreeBSD-Kernel ersetzt wurde. Diese dürften aber nur für eine
+Handvoll Leute von Interesse sein.
+
+<div class="p"><!----></div>
+Die nicht mehr offiziellen Portierungen verschwinden allerdings
+keineswegs aus Debian, sondern sind nach wie vor verfügbar,
+allerdings muss mit Problemen gerechnet werden. Außerdem existieren
+weitere, noch unvollständige Portierungen. Damit unterstützt Debian
+fast alle Architekturen, auf denen der Linux-Kernel läuft.
+Prinzipiell bietet Debian Platz für jede Architektur, wenn sich
+Freiwillige dafür finden. Die Portierungen-Seite&nbsp;<a href="http://www.debian.org/ports/">[10]</a>
+listet sie alle auf.
+
+<div class="p"><!----></div>
+
+<h2>Neu in Debian 6.0</h2>
+
+<div class="p"><!----></div>
+Zwei Drittel aller Softwarepakete von Debian 5.0 wurden in Version
+6.0 aktualisiert und viele kamen neu hinzu, sodass die Gesamtzahl
+jetzt 29.000 Pakete übersteigt. Bedingt durch die ein halbes Jahr lange
+Freeze-Phase findet man in Debian kaum Software, die jünger als eben
+dieses halbe Jahr ist. So ist GNOME nicht in Version
+2.32&nbsp;<a href="http://www.pro-linux.de/news/1/16219/gnome-232-veroeffentlicht.html">[11]</a>,
+sondern in Version
+2.30.2&nbsp;<a href="http://www.pro-linux.de/news/1/15495/gnome-230-freigegeben.html">[12]</a>
+(mit einigen Elementen aus 2.32), und KDE nicht in Version
+4.6&nbsp;<a href="http://www.pro-linux.de/news/1/16634/kde-sc-46-freigegeben.html">[13]</a>,
+sondern in Version
+4.4.5&nbsp;<a href="http://www.pro-linux.de/news/1/15287/kde-sc-44-freigegeben.html">[14]</a>
+enthalten. In vielen Fällen ist das nicht von Belang, denn die
+neuesten Features benötigt man nur in Ausnahmefällen, insbesondere,
+wenn man den Rechner hauptsächlich als zuverlässiges Arbeitsmittel
+ansieht. In besagten Ausnahmefällen stehen eine Reihe von Optionen
+zur Verfügung, dazu später mehr.
+
+<div class="p"><!----></div>
+Debian ist nach wie vor in Form von CD- und DVD-Images verfügbar,
+zudem jetzt auch als Blu-ray-Image. Man kann sich auf das erste
+Image der jeweiligen Serie beschränken und den Rest über das
+Internet nachinstallieren oder gleich auf ein kleineres Image
+zurückgreifen, das die Pakete weitgehend aus dem Internet bezieht.
+Alle Images sind hybrid, können also auch von USB-Speichern
+gestartet werden. Außerdem gibt es nun erstmals offizielle
+Live-Systeme&nbsp;<a href="http://live.debian.net/">[15]</a>. Allein über die
+Live-Systeme könnte man einen eigenen Artikel verfassen: Es ist
+möglich, sich online ein individuelles ISO-Image erzeugen zu lassen
+und Dutzende von Projekten nutzen die Live-Systeme als Basis.
+
+<div class="p"><!----></div>
+Eine der für das Projekt wichtigsten Änderungen ist die Verschiebung
+von unfreien Firmware-Dateien in den „non-free“-Bereich. Da einige
+wichtige Hardware-Komponenten, vor allem WLAN-Adapter, ohne unfreie
+Firmware gar nicht und einige andere, z.&nbsp;B. Grafikkarten, nur
+teilweise nutzbar wären, gibt es im Installationsprogramm die
+Möglichkeit, diese Pakete zusätzlich zu installieren. Ferner gibt es
+Netzinstallationsimages, die die unfreie Firmware bereits enthalten.
+Im Endeffekt ändert sich für Benutzer nichts, aber die Trennung
+zwischen frei und unfrei und die Missbilligung von unfreier Firmware
+wird deutlicher zum Ausdruck gebracht.
+
+<div class="p"><!----></div>
+Interessanterweise ist jetzt wieder apt-get das empfohlene Programm
+für die nichtinteraktive Paketverwaltung, obwohl das zuvor
+empfohlene aptitude prinzipiell das Gleiche leistet. aptitude dient
+aber weiter zur menügeführten Paketverwaltung in der Konsole. Jetzt
+werden empfohlene Pakete („recommends“) in der Standardeinstellung
+von apt automatisch mitinstalliert, was man jedoch mit einer Option
+abstellen kann.
+
+<div class="p"><!----></div>
+Das immer noch als Init-System dienende sysvinit erhielt die
+Fähigkeit zu einem abhängigkeitsbasierten und parallelen Starten von
+Diensten und es wird bei einem Update der Distribution auch eine
+automatische Umstellung auf dieses System versucht. Vereinzelte
+nicht angepasste Startskripte können jedoch diese Umstellung
+verhindern.
+
+<div class="p"><!----></div>
+Die Tastaturkonfiguration für Konsole und X11 wurde vereinheitlicht.
+Das Umschalten des Grafikmodus geschieht für NVIDIA, AMD und Intel
+im Kernel und nicht mehr in X11. Es gibt neue Pakete für die
+LDAP-Authentifizierung, die einen zentralen unprivilegierten Daemon
+(nslcd) nutzen. Dadurch werden die Pakete, die die Authentifizierung
+durchführen, von direkten LDAP-Abhängigkeiten entkoppelt. Das neue
+Repository „squeeze-updates“ ersetzt „volatile“.
+
+<div class="p"><!----></div>
+Besonders erwähnt das Debian-Projekt als Neuerung die reichhaltige
+Unterstützung für Neurobildgebungsforschung, unter anderem mit
+aktueller Software für strukturelle Bilderkennung und anderen
+Programmen im Zusammenhang mit Magnetresonanztomographie
+(MRT)-Verarbeitung. Während andere Distributionen regelmäßig ihre
+Virtualisierungs- und Cloud-Unterstützung hervorheben, lässt Debian
+hierzu nichts verlauten. Eine oberflächliche Suche zeigt jedoch,
+dass alle relevanten Pakete sowie die Kernel-Unterstützung für KVM (und,
+mit separaten Paketen, Xen und OpenVZ) vorhanden sind. Da die
+Entwicklung in diesem Bereich rasant ist, können andere
+Distributionen regelmäßig neuere Versionen als Debian anbieten, doch
+auch hier gibt es natürlich Update-Möglichkeiten.
+
+<div class="p"><!----></div>
+Übrigens sollen Xen und OpenVZ ab Debian&nbsp;7.0 nicht mehr offiziell
+unterstützt werden. Der 
+            
+    
+    
+Debian-Kernel soll dann nur noch die
+Virtualisierungslösungen anbieten, die im offiziellen Kernel
+verfügbar sind, unter anderem also KVM. Bis diese Änderung für die
+Benutzer von Xen und OpenVZ dringlich wird, ist es aber noch drei
+Jahre hin.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+<div class="p"><!----></div>
+Auch im Debian-Installer gibt es Neues, wovon allerdings in einer
+normalen Installation nicht so viel sichtbar ist. In einigen
+Dialogen kann man nun eine Hilfe abrufen, dies ist aber noch nicht
+durchgängig realisiert. Ein Großteil der Hardware wird automatisch
+erkannt und hardwarespezifische Pakete werden automatisch
+installiert. Neben der aktuellen Version von Debian kann man auch
+ältere wie Lenny installieren.
+
+<div class="p"><!----></div>
+Es stehen umfangreiche Installationshandbücher auf der Debian-Webseite
+zur Verfügung&nbsp;<a href="http://www.debian.org/releases/stable/installmanual">[16]</a>,
+für jede Architektur ein eigenes und jeweils in mehrere Sprachen
+übersetzt. Besucher der Webseite bekommen das Dokument automatisch
+in ihrer Sprache zu sehen, wenn ihr Browser korrekt eingestellt und
+die Sprache verfügbar ist. Man muss dieses Handbuch nicht komplett
+durchlesen, als Referenz kann man in Zweifelsfällen aber immer
+darauf zurückgreifen.
+
+<div class="p"><!----></div>
+Die Installation bietet schon beim Booten viele Optionen, zum
+Beispiel eine textbasierte und
+    
+ eine grafische Installation, normale
+oder Experteninstallation, automatische Installation, Installation
+einer spezifischen Desktopumgebung und noch mehr. Die
+Standard-Desktop-Umgebung ist GNOME. Will man eine andere Umgebung,
+so kann man schon im Bootmenü des Installers unter „<em>Alternative
+Desktop Environments</em>“ KDE, Xfce oder LXDE auswählen. Und wenn einem
+das alles nicht passt, macht man eine Minimalinstallation und
+erweitert diese später.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/debian6-installations-cd.png" /><br /><em>Startbildschirm der Installations-CD.</em><br />
+
+<div class="p"><!----></div>
+Die empfohlene minimale RAM-Größe ist 512&nbsp;MB, für ein System ohne
+Desktop 256 MB. 
+    
+Als Minimum gelten 128 MB für ein Desktop-System und
+64 MB für ein Konsolen/Server-System. Unter Umständen kann man mit
+noch weniger RAM auskommen, dafür gibt es einen Low-Mem-Modus
+des Installers. Für ein flüssiges 
+Arbeiten mit dem Desktop,
+insbesondere KDE, sind min. 768 MB besser.
+
+<div class="p"><!----></div>
+Für den Artikel wurde die Installation mit dem
+Netzwerk-Installationsimage (ca. 150 MB) getestet. Im Beispiel wurde
+im Bootmenü die grafische Installation und KDE gewählt. Nachdem das
+Installationsprogramm gestartet ist, wählt man zunächst die Sprache
+aus. Es werden nun 70 Sprachen unterstützt, sieben mehr als in der
+Vorversion. Dann wählt man den Standort (und die Zeitzone, falls das
+gewählte Land mehr als eine Zeitzone hat), darauf die Tastatur.
+Leider gibt es die Neo-Belegung (siehe „Neo – Ein ergonomisches
+Tastaturlayout“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+05/2010&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-05">[17]</a>)
+nicht in der Tastaturauswahl, dafür ist das in Deutschland kaum
+gebräuchliche Dvorak vorhanden. 
+
+<div class="p"><!----></div>
+Nach dem Nachladen verschiedener Komponenten, das ein wenig dauern
+kann, will das System den Rechnernamen wissen, dann den Domainnamen.
+Findet das System bereits über DHCP diese Informationen heraus, dann
+entfallen diese beiden Schritte. Bevor DHCP möglich ist, kann es
+jedoch erforderlich sein, Firmware in die Netzwerk-Hardware zu
+laden. Freie Firmware bringt Debian bereits mit, doch es gibt auch
+Hardware, die unfreie Firmware benötigt. Da Debian diese nicht mehr
+mitliefert (außer auf den „non-free“-Images), ist es in solchen
+Fällen erforderlich, diese nachzuladen.
+
+<div class="p"><!----></div>
+Alles Nötige hierfür hat der Installer bereits vorgesehen. Ob WLAN-
+oder normale LAN-Chips, USB-Geräte oder spezielle Festplattencontroller,
+wenn der Installer eine benötigte Firmware nicht vorfindet, sucht er selbständig
+auf Disketten oder USB-Sticks danach. Wie man ein passendes Medium vorbereitet,
+ist im Installationshandbuch beschrieben. Oft ist die Firmware als separates Paket
+in der „non-free”-Sektion des Archivs verfügbar, nur in wenigen Fällen dürfte es
+nötig sein, die Download-Seiten des Herstellers abzugrasen. Nur muss man dies
+tun, bevor man die Installation beginnt.
+
+<div class="p"><!----></div>
+Nach der Komplettierung der Netzwerkeinrichtung ist ein
+Root-Passwort einzugeben, wobei Debian auch schwache Passwörter
+akzeptiert. Das Passwort kann auch leer gelassen werden, was zu
+einer Ubuntu-ähnlichen Einrichtung führt, bei der man nur mit <b><tt style="font-size: 1.3em;">sudo</tt></b>
+zum Root-Account wechseln kann.
+
+<div class="p"><!----></div>
+Darauf kann man einen separaten Benutzer anlegen. In
+aufeinanderfolgenden Dialogen werden der vollständige Name, der Name
+des Benutzerkontos und das Passwort abgefragt. Man hätte an
+verschiedenen Stellen mehrere dieser Dialoge zusammenlegen und die
+Installation damit etwas straffen können. Leider hat sich
+diesbezüglich gegenüber Debian 5.0 nichts getan. Eine Installation
+von Ubuntu, openSUSE, Mandriva oder Fedora mag eleganter wirken, in
+Sachen Features und Flexibilität dürfte Debian aber kaum zu
+übertreffen sein.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Nun kommt man zur Partitionierung, einem Punkt, der mit fünf Klicks
+auf „<em>Weiter</em>“ und einer
+    
+Bestätigung erledigt sein, aber auch längere Zeit 
+in Anspruch nehmen kann, wenn man sein System für eine
+langfristige und/oder komplexe Nutzung auslegt. Für Letzteres wählt
+man „<em>Manuelle Partitionierung</em>“. Nun kann man völlig frei
+partitionieren, LVM, Software-RAID (einschließlich Fake-RAID),
+Verschlüsselung und Multipath in beliebigen Kombinationen einsetzen
+und die Dateisysteme und Mount-Punkte zuweisen. Alles lässt sich
+wieder rückgängig machen, außer der Einrichtung von LVM, die vor der
+weiteren Arbeit auf die Platte gespeichert werden muss. Dabei
+schließt das Programm unmögliche oder
+    
+problematische Konfigurationen
+aus bzw. warnt vor diesen. Angebotene Dateisysteme sind ext2, ext3
+(Standard), ext4, jfs, xfs, FAT16, FAT32 sowie qnx4 und NTFS (nur
+lesend). 
+<div class="p"><!----></div>
+Da der Kernel auf Linux 2.6.32 beruht, wird Btrfs noch
+nicht angeboten. Es ist zwar im Kernel vorhanden und kann nach der
+Installation auch genutzt werden, galt in dieser Version aber noch
+nicht als produktiv nutzbar. Auch von ext4 ist in dieser Version
+eher noch abzuraten, es sei denn, man ersetzt den Kernel später
+durch einen neueren. Einer der Nachteile von ext3 als Standard ist
+allerdings, dass die Formatierung der Partitionen recht lange dauert.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/debian6-partitionierungsschema.png" /><br /><em>Wahl eines Partitionierungsschemas.</em><br />
+
+<div class="p"><!----></div>
+Nach der Partitionierung und Formatierung folgt die Installation des
+Basissystems, während derer man sich anderen Dingen widmen kann.
+Danach kann man weitere Software nach groben Kategorien auswählen.
+Standardmäßig sind „<em>Grafische Desktop-Umgebung</em>“ und
+„<em>Standard-Systemwerkzeuge</em>“ aktiviert. Falls die Pakete aus dem
+Internet heruntergeladen werden müssen, wird zuvor der Paketmanager
+konfiguriert. Auch die folgende Installation dauert eine Weile. Man
+hätte diese Auswahl vorziehen sollen, wodurch es nicht nötig wäre,
+zwischendurch an den Rechner zurückzukommen. Nach dem erfolgreichen
+Abschluss der Installation kann man den Bootloader installieren
+lassen. Standardmäßig installiert Debian GRUB 2 im Bootsektor, doch
+wenn man „<em>nein</em>“ wählt, kann man ein Gerät für die Installation
+auswählen. Nun ist das Ende der Installation erreicht und man kann
+das neue System starten.
+
+<div class="p"><!----></div>
+
+<h2>Update</h2>
+
+<div class="p"><!----></div>
+Das Update einer bestehenden Debian-Installation ist möglich und
+sollte reibungslos funktionieren. Dabei gibt es allerdings einige
+Einschränkungen. So können installierte Pakete aus externen
+Repositorys (darunter auch „debian-backports“) Probleme bereiten.
+Dennoch kann man zunächst das Update normal probieren; sollten
+Probleme auftreten, kann man die betroffenen Pakete entfernen und
+später gegebenenfalls in einer neueren Version wieder installieren.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    Auch ohne externe Pakete wird ein direktes <b><tt style="font-size: 1.3em;">apt-get dist-upgrade</tt></b>
+meist nicht zum Erfolg führen und beispielsweise viele Pakete zum
+Entfernen vorschlagen, die man eigentlich behalten will. Die Lösung
+ist ein Update in mehreren
+Schritten, bei dem man zuerst apt
+aktualisiert.
+
+<div class="p"><!----></div>
+Nichtsdestotrotz muss festgehalten werden, dass ein Online-Update
+nicht das selbe Ergebnis liefert wie eine Neuinstallation. Der
+Hauptgrund dafür sind diverse Pakete, die in der neuen Version durch
+andere ersetzt wurden. Als Beispiel könnte man PostgreSQL 8.3
+nennen, das nicht automatisch auf 8.4 aktualisiert wird. Ähnlich ist
+    
+es mit Python, MySQL und anderen. Wer apt-proxy im Einsatz hat,
+sollte irgendwann auf eine der Alternativen umstellen, und wer noch
+Nessus verwendet, findet in OpenVAS eine Alternative, die zudem auf
+älterem Nessus-Code beruht.
+
+<div class="p"><!----></div>
+Natürlich wird ein Update nur von der direkten Vorgängerversion 5.0
+„Lenny“ unterstützt. Alle Einzelheiten zum Update sind in einem
+eigenen Kapitel der Anmerkungen zur Veröffentlichung ausführlich
+erläutert.
+
+<div class="p"><!----></div>
+
+<h2>Start ins Vergnügen</h2>
+
+<div class="p"><!----></div>
+Debian 6.0 startet etwa gleich schnell wie Ubuntu 10.10, gemessen
+vom Bootloader bis zum Login-Prompt von GNOME oder KDE. Die
+Debian-Entwickler haben also einiges optimiert. Die
+GNOME-Variante bootet sogar spürbar schneller als Ubuntu, was
+möglicherweise an den zusätzlichen Cloud-Diensten liegt, die Ubuntu
+mitliefert. Im Test lagen diese Zeiten bei 20 Sekunden für GNOME und
+30 Sekunden für KDE, was allerdings stark hardwareabhängig ist.
+Durch das Anzeigen des Bootprompts „verschenkt“ Debian im Vergleich
+mit anderen Distributionen aber weitere fünf Sekunden. Wer den
+Prompt nicht benötigt, kann natürlich die Konfiguration von GRUB 2
+ändern.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/debian6-grub2.png" /><br /><em>Start mit GRUB 2.</em><br />
+
+<div class="p"><!----></div>
+Wurde ein Desktopsystem mit GNOME installiert, dann startet Debian
+6.0 mit dem Display-Manager gdm, für KDE ist es kdm. Der
+Login-Bildschirm wurde in beiden Programmen mit einem neuen
+Debian-Design versehen. Dieses neue Design mit Weltraum-Thema ist
+vom Bootloader bis zum Desktop durchgängig.
+
+<div class="p"><!----></div>
+Nach dem Einloggen startet GNOME in Version 2.30.2. GNOME 2.32 wurde
+erst nach dem Einfrieren der Distribution fertig. Statt es gar nicht
+zu berücksichtigen, haben die Debian-Paketverwalter einzelne Teile
+aus GNOME 2.32 integriert. Auch KDE liegt in einer „alten“ Version
+vor, nämlich 4.4.5, da KDE 4.5 und 4.6 erst nach dem Einfrieren der
+Distribution erschienen. Es ist die erste Version von KDE 4 in
+Debian, da fast gleichzeitig mit dem Einfrieren von Debian 5.0 Mitte
+2008 KDE erst in Version 4.1 erschien und die Entwickler zu diesem
+Zeitpunkt die Version 3.5 vorzogen.
+
+<div class="p"><!----></div>
+
+<h2>Laufender Betrieb</h2>
+
+<div class="p"><!----></div>
+Eine bedeutende Änderung in Debian 6.0 ist der Kernel – nicht nur
+wegen der Aktualisierung auf die Version 2.6.32, sondern auch wegen
+der Verschiebung von unfreien Firmware-Dateien in den
+„non-free“-Bereich. Wie schon zu Anfang geschrieben, wird es durch das
+Fehlen der unfreien Firmware nötig, diese unter Umständen separat zu
+installieren, im Endeffekt ändert sich für die Benutzer aber nichts, 
+denn die Firmware muss installiert werden. Mangels Alternativen zu
+unfreier Firmware käme allenfalls der Austausch der betroffenen
+Hardware in Betracht.
+
+<div class="p"><!----></div>
+Auch beim Kernel hat sich das Debian-Team nicht für die neueste
+Version entschieden, nicht einmal für die neuestmögliche. Der Grund
+könnte in der langfristigen Unterstützung für diese Version liegen,
+die aktuell noch läuft. Sollte deren Unterstützung ablaufen, bevor
+der Support-Zeitraum für Debian 6.0 beendet ist (voraussichtlich
+Frühjahr 2015), würde Debian diese Version weiter pflegen. Ohnehin
+enthält der Debian-Kernel über den Stand von 2.6.32.28 hinaus
+zahlreiche Korrekturen und Erweiterungen der Hardware-Unterstützung.
+Genaue Auskunft gibt der
+Patch-Tracker&nbsp;<a href="http://patch-tracker.debian.org/package/linux-2.6/2.6.32-30">[18]</a>.
+
+<div class="p"><!----></div>
+Der GNOME-Desktop benötigt mit einem Terminalfenster ohne weitere
+offene Programme etwa 180 MB, das ist etwas weniger als bei Ubuntu
+und Fedora. KDE benötigt etwa 300 MB. Wer der Meinung ist, auf
+Nepomuk und Desktopsuche verzichten zu können, kann diese
+abschalten, wird dadurch aber allenfalls 50 MB für die
+Index-Datenbank einsparen.
+
+<div class="p"><!----></div>
+Bei der Geschwindigkeit lässt sich kein nennenswerter Unterschied
+zwischen den Desktops feststellen, sofern genug RAM vorhanden ist. Für
+KDE bedeutet das, dass man mindestens 768&nbsp;MB RAM haben sollte.
+
+<div class="p"><!----></div>
+Den Speicherverbrauch der Desktops zu messen ist nicht einfach.
+Schwankungen von 20 MB und mehr nach oben und unten sind möglich, je
+nach dem Zeitpunkt der Messung. Dies erklärt sich teilweise daraus,
+dass manche Programme bei ihrem Start einen oder mehrere Dienste
+starten. Diese Dienste werden bei Nichtbenutzung teilweise nach
+einiger Zeit auch wieder beendet. Bei obigen Angaben wurde versucht,
+den ungefähren Mittelwert zu finden.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/debian6-gdm.jpg" /><br /><em>Login-Prompt von gdm.</em><br />
+
+<div class="p"><!----></div>
+Das Desktopsystem GNOME wurde auf Version 2.30.2 aktualisiert, die
+einige neue Anwendungen und natürlich zahlreiche Verbesserungen
+mitbringt, darunter eine geteilte Ansicht und Reorganisation der
+Browser-Oberfläche in Nautilus. Es gab mehrere Verbesserungen im
+Zeiterfassungsprogramm (Projekt Hamster), einschließlich der
+Möglichkeit, das Programm eigenständig statt als Applet laufen zu
+lassen. Daneben sind noch zu nennen: Installation von Schriftarten
+durch Doppelklick in Nautilus, verbesserte GUI für die
+Tastatureinstellungen, Erweiterungen in gedit, Anzeige des aktuellen
+Tastatur-Layouts, falls der Benutzer mehrere eingerichtet hat,
+Erneuerung der Benutzerverwaltungs-Oberfläche in gnome-system-tools,
+Installation von Archiv-Tools bei Bedarf mittels PackageKit in File-Roller,
+unbegrenztes Hoch-Scrollen und Speicherung des
+Scroll-Puffers im GNOME-Terminal, Integration mit PackageKit und
+andere Verbesserungen in Brasero, Verbesserungen wie SSH-Tunnelung
+in Vinagre, schnellerer Start, automatische Synchronisation im
+Hintergrund und Implementierung von sogenannten Jump-Listen
+(Kontextmenüs, die mit einem Rechtsklick auf ein Icon aktiviert
+werden) in Tomboy und Unterstützung für iPhone und iPod-Touch-Geräte
+in gvfs.
+
+<div class="p"><!----></div>
+Zu den standardmäßig installierten Programmen unter GNOME gehören
+OpenOffice.org 3.2.1, der Mail- und Kalender-Client Evolution, 
+    
+    
+    
+GIMP
+2.6.10, Inkscape 0.47.0, Shotwell 0.6.1, gleich zwei Scan-Programme
+(XSane 0.997 und Simple Scan 2.31.1), Ekiga 3.2.7 und Tomboy 1.2.2,
+wozu natürlich auch die Mono-Laufzeitumgebung (Version 2.6.7)
+benötigt wird. GStreamer ist ebenfalls dabei.
+
+<div class="p"><!----></div>
+Der Standard-Browser unter GNOME ist Epiphany. Einige Plug-ins,
+darunter ein Werbeblocker, sind vorinstalliert, aber erst einmal
+nicht aktiviert. Auch Iceweasel, die Debian-Variante von Firefox,
+ist in Version 3.5.16 installiert (wohlgemerkt, weder Version 3.6
+noch 4.0 Beta wurden verwendet). Der Support für diese Version soll
+offenbar bis zum Ende von Squeeze reichen, für einige andere Browser
+gilt das jedoch nicht: Browser, die auf den Engines qtwebkit und
+khtml aufbauen, sind zwar enthalten, es besteht jedoch für sie keine
+vollständige Sicherheitsunterstützung.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/debian6-kdm.jpg" /><br /><em>Login-Prompt von kdm.</em><br />
+
+<div class="p"><!----></div>
+KDE ist in Version 4.4.5 enthalten und damit die erste KDE-4-Version
+in Debian. KDE 3 wird nicht mehr unterstützt und beim Update
+automatisch durch KDE 4 ersetzt. Der Standard-Browser ist Konqueror,
+Iceweasel wird aber ebenfalls installiert. Neben der KDE-PIM-Suite
+4.4.7 sind auch OpenOffice.org, GIMP und GStreamer vorhanden,
+darüber hinaus außer den zu KDE gehörenden Programmen nur wenig.
+
+<div class="p"><!----></div>
+Während Qt-Programme unter GNOME fast nicht von
+GTK+/GNOME-Programmen zu unterscheiden sind, fügen sich
+GTK+-Programme nur wenig in KDE ein. Unter GNOME sorgt die
+gtk-qt-Engine mit dem qtcurve-Theme für den angenehmen Effekt, unter
+KDE dagegen fehlt eine entsprechende Integration offenbar.
+
+<div class="p"><!----></div>
+Debian installiert die Schriften DejaVu, die eine recht große
+Unicode-Abdeckung besitzt, Liberation von Red Hat und diverse
+andere. Viele weitere sind im Archiv zu finden.
+
+<div class="p"><!----></div>
+Abseits des Desktops bietet Debian eine sehr große Zahl von Tools.
+Debian hat teils recht aufwendige Konstrukte entwickelt, um die vom
+System vorgegebene und die von den Nutzern geänderte Konfiguration
+zu trennen und die Verwaltung so einfach wie möglich zu machen. Oft
+muss man erst die README-Datei lesen, um sich mit dem Debian-System
+vertraut zu machen. Es lohnt sich fast immer, eigene Änderungen an
+die Debian-Vorgaben anzupassen, da man sonst alles selbst machen
+muss, Sicherheitsupdates eingeschlossen.
+
+<div class="p"><!----></div>
+Jedes Programm und jede Konfigurationsdatei ist in einer Manpage
+dokumentiert, was von den Debian-Richtlinien vorgeschrieben ist und
+auch eingehalten wird. Diese Dokumentation vermisst man bei vielen
+anderen Distribution schmerzlich. Für die Debian-Entwickler gehören
+Manpages zu den Dingen, die die Qualität einer Distribution ausmachen.
+
+<div class="p"><!----></div>
+Die Java-Umgebung von Debian ist immer noch OpenJDK 6. Es handelt
+sich um den von Sun freigegebenen Code von Java 6, der im Projekt
+IcedTea um fehlende Teile ergänzt wurde. Auch Softwareentwickler,
+die mit anderen Programmiersprachen arbeiten, kommen mit Debian voll
+auf ihre Kosten. Neben den Klassikern Perl, das nur geringfügig auf
+Version 5.10.1 aktualisiert wurde, Python (jetzt in Version 2.6.6)
+und PHP (Version 5.3.3), zu denen jeweils zahlreiche Module
+paketiert wurden, findet man auch zahlreiche weitere Compiler und
+Interpreter mit zusätzlichen Bibliotheken und Modulen vor.
+
+<div class="p"><!----></div>
+
+<h2>Multimedia</h2>
+
+<div class="p"><!----></div>
+Da Europa nicht von Softwarepatenten betroffen ist, kann Debian
+via GStreamer Abspielfähigkeiten für fast alle Multimediaformate
+anbieten. Ob dies bei einer Installation in den USA auch so wäre,
+ist nicht bekannt. Etwas überraschend liefen jedenfalls MP3 und
+alle Videoformate ohne Zutun, auch Flash-Videos. Lediglich YouTube
+arbeitet nicht mit dem Gnash-Plug-in zusammen, das in Version 0.8.8
+enthalten ist. Für diese und wohl auch andere Video-Seiten muss man
+im Moment noch den Adobe Flash Player nachrüsten. Bei Epiphany soll die
+Erweiterung HTML5Tube dafür sorgen, dass HTML5-Videos abgespielt werden.
+Dies scheint noch nicht korrekt zu funktionieren, da das Bild oft stockte
+und schließlich stehenblieb, während der Sound in eine Schleife geriet.
+
+<div class="p"><!----></div>
+    Das Abspielen von DVDs wurde nicht getestet. Bei Problemen mit
+verschlüsselten DVDs oder anderen Formaten sollte man das
+Repository von debian-multimedia.org&nbsp;<a href="http://debian-multimedia.org/">[19]</a>
+einbinden und die benötigten Codecs installieren.
+
+<div class="p"><!----></div>
+Unter KDE fehlten im Dateimanager Dolphin die Zuordnungen der
+Dateiendungen MP3 und FLV zu entsprechenden Abspielprogrammen. Der
+Player Dragonplayer war in der Lage, beides abzuspielen. Ansonsten
+war auch unter KDE alles im grünen Bereich.
+
+<div class="p"><!----></div>
+    
+<h2>Paketverwaltung</h2>
+
+<div class="p"><!----></div>
+Debian setzt nicht auf PackageKit. Unter GNOME wird
+mindestens einmal pro Woche automatisch geprüft, ob Software-Updates
+vorliegen und das Vorhandensein von Updates angezeigt. Für die
+grafische Paketverwaltung steht Synaptic bereit, das keine Wünsche
+offenlässt, sofern man sich keinen App-Store wünscht. Den erhält man
+mit dem Software-Center von Ubuntu, das in Version 2.0.7 eingebunden
+und an Debian angepasst wurde.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/debian6-software-center.png" /><br /><em>Der Software-Center (Anzeige von vorliegenden Aktualisierungen im Panel).</em><br />
+
+<div class="p"><!----></div>
+Unter KDE ist kein Programm für eine grafische Paketverwaltung
+installiert. Auch hier werden etwa einmal in der Woche
+Benachrichtigungen über vorliegende Updates angezeigt.
+
+<div class="p"><!----></div>
+Das in Version 5.0 vorhandene
+goplay&nbsp;<a href="http://www.pro-linux.de/artikel/2/245/geh-spielen.html">[20]</a>
+ist nicht mehr standardmäßig installiert. Es wurde zwar von Version
+0.3 auf 0.4 aktualisiert, besitzt aber weiterhin nicht einmal eine
+Verbindung zur Paketinstallation.
+
+<div class="p"><!----></div>
+Paketupdates sind erfahrungsgemäß durch das Ausbleiben von
+Überraschungen gekennzeichnet. Grobe Schnitzer in der
+Paketverwaltung, wie sie sich Fedora, Ubuntu und openSUSE schon
+geleistet haben, gab es bei Debian bisher nicht.
+
+<div class="p"><!----></div>
+Die meisten Benutzer können mit dem stabilen Distributionszweig
+auskommen, in den man in Einzelfällen bei Bedarf Aktualisierungen
+einbaut, vorzugsweise über backports.org, notfalls auch über Debian
+Testing oder Unstable. Dies minimiert den Wartungsaufwand. Andere
+Möglichkeiten sind das Einbinden von externen Repositorys, das
+Importieren von RPM-Paketen mit alien, das Kompilieren von Hand und
+das Bauen von eigenen Paketen. Dies ist sicher keine vollständige
+Aufzählung. Wer Software von Hand kompiliert, wird das Programm
+checkinstall wahrscheinlich nützlich finden, das die Software als
+minimales Debian-Paket installiert.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+<div class="p"><!----></div>
+Debian ist in Version 6.0 stark verbessert, was nicht nur durch die
+aktualisierte Software, sondern auch die Änderungen im Umfeld
+begründet ist. Debian sieht sich als das „universelle
+Betriebssystem“ und wird diesem Anspruch auch in der neuen Version
+6.0 gerecht. Universell ist es hinsichtlich der Zahl der
+unterstützten Architekturen, aber auch hinsichtlich der
+Einsetzbarkeit – sei es als Desktop-, Laptop- oder Server-System.
+Die Installation kann von Einsteigern bewältigt werden, ohne
+Experten einzuschränken, auch wenn eine Installation mit weniger
+Klicks möglich und wünschenswert wäre. Die relativ sparsame
+Ausstattung mit Features sorgt für einen geringen Speicherbedarf in
+der Standardinstallation.
+
+<div class="p"><!----></div>
+In dem nicht zu lösenden Konflikt zwischen Aktualität und Stabilität
+setzt Debian klare Priorität auf die Stabilität.
+Das führt dazu, dass neue
+Debian-Versionen nicht so häufig erscheinen können und die Software
+etwas älter ist. Das heißt aber nicht, dass sie unbenutzbar ist; so
+manche Unternehmensdistribution ist mit deutlich älterer Software
+noch im Einsatz. Selbst diejenigen Benutzer, die immer das Neueste
+haben wollen
+oder brauchen, kann Debian im Prinzip bedienen. In Zukunft wird es
+wahrscheinlich noch mehr Abstufungen zwischen Aktualität und
+Stabilität geben.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.pro-linux.de/artikel/2/1495/debian-gnulinux-60-squeeze.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/artikel/2/1495/debian-gnulinux-60-squeeze.html</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.pro-linux.de/news/1/14519/debian-diskutiert-freeze-termin.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/14519/debian-diskutiert-freeze-termin.html</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.freiesmagazin.de/freiesMagazin-2009-05"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2009-05</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://www.pro-linux.de/news/1/14986/debian-friert-im-maerz.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/14986/debian-friert-im-maerz.html</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://www.pro-linux.de/news/1/15250/grafischer-debian-installer-in-der-schwebe.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/15250/grafischer-debian-installer-in-der-schwebe.html</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://www.pro-linux.de/news/1/16295/debian-stimmt-fuer-erweiterte-mitgliedschaft.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/16295/debian-stimmt-fuer-erweiterte-mitgliedschaft.html</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://www.pro-linux.de/news/1/15539/debian-startet-offizielle-archiv-zeitmaschine.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/15539/debian-startet-offizielle-archiv-zeitmaschine.html</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://www.pro-linux.de/news/1/16126/backportsorg-zieht-unter-dach-von-debian.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/16126/backportsorg-zieht-unter-dach-von-debian.html</tt></a><br />
+
+<div class="p"><!----></div>
+[9] <a href="http://www.pro-linux.de/news/1/16207/vorschlag-fuer-zusaetzliche-aktuellere-debian-veroeffentlichungen.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/16207/vorschlag-fuer-zusaetzliche-aktuellere-debian-veroeffentlichungen.html</tt></a><br />
+
+<div class="p"><!----></div>
+[10] <a href="http://www.debian.org/ports/"><tt style="font-size: 1.3em;">http://www.debian.org/ports/</tt></a><br />
+
+<div class="p"><!----></div>
+[11] <a href="http://www.pro-linux.de/news/1/16219/gnome-232-veroeffentlicht.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/16219/gnome-232-veroeffentlicht.html</tt></a><br />
+
+<div class="p"><!----></div>
+[12] <a href="http://www.pro-linux.de/news/1/15495/gnome-230-freigegeben.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/15495/gnome-230-freigegeben.html</tt></a><br />
+
+<div class="p"><!----></div>
+[13] <a href="http://www.pro-linux.de/news/1/16634/kde-sc-46-freigegeben.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/16634/kde-sc-46-freigegeben.html</tt></a><br />
+
+<div class="p"><!----></div>
+[14] <a href="http://www.pro-linux.de/news/1/15287/kde-sc-44-freigegeben.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/15287/kde-sc-44-freigegeben.html</tt></a><br />
+
+<div class="p"><!----></div>
+[15] <a href="http://live.debian.net/"><tt style="font-size: 1.3em;">http://live.debian.net/</tt></a><br />
+
+<div class="p"><!----></div>
+ [16] <a href="http://www.debian.org/releases/stable/installmanual"><tt style="font-size: 1.3em;">http://www.debian.org/releases/stable/installmanual</tt></a><br />
+
+<div class="p"><!----></div>
+[17] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-05"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2010-05</tt></a><br />
+
+<div class="p"><!----></div>
+[18] <a href="http://patch-tracker.debian.org/package/linux-2.6/2.6.32-30"><tt style="font-size: 1.3em;">http://patch-tracker.debian.org/package/linux-2.6/2.6.32-30</tt></a><br />
+
+<div class="p"><!----></div>
+[19] <a href="http://debian-multimedia.org/"><tt style="font-size: 1.3em;">http://debian-multimedia.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[20] <a href="http://www.pro-linux.de/artikel/2/245/geh-spielen.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/artikel/2/245/geh-spielen.html</tt></a><br />
+
+<div class="p"><!----></div>
+                
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Hans-Joachim Baader</b>&nbsp;(<a href="http://www.pro-linux.de/">Webseite</a>)
+befasst sich seit 1993 mit Linux. 1994 schloss
+er sein Informatikstudium erfolgreich ab, machte die
+Softwareentwicklung zum Beruf und ist einer der Betreiber
+von Pro-Linux.de.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=Debian 6.0#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_odf-test">Test: OpenDocument-Format für den Datenaustausch</a><a name="11_04_odf-test">
+</a></font></h1>von Dominik Wagenführ        
+<div class="p"><!----></div>
+<b>M</b><b>an liest ja des Öfteren in den Nachrichten, dass sich irgendeine
+Regierung der Welt (zuletzt Lettland&nbsp;<a href="http://www.heise.de/newsticker/meldung/Lettland-ODF-Akzeptanz-vorgeschrieben-1173221.html">[1]</a>)
+dazu entschließt, das OpenDocument-Format (ODF)&nbsp;<a href="http://de.wikipedia.org/wiki/OpenDocument">[2]</a>
+in Behörden zu akzeptieren bzw. zu nutzen. Als Vorteil von ODF wird
+– vor allem von Linux-Anhängern – oft genannt, dass sich das Format auf
+jedem Linux-Rechner öffnen lässt und immer gleich aussieht, weil es
+ja ein offener Standard ist. Sprich, das Problem wie bei Microsoft
+Office, dass ein Dokument (auch bei gleicher MS-Office-Version) auf
+jedem Rechner anders aussehen kann, gibt es angeblich nicht. Dieser
+These soll in diesem Artikel nachgegangen werden.</b> 
+
+<div class="p"><!----></div>
+Getestet wurden die Anwendungen OpenOffice.org Writer
+3.2.0&nbsp;<a href="http://de.openoffice.org/">[3]</a>, TextMaker 2008 (rev
+503)&nbsp;<a href="http://www.softmaker.de/">[4]</a>, Abiword 2.8.2&nbsp;<a href="http://abiword.org/">[5]</a>,
+KWord 4.4.5&nbsp;<a href="http://www.koffice.org/kword/">[6]</a> und Google
+Docs&nbsp;<a href="http://docs.google.com/">[7]</a>.
+In jeder Anwendung (bis auf KWord) wurde ein Beispieldokument (siehe unten)
+erstellt, als ODT exportiert und anschließend in allen Programmen importiert,
+um zu prüfen, wie das Dokument dann aussieht.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Libre Office wurde nicht getestet, da der Unterschied
+zu OpenOffice.org noch sehr gering ist und sich die Ergebnisse somit
+nicht unterscheiden werden.
+
+<div class="p"><!----></div>
+
+<h2>Das Beispieldokument</h2>
+
+<div class="p"><!----></div>
+Als Beispieldokument wurde in OpenOffice.org Writer ein Brief mit
+einigen Rechnungsposten 
+    
+erstellt, wie man ihn auch als normaler
+Anwender schreiben würde. Dabei wurden folgende Formatierungen bzw.
+Besonderheiten eingebracht:
+
+<div class="p"><!----></div>
+    
+<ul>
+<li> Rand überall 2 cm
+<div class="p"><!----></div>
+</li>
+
+<li> Schriftart Nimbus Roman No9 L, Schriftgröße 12
+<div class="p"><!----></div>
+</li>
+
+<li> unterstrichene Kopfzeile mit Anschrift
+<div class="p"><!----></div>
+</li>
+
+<li> Fußzeile mit aktueller Seite und Gesamtanzahl der Seiten
+<div class="p"><!----></div>
+</li>
+
+<li> Anschrift mit unterstrichener Absenderzeile darüber
+<div class="p"><!----></div>
+</li>
+
+<li> kleines umrahmtes Logo rechtsbündig neben der Anschrift,
+  gespeichert als PNG mit transparentem Hintergrund
+<div class="p"><!----></div>
+</li>
+
+<li> Stadt und aktuelles Datum (als Feldbefehl) rechtsbündig
+<div class="p"><!----></div>
+</li>
+
+<li> Rechnung als Tabelle mit teilweise Linien
+<div class="p"><!----></div>
+</li>
+
+<li> „Unterschrift“ als eingebundenes Bild
+<div class="p"><!----></div>
+</li>
+
+<li> URL-Angabe unter dem Namen
+<div class="p"><!----></div>
+</li>
+
+<li> eine Leerzeile Platz zum Seitenende 
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/odf-openoffice.png" /><br /><em>Das Beispieldokument für den Test.</em><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Diese Vorlage wurde dann – so gut es ging – in allen obigen
+genannten Programmen nachgebaut und als OpenDocument-Text (ODT)
+gespeichert. Die Dokumente wurde dabei natürlich nicht aus dem
+OOo-Dokument importiert, sondern komplett neu erstellt.
+
+<div class="p"><!----></div>
+Neben der Seitenformatierung, die in jeder Anwendung wohl anders
+umgesetzt wurde, gibt es bei manchen Programmen Besonderheiten, auf
+die hier hingewiesen werden soll.
+
+<div class="p"><!----></div>
+
+<h3>OpenOffice.org Writer</h3>
+
+<div class="p"><!----></div>
+In OpenOffice.org wurde zusätzlich aus der eingebetteten Calc-Tabelle
+ein Nutzen gezogen und die Berechnung der Umsatzsteuer sowie die
+Addition der Beträge als Formel verfasst.
+
+<div class="p"><!----></div>
+
+<h3>Abiword</h3>
+
+<div class="p"><!----></div>
+Der Feldbefehl für das Datum konnte nur im Format „Monat Tag, Jahr“
+eingebunden werden. 
+
+<div class="p"><!----></div>
+Da Bilder keinen Rahmen haben können, wurde das Logo oben rechts
+als Hintergrundbild eines Textrahmens nachgestellt.
+
+<div class="p"><!----></div>
+Daneben gab es vom Abiword-Dokument zwei Versionen. Die erste enthielt
+keine Bilder, ließ sich nach dem Export als ODT aber in keinem anderem
+Programm mehr öffnen (siehe unten).
+
+<div class="p"><!----></div>
+
+<h3>KWord</h3>
+
+<div class="p"><!----></div>
+Für KWord reichte mein Fachwissen leider nicht aus, sodass ich
+den Brief dort nicht umsetzen konnte. In KWord wird also einzig
+die ODT-Importfunktionalität getestet.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h3>Google Docs</h3>
+
+<div class="p"><!----></div>
+Google Docs kennt kein Nimbus Roman No9 L, daher wurde Times Roman
+genutzt.
+
+<div class="p"><!----></div>
+Da es keine Feldbefehle gibt, wurden das Datum sowie die
+Seitenzahlen per Hand eingetragen.
+
+<div class="p"><!----></div>
+Bei Tabellen können die Ränder nicht selektiv pro Zelle bzw. Zeile
+aktiviert werden, wodurch die ganze Tabelle umrahmt werden musste.
+
+<div class="p"><!----></div>
+Rahmen um Bilder gibt es nicht, daher fällt dieser beim
+Google-Docs-Dokument weg.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Test der Importfunktionalität</h2>
+
+<div class="p"><!----></div>
+Im Folgenden werden die vier erstellten ODT-Dateien in den fünf
+Testprogrammen importiert/geöffnet und mit der Originaldatei
+verglichen.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Es wird dabei explizit nicht mit der OpenOffice.org-Vorlage
+verglichen, sondern immer mit der Anwendung, aus der das ODT heraus
+exportiert wurde.
+
+<div class="p"><!----></div>
+
+<h3>OpenOffice.org Writer</h3>
+
+<div class="p"><!----></div>
+Das ODT, welches aus OOo-Writer gespeichert wurde, wurde
+absolut korrekt geöffnet, schließlich ist ODT
+der Standard unter OpenOffice.org.
+
+<div class="p"><!----></div>
+Das TextMaker-Dokument sah fast wie im Original aus. Die Feldbefehle
+wurden alle erhalten und auch die Tabelle wurde korrekt formatiert.
+Einzig der Rahmen um das Logo oben rechts ist verschwunden.
+
+<div class="p"><!----></div>
+Bei Öffnen des ersten Abiword-Dokuments meldete OOo Writer, dass die
+Datei defekt sei und eine Reparatur versucht wird. Diese schlug aber
+fehl und wurde mit „Formatfehler in Teildokument content.xml an
+Position 205,228“ abgelehnt.
+
+<div class="p"><!----></div>
+Die Korrektur der zweiten Version ging, nur fehlte das Logo
+oben rechts, die Kopfzeile war an der Telefonnummer abgeschnitten
+(weil der Textrahmen des Bildes darüber lag), der
+Datum-Feldbefehl fehlte ebenso und die Unterschrift als Bild wurde
+zentriert dargestellt. Zum Schluss wurde die Tabelle komplett
+umrandet dargestellt. 
+<div class="p"><!----></div>
+Das aus Google Docs exportierte ODT sieht in OpenOffice.org Writer
+fast identisch zum Original aus. Einzig der Zeilenabstand ist ein
+kleines bisschen enger, was aber kaum auffällt. Dass die Tabelle
+etwas nach links verschoben und nicht bündig zum Rand ist, ist
+auch im Original Google-Docs-Dokument so.
+
+<div class="p"><!----></div>
+
+<h3>TextMaker</h3>
+
+<div class="p"><!----></div>
+Das Programm TextMaker ist Teil der SoftMaker-Suite,
+welches es letztes Jahr bei der Aktion „Load and Help“ kostenlos in der
+alten 2008-er Version zum Download gab&nbsp;<a href="http://www.loadandhelp.de/">[8]</a>.
+
+<div class="p"><!----></div>
+Das OOo-Writer-Dokument sieht fast identisch aus, nur der transparente
+Hintergrund des PNGs macht Probleme, denn dieser wird komplett schwarz
+dargestellt.
+
+<div class="p"><!----></div>
+Das aus TextMaker exportierte ODT hat interessanterweise das gleiche
+Problem mit dem transparenten Hintergrund. Daneben ist der Feldbefehl
+für das aktuelle Datum irgendwo verloren gegangen.
+
+<div class="p"><!----></div>
+Das Öffnen des ersten Abiword-Dokuments wurde mit der lapidaren
+Meldung „Datei kann nicht geöffnet werden“ abgelehnt.
+
+<div class="p"><!----></div>
+Die zweite Abiword-Version ließ sich öffnen, es fehlte aber das Logo
+oben rechts, der Textrahmen rutschte dafür etwas hoch und verdeckte
+damit ein Teil der Kopfzeile. Der Feldbefehl für das Datum war
+verschwunden, ebenso wie jegliche Unterstreichung (in der Kopfzeile
+und über der Anschrift). Zum Schluss wurde die Tabelle komplett
+umrandet dargestellt und nicht nur die drei ausgewählten Zeilen.
+
+<div class="p"><!----></div>
+TextMaker öffnet das ODT aus Google Docs leider nur sehr inkorrekt,
+da sich der Zeilenabstand massiv geändert hat. In jeder Zeile wurde
+unterhalb ein Abstand von 10 Punkt eingefügt, sodass von der Tabelle
+gerade nur die erste Zeile auf die erste Seite passt. Daneben fällt
+auf, dass Stadt und Datum nicht mehr rechtsbündig sind, sondern am
+linken Rand dargestellt werden. Gleiches gilt für die zweite Spalte
+der Tabelle, deren Werte alle nach links gerutscht sind.
+
+<div class="p"><!----></div>
+
+<h3>Abiword</h3>
+
+<div class="p"><!----></div>
+Das OOo-Writer-Dokument ließ sich ohne Problem öffnen und sah ganz gut
+aus. Der transparente Hintergrund machte keine Probleme, dafür fehlt
+aber der Rahmen um das Bild. Der Feldbefehl für das Datum wandelte
+sich etwas in der Schreibweise von „15. Februar 2011“ zu „15/02/11“
+und in der Tabelle hatte jede Zeile eine Linie, anstatt nur jeder
+zweiten.
+
+<div class="p"><!----></div>
+Beim ODT aus TextMaker sieht es ähnlich aus: Der Rahmen um das Logo
+fehlt, dieses ist dafür um einige Zentimeter nach unten und rechts
+gerutscht. Dadurch rutscht der Text auf der Seite auch etwas nach
+unten, sodass die letzte Zeile des Briefes nicht mehr auf die erste
+Seite passt und eine zweite begonnen wird. Daneben wurde der
+Feldbefehl für das Datum als Reintext exportiert und verliert damit
+seine Funktion, wird dafür aber wie im Original dargestellt.
+
+<div class="p"><!----></div>
+Interessant ist, dass man zum Abiword-ODT den gleichen Text wie bei
+TextMaker oben schreiben kann. Das heißt, das Logo oben rechts
+fehlt, der Textrahmen rutschte dafür etwas hoch und verdeckt damit
+ein Teil der Kopfzeile. Der Feldbefehl für das Datum ist
+verschwunden und die Tabelle wird komplett umrandet dargestellt und
+nicht nur die drei ausgewählten Zeilen.
+
+<div class="p"><!----></div>
+Bei ersten Abiword-Test (bei dem in den anderen Programmen das
+Abiword-ODT gar nicht geöffnet werden konnte, siehe oben) fehlten
+zu den eben genannten Dingen auch noch die Kopf- und Fußzeile.
+
+<div class="p"><!----></div>
+In Abiword sieht das Google-Docs-Dokument identisch zu TextMaker aus.
+Das heißt, der Zeilenabstand ist viel zu groß und alle ehemals
+rechtsbündigen Texte sind nun linksbündig.
+
+<div class="p"><!----></div>
+
+<h3>KWord</h3>
+
+<div class="p"><!----></div>
+Beim OpenOffice.org-Writer-Dokument fehlt wie beim
+Abiword-Import auch der Rahmen um das Bild. Die restlichen Elemente
+werden aber korrekt dargestellt. Sehr schlecht ist, dass sich das
+Seitenformat geändert hat, sodass die URL am Ende des Text auf der
+zweiten Seite landete.
+
+<div class="p"><!----></div>
+Das Ergebnis des TextMaker-Dokumentes sieht ähnlich aus: Der Rahmen
+um das Bild fehlt, zusätzlich ist es nach unten rechts verrutscht.
+Der Zeilenabstand stimmt gar nicht, sodass alles ab „Mit
+freundlichen Grüßen“ auf der zweiten Seite zu finden ist. Zusätzlich
+hat sich die Tabelle etwas nach rechts verschoben, sodass der Text
+links nicht mehr bündig ist und auf der rechten Seite die Linien ein
+wenig über den Rand ragen. Daneben ist auch der Feldbefehl für das
+Datum verschwunden.
+
+<div class="p"><!----></div>
+Das erste Abiword-Dokument konnte mit der Meldung „Reason: Parsing
+error in the main document at line 205, column 235 Error message:
+QXml” nicht geöffnet werden.
+
+<div class="p"><!----></div>
+Das zweites Dokument lässt sich öffnen, wird aber nicht korrekt
+dargestellt. Im Gegensatz zum TextMaker-Dokument ist der
+Zeilenabstand nun zu gering, sodass alles sehr gedrückt wirkt. Der
+Tabellenrand der ersten Tabelle reicht dabei sogar in den Text der
+vorherigen Zeile hinein. Daneben fehlt wieder das Logo und der
+Textrahmen ist in die Kopfzeile gerutscht. Dies führt dazu, dass die
+Kopfzeile zwar nicht überdeckt, aber dafür umgebrochen wird und
+zweizeilig erscheint. Der Feldbefehl für das Datum ist verschwunden
+und die Tabelle erscheint komplett umrahmt. Zum Schluss ist der
+Klarname „Max Mustermann“ der Unterschrift rechts vom zugehörigen
+Bild der Unterschrift gelandet.
+
+<div class="p"><!----></div>
+Dass KWord manchmal Probleme mit dem zweiten Zeilenabstand hat, sieht
+man ja oben. Bei dem ODT aus Google Docs verstärkt sich der Effekt
+aber scheinbar, sodass auf der ersten Seite nur noch Anschrift und
+Betreff zu finden sind, der Textkörper und die Tabelle sind auf der
+zweiten Seite zu finden. Alle Texte sind korrekt ausgerichtet, dafür
+hat die Tabelle ihre Linien verloren. 
+<div class="p"><!----></div>
+
+<h3>Google Docs</h3>
+
+<div class="p"><!----></div>
+Das Writer-Dokument ließ sich zwar öffnen, die Schriftart Nimbus
+Roman No9 ist aber in Google Docs nicht bekannt und wurde durch
+Verdana ersetzt. Dadurch veränderte sich auch die Schriftgröße, was
+zu einer Verschiebung des Textes führte. Davon betroffen war vor
+allem die Kopfzeile, die nicht mehr komplett in eine Zeile passte
+und so zweizeilig dargestellt wurde. Ein weiteres Problem war dabei
+die Unterstreichung der Leerzeichen, die nicht angezeigt wurde. Da
+GoogleDocs derzeit keine Feldfunktionen unterstützt, wurden Datums-
+und Seitenzahlenfelder zwar entfernt, aber durch die jeweiligen,
+korrekten Inhalte ersetzt. Das Logo oben rechts kommt ohne Umrandung
+aus, dafür wird die Tabelle komplett umrandet dargestellt. Der
+Klartextname unter der Bildunterschrift wird nun neben dem Bild
+angezeigt und verschiebt sich daher nach links. Zum Schluss wurde der
+ursprüngliche Link unter dem Text zu
+<a href="http://www.google.com/url?q=http%3A%2F%2Fde.wikipedia.org%2Fwiki%2FMax_Mustermann&sa=D&sntz=1&usg=AFQjCNG7ZY9WoKE_KNmnn0t8AhUh2aJq6A"><tt style="font-size: 1.3em;">http://www.google.com/url?q=http%3A%2F%2Fde.wikipedia.org%2Fwiki%2FMax_Mustermann&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNG7ZY9WoKE_KNmnn0t8AhUh2aJq6A</tt></a>
+geändert.
+
+<div class="p"><!----></div>
+Zu großen Teilen ist das Ergebnis des aus TextMaker exportierten
+ODFs dasselbe wie bei OOo Writer. Unterschiedlich ist die Position
+des Logos, welches wie bei anderen Programmen auch etwas weiter nach
+unten und nach rechts an den Rand gerutscht ist. Die Unterschrift am
+Ende befindet sich dafür an korrekten Position.
+
+<div class="p"><!----></div>
+Das Abiword-OpenDocument konnte in Google Docs nicht geöffnet
+werden. Der Upload wurde mit der Meldung „Dokument kann nicht
+umgewandelt werden.“ quittiert.
+
+<div class="p"><!----></div>
+Das unter Google Docs gespeicherte ODF sah nach dem Re-Import wieder
+genauso aus wie vor dem Speichern.
+
+<div class="p"><!----></div>
+
+<h2>Ergebnis</h2>
+
+<div class="p"><!----></div>
+Das Resultat des Tests ist eher ernüchternd. Wenn überall
+OpenOffice.org oder TextMaker als Programm der Wahl eingesetzt wird,
+sind zwar kleinere Probleme vorhanden, mit denen man aber meist leben kann. Sobald aber „Exoten“ wie KWord oder Abiword ins Spiel kommen,
+sieht es sehr schlecht aus.
+
+<div class="p"><!----></div>
+Die Formatierung bei mit KWord geöffneten Dokumenten stimmte so gut
+wie nie und brachte das komplette Layout aufgrund der falschen
+Zeilenabstände völlig durcheinander. Bei Abiword dagegen scheinen
+die Entwickler den OpenDocument-Export etwas verhauen zu haben, da
+in der ersten Version des Abiword-Exports kein Programm das ODT
+öffnen konnte. Selbst Abiword, mit dem das Original-Dokument
+gespeichert wurde, stellte das ODT nicht mehr korrekt dar.
+
+<div class="p"><!----></div>
+Die letzte Anmerkung ist sowieso etwas, was kaum ein Anwender
+verstehen wird: Wenn ein Dokument in einem Programm in einem
+standardisierten und angepriesenem Format gespeichert wird, sollte
+man auch erwarten können, dass es nach dem Öffnen mit dem gleichen Programm genauso aussieht.
+Seltsamerweise schafft dies nur OpenOffice.org mit seinem Writer und
+Google Docs. Alle andere Programme stellten das geladene ODT nicht
+exakt so dar wie vor dem Speichervorgang.
+
+<div class="p"><!----></div>
+Als Fazit kann man festhalten, dass ODF zwar ein freies und
+standardisiertes Dokumentenformat ist, aber zum Dateiaustausch
+genauso viel taugt, wie Microsofts DOC bzw. DOCX. Wer (einigermaßen)
+sicher sein will, dass sein Dokument beim Empfänger so aussieht, wie
+er es bei sich entworfen hat, sollte dieses als PDF
+speichern/"&#235;xportieren/drucken und so verschicken.
+
+<div class="p"><!----></div>
+Alle Testdateien können im Original, als ODT und als PDF in
+einem Archiv <a href="http://www.freiesmagazin.de/mobil/\Jahr-\Monat-listings/odf-gesamt.tar.gz">odf-gesamt.tar.gz</a> heruntergeladen werden.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.heise.de/newsticker/meldung/Lettland-ODF-Akzeptanz-vorgeschrieben-1173221.html"><tt style="font-size: 1.3em;">http://www.heise.de/newsticker/meldung/Lettland-ODF-Akzeptanz-vorgeschrieben-1173221.html</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://de.wikipedia.org/wiki/OpenDocument"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/OpenDocument</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://de.openoffice.org/"><tt style="font-size: 1.3em;">http://de.openoffice.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://www.softmaker.de/"><tt style="font-size: 1.3em;">http://www.softmaker.de/</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://abiword.org/"><tt style="font-size: 1.3em;">http://abiword.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://www.koffice.org/kword/"><tt style="font-size: 1.3em;">http://www.koffice.org/kword/</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://docs.google.com/"><tt style="font-size: 1.3em;">http://docs.google.com/</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://www.loadandhelp.de/"><tt style="font-size: 1.3em;">http://www.loadandhelp.de/</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+ist zwar Verfechter von Freier
+Software und freien Standards, findet aber auch, dass bei manchen
+Diskussionen die Probleme damit oft einfach unter den Tisch gekehrt
+und ignoriert werden.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=OpenDocument-Format im Test#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_kernel">Der März im Kernelrückblick</a><a name="11_04_kernel">
+</a></font></h1>von Mathias Menzer        <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der
+fortwährend weiterentwickelt wird. Welche Geräte in einem halben
+Jahr unterstützt werden und welche Funktionen neu hinzukommen,
+erfährt man, wenn man den aktuellen Entwickler-Kernel im Auge
+behält.</b>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Linux 2.6.38</h2>
+Einige Tage Abwesenheit waren für Torvalds der Hauptgrund, noch den -rc8&nbsp;<a href="http://lkml.org/lkml/2011/3/8/11">[1]</a> zu veröffentlichen. Ein neues Merge Window, während dessen er keine Pull Requests bearbeiten kann, hält er für sinnlos. Immerhin kamen noch einige Fehlerkorrekturen auch für schon länger bekannte Probleme hinzu, die noch mal eine Woche getestet werden konnten.
+
+<div class="p"><!----></div>
+Am 17. März wurde dann nach einer Entwicklungszeit von nur 69 Tagen der Linux Kernel 2.6.38&nbsp;<a href="http://lkml.org/lkml/2011/3/14/508">[2]</a> freigegeben. Damit hat .38 die bisherige durchschnittliche Dauer von 80 Tagen stark unterboten; es bleibt abzuwarten ob dies einen Trend darstellt oder nur einen Ausreißer. Dennoch hat der neue Kernel einiges zu bieten, gerade auch im Desktop-Bereich. Allem voran sind die bereits viel gerühmten automatischen Task-Gruppen nun mit an Bord (siehe „Der November im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 12/2010&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-12">[3]</a>). Diese Methode, die verfügbare Rechenzeit des Prozessors zu verteilen, soll insbesondere bei einem System unter Last dafür sorgen, dass das Gerät noch auf Eingaben
+
+des Anwenders reagiert. Auch rechenintensive Aufgaben wie zum Beispiel das Kompilieren eines Linux-Kernels sollen noch Luft lassen, damit der Nutzer nebenher den Browser bedienen oder seine E-Mails lesen kann. Verbesserungen an der Dateisystem-Abstraktionsschicht VFS, die Anwendungen eine einheitliche Schnittstelle für die Arbeit mit den verschiedenen Dateisystemen bietet, sollen ebenfalls positive Auswirkungen auf die Leistung insbesondere bei Mehrkern-Systemen haben. Hier wurde „dcache_lock“, ein nicht sehr effizienter Locking-Mechanismus, durch „RCU-based path lookup“ ersetzt, was die Skalierbarkeit auf Mehrkern-CPUs erhöht, aber auch die Prozesse bei einzelnen Kernen beschleunigt.
+
+<div class="p"><!----></div>
+Neue Dateisysteme sind auch diesmal nicht mit von der Partie; btrfs wurde jedoch mit mehr als nur einigen Fehlerkorrekturen bedacht. Das Dateisystem unterstützt nun den LZO (Lempel-Ziv-Oberhumer) zur Komprimierung, ein nicht sehr stark komprimierender, jedoch sehr schneller Algorithmus. Im Vergleich zu zlib, das auf dem verbreiteten deflate-Algorithmus aufbaut, lässt sich damit bei Dateisystemoperationen bis zu 50&nbsp;% Zeit sparen, manchmal, aufgrund der geringeren Datenmengen, sogar gegenüber unkomprimierten Dateisystemen. Eine weitere Neuerung ist die Fähigkeit, Schnappschüsse als Read-Only (nur lesen) zu markieren. Tritt in einem btrfs-Dateisystem ein Fehler auf, so wird es nun gezwungenermaßen neu als Read-Only eingehängt.
+
+<div class="p"><!----></div>
+<br />„B.A.T.M.A.N.“ hat nichts mit dem Namen des aktuellen und der beiden Vorgänger-Kernel (siehe „Der Oktober im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 11/2010&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-11">[4]</a>) zu tun, sondern bedeutet „Better Approach To Mobile Adhoc Networking“ (deutsch: „Verbesserter Ansatz für mobile Sofort-Netzwerke“). Es stellt ein Protokoll zum Aufbau von Drahtlos-Netzwerken dar, die ohne vorab existierende Infrastruktur auskommen müssen, sondern auf die daran beteiligten Teilnehmer, zumeist vermutlich Notebooks, zur Übermittlung der Netzwerk-Kommunikation setzen. Angedachte Anwendungsfälle sind zum Beispiel die Herstellung von notdürftigen Kommunikationswegen nach Naturkatastrophen oder die Umgehung von Zensurmaßnahmen – beides Szenarien, die leider zum Veröffentlichungszeitpunkt für 2.6.38 äußerst aktuell waren&nbsp;<a href="http://de.wikipedia.org/wiki/T%C5%8Dhoku-Erdbeben_2011">[5]</a>&nbsp;<a href="http://de.wikipedia.org/wiki/B%C3%BCrgerkrieg_in_Libyen_2011">[6]</a>.
+
+<div class="p"><!----></div>
+An der Netzwerkfront wurde die Behandlung ausgehender Pakete optimiert. Bereits in 2.6.35 wurden „Receive Packet Steering“ und „Receive Flow Steering“ eingeführt (siehe „Der August im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 09/2010&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-09">[7]</a>), die die Bearbeitung eingehender Netzwerk-Pakete im ersten Fall alle möglichst gleichmäßig auf die im System vorhandenen CPUs verteilen und im zweiten zusammenhängende Datenströme der CPU zuweisen, die dafür zuständige Anwendungen ausführen. „Transmit Packet Steering“ ordnet nun einer CPU, die Pakete versendet, jeweils eine Warteschlange zu, über die diese dann versendet werden. Wirklich von Nutzen ist diese Funktion allerdings nur dort, wo mehrere Prozessoren und auch mehrere Netzwerk-Schnittstellen zur Verfügung stehen, wie zum Beispiel in Netzwerk-Hardware oder vernetzten Hochleistungsrechnern.
+
+<div class="p"><!----></div>
+Zum Schluss bringt der neue Kernel auch gleich noch Unterstützung für AMDs Fusion-Plattform&nbsp;<a href="http://de.wikipedia.org/wiki/Accelerated_Processing_Unit">[8]</a> mit. Diese vereint Prozessor und Grafikkern auf einem Chip und soll unter anderem in Tablet-PCs, aber auch Netbooks und kleinen Desktops zum Einsatz kommen, wo es auf geringe Maße, wenig Stromverbrauch und Abwärme ankommt.
+
+<div class="p"><!----></div>
+Eine vollständige Auflistung der Neuerungen, insbesondere an der Treiber-Front,  liefert die englischsprachige Seite Kernel Newbies&nbsp;<a href="http://kernelnewbies.org/Linux_2_6_38">[9]</a>, die mittlerweile für jeden neuen Kernel eine eigene Treiber-Seite&nbsp;<a href="http://kernelnewbies.org/Linux_2_6_38-DriversArch">[10]</a> pflegt.
+
+<div class="p"><!----></div>
+
+<h2>Linux 2.6.39</h2>
+Das Merge Window für 2.6.39 ist bereits offen und bisher wurden schon einige Änderungen von Torvalds aufgenommen. Bemerkenswert ist darunter ein Pull Request von Arnd Bergman mit dem Kommentar „Total BKL removal, finally“ (deutsch: Vollständige Entfernung des BKL, endlich“)&nbsp;<a href="http://lkml.org/lkml/2011/3/16/420">[11]</a>. Dahinter verbergen sich eine Reihe Patches, die die letzten Spuren des Big Kernel Lock tilgen.
+
+<div class="p"><!----></div>
+
+<h2>Android und GPL</h2>
+Android-Schöpfer Google steht bereits von Seiten Oracles aufgrund der Nutzung von Java in Android unter Beschuss, da kommt auch noch aus der Kernel-Entwickler-Gemeinde der Vorwurf des Verstoßes gegen die GPL. Stein des Anstoßes war die von Google entwickelte Bibliothek „Bionic“, die Quelltext aus Header-Dateien des Linux-Kernels enthalten soll und damit unter GPL lizenziert werden müsse, anstatt unter der derzeit verwendeten BSD-Lizenz. Torvalds widersprach dem jedoch in einem Interview&nbsp;<a href="http://www.heise.de/open/meldung/Linus-Torvalds-Android-verstoesst-nicht-gegen-die-GPL-1212177.html">[12]</a>: Die Bionic-Bibliothek nutze lediglich Schnittstellen zum Kernel und dies stelle in keiner Weise ein abgeleitetes Werk nach der GPL dar. 
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    <br /><table align="left" border="1"><tr><td width="0" align="center">
+
+<div style="background: #D8F2FF;">
+<b>Kurz erläutert: „Pull Request“</b><br />
+Die Entwicklung des Linux-Kernels läuft in dem Versionsverwaltungssystem Git ab. Dieses zeichnet sich durch die Möglichkeit aus, aus einem Hauptentwicklungszweig einfach einen eigenen abzutrennen, Änderungen aus dem originären in den eigenen einzufügen und diesen dann bei Bedarf wieder mit dem Hauptentwicklungszweig zusammenzuführen.
+
+<div class="p"><!----></div>
+Dies muss allerdings von einem der Betreuer des Hauptzweiges ausgeführt werden. Ein „Pull Request“ ist die Bitte eines Entwicklers an diesen Betreuer, die Änderungen in den Ursprungszweig zu übernehmen. Im Falle der Linux-Entwicklung erfolgt dies mittels einer Mail an die Entwickler-Mailingliste, deren Betreff zum Beispiel so aussieht: „[GIT PULL] Total BKL removal, finally“
+Daraufhin nimmt der Hauptentwickler, beim Linux-Kernel, Linus Torvalds, einen Merge („Verschmelzung“) vor, der den zeitweise abgetrennten Entwicklungszweig wieder mit dem Ursprung zusammenführt.
+
+<div class="p"><!----></div>
+    </div></td></tr></table><!--hbox-->
+<br />
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://lkml.org/lkml/2011/3/8/11"><tt style="font-size: 1.3em;">http://lkml.org/lkml/2011/3/8/11</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://lkml.org/lkml/2011/3/14/508"><tt style="font-size: 1.3em;">http://lkml.org/lkml/2011/3/14/508</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-12"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2010-12</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-11"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2010-11</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://de.wikipedia.org/wiki/T%C5%8Dhoku-Erdbeben_2011"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/T%C5%8Dhoku-Erdbeben_2011</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://de.wikipedia.org/wiki/B%C3%BCrgerkrieg_in_Libyen_2011"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/B%C3%BCrgerkrieg_in_Libyen_2011</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-09"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2010-09</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://de.wikipedia.org/wiki/Accelerated_Processing_Unit"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/Accelerated_Processing_Unit</tt></a><br />
+
+<div class="p"><!----></div>
+[9] <a href="http://kernelnewbies.org/Linux_2_6_38"><tt style="font-size: 1.3em;">http://kernelnewbies.org/Linux_2_6_38</tt></a><br />
+
+<div class="p"><!----></div>
+[10] <a href="http://kernelnewbies.org/Linux_2_6_38-DriversArch"><tt style="font-size: 1.3em;">http://kernelnewbies.org/Linux_2_6_38-DriversArch</tt></a><br />
+
+<div class="p"><!----></div>
+[11] <a href="http://lkml.org/lkml/2011/3/16/420"><tt style="font-size: 1.3em;">http://lkml.org/lkml/2011/3/16/420</tt></a><br />
+
+<div class="p"><!----></div>
+[12] <a href="http://www.heise.de/open/meldung/Linus-Torvalds-Android-verstoesst-nicht-gegen-die-GPL-1212177.html"><tt style="font-size: 1.3em;">http://www.heise.de/open/meldung/Linus-Torvalds-Android-verstoesst-nicht-gegen-die-GPL-1212177.html</tt></a><br />
+
+<div class="p"><!----></div>
+    
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>
+wirft gerne einen Blick auf die Kernel-Entwicklung, um mehr über die
+Funktion von Linux zu erfahren.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=Der M%C3%A4rz im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+            
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_pike">Eine Einführung in die Programmiersprache Pike</a><a name="11_04_pike">
+</a></font></h1>von Clemens Hackenberg        
+<div class="p"><!----></div>
+<b>S</b><b>o manch ein Programmierer, welcher C/C++ oder Java benutzt, kommt irgendwann in
+die Situation, eine interpretierte Programmiersprache benutzen zu wollen, weil
+z.&nbsp;B. auf dem Zielsystem kein Compiler zur Verfügung steht. Der Mensch ist ein
+faules Wesen und nicht jeder ist gewillt, sich eine komplett neue Syntax
+anzueignen. Eine interpretierte Sprache, die zumindest von den Grundlagen her
+C sehr ähnlich ist und außerdem mit der Ausführgeschwindigkeit von etablierten
+Programmiersprachen wie Python mithalten kann, ist Pike.</b>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Historisches</h2>
+
+<div class="p"><!----></div>
+Pike&nbsp;<a href="http://en.wikipedia.org/wiki/Pike_(programming_language)">[1]</a> hieß in der Mitte
+der 90er, dem weiß-grauen PC-Zeitalter, einmal µLPC und wurde von Fredrik
+Hübinette als Neuimplementierung der Sprache LPC4 entworfen, da er mit der
+kommerziellen Nutzbarkeit der Lizenz derselben Implementierung unzufrieden war.
+Konsequenterweise steht Pike unter den Bedingungen der GPL, der MPL und der LGPL
+zur Verfügung&nbsp;<a href="http://pike.ida.liu.se/generated/manual/ref/chapter_1.html#5">[2]</a>. LPC
+war eine Programmiersprache zum Entwickeln sog. Multiuser Dungeons, dennoch hat
+das heutige Pike syntaktisch noch sehr viel mit LPC gemein; man könnte also
+sagen, die Syntax war damals schon sehr ausgereift, wenn man den Einsatzzweck
+bedenkt.
+
+<div class="p"><!----></div>
+Früher wurde Pike von Roxen entwickelt und gewartet, heutzutage hat die
+Universität Linköping diese Aufgabe übernommen.
+
+<div class="p"><!----></div>
+
+<h2>In Pike geschriebene Software</h2>
+
+<div class="p"><!----></div>
+Der Nutzerkreis ist ziemlich klein, jedoch existent: Pike wird von Roxen Internet
+Software&nbsp;<a href="http://www.roxen.com">[3]</a> als Basis ihres CMS benutzt.
+
+<div class="p"><!----></div>
+Ein Fork eines frühen Roxen-Servers ist das quelloffene Projekt
+Caudium&nbsp;<a href="http://www.caudium.net/">[4]</a>, welches das XML-basierte Format RXML zur
+Benutzung als Vorlage beibehalten hat. Pike kann hierbei, ähnlich wie das bei
+PHP möglich ist&nbsp;<a href="http://de.selfhtml.org/intro/technologien/php.htm">[5]</a>, serverseitig
+direkt in den Inhalt eingebunden werden. Auch PHP kann in Caudium benutzt werden.
+
+<div class="p"><!----></div>
+Darauf baut openSTeam&nbsp;<a href="http://www.open-steam.org/">[6]</a>, eine Software zur
+Verwaltung virtueller Wissensräume, auf.
+
+<div class="p"><!----></div>
+Die Firma Opera verwendet Pike, um Webseiten für
+mobile Webbrowser herunterzurechnen&nbsp;<a href="http://www.himanshurockat.com/2010/04/opera-mini-server-must-know-where-is.html">[7]</a>,
+was zeigt, dass Pike auf Performance ausgerichtet entwickelt
+worden ist.
+
+<div class="p"><!----></div>
+
+<h2>Das erste Programm</h2>
+
+<div class="p"><!----></div>
+So, genügend hintergründige Fakten vermittelt, es wird Zeit für ein erstes
+Beispielprogramm. Und weil es in der Welt der Programmiersprachen so üblich ist,
+eine Einleitung mit einen Code-Beispiel zu beginnen, welches einen kurzen Text
+ausgibt, beginnt auch diese Einleitung auf diese Weise:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+int&nbsp;main()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;write("Hallo&nbsp;Leser!\n");
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;0;
+}
+</pre>
+
+<div class="p"><!----></div>
+Vielen Lesern dürfte dies recht vertraut vorkommen, denn dieses kleine Beispiel
+ähnelt dem „Hello-World!“ von C. 
+<div class="p"><!----></div>
+Bevor man diesen Schnipsel eines Quelltextes in den Texteditor kopiert, als
+<b><tt style="font-size: 1.3em;">hello.pike</tt></b> abspeichert und ausführen kann, benötigt man natürlich den
+Interpreter.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+<div class="p"><!----></div>
+Es gibt mehrere Wege, an Pike zu kommen. Der einfachste ist sicherlich, Pike aus
+der Paketverwaltung seiner Wahl zu installieren. Da Pike aber relativ unbekannt
+ist, ist diese Möglichkeit nicht in jedem Falle gegeben und Pike steht häufig
+nicht oder nur sehr veraltet als Paket zur Verfügung. Dann muss man Pike von der
+offiziellen Homepage herunterladen&nbsp;<a href="http://pike.ida.liu.se/download/">[8]</a>, wo man
+nicht nur verschiedene Versionen in Form von Binärcode oder Quelltext, sondern
+auch das alte µLPC herunterladen kann. Das ist zugegeben nur fortgeschrittenen
+Nutzern zu empfehlen. Wenn es eine Version &#62; 7.6 im Paketsystem gibt, sollte man
+diese installieren.
+
+<div class="p"><!----></div>
+
+<h2>Dateikonventionen</h2>
+
+<div class="p"><!----></div>
+Dateien, die Quelltext in Pike enthalten, enden konventionell auf <b><tt style="font-size: 1.3em;">.pike</tt></b>.
+Natürlich kann man sich die Endung aussuchen. Das oben gezeigte Beispiel wird
+ausgeführt, in dem man in die Konsole folgendes eingibt:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+$&nbsp;pike&nbsp;hello.pike
+</pre>
+
+<div class="p"><!----></div>
+ 
+<div class="p"><!----></div>
+Um eine Datei mit Quelltext direkt – ohne die Angabe des Interpreters –
+auszuführen, also mit <b><tt style="font-size: 1.3em;">./hello.pike</tt></b>, muss man im Texteditor in der
+entsprechenden Datei <b><tt style="font-size: 1.3em;">#!/usr/bin/env pike</tt></b> in die erste Zeile schreiben und der
+Datei dann in der Konsole mit <b><tt style="font-size: 1.3em;">chmod +x hello.pike</tt></b> die benötigten Rechte zum
+Ausführen übertragen.
+
+<div class="p"><!----></div>
+Mit dem Rautezeichen lassen sich in Pike übrigens Makros ähnlich wie in C
+definieren, welche von einem Präprozessor vor dem eigentlichen Ausführen einer
+Quelldatei abgearbeitet
+werden&nbsp;<a href="http://pike.ida.liu.se/docs/tutorial/preprocessor/index.html">[9]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Grundlagen: Typen und Funktionen</h2>
+
+<div class="p"><!----></div>
+Wie einige Leser bestimmt schon gemerkt haben, ist die Funktion <b><tt style="font-size: 1.3em;">main()</tt></b> der
+Anfangspunkt jedes Programms.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+int&nbsp;main()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;0;
+&nbsp;&nbsp;&nbsp;&nbsp;//das&nbsp;Grundgeruest&nbsp;der&nbsp;Funktion&nbsp;
+}
+</pre>
+
+<div class="p"><!----></div>
+ 
+<div class="p"><!----></div>
+Hier ist zu sehen, dass Kommentieren auf dieselbe Art und Weise geschieht wie in
+C:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+//sog.&nbsp;C++&nbsp;Kommentar,&nbsp;einzeilig
+/*Mehrzeiliger&nbsp;Kommentar,
+oft&nbsp;die&nbsp;ordentlichere&nbsp;Loesung*/
+</pre>
+
+<div class="p"><!----></div>
+Ebenfalls ist zu sehen, dass bei Funktionen der Rückgabetyp angegeben werden
+muss, in diesem Fall int, also eine Ganzzahl zwischen -2147483648 und 2147483647.
+
+Hat eine Funktion keinen Rückgabetyp, schreibt man <b><tt style="font-size: 1.3em;">void</tt></b> davor. Man kann auch
+die Funktion <b><tt style="font-size: 1.3em;">main()</tt></b> mit dem Rückgabetyp <b><tt style="font-size: 1.3em;">void</tt></b> implementieren:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+void&nbsp;main()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;/*das&nbsp;Grundgeruest
+&nbsp;&nbsp;&nbsp;&nbsp;der&nbsp;Funktion&nbsp;main()
+&nbsp;&nbsp;&nbsp;&nbsp;ohne&nbsp;Rueckgabe&nbsp;eines&nbsp;Wertes*/
+}
+</pre>
+
+<div class="p"><!----></div>
+Auch wenn man einer Funktion eine Variable zur Verarbeitung gibt, muss man den
+Typ angeben:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+int&nbsp;pluszwei(int&nbsp;zahl){
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;zahl+2;
+}
+</pre>
+
+<div class="p"><!----></div>
+Auch Variablen werden deklariert, indem man den Typ mit angibt:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+int&nbsp;i&nbsp;=&nbsp;42;
+</pre>
+
+<div class="p"><!----></div>
+Zur weiteren Benutzung der Variable muss der Typ nicht mehr erwähnt werden.
+
+<div class="p"><!----></div>
+Neben <b><tt style="font-size: 1.3em;">int</tt></b> gibt es noch zwei weitere elementare Variablentypen, <b><tt style="font-size: 1.3em;">string</tt></b> und <b><tt style="font-size: 1.3em;">float</tt></b>.
+Letzteres ist
+für Fließkommazahlen und ist bis zur neunten
+Nachkommastelle genau. In Pike dient nach englischer Schreibweise ein Punkt als
+Komma.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+float&nbsp;f&nbsp;=&nbsp;1.23;
+</pre>
+
+<div class="p"><!----></div>
+Der Datentyp <b><tt style="font-size: 1.3em;">string</tt></b> ist für Zeichenketten.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+string&nbsp;s&nbsp;=&nbsp;"Hallo&nbsp;Welt.";
+</pre>
+
+<div class="p"><!----></div>
+Mehrere Zeichenketten lassen sich mit einem Plus-Zeichen zusammenfügen.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+string&nbsp;a&nbsp;=&nbsp;"Hallo";
+string&nbsp;b&nbsp;=&nbsp;"Welt!";
+//c&nbsp;ist&nbsp;"Hallo&nbsp;Welt!"
+string&nbsp;c&nbsp;=&nbsp;a+"&nbsp;"+b;
+</pre>
+
+<div class="p"><!----></div>
+Einen Teil einer Zeichenkette erhält man folgendermaßen:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+string&nbsp;s&nbsp;=&nbsp;"abc";
+//p&nbsp;enthaelt&nbsp;"b"
+string&nbsp;p&nbsp;=&nbsp;s[1..1];
+//c&nbsp;enthaelt&nbsp;"abc"
+string&nbsp;c&nbsp;=&nbsp;s[0..2];
+</pre>
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Der Ausdruck <b><tt style="font-size: 1.3em;">s[1]</tt></b> liefert nicht wie erwartet „b“ zurück, sondern die ASCII-Nummer in
+Form eines Integer-Wertes.
+
+<div class="p"><!----></div>
+Ein weiterer, aber beherrschbarer Stolperstein ist die Unterstützung von
+Unicode. Um einer Stringvariable in einem UTF-8-fähigen Editor sauber Zeichen
+wie „Ü“ oder „é“ zuzuweisen, benötigt man die Funktion <b><tt style="font-size: 1.3em;">utf8_to_string()</tt></b>, bzw.
+ihr UTF-16-Pendant <b><tt style="font-size: 1.3em;">unicode_to_string()</tt></b>:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+string&nbsp;s&nbsp;=&nbsp;utf8_to_string("");
+</pre>
+
+<div class="p"><!----></div>
+Einfacher ist es jedoch, dem Präprozessor mit <b><tt style="font-size: 1.3em;">#charset UTF-8</tt></b> mitzuteilen, dass
+die Quelltexte in UTF-8 kodiert sind.
+
+<div class="p"><!----></div>
+Um den String dann auch wieder in einem UTF-8-fähigen Terminal auszugeben,
+braucht man die Unkehrfunktion <b><tt style="font-size: 1.3em;">string_to_utf8()</tt></b> oder <b><tt style="font-size: 1.3em;">string_to_unicode()</tt></b>:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+write&nbsp;(string_to_utf8(s));
+</pre>
+
+<div class="p"><!----></div>
+Ohne diese Vorkehrung werden die Zeichen in der Kodierung ISO 8859-1 ausgegeben.
+
+<div class="p"><!----></div>
+
+<h3>Umwandlung von Typen und gemischte Variablentypen</h3>
+
+<div class="p"><!----></div>
+Es ist wichtig zu wissen, dass alle drei Variablentypen grundsätzlich
+inkompatibel zueinander sind. Daher gibt es die Möglichkeit, Typen umzuwandeln:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+string&nbsp;s;
+float&nbsp;f&nbsp;=&nbsp;42.23;
+/*der&nbsp;Wert&nbsp;42.23&nbsp;von&nbsp;f&nbsp;wird&nbsp;in&nbsp;die
+Ganzzahl&nbsp;42&nbsp;umgewandelt&nbsp;und
+uebergeben*/
+int&nbsp;i&nbsp;=&nbsp;(int)&nbsp;f;
+//42&nbsp;wird&nbsp;zum&nbsp;String&nbsp;"42"
+s&nbsp;=&nbsp;(string)&nbsp;i+"&nbsp;ist&nbsp;die&nbsp;Antwort&nbsp;auf&nbsp;alle&nbsp;Fragen.";
+</pre>
+
+<div class="p"><!----></div>
+ 
+<div class="p"><!----></div>
+Wenn man sich nicht sicher ist, welcher Typ einer Variablen zugewiesen wird, hat
+man zwei Möglichkeiten:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+/*jeder&nbsp;Typ&nbsp;kann&nbsp;m&nbsp;zugewiesen
+werden*/
+mixed&nbsp;m&nbsp;=&nbsp;123;
+m&nbsp;=&nbsp;"abc";
+/*is&nbsp;kann&nbsp;Integer-Werte&nbsp;oder
+Strings&nbsp;speichern*/
+int|string&nbsp;is&nbsp;=&nbsp;123;
+is&nbsp;=&nbsp;"abc";
+</pre>
+
+<div class="p"><!----></div>
+Dies funktioniert übrigens auch mit dem Rückgabetyp und den Parametern einer
+Funktion, wie folgendes komplexeres Beispiel verdeutlicht:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+void&nbsp;main()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;write("Hier&nbsp;gibt&nbsp;die&nbsp;Funktion&nbsp;fast&nbsp;"+rueckgabe()+"&nbsp;zurueck.\n");
+&nbsp;&nbsp;&nbsp;&nbsp;write("Mit&nbsp;Parameter&nbsp;ist&nbsp;die&nbsp;Funktion&nbsp;nicht&nbsp;so&nbsp;geizig&nbsp;und&nbsp;gibt
+&nbsp;&nbsp;&nbsp;&nbsp;"+(string)rueckgabe(42)+"&nbsp;zurueck.\n");
+&nbsp;&nbsp;&nbsp;&nbsp;//"\n"&nbsp;steht&nbsp;uebrigens&nbsp;fuer&nbsp;einen&nbsp;Zeilenumbruch
+}
+
+int|string&nbsp;rueckgabe(int|void&nbsp;parameter)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;//ist&nbsp;parameter&nbsp;void,&nbsp;also&nbsp;null,&nbsp;...
+&nbsp;&nbsp;&nbsp;&nbsp;if(!parameter)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//...gibt&nbsp;die&nbsp;Funktion&nbsp;einen&nbsp;String&nbsp;"nix"&nbsp;zurueck...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;"nix";
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;//Andernfalls...
+&nbsp;&nbsp;&nbsp;&nbsp;else
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//...gibt&nbsp;die&nbsp;Funktion&nbsp;den&nbsp;Wert&nbsp;von&nbsp;parameter&nbsp;zurueck.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;parameter;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-04-listings/pike_parameter.pike">pike_parameter.pike</a></i>
+
+<div class="p"><!----></div>
+Das Ausrufezeichen in den runden Klammern ist einer der logischen
+Operatoren&nbsp;<a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_5.html#5.3">[10]</a>. Um den
+logischen Wert „falsch“ zu repräsentieren, benutzt Pike den Integer-Wert Null;
+alles andere wird als „wahr“ gewertet. Der Operator <b><tt style="font-size: 1.3em;">!</tt></b> prüft, ob der Ausdruck
+falsch, also null ist. Deshalb muss man aufpassen, dass man möglichst nur
+komplexe Datentypen mit diesem Operator auf ihr Vorhandensein prüft, denn
+<b><tt style="font-size: 1.3em;">rueckgabe(0)</tt></b> gibt ebenfalls „nix“ zurück.
+
+<div class="p"><!----></div>
+    Zum ersten Mal ist übrigens die <b><tt style="font-size: 1.3em;">if</tt></b>-Kontrollstruktur von Pike zu sehen, die sich genauso wie in C verhält.
+Hier noch einmal die Syntax:
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+if&nbsp;(Bedingung&nbsp;1)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;//Aktionen&nbsp;bei&nbsp;erfuellter&nbsp;Bedingung&nbsp;1
+}
+//optional,&nbsp;darf&nbsp;mit&nbsp;verschiedenen&nbsp;Bedingungen&nbsp;mehrmals&nbsp;vorkommen
+else&nbsp;if&nbsp;(Bedingung&nbsp;2)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;//Aktionen&nbsp;bei&nbsp;erfuellter&nbsp;Bedingung&nbsp;2
+}
+else&nbsp;&nbsp;//optional
+{
+&nbsp;&nbsp;&nbsp;&nbsp;//alternative&nbsp;Aktion
+}
+</pre>
+
+<div class="p"><!----></div>
+Für größere Bedingungsabfragen benutzt man lieber die
+<b><tt style="font-size: 1.3em;">switch</tt></b>-Anweisung&nbsp;<a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_3.html#3.1.2">[11]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Konstanten, Schleifen und Arrays</h2>
+
+<div class="p"><!----></div>
+Äpfel-und-Birnen-Vergleiche werden in der Welt der Programmiersprachen oft
+gemacht, deshalb sollte man sich daran ein Beispiel nehmen. Da man sich bei
+dieser Tätigkeit auf starre Meinungen verlassen können muss, benötigt man für
+ein solches Beispiel von Anfang an festgelegte, gleichbleibende Werte, also
+Konstanten.
+
+<div class="p"><!----></div>
+Konstanten lassen sich in Pike auf zwei Arten festlegen:
+Der erste Weg ist per
+Präprozessor&nbsp;<a href="http://de.wikipedia.org/wiki/Pr%C3%A4prozessor">[12]</a>.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+#define&nbsp;apfel&nbsp;1
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Der Präprozessor ersetzt hier in diesem Beispiel vor dem Ausführen des
+Codeabschnittes <b><tt style="font-size: 1.3em;">apfel</tt></b> mit 1. Die Dokumentation auf der Webseite rät
+allerdings davon ab&nbsp;<a href="http://pike.ida.liu.se/docs/tutorial/preprocessor/index.html">[9]</a> und
+empfiehlt stattdessen, vom Schlüsselwort <b><tt style="font-size: 1.3em;">constant</tt></b> Gebrauch zu machen: 
+
+    
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+constant&nbsp;apfel&nbsp;=&nbsp;1;
+constant&nbsp;birne&nbsp;=&nbsp;2;
+if&nbsp;(birne&#62;apfel)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;write("Birnen&nbsp;sind&nbsp;ganz&nbsp;klar&nbsp;besser&nbsp;als&nbsp;Aepfel!!\n");
+}
+</pre>
+
+<div class="p"><!----></div>
+Natürlich kann es auch vorkommen, dass man mehrere Werte parallel vergleichen
+möchte, wozu man zwei Arrays und eine Schleife benötigt.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+array&nbsp;(int)&nbsp;aepfel&nbsp;=&nbsp;({1,2,1,1,1});
+array&nbsp;(int)&nbsp;birnen&nbsp;=&nbsp;({3,4,3,3,2});
+for(int&nbsp;i=0;&nbsp;i&lt;5;&nbsp;i++)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(birnen[i]&nbsp;&#62;&nbsp;aepfel[i])
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write("Birne&nbsp;"+(string)(i+1)+"&nbsp;ist&nbsp;besser&nbsp;als&nbsp;Apfel"+(string)(i+1)+".\n");
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-04-listings/pike_vergleich.pike">pike_vergleich.pike</a></i>
+
+<div class="p"><!----></div>
+Zuerst einmal erkennt man, dass <b><tt style="font-size: 1.3em;">for</tt></b>-Schleifen
+genauso aussehen, wie in C.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+for(int&nbsp;i=0;&nbsp;i&lt;n;&nbsp;i++)
+{...}
+</pre>
+
+<div class="p"><!----></div>
+Auffälliger sind die beiden Arrays, welche am Anfang deklariert und mit Werten
+gefüllt werden. Das sieht schematisch so aus:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+array&nbsp;(Typ)&nbsp;name&nbsp;=&nbsp;({Wert1,Wert2,Wert3,...,Wertn});
+</pre>
+
+<div class="p"><!----></div>
+Einen Wert in einem Array erhält man durch <b><tt style="font-size: 1.3em;">name[Stelle]</tt></b>, wobei man aufpassen
+muss, weil die erste Stelle in einem Array immer 0 und nicht 1
+ist. Um ein einzelnes Array zu durchlaufen, bietet es sich an, die
+<b><tt style="font-size: 1.3em;">foreach</tt></b>-Schleife zu benutzen, welche automatisch eine Kopie des jeweiligen
+Speicherinhalts im Array anlegt. Beispiel:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+void&nbsp;main()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;array&nbsp;(string)&nbsp;beispiel&nbsp;=&nbsp;({"Hallo&nbsp;","Welt&nbsp;","!\n"});
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;beispielvariable;
+&nbsp;&nbsp;&nbsp;&nbsp;foreach(beispiel,&nbsp;beispielvariable)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write(beispielvariable);
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-04-listings/pike_array.pike">pike_array.pike</a></i>
+
+<div class="p"><!----></div>
+Arrays besitzen feste Größen, man kann also die Werte nur bearbeiten, ohne
+Weiteres jedoch keinen neuen Wert hinzufügen. Allerdings kann man mehrere
+Arrays zusammenfassen.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+arrayC&nbsp;=&nbsp;arrayA&nbsp;+&nbsp;arrayB;
+</pre>
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Arrays gehören – neben Mappings&nbsp;<a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_4.html#4.2.2">[13]</a> 
+(in Perl auch als Hashes bezeichnet) – zu den durch Zeiger realisierten Typen. Bezogen auf das
+vorherige Beispiel bedeutet dies: Weist man <b><tt style="font-size: 1.3em;">arrayC[0]</tt></b> einen neuen Wert zu,
+betrifft diese Änderung auch <b><tt style="font-size: 1.3em;">arrayA[0]</tt></b>.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+array&nbsp;(int)&nbsp;arrayC;
+//unzugewiesenes&nbsp;Array&nbsp;C
+array&nbsp;(int)&nbsp;arrayA&nbsp;=&nbsp;({1,2,3});
+array&nbsp;(int)&nbsp;arrayB&nbsp;=&nbsp;({4,5,6});
+arrayC&nbsp;=&nbsp;arrayA&nbsp;+&nbsp;arrayB;
+//arrayC&nbsp;enthaelt&nbsp;({1,2,3,4,5,6})
+arrayC[0]&nbsp;=&nbsp;42;
+//arrayC&nbsp;enthaelt&nbsp;({42,2,3,4,5,6})
+//arrayA&nbsp;enthaelt&nbsp;({42,2,3})
+</pre>
+
+<div class="p"><!----></div>
+Mehrdimensionale Arrays, also Arrays bestehend aus Arrays, sind ebenfalls
+möglich. Das folgende, komplette Beispiel gibt den String „b“ aus:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+void&nbsp;main()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;array(array(mixed))&nbsp;c;
+&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;=&nbsp;({({"a","b","c"}),({1,2,3})});
+&nbsp;&nbsp;&nbsp;&nbsp;write(c[0][1]);
+}
+</pre>
+
+<div class="p"><!----></div>
+Um die eine oder andere Unflexibilität von Arrays auszugleichen, stellt Pike zur
+Bearbeitung von Arrays eine Menge an Funktionen zur Verfügung. Darunter befinden
+sich Funktionen zur Neuberechnung, zur Rückgabe der Größe, zum Kopieren der
+Inhalte sowie zur
+Sortierung&nbsp;<a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_4.html#4.2.1">[14]</a>.
+Leider würde es den Rahmen sprengen, alle in dieser kleinen Einführung
+vorzustellen. Ebenso müssen weitere komplexe Datentypen – wie Mappings oder
+Multisets – unerwähnt bleiben.
+
+<div class="p"><!----></div>
+Zwei Schleifentypen, die eins zu eins aus C übernommen worden sind, sind die
+<b><tt style="font-size: 1.3em;">while</tt></b>-Schleife und die <b><tt style="font-size: 1.3em;">do...while</tt></b>-Schleife. Das folgende Schema zeigt das
+Funktionsprinzip der Schleifen:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+while(Bedingung)
+{
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Funktionen,&nbsp;die&nbsp;ausgefuehrt&nbsp;werden,&nbsp;wenn&nbsp;die&nbsp;Bedingung&nbsp;erfuellt&nbsp;ist
+}
+
+do
+{
+&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Funktionen
+}
+while&nbsp;(Bedingung,&nbsp;die&nbsp;fuer&nbsp;den&nbsp;naechsten&nbsp;Durchlauf&nbsp;geprueft&nbsp;wird);
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Das Semikolon hinter der letzten Klammer ist sehr einfach zu vergessen und zu übersehen.
+
+<div class="p"><!----></div>
+Neben dem regulären Durchlaufen der Schleife und dem Verlassen der Funktion
+mittels <b><tt style="font-size: 1.3em;">return wert</tt></b> gibt es noch zwei weitere Möglichkeiten, eine Schleife zu verlassen:
+
+<ul>
+<li> <b><tt style="font-size: 1.3em;">break</tt></b>: Dieser Befehl beendet die Schleife komplett.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">continue</tt></b>: Der aktuelle Lauf wird beendet und der Nächste startet sofort.
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h2>Äpfel und Birnen vergleichen</h2> 
+<div class="p"><!----></div>
+    Pike enthält syntaktische Elemente für die klassenbasierte Objektorientierung,
+d.&nbsp;h., man schreibt eine Klasse, die selber erst einmal keinen
+Speicher benötigt. Erst bei Bedarf erstellt man
+Instanzen&nbsp;<a href="http://de.wikipedia.org/wiki/Objektorientierte_Programmierung#Bezeichnungen">[15]</a>, nutzbare Abbilder der Klasse. Diese werden in Pike als Klon bezeichnet.
+
+<div class="p"><!----></div>
+Um Äpfel und Birnen mit Hilfe von Objekten vergleichen zu können, benötigt man
+also zuerst 
+    
+einmal zwei Klassen, die man außerhalb von anderen Funktionen im
+Quelltext ablegt:
+    
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+class&nbsp;Apfel
+{
+&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;int&nbsp;wert;
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;create(int&nbsp;neuWert)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wert&nbsp;=&nbsp;neuWert;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;faulen()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wert&nbsp;-=2;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;int&nbsp;wertNachsehen()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;wert;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+
+class&nbsp;Birne
+{
+&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;int&nbsp;wert;
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;create(int&nbsp;neuWert)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wert&nbsp;=&nbsp;neuWert;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;faulen()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wert&nbsp;-=3;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;int&nbsp;wertNachsehen()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;wert;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-04-listings/pike_klassen.pike">pike_klassen.pike</a></i>
+
+<div class="p"><!----></div>
+Nun verfügt der Quelltext über zwei fast identische Klassen für Äpfel und
+Birnen. Beide verfügen über ein Attribut <b><tt style="font-size: 1.3em;">wert</tt></b>, welches mit dem Schlüsselwort
+<b><tt style="font-size: 1.3em;">private</tt></b> gegen einen Zugriff von Funktionen außerhalb der Klasse geschützt ist.
+Um die Werte vergleichen zu können, verfügen beide Klassen über die Methode
+<b><tt style="font-size: 1.3em;">wertNachsehen()</tt></b>. Auf diese Methoden kann auch von außerhalb der Klassen
+zugegriffen werden, da sie als <b><tt style="font-size: 1.3em;">public</tt></b> deklariert sind. Ebenso verhält es sich
+mit der Methode <b><tt style="font-size: 1.3em;">faulen()</tt></b>, welche den Wert verringert. Der
+Konstruktor, der in Pike immer <b><tt style="font-size: 1.3em;">create()</tt></b> heißt, dient normalerweise dazu, die
+Attribute einer Instanz mit Startwerten zu versehen. In diesem Beispiel handelt
+es sich bei <b><tt style="font-size: 1.3em;">wert</tt></b> um ein solches, initialisiertes Attribut. Theoretisch könnte man
+zusätzlich einen Destruktor <b><tt style="font-size: 1.3em;">destruct()</tt></b> implementieren.
+
+<div class="p"><!----></div>
+Normalerweise kümmert sich der Garbage Collector um das automatische Aufräumen
+des Speichers, es gibt jedoch auch die Möglichkeit, mit <b><tt style="font-size: 1.3em;">destruct(Objekt)</tt></b> eine
+Instanz manuell aus dem Speicher zu
+werfen&nbsp;<a href="http://pike.ida.liu.se/docs/tutorial/data_types_2/other_types.xml">[16]</a>.
+Außerdem bietet der Garbage Collector selbst bis zur Abschaltung sehr viele
+andere Einstellungsmöglichkeiten, welche unter Umständen die Geschwindigkeit
+erhöhen&nbsp;<a href="http://pike.ida.liu.se/generated/manual/modref/ex/predef_3A_3A/Pike/gc_p
+arameters.html">[17]</a>.
+
+<div class="p"><!----></div>
+    Nun kann man in einer anderen Funktion Instanzen der beiden Klassen erstellen
+und nutzen:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+void&nbsp;main()
+{
+&nbsp;&nbsp;&nbsp;&nbsp;//Erstellen&nbsp;der&nbsp;Instanzen
+&nbsp;&nbsp;&nbsp;&nbsp;Apfel&nbsp;einApfel&nbsp;=&nbsp;Apfel(7);
+&nbsp;&nbsp;&nbsp;&nbsp;Birne&nbsp;eineBirne&nbsp;=&nbsp;Birne(8);
+&nbsp;&nbsp;&nbsp;&nbsp;//ein&nbsp;Vergleich
+&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(einApfel-&#62;wertNachsehen()&#62;eineBirne-&#62;wertNachsehen())
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write("Haha,&nbsp;unmoeglich!\n");
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;if&nbsp;(eineBirne-&#62;wertNachsehen()&#62;einApfel-&#62;wertNachsehen())
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write("Natuerlich&nbsp;sind&nbsp;Birnen&nbsp;immer&nbsp;besser.\n");
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;//die&nbsp;Fruechte&nbsp;gammeln&nbsp;ein&nbsp;Bisschen&nbsp;vor&nbsp;sich&nbsp;hin...
+&nbsp;&nbsp;&nbsp;&nbsp;einApfel-&#62;faulen();
+&nbsp;&nbsp;&nbsp;&nbsp;eineBirne-&#62;faulen();
+&nbsp;&nbsp;&nbsp;&nbsp;if(einApfel-&#62;wertNachsehen()&lt;6||eineBirne-&#62;wertNachsehen()&lt;6)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;write("Die&nbsp;Fliegen&nbsp;kommen&nbsp;schon!&nbsp;Garbage&nbsp;Collector,&nbsp;schmeiss&nbsp;sie&nbsp;weg!\n");
+&nbsp;&nbsp;&nbsp;&nbsp;//Und&nbsp;das&nbsp;tut&nbsp;er&nbsp;dann&nbsp;auch.
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-04-listings/pike_klassen2.pike">pike_klassen2.pike</a></i>
+
+<div class="p"><!----></div>
+    Wie man an diesem Beispiel erkennt, wird die Methode <b><tt style="font-size: 1.3em;">create()</tt></b> nie namentlich
+aufgerufen, stattdessen wird einfach der Name der Klasse verwendet, um eine
+Instanz zu erstellen. Wie bei einer Deklaration eines anderen Datentypen steht
+auch hier der Datentyp vor dem Namen.
+
+<div class="p"><!----></div>
+
+<h3>Vererbung und Polymorphie in Pike</h3>
+
+<div class="p"><!----></div>
+Die beiden in dem vorherigen Beispiel genutzten Klassen sind fast identisch
+aufgebaut: Nur die Methode <b><tt style="font-size: 1.3em;">faulen()</tt></b> unterscheidet sich von Klasse zu Klasse. Es
+ließe sich also viel Platz sparen, wenn man eine Klasse Frucht hätte, deren
+Attribute und Methoden man auf die Klassen Apfel und Birne überträgt:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+class&nbsp;Frucht
+{
+&nbsp;&nbsp;&nbsp;&nbsp;static&nbsp;int&nbsp;wert;
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;create(int&nbsp;neuWert)
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wert&nbsp;=&nbsp;neuWert;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;faulen()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wert&nbsp;-=3;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;int&nbsp;wertNachsehen()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;wert;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-04-listings/pike_klasse_frucht.pike">pike_klasse_frucht.pike</a></i>
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Damit <b><tt style="font-size: 1.3em;">wert</tt></b> auch in den beerbten Klassen verwendet werden kann, muss
+<b><tt style="font-size: 1.3em;">private</tt></b> zu <b><tt style="font-size: 1.3em;">static</tt></b> geändert werden. <b><tt style="font-size: 1.3em;">static</tt></b> hat also in Pike einen anderen Nutzen
+als <b><tt style="font-size: 1.3em;">static</tt></b> in C++.
+
+<div class="p"><!----></div>
+Nun gilt es, die Eigenschaften von Frucht auf die Klassen Apfel und Birne zu
+übertragen. Diese sehen dann folgendermaßen aus:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+class&nbsp;Birne
+{
+&nbsp;&nbsp;&nbsp;&nbsp;inherit&nbsp;Frucht;
+}
+
+class&nbsp;Apfel
+{
+&nbsp;&nbsp;&nbsp;&nbsp;inherit&nbsp;Frucht;
+&nbsp;&nbsp;&nbsp;&nbsp;/*Halt,&nbsp;die&nbsp;Methode&nbsp;faulen()
+&nbsp;&nbsp;&nbsp;&nbsp;muss&nbsp;ueberschrieben&nbsp;werden!*/
+&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;faulen()
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wert&nbsp;-=2;
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-04-listings/pike_vererbung.pike">pike_vererbung.pike</a></i>
+
+<div class="p"><!----></div>
+Dieses Beispiel funktioniert mit der unveränderten Hauptfunktion.
+
+<div class="p"><!----></div>
+
+<h3>Mehrfachvererbung</h3>
+
+<div class="p"><!----></div>
+Pike unterstützt Mehrfachvererbung. Es wird zwar oft davon abgeraten, doch in
+manchen Situation ist es ganz praktisch, eine Klasse mit Attributen und Methoden
+mehrerer anderer Klassen zu beerben.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+class&nbsp;Bipfel
+{
+&nbsp;&nbsp;&nbsp;&nbsp;inherit&nbsp;Apfel;
+&nbsp;&nbsp;&nbsp;&nbsp;inherit&nbsp;Birne;
+}
+</pre>
+
+<div class="p"><!----></div>
+Dies ist nun die Klasse Bipfel, die Krone der Schöpfung. Sie unterscheidet sich
+jedoch nicht von der Klasse Birne. Warum?
+
+<div class="p"><!----></div>
+Oben wurden die Eigenschaften von Birne und Apfel von der
+Klasse Frucht abgeleitet. Zwar verfügt Apfel über eine modifizierte Version der
+Methode <b><tt style="font-size: 1.3em;">faulen()</tt></b>, allerdings steht <b><tt style="font-size: 1.3em;">inherit Apfel</tt></b> über <b><tt style="font-size: 1.3em;">inherit Birne</tt></b>. Die zuvor
+bereits vererbten Eigenschaften werden also durch die namentlich identische,
+nächste Vererbung überschrieben.
+
+<div class="p"><!----></div>
+
+<h2>Module</h2>
+
+<div class="p"><!----></div>
+Da Pike von sich aus wie die meisten Programmiersprachen erstmal wenig kann, gibt
+es natürlich auch eine Möglichkeit, Softwarebibliotheken von außerhalb zu
+nutzen: Die sog. Module – Dateien, die normalerweise auf <b><tt style="font-size: 1.3em;">.pmod</tt></b> enden.
+
+<div class="p"><!----></div>
+Module können Anbindungen an C/C++-Bibliotheken, aber auch normale Pikeroutinen
+enthalten, da sie ebenfalls zur Strukturierung des Programmes gedacht sind.
+
+<div class="p"><!----></div>
+Will man ein Modul – z.&nbsp;B. Regexp, ein Modul für reguläre Ausdrücke –
+nutzen, welches im Standardverzeichnis für Module
+liegt&nbsp;<a href="http://pike.ida.liu.se/generated/manual/modref/ex/predef_3A_3A/Regexp.html">[18]</a>, 
+kann man dieses mit der Zeile <b><tt style="font-size: 1.3em;">import Regexp;</tt></b> in das Programm einbinden.
+
+<div class="p"><!----></div>
+Um Module einzubinden, welche Teil des Programmes sind und lokal vorliegen, muss
+man das Modul als Pfadangabe in Anführungszeichen angeben, wobei der Punkt für
+das aktuelle Verzeichnis steht. Dies könnte dann so aussehen:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+import&nbsp;"./Unterordner/meinModul";
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Außerdem gibt es die Möglichkeit, ein Verzeichnis zu einem Modul
+umzufunktionieren, indem man es z.&nbsp;B. von <b><tt style="font-size: 1.3em;">meinOrdnermodul</tt></b> zu <b><tt style="font-size: 1.3em;">meinOrdnermodul.pmod</tt></b>
+umbenennt. Alle Funktionen, welche sich in den darin befindlichen <b><tt style="font-size: 1.3em;">.pike</tt></b>- oder
+<b><tt style="font-size: 1.3em;">.pmod</tt></b>-Dateien befinden, können über dieses Modul genutzt
+werden&nbsp;<a href="http://pike.ida.liu.se/generated/manual/ref/chapter_19.html">[19]</a>.
+
+<div class="p"><!----></div>
+Zu den Modulen im Allgemeinen ist zu sagen, dass sie der schwache Punkt von Pike
+sind, was sicher dem Bekanntheitsgrad der Sprache zuzuschreiben ist. Obwohl sich
+die Situation schon deutlich gebessert hat und sogar ein Modul für DVB
+existiert, gibt es – verglichen mit Perl oder Python – nur wenige
+Erweiterungen. Webentwickler mit eigenem Server mögen unter Umständen jetzt
+schon glücklich werden, aber z.&nbsp;B. für Spieleentwickler gibt es laut
+Dokumentation nur eine halbherzige Anbindung an SDL.
+
+<div class="p"><!----></div>
+Wer also etwas exotischere Softwarebibliotheken nutzen möchte, wird sein eigenes
+Modul erstellen müssen. Auf der Homepage gibt es dazu
+Beispiele&nbsp;<a href="http://pike.ida.liu.se/projects/docs/cmods/downloads.xml">[20]</a>; sicherlich
+ist es einfacher, SWIG&nbsp;<a href="http://swig.org/">[21]</a> zu benutzen, welches nicht nur
+C-Bibliotheken, sondern auch komplexen C++-Code an verschiedene
+Programmiersprachen anbinden kann.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+<div class="p"><!----></div>
+Natürlich erfasst dieser Artikel nicht alle Möglichkeiten und Eigenschaften von
+Pike. Es bleibt zu hoffen, dass er den Lesern einen Eindruck geben konnte, wie
+Pike sich „anfühlt“.
+
+<div class="p"><!----></div>
+Bestimmt gibt es viele Leser, die sich denken „Das und das fand ich in [anderer
+Programmiersprache mit C-ähnlicher Syntax] schon grauenvoll.“ oder „Nicht modern
+genug!“. Außerdem mag sich nicht jeder mit der an einigen Stellen
+unzureichenden und nicht immer aktuellen Dokumentation rumschlagen.
+
+<div class="p"><!----></div>
+Wer sich jedoch weiter in die Programmiersprache einarbeiten will, dem sei nicht
+nur die offizielle Dokumentation&nbsp;<a href="http://pike.ida.liu.se/docs/">[22]</a> empfohlen, sondern
+ebenfalls die Homepage von Fredrik Hübinette&nbsp;<a href="http://fredrik.hubbe.net/pike/">[23]</a>, wo
+es das „Pike Manual“ zum Download gibt. Dieses Dokument ist nicht nur eine
+Referenz zu Pike, es enthält auch nützliche Beispiele; so zum Beispiel die
+Implementierung eines kleinen Webservers und – leider etwas veraltet – die
+Dokumentation verschiedener, mitgelieferter Softwarebibliotheken.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://en.wikipedia.org/wiki/Pike_(programming_language)"><tt style="font-size: 1.3em;">http://en.wikipedia.org/wiki/Pike_(programming_language)</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://pike.ida.liu.se/generated/manual/ref/chapter_1.html#5"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/generated/manual/ref/chapter_1.html#5</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.roxen.com"><tt style="font-size: 1.3em;">http://www.roxen.com</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://www.caudium.net/"><tt style="font-size: 1.3em;">http://www.caudium.net/</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://de.selfhtml.org/intro/technologien/php.htm"><tt style="font-size: 1.3em;">http://de.selfhtml.org/intro/technologien/php.htm</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://www.open-steam.org/"><tt style="font-size: 1.3em;">http://www.open-steam.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://www.himanshurockat.com/2010/04/opera-mini-server-must-know-where-is.html"><tt style="font-size: 1.3em;">http://www.himanshurockat.com/2010/04/opera-mini-server-must-know-where-is.html</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://pike.ida.liu.se/download/"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/download/</tt></a><br />
+
+<div class="p"><!----></div>
+[9] <a href="http://pike.ida.liu.se/docs/tutorial/preprocessor/index.html"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/docs/tutorial/preprocessor/index.html</tt></a><br />
+
+<div class="p"><!----></div>
+[10] <a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_5.html#5.3"><tt style="font-size: 1.3em;">http://fredrik.hubbe.net/pike/tutorial/tutorial_5.html#5.3</tt></a><br />
+
+<div class="p"><!----></div>
+[11] <a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_3.html#3.1.2"><tt style="font-size: 1.3em;">http://fredrik.hubbe.net/pike/tutorial/tutorial_3.html#3.1.2</tt></a><br />
+
+<div class="p"><!----></div>
+[12] <a href="http://de.wikipedia.org/wiki/Pr%C3%A4prozessor"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/Pr%C3%A4prozessor</tt></a><br />
+
+<div class="p"><!----></div>
+[13] <a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_4.html#4.2.2"><tt style="font-size: 1.3em;">http://fredrik.hubbe.net/pike/tutorial/tutorial_4.html#4.2.2</tt></a><br />
+
+<div class="p"><!----></div>
+[14] <a href="http://fredrik.hubbe.net/pike/tutorial/tutorial_4.html#4.2.1"><tt style="font-size: 1.3em;">http://fredrik.hubbe.net/pike/tutorial/tutorial_4.html#4.2.1</tt></a><br />
+
+<div class="p"><!----></div>
+[15] <a href="http://pike.ida.liu.se/docs/tutorial/data_types_2/other_types.xml"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/docs/tutorial/data_types_2/other_types.xml</tt></a><br />
+
+<div class="p"><!----></div>
+[16] <a href="http://pike.ida.liu.se/generated/manual/modref/ex/predef_3A_3A/Regexp.html"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/generated/manual/modref/ex/predef_3A_3A/Regexp.html</tt></a><br />
+
+<div class="p"><!----></div>
+[17] <a href="http://pike.ida.liu.se/generated/manual/ref/chapter_19.html"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/generated/manual/ref/chapter_19.html</tt></a><br />
+
+<div class="p"><!----></div>
+[18] <a href="http://pike.ida.liu.se/projects/docs/cmods/downloads.xml"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/projects/docs/cmods/downloads.xml</tt></a><br />
+
+<div class="p"><!----></div>
+[19] <a href="http://swig.org/"><tt style="font-size: 1.3em;">http://swig.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[20] <a href="http://pike.ida.liu.se/docs/"><tt style="font-size: 1.3em;">http://pike.ida.liu.se/docs/</tt></a><br />
+
+<div class="p"><!----></div>
+[21] <a href="http://fredrik.hubbe.net/pike/"><tt style="font-size: 1.3em;">http://fredrik.hubbe.net/pike/</tt></a><br />
+
+<div class="p"><!----></div>
+    
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Clemens Hackenberg</b>
+entdeckte die Webseite der Programmiersprache Pike zufällig
+beim Surfen im Internet. Sein Motiv für diesen Artikel war das Fehlen jeglicher
+deutschsprachiger Dokumentation zu diesem Thema.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=Programmiersprache Pike#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+            
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_spacechem">SpaceChem – Atome im Weltall</a><a name="11_04_spacechem">
+</a></font></h1>von Dominik Wagenführ        
+<div class="p"><!----></div>
+<b>C</b><b>hemie zählt wahrscheinlich nur bei den wenigsten Menschen zum
+Lieblingsfach und kommt vermutlich gleich nach Mathematik.
+<i>SpaceChem</i>&nbsp;<a href="http://www.spacechemthegame.com/">[1]</a> versucht dennoch
+mit diesem Thema die Spieler zu begeistern – und das, ohne dass man
+es wirklich merkt.</b>
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Der Artikel basiert allein auf der Demo von <i>SpaceChem</i> und
+nicht auf der Vollversion. Insofern wird nur auf die ersten Level
+des Spiels eingegangen.
+
+<div class="p"><!----></div>
+
+<h2>Willkommen auf Sernimir</h2>
+
+<div class="p"><!----></div>
+<i>SpaceChem</i> wurde im Jahr 2745 gegründet und war Teil von Vossler
+Industries. Nach der Abspaltung von der Muttergesellschaft konzentrierte
+sich <i>SpaceChem</i> auf die Entwicklung.
+
+<div class="p"><!----></div>
+Als junger Lehrling ist es die Aufgabe des Spielers, die Ausbildung bei
+<i>SpaceChem</i> auf den Planeten Sernimir II und III zu absolvieren, bevor es
+dann mit der ersten richtigen Arbeit auf Danopth weitergeht.
+
+<div class="p"><!----></div>
+Die Geschichte wird im Spiel vor manchen Level durch etwas (englischen)
+Text und kleine Zeichnungen forterzählt. Für das Spiel selbst ist sie
+aber von geringer Bedeutung.
+
+<div class="p"><!----></div>
+Wichtiger sind dagegen die Trainingsunterlagen, die man während des
+Spiels aufrufen kann. Diese erklären die Funktion des gesamten
+chemischen Prozesses, den man erlernen muss.
+
+<div class="p"><!----></div>
+    <img border="0" src="freiesMagazin-2011-04-bilder-Dateien/spacechem-training.png" /><br /><em>Im Training erfährt man, wie chemische Prozesse funktionieren.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Wo ist Waldo?</h2>
+
+<div class="p"><!----></div>
+Die ersten Objekte, denen man im Spiel begegnet, sind sogenannte
+Waldos. Diese runden Träger können sich an einzelne Atome oder ganze
+Moleküle binden und diese in einem Reaktor transportieren.
+
+<div class="p"><!----></div>
+Der Reaktor selbst hat zwei Eingänge, Alpha und Beta, und zwei
+Ausgänge, Psi und Omega. Über die Eingänge werden Atome oder ganze
+Moleküle angeliefert, die man am linken Bildrand sieht. 
+    
+Diese
+Anlieferungen müssen von den Waldos entgegengenommen und
+weiterverarbeitet werden. In der Regel ist es die Aufgabe des Spielers, 
+die beiden angelieferten Elemente zu verbinden oder wieder aufzutrennen.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/spacechem-waldos1.png" /><br /><em>Die Waldos können Atome greifen oder fallen lassen.</em><br />
+
+<div class="p"><!----></div>
+Pro Reaktor gibt es zwei Waldos: einen in Blau und einen in Rot.
+Deren Bahn kann durch Richtungspfeile beeinflusst werden, sodass
+diese quer durch den ganzen Reaktor laufen und sowohl die beiden
+Eingangs- als auch die beiden Ausgangsbereiche erreichen können.
+Zusätzlich kann man jede Bahn mit einfachen Befehlen versehen, die
+z.&nbsp;B. ein Eingangselement erzeugen, dieses greifen oder loslassen oder im Ausgangsbereich wieder
+aus dem Reaktor entlassen können.
+
+<div class="p"><!----></div>
+Wichtig sind bei diesen Aufgaben immer die chemischen Verbindungen
+zwischen den Elementen. So gibt es in der Mitte des Reaktors ein 2&times;2
+großes Feld, auf dem man Verbindungen erzeugen oder auftrennen kann.
+
+<div class="p"><!----></div>
+    Aber auch wenn die Waldos quer durch den Reaktor laufen können,
+sollte man vermeiden, dass beim Transport Atome aneinanderstoßen.
+Dies führt sofort zu einer chemischen Reaktion und lässt den Ablauf
+scheitern.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/spacechem-waldos2.png" /><br /><em>Formaldehyd zu produzieren ist eine der einfachen Aufgaben.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Benzol und Acetonitril</h2>
+
+<div class="p"><!----></div>
+Natürlich lernt man beim Erzeugen der Moleküle und Verbindung
+auch etwas über Chemie, merken kann man sich die ganzen Bezeichnungen
+und vor allem den chemischen Aufbau aber sicherlich nicht.
+Glücklicherweise ist es aber auch nicht wichtig, zu 
+
+wissen, dass die
+    
+chemische Formel für Acetonitril CH<sub>3</sub>CN ist. Man muss anhand des
+aufgemalten Moleküls nur wissen, dass man drei H-Atome (Wasserstoff),
+zwei C-Atome (Kohlstoff) und ein N-Atom (Stickstoff) benötigt und wie
+viele Verbindungen es zwischen diesen jeweils gibt.
+
+<div class="p"><!----></div>
+Wer dennoch etwas mehr über die Elemente lernen will, findet links
+unten ein klickbares „<em>H</em>“, welches einen zum Periodensystem der
+Elemente führt. Bewegt man die Maus über ein Element, lernt man
+dessen Namen, die zugehörige Abkürzung, die Atomzahl und – was für
+das Spiel am wichtigsten ist – die Anzahl der Verbindungen, die das
+Element mit anderen Elementen eingehen kann, kennen.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/spacechem-reaktor1.jpg" /><br /><em>Der Reaktor produziert fleißig Chlorwasserstoff.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Kettenreaktion</h2>
+
+<div class="p"><!----></div>
+In den einzelnen Levels gibt es verschiedene Aufgaben zu erledigen.
+Am Anfang steht meist die Forschung („Research“), bei der man das
+Innere eines Reaktors kontrollieren, d.&nbsp;h. die Waldos steuern muss.
+Später tritt man dann aber auch in die Produktionsphase („Production“)
+ein. Hier gilt es, die Ausgabe von einem oder 
+
+mehreren Vorratsbehältern,
+die Elemente speichern können, in einen Reaktor zu leiten, der dann
+wiederum die Ausgabe an ein Frachtschiff weitergibt.
+
+<div class="p"><!----></div>
+Die Verbindung zwischen diesen Stationen geschieht durch Röhren,
+indem man den mit einem Plus markierten Ausgang eines Objekts mit der
+Maus anfasst und dann bis zum Ziel einen Weg zieht. Die Pipelines
+dürfen sich auch kreuzen.
+
+<div class="p"><!----></div>
+Wenn die Verbindung steht, gilt es noch, den Reaktor zu
+kontrollieren. Durch Doppelklick auf den Reaktor landet man in
+diesem und kann, wie gewohnt, die Waldos steuern, um die vom
+Frachtschiff gewünschte Fracht zu erzeugen. Das Frachtschiff gibt
+dabei, wenn man mit der Maus darüber fährt, zusätzlich an, wie viele
+Elemente es benötigt und ob diese in einer speziellen Form oder
+Ausrichtung vorliegen müssen.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/spacechem-reaktion.png" /><br /><em>Zwei Atome gehen eine Verbindung ein.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Atomare Installation</h2>
+
+<div class="p"><!----></div>
+Das Spiel bzw. die kostenlose Demo wurde von Zachtronics Industries
+entwickelt und steht auf deren Webseite (bei der Vollversion
+natürlich erst nach dem Kauf) zum Download
+bereit&nbsp;<a href="http://store.zachtronicsindustries.com/product/spacechem">[2]</a>.
+Beides gibt es für Windows (auch über Steam), Mac OS 10 (ab 10.5),
+Ubuntu (ab 10.04) und andere Linux-Distributionen (als Archiv).
+Dabei haben die Entwickler sogar an eine eigene Version für
+64-Bit-Systeme gedacht. Über das Deb-Paket installiert sich die Demo automatisch nach
+<b><tt style="font-size: 1.3em;">/opt/zachtronicsindustries/spacechem-demo</tt></b>.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Wer das Archiv bzw. das Deb-Paket lieber selbst entpacken will, kann
+dies natürlich tun, für die Ausführung von <i>SpaceChem</i> werden aber
+einige SDL-Pakete sowie Mono vorausgesetzt, die man zuvor
+installieren muss. Die Anleitung auf der Webseite ist dabei aber vorbildlich und erklärt auch die manuelle Installation recht
+verständlich.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/spacechem-reaktor2.jpg" /><br /><em>C plus 2 H plus O ergibt Formaldehyd.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Atome der Welt: Vereinigt Euch!</h2>
+
+<div class="p"><!----></div>
+<i>SpaceChem</i> als Lernspiel zu bezeichnen, wäre etwas übertrieben,
+dennoch wird versucht, spielerisch die chemischen Prozesse
+begreifbar zu machen, ohne dass man es merkt. Der spielerische Reiz
+liegt dabei natürlich im Finden einer Lösung, um das Frachtschiff
+entsprechend zu
+    
+ bedienen. Danach überlegt man aber manchmal trotzdem
+weiter, wie man die Produktionskette noch optimieren könnte. So wird
+zu jedem Level gespeichert, wie viele Durchläufe („Elapsed Cycles“),
+wie viele Reaktoren und wie viele Befehle („Symbols“) benutzt
+wurden. Neben dem Vergleich mit anderen „Entwicklern“ will man aber
+vor allem sein eigenes Ergebnis immer noch etwas verbessern. Daneben
+gibt es noch eine Liste mit Errungenschaften („Achievements“), die
+man im Spiel erreichen kann und die dazu anregen sollen, sich besonders
+anzustrengen.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-04-bilder-Dateien/spacechem-danopth.jpg" /><br /><em>Pro Planet gibt es einige Level zu absolvieren.</em><br />
+
+<div class="p"><!----></div>
+Die Knobelei macht sehr viel Spaß und da 
+    
+es keinerlei Zeitdruck
+gibt, kann man sich in Ruhe jeder Aufgabe widmen. Die im Hintergrund
+laufende Musik von Evan Le Ny unterhält einen dabei sehr angenehm
+und klingt schon fast wie die Komposition aus einem Hollywoodfilm.
+Wer will, kann sich diese sogar einfach so anhören, da die Titel im
+OGG-Format im Ordner <b><tt style="font-size: 1.3em;">/opt/zachtronicsindustries/spacechem-demo/music</tt></b>
+bzw. im Archiv einzeln zu finden sind.
+
+<div class="p"><!----></div>
+Die Vollversion von <i>SpaceChem</i> selbst kostet 15 Euro und bietet
+vermutlich neun Planeten mit je sechs oder mehr Aufgaben. Da nur
+die Demo zum Test vorlag bzw. das Ende der Demo noch nicht erreicht
+wurde, kann das nicht genau gesagt werden; laut Webseite sind es aber
+über fünfzig Level. Für den Preis erhält man einige Stunden Knobel-
+und Spielspaß, der sich auch für die kurze Pause zwischendurch lohnt.
+Als „Bonus“ kann man das gekaufte Spiel dann auch unter jedem seiner
+Betriebssysteme installieren und ist nicht zwingend an ein System
+gebunden. DRM gibt es keines und die Bezahlung kann über PayPal oder
+Kreditkarte abgewickelt werden.
+
+<div class="p"><!----></div>
+Schade ist eigentlich nur, dass es noch keine deutsche Übersetzung
+gibt, denn vor allem bei der Einleitung ist es hilfreich, wenn man
+versteht, was der Computer einem gerade erklären will.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.spacechemthegame.com/"><tt style="font-size: 1.3em;">http://www.spacechemthegame.com/</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://store.zachtronicsindustries.com/product/spacechem"><tt style="font-size: 1.3em;">http://store.zachtronicsindustries.com/product/spacechem</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+spielt sehr gerne Knobelspiele und freut sich über jede native
+Umsetzung, die unter Linux erscheint.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=SpaceChem#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+            
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_html5">Rezension: Durchstarten mit HTML5</a><a name="11_04_html5">
+</a></font></h1>von Hans-Joachim Baader        <b>D</b><b>ie wichtigsten Browser auf dem Markt bieten neue ominöse
+Funktionalitäten an, die deutlich über das bisherige HTML4
+hinausgehen. Diese gehören zu dem, was unter dem Namen HTML5 als
+Standardentwurf vorliegt. Was vorhanden ist, kann aber heute schon
+genutzt werden.</b>
+
+<div class="p"><!----></div>
+    <b>Redaktioneller Hinweis:</b> <i>„Durchstarten mit HTML5“ erschien erstmals bei
+Pro-Linux&nbsp;<a href="http://www.pro-linux.de/artikel/2/1491/durchstarten-mit-html5.html">[1]</a>.</i>
+
+<div class="p"><!----></div>
+
+<h2>Vorwort</h2>
+
+<div class="p"><!----></div>
+Immer mehr ist von HTML5 als Nachfolger von HTML4 die Rede. Bekanntlich wird
+die Standardisierung von HTML5 erst in einigen Jahren abgeschlossen
+sein. Warum sollten sich Web-Entwickler also jetzt schon damit
+auseinandersetzen? Die Antwort ist klar: Weil die Entwicklung von
+HTML schon immer der Standardisierung vorausgeeilt ist. In der
+Erkenntnis, dass es unmöglich ist, einen HTML5-Standard durch ein
+Gremium zu diktieren, hat die 
+WHATWG
+HTML5 zum „lebenden“
+Standard&nbsp;<a href="http://www.pro-linux.de/news/1/16625/aus-html5-wird-html.html">[2]</a>
+erklärt. Letztendlich definiert der Standard im Nachhinein das, was
+die Browser-Hersteller implementieren. 
+<div class="p"><!----></div>
+Daraus folgt, dass Web-Entwickler HTML5 ab sofort nutzen können. 
+Sie müssen allerdings immer
+berücksichtigen, dass nicht jeder Browser jedes Feature
+implementiert hat, und dass sich das mit jeder Version ändern kann.
+Folglich muss die Verfügbarkeit eines Features immer abgefragt
+werden, und für ältere Browser müssen Alternativen bereitgestellt
+werden.
+
+<div class="p"><!----></div>
+Von Mark
+Pilgrim stammt das, im O'Reilly-Verlag erschienene, Buch „Durchstarten
+mit HTML5”. Er ist für seinen Arbeitgeber Google  
+im HTML5-Standardisierungskomitee aktiv.
+Auch als Autor mehrerer Bücher ist er mittlerweile in
+Erscheinung getreten. Sein neuestes Werk erschien bereits 2010 unter dem Originaltitel „Dive into HTML5” in
+den USA. Nach Pilgrims eigenen
+Angaben&nbsp;<a href="http://diveintomark.org/archives/2011/01/09/dive-into-2010">[3]</a>
+verkaufte sich das Buch so gut, dass es schon nach kurzer Zeit die
+Produktionskosten hereingeholt hatte. Für ein Buch, das in voller
+Länge unter einer wirklich freien Lizenz online
+bereitsteht&nbsp;<a href="http://diveintohtml5.org/">[4]</a>, ist das bemerkenswert.
+
+<div class="p"><!----></div>
+
+<h2>Das Buch</h2>
+
+<div class="p"><!----></div>
+„Durchstarten mit HTML5“ besteht aus zehn Kapiteln. Jedes Kapitel
+ist mit durchschnittlich 20&nbsp;Seiten vergleichsweise kurz. Kapitel&nbsp;1
+„Wie wir an diesen Punkt gelangt sind” betont, wie wichtig
+MIME-Typen für HTML einschließlich HTML5 sind und versucht mit
+Abschnitten wie „Alles, was Sie über XHTML wissen, ist falsch“ zu
+punkten.
+
+<div class="p"><!----></div>
+Kapitel&nbsp;2 „HTML5-Funktionen“ widmet sich der Erkennung der, von den
+Browsern bereitgestellten, Features von HTML5 und präsentiert eine
+kleine JavaScript-Bibliothek, die das erleichtern kann. Ihr Einsatz
+ist nicht unbedingt nötig, da die jeweiligen Abfragen ohnehin sehr
+simpel sind (meistens Einzeiler).
+
+<div class="p"><!----></div>
+Kapitel&nbsp;3 „Was all das bedeutet“ erläutert die neuen semantischen
+Tags von HTML5. Das nächste Kapitel „Zeichenstunde“ ist nur einem
+einzigen Tag gewidmet, dem canvas-Element. Um dieses zu nutzen, muss
+man auf die zugehörige JavaScript-API zugreifen. Zwei weitere neue
+Elemente sind audio und video. Um diese geht es im Kapitel&nbsp;5 „Video
+im Web“. Dieses erläutert aber viel mehr die Grundlagen bzw. das
+derzeitige Durcheinander bei Videos im Web als die eigentlichen
+Tags. Das mag daran liegen, dass es zu den Tags nicht so viel zu
+sagen gibt. Stattdessen beschreibt der Autor auch die Kodierung von
+Ogg Theora-, H.264- und WebM-Videos und zeigt zum Schluss, wie man
+diese in einem Video-Tag zusammen mit Flash als Alternative
+kombiniert, so dass alle Browser abgedeckt sind. Die umfangreiche
+JavaScript-API der audio- und video-Tags wird dagegen gar nicht
+erwähnt. 
+<div class="p"><!----></div>
+Die folgenden drei Kapitel beschäftigen sich ausschließlich mit
+neuen JavaScript-APIs, die ebenfalls zu HTML5 gerechnet werden. Die
+neue Geolocation-API ist Gegenstand von Kapitel&nbsp;6 „Sie befinden sich
+hier (alle anderen auch)“. Es weist auf die Möglichkeiten, aber auch
+auf die möglichen Datenschutzprobleme hin, und wie die Browser das
+behandeln können. Kapitel&nbsp;7 „Lokaler Speicher für Webanwendungen –
+gestern, heute und morgen“ ist eine kleine Tour durch die Geschichte
+von lokalen Speichermöglichkeiten für Anwendungen. Der in HTML5
+kommende Speicher besteht nur aus Schlüssel- und Wert-Paaren. Über
+die Sicherheit dieser APIs sagt der Autor leider nichts; immerhin
+werden die Daten nicht zu Web-Servern übertragen (außer explizit
+durch JavaScript-Code). Über diesen einfachen Speicher hinaus sind
+weitere Methoden im Gespräch, bis hin zu SQL-Schnittstellen. Mozilla
+hat allerdings bereits erklärt, dieses „Web SQL“ nie zu
+unterstützen. Vielleicht einigen sich die Hersteller in Zukunft auf
+eine Objektdatenbank („Indexed-DB“); das ist allerdings noch Zukunft.
+
+<div class="p"><!----></div>
+Kapitel&nbsp;8 „Gehen wir offline“ beschreibt Offline-Anwendungen.
+Anwendungen, die auch ausführbar bleiben wollen, wenn sie mit keinem
+Server verbunden sind, müssen zum einen deklarieren, welche Dateien
+der Browser vorab laden soll. Zum anderen müssen sie geänderte Daten
+zwischenspeichern (wozu der in Kapitel&nbsp;7 angesprochene lokale
+Speicher herhalten muss) und später mit dem Server synchronisieren.
+
+<div class="p"><!----></div>
+In Kapitel&nbsp;9 „Formularwahn“ geht es zurück zu Markup, hier kann man
+gegenüber dem alten HTML sogar JavaScript-Code einsparen, da es eine
+Menge neuer Formularfeldtypen gibt. Das Buch schließt mit Kapitel&nbsp;10
+„Mehr Semantik fürs Web“, in dem die sogenannten Mikrodaten
+vorgestellt werden. Es geht darum, dem Markup semantische
+Informationen hinzuzufügen, die sich mit HTML5 nicht ausdrücken
+lassen. Hierzu gab es bereits konkurrierende Entwürfe von
+Mikroformaten&nbsp;<a href="http://microformats.org/">[5]</a> und
+RDFa&nbsp;<a href="http://www.w3.org/TR/rdfa-syntax/">[6]</a>. HTML5 geht mit
+Mikrodaten&nbsp;<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#microdata">[7]</a>
+einen eigenen Weg, jedoch können offenbar die Definitionen von
+microformats.org genutzt werden. Diese sind informell beschrieben.
+Hier wäre noch interessant gewesen,
+ob eine automatisierte
+Bearbeitung in allgemeiner Form durch Browser und Web-Clients
+möglich ist. Wahrscheinlich ist das nicht der Fall und die
+Information kann nur genutzt werden, wenn das Wissen über das Format
+in die Software einprogrammiert ist.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+<div class="p"><!----></div>
+„Durchstarten mit HTML5“ ist vor allem für Leute geeignet, die eine
+kurze, schnell zu überfliegende Übersicht über HTML5 wollen. Wer
+eine Referenz sucht, dürfte mit „HTML5 – Webseiten innovativ und
+zukunftssicher”&nbsp;<a href="http://www.pro-linux.de/artikel/2/1454/html5-webseiten-innovativ-und-zukunftssicher.html">[8]</a>
+eher glücklich werden, das gut den doppelten Umfang aufweist und die
+neuen APIs viel vollständiger darstellt.
+
+<div class="p"><!----></div>
+Zum Schmökern ist vor allem die englischsprachige Version ein
+Genuss, dazu tragen auch die doppeldeutigen Titel und der lockere
+Stil bei. Etwas störend ist hierbei, dass bestimmte Passagen öfter
+fast wörtlich wiederholt werden, unter anderem in Kapitel&nbsp;2. Diese
+hätten durchaus mit Verweis auf frühere Absätze vermieden werden
+können. Der deutschen Übersetzung merkt man an, dass es eine
+Übersetzung ist – einige Passagen hätte ein deutscher Autor wohl
+anders formuliert, aber insgesamt ist sie gelungen. 
+<div class="p"><!----></div>
+Wer sich nicht daran stört, dass „Durchstarten mit HTML5“ keine
+vollständige Darstellung von HTML5 ist, was aber vor der
+Fertigstellung des Standards auch kaum möglich ist, dem sei dieses
+Buch empfohlen. Weniger kann schließlich auch einmal mehr sein.
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="2" align="center"><font size="+0"><b>Buchinformationen</b></font></td></tr>
+<tr><td width="43"><b>Titel</b> </td><td width="237">Durchstarten mit HTML5 </td></tr>
+<tr><td width="43"><b>Autor</b> </td><td width="237">Mark Pilgrim </td></tr>
+<tr><td width="43"><b>Verlag</b> </td><td width="237">O'Reilly, 2011 </td></tr>
+<tr><td width="43"><b>Umfang</b> </td><td width="237">232 Seiten </td></tr>
+<tr><td width="43"><b>ISBN</b> </td><td width="237">978-3-89721-571-9 </td></tr>
+<tr><td width="43"><b>Preis</b> </td><td width="237">29,90 EUR </td></tr>
+<tr><td width="43">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+ [1] <a href="http://www.pro-linux.de/artikel/2/1491/durchstarten-mit-html5.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/artikel/2/1491/durchstarten-mit-html5.html</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.pro-linux.de/news/1/16625/aus-html5-wird-html.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/16625/aus-html5-wird-html.html</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://diveintomark.org/archives/2011/01/09/dive-into-2010"><tt style="font-size: 1.3em;">http://diveintomark.org/archives/2011/01/09/dive-into-2010</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://diveintohtml5.org/"><tt style="font-size: 1.3em;">http://diveintohtml5.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://microformats.org/"><tt style="font-size: 1.3em;">http://microformats.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://www.w3.org/TR/rdfa-syntax/"><tt style="font-size: 1.3em;">http://www.w3.org/TR/rdfa-syntax/</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#microdata"><tt style="font-size: 1.3em;">http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#microdata</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://www.pro-linux.de/artikel/2/1454/html5-webseiten-innovativ-und-zukunftssicher.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/artikel/2/1454/html5-webseiten-innovativ-und-zukunftssicher.html</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Hans-Joachim Baader</b>&nbsp;(<a href="http://www.pro-linux.de">Webseite</a>)
+befasst sich seit 1993 mit Linux. 1994 schloss
+er sein Informatikstudium erfolgreich ab, machte die
+Softwareentwicklung zum Beruf und ist einer der Betreiber
+von Pro-Linux.de.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=Durchstarten mit HTML5#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_04_essential_sqlalchemy">Rezension: Essential SQLAlchemy</a><a name="11_04_essential_sqlalchemy">
+</a></font></h1>von Jochen Schnelle        <b>S</b><b>QLAlchemy&nbsp;<a href="http://www.sqlalchemy.org/">[1]</a> ist eine universelle
+Schnittstelle für Python zu relationalen Datenbanken wie z.&nbsp;B.
+MySQL&nbsp;<a href="http://www.mysql.de/">[2]</a>, SQLite&nbsp;<a href="http://www.sqlite.org/">[3]</a>
+oder PostgreSQL&nbsp;<a href="http://www.postgresql.de/">[4]</a>. Es ist extrem mächtig
+und entsprechend umfangreich. Das Buch hat zum Ziel, Programmierern
+die Nutzung von SQLAlchemy näher zu bringen. Dabei will es sich
+gleichermaßen an Neueinsteiger als auch an fortgeschrittene
+Programmierer richten.</b>
+
+<div class="p"><!----></div>
+Hält man das Buch in den Händen, so fällt auf, dass es nicht gerade
+umfangreich ist. Es umfasst rund 200 Seiten, das Format ist etwas
+größer als A5. Da drängt sich die Frage auf, welche Vorteile das
+Buch gegenüber der offiziellen
+Dokumentation&nbsp;<a href="http://www.sqlalchemy.org/docs/">[5]</a> haben
+könnte. Diese ist mit rund 180 gedruckten A4-Seiten ähnlich
+umfangreich, allerdings ist davon etwas mehr als die Hälfte die
+API-Referenz. Nichtsdestotrotz ist die Dokumentation frei
+verfügbar, unter anderem auch in einer druckfreundlichen PDF-Variante.
+
+<div class="p"><!----></div>
+Im direkten Vergleich wählt der Autor von „Essential SQLAlchemy“,
+Rick Copeland, jedoch eine andere Strukturierung als die Dokumentation.
+Das Buch beginnt mit einer rund zwanzigseitigen allgemeinen Einführung zu
+SQLAlchemy, gefolgt von einem weiteren zwanzigseitigen Tutorial, welches
+geschickt im Schnelldurchgang den ORM (Object Relational
+Mapper&nbsp;<a href="http://de.wikipedia.org/wiki/Objektrelationale_Abbildung">[6]</a>),
+eine der Kernkomponenten des Programms, erläutert. Die folgenden sechs
+Kapitel bauen dann systematisch aufeinander auf, beginnend bei der
+Datenbankanbindung über Datentypen und Datenbankoperationen hin zur
+detaillierten Beschreibung des ORM, inklusive fortgeschrittener
+Themen wie Objektvererbung auf ORM-Ebene. Die letzten drei Kapitel
+beschreiben in SQLAlchemy enthaltene Erweiterungen wie z.&nbsp;B.
+SQLSoup&nbsp;<a href="http://www.sqlalchemy.org/docs/orm/extensions/sqlsoup.html">[7]</a>
+sowie die Erweiterung Elexir&nbsp;<a href="http://elixir.ematia.de/trac/wiki">[8]</a>,
+welche nicht direkter Bestandteil von SQLAlchemy ist.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Der Aufbau jedes Kapitels ist ähnlich: Es beginnt mit ein paar
+einfachen Beispielen bzw. einer Einführung in die grundlegenden
+Befehle, im Laufe des Kapitels werden die Fälle immer komplexer bzw.
+zeigen viele Nuancen der Möglichkeiten von SQLAlchemy auf. Dabei ist
+der Kapitelbeginn durchweg einsteigerfreundlich, d.&nbsp;h. auch ohne
+Vorwissen zum Programm kann man alle Beispiele nachvollziehen. Wird
+der Text aber im Laufe des Kapitels zu komplex oder geht über das hinaus, was
+man für die eigene Anwendung braucht, so kann man ohne Weiteres den
+Rest des Kapitels überspringen und mit Beginn des nächsten Kapitels
+zum nächsten Thema ohne Verständnisprobleme weitermachen.
+Dies ist besonders für Einsteiger gut, da sie sich nicht
+unbedingt durch das komplette Kapitel „quälen“ müssen, nur um im
+nächsten Abschnitt weiterlesen zu können. Fortgeschrittene
+Nutzer hingegen können den Anfang eines Kapitels schnell durchlesen
+und finden dann zum Ende hin interessante Tipps und Tricks zur
+tiefergehenden Nutzung von SQLAlchemy.
+
+<div class="p"><!----></div>
+Weiterhin ist positiv anzumerken, dass der Autor des Buchs
+durchgehend das gleiche Beispiel verwendet, um die Nutzung von
+SQLAlchemy zu erklären. Dabei wird das Beispiel je nach
+Notwendigkeit des zu erläuternden Inhalts erweitert oder reduziert
+bzw. komplexer oder einfacher gestaltet. Lediglich bei der Benennung
+der Spalten in der Beispieldatenbank hätte der Autor etwas mehr
+Rücksicht auf die internationale Leserschaft nehmen können. So dürfe
+den wenigsten Leser ohne Suchen im Internet geläufig sein, dass
+„msrp“ für „Manufacturer's suggested retail price“ und „sku“ für
+„stock keeping unit“ steht.
+
+<div class="p"><!----></div>
+Wie bereits erwähnt, werden in den letzten Kapiteln zwei
+Erweiterungen für SQLAlchemy erklärt, Elexir und SqlSoup. Beide
+können – je nach Anwendungsfall – durchaus Vorteile gegenüber
+SQLAlchemy haben. Besonders positiv ist zu erwähnen, dass das Buch
+die Vorteile und auch Nachteile von Elexir und SqlSoup gegenüber
+SQLAlchemy abschließend stichpunktartig auflistet, sodass dem Leser
+hier eine gute und kompakte Entscheidungshilfe gegeben wird.
+
+<div class="p"><!----></div>
+Auch wenn das, wie mehrfach erwähnt, durchaus einsteigerfreundlich
+ist, so sollte man doch zumindest grundlegende Pythonkenntnisse
+sowie Grundwissen im Umgang mit relationalen Datenbanken und SQL
+haben, um den Inhalt des Buchs verstehen zu können. Der Autor pflegt
+einen kompakten Schreibstil, nichtsdestotrotz hat man beim Lesen
+stets das Gefühl, vollständig informiert zu sein und alles Wichtige
+zu wissen. Das Englisch des Buches ist durchweg verständlich, die
+eigenen Kenntnisse der Sprache sollte aber schon etwas über
+Schulenglisch hinaus gehen.
+
+<div class="p"><!----></div>
+Etwas nachteilig ist, dass das Buch sich noch auf die Version 0.4
+von SQLAlchemy bezieht. Viele Linux-Distributionen haben die Version
+0.5 in den Paketquellen, auf der Homepage steht auch Version 0.6
+bereit. Für Einsteiger ist dies zwar relativ gleich, da grundlegende
+Dinge der API gleich geblieben sind, fortgeschrittene Befehle und
+Möglichkeiten haben sich jedoch in (wenn auch kleinen) Teilen
+geändert.
+
+<div class="p"><!----></div>
+Um auf die Eingangs gestellte Frage zurück zu kommen: Hat das Buch
+Vorteile gegenüber der offiziellen Dokumentation? Hier lautet die
+Antwort: Grundsätzlich ja, insbesondere aufgrund des systematischen
+Aufbaus, der konsistenten Verwendung des gleichen Beispiels über das
+ganze Buch hinweg und der Tauglichkeit sowohl für Einsteiger als
+auch fortgeschrittene Nutzer. Wer sich also für SQLAlchemy
+interessiert bzw. plant, es für sein Python-Projekt zu nutzen, der
+sollte durchaus einen Blick auf das Buch werfen.
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="2" align="center"><font size="+0"><b>Buchinformationen</b></font></td></tr>
+<tr><td width="43"><b>Titel</b> </td><td width="237">Essential SQLAlchemy </td></tr>
+<tr><td width="43"><b>Autor</b> </td><td width="237">Rick Copeland </td></tr>
+<tr><td width="43"><b>Verlag</b> </td><td width="237">O'Reilly </td></tr>
+<tr><td width="43"><b>Umfang</b> </td><td width="237">215 Seiten </td></tr>
+<tr><td width="43"><b>ISBN</b> </td><td width="237">978-0596516147 </td></tr>
+<tr><td width="43"><b>Preis</b> </td><td width="237">ca. 27 Euro </td></tr>
+<tr><td width="43">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.sqlalchemy.org/"><tt style="font-size: 1.3em;">http://www.sqlalchemy.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.mysql.de/"><tt style="font-size: 1.3em;">http://www.mysql.de/</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.sqlite.org/"><tt style="font-size: 1.3em;">http://www.sqlite.org/</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://www.postgresql.de/"><tt style="font-size: 1.3em;">http://www.postgresql.de/</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://www.sqlalchemy.org/docs/"><tt style="font-size: 1.3em;">http://www.sqlalchemy.org/docs/</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://de.wikipedia.org/wiki/Objektrelationale_Abbildung"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/Objektrelationale_Abbildung</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://www.sqlalchemy.org/docs/orm/extensions/sqlsoup.html"><tt style="font-size: 1.3em;">http://www.sqlalchemy.org/docs/orm/extensions/sqlsoup.html</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://elixir.ematia.de/trac/wiki"><tt style="font-size: 1.3em;">http://elixir.ematia.de/trac/wiki</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>
+setzt Python und eine relationale Datenbank für
+diverse Intranetprojekte ein. Das Buch hat ihm geholfen, die
+Programme von reinen SQL-Abfragen auf SQLAlchemy umzustellen.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/221?edit[subject]=Rezension: Essential SQLAlchemy#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+                            
+<h1><font color="#595959"><a name="11_04_veranstaltungen">Veranstaltungskalender</a><a name="11_04_veranstaltungen">
+</a></font></h1>
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="5" align="center"><font size="+0"><b>Messen</b></font></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td width="0"><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td width="0"><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+Grazer Linuxtage </td><td width="0">Graz </td><td align="left">09.04.2011 </td><td width="0">frei </td><td align="left"><a href="http://linuxwochen.at/"><tt style="font-size: 1.3em;">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">UnFUCK </td><td width="0">Furtwangen </td><td align="left">15.-17.04.2011 </td><td width="0">frei </td><td align="left"><a href="http://www.unfuck.eu/"><tt style="font-size: 1.3em;">http://www.unfuck.eu/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Wien </td><td width="0">Wien </td><td align="left">05.-07.05.2011 </td><td width="0">frei </td><td align="left"><a href="http://linuxwochen.at/"><tt style="font-size: 1.3em;">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">LinuxTag </td><td width="0">Berlin </td><td align="left">11.-14.05.2011 </td><td width="0">18 EUR </td><td align="left"><a href="http://www.linuxtag.org/"><tt style="font-size: 1.3em;">http://www.linuxtag.org/</tt></a> </td></tr>
+<tr><td align="left">LiWoLi 2011 </td><td width="0">Linz </td><td align="left">12.-14.05.2011 </td><td width="0">frei </td><td align="left"><a href="http://linuxwochen.at/"><tt style="font-size: 1.3em;">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">Edu Days </td><td width="0">Krems </td><td align="left">16.-18.05.2011 </td><td width="0">frei </td><td align="left"><a href="http://www.edudays.at/"><tt style="font-size: 1.3em;">http://www.edudays.at/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Eisenstadt </td><td width="0">Eisenstadt </td><td align="left">20.-21.05.2011 </td><td width="0">frei </td><td align="left"><a href="http://linuxwochen.at/"><tt style="font-size: 1.3em;">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">LUG Camp </td><td width="0">Tschierv </td><td align="left">02.-05.06.2011 </td><td width="0">- </td><td align="left"><a href="http://2011.lug-camp.ch/"><tt style="font-size: 1.3em;">http://2011.lug-camp.ch/</tt></a> </td></tr>
+<tr><td align="left">GPN11 </td><td width="0">Karlsruhe </td><td align="left">23.-26.06.2011 </td><td width="0">- </td><td align="left"><a href="https://entropia.de/GPN11"><tt style="font-size: 1.3em;">https://entropia.de/GPN11</tt></a> </td></tr>
+<tr><td align="left">        </td></tr></table>
+
+
+    <font size=1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an<img src="freiesMagazin-2011-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a name="11_04_vorschau">Vorschau</a><a name="11_04_vorschau">
+</a></font></h1>
+
+<div class="p"><!----></div>
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint immer am ersten Sonntag eines Monats. Die Mai-Ausgabe wird voraussichtlich am 1. Mai unter anderem mit folgenden Themen veröffentlicht:
+
+<ul>
+<li> Ryzom – Das freie MMORPG
+<div class="p"><!----></div>
+</li>
+
+<li> Parallelisierung mit Scala
+
+<div class="p"><!----></div>
+</li>
+</ul>
+Es kann leider vorkommen, dass wir aus internen Gründen angekündigte Artikel verschieben müssen. Wir bitten dafür um Verständnis.<br />
+<a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                                
+<h1><font color="#595959"><a name="11_04_konventionen">Konventionen</a><a name="11_04_konventionen">
+</a></font></h1>
+
+<div class="p"><!----></div>
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td width="59"><b><tt style="font-size: 1.3em;">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td width="59"><b><tt style="font-size: 1.3em;">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt style="font-size: 1.3em;">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td width="59"><b><tt style="font-size: 1.3em;">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt style="font-size: 1.3em;">/home/BENUTZERNAME</tt></b> </td></tr></table>
+<br />
+        <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+
+<div style="background: #FFFFFF;">
+    
+<table>
+<tr><td colspan="3" align="left">                        
+<h1><font color="#595959"><a name="11_04_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a><a name="11_04_impressum">
+</a></font></h1></td></tr>
+<tr><td colspan="3" align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF und HTML einmal monatlich.</td></tr>
+<tr><td colspan="3" align="left"> </td></tr>
+<tr><td align="left"></td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Kontakt</b></font></td></tr>
+<tr><td align="left"></td><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2011-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left"></td><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left"></td><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left"></td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Autoren dieser Ausgabe</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Hans-Joachim Baader </td><td align="left"><a href="freiesMagazin-2011-04-bilder.html#11_04_debian6">Debian GNU/Linux 6.0 „Squeeze“</a>, <a href="freiesMagazin-2011-04-bilder.html#11_04_html5">Rezension: Durchstarten mit HTML5</a> </td></tr>
+<tr><td align="left"></td><td align="left">Clemens Hackenberg </td><td align="left"><a href="freiesMagazin-2011-04-bilder.html#11_04_pike">Eine Einführung in die Programmiersprache Pike</a> </td></tr>
+<tr><td align="left"></td><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2011-04-bilder.html#11_04_kernel">Der März im Kernelrückblick</a> </td></tr>
+<tr><td align="left"></td><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2011-04-bilder.html#11_04_essential_sqlalchemy">Rezension: Essential SQLAlchemy</a> </td></tr>
+<tr><td align="left"></td><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2011-04-bilder.html#11_04_odf-test">Test: OpenDocument-Format für den Datenaustausch</a>, <a href="freiesMagazin-2011-04-bilder.html#11_04_spacechem">SpaceChem – Atome im Weltall</a> </td></tr></table>
+
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"></td></tr>
+<tr><td colspan="3" align="left">Erscheinungsdatum: 3. April 2011</td></tr>
+<tr><td align="left"></td></tr>
+<tr><td align="left"></td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Redaktion</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Frank Brungräber </td><td align="left">Thorsten Schmidt </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Satz und Layout</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Ralf Damaschke </td><td align="left">Yannic Haupenthal </td></tr>
+<tr><td align="left"></td><td align="left">Nico Maikowski </td><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Korrektur</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Daniel Braun </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left"></td><td align="left">Mathias Menzer </td><td align="left">Karsten Schuldt </td></tr>
+<tr><td align="left"></td><td align="left">Stephan Walter </td><td align="left"></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Veranstaltungen</b></font></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left">Ronny Fischer </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Logo-Design</b></font></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left">Arne Weinberg (<a href="http://www.gnu.org/copyleft/fdl.html">GNU FDL</a>) </td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren. Das <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Logo
+    wurde von Arne Weinberg erstellt und unterliegt der
+    <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2011-04-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+</div>
+<br /><br /><hr /><small>File translated from
+T<sub><font size=1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size=1">T</font></sub>H</a>,
+version 3.89.<br />On  4 Apr 2011, 17:31.</small>
+</div>
+</body></html>

@@ -1,0 +1,3621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                                                
+<title>freiesMagazin 04/2013</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Der März im Kernelrückblick | Nur keine Angst: Effektives Arbeiten mit der Shell | GNOME-Desktop ohne GNOME-Shell zusammenstellen | docopt – Eleganter Umgang mit Parametern von Kommandozeilenprogrammen | Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil III | PNG-Bilder (automatisch) optimieren | Rückblick: DANTE-Tagung 2013 in Gießen | Review: Software-Architekturen dokumentieren und kommunizieren | Rezension: Linux-Server mit Debian 6 GNU/Linux | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 3.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 04/2013" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2013-04-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2013-04.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>April 2013</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Topthemen dieser Ausgabe</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_gnome_desktop">GNOME-Desktop ohne GNOME-Shell zusammenstellen</a></font> <br />
+    Der GNOME-3-Desktop lässt sich mit geringem Aufwand auch ohne GNOME-Shell selbst zusammenstellen. Statt der GNOME-Shell kommen dabei ein eigenes Panel und ein eigener Fenstermanager zur Anwendung. Im Artikel werden Avant Window Navigator als Panel und Compiz als Fenstermanager verwendet. (<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_gnome_desktop">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_ffox_addonsdk3">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil III</a></font> <br />
+    Im letzten Teil dieser Reihe ging es darum, wie die aktuelle Auswahl im Browser festgestellt werden kann und der passende Wikipedia-Artikel in einem neuem Tab geöffnet wird. Dieser Teil der Reihe soll es alternativ möglich machen, den Wikipedia-Artikel in einem Panel anzuzeigen. (<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_ffox_addonsdk3">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_png_optimierung">PNG-Bilder (automatisch) optimieren</a></font> <br />
+    Eine Frage, die man sich bei der Überschrift stellen könnte, ist: „Sind meine Bilder nicht optimal?“ Die Antwort ist, dass alles eine Frage der Definition ist. Mit „optimal“ ist in diesem Fall die Dateigröße des PNG-Bildes in Relation zur Qualität gemeint. In dem Artikel sollen ein paar Werkzeuge vorgestellt werden, wie man PNG-Bilder ohne großen Qualitätsverlust verkleinern kann. (<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_png_optimierung">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                  
+
+                        
+<h1><font color="#595959"><a id="fm_index" name="fm_index">Inhalt</a></font></h1><!-- CONTENT -->
+
+<b>Linux allgemein</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_kernel">Der März im Kernelrückblick</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Anleitungen</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_shell">Nur keine Angst: Effektives Arbeiten mit der Shell</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_gnome_desktop">GNOME-Desktop ohne GNOME-Shell zusammenstellen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_docopt">docopt – Eleganter Umgang mit Parametern von Kommandozeilenprogrammen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_ffox_addonsdk3">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil III</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Software</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_png_optimierung">PNG-Bilder (automatisch) optimieren</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Community</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_dante2013">Rückblick: DANTE-Tagung 2013 in Gießen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_rezension_softwarearchitektur">Review: Software-Architekturen dokumentieren und kommunizieren</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_rezension_linux-server">Rezension: Linux-Server mit Debian 6 GNU/Linux</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Magazin</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_13_04_impressum">Impressum</a><br /><!-- CONTENT -->
+
+
+
+<div class="p"><!----></div><!-- CONTENT -->
+<a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_04_editorial" name="fm_13_04_editorial">Editorial</a></font></h1>
+    
+
+
+
+<h2><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> feiert Geburtstag</h2>
+
+
+Am 18. März war es soweit und <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> feierte seinen siebten
+Geburtstag. Lustigerweise haben selbst wir unseren eigenen Geburtstag
+vergessen, sodass unser 
+Blog-Artikel&nbsp;<a href="http://www.freiesmagazin.de/20130321-freiesmagazin-feiert-siebten-geburtstag">[1]</a>
+einige Tage verspätet erfolgte.
+
+<div class="p"><!----></div>
+Am 18. März 2006 erschien die erste Ausgabe von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>, damals noch unter Namen
+„Ikhaya-Newsletter“ unter dem Dach von ubuntuusers.de. Im Juni 2006 folgte
+dann die Umbenennung zu <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>. Über die Jahre hinweg veränderte sich so einiges:
+das Layout, das Aussehen und die Schrift. Das wichtigste ist jedoch, dass es
+immer von der Community und für die Community gemacht wird. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> lebt ausschließlich
+von der Community.
+
+<div class="p"><!----></div>
+Nach sieben Jahren gibt es auch mal wieder einen guten Zeitpunkt auf ein paar
+Statistiken einzugehen. Bis zur jetzigen Ausgabe erschien seit März 2006 ohne
+Ausnahme jeden Monat unterbrechungsfrei eine <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Ausgabe. Somit kommen wir auf
+84 Hefte mit insgesamt 220 beteiligten Autoren. Mit einer Gesamtzahl von 840
+Artikeln sind es ca. 10 Artikel, die in einem Magazin enthalten sind.
+
+<div class="p"><!----></div>
+Damit nach diesen sieben Jahren auch weitere sieben Jahre folgen können,
+brauchen wir Ihre Unterstützung. Jeder darf 
+mitmachen &nbsp;<a href="http://www.freiesmagazin.de/mitmachen">[2]</a> und über sein
+Lieblingsthema oder Lieblingssoftware berichten. Als Geschenke nehmen wir
+sehr gerne Artikelentwürfe an unsere Redaktions-E-Mail-Adresse redaktion@<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>.de 
+entgegen.
+
+<div class="p"><!----></div>
+
+<h2>April, April!</h2>
+Der erste April ist immer der Tag, an dem man besonders im Internet viele
+Nachrichten liest, die nicht stimmen und zum schmunzeln anregen sollen.
+Google bringt mit Google Nose&nbsp;<a href="http://google,com/nose">[3]</a> Gerüche in die
+Suchmaschine, während Twitter die Nutzung von Vokalen&nbsp;<a href="http://blog.twitter.com/2013/03/annncng-twttr.html">[4]</a>
+kostenpflichtig macht.
+
+<div class="p"><!----></div>
+Zuletzt hatten wir im Jahr 2011 unseren letzten April-Scherz&nbsp;<a href="http://www.freiesmagazin.de/20110401-limo-neuer-name-fuer-das-magazin">[5]</a>
+bei dem einige unserer Leser hereingefallen sind. Genauso wie letztes Jahr
+verzichteten wir erneut auf einen April-Scherz. Uns fehlte schlicht eine gute
+Idee für einen April-Scherz. Schließlich soll so einer ja
+auch zum Schmunzeln anregen.
+
+<div class="p"><!----></div>
+Ganz ohne April-Scherz wünschen wir Ihnen viel Spaß beim Lesen der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/20130321-freiesmagazin-feiert-siebten-geburtstag"><tt class="big">http://www.freiesmagazin.de/20130321-freiesmagazin-feiert-siebten-geburtstag</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/mitmachen"><tt class="big">http://www.freiesmagazin.de/mitmachen</tt></a><br />
+[3] <a href="http://google,com/nose"><tt class="big">http://google,com/nose</tt></a><br />
+[4] <a href="http://blog.twitter.com/2013/03/annncng-twttr.html"><tt class="big">http://blog.twitter.com/2013/03/annncng-twttr.html</tt></a><br />
+[5] <a href="http://www.freiesmagazin.de/20110401-limo-neuer-name-fuer-das-magazin"><tt class="big">http://www.freiesmagazin.de/20110401-limo-neuer-name-fuer-das-magazin</tt></a><br />
+    
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+<h1><font color="#595959"><a id="fm_13_04_kernel" name="fm_13_04_kernel">Der März im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+        
+
+<b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der
+fortwährend weiterentwickelt wird. Welche Geräte in einem halben
+Jahr unterstützt werden und welche Funktionen neu hinzukommen, erfährt
+man, wenn man den aktuellen Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 3.9</h2>
+Knapp 14 Tage nahm Torvalds Merge Requests entgegen, bevor er die erste Entwicklerversion zur Verfügung stellte&nbsp;<a href="https://lkml.org/lkml/2013/3/3/147">[1]</a>. Zu den Änderungen, die in 3.9 aufgenommen wurden, zählen zwei neue Architekturen. Arc ist eine 32bit-RISC-Architektur&nbsp;<a href="https://de.wikipedia.org/wiki/Reduced_Instruction_Set_Computer">[2]</a>, die für den Einsatz in Unterhaltungs- und Netzwerkgeräten gedacht ist und sehr energieeffizient arbeiten soll. Bei Metag handelt es sich ebenfalls um eine 32bit-Architektur, die als Besonderheit einen Befehlssatz für Signalverarbeitung bereithält und darüber hinaus Multithreading beherrscht. Die Meta-Prozessoren sollen den zeitgleichen Betrieb mehrerer unterschiedlicher Betriebssysteme ermöglichen, die sich verschiedene Aufgaben in einem System teilen, so könnte eines zum Beispiel die Benutzerschnittstelle betreiben, während andere Audio- oder Video-Datenströme behandeln.
+
+<div class="p"><!----></div>
+Das Dateisystem Btrfs wurde um RAID-Funktionen&nbsp;<a href="https://de.wikipedia.org/wiki/RAID">[3]</a> ergänzt und kann nun mit den RAID-Leveln 5 und 6 umgehen, die sich recht ähnlich sind und sowohl hohe
+Schreib- und Leseleistung als auch die Wiederherstellbarkeit von Daten im Fehlerfall zum Ziel haben. Darüber hinaus wurde der Umgang mit Schnappschüssen des Dateisystems effizienter gestaltet und die Leistungsfähigkeit von fsync, als das Schreiben der im Arbeitsspeicher zwischengelagerten Änderungen auf das Dateisystem, verbessert.
+
+<div class="p"><!----></div>
+Linux 3.9-rc2&nbsp;<a href="https://lkml.org/lkml/2013/3/10/256">[4]</a> lieferte einige Nachzügler, darunter einen Treiber für den mittels USB 3.0 angeschlossenen Gigabit-Netzwerk-Adapter AX88179/178A. Anstelle einer Beruhigung wurde die Entwicklung dann eher „rasanter“: Sowohl -rc3&nbsp;<a href="https://lkml.org/lkml/2013/3/17/186">[5]</a> als auch -rc4&nbsp;<a href="https://lkml.org/lkml/2013/3/23/147">[6]</a> fielen von der Zahl der Änderungen eher größer aus. Auch wenn es sich überwiegend um Fehlerkorrekturen handelte, waren dennoch keine kritischen Probleme dabei.
+
+<div class="p"><!----></div>
+Außerdem wurde Ext4 nun mit einer Plausibilitätsprüfung für die Extend Status Trees ausgestattet. Dabei handelt es sich um eine strukturierte Speichermöglichkeit, um Informationen über Extends – aus mehreren Blöcken bestehende, logisch zusammengefasste Speicherbereiche – zu hinterlegen. Die Extend Status Trees können als Grundlage für neue Funktionen dienen und bereits bestehende vereinfachen, wie beispielsweise die Reservierung von Speicherbereichen für sehr große Datenmengen.
+
+<div class="p"><!----></div>
+Ging die Zahl der Änderungen in 3.9-rc5&nbsp;<a href="https://lkml.org/lkml/2013/3/31/133">[7]</a> zwar zurück, so war die Gesamtzahl der geänderten Quelltext-Zeilen so hoch wie seit dem -rc1 nicht mehr. Der Grund lag in der Rücknahme eines Patches, mit dem im Entwicklungszyklus für Linux 3.7 der Name eines Moduls für den Seriell-Port-Treiber 8250 geändert wurde. Die daraus resultierenden Probleme erforderten einige Kniffe, die der SUSE-Entwickler Jiri Slaby als so furchtbar ansah, dass er die Änderung zurücknahm und damit eine große Menge an Quelltext verschob. 
+
+<div class="p"><!----></div>
+
+<h2>Umgestaltung von kernel.org</h2>
+Nachdem sich auf der Webseite von Kernel.org&nbsp;<a href="https://www.kernel.org">[8]</a> jahrelang nicht viel getan hatte, mussten sich die Nutzer im März gleich zweimal umgewöhnen. Den Anfang machte die Umstellung auf den Seiten-Generator Pelican&nbsp;<a href="http://docs.getpelican.com/">[9]</a>. Dieser erzeugt statische HTML-Seiten in einem einheitlichen Design, sodass sowohl die Erstellung als auch die Spiegelung der kernel.org-Seiten sehr einfach gehalten wird. Trotzdem kommt das neue Layout übersichtlicher daher. Neuigkeiten finden sich nun unter dem eigenen Punkt „Site News“ statt wie bisher am unteren Ende der Webseite. Weitere wichtige Punkte wie die FAQs, und der Überblick über die verschiedenen Releases sind ebenfalls als Unterpunkte prominent aufgeführt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/kernelorg-20130401.png" alt="kernelorg-20130401.png" style="max-width:100%" /><br /><em>Das aktuelle Aussehen von kernel.org.</em><br />
+
+<div class="p"><!----></div>
+Nach wenigen Tagen gab es wieder eine Änderung. Zwar blieb die Seitenerstellung mit Pelican erhalten, doch das bis dahin genutzte Standard-Layout entfiel zugunsten eines eher minimalen Designs. Der Grund hierfür lag darin, dass die Lizenz des CSS-Designs nicht eindeutig ist und die
+    
+Betreiber daher ein schnell zusammengebasteltes Design in Stellung gebracht hatten, um eventuelle Probleme zu vermeiden. Daher wird derzeit unter <b>webmaster@kernel.org</b> nach Kreativen gesucht, welche die Anpassung der CSS-Vorlagen in Angriff nehmen möchten.
+
+<div class="p"><!----></div>
+Ebenso wurde das Webfrontend für die Versionsverwaltung&nbsp;<a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/">[10]</a> des Kernels geändert. Dies übernimmt nun cgit&nbsp;<a href="http://hjemli.net/git/cgit/">[11]</a>, das sich optisch ein wenig von der bisherigen Oberfläche unterscheidet. Auf der Anwenderseite weichen die Funktionen selbst nur geringfügig ab. So  verbirgt sich hinter der Funktion  „Log“ nun das bisherige „Shortlog“, die ausführlichere Variante entfällt.
+
+<div class="p"><!----></div>
+
+
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://lkml.org/lkml/2013/3/3/147"><tt class="big">https://lkml.org/lkml/2013/3/3/147</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Reduced_Instruction_Set_Computer"><tt class="big">https://de.wikipedia.org/wiki/Reduced_Instruction_Set_Computer</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/RAID"><tt class="big">https://de.wikipedia.org/wiki/RAID</tt></a><br />
+[4] <a href="https://lkml.org/lkml/2013/3/10/256"><tt class="big">https://lkml.org/lkml/2013/3/10/256</tt></a><br />
+[5] <a href="https://lkml.org/lkml/2013/3/17/186"><tt class="big">https://lkml.org/lkml/2013/3/17/186</tt></a><br />
+[6] <a href="https://lkml.org/lkml/2013/3/23/147"><tt class="big">https://lkml.org/lkml/2013/3/23/147</tt></a><br />
+[7] <a href="https://lkml.org/lkml/2013/3/31/133"><tt class="big">https://lkml.org/lkml/2013/3/31/133</tt></a><br />
+[8] <a href="https://www.kernel.org"><tt class="big">https://www.kernel.org</tt></a><br />
+[9] <a href="http://docs.getpelican.com/"><tt class="big">http://docs.getpelican.com/</tt></a><br />
+[10] <a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/"><tt class="big">https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/</tt></a><br />
+[11] <a href="http://hjemli.net/git/cgit/"><tt class="big">http://hjemli.net/git/cgit/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+wirft gerne einen Blick auf die Kernel-Entwicklung, um mehr über die
+Funktion von Linux zu erfahren.
+und um seine Mitmenschen mit seltsamen Begriffen
+verwirren zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=M%C3%A4rz im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                
+
+
+<h1><font color="#595959"><a id="fm_13_04_shell" name="fm_13_04_shell">Nur keine Angst: Effektives Arbeiten mit der Shell</a></font></h1>von Jens Dörpinghaus
+
+<div class="p"><!----></div>
+        <b>E</b><b>s wird oft diskutiert, dass sich Linuxneulinge einen einfachen, nur 
+GUI-basierten Umgang mit Linux wünschen und unwirsch auf Dokumentationen 
+oder Hilfen in Foren, die ihnen Befehle für die Konsole auf den Weg geben, 
+reagieren. Dabei macht man sich das Leben selber schwer, denn der Umgang mit 
+der Shell vereinfacht und beschleunigt viele Dinge. Und das nicht nur für 
+versierte Systemadministratoren, sondern auch auf dem privaten PC. 
+Mitnichten ist die Shell ein Relikt vergangener Zeiten. Das zeigt nicht 
+zuletzt die Tatsache, das Microsoft versucht, mit der 
+Powershell&nbsp;<a href="https://www.microsoft.com/powershell">[1]</a> eine ähnlich mächtige 
+Plattform bereitzustellen.</b>
+
+<div class="p"><!----></div>
+
+<h2>Einführung</h2>
+
+
+Die Shell läuft auch wenn die grafische Oberfläche ihren Dienst aufgibt, man 
+kann bequem auf andere Rechner zugreifen und zu guter Letzt kann man viele 
+alltägliche Dinge sehr viel schneller erledigen. Viele gute Gründe, sich mit 
+der Shell zu beschäftigen. Man sollte sich jedoch, wenn man gar keine 
+Vorahnung in diesem Bereich hat, auf etwas Frust einstellen: Umdenken ist 
+nötig!
+
+<div class="p"><!----></div>
+Für die erste Verwirrung sorgt sicherlich die Tatsache, dass es unter Linux 
+nicht eine Shell gibt, sondern viele verschiedene. Um nur ein paar Beispiele 
+zu nennen, gibt es die Bourne-Shell (sh), Korn-Shell (ksh), C-Shell (csh) und 
+die Bourne-Again-Shell (bash), die Standard bei den meisten Distributionen 
+ist und die im folgenden auch Thema sein soll. Weiter gibt es die 
+bash-kompatible Debian-Almquist-Shell (dash) und die Z-Shell, die zeitweise 
+Standardshell von Mac OS X war (siehe „Die Z-Shell (zsh) – Ein mächtige 
+Alternative zur Bash“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+03/2013&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-03">[2]</a>). Die 
+verschiedenen Shells haben alle ihre spezifischen Vor- und 
+Nachteile&nbsp;<a href="https://de.wikipedia.org/wiki/Unix-Shell#Weiterentwicklungen">[3]</a>. 
+
+<div class="p"><!----></div>
+Man kann sich entweder direkt beim Log-in ohne grafische Oberfläche 
+einloggen oder man erreicht dies später über die Tastenkombination 
+<i>„Strg“</i>&nbsp;+&nbsp;<i>„Alt“</i>&nbsp;+&nbsp;<i>„F1“</i> bis <i>„Strg“</i>&nbsp;+&nbsp;<i>„Alt“</i>&nbsp;+&nbsp;<i>„F6“</i>. Zurück zur grafischen Oberfläche gelangt 
+man dann mit <i>„Strg“</i>&nbsp;+&nbsp;<i>„Alt“</i>&nbsp;+&nbsp;<i>„F7“</i>. Weiter ist es möglich, in der grafischen 
+Oberfläche ein Terminal oder eine Konsole zu öffnen. Dies versteckt sich z.&nbsp;B. im 
+Menü „<em>Zubehör</em>“ in GNOME oder in „<em>System</em>“ in KDE. Die genaue technische 
+Unterscheidung gibt vielfach Grund zur Diskussion und soll hier nicht Thema 
+sein. Welchen Weg man aber auch wählt: Die Bedienung ist stets gleich, auch 
+wenn die Konsole als Fenster in der grafischen Oberfläche läuft. 
+
+<div class="p"><!----></div>
+
+<h2>Navigieren durch den Verzeichnisbaum</h2>
+
+
+Nach dem Log-in oder dem Start der Konsole befindet man sich automatisch in 
+seinem Heimverzeichnis. Wie in einer grafischen Oberfläche befindet man 
+sich immer in einem Verzeichnis und kann dort Befehle ausführen. Das 
+aktuelle Verzeichnis kann man sich mit
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ pwd </div>
+
+<div class="p"><!----></div>
+
+
+ausgeben lassen. Hier sollte das aktuelle Heimverzeichnis ausgegeben werden. 
+Dieses findet sich unter <b><tt class="big">/home/BENUTZERNAME</tt></b>, wobei <b><tt class="big">BENUTZERNAME</tt></b> der 
+aktuell eingeloggte Benutzer ist. Dieser Pfad wird immer in der 
+Umgebungsvariablen&nbsp;<a href="https://de.wikipedia.org/wiki/Umgebungsvariable">[4]</a> <b><tt class="big">$HOME</tt></b> 
+gespeichert, die ab hier im Artikel benutzt wird. Will man den Inhalt des 
+aktuellen Verzeichnisses sehen, benutzt man
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls</div>
+
+<div class="p"><!----></div>
+
+
+wobei die verschiedenen Farben Auskunft über die Arten der Dateien und 
+Verzeichnisse geben. Eventuell ist diese Farbanzeige-Option aber je nach 
+Distribution auch deaktiviert.
+
+<div class="p"><!----></div>
+Die Befehle sind oft mächtiger als ihr erstmaliger Aufruf vermuten 
+lassen könnte. Verschiedene Parameter können meist mit einem Bindestrich 
+versehen angehängt werden. So liefert
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls -l</div>
+
+<div class="p"><!----></div>
+
+
+detaillierte Informationen über die Dateien, etwa ihre Größe, Rechte oder 
+das Datum der letzten Änderung.
+
+<div class="p"><!----></div>
+Wann immer man Hilfe zu Befehlen benötigt oder schlicht nicht weiß, was ein 
+Befehl genau macht, nutzt man <b><tt class="big">man</tt></b>. Dieser Befehl zeigt die „Manual Pages“, 
+also Handbuchseiten, zu einem bestimmten Befehl an. Beenden kann man diese 
+Ansicht mit der Taste <i>„Q“</i>. Die allermeisten Fragen lassen sich damit 
+beantworten und es ist sicher nicht aus der Luft gegriffen, zu behaupten, 
+dass diese Handbuchseiten zu den besten Dokumentationen überhaupt gehören. 
+So kann man etwa mit 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ man ls</div>
+
+<div class="p"><!----></div>
+
+
+erkennen, dass man auch versteckte Dateien mit dem Zusatz <b><tt class="big">-a</tt></b> anzeigen 
+kann. Man kann diese Parameter auch kombinieren, etwa mit
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls -la</div>
+
+<div class="p"><!----></div>
+
+
+Die nächste Frage ist nun, wie man das Verzeichnis wechselt. Dazu gibt es 
+den Befehl <b><tt class="big">cd</tt></b> („change directory“). Jedes Verzeichnis beinhaltet die 
+Verzeichnisse <b><tt class="big">"."</tt></b> und <b><tt class="big">".."</tt></b>. Ersteres ist eine Referenz auf sich selbst, also 
+führt 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd .</div>
+
+<div class="p"><!----></div>
+
+
+zu keiner Änderung, wie man mit einer weiteren Eingabe von <b><tt class="big">pwd</tt></b> erkennen 
+kann. <b><tt class="big">".."</tt></b> wiederum verweist auf das darüber liegende Verzeichnis. Führt man 
+also 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd ..</div>
+
+<div class="p"><!----></div>
+
+
+    aus, so wechselt man in das Elternverzeichnis. Man kann Verzeichnisse relativ, 
+d.&nbsp;h. ausgehend von dem aktuellen Verzeichnis in dem man sich befindet, oder 
+absolut, also ausgehend von der Verzeichnisbaumwurzel, angeben. Gibt es im 
+aktuellen Verzeichnis ein Unterverzeichnis <b><tt class="big">test</tt></b>, so kann man mit 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd test</div>
+
+<div class="p"><!----></div>
+
+
+in dieses wechseln. Global kann man allerdings auch den kompletten 
+Verzeichnispfad angeben, etwa mit
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd /home/benutzername <br />
+$ cd $HOME</div>
+
+<div class="p"><!----></div>
+
+
+An dieser Stelle sei auch eindringlich auf die Funktion der Tabulatortaste 
+hingewiesen. Drückt man diese, so bekommt man alle Dateien angezeigt, die 
+auf das bisher eingegebene passen oder es wird vervollständigt. Es ist 
+sinnvoll, sich die Benutzung sofort anzugewöhnen. So wird 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd /h</div>
+
+<div class="p"><!----></div>
+
+
+sofort zu
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd /home/</div>
+
+<div class="p"><!----></div>
+
+
+vervollständigt und
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd /home/BE</div>
+
+<div class="p"><!----></div>
+
+
+zu
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cd /home/BENUTZERNAME/</div>
+
+<div class="p"><!----></div>
+
+
+wobei <b><tt class="big">BENUTZERNAME</tt></b> durch den tatsächlich eingeloggten Benutzer ersetzt 
+werden sollte.
+
+<div class="p"><!----></div>
+
+<h2>Kopieren und Verschieben</h2> 
+<div class="p"><!----></div>
+Kurz sei noch das Kopieren mittels <b><tt class="big">cp</tt></b> („copy“) und das Verschieben mittels 
+<b><tt class="big">mv</tt></b> („move“) von Daten erwähnt.
+
+<div class="p"><!----></div>
+Die Befehle folgen beide der gleichen Syntax.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ mv test test2</div>
+
+<div class="p"><!----></div>
+
+
+benennt die Datei oder das Verzeichnis <b><tt class="big">test</tt></b> in <b><tt class="big">test2</tt></b> um.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ mv test $HOME/</div>
+
+<div class="p"><!----></div>
+
+
+verschiebt die Datei oder das Verzeichnis <b><tt class="big">test</tt></b> nach <b><tt class="big">$HOME</tt></b>. Dabei kann 
+auch ein neuer Name am Zielort gewählt werden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ mv test $HOME/test2</div>
+
+<div class="p"><!----></div>
+
+
+Analog funktioniert dies beim Kopieren.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cp test $HOME/</div>
+
+<div class="p"><!----></div>
+
+
+kopiert die Datei <b><tt class="big">test</tt></b> ins Heimverzeichnis und
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cp test $HOME/test2</div>
+
+<div class="p"><!----></div>
+
+
+würde die Datei <b><tt class="big">test</tt></b> nach <b><tt class="big">$HOME</tt></b> kopieren und dort mit dem Namen <b><tt class="big">test2</tt></b> 
+ablegen.
+
+<div class="p"><!----></div>
+Will man ein ganzes Verzeichnis kopieren, muss man im Gegensatz zum 
+Verschieben den Parameter <b><tt class="big">-r</tt></b> mit angeben:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cp -r testdir $HOME/</div>
+
+<div class="p"><!----></div>
+
+
+Der Parameter <b><tt class="big">-r</tt></b> ist wichtig, da nur so rekursiv, also mit allen 
+Unterverzeichnissen, kopiert wird.
+
+<div class="p"><!----></div>
+An dieser Stelle müssen auch Metazeichen erwähnt werden. So steht ein <b><tt class="big">*</tt></b> (Stern) 
+für alle Zeichen in beliebiger Anzahl.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cp * $HOME</div>
+
+<div class="p"><!----></div>
+
+
+kopiert alle Dateien im aktuellen Verzeichnis nach <b><tt class="big">$HOME</tt></b>, ausgenommen
+Dateien, die mit einem <b><tt class="big">.</tt></b> (Punkt) beginnen, da diese eine Spezialbedeutung haben 
+(auf die hier aber nicht näher eingegangen wird).
+
+<div class="p"><!----></div>
+Man könnte dies sinnvoll einschränken auf <b><tt class="big">*.txt</tt></b> oder <b><tt class="big">Foto.*</tt></b>. Ersteres 
+liefert (vereinfacht gesagt) alle Dateien mit der Endung <b><tt class="big">txt</tt></b> und Letzteres 
+alle Dateien mit Namen <b><tt class="big">Foto</tt></b> und beliebiger Endung, also <b><tt class="big">Foto.jpg</tt></b> und 
+<b><tt class="big">Foto.png</tt></b>, aber nicht <b><tt class="big">foto.jpg</tt></b>, da Groß- und Kleinschreibung relevant ist.
+
+<div class="p"><!----></div>
+Ein weiteres nützliches Zeichen ist <b><tt class="big">?</tt></b> (Fragezeichen), das für genau ein beliebiges Zeichen
+steht. So steht <b><tt class="big">Foto?.jpeg</tt></b> für <b><tt class="big">Foto1.jpeg</tt></b> oder <b><tt class="big">Foto2.jpeg</tt></b>, aber auch 
+<b><tt class="big">Fotoa.jpeg</tt></b>.
+
+<div class="p"><!----></div>
+Möchte man nur bestimmte Zeichen, so kann man diese mit eckigen Klammern 
+angeben. <b><tt class="big">[0-9]</tt></b> etwa steht für Zahlen, <b><tt class="big">[abx]</tt></b> für a, b oder x und <b><tt class="big">[a-d]</tt></b> 
+für die Buchstaben a bis d.
+
+<div class="p"><!----></div>
+Ebenso kann man die Metazeichen auch auf <b><tt class="big">ls</tt></b> anwenden. So gibt
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls *.jpeg</div>
+
+<div class="p"><!----></div>
+
+
+alle Dateien mit der Endung <b><tt class="big">jpeg</tt></b> aus.
+
+<div class="p"><!----></div>
+
+<h2>Pipelines</h2>
+
+
+Ein Problem, das mit dem <b><tt class="big">ls</tt></b>-Befehl verbunden sein kann, ist die Tatsache, 
+dass bei vielen Dateien die Ausgabe über den Bildschirminhalt hinausgeht. 
+<b><tt class="big">ls</tt></b> bietet selbst keine Möglichkeit, die Ausgabe am Bildschirmende zu 
+stoppen. Auch dies ist eine der Eigenheiten im Umgang mit der Shell: Die 
+Befehle machen selten viel, aber das Wenige, was sie machen, machen sie gut.
+
+<div class="p"><!----></div>
+<b><tt class="big">more</tt></b> hingegen ist ein Befehl, der die Ausgabe genau auf eine 
+Bildschirmgröße auf einmal reduziert und ein Scrollen ermöglicht. Wie 
+bekommt man aber die Ausgabe von <b><tt class="big">ls</tt></b> als Eingabe für den Befehl <b><tt class="big">more</tt></b>? 
+Dafür stehen sogenannte Pipelines zur Verfügung. Das Zeichen <b><tt class="big">|</tt></b> lenkt die 
+Standardausgabe des linken Befehls in die Standardeingabe des rechten 
+Befehls um&nbsp;<a href="https://de.wikipedia.org/wiki/Standard-Datenstr%C3%B6me">[5]</a>.
+So ergibt 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls | more</div>
+
+<div class="p"><!----></div>
+
+
+nun das gewünschte Ergebnis.
+
+<div class="p"><!----></div>
+Pipelines werden im Folgenden noch ausgiebiger behandelt. Zunächst wird nun 
+auf einige, oft auftretende Situationen eingegangen und ihre Handhabung 
+beschrieben. Möchte man beispielsweise ein Paket über die Paketverwaltung 
+installieren, so ist bei den meisten Distributionen entweder 
+<b><tt class="big">yum</tt></b>&nbsp;<a href="http://linuxwiki.de/yum">[6]</a> oder <b><tt class="big">apt</tt></b>&nbsp;<a href="http://linuxwiki.de/apt">[7]</a> 
+verfügbar. Beide Befehle seien hier parallel beschrieben. Weiß man, wie das 
+zu installierende Paket heißt, beispielsweise <b>vlc</b>, so kann man es mit
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ apt-get install vlc<br />
+$ yum install vlc</div>
+
+<div class="p"><!----></div>
+
+
+installieren. Diese Befehle werden allerdings mit hoher Wahrscheinlichkeit 
+eine Fehlermeldung ausgeben, da man zum Installieren Root-Rechte benötigt. 
+Diese kann man sich einmalig für einen Befehl geben lassen, indem man <b><tt class="big">sudo</tt></b> 
+davor schreibt. Weiß man den Namen des Paketes allerdings nicht, so kann man 
+dieses mit
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ apt-cache search vlc<br />
+$ yum search vlc</div>
+
+<div class="p"><!----></div>
+
+
+suchen. Wie oben kann man mit <b><tt class="big">| more</tt></b> zu lange Ausgaben am Bildschirmende 
+anhalten. Nach der Suche kann man mit dem oben genannten Befehl die Pakete 
+installieren.
+
+<div class="p"><!----></div>
+Man kann die Standardausgabe allerdings auch in eine Datei umleiten. <b><tt class="big">&#62;</tt></b> 
+überschreibt den Dateiinhalt, <b><tt class="big">&#62;&#62;</tt></b> hängt es an eine Datei an. 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls &#62;&#62; test.txt</div>
+
+<div class="p"><!----></div>
+
+
+leitet die Ausgabe von <b><tt class="big">ls</tt></b> in eine Datei namens <b><tt class="big">test.txt</tt></b> um. Man kann 
+diese Datei dann mit
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cat test.txt </div>
+
+<div class="p"><!----></div>
+
+
+auf dem Bildschirm ausgeben.
+
+<div class="p"><!----></div>
+In diesem Zusammenhang ist auch <b><tt class="big">tail</tt></b> erwähnenswert. Dieser Befehl gibt nur 
+die letzten Zeilen einer Datei aus. Dies ist beispielsweise für Logfiles 
+nützlich. Man kann diesen Befehl mit 
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cat test.txt | tail  </div>
+
+<div class="p"><!----></div>
+
+
+aber auch direkt
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ tail test.txt</div>
+
+<div class="p"><!----></div>
+
+
+anwenden. Sucht man bestimmte Zeilen in einer Datei, so kann man dies mit <b><tt class="big">grep</tt></b> erreichen.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ cat test.txt | grep foto</div>
+
+<div class="p"><!----></div>
+
+
+oder wieder kurz
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ grep test.txt foto</div>
+
+<div class="p"><!----></div>
+
+
+gibt nur die Zeilen aus, die die Zeichenfolge <b><tt class="big">foto</tt></b> beinhalten. Somit sind
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls *message*</div>
+
+<div class="p"><!----></div>
+
+
+und
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ ls | grep message</div>
+
+<div class="p"><!----></div>
+
+
+gleichbedeutend. 
+
+<div class="p"><!----></div>
+
+<h2>Texte editieren mit vim</h2>
+
+
+Will man die Datei <b><tt class="big">test.txt</tt></b> bearbeiten, gibt es dafür verschiedene 
+Texteditoren. Natürlich kann man einen grafischen Editor benutzen. Nun ist 
+allerdings nicht immer eine grafische Oberfläche vorhanden. Außerdem können 
+manche Menschen mit textbasierten Editoren wesentlich effektiver arbeiten. 
+
+<div class="p"><!----></div>
+Im Folgenden soll nun also <b><tt class="big">vi</tt></b> bzw. <b><tt class="big">vim</tt></b>&nbsp;<a href="http://linuxwiki.de/Vim">[8]</a> 
+verwendet werden.  
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ vim test.txt</div>
+
+<div class="p"><!----></div>
+
+
+Um die Datei zu bearbeiten, muss man in den Editiermodus wechseln, dies 
+geschieht durch Drücken der Taste <i>„I“</i>. Will man diesen verlassen, drückt man 
+<i>„Escape“</i>.
+
+<div class="p"><!----></div>
+Es seien hier nur die wichtigsten Befehle angegeben. Außerhalb vom 
+Editiermodus kann man mit <b><tt class="big">:w</tt></b> und <i>„Return“</i> die Datei speichern und mit <b><tt class="big">:q</tt></b> 
+vim verlassen. <b><tt class="big">:q!</tt></b> erzwingt das Verlassen ohne vorheriges Speichern, <b><tt class="big">:wq</tt></b> 
+speichert und beendet dann vim.
+
+<div class="p"><!----></div>
+
+<h2>Suchen von Dateien und Parallelausführung</h2>
+
+
+Gelegentlich muss man auch Dateien suchen. Dazu gibt es es den Befehl 
+<b><tt class="big">find</tt></b>. Er erwartet zunächst einen Verzeichnispfad und eine Bedingung. 
+Möchte man den gesamten Verzeichnisbaum nach allen Dateien mit der Endung 
+<b><tt class="big">jpeg</tt></b> durchsuchen kann man dazu
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ find / -name "*.jpeg"</div>
+
+<div class="p"><!----></div>
+
+
+benutzen. Dies wird allerdings seine Zeit dauern. (Fast) jeder Prozess kann 
+abgebrochen werden, indem man <i>„Strg“</i>&nbsp;+&nbsp;<i>„C“</i> drückt. Man kann einen Prozess auch 
+im Hintergrund starten, dazu muss man ein <b><tt class="big">&amp;</tt></b> anfügen. Damit können etliche 
+Programme parallel gestartet werden. Die Standardausgabe wird allerdings 
+immer noch auf dem Bildschirm ausgegeben. So ist
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ find / -name "*.jpeg" &amp;</div>
+
+<div class="p"><!----></div>
+
+
+nicht wirklich zielführend. Man könnte allerdings die Ausgabe von <b><tt class="big">find</tt></b> 
+umleiten, etwa mit
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ find / -name "*.jpeg" &#62;&#62; suche &amp;</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Bemerkungen</h2>
+
+
+Eine nützliche Hilfe im Umgang mit der Shell sind Referenzkarten, bspw. die 
+UNIX-Refcard von Christof Böckler&nbsp;<a href="http://www.jamesie.de/unix/refcards/">[9]</a>. 
+Diese kann man sich zum Beispiel unter die Schreibtischunterlage legen und 
+bei Bedarf auch mit Notizen versehen. Je länger man mit der Shell arbeitet, 
+desto seltener wird man sie benötigen. 
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://www.microsoft.com/powershell"><tt class="big">https://www.microsoft.com/powershell</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-03"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2010-03</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Unix-Shell#Weiterentwicklungen"><tt class="big">https://de.wikipedia.org/wiki/Unix-Shell#Weiterentwicklungen</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Umgebungsvariable"><tt class="big">https://de.wikipedia.org/wiki/Umgebungsvariable</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/Standard-Datenstr%C3%B6me"><tt class="big">https://de.wikipedia.org/wiki/Standard-Datenströme</tt></a><br />
+[6] <a href="http://linuxwiki.de/yum"><tt class="big">http://linuxwiki.de/yum</tt></a><br />
+[7] <a href="http://linuxwiki.de/apt"><tt class="big">http://linuxwiki.de/apt</tt></a><br />
+[8] <a href="http://linuxwiki.de/Vim"><tt class="big">http://linuxwiki.de/Vim</tt></a><br />
+[9] <a href="http://www.jamesie.de/unix/refcards/"><tt class="big">http://www.jamesie.de/unix/refcards/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jens Dörpinghaus</b>
+hat Computer noch ohne grafische Benutzeroberfläche kennengelernt und nutzt
+deswegen auch unter Linux gerne die Vorteile der Shell.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=Effektives Arbeiten mit der Shell#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_04_gnome_desktop" name="fm_13_04_gnome_desktop">GNOME-Desktop ohne GNOME-Shell zusammenstellen</a></font></h1>von Steffen Rumberger
+
+<div class="p"><!----></div>
+        <b>D</b><b>er GNOME-3-Desktop&nbsp;<a href="http://www.gnome.org/gnome-3/">[1]</a> lässt sich mit geringem Aufwand auch ohne 
+GNOME-Shell&nbsp;<a href="http://live.gnome.org/GnomeShell">[2]</a> selbst zusammenstellen. 
+Statt der GNOME-Shell kommen dabei ein eigenes Panel und ein eigener Fenstermanager zur Anwendung. </b>
+
+<div class="p"><!----></div>
+Im nachfolgend beschriebenen Beispiel werden der 
+Avant Window Navigator&nbsp;<a href="http://launchpad.net/avant-window-navigator/">[3]</a>
+als
+Panel (auch Dock genannt) und Compiz&nbsp;<a href="http://www.compiz.org/">[4]</a> als 
+Fenstermanager verwendet. Natürlich lässt sich Compiz auch durch jeden anderen Fenstermanager ersetzen. 
+Ein Vorteil dieses Vorgehens wäre dann, dass 3-D für GNOME 3 keine Voraussetzung
+                
+    mehr ist.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Das Powermanagment sowie die Sonder- und Multimedia-Tasten werden weiterhin funktionieren. 
+Was nicht auf Anhieb funktioniert, sind die Desktop-Notifications 
+und das Programm für den Umgang mit Wechselmedien. Auch das Bluetooth-Verwaltungs-Applet benötigt etwas 
+Nacharbeit, die im Folgenden ebenfalls beschrieben wird.
+
+<div class="p"><!----></div>
+
+<h2>GNOME-Session zusammenstellen</h2>
+
+
+Der X-Session-Manager ist nach dem Login für das Starten der Desktop-Umgebung (ähnlich 
+dem Autostart) verantwortlich. 
+
+<div class="p"><!----></div>
+Die Aufgaben des X-Session-Managers kann auch weiterhin das 
+Programm gnome-session übernehmen. 
+Um eine eigene GNOME-Session zusammenzustellen, muss eine
+Konfigurationdatei angelegt
+und der Session 
+ein neuer Name 
+zugewiesen werden, 
+wobei der Name der Konfigurationsdatei, auch der Name für die Session (ohne Dateiendung) ist. 
+Hier wird eine neue Session <b><tt class="big">mygnome</tt></b> konfiguriert. 
+
+<div class="p"><!----></div>
+Die Konfiguration umfasst die eigenen 
+Anwendungen (Fenstermanager, Panel usw.), die als 
+Kernkomponenten 
+der 
+Desktop-Umgebung 
+geladen werden sollen. 
+
+<div class="p"><!----></div>
+    <img src="freiesMagazin-2013-04-bilder-Dateien/gnome_desktop_ohne_shell.png" alt="gnome_desktop_ohne_shell.png" style="max-width:100%" /><br /><em>GNOME 3 kann auch mit einem anderen Fenstermanager und 
+Panel eingerichtet werden.</em><br />
+
+<div class="p"><!----></div>
+Die Datei 
+<b><tt class="big">$HOME/.config/gnome-session/sessions/mygnome.session</tt></b> wird mit folgendem Inhalt neu angelegt:
+
+<div class="p"><!----></div>
+
+
+    
+
+
+<div class="listing">[GNOME Session]<br />
+Name=GNOME 3 without Shell<br />
+RequiredComponents=gnome-settings-daemon;<br />
+RequiredProviders=wm;panel;<br />
+DefaultProvider-wm=compiz<br />
+DefaultProvider-panel=avant-window-navigator</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/mygnome.session">mygnome.session</a></i>
+
+<div class="p"><!----></div>
+    Es können in dieser Konfigurationsdatei alle Anwendungen angegeben werden, für welche sich unter 
+<b><tt class="big">/usr/share/applications/</tt></b> ein Starter (<b><tt class="big">.desktop</tt></b>-Dateien) befindet.
+
+<div class="p"><!----></div>
+Eigene 
+bzw. fehlende <b><tt class="big">.desktop</tt></b>-Dateien können unter <b><tt class="big">/usr/local/share/applications/</tt></b> oder 
+alternativ unter <b><tt class="big">$HOME/.local/share/applications/</tt></b> angelegt werden und haben dann genauso Gültigkeit. 
+Die Dateien im Benutzer-Verzeichnis haben Vorrang gegenüber denen unter <b><tt class="big">/usr/local/</tt></b>.
+
+<div class="p"><!----></div>
+Die ursprüngliche Konfiguration befindet sich in <b><tt class="big">/usr/share/gnome-session/sessions/gnome.session</tt></b>.
+ Für eine ausführliche Beschreibung der Funktionsweise und des Aufbaus der 
+Konfigurationsdatei siehe die Manpage <b><tt class="big">gnome-session(1)</tt></b>. 
+Es ist auch möglich, eine 
+Session zu überschreiben und so eine neue Session für <b><tt class="big">gnome.session</tt></b> oder 
+<b><tt class="big">gnome-fallback.session</tt></b> anzulegen.
+
+<div class="p"><!----></div>
+    Der GNOME 3 Fallback-Modus (<b><tt class="big">gnome-fallback.session</tt></b>) ist der Ersatz für die GNOME 
+Shell für den Fall, dass kein 3-D zur Verfügung steht. Diese Konfiguration basiert auf dem 
+GNOME-Panel. Sie kann vom Display-Manager wie beispielsweise GDM gestartet werden und 
+stellt keine speziellen Hardwareanforderungen.
+
+<div class="p"><!----></div>
+Über den dconf-Schlüssel <b><tt class="big">/org/gnome/desktop/session/session-name</tt></b> muss festgelegt 
+werden, dass die eigene Session gestartet werden soll. Dazu trägt man den Name der Session 
+als Wert für den Schlüssel ein:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ dconf write /org/gnome/desktop/session/session-name mygnome</div>
+
+<div class="p"><!----></div>
+
+
+        
+Der Standardwert ist <b><tt class="big">gnome</tt></b> und startet die GNOME-Shell bzw., wenn kein 3-D zur 
+Verfügung steht oder es explizit im Display-Manager angeben wurde, den Fallback-Modus.
+
+<div class="p"><!----></div>
+    Noch aber ist das neue Setup nicht funktionsfähig und ein Neustart würde an diesem Punkt 
+nicht funktionieren. Sobald ein Programm aus der GNOME-Session-Konfigurationsdatei nicht 
+gestartet werden kann, schlägt der komplette Start der Desktop-Umgebung fehl. 
+Für Compiz 
+ist, anders als bei Mutter&nbsp;<a href="http://git.gnome.org/browse/mutter/">[5]</a> oder 
+Metacity&nbsp;<a href="http://blogs.gnome.org/metacity/">[6]</a>, 
+kein Starter hinterlegt und der Fenstermanager kann deshalb nicht gestartet werden. 
+Es muss 
+also zuerst noch ein Starter für Compiz angelegt werden.
+
+<div class="p"><!----></div>
+
+<h2>Einrichten des Fenstermanagers</h2>
+
+
+In der GNOME-Shell kommt der Fenstermanager Mutter zum Einsatz, der 
+
+in der 
+GNOME-Session-Konfiguration angegeben werden kann. 
+
+<div class="p"><!----></div>
+
+
+Dieser Artikel soll jedoch Hinweise zum 
+Einrichten von Alternativen geben und zeigt dazu exemplarisch das Einrichten von Compiz.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/gnome_desktop_anwendungsumschalter.png" alt="gnome_desktop_anwendungsumschalter.png" style="max-width:100%" /><br /><em>Der Anwendungsumschalter ist Teil des Fenstermanagers. 
+Unter Compiz muss dieser extra aktiviert werden.</em><br />
+
+<div class="p"><!----></div>
+    Damit ein Programm in der GNOME-Session-Konfiguration angegeben werden kann, muss dafür ein 
+Starter (<b><tt class="big">.desktop</tt></b>-Datei) hinterlegt sein. Für Compiz fehlt dieser. Deshalb muss 
+zuerst ein Starter mit einem Editor mit root-Rechten unter <b><tt class="big">$HOME/.local/share/applications/compiz.desktop</tt></b> 
+erstellt werden:
+
+<div class="p"><!----></div>
+    
+
+
+<div class="listing">[Desktop Entry]<br />
+Encoding=UTF-8<br />
+Name=Compiz<br />
+Comment=OpenGL-Composition- und Windowmanager<br />
+Exec=compiz<br />
+Terminal=false<br />
+Type=Application<br />
+StartupNotify=true</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/compiz.desktop">compiz.desktop</a></i>
+
+<div class="p"><!----></div>
+Anwendungen wie der Avant Window Navigator benötigen einen 
+Composition-Window-Manager&nbsp;<a href="https://de.wikipedia.org/wiki/Composition-Manager">[7]</a>. 
+Die Fenstermanager Compiz und Mutter haben den Composition-Manager aktiviert, beim 
+Fenstermanager Metacity muss dieser über den dconf-Schlüssel <b><tt class="big">/org/gnome/metacity/compositing-manager</tt></b> 
+aktiviert werden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ dconf write /org/gnome/metacity/compositing-manager true</div>
+
+<div class="p"><!----></div>
+
+
+Es muss also zwischen Fenstermanagern mit und ohne Composition-Manager unterschieden werden.
+
+<div class="p"><!----></div>
+Ist das typische GNOME-Theme Adwaita installiert, wird dieses auch vom Fenstermanager 
+genutzt. Das Theme wird im Paket <b>gnome-themes-standard</b> durch die Paketverwaltung 
+bereitgestellt. Es funktioniert aber auch jedes andere GNOME-Theme.
+
+<div class="p"><!----></div>
+
+<h2>Autostart</h2>
+
+
+Die GNOME Entwickler unterscheiden im Autostart, ob die GNOME-Shell oder der Fallback-Modus 
+geladen wird. So können Starter (<b><tt class="big">.desktop</tt></b>-Dateien) im Autostart einen 
+AutostartCondition-Eintrag enthalten, was eine Erweiterung der Desktop Application Autostart 
+Spezifikation&nbsp;<a href="http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html">[8]</a> 
+ist. 
+
+<div class="p"><!----></div>
+Ein solcher Eintrag kann der Grund sein, warum ein Programm nicht startet. Dann ist 
+es nötig, diesen Eintrag zu überschreiben.
+
+<div class="p"><!----></div>
+Die in den folgenden zwei Listings dargestellten AutostartCondition-Einträge sind für die Unterscheidung verantwortlich und legen 
+fest, welche Anwendungen im Autostart standardmäßig in welchem Modus starten sollen.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">AutostartCondition=GNOME3 if-session gnome-fallback</div>
+
+<div class="p"><!----></div>
+erlaubt das Starten nur im „echten“ fallback-Modus, also wenn die
+Session mit termgnome-fallback benannt ist. 
+
+<div class="p"><!----></div>
+
+<div class="listing">AutostartCondition=GNOME3 unless-session gnome</div>
+
+<div class="p"><!----></div>
+erlaubt das Starten nur, wenn die GNOME-Shell
+nicht geladen, also die Session nicht mit <b><tt class="big">gnome</tt></b> benannt ist.    
+
+<div class="p"><!----></div>
+Ansonsten wird der Autostart für den Starter unterbunden.
+
+<div class="p"><!----></div>
+ 		
+<div class="p"><!----></div>
+Der folgende Befehl zeigt alle AutostartCondition-Einträge im Autostart an:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ grep AutostartCondition /etc/xdg/autostart/*.desktop /usr/share/gnome/autostart/*.desktop</div>
+
+<div class="p"><!----></div>
+
+
+Der Unterschied zwischen den Startern im Autostart und denen in der GNOME-Session-Konfigurationsdatei 
+ist, dass ein nicht startendes Programm im Autostart nicht den Start der Desktop-Umgebung 
+verhindert. Anwendungen, die nicht zwingend für die Desktop-Umgebung notwendig sind, 
+sollten also immer in den Autostart eingetragen werden.
+
+<div class="p"><!----></div>
+
+<h3>AutostartCondition-Eintrag überschreiben</h3>
+
+
+Um einen AutostartCondition-Eintrag, der das Starten eines Programms im gewünschtem Modus 
+verhindert, zu überschreiben, legt man sich im Benutzerverzeichnis für den Autostart eine 
+Kopie des Starters an, diese aber entsprechend ohne AutostartCondition-Eintrag. Dies kann 
+nötig sein, damit der Umgang mit Wechselmedien und das Starten des Bluetooth-Verwaltungs-Applets 
+funktionieren.
+
+<div class="p"><!----></div>
+Das automatische Starten von Programmen beim Anmelden kann, wie gewohnt, mit dem 
+GNOME-Dialog Startprogrammeinstellungen (Programm <b><tt class="big">/usr/bin/gnome-session-properties</tt></b>) 
+verwaltet werden. Legt man über den Dialog neue Autostart-Einträge an, wird kein 
+AutostartCondition-Eintrag gesetzt.
+
+<div class="p"><!----></div>
+Im Terminal und in Shell-Skripten kommentiert das folgende Beispiel einen 
+AutostartCondition-Eintrag komplett aus, sodass Programme immer starten:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ mkdir -p $HOME/.config/autostart/<br />
+$ sed '/AutostartCondition=/s/^/# /g' /etc/xdg/autostart/FOO.desktop &#62; HOME/.config/autostart/FOO.desktop</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Umgang mit Wechselmedien, Bluetooth-Verwaltungs-Applet und Notification-Daemon</h3>
+
+
+Die GNOME-Shell kümmert sich um Wechseldatenträger, sie hängt angeschlossene Geräte 
+automatisch ein und führt gegebenenfalls Programme aus. 
+
+<div class="p"><!----></div>
+Damit beispielsweise der 
+Medienspieler beim Einlegen einer DVD automatisch startet, muss der Starter für den 
+Einhänge-Assistent (<b><tt class="big">/usr/share/gnome/autostart/gnome-fallback-mount-helper.desktop</tt></b>), 
+ohne AutostartCondition-Eintrag in den Autostart eintragen werden.
+
+<div class="p"><!----></div>
+Soll das Bluetooth-Verwaltungs-Applet starten, muss der Starter für die Bluetooth-Verwaltung 
+(<b><tt class="big">/usr/share/gnome/autostart/bluetooth-applet.desktop</tt></b>) ohne den beschriebenen AutostartCondition-Eintrag 
+in den Autostart eintragen werden.
+
+<div class="p"><!----></div>
+Beide Starter 
+erlauben sonst nur das Starten 
+im „echten“ fallback-Modus.
+
+<div class="p"><!----></div>
+
+
+Gemeint ist die 
+Session <b><tt class="big">gnome-fallback</tt></b>. Selbiges gilt unter anderem auch für den Starter, der die 
+Lautstärkeregelung bereitstellt (<b><tt class="big">/etc/xdg/autostart/gnome-sound-applet.desktop</tt></b>) 
+aus dem Paket <b>gnome-control-center-data</b>.
+
+<div class="p"><!----></div>
+Damit passive Pop-up-Meldungen (Desktop-Notifications) angezeigt werden, muss der 
+Notification-Daemon gestartet sein. 
+
+<div class="p"><!----></div>
+Passiert dies nicht, obwohl in der Konfiguration für 
+die GNOME-Session angegeben, kann es eine mögliche Lösung sein, das Programm 
+<b><tt class="big">/usr/lib/notification-daemon/notification-daemon</tt></b> in den Autostart einzutragen.
+
+<div class="p"><!----></div>
+
+
+Wem das Verhalten des Notification-Daemon in GNOME 3 nicht zusagt, der findet mit 
+Notify OSD&nbsp;<a href="http://launchpad.net/notify-osd">[9]</a> 
+eine Alternative. Damit Notify OSD im 
+Autostart von GNOME startet, muss die Datei <b><tt class="big">/etc/xdg/autostart/notify-osd.desktop</tt></b> 
+zum Autostart hinzugefügt und dort die Option X-GNOME-Autostart-enabled=true gesetzt werden.
+
+<div class="p"><!----></div>
+Im Terminal und in Shell-Skripten geht das mit:
+
+<div class="p"><!----></div>
+
+<div class="command">$ sed '/X-GNOME-Autostart-enabled=/s/=.*/=true/g' /etc/xdg/autostart/notify-osd.desktop &#62; $HOME/.config/autostart/notify-osd.desktop</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Icons auf dem Desktop</h2>
+
+
+Wer sich gerne die Dateien des Verzeichnisses <b><tt class="big">Desktop</tt></b> auf der Arbeitsfläche angezeigen lassen  
+möchte, der kann dies mittels 
+des dconf-Schlüssels
+<b><tt class="big">/org/gnome/desktop/background/show-desktop-icons</tt></b> 
+aktivieren:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ dconf write /org/gnome/desktop/background/show-desktop-icons true</div>
+
+<div class="p"><!----></div>
+
+
+Die Anzeige der Icons erledigt Nautilus.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Zusammenfassung</h2>
+
+
+Es ist möglich, GNOME 3 ohne GNOME Shell zu nutzen und sich einen Desktop nach eigenen 
+Wünschen zusammenzustellen und für alle Komponenten andere Anwendungen zu definieren. 
+Dies wurde hier am Beispiel von Compiz und Avant Window Manager gezeigt. Wer diese 
+Anwendungen schon unter GNOME 2 für die Organisation des Desktops nutzte, kann so seinen 
+gewohnten Workflow auch unter GNOME 3 beibehalten. Allen anderen sollte es die Einrichtung 
+von Alternativen in GNOME 3 erleichtern.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.gnome.org/gnome-3/"><tt class="big">http://www.gnome.org/gnome-3/</tt></a><br />
+[2] <a href="http://live.gnome.org/GnomeShell"><tt class="big">http://live.gnome.org/GnomeShell</tt></a><br />
+[3] <a href="http://launchpad.net/avant-window-navigator/"><tt class="big">http://launchpad.net/avant-window-navigator/</tt></a><br />
+[4] <a href="http://www.compiz.org/"><tt class="big">http://www.compiz.org/</tt></a><br />
+[5] <a href="http://git.gnome.org/browse/mutter/"><tt class="big">http://git.gnome.org/browse/mutter/</tt></a><br />
+[6] <a href="http://blogs.gnome.org/metacity/"><tt class="big">http://blogs.gnome.org/metacity/</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Composition-Manager"><tt class="big">https://de.wikipedia.org/wiki/Composition-Manager</tt></a><br />
+[8] <a href="http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html"><tt class="big">http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html</tt></a><br />
+[9] <a href="http://launchpad.net/notify-osd"><tt class="big">http://launchpad.net/notify-osd</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Steffen Rumberger</b> 
+ist Debian GNU/Linux Nutzer und dieser Artikel entstammt einem von ihm gestarteten 
+Wiki-Artikel auf <a href="http://wiki.debianforum.de/GNOME-Desktop_ohne_GNOME-Shell_zusammenstellen">wiki.debianforum.de</a>. 
+Dort finden sich weiterführende Informationen und Beispiele.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=GNOME-Desktop ohne GNOME-Shell#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_04_docopt" name="fm_13_04_docopt">docopt – Eleganter Umgang mit Parametern von Kommandozeilenprogrammen</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+        
+
+<b>D</b><b>as Projekt <i>docopt</i>&nbsp;<a href="http://docopt.org/">[1]</a> beschreibt sich selbst als 
+Beschreibungssprache für Kommandozeilenapplikationen (“<em>Command-line interface 
+description language</em>”) und hat das Ziel, schöne Schnittstellen für 
+Kommandozeilenapplikationen (“<em>creates beautiful command-line interfaces</em>”) zu 
+generieren.</b>
+
+<div class="p"><!----></div>
+Was sich beim ersten Lesen ein wenig vage anhört hat allerdings einen handfesten 
+Hintergrund. Wer mit einem Kommandozeilenprogramm arbeitet, erwartet 
+üblicherweise, dass beim Aufruf des Programms mit <b><tt class="big">-h</tt></b> (oder auch <b><tt class="big">--help</tt></b>) ein 
+Hilfstext erscheint, der die Befehle, Argumente und Optionen des Programms 
+zumindest kurz erklärt. Dieser Hilfstext muss natürlich in irgendeiner Form im 
+Programm hinterlegt werden – von selbst generiert sich dieser nicht. Genau hier 
+setzt <i>docopt</i> an: Den Hilfstext auf möglichst einfache und elegante Weise zu
+generieren.
+
+<div class="p"><!----></div>
+<i>docopt</i> entstammt dem Python-Umfeld und die 
+Referenzimplementierung&nbsp;<a href="https://github.com/docopt/docopt">[2]</a> liegt ebenfalls in Python vor. Es gibt 
+aber auch eine Reihe von Portierungen in andere Programmiersprachen, dazu später 
+mehr. Dieser Artikel beschreibt die Nutzung der Python-Version von <i>docopt</i> in der 
+derzeit aktuellen
+Version 0.6.1.
+
+<div class="p"><!----></div>
+
+<h2>argparse, Docstrings und docopt</h2>
+
+
+Unter Python werden heutzutage Befehle, Argumente und Optionen für 
+Kommandozeilenapplikationen üblicherweise mit Hilfe des Moduls 
+<b><tt class="big">argparse</tt></b>&nbsp;<a href="http://docs.python.org/2/howto/argparse.html">[3]</a> festgelegt, hieraus wird dann 
+auch der Hilfstext generiert. Weiterhin gehört es unter Python zum „guten Ton“, 
+dass man für ein Python-Modul auch einen 
+Docstring&nbsp;<a href="http://www.python.org/dev/peps/pep-0257/">[4]</a> hinterlegt. Dieser wird dann beim 
+Aufruf von <b><tt class="big">help(modulname)</tt></b> im Python-Interpreter angezeigt. Soll 
+innerhalb des Docstrings die Nutzung des Programm erklärt werden – was durchaus 
+Sinn ergibt – dann muss hier all das nochmals geschrieben werden, was auch 
+schon bei <b><tt class="big">argparse</tt></b> hinterlegt ist. Man hat also doppelte Arbeit und redundanten Text.
+<i>docopt</i> macht aus dieser Not eine Tugend: Es generiert aus dem Docstring den 
+Kommandozeilenhilfstext, so dass beim Einsatz von <i>docopt</i> die Nutzung von 
+argparse entfallen kann.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+
+<i>docopt</i> für Python besteht nur aus einer einzelnen Datei, so dass diese händisch 
+von der Projektseite&nbsp;<a href="https://github.com/docopt/docopt">[2]</a> kopiert werden kann. 
+Oder es wird der für Python-Module gängigere Weg der Installation via 
+pip&nbsp;<a href="http://pypi.python.org/pypi/pip">[5]</a> gewählt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># pip install docopt</div>
+
+<div class="p"><!----></div>
+
+<h2>Ein Beispiel</h2>
+
+
+
+
+Das folgende kleine Pythonprogramm zeigt die (unspektakuläre) Nutzung von <i>docopt</i>:
+
+<div class="p"><!----></div>
+
+<div class="listing">'''docopt_beispiel.py<br />
+<br />
+Usage:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+Options:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+'''<br />
+<br />
+from docopt import docopt<br />
+<br />
+if __name__ == '__main__':<br />
+&nbsp;&nbsp;&nbsp;&nbsp;arguments = docopt(__doc__)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;print(arguments) </div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/docopt_short.py">docopt_short.py</a></i>
+
+<div class="p"><!----></div>
+Das komplette Programm inklusive kompletter Hilfe: <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/docopt_beispiel.py">docopt_beispiel.py</a>.
+
+<div class="p"><!----></div>
+Das Programm an sich hat dabei keine echte Funktion. Über die beiden Zeilen 
+innerhalb des <b><tt class="big">if __name__ == '__main__':</tt></b> Blocks werden lediglich die Befehle, 
+Argumente und Optionen ausgegeben, mit denen das Programm <b><tt class="big">docopt_beispiel.py</tt></b> 
+aufgerufen wurde. Der Docstring zu Beginn des Listings erklärt dabei die 
+Nutzung des Programms. Die einzige wirklich zwingende Angabe ist dabei das 
+<b><tt class="big">Usage:</tt></b>, damit <i>docopt</i> die nachfolgenden Befehle, Argumente und Optionen korrekt 
+als solche erkennt.
+
+<div class="p"><!----></div>
+Ruft man das Programm jetzt auf, erscheint folgende Ausgabe:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ python docopt_beispiel.py<br />
+Usage:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py reset<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py listen &lt;ip_address&#62; &lt;port&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py listen &lt;ip_address&#62; &lt;port&#62; [--details=&lt;level&#62;]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py --details=&lt;level&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py (--load-config DATEI)</div>
+
+<div class="p"><!----></div>
+
+
+Da das Programm mindestens einen Befehl, ein Argument oder eine Option erwartet, 
+aber keines oder keine übergeben wurde, erscheint der Hilfstext. Gleiches würde 
+geschehen, wenn das Programm mit einer nicht definierten Option wie z.&nbsp;B. <b><tt class="big">python 
+docopt_beispiel.py --foo</tt></b> aufgerufen würde.
+
+<div class="p"><!----></div>
+
+<h2>Automatische Hilfstexte</h2>
+
+
+Wie im Listing zu sehen ist, ist nicht festgelegt, dass es eine Option <b><tt class="big">-h</tt></b> (der 
+<b><tt class="big">--help</tt></b>) gibt. Dies ist auch nicht notwendig, da <i>docopt</i> das automatisch 
+erledigt. Das zeigt folgender Aufruf: 
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ python docopt_beispiel.py -h<br />
+Usage:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py reset<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py listen &lt;ip_address&#62; &lt;port&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py listen &lt;ip_address&#62; &lt;port&#62; [--details=&lt;level&#62;]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py --details=&lt;level&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;mein_programm.py (--load-config DATEI)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<br />
+Options:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;reset                       Initialisiert das Programm neu<br />
+&nbsp;&nbsp;&nbsp;&nbsp;listen &lt;ip_address&#62; &lt;port&#62;  das Programm startet auf der angegebenen<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IP-Adresse und der angegebenen Port<br />
+&nbsp;&nbsp;&nbsp;&nbsp;--details=&lt;level&#62;           Legt die Detailtiefe fest<br />
+&nbsp;&nbsp;&nbsp;&nbsp;--load-config DATEI         Liest die Konfigurationsdatei DATEI ein</div>
+
+<div class="p"><!----></div>
+
+
+Jetzt wird auch der unter <b><tt class="big">Options</tt></b> im Docstring hinterlegte Text mit angezeigt.
+
+<div class="p"><!----></div>
+
+<h2>Auswerten der Befehle, Argumente und Optionen</h2>
+
+
+Wird das Beispielprogramm mit einem der definierten Befehle, Argumente oder 
+Optionen aufgerufen, so erscheint beispielsweise
+folgende Ausgabe:
+
+<div class="p"><!----></div>
+
+<div class="command">$ python docopt_beispiel.py reset<br />
+{'--details': None,<br />
+&nbsp;'--load-config': None,<br />
+&nbsp;'&lt;ip_address&#62;': None,<br />
+&nbsp;'&lt;port&#62;': None,<br />
+&nbsp;'listen': False,<br />
+&nbsp;'reset': True}</div>
+
+<div class="p"><!----></div>
+
+
+<b><tt class="big">reset</tt></b> ist also <b><tt class="big">True</tt></b> (weil das Argument angegeben wurde), alle anderen 
+Befehle, Argumente bzw. Optionen haben ihre voreingestellten Standardwerte
+<b><tt class="big">False</tt></b> bzw. <b><tt class="big">None</tt></b>.
+
+<div class="p"><!----></div>
+    Als zweites Beispiel die Option <b><tt class="big">listen</tt></b> mit zwei Parametern:
+
+<div class="p"><!----></div>
+
+<div class="command">$ python docopt_beispiel.py listen 127.0.0.1 8765<br />
+{'--details': None,<br />
+&nbsp;'--load-config': None,<br />
+&nbsp;'&lt;ip_address&#62;': '127.0.0.1',<br />
+&nbsp;'&lt;port&#62;': '8765',<br />
+&nbsp;'listen': True,<br />
+&nbsp;'reset': False}</div>
+
+<div class="p"><!----></div>
+
+
+Wie zu sehen ist, speichert <i>docopt</i> die Befehle, Argumente und Optionen 
+unter Python im Datentyp „Dictionary“. Interessiert z.&nbsp;B. nur, ob das Argument 
+<b><tt class="big">reset</tt></b> vorhanden war, so kann über den Ausdruck <b><tt class="big">arguments['reset']</tt></b> direkt 
+darauf zugegriffen werden.
+
+<div class="p"><!----></div>
+Wird das Programm übrigens mit unvollständigen Optionen aufgerufen, so weist <i>docopt</i> entsprechend darauf hin:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ python docopt_beispiel.py --load-config<br />
+--load-config requires argument</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Befehle, Argumente und Optionen</h2>
+
+
+Wie im obigen Beispiel zu sehen ist, kommen in der Definition der Befehle, 
+Argumente und Optionen diverse Arten von Klammern vor. Manche Befehle, Argumente 
+und Optionen stehen auch frei. Dies ist für <i>docopt</i> von Bedeutung.
+
+<div class="p"><!----></div>
+<b><tt class="big">reset</tt></b>, welches frei steht, ist ein Befehl, der nicht optional ist. Spitze 
+Klammern (<b><tt class="big">&lt;&#62;</tt></b>) schließen ein (Positions-) Argument ein, welches auf einen Befehl 
+(wie hier <b><tt class="big">listen</tt></b>) oder eine Option (wie hier <b><tt class="big">--details</tt></b>) folgt. Eckige 
+Klammern (<b><tt class="big">[]</tt></b>) kennzeichnen ein optionales Argument, welches angegeben werden kann, 
+aber nicht muss (hier das <b><tt class="big">--details</tt></b> in der Zeile mit <b><tt class="big">listen</tt></b>). Runde Klammern 
+legen benötigte Argumente/Optionen fest. Im obigen Beispiel bedeutet dies, dass die 
+Option <b><tt class="big">--load-config</tt></b> zwingend die Angabe einer Datei benötigt.
+
+<div class="p"><!----></div>
+Die hier gezeigten Fälle sind die gängigsten von <i>docopt</i>, aber nicht alle. Die 
+eingangs erwähnte Projektseite von <i>docopt</i> enthält ein ausführlicheres Beispiel, 
+in dem die Kommandozeilen-API für das Spiel „Schiffe versenken“ nachgestellt 
+wird.
+
+<div class="p"><!----></div>
+
+<h2>Portierung auf andere Sprachen</h2>
+
+
+Wie bereits erwähnt entstammt <i>docopt</i> ursprünglich dem Python-Umfeld, ist aber 
+nicht (mehr) darauf beschränkt. Es gibt fertige Portierungen für Ruby&nbsp;<a href="https://github.com/docopt/docopt.rb">[6]</a>,
+PHP&nbsp;<a href="https://github.com/docopt/docopt.php">[7]</a>, CoffeeScript/JavaScript&nbsp;<a href="https://github.com/docopt/docopt.coffee">[8]</a>
+und Bash&nbsp;<a href="https://github.com/docopt/docopts">[9]</a>. Des Weiteren sind Portierungen für 
+C&nbsp;<a href="https://github.com/docopt/docopt.c">[10]</a> und 
+Lua&nbsp;<a href="https://github.com/docopt/docopt.lua">[11]</a> in Arbeit. Die Nutzung der Portierung 
+erfolgt analog zur Python-Version, Details und Beispiele sind auf den jeweiligen 
+Projektseiten zu finden.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+<i>docopt</i> stellt – unter Python und auch den anderen genannten Programmiersprachen 
+– eine einfache und elegante Möglichkeit dar, Hilfstext zu generieren und die 
+Aufruf-Parameter des Programms auf der Kommandozeile auszuwerten. Zumal die 
+Python-Version nur aus einer einzelnen Datei besteht, keine Abhängigkeiten außer 
+Python selbst hat und unter allen Python-Versionen von 2.5 bis 3.3 läuft.
+
+<div class="p"><!----></div>
+Die Entwicklung von <i>docopt</i> ist zwar noch nicht abgeschlossen, so dass durchaus 
+noch kleine Änderungen an der API erfolgen könnten. Da dann aber im Zweifelsfall 
+nur der Docstring innerhalb des eigenen Programms angepasst werden müsste, ist 
+dies kein Grund, nicht jetzt schon auf <i>docopt</i> zu setzen.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://docopt.org/"><tt class="big">http://docopt.org/</tt></a><br />
+[2] <a href="https://github.com/docopt/docopt"><tt class="big">https://github.com/docopt/docopt</tt></a><br />
+[3] <a href="http://docs.python.org/2/howto/argparse.html"><tt class="big">http://docs.python.org/2/howto/argparse.html</tt></a><br />
+[4] <a href="http://www.python.org/dev/peps/pep-0257/"><tt class="big">http://www.python.org/dev/peps/pep-0257/</tt></a><br />
+[5] <a href="http://pypi.python.org/pypi/pip"><tt class="big">http://pypi.python.org/pypi/pip</tt></a><br />
+[6] <a href="https://github.com/docopt/docopt.rb"><tt class="big">https://github.com/docopt/docopt.rb</tt></a><br />
+[7] <a href="https://github.com/docopt/docopt.php"><tt class="big">https://github.com/docopt/docopt.php</tt></a><br />
+[8] <a href="https://github.com/docopt/docopt.coffee"><tt class="big">https://github.com/docopt/docopt.coffee</tt></a><br />
+[9] <a href="https://github.com/docopt/docopts"><tt class="big">https://github.com/docopt/docopts</tt></a><br />
+[10] <a href="https://github.com/docopt/docopt.c"><tt class="big">https://github.com/docopt/docopt.c</tt></a><br />
+[11] <a href="https://github.com/docopt/docopt.lua"><tt class="big">https://github.com/docopt/docopt.lua</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.de/">Webseite</a>)
+programmiert selbst bevorzugt in Python. Auf docopt ist er über 
+einen Artikel im englischen Linux-Magazin zur PyCon UK 2012 aufmerksam geworden.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                    <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=docopt#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_04_ffox_addonsdk3" name="fm_13_04_ffox_addonsdk3">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil III</a></font></h1>von Markus Brenneis
+
+<div class="p"><!----></div>
+        <b>I</b><b>m letzten Teil&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2013-03">[1]</a> ging es 
+darum, wie die aktuelle Auswahl festgestellt werden kann und der passende 
+Wikipediaartikel in einem neuem Tab geöffnet wird. Jetzt soll es alternativ 
+möglich sein, den Artikel in einem Panel anzuzeigen.</b>
+
+<div class="p"><!----></div>
+
+<h2>Erstellen von Panels</h2>
+
+
+Ein Panel ist ein kleiner Dialog, dessen Inhalt mit HTML, CSS und Javascript 
+erstellt wird. Nach dem Einbinden des Moduls <b><tt class="big">panel</tt></b>&nbsp;<a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/panel.html">[2]</a>
+wird ein Panel wie folgt deklariert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">var panels = require("panel");<br />
+var self=require("self");<br />
+<br />
+var panel = panels.Panel ({<br />
+&nbsp;&nbsp;contentURL: self.data.url("panel.html")<br />
+});</div>
+
+<div class="p"><!----></div>
+Der Inhalt des Panels steht in der Datei <b><tt class="big">panel.html</tt></b> (der Dateiname kann 
+beliebig gewählt werden). Diese Datei muss im <b><tt class="big">data</tt></b>-Ordner der Erweiterung 
+angelegt werden und kann mithilfe des Moduls <b><tt class="big">self</tt></b>&nbsp;<a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/self.html">[3]</a>
+gefunden werden. Eine einfache Datei, die die Hauptseite der mobilen 
+Wikipedia anzeigt, könnte so aussehen:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;!DOCTYPE HTML&#62;<br />
+&lt;html&#62;<br />
+&lt;head&#62;<br />
+&lt;link rel="stylesheet" type="text/css" href="panel.css" /&#62;<br />
+&lt;/head&#62;<br />
+&lt;body&#62;<br />
+&lt;iframe id="article" src="http://de.m.wikipedia.org"/&#62;<br />
+&lt;/body&#62; <br />
+&lt;/html&#62;</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/panel.html">panel.html</a></i>
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Man kann <b><tt class="big">http://de.m.wikipedia.org</tt></b> auch direkt als <b><tt class="big">contentURL</tt></b> 
+angeben, der Umweg über <b><tt class="big">panel.html</tt></b> ist aber für 
+spätere
+Zusatzfunktionen notwendig.
+
+<div class="p"><!----></div>
+Damit der <b><tt class="big">iframe</tt></b>&nbsp;<a href="https://de.wikipedia.org/wiki/Inlineframe">[4]</a>, in dem der 
+Artikel angezeigt wird, auch den gesamten Platz im Panel ausnutzt, werden ein 
+paar Stileigenschaften in der Datei <b><tt class="big">panel.css</tt></b>, die ebenfalls im Ordner <b><tt class="big">data</tt></b> 
+abgelegt ist, festgelegt:
+
+<div class="p"><!----></div>
+
+<div class="listing">body {<br />
+&nbsp;&nbsp;height: 100%;<br />
+&nbsp;&nbsp;width: 100%;<br />
+&nbsp;&nbsp;background: white;<br />
+}<br />
+iframe {<br />
+&nbsp;&nbsp;border: 0px;<br />
+&nbsp;&nbsp;height: 100%;<br />
+&nbsp;&nbsp;width: 100%;<br />
+&nbsp;&nbsp;overflow: hidden;<br />
+&nbsp;&nbsp;position: absolute;<br />
+&nbsp;&nbsp;top: 0px;<br />
+&nbsp;&nbsp;left: 0px;<br />
+}</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/panel.css">panel.css</a></i>
+
+<div class="p"><!----></div>
+Um das Panel anzuzeigen, wenn auf das „W“-Symbol geklickt wird, muss die 
+<b><tt class="big">panel</tt></b>-Eigenschaft des Widgets gesetzt werden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">var widget = widgets.Widget({<br />
+&nbsp;&nbsp;id: 'wikipedia-icon',<br />
+&nbsp;&nbsp;label: 'Wikipedia',<br />
+&nbsp;&nbsp;content: '&lt;b style="font-family:Times"&#62;W&lt;/b&#62;',<br />
+&nbsp;&nbsp;panel: panel,<br />
+&nbsp;&nbsp;onClick: openArticleInPanel<br />
+});</div>
+
+<div class="p"><!----></div>
+Damit auf die Variable <b><tt class="big">panel</tt></b> zugegriffen werden kann, muss dieser Codeblock 
+hinter der Deklaration von <b><tt class="big">panel</tt></b> stehen. Außerdem wird eine andere 
+<b><tt class="big">onClick</tt></b>-Funktion aufgerufen, denn der Artikel soll nicht mehr in einem neuem 
+Tab erscheinen, sondern im Panel.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/ffox_addonsdk3_panel_start.png" alt="ffox_addonsdk3_panel_start.png" style="max-width:100%" /><br /><em>Die Startseite der mobilen Wikipedia in einem Panel.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Laden des Artikels</h2>
+
+
+Jetzt muss diese Funktion angelegt werden. Wie bereits im letzten Artikel 
+erwähnt, kommunizieren die unterschiedlichen Teile der Erweiterung (und des 
+Browsers) über Content-Skripten miteinander. Um dem Panel mitzuteilen, welcher 
+Artikel angezeigt werden soll, wird auch ein Content-Skript verwendet.
+
+<div class="p"><!----></div>
+Der Code 
+befindet sich in der Datei <b><tt class="big">panel.js</tt></b>, die wieder im <b><tt class="big">data</tt></b>-Verzeichnis abgelegt 
+wird, und wird mit der Eigenschaft <b><tt class="big">contentScriptFile</tt></b> dem Panel zugeordnet:
+
+<div class="p"><!----></div>
+    
+<div class="listing">var panel = panels.Panel ({<br />
+&nbsp;&nbsp;contentURL: self.data.url("panel.html"),<br />
+&nbsp;&nbsp;contentScriptFile: self.data.url("panel.js")<br />
+});</div>
+
+<div class="p"><!----></div>
+Das Skript enthält folgenden Code:
+
+<div class="p"><!----></div>
+
+<div class="listing">self.port.on("loadPage", function(page) {<br />
+&nbsp;&nbsp;document.getElementById("article").src=page;<br />
+});</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/panel.js">panel.js</a></i>
+
+<div class="p"><!----></div>
+Die Kommunikation läuft über das globale <b><tt class="big">port</tt></b>-Objekt&nbsp;<a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/guides/content-scripts/using-port.html">[5]</a>.
+Wenn das Panel ein Ereignis mit dem Namen 
+<b><tt class="big">loadPage</tt></b> erhält, setzt es die <b><tt class="big">src</tt></b>-Eigenschaft des iframes <b><tt class="big">article</tt></b> auf den 
+Wert des Parameters <b><tt class="big">page</tt></b>.
+
+<div class="p"><!----></div>
+Die Funktion <b><tt class="big">openArticleInPanel</tt></b> muss nun ein solches Ereignis mit 
+<b><tt class="big">panel.port.emit</tt></b> auslösen:
+
+<div class="p"><!----></div>
+
+<div class="listing">function openArticleInPanel() {<br />
+&nbsp;&nbsp;panel.port.emit("loadPage", "http://de.m.wikipedia.org/w/index.php?search=" + <br />
+selectedText);<br />
+}</div>
+
+<div class="p"><!----></div>
+Ein Test mit <b><tt class="big">cfx run</tt></b> zeigt, dass diese Implementierung bereits sehr gut 
+funktioniert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/ffox_addonsdk3_panel_mpl.png" alt="ffox_addonsdk3_panel_mpl.png" style="max-width:100%" /><br /><em>Der markierte Begriff „Mozilla Public License“ wurde in Wikipedia nachgeschlagen.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Kleine Verbesserungen</h2>
+
+
+
+<h3>Ein Schließen-Button …</h3>
+
+
+Auch wenn das Panel einfach durch einen Linksklick außerhalb des Panels 
+geschlossen werden kann, ist dies unter Umständen nicht jedem Benutzer bewusst, 
+weshalb man einen
+    
+Schließen-Link im Panel anzeigen könnte. Dazu fügt man zur 
+HTML-Datei folgenden Code hinzu:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;div id="close"&#62;&lt;a href="javascript:closePanel()"&#62;x&lt;/a&#62;&lt;/div&#62;</div>
+
+<div class="p"><!----></div>
+Das „x“ wird mit CSS rot gefärbt und nach oben rechts verschoben. Damit es über 
+dem Frame erscheint, muss <b><tt class="big">z-index</tt></b>&nbsp;<a href="http://www.css4you.de/z-index.html">[6]</a> auf 1
+gesetzt werden.
+
+<div class="p"><!----></div>
+
+<div class="listing">#close {<br />
+&nbsp;&nbsp;position: absolute;<br />
+&nbsp;&nbsp;top: 10px;<br />
+&nbsp;&nbsp;right: 10px;<br />
+&nbsp;&nbsp;z-index: 1;<br />
+}<br />
+#close &#62; a {<br />
+&nbsp;&nbsp;color: red;<br />
+&nbsp;&nbsp;text-decoration: none;<br />
+&nbsp;&nbsp;font-size: 24px;<br />
+&nbsp;&nbsp;font-family: monospace;<br />
+}</div>
+
+<div class="p"><!----></div>
+Da der Panelinhalt selbst nicht das Panel schließen kann, muss wieder mit 
+Content-Skripten gearbeitet werden. Zunächst wird <b><tt class="big">panel.js</tt></b> um einen 
+Event-Handler&nbsp;<a href="http://molily.de/js/event-handling-fortgeschritten.html#addEventListener">[7]</a>
+für Mausklicks erweitert:
+
+<div class="p"><!----></div>
+
+<div class="listing">window.addEventListener(<br />
+&nbsp;&nbsp;'click',<br />
+&nbsp;&nbsp;function(event) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;var t = event.target;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;if(t.nodeName == "A" &amp;&amp; t.toString() == "javascript:closePanel()") {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.port.emit('closePanel');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;},<br />
+&nbsp;&nbsp;false<br />
+);</div>
+
+<div class="p"><!----></div>
+Sobald also auf einen Link (<b><tt class="big">a</tt></b>-Element) geklickt wird und das Linkziel 
+<b><tt class="big">javascript:closePanel()</tt></b> ist, wird die Nachricht <b><tt class="big">closePanel</tt></b> an den Hauptcode 
+der Erweiterung geschickt. Diese Nachricht muss jetzt nur noch in <b><tt class="big">main.js</tt></b> 
+verarbeitet werden, indem die <b><tt class="big">hide</tt></b>-Funktion von <b><tt class="big">panel</tt></b> aufgerufen wird:
+
+<div class="p"><!----></div>
+
+<div class="listing">panel.port.on("closePanel", function() {<br />
+&nbsp;&nbsp;panel.hide();<br />
+});</div>
+
+<div class="p"><!----></div>
+Der Code kann an einer beliebigen Stelle (außerhalb einer Funktion) nach der 
+Deklaration von <b><tt class="big">panel</tt></b> eingefügt werden.
+
+<div class="p"><!----></div>
+    
+<h3>… und weniger Flackern</h3>
+
+
+Um mehr von dem Artikel zu sehen, sollte die Größe des Panels mittels der 
+Eigenschaften <b><tt class="big">width</tt></b> und <b><tt class="big">height</tt></b> etwas vergrößert werden. Des Weiteren ist es 
+bisher so, dass, bevor ein neuer Artikel geladen wird, der alte Artikel noch 
+angezeigt wird. Um das zu verhindern, kann mithilfe der <b><tt class="big">onHide</tt></b>-Eigenschaft 
+eine Nachricht an das Panel gesendet werden, mit der die Seite auf <b><tt class="big">about:blank</tt></b> 
+gesetzt wird. Mit diesen Anpassungen sieht die Panel-Deklaration wie folgt aus:
+
+<div class="p"><!----></div>
+
+<div class="listing">var panel = panels.Panel ({<br />
+&nbsp;&nbsp;contentURL: self.data.url("panel.html"),<br />
+&nbsp;&nbsp;contentScriptFile: self.data.url("panel.js"),<br />
+&nbsp;&nbsp;onHide: function () {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;panel.port.emit("loadPage", "about:blank");<br />
+&nbsp;&nbsp;},<br />
+&nbsp;&nbsp;width: 450,<br />
+&nbsp;&nbsp;heigth: 450<br />
+});</div>
+
+<div class="p"><!----></div>
+
+<h3>Ausblenden der Suchleiste</h3>
+
+
+Ferner ist die Suchleiste für den Verwendungszweck der Erweiterung nicht 
+sinnvoll und kann ausgeblendet werden. Dies kann gemacht werden, indem per CSS 
+der Seiteninhalt um 50 Pixel nach oben verschoben wird. Dazu wird in der 
+CSS-Datei <b><tt class="big">iframe</tt></b> um folgende zwei Eigenschaften ergänzt:
+
+<div class="p"><!----></div>
+
+<div class="listing">&nbsp;&nbsp;height: calc(100% + 50px);<br />
+&nbsp;&nbsp;top: -50px;</div>
+
+<div class="p"><!----></div>
+
+<h2>Zusammenfassung und Ausblick</h2>
+
+
+In dieser Ausgabe wurde gezeigt, wie Panels angelegt werden und verschiedene 
+Programmteile über Content-Skripte miteinander kommunizieren können. Im nächsten 
+Artikel der Reihe wird das Erstellen von Einstellungen und Übersetzungen 
+thematisiert werden.
+
+<div class="p"><!----></div>
+Die komplette Erweiterung kann als Archiv <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/ffox_addonsdk_3.tar.gz">ffox_addonsdk_3.tar.gz</a> und als 
+installierbare Erweiterung <a href="http://www.freiesmagazin.de/mobil/2013-04-listings/ffox_addonsdk_3.xpi">ffox_addonsdk_3.xpi</a> heruntergeladen werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/ffox_addonsdk3_panel_verb.png" alt="ffox_addonsdk3_panel_verb.png" style="max-width:100%" /><br /><em>Das überarbeitete Panel.</em><br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2013-03"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2013-03</tt></a><br />
+[2] <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/panel.html"><tt class="big">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/panel.html</tt></a><br />
+[3] <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/self.html"><tt class="big">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/self.html</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Inlineframe"><tt class="big">https://de.wikipedia.org/wiki/Inlineframe</tt></a><br />
+[5] <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/guides/content-scripts/using-port.html"><tt class="big">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/guides/content-scripts/using-port.html</tt></a><br />
+[6] <a href="http://www.css4you.de/z-index.html"><tt class="big">http://www.css4you.de/z-index.html</tt></a><br />
+[7] <a href="http://molily.de/js/event-handling-fortgeschritten.html#addEventListener"><tt class="big">http://molily.de/js/event-handling-fortgeschritten.html#addEventListener</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Markus Brenneis</b>&nbsp;(<a href="http://gulp21.github.com/">Webseite</a>)
+hat 2007 sein erstes Firefox-Add-on geschrieben und 2012 beim Entwickeln der 
+Erweiterung LanguageToolFx erstmals das Add-on-SDK benutzt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=Firefox-Add-on-SDK - Teil 3#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+<h1><font color="#595959"><a id="fm_13_04_png_optimierung" name="fm_13_04_png_optimierung">PNG-Bilder (automatisch) optimieren</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        
+
+<b>E</b><b>ine Frage, die man sich bei der Überschrift stellen könnte, ist: „Sind meine 
+Bilder nicht optimal?“ Die Antwort ist, dass alles eine Frage der Definition 
+ist. Mit „optimal“ ist in diesem Fall die Dateigröße des PNG-Bildes in 
+Relation zur Qualität gemeint. Im Artikel sollen ein paar Werkzeuge 
+vorgestellt werden, mit denen man PNG-Bilder ohne großen Qualitätsverlust 
+verkleinern kann.</b>
+
+<div class="p"><!----></div>
+
+<h2>Technischer Hintergrund</h2>
+
+
+Das Grafikformat PNG (kurz für „Portable Network 
+Graphics“&nbsp;<a href="https://de.wikipedia.org/wiki/Portable_Network_Graphics">[1]</a>) ist 
+neben JPG&nbsp;<a href="https://de.wikipedia.org/wiki/JPG">[2]</a> (die Komprimierung heißt im 
+übrigen JPEG) das wohl am weitesten verbreitete Bildformat im Internet. 
+Es unterstützt die drei Farbkanäle Rot, Grün und Blau und kann insgesamt bis 
+zu 16,7 Millionen Farben in einem Bild darstellen. Aber auch die Darstellung 
+als Graustufenbild ist möglich. Zusätzlich gibt es noch die Möglichkeit, das 
+Bild mit einer Farbpalette mit bis zu 256 Einträgen zu speichern, was weiter 
+unten eine Rolle spielen wird.
+
+<div class="p"><!----></div>
+Gegenüber JPG gibt es einige Vorteile. So besitzt PNG einen Alpha-Kanal für 
+Transparenz. Sogar semi-transparente Pixel sind in einem Bild möglich, d.&nbsp;h. 
+Bildpunkte, die eben nicht ganz durchsichtig sind, sondern einen sichtbaren 
+Farbanteil besitzen.
+
+<div class="p"><!----></div>
+Daneben werden PNGs anders komprimiert gespeichert, was in manchen Fällen zu 
+einem wesentlich kleinerem und gleichzeitig qualitativ besserem Bild als bei 
+der JPEG-Komprimierung führt. Oft sagt man auch, PNG komprimiere ohne 
+Qualitätsverluste. Eine gute (englische) Erklärung zur Kompressionstechnik 
+findet man auf der Webseite von 
+OptiPNG&nbsp;<a href="http://optipng.sourceforge.net/pngtech/optipng.html">[3]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Gute Bilder, schlechte Bilder</h2>
+
+
+Aufgrund der Kompressionstechnik ist PNG nicht für alle Bilder gleich gut 
+geeignet. Das heißt man kann das Bild natürlich im PNG-Format speichern, 
+aber die Dateigröße ist dann mitunter um einiges größer als bei anderen 
+Formaten (speziell dem JPG-Format).
+
+<div class="p"><!----></div>
+PNG hat vor allem da Stärken, wo große gleichfarbige Flächen zu sehen sind, 
+z.&nbsp;B. bei Bildschirmfotos („Screenshots“ auf Neudeutsch). Speichert man 
+beispielsweise ein Bildschirmfoto eines Texteditors, wird dies als PNG in 
+der Regel kleiner sein als ein vergleichbares JPG. Selbst mit einer sehr 
+hohen JPEG-Komprimierung erreicht man oft nicht die Größe der PNG-Datei – 
+und wenn, dann ist die Qualität nicht mehr annehmbar.
+
+<div class="p"><!----></div>
+
+
+Zum Vergleich: Ein Bildschirmfoto des Texteditors Geany mit der Bildgröße 
+von 708x707 Pixel hat als PNG (ohne Transparenz) eine Größe von 132 kb 
+(<a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_editor.png">PNG-Beispiel</a>). Als JPEG mit einer Qualität von 100&nbsp;% sind dies 
+dagegen 380 kb (<a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_editor_jpeg100.jpg">JPG-Beispiel, hohe Qualität</a>). Setzt 
+man die Qualität auf 72&nbsp;% herunter
+(<a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_editor_jpeg72.jpg">JPG-Beispiel, geringe 
+Qualität</a>), erreicht man in etwa die gleiche Dateigröße, das Bild wirkt aber 
+sehr krisselig, was manchen Menschen sofort auffällt 
+(<a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_editor_jpeg_vergleich.png">JPG-Qualitätsvergleich</a>).
+
+<div class="p"><!----></div>
+    <img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_editor_jpeg_vergleich.png" alt="png_optimierung_editor_jpeg_vergleich.png" style="max-width:100%" /><br /><em>Rechts 100&nbsp;% und links 72&nbsp;% JPEG-Qualität; rechts sieht man ein Krisseln um die Schrift.</em><br />
+
+<div class="p"><!----></div>
+Das waren die Stärken von PNG. Wo liegen jetzt die Schwächen? Genau beim 
+Gegenteil, d.&nbsp;h. bei Bildern mit eine sehr hohen Anzahl von 
+verschiedenfarbigen Pixeln – kurz gesagt: bei Fotos oder Bildern mit 
+Farbverläufen.
+
+<div class="p"><!----></div>
+Wieder ein Vergleich: Als Beispiel soll ein Foto vom Bodensee in der 
+Bildgröße 1000x750 Pixel dienen. Als JPG mit einer leichten 
+Qualitätseinschränkung von 90&nbsp;% ergibt sich eine Datei der Größe 139 kb 
+(<a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_bodensee.jpg">JPG-Beispiel</a>). Die Qualitätseinschränkung ist nicht so 
+gravierend, da man die Verpixelung, die sich dadurch ergibt, vor allem bei 
+Fotos so gut wie nicht wahrnimmt. Speichert man dieses als PNG ab, ist das 
+Bild
+    
+dagegen 906 kb groß (<a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_bodensee.png">PNG-Beispiel</a>). Jetzt könnte man 
+das auf die Qualitätseinschränkung bei JPG beziehen, aber selbst bei 100&nbsp;% 
+Qualität ist das JPG-Bild weniger als halb so groß wie das PNG.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_bodensee.jpg" alt="png_optimierung_bodensee.jpg" style="max-width:100%" /><br /><em>Dieses Bild vom Bodensee wäre als PNG circa 6,5 Mal so groß.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Optimierungsmöglichkeiten</h2>
+
+
+Wie kann man PNG-Bilder nun optimieren? Da PNG vor allem bei Bildschirmfotos 
+seine Stärken hat, nutzen diese in der Regel nicht die volle Farbpalette von 
+16,7 Millionen Farben. Meist sind es sogar weniger als 256. Und genau 
+hierfür gibt es bei PNGs die Möglichkeit, das Bild mit einer eigenen 
+Farbpalette mit maximal 256 Farben zu indizieren.
+
+<div class="p"><!----></div>
+    Die Erstellung der Farbplatte läuft normalerweise automatisch ab. Es werden 
+im Bild die Anzahl der Farben gezählt und nach einem bestimmten Automatismus 
+eine Farbplatte erstellt, sodass auch bei mehr als 256 Farben in einem Bild 
+möglichst wenige Farbveränderungen vorgenommen werden müssen. Auf die Art 
+muss man nicht mehr jeden der drei Farbkanäle einzeln mit 8 Bit speichern, 
+sondern kommt im ganzen Bild mit 8 Bit aus. Das kann also eine Ersparnis von 
+rund 66&nbsp;% ergeben.
+
+<div class="p"><!----></div>
+Durch verschiedene Indizierungsalgorithmen (also wie die Farbpalette 
+erstellt wird) ist es sogar möglich, Fotos und Farbverläufe einigermaßen gut 
+zu indizieren. Natürlich erhält man hier immer einen Qualitätsverlust 
+gegenüber einem JPG in bester Qualität bzw. dem PNG ohne Indizierung.
+
+<div class="p"><!----></div>
+Als Beispiel für den Artikel sollen drei Bilder optimiert werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> das oben erwähnte Bildschirmfoto eines <a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_editor.png">Texteditors</a> (131,4 kb)</li>
+<li> das ebenfalls erwähnte <a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_bodensee.jpg">Bodensee-Bild</a> (905,4 kb)</li>
+<li> ein Screenshot des <a href="http://www.freiesmagazin.de/mobil/Bilder/png_optimierung_farbverlauf.png">Unity-Desktops</a> mit einem Farbverlauf (625,8 kb)</li>
+</ul>
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> In diesem Artikel werden nur ausgewählte Konvertierungen explizit 
+gezeigt, andere lediglich beschrieben. Wenn man aber die Anleitung befolgt, sollte 
+man auf die identischen Ergebnisse kommen.
+
+<div class="p"><!----></div>
+Es gibt noch andere Optimierungsmöglichkeiten, wie z.&nbsp;B. den Alphakanal, d.&nbsp;h. 
+die Transparenz, zu entfernen, wenn diese nicht benötigt wird. Auch dies 
+verkleinert das Bild je nach Anteil des transparenten Bereichs.
+
+<div class="p"><!----></div>
+
+<h3>Manuelle Optimierung mit GIMP</h3>
+
+
+Das Bildbearbeitungsprogramm 
+GIMP&nbsp;<a href="http://www.gimp.org/">[4]</a>&nbsp;<a href="http://www.gimpusers.de/">[5]</a> besitzt die 
+Möglichkeit, Bilder zu indizieren. Nach dem Öffnen des Bildes wählt man 
+„<em>Bild&nbsp;-&#62;&nbsp;Modus&nbsp;-&#62;&nbsp;Indiziert</em>“.
+
+<div class="p"><!----></div>
+    <img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_gimp_indiziert.png" alt="png_optimierung_gimp_indiziert.png" style="max-width:100%" /><br /><em>Der Dialog zum Indizieren von Bildern in GIMP 2.6.</em><br />
+
+<div class="p"><!----></div>
+Die Standardeinstellung „<em>Optimale Palette erzeugen</em>“ mit 256 Farben liefert 
+in der Regel die besten Ergebnisse. Wendet man diese auf die drei Bilder an, 
+erhält man folgende Ergebnisse (in Klammern steht die Prozentzahl der 
+Ersparnis):
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Texteditor-Screenshot: von 131,4 kb auf 38,2 kb (70,93&nbsp;%)</li>
+<li> Bodensee-Foto: von 905,4 kb auf 340,1 kb (62,44&nbsp;%)</li>
+<li> Desktop mit Farbverlauf: von 625,8 kb auf 125,1 kb (80,01&nbsp;%, schlechte Qualität)</li>
+</ul>
+
+<div class="p"><!----></div>
+    Was fällt bei den geänderten Bildern auf? Der Texteditor-Screenshot sieht 
+sehr ähnlich zum Original aus, hat aber einen leichten Gelbstich, da das 
+Weiß nicht mehr ganz Weiß ist, sondern leichte Blau- und Rotanteile enthält.
+
+<div class="p"><!----></div>
+Der Farbverlauf bei dem Desktop sieht sehr bescheiden aus. Nimmt man eine 
+andere Farbrasterung bei der Indizierung, wie z.&nbsp;B. Floyd-Steinberg, wird das 
+Ergebnis qualitativ zwar etwas besser, aber es sieht immer noch nicht 
+richtig gut aus. Prinzipiell sollte man mit GIMP 2.6 also keine Farbverläufe 
+indizieren.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_farbverlauf_gimp.png" alt="png_optimierung_farbverlauf_gimp.png" style="max-width:100%" /><br /><em>Farbverläufe sehen in GIMP 2.6 ohne Farbrasterung sehr bescheiden aus.</em><br />
+
+<div class="p"><!----></div>
+    Für das Foto gilt eine ähnliche Aussage wie für den Farbverlauf. Ohne 
+Farbrasterung sieht man bei den Wolken sehr harte Übergänge, was unschön 
+aussieht. Setzt man im Indizierungsdialog die „<em>Farbrasterung</em>“ aber auf 
+„<em>Floyd-Steinberg</em>“ oder „<em>Positioniert</em>“, ist das Bild zwar nicht perfekt, aber 
+zumindest annehmbar. Das Bild ist dadurch aber etwas größer als ohne 
+Farbrasterung.
+
+<div class="p"><!----></div>
+Prinzipiell problematisch sind semi-transparente Bereiche. Zumindest in GIMP 
+2.6 werden diese nicht
+semi-transparent indiziert, sondern die Transparenz wird
+entfernt, wodurch z.&nbsp;B. bei einem abgestuften Schlagschatten einfach nur ein 
+schwarzer Balken bleibt. Auch mit der Option „<em>Rasterung für Transparent 
+aktivieren</em>“ erhält man sehr bescheidene (unbrauchbare) Ergebnisse. Auch mit 
+anderen Programmen (siehe unten) indizierte Bilder mit Semi-Transparenz 
+zeigt GIMP 2.6 nicht korrekt an. In anderen Anzeigeprogrammen (z.&nbsp;B. gthumb 
+oder dem Browser) werden die Bilder korrekt dargestellt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_gimp_indizierung_problem.png" alt="png_optimierung_gimp_indizierung_problem.png" style="max-width:100%" /><br /><em>Problem bei der Anzeige eines indizierten Bildes mit Semi-Transparenz in GIMP 2.6 (rechts unten (rot umrandet) ist der Originalschatten).</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Exkurs: Bildunterschiede darstellen</h4>
+
+
+Jetzt folgt noch ein kleiner Exkurs, weil viele Leute auf einem Bild oft 
+nicht den Unterschied zwischen Original und einem indiziertem Bild 
+(welches Farbverläufe besitzt) oder einer schlechten JPEG-Komprimierung sehen.
+
+<div class="p"><!----></div>
+Wenn man selbst ein Bild mit GIMP indiziert, kann man nach der Anwendung der 
+Indizierung mittels der Taste <i>„Strg“</i>&nbsp;+&nbsp;<i>„Z“</i> (Rückgängig) und <i>„Strg“</i>&nbsp;+&nbsp;<i>„Y“</i> 
+(Wiederholen) die Indizierung rückgängig machen bzw. wiederholen. Wenn man 
+so zwischen Original und indiziertem Bild hin und her schaltet, erkennt man 
+die Unterschiede durch den Wechsel in der Regel leichter.
+
+<div class="p"><!----></div>
+Man kann dies aber auch „professioneller“ angehen. Hierzu öffnet man das 
+Originalbild und dupliziert das Bild über <i>„Strg“</i>&nbsp;+&nbsp;<i>„D“</i>. Dieses duplizierte Bild 
+indiziert man dann wie gewünscht. Danach kopiert man dieses Bild mittels 
+<i>„Strg“</i>&nbsp;+&nbsp;<i>„C“</i> in die Zwischenablage und fügt es als neue Ebene mittels 
+„<em>Bearbeiten&nbsp;-&#62;&nbsp;Einfügen als&nbsp;-&#62;&nbsp;Neue Ebene</em>“
+    
+in das Originalbild ein. Im Ebenendialog wählt 
+man unter „<em>Modus</em>“ die Einstellung „<em>Division</em>“. Als Resultat erhält man 
+normalerweise ein weißes Bild mit vielen bunten Pixeln. Jedes Pixel steht 
+für einen Unterschied zum Original. Je mehr weiß ist, desto weniger wurde 
+durch die Indizierung am Original verändert. Man kann so selbst einmal die 
+verschiedenen Indizierungsarten vergleichen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_bodensee_gimp_division.jpg" alt="png_optimierung_bodensee_gimp_division.jpg" style="max-width:100%" /><br /><em>Division von Original-Bodensee-Bild und des indizierten Bildes.</em><br />
+
+<div class="p"><!----></div>
+Wenn man ein durch ein zweites Programm erstelltes, indiziertes Bild hat, geht 
+dies natürlich genauso, indem man beide Bilder in GIMP öffnet
+    und dann ab dem Punkt mit dem Kopieren in die Zwischenablage fortfährt.
+
+<div class="p"><!----></div>
+
+<h2>Automatische Optimierung </h2>
+
+
+Für die automatische Optimierung von PNG-Bildern gibt es zahlreiche 
+Programme und sogar einen Webdienst, die kurz vorgestellt werden sollen.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Die Konsolenprogramme können in der Regel auch alle mit <b><tt class="big">make 
+install</tt></b> bzw. <b><tt class="big">checkinstall</tt></b> fest ins System installiert werden. Ich selbst 
+bevorzuge die Ausführung aus dem Verzeichnis heraus, wo das Programm 
+erstellt wurde. (Vor allem, wenn ich Programme nur teste, wie für diesen 
+Artikel.)
+
+<div class="p"><!----></div>
+
+<h3>Webdienst TinyPNG</h3>
+
+
+TinyPNG&nbsp;<a href="http://tinypng.org/">[6]</a> ist ein sehr leicht zu bedienender 
+Webdienst. Auf der Webseite klickt man einfach auf die Fläche 
+„<em>Drop your .png files here!</em>“. Nun kann man bis zu 20 Bilder auf einmal selektieren. 
+Diese werden hochgeladen und optimiert. Ein kleiner Panda teilt dann mit, 
+wie viel man durch die Optimierung gespart hat. Und natürlich kann man die 
+Bilder dort auch herunterladen.
+
+<div class="p"><!----></div>
+Die Optimierung anhand der drei Beispielbilder:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Texteditor-Screenshot: von 131,4 kb auf 38,3 kb (70,85&nbsp;%)</li>
+<li> Bodensee-Foto: von 905,4 kb auf 302,1 kb (66,63&nbsp;%)</li>
+<li> Desktop mit Farbverlauf: von 625,8 kb auf 240,3 kb (61,60&nbsp;%)</li>
+</ul>
+
+<div class="p"><!----></div>
+Positiv fällt auf, dass beim Indizieren die Farben nicht verfälscht werden. 
+Bei GIMP (siehe oben) wurde das Weiß eher zu einem sehr hellem Gelb. Bei 
+TinyPNG bleibt Weiß aber echt Weiß.
+
+<div class="p"><!----></div>
+Auch positiv sind ist die Qualität des Fotos und des Farbverlaufs. 
+Sicherlich erkennt man Unterschiede und Qualitätseinbußen gegenüber dem 
+Original-Bild. Gegenüber GIMP ist dies aber dennoch eine enorme 
+Verbesserung. Dazu werden die Bilder sogar noch kleiner indiziert als dies 
+mit GIMP möglich ist.
+
+<div class="p"><!----></div>
+    Wer keine Sicherheitsbedenken hat, was das Nutzen von Fremdanbietern angeht
+(vor allem im Beruf darf man mit Bildern nicht fahrlässig umgehen),
+dem bietet TinyPNG eine sehr bequeme und qualitativ gute Möglichkeit, Bilder 
+schnell und einfach zu indizieren.
+
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_tinypng.png" alt="png_optimierung_tinypng.png" style="max-width:100%" /><br /><em>Webdienst TinyPNG.</em><br />
+
+<div class="p"><!----></div>
+    
+<h3>pngquant</h3>
+
+
+Wer gegebenenfalls Bilder auf der Konsole automatisch optimieren und 
+weiterverarbeiten will, dem bietet pngquant&nbsp;<a href="http://pngquant.org/">[7]</a> eine 
+sehr gute Möglichkeit. Das Programm befindet sich in aktiver Entwicklung und 
+kann ganz einfach von der Webseite heruntergeladen werden. Derzeit (Anfang 
+März 2013) ist Version 1.8.3 aktuell, die hier vorgestellt werden soll.
+
+<div class="p"><!----></div>
+Wer sich das Programm selbst neu bauen will, weil die Paketverwaltung nur 
+eine veraltete Version enthält, kann sich freuen, denn dies geht sehr 
+einfach. Zuerst entpackt man das Quellcode-Archiv nach dem Download:
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar -xjf pngquant-1.8.3-src.tar.bz2<br />
+$ cd pngquant-1.8.3/</div>
+
+<div class="p"><!----></div>
+
+
+Zum Kompilieren benötigt man das Paket <b>build-essential</b> (bzw. einen 
+C++-Compiler) sowie die Entwicklungspakete <b>libpng12-dev</b> und <b>zlib1g-dev</b> 
+(Paketnamen stammen von Ubuntu).
+
+<div class="p"><!----></div>
+Diese wenigen Abhängigkeiten reichen bereits aus, um das Programm mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ make</div>
+
+<div class="p"><!----></div>
+
+
+zu übersetzen.
+
+<div class="p"><!----></div>
+Danach gibt man auf der Konsole einfach nach dem Namen die zu optimierenden 
+Bilder an, z.&nbsp;B.
+
+<div class="p"><!----></div>
+
+<div class="command">$ ./pngquant farbverlauf.png</div>
+
+<div class="p"><!----></div>
+
+
+Gespeichert wird das Ergebnis als <b><tt class="big">farbverlauf-fs8.png</tt></b> dort, wo auch das 
+Originalbild liegt. Der Bildfortsatz kann mit der Option <b><tt class="big">--ext</tt></b> verändert 
+werden. 
+
+<div class="p"><!----></div>
+Die Ergebnisse mit pngquant:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Texteditor-Screenshot: von 131,4 kb auf 39,9 kb (68,63&nbsp;%)</li>
+<li> Bodensee-Foto: von 905,4 kb auf 316,7 kb (65,02&nbsp;%)</li>
+<li> Desktop mit Farbverlauf: von 625,8 kb auf 247,3 kb (60,48&nbsp;%)</li>
+</ul>
+
+<div class="p"><!----></div>
+    Qualitativ steigert sich das Ergebnis noch einmal gegenüber TinyPNG. Vor 
+allem der Farbverlauf sieht noch etwas „runder“ aus. Als Preis sind die 
+Dateien etwas größer als bei TinyPNG.
+
+<div class="p"><!----></div>
+Man kann mit der Option <b><tt class="big">--nofs</tt></b> das Floyd-Steinberg-Dithering abschalten, 
+was z.&nbsp;B. bei
+    dem Bodensee-Foto keinen sichtbaren Qualitätsverlust 
+bringt, die Dateigröße aber auf 288,7 kb drückt. Der Farbverlauf sieht ohne 
+Floyd-Steinberg-Dithering aber nicht mehr gut aus.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/png_optimierung_pngquant-vergleich.png" alt="png_optimierung_pngquant-vergleich.png" style="max-width:100%" /><br /><em>Vergleich pngquant: rechts oben mit Floyd-Steinberg, links unten ohne.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>pngnq</h3>
+
+
+pngnq&nbsp;<a href="http://pngnq.sourceforge.net/">[8]</a> ist eine Adaption von pngquant, 
+nutzt aber den 
+NeuQuant-Algorithmus&nbsp;<a href="http://members.ozemail.com.au/~dekker/NEUQUANT.HTML">[9]</a>.
+Auch wenn die letzte Version von Mitte 2011 datiert, ist in manchen 
+Paketverwaltung nur eine ältere Version als die Anfang März aktuelle 1.1 
+zu finden.
+
+<div class="p"><!----></div>
+Daher lädt man sich den Quellcode einfach von der Webseite herunter und 
+entpackt diesen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar -xzf pngnq-1.1.tar.gz<br />
+$ cd pngnq-1.1</div>
+
+<div class="p"><!----></div>
+Wie bei pngquant benötigt man <b>build-essential</b>, <b>libpng12-dev</b> und 
+<b>zlib1g-dev</b>. Mittels
+
+<div class="p"><!----></div>
+
+<div class="command">$ ./configure<br />
+$ make "LIBS=-lm -lz -lpng"</div>
+
+<div class="p"><!----></div>
+
+
+kann man das Programm dann übersetzen. Der Zusatz hinter <b><tt class="big">make</tt></b> ist 
+notwendig, da im Makefile leider das Einbinden der libpng vergessen wurde.
+
+<div class="p"><!----></div>
+Danach kann man mit 
+
+<div class="p"><!----></div>
+
+<div class="command">$ src/pngnq -Q f farbverlauf.png</div>
+
+<div class="p"><!----></div>
+
+
+    ein oder mehrere Bilder optimieren. Gespeichert wird das Ergebnis per 
+Standard als <b><tt class="big">farbverlauf-nq8.png</tt></b> dort, wo auch das Originalbild liegt. Der 
+Bildfortsatz kann mit der Option <b><tt class="big">-e</tt></b> verändert werden. Die Option <b><tt class="big">-Q f</tt></b> 
+ist wichtig, da nur so Floyd-Steinberg zum Einsatz kommt. 
+
+<div class="p"><!----></div>
+Die Ergebnisse sind etwas enttäuschend:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Texteditor-Screenshot: von 131,4 kb auf 55,7 kb (57,51&nbsp;%)</li>
+<li> Bodensee-Foto: von 905,4 kb auf 378,7 kb (58,17&nbsp;%)</li>
+<li> Desktop mit Farbverlauf: von 625,8 kb auf 321,1 kb (48,69&nbsp;%)</li>
+</ul>
+
+<div class="p"><!----></div>
+Die Dateien sind zum einen alle größer als bei den anderen 
+Optimierungsprogrammen. Daneben ist aber auch die Qualität bei allen Bildern 
+nicht so gut. Bei dem Bodensee-Bild weist vor allem der Himmel pixelige 
+Flächen auf. Der Farbverlauf ist ganz gut geworden, aber das Ergebnis von 
+pngquant ist besser. Und selbst bei dem Editor-Bild wird die Farbe der Vor- 
+und Zurückpfeile stark verfremdet.
+
+<div class="p"><!----></div>
+
+<h3>pngcrush</h3>
+
+
+Ein weiteres Konsolenprogramm ist 
+pngcrush&nbsp;<a href="http://pmt.sourceforge.net/pngcrush/">[10]</a>. Ebenfalls noch in 
+aktiver Entwicklung, ist derzeit (März 2013) die Version 1.7.51 aktuell.
+
+<div class="p"><!----></div>
+Wer das Programm nicht aus der Paketverwaltung installieren will, lädt sich 
+den Quellcode von der Webseite herunter und entpackt ihn:
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar -xzf pngcrush-1.7.51.tar.gz <br />
+$ cd pngcrush-1.7.51/</div>
+
+<div class="p"><!----></div>
+
+
+Voraussetzung zum Übersetzen sind wieder die Pakete <b>build-essential</b>, 
+<b>libpng12-dev</b> und <b>zlib1g-dev</b>. Ein simples
+
+<div class="p"><!----></div>
+
+<div class="command">$ make</div>
+
+<div class="p"><!----></div>
+
+
+übersetzt das Programm.
+
+<div class="p"><!----></div>
+Wenn man sich die Hilfeseite mit der Option <b><tt class="big">-h</tt></b> anschaut, sieht man, dass 
+dies das bisher umfangreichste Programm mit den meisten Optionen ist. 
+Sicherlich ist es nicht schlecht, die Wahl zu haben, dummerweise muss man aber
+wissen, was man tut. Nutzt man nur die Standardoptionen
+
+<div class="p"><!----></div>
+
+<div class="command">$ ./pngcrush -e "-pngcrush" farbverlauf.png</div>
+
+<div class="p"><!----></div>
+
+
+erhält man zwar qualitativ sehr hochwertige Bilder, die aber dafür auch nur 
+minimal komprimiert wurden – wenn überhaupt:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Texteditor-Screenshot: von 131,4 kb auf 115,3 kb (12,25&nbsp;%)</li>
+<li> Bodensee-Foto: von 905,4 kb auf 903,0 kb (0,27&nbsp;%)</li>
+<li> Desktop mit Farbverlauf: von 625,8 kb auf 898,7 kb (-43,61&nbsp;%, das Bild ist größer geworden!)</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>OptiPNG</h3>
+
+
+Das letzte Programm, das vorgestellt werden soll, ist 
+OptiPNG&nbsp;<a href="http://optipng.sourceforge.net/">[11]</a>. Es wird ebenfalls 
+noch entwickelt und befindet sich in den meisten Paketverwaltungen. Die 
+neueste Version 0.7.4 (März 2013) kann auf der Webseite heruntergeladen 
+werden.
+
+<div class="p"><!----></div>
+    Nach dem Entpacken mittels
+
+<div class="p"><!----></div>
+    
+
+
+<div class="command">$ tar -xzf optipng-0.7.4.tar.gz <br />
+$ cd optipng-0.7.4/</div>
+
+<div class="p"><!----></div>
+
+
+benötigt man, wie bei allen anderen Programmen auch, <b>build-essential</b>, 
+<b>libpng12-dev</b> und <b>zlib1g-dev</b>. Übersetzt wird wieder mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ ./configure<br />
+$ make</div>
+
+<div class="p"><!----></div>
+
+
+Auch OptiPNG bietet viele Optionen, die man erst versteht, wenn man sich 
+genauer damit auseinandergesetzt hat. Als Standard ruft man das Programm über
+
+<div class="p"><!----></div>
+
+<div class="command">$ src/optipng/optipng farbverlauf.png</div>
+
+<div class="p"><!----></div>
+
+
+auf, was aber zum einen das Originalbild überschreibt (sehr schlecht) und 
+zum anderen das Foto und das Farbverlauf-Bild so gut wie nicht verkleinert.
+
+<div class="p"><!----></div>
+Daher wurde für den Test die Option <b><tt class="big">-o7</tt></b> gewählt. Diese testet (laut 
+Hilfetext) 240 verschiedenen Variationen der Komprimierung durch und nimmt 
+dann die „Beste“. Aber auch hier ist die Komprimierung so gut wie nicht 
+vorhanden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Texteditor-Screenshot: von 131,4 kb auf 114,8 kb (12,63&nbsp;%)</li>
+<li> Bodensee-Foto: von 905,4 kb auf 899,5 kb (0,65&nbsp;%)</li>
+<li> Desktop mit Farbverlauf: von 625,8 kb auf 603,4 kb (3,58&nbsp;%)</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Je nach Anwendungsfall gibt es verschiedene Programme, die mehr oder weniger 
+geeignet sind. Wenn man sowieso GIMP offen hat, kann man dessen Indizierung 
+nutzen, wenn man den möglicherweise damit einhergehenden Qualitätsverlust 
+verschmerzen kann.
+
+<div class="p"><!----></div>
+Möchte man die Optimierung komfortabel mit der Maus durchführen, ist die 
+Webseite TinyPNG die beste Wahl.
+
+<div class="p"><!----></div>
+Für die Konsole gibt es zahlreiche Optimierungsprogramme, aber vor allem die 
+scheinbar mächtigsten sind unter Umständen nicht so leicht zu bedienen, 
+sodass die Ergebnisse entweder von der Qualität (pngnq verfälscht Farben) 
+oder von der Dateigröße (pngcrush vergrößert Bilder) nicht überzeugen können. 
+Der Gewinner heißt hier ganz klar pngquant.
+
+<div class="p"><!----></div>
+Auch insgesamt über alle Optimierungsprogramme hinweg zeigt pngquant die 
+besten Ergebnisse. Mit Hilfe eines kleinen Skriptes kann man die Optimierung 
+sogar direkt in den Dateimanager einbauen, wenn man will (siehe „Bilder 
+verkleinern und versenden“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 02/2013&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2013-02">[12]</a>).
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Portable_Network_Graphics"><tt class="big">https://de.wikipedia.org/wiki/Portable_Network_Graphics</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/JPG"><tt class="big">https://de.wikipedia.org/wiki/JPG</tt></a><br />
+[3] <a href="http://optipng.sourceforge.net/pngtech/optipng.html"><tt class="big">http://optipng.sourceforge.net/pngtech/optipng.html</tt></a><br />
+[4] <a href="http://www.gimp.org/"><tt class="big">http://www.gimp.org/</tt></a><br />
+[5] <a href="http://www.gimpusers.de/"><tt class="big">http://www.gimpusers.de/</tt></a><br />
+[6] <a href="http://tinypng.org/"><tt class="big">http://tinypng.org/</tt></a><br />
+[7] <a href="http://pngquant.org/"><tt class="big">http://pngquant.org/</tt></a><br />
+[8] <a href="http://pngnq.sourceforge.net/"><tt class="big">http://pngnq.sourceforge.net/</tt></a><br />
+[9] <a href="http://members.ozemail.com.au/~dekker/NEUQUANT.HTML"><tt class="big">http://members.ozemail.com.au/~dekker/NEUQUANT.HTML</tt></a><br />
+[10] <a href="http://pmt.sourceforge.net/pngcrush/"><tt class="big">http://pmt.sourceforge.net/pngcrush/</tt></a><br />
+[11] <a href="http://optipng.sourceforge.net/"><tt class="big">http://optipng.sourceforge.net/</tt></a><br />
+[12] <a href="http://www.freiesmagazin.de/freiesMagazin-2013-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2013-02</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+übernimmt bei <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> die Optimierung der Bilder. Dies geschah immer mit
+GIMP. Aufgrund der nicht optimalen Ergebnisse wurde nach einer Alternative
+gesucht, die mit pngquant gefunden wurde.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=PNG-Bilder (automatisch) optimieren#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                
+
+
+
+
+
+
+<h1><font color="#595959"><a id="fm_13_04_dante2013" name="fm_13_04_dante2013">Rückblick: DANTE-Tagung 2013 in Gießen</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        <b>A</b><b>uch dieses Jahr fand eine Frühjahrstagung des DANTE 
+e.V.&nbsp;<a href="http://www.dante.de/">[1]</a> statt, bei der sich zahlreiche TeX-Anwender 
+trafen, um sich über das Textsatzsystem und dessen Unterarten auszutauschen. 
+Ich war sowohl als Zuhörer als auch als Teilnehmer dabei, und auch wenn der 
+Veranstaltungsort Gießen nicht zu den schönsten Orten Deutschlands zählt 
+(„<em>Die Stadt ist abscheulich … eine hohle Mittelmäßigkeit in allem.</em>“, Georg 
+Büchner&nbsp;<a href="http://www.quotez.net/german/wien.htm#Gie.C3.9Fen">[2]</a>), habe ich dort 
+studiert und mich auf ein Wiedersehen gefreut.</b>
+
+<div class="p"><!----></div>
+
+<h2>Mittwoch, 6. März 2013</h2>
+
+
+Nach dem Vorabendtreff am Dienstag (siehe unten) wurden alle Teilnehmer um 9 
+Uhr am Interdisziplinären Forschungszentrum in Gießen vom lokalen 
+Organisator Günter Partosch, dem Vorsitzenden des DANTE e.V. Martin Sievers 
+und dem Direktor des HRZ Dr. Michael Kost begrüßt. Dr. Kost erzählte in 
+seiner Einleitung, dass man sich im Gegensatz zu anderen 
+Dokumentenausgabeprogrammen bei TeX nicht um das Layout kümmern muss, 
+sondern sich auf den Inhalt konzentrieren kann. Die Aussage war eine sehr 
+gute Überleitung zum ersten Vortrag, den ich zum Thema „Bilder bei der 
+Magazingestaltung“ hielt. In dem Workshop ging es nämlich gerade um das 
+Gegenteil, das heißt, dass man bei freiesMagazin selbst bestimmen muss, wo 
+Bilder bei einem mehrspaltigen Layout positioniert werden. Auf das Gezeigte 
+gab es viel
+    
+Rückmeldungen, sodass ich so viele Ideen mitnehmen konnte, um 
+mindestens ein Jahr gut beschäftigt zu sein.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/dante2013_eroeffnung.jpg" alt="dante2013_eroeffnung.jpg" style="max-width:100%" /><br /><em>Vorsitzender Martin Sievers bei der Eröffnungsrede.</em><br />
+
+<div class="p"><!----></div>
+Danach gab es eine sehr gute Einführung in 
+MetaPost&nbsp;<a href="http://www.tug.org/metapost.html">[3]</a> von Walter Entenmann. Sehr 
+anschaulich stellte er anhand der Arbeit des Malers Wassily Kandinsky „Punkt 
+und Linie zu Fläche“&nbsp;<a href="http://de.wikipedia.org/wiki/Wassily_Kandinsky">[4]</a> das 
+MetaPost-Paket vor, mit dem man grafische Elemente wie Punkte, Linien und 
+Flächen in LaTeX
+    zeichnen kann. Er ging dabei auch auf die Interna der 
+mathematischen Berechnungen und Approximation mittels Bézier-Kurven ein.
+Auch ist die Anwendung mit 
+pdflatex nicht ohne weiteres möglich, ebenso wie es mit Unicode-Zeichen 
+und Umlauten Probleme gibt. Hier bieten sich alternative Pakete wie 
+PSTricks&nbsp;<a href="http://tug.org/PSTricks/">[5]</a> oder 
+TikZ&nbsp;<a href="http://pgf.sourceforge.net/">[6]</a> an.
+
+<div class="p"><!----></div>
+Nach dem Mittagessen in der Uni-Mensa ging es mit MetaPost weiter. Mari Voipio zeigte eine 
+    
+kleine Einführung zum Zeichnen von Linien und komplexeren Mustern, was dann 
+später in die Erstellung von Strickmustern mündete. Nach ihrer Aussage, 
+fördere MetaPost die Kreativität, da es für sie nun viel einfacher sei, 
+schnell ein Muster am PC zu testen als dies langwierig auf Papier zu 
+zeichnen.
+
+<div class="p"><!----></div>
+Eine Aussage von Mari Voipio gefiel mir besonders: Als (LaTeX-)Anfänger sucht man 
+sich verschiedenen Code aus dem Netz zusammen und bastelt so lange daran 
+herum, bis er tut, was man
+    erwartet. Man versteht anfangs nicht, wieso er 
+funktioniert, aber im Laufe der Zeit lernt man immer mehr über die 
+Hintergründe. Genauso geht es den meisten Programmierern in jeder Sprache.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/dante2013_metapost.jpg" alt="dante2013_metapost.jpg" style="max-width:100%" /><br /><em>MetaPost trifft auf Kandinsky. &#169;&nbsp;Uwe Ziegenhagen (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA</a>)</em><br />
+
+<div class="p"><!----></div>
+Bernd Militzer hielt einen extrem spannenden Vortrag, der am Anfang ziemlich 
+wenig mit TeX zu tun hatte. Er wollte ein Ahnenbuch mit ConTeXt 
+schreiben und berichtete über seine Forschungsergebnisse. Dabei 
+lernte man interessanterweise viel über Geschichtsschreibung und 
+Aufzeichnungen, die im Laufe der Jahre schwer zu interpretieren sind. Am 
+Ende kam ein dickes Buch mit allen Verwandten von Bernd Militzers 
+Großmutter, die in den Jahren 1650 bis 1900 gelebt haben, heraus.
+
+<div class="p"><!----></div>
+Ebenso spannend ging es mit Leo Arnolds UniFlow-Vortrag weiter. Effektiv ging 
+es darum, wie man mittels des <b><tt class="big">write18</tt></b>-Befehls aus einem LaTeX-Dokument 
+heraus wieder eine LaTeX-Übersetzung anstoßen kann. Durch diese Rekursion 
+ist es möglich, mit einem normalen pdflatex und ohne zusätzliche Dateien 
+(wie Skripte oder Makefiles) mehrere Dokumente zu erzeugen. Dafür gibt es 
+viele sinnvolle Anwendungszwecke, auch wenn <b><tt class="big">write18</tt></b> ein Sicherheitsrisiko 
+darstellt und daher per Standard nicht aktiviert ist.
+
+<div class="p"><!----></div>
+Zum Abschluss des Tages zeigte Martin Schröder den aktuellen Stand von TeX im 
+21. Jahrhundert. Wer letztes Jahr bereits auf der DANTE-Frühjahrstagung 2012 
+war, hatte sicherlich ein Déjà-vu, aber für die neuen Teilnehmer auf der 
+Tagung gaben seine Folien einen sehr guten Überblick über den aktuellen 
+Stand bei LaTeX, LuaTeX, ConTeXt und Co.
+
+<div class="p"><!----></div>
+
+<h2>Donnerstag, 7. März 2013</h2>
+
+
+Der Donnerstagvormittag war durch die Mitgliederversammlung des DANTE e.V. 
+geprägt. Es wurden die aktuellen Geschäfts- und Mitgliederzahlen 
+vorgestellt, sowie aktuelle Förderprojekte. Daneben wurde aber auch ein 
+Problem diskutiert, was viele andere Open-Source-Communitys auch trifft: die 
+sinkende Bereitschaft, etwas beizutragen. Bei TeX kommt zwar noch das Alter 
+der Software hinzu, die dazu führt, dass der Altersdurchschnitt sehr hoch 
+ist, dennoch kommen zu wenig junge Leute nach. Die Arbeit, die in der 
+Community getan wird, verteilt sich oft auf sehr wenige und vor allem immer 
+auf die gleichen Schultern. Leider gibt es hierzu keine allgemeingültige 
+Lösung.
+
+<div class="p"><!----></div>
+Nach dem Mittagessen plauderte Herbert Voß etwas aus seiner 
+TeX-Sprechstunde, die er an der
+    
+Uni Berlin hält. Er zeigte ein paar 
+interessante Probleme, mit denen Studenten zu ihm kommen.
+
+<div class="p"><!----></div>
+Ebenfalls interessant ist der Einsatz von TeX am Centrum für bessere 
+Übergänge und Studienbedingungen der FH Stralsund. Christina Möller erzählte 
+über ihre Tätigkeit dort und wie man den Studierenden LaTeX näher bringen 
+will. Vor allem der Einsatz von Formeln auf der eingesetzten 
+e-Learning-Plattform ist ein problematischer Punkt, auch wenn es 
+verschiedene Lösungen (jsMath&nbsp;<a href="http://www.math.union.edu/~dpvc/jsmath/">[7]</a>, 
+tth&nbsp;<a href="http://hutchinson.belmont.ma.us/tth/">[8]</a>, 
+MathJax&nbsp;<a href="http://www.mathjax.org/">[9]</a>) gibt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/dante2013_stralsund.jpg" alt="dante2013_stralsund.jpg" style="max-width:100%" /><br /><em>Christina Möller berichtet von ihrer Arbeit an der FH Stralsund. &#169;&nbsp;Uwe Ziegenhagen (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA</a>)</em><br />
+
+<div class="p"><!----></div>
+    Arno Trautmann zeigte dann ein extrem interessantes Thema, was man beim Titel 
+„Randausgleich in TeX“ nicht unbedingt vermuten würde. So zeigte er die 
+verschiedenen Absatztypen (Flattersatz, Blocksatz, Rauhsatz) im Laufe der 
+Jahrtausende der menschlichen Geschichte&nbsp;<a href="https://de.wikipedia.org/wiki/Diskos_von_Phaistos">[10]</a>. Als Beispiel wurden unter anderem 
+Auszüge aus der 
+Gutenberg-Bibel&nbsp;<a href="http://de.wikipedia.org/wiki/Gutenberg-Bibel">[11]</a> gezeigt und 
+wie Gutenberg vor über 500 Jahren einen einheitlichen Blocksatz zustande 
+brachte. Weiter ging es bis ins Hebräische, bei dem die Wortabstände fest 
+sind, dafür aber einige Buchstaben gedehnt werden können, um einen Blocksatz 
+zu erreichen. Mit Hilfe des Pakates 
+<b>chickenize</b>&nbsp;<a href="http://www.ctan.org/pkg/chickenize">[12]</a> kann man sehr viele der 
+vorgestellten Absatzprobleme nachstellen. 
+
+<div class="p"><!----></div>
+Der Vortragstag wurde von Uwe Ziegenhagen beendet, der das Programm 
+Sphinx&nbsp;<a href="http://sphinx-doc.org/">[13]</a> vorstellte. Es handelt sich dabei um ein 
+Open-Source-Werkzeug, mit dem man mit Hilfe einer eigene Metasprache viele 
+verschiedene Dokumente (z.B. als HTML, LaTeX, Manpages etc.) erstellen 
+kann. Der Anwendungsfall von Sphinx ist eigentlich die Dokumentation für 
+verschiedene Plattformen, aber da es LaTeX als Ausgabe beherrscht, kann man 
+damit auch einfache LaTeX-Dokumente erstellen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/dante2013_workshop.jpg" alt="dante2013_workshop.jpg" style="max-width:100%" /><br /><em>Uwe Ziegenhagen hilft LaTeX-Neueinsteigern.. &#169;&nbsp;Linda Prüß (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA</a>)</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Freitag, 8. März 2013</h2>
+
+
+Der letzte Tag wurde wieder von Uwe Ziegenhagen eingeläutet, der ein paar 
+LaTeX-Pakete vorstellte, die auf CTAN (Comprehensive TeX Archive 
+Network&nbsp;<a href="http://www.ctan.org/">[14]</a>) herumschwirren. Dabei waren einige 
+interessante Pakete, um z.B. Tasten und Menü-Befehle besonders darzustellen 
+oder um Gantt-Diagramme&nbsp;<a href="http://de.wikipedia.org/wiki/Gantt-Diagramm">[15]</a> zu zeichnen. 
+Es gab aber auch Kurioses zu sehen, z.B. ein Paket, mit dem man Bäume zeichnen 
+kann (die biologischen, mit Stamm und Blättern und was so dazu gehört).
+
+<div class="p"><!----></div>
+Danach zeigt Martin Sievers eine LaTeX-Klasse, mit der man Bewerbungsanschreiben 
+gestalten kann, die sich optisch gut mit <b>moderncv</b>&nbsp;<a href="http://www.ctan.org/pkg/moderncv">[16]</a>
+    
+vertragen. Die Dokumentenklasse war leider eine Auftragsarbeit und steht daher 
+nicht öffentlich zur Verfügung. Eine Alternative (Anschreiben und Lebenslauf in 
+einem) habe ich vor längerer Zeit selbst einmal erstellt&nbsp;<a href="http://www.deesaster.org/blog/index.php?/archives/1789">[17]</a>, 
+aber es gibt auch sonst zahlreiche Pakete, die versuchen, einen Lebenslauf 
+ansprechend darzustellen. In der Regel ist der Inhalt aber wichtiger als 
+das Aussehen …
+
+<div class="p"><!----></div>
+    Die Pause und die zwei Vorträge danach nutzte ich, um mich eingehend mit 
+Freunden und anwesenden Bekannten zu unterhalten, sodass ich nichts zu den 
+Vorträgen von Jena-Michsel Hufflen und Herbert Voß sagen kann.
+
+<div class="p"><!----></div>
+Da Günther Partosch am Sonntag krank war, fiel sein Vortrag zum Thema 
+„Anforderungen an wissenschaftliche Abschlussarbeiten“ leider aus. Glücklicherweise 
+sprang Patrick Gundlach ein, der ein Problem, das bei meinem Vortrag am
+    Donnerstag 
+aufkam, aufgriff. Er zeigt, wie man (mit etwas Handarbeit) dafür sorgen kann, dass 
+bei mehrspaltigem Satz die Zeilen benachbarter Spalten immer auf einer Höhe 
+liegen. (Etwas, was bei freiesMagazin noch nicht umgesetzt ist, aber zu den Aufgaben 
+zählt, die ich mir vorgenommen habe.)
+
+<div class="p"><!----></div>
+Parallel dazu hielt Uwe Ziegenhagen vor einer Gruppe von ca. zehn Studierenden eine 
+dreistündige Einführung in LaTeX. In dem Workshop wurden einfache Fragen 
+besprochen, wie man mit LaTeX umgeht und die sich bei der ersten Arbeit vor 
+allem bei Neueinsteigern ergeben.
+
+<div class="p"><!----></div>
+Zum Schluss gab es noch etwas Biologie, denn der Gärtner des IFZ führte die 
+Teilnehmer durch die drei hängenden Gärten des Gebäudes, die sich über mehrere 
+Stockwerke erstrecken und verschiedene Klimazonen nachbilden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-04-bilder-Dateien/dante2013_ifz.jpg" alt="dante2013_ifz.jpg" style="max-width:100%" /><br /><em>Der Uni-Campus der Naturwissenschaften und das IFZ-Gebäude.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Und rundherum</h2>
+
+
+Neben den Vorträgen ist vor allem der Kontakt mit Gleichgesinnten ein 
+wichtiger Aspekt der DANTE-Tagungen. In den ausreichend großen Pausen 
+zwischen den Vorträgen, aber vor allem bei den Abendveranstaltungen hat man 
+sehr viel Gelegenheit, mit anderen TeX-Nutzern zu sprechen, Probleme 
+vorzutragen und Lösungen zu erhalten. Natürlich ist und war es keine 
+Pflicht, den ganzen Abend über TeX zu reden. Und so kam auch die Sprache auf 
+Linux, Google, Facebook, E-Book-Reader, Raspberry Pi und alles andere, was 
+irgendwie interessant ist. Sehr positiv an den Abendveranstaltungen war das 
+wechselnde Programm. So wurde an jedem Abend eine andere kulinarische Region 
+aufgesucht – von Deutschland über Indien nach Kroatien bis hin zu Äthiopien. 
+
+<div class="p"><!----></div>
+Von der Gemeinschaft her ist eine DANTE-Tagung sehr ähnlich zu diversen 
+anderen Linux-Tagungen in Deutschland. Das ist aber nicht verwunderlich, 
+schließlich ist TeX ebenfalls Open Source und die Community treibt ein 
+ähnliches Ziel an: die Verbreitung einer guten Freien Software. Der 
+Altersdurchschnitt ist zwar etwas höher als bei Linux-Veranstaltungen, aber 
+es „verirren“ sich glücklicherweise auch immer wieder junge Menschen 
+dorthin. Der Geschlechtervergleich geht klar zu Ungunsten der Damen aus, 
+auch wenn einige vor Ort waren und auch Vorträge hielten. Dennoch erfordert 
+TeX immer noch einen Hang zur Programmierung, woran anscheinend eher Männer 
+Interesse haben als Frauen.
+
+<div class="p"><!----></div>
+Wie man am obigen Programm sieht, muss man nicht der absolute TeX-Crack 
+sein, um bei einer DANTE-Tagung Spaß zu haben. Es gab zahlreiche Vorträge, 
+deren Einleitung interessanter war als so mancher Geschichtsunterricht in 
+der Schule. Und selbst als Nicht-Profi kann man Vorträge halten. Sei es nur, 
+um seine eigenen Erfahrungen den anderen mitzuteilen oder um wertvolles 
+Feedback zu erhalten. Insofern sollte jeder, der mit TeX, LaTeX und Co. zu 
+tun hat, überlegen, ob er nicht für eine der kommenden Tagungen auch etwas 
+präsentiert. Ich bin auf alle Fälle wieder dabei!
+
+<div class="p"><!----></div>
+Die Präsentationsfolien zu den meisten Vorträgen können auf der DANTE-Webseite 
+heruntergeladen 
+werden&nbsp;<a href="http://www.dante.de/events/dante2013/Programm/Vortraege.html">[18]</a>.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.dante.de/"><tt class="big">http://www.dante.de/</tt></a><br />
+[2] <a href="http://www.quotez.net/german/wien.htm#Gie.C3.9Fen"><tt class="big">http://www.quotez.net/german/wien.htm#Gie.C3.9Fen</tt></a><br />
+[3] <a href="http://www.tug.org/metapost.html"><tt class="big">http://www.tug.org/metapost.html</tt></a><br />
+[4] <a href="http://de.wikipedia.org/wiki/Wassily_Kandinsky"><tt class="big">http://de.wikipedia.org/wiki/Wassily_Kandinsky</tt></a><br />
+[5] <a href="http://tug.org/PSTricks/"><tt class="big">http://tug.org/PSTricks/</tt></a><br />
+[6] <a href="http://pgf.sourceforge.net/"><tt class="big">http://pgf.sourceforge.net/</tt></a><br />
+[7] <a href="http://www.math.union.edu/~dpvc/jsmath/"><tt class="big">http://www.math.union.edu/~dpvc/jsmath/</tt></a><br />
+[8] <a href="http://hutchinson.belmont.ma.us/tth/"><tt class="big">http://hutchinson.belmont.ma.us/tth/</tt></a><br />
+[9] <a href="http://www.mathjax.org/"><tt class="big">http://www.mathjax.org/</tt></a><br />
+[10] <a href="https://de.wikipedia.org/wiki/Diskos_von_Phaistos"><tt class="big">https://de.wikipedia.org/wiki/Diskos_von_Phaistos</tt></a><br />
+[11] <a href="http://de.wikipedia.org/wiki/Gutenberg-Bibel"><tt class="big">http://de.wikipedia.org/wiki/Gutenberg-Bibel</tt></a><br />
+[12] <a href="http://www.ctan.org/pkg/chickenize"><tt class="big">http://www.ctan.org/pkg/chickenize</tt></a><br />
+[13] <a href="http://sphinx-doc.org/"><tt class="big">http://sphinx-doc.org/</tt></a><br />
+[14] <a href="http://www.ctan.org/"><tt class="big">http://www.ctan.org/</tt></a><br />
+[15] <a href="http://de.wikipedia.org/wiki/Gantt-Diagramm"><tt class="big">http://de.wikipedia.org/wiki/Gantt-Diagramm</tt></a><br />
+[16] <a href="http://www.ctan.org/pkg/moderncv"><tt class="big">http://www.ctan.org/pkg/moderncv</tt></a><br />
+[17] <a href="http://www.deesaster.org/blog/index.php?/archives/1789"><tt class="big">http://www.deesaster.org/blog/index.php?/archives/1789</tt></a><br />
+[18] <a href="http://www.dante.de/events/dante2013/Programm/Vortraege.html"><tt class="big">http://www.dante.de/events/dante2013/Programm/Vortraege.html</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+ist Chefredakteuer von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>, welches mit LaTeX gesetzt wird. Aus dem
+Grund ist er manchmal auf solchen TeX-Tagungen anzutreffen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=DANTE-Tagung 2013#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_04_rezension_softwarearchitektur" name="fm_13_04_rezension_softwarearchitektur">Review: Software-Architekturen dokumentieren und kommunizieren</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        <b>I</b><b>n jedem größeren Software-Projekt besitzt die Software eine bestimmte
+Architektur. In der Regel sollte diese strukturiert und gut dokumentiert 
+sein. Da Dokumentation aber nicht gerade zu der Lieblingsbeschäftigung von 
+Entwicklern zählt, krankt es des Öfteren daran. Das Buch 
+„Software-Architekturen dokumentieren und kommunizieren“ von Stefan 
+Zörner&nbsp;<a href="http://www.swadok.de/kontakt/ueber_mich/index.html">[1]</a> soll zeigen, 
+wie man die Software-Architektur festhalten kann.</b>
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+Inhaltlich orientiert sich das Buch „Software-Architekturen dokumentieren 
+und kommunizieren“ teilweise an der Dokumentationsvorlage 
+arc42&nbsp;<a href="http://arc42.de/">[2]</a>. Diese Vorlage, entwickelt von Gernot Starke (der 
+auch das Geleitwort zum Buch verfasst hat) und Peter Hruschka, ist unter 
+einer Creative-Commons-Lizenz&nbsp;<a href="http://de.creativecommons.org/">[3]</a> frei verfügbar 
+und für jeden nutzbar.
+
+<div class="p"><!----></div>
+Stefan Zörner beschreibt in seinem Buch aber viel mehr als die Dokumentation 
+mit arc42, dies nimmt im Vergleich sogar nur einen kleinen Teil ein. Wichtig 
+sind ihm vor allem Fragen wie „Was dokumentiere ich? Für wen dokumentiere 
+ich? Und wie ich finde das Dokumentierte wieder?“ Auch wenn diese Fragen 
+nicht generell und erst recht nicht leicht zu beantworten sind, gibt sich 
+der Autor sichtlich Mühe, dem Leser Denkanstöße in diese Richtung zu geben.
+
+<div class="p"><!----></div>
+Bei der Dokumentation geht er dann auch verstärkt auf wichtige, zu 
+beschreibende Aspekte einer Software ein. Darunter z.&nbsp;B. die Randbedingungen, 
+Qualitätsmerkmale („non-functional requirements“) oder 
+Architekturentscheidungen. All dies sollte festgehalten werden, damit man 
+auch später noch klar nachvollziehen kann, wieso die Software so 
+strukturiert ist, wie sie vorliegt.
+
+<div class="p"><!----></div>
+
+<h2>Zielgruppe</h2>
+
+
+Auch wenn man meinen könnte, dass das Buch nur eine kleine Zielgruppe hat, 
+so sollte doch eigentlich jeder Software-Entwickler wissen, wie er die 
+Struktur seiner Software dokumentieren und anderen vermitteln kann. 
+Sicherlich ist es in einem Ein-Mann-Projekt übertrieben, mit arc42 an die 
+Dokumentation zu gehen, aber die meisten Programmierer können bestätigen, 
+dass sie ohne Dokumentation (und sei es nur in Form von Kommentaren) den 
+eigenen Quellcode nach einem halben Jahr nicht mehr komplett verstehen. 
+Demnach richtet sich das Buch an eine große Gruppe, sowohl im Business- 
+als auch im Privat-Bereich.
+
+<div class="p"><!----></div>
+Für seine Vorträge und das Buch hat er sogar eine eigene Schach-Engine 
+DokChess&nbsp;<a href="http://www.dokchess.de/">[4]</a> geschrieben, die unter Open-Source-Lizenz 
+verfügbar ist. Dieser Software widmet er anschaulich im Buch auf 34 Seiten 
+eine komplette Beispieldokumentation, sodass jeder Leser ein echtes und 
+anschauliches Beispiel für gute Dokumentation vorliegen hat.
+
+<div class="p"><!----></div>
+Durch Übungsaufgaben versucht Stefan Zörner auch gleich zum Mitmachen 
+anzuregen. Dies ist sehr fordernd, weil man die Architektur des real 
+existierenden Squeezebox Medienservers&nbsp;<a href="http://www.mysqueezebox.com/">[5]</a> 
+dokumentieren soll. Hier sollte man also schon etwas Zeit mitbringen. Auch 
+wenn die ersten Übungsaufgaben noch recht einfach zu handhaben sind, wird es 
+zum Ende immer anspruchsvoller. Gut ist, dass man dem Autor seine Lösungen 
+per E-Mail zuschicken kann und er dazu Rückmeldung gibt und seine 
+Musterlösung zuschickt.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Wichtigste, was Stefan Zörner wohl als geeigneten Autor für so ein Thema 
+ausmacht, ist sein Erfahrungsschatz. Als Trainer und Berater bei 
+oose&nbsp;<a href="http://www.oose.de/">[6]</a> hat er regen Kundenkontakt. Privat arbeitet er beim 
+Apache-Projekt&nbsp;<a href="http://apache.org/">[7]</a> mit und hat so auch einen Einblick in 
+andere Organisationsformen.
+
+<div class="p"><!----></div>
+Das Buch liest sich daher aufgrund kleiner Anekdoten und Zitate sehr locker 
+und flüssig. Darüber hinaus bauen die Kapitel nicht aufeinander auf, sondern 
+können auch je nach aktuellem Wunsch gezielt bei einem Problem gelesen 
+werden. Sinnvoll ist es aber, wenn man jedes Kapitel zumindest überfliegt.
+
+<div class="p"><!----></div>
+Sehr gut haben mir vor allem die Kapitel 8 „Lightfäden für das Vorgehen zur 
+Dokumentation“ und Kapitel 10 „Stolpersteine der Architekturdokumentation“ 
+gefallen. In Kapitel 8 geht es
+
+darum, wie man sinnvoll dokumentiert. Vor 
+allem die Aussage, dass ein Bild (UML-Diagramm) manchmal nicht mehr als 
+tausend Worte sagt, ist bei mir hängengeblieben. In Kapitel 10 geht es um 
+fiese Dokumentationsfallen, etwas, was Stefan Zörner schon auf der OOP 
+2012&nbsp;<a href="http://www.oop2012.de/">[8]</a> vorgetragen hat, wo ich ihn auch kennenlernte.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Softwarearchitekturen dokumentieren und kommunizieren&nbsp;<a href="http://www.hanser-fachbuch.de/buch/Softwarearchitekturen+dokumentieren+und+kommunizieren/9783446429246">[9]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Stefan Zörner </td></tr>
+<tr><td><b>Verlag</b> </td><td>Hanser, 2012 </td></tr>
+<tr><td><b>Umfang</b> </td><td>277 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-446-42924-6 </td></tr>
+<tr><td><b>Preis</b> </td><td>34,90 Euro
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.swadok.de/kontakt/ueber_mich/index.html"><tt class="big">http://www.swadok.de/kontakt/ueber_mich/index.html</tt></a><br />
+[2] <a href="http://arc42.de/"><tt class="big">http://arc42.de/</tt></a><br />
+[3] <a href="http://de.creativecommons.org/"><tt class="big">http://de.creativecommons.org/</tt></a><br />
+[4] <a href="http://www.dokchess.de/"><tt class="big">http://www.dokchess.de/</tt></a><br />
+[5] <a href="http://www.mysqueezebox.com/"><tt class="big">http://www.mysqueezebox.com/</tt></a><br />
+[6] <a href="http://www.oose.de/"><tt class="big">http://www.oose.de/</tt></a><br />
+[7] <a href="http://apache.org/"><tt class="big">http://apache.org/</tt></a><br />
+[8] <a href="http://www.oop2012.de/"><tt class="big">http://www.oop2012.de/</tt></a><br />
+[9] <a href="http://www.hanser-fachbuch.de/buch/Softwarearchitekturen+dokumentieren+und+kommunizieren/9783446429246"><tt class="big">http://www.hanser-fachbuch.de/buch/Softwarearchitekturen dokumentieren+und+kommunizieren/9783446429246</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog">Webseite</a>)
+entwickelt privat und beruflich Software. Das Buch gab ihm einige Anreize,
+die Dokumentation zu verbessern.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=Review: Software-Architekturen#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_04_rezension_linux-server" name="fm_13_04_rezension_linux-server">Rezension: Linux-Server mit Debian 6 GNU/Linux</a></font></h1>von Matthias Sitte
+
+<div class="p"><!----></div>
+        
+
+<b>D</b><b>as Buch „Linux-Server mit Debian 6 GNU/Linux“ bietet auf 954 Seiten
+einen sehr ausführlichen und praxisnahen Einstieg in die Administration
+von Linux-Servern.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem mitp-Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+
+Durch die Gliederung des Buches in fünf weitgehend unabhängige Teile, in denen
+jeweils verschiedene Bereiche eines Debian-Servers betrachtet werden, ist es
+nicht nur für Administratoren und Server-Experten geeignet, sondern
+auch für erfahrenere Linux-Anwender. Alle Anwendungs- und
+Konfigurationsbeispiele des Buches sind auf Debian 6.0 (Squeeze) bzw.
+die Vorgänger-Version 5.0 (Lenny) zugeschnitten. Sie sind aber auch in
+anderen Distributionen anwendbar, da die meisten Software-Komponenten
+eines Linux-Servers (Kernel, Shell, Apache, SSH, Mail Transport Agents
+etc.) auch distributionsübergreifend verfügbar sind.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das erklärte Ziel des Buches „Linux-Server mit Debian 6 GNU/Linux“ ist es,
+die Grundlagen der Administration eines Linux-Servers, basierend auf
+unterschiedlichen Anforderungen und Bedingungen, zu erklären. Als Grundlage für die
+im Buch zahlreich vorhandenen Beispiel-Konfigurationen wird das fiktive, expandierende
+Architekturbüro „Windschief” herangezogen, für das nach und nach etliche
+Serverdienste installiert und konfiguriert werden.
+
+<div class="p"><!----></div>
+Der erste Schwerpunkt des Buches liegt auf der allgemeinen Systemadministration:
+Hier geht es zunächst um die Grundlagen und Eigenheiten eines
+Debian-Betriebssystems, die man auch in anderen Büchern – vor allem solchen
+für Einsteiger – findet: Zuerst stellt der Autor die Debian-Installation
+vor, bevor er das Paketmanagement unter Debian bespricht.
+
+<div class="p"><!----></div>
+Die folgenden
+Kapitel fassen die wesentlichen Grundkenntnisse zusammen, die man
+von jedem erfahrenen Linux-Nutzer und insbesondere Administrator erwarten darf:
+Neben dem Einbinden von Dateisystemen wird die Benutzer- und auch die
+Rechteverwaltung mitsamt ACLs&nbsp;<a href="https://de.wikipedia.org/wiki/Access_Control_List">[1]</a>
+eingeführt. Erwähnung finden auch der Start-Prozess von Linux und das
+Konzept der Runlevels sowie eine kurze Einführung in die Bash. Im
+Hinblick auf die mitunter recht komplexe Shellskript-Programmierung
+sei hier aber eher auf spezialisierte Fachliteratur verwiesen.
+Weitere Kapitel umfassen den Linux-Kernel, das System- und
+Festplattenmanagement unter Linux, Netzwerke sowie
+die Fernwartung via SSH.
+
+<div class="p"><!----></div>
+Ein weiterer Schwerpunkt des Buches sind die verschiedenen
+Anwendungsszenarien für den Betrieb eines Linux-Servers: als
+Backoffice-Server, als Root-Server oder als Gateway-Server.
+
+<div class="p"><!----></div>
+Im Backoffice-Bereich&nbsp;<a href="https://de.wikipedia.org/wiki/Backoffice">[2]</a> geht es zunächst einmal primär um die Einrichtung
+des Debian-Servers als „Datenquelle” im Netzwerk: Hierzu wird als erstes
+DHCP&nbsp;<a href="https://de.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol">[3]</a>
+eingeführt, das die Netzwerkadressen im Intranet verwaltet. Nachdem
+dies geschehen ist, wird der NFS-Server&nbsp;<a href="https://de.wikipedia.org/wiki/Network_File_System">[4]</a>
+installiert, der die Dateiübertragung zwischen den Linux-Clients
+untereinander und mit dem Debian-Server ermöglicht, wobei sich der
+Autor hier auf NFSv3 beschränkt, was für den avisierten Einsatz
+vollkommen genügt. Das Drucken im Netzwerk wird über CUPS&nbsp;<a href="https://de.wikipedia.org/wiki/Common_Unix_Printing_System">[5]</a>
+realisiert.
+
+<div class="p"><!----></div>
+Den Abschluß des Backoffice-Teils bildet die Einrichtung eines
+Intranet-Server mit der gängigen LAMP-Software (Linux, Apache, MySQL
+und PHP). Eine entsprechende Einleitung in die grundlegenden Möglichkeiten,
+die MySQL und PHP bieten, gibt der Autor auf etwa 40 Seiten – für
+kleine Projekte mit einfachen Anforderungen mag dies ausreichen, für
+größere Projekte ist aber hier der Griff zu spezieller Fachliteratur
+zu empfehlen.
+
+<div class="p"><!----></div>
+Im dritten Teil des Buches wird der Debian-Server für den Betrieb als
+Root-Server fit gemacht. Dies beginnt zunächst mit der Konfiguration
+des Web-Servers für das Internet samt Absicherungsmaßnahmen. Auch ein
+lokaler Mail-Server, der E-Mails aus dem Internet entgegennimmt und
+z.&nbsp;B. mit Amavis scannt, wird mittels Postfix eingerichtet. Um ein
+flexibles Arbeiten mit Domains und Benutzerkonten zu gewährleisten,
+führt der Autor auch in das Konzept der virtuellen Domains und
+virtuellen Mailboxen ein, das sich u.&nbsp;a. über eine MySQL-Datenbank
+realisieren lässt. Schließlich werden die iptables als Netzwerk-Firewall
+beschrieben, wobei an dieser Stelle erst einmal das Konzept einer
+„stateful packet inspection” und die Funktionsweise der iptables im
+Vordergrund stehen.
+
+<div class="p"><!----></div>
+Im vierten (und kürzesten) Teil des Buches wird die Einsatzweise eines
+Linux-Servers als Gateway-Server beschrieben. Insbesondere den iptables
+kommt hierbei eine tragende Rolle zu, denn sie dienen zum einen als
+Schutz des Intranets, zum anderen muss der lokale Verkehr mittels
+NAT&nbsp;<a href="https://de.wikipedia.org/wiki/Network_Address_Translation">[6]</a>
+kontrolliert den Weg ins Internet finden können. Ein interessanter
+Aspekt bei geringen Bandbreiten ist der Einsatz eines Proxyservers,
+dessen Installation, Konfiguration und Einsatz für HTTP- und FTP-Verkehr
+am Beispiel von Squid illustriert wird.
+
+<div class="p"><!----></div>
+Im fünften und letzten Teil des Buches wird das Thema Sicherheit
+angegangen, wobei einige nützliche Tipps und Tricks zum „Härten” der
+wichtigsten Dienste wie z.&nbsp;B. SSH besprochen werden. Ebenso werden
+verschiedene Ansätze (Host-Intrusion-Detection-Systeme,
+Network-Intrusion-Detection-Systeme und Intrusion-Prevention-Systeme)
+zum Schutz von Linux-Servern vor unbefugtem Zugriff beschrieben. Eine
+umfassende Einführung in das Thema „Sicherheit” würde den Rahmen des
+Buches aber sprengen, so dass man an dieser Stelle besser zu
+ausführlicherer Fachliteratur greifen sollte.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Die 40 Kapitel sind gut verständlich geschrieben und enthalten viele
+Details zu der verwendeten Software. Die einzelnen Themenbereiche des
+Buches sind klar getrennt, was einen Quereinstieg oder das Überspringen
+von Kapiteln ebenfalls sehr einfach macht.
+
+<div class="p"><!----></div>
+Das Beispiel des fiktiven
+Architekturbüros, das im Laufe der Zeit expandiert und damit mehr
+Serverdienste benötigt, zieht sich wie ein roter Faden durch das Buch.
+Die gewählten Beispiele sind anhand der umfangreichen Dokumentation
+bzw. Konfigurationsdateien ebenfalls sehr gut nachvollziehbar und
+können, nach entsprechender Anpassung an eigene Bedürfnisse, quasi als
+Schritt-für-Schritt-Anleitung benutzt werden.
+
+<div class="p"><!----></div>
+Am Ende jedes Kapitels gibt der Autor praktischerweise eine knappe
+Zusammenfassung mit den wichtigsten Ergebnissen und Tipps sowie Hinweise
+zu weiterführenden Themen.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch „Linux-Server mit Debian 6 GNU/Linux“ kann man sowohl als eine
+Art „Lehrmaterial” durcharbeiten, wobei die durchgängige Beispiele sehr
+zum Verständnis beitragen. Ebenso kann man das vorliegende Buch auch als
+Referenz zum Nachschlagen verwenden – zumindest sollte jeder erfahrene
+Anwender oder Administrator ein derartiges Buch griffbereit haben.
+Angesichts des Umfangs und Gewichts ist es aber sicherlich nicht als
+Bett-Lektüre oder für die kurze Zugfahrt geeignet.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Linux-Server mit Debian 6 GNU/Linux – Das umfassende Praxis-Handbuch&nbsp;<a href="http://www.it-fachportal.de/shop/buch/Linux-Server%20mit%20Debian%206%20GNU/Linux/detail.html,b181031">[7]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Eric Amberg </td></tr>
+<tr><td><b>Verlag</b> </td><td>mitp </td></tr>
+<tr><td><b>Umfang</b> </td><td>954 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8266-5534-0 </td></tr>
+<tr><td><b>Preis</b> </td><td>49,95 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Access_Control_List"><tt class="big">https://de.wikipedia.org/wiki/Access_Control_List</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Backoffice"><tt class="big">https://de.wikipedia.org/wiki/Backoffice</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol"><tt class="big">https://de.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Network_File_System"><tt class="big">https://de.wikipedia.org/wiki/Network_File_System</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/Common_Unix_Printing_System"><tt class="big">https://de.wikipedia.org/wiki/Common_Unix_Printing_System</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Network_Address_Translation"><tt class="big">https://de.wikipedia.org/wiki/Network_Address_Translation</tt></a><br />
+[7] <a href="http://www.it-fachportal.de/shop/buch/Linux-Server%20mit%20Debian%206%20GNU/Linux/detail.html,b181031"><tt class="big">http://www.it-fachportal.de/shop/buch/Linux-Server mit Debian 6 GNU/Linux/detail.html,b181031</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Matthias Sitte </b>&nbsp;(<a href="https://www.familie-sitte.org/matthias/">Webseite</a>)
+ist Redakteur bei <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> und nutzt seit sechs Jahren Linux
+sowohl im Beruf als Physiker als auch im Privaten zuhause.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=Rezension: Linux-Server mit Debian 6 GNU/Linux#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+<h1><font color="#595959"><a id="fm_13_04_leserbriefe" name="fm_13_04_leserbriefe">Leserbriefe</a></font></h1>
+            <b>Für Leserbriefe steht unsere E-Mailadresse
+            <img src="freiesMagazin-2013-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+            Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+        An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+        uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+        sehr viel Lob (was uns natürlich freut), aber vor allem durch
+        Kritik und neue Ideen können wir uns verbessern.
+    
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>Wunschthema und E-Books</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Hallo <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>, ich finde Eure E-Books sind sehr reich an Inhalt
+und sie enthalten viele hilfreiche Tipps – leider spielen die
+Betriebssysteme Fedora und Ubuntu die Hauptrolle. Wäre wirklich nett
+von euch, wenn ihr mal über elementaryOS beta1 etwas berichten würdet.
+Die Nutzer-Gemeinde von elementaryOS wird immer größer – außerdem
+schadet es ja keinem, das Portfolio etwas zu erweitern.
+
+<div class="p"><!----></div>
+Ansonsten würde ich nur noch die E-Books in englischer Sprache
+vorschlagen, denn nicht jeder versteht Deutsch.
+        <br /><b>Steven</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Vielen Dank für den Tipp zu elementaryOS. Wir haben aber keinerlei feste
+Autoren. Ich kann das Thema daher nur auf die Leser-Wunschliste
+aufnehmen&nbsp;<a href="http://www.freiesmagazin.de/artikelwuensche">[1]</a> und
+vielleicht findet sich jemand, der etwas darüber
+schreibt. Die Wahrscheinlichkeit ist aber eher gering.
+
+<div class="p"><!----></div>
+Wenn Du jemand aus der elementaryOS-Community kennst, der einen Artikel
+schreiben würde, dann sprich diesen an, sodass er mit uns in Kontakt
+tritt. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> lebt von den Beiträgen der Leser, indem diese zu
+Autoren werden.
+
+<div class="p"><!----></div>
+Zu E-Books in Englisch: Die wird es definitiv nicht geben. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+ist ein deutschsprachiges Magazin und wird es auch in der nahen Zukunft
+bleiben. Im englischsprachigen Raum wird man mit Informationen zu Linux
+geradezu erschlagen; noch ein Magazin wäre da nur ein weiteres
+Sandkorn in der Wüste.
+
+<div class="p"><!----></div>
+Zusätzlich wäre die Frage, wer die Artikel übersetzen soll. Wir sind so
+froh, dass wir gerade so genug Artikel bekommen, um jeden Monat eine
+Ausgabe abliefern zu können. An eine fachlich korrekte Übersetzung ist
+da gar nicht zu denken.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Programmierwettbewerb</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Zu ihrem interessanten Wettbewerb habe ich eine Frage: Wie können Sie Bots
+in verschiedenen Programmiersprachen in Ihr System einbinden?
+        <br /><b>Al Zagorski</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+So gut wie jede Programmsprache kann von der
+Standardeingabe lesen und auf die Standardausgabe schreiben. Die Ein-
+und Ausgabeströme leite ich über sogenannte Named Pipes&nbsp;<a href="http://en.wikipedia.org/wiki/Named_pipe">[2]</a> um,
+die ich wiederum als Parameter an mein C++-Programm übergebe. Dort kann ich
+direkt auf die Ströme zugreifen und so die verschiedenen Bots
+„anschreiben” bzw. deren Ausgaben abfangen.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Im Beitrag zum Programmierwettbewerb wird erwähnt, daß die
+Programmiersprache – wie eigentlich auch nicht anders zu erwarten –
+keinen Einfluss auf die Qualität des Bots hat. Was mir aber
+besonders auffällt, sind die extrem unterschiedlichen Laufzeiten bei
+teilweise fast identischen Punkten.
+
+<div class="p"><!----></div>
+Da fände ich es interessant, wenn mal eine Gegenüberstellung
+Programmiersprache gegen Laufzeit gemacht würde. Das wäre vielleicht
+aussagekräftiger als die oft doch sehr „synthetisch” wirkenden
+Geschwindigkeitsvergleiche, die manchmal veröffentlicht werden.
+        <br /><b>Frank W.</b> &nbsp;(<a href="http://www.freiesmagazin.de/20130303-m%C3%A4rzausgabe-erschienen#comment-2844">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Die Gegenüberstellung der Sprachen ist bei dem Programmierwettbewerb
+nicht ganz so einfach, schließlich haben die Teilnehmer
+unterschiedliche Strategien verfolgt. Und selbst wenn sie die
+gleiche Strategie haben, kann man diese auf unterschiedliche Arten
+implementieren.
+
+<div class="p"><!----></div>
+So kann man beispielsweise die Vorberechnung der nächsten drei Züge
+entweder stupide über alle 10 Möglichkeiten (Bewegung und
+Trockenlegung in alle Richtungen) machen, was einen Baum mit 1000
+Endmöglichkeiten darstellt. Oder man arbeitet intelligent und
+schließt unmögliche oder unsinnige Aktionen schon bei der Berechnung
+aus, was so einen Baum auf vielleicht 100 Endmöglichkeiten
+einschränkt. Der Faktor 10 wirkt sich da schon enorm aus.
+
+<div class="p"><!----></div>
+Also nur wenn man zwei identische Implementierung in zwei Sprachen
+hätte, könnte man diese real miteinander vergleichen. Im Endeffekt
+stützt sich dies dann aber dennoch auf den synthetischen Benchmarks
+ab, die es im Netz gibt. Also z.&nbsp;B. wie schnell man über etwas
+iterieren kann oder wie langsam ein Funktionsaufruf ist.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Leserreaktionen zum Fedora 18-Artikel</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Die wiederholte Kritik an den Activities in KDE kann ich mir nur so
+erklären, daß der Autor KDE nicht wirklich nutzt.
+
+<div class="p"><!----></div>
+Die virtuellen Arbeitsflächen sind keineswegs ein Ersatz für die
+Activities. Ich nutze die Activities, seit sie eingeführt wurden,
+und verwende inzwischen 9 auf meinem Rechner. Das komplette
+Umschalten der Arbeitsumgebung mit einem Mouseclick möchte ich nicht
+mehr missen.
+
+<div class="p"><!----></div>
+Natürlich muss man erst die Nützlichkeit (für sich) entdecken. Sie
+ist vielleicht leichter erkennbar bei Plasma-Active, der zugegeben
+noch experimentellen Version für Tabletts.
+
+<div class="p"><!----></div>
+Der Kommentar wäre unvollständig ohne ein großes Lob für
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>, das ich regelmäßig lese.
+        <br /><b>Wromey</b> &nbsp;(<a href="http://www.freiesmagazin.de/20130303-m%C3%A4rzausgabe-erschienen#comment-2845">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Vielen Dank für den Kommentar und das Lob am Ende.
+
+<div class="p"><!----></div>
+Ich selbst nutze kein KDE und kann daher nichts dazu sagen. Aber wie
+bei vielen Linux-Themen spielt hier wohl einfach auch der eigene
+Geschmack und die Gewohnheit, wie Sie ja auch erwähnen, eine große
+Rolle. Auch wenn das Konzept von KDE sicherlich gut ist, komme ich
+beispielsweise nicht so gut damit klar und bevorzuge einen
+„klassischen Desktop“ wie Xfce.
+
+<div class="p"><!----></div>
+Glücklicherweise haben wir ja als
+Linux-Nutzer immer die Wahl! :)
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Leserreaktionen zum Hadoop-Artikel</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ich finde den Titel des Artikels ziemlich irreführend. Es geht
+doch im Kern quasi nur um MapReduce via Hadoop und kaum um den Rest.
+Dabei kann Hadoop doch viel mehr …
+
+<div class="p"><!----></div>
+Was mich immer davon abgehalten hat, mich mit Hadoop zu beschäftigen
+(abgesehen von dem nicht-vorhandenen Use-Case), ist die IMHO
+verhältnismäßig komplexe Installation. Da dachte ich doch glatt,
+dass <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> hier Abhilfe schafft und einen schicke Anleitung liefert.
+Ist aber nicht der Fall – wobei das vielleicht zugegebenermaßen auch ein
+Problem meiner Erwartungshaltung ist …
+
+<div class="p"><!----></div>
+Da wäre IMHO ein generischer Artikel zu MapReduce besser gewesen.
+Glaubt man Wikipedia&nbsp;<a href="http://de.wikipedia.org/wiki/MapReduce">[3]</a> gibt
+es genug Stand-Alone-Implementierungen, die nicht auf das
+Gesamtpaket Hadoop und dessen entsprechende Installation angewiesen
+sind.
+        <br /><b>Jochen Schnelle</b> &nbsp;(<a href="http://www.freiesmagazin.de/20130303-m%C3%A4rzausgabe-erschienen#comment-2840">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Die erste Frage ist: Als was wird Hadoop denn im Allgemeinen
+wahrgenommen? Die nächste Frage ist, ob man andere Teile von Hadoop
+anschaulich und vor allem in der Länge eines Artikels darstellen
+kann. Besteht da überhaupt noch Interesse?
+
+<div class="p"><!----></div>
+Zur Installationsthematik habe ich auf die Webseite von Michael Noll
+hingewiesen – dieser Anleitung ist meines Erachtens nach nichts mehr
+hinzuzufügen. Auch gibt es mehr oder weniger vollautomatische
+Installationsroutinen in der Data Platform von Hortonworks. Warum
+sollte man das Rad also neu erfinden?
+
+<div class="p"><!----></div>
+Dieser Artikel sollte bewusst MapReduce im Kontext von Hadoop
+darstellen, da es ja eine klassische Anwendung für Rechnercluster
+ist. Die Anregungen nehme ich aber gerne auf, vielleicht ist das
+Thema ja auch isoliert interessant und kann in einem gesonderten
+Artikel dargestellt werden.
+        <br /><b><i>Jens</i></b> 
+</i>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/artikelwuensche"><tt class="big">http://www.freiesmagazin.de/artikelwuensche</tt></a><br />
+[2] <a href="http://en.wikipedia.org/wiki/Named_pipe"><tt class="big">http://en.wikipedia.org/wiki/Named_pipe</tt></a><br />
+[3] <a href="http://de.wikipedia.org/wiki/MapReduce"><tt class="big">http://de.wikipedia.org/wiki/MapReduce</tt></a><br />
+    
+
+<div class="p"><!----></div>
+            Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+        kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+    
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/322?edit[subject]=Leserbriefe#comment-form"><i>Die Leserbriefe kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                            
+<h1><font color="#595959"><a id="fm_13_04_veranstaltungen" name="fm_13_04_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+Grazer Linuxtage </td><td>Graz </td><td align="left">20.04.2013 </td><td>frei </td><td align="left"><a href="http://www.linuxtage.at/"><tt class="big">http://www.linuxtage.at/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Eisenstadt </td><td>Eisenstadt </td><td align="left">26.04.–27.04.2013 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Wien </td><td>Wien </td><td align="left">02.05.–02.05.2013 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">LUG Camp </td><td>Wuppertal </td><td align="left">09.05.–12.05.2013 </td><td>55 EUR </td><td align="left"><a href="http://www.lugcamp.org/"><tt class="big">http://www.lugcamp.org/</tt></a> </td></tr>
+<tr><td align="left">LiWoLi 2013 </td><td>Linz </td><td align="left">15.05.–19.05.2013 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">LinuxTag </td><td>Berlin </td><td align="left">22.05.–22.05.2013 </td><td>20 EUR </td><td align="left"><a href="http://www.linuxtag.org/"><tt class="big">http://www.linuxtag.org/</tt></a> </td></tr>
+<tr><td align="left">rootcamp </td><td>Berlin </td><td align="left">24.05.–22.05.2013 </td><td>– </td><td align="left"><a href="http://www.rootcamp-berlin.de/"><tt class="big">http://www.rootcamp-berlin.de/</tt></a> </td></tr>
+<tr><td align="left">OPEN-IT SUMMIT </td><td>Berlin </td><td align="left">22.05.–22.05.2013 </td><td>– </td><td align="left"><a href="http://www.open-it-summit.de/"><tt class="big">http://www.open-it-summit.de/</tt></a> </td></tr>
+<tr><td align="left">GPN13 </td><td>Karlsruhe </td><td align="left">30.05.–02.06.2013 </td><td>– </td><td align="left"><a href="https://entropia.de/GPN13/"><tt class="big">https://entropia.de/GPN13/</tt></a> </td></tr>
+<tr><td align="left">Chaos Singularity </td><td>Biel </td><td align="left">14.06.–16.06.2013 </td><td>10 CHF </td><td align="left"><a href="http://www.cosin.ch"><tt class="big">http://www.cosin.ch</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2013-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a id="fm_13_04_vorschau" name="fm_13_04_vorschau">Vorschau</a></font></h1>
+
+
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint immer am ersten Sonntag eines Monats. Die Mai-Ausgabe wird voraussichtlich am 5. Mai unter anderem mit folgenden Themen veröffentlicht:
+
+<ul>
+<li> Hilfe leisten mit Reverse VNC</li>
+</ul>
+Es kann leider vorkommen, dass wir aus internen Gründen angekündigte Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+                                
+<h1><font color="#595959"><a id="fm_13_04_konventionen" name="fm_13_04_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+                                    
+<h1><font color="#595959"><a id="fm_13_04_impressum" name="fm_13_04_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 7. April 2013<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2013-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left"><b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Markus Brenneis </td><td align="left"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_ffox_addonsdk3">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil III</a>  </td></tr>
+<tr><td align="left">Jens Dörpinghaus </td><td align="left"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_shell">Nur keine Angst: Effektives Arbeiten mit der Shell</a>  </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_kernel">Der März im Kernelrückblick</a>  </td></tr>
+<tr><td align="left">Steffen Rumberger </td><td align="left"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_gnome_desktop">GNOME-Desktop ohne GNOME-Shell zusammenstellen</a>  </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_docopt">docopt – Eleganter Umgang mit Parametern von Kommandozeilenprogrammen</a>  </td></tr>
+<tr><td align="left">Matthias Sitte </td><td align="left"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_rezension_linux-server">Rezension: Linux-Server mit Debian 6 GNU/Linux</a>  </td></tr>
+<tr><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2013-04-bilder.html#fm_13_04_png_optimierung">PNG-Bilder (automatisch) optimieren</a>, <a href="freiesMagazin-2013-04-bilder.html#fm_13_04_dante2013">Rückblick: DANTE-Tagung 2013 in Gießen</a>, <a href="freiesMagazin-2013-04-bilder.html#fm_13_04_rezension_softwarearchitektur">Review: Software-Architekturen dokumentieren und kommunizieren</a>  </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Matthias Sitte </td><td align="left">Sujeevan Vijayakumaran </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+<tr><td align="left"><b>Satz und Layout</b></td></tr>
+<tr><td align="left">Holger Dinkel </td><td align="left">Dominik Frey </td></tr>
+<tr><td align="left">Tobias Kempfer </td><td align="left">Stefan Wiehler </td></tr>
+
+<tr><td align="left"><b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left">Toni Zimmer </td></tr>
+
+<tr><td align="left"><b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td></tr>
+
+<tr><td align="left"><b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA 3.0 Unported</a>) </td></tr></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2013-04-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On 22 Apr 2013, 20:55.</small>
+</div>
+</body></html>

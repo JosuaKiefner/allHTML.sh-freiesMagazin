@@ -1,0 +1,3571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                                                
+<title>freiesMagazin 03/2012</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="  | Der Februar im Kernelrückblick | Objektorientierte Programmierung: Teil 1 – OOP in der Praxis | Der Apache-Webserver | 32-Bit-Chroot-Umgebung unter Debian | Selbstgebacken 2: Flickwerk | MyPaint – Zeichenprogramm für kreative Künstler | OpenStreetMap – Eine virtuelle Welt | Rezension: Einstieg in Eclipse 3.7 | Rezension: Head First Design Patterns | Editorial | Fünfter Programmierwettbewerb | Veranstaltungen | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 3.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 03/2012" />
+<meta name="language" content="German" />
+
+<style type="text/css"> div.command {background: none repeat scroll 0% 0% rgb(216, 216, 216); color: black; border: 1px solid lightgray; padding: 3px; font-family: monospace; font-size: 1.25em;}</style>
+<style type="text/css"> div.listing {background: none repeat scroll 0% 0% rgb(255, 255, 229); color: black; border: 1px solid lightgray; padding: 3px; font-family: monospace; font-size: 1.25em;}</style>
+<style type="text/css"> tt.big {font-size: 1.25em;}</style>
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2012-03-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-03.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>März 2012</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a name="inhalt">Topthemen dieser Ausgabe</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2012-03-bilder.html#12_03_oop1">Objektorientierte Programmierung: Teil 1 – OOP in der Praxis</a></font> <br />
+    Der Begriff der objektorientierten Programmierung (kurz OOP) existiert schon eine ganze Weile. Wer zuvor prozedural programmiert hat, erwischt sich beim Übergang zu OOP öfters dabei, wie er die früheren Funktionen einfach mit einer Klasse umgibt und dies als objektorientierte Programmierung verkauft. Die Artikelreihe soll an einem einfachen Beispiel zeigen, was man in so einem Fall besser machen könnte. (<a href="freiesMagazin-2012-03-bilder.html#12_03_oop1">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2012-03-bilder.html#12_03_mypaint">MyPaint – Zeichenprogramm für kreative Künstler</a></font> <br />
+    Wer im zeichnerischen Umfeld kreativ begabt ist, wird sich vielleicht einmal fragen, wie er seine bisherigen Zeichnungen auf Papier in eine digitale Variante transformiert. Die hardwareseitigen Werkzeuge, wie Grafiktablets, stehen bereits seit längerem zur Verfügung. Nun fehlt lediglich eine geeignete Software, die den Künstler möglichst umfassend in seinem Schaffensprozess unterstützt. Die meisten werden bei Grafikerstellung zunächst an GIMP, Krita oder das kommerzielle Photoshop denken. Eine eher unbekannte, aber dennoch durchaus leistungsfähige Software für diesen Zweck, stellt in diesem Zusammenhang MyPaint dar. (<a href="freiesMagazin-2012-03-bilder.html#12_03_mypaint">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2012-03-bilder.html#12_03_osm">OpenStreetMap – Eine virtuelle Welt gedeiht</a></font> <br />
+    Mit „OpenStreetMap – GoogleMaps-Klon oder doch mehr?“ wurde bereits in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 11/2008 das OpenStreetMap-Projekt vorgestellt, das nach dem Wiki-Prinzip eine ganze Weltkarte erstellt, die jedermann nutzen und verbessern darf. Doch drei Jahre sind eine lange Zeit, gerade für freie Projekte. Hier folgt nun das Update, wie sich die Welt seither verändert hat. (<a href="freiesMagazin-2012-03-bilder.html#12_03_osm">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                  
+
+                        
+<h1><font color="#595959"><a name="index">Inhalt</a></font></h1><!-- CONTENT -->
+&nbsp;<br /><!-- CONTENT -->
+<b>Linux allgemein</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_kernel">Der Februar im Kernelrückblick</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Anleitungen</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_oop1">Objektorientierte Programmierung: Teil 1 – OOP in der Praxis</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_apache">Der Apache-Webserver</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_32_bit_chroot_debian">32-Bit-Chroot-Umgebung unter Debian</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_kernelbau">Selbstgebacken 2: Flickwerk</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Software</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_mypaint">MyPaint – Zeichenprogramm für kreative Künstler</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Community</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_osm">OpenStreetMap – Eine virtuelle Welt</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_rezension_eclipse">Rezension: Einstieg in Eclipse 3.7</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_rezension_head_first_design_patterns">Rezension: Head First Design Patterns</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Magazin</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_wettbewerb5">Fünfter Programmierwettbewerb</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_02_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#12_03_impressum">Impressum</a><br /><!-- CONTENT -->
+
+
+
+<div class="p"><!----></div><!-- CONTENT -->
+<a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_03_editorial">Editorial</a></font></h1>
+    
+
+
+
+<h2>Fünfter <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb</h2>
+
+
+Damit sich niemand in der Ferienzeit im April langweilen muss und
+weil wir die Zeit bis zum nächsten größeren <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb,
+der meistens im Oktober stattfindet, sinnvoll überbrücken wollen,
+haben wir Anfang März den fünften <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb gestartet.
+
+<div class="p"><!----></div>
+Dieses Mal geht es nicht um ein theoretisches Spiel, sondern um eine
+reale Anwendung. Gesucht wird ein Wortwolken-Generator, der Texte
+einliest, die Worthäufigkeit zählt und alles als Wortwolke ausgibt. Vor
+allem die Darstellung der Wortwolke soll den Reiz der Programmieraufgabe
+ausmachen. Alle weiteren Informationen finden Sie im 
+<a href="freiesMagazin-2012-03-bilder.html#12_03_wettbewerb5">zugehörigen Artikel</a>.
+
+<div class="p"><!----></div>
+
+<h2>Ergebnisse der Autorenrichtlinien-Umfrage</h2>
+
+
+Letzten Monat&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2012-02">[1]</a>
+warben wir im Editorial unter anderem um neue Autoren. Es haben sich
+ein paar Helfer gemeldet, sodass Sie die nächsten Monate wieder
+regelmäßig mit Lesestoff versorgt werden sollten.
+
+<div class="p"><!----></div>
+Ein ehemaliger potentieller Autor&nbsp;<a href="http://www.freiesmagazin.de/20120205-februarausgabe-erschienen#comment-2448">[2]</a>
+stellte die These in den Raum, dass unsere Autorenrichtlinien&nbsp;<a href="http://www.freiesmagazin.de/mitmachen#autoren">[3]</a> zu einschränkend
+sind und sich daher nur wenige finden, die für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> schreiben wollen.
+Um das zu überprüfen, hatten wir Anfang des Monats eine Umfrage auf
+unserer Webseite gestartet&nbsp;<a href="http://www.freiesmagazin.de/20120208-was-halten-sie-von-den-autorenrichtlinien">[4]</a>. 
+Diese lief Ende Februar aus, sodass die Ergebnisse nun vorliegen.
+
+<div class="p"><!----></div>
+Insgesamt haben sich 159 Menschen an der Umfrage beteiligt. Diese
+Gruppe unterteilt sich in 69 Autoren (43,4&nbsp;%) und 90 reine Leser
+(57,6&nbsp;%). Von der gesamten Gruppe finden 135 Personen (85&nbsp;%) unsere
+Autorenrichtlinien genau richtig, 18 (12,5&nbsp;%) zu streng und immerhin noch
+4 Personen (2,5&nbsp;%) nicht streng genug.
+
+<div class="p"><!----></div>
+Die Gruppe, die die Autorenrichtlinien genau richtig findet, teilt
+sich in 78 reine Leser (86,7&nbsp;% von 90) und 57 Autoren (82,6&nbsp;% von 69).
+Diese Zahl ist uns wichtig, da sie zeigt, dass die Autorenrichtlinien
+für einen Großteil der Leser <b>und</b> der Autoren
+akzeptabel und sinnvoll sind. Wir denken dies auch (sonst gäbe es
+die Richtlinien nicht) und versuchen so, eine durchgängig gute Qualität
+im Magazin zu halten.
+
+<div class="p"><!----></div>
+Dennoch haben wir auch etwas Feedback mitgenommen, sodass die
+Autorenrichtlinien ein wenig überarbeitet wurden. Größte Neuerung ist eine
+Kurzübersicht am Anfang der Richtlinien, die grob erläutern soll,
+worauf es uns ankommt, wenn jemand für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> schreiben will.
+
+<div class="p"><!----></div>
+
+<h2>-in oder nicht -in?</h2>
+
+
+Bei der Diskussion zu den Autorenrichtlinien kam auch wieder die
+betagte Frage nach der Anrede von Lesern, Nutzern und Autoren auf&nbsp;<a href="http://www.freiesmagazin.de/node/263/results#comment-2480">[5]</a>&nbsp;<a href="http://www.freiesmagazin.de/node/263/results#comment-2465">[6]</a>.
+Konkret ging es darum, ob man die weiblichen
+    Leser/Nutzer/Autoren
+explizit durch ein angehängtes „-innen“ erwähnen sollte. Auch neutrale
+Formen wie Lesende, Nutzende und Autorende (nicht ernst gemeint!) wurden vorgeschlagen.
+
+<div class="p"><!----></div>
+Das Thema ist nicht neu und wurde von uns vor zweieinhalb Jahren
+bereits im Editorial in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 09/2009 angesprochen&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2009-09">[7]</a>. Die Resonanz auf
+die Diskussion kann man sich einen Monat später in den Leserbriefen
+anschauen&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2009-10">[8]</a>.
+Die meisten Leser (und explizit auch Leserinnen) sprachen sich gegen
+eine Unterscheidung aus.
+Wir halten dies natürlich auch weiterhin so, aber vielleicht haben sich
+die Meinungen dazu inzwischen ja geändert. Schreiben Sie uns
+in den Kommentaren über den Link am Ende des Artikels oder
+direkt per E-Mail an <img src="freiesMagazin-2012-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<div class="p"><!----></div>
+
+
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2012-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2012-02</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/20120205-februarausgabe-erschienen#comment-2448"><tt class="big">http://www.freiesmagazin.de/20120205-februarausgabe-erschienen#comment-2448</tt></a><br />
+[3] <a href="http://www.freiesmagazin.de/mitmachen#autoren"><tt class="big">http://www.freiesmagazin.de/mitmachen#autoren</tt></a><br />
+[4] <a href="http://www.freiesmagazin.de/20120208-was-halten-sie-von-den-autorenrichtlinien"><tt class="big">http://www.freiesmagazin.de/20120208-was-halten-sie-von-den-autorenrichtlinien</tt></a><br />
+[5] <a href="http://www.freiesmagazin.de/node/263/results#comment-2480"><tt class="big">http://www.freiesmagazin.de/node/263/results#comment-2480</tt></a><br />
+[6] <a href="http://www.freiesmagazin.de/node/263/results#comment-2465"><tt class="big">http://www.freiesmagazin.de/node/263/results#comment-2465</tt></a><br />
+[7] <a href="http://www.freiesmagazin.de/freiesMagazin-2009-09"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2009-09</tt></a><br />
+[8] <a href="http://www.freiesmagazin.de/freiesMagazin-2009-10"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2009-10</tt></a><br />
+    
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+<h1><font color="#595959"><a name="12_03_kernel">Der Februar im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+        <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Linux 3.3</h2>
+
+
+Mit der zweiten Vorabversion&nbsp;<a href="https://lkml.org/lkml/2012/1/31/400">[1]</a> für Linux 3.3 ließ Torvalds sich etwas mehr Zeit. Einen Grund gab es dafür nicht, außer dass er nicht daran gedacht habe. Das Ergebnis war dann ein etwas größeres Päckchen, das mehr an einen -rc3 erinnert. Die Änderungen verteilen sich breitflächig über den gesamten Kernel, nur wenig sticht hervor. Die Aufräumarbeiten in Kroah-Hartmans tty-Bereich halten an und verschlugen nun die 8250-Treiber für die entsprechenden Chips zur Ansteuerung von seriellen Schnittstellen in ein eigenes Unterverzeichnis. Der Bereich mach-mx5 innerhalb der ARM-Architektur verschwand und wurde in den imx-Bereich migriert, es handelt sich dabei um Prozessoren aus dem Portfolio von Freescale. Torvalds wies auch darauf hin, dass er einige Merge Requests abgelehnt habe, die ihm außerhalb des Merge Window nicht angemessen erschienen.
+
+<div class="p"><!----></div>
+Die Änderungen des -rc3&nbsp;<a href="https://lkml.org/lkml/2012/2/8/517">[2]</a> hielten sich in Grenzen. Einiges konnte sich ja schon im -rc2 finden, lediglich eine etwas größere Aktion, bei der ungenutzter DMA-Code aus dem ARM-Bereich entfernt wurde, stach auf der  Änderungsstatistik ins Auge. Die Zahl der Commits war dennoch für eine dritte Vorabversion sehr gering.
+
+<div class="p"><!----></div>
+Dass das allerdings noch keinen Trend darstellt, zeigte Linux 3.3-rc4&nbsp;<a href="https://lkml.org/lkml/2012/2/18/105">[3]</a>, der wieder etwas über das eigentlich von Torvalds favorisierte 7-Tage-Schema hinausragte und doppelt so viele Commits wie sein Vorgänger aufwies. Für diese Verzögerung gab es jedoch eine Ausrede. Die Kernelentwickler hatten mit einem der fiesen Fehler zu tun, die nur unter speziellen Umständen auftreten und schon dadurch schwer zu finden sind. In diesem Fall kam es zu einer Fehlbehandlung von Fließkommawerten, wenn auf einem Prozessor mit AES-Befehlssatzerweiterung&nbsp;<a href="https://de.wikipedia.org/wiki/AES_%28Befehlssatzerweiterung%29">[4]</a> ein 32-Bit-Kernel genutzt wird und gleichzeitig ein WLAN-Treiber die AES-Unterstützung nutzen möchte. Die Korrektur für diesen Fehler wurde in den Entwicklerkernel eingepflegt, soll jedoch in Kürze auch auf die betroffenen stabilen Kernel-Versionen zurückportiert werden. Ansonsten sah -rc4 recht eindrucksvoll aus: 44.000 gelöschte Zeilen Quelltext sind so weit im Entwicklungszyklus ungewöhnlich. Doch es handelt sich hier nicht um einen Fehler bei der Handhabung der Statistik-Werkzeuge von GIT, sondern um den Verlust zweier Treiber aus dem staging-Zweig. Während Intels GMA500-Treiber allerdings bereits seit längerem auch im DRM-Bereich vorliegt, lässt sich dessen Wegfall verschmerzen. pohmelfs&nbsp;<a href="https://en.wikipedia.org/wiki/POHMELFS">[5]</a> jedoch musste tatsächlich weichen, allerdings nicht für immer. Es wird bereits an einer überarbeiteten Version des Netzwerkdateisystems gebastelt, sodass man hier lediglich des sowieso nicht mehr gepflegten Codes verlustig wurde.
+
+<div class="p"><!----></div>
+Mit Linux 3.3-rc5&nbsp;<a href="https://lkml.org/lkml/2012/2/25/71">[6]</a> scheint sich die Entwicklung etwas beruhigt zu haben, er kam auch innerhalb der 7-Tage-Frist. Hauptsächlich Fehlerkorrekturen und kleine Verbesserungen verteilen sich Querbeet über den ganzen Kernel, etwas mehr Aufmerksamkeit ließ man QLogics FibreChannel-Treiber qla2xxx und der Grafikkomponente von Samsungs System-on-Chip-Architektur EXYNOS angedeihen. Die in -rc4 begonnene Putzsaison ging aber weiter, Entwickler des Telekommunikationsgeräteherstellers ZTE&nbsp;<a href="https://de.wikipedia.org/wiki/ZTE">[7]</a> räumten am USB-option-Treiber ihre Geräte-IDs auf. Eigentlich nur eine Randbemerkung im Wust der Patches, wurde der ti3410-Treiber für die entsprechenden USB-Seriell-Chips um eine Geräte-ID erweitert, mittels derer die Geräte von Abbott Diabetes Care&nbsp;<a href="https://en.wikipedia.org/wiki/Abbott_Laboratories#Diabetes_Care">[8]</a>, einem Hersteller für Blutzuckermessgeräte, am PC angebunden werden können. Es wird vermutlich nicht viele Menschen geben, die auf diese Geräte angewiesen sind und zugleich Linux nutzen, doch das bemerkenswerte an Linux ist, dass unabhängig davon diese Möglichkeit trotzdem besteht.
+
+<div class="p"><!----></div>
+
+<h2>ASPM</h2>
+
+
+Der Begriff ASPM (Active State Power Management), eine Energiespartechnik der PCIe-Schnittstelle, ist mittlerweile vielen geläufig. Der Grund liegt in den Problemen, die viele Notebookbesitzer mit der Laufzeit ihrer Akkus hatten, nachdem unter Linux 2.6.38 der ASPM-Code „optimiert“ wurde. Im November hatte man auch schon eine Möglichkeit gefunden, den Fehler zu beheben (siehe „Der November im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 12/2011&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-12">[9]</a>), doch schaffte es der Patch leider nicht mehr in den Kernel 3.2. Dies wurde nun nachgeholt, die aktuell stabilen Kernelversionen 3.2.5&nbsp;<a href="https://lkml.org/lkml/2012/2/6/284">[10]</a> und 3.0.20&nbsp;<a href="https://lkml.org/lkml/2012/2/6/283">[11]</a> sollten nun Notebook-Nutzern wieder die bis 2.6.37 gewohnte kabellose Freiheit zurückgeben.
+
+<div class="p"><!----></div>
+
+<h2>Kroah-Hartman Pfeil rechts Linux Foundation</h2>
+
+
+Wer aufmerksam die Patches studiert, dem fiel es schon vor der offiziellen Ankündigung&nbsp;<a href="http://www.linuxfoundation.org/news-media/announcements/2012/01/leading-kernel-maintainer-greg-kroah-hartman-joins-linux-foundation">[12]</a> auf: Mit dem Kommentar „<em>Greg's suse email address is dead</em>“&nbsp;<a href="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux.git;a=commit;h=879a5a001b62a020e074d460b3a7c0fd993f9832">[13]</a> tauschte Greg Kroah-Hartman, eine der Hauptfiguren der Kernel-Entwicklung, seine bisherige E-Mail-Adresse im <b><tt class="big">MAINTAINERS</tt></b>-File gegen eine neue aus, die der Linux Foundation&nbsp;<a href="https://de.wikipedia.org/wiki/Linux_Foundation">[14]</a> zugeordnet werden kann – er wurde in die Gruppe der „Linux Foundation fellows“&nbsp;<a href="http://www.linuxfoundation.org/programs/developer/fellowship">[15]</a> aufgenommen&nbsp;<a href="http://www.pro-linux.de/news/1/17987/greg-kroah-hartman-wechselt-zur-linux-foundation.html">[16]</a>. Damit wird er nun, wie auch Hauptentwickler Linus Torvalds, von der Linux Foundation bezahlt und widmet sich nun ausschließlich der Kernel-Entwicklung. Wenn dies auch bei seinem bisherigen Arbeitgeber Novell bereits zutreffend war, ist er nun von den Zielen eines Unternehmens unabhängig.
+
+<div class="p"><!----></div>
+Im Kielwasser dieses Wechsels gab Kroah-Hartman dann auch einen kleinen Überblick über seine Tätigkeiten&nbsp;<a href="http://www.kroah.com/log/linux/what_greg_does.html">[17]</a>. Die Hauptaufgabe sind hier die stabilen Kernel-Versionen, deren Versorgung mit Sicherheitsaktualisierungen und Fehlerkorrekturen sichergestellt sein will. Ein weiterer wichtiger Part sind einige Subsysteme des Kernels, darunter der USB-Bereich, der Hauptbereich der Treiber, die tty-Umgebung&nbsp;<a href="https://de.wikipedia.org/wiki/TTY-Schnittstelle">[18]</a> und der staging-Zweig. Deren Weiterentwicklung und Pflege fällt ebenfalls Kroah-Hartman zu, sodass er hier als Maintainer (Betreuer) Patches von anderen Entwicklern begutachtet, einpflegt und in den Entwickler-Kernel überführt. Er entwickelt diese Bereich auch selbst weiter, bastelt neue Treiber oder verbessert bestehende Funktionen und sucht und behebt Fehler. Als Kopf des Linux Driver Project koordiniert er die Arbeiten dieser Gruppe, die Hardwareproduzenten bei der Programmierung von Linux-Treibern für ihre Produkte unter die Arme greift. Ein recht junges Projekt namens „Long Term Support Initiative“ soll einen Kernel bereitstellen und pflegen, der von Herstellern von 
+Unterhaltungselektronik genutzt werden kann, und setzt dabei ebenfalls auf Kroah-Hartmans Unterstützung. Auch wenn er nun nicht mehr für Novell arbeitet, wird er trotzdem an SUSE Tumbleweed&nbsp;<a href="http://de.opensuse.org/Portal:Tumbleweed">[19]</a> weiterarbeiten. 
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://lkml.org/lkml/2012/1/31/400"><tt class="big">https://lkml.org/lkml/2012/1/31/400</tt></a><br />
+[2] <a href="https://lkml.org/lkml/2012/2/8/517"><tt class="big">https://lkml.org/lkml/2012/2/8/517</tt></a><br />
+[3] <a href="https://lkml.org/lkml/2012/2/18/105"><tt class="big">https://lkml.org/lkml/2012/2/18/105</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/AES_%28Befehlssatzerweiterung%29">https://de.wikipedia.org/wiki/AES_(Befehlssatzerweiterung)</a><br />
+[5] <a href="https://en.wikipedia.org/wiki/POHMELFS"><tt class="big">https://en.wikipedia.org/wiki/POHMELFS</tt></a><br />
+[6] <a href="https://lkml.org/lkml/2012/2/25/71"><tt class="big">https://lkml.org/lkml/2012/2/25/71</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/ZTE"><tt class="big">https://de.wikipedia.org/wiki/ZTE</tt></a><br />
+[8] <a href="https://en.wikipedia.org/wiki/Abbott_Laboratories#Diabetes_Care"><tt class="big">https://en.wikipedia.org/wiki/Abbott_Laboratories#Diabetes_Care</tt></a><br />
+[9] <a href="http://www.freiesmagazin.de/freiesMagazin-2011-12"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2011-12</tt></a><br />
+[10] <a href="https://lkml.org/lkml/2012/2/6/284"><tt class="big">https://lkml.org/lkml/2012/2/6/284</tt></a><br />
+[11] <a href="https://lkml.org/lkml/2012/2/6/283"><tt class="big">https://lkml.org/lkml/2012/2/6/283</tt></a><br />
+[12] <a href="http://www.linuxfoundation.org/news-media/announcements/2012/01/leading-kernel-maintainer-greg-kroah-hartman-joins-linux-foundation"><tt class="big">http://www.linuxfoundation.org/news-media/announcements/2012/01/leading-kernel-maintainer-greg-kroah-hartman-joins-linux-foundation</tt></a><br />
+[13] <a href="http://git.kernel.org/?p=linux/kernel/git/torvalds/linux.git;a=commit;h=879a5a001b62a020e074d460b3a7c0fd993f9832"><tt class="big">http://git.kernel.org/?p=linux/kernel/git/torvalds/linux.git;a=commit;h=879a5a001b62a020e074d460b3a7c0fd993f9832</tt></a><br />
+[14] <a href="https://de.wikipedia.org/wiki/Linux_Foundation"><tt class="big">https://de.wikipedia.org/wiki/Linux_Foundation</tt></a><br />
+[15] <a href="http://www.linuxfoundation.org/programs/developer/fellowship"><tt class="big">http://www.linuxfoundation.org/programs/developer/fellowship</tt></a><br />
+[16] <a href="http://www.pro-linux.de/news/1/17987/greg-kroah-hartman-wechselt-zur-linux-foundation.html"><tt class="big">http://www.pro-linux.de/news/1/17987/greg-kroah-hartman-wechselt-zur-linux-foundation.html</tt></a><br />
+[17] <a href="http://www.kroah.com/log/linux/what_greg_does.html"><tt class="big">http://www.kroah.com/log/linux/what_greg_does.html</tt></a><br />
+[18] <a href="https://de.wikipedia.org/wiki/TTY-Schnittstelle"><tt class="big">https://de.wikipedia.org/wiki/TTY-Schnittstelle</tt></a><br />
+[19] <a href="http://de.opensuse.org/Portal:Tumbleweed"><tt class="big">http://de.opensuse.org/Portal:Tumbleweed</tt></a><br />
+    
+
+<div class="p"><!----></div>
+            
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+hält einen Blick auf die Entwicklung des Linux-Kernels und erfährt frühzeitig Details über interessante Funktionen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=Der Februar im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+<h1><font color="#595959"><a name="12_03_oop1">Objektorientierte Programmierung: Teil 1 – OOP in der Praxis</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        
+
+<b>D</b><b>er Begriff der objektorientierten Programmierung (kurz
+OOP&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Objektorientierte_Programmierung">[1]</a>)
+existiert schon eine ganze Weile. Wer zuvor prozedural programmiert
+hat, erwischt sich beim Übergang zu OOP öfters dabei, wie er die
+früheren Funktionen einfach mit einer Klasse umgibt und dies als
+objektorientierte Programmierung verkauft. Die Artikelreihe soll an
+einem einfachen Beispiel zeigen, was man in so einem Fall besser
+machen könnte.</b>
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Für den Artikel wird erwartet, dass man weiß, was Klassen,
+Interfaces, Attribute und Operationen sind. Es schadet auch nicht,
+ein paar Dinge über Unified Modeling Language (UML&nbsp;<a href="http://www.uml.org/">[2]</a>)
+zu wissen, wobei die UML-Diagramme auch ohne großes Vorwissen
+verstanden werden können.
+
+<div class="p"><!----></div>
+
+<h2>Einleitung</h2>
+
+
+Bevor auch nur ein Satz zur „richtigen“ Anwendung von
+objektorientierter Programmierung fällt, soll vorausgeschickt
+werden, dass es keine absolut richtige Programmierung gibt. Ähnlich
+wie bei Buchautoren sind Programmierer und deren Programmierstile sehr
+verschieden. Stellt man zehn Entwicklern eine (komplexe) Aufgabe,
+kann man sicher sein, dass man zehn verschiedene Lösungen erhalten
+wird und von jeder wird der Entwickler in der Regel auch sagen, dass
+sie gut sei.
+
+<div class="p"><!----></div>
+Dennoch haben sich im Laufe der Zeit verschiedene Programmierparadigmen
+und -muster herausgebildet, die allgemein als sinnvoll anerkannt werden.
+Zu dem Thema gibt es entsprechend viele Bücher, am bekanntesten ist
+wahrscheinlich das Buch der „Gang of Four“&nbsp;<a href="https://de.wikipedia.org/wiki/Entwurfsmuster_%28Buch%29">[3]</a>
+Erich Gamma, Richard Helm, Ralph Johnson und John Vlissides
+namens „Design Patterns. Elements of Reusable Object-Oriented Software“&nbsp;<a href="http://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612/">[4]</a>.
+Das Buch gibt es auch auf Deutsch unter dem Titel „Entwurfsmuster:
+Elemente wiederverwendbarer objektorientierter Software“&nbsp;<a href="http://www.amazon.de/Entwurfsmuster-Elemente-wiederverwendbarer-objektorientierter-Software/dp/3827321999/">[5]</a> und beschreibt zahlreiche Entwurfsmuster, die
+beim Design objektorientierter Software benutzt werden können.
+
+<div class="p"><!----></div>
+Neben diesem Buch wurde für die Artikelreihe auch noch auf das sehr
+gute „Head First Design Patterns“ von Eric Freeman, Elisabeth
+Freeman, Bert Bates und Kathy Sierra&nbsp;<a href="http://www.amazon.de/Head-First-Design-Patterns-Freeman/dp/0596007124/">[6]</a>
+zurückgegriffen, welches ebenfalls auf Deutsch unter dem Titel
+„Entwurfsmuster von Kopf bis Fuß“&nbsp;<a href="http://www.amazon.de/Entwurfsmuster-von-Kopf-bis-Fu%C3%9F/dp/3897214210/">[7]</a>
+erhältlich ist (siehe <a href="freiesMagazin-2012-03-bilder.html#12_03_rezension_head_first_design_patterns">Rezension des Buches</a>).
+
+<div class="p"><!----></div>
+Der Artikel soll entsprechend der Bücher nicht zwingend erklären,
+was gut und schlecht ist. Wenn eine Implementierung ein Problem
+löst, ist sie prinzipiell gut. Dennoch kann sie Nachteile haben, die
+es bei einem anderen Lösungsansatz nicht gegeben hätte. Dies hängt
+aber auch immer von den eigenen Präferenzen ab. Bei einem Programm,
+was man einmalig schreibt und welches danach ganz sicher nie wieder
+angepasst oder erweitert werden muss („Wegwerfsoftware“), ist es
+eher nicht sinnvoll, zu viel Zeit in ein gutes Software-Design zu
+stecken – außer man hat extrem viel Spaß daran. Bei langlebiger und
+wartungsintensiver Software, wie sie in der Regel bei Firmen zum
+Einsatz kommt, kann ein gutes Software-Design aber von Vorteil sein.
+
+<div class="p"><!----></div>
+Das Design wird mithilfe des UML-Programms Visual
+Paradigm&nbsp;<a href="http://www.visual-paradigm.com/product/vpuml/">[8]</a>
+erstellt und dargestellt (siehe „UML-Programme im Test“,
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 02/2012&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2012-02">[9]</a>).
+Für die beispielhafte Umsetzung wird C++ benutzt. Jeder Leser kann die
+Aufgaben aber auch in anderen OOP-fähigen Sprachen wie Java, Python, Perl oder
+Ruby&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Liste_objektorientierter_Programmiersprachen">[10]</a>
+nachprogrammieren.
+
+<div class="p"><!----></div>
+Im Laufe der Reihe wird das anfängliche Beispiel dann verbessert
+und soll immer unter folgenden Gesichtspunkten betrachtet werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Anzahl der Abhängigkeiten</li>
+<li> Verantwortlichkeit einer Klasse</li>
+<li> Bedeutung für Wartbarkeit und Erweiterbarkeit</li>
+</ul>
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Da ich C++-Entwickler bin, sind ggf. einige Lösungsaspekte
+allein der Sprache geschuldet. Bei anderen Programmiersprachen ergibt
+sich ein Problem gar nicht oder man würde es anders lösen. Es wird
+aber versucht, sprachunabhängige Lösungen aufzuzeigen.
+
+<div class="p"><!----></div>
+
+<h2>Ein erstes Beispiel</h2>
+
+
+
+<h3>Anforderungen</h3>
+
+
+Als (anfangs schlechtes) Beispiel soll der vierte Programmierwettwerb von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+herhalten&nbsp;<a href="http://www.freiesmagazin.de/20111001-vierter-freiesmagazin-programmierwettbewerb-gestartet">[11]</a>.
+Für diesen wurde ein Beispiel-Bot geschrieben, der den Teilnehmern
+als Sparringpartner diente. Dieser soll hier etwas vereinfacht
+nachprogrammiert werden, sodass er folgende Anforderungen erfüllt:
+
+<ul>
+<li> Spielverwaltung und Bot getrennt</li>
+<li> Einlesen von Benutzereingaben (Zahlen zwischen 0 und 1000)</li>
+<li> Antwort des Bots nach einer bestimmten Strategie, die im
+  Programm per Kommandozeile ausgelesen wird</li>
+<li> Drei vordefinierte Strategien:
+
+<ol>
+<li> immer annehmen</li>
+<li> immer ablehnen</li>
+<li> Annahme, wenn größer gleich 200. Wenn dreimal nacheinander kleiner 200, dann immer Ablehnung; wenn dreimal nacheinander größer als 700, dann immer Annahme.</li>
+</ol></li>
+<li> Bot soll angenommene Punkte zählen und am Ende ausgeben</li>
+</ul>
+
+<div class="p"><!----></div>
+Da bei der Entwicklung eher das Software-Design im Vordergrund steht
+und damit die Beispielprogramme nicht zu lang werden, wird weniger
+Gewicht auf ausführliche Dokumentation oder Fehlerbehandlung gelegt.
+
+<div class="p"><!----></div>
+
+<h3>Naive Designumsetzung</h3>
+
+
+Wenn man sich keine großen Gedanken über eine Umsetzung macht bzw.
+einfach sehr faul ist, erstellt man zwei Klassen. Eine Klasse
+<b><tt class="big">Game</tt></b>, welche die Spielverwaltung und Erstellung des Bots
+übernimmt, und eine Klasse <b><tt class="big">Bot</tt></b>, welche die Strategie bestimmt und
+die Punkte zählt. Dies war auch der erste Ansatz für den Beispielbot
+des Programmierwettbewerbs, woraus dann auch die Idee für die
+Artikelreihe entstanden ist.
+
+<div class="p"><!----></div>
+    <img border="0" src="freiesMagazin-2012-03-bilder-Dateien/oop1-design.png" alt="oop1-design.png" style="max-width:100%" /><br /><em>Das Software-Design der naiven Umsetzung.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Klassenaufteilung</h3>
+
+
+Um sich klar zu machen, welche Aufgabe eine Klasse hat, kann man sogenannte CRC-Karten einsetzen
+(Class-Responsibility-Collaboration-Karten&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Class-Responsibility-Collaboration-Karten">[12]</a>). Diese enthalten den Klassennamen, die Verantwortlichkeit und alle
+anderen Objekte, die die Klasse benötigt. Für das erste Beispiel sähen diese so aus:
+
+<div class="p"><!----></div>
+
+
+    
+<dl compact="compact">
+ <dt><b><b>Klasse:</b></b></dt>
+	<dd> <b><tt class="big">Bot</tt></b></dd>
+ <dt><b><b>Benötigt:</b></b></dt>
+	<dd> –</dd>
+ <dt><b><b>Verantwort.:</b></b></dt>
+	<dd> nimmt Angebote an oder lehnt sie je nach Strategie ab;
+zählt die angenommenen Punkte
+
+<div class="p"><!----></div>
+</dd>
+</dl>    
+<dl compact="compact">
+ <dt><b><b>Klasse:</b></b></dt>
+	<dd> <b><tt class="big">Game</tt></b></dd>
+ <dt><b><b>Benötigt:</b></b></dt>
+	<dd> <b><tt class="big">Bot</tt></b></dd>
+ <dt><b><b>Verantwort.:</b></b></dt>
+	<dd> erstellt Bot und setzt die Strategie (aus Konsolenparameter);
+liest Benutzereingabe und fragt Bot nach Annahme oder Ablehnung
+
+<div class="p"><!----></div>
+</dd>
+</dl>
+<div class="p"><!----></div>
+
+
+
+<h3>Abhängigkeitsanalyse</h3>
+
+
+
+<h4>Vorwort</h4>
+
+
+Wieso sind Abhängigkeiten überhaupt wichtig? Stark vernetzte Software
+(das heißt eine mit vielen Verbindungen zwischen den Klassen) führt
+früher oder später zu einem nicht mehr überschaubaren Wust an Code.
+So kann man irgendwann nicht mehr sagen, welche Teile einer Software
+unabhängig voneinander arbeiten können – zum Beispiel in Form von
+Bibliotheken. Daher bemüht man sich in der Regel, die Abhängigkeiten
+zwischen einzelnen Softwareteilen (Komponenten) gering zu halten.
+
+<div class="p"><!----></div>
+Nicht in allen Sprachen wirken sich die Abhängigkeiten der Software
+unbedingt negativ aus. C++ ist aber ein sehr schönes Beispiel, da
+hier die Abhängigkeiten direkten Einfluss auf die Generierung nehmen.
+Hat man eine Software, die aus 50 Bibliotheken und Hunderten von
+Klassen besteht, die alle kreuz und quer miteinander vernetzt sind,
+führt die Änderung einer einzigen Header-Datei oft dazu, dass alle
+Klassen und alle Bibliotheken neu übersetzt werden müssen. Dies
+versucht man normalerweise zu vermeiden, da es unnötigen Zeitaufwand
+bedeutet (was mit hinausgeworfenem Geld gleichzusetzen ist).
+
+<div class="p"><!----></div>
+Zusätzlich ist eine Software mit vielen Abhängigkeiten nur noch
+schwer zu verstehen, da es bei kleinen Änderungen bereits
+unerwünschte Seiteneffekte geben kann. Auch unerwünschte zyklische
+Abhängigkeiten&nbsp;<a href="https://de.wikipedia.org/wiki/Zirkul%C3%A4re_Abh%C3%A4ngigkeit">[13]</a>
+können so leichter auftreten. Ebenso werden Unit-Tests
+(oder Modul-Tests&nbsp;<a href="https://de.wikipedia.org/wiki/Modultest">[14]</a>)
+durch zu viele Abhängigkeiten erschwert.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Mit Abhängigkeit ist jede Verbindung einer Klasse zu
+einer anderen gemeint und nicht eine Abhängigkeit im strengen
+UML-Sprachgebrauch&nbsp;<a href="https://de.wikipedia.org/wiki/Abh%C3%A4ngigkeitsbeziehung_%28UML%29">[15]</a>.
+
+<div class="p"><!----></div>
+
+<h4>Analyse</h4>
+
+
+Welche Abhängigkeiten ergeben sich also aus den zwei Klassen?
+
+<div class="p"><!----></div>
+Die Klasse <b><tt class="big">Bot</tt></b> hat nur Abhängigkeiten zu Standard-Datentypen
+wie <b><tt class="big">string</tt></b> und <b><tt class="big">int</tt></b>, die nicht ins Gewicht fallen.
+
+<div class="p"><!----></div>
+Die Klasse <b><tt class="big">Game</tt></b> ist direkt von <b><tt class="big">Bot</tt></b> abhängig, da der Bot
+von ihr erstellt und danach benutzt wird. Im UML-Modell wird dies
+dann mittels einer Abhängigkeitsbeziehung vom Stereotyp
+<b><tt class="big">instantiate</tt></b> dargestellt.
+
+<div class="p"><!----></div>
+
+<h3>Vor- und Nachteile</h3>
+
+
+Wie man an den CRC-Karten sieht, haben die zwei Klassen <b><tt class="big">Bot</tt></b> und <b><tt class="big">Game</tt></b>
+nicht nur eine Aufgabe, sondern mehrere. Dies ist nicht immer, aber
+oft ein Hinweis darauf, dass man seine Klassen falsch „geschnitten“
+hat.
+
+<div class="p"><!----></div>
+Man hätte es aber sogar noch schlimmer machen und die
+Benutzereingabe auch direkt in <b><tt class="big">Bot</tt></b> auslesen können, ebenso wie die
+komplette Spielverwaltung. Dann wäre die Klasse aber ein echter
+Gemischtwarenladen an Aufgaben und es gäbe gar keine klare
+Verantwortlichkeit der Klasse <b><tt class="big">Bot</tt></b> mehr. (So ein Objekt nennt
+man gemeinhin Gott-Objekt&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/God_object">[16]</a>.)
+
+<div class="p"><!----></div>
+Der Nachteil des obigen Designs ist also, dass die Klassen zu viele
+Aufgaben übernehmen. So ist es eher seltsam, dass die Klasse <b><tt class="big">Game</tt></b>
+den Bot erstellt. Ebenso kann man überlegen, ob es sinnvoll ist,
+dass <b><tt class="big">Game</tt></b> die Interpretation der Benutzereingaben übernimmt.
+In der Artikelreihe soll sich aber mehr auf den Bot und dessen
+Strategien konzentriert werden. Aber auch dieser hat mehrere
+Verantwortlichkeiten, wie man sieht.
+
+<div class="p"><!----></div>
+Ein weiterer Nachteil ist, dass die Übersicht in der Klasse <b><tt class="big">Bot</tt></b>
+leidet, wenn es sehr viele Strategien gibt. Diese werden durch zig
+<b><tt class="big">if</tt></b>-Abfragen anhand der Zeichenkette <b><tt class="big">mStrategy</tt></b> in der Operation
+<b><tt class="big">acceptOffer</tt></b> unterschieden. Wenn man also 30 Strategien hat, die
+mitunter um einiges komplexer sind als die Beispielstrategien, wird
+das extrem unübersichtlich. Daneben muss man z.&nbsp;B. für die
+Strategie, dass man ein Angebot immer annimmt, das Attribut
+<b><tt class="big">mNumAcceptInRow</tt></b> speichern, auch wenn man es in dem Fall gar nicht
+benötigt.
+
+<div class="p"><!----></div>
+Der dritte Nachteil ist, dass die Bibliothek <b><tt class="big">libgame</tt></b> neu übersetzt
+werden muss, wenn sich in der Deklaration von <b><tt class="big">Bot</tt></b> etwas ändert.
+Dies ergibt sich aus der direkten Abhängigkeit der Klassen. (Dies spielt
+aber in manchen Sprachen, wie oben geschrieben, keine große Rolle.)
+Als Folge davon wäre auch ein Unit-Test der Klasse <b><tt class="big">Game</tt></b> nur schwer
+machbar, d.&nbsp;h. wenn man die Klasse <b><tt class="big">Game</tt></b> testet (z.&nbsp;B. die Operation
+<b><tt class="big">start</tt></b>), testet man automatisch auch immer die Klasse <b><tt class="big">Bot</tt></b> mit.
+(In C++ hätte man nur die Möglichkeit, den Include- und Library-Pfad
+anzupassen, um eine neue Implementierung unterzuschieben. Bei anderen
+Sprachen kann man die Klasse <b><tt class="big">Bot</tt></b> und dessen Methoden zur Laufzeit
+überschreiben&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Mock-Objekt">[17]</a>.)
+
+<div class="p"><!----></div>
+Der Vorteil der Implementierung ist natürlich ihre Einfachheit.
+Es gibt nur zwei Klassen und alles ist schön übersichtlich.
+Leicht erweiterbar oder wartbar ist es auf Dauer aber nicht.
+
+<div class="p"><!----></div>
+Die C++-Implementierung der zwei Klassen kann als Archiv
+heruntergeladen werden: <a href="http://www.freiesmagazin.de/mobil/2012-03-listings/oop1-beispiel.tar.gz">oop1-beispiel.tar.gz</a>.
+
+<div class="p"><!----></div>
+
+<h2>Ableitungen noch und nöcher</h2>
+
+
+Ein sehr mächtiges Mittel der objektorientierten Programmierung
+ist die Ableitung bzw. Generalisierung&nbsp;<a href="https://de.wikipedia.org/wiki/Generalisierung_%28UML%29">[18]</a>.
+Mit ihrer Hilfe kann man bereits bestehende Klassen um weitere
+Eigenschaften (Attribute und Operation) erweitern. Dieses Mittel
+soll benutzt werden, um den Nachteil zu beheben, dass die Methode
+<b><tt class="big">acceptOffer</tt></b> der Klasse <b><tt class="big">Bot</tt></b> bei sehr vielen Strategien zu
+unübersichtlich wird.
+
+<div class="p"><!----></div>
+
+<h3>Design</h3>
+
+
+Das heißt, dass man eine Basisklasse <b><tt class="big">BaseBot</tt></b> erstellt und die
+konkreten Ableitungen davon die jeweilige Strategie umsetzen. Damit
+nicht jeder konkrete Bot die Punkte zählen muss, übernimmt die
+Basisklasse diese Aufgabe.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/oop2-design.png" alt="oop2-design.png" style="max-width:100%" /><br /><em>Die drei Generalisierungen des <b><tt class="big">BaseBot</tt></b>.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Klassenaufteilung</h3>
+
+
+
+
+Die CRC-Karten schauen nun wie folgt aus:
+
+<div class="p"><!----></div>
+    
+<dl compact="compact">
+ <dt><b><b>Klasse:</b></b></dt>
+	<dd> <b><tt class="big">BaseBot</tt></b></dd>
+ <dt><b><b>Benötigt:</b></b></dt>
+	<dd> –</dd>
+ <dt><b><b>Verantwort.:</b></b></dt>
+	<dd> Basisklasse, welches die angenommenen Punkte zählt
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+    
+<dl compact="compact">
+ <dt><b><b>Klasse:</b></b></dt>
+	<dd> <b><tt class="big">AcceptBot</tt></b></dd>
+ <dt><b><b>Basisklasse:</b></b></dt>
+	<dd> <b><tt class="big">BaseBot</tt></b></dd>
+ <dt><b><b>Benötigt:</b></b></dt>
+	<dd> –</dd>
+ <dt><b><b>Verantwort.:</b></b></dt>
+	<dd> nimmt ein Angebot immer an
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+    
+<dl compact="compact">
+ <dt><b><b>Klasse:</b></b></dt>
+	<dd> <b><tt class="big">DeclineBot</tt></b></dd>
+ <dt><b><b>Basisklasse:</b></b></dt>
+	<dd> <b><tt class="big">BaseBot</tt></b></dd>
+ <dt><b><b>Benötigt:</b></b></dt>
+	<dd> –</dd>
+ <dt><b><b>Verantwort.:</b></b></dt>
+	<dd> lehnt ein Angebot immer ab
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+    
+<dl compact="compact">
+ <dt><b><b>Klasse:</b></b></dt>
+	<dd> <b><tt class="big">VariableBot</tt></b></dd>
+ <dt><b><b>Basisklasse:</b></b></dt>
+	<dd> <b><tt class="big">BaseBot</tt></b></dd>
+ <dt><b><b>Benötigt:</b></b></dt>
+	<dd> –</dd>
+ <dt><b><b>Verantwort.:</b></b></dt>
+	<dd> entscheidet variabel, ob ein Angebot abgelehnt oder angenommen wird
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+        
+<dl compact="compact">
+ <dt><b><b>Klasse:</b></b></dt>
+	<dd> <b><tt class="big">Game</tt></b></dd>
+ <dt><b><b>Benötigt:</b></b></dt>
+	<dd> <b><tt class="big">BaseBot</tt></b>, <b><tt class="big">AcceptBot</tt></b>, <b><tt class="big">DeclineBot</tt></b>, <b><tt class="big">VariableBot</tt></b></dd>
+ <dt><b><b>Verantwort.:</b></b></dt>
+	<dd>     erstellt den richtigen Bot; liest Benutzereingabe und fragt Bot nach Annahme oder Ablehnung
+
+<div class="p"><!----></div>
+</dd>
+</dl>
+<div class="p"><!----></div>
+
+
+
+
+
+
+
+
+
+
+
+<h3>Abhängigkeiten</h3>
+
+
+Man hat zwar nun die vorherige Klasse <b><tt class="big">Bot</tt></b> in verschiedene konkrete
+Klassen aufgeteilt, dadurch erhält die Klasse <b><tt class="big">Game</tt></b> aber auch
+mehr Abhängigkeiten, da sie die drei konkreten Bots alle
+erzeugen muss.
+
+<div class="p"><!----></div>
+Daneben hat man auch eine Abhängigkeit zur Basisklasse <b><tt class="big">BaseBot</tt></b>,
+da man die Punkte am Ende ausgeben will und <b><tt class="big">getPoints</tt></b> aufrufen muss.
+
+<div class="p"><!----></div>
+Die konkreten Bots hängen natürlich von der Basisklasse <b><tt class="big">BaseBot</tt></b> ab.
+
+<div class="p"><!----></div>
+
+<h3>Vor- und Nachteile</h3>
+
+
+Die oben stehenden Bot-Klassen haben nun alle nur noch eine
+Verantwortlichkeit, was sehr gut ist. Daneben ist es schön,
+dass man, um eine neue Strategie einzubringen, nur die Klasse <b><tt class="big">BaseBot</tt></b>
+ein weiteres Mal ableiten muss.
+
+<div class="p"><!----></div>
+Ein Nachteil jetzt ist aber die Erweiterbarkeit. Will man einen
+neuen Bot hinzufügen, muss man die Klasse <b><tt class="big">Game</tt></b> entsprechend
+anpassen, da sie den richtigen Bot erstellen muss. Wenn man das oft
+genug macht, fragt man sich, ob es eine gute Idee war, <b><tt class="big">Game</tt></b>
+und die jeweiligen Bot-Implementierungen so eng miteinander zu
+verknüpfen.
+
+<div class="p"><!----></div>
+Ebenso leidet aber auch die Wartbarkeit. Ändert sich eine der
+konkreten Bot-Deklarationen (weil z.&nbsp;B. ein Bot für seine Strategie
+weitere Attribute benötigt), muss auch die Bibliothek <b><tt class="big">libgame</tt></b> neu
+übersetzt werden.
+
+<div class="p"><!----></div>
+Die Übersichtlichkeit ist zwar noch gewährleistet, man stelle sich
+aber vor, der Bot hätte noch zwei andere Eigenschaften in jeweils
+drei Ausprägungen, die in verschiedenen Kombinationen auftreten können.
+Dann müsste man im Extremfall 27 (3 hoch 3) Klassen erstellen, die
+alle diese Möglichkeiten abbilden.
+
+<div class="p"><!----></div>
+
+<h3>Implementierung</h3>
+
+
+Die C++-Implementierung der obigen Klassen kann als Archiv
+heruntergeladen werden: <a href="http://www.freiesmagazin.de/mobil/2012-03-listings/oop2-beispiel.tar.gz">oop2-beispiel.tar.gz</a>.
+
+<div class="p"><!----></div>
+
+<h3>Ausblick</h3>
+
+
+Im nächsten Teil soll das erste Entwurfsmuster vorgestellt werden,
+welches im Design dieses Teiles bereits ein bisschen benutzt wurde.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Objektorientierte_Programmierung"><tt class="big">https://secure.wikimedia.org/wikipedia/de/wiki/Objektorientierte_Programmierung</tt></a><br />
+[2] <a href="http://www.uml.org/"><tt class="big">http://www.uml.org/</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Entwurfsmuster_%28Buch%29">https://de.wikipedia.org/wiki/Entwurfsmuster_(Buch)</a><br />
+[4] <a href="http://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612/"><tt class="big">http://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612/</tt></a><br />
+[5] <a href="http://www.amazon.de/Entwurfsmuster-Elemente-wiederverwendbarer-objektorientierter-Software/dp/3827321999/"><tt class="big">http://www.amazon.de/Entwurfsmuster-Elemente-wiederverwendbarer-objektorientierter-Software/dp/3827321999/</tt></a><br />
+[6] <a href="http://www.amazon.de/Head-First-Design-Patterns-Freeman/dp/0596007124/"><tt class="big">http://www.amazon.de/Head-First-Design-Patterns-Freeman/dp/0596007124/</tt></a><br />
+[7] <a href="http://www.amazon.de/Entwurfsmuster-von-Kopf-bis-Fu%C3%9F/dp/3897214210/">http://www.amazon.de/Entwurfsmuster-von-Kopf-bis-Fuß/dp/3897214210/</a><br />
+[8] <a href="http://www.visual-paradigm.com/product/vpuml/"><tt class="big">http://www.visual-paradigm.com/product/vpuml/</tt></a><br />
+[9] <a href="http://www.freiesmagazin.de/freiesMagazin-2012-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2012-02</tt></a><br />
+[10] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Liste_objektorientierter_Programmiersprachen"><tt class="big">https://secure.wikimedia.org/wikipedia/de/wiki/Liste_objektorientierter_Programmiersprachen</tt></a><br />
+[11] <a href="http://www.freiesmagazin.de/20111001-vierter-freiesmagazin-programmierwettbewerb-gestartet"><tt class="big">http://www.freiesmagazin.de/20111001-vierter-freiesmagazin-programmierwettbewerb-gestartet</tt></a><br />
+[12] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Class-Responsibility-Collaboration-Karten"><tt class="big">https://secure.wikimedia.org/wikipedia/de/wiki/Class-Responsibility-Collaboration-Karten</tt></a><br />
+[13] <a href="https://de.wikipedia.org/wiki/Zirkul%C3%A4re_Abh%C3%A4ngigkeit">https://de.wikipedia.org/wiki/Zirkuläre_Abhängigkeit</a><br />
+[14] <a href="https://de.wikipedia.org/wiki/Modultest"><tt class="big">https://de.wikipedia.org/wiki/Modultest</tt></a><br />
+[15] <a href="https://de.wikipedia.org/wiki/Abh%C3%A4ngigkeitsbeziehung_%28UML%29">https://de.wikipedia.org/wiki/Abhängigkeitsbeziehung_(UML)</a><br />
+[16] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/God_object"><tt class="big">https://secure.wikimedia.org/wikipedia/de/wiki/God_object</tt></a><br />
+[17] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Mock-Objekt"><tt class="big">https://secure.wikimedia.org/wikipedia/de/wiki/Mock-Objekt</tt></a><br />
+[18] <a href="https://de.wikipedia.org/wiki/Generalisierung_%28UML%29">https://de.wikipedia.org/wiki/Generalisierung_(UML)</a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+ist C++-Software-Entwickler und hat täglich mit Software-Design zu
+tun. Dabei muss er sich immer Gedanken machen, dass seine Software
+auch in Zukunft einfach wartbar und leicht erweiterbar bleibt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=Objektorientierte Programmierung#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_03_apache">Der Apache-Webserver</a></font></h1>von Werner Ziegelwanger
+
+<div class="p"><!----></div>
+        
+
+
+
+<b>D</b><b>er Apache-Webserver ist ein freier und laut Wikipedia&nbsp;<a href="http://de.wikipedia.org/wiki/Apache_HTTP_Server">[1]</a>
+der am häufigsten verwendete Webserver. Der folgende Artikel soll zeigen, wie Apache
+funktioniert und wie man mit ihm dynamische Seiten in PHP, Perl,
+Python und JSP anzeigen lassen kann.</b>
+
+<div class="p"><!----></div>
+Ein Webserver funktioniert folgendermaßen: Der Benutzer gibt in der
+Adresszeile seines Browsers eine Adresse ein. Diese wird als URL
+(Uniform Resource Locator) bezeichnet. Über diese URL werden zwei
+Dinge ermittelt:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> die Adresse eines Computers im Internet, auch FQDN (Fully Qualified Domain Name) genannt,</li>
+<li> eine Ressource, die von diesem Rechner angezeigt werden soll.</li>
+</ol>
+
+<div class="p"><!----></div>
+Als Beispiel soll folgende Adresse dienen:
+
+<div class="p"><!----></div>
+
+<div class="listing">http://www.freiesmagazin.de/magazin</div>
+
+<div class="p"><!----></div>
+
+
+Hierbei entspricht <b><tt class="big">www.freiesmagazin.de</tt></b> dem FQDN und <b><tt class="big">/magazin</tt></b> der Ressource.
+
+<div class="p"><!----></div>
+Zur Erklärung soll hier erwähnt werden, dass der FQDN von rechts nach
+links gelesen wird. Das heißt, in der Domain <b><tt class="big">de</tt></b> (Deutschland) gibt
+es einen Rechner, der die Seite von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> hostet, und mit
+<b><tt class="big">www</tt></b> gibt man an, dass man die Ressource in dieser Subdomain sucht.
+
+<div class="p"><!----></div>
+Wird keine Ressource angegeben, so wird standardmäßig die <b><tt class="big">index</tt></b>-Datei
+angezeigt. Der Ordner, in dem die Ressource gesucht wird, wird
+üblicherweise bei der Installation eines Webservers angelegt und
+beherbergt die Webseiten, die dieser Rechner nach außen anzeigt.
+
+<div class="p"><!----></div>
+Die Ressource, die hier angefordert wird, heißt <b><tt class="big">magazin</tt></b>. Dies kann nun
+eine Datei mit dem Namen <b><tt class="big">magazin.html</tt></b> sein, ein Ordner namens
+<b><tt class="big">magazin</tt></b>, der eine Datei namens <b><tt class="big">index.html</tt></b> enthält oder ähnliches.
+All das braucht der Anwender nicht zu wissen. Der Webserver liefert
+die gesuchte Ressource. Sollte er sie nicht finden, gibt er eine
+Fehlerseite zurück.
+
+<div class="p"><!----></div>
+<b><tt class="big">http://www.freiesmagazin.de/void</tt></b> liefert so zum Beispiel die
+Seite, welche als Fehlerseite beim Webserver eingestellt worden ist.
+Üblicherweise liefert eine nicht gefundene Ressource eine 
+404-Fehlerseite.
+
+<div class="p"><!----></div>
+Das Kernstück des Apache-Webservers ist der httpd (Hypertext Transfer
+Protocol Daemon). Im Prinzip macht dieser Daemon (laufender Prozess am
+Webserver) nichts anderes als auf HTTP-Anfragen HTTP-Antworten zu
+liefern. Diese Funktionalität kann durch Module ergänzt werden. Dieses
+Modulkonzept ist mit ein Grund für die Popularität des 
+Apache-Webservers.
+
+<div class="p"><!----></div>
+Es gibt zahlreiche Zusatzmodule; ein Beispiel wäre das PHP-Modul, welches
+dem Server ermöglicht, PHP-Skripte auszuführen, wenn diese über eine
+HTTP-Anfrage aufgerufen werden. Aber dazu später mehr.
+
+<div class="p"><!----></div>
+
+<h2>Die Installation</h2>
+
+
+Die Installation gestaltet sich sehr einfach. Man muss nur das Paket
+<b>apache2</b> mit einem Paketmanager installieren. Um zu überprüfen, ob der
+Webserver läuft, gibt man einfach Folgendes in die Adressleiste des Browsers
+ein: 
+<a href="http://localhost/"><tt class="big">http://localhost/</tt></a>.
+
+<div class="p"><!----></div>
+Wenn der Webserver läuft, erscheint nun eine Erfolgsmeldung. Diese
+Seite ist die Standardseite, die der Webserver nun anzeigt. Der
+Domainname <b><tt class="big">localhost</tt></b> bzw. die Adresse <b><tt class="big">127.0.0.1</tt></b> zeigen im Browser
+den eigenen Rechner.
+
+<div class="p"><!----></div>
+
+
+
+
+Der Server kann nach erfolgreicher Installation mit dem Befehl
+<b><tt class="big">/etc/init.d/apache2</tt></b> gestartet, gestoppt oder neu gestartet
+werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># /etc/init.d/apache2 start<br />
+# /etc/init.d/apache2 stop<br />
+# /etc/init.d/apache2 restart</div>
+
+<div class="p"><!----></div>
+
+<h2>Die Konfiguration</h2>
+
+
+Komplizierter wird es bei der Konfiguration. Es gibt dafür mehrere
+Konfigurationsdateien. Zu finden sind diese im Apache2-Ordner. Wo sich
+dieser Ordner befindet, ist von Distribution zu Distribution
+unterschiedlich. Alle hier angegebenen Informationen bezüglich der
+Ordnerstruktur beziehen sich auf Ubuntu.
+
+<div class="p"><!----></div>
+        
+    
+<dl compact="compact">
+ <dt><b><b><tt class="big">httpd.conf</tt></b></b></dt>
+	<dd> Dies ist die Konfigurationsdatei des HTTP-Daemons. Diese
+  Datei kann globale Konfigurationen beinhalten, ist aber meistens
+  leer, da für die aktuellen Versionen des Apache-Webservers die
+  <b><tt class="big">apache2.conf</tt></b>-Datei zur globalen Konfiguration verwendet wird.</dd>
+ <dt><b><b><tt class="big">apache2.conf</tt></b></b></dt>
+	<dd> Hier kann man globale Einstellungen für den Webserver
+  vornehmen. Diese Datei ist sehr gut dokumentiert.</dd>
+ <dt><b><b><tt class="big">envwars</tt></b></b></dt>
+	<dd> Diese Datei beinhaltet alle Umgebungsvariablen, die der
+  Server benötigt.</dd>
+ <dt><b><b><tt class="big">ports.conf</tt></b></b></dt>
+	<dd> Hier kann man einstellen, auf welchen Ports der Webserver
+  lauschen soll. Standardmäßig wird nur auf Port 80 gelauscht. Dieser
+  TCP-Port wird üblicherweise für das Hypertext Transfer Protokoll
+  verwendet (HTTP).</dd>
+ <dt><b><b><tt class="big">mods-available</tt></b></b></dt>
+	<dd> Dieser Ordner enthält Konfigurationsdateien für alle
+  Module, die für den Webserver zur Verfügung stehen. Module können so
+  individuell konfiguriert werden.
+</dd>
+</dl>
+
+        
+<dl compact="compact">
+ <dt><b><b><tt class="big">mods-enabled</tt></b></b></dt>
+	<dd> Dieser Ordner enthält Links auf Konfigurationsdateien
+  des <b><tt class="big">mods-available</tt></b>-Ordners. Alle Module, von denen hier Links
+  existieren, werden bei einem Start des Servers geladen.
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+Nähere Informationen zur Konfiguration sind den Kommentaren in den
+Konfigurationsdateien zu entnehmen oder in der Dokumentation
+nachzulesen.
+
+<div class="p"><!----></div>
+
+<h2>Die erste Seite</h2>
+
+
+Der Apache-Webserver verwendet sogenannte virtuelle Hosts. Das heißt,
+man kann auf einem Rechner beliebig viele Seiten hosten. Somit kann
+man mehrere virtuelle Hosts mit unterschiedlichen Servernamen anlegen;
+der Webserver vergleicht diese dann mit der vom Benutzer angegebenen
+URL und liefert die gewünschte Seite des zugehörigen Servernamens.
+Sollte der Servername nicht existieren, kann ein Standardseite angezeigt
+werden.
+
+<div class="p"><!----></div>
+Die virtuellen Hosts sind im <b><tt class="big">sites-available</tt></b>-Ordner zu finden.
+Definiert wird ein Host in einer Textdatei. Bei einer neuen
+Installation des Webservers wurde bereits ein Standardhost angelegt,
+welcher durch eine Textdatei mit dem Namen <b><tt class="big">default</tt></b> in diesem Ordner
+zu finden ist. Interessant sind hier die Elemente <b><tt class="big">DocumentRoot</tt></b> und
+<b><tt class="big">ErrorLog</tt></b>. <b><tt class="big">DocumentRoot</tt></b> definiert einen Ordner, den dieser virtuelle
+Host nach außen zeigt. Das heißt, wenn man diesen Host im Browser
+anfragt, dann wird standardmäßig die Seite
+<b><tt class="big">index.html</tt></b> aus diesem
+Verzeichnis an den Anwender geschickt und bei ihm im Browser
+angezeigt. Mit <b><tt class="big">ErrorLog</tt></b> definiert man eine Logdatei, die alle Fehler
+für diesen Host protokolliert. So kann nun zum Beispiel dem virtuellen
+Server ein Name gegeben werden, indem die Zeile <b><tt class="big">ServerName localhost</tt></b>
+nach der ersten Zeile eingefügt wird.
+
+<div class="p"><!----></div>
+Da der Ordner des Standardhosts <b><tt class="big">/var/www</tt></b> ist (wie der Konfiguration
+entnommen werden kann), wird dort eine neue Seite erstellt. Dazu
+ändert man die bereits existierende HTML-Datei um, sodass sie
+folgenden Inhalt hat:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">&lt;html&#62;<br />
+&lt;body&#62;<br />
+&lt;h1&#62;Hallo Welt!&lt;/h1&#62;<br />
+&lt;p&#62;Willkommen auf der neuen Homepage.&lt;/p&#62;<br />
+&lt;br/&#62;<br />
+&lt;p&#62;&lt;a href="phpTest.php"&#62;PHP Testseite&lt;/a&#62;&lt;/p&#62;<br />
+&lt;p&#62;&lt;a href="cgi-bin/perlTest.pl"&#62;Perl Testeite&lt;/a&#62;&lt;/p&#62;<br />
+&lt;p&#62;&lt;a href="cgi-bin/pythonTest.py"&#62;Python Testseite&lt;/a&#62;&lt;/p&#62;<br />
+&lt;/body&#62;<br />
+&lt;/html&#62;</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2012-03-listings/index.html">index.html</a></i>
+
+<div class="p"><!----></div>
+Nach dem Speichern der Datei zeigt der Browser nun die neue Seite.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/apache-hallo-welt.png" alt="apache-hallo-welt.png" style="max-width:100%" /><br /><em>Die neue Übersichtsseite.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Module</h2>
+
+
+Wie bereits erwähnt sind Module ein wichtiges Konzept beim 
+Apache-Webserver. Bis jetzt kann der Server nur statische Seiten anzeigen.
+In Zeiten von Web 2.0 reicht das aber schon lange nicht mehr aus. Der
+Server soll nun auch auf Benutzerangaben reagieren und im besten Fall
+für den Benutzer individuelle Daten anzeigen. Erreicht wird dies
+üblicherweise durch Skripte. JavaScript ermöglicht zwar teilweise eine
+dynamische Webseite, jedoch wird dieses nur auf dem Rechner des Benutzers
+ausgeführt. Was benötigt wird, sind Skripte, die auf dem Server
+ausgeführt werden. Dazu gehören unter anderen PHP, Perl und Python.
+
+<div class="p"><!----></div>
+Der Server soll nun so angepasst werden, dass er diese Skriptsprachen
+unterstützt.
+
+<div class="p"><!----></div>
+    
+<h3>PHP</h3>
+
+
+
+
+Um die Funktionalität zu testen, wird zuerst eine neue Seite erstellt,
+die ein PHP-Skript enthält. Dazu wird eine neue Datei namens
+<b><tt class="big">phpTest.php</tt></b> im Ordner <b><tt class="big">/var/www/</tt></b> mit folgendem Inhalt erstellt:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;?php<br />
+&nbsp;&nbsp;&nbsp;&nbsp;echo "&lt;h1&#62;PHP Testseite&lt;/h1&#62;";<br />
+&nbsp;&nbsp;&nbsp;&nbsp;phpinfo();<br />
+?&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Damit der Server in der Lage ist, PHP auszuführen, müssen folgende
+Pakete installiert werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b>libapache2-mod-php5</b></li>
+<li> <b>php5-cli</b></li>
+<li> <b>php5-common</b></li>
+<li> <b>php5-cgi</b></li>
+</ul>
+
+<div class="p"><!----></div>
+    Nach einem Neustart des Webservers kann die PHP-Seite im Browser
+korrekt angezeigt werden.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/apache-php.png" alt="apache-php.png" style="max-width:100%" /><br /><em>Die typische PHP-Informationsseite.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Perl</h3>
+
+
+Ähnlich wie beim Testen der PHP-Funktionalität legt man wieder zuerst
+eine neue Skriptdatei an, diesmal für ein Perl-Skript. Für Perl und
+Python benötigt man noch ein Verzeichnis, in dem diese Skriptdateien
+abgelegt werden können. Dazu legt man im Verzeichnis <b><tt class="big">www</tt></b> ein
+Verzeichnis namens <b><tt class="big">cgi-bin</tt></b> an. In diesem Verzeichnis erstellt man
+eine Datei mit dem Namen <b><tt class="big">perlTest.pl</tt></b>. Die Dateiendung <b><tt class="big">.pl</tt></b> ist für
+Perl-Skripte üblich. Der Inhalt der Datei lautet wie folgt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">#!/usr/bin/perl<br />
+print "Content-type: text/html\r\n\r\n";<br />
+print "&lt;h1&#62;Perl Testseite&lt;/h1&#62;";<br />
+print "Perl funktioniert mit diesem Webserver!";</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2012-03-listings/perlTest.pl">perlTest.pl</a></i>
+
+<div class="p"><!----></div>
+Die neue Datei und auch das Verzeichnis benötigen Ausführungsrechte.
+
+<div class="p"><!----></div>
+Danach installiert man das Perl-Modul <b>libapache2-mod-perl2</b>.
+
+<div class="p"><!----></div>
+Nun ist Perl installiert, jedoch muss man den virtuellen Host noch
+konfigurieren. Der virtuelle Host ist im Verzeichnis <b><tt class="big">sites-available</tt></b>
+zu finden. Der virtuelle Host <b><tt class="big">default</tt></b> hat bereits eine Konfiguration
+für den <b><tt class="big">cgi-bin</tt></b> Ordner. Diese muss folgendermaßen geändert werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">ScriptAlias /cgi-bin/ /var/www/cgi-bin/<br />
+&lt;Directory "/var/www/cgi-bin"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Options ExecCGI<br />
+&nbsp;&nbsp;&nbsp;&nbsp;AddHandler cgi-script cgi pl<br />
+&lt;/Directory&#62;</div>
+
+<div class="p"><!----></div>
+Die erste Zeile definiert einen Alias, der auf das Verzeichnis mit den
+Skripten zeigt. Die Zeile mit dem <b><tt class="big">AddHandler</tt></b> definiert die
+Dateiendungen, welche als Skript ausgeführt werden sollen (in diesem
+Fall <b><tt class="big">*.cgi</tt></b> und <b><tt class="big">*.pl</tt></b>).
+
+<div class="p"><!----></div>
+
+
+Nach einem Neustart zeigt der Browser das Ergebnis des Perl-Skripts.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/apache-perl.png" alt="apache-perl.png" style="max-width:100%" /><br /><em>Die Perl-Testseite.</em><br />
+
+<div class="p"><!----></div>
+
+
+
+<h3>Python</h3>
+
+
+Wieder erstellt man zuerst eine neue Skriptdatei im Ordner <b><tt class="big">cgi-bin</tt></b>,
+mit dem Namen <b><tt class="big">pythonTest.py</tt></b> und dem folgenden Inhalt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">#!/usr/bin/python<br />
+def index():<br />
+return "&lt;html&#62;&lt;body&#62;&lt;h1&#62;Python Testseite&lt;/h1&#62;&lt;/br&#62;&lt;Python funktioniert mit diesem Webserver!&lt;/body&#62;&lt;/html&#62;"</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2012-03-listings/pythonTest.py">pythonTest.py</a></i>
+
+<div class="p"><!----></div>
+Auch hier muss wieder sichergestellt werden, dass die Datei
+Ausführungsrechte hat.
+
+<div class="p"><!----></div>
+Danach installiert man noch das erforderliche Modul
+<b>libapache2-mod-python</b>.
+
+<div class="p"><!----></div>
+Zum Schluss muss eine weitere Änderung an den Konfigurationseinstellungen des
+virtuellen Hosts vorgenommen werden. Dazu wird der folgende Abschnitt
+hinzugefügt:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;Directory "/var/www/cgi-bin"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Options Indexes FollowSymLinks MultiViews<br />
+&nbsp;&nbsp;&nbsp;&nbsp;AllowOverride None<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Order allow,deny<br />
+&nbsp;&nbsp;&nbsp;&nbsp;allow from all<br />
+&nbsp;&nbsp;&nbsp;&nbsp;AddHandler mod_python py<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PythonHandler mod_python.publisher<br />
+&nbsp;&nbsp;&nbsp;&nbsp;PythonDebug on<br />
+&lt;/Directory&#62;</div>
+
+<div class="p"><!----></div>
+
+
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/apache-python.png" alt="apache-python.png" style="max-width:100%" /><br /><em>Auch Python funktioniert.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Mögliche Fehlerquellen</h2>
+
+
+Beim Installieren und Konfigurieren eines Webservers kann es immer
+wieder zu Fehlern kommen. Probleme bereiten hier vor allem die
+Skriptsprachen.
+
+<div class="p"><!----></div>
+    Zu allererst sollte überprüft werden, ob auch wirklich
+alle erforderlichen Module installiert worden sind. Ein nicht durchgeführter
+Neustart des Webservers ist ein möglicher Fehler. Skripte können auch
+in der Kommandozeile auf Funktionalität getestet werden (z.&nbsp;B. mit
+<b><tt class="big">./perlTest.pl</tt></b>). Hier sollte man auch überprüfen, ob das
+Ausführungsrecht gesetzt ist. Sollte das Skript im Browser trotzdem
+nicht angezeigt werden, hilft das Log weiter. Im Ordner
+<b><tt class="big">/var/log/apache2</tt></b> findet man alle Log-Dateien.
+
+<div class="p"><!----></div>
+    
+<h2>Tomcat</h2>
+
+
+Tomcat&nbsp;<a href="http://tomcat.apache.org/">[2]</a> wird benötigt, um dem Webserver die
+Funktionalität für die Java Servlets und Java Server Pages hinzuzufügen.
+
+<div class="p"><!----></div>
+    
+<h3>Installation</h3>
+
+
+Folgende Pakete sind mit einem Paketmanager
+    zu installieren:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b>tomcat7</b></li>
+<li> <b>tomcat7-admin</b></li>
+<li> <b>tomcat7-docs</b></li>
+</ul>
+
+<div class="p"><!----></div>
+
+
+
+
+Der Tomcat kann nach erfolgreicher Installation mit dem Befehl
+<b><tt class="big">/etc/init.d/tomcat7</tt></b> gestartet, gestoppt oder neu gestartet
+werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># /etc/init.d/tomcat7 start<br />
+# /etc/init.d/tomcat7 stop<br />
+# /etc/init.d/tomcat7 restart</div>
+
+<div class="p"><!----></div>
+Die erfolgreiche Installation kann man mit folgender URL im Browser
+testen: <a href="http://localhost:8080"><tt class="big">http://localhost:8080</tt></a>
+
+<div class="p"><!----></div>
+Nun sollte eine Seite mit der Meldung „<em>It works!</em>“ erscheinen.
+
+<div class="p"><!----></div>
+
+<h3>Konfiguration</h3>
+
+
+Der Apache-Tomcat kann mit den xml-Dateien in <b><tt class="big">/var/lib/tomcat7/conf</tt></b>
+konfiguriert werden. Interessant ist hier die Datei
+<b><tt class="big">tomcat-users.xml</tt></b>. Hier kann man Benutzer und Benutzerrollen für den
+Tomcat-Manager konfigurieren. Um diesen Manager nutzen zu können,
+legt man eine neue Benutzerrolle und einen neuen Benutzer an:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;role rolename="manager-gui" /&#62;<br />
+&lt;user username="manager" password="meinpasswort" roles="manager-gui"/&#62;</div>
+
+<div class="p"><!----></div>
+Nachdem diese Zeilen hinzugefügt worden sind, muss der Tomcat neu
+gestartet werden. Nun kann man mit diesem neu angelegten Benutzer die
+Manager-GUI des Tomcat nutzen: 
+<a href="http://localhost:8080/manager"><tt class="big">http://localhost:8080/manager</tt></a>
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/apache-tomcat.png" alt="apache-tomcat.png" style="max-width:100%" /><br /><em>Der Tomcat Manager zeigt alle laufenden Applikationen.</em><br />
+
+<div class="p"><!----></div>
+
+
+Die Manager-GUI zeigt alle laufenden Applikationen. Man kann sie
+stoppen, neu starten oder löschen. Ganz unten zeigt diese GUI noch
+Eingabefelder, um neue Applikationen zu laden und laufen zu lassen.
+
+<div class="p"><!----></div>
+Eine zuvor erstellte Java-Webapplikation, die man über eine IDE (z.&nbsp;B.
+Netbeans oder Eclipse)
+    
+erstellt und als <b><tt class="big">.war</tt></b>-Datei kompiliert hat, kann
+man hier hinzufügen. Eine Beispiel-Webapplikation wird unter folgendem
+Link bereitgestellt: <a href="http://www.freiesmagazin.de/mobil/2012-03-listings/JavaTest.war"><b><tt class="big">JavaTest.war</tt></b></a>. Nach dem
+erfolgreichen Deployen kann man die Seite über folgenden Link oder auf
+einen Klick auf „<em>JavaTest</em>“ in der Manager GUI aufrufen:
+<a href="http://localhost/JavaTest"><tt class="big">http://localhost/JavaTest</tt></a>
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/apache-jsp.png" alt="apache-jsp.png" style="max-width:100%" /><br /><em>Zum Abschluss noch etwas JSP …</em><br />
+
+<div class="p"><!----></div>
+Nun sollte eine Erfolgsseite im Browser zu sehen sein. Sie
+zeigt unter anderem die
+    verwendete Browserversion und
+Betriebssystem. Außerdem noch die IP-Adresse. Die Seite, die
+angezeigt wird, besteht aus folgendem Code und ist in einer JSP Datei
+im <b><tt class="big">.war</tt></b>-Archiv zu finden:
+
+<div class="p"><!----></div>
+    
+
+
+
+<div class="listing">&lt;%@page contentType="text/html" pageEncoding="UTF-8"%&#62;<br />
+&lt;!DOCTYPE html&#62;<br />
+&lt;html&#62;<br />
+&nbsp;&nbsp;&lt;head&#62;<br />
+&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&#62;<br />
+&nbsp;&nbsp;&nbsp;&lt;title&#62;JSP Testseite&lt;/title&#62;<br />
+&nbsp;&nbsp;&lt;/head&#62;<br />
+&nbsp;&nbsp;&lt;body&#62;<br />
+&nbsp;&nbsp;&nbsp;&lt;h1&#62;JSP Testseite!&lt;/h1&#62;<br />
+&nbsp;&nbsp;&nbsp;Your browser is: &lt;%= request.getHeader("User-Agent") %&#62;&lt;br&#62;<br />
+&nbsp;&nbsp;&nbsp;Your IP address is: &lt;%= request.getRemoteAddr() %&#62;&lt;br&#62;<br />
+&nbsp;&nbsp;&lt;/body&#62;<br />
+&lt;/html&#62;</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2012-03-listings/index.jsp">index.jsp</a></i>
+
+<div class="p"><!----></div>
+
+
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://de.wikipedia.org/wiki/Apache_HTTP_Server"><tt class="big">http://de.wikipedia.org/wiki/Apache_HTTP_Server</tt></a><br />
+[2] <a href="http://tomcat.apache.org/"><tt class="big">http://tomcat.apache.org/</tt></a><br />
+[3] <a href="https://help.ubuntu.com/10.04/serverguide/C/httpd.html"><tt class="big">https://help.ubuntu.com/10.04/serverguide/C/httpd.html</tt></a><br />
+[4] <a href="http://radekb.blogspot.com/2010/02/how-to-install-tomcat-in-kubuntu.html"><tt class="big">http://radekb.blogspot.com/2010/02/how-to-install-tomcat-in-kubuntu.html</tt></a><br />
+[5] <a href="http://www.ubuntugeek.com/how-to-install-apache2-webserver-with-phpcgi-and-perl-support-in-ubuntu-server.html"><tt class="big">http://www.ubuntugeek.com/how-to-install-apache2-webserver-with-phpcgi-and-perl-support-in-ubuntu-server.html</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Werner Ziegelwanger</b>&nbsp;(<a href="http://www.ziaglw.at/">Webseite</a>)
+hat Game Engineering und Simulation studiert und
+arbeitet derzeit als Java Web-Entwickler.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=Der Apache-Webserver#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_03_32_bit_chroot_debian">32-Bit-Chroot-Umgebung unter Debian einrichten</a></font></h1>von Hans-Joachim Baader
+
+<div class="p"><!----></div>
+        <b>A</b><b>Auf einem 64-Bit-Debian-System kann es manchmal nützlich sein, eine
+32-Bit-Umgebung zur Hand zu haben. Das lässt sich mit debootstrap
+und schroot schnell und einfach erreichen. Das Verfahren ist aber
+auch für 32-Bit-Systeme und teilweise auch für andere Distributionen
+geeignet.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „32-Bit-Chroot-Umgebung unter Debian einrichten“
+erschien erstmals bei Pro-Linux&nbsp;<a href="http://www.pro-linux.de/artikel/2/1547/32-bit-chroot-umgebung-unter-debian-einrichten.html">[1]</a></i>.
+
+<div class="p"><!----></div>
+    
+<h2>Vorwort</h2>
+
+
+Die meisten 32-Bit-Programme lassen sich unter einem 64-Bit-Linux
+problemlos ausführen. Auch unter Debian, das derzeit noch nicht
+multiarch-fähig ist, ist es meist möglich. Gegebenenfalls muss man
+ein paar 32-Bit-Bibliotheken nachinstallieren, die als Pakete
+vorliegen. Liegt die 32-Bit-Software jedoch als DEB-Paket vor und
+besitzt noch Abhängigkeiten zu anderen 32-Bit-Paketen, dann kann es
+unmöglich werden, dieses Paket sauber zu installieren.
+
+<div class="p"><!----></div>
+    Eine mögliche Abhilfe sind die mittlerweile allgegenwärtigen
+virtuellen Maschinen. Durch ihre weitgehende Isolation vom
+Host-System sind sie zwar sehr sicher, machen aber auch einige
+Umstände. Eine schlankere Alternative sind Chroot-Umgebungen. 
+Es ist aber nicht leicht, eine solche Umgebung von Hand einzurichten.
+Alle auf Debian oder Ubuntu beruhenden Distributionen bringen jedoch
+Werkzeuge mit, die den Vorgang auf wenige Handgriffe reduzieren.
+
+<div class="p"><!----></div>
+
+<h2>Chroot-Umgebung installieren</h2>
+
+
+Das grundlegende Werkzeug heißt debootstrap. Es installiert eine
+beliebige Version der Distribution von einem beliebigen Server in
+ein beliebiges Verzeichnis. Die einzige nötige Vorbereitung ist, ein
+Verzeichnis zu wählen, in dem genug Platz ist (für eine ernsthafte
+Nutzung wird man sicherlich 500 MB plus die Größe der zusätzlichen
+Programme und Daten benötigen). Man kann beispielsweise ein
+Verzeichnis <b><tt class="big">/var/chroots</tt></b> anlegen und in dieses wechseln:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># mkdir /var/chroots<br />
+# chown &lt;user&#62; /var/chroots<br />
+$ cd /var/chroots</div>
+
+<div class="p"><!----></div>
+
+
+Nun genügt der folgende Befehl, vorausgesetzt, das Paket
+<b><tt class="big">debootstrap</tt></b> ist installiert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># debootstrap --arch i386 wheezy wheezy-i386 http://ftp.de.debian.org/debian</div>
+
+<div class="p"><!----></div>
+Hier ist <b><tt class="big">--arch i386</tt></b> die Architektur (32-Bit). Wer es braucht,
+kann natürlich auch eine 64-Bit-Umgebung installieren. <b><tt class="big">wheezy</tt></b> ist
+der Name der Distribution, für Debian sind hier jeweils die stabilen
+und Testversionen möglich (zur Zeit <b><tt class="big">lenny</tt></b>, <b><tt class="big">squeeze</tt></b>, <b><tt class="big">wheezy</tt></b>,
+<b><tt class="big">sid</tt></b>), für Ubuntu z.&nbsp;B. <b><tt class="big">natty</tt></b>, <b><tt class="big">oneiric</tt></b> und <b><tt class="big">precise</tt></b>.
+
+<div class="p"><!----></div>
+<b><tt class="big">wheezy-i386</tt></b> ist das Verzeichnis, das von  debootstrap unterhalb des
+aktuellen Verzeichnisses angelegt wird. Optional kann man dahinter
+noch einen Distributionsspiegelserver angeben. Wer ein eigenes
+Repository oder einen Proxy (z.&nbsp;B. apt-proxy-ng) betreibt, kann die
+Zeile auch abändern zu
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># debootstrap --arch i386 wheezy wheezy-i386 http://proxy:3142/debian</div>
+
+<div class="p"><!----></div>
+oder
+
+<div class="p"><!----></div>
+
+<div class="command"># debootstrap --arch i386 hardy hardy-i386 http://proxy:3142/ubuntu</div>
+
+<div class="p"><!----></div>
+oder ähnlich. Die gesamte Chroot-Installation läuft vollautomatisch
+und dauert etwa eine halbe bis eine Stunde. 
+
+<div class="p"><!----></div>
+Das auf den Bildschirm ausgegebene Log 
+sollte abschließend mit der letzten Zeile Erfolg melden:
+
+<div class="p"><!----></div>
+
+<div class="command">I: Base system installed successfully.</div>
+
+<div class="p"><!----></div>
+
+<h2>Manuelle Konfiguration</h2>
+
+
+
+
+Mit dem folgenden Befehl kann man die Umgebung bereits nutzen, jedoch 
+vorerst nur als Root:
+
+<div class="p"><!----></div>
+
+<div class="command"># chroot /var/chroots/wheezy-i386</div>
+
+<div class="p"><!----></div>
+Man kann sich zunächst etwas mehr Komfort verschaffen, indem
+man die Konfigurationsdateien wie <b><tt class="big">/etc/profile</tt></b> anpasst (ggf.
+einfach vom Host kopieren). Insbesondere sollte die Zeit richtig
+eingestellt werden mittels
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime</div>
+
+<div class="p"><!----></div>
+Empfehlenswert ist auch, gleich ein
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">export DISPLAY=:0</div>
+
+<div class="p"><!----></div>
+in <b><tt class="big">/etc/profile</tt></b> einzutragen, wenn man X-Programme in der Umgebung
+starten will. Und es dürfte sinnvoll sein, den Shell-Prompt so zu
+setzen, dass man gleich weiß, in welcher Umgebung man sich befindet.
+Man sollte aber niemals den Hostnamen der Chroot-Umgebung setzen.
+Das würde sich auf den Host-Rechner auswirken und Chaos auslösen.
+
+<div class="p"><!----></div>
+Nun kann man der Minimalumgebung bereits Pakete hinzufügen. Am
+wichtigsten dürfte es sein, das Paket <b>locales</b> zu installieren, um
+die Spracheinstellung vornehmen zu können und nervende Meldungen zu
+vermeiden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># apt-get install locales<br />
+# echo "de_DE.UTF-8 UTF-8" &#62;&#62; /etc/locale.gen<br />
+# locale-gen</div>
+
+<div class="p"><!----></div>
+Wer es nicht bemerkt hat: Bei der Installation des Paketes kam folgende
+Fehlermeldung:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">Can not write log, openpty() failed (/dev/pts not mounted?)</div>
+
+<div class="p"><!----></div>
+Diese ist allerdings nicht fatal. Schwerer wiegende Meldungen liefern
+Versuche, die Programme df oder ps aufzurufen. Der Grund ist klar:
+Es fehlen die Datei <b><tt class="big">/etc/mtab</tt></b>, das Verzeichnis <b><tt class="big">/dev</tt></b> 
+und die Dateisysteme <b><tt class="big">/proc</tt></b> und <b><tt class="big">/sys</tt></b>.
+
+<div class="p"><!----></div>
+     Diese lassen sich dank Bind-Mounts leicht einrichten. 
+Auf diese Weise kann man auch einen einfachen
+Datenaustausch mit dem Host-Rechner realisieren. In vorliegenden
+Fall, wo Sicherheit keine Rolle spielt, bindet man einfach das
+gesamte <b><tt class="big">/home</tt></b>-Verzeichnis ein.
+
+<div class="p"><!----></div>
+    Wer höhere Sicherheit bevorzugt, kann ein spezifisches
+Unterverzeichnis des Hosts einbinden – im fortgeschrittenen Fall gar
+eines pro Benutzer. Damit das funktioniert, kann man auch noch die
+Dateien <b><tt class="big">/etc/passwd</tt></b> und <b><tt class="big">/etc/group</tt></b> einbinden. Sehr elegant wäre
+hier die Verwendung von LDAP, was mit Inkonsistenzen in den
+Benutzerdatenbanken Schluss macht, aber das muss auch erst einmal
+eingerichtet werden. Fürs erste kann man die beiden Dateien einfach
+kopieren.
+
+<div class="p"><!----></div>
+    Es gibt prinzipiell zwei Möglichkeiten, die
+Dateisysteme einzubinden: Permanent über
+    die Datei <b><tt class="big">/etc/fstab</tt></b> des Host-Rechners
+oder bei der Verwendung des Kommandos <b><tt class="big">schroot</tt></b>, welches
+später noch erklärt wird, bedarfsgesteuert durch Skripte.
+
+<div class="p"><!----></div>
+    Die erste Methode ist  einfach, ihr Nachteil ist lediglich, dass sie für ein recht volles
+<b><tt class="big">/proc/mounts</tt></b> sorgt. Dazu fügt man an <b><tt class="big">/etc/fstab</tt></b> die folgenden
+Zeilen an:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">/home /var/chroots/wheezy-i386/home    auto   defaults,rbind   0 3<br />
+/tmp  /var/chroots/wheezy-i386/tmp     auto   defaults,rbind   0 3<br />
+/dev  /var/chroots/wheezy-i386/dev     auto   defaults,rbind   0 3<br />
+/proc  var/chroots/wheezy-i386/proc    proc   defaults,rbind   0 3<br />
+/sys  /var/chroots/wheezy-i386/sys     sysfs  defaults,rbind   0 3</div>
+
+<div class="p"><!----></div>
+Danach führt man
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># mount -a</div>
+
+<div class="p"><!----></div>
+aus. In Zukunft ist dieser Schritt nicht mehr nötig; er wird beim
+Booten automatisch ausgeführt.
+
+<div class="p"><!----></div>
+Die Datei <b><tt class="big">/etc/mtab</tt></b> sollte man ebenfalls über
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># cat /proc/mounts &#62; /etc/mtab</div>
+
+<div class="p"><!----></div>
+erstellen. Danach bereinigt man die Datei so weit, dass nur Dateisysteme in
+der Ausgabe von df auftauchen, die in der Umgebung von Interesse
+sind. 
+
+<div class="p"><!----></div>
+
+
+
+
+Damit ist die Umgebung einsatzbereit.
+
+<div class="p"><!----></div>
+Die Funktionsfähigkeit wurde unter anderem getestet, indem Google
+Earth in die Umgebung hineinkopiert wurde. Nach der Installation
+zweier zusätzlicher Pakete aus dem Archiv konnte das Programm
+fehlerfrei starten und lief mit der gleichen Geschwindigkeit wie auf
+dem Host. Das ist ein Vorteil gegenüber virtuellen Maschinen, die
+derzeit oftmals noch keine 3-D-Beschleunigung oder OpenGL unterstützen.
+
+<div class="p"><!----></div>
+
+<h2>schroot</h2>
+
+
+Der offensichtlichste Nachteil einer Chroot-Umgebung ist, dass man
+sie nur als Root
+    betreten kann. Man kann sich natürlich danach mit
+<b><tt class="big">su - &lt;user&#62;</tt></b> zu einem normalen Benutzer machen. Das sind aber zwei
+Kommandos. Es stellt sich heraus, dass es unter Debian einfacher
+geht, und zwar mit dem Programm <b><tt class="big">schroot</tt></b>. Das Werkzeug kann einem
+dazu noch einen guten Teil der Handarbeit bei der Konfiguration
+abnehmen.
+
+<div class="p"><!----></div>
+schroot installiert man mit dem Befehl
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get install schroot</div>
+
+<div class="p"><!----></div>
+
+
+Die Konfiguration von <b><tt class="big">schroot</tt></b> kann man über
+<b><tt class="big">/etc/schroot/schroot.conf</tt></b> vornehmen. Man kann recht
+komplexe Konfigurationen definieren, 
+mit beliebig vielen Chroot-Umgebungen 
+und dafür auch zusätzliche Dateien nutzen. Als Referenz dient die Man-Page:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ man schroot.conf</div>
+
+<div class="p"><!----></div>
+
+
+Im einfachsten Fall kann man die oben angelegte Umgebung
+folgendermaßen in <b><tt class="big">/etc/schroot/schroot.conf</tt></b> definieren:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">[wheezy-i386]<br />
+type=plain<br />
+directory=/var/chroots/wheezy-i386<br />
+message-verbosity=normal<br />
+users=hans</div>
+
+<div class="p"><!----></div>
+Hier werden keine weiteren Dateien benötigt. schroot geht davon aus,
+dass die Umgebung manuell konfiguriert wurde, und <b><tt class="big">schroot -c
+wheezy-i386</tt></b> bringt einen unverzüglich als normalen Benutzer in die
+Umgebung. Das ist eine Verbesserung gegenüber chroot, aber schroot
+bietet noch viel mehr. Zunächst gibt es zahlreiche Optionen, die
+hier nicht aufgeführt werden sollen. Die Man-Page von schroot gibt
+umfassend Auskunft. Stattdessen soll eine erweiterte Konfiguration
+definiert werden. Dazu ändert man in <b><tt class="big">/etc/schroot/schroot.conf</tt></b> die
+Zeile <b><tt class="big">type=plain</tt></b> zu <b><tt class="big">type=directory</tt></b>.
+
+<div class="p"><!----></div>
+Diese simple Änderung hat zur Folge, dass Setup-Skripte ausgeführt
+werden, wenn man die Umgebung betritt. schroot bringt bereits eine
+komplexe Sammlung von Setup-Skripten mit, die man anpassen oder
+erweitern kann. Standardmäßig sind schon vier Konfigurationen
+vorgegeben. Diese heißen <b><tt class="big">default</tt></b>, <b><tt class="big">minimal</tt></b>, <b><tt class="big">desktop</tt></b> und
+<b><tt class="big">sbuild</tt></b>. Welche verwendet wird, wird mit der Option <b><tt class="big">script-config</tt></b>
+in <b><tt class="big">/etc/schroot/schroot.conf</tt></b> festgelegt. Diese Option hat den
+Standardwert <b><tt class="big">default/config</tt></b>, was bedeutet, dass die Datei
+<b><tt class="big">/etc/schroot/default/config</tt></b> gelesen wird. Diese Datei ist ein sehr
+simples Shell-Skript und man kann naheliegenderweise beliebige
+eigene Konfigurationen definieren. Die Default-Konfiguration kopiert
+Dateien in die Umgebung, aufgelistet in der Datei 
+<b><tt class="big">/etc/schroot/default/copyfiles</tt></b>, kopiert die Daten der in
+<b><tt class="big">/etc/schroot/default/nssdatabases</tt></b> aufgeführten Dateien in die
+Umgebung und bindet die in <b><tt class="big">/etc/schroot/default/fstab</tt></b> angegebenen
+Dateisysteme ein (beim Verlassen der Umgebung werden sie wieder
+ausgehängt).
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># schroot -c wheezy-i386</div>
+
+<div class="p"><!----></div>
+Falls nun eine Warnung erscheint, dass nicht in ein bestimmtes
+Verzeichnis gewechselt werden konnte und stattdessen das
+Home-Verzeichnis verwendet wird, liegt das an einem „Feature“ von
+schroot. Denn das Programm versucht grundsätzlich, innerhalb der
+Umgebung in das gleiche Verzeichnis zu wechseln, in dem man
+außerhalb war. Wenn dieses nicht existiert, kommt es zu der
+Meldung. Abhilfe schafft die Option <b><tt class="big">-d</tt></b> von schroot. Der komplette
+Aufruf könnte somit lauten:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># schroot -c wheezy-i386 -d $HOME</div>
+
+<div class="p"><!----></div>
+
+
+Das ist schon fast wieder zu lang zum Schreiben, so dass man evtl.
+einen Alias, eine Shell-Funktion oder Ähnliches anlegen will. Aber
+das ist jedem selbst überlassen.
+
+<div class="p"><!----></div>
+Falls keine der vorgegebenen Konfigurationen ideal ist, ist es am
+besten, man legt eine neue an. Dazu ändert man in
+<b><tt class="big">/etc/schroot/schroot.conf</tt></b> die Zeile
+
+<div class="p"><!----></div>
+
+<div class="listing">script-config=...</div>
+
+<div class="p"><!----></div>
+zu
+
+<div class="p"><!----></div>
+
+<div class="listing">script-config=myconfig/config</div>
+
+<div class="p"><!----></div>
+(oder fügt sie hinzu) und legt dann
+das Verzeichnis <b><tt class="big">/etc/schroot/myconfig an</tt></b> (die Dateinamen sind
+relativ zu <b><tt class="big">/etc/schroot</tt></b>, wenn sie nicht mit absolutem Pfad
+angegeben werden). Die Erstellung der Konfigurationsdateien bereitet
+nun nicht viel Mühe, da man sich an den vorhandenen orientieren kann.
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+
+
+schroot bietet noch viel mehr Möglichkeiten, die hier nur kurz
+erwähnt werden sollen:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> die Möglichkeit, nur einzelne Kommandos in der Umgebung auszuführen
+und sie dann gleich wieder zu verlassen, was auch die Einbindung in
+Skripte und Programme ermöglicht</li>
+<li> die Nutzung von LVM-Snapshots, Btrfs-Snapshots oder Union-Dateisystemen</li>
+<li> das Definieren von Sitzungen</li>
+<li> das Ausführen von Aktionen oder Kommandos für alle definierten
+Umgebungen oder Sitzungen gleichzeitig</li>
+<li> die Möglichkeit, auch andere Distributionen als Chroot-Umgebung zu
+nutzen (in der Regel mit <b><tt class="big">type=plain</tt></b>)</li>
+<li> die Nutzung von schroot auf anderen Distributionen </li>
+</ul>
+
+<div class="p"><!----></div>
+Im Web existieren zahlreiche Blogs und Artikel, die sich mit dem
+einen oder anderen dieser Themen befassen.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Die gesamte Debian-Distribution ist darauf vorbereitet, in einer
+Chroot-Umgebung zu laufen und bietet leistungsfähige Werkzeuge an,
+dies zu nutzen. In diesem Artikel wurden debootstrap und schroot
+vorgestellt, wobei nicht alle Features dieser Programme angesprochen
+werden konnten. Mit relativ wenig Aufwand erhält man mit ihnen als
+Ergebnis eine vielfältig nutzbare Chroot-Umgebung. Der Fantasie und
+dem Experimentieren sind dabei keine Grenzen gesetzt.
+
+<div class="p"><!----></div>
+Die Umgebung kann auch zum Bauen von Paketen genutzt werden,
+allerdings ist für veröffentlichte Pakete die pbuilder-Methode zu
+bevorzugen, die jedes Mal eine saubere Umgebung herstellt.
+
+<div class="p"><!----></div>
+
+
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.pro-linux.de/artikel/2/1547/32-bit-chroot-umgebung-unter-debian-einrichten.html"><tt class="big">http://www.pro-linux.de/artikel/2/1547/32-bit-chroot-umgebung-unter-debian-einrichten.html</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Hans-Joachim Baader</b>&nbsp;(<a href="http://www.pro-linux.de/">Webseite</a>)
+befasst sich seit 1993 mit Linux. 1994 schloss er sein
+Informatikstudium erfolgreich ab, machte die Softwareentwicklung
+zum Beruf und ist einer der Betreiber von Pro-Linux.de.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=32-Bit-Chroot-Umgebung unter Debian#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_03_kernelbau">Selbstgebacken 2: Flickwerk</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+        
+
+<b>K</b><b>ernel-Kompilierung ist im Grunde kein Hexenwerk. Konfigurieren,
+Kompilieren und Installieren sind schnell erledigt, sofern wenn man eine
+Stunde beim Kompilieren als „schnell“ betrachtet. Dagegen erscheint der
+Download eines 60MB-Archivs ja schon trivial, ist das ja selbst mit einem
+1MBit-DSL-Anschluss in nicht einmal zehn Minuten erledigt.</b>
+
+<div class="p"><!----></div>
+Doch sollte man nicht vergessen, dass man nicht nur die eigene Leitung,
+sondern auch die von kernel.org entlasten kann, wenn man sich an die
+    
+bereitgestellten Patches hält. So liegt der Patch für 3.1.2 zum Beispiel bei
+unter 100&nbsp;kB gegenüber den 61&nbsp;MB der fertig herunterzuladenden „Konserve“.
+
+<div class="p"><!----></div>
+
+<h2>Ein paar Dinge vorweg</h2>
+
+
+Der Begriff „Patch“ (engl. für flicken oder ausbessern) leitet sich von
+dem verwendeten Programm ab, das ebenfalls
+patch&nbsp;<a href="https://de.wikipedia.org/wiki/Patch_%28Unix%29">[1]</a> heißt und zur Anwendung
+von Änderungen auf eine Datei oder eine Ansammlung von Dateien genutzt wird.
+Im Falle des Linux-Kernels werden Patches immer zur Basisversion
+geliefert. Das bedeutet, dass
+    der Patch 3.1.2 auf einen Kernel 3.1
+angewendet werden muss, ebenso wie auch Patch 3.1.1. Auch der Patch 3.2
+wird auf den Quelltext des Kernel 3.1 angewandt, der Patch für 3.3 dann
+auf Kernel 3.2.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/kernelbau-diagramm-2-1.png" alt="kernelbau-diagramm-2-1.png" style="max-width:100%" /><br /><em>Minor-Versionen bauen immer auf dem ursprünglichen Kernel auf, bei den Vorabversionen (-rc) auf der des vorangegangenen Kernels.</em><br />
+
+<div class="p"><!----></div>
+Im ersten Teil (siehe „Selbstgebacken: Kernel kompilieren nach Rezept”,
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 01/2010&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2012-01">[2]</a>) wurden die
+Quellen für den Linux-Kernel 3.1.5 geholt und daraus ein lauffähiger Kernel
+gebaut. Möchte man nun auf Version 3.1.6 aktualisieren, steht man scheinbar
+in einer Sackgasse, da der Patch 3.1.6 nur auf das Archiv von Linux 3.1
+angewendet werden kann. Die Abhilfe ist hier einfach: Patches
+funktionieren in beide Richtungen – man kann einen Patch auf einen Kernel
+anwenden und, steht einem das Patch-Archiv noch zur Verfügung, auch wieder
+entfernen. Also besorgt man sich als Erstes die Patch-Dateien für 3.1.5
+und 3.1.6 und lädt sie direkt in das Kernel-Verzeichnis:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cd ~/Kernel<br />
+$ wget http://www.kernel.org/pub/linux/kernel/v3.0/patch-3.1.5.xz<br />
+$ wget http://www.kernel.org/pub/linux/kernel/v3.0/patch-3.1.6.xz</div>
+
+<div class="p"><!----></div>
+ 
+
+Die xz-Tools sollten noch vorhanden sein, darin ist auch xzcat
+enthalten, das als Nächstes benötigt wird. <b>patch</b> muss eventuell aus den
+Paketquellen nachinstalliert werden.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/kernelbau-diagramm-2-2.png" alt="kernelbau-diagramm-2-2.png" style="max-width:100%" /><br /><em>Ein Patch muss entfernt (1) werden, bevor der neue angewendet werden kann (2).</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Aufräumen</h2>
+
+
+Als ersten Schritt braucht man einen sauberen Kernel-Quellcode, also ohne die
+bei einer Kompilierung erzeugten Dateien. Da sich kein Mensch merken kann,
+was vorher da war und was dazu kam, gibt es hier wieder Hilfe in Gestalt
+von den Kernelentwicklern gepflegten Makefiles. Dort steht nicht nur
+drin, was wie verlinkt und kompiliert werden muss, sondern auch wie man es
+wieder los wird. Angewendet werden diese Information mit
+
+<div class="p"><!----></div>
+    
+<div class="command">$ cd linux-3.1.5<br />
+$ make clean<br />
+$ cd ..</div>
+
+<div class="p"><!----></div>
+ 
+
+    
+
+<b><tt class="big">make clean</tt></b> muss in dem Verzeichnis aufgerufen werden, in dem die
+Kernel-Quellen liegen. Im Januar wurde <b><tt class="big">linux-3.1.5.tar.xz</tt></b> entpackt, daher
+liegen diese in diesem Beispiel unter <b><tt class="big">linux-3.1.5</tt></b>. Das Anwenden der
+Patches geht am besten von dem Verzeichnis aus, in dem die entsprechenden
+Archive liegen.
+
+<div class="p"><!----></div>
+    
+<h2>Patches anwenden</h2>
+
+
+Zuerst müssen die Voraussetzungen geschaffen werden. Wie bereits erwähnt,
+sind die Quellen auf dem Stand von Kernel 3.1.5, es wird jedoch 3.1
+benötigt. Also entpackt man das Archiv mit dem Patch für 3.1.5 und
+übergibt es dem patch-Werkzeug, um im Verzeichnis <b><tt class="big">linux-3.1.5</tt></b> aufzuräumen.
+
+<div class="p"><!----></div>
+
+<div class="command">$ xzcat patch-3.1.5.xz | patch -p1 -R -d linux-3.1.5<br />
+$ mv linux-3.1.5 linux-3.x</div>
+
+<div class="p"><!----></div>
+<b><tt class="big">xzcat</tt></b> entpackt hier das komprimierte Patch-File und liefert es auf der
+Standardausgabe&nbsp;<a href="https://de.wikipedia.org/wiki/Standard-Datenstr%C3%B6me#Standardausgabe_.28stdout.29">[3]</a>
+ab. Dort werden die Anweisungen von <b><tt class="big">patch</tt></b> entgegengenommen und die
+Quellen entsprechend angepasst. Dabei muss mit <b><tt class="big">-p</tt></b> angegeben werden, um
+wie viel tiefer das Startverzeichnis des Quellcodes liegt. In diesem
+Beispiel ist es eine Ebene (<b><tt class="big">-p1</tt></b>). Befände man sich direkt im
+Ursprungsverzeichnis des Kernel-Quellcodes (also linux-3.1), so müsste
+<b><tt class="big">-p0</tt></b> angegeben werden. Weiterhin wird natürlich noch der Pfad hinter der
+Option <b><tt class="big">-d</tt></b> mitgegeben. Die Optionen lassen sich in diesem Fall nicht
+zusammenfassen. Ein <b><tt class="big">-p1d linux-3.x</tt></b> würde zum Fehler führen, auch wenn
+dies bei vielen anderen Programmen sonst möglich ist.
+
+<div class="p"><!----></div>
+Das Umbenennen des Verzeichnisses ist nicht notwendig, hilft aber um in
+Erinnerung zu behalten, dass die Quellen nun nicht mehr auf dem Stand von
+3.1.5 sind. Im weiteren Verlauf des Übersetzens wird das Verzeichnis jedoch nicht mehr
+umbenannt werden, denn ein Blick in das Makefile offenbart den jeweiligen
+Versionsstand der Quellen.
+
+<div class="p"><!----></div>
+    
+
+
+<div class="command">$ head -5 linux-3.x/Makefile<br />
+VERSION = 3<br />
+PATCHLEVEL = 1<br />
+SUBLEVEL = 0<br />
+EXTRAVERSION =<br />
+NAME = "Divemaster Edition"</div>
+
+<div class="p"><!----></div>
+ 
+
+    Das <b><tt class="big">head</tt></b>-Kommando liefert in diesem Falle die ersten fünf Zeilen des
+Makefiles zurück, in diesen sind die wichtigen Informationen zur Version
+enthalten. In diesem Falle liegt Version 3.1 in der Ursprungsversion,
+also ohne Patch, vor. Entwicklerversionen würde man an der <b><tt class="big">EXTRAVERSION</tt></b> erkennen,
+hier würde dann z.&nbsp;B. <b><tt class="big">-rc1</tt></b> stehen.
+
+<div class="p"><!----></div>
+Nun liegen die Kernelquellen wieder in einem Zustand vor, auf dem man
+aufbauen kann. In diesem Falle sollen sie auf 3.1.6 aktualisiert werden.
+Das lässt sich wie folgt erledigen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ xzcat patch-3.1.6.xz | patch -p1 -d linux-3.x</div>
+
+<div class="p"><!----></div>
+ 
+
+Der Erfolg kann mit einem Blick in das Makefile kontrolliert werden, die ersten drei Zeilen sind ausreichend:
+
+<div class="p"><!----></div>
+
+<div class="command">$ head -3 linux-3.x/Makefile<br />
+VERSION = 3<br />
+PATCHLEVEL = 1<br />
+SUBLEVEL = 6</div>
+
+<div class="p"><!----></div>
+ 
+
+
+<h2>Konfigurieren und Kompilieren</h2>
+
+
+Auch nach dem Einspielen des Patches ist ein Überarbeiten der
+Konfiguration notwendig. Dies übernimmt wieder <b><tt class="big">make oldconfig</tt></b>, das auf
+eventuelle Optionen reagieren kann:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cd linux-3.x<br />
+$ make oldconfig</div>
+
+<div class="p"><!----></div>
+Ab diesem Punkt gleicht der Prozess dem bereits bekannten. Deshalb sei auf
+die Ausführungen in jenem Artikel verwiesen. Die beiden Befehle werden
+hier als Gedächtnisstütze aufgeführt.
+
+<div class="p"><!----></div>
+
+<div class="command">$ make -j8 bzImage modules<br />
+# make modules_install install</div>
+
+<div class="p"><!----></div>
+ 
+
+
+<h2>Und weiter?</h2>
+
+
+Bewährt sich das neue Kompilat, so kann der Vorgängerkernel aus Gründen
+der Platzersparnis weichen. Möchte man ganz sicher gehen, kann man die
+letzte Version behalten.
+Was zu tun ist, um einen Kernel wieder loszuwerden, wurde bereits erläutert.
+
+<div class="p"><!----></div>
+Nun ist Linux 3.1 nicht mehr der allerletzte Schrei. Zwischenzeitlich
+wurde Version 3.2 veröffentlicht und auch dort ist man bereits zu einem
+höheren Sublevel (um die Bezeichnung aus dem Makefile zu verwenden)
+gelangt. Diese Aktualisierung verläuft prinzipiell gleich, mit dem
+einzigen Unterschied, dass der Patch für 3.2 nicht wieder entfernt wird.
+patch-3.2.6 baut nämlich auf patch-3.2 auf. Da alles schon einmal
+aufgeführt wurde, folgt daher ein Schnelldurchlauf.
+
+<div class="p"><!----></div>
+Die neuen Patches für 3.2 und 3.2.6 werden heruntergeladen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ wget http://www.kernel.org/pub/linux/kernel/v3.0/patch-3.2.xz<br />
+$ wget http://www.kernel.org/pub/linux/kernel/v3.0/patch-3.2.6.xz</div>
+
+<div class="p"><!----></div>
+Die Quellen müssen wieder auf den Stand von 3.1 gebracht werden. Ist man
+sich unsicher, welches der aktuelle eigene Patch-Stand ist,
+so hilft auch hier wieder ein Blick in die ersten drei Zeilen des Makefiles
+weiter. Die Anweisung hier ist exemplarisch für Linux 3.1.10:
+
+<div class="p"><!----></div>
+
+<div class="command">$ xzcat patch-3.1.10.xz | patch -p1 -R -d linux-3.x</div>
+
+<div class="p"><!----></div>
+ 
+
+
+
+Die Aktualisierung von 3.1 auf 3.2 auf 3.2.6:
+
+<div class="p"><!----></div>
+
+<div class="command">$ xzcat patch-3.2.xz | patch -p1 -d linux-3.x<br />
+$ xzcat patch-3.2.6.xz | patch -p1 -d linux-3.x</div>
+
+<div class="p"><!----></div>
+ 
+
+     
+
+    Man hat es an dieser Stelle auch mit einem weiterentwickelten Kernel zu
+tun, meist mit neuen Funktionen, Treibern und Optionen, weshalb ein
+<b><tt class="big">make oldconfig</tt></b> hier wieder häufig Optionen zur Auswahl anbietet. Man
+kann dies mit dem schon im vorangegangenen Artikel genutzten
+    <b><tt class="big">yes</tt></b>-Kommando vereinfachen. Es folgen wieder Kompilieren und
+Installieren.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/kernelbau-diagramm-2-3.png" alt="kernelbau-diagramm-2-3.png" style="max-width:100%" /><br /><em>Patch 3.1.10 muss weichen (1), erst dann kann der Patch für 3.2 angewendet werden (2). Dieser bleibt bestehen und 3.2.6 baut darauf auf.</em><br />
+
+<div class="p"><!----></div>
+    Wer bereits erfolgreich einen Linux-Kernel gebacken hat, wird auch
+mit dem Anwenden von Patches zurechtkommen. Manchem scheinen die Wege, wie
+von einer Version auf eine neuere zu aktualisieren ist, am Anfang etwas
+undurchsichtig. Dieser Beitrag konnte hoffentlich Abhilfe schaffen,
+sodass der Installation des neuesten Kernels nichts im Wege steht.
+
+<div class="p"><!----></div>
+
+
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Patch_%28Unix%29">https://de.wikipedia.org/wiki/Patch_(Unix)</a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2012-01"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2012-01</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Standard-Datenstr%C3%B6me#Standardausgabe_.28stdout.29">https://de.wikipedia.org/wiki/Standard-Datenströme#Standardausgabe_.28stdout.29</a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+malträtiert sein Notebook gerne mit dem aktuellsten Linux-Kernel. Dabei werden aber fast nur Patches geladen und angewendet.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=Flickwerk#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+
+
+<h1><font color="#595959"><a name="12_03_mypaint">MyPaint – Zeichenprogramm für kreative Künstler</a></font></h1>von Patrick Meyhöfer
+
+<div class="p"><!----></div>
+        
+
+
+
+<b>W</b><b>er im zeichnerischen Umfeld kreativ begabt ist, wird sich
+vielleicht einmal fragen, wie er seine bisherigen Zeichnungen auf
+Papier in eine digitale Variante transformiert. Die hardwareseitigen
+Werkzeuge, wie Grafiktablets, stehen bereits seit längerem zur
+Verfügung. Nun fehlt lediglich eine geeignete Software, die den
+Künstler möglichst umfassend in seinem Schaffensprozess unterstützt.
+Die meisten werden bei Grafikerstellung zunächst an GIMP, Krita oder
+das kommerzielle Photoshop denken. Eine eher unbekannte, aber
+dennoch durchaus leistungsfähige Software für diesen Zweck, stellt in
+diesem Zusammenhang <i>MyPaint</i>&nbsp;<a href="http://mypaint.intilinux.com/">[1]</a> dar.</b>
+
+<div class="p"><!----></div>
+
+<h2>Allgemeine Vorstellung</h2>
+
+
+<i>MyPaint</i> steht unter der GPLv2 und ist eine plattformunabhängige
+Grafiksoftware. Aktuell liegt <i>MyPaint</i> in der Version 1.0.0 vor,
+welche seit November 2011 verfügbar ist. Es wird stetig an der
+Weiterentwicklung gearbeitet, der Quellcode wird auf Gitorious
+gehostet und ist dort für jeden einsehbar&nbsp;<a href="http://gitorious.org/mypaint/">[2]</a>.
+
+<div class="p"><!----></div>
+Wie es sich für Künstler mit Anspruch gehört, unterstützt <i>MyPaint</i>
+Grafiktablets von Wacom &amp; Co., um die Druckempfindlichkeit auf den
+Bildschirm und das Bild zu übertragen, was bei einem lediglichen
+Einsatz der Maustasten bekanntermaßen schwierig ist.
+
+<div class="p"><!----></div>
+    Vorab sei natürlich gesagt, dass man <i>MyPaint</i> nicht mit GIMP
+vergleichen kann, da beide Softwarelösungen auch weitestgehend
+andere Ziele verfolgen. Während GIMP vorwiegend zur Manipulation von
+Bildern eingesetzt wird, wählt <i>MyPaint</i> hier den Weg der möglichst
+maximalen Vereinfachung der Benutzeroberfläche, um die maximale
+Kreativität für den Benutzer zu ermöglichen.
+
+<div class="p"><!----></div>
+    Das Ziel von <i>MyPaint</i> besteht darin, dem Künstler möglichst wenig
+Ablenkungen zu bieten,
+    wodurch natürlich keine Funktionen der
+klassischen Bildbearbeitung wie Zuschneiden, Farbkurven etc.
+angeboten werden. Hierfür müsste man dann das fertige Bild in GIMP
+oder einem anderen Programm laden.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/mypaint-Oberflaeche.jpg" alt="mypaint-Oberflaeche.jpg" style="max-width:100%" /><br /><em>Die Oberfläche von <i>MyPaint</i>.</em><br />
+
+<div class="p"><!----></div>
+Genau diese einfache Oberfläche setzt <i>MyPaint</i> wirklich gut um. Der
+Kernfokus liegt dabei auf dem zu bearbeitenden Bild. Alle
+eingeblendeten Dialoge können perfekt mit einzelnen
+Tastenkombinationen schnell ein- und ausgeblendet werden. Wenn man
+mit <i>MyPaint</i> arbeitet, wird man sich vorwiegend mit den wirklich
+zahlreichen Pinseln bewegen. Diese blendet man mittels <i>„B“</i> flexibel
+ein und aus. Möchte man den Pinsel vergrößern (<i>„F“</i>) oder verkleinern
+(<i>„D“</i>), geht dies ebenso einfach über Tastenkürzel wie Rückgängig
+(<i>„Z“</i> bzw. auch <i>„Strg“</i>&nbsp;+&nbsp;<i>„Z“</i>), Wiederholen (<i>„Y“</i>) und die Farbauswahl
+(<i>„G“</i>).
+
+<div class="p"><!----></div>
+Leider sind die Übersetzungen von <i>MyPaint</i> noch etwas durchwachsen.
+Ein paar Menüpunkte sind Deutsch, ein paar Englisch und bei den
+Pinseln sind die Kategorien der Pinsel (Deevad, Ramón) sicher auch
+nicht sofort selbsterklärend, wenn man sie nicht selbst
+ausprobiert.  Die etwas kryptischen Namen der Pinsel resultieren aus
+den Namen der Entwickler, die diese Pinsel entworfen haben.
+
+<div class="p"><!----></div>
+Zusätzlich bietet <i>MyPaint</i> noch die Möglichkeit der bekannten Ebenen.
+Standardmäßig wird man beim Erstellen eines neuen Bildes immer mit
+einem weißen Hintergrund begrüßt. Über das Menü „<em>Ebenen und
+Hintergrund</em>“ hat man jedoch die Möglichkeit, zahlreiche
+verschiedene Hintergründe für sein Bild auszuwählen. Mittels <i>„Strg“</i>&nbsp;+&nbsp;<i>„Bild auf“</i> 
+kann man schnell neue Ebenen anlegen und mit <i>„Bild auf“</i>
+bzw. <i>„Bild ab“</i> zwischen den Ebenen hin- und herschalten.
+
+<div class="p"><!----></div>
+
+
+Ist man mit seinem Bild fertig, hat man die Möglichkeit sein Bild in
+drei verschiedenen Formaten abzuspeichern:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> PNG</li>
+<li> JPEG</li>
+<li> ORA (OpenRaster&nbsp;<a href="http://en.wikipedia.org/wiki/OpenRaster">[3]</a>, welches als Einziges die Ebenen erhält)</li>
+</ul>
+
+<div class="p"><!----></div>
+Schade ist in diesem Zusammenhang, dass das GIMP-Format XCF nicht
+direkt unterstützt wird, um das Bild in GIMP direkt weiter zu
+bearbeiten. Hierfür gibt es jedoch ein 
+GIMP-Plug-in&nbsp;<a href="http://registry.gimp.org/node/18435">[4]</a>, welches den Import
+ermöglicht. In der Planung der nächsten stabilen GIMP-Version 2.8
+ist jedoch vorgesehen, einen ORA-Import und -Export zu integrieren,
+der sich bereits in der Entwicklungsversion von 2.7
+befindet&nbsp;<a href="http://www.gimp.org/release-notes/gimp-2.7.html">[5]</a>.
+
+<div class="p"><!----></div>
+Eine weitere Stärke von <i>MyPaint</i> ist die Pinselvielfalt und die
+Möglichkeit, über den integrierten Pinseleditor seine ganz eigenen
+Pinsel mit allen Einstellungsmöglichkeiten zu entwerfen. Weitere
+Pinsel und wie diese installiert werden, findet man im gut
+gepflegten Wiki von <i>MyPaint</i>&nbsp;<a href="http://wiki.mypaint.info/Brush_Packages">[6]</a>.
+
+<div class="p"><!----></div>
+    <img border="0" src="freiesMagazin-2012-03-bilder-Dateien/mypaint-Pinsel.png" alt="mypaint-Pinsel.png" style="max-width:100%" /><br /><em>Pinseleditor mit vielfältigen Einstellungsmöglichkeiten.</em><br />
+
+<div class="p"><!----></div>
+Die historisch gewachsenen, weiteren Funktionalitäten kann man in der
+Feature-Übersicht für die einzelnen Veröffentlichungen noch einmal
+näher betrachten&nbsp;<a href="http://mypaint.intilinux.com/?page_id=9">[7]</a>.
+    
+
+<div class="p"><!----></div>
+    
+<h2>Installation</h2>
+
+
+Die Installation gestaltet sich unter den großen Distributionen
+(Ubuntu, Debian, Arch Linux, Mandriva, Fedora) im Linux-Bereich
+recht einfach, da diese <i>MyPaint</i> in den Paketquellen haben und es von
+dort über die jeweiligen Paketmanager installiert werden kann.
+
+<div class="p"><!----></div>
+In der Regel liegen dort allerdings ältere Versionen vor (meist
+Version 0.9; Version 1.0.0 hat den
+schon lange ersehnten
+Single-Window-Modus gebracht), weshalb man sich bei Bedarf auf der
+offiziellen Downloadseite&nbsp;<a href="http://mypaint.intilinux.com/?page_id=6">[8]</a> 
+den aktuellen Quellcode herunterladen kann, 
+    den man dann jedoch selbst kompilieren muss.
+
+<div class="p"><!----></div>
+Möchte man fertige Pakete haben, existieren auf der 
+Wiki-Seite&nbsp;<a href="http://wiki.mypaint.info/index.php?title=Packaging">[9]</a>
+zusätzliche Pakete und inoffizielle Repositorys (z.&nbsp;B. PPAs für
+Ubuntu), aus denen man <i>MyPaint</i> installieren kann.
+
+<div class="p"><!----></div>
+
+<h2>Beispielbilder</h2>
+
+
+Um einen Eindruck zu bekommen, was Künstler bereits mit <i>MyPaint</i>
+umgesetzt haben, findet man eine Gallerie auf der
+<i>MyPaint</i>-Seite&nbsp;<a href="http://mypaint.intilinux.com/?page_id=519">[10]</a>, die
+recht eindrucksvolle Werke zeigt. Besonderen Anklang findet <i>MyPaint</i>
+in den Genres der japanischen Mangas, aber auch in den realistischen
+Zeichnungen findet man gut umgesetzte Werke.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/mypaint-beispiel.jpg" alt="mypaint-beispiel.jpg" style="max-width:100%" /><br /><em>Mit <i>MyPaint</i> erstelltes Portrait.
+<a href="http://wiki.mypaint.info/File:Kristen_portrait.jpg">&#169;&nbsp;Ramón Miranda</a> (<a href="http://creativecommons.org/licenses/publicdomain/deed.de">Public Domain</a>)
+</em><br />
+
+<div class="p"><!----></div>
+    
+
+
+
+<h2>Fazit</h2>
+
+
+Insgesamt ist <i>MyPaint</i> eine sehr gut umgesetzte Lösung, welches den
+Künstler in seinem Kreativprozess gut unterstützt und ihm die
+Werkzeuge gibt, die er hauptsächlich braucht. Die Zeichenperformance
+ist besser umgesetzt als bei GIMP. Die Pinselvielfalt und die
+Einfachheit der Benutzeroberfläche mit den schnell eingängigen
+Tastenkombinationen ermöglichen die Konzentration auf das
+Wesentliche und sorgen für erstaunlich gute Bilder. Lediglich die
+Übersetzung könnte noch konsistenter sein, jedoch ist hier natürlich
+auch die Community gefragt.
+
+<div class="p"><!----></div>
+Zusätzlich lohnt ein Blick in das Wiki von <i>MyPaint</i>&nbsp;<a href="http://wiki.mypaint.info/">[11]</a>,
+in dem man weitere Informationen zur Mitwirkung, sowie Tutorials
+und Dokumentationen findet.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://mypaint.intilinux.com/"><tt class="big">http://mypaint.intilinux.com/</tt></a><br />
+[2] <a href="http://gitorious.org/mypaint/"><tt class="big">http://gitorious.org/mypaint/</tt></a><br />
+[3] <a href="http://en.wikipedia.org/wiki/OpenRaster"><tt class="big">http://en.wikipedia.org/wiki/OpenRaster</tt></a><br />
+[4] <a href="http://registry.gimp.org/node/18435"><tt class="big">http://registry.gimp.org/node/18435</tt></a><br />
+[5] <a href="http://www.gimp.org/release-notes/gimp-2.7.html"><tt class="big">http://www.gimp.org/release-notes/gimp-2.7.html</tt></a><br />
+[6] <a href="http://wiki.mypaint.info/Brush_Packages"><tt class="big">http://wiki.mypaint.info/Brush_Packages</tt></a><br />
+[7] <a href="http://mypaint.intilinux.com/?page_id=9"><tt class="big">http://mypaint.intilinux.com/?page_id=9</tt></a><br />
+[8] <a href="http://mypaint.intilinux.com/?page_id=6"><tt class="big">http://mypaint.intilinux.com/?page_id=6</tt></a><br />
+[9] <a href="http://wiki.mypaint.info/index.php?title=Packaging"><tt class="big">http://wiki.mypaint.info/index.php?title=Packaging</tt></a><br />
+[10] <a href="http://mypaint.intilinux.com/?page_id=519"><tt class="big">http://mypaint.intilinux.com/?page_id=519</tt></a><br />
+[11] <a href="http://wiki.mypaint.info/File:Kristen_portrait.jpg"><tt class="big">http://wiki.mypaint.info/File:Kristen_portrait.jpg</tt></a><br />
+[12] <a href="http://wiki.mypaint.info/"><tt class="big">http://wiki.mypaint.info/</tt></a><br />
+[13] <a href="http://pmeyhoefer.de/blog/mypaint-zeichenprogramm-fur-kreative-kunstler/"><tt class="big">http://pmeyhoefer.de/blog/mypaint-zeichenprogramm-fur-kreative-kunstler/</tt></a><br />
+            
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Patrick Meyhöfer</b>&nbsp;(<a href="http://pmeyhoefer.de/blog/">Webseite</a>)
+erkundet gerne neue und relativ unbekannte Software.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+            <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=MyPaint#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+
+
+
+
+<h1><font color="#595959"><a name="12_03_osm">OpenStreetMap – Eine virtuelle Welt gedeiht</a></font></h1>von Matthias Meißer
+
+<div class="p"><!----></div>
+        <b>M</b><b>it „OpenStreetMap – GoogleMaps-Klon oder doch mehr?“ wurde bereits in der
+Ausgabe 11/2008 von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2008-11">[1]</a>
+das OpenStreetMap-Projekt (OSM&nbsp;<a href="http://www.openstreetmap.de/">[2]</a>) vorgestellt,
+das nach dem Wiki-Prinzip eine ganze Weltkarte erstellt, die jedermann
+nutzen und verbessern darf. Doch drei Jahre sind eine lange Zeit, gerade für
+freie Projekte. Hier folgt nun das Update, wie sich die Welt seither
+verändert hat.</b>
+
+<div class="p"><!----></div>
+
+<h2>Qualität</h2>
+Wenn man heute die Qualität von OSM beurteilen will, lohnt sich meist eine
+differenzierte Betrachtung. In Städten steht die Karte den kommerziellen
+Angeboten in Bezug auf Anzahl der
+    
+Objekte, deren Eigenschaften und der
+Vielfalt an Objektkategorien (von der Stadtautobahn bis zum Hydranten kann
+mittlerweile fast alles erfasst werden) in nichts nach und übertrifft diese
+teilweise sogar. Beispiele wie der damals genannte, detailliert erfasste Berliner Zoo
+sind mittlerweile nicht mehr die Ausnahme, sondern in den meisten Städten
+ebenso schön
+umgesetzt. Nicht selten sind es solche kleinen Details, die
+auch der Stolz der Community sind. Ähnlich verhält es sich mit den
+Hausnummern, bei denen einige Großstädte schon sehr weit gekommen sind und Googles
+einfache Adressen-Interpolation vergleichsweise bescheiden aussehen lassen.
+Als Beispiel kann man gerne einmal die Städte Hamburg&nbsp;<a href="http://sautter.com/map/?zoom=12&lat=53.5483&lon=9.99423&layers=B000000TFFFFFTFF">[3]</a>
+oder aber München vergleichen.
+
+<div class="p"><!----></div>
+    Wissenschaftliche Untersuchungen zeigten, dass der ländliche Raum aber
+immer noch erheblichen Nachholbedarf hat (ca. 70&nbsp;% der Straßen sind
+erst komplett). Doch die Gemeinschaft ist dabei, aus den Ballungszentren
+heraus auch immer weiter in die Dörfer vorzudringen und dort mit
+Mapping-Partys (meist eintägige Ausflüge um Daten zu sammeln) Vorarbeit
+zu leisten und Anwohner für das Projekt zu begeistern. Mit Erfolg, denn
+in Deutschland scheinen nur
+noch 3&nbsp;% des gesamten Straßennetzes zu fehlen und mit kleinen Wegen und
+spezialisierten Objektarten kann OSM viel besser glänzen als kommerzielle
+Anbieter.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/osm-mapper.jpg" alt="osm-mapper.jpg" style="max-width:100%" /><br /><em>Mit einfachem Equipment unterwegs für eine freie Weltkarte.<a href="http://wiki.openstreetmap.org/wiki/File:Mapper_at_a_track.jpg">&#169;&nbsp;Sebastian Haag</a> (<a href="http://creativecommons.org/licenses/by/2.0/">CC-BY-2.0</a>) 
+</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Datenerfassung</h2>
+
+
+Diese Art der Erfassung von Informationen vor Ort stellt auch heute noch
+einen wichtigen Teil der Arbeit der Mapper dar. Doch gibt es nun auch gut
+aufgelöste Luftbilder, die durch die Community genutzt werden können. So
+erlaubt Microsoft es, die Bilder des Bing Maps
+Portals&nbsp;<a href="http://maps.bing.de/">[4]</a> zu nutzen und z.&nbsp;B.
+ist es auch erlaubt, die amtlichen Bilder von
+Geoimage Austria&nbsp;<a href="http://www.geoimage.at/">[5]</a> einzubinden.
+    
+Obwohl diese Technik eine sehr gute Möglichkeit darstellt, gerade
+großflächige Objekte wie Seen und Wälder abzuzeichnen sowie die bisher
+sehr problematischen Gebäude-Umrisse zu erfassen, muss ihr Einsatz immer
+auch kritisch
+hinterfragt werden. Denn nicht jede Schneise im Wald ist
+unbedingt ein Wanderweg (oft auch einfach nur ein Wechsel des
+Baumbestandes) und
+durch die verminderte Aktualität muss das
+Gesehene nicht
+    
+mehr dem aktuellen Stand vor Ort entsprechen. Deshalb ist es
+gerade in Städten am sinnvollsten, sich die Karte einfach einmal
+auszudrucken&nbsp;<a href="http://www.walking-papers.org/">[6]</a> und dort manuell das
+Gesehene zu
+        
+ergänzen. Das Ganze geht aber natürlich auch durchgehend digital mit
+OpenStreetBugs&nbsp;<a href="http://osmbugs.org/">[7]</a> oder per E-Mail an eine der
+vielen lokalen Gruppen&nbsp;<a href="http://openstreetmap.de/karte.html">[8]</a>.
+Mittlerweile gibt es schon so viele Leute, die mit
+    
+Luftbildern umzugehen
+wissen, dass sich mit dem Humanitarian OpenStreetMap Team eine Gruppe
+innerhalb des Projektes herausgebildet hat, die sich um das Erstellen von
+Karten gerade in Krisengebieten kümmert. So können im Katastrophenfall
+schnell Versorgungswege für Hilfskräfte geplant und das Kartenmaterial
+durch Bodentruppen aktualisiert werden&nbsp;<a href="http://wiki.openstreetmap.org/wiki/HOT">[9]</a>.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/osm-OpenStreetBugs.png" alt="osm-OpenStreetBugs.png" style="max-width:100%" /><br /><em>Fehler in der Karte gefunden?
+&#169;&nbsp;OSM Contributors (<a href="http://creativecommons.org/licenses/by/3.0/">CC-BY-3.0</a>) 
+</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Nutzung</h2>
+
+
+Hier hat sich wohl gerade durch die verbesserte Datengrundlage enorm viel
+getan. Dutzende Webkarten sind entstanden, die sich mit jeweils speziellen
+Stilen um ausgewählte Objekte und ihre Eigenschaften kümmern. So zeigt
+ÖPNV-Karte&nbsp;<a href="http://www.%C3%B6pnvkarte.de/">[10]</a> die Strecken des Nahverkehrs an,
+OpenSeaMap&nbsp;<a href="http://www.openseamap.org/">[11]</a> präsentiert Bojen und andere
+maritime Aspekte und mit der Hike&nbsp;&amp;&nbsp;Bike Map&nbsp;<a href="http://www.hikebikemap.de/">[12]</a>
+findet man sich auch in unwegsamen Gelände zurecht.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/osm-rostock-opencyclemap.png" alt="osm-rostock-opencyclemap.png" style="max-width:100%" /><br /><em>Verschiedene Sichten auf die Welt – OSM fürs Fahrrad.
+&#169;&nbsp;OSM Contributors (<a href="http://creativecommons.org/licenses/by/2.0/">CC-BY-2.0</a>) 
+</em><br />
+
+<div class="p"><!----></div>
+Daneben gibt es zahlreiche Dienste, die die Daten nicht
+nur zur Darstellung nutzen, sondern auch weiter verwerten. Etwa
+Nominatim&nbsp;<a href="http://nominatim.openstreetmap.org/">[13]</a>, das eine Suche nach
+Adressen ermöglicht, oder OpenRouteService&nbsp;<a href="http://www.openrouteservice.org/">[14]</a>, der
+Navigation für verschiedenste Fortbewegungsmittel bietet. Viele weitere
+spannende Online-Karten listet darüber hinaus das
+OSM-Wiki&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Maps">[15]</a> auf.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/osm-rostock-oepnvkarte.png" alt="osm-rostock-oepnvkarte.png" style="max-width:100%" /><br /><em>Verschiedene Sichten auf die Welt – OSM für den ÖPNV.
+&#169;&nbsp;OSM Contributors (<a href="http://creativecommons.org/licenses/by/2.0/">CC-BY-2.0</a>) 
+</em><br />
+
+<div class="p"><!----></div>
+Den Lesern dieses Magazins werden die Parallelen von OSM und
+Wikipedia natürlich nicht entgangen sein. Seit mehr als einem 
+Jahr herrscht daher auch eine rege Zusammenarbeit zwischen beiden Projekten.
+OpenStreetMap ist nun die Standardkarte von Wikipedia, die mit einem Klick
+auf die Geokoordinaten zu einem Artikel (rechts oben im Mediawiki)
+erscheint und von Wikipedia selbst auf eigenen Servern gerendert wird.
+
+<div class="p"><!----></div>
+    Doch natürlich lassen sich Karten gerade unterwegs erst sinnvoll
+einsetzen. Mit OSM gib es
+dort die Möglichkeit, diese kostenlos und besonders platzsparend als
+Vektorkarten zu nutzen, welche sich sogar dynamisch je nach Szenario
+darstellen lassen. Seit jeher sind dort Outdoor-GPS-Geräte sehr beliebt,
+die die eigene Position und die vorgeschlagene Route auf der Karte
+anzeigen, sowie interessante Orte (POIs) auch unterwegs
+finden können.
+Lange Zeit konnten nur die Geräte der Marke Garmin mit OSM-Karten betankt
+werden, doch mittlerweile geht dies auch für Magellan und einige andere
+Hersteller. Medion hat mit dem GoPal S3875 ein GPS für den deutschen
+Massenmarkt entwickelt, dass sogar ab Werk mit Karten des freien Portals
+ausgestattet ist&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Software/PNA">[16]</a>. Diese
+kompakten und
+    
+wasserdichten Geräte sind heutigen Smartphones immer noch
+eine Nasenlänge voraus, jedenfalls wenn es nicht um die typischen kurzen
+Touren durch den Großstadtdschungel geht.
+
+<div class="p"><!----></div>
+    
+Für die mittlerweile alltäglichen digitalen Helfer gibt es aber auch schon
+sehr viele (leider meist proprietäre) Apps, die das Kartenmaterial nutzen.
+OSM stellt derzeit wohl die einzige Möglichkeit dar, Geodaten offline
+verfügbar zu haben, ohne an die restriktiven Lizenzen der großen
+Datenanbieter wie Navteq oder Teleatlas gebunden zu sein.
+Bekannte Alternativen für die Nutzung von OSM sind 
+Skobbler&nbsp;<a href="http://www.skobbler.us/">[17]</a>,
+Footmap&nbsp;<a href="http://www.footmap.de/">[18]</a> und NavFree&nbsp;<a href="http://www.navmii.com/navfree/">[19]</a>.
+Erfreulicherweise gibt es aber auch offene
+Navigationslösungen, die häufig sogar auf einer Vielzahl von Plattformen
+verfügbar sind, wie etwa NAVIT&nbsp;<a href="http://www.navit-project.org/">[20]</a> oder
+Gosmore&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Gosmore">[21]</a>. Leider ist hier jedoch die
+Usability noch nicht ganz so ausgereift, sodass man dabei noch nicht von
+Out-of-the-box-Lösungen, wohl aber von hochgradig anpassbaren Programmen
+sprechen kann, die mit ein wenig Einarbeitung schon erstaunlich zuverlässig
+ihren Dienst verrichten&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Software">[22]</a>.
+Die vergangenen Jahre zeigten auch, zu was für einer überraschenden
+Vielfalt von Anwendungen freie Daten führen können und wie sehr sie
+Innovation und Spieltrieb fördern. So gibt es mit
+eWorld&nbsp;<a href="http://eworld.sourceforge.net/">[23]</a> einen einfach zu
+bedienenden Verkehrssimulator sowie Export-Werkzeuge wie Osm2xp&nbsp;<a href="http://osm2xp.com/">[24]</a>,
+die die Szenerien von Flugsimulatoren wie X-Plane zu erweitern vermögen.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/osm2xp-Flugsimulator.jpg" alt="osm2xp-Flugsimulator.jpg" style="max-width:100%" /><br /><em>Der Flugsimulator X-Plane nutzt OSM um Gebäude zu visualisieren.
+&#169;&nbsp;Osm2xp (<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-2.0</a>) 
+</em><br />
+
+<div class="p"><!----></div>
+Es gibt auch Ansätze, die
+Datenbestände für semantisches Web und Suchmaschinen zu erschließen oder
+auch größere, dreidimensionale Stadtmodelle generieren zu können&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Simulators">[25]</a>&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Research">[26]</a>.
+Das Ganze ist natürlich bei weitem nicht nur auf die digitalen Ergebnisse
+beschränkt. So wird OSM auch zur Erstellung von gedruckten
+Stadtplänen&nbsp;<a href="http://www.maposmatic.org/">[27]</a> oder zur Illustration von Reisebänden genutzt.
+
+<div class="p"><!----></div>
+
+<h2>Technik</h2>
+
+
+Möchte man selbst bei OSM aktiv werden, sollte man sich als Erstes ein
+Konto beim Projekt anlegen und ggf. den in Java entwickelten Editor
+JOSM&nbsp;<a href="http://josm.openstreetmap.de/wiki/De:WikiStart">[28]</a> installieren (oder
+den in die Webseite integrierten Flash Editor Potlatch2 nutzen).
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/osm-potlatch-editor.png" alt="osm-potlatch-editor.png" style="max-width:100%" /><br /><em>Einfach anmelden und mit dem Potlatch-Editor loslegen.</em><br />
+
+<div class="p"><!----></div>
+
+
+Nach dem Laden der bestehenden Daten kann man mit den Editoren beginnen, Objekte
+    
+einzutragen&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Editors">[29]</a>. Im einfachsten
+Fall sind das nur einzelne Punkte („Nodes“), an denen die passenden
+Eigenschaften gesetzt werden („Tags“). So wird aus ein und demselben Node
+durch <b><tt class="big">amenity=restaurant</tt></b> ein Restaurant oder mit <b><tt class="big">highway=traffic_light</tt></b> eine
+Ampel&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Map_Features">[30]</a>.
+
+<div class="p"><!----></div>
+Natürlich gibt es aber auch Linienobjekte (Ways), die ebenso mittels Tags
+als Straßen oder Flüsse gekennzeichnet werden. Geschlossene
+    
+Wege mit
+<b><tt class="big">building=yes</tt></b> stellen dabei Gebäude dar und Plätze werden z.&nbsp;B. mit
+geschlossenen Wegen mit <b><tt class="big">highway=pedestrian</tt></b> und <b><tt class="big">area=yes</tt></b> erfasst&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Data_Primitives">[31]</a>.
+
+<div class="p"><!----></div>
+Diese grundlegenden technischen Konzepte von OpenStreetMap sind natürlich
+gleich geblieben, einige kleinere Ergänzungen kamen jedoch mit der
+aktuellen API 0.6, über die auf die zentrale Datenbank zugegriffen werden
+kann.
+
+<div class="p"><!----></div>
+    So werden Änderungen nun nicht nur zu sogenannten Changesets
+zusammengefasst, sondern es gibt mit Relationen sogar einen neuen
+Objekttyp. Sie stellen die derzeitige Lösung für
+    
+Probleme wie Gruppierungen
+von Linien in Nahverkehrsnetzen und Flächen als Multipolygone dar, also
+überall wo ein Objekt nicht nur einmalig einem anderen zugeordnet werden
+soll. Aber grau ist alle Theorie, man sollte wirklich mutig einfach mal mit
+ein paar Änderungen beginnen, um zu sehen, wie alles in einander greift, und
+sich nicht von den Begriffen abschrecken lassen&nbsp;<a href="http://wiki.openstreetmap.org/wiki/DE:Beginners_Guide">[32]</a>.
+
+<div class="p"><!----></div>
+Der Austausch von Objekten erfolgt mit einem sehr einfachen XML-Schema,
+das nacheinander Abschnitte mit den Nodes, Ways und Relationen eines
+bestimmten Bereichs enthält. Die gesamte Erde umfasst als komprimierte
+XML-Datei zurzeit 19 GB, was ein kleiner Hinweis darauf ist, wie komplex
+weltweite Berechnungen werden können. Denn neben dem Speicherplatz werden
+auch intelligente Datenstrukturen benötigt, so dass man etwa in einer
+Datenbank wie PostGIS&nbsp;<a href="http://wiki.openstreetmap.org/wiki/PostGIS">[33]</a> schnell
+herausfinden kann, welche Objekte sich an einer bestimmten Position
+befinden.
+
+<div class="p"><!----></div>
+Dennoch benötigt die performante Verarbeitung der Geodaten extrem
+viele Ressourcen. So sind Rechner mit über 30 GB RAM keine Seltenheit bei den
+zentralen Servern&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Servers">[34]</a>. Damit
+gerade der sehr aufwendige Import des kompletten
+Datenbestandes&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Planet.osm">[35]</a> nicht
+dauernd neu durchgeführt werden muss, gibt es mit OSM Diff XML ein abgeleitetes
+Dateiformat, mit dem man Änderungen übertragen kann und so die eigene
+lokale DB auf dem aktuellen Stand bleibt.
+Daran können sich nun weitere Programme ankoppeln, sodass Karten
+gezeichnet (Mapnik, Osmarender), Routen berechnet (OSRM) oder
+eigene Analysen durchgeführt werden können.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-03-bilder-Dateien/osm-heatmap.png" alt="osm-heatmap.png" style="max-width:100%" /><br /><em>Überall gibt es Flecken, wo Mapper fleißig die Welt erfassen.
+<a href="http://wiki.openstreetmap.org/wiki/File:Osm-heatmap-2011-04-29.png">&#169;&nbsp;Indigomc</a> (<a href=>Public Domain</a>) 
+</em><br />
+
+<div class="p"><!----></div>
+
+
+
+<h2>Community</h2>
+
+
+All diese Veränderungen entstehen natürlich nur durch eine massiv angewachsene
+Community. So gibt es mittlerweile über 500.000 registrierte Mitglieder,
+von denen etwa 16.000 Nutzer monatlich zu OSM beitragen. Dadurch bildeten
+sich in größeren Städten sehr viele Stammtische, wo die einzelnen Mapper
+sich über Neuigkeiten austauschen oder gemeinsame Aktionen planen.
+
+<div class="p"><!----></div>
+Nach wie vor hapert es (wie bei den meisten freien Projekten) jedoch in Sachen
+überregionaler Kommunikation, auch wenn sich dort einige Lichtblicke
+abzeichnen. So gibt es schon über ein Jahr den
+OSMBlog&nbsp;<a href="http://blog.openstreetmap.de/">[36]</a>, welcher
+in der regelmäßig erscheinenden Wochennotiz die Ereignisse im Projekt von
+verschiedenen Kommunikationskanälen (Mailinglisten, regionale
+Mailinglisten, Foren, IRC, Diaries, Blogs, Twitter etc.&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Contact">[37]</a>) sammelt und prägnant
+zusammenfasst. Denn gerade Leute, die neu zu OpenStreetMap stoßen, haben
+immer noch oft das Problem, sich in den verschiedenen Kommunikationskanälen
+zurecht zu finden und eine einfache Schritt-für-Schritt-Anleitung zu
+bekommen. Diese gab es bisher bereits im Wiki und mit einigen
+Video-Tutorials, diese sind aber leider teilweise auch schon wieder
+veraltet&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Video_tutorials">[38]</a>. In diese
+Bresche springen LearnOSM&nbsp;<a href="http://www.learnosm.org/">[39]</a> sowie einige
+Bücher, die die Arbeit in und
+mit dem Projekt thematisieren&nbsp;<a href="http://wiki.openstreetmap.org/wiki/Books">[40]</a>.
+
+<div class="p"><!----></div>
+Da für die immer weiter wachsende Nutzung der Karte auch entsprechende
+Ressourcen angeschafft und Spenden verwaltet werden müssen, gibt es mit der
+OpenStreetMap Foundation&nbsp;<a href="http://www.osmfoundation.org/">[41]</a> nun schon seit
+längerem auch eine Vereinigung, die als juristischer Ansprechpartner
+fungieren kann. Im deutschsprachigem Raum ist dies übrigens der FOSSGIS
+e.&nbsp;V.&nbsp;<a href="http://www.fossgis.de/">[42]</a>, der unter anderem auch einige
+Entwicklungsserver betreibt, damit nicht jeder, der gewillt ist eine OSM-Karte
+zu bauen, eigene leistungsfähige Hardware braucht, und so auch
+europaweite Karten anbieten kann.
+
+<div class="p"><!----></div>
+Ein ganz wichtiges Vorhaben der Mapper ist übrigens die Umstellung der
+Lizenz von der jetzigen CC-BY-SA zu der neuen Open Database License
+(ODbL&nbsp;<a href="http://wiki.openstreetmap.org/wiki/DE:ODbL/Wir_wechseln_die_Lizenz">[43]</a>).
+Naturgemäß führte diese Maßnahme zu einiger Unruhe innerhalb des Projektes,
+geht es doch um nichts weniger als um die Nutzbarkeit der mühevoll
+zusammengetragenen eigenen Daten. Inhaltlich ändern sich nur wenige
+Aspekte, denn es bleibt bei dem Copyleft-Gedanken, sodass man bei einer
+Vermischung von Daten auch die Endprodukte unter diese Lizenz stellen
+muss. Ein weiterer Grund ist sicherlich, dass die neue Lizenz sich erst
+etablieren muss, sind die Creative-Commons-Lizenzen doch schon durch
+diverse andere Projekten recht bekannt. Sie bürgen somit für eine gewisse
+Verlässlichkeit, aber leider greifen Sie bei Datenbanken gerade im
+amerikanischen Raum nicht zwangsläufig. Neulinge akzeptieren übrigens von
+vornherein die neue Lizenz. Bei den anderen Mitgliedern wird jedoch
+explizit um eine Zustimmung nachgefragt, weshalb einige Daten auch nach der
+Umstellung eventuell verloren gehen werden und neu erfasst werden müssen.
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+
+
+OpenStreetMap hat bisher bereits Erstaunliches geleistet und es ist kaum zu
+glauben, dass sich an den Stellen, wo heute Städte mit Gebäuden und Restaurants
+zu sehen sind, früher nur digitale Wüste befand. Dies überzeugt
+langsam aber sicher auch diejenigen aus dem professionellen Umfeld, die
+dem Projekt keinen Erfolg prophezeiten, da es zu unorganisiert sei und so
+gar nicht mit den üblichen akkuraten Messmethoden in der Geodäsie vereinbar
+schien. So nutzen bereits zahlreiche offizielle Webseiten die
+Karte&nbsp;<a href="http://wiki.openstreetmap.org/wiki/DE:OSM_Internet_Links">[44]</a> und allmählich
+sehen sich auch die bisherigen Navi-Hersteller mit dem Problem
+konfrontiert, dass Kartenupdates von bis zu hundert Euro schwerlich zu
+rechtfertigen sind, wenn es parallel dazu ein Projekt gibt, das die
+neuesten Fahrwege sehr viel schneller als bisherige Datenlieferanten und
+dazu noch kostenlos bereitstellen. Ein wichtiger Achtungserfolg ist die
+freie Veröffentlichung der Daten der englischen Vermessungsbehörden
+(Ordnance Survey&nbsp;<a href="http://www.ordnancesurvey.co.uk/oswebsite/">[45]</a>) in letztem Jahr. Das zeigt, dass Open Data bereits in
+aller Munde ist und wie sehr die Möglichkeit genutzt wird, neue Ideen damit
+auszuprobieren.
+
+<div class="p"><!----></div>
+    
+Keinesfalls soll aber der Eindruck erweckt werden, dass OSM völlig ohne
+Makel ist. Die Qualität der Daten ist nicht überall bereits so gut wie in
+Deutschland oder England und auch dort sind ländliche Gebiete oder die
+Erfassung der zugelassenen Geschwindigkeiten noch immer ausbaufähig. Jedoch
+sind dies Aufgaben, die sicherlich binnen der nächsten zwei Jahren gelöst
+werden können, wenn noch mehr Menschen die Karte nutzen und Gefallen daran
+finden, ihre eigene Nachbarschaft darin dazustellen. Vielleicht wird es für
+Orte und Institutionen dann immer wichtiger geworden sein, auf der freien
+Weltkarte zu erscheinen, ähnlich vielleicht wie bei Google Maps heute schon.
+Daher auch ein kleiner Aufruf an den geneigten Leser, der ja auch mal
+persönlich bei OSMBugs vorbeischauen und melden kann, was in
+der Heimatstadt noch fehlt. Und wer basteln mag, der ist herzlich dazu
+eingeladen, kreative Anwendungen auf Grundlage von OpenStreetMap
+umzusetzen. Die Unterstützung der Community ist einem gewiss!
+
+<div class="p"><!----></div>
+
+
+
+<h2>Literatur</h2>
+
+
+
+<ul>
+<li> Pascal Neis, Dennis Zielstra, Alexander Zipf: „The Street Network Evolution of Crowdsourced Maps: OpenStreetMap in Germany 2007-2011“, Future Internet 2012&nbsp;<a href="http://www.mdpi.com/1999-5903/4/1/1/">[46]</a></li>
+<li> Ina Ludwig: „Abbildung von Straßendaten für Qualitätsuntersuchungen – Ein Vergleich von OpenStreetMap mit Navteq“, 2010 Universität Bonn&nbsp;<a href="http://publica.fraunhofer.de/starweb/servlet.starweb?path=urn.web&search=urn:nbn:de:0011-n-1174865">[47]</a></li>
+<li> Jochen Topf, Frederik Ramm: „OpenStreetMap – Die freie Weltkarte nutzen und
+mitgestalten“, Lehmanns Media 2011, ISBN 978-3865413758&nbsp;<a href="http://www.lehmanns.de/shop/naturwissenschaften/12274969-9783865413758-openstreetmap">[48]</a></li>
+</ul>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2008-11"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2008-11</tt></a><br />
+[2] <a href="http://www.openstreetmap.de/"><tt class="big">http://www.openstreetmap.de/</tt></a><br />
+[3] <a href="http://sautter.com/map/?zoom=12&lat=53.5483&lon=9.99423&layers=B000000TFFFFFTFF"><tt class="big">http://sautter.com/map/?zoom=12&amp;lat=53.5483&amp;lon=9.99423&amp;layers=B000000TFFFFFTFF</tt></a><br />
+[4] <a href="http://maps.bing.de/"><tt class="big">http://maps.bing.de/</tt></a><br />
+[5] <a href="http://www.geoimage.at/"><tt class="big">http://www.geoimage.at/</tt></a><br />
+[6] <a href="http://www.walking-papers.org/"><tt class="big">http://www.walking-papers.org/</tt></a><br />
+[7] <a href="http://osmbugs.org/"><tt class="big">http://osmbugs.org/</tt></a><br />
+[8] <a href="http://openstreetmap.de/karte.html"><tt class="big">http://openstreetmap.de/karte.html</tt></a><br />
+[9] <a href="http://wiki.openstreetmap.org/wiki/HOT"><tt class="big">http://wiki.openstreetmap.org/wiki/HOT</tt></a><br />
+[10] <a href="http://www.%C3%B6pnvkarte.de/">http://www.öpnvkarte.de/</a><br />
+[11] <a href="http://www.openseamap.org/"><tt class="big">http://www.openseamap.org/</tt></a><br />
+[12] <a href="http://www.hikebikemap.de/"><tt class="big">http://www.hikebikemap.de/</tt></a><br />
+[13] <a href="http://nominatim.openstreetmap.org/"><tt class="big">http://nominatim.openstreetmap.org/</tt></a><br />
+[14] <a href="http://www.openrouteservice.org/"><tt class="big">http://www.openrouteservice.org/</tt></a><br />
+[15] <a href="http://wiki.openstreetmap.org/wiki/Maps"><tt class="big">http://wiki.openstreetmap.org/wiki/Maps</tt></a><br />
+[16] <a href="http://wiki.openstreetmap.org/wiki/Software/PNA"><tt class="big">http://wiki.openstreetmap.org/wiki/Software/PNA</tt></a><br />
+[17] <a href="http://www.skobbler.us/"><tt class="big">http://www.skobbler.us/</tt></a><br />
+[18] <a href="http://www.footmap.de/"><tt class="big">http://www.footmap.de/</tt></a><br />
+[19] <a href="http://www.navmii.com/navfree/"><tt class="big">http://www.navmii.com/navfree/</tt></a><br />
+[20] <a href="http://www.navit-project.org/"><tt class="big">http://www.navit-project.org/</tt></a><br />
+[21] <a href="http://wiki.openstreetmap.org/wiki/Gosmore"><tt class="big">http://wiki.openstreetmap.org/wiki/Gosmore</tt></a><br />
+[22] <a href="http://wiki.openstreetmap.org/wiki/Software"><tt class="big">http://wiki.openstreetmap.org/wiki/Software</tt></a><br />
+[23] <a href="http://eworld.sourceforge.net/"><tt class="big">http://eworld.sourceforge.net/</tt></a><br />
+[24] <a href="http://osm2xp.com/"><tt class="big">http://osm2xp.com/</tt></a><br />
+[25] <a href="http://wiki.openstreetmap.org/wiki/Simulators"><tt class="big">http://wiki.openstreetmap.org/wiki/Simulators</tt></a><br />
+[26] <a href="http://wiki.openstreetmap.org/wiki/Research"><tt class="big">http://wiki.openstreetmap.org/wiki/Research</tt></a><br />
+[27] <a href="http://www.maposmatic.org/"><tt class="big">http://www.maposmatic.org/</tt></a><br />
+[28] <a href="http://josm.openstreetmap.de/wiki/De:WikiStart"><tt class="big">http://josm.openstreetmap.de/wiki/De:WikiStart</tt></a><br />
+[29] <a href="http://wiki.openstreetmap.org/wiki/Editors"><tt class="big">http://wiki.openstreetmap.org/wiki/Editors</tt></a><br />
+[30] <a href="http://wiki.openstreetmap.org/wiki/Map_Features"><tt class="big">http://wiki.openstreetmap.org/wiki/Map_Features</tt></a><br />
+[31] <a href="http://wiki.openstreetmap.org/wiki/Data_Primitives"><tt class="big">http://wiki.openstreetmap.org/wiki/Data_Primitives</tt></a><br />
+[32] <a href="http://wiki.openstreetmap.org/wiki/DE:Beginners_Guide"><tt class="big">http://wiki.openstreetmap.org/wiki/DE:Beginners_Guide</tt></a><br />
+[33] <a href="http://wiki.openstreetmap.org/wiki/PostGIS"><tt class="big">http://wiki.openstreetmap.org/wiki/PostGIS</tt></a><br />
+[34] <a href="http://wiki.openstreetmap.org/wiki/Servers"><tt class="big">http://wiki.openstreetmap.org/wiki/Servers</tt></a><br />
+[35] <a href="http://wiki.openstreetmap.org/wiki/Planet.osm"><tt class="big">http://wiki.openstreetmap.org/wiki/Planet.osm</tt></a><br />
+[36] <a href="http://blog.openstreetmap.de/"><tt class="big">http://blog.openstreetmap.de/</tt></a><br />
+[37] <a href="http://wiki.openstreetmap.org/wiki/Contact"><tt class="big">http://wiki.openstreetmap.org/wiki/Contact</tt></a><br />
+[38] <a href="http://wiki.openstreetmap.org/wiki/Video_tutorials"><tt class="big">http://wiki.openstreetmap.org/wiki/Video_tutorials</tt></a><br />
+[39] <a href="http://www.learnosm.org/"><tt class="big">http://www.learnosm.org/</tt></a><br />
+[40] <a href="http://wiki.openstreetmap.org/wiki/Books"><tt class="big">http://wiki.openstreetmap.org/wiki/Books</tt></a><br />
+[41] <a href="http://www.osmfoundation.org/"><tt class="big">http://www.osmfoundation.org/</tt></a><br />
+[42] <a href="http://www.fossgis.de/"><tt class="big">http://www.fossgis.de/</tt></a><br />
+[43] <a href="http://wiki.openstreetmap.org/wiki/DE:ODbL/Wir_wechseln_die_Lizenz"><tt class="big">http://wiki.openstreetmap.org/wiki/DE:ODbL/Wir_wechseln_die_Lizenz</tt></a><br />
+[44] <a href="http://wiki.openstreetmap.org/wiki/DE:OSM_Internet_Links"><tt class="big">http://wiki.openstreetmap.org/wiki/DE:OSM_Internet_Links</tt></a><br />
+[45] <a href="http://www.ordnancesurvey.co.uk/oswebsite/"><tt class="big">http://www.ordnancesurvey.co.uk/oswebsite/</tt></a><br />
+[46] <a href="http://www.mdpi.com/1999-5903/4/1/1/"><tt class="big">http://www.mdpi.com/1999-5903/4/1/1/</tt></a><br />
+[47] <a href="http://publica.fraunhofer.de/starweb/servlet.starweb?path=urn.web&search=urn:nbn:de:0011-n-1174865"><tt class="big">http://publica.fraunhofer.de/starweb/servlet.starweb?path=urn.web&amp;search=urn:nbn:de:0011-n-1174865</tt></a><br />
+[48] <a href="http://www.lehmanns.de/shop/naturwissenschaften/12274969-9783865413758-openstreetmap"><tt class="big">http://www.lehmanns.de/shop/naturwissenschaften/12274969-9783865413758-openstreetmap</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Matthias Meißer</b>&nbsp;(<a href="http://www.openstreetmap.org/user/!i!">Webseite</a>)
+ist Student an der Universität Rostock, wo er bei einer
+Projektarbeit auf OpenStreetMap stieß. Zusammen mit vielen anderen hat er
+nicht nur die Hansestadt auf die Karte gebracht, sondern kümmert sich
+insbesondere um die Kommunikation in Mecklenburg-Vorpommern innerhalb des
+Projektes und nach außen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+            <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=OpenStreetMap#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+<h1><font color="#595959"><a name="12_03_rezension_eclipse">Rezension: Einstieg in Eclipse 3.7</a></font></h1>von Michael Niedermair
+
+<div class="p"><!----></div>
+        <b>D</b><b>as Buch stellt einen Einstieg in Eclipse&nbsp;3.7 mit Java 7 dar. Das
+Cover verspricht „Effiziente Java-Entwicklung mit Eclipse“, „Plug-ins,
+Web- und RCP-Anwendungen erstellen“, „inkl. Refactoring, Debugging,
+Subversion, CVS u.&nbsp;a.“. Java-Kenntnisse werden vorausgesetzt.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Verlag Galileo Computing für
+die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Der Autor Thomas Künneth ist Softwareentwickler und IT-Architekt bei
+einer großen Bundesbehörde. Er ist fleißiger Buchautor und hat u.&nbsp;a.
+Bücher zu Android, Java und Eclipse geschrieben. Die Co-Autorin Yvonne
+Wolf ist Spezialistin für Swing-basierte Rich Clients-Architekturen.
+
+<div class="p"><!----></div>
+Die nächsten Zeilen verraten, ob das Buch den Erwartungen und
+Versprechungen gerecht wird.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das Buch ist in acht Kapitel mit Vorwort, Einleitung, Anhang und Index
+aufgeteilt und umfasst 418 Seiten. Am Ende finden sich zehn Seiten
+Werbung sowie die DVD mit der Software (Java, Eclipse, …) und allen
+Beispielen.
+
+<div class="p"><!----></div>
+Im ersten Kapitel (37 Seiten) geht es um die Installation von Java und
+Eclipse unter Windows, Linux und Mac OS X. Danach wird gezeigt, wie
+man ein Projekt erstellt, ein kleines Programm schreibt und das
+Hilfesystem verwendet.
+
+<div class="p"><!----></div>
+Das zweite Kapitel (65 Seiten) ist mit „Arbeiten mit Eclipse“
+überschrieben. Hier lernt man die Workbench, die verschiedenen
+Perspektiven und Ansichten kennen. Danach wird gezeigt, wie man
+schnell und einfach mit Eclipse Java-Programme eingeben und dabei
+viele Funktionen wie Quelltextformatierung, Syntax-Hervorhebung,
+Textvervollständigung und vieles mehr nutzen kann. Abgeschlossen wird
+das Kapitel mit dem Bereich „Suchen, Ersetzungen“ und einem kurzem
+Ausflug in das Refactoring.
+
+<div class="p"><!----></div>
+Das dritte Kapitel (49 Seiten) beschäftigt sich mit Arbeitsbereichen
+und Projekten und deren Verwaltung. Dabei wird gezeigt, wie man den
+Build-Path entsprechend einstellt und zum Beispiel Bibliotheken
+einbindet. Den Abschluss bildet die Verwendung des Build-Tools ANT und
+die Verwendungen von externen Tools.
+
+<div class="p"><!----></div>
+Dem Motto „Plug-ins“ widmet sich das vierte Kapitel (48 Seiten). Zuerst
+wird gezeigt, wie man diese installiert und mit dem Update-Manager
+immer auf dem aktuellen Stand bleibt. Danach wird gezeigt, wie die
+Infrastruktur hinter den Plug-ins aussieht und wie man eigene Plug-ins
+entwickelt. Den Abschluss bildet ein kurzer Ausflug in
+RCP-Anwendungen.
+
+<div class="p"><!----></div>
+Das fünfte Kapitel (48 Seiten) beschäftigt sich mit Bugs. Es wird
+gezeigt, wie man Fehler sucht und sein Programm mit Unit-Tests testet.
+
+<div class="p"><!----></div>
+Die Versionsverwaltung bildet die Grundlage für das sechste Kapitel
+(58 Seiten). Dabei wird zuerst das Concurrent Versions System (CVS)
+beschrieben und dann auf Subversion übergeleitet. Es wird gezeigt, wie
+man Repositories anlegt, Daten „eincheckt“, Versionsstände
+zusammenführt und vieles mehr.
+
+<div class="p"><!----></div>
+Das siebte Kapitel (45 Seiten) zeigt, wie man grafische
+Benutzeroberflächen selbst erstellen kann. Der Einstieg ist eine
+Übersicht zu GUI-Editoren und dann geht es an die Aufgabenverwaltung
+„Do it!“, die mit Swing erstellt wird. Hier wird Schrittweise eine
+To-do-Liste unter anderem mit Dialogen erstellt.
+
+<div class="p"><!----></div>
+Das achte Kapitel (33 Seiten) widmet sich Web- und AJAX-Anwendungen.
+Es wird gezeigt, welche Plug-ins dafür installiert werden müssen.
+Zuerst werden statische Webprojekte vorgestellt, dann dynamische
+Webprojekte (Servlets) und zum Schluss wird das Google Web Toolkit
+verwendet.
+
+<div class="p"><!----></div>
+Am Ende folgt das Literaturverzeichnis (eine Seite), die Beschreibung
+für die Buch-DVD (zwei Seiten) und das Stichwortverzeichnis mit
+insgesamt sechs Seiten.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das Buch ist für den Eclipse-Anfänger geschrieben und setzt
+Java-Kenntnisse voraus, die auch notwendig sind. Das Buch liest sich
+flüssig, auch wenn es abschnittsweise mit sehr vielen
+
+Screenshots
+durchsetzt ist. Alle Code-Beispiele sind ausreichend gut erläutert. Im
+Buch werden nur die wichtigen Codeteile abgedruckt; der komplette Code
+findet sich auf der Begleit-DVD.
+
+<div class="p"><!----></div>
+
+
+Jeder Eclipse-Anfänger kann der Beschreibung gut folgen. Sind Bereiche
+schon bekannt, so kann man ein Kapitel ohne Probleme überspringen.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Das Buch ist für Eclipse-Anfänger geschrieben und für sie geeignet, setzt aber
+Java-Kenntnisse zwingend voraus. Der Schwerpunkt liegt dabei
+auf dem Handling von Eclipse und nicht wirklich auf der effizienten
+Entwicklung von Java- oder Eclipse-Anwendungen. Man merkt aber, dass
+der Autor viel Erfahrung mit Eclipse hat.
+
+<div class="p"><!----></div>
+In bestimmten Bereichen ist aber die Effizienz übersehen worden, z.&nbsp;B.
+wird auf Seite 37 eine Methode erläutert, die alle System-Properties
+in einem String zusammenfasst. Hier wurde unnötigerweise die
+thread-safe-Klasse <b><tt class="big">StringBuffer</tt></b> verwendet (<b><tt class="big">StringBuilder</tt></b> wäre hier
+effizienter) und eine Stringkette gebildet, die dann dem Buffer
+hinzugefügt worden ist.
+
+<div class="p"><!----></div>
+In Kapitel 2 wird auf das Refactoring eingegangen. Hier hätte ich mir
+deutlich mehr als sechs Seiten gewünscht, da leider viele wichtige
+Bereiche dazu nicht erwähnt worden sind.
+
+<div class="p"><!----></div>
+In Kapitel 6 wird die Versionsverwaltung mit CVS und SVN auf fast 60
+Seiten behandelt. Warum hier soviel Seiten für das alte CVS verwendet
+worden sind und das deutlich modernere Versionsverwaltungssystem GIT
+nicht vorkommt, verstehe ich nicht.
+
+<div class="p"><!----></div>
+Im siebten Kapitel geht es um die grafischen Benutzeroberflächen. Leider wird
+nur Swing näher behandelt, SWT wird nur kurz erwähnt, aber nicht erläutert.
+Hier wäre es besser gewesen, das sehr kurze Kapitel über
+Web-Anwendungen wegzulassen und dafür SWT zu behandeln.
+
+<div class="p"><!----></div>
+Das Stichwortverzeichnis sieht so aus, als ob es automatisch
+generiert wurde und ist nicht wirklich zu gebrauchen. Der Rekord bei einem
+Eintrag liegt hier bei 50 Seitenzahlen, der Hauptbereich (Seitenzahl)
+ist hier aber nicht hervorgehoben. Das passende dazu zu finden, ist
+bei diesem Eintrag schier unmöglich. Auf dem Cover springt einem
+deutlich „Java 7“ entgegen. Die Besonderheiten dazu und gerade was
+dazu Eclipse betrifft, habe ich leider in dem Buch vermisst.
+
+<div class="p"><!----></div>
+Das Buch hat ein Hardcover mit Daumenkino und Einlegebändchen. Das
+Preis-Leisungsverhältnis (Buch, Umfang, DVD und Preis) könnte hier
+besser sein.
+
+<div class="p"><!----></div>
+Im Gegensatz zum kürzlich erschienen Buch „Android 3 – Apps entwickeln
+mit dem Android SDK“ vom selben Autor erscheint dieses Ausgabe als „schnelle
+Überarbeitung“ (vierte Auflage).
+
+<div class="p"><!----></div>
+Insgesamt betrachtet muss man das Buch, bezogen auf die Bedienung von
+Eclipse, noch als gut bewerten. Will der Leser aber weiter in die
+Eclipse-Programmierung einsteigen, so muss er recht schnell auf andere
+Literatur ausweichen.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Einstieg in Eclipse 3.7, 4. Auflage 2012 </td></tr>
+<tr><td><b>Autor</b> </td><td>Thomas Künneth, Yvonne Wolf </td></tr>
+<tr><td><b>Verlag</b> </td><td>Galileo Computing </td></tr>
+<tr><td><b>Umfang</b> </td><td>418 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8362-1668-5 </td></tr>
+<tr><td><b>Preis</b> </td><td>34,90 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Michael Niedermair</b>
+ist Lehrer an der <a href="http://www.bsinfo.musin.de/">Münchener IT-Schule</a>
+und unterrichtet hauptsächlich
+Programmierung, Datenbanken und IT-Technik. Er beschäftigt sich seit
+Jahren mit vielen Programmiersprachen, vor allem mit Java und Eclipse als
+Entwicklungsumgebung
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            
+
+            <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=Rezension: Einstieg in Eclipse 3.7#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_03_rezension_head_first_design_patterns">Rezension: Head First Design Patterns</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        <b>M</b><b>üssen Fachbücher denn immer Tausende von Seiten lang sein, auf denen
+sich ein Buchstabe an den anderen reiht, sodass man nach dem Durchlesen
+von Seite 638 nicht mehr weiß, was auf Seite 1 stand? Die Erfinder der
+Head-First-Reihe sind der Meinung, dass nicht nur in Kinderbüchern
+Bilder gut ankommen und schmücken ihre Werke durch entsprechend viel
+Bildmaterial. So auch das hier vorliegende „Head First Design Patterns“
+von Eric und Elisabeth Freeman.</b>
+
+<div class="p"><!----></div>
+
+<h2>Ein Bild sagt mehr als tausend Worte</h2>
+
+
+Die Besonderheit des Buches „Head First Design Patterns“ ist
+sicherlich die grafische Gestaltung von Kathy Sierra und Bert Bates.
+So begrüßt einen auf der ersten Seite bereits eine junge Dame mit
+den Gedanken „Wäre es nicht traumhaft, wenn es ein Buch über
+Entwurfsmuster gäbe, welches beim Lesen mehr Spaß machen würde als
+ein Besuch beim Zahnarzt und verständlicher wäre als eine
+Steuererklärung?“ Und in der Tat versuchen die beiden Autoren und
+die Gestalter dies zu erreichen.
+
+<div class="p"><!----></div>
+Die Begründung für die Aufmachung findet man in der Einleitung, in
+der erklärt wird, dass das Gehirn sich Bilder leichter merken kann
+als reinen Text. Aus dem Grund helfen Illustrationen beim
+Verständnis komplexer Probleme. Natürlich kommt das Buch nicht ohne
+Text aus – und es ist nicht wenig Text, der auf den 638 Seiten Platz
+findet. Dennoch gibt es (fast) keine Seite im Buch ohne Grafik oder
+Illustration, die entweder nur auflockern sollen oder erklärend
+wirken.
+
+<div class="p"><!----></div>
+Der Stil ist demnach auch nicht für jeden Leser geeignet.
+Entsprechend findet man ebenfalls im Intro einen kurzen
+Fragenkatalog, für wen das Buch gedacht ist und für wen nicht. In
+einer Randnotiz findet man dann den Hinweis des Marketing-Teams,
+dass das Buch für jeden ist, der eine Kreditkarte besitzt. Hieran
+sieht man auch, dass die Autoren versuchen mit Humor an die Sache zu
+gehen. Über 600 staubtrockene Seiten würden wohl auch niemanden zum
+Lernen animieren.
+
+<div class="p"><!----></div>
+
+<h2>Übung macht den Meister</h2>
+
+
+Das Lernen steht daher im Vordergrund des Buches. Es ist
+definitiv kein Nachschlagewerk oder Kompendium, um schnell ein
+Entwurfsmuster zu verstehen. Die Autoren wollen, dass man die
+einzelnen Muster tatsächlich versteht und danach auch anwenden kann.
+Hierfür gibt es in jedem Kapitel, in denen in der Regel immer ein
+bestimmtes Entwurfsmuster behandelt wird, realistische Beispiele.
+Mag die Entensimulation am Anfang vielleicht noch etwas weit
+hergeholt sein, ist die Verwaltung und Auslieferung von Pizzen
+sicherlich etwas näher an der Realität und die Fernwartung von
+Automaten trifft dann erst recht den Stand der Zeit.
+
+<div class="p"><!----></div>
+Um die Muster verstehen zu können, reicht es aber nicht aus, nur den
+Text durchzulesen und die Bilder anzuschauen. Die Autoren fordern
+ausdrücklich dazu auf, dass man die Beispiele eigenständig
+nachprogrammiert, um die Entwurfsmuster zu verinnerlichen. Dazu soll
+man bei gestellten Fragen und Übungen (die am Ende eines Kapitels
+meist auch aufgelöst werden) über die Lösung nachdenken und nicht
+einfach zum nächsten Absatz übergehen.
+
+<div class="p"><!----></div>
+
+<h2>Der Inhalt macht's</h2>
+
+
+Elisabeth und Eric Freeman schaffen es dann tatsächlich auch, auf
+den 638 Seiten zahlreiche Entwurfsmuster zu behandeln. Sie haben sich
+dabei an den bekannten Entwurfsmustern der Gang of Four
+orientiert&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Entwurfsmuster_%28Buch%29">[1]</a>,
+erheben aber keinen Anspruch auf Vollständigkeit.
+
+<div class="p"><!----></div>
+Inhaltlich werden unter anderem folgende Entwurfsmuster behandelt
+(mit englischen Bezeichnungen): Strategy, Observer, Decorator,
+Factory, Singleton, Command, Adapter, Facade, Template Method,
+Composite, Iterator, State und Proxy.
+
+<div class="p"><!----></div>
+Dies sind bei weitem nicht alle Entwurfsmuster, die es in der Welt
+der objektorientierten Programmierung gibt, aber sie stellen doch
+die meist genutzten dar. Am Ende des Buches finden sich in einer
+kleinen Übersicht noch weitere Entwurfsmuster, deren Namen man
+zumindest einmal gehört haben sollte.
+
+<div class="p"><!----></div>
+Neben den eigentlichen Entwurfsmustern werden das ganze Buch über
+auch verschiedene Designprinzipien vorgestellt. Am Ende eines Kapitels
+werden diese wiederholt und aufgelistet, um das zuvor gelernte Wissen
+zu festigen.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Wie die Einleitung des Buches selbst schreibt, ist „Head First
+Design Patterns“ nicht für jeden Leser geeignet. Wer ein
+Referenzbuch sucht oder bei einem Monthy-Python-Film keine Miene
+verzieht, wird mit dem Buch sicherlich nicht glücklich werden. Was
+schade wäre, denn didaktisch ist es hervorragend aufgebaut.
+
+<div class="p"><!----></div>
+Wenn man sich die Mühe macht und die Übungen durcharbeitet, hat man
+am Ende viel Wissen gesammelt, was man dann leicht auf das eigene
+Projekt übertragen kann. Sicherlich werden nicht alle Fragen im Buch
+beantwortet und man benötigt für manche Details gegebenenfalls noch
+weitere Literatur, im Großen und Ganzen ist das Buch aber vor allem
+für Entwurfsmuster-Neulinge sehr zu empfehlen.
+
+<div class="p"><!----></div>
+Ein Nachteil des Buches ist seine Java-Lastigkeit. Viele der
+Beispiele können glücklicherweise leicht auf C# oder C++ abstrahiert
+werden, und Dank der vielen (Pseudo-)UML-Diagramme ist auch eine
+Umsetzung in anderen objektorientierten Sprachen möglich. Spätestens
+im Kapitel über das „Proxy-Pattern“ wird man als
+Nicht-Java-Programmierer aber aussteigen müssen, da explizit auf
+Java-eigene Bibliotheken eingegangen wird, die es in anderen
+Sprachen (wahrscheinlich) nicht gibt. Glücklicherweise ist der so
+starke Java-Bezug in dem Kapitel eine Ausnahme.
+
+<div class="p"><!----></div>
+Etwas negativer fallen da schon eher diverse Fehler im Buch auf. Die
+Errata&nbsp;<a href="http://oreilly.com/catalog/errata.csp?isbn=9780596007126">[2]</a>
+ist nicht gerade kurz, wobei es nicht nur mit kleineren
+Rechtschreibfehlern getan ist. So fehlen in manchen UML-Diagrammen
+Assoziationen zwischen Klassen oder sind falsch eingezeichnet. Durch
+den umliegenden Text erkennt man meist, dass hier etwas vergessen
+(oder absichtlich ausgelassen) wurde, dennoch fällt vor allem beim
+State-Pattern auf, dass an Abhängigkeiten gespart wurde, die später
+bei der Implementierung für einige Probleme sorgen können.
+
+<div class="p"><!----></div>
+Es gibt von „Head First Design Patterns“ auch eine deutsche
+Übersetzung namens „Entwurfsmuster von Kopf bis Fuß“. Diese enthält
+leider noch mehr Fehler als das Original, sodass man hier vorsichtig
+bei der Anwendung sein sollte.
+
+<div class="p"><!----></div>
+Davon abgesehen ist „Head First Design Patterns“ vor allem für
+Entwurfsmuster-Neulinge sehr empfehlenswert.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Head First Design Patterns </td></tr>
+<tr><td><b>Autor</b> </td><td>Eric Freeman, Elisabeth Freeman, Kathy Sierry, Bert Bates </td></tr>
+<tr><td><b>Verlag</b> </td><td>O'Reilly, 2004 </td></tr>
+<tr><td><b>Umfang</b> </td><td>638 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-0-596-00712-6 </td></tr>
+<tr><td><b>Preis</b> </td><td>31,95 Euro
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Entwurfsmuster_%28Buch%29">https://secure.wikimedia.org/wikipedia/de/wiki/"&#203;ntwurfsmuster_(Buch)</a><br />
+[2] <a href="http://oreilly.com/catalog/errata.csp?isbn=9780596007126"><tt class="big">http://oreilly.com/catalog/errata.csp?isbn=9780596007126</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+ist Software-Entwickler und sammelte seine ersten Erfahrungen
+mit Entwurfsmustern durch dieses Buch.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                        <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=Rezension: Head First Design Patterns#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+<h1><font color="#595959"><a name="12_03_wettbewerb5">Fünfter <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb</a></font></h1>        <b>A</b><b>uch wenn die letzten vier Programmierwettbewerbe&nbsp;<a href="http://www.freiesmagazin.de/mitmachen#wettbewerb">[1]</a>
+aufgrund ihres spielerischen Hintergrundes viel Spaß gemacht haben,
+erhielten wir auch immer Zuschriften, ob wir denn nicht einmal einen
+„ernsten“ Wettbewerb veranstalten könnten. Da wir auf unsere Leser
+hören, wurde am 1. März 2012 der fünfte <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb
+gestartet&nbsp;<a href="http://www.freiesmagazin.de/20120301-fuenfter-programmierwettbewerb-gestartet">[2]</a>.</b>
+
+<div class="p"><!----></div>
+
+<h2>Die Aufgabe</h2>
+
+
+Es ist nicht einfach, eine Aufgabe zu finden, die erstens nicht zu
+leicht und auch nicht zu schwierig ist, sich zweitens einigermaßen
+objektiv bewerten lässt und drittens nicht schon tausendmal
+umgesetzt wurde. Wir hoffen, mit der folgenden Aufgabe den Punkt
+getroffen zu haben.
+
+<div class="p"><!----></div>
+Ziel des Wettbewerbs ist, einen Wortwolken-Generator („Tag Cloud
+Generator“) zu erstellen. Eine Wortwolke&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Wortwolke">[3]</a>
+hilft bei der Darstellung von Informationen. Entsprechend soll es
+die Aufgabe der Teilnehmer sein, einen Text einzulesen, diesen zu
+analysieren und aus den gewonnenen Informationen eine Wortwolke zu
+kreieren.
+
+<div class="p"><!----></div>
+Mit der Aufgabe soll also ein etwas realistischeres und sinnvolles
+Problem angegangen werden, als es sonst in den
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerben üblich ist. Aus der Analyse
+der Datei und der daraus resultierende Wortwolke lassen sich
+– bei guter Darstellung – einige Informationen über den Text ableiten.
+Da fast jedes Websystem (CMS, Blog etc.) auf solche Wolken setzt,
+ist der Anwendungshintergrund auch kaum jemanden fremd. Auch bei
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> führen wir eine Wortwolke&nbsp;<a href="http://www.freiesmagazin.de/wortwolke">[4]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Anforderungen</h2>
+
+
+Die konkreten Anforderungen, die auch später bewertet werden, sind:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> rein textuelle Analyse</li>
+<li> Eingabe von Trennzeichen</li>
+<li> rekursive Suche und Analyse von Dateien mit bestimmten Dateiendungen</li>
+<li> Angabe von mindestens einer Liste mit Wörtern, die ignoriert werden sollen</li>
+<li> Angabe von mindestens einer Liste mit Wörtern oder Wortzusammensetzungen, die speziell gezählt werden sollen</li>
+<li> Einstellbarkeit für die Anzahl der sichtbaren Wörter in der Wortwolke</li>
+<li> Einstellbarkeit für die minimal zu beachtende Wortlänge</li>
+<li> Darstellung als Wortwolke</li>
+</ul>
+
+<div class="p"><!----></div>
+Der erste Punkt drückt aus, dass es nicht notwendig ist, die
+Eingabedatei beispielsweise anhand der Dateiendung zu erkennen und
+im Falle einer Programmiersprache entsprechend zu parsen. Eine
+einfache textuelle Analyse ist vollkommen ausreichend. Die Wörter
+müssen beim Einlesen entsprechend getrennt werden, was anhand der
+Trennzeichen geschehen soll. In der Regel sollen Wörter nur aus
+Buchstaben, Zahlen und Unterstrichen bestehen. In einem
+deutschsprachigen Text sind aber auch mit einem Bindestrich
+zusammengesetzte Worte keine Seltenheit. Dementsprechend könnte es
+auch notwendig sein, eine Liste mit zusammengesetzten Wörtern
+anzugeben. So sollen „Creative Commons“ oder „Open Source“ nur als
+ein Begriff gezählt werden, auch wenn diese durch ein Leerzeichen
+getrennt sind.
+
+<div class="p"><!----></div>
+Die Darstellung als Wortwolke ist natürlich die Essenz des ganzen
+Programms. Wie diese genau aussieht, ist jedem Teilnehmer selbst
+überlassen. Ebenso, ob er diese in HTML mit CSS, SVG oder PNG, als
+PDF oder anders ausgibt. Die Hauptsache ist, dass man klar erkennen
+kann, welche Worte häufig in dem analysierten Text vorkommen.
+
+<div class="p"><!----></div>
+
+<h3>Optionale Zusatzanforderungen</h3>
+
+
+Es gibt auch noch weitere Anforderungen, die aber optional umgesetzt
+werden können. Sie fließen nur als kleine Bonuspunkte in die
+Bewertung ein:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Kommentare ignorieren</li>
+<li> Zeichenketten ignorieren</li>
+</ul>
+
+<div class="p"><!----></div>
+Beide Punkte sind eher für Programmiersprachen gedacht und von diesen
+natürlich stark abhängig. Aus diesem Grund sind sie auch optional.
+
+<div class="p"><!----></div>
+
+<h2>Bewertung der Programme</h2>
+
+
+In die Bewertung fließen folgende Punkte mit unterschiedlicher
+Gewichtung (in Prozent) ein:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> Geschwindigkeit des Programms (15&nbsp;%)</li>
+<li> Funktionsvielfalt des Programms (30&nbsp;%)</li>
+<li> Bedienung des Programms (25&nbsp;%)</li>
+<li> Aussehen der Wortwolke (30&nbsp;%)</li>
+</ol>
+
+<div class="p"><!----></div>
+Die Geschwindigkeit wird anhand von verschiedenen Szenarien
+getestet, bei denen Dateien eingelesen werden. Es wird mittels des
+Konsolenprogrammes time die reine Prozesszeit gemessen. Die
+Geschwindigkeit soll dabei nur eine kleinere Rolle in der ganzen
+Bewertung einnehmen, da die Verarbeitung der Dateien oft stark von
+der verwendeten Programmiersprache abhängt. Aber natürlich soll
+das Einlesen der Dateien auch keine Ewigkeit dauern.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Wir wissen, dass bei grafischen Programmen aufgrund der
+grafischen Aktualisierung die Prozesszeit theoretisch etwas höher
+ist als bei reinen Konsolenprogrammen. Da die Testszenarien aber so
+gewählt werden, dass diese mehrere Sekunden dauern und auch nur die
+Geschwindigkeit im Sekundenbereich von Interesse ist, fällt dieser
+Punkt nicht all zu sehr ins Gewicht.
+
+<div class="p"><!----></div>
+Die Funktionsvielfalt entscheidet sich nach obigen Anforderungen,
+wobei die Zusatzanforderungen kleinere Bonuspunkte geben. Wer
+noch weitere Punkte umsetzt, an die wir nicht gedacht haben, erhält
+weitere Bonuspunkte.
+
+<div class="p"><!----></div>
+Unter Bedienung des Programms verstehen wir, wie intuitiv es sich
+bedienen lässt bzw. ob beispielsweise Hilfetexte ausgiebig Hilfe bieten. Ob
+man das Ganze als Konsolenprogramm oder als grafische Oberfläche
+umsetzt, ist jedem Teilnehmer selbst überlassen. In dieser Hinsicht
+haben wir keine Präferenz und werden Lösungen deswegen auch nicht
+ab- oder aufwerten.
+
+<div class="p"><!----></div>
+Das Aussehen der Cloud ist ein eher subjektiver Entscheidungsgrund,
+wir versuchen aber jede Entscheidung ausführlich und nachvollziehbar
+zu begründen. Eine Wortwolke, in der man nichts erkennt, die
+Begriffe nicht unterscheiden kann oder alles unstrukturiert wirkt,
+erhält entsprechend eine geringere Punktzahl. Dieser Punkt ist
+wahrscheinlich der aufwändigste im Wettbewerb. 
+<div class="p"><!----></div>
+
+<h2>Weitere Voraussetzungen</h2>
+
+
+Neben den obigen Anforderungen, die für die Bewertung wichtig sind,
+gibt es nur noch die Bedingungen, dass der eingereichte Quellcode
+selbst geschrieben wurde und unter einer freien Lizenz vorliegt.
+Wir helfen gerne dabei, die richtige Lizenz zu finden.
+
+<div class="p"><!----></div>
+Die verwendete Programmiersprache ist wie üblich jedem Teilnehmer
+freigestellt. Der Code sollte nur auf einem aktuellen Linuxsystem
+übersetzbar/ausführbar ist. Reine Binärdateien sind nicht zum
+Wettbewerb zugelassen. Wir erstellen alle Programme direkt aus dem
+Quellcode. Eine Anleitung und/oder Makefiles zum Übersetzen sind
+dann hilfreich. Wer ganz spezielle Voraussetzungen hat (zum Beispiel
+bestimmte Bibliotheken oder eine bestimmte Shell, die er nutzt), soll
+dies bitte deutlich sichtbar mit angeben.
+
+<div class="p"><!----></div>
+Der Wettbewerb läuft bis zum <b>15. April 2012</b>. Zu gewinnen gibt es
+wie immer Gutscheine von Amazon (oder einem anderen Anbieter, falls
+dies gewünscht wird und wir dort Kunde sind). Dem Sieger winkt ein
+Gutschein in Höhe von 30 Euro, dem Zweitplatzierten ein Gutschein
+in Höhe von 20 Euro und der Dritte erhält immerhin noch einen Gutschein
+im Wert von 10 Euro.
+
+<div class="p"><!----></div>
+Jeder Teilnehmer darf nur ein Programm ins Rennen schicken. Es ist
+aber natürlich möglich, bis zur Abgabefrist seinen
+Wortwolken-Generator mehrfach zu verbessern. Den Quellcode des
+Programms schickt man zur Teilnahme einfach an die Redaktion unter
+<img src="freiesMagazin-2012-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<div class="p"><!----></div>
+Wir hoffen, dass dieser kleine Wettbewerb viele Programmierer zum
+Mitmachen animiert. Die Aufgabe ist so gewählt, dass auch
+Programmieranfänger ein gutes Resultat in kurzer Zeit erzielen
+können. 
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/mitmachen#wettbewerb"><tt class="big">http://www.freiesmagazin.de/mitmachen#wettbewerb</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/20120301-fuenfter-programmierwettbewerb-gestartet"><tt class="big">http://www.freiesmagazin.de/20120301-fuenfter-programmierwettbewerb-gestartet</tt></a><br />
+[3] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Wortwolke"><tt class="big">https://secure.wikimedia.org/wikipedia/de/wiki/Wortwolke</tt></a><br />
+[4] <a href="http://www.freiesmagazin.de/wortwolke"><tt class="big">http://www.freiesmagazin.de/wortwolke</tt></a><br />
+    
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/267?edit[subject]=F%C3%BCnfter freiesMagazin-Programmierwettbewerb#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+
+
+        <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+                            
+<h1><font color="#595959"><a name="12_03_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+LUG IN - Backup </td><td>Ingolstadt </td><td align="left">05.03.2012 </td><td>frei </td><td align="left"><a href="http://www.lug-in.de/"><tt class="big">http://www.lug-in.de/</tt></a> </td></tr>
+<tr><td align="left">CeBIT </td><td>Hannover </td><td align="left">06.03.–10.03.2012 </td><td>39 EUR </td><td align="left"><a href="http://www.cebit.de/"><tt class="big">http://www.cebit.de/</tt></a> </td></tr>
+<tr><td align="left">DANTE 2012 </td><td>Leipzig </td><td align="left">07.03.–09.03.2012 </td><td>20 EUR, teilweise frei </td><td align="left"><a href="http://www.dante.de/events/dante2012.html"><tt class="big">http://www.dante.de/events/dante2012.html</tt></a> </td></tr>
+<tr><td align="left">Chemnitzer Linux-Tage </td><td>Chemnitz </td><td align="left">17.03.–18.03.2012 </td><td>8 EUR </td><td align="left"><a href="http://chemnitzer.linux-tage.de/"><tt class="big">http://chemnitzer.linux-tage.de/</tt></a> </td></tr>
+<tr><td align="left">LUG IN - Backup </td><td>Ingolstadt </td><td align="left">19.03.2012 </td><td>frei </td><td align="left"><a href="http://www.lug-in.de/"><tt class="big">http://www.lug-in.de/</tt></a> </td></tr>
+<tr><td align="left">Augsburger Linux-Infotag </td><td>Augsburg </td><td align="left">24.03.2012 </td><td>frei </td><td align="left"><a href="http://www.luga.de/"><tt class="big">http://www.luga.de/</tt></a> </td></tr>
+<tr><td align="left">BeGeistert 025 </td><td>Düsseldorf </td><td align="left">31.03.–02.04.2012 </td><td>35 EUR </td><td align="left"><a href="http://www.begeistert.org/"><tt class="big">http://www.begeistert.org/</tt></a> </td></tr>
+<tr><td align="left">Easterhegg </td><td>Basel </td><td align="left">06.04.–09.04.2012 </td><td>– </td><td align="left"><a href="http://www.easterhegg.eu/"><tt class="big">http://www.easterhegg.eu/</tt></a> </td></tr>
+<tr><td align="left">UnFUCK </td><td>Furtwangen </td><td align="left">27.04.–29.04.2012 </td><td>– </td><td align="left"><a href="http://unfuck.eu/"><tt class="big">http://unfuck.eu/</tt></a> </td></tr>
+<tr><td align="left">Ubucon 12 </td><td>Winterthur </td><td align="left">28.04.2012 </td><td>frei </td><td align="left"><a href="http://ubucon.ch/"><tt class="big">http://ubucon.ch/</tt></a> </td></tr>
+<tr><td align="left">Grazer Linuxtage </td><td>Graz </td><td align="left">28.04.2012 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at"><tt class="big">http://linuxwochen.at</tt></a> </td></tr>
+<tr><td align="left">SaarCamp </td><td>Saarbrücken </td><td align="left">05.05.–06.05.2012 </td><td>– </td><td align="left"><a href="http://saarcamp.mixxt.de/"><tt class="big">http://saarcamp.mixxt.de/</tt></a> </td></tr>
+<tr><td align="left">LUG Camp </td><td>Flensburg </td><td align="left">17.05.–20.05.2012 </td><td>– </td><td align="left"><a href="http://www.lug-camp-2012.de/"><tt class="big">http://www.lug-camp-2012.de/</tt></a> </td></tr>
+<tr><td align="left">LinuxTag </td><td>Berlin </td><td align="left">23.05.–26.05.2012 </td><td>20 EUR </td><td align="left"><a href="http://www.linuxtag.org/"><tt class="big">http://www.linuxtag.org/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2012-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+                                
+<h1><font color="#595959"><a name="12_02_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2012-03-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                    
+<h1><font color="#595959"><a name="12_03_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 4. März 2012<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><font size="+0"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2012-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Hans-Joachim Baader </td><td align="left"><a href="freiesMagazin-2012-03-bilder.html#12_03_32_bit_chroot_debian">32-Bit-Chroot-Umgebung unter Debian einrichten</a>  </td></tr>
+<tr><td align="left">Matthias Meißer </td><td align="left"><a href="freiesMagazin-2012-03-bilder.html#12_03_osm">OpenStreetMap – Eine virtuelle Welt gedeiht</a>  </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2012-03-bilder.html#12_03_kernel">Der Februar im Kernelrückblick</a>, <a href="freiesMagazin-2012-03-bilder.html#12_03_kernelbau">Selbstgebacken 2: Flickwerk</a>  </td></tr>
+<tr><td align="left">Patrick Meyhöfer </td><td align="left"><a href="freiesMagazin-2012-03-bilder.html#12_03_mypaint">MyPaint – Zeichenprogramm für kreative Künstler</a>  </td></tr>
+<tr><td align="left">Michael Niedermair </td><td align="left"><a href="freiesMagazin-2012-03-bilder.html#12_03_rezension_eclipse">Rezension: Einstieg in Eclipse 3.7</a>  </td></tr>
+<tr><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2012-03-bilder.html#12_03_oop1">Objektorientierte Programmierung: Teil 1 – OOP in der Praxis</a>, <a href="freiesMagazin-2012-03-bilder.html#12_03_rezension_head_first_design_patterns">Rezension: Head First Design Patterns</a>  </td></tr>
+<tr><td align="left">Werner Ziegelwanger </td><td align="left"><a href="freiesMagazin-2012-03-bilder.html#12_03_apache">Der Apache-Webserver</a>  </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<font size="+0"><b>Redaktion</b></td></tr>
+<tr><td align="left">Dominik Honnef </td><td align="left">Thorsten Schmidt </td></tr>
+<tr><td align="left">Matthias Sitte </td><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Satz und Layout</b></td></tr>
+<tr><td align="left">Andreas Breitbach </td><td align="left">Holger Dinkel </td></tr>
+<tr><td align="left">Dominik Frey </td><td align="left">Andrej Giesbrecht </td></tr>
+<tr><td align="left">Tobias Kempfer </td><td align="left">Nico Maikowski </td></tr>
+<tr><td align="left">Ralph Pavenstädt </td><td align="left"></td></tr>
+
+<tr><td align="left"><font size="+0"><b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left">Toni Zimmer </td></tr>
+<tr><td align="left">
+  </td></tr>
+<tr><td align="left"><font size="+0"><b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA 3.0 Unported</a>) </td></tr></font></font></font></font></font></font></font></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    
+
+
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  6 Apr 2012, 12:40.</small>
+</div>
+</body></html>

@@ -1,0 +1,3074 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                  
+<title>freiesMagazin 08/2014</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Red Hat Enterprise Linux 7 | Der Juli im Kernelrückblick | Administration von Debian & Co im Textmodus – Teil I | Spacewalk – Teil 1: Einführung, Übersicht und Installation | Kassensystem in C.U.O.N. | Rezension: C++: Das komplette Starterkit für den einfachen Einstieg | Rezension: 97 Things Every … Should Know | Rezension: Kids programmieren 3D-Spiele mit JavaScript | Editorial | Leserbriefe | Veranstaltungen | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 08/2014" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2014-08-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2014-08.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>August 2014</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Topthemen dieser Ausgabe</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rhel7">RHEL7</a></font> <br />
+    Seit über zehn Jahren bietet Red Hat unter dem Namen Red Hat Enterprise Linux (RHEL) eine auf den Unternehmensmarkt fokussierte Distribution an. Mit der Version 7 stellt der Hersteller ein weitgehend modernisiertes System vor. Im Artikel wird ein Blick auf das System geworfen und es einem Test in einem Produktivszenario unterzogen. (<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rhel7">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_debian_workshop_teil1">Administration von Debian &amp; Co im Textmodus – Teil I</a></font> <br />
+    Dieser dreiteilige Workshop richtet sich an alle, die sich auf die eine oder andere Weise mit Debian oder auf Debian basierenden Distributionen (z.&nbsp;B. Ubuntu oder Linux Mint) beschäftigen (wollen/müssen). Hierbei spielt es keine Rolle, ob es sich dabei um den heimischen Server oder Desktop, den gemieteten virtuellen Server für die Homepage oder die Rechner innerhalb der Firma handelt. (<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_debian_workshop_teil1">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_spacewalk_teil1">Spacewalk – Teil 1</a></font> <br />
+    System-Administratoren tragen häufig die Verantwortung über eine große Anzahl an Systemen. Zur Administration großer Systemlandschaften ist eine Management-Suite unabdingbar, um einheitliche Systemstati zu garantieren. Mit Spacewalk, Red Hat Satellite und SUSE Manager gibt es drei sehr ähnliche Programme, die jedoch unterschiedliche Einsatzzwecke haben. (<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_spacewalk_teil1">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+              
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_index" name="fm_index">Inhalt</a></font></h1><!-- CONTENT -->
+
+
+    <br /><b>Linux allgemein</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rhel7">Red Hat Enterprise Linux 7</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_kernel">Der Juli im Kernelrückblick</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Anleitungen</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_debian_workshop_teil1">Administration von Debian &amp; Co im Textmodus – Teil I</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_spacewalk_teil1">Spacewalk – Teil 1: Einführung, Übersicht und Installation</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Software</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_cuon">Kassensystem in C.U.O.N.</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Community</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rezension_cpp">Rezension: C++: Das komplette Starterkit für den einfachen Einstieg</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rezension_97_things">Rezension: 97 Things Every … Should Know</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rezension_kids_programmieren">Rezension: Kids programmieren 3D-Spiele mit JavaScript</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Magazin</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-08-bilder.html#fm_14_08_impressum">Impressum</a><br /><!-- CONTENT -->
+
+
+
+<div class="p"><!----></div><!-- CONTENT -->
+    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_editorial" name="fm_14_08_editorial">Editorial</a></font></h1>
+
+
+    
+<h2>Kernel-Oops</h2>
+
+
+Eine unschöne Überraschung erlebten die Entwickler des Linux Kernels Mitte
+Juli, nachdem auf der Mailing-Liste über das Fehlverhalten in einem
+sogenannten Load Balancer spekuliert wurde. Als Linux Torvalds selbst den
+Fehler zurückverfolgte, musste er feststellen, dass nicht der
+Kernel-Quellcode sondern der verwendete Compiler die eigentliche Wurzel des
+Übels war.
+
+<div class="p"><!----></div>
+Nach Analyse des vom Compiler erstellten Assembler-Codes kritisierte Torvalds
+die Veröffentlichung dieser in seinen Augen völlig unbrauchbaren
+Compiler-Version deutlich&nbsp;<a href="http://lkml.iu.edu/hypermail/linux/kernel/1407.3/00650.html">[1]</a>,
+half aber dennoch bei der Suche nach dem Bug in
+GCC&nbsp;<a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=61904">[2]</a>. Wie sich
+allerdings im Laufe der Zeit herausstellte, ist das Problem deutlich
+schwerwiegender, als zuerst angenommen. Ursache der Compiler-Schwierigkeiten
+ist eine <b><tt class="big">debug_insn</tt></b> genannte Funktion, die bereits in Version 4.5.0
+im April 2010 eingeführt wurde. Betroffen von diesem Bug sind anscheinend
+alle GCC-Versionen von 4.5.0 bis 4.8.3 sowie 4.9.0 und 4.9.1, was Torvalds
+und anderen Kernel-Entwicklern sicherlich Bauchschmerzen bereiten wird.
+
+<div class="p"><!----></div>
+Abgesehen davon geht die Kernel-Entwicklung wie gewohnt voran, so dass mit
+einer baldigen Veröffentlichung von Linux 3.16 zu rechnen ist. Mathias Menzer
+beschreibt in seinem monatlichen <a href="freiesMagazin-2014-08-bilder.html#fm_14_08_kernel">Kernelrückblick</a>
+Details zu den Neuerungen in Linux 3.16.
+
+<div class="p"><!----></div>
+
+<h2>Red Hat Enterprise Linux 7</h2>
+
+
+Vor gut sieben Wochen&nbsp;<a href="http://www.redhat.com/about/news/press-archive/2014/6/red-hat-unveils-rhel-7">[3]</a>
+veröffentlichte Red Hat die neueste Version seines Enterprise Linux, das durch
+Stabilität und Sicherheit insbesondere auf Unternehmen fokussiert ist.
+Mittlerweile sind mit Oracle Linux&nbsp;7&nbsp;<a href="https://blogs.oracle.com/linux/entry/oracle_linux_7_is_now">[4]</a>
+und CentOS&nbsp;7&nbsp;<a href="http://lists.centos.org/pipermail/centos-announce/2014-July/020393.html">[5]</a>
+bereits zwei sehr beliebte, kostenlose Nachbauten von RHEL&nbsp;7 entstanden,
+während das FermiLab, welches das ebenfalls auf RHEL basierende Scientific
+Linux&nbsp;<a href="https://www.scientificlinux.org/">[6]</a>
+herausgibt, noch am Nachfolger arbeitet.  Grund genug also, dass Mirko
+Lindner in seiem Artikel <a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rhel7">Red Hat Enterprise Linux 7</a>
+einen ersten Blick auf die neue Distribution wirft und gleich einem
+Produktivtest unterwirft.
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe!
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://lkml.iu.edu/hypermail/linux/kernel/1407.3/00650.html"><tt class="big">http://lkml.iu.edu/hypermail/linux/kernel/1407.3/00650.html</tt></a><br />
+[2] <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=61904"><tt class="big">https://gcc.gnu.org/bugzilla/show_bug.cgi?id=61904</tt></a><br />
+[3] <a href="http://www.redhat.com/about/news/press-archive/2014/6/red-hat-unveils-rhel-7"><tt class="big">http://www.redhat.com/about/news/press-archive/2014/6/red-hat-unveils-rhel-7</tt></a><br />
+[4] <a href="https://blogs.oracle.com/linux/entry/oracle_linux_7_is_now"><tt class="big">https://blogs.oracle.com/linux/entry/oracle_linux_7_is_now</tt></a><br />
+[5] <a href="http://lists.centos.org/pipermail/centos-announce/2014-July/020393.html"><tt class="big">http://lists.centos.org/pipermail/centos-announce/2014-July/020393.html</tt></a><br />
+[6] <a href="https://www.scientificlinux.org/"><tt class="big">https://www.scientificlinux.org/</tt></a><br />
+
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Editorial&amp;body=freiesMagazin 08/2014%0AEditorial%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Editorial#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_rhel7" name="fm_14_08_rhel7">Red Hat Enterprise Linux 7</a></font></h1>von Mirko Lindner
+
+<div class="p"><!----></div>
+    <b>S</b><b>eit über zehn Jahren bietet Red Hat unter dem Namen Red Hat Enterprise 
+Linux (RHEL) eine auf den Unternehmensmarkt fokussierte Distribution an. Mit 
+der Version 7 stellt der Hersteller ein weitgehend modernisiertes System 
+vor. Im Artikel wird ein Blick auf das System geworfen und es einem Test in 
+einem Produktivszenario unterzogen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Red Hat Enterprise Linux 7“ erschien erstmals bei 
+Pro-Linux&nbsp;<a href="http://www.pro-linux.de/artikel/2/1695/red-hat-enterprise-linux-7.html">[1]</a>.</i>
+
+<div class="p"><!----></div>
+
+<h2>Allgemeines</h2>
+
+
+Red Hat Enterprise Linux (RHEL) stellt das Flaggschiff des US-amerikanischen 
+Unternehmens Red Hat&nbsp;<a href="http://www.redhat.com/">[2]</a> dar und ist ein direkter 
+Nachfolger der ehemaligen Linux-Distribution Red Hat Linux (RHL). Als das 
+Unternehmen im September 2003 Red Hat Linux in Fedora transformierte, blieb 
+RHEL als einzige direkt von Red Hat vermarktete Linux-Distribution übrig. 
+Die Basis von RHEL stellt dabei auch heute noch das maßgeblich von Red Hat 
+unterstützte Fedora&nbsp;<a href="http://fedoraproject.org/de/">[3]</a> dar. In der neuesten 
+Version der Unternehmensdistribution ist es Fedora 19.
+
+<div class="p"><!----></div>
+RHEL selbst existiert in verschiedenen Varianten und bildet wiederum die 
+Basis anderer von Red Hat vertriebener 
+Produkte&nbsp;<a href="http://www.redhat.com/products/">[4]</a>. Das Geschäftsmodell des 
+Unternehmens besteht darin, dass jeder
+Kunde mit einem aktiven Abonnement 
+den Zugriff auf alle Versionen des von ihm gekauften Produktes hat. Kunden 
+mit RHEL-Subskription können dementsprechend entweder die neueste Version 
+des Produktes nutzen oder so lange bei der alten Version verbleiben, wie sie 
+durch den Distributor unterstützt wird. Kosten bei einem Umstieg auf die 
+neue Version entstehen den Nutzern dabei nicht.
+
+<div class="p"><!----></div>
+
+
+Unternehmen oder Anwender, die ein Abonnement besitzen, können die 
+gewünschten Produkte direkt im Kundenportal des Unternehmens herunterladen. 
+Im Falle von Red Hat Enterprise Linux 
+7&nbsp;<a href="http://www.redhat.com/about/news/press-archive/2014/6/red-hat-unveils-rhel-7">[5]</a> 
+stehen für die Anwender gleich vier verschiedene Medien bereit. 
+Während das knapp 400 MB große „KVM Guest Image“, wie der Name bereits 
+suggeriert, eine speziell an KVM gerichtete Variante darstellt, bietet das 
+300 MB umfassende „Boot ISO“ ein Minimalsystem, das zur Installation genutzt 
+werden kann. Weitere Pakete müssen dabei direkt von der Seite des 
+Herstellers heruntergeladen oder von der „RHEL 7.0 Binary DVD“ installiert 
+werden. Diese DVD kann ebenso
+zur Installation des Systems benutzt werden 
+und umfasst alle wichtigen
+Pakete. Zusätzliche Pakete, die teils von Red Hat 
+nicht offiziell unterstützt werden, finden sich auf der „RHEL 7.0 
+Supplementary DVD“.
+
+<div class="p"><!----></div>
+
+<h2>Allgemeines zu Installation und Update</h2>
+
+
+Die Installation des Systems kann direkt von einem DVD-Medium oder einem 
+Speicherstick erfolgen. Seit der Version 7 unterstützt der Hersteller die 
+32-Bit-Architektur nicht mehr direkt. Kunden, die weiterhin 32-Bit-Systeme 
+nutzen wollen,
+
+rät Red Hat deshalb, bei der Vorgängerversion 6 zu bleiben. 
+Dasselbe gilt auch für Anwender von Power6-Systemen. Die Ausführung von 
+32-Bit-Applikationen auf der x86_64-Plattform bleibt dagegen unberührt. So 
+lassen sich weiterhin auch 32-Bit-Anwendungen auf einem 64-Bit-System 
+starten. Entsprechende Kompatibilitätsbibliotheken sind
+Bestandteil der Distribution.
+
+<div class="p"><!----></div>
+Seit der Version 7 unterstützt RHEL offiziell ein Upgrade von einer 
+Vorgängerversion. Hierfür müssen Anwender allerdings diverse Kriterien 
+erfüllen. So garantiert der Hersteller ein sauberes
+Update lediglich bei der 
+64-Bit-Server-Version von RHEL 6. Aktualisierungen der Workstation- und 
+Desktop-Varianten werden nicht unterstützt. Zudem werden auch nicht alle 
+Paketgruppen angeboten. Anwender, die ihr System von RHEL 6 auf die neue 
+Version aktualisieren wollen, müssen außerdem ein freies Abonnement haben und 
+in der Lage sein, <b><tt class="big">rhel-x86_64-server-extras-6</tt></b> zu
+abonnieren.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_upgrade.png" alt="rhel7_upgrade.png" style="max-width:100%" /><br /><em>Grafische Ausgabe der Upgrade-Prozedur von RHEL 6 auf RHEL 7.</em><br />
+
+<div class="p"><!----></div>
+Für das Sammeln von Informationen stellt Red Hat ein eigens geschriebenes 
+Werkzeug unter dem Namen „preupgrade“ zur Verfügung. Das Werkzeug überprüft 
+das System und erstellt eine Liste von Anhängigkeiten bzw. 
+Unverträglichkeiten. Die Resultate werden entweder als Text, HTML-Datei oder 
+als Apache-Root ausgegeben. Potenzielle Probleme, die automatisch korrigiert 
+werden können, behebt das Programm automatisch. Zudem warnt preupgrade vor 
+möglichen Problemen nach einer Aktualisierung. Wurden beispielsweise Pakete 
+installiert, die nicht von Red Hat stammen, warnt das Werkzeug und schlägt 
+die weitere Vorgehensweise vor. Dasselbe gilt bei Optionen oder Parametern, 
+die das Programm identifiziert und die einer Änderung bedürfen.
+
+<div class="p"><!----></div>
+Sind alle Ungereimtheiten beseitigt, kann das eigentliche Werkzeug zur 
+Aktualisierung gestartet werden. „redhat-upgrade-tool“, so der Name der 
+Anwendung, aktualisiert das komplette System auf den Stand von RHEL 7. Als 
+Eingabe kann dabei eine lokale ISO-Datei, ein Verzeichnis, ein 
+Netzwerkverzeichnis oder ein physisches Laufwerk dienen.
+
+<div class="p"><!----></div>
+
+<h2>Neuinstallation</h2>
+
+
+War die Installation einer Linux-Distribution anfänglich etwas für 
+Spezialisten, so hat Linux diesbezüglich in den letzten Jahren neue 
+Standards gesetzt. Alle großen Linux-Distributionen haben viel 
+Entwicklungszeit in die Verbesserung des Installationsprozesses gesteckt, 
+sodass eine Neuinstallation kaum Probleme bereiten sollte. Fast alle 
+Anbieter konzentrieren sich mittlerweile auf die Pflege der Werkzeuge, so 
+auch Red Hat. So war es kaum verwunderlich, dass auch die neue Version keine 
+Probleme bei der Installation verursachte.
+
+<div class="p"><!----></div>
+Funktionell gesehen unterlag die Auswahl der möglichen Installationsmethoden 
+gegenüber der letzten Version 6 kaum Änderungen. Fast schon obligatorisch 
+änderte der Hersteller die Farbe des Boot-Screens. Im Gegensatz zu RHEL 6 
+setzt der Hersteller nicht mehr auf eine grafische Darstellung beim Start, 
+sondern auf eine rein textuelle. Von der Funktionalität her gesehen hat sich 
+dagegen nur wenig geändert. So bietet Red Hat immer noch eine automatische 
+Installation wahlweise in einer sicheren Umgebung, ein Rettungssystem oder 
+Speichertest zur Auswahl an. Sprache, Auflösung oder weitere Bootparameter 
+können dagegen nicht direkt bei der Auswahl ausgewählt, aber 
+in Form von Kernelparametern dem System übermittelt werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_textinstallation.png" alt="rhel7_textinstallation.png" style="max-width:100%" /><br /><em>RHEL 7: Textinstallation.</em><br />
+
+<div class="p"><!----></div>
+Bereits beim ersten Start fällt die veränderte Installation auf. Der 
+erzwungene Check der Medien ist entfallen. Auch die Überprüfung der 
+Systemvoraussetzungen fällt moderater aus, sodass beispielsweise die 
+grafische Installation auch auf
+
+Systemen mit wenig RAM gestartet werden 
+kann. Grundsätzlich hat der Hersteller eine nicht geringe Anzahl von 
+Hardware-Treibern aus dem Produkt entfernt. So fehlen beispielsweise über 80 
+Netzwerktreiber, die noch in der alten Version 6 enthalten waren. Doch auch 
+andere Treiber sind nicht mehr im Lieferumfang der Distribution. Anwender, 
+die einen Umstieg von einer alten Version auf die neue planen, sollten 
+deshalb zuerst eruieren, ob ihre Hardware auch unterstützt wird.
+
+<div class="p"><!----></div>
+Die grafische Installation unterlag gegenüber dem Vorgänger einer Vielzahl 
+von Änderungen. Während der Anwender sich in RHEL 6 durch zahlreiche 
+Bildschirme klicken musste, sind die
+Installationsoptionen in der neuen 
+Version an einer Stelle vereint. Der Nutzer hat so einen kompletten Überblick 
+über die Optionen und muss nicht ständig zwischen diversen Seiten 
+herumspringen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_installation.jpg" alt="rhel7_installation.jpg" style="max-width:100%" /><br /><em>Zusammenfassung der Installation.</em><br />
+
+<div class="p"><!----></div>
+Die automatische Vorauswahl der Optionen ist sinnvoll. So werden Sprache und 
+Zeitzone anhand der GeoIP vorausgewählt. Die Wahl der Software beschränkt 
+sich dagegen auf die Auswahl der Basis-Umgebung und die Festlegung von 
+größeren Paketgruppen. Wer
+bereits bei der Installation seine Pakete 
+auswählen möchte, dürfte enttäuscht sein, denn diese Funktionalität bietet 
+der Installer nicht mehr. War es noch bei der letzten Version der 
+Distribution möglich, die Pakete vor der eigentlichen Installation 
+auszuwählen, muss jetzt dieser Schritt danach erfolgen. Konkret bedeutet 
+das, dass man entweder ein minimales System – wie auch vorgeschlagen – 
+installiert und Pakete nachinstalliert, oder den umgekehrten Weg geht und 
+Pakete später entfernt. Warum Red Hat die dedizierte Auswahl an Paketen aus 
+der Installation entfernte, bleibt wohl ein Geheimnis des Herstellers.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_softwareauswahl.png" alt="rhel7_softwareauswahl.png" style="max-width:100%" /><br /><em>Auswahl der zu installierenden Paketgruppen.</em><br />
+
+<div class="p"><!----></div>
+Die Einrichtung der Partitionen wurde in der neuen Version der Distribution 
+ebenfalls massiv verändert. Als Standarddateisystem schlägt das Tool nicht 
+mehr Ext4, sondern XFS vor. Das von SGI stammende XFS ermöglicht unter 
+anderem eine Skalierung auf bis zu 500 TB Speicherplatz und stellt 
+zahlreiche Werkzeuge zur Analyse und Rettung von Daten bereit. Mit von der 
+Partie sind zudem Ext2, Ext3 und Ext4 sowie VFAT. Die 
+Dateisystemunterstützung von Ext2 und Ext3 wird allerdings nach Angaben des 
+Herstellers als veraltet angesehen und kann gegebenenfalls in den kommenden 
+Versionen entfernt werden. Btrfs liefert Red Hat lediglich in Form einer 
+Technologievorschau aus. Dementsprechend kann das Dateisystem zwar genutzt 
+und auch direkt im Installer ausgewählt werden, wird aber im Falle von 
+Problemen nicht vom Support abgedeckt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_partitionierung.png" alt="rhel7_partitionierung.png" style="max-width:100%" /><br /><em>Festlegung der Partitionen.</em><br />
+
+<div class="p"><!----></div>
+Der grafische Partitionierer wirkt durchdacht, lässt aber diverse Funktionen 
+vermissen. Wer eine
+
+
+fortgeschrittene Aufteilung seiner Festplatte wünscht, 
+wird dementsprechend mit dem Werkzeug nur bedingt glücklich werden und muss 
+zu anderen Programmen greifen. Dasselbe gilt für die Konfiguration des 
+Bootloaders, die wohl eher als marginal bezeichnet werden kann. Hier sollte 
+Red Hat endlich Abhilfe schaffen und das Werkzeug nicht nur aufpolieren, 
+sondern auch funktionell ergänzen. Denn schon die Werkzeuge der Version 6 
+wirkten keinesfalls komplett.
+
+<div class="p"><!----></div>
+Die eigentliche Installation bereitet kaum Probleme. Neu ist in der Version 
+7 die Möglichkeit, während der Installation des Systems, das Passwort von 
+„root“ zu setzen und neue Benutzer anzulegen. Nach dem ersten Start 
+präsentiert Red Hat neben den obligatorischen Lizenzbedingungen die 
+Möglichkeit, Kdump einzuschalten und das System beim Red Hat Network 
+anzumelden. Ohne eine Anmeldung ist das System zwar funktionsfähig, kann 
+aber weder aktualisiert noch um weitere Anwendungen aus offiziellen Quellen 
+aufgewertet werden. Die erstmalige Einrichtung wird durch firstboot 
+gewährleistet.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_login.jpg" alt="rhel7_login.jpg" style="max-width:100%" /><br /><em>Das Login-Fenster.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Das Grundsystem und der Start</h2>
+
+
+Der Start des mitgelieferten Kernels 3.10 gestaltet sich wenig spektakulär.
+Das Produkt verzichtet in der aktuellen Version komplett auf einen 
+Ladebalken. Erstmalig setzt Red Hat auch in der Enterprise-Version auf 
+GRUB2. Die neue Generation bietet gegenüber GRUB 0.96, der in RHEL 6 zum 
+Einsatz kam, eine Reihe von neuen Funktionen und Verbesserungen. Unter 
+anderem unterstützt der Bootloader neben BIOS auch zusätzliche 
+Firmwaretypen, einschließlich EFI und OpenFirmware, und neben Master Boot 
+Record (MBR) Partitionstabellen auch GUID Partitionstabellen (GPT).
+
+<div class="p"><!----></div>
+Die wohl größte Neuerung der Basisarchitektur von RHEL stellt der Schwenk 
+auf Systemd dar. Das neue System will zahlreiche Nachteile der alten Lösung 
+SysVInit beseitigen und ermöglicht unter anderem das Hochfahren des Systems 
+ohne Ausführung von Shell-Skripten. Bereits bei der Vorstellung des neuen 
+Systems versprach der Entwickler, dass die Nutzung von Systemd zu einem 
+stark parallelisierten und damit schnelleren Startvorgang führen wird, sowie 
+das Starten und 
+
+
+Stoppen von Diensten zuverlässiger vonstattengehen soll.
+
+<div class="p"><!----></div>
+Der Ersatz für das klassische Init-System wird maßgeblich von den beiden Red 
+Hat-Angestellten Lennart Poettering und Kay Sievers entwickelt. In der 
+eingesetzten Version 208 bietet es unter anderem eine Unterstützung für eine 
+zeitbasierte Logrotation und weitreichende Logging-Mechanismen.
+
+<div class="p"><!----></div>
+Ebenfalls neu in RHEL 7 ist die Möglichkeit, schnelle Blockgeräte als Cache 
+für langsamere Blockgeräte einzusetzen. So ermöglicht es die Funktion 
+beispielsweise ein PCIe SSD-Gerät, als Cache für Direct-Attached Storage 
+(DAS) oder
+Storage Area Network (SAN) Storage zu agieren, wodurch die 
+Dateisystemleistung erhöht werden kann. Die Funktionalität selbst wird allerdings 
+lediglich als Technologievorschau angeboten und wird dementsprechend auch noch nicht 
+offiziell von Red Hat unterstützt. Ebenfalls als Technologievorschau führt 
+Red Hat Enterprise Linux 7 LVM-Cache sowie die LVM-Programmierschnittstelle ein.
+
+<div class="p"><!----></div>
+
+<h2>Der Desktop</h2>
+
+
+Hat der Anwender zuvor die grafische Oberfläche als Standard eingestellt, erblickt 
+er beim ersten Start das Login-Fenster der Standardumgebung GNOME. Die 
+Umgebung wird in der Version 3.8.4 ausgeliefert. Wie bereits angekündigt, 
+nutzt 
+der Hersteller in der Standardeinstellung nicht die neue Shell, 
+sondern setzt GNOME 3 im Classic-Modus ein. Als Grund hatte Red Hat bereits in 
+der Vergangenheit die Gewohnheiten der Benutzer angegeben. Demnach haben 
+sich Kunden bereits an die alte Oberfläche gewöhnt und Red Hat will sie 
+nicht durch einen radikalen Schnitt, wie er in GNOME 3 stattfand, 
+verschrecken. Denise Dumas, Leiterin der Softwareentwicklung bei Red Hat, 
+sprach bei der initialen Ankündigung von dem Wunsch des Unternehmens, „die 
+bewährten Abläufe der Kunden in RHEL nicht stören zu wollen“. Wer allerdings dennoch
+die neue Variante einsetzen möchte, kann sie selbstredend einfach starten. 
+Einschränkungen hat der Anwender in diesem Fall nicht zu befürchten.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_gnome.jpg" alt="rhel7_gnome.jpg" style="max-width:100%" /><br /><em>GNOME in der Standardansicht …</em><br />
+
+<div class="p"><!----></div>
+Gänzlich ohne Umstellung kommen die Anwender allerdings auch in RHEL 7 nicht 
+aus. Neben der obligatorischen Änderung der grafischen Gestaltung änderte 
+sich, auch bedingt durch den Einsatz der neuen Umgebung, das 
+Login-Fenster, das nun auf den GNOME Display Manager setzt. Weitere Manager 
+werden von Red Hat nicht offiziell unterstützt und dementsprechend auch 
+nicht ausgeliefert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_gnome2.jpg" alt="rhel7_gnome2.jpg" style="max-width:100%" /><br /><em>… und in der ebenfalls verfügbaren, neuen Ansicht.</em><br />
+
+<div class="p"><!----></div>
+Zusätzlich zu GNOME liefert der Hersteller offiziell auch KDE aus. Die in 
+der Version 4.10 ausgelieferte Umgebung wurde ebenfalls angepasst und 
+vorkonfiguriert. Wie bei GNOME gibt es keine Punkte, die 
+beanstandet werden können. Die Umgebung ist sauber konfiguriert und für ein
+Serversystem mehr als funktionell eingerichtet.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/rhel7_kde.jpg" alt="rhel7_kde.jpg" style="max-width:100%" /><br /><em>KDE SC in der Version 4.10.</em><br />
+
+<div class="p"><!----></div>
+Wer das System in der deutschen Sprache installiert, bekommt ein weitgehend 
+lokalisiertes System vorgesetzt, bei dem das Unternehmen sogar das 
+Änderungslog übersetzt hat.
+
+<div class="p"><!----></div>
+
+<h2>Serversystem</h2>
+
+
+Der wohl gängigste Einsatzzweck der Distribution wird der Server sein – sei 
+es wegen des langen Supportzeitraumes oder des Fokus auf Stabilität. Fast 
+alle Server, die RHEL 7 mit sich bringt, sind entweder bereits vorkonfiguriert oder 
+werden mit einer prinzipiell funktionsfähigen Installation geliefert.
+
+<div class="p"><!----></div>
+Mit der Veröffentlichung von RHEL 7 kehrt auch Red Hat offiziell MySQL den 
+Rücken und nimmt stattdessen MariaDB 5.5.35 in die Distribution auf. Zudem kommt die 
+Distribution mit PostgreSQL 9.2.7 und dem Apache HTTP Server 2.4.6. Für eine 
+Windows-Anbindung des Systems sorgt Samba in der Version 4.1.1. Die neue Samba-Version
+kann unter anderem als Domänen-Controller, sowie als
+Active-Directory-Server fungieren. Sie enthält dazu einen LDAP-Server, ein 
+Kerberos Key Distribution Center (KDC) und die Möglichkeit, sich wie in 
+Samba 3 über CIFS anzumelden.
+
+<div class="p"><!----></div>
+Faktisch gesehen spielt es nun keine Rolle mehr, welche Art Server der 
+Kunde wünscht – das neue Produkt von Red Hat wird diesen Wunsch mit großer 
+Wahrscheinlichkeit erfüllen können. Was das bedeutet, hat Red Hats 
+Produktverantwortlicher Paul Cormier bei der Vorstellung der neuen 
+Distribution klar gemacht: RHEL 7 will auf alle Plattformen kommen. Es 
+spielt dabei keine Rolle, ob es sich dabei um einen Standardserver, eine 
+virtuelle Maschine, OpenStack-basierende Infrastructure-as-a-Service (IaaS) 
+oder Platform-as-a-Service (PaaS) handelt – Red Hat hat den Anspruch, mit 
+dem neuesten Produkt all diese Szenarien abdecken zu können.
+
+<div class="p"><!----></div>
+So bietet das neue Produkt vor allem in den neu ankommenden Feldern 
+zahlreiche Verbesserungen gegenüber dem Vorgänger.
+Die Virtualisierungsfunktionen wurden gegenüber 
+der letzten Version stark ausgebaut. Neben KVM unterstützt die Distribution 
+nun auch Xen und Hyper-V. So kann RHEL 7 beispielsweise als virtuelle Maschine 
+der zweiten Generation auf dem Microsoft Hyper-V Server 2012 R2 Host 
+verwendet werden. Zusätzlich zu den in der vorherigen Version unterstützten 
+Funktionen bietet Generation 2 neue Funktionen auf einer virtuellen 
+Maschine, zum Beispiel sicheres Booten, booten von einer SCSI virtuellen 
+Festplatte oder UEFI-Firmware-Unterstützung.
+
+<div class="p"><!----></div>
+Mit der Integration der Docker-Technologie stellt Red Hat in der neuen 
+Version der Distribution eine einfache Möglichkeit zur Erstellung, 
+Auslieferung, Portabilität und Isolation von Anwendungen in physischen, 
+virtuellen und Cloud- sowie in Entwicklungs-, Test- und 
+Produktionsumgebungen vor. Die eingesetzte Version trägt die Versionsnummer 
+0.11.
+
+<div class="p"><!----></div>
+Ein weiterer Schwerpunkt der Entwicklung des Systems lag laut Aussage des 
+Unternehmens auf der Verbesserung der Clustering-Möglichkeiten. So wurde 
+rgmanager durch Pacemaker ersetzt, was gleich mehrere Vorteile mit sich 
+bringt. Das Pacemaker Configuration System, oder kurz pcs, hat gleich 
+mehrere Tools verdrängt (ccs, ricci, luci) und dient als einheitliches 
+Werkzeug zur Cluster-Konfiguration und -Verwaltung. Zudem haben die 
+Entwickler den Lastverteiler Piranha durch keepalived und HAProxy ersetzt. 
+Das Lastverteilungs-Framework basiert auf einem Linux Virtual Server 
+Kernel-Modul, das Layer 4 Netzwerklastverteilung bereitstellt. Der 
+keepalived Daemon implementiert dagegen eine Reihe von Prüfungen für 
+lastverteilte Server-Gruppen abhängig von deren Status. HAProxy ist einen 
+Netzwerklastverteiler für TCP- und HTTP-basierte Anwendungen. 
+<div class="p"><!----></div>
+Für die Sicherheit des Servers sorgt neben zahlreichen Authentifizierungs- 
+und Interoperabilitätmechanismen auch der Einsatz von SELinux. So wird jedem 
+Anwender anhand der SELinux-Richtlinie ein SELinux-Benutzer zugewiesen. 
+Dadurch können Linux-Benutzer die Einschränkungen erben, die auf 
+SELinux-Benutzer angewendet werden. Standardmäßig wird jeder Benutzer dem 
+SELinux-Benutzer <b><tt class="big">unconfined_u</tt></b> zugeordnet. Zudem wurden die nss-Pakete auf 
+die Version 3.15.2 aktualisiert. Signaturen der Message-Digest Algorithmen 2 
+(MD2), MD4 und MD5 werden für Online Certificate Statusprotokoll (OCSP) oder 
+Zertifikatsperrlisten (Certificate Revocation Lists oder kurz CRLs) nicht 
+mehr akzeptiert.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Mit Red Hat Enterprise Linux 7 liefert der Hersteller eine grundsolide 
+Distribution aus, die aber bei Weitem nicht die funktionelle Vielfalt der 
+Gemeinschafts-Distribution Fedora aufweist. Dafür sind die in der 
+Distribution enthaltenen Programme schier unzerstörbar und die zum Einsatz 
+kommenden Konzepte stimmig.
+
+<div class="p"><!----></div>
+Das Unternehmen will laut eigener Aussage ein Produkt ausliefern, das 
+Unternehmenskunden ermöglicht, Linux professionell zu nutzen. Diesem 
+Anspruch wird Red Hat auch definitiv gerecht. Zu keinem Zeitpunkt des Tests 
+verhielt sich die Distribution irgendwie „falsch“ oder bereitete gar größere 
+Probleme. Alle getesteten Anwendungen waren stattdessen entweder bereits 
+vorkonfiguriert oder konnten mit nur geringen Anpassungen gestartet werden. 
+Auch hier gab es keine Beanstandungen.
+
+<div class="p"><!----></div>
+Die letzte Iteration des Systems 
+bringt nicht nur ein solides System mit sich, sondern erweitert das 
+umrissene Anwendungsszenario massiv. Förmlich an jeder Ecke merkt der 
+Anwender die Intention des Herstellers: ein schnörkelloses Server-System für 
+Server oder Data-Center, das sich jedem erdenklichen Einsatz fügt und mit 
+einem langen Supportzyklus aufwartet. Dass dabei nur wenig Platz für den 
+Heimanwender bleibt, versteht sich von selbst. Für ihn bietet das 
+Unternehmen andere Produkte an – sei es die Gemeinschafts-Distribution 
+Fedora oder die Unternehmens-Version CentOS&nbsp;<a href="http://www.centos.org/">[6]</a>. 
+RHEL 7 bleibt dagegen der zugeschriebenen Rolle einer grundsoliden, 
+universal einsetzbaren und flexiblen Unternehmens-Distribution treu.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.pro-linux.de/artikel/2/1695/red-hat-enterprise-linux-7.html"><tt class="big">http://www.pro-linux.de/artikel/2/1695/red-hat-enterprise-linux-7.html</tt></a><br />
+[2] <a href="http://www.redhat.com/"><tt class="big">http://www.redhat.com/</tt></a><br />
+[3] <a href="http://fedoraproject.org/de/"><tt class="big">http://fedoraproject.org/de/</tt></a><br />
+[4] <a href="http://www.redhat.com/products/"><tt class="big">http://www.redhat.com/products/</tt></a><br />
+[5] <a href="http://www.redhat.com/about/news/press-archive/2014/6/red-hat-unveils-rhel-7"><tt class="big">http://www.redhat.com/about/news/press-archive/2014/6/red-hat-unveils-rhel-7</tt></a><br />
+[6] <a href="http://www.centos.org/"><tt class="big">http://www.centos.org/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mikro Lindner</b>&nbsp;(<a href="http://www.pro-linux.de/">Webseite</a>)
+befasst sich seit 1990 mit Unix. Seit 1998 ist er aktiv in die Entwicklung 
+des Kernels eingebunden. Daneben ist er einer der Betreiber von Pro-Linux.de.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Red Hat Enterprise Linux 7&amp;body=freiesMagazin 08/2014%0ARed Hat Enterprise Linux 7%0AMirko Lindner%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Red Hat Enterprise Linux 7#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_kernel" name="fm_14_08_kernel">Der Juli im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 3.16</h2>
+
+
+Noch im Juni wurde die dritte Entwicklerversion
+veröffentlicht&nbsp;<a href="https://lkml.org/lkml/2014/6/29/126">[1]</a>, die in Bezug auf ihre
+Größe gut zu diesem Entwicklungszyklus passt. So blieb sie recht kompakt. An
+sichtbarsten waren dabei weitere Korrekturen für die VDSO-Infrastruktur sowie
+kosmetische Korrekturen an einem Treiber für Realtek-Audio-Chipsätze. Linux
+3.16-rc4&nbsp;<a href="https://lkml.org/lkml/2014/7/6/150">[2]</a> schrumpfte danach fast auf die
+Hälfte zusammen. Unter den nicht ganz 200 Änderungen finden sich einige
+Korrekturen für System-on-Chip-Prozessoren auf ARM-Basis und ein weiterer Satz
+an Fehlerbereinigungen für das Dateisystem btrfs. Das meiste entfiel jedoch auf
+kleinere Bugfixes und Verbesserungen im Bereich der Treiber.
+
+<div class="p"><!----></div>
+Ein wenig umfangreicher fielen die
+fünfte&nbsp;<a href="https://lkml.org/lkml/2014/7/13/187">[3]</a> und
+sechste&nbsp;<a href="https://lkml.org/lkml/2014/7/21/6">[4]</a> Entwicklerversion aus, wobei
+erstere fast ausschließlich mit kleinen Korrekturen besetzt war, aus denen
+Anpassungen in der Dokumentation und Änderungen an der
+Energieverwaltungsschnittstelle ACPI ein wenig herausstachen. Verbesserungen am freien
+Grafiktreiber Radeon konnte dann -rc6 aufweisen, die zusammen mit Korrekturen und
+Aufräumarbeiten am Netzwerk-Dateisystem NFS ein wenig dazu beitrugen, dass diese
+Version nochmals etwas größer ausfiel. Dennoch finden sich keine Änderungen, die
+Torvalds Grund zur Besorgnis geben würden, auch wenn er in der Freigabe-Mail
+deutlich machte, dass er sich nun eine Beruhigung der Entwicklung wünsche.
+
+<div class="p"><!----></div>
+Als wäre er erhört worden, fiel mit Linux
+3.16-rc7&nbsp;<a href="https://lkml.org/lkml/2014/7/27/111">[5]</a> die Zahl der Änderungen wieder
+unter die 200er Marke. Auch hier liegt das Gros der Änderungen in kleinen
+Korrekturen, die zumeist nur wenige Quelltextzeilen umfassen. Eine der
+Änderungen, die etwas hervorstechen, ist ein Satz an Korrekturen für die
+xtensa-Architektur&nbsp;<a href="http://ip.cadence.com/ipportfolio/tensilica-ip/xtensa-customizable">[6]</a>,
+die Prozessorkerne für Signalverarbeitung ermöglicht, welche vom
+Hersteller mittels eines flexiblen Befehlssatzes sehr einfach auf den
+Einsatzzweck zugeschnitten werden können. Nutzer dieser Prozessoren ist
+beispielsweise AMD, die diese Architektur für
+TrueAudio&nbsp;<a href="http://www.amd.com/de-de/innovations/software-technologies/trueaudio">[7]</a>
+lizenziert hat.
+
+<div class="p"><!----></div>
+Sollte Torvalds Wunsch erfüllt werden, so wird demnächst Linux 3.16 als neue
+stabile Version freigegeben. Die Debian-Entwickler dürfte eine Woche hin oder
+her nicht sonderlich stören, obwohl sie sich gerade auf 3.16 als Kernel für
+Debian Jessie geeinigt haben&nbsp;<a href="http://www.pro-linux.de/-0h215354">[8]</a>. Der
+Funktionsumfang der derzeit in der Entwicklung befindlichen kommenden
+Debian-Version soll im November dieses Jahres eingefroren werden, bis dahin ist für die
+Kernel-Entwickler also noch genügend Zeit. Interessanterweise setzt Debian hier
+nicht auf die von Greg Kroah-Hartmann gepflegte Langzeitversion Linux 3.14.
+Eventuell springt hier wieder der Debian-Kernel-Maintainer Ben Hutchings in die
+Bresche, der bereits den in Debian Wheezy genutzten Kernel 3.2 als
+Langzeit-Version betreut.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://lkml.org/lkml/2014/6/29/126"><tt class="big">https://lkml.org/lkml/2014/6/29/126</tt></a><br />
+[2] <a href="https://lkml.org/lkml/2014/7/6/150"><tt class="big">https://lkml.org/lkml/2014/7/6/150</tt></a><br />
+[3] <a href="https://lkml.org/lkml/2014/7/13/187"><tt class="big">https://lkml.org/lkml/2014/7/13/187</tt></a><br />
+[4] <a href="https://lkml.org/lkml/2014/7/21/6"><tt class="big">https://lkml.org/lkml/2014/7/21/6</tt></a><br />
+[5] <a href="https://lkml.org/lkml/2014/7/27/111"><tt class="big">https://lkml.org/lkml/2014/7/27/111</tt></a><br />
+[6] <a href="http://ip.cadence.com/ipportfolio/tensilica-ip/xtensa-customizable"><tt class="big">http://ip.cadence.com/ipportfolio/tensilica-ip/xtensa-customizable</tt></a><br />
+[7] <a href="http://www.amd.com/de-de/innovations/software-technologies/trueaudio"><tt class="big">http://www.amd.com/de-de/innovations/software-technologies/trueaudio</tt></a><br />
+[8] <a href="http://www.pro-linux.de/-0h215354"><tt class="big">http://www.pro-linux.de/-0h215354</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem Laufenden zu bleiben und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Der Juli im Kernelr%C3%BCckblick&amp;body=freiesMagazin 08/2014%0ADer Juli im Kernelr%C3%BCckblick%0AMathias Menzer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Der Juli im Kernelr%C3%BCckblick#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_debian_workshop_teil1" name="fm_14_08_debian_workshop_teil1">Administration von Debian &amp; Co im Textmodus – Teil I</a></font></h1>von Hauke Goos-Habermann und Maren Hachmann
+
+<div class="p"><!----></div>
+    <b>D</b><b>ieser dreiteilige Workshop richtet sich an alle, die sich auf die eine
+oder andere Weise mit Debian&nbsp;<a href="https://www.debian.org/">[1]</a> oder auf Debian
+basierenden Distributionen (z.&nbsp;B. Ubuntu&nbsp;<a href="http://www.ubuntu.com/">[2]</a> oder Linux
+Mint&nbsp;<a href="http://linuxmint.com/">[3]</a>) beschäftigen (wollen/müssen). Hierbei
+spielt es keine Rolle, ob es sich dabei um den heimischen Server oder
+Desktop, den gemieteten virtuellen Server für die Homepage oder die
+Rechner innerhalb der Firma handelt.</b>
+
+<div class="p"><!----></div>
+Inhalt des Workshops ist die Administration mittels der
+Kommandozeilenwerkzeuge: Diese bieten – neben dem Gewinnen eines
+tieferen Einblicks in die Distribution – den Vorteil, im Falle eines
+Falles auch ohne eine grafische Oberfläche das System administrieren
+und ggf. Systemfehler beheben zu können. Und natürlich gehören
+(zumindest grundlegende) Kenntnisse über die
+Administrationsmöglichkeiten auf der Kommandozeile zu den
+Basisfertigkeiten eines jeden Administrators.
+
+<div class="p"><!----></div>
+Teil I des Workshops widmet sich den Workshop-Vorbereitungen, dem
+Benutzer „root“, dem Erlangen von grundlegenden Informationen über das
+System, Pfadangaben unter Linux, zeitsparenden Tipps, grundlegenden
+Dateioperationen, den Zugriffsrechten, der Suche nach Dateien und
+Textinhalten und dem Finden von Hilfestellungen.
+
+<div class="p"><!----></div>
+In den Teilen II und III wird es unter anderem um die Konfiguration des
+Netzwerkes und die Softwareverwaltung gehen sowie darum, Fehler zu
+identifizieren und zu beheben. Natürlich werden auch die
+allseits „beliebten“ Praxisfälle „Kaputten Bootmanager reparieren“ und
+der Klassiker „Passwort vergessen“ nicht fehlen.
+
+<div class="p"><!----></div>
+Es ist empfehlenswert, möglichst viele der hier aufgeführten Kommandos
+selbst auszuprobieren, auch wenn im Verlauf des Workshops nicht
+ausdrücklich dazu aufgefordert wird. Denn hier gilt wie (fast)
+überall sonst auch: Durch das tatsächliche Ausführen bleibt das
+Gelernte am besten hängen. Die Probleme, die beim Ausprobieren
+auftreten und die entsprechenden Problemlösungsstrategien lassen sich
+so am einfachsten finden und erproben. Auf dem virtuellen
+Workshop-Computer kann nämlich – im Gegensatz zum Server „im echten
+Leben“ – nichts kaputt gehen, was durch ein erneutes Importieren der
+virtuellen Maschine nicht wiederherzustellen wäre.
+
+<div class="p"><!----></div>
+
+<h2>Workshopvorbereitungen</h2>
+
+
+
+<h3>Was braucht man alles?</h3>
+
+
+Wer möglichst viel vom Inhalt dieses Workshops für sich „mitnehmen“
+möchte, sollte zum aktiven Mitmachen und Ausprobieren Folgendes
+bereitstellen:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> ein PC/Notebook mit installierter
+  VirtualBox&nbsp;<a href="https://www.virtualbox.org/">[4]</a>-Software (ab Version 4.3.4),</li>
+<li> die Debian-Admin-Workshop-Appliance&nbsp;<a href="http://sf.net/projects/dodger-tools/files/vms/Debian-WS2.ova/download">[5]</a>
+  (488 MB),</li>
+<li> eine aktuelle ISO-Datei der Live-Linux-Distribution
+  Knoppix&nbsp;<a href="http://www.knopper.net/knoppix-mirrors/">[6]</a> (ca. 700 MB),</li>
+<li> ein funktionierendes Netzwerk mit Internetanbindung,</li>
+<li> diesen Artikel.</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Was ist die Debian-Admin-Workshop-Appliance?</h3>
+
+
+Für den Workshop wurden zwei virtuelle Maschinen
+(VMs&nbsp;<a href="http://de.wikipedia.org/wiki/Virtuelle_Maschine">[7]</a>) erstellt und in
+ein Installationspaket verpackt. Dieses Installationspaket – auch
+Appliance genannt – kann nun auf anderen Rechnern in eine
+Virtualisierungssoftware importiert werden, um die beiden VMs zu
+erhalten.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/debian_workshop_appliance.png" alt="debian_workshop_appliance.png" style="max-width:100%" /><br /><em>Vereinfachtes Netzwerkschema der virtuellen Maschinen.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Die beiden VMs</h3>
+
+
+Bei den beiden VMs handelt es sich um ein mit m23&nbsp;<a href="http://m23.sf.net">[8]</a>
+aufgesetztes Debian Wheezy, auf dem die Schritte des Workshops
+ausprobiert werden können und eine VM mit der Firewalldistribution
+IPCop&nbsp;<a href="http://www.ipcop.org">[9]</a>, die als virtueller Router genutzt wird.
+Letztere muss während des Übens zwecks Internetverbindung
+eingeschaltet sein, braucht jedoch nicht verändert zu werden.
+
+<div class="p"><!----></div>
+
+<h3>Import</h3>
+
+
+Das Installationspaket lässt sich z.&nbsp;B. unter
+VirtualBox&nbsp;<a href="http://www.virtualbox.org">[10]</a> importieren. Hierzu lädt man
+VirtualBox für das eigene Betriebssystem herunter und installiert es
+wie auf der VirtualBox-Seite angegeben. Danach startet man VirtualBox
+und importiert die Appliance wie folgt:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Im Dialog-Fenster unter „<em>Datei&nbsp;-&#62;&nbsp;Appliance importieren…</em>“ auf den
+  Button „<em>Appliance öffnen…</em>“ klicken, dann die heruntergeladene Datei
+  <b><tt class="big">Debian-WS.ova</tt></b> auswählen und mit „<em>Weiter</em>“ bestätigen.</li>
+<li> Wichtig: Das „<em>Zuweisen neuer MAC-Adressen für alle Netzwerkkarten</em>“
+  bleibt deaktiviert.</li>
+<li> Nach einem Klick auf „<em>Importieren</em>“ muss man etwas warten …</li>
+<li> Die beiden virtuellen Maschinen („Debian-Admin-Workshop“ und „IPCop“)
+  können dann gestartet werden, wobei man bei der
+  „Debian-Admin-Workshop“-VM etwas warten muss, da diese absichtlich
+  keine Netzwerkverbindung aufnehmen kann.</li>
+<li> Nutzername und Passwort für die „Debian-Admin-Workshop“-VM lauten
+  <b><tt class="big">test</tt></b> und <b><tt class="big">test</tt></b> bzw. <b><tt class="big">root</tt></b> und <b><tt class="big">test</tt></b>.</li>
+<li> Der Vollständigkeit halber sei erwähnt, dass Nutzername und Passwort
+  für die „IPCop“-VM <b><tt class="big">root</tt></b>&nbsp;/&nbsp;<b><tt class="big">testtest</tt></b> lauten; dies wird aber nicht
+  benötigt.</li>
+<li> Die Weboberfläche von IPCop ist zudem über HTTPS auf dem Port 8443
+  (<b><tt class="big">https://192.168.1.4:8443</tt></b>)  mit dem Nutzer <b><tt class="big">admin</tt></b> und Passwort
+  <b><tt class="big">testtest</tt></b> zu erreichen – dies allerdings nur innerhalb des
+  abgetrennten Subnetzwerkes und nicht direkt vom Gastgeber-Rechner
+  aus.</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h2>Grundlagen</h2>
+
+
+Nach einem Login als normaler Benutzer auf der
+Debian-Admin-Workshop-VM (<b><tt class="big">test</tt></b>&nbsp;/&nbsp;<b><tt class="big">test</tt></b> – für den Ernstfall sind
+natürlich sichere Passwörter empfehlenswert) kann es losgehen.
+
+<div class="p"><!----></div>
+
+<h3>root werden</h3>
+
+
+Die meisten kennen den Spruch „Ich bin root, ich darf das!“ – Aber wie
+wird man root, also der Administrator des Systems, der alles verändern
+darf? Unter Debian hilft, wenn man bereits als „normaler Benutzer“
+eingeloggt ist, das Kommando
+
+<div class="p"><!----></div>
+
+<div class="command">$ su</div>
+
+<div class="p"><!----></div>
+
+
+bzw. unter Ubuntu und dessen Derivaten
+
+<div class="p"><!----></div>
+
+<div class="command">$ sudo bash</div>
+
+<div class="p"><!----></div>
+
+
+und die Eingabe des Administrator-Passwortes (bzw. des
+Nutzer-Passwortes bei Ubuntu und dessen Derivaten).
+
+<div class="p"><!----></div>
+Root-Rechte werden bei der Administration für alle Tätigkeiten
+benötigt, die in das System eingreifen und bei falscher Anwendung auch
+das System unbrauchbar machen können. Insbesondere die Installation
+neuer Software und das Bearbeiten systemrelevanter Dateien (z.&nbsp;B. das
+Netzwerk oder den Bootmanager betreffend) durch Unbefugte werden so
+verhindert. Zum Ausloggen verwendet man den Befehl
+
+<div class="p"><!----></div>
+
+<div class="command"># exit</div>
+
+<div class="p"><!----></div>
+
+
+oder man nutzt die Tastenkombination „<i>Strg</i>“&nbsp;+&nbsp;„<i>D</i>“.
+
+<div class="p"><!----></div>
+Im Folgenden gibt das Zeichen vor einer Befehlsangabe (Prompt genannt)
+an, ob der Befehl mit normalen Benutzerrechten (<b><tt class="big">$</tt></b>) oder mit
+Root-Rechten (<b><tt class="big">#</tt></b>) eingegeben werden muss.
+
+<div class="p"><!----></div>
+
+
+
+
+
+
+
+<h3>Aktuelle Distribution und Rechnerarchitektur</h3>
+
+
+Grundlegende Informationen zum Rechner (Architektur, etc.) bietet die
+Ausgabe von
+
+<div class="p"><!----></div>
+
+<div class="command">$ uname -a</div>
+
+<div class="p"><!----></div>
+
+
+Die Bezeichnung der Distribution lässt sich durch ein einfaches
+
+<div class="p"><!----></div>
+
+<div class="command">$ cat /etc/issue</div>
+
+<div class="p"><!----></div>
+
+
+ermitteln.
+
+<div class="p"><!----></div>
+Zur Erklärung: <b><tt class="big">uname</tt></b>&nbsp;<a href="http://de.wikipedia.org/wiki/Uname">[11]</a> gibt
+Informationen über den Namen, die Architektur, den Kernel und den
+Prozessor des Systems aus. Der Parameter <b><tt class="big">-a</tt></b> oder <b><tt class="big">--all</tt></b> sagt
+uname, dass es alle Informationen ausgeben soll.
+<b><tt class="big">cat</tt></b>&nbsp;<a href="http://de.wikipedia.org/wiki/Cat_%28Unix%29">[12]</a> ist ein
+Unix-Werkzeug, dass Inhalte von Dateien einliest und auf die
+Standardausgabe (in diesem Fall das Terminal) ausgibt. In der Datei
+<b><tt class="big">/etc/issue</tt></b> ist der Name der Distribution angegeben.
+
+<div class="p"><!----></div>
+
+<h3>Pfadangaben</h3>
+
+
+Linux kennt zwei verschiedene Arten von Pfadangaben, die zu einer Datei
+oder einem Verzeichnis führen:
+
+<div class="p"><!----></div>
+Die absolute Pfadangabe, bei der alle Überverzeichnisse, getrennt durch
+einen Schrägstrich, angegeben werden und die mit einem Schrägstrich
+(dem Wurzelverzeichnis) beginnt: <b><tt class="big">/etc/apt/sources.list</tt></b>.
+
+<div class="p"><!----></div>
+Die relative Pfadangabe:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> die Datei eine Ebene über dem aktuellen Verzeichnis:
+
+<div class="p"><!----></div>
+
+<div class="command">$ ../datei.txt</div></li>
+<li> die Datei eine Ebene unter dem aktuellen Verzeichnis:
+
+<div class="p"><!----></div>
+
+<div class="command">$ unterverzeichnis/datei.txt</div></li>
+<li> Ausführen einer Datei im aktuellen Verzeichnis:
+
+<div class="p"><!----></div>
+
+<div class="command">$ ./mein-Shell-Skript.sh</div></li>
+<li> Verwenden einer Datei im aktuellen Verzeichnis (mit einem Programm):
+
+<div class="p"><!----></div>
+
+<div class="command">$ programmname datei.txt</div></li>
+<li> Datei im Heimatverzeichnis (<b><tt class="big">/home/Nutzername</tt></b> bzw. <b><tt class="big">~</tt></b>) des aktuellen Benutzers:
+
+<div class="p"><!----></div>
+
+<div class="command">$ ~/datei.txt</div>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Die Arbeit beschleunigen</h3>
+
+
+Auch wenn es in Filmen „cool“ aussieht, wenn „Hacker“ wüst auf ihre
+Tastatur einhacken, sollte man unnötige Schreibarbeit vermeiden, da
+Tippen fehleranfällig ist und die
+Bash&nbsp;<a href="http://de.wikipedia.org/wiki/Bourne-again_shell">[13]</a> (die
+Standard-Unix-Kommandozeile unter Debian) einem viel Arbeit abnehmen
+kann.
+
+<div class="p"><!----></div>
+Ein paar Tipps zum Vermeiden des „Tippens“:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Mit den Tasten „<i>Pfeil hoch</i>“ und „<i>Pfeil runter</i>“ kann man durch die
+  bereits eingegebenen Befehlszeilen blättern.</li>
+<li> Die Tasten „<i>Pfeil links</i>“ und „<i>Pfeil rechts</i>“ bewegen den Cursor in
+  der aktuellen Zeile.</li>
+<li> „<i>Strg</i>“&nbsp;+&nbsp;„<i>R</i>“ startet die Suche in bereits eingegebenen
+  Kommandozeilen. Danach gibt man einen Suchbegriff ein, worauf die
+  erste passende Zeile als Vorschlag angezeigt wird. Gibt es mehrere
+  auf den Suchbegriff passende Zeilen, so zaubert weiteres Drücken von
+  „<i>Strg</i>“&nbsp;+&nbsp;„<i>R</i>“ die jeweils nächste Zeile auf den Bildschirm. Möchte man
+  den Vorschlag annehmen, so drückt man abschließend „<i>Enter</i>“, wodurch
+  der gefundene Befehl auch gleich ausgeführt wird.</li>
+<li> Wenn es um Befehle (und ggf. deren Parameter), Dateien und
+  Verzeichnisse geht, reicht es, die (eindeutigen) Anfangsbuchstaben
+  einzugeben und anschließend die Tabulator-Taste zu drücken. Gibt es
+  nur einen Befehl (Datei etc.), der mit den Buchstaben beginnt, so
+  erscheint der auf der Kommandozeile. Sollte das nicht der Fall
+  sein, so hilft ein weiterer Druck auf „<i>Tab</i>“, um alle passenden
+  Befehle aufzulisten. Anschließend hilft die Erweiterung der bereits
+  eingegebenen Buchstaben um weitere, damit der Befehl eindeutig
+  gefunden werden kann. Sind genug eindeutige Buchstaben eingegeben, so
+  vervollständigt „<i>Tab</i>“ abschließend.</li>
+<li> Das Paket <b>gpm</b> erweitert die tastaturbasierte Kommandozeile um
+  einen Mauszeiger. Durch Klicken und Ziehen des Zeigers können
+  Textbereiche markiert und durch Klicken der mittleren Maustaste (bzw.
+  durch gleichzeitiges Drücken von linker und rechter Maustaste) der
+  Text an der Position des Textcursors wieder eingefügt werden (eine
+  Installation auf der Workshop-VM ist allerdings erst möglich, wenn
+  das Netzwerk repariert wurde!).</li>
+<li> Bei langen Ausgaben kann es sein, dass man den Anfang der Ausgabe
+  nicht mehr auf dem Bildschirm sehen kann. Wenn man im reinen
+  Textmodus ohne Scrollleiste arbeitet, kann man mit „<i>Shift</i>“&nbsp;+&nbsp;„<i>Bild auf</i>“
+  bzw. „<i>Shift</i>“&nbsp;+&nbsp;„<i>Bild ab</i>“ durch die Ausgabe scrollen.</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h3>Praktische Helfer</h3>
+
+
+Der Zweispaltendateimanager Midnight
+Commander&nbsp;<a href="http://de.wikipedia.org/wiki/Midnight_Commander">[14]</a> ist ein
+praktisches Werkzeug für viele Dateioperationen, den man mit dem Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ mc</div>
+
+<div class="p"><!----></div>
+
+
+aufruft. Um nicht versehentlich wichtige Dateien zu verändern oder zu
+löschen, sollte man dies nur als normaler Benutzer machen. Midnight
+Commander ist auf der Workshop-VM übrigens noch nicht installiert – so
+ist man gezwungen, Dateioperationen zunächst nur mit der Kommandozeile
+durchzuführen.
+
+<div class="p"><!----></div>
+Wer vi&nbsp;<a href="http://de.wikipedia.org/wiki/Vi">[15]</a>,
+vim&nbsp;<a href="http://de.wikipedia.org/wiki/Vim">[16]</a> und Konsorten mag und damit
+umzugehen weiß, wird mit dem weniger kryptischen – aber auch weniger
+mächtigen – Texteditor
+<b><tt class="big">nano</tt></b>&nbsp;<a href="http://de.wikipedia.org/wiki/Nano_%28Texteditor%29">[17]</a> wenig
+anfangen können. Wer es aber lieber einfach mag, findet in diesem einen
+gut zu bedienenden Editor für alle Textdateien. 
+<div class="p"><!----></div>
+
+<div class="command">$ nano Dateiname.Erweiterung</div>
+
+<div class="p"><!----></div>
+
+
+Dabei wird die Textdatei, wenn sie schon existiert, zum Bearbeiten
+geöffnet, ansonsten wird sie neu angelegt. Dies sollte man jetzt
+unbedingt ausprobieren, da die neue Datei im nächsten Abschnitt zum
+kopieren, verschieben und löschen benötigt wird. Das kleine <b><tt class="big">^</tt></b> bei der
+Übersicht über die Tastaturkürzel (unten in nano) steht für die
+„<i>Strg</i>“-Taste.
+
+<div class="p"><!----></div>
+
+<h3>Kopieren, verschieben, löschen</h3>
+
+
+Wem mc zu komfortabel sein sollte oder wenn mc (wie auf der
+Workshop-VM) nicht zur Verfügung steht, gibt es natürlich
+Kommandozeilenwerkzeuge für alle Dateioperationen:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Verzeichnis(se) anlegen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ mkdir &lt;Verzeichnis1&#62; &lt;Verzeichnis2&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Datei(en) kopieren:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cp &lt;Datei1&#62; &lt;Datei2&#62; &lt;Verzeichnis&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Datei kopieren und umbenennen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cp &lt;Datei&#62; &lt;Datei neuer Name&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Datei mit neuem Namen kopieren:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cp &lt;Datei&#62; &lt;Pfad/Datei neuer Name&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Verzeichnis(se) kopieren:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cp -r &lt;Verzeichnis1&#62; &lt;Verzeichnis2&#62; &lt;Zielverzeichnis&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+
+
+<ul>
+<li> Datei(en) verschieben:
+
+<div class="p"><!----></div>
+
+<div class="command">$ mv &lt;Datei1&#62; &lt;Datei2&#62; &lt;Verzeichnis&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Datei umbenennen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ mv &lt;Datei&#62; &lt;Datei neuer Name&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Datei(en) löschen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ rm &lt;Datei1&#62; &lt;Datei2&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Leere(s) Verzeichis(se) löschen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ rmdir &lt;Verzeichnis1&#62; &lt;Verzeichnis2&#62;</div></li>
+<li> Verzeichis(se) mit Unterverzeichnissen und Dateien löschen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ rm -r &lt;Verzeichnis1&#62; &lt;Verzeichnis2&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Sollen beim Kopieren die Zugriffsrechte mitkopiert werden, so bewirkt
+dies der Parameter <b><tt class="big">-a</tt></b>.
+
+<div class="p"><!----></div>
+
+<h3>Zugriffsrechte</h3>
+
+
+Unter Linux besitzen jede Datei und jedes Verzeichnis Zugriffsrechte,
+die regeln, wer, wie und ob überhaupt zugreifen darf. Mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ ls -l</div>
+
+<div class="p"><!----></div>
+
+
+kann man sich die ausführliche Liste der Dateien und Verzeichnisse im
+aktuellen Verzeichnis (inklusive Zugriffsrechten) ausgeben lassen.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">1 lrwxrwxrwx 1 peter gruppea 13 4. Apr 2012 todo.txt -&#62; /backup/todo.txt<br />
+2 -rw-r--r-- 1 paul gruppeb 65536 1. Jan 2012 Paul-schreibt-andere-lesen.txt<br />
+3 -rw-rw-r-- 1 peter gemeinsamegruppe 128 18. Aug 2013 Gruppentext.txt<br />
+4 -rw------- 1 paul paul 7889 21. Jul 23:26 Pauls-geheime-Gedanken.txt<br />
+5 drwxr-xr-x 2 paul paul 4096 23. Jul 2012 Paul-schreibt-andere-lesen</div>
+
+<div class="p"><!----></div>
+
+
+Das Schema der Ausgabe ist folgendes:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;Typ&#62;&lt;BBB&#62;&lt;GGG&#62;&lt;AAA&#62; &lt;H&#62; &lt;Benutzer&#62; &lt;Gruppe&#62; &lt;Größe&#62; &lt;Änderungszeit&#62; &lt;Datei-/Verzeichnisname&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Der Typbezeichnung, bei der <b><tt class="big">-</tt></b> für eine Datei, <b><tt class="big">d</tt></b> für ein
+Verzeichnis und <b><tt class="big">l</tt></b> für einen symbolischen Link steht, folgen 3 Blöcke
+mit je 3 Zeichen. Dabei steht der erste Block für die Rechte des Besitzers,
+der zweite für die Rechte der Gruppe und der letzte für alle anderen
+Benutzer. <b><tt class="big">r</tt></b> steht für das Leserecht, <b><tt class="big">w</tt></b> für das
+Schreib-/Änderungsrecht und <b><tt class="big">x</tt></b> für das Ausführungsrecht. Nach dem
+Rechte-Block folgt eine Angabe der Anzahl der
+Hardlinks&nbsp;<a href="http://de.wikipedia.org/wiki/Hardlink">[18]</a> auf die Datei (mind.
+1) oder das Verzeichnis (mind. 2). Danach folgen der Name des
+Besitzers, dann der der Gruppe, die Dateigröße, dann der Zeitpunkt der
+letzten Änderung und abschließend der Name der Datei bzw. des
+Verzeichnisses oder Informationen über den symbolischen Link.
+
+<div class="p"><!----></div>
+<b><tt class="big">ls</tt></b> steht dabei für „list“ und ist damit wohl einer der am häufigsten
+genutzten Shell-Befehle. Der Parameter <b><tt class="big">-l</tt></b> sorgt dafür, dass so viele
+Informationen wie möglich über die aufgelisteten Dateien und
+Verzeichnisse ausgegeben werden. Ein
+zusätzliches <b><tt class="big">-a</tt></b> zeigt alle,
+also auch versteckte, Dateien an.
+
+<div class="p"><!----></div>
+
+<h4>Besitzer und Gruppenzuordnung ändern</h4>
+
+
+Man kann den Besitzer einer Datei bzw. eines Ordners
+sowie deren Gruppenzuordnung wie folgt ändern.
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Besitzer ändern:
+
+<div class="p"><!----></div>
+
+<div class="command"># chown &lt;Neuer Besitzer&#62; &lt;Datei-/Verzeichnisname&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Gruppe ändern:
+
+<div class="p"><!----></div>
+
+<div class="command"># chgrp &lt;Neue Gruppe&#62; &lt;Datei-/Verzeichnisname&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+<li> Besitzer und Gruppe ändern:
+
+<div class="p"><!----></div>
+
+<div class="command"># chown &lt;Neuer Besitzer&#62;:&lt;Neue Gruppe&#62; &lt;Datei-/Verzeichnisname&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Sollen bei den Verzeichnissen die Unterverzeichnisse und enthaltene
+Dateien mit eingeschlossen werden, so kommt noch der Parameter <b><tt class="big">-R</tt></b>
+hinzu.
+
+<div class="p"><!----></div>
+
+<h4>Zugriffsrechte ändern</h4>
+
+
+Die Zugriffsrechte für Besitzer, Gruppe und andere können hier jeweils
+als Zahl angegeben werden. Das Leserecht hat den Wert 4, das
+Schreib-/Änderungsrecht 2 und das Ausführen-Recht 1. Sollen mehrere
+Rechte vergeben werden, so werden die Werte einfach addiert (z.&nbsp;B. Lesen
++ Schreiben = 6). Das Ändern der Rechte geschieht mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ chmod &lt;BGA&#62; &lt;Datei-/Verzeichnisname&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Zum Beispiel erlaubt
+
+<div class="p"><!----></div>
+
+<div class="command">$ chmod 754 info.txt</div>
+
+<div class="p"><!----></div>
+
+
+dem Besitzer das Lesen, Schreiben und Ausführen, der Gruppe das Lesen
+und Ausführen und allen anderen das Lesen der Datei <b><tt class="big">info.txt</tt></b>. Sollen
+hierbei Verzeichnisse, Unterverzeichnisse und enthaltene Dateien mit
+eingeschlossen werden, so kommt ebenfalls der Parameter <b><tt class="big">-R</tt></b> hinzu.
+
+<div class="p"><!----></div>
+
+<h3>Suchen und finden</h3>
+
+
+Häufig ist es nötig, Dateien zu finden. Hierbei helfen unter anderem die
+Programme <b><tt class="big">grep</tt></b>&nbsp;<a href="http://de.wikipedia.org/wiki/Grep">[19]</a> und
+<b><tt class="big">find</tt></b>&nbsp;<a href="http://de.wikipedia.org/wiki/Find">[20]</a>. Weiterhin gibt es noch
+<b><tt class="big">locate</tt></b>&nbsp;<a href="http://de.wikipedia.org/wiki/Locate_%28UNIX%29">[21]</a>, was sehr
+schnell, jedoch auf einen regelmäßig aktualisierten Suchindex
+angewiesen ist. 
+<div class="p"><!----></div>
+
+<ul>
+<li> Dateien im aktuellen Verzeichnis (dieses wird als Punkt (<b><tt class="big">.</tt></b>)
+  angegeben) und Unterverzeichnissen (mit dem Parameter <b><tt class="big">-r</tt></b> für
+  rekursiv) suchen, deren Inhalt die   „test“ enthält:
+
+<div class="p"><!----></div>
+
+<div class="command">$ grep test -r .</div></li>
+<li> Groß-/Kleinschreibung von „test“ ignorieren:
+
+<div class="p"><!----></div>
+
+<div class="command">$ grep test -r -i .</div></li>
+<li> Nur die Namen von Dateien mit Treffern ausgeben:
+
+<div class="p"><!----></div>
+
+<div class="command">$ grep test -r -i -l .</div></li>
+<li> Alle Verzeichnisse finden, die zum Programm <b><tt class="big">nano</tt></b> gehören:
+
+<div class="p"><!----></div>
+
+<div class="command">$ whereis nano</div></li>
+<li> Datei-/Verzeichnisnamen, die „test“ enthalten, im aktuellen
+  Verzeichnis und Unterverzeichnissen suchen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ find | grep test&#62;</div>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Im letzten Beispiel gibt <b><tt class="big">find</tt></b> (ohne Parameter) einfach alle Datei-
+und Verzeichnisnamen aller Unterverzeichnisse aus und <b><tt class="big">grep</tt></b> sucht in
+dieser Ausgabe nach dem Suchbegriff. Der senkrechte Strich (<b><tt class="big">|</tt></b>)
+dazwischen (das Pipe-Symbol) sorgt dafür, dass die Ausgabe des ersten
+Programmes an das Programm danach übergeben wird.
+
+<div class="p"><!----></div>
+
+<h3>Hilfe ohne Internet: <b><tt class="big">man</tt></b> und <b><tt class="big">--help</tt></b></h3>
+
+
+Für den Fall, dass einmal kein Internetanschluss zur Verfügung stehen
+sollte oder vielleicht auch, weil es bei einigen Dingen einfach
+schneller ist, Hilfetexte direkt aus dem System zu bekommen, soll das
+Kommando
+
+<div class="p"><!----></div>
+
+<div class="command">$ man &lt;Befehl&#62;</div>
+
+<div class="p"><!----></div>
+
+
+nicht unerwähnt bleiben. Neben <b><tt class="big">man</tt></b> bieten viele Programme auch eine
+eingebaute (meist kürzere) Hilfe an, die mittels
+
+<div class="p"><!----></div>
+
+<div class="command">$ &lt;Programm&#62; --help</div>
+
+<div class="p"><!----></div>
+
+
+aufgerufen wird. Wenn <b><tt class="big">--help</tt></b> nicht zum Erfolg führt, kann der
+Parameter auch (nach absteigender gefühlter Vorkommenshäufigkeit
+sortiert) <b><tt class="big">-help</tt></b>, <b><tt class="big">-h</tt></b> oder <b><tt class="big">-?</tt></b> heißen. Alternativ kann das
+Programm den Hilfetext auch ausgeben, wenn kein Parameter oder ein
+ungültiger Parameter angegeben wird. Einfach mal ausprobieren – in der
+VM kann ja nichts Wertvolles kaputt gehen.
+
+<div class="p"><!----></div>
+
+
+
+
+<img src="freiesMagazin-2014-08-bilder-Dateien/debian_workshop_teilnehmer.png" alt="debian_workshop_teilnehmer.png" style="max-width:100%" /><br /><em>Ein Workshop-Teilnehmer übt.</em><br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://www.debian.org/"><tt class="big">https://www.debian.org/</tt></a><br />
+[2] <a href="http://www.ubuntu.com/"><tt class="big">http://www.ubuntu.com/</tt></a><br />
+[3] <a href="http://linuxmint.com/"><tt class="big">http://linuxmint.com/</tt></a><br />
+[4] <a href="https://www.virtualbox.org/"><tt class="big">https://www.virtualbox.org/</tt></a><br />
+[5] <a href="http://sf.net/projects/dodger-tools/files/vms/Debian-WS2.ova/download"><tt class="big">http://sf.net/projects/dodger-tools/files/vms/Debian-WS2.ova/download</tt></a><br />
+[6] <a href="http://www.knopper.net/knoppix-mirrors/"><tt class="big">http://www.knopper.net/knoppix-mirrors/</tt></a><br />
+[7] <a href="http://de.wikipedia.org/wiki/Virtuelle_Maschine"><tt class="big">http://de.wikipedia.org/wiki/Virtuelle_Maschine</tt></a><br />
+[8] <a href="http://m23.sf.net"><tt class="big">http://m23.sf.net</tt></a><br />
+[9] <a href="http://www.ipcop.org"><tt class="big">http://www.ipcop.org</tt></a><br />
+[10] <a href="http://www.virtualbox.org"><tt class="big">http://www.virtualbox.org</tt></a><br />
+[11] <a href="http://de.wikipedia.org/wiki/Uname"><tt class="big">http://de.wikipedia.org/wiki/Uname</tt></a><br />
+[12] <a href="http://de.wikipedia.org/wiki/Cat_%28Unix%29"><tt class="big">http://de.wikipedia.org/wiki/Cat_(Unix)</tt></a><br />
+[13] <a href="http://de.wikipedia.org/wiki/Bourne-again_shell"><tt class="big">http://de.wikipedia.org/wiki/Bourne-again_shell</tt></a><br />
+[14] <a href="http://de.wikipedia.org/wiki/Midnight_Commander"><tt class="big">http://de.wikipedia.org/wiki/Midnight_Commander</tt></a><br />
+[15] <a href="http://de.wikipedia.org/wiki/Vi"><tt class="big">http://de.wikipedia.org/wiki/Vi</tt></a><br />
+[16] <a href="http://de.wikipedia.org/wiki/Vim"><tt class="big">http://de.wikipedia.org/wiki/Vim</tt></a><br />
+[17] <a href="http://de.wikipedia.org/wiki/Nano_%28Texteditor%29"><tt class="big">http://de.wikipedia.org/wiki/Nano_(Texteditor)</tt></a><br />
+[18] <a href="http://de.wikipedia.org/wiki/Hardlink"><tt class="big">http://de.wikipedia.org/wiki/Hardlink</tt></a><br />
+[19] <a href="http://de.wikipedia.org/wiki/Grep"><tt class="big">http://de.wikipedia.org/wiki/Grep</tt></a><br />
+[20] <a href="http://de.wikipedia.org/wiki/Find"><tt class="big">http://de.wikipedia.org/wiki/Find</tt></a><br />
+[21] <a href="http://de.wikipedia.org/wiki/Locate_%28UNIX%29"><tt class="big">http://de.wikipedia.org/wiki/Locate_(UNIX)</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Hauke Goos-Habermann und Maren Hachmann</b>
+gehören zum Core-Team der Kieler Open Source und Linux Tage, bei denen
+beide auch Live-Workshops anbieten.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Administration von Debian und Co im Textmodus - Teil I&amp;body=freiesMagazin 08/2014%0AAdministration von Debian und Co im Textmodus - Teil I%0AHauke Goos-Habermann und Maren Hachmann%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Administration von Debian und Co im Textmodus - Teil I#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_spacewalk_teil1" name="fm_14_08_spacewalk_teil1">Spacewalk – Teil 1: Einführung, Übersicht und Installation</a></font></h1>von Christian Stankowic
+
+<div class="p"><!----></div>
+    <b>S</b><b>ystem-Administratoren tragen häufig die Verantwortung für eine große Anzahl an
+Systemen. Zur Administration großer Systemlandschaften ist eine Management-Suite
+unabdingbar, um einheitliche Systemstatus zu garantieren. Mit Spacewalk, Red Hat
+Satellite und SUSE Manager gibt es drei sehr ähnliche Programme, die jedoch
+unterschiedliche Einsatzzwecke haben.</b>
+
+<div class="p"><!----></div>
+
+<h2>Vorwort</h2>
+
+
+Es gibt eine große Menge an Werkzeugen, um Linux-Systeme zentral zu verwalten.
+Mit Puppet&nbsp;<a href="http://www.puppetlabs.com/">[1]</a> und Chef&nbsp;<a href="http://www.getchef.com/">[2]</a>
+gibt es zwei äußerst umfangreiche und am Markt etablierte
+Configuration Management-Toolkits. Jeweils erhältlich in mehreren Editionen gibt
+es je nach Größe der Systemlandschaft passende Werkzeuge.
+
+<div class="p"><!----></div>
+Configuration Management ist eine sehr wichtige Komponente einer zentralen
+Systemverwaltung – allerdings gibt es noch weitere wichtige Komponenten: 
+<div class="p"><!----></div>
+
+<ul>
+<li> Software/Update-Management: zentrale Verwaltung und Bereitstellung von Softwarepaketen</li>
+<li> Content-Provisioning/-Caching: Bereitstellen von Software-Paketen, keine erneuten Downloads pro Client erforderlich</li>
+<li> System-Provisioning/Kickstart: Bereitstellen von physischen und virtuellen Systemen</li>
+<li> Sicherheits- und Lizenz-Auditing/-Reporting: Überprüfen von Sicherheitsrichtlinien und Lizenzeinheiten</li>
+<li> Crash-Reporting: Sammeln von Programmabstürzen und -fehlern</li>
+<li> Monitoring: Überwachen der einzelnen Hosts und deren Dienste</li>
+</ul>
+
+<div class="p"><!----></div>
+Die oben genannten Produkte bilden nicht alle dieser Funktionen ab. Daher möchte
+ich in diesem Artikel drei alternative Lösungen vorstellen, die genau diese
+Funktionen vereinen.
+
+<div class="p"><!----></div>
+
+<h2>Red Hat Satellite</h2>
+
+
+Mit Red Hat
+Satellite&nbsp;<a href="http://www.redhat.com/products/enterprise-linux/satellite/">[3]</a> gibt
+es ein kommerzielles Produkt, dessen Haupteinsatzzweck die Verwaltung von
+Solaris- und Red Hat Enterprise Linux-Systemen (RHEL) sein dürfte. Da Satellite auf
+Spacewalk (siehe unten) basiert, erbt es jedoch auch die Unterstützung alternativer
+Distributionen – was jedoch nicht vom Red Hat Support abgedeckt wird.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/spacewalk_red_hat_satellite.png" alt="spacewalk_red_hat_satellite.png" style="max-width:100%" /><br /><em>Red Hat Satellite 5.6.</em><br />
+
+<div class="p"><!----></div>
+Mit Red Hat Satellite lassen sich Systeme zentral konfigurieren und mit
+Software-Paketen versehen. Mithilfe von Systemgruppen lassen sich große
+Mengen
+an Systemen wie einzelne Hosts verwalten, was den Zeitaufwand drastisch
+verringert. Neben einem rudimentären System-Monitoring gibt es unter anderem auch
+zentrale Security-Audits, die dazu verwendet werden können, bekannte
+Sicherheitslücken zu erkennen. Neue Systeme
+können komfortabel aus dem Netzwerk
+provisioniert werden.
+
+<div class="p"><!----></div>
+
+<h2>SUSE Manager</h2>
+
+
+SUSE bietet mit dem hauseigenen SUSE
+Manager&nbsp;<a href="http://www.suse.com/products/suse-manager/">[4]</a> ein sehr ähnliches
+Produkt – es verfügt größtenteils über die gleichen Funktionen, da es wie Red
+Hat Satellite auf demselben Projekt basiert. Im Gegensatz zum
+Konkurrenzprodukt wurde jedoch der Solaris-Support entfernt. Neben
+CentOS&nbsp;<a href="https://www.centos.org/">[5]</a> können im Rahmen des „SUSE
+
+
+Expanded Support“
+auch RHEL-Systeme verwaltet werden. In diesem Fall werden die entsprechenden
+Patches jedoch direkt von SUSE bezogen, was den Support bei Red Hat erlöschen
+lässt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/spacewalk_suse.png" alt="spacewalk_suse.png" style="max-width:100%" /><br /><em>SUSE Manager 2.1.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Spacewalk</h2>
+
+
+Spacewalk&nbsp;<a href="http://www.spacewalkproject.org/">[6]</a> ist das quelloffene
+Upstream-Projekt, auf dessen Grundlage die Produkte Red Hat Satellite und SUSE
+Manager entstanden. Der Quellcode von Red Hat Satellite wurde 2008 als Spacewalk
+veröffentlicht; seitdem trägt auch SUSE viel zum Programmcode bei. Ein
+nennenswerter Beitrag zu Spacewalk ist beispielsweise die neue auf
+jQuery&nbsp;<a href="http://jquery.com/">[7]</a> basierende Web-Oberfläche – diese gibt es derzeit
+für SUSE Manager und Spacewalk.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/spacewalk_spacewalk.png" alt="spacewalk_spacewalk.png" style="max-width:100%" /><br /><em>Spacewalk 2.1.</em><br />
+
+<div class="p"><!----></div>
+Spacewalk-Aktualisierungen erscheinen alle zwei bis fünf Monate, während die
+kommerziellen Ableger alle neun bis zwölf Monate aktualisiert werden.
+
+<div class="p"><!----></div>
+
+<h2>Architektur</h2>
+
+
+Spacewalk besteht aus den folgenden Teilen: 
+<div class="p"><!----></div>
+
+<ul>
+<li> Oracle- oder PostgreSQL-Datenbank: beinhaltet u.&nbsp;a. Informationen zu Benutzern, Systemen, Software-Paketen und -Kanälen</li>
+<li> Tomcat-Server: führt die eigentliche Spacewalk-Anwendungen aus und verknüpft weitere Software-Module</li>
+<li> Taskomatic: Java-Anwendung, die in Spacewalk geplante Aufgaben (z.&nbsp;B. Herunterladen neuer Software-Pakete, Vergleichen von Konfigurationsdateien) ausführt</li>
+<li> Apache-Webserver zur Administration des Spacewalk-Servers</li>
+<li> XMLRPC API für Client-Kommunikation und Anbindung von Python-/Perl-Eigenentwicklungen</li>
+<li> osa-dispatcher: Dienst, der Clients in Echtzeit über anstehende Aufgaben informiert (über einen lokalen Jabber-Dienst)</li>
+<li> cobblerd: Installationsdienst, der die Konfiguration von TFTP, DHCP und DNS automatisieren kann</li>
+<li> tftp-server: minimalistischer FTP-Server, der benötigt wird, damit Clients aus dem Netzwerk booten können</li>
+<li> Spacewalk Proxy (optional): empfiehlt sich bei der Verwaltung von verschiedenen, über das WAN getrennten Netzwerken; dient zur Traffic- und Last-Reduzierung.</li>
+</ul>
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/spacewalk_arch.png" alt="spacewalk_arch.png" style="max-width:100%" /><br /><em>Architektur von Spacewalk.</em><br />
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="4" align="center"><b>Feature-Vergleich</b></td></tr>
+<tr><td>System                 </td><td>Spacewalk                                                                </td><td>Red Hat Satellite                                                                             </td><td>SUSE Manager </td></tr>
+<tr><td>Aktuelle Version       </td><td>2.2                                                                      </td><td>5.6                                                                                           </td><td>2.1 </td></tr>
+<tr><td>Verwaltung von         </td><td>Fedora, CentOS, openSUSE, Debian (beschränkte Unterstützung) und Solaris </td><td>RHEL, Solaris, theoretisch auch andere in Spacewalk abgedeckten (nicht vom Support abgedeckt) </td><td>SLES, CentOS, RHEL (siehe Einschränkung oben), theoretisch auch andere in Spacewalk abgedeckten (nicht vom Support abgedeckt) </td></tr>
+<tr><td>Architekturen          </td><td>i386, x86_64                                                             </td><td>i386, x86_64, s390x                                                                           </td><td>i386, x86_64, s390x, ia64, ppc, ppc64 </td></tr>
+<tr><td>Datenbank              </td><td>PostgreSQL, Oracle Database 10gR2/11g                                    </td><td>PostgreSQL, Oracle Database 10gR2/11g                                                         </td><td>PostgreSQL, Oracle Database 10gR2/11g </td></tr>
+<tr><td>Funktionen (gemeinsam) </td><td colspan="3" width="idth="><center> System-Inventarisierung, -Monitoring und -Provisionierung (TFTP/PXE), zentrale Software-Verteilung, Configuration-Management, mandantenfähig, Sicherheitsaudits nach OpenSCAP, zentrales Sammeln von Absturzberichten</center> </td></tr>
+<tr><td>Funktionen (exklusiv)    </td><td>Intelligente Stromverwaltung, neue auf jQuery basierende Web-Oberfläche, Solaris-Support               </td><td>Pakete-Download aus dem Red Hat Network, Solaris-Support                                      </td><td>Intelligente Stromverwaltung, neue auf jQuery basierende Web-Oberfläche </td></tr>
+</table>
+
+
+<h2>Installation von Spacewalk</h2>
+
+
+Spacewalk ist für Fedora 19 und neuer sowie für Enterprise Linux 6 (CentOS,
+Scientific Linux, RHEL, Oracle Linux) erhältlich. Prinzipiell ist auch die
+Verwendung von Enterprise Linux 5 möglich, jedoch wird davon abgeraten, da die
+aktuelle
+
+Spacewalk-Version 2.1 die letzte Version ist, die diese Plattform als
+Host unterstützt. Das Verwalten von EL5-Hosts ist hiervon nicht betroffen; diese
+Funktionalität wird auch in Zukunft gegeben sein, solange EL5 mit Patches
+versorgt wird (bis voraussichtlich 2017).
+
+<div class="p"><!----></div>
+
+<h3>Paketverwaltung – Vorbereitungen</h3>
+
+
+Binärpakete stehen in Form eines YUM-Repositorys&nbsp;<a href="https://en.wikipedia.org/wiki/Yellowdog_Updater,_Modified">[8]</a>
+für Fedora 19, 20 und EL6 zur Verfügung – zur Verwendung muss ein RPM-Paket
+installiert werden. Es enthält die benötigte YUM-Konfiguration und eine Liste
+verfügbarer Netzwerkspiegel:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Fedora 19: <b><tt class="big"><font size="-1"># yum localinstall http://yum.spacewalkproject.org/2.1/Fedora/19/x86_64/spacewalk-repo-2.1-2.fc19.noarch.rpm</font></tt></b></li>
+<li> Fedora 20: <b><tt class="big"><font size="-1"># yum localinstall http://yum.spacewalkproject.org/2.1/Fedora/20/x86_64/spacewalk-repo-2.1-2.fc20.noarch.rpm</font></tt></b></li>
+<li> Enterprise Linux 6: <b><tt class="big"><font size="-1"># yum localinstall http://yum.spacewalkproject.org/2.1/RHEL/6/x86_64/spacewalk-repo-2.1-2.el6.noarch.rpm</font></tt></b></li>
+</ul>
+
+<div class="p"><!----></div>
+Darüber hinaus werden noch das JPackage- und – unter Enterprise Linux 6 – das
+EPEL-Repository (Extra Packages for Enterprise Linux) benötigt:
+
+<div class="p"><!----></div>
+
+<div class="command"># cat &#62; /etc/yum.repos.d/jpackage-generic.repo &lt;&lt; EOF<br />
+[jpackage-generic]<br />
+name=JPackage generic<br />
+mirrorlist=http://www.jpackage.org/mirrorlist.php?dist=generic&amp;type=free&amp;release=5.0<br />
+enabled=1<br />
+gpgcheck=1<br />
+gpgkey=http://www.jpackage.org/jpackage.asc<br />
+EOF</div>
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># yum localinstall http://mirror.de.leaseweb.net/epel/6/i386/epel-release-6-8.noarch.rpm</div>
+
+<div class="p"><!----></div>
+
+
+
+Das JPackage-Repository enthält zusätzliche Java-Abhängigkeiten, während das
+EPEL-Repository die Java Virtual Machine in der Version 1.6.0 oder neuer
+enthält. Auf RHEL-Systemen muss der Software-Kanal Red Hat Optional Server 6 zur
+Verfügung stehen.
+
+<div class="p"><!----></div>
+Unter Fedora 20 müssen die Pakete <b>rpm-build</b> und <b>rpm-python</b> installiert
+und einige RPM-Bibliotheken durch ältere Versionen ersetzt werden, damit
+Spacewalk installiert werden kann:
+
+<div class="p"><!----></div>
+
+<div class="command"># yum downgrade -y rpm{,-build-libs,-devel,-libs,-python,-build,-apidocs,-cron,-sign,-python3}-4.11.1-7.fc20</div>
+
+<div class="p"><!----></div>
+
+
+Das System, auf dem Spacewalk installiert wird, muss über einen Zugang zum
+Internet verfügen. Die später registrieren Client-Systeme benötigen diesen
+Zugriff nicht mehr, was die Proxy-Konfiguration vereinfacht.
+
+<div class="p"><!----></div>
+
+<h3>Betriebssystem-Vorbereitungen</h3>
+
+
+Der Host muss über mindestens 2 GB Arbeitsspeicher verfügen, 4 GB werden
+empfohlen. Darüber hinaus müssen alle verfügbaren Software-Patches
+installiert sein.
+
+<div class="p"><!----></div>
+
+<h3>Dateisystem-Vorbereitungen</h3>
+
+
+Spacewalk benötigt zusätzlichen Speicher, der bei der Partitionierung
+berücksichtigt werden muss. Für die PostgreSQL-Datenbank werden mindestens 12 GB
+(Einhängepunkt <b><tt class="big">/var/lib/pgsql/data</tt></b>) benötigt. Der Speicherbedarf für
+RPM-Pakete und Kickstart-Dateien (Einhängepunkt <b><tt class="big">/var/satellite</tt></b>) ist variabel
+und hängt von der Systemlandschaft ab.
+
+<div class="p"><!----></div>
+Die Größe des Satellite-Verzeichnisses ist ebenfalls variabel. In der
+Installationsanleitung sind folgende Empfehlungen gegeben:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> 250 kB pro registriertes Client-System</li>
+<li> 500 kB pro Software-Kanal, 230 kB pro Software-Paket in jedem Software-Kanal</li>
+</ul>
+
+<div class="p"><!----></div>
+Angenommen, man möchte zehn CentOS 6-Systeme verwalten, ergibt sich hieraus
+folgende Kalkulation:
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Speicherbedarf</b></td></tr>
+<tr><td></td><td align="left">Speicherbedarf </td></tr>
+<tr><td>CentOS 6 Repository (Basis) </td><td align="left">500 kB </td></tr>
+<tr><td>6367 Software-Pakete        </td><td align="left">1,4 GB (6367 * 230 kB) </td></tr>
+<tr><td>CentOS 6 Update-Repository  </td><td align="left">500 kB </td></tr>
+<tr><td>1103 Software-Pakete        </td><td align="left">248 MB (1103 * 230 kB) </td></tr>
+<tr><td>10 Client-Systeme           </td><td align="left">3 MB (10 * 250 kB) </td></tr>
+<tr><td>Summe                       </td><td align="left">1,7 GB </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+Es schadet nicht, einen gewissen Prozentsatz Speicherreserven bereitzustellen –
+Red Hat empfiehlt im Installationshandbuch des Satellite-Servers mindestens 6 GB
+Speicherkapazität.
+
+<div class="p"><!----></div>
+
+<h3>Netzwerk-Vorbereitungen</h3>
+
+
+Vor der Installation sollten vorsorglich die folgenden Ports in der Firewall
+geöffnet werden:
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="3" align="center"><b>Ports</b></td></tr>
+<tr><td align="left">Port </td><td align="left">Prot. </td><td align="left">Verwendung </td></tr>
+<tr><td align="left">80   </td><td align="left">tcp   </td><td align="left">Spacewalk Web-Oberfläche </td></tr>
+<tr><td align="left">443  </td><td align="left">tcp   </td><td align="left">Spacewalk Web-Oberfläche </td></tr>
+<tr><td align="left">5222 </td><td align="left">tcp   </td><td align="left">Aufgabenplanung auf Client-Systemen </td></tr>
+<tr><td align="left">5269 </td><td align="left">tcp   </td><td align="left">Aufgabenplanung auf Proxy-Systemen </td></tr>
+<tr><td align="left">69   </td><td align="left">udp   </td><td align="left">TFTP für Kickstart-Provisioning </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+Eine weitere Voraussetzung ist, dass das Spacewalk-System über einen
+qualifizierten Domänennamen
+(FQDN&nbsp;<a href="https://en.wikipedia.org/wiki/Fully_qualified_domain_name">[9]</a>) verfügt –
+hier müssen entsprechende DNS-Einträge gepflegt werden. Das hostname-Kommando
+muss den Namen jeweils korrekt auflösen (<b><tt class="big">-s</tt></b> Shortname und <b><tt class="big">-f</tt></b> FQDN):
+
+<div class="p"><!----></div>
+
+<div class="command">$ hostname<br />
+spacewalk.localdomain.loc<br />
+$ hostname -s<br />
+spacewalk<br />
+$ hostname -f<br />
+spacewalk.localdomain.loc</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Paketinstallation</h3>
+Die Installation von Spacewalk inklusive PostgreSQL-Datenbank erfolgt über die
+YUM-Paketverwaltung:
+
+<div class="p"><!----></div>
+
+<div class="command"># yum install spacewalk-{,setup-}postgresql</div>
+
+<div class="p"><!----></div>
+
+
+Die Verwendung einer Oracle-Datenbank erfordert zusätzliche Schritte, die im
+Spacewalk-Wiki&nbsp;<a href="http://fedorahosted.org/spacewalk/wiki/HowToInstall">[10]</a>
+detailliert beschrieben sind.
+
+<div class="p"><!----></div>
+
+<h2>Konfiguration und erster Log-in</h2>
+
+
+Die Initialkonfiguration des neuen Spacewalk-Servers erfolgt mit
+<b><tt class="big">spacewalk-setup</tt></b>. Bei der Verwendung einer externen Oracle-Datenbank muss
+zusätzlich der Schalter <b><tt class="big">--external-oracle</tt></b> angegeben werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># spacewalk-setup --disconnected</div>
+
+<div class="p"><!----></div>
+
+
+Das Programm fragt initiale Parameter ab, zu denen beispielsweise die
+Administrator-Mail und der Standort des Systems gehören:
+
+<div class="p"><!----></div>
+
+<div class="command">Admin Email Address? admin@localdomain.loc<br />
+...<br />
+Should setup configure apache's default ssl server for you (saves original ssl.conf) [Y]?<br />
+...<br />
+CA certificate password?<br />
+Re-enter CA certificate password?<br />
+Organization? Mustermann Network<br />
+Organization Unit [spacewalk.localdomain]?<br />
+Email Address [admin@localdomain.loc]?<br />
+City? Musterstadt<br />
+State? Hessen<br />
+Country code (Examples: "US", "JP", "IN", or type "?" to see a list)? DE<br />
+** SSL: Generating CA certificate.<br />
+...</div>
+
+<div class="p"><!----></div>
+
+
+Im Fehlerfall lohnt sich ein Blick in das Verzeichnis <b><tt class="big">/var/log/rhn</tt></b> – dort gibt
+es unter anderem die Logdatei <b><tt class="big">rhn-installation.log</tt></b>. 
+<div class="p"><!----></div>
+Nach der Konfiguration können alle Dienste des Spacewalk-Servers über das
+Init-Skript <b><tt class="big">spacewalk-service</tt></b> gesteuert werden – es empfiehlt sich den Dienst
+automatisch beim Boot des Systems zu starten:
+
+<div class="p"><!----></div>
+
+<div class="command"># chkconfig spacewalk-service on<br />
+# service spacewalk-service start</div>
+
+<div class="p"><!----></div>
+
+
+Nachdem der Dienst gestartet wurde, kann die Web-Oberfläche unter Angabe der
+IP-Adresse über einen Web-Browser geöffnet werden. Beim ersten Aufruf der
+Oberfläche wird ein Administrator-Konto erstellt. Mithilfe dieses Kontos wird
+der Spacewalk-Service administriert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/spacewalk_disconnected.png" alt="spacewalk_disconnected.png" style="max-width:100%" /><br /><em>Aktivieren des Spacewalk-Servers.</em><br />
+
+<div class="p"><!----></div>
+Anschließend wird in der Spacewalk-Konfiguration („<em>Admin&nbsp;-&#62;&nbsp;Spacewalk&nbsp;-&#62;&nbsp;Konfiguration&nbsp;-&#62;&nbsp;Allgemein</em>“)
+der Haken bei „<em>Nicht verbundener Spacewalk</em>“ deaktiviert. Dieser Schritt muss
+einmalig nach der Installation erfolgen, weil Spacewalk während der Installation
+aktiviert wurde.  Wenn kein direkter Zugriff auf das Internet möglich ist,
+lassen sich in diesem Fenster auch Proxy-Einstellungen definieren.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Ausblick und Hilfequellen</h2>
+
+
+Die Installation des Spacewalk-Servers war nur der erste Schritt in die zentrale
+Systemverwaltung. In weiteren Artikeln werden weiterführende Tätigkeiten, wie
+die Registrierung und Verwaltung von Linux- und Solaris-Systemen, thematisiert.
+
+<div class="p"><!----></div>
+Als Hilfequellen empfehlen sich das offizielle
+Spacewalk-Wiki&nbsp;<a href="http://fedorahosted.org/spacewalk">[11]</a> und der IRC-Channel
+<b>#spacewalk</b> auf <b>irc.freenode.net</b>.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.puppetlabs.com/"><tt class="big">http://www.puppetlabs.com/</tt></a><br />
+[2] <a href="http://www.getchef.com/"><tt class="big">http://www.getchef.com/</tt></a><br />
+[3] <a href="http://www.redhat.com/products/enterprise-linux/satellite/"><tt class="big">http://www.redhat.com/products/enterprise-linux/satellite/</tt></a><br />
+[4] <a href="http://www.suse.com/products/suse-manager/"><tt class="big">http://www.suse.com/products/suse-manager/</tt></a><br />
+[5] <a href="https://www.centos.org/"><tt class="big">https://www.centos.org/</tt></a><br />
+[6] <a href="http://www.spacewalkproject.org/"><tt class="big">http://www.spacewalkproject.org/</tt></a><br />
+[7] <a href="http://jquery.com/"><tt class="big">http://jquery.com/</tt></a><br />
+[8] <a href="https://en.wikipedia.org/wiki/Yellowdog_Updater,_Modified"><tt class="big">https://en.wikipedia.org/wiki/Yellowdog_Updater,_Modified</tt></a><br />
+[9] <a href="https://en.wikipedia.org/wiki/Fully_qualified_domain_name"><tt class="big">https://en.wikipedia.org/wiki/Fully_qualified_domain_name</tt></a><br />
+[10] <a href="http://fedorahosted.org/spacewalk/wiki/HowToInstall"><tt class="big">http://fedorahosted.org/spacewalk/wiki/HowToInstall</tt></a><br />
+[11] <a href="http://fedorahosted.org/spacewalk"><tt class="big">http://fedorahosted.org/spacewalk</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Christian Stankowic</b>&nbsp;(<a href="http://www.stankowic-development.net">Webseite</a>)
+beschäftigt sich seit 2006 mit Linux und Virtualisierung. Nachdem er privat
+Erfahrungen mit Debian, CRUX und ArchLinux sammeln konnte, widmet er sich seit
+seiner Ausbildung zum Fachinformatiker insbesondere RHEL, CentOS, Spacewalk und
+Icinga.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Spacewalk - Teil 1: Einf%C3%BChrung, %C3%96bersicht und Installation&amp;body=freiesMagazin 08/2014%0ASpacewalk - Teil 1: Einf%C3%BChrung, %C3%96bersicht und Installation%0AChristian Stankowic%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Spacewalk - Teil 1: Einf%C3%BChrung, %C3%96bersicht und Installation#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_cuon" name="fm_14_08_cuon">Kassensystem in C.U.O.N.</a></font></h1>von Jürgen Hamel
+
+<div class="p"><!----></div>
+    <b>D</b><b>as C.U.O.N.-System&nbsp;<a href="http://cuon.org">[1]</a> ist eine Software für Auftragsbearbeitung,
+Warenwirtschaft und allgemeine Datenverwaltung. Zusätzlich beinhaltet es ein
+Dokumentenmanagement-System
+(DMS)&nbsp;<a href="https://de.wikipedia.org/wiki/Dokumentenmanagement">[2]</a>. In der neuen
+C.U.O.N.-Version wird jetzt auch ein Kassensystem emuliert. Außerdem wird im
+neuen C++-Client ein Lager- und Bestellwesen sowie eine spezielle
+Projektverwaltung enthalten sein. Das komplette System steht unter der GPL
+V3&nbsp;<a href="http://www.gnu.org/licenses/gpl.html">[3]</a>.</b>
+
+<div class="p"><!----></div>
+
+<h2>Vorwort</h2>
+Kaufmännische Anwendungen mit Kassensoftware gibt es unter Linux nicht allzu
+viele und bei einem Premium-Unterstützer von C.U.O.N. bestand der Bedarf, ein
+Kassensystem in C.U.O.N. zu integrieren. Zusätzlich gab es den Wunsch, den
+Quellcode dieses Programms selber zu verwalten. Deshalb wurde als erste Neuerung
+im C++-Client eine Quellcode-Verwaltung eingeführt.
+
+<div class="p"><!----></div>
+
+<h2>Komponenten</h2>
+Das C.U.O.N.-System ist in drei Komponenten unterteilt. Der Server muss auf
+Linux installiert werden, benötigt aber keine GUI. Das Setup-, Konfigurations-
+und Pflegeprogramm ist eine Python-GTK-Komponente und läuft am besten auf einem
+Linux-System mit
+GUI&nbsp;<a href="https://de.wikipedia.org/wiki/Grafische_Benutzeroberfl%C3%A4che">[4]</a>. 
+Der Python-Client ist der derzeitige Hauptclient, aber der neue C++-Client ist in
+der Entwicklung und neue Erweiterungen werden nur im C++-Client programmiert.
+
+<div class="p"><!----></div>
+
+<h3>Der Server</h3>
+Der Server ist als Komponente voll auf ein Linux-System abgestimmt. Er basiert
+auf einem PostgreSQL-Server&nbsp;<a href="http://www.postgresql.org/">[5]</a> sowie diversen
+Python-Modulen. Ebenfalls wird in der Regel ein
+Loadbalancer&nbsp;<a href="https://de.wikipedia.org/wiki/Lastverteilung_%28Informatik%29">[6]</a>
+empfohlen, der „cuond“ ist vorkonfiguriert für den
+TXLB-Loadbalancer&nbsp;<a href="http://pypi.python.org/pypi/txLoadBalancer/">[7]</a>. 
+
+<div class="p"><!----></div>
+Jede Änderung der SQL-Daten wird in History-Tabellen vorgehalten. Somit können
+relativ schmerzfrei z.&nbsp;B. versehentlich überschriebene Dokumente aus der
+History-Tabelle wiederhergestellt werden, ohne ein altes Backup einspielen zu
+müssen. Die Kommunikation mit den Clients wird über
+XMLRPC&nbsp;<a href="https://de.wikipedia.org/wiki/XML-RPC">[8]</a> abgewickelt. Ein
+Report-Server-Modul generiert PDF-Dokumente für Listen, Rechnungen etc.
+
+<div class="p"><!----></div>
+
+<h3>Das Installations-Tool und die Clients</h3>
+Das Installations-Programm benötigt eine GUI und im Prinzip Linux, da viele
+Befehle in Linux problemlos vorhanden sind. Es wären da unter anderem
+rsync&nbsp;<a href="http://rsync.samba.org/">[9]</a>,
+scp&nbsp;<a href="https://de.wikipedia.org/wiki/Secure_Copy">[10]</a> und
+ssh&nbsp;<a href="https://de.wikipedia.org/wiki/Ssh">[11]</a> zu nennen. Außerdem werden hierüber die
+Benutzer und deren Rechte, Mandanten und Hunderte von Einstellungen verwaltet.
+Darüber hinaus dient es der Serveraktualisierung. Als Besonderheit kann in
+kleineren Firmen das Setup-Tool auf dem Server laufen, falls dort eine GUI
+existiert.
+
+<div class="p"><!----></div>
+Als Client fungiert vornehmlich der Hauptclient pyCuon. Dieser läuft auf
+verschieden Umgebungen, er benötigt Python und
+GTK&nbsp;<a href="http://www.gtk.org/">[12]</a> und kann sehr umfangreich angepasst werden. Zum einen
+kann der Administrator festlegen, welche Menüs für jeden Benutzer aktiviert
+sind, zum anderen kann die GUI vollständig für jede Firma, ja sogar für einzelne
+Benutzer mit dem GUI-Designer Glade&nbsp;<a href="https://glade.gnome.org/">[13]</a> angepasst werden.
+
+<div class="p"><!----></div>
+
+<h2>Das neue Kassensystem</h2>
+Mit dem neuen Kassensystem ist es sehr einfach, ein kleines Ladenlokal oder
+Bargeld/Kreditkarten-Geschäfte in die Warenwirtschaft einzugliedern. Im Prinzip
+können beliebig viele Kassen angelegt werden. Das Kassenmodul emuliert einen
+Barauftrag und kann zum Beispiel über ein Touchpanel bedient werden, aber 
+natürlich funktioniert es mit jedem normalen PC ebenso. 
+
+<div class="p"><!----></div>
+Nach dem Einrichten eines Kassennutzers wird beim Einloggen die Auftragsverwaltung hochgefahren, allerdings nicht mit der
+gewöhnlichen Maske, sondern in einer vereinfachten Form, die mehrere
+Tastenkürzel für Stückzahl, bezahlen etc. hat. Das Eingeben der Kunden-ID oder
+Artikel-ID kann über einen Barcodescanner oder per Hand geschehen. Da
+der C.U.O.N.-Reportserver auch Barcodes drucken kann, können
+Artikel-Etiketten oder Kundenkarten einfach selbst hergestellt werden. Dafür
+stehen verschiedene Barcode-Typen wie z.&nbsp;B. Barcode 39, Barcode 128 oder Barcode
+39STD&nbsp;<a href="https://de.wikipedia.org/wiki/Strichcode">[14]</a> zur Verfügung, die in
+einstellbaren Größen und Richtungen gedruckt werden können.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-08-bilder-Dateien/cuon_kasse.jpg" alt="cuon_kasse.jpg" style="max-width:100%" /><br /><em>Kassenmodul.</em><br />
+
+<div class="p"><!----></div>
+Bei der Kunden-ID handelt es sich um die normale ID in der
+C.U.O.N.-Adressverwaltung. Es empfiehlt sich, dort auch einen anonymen
+Kassen-Kunden anzulegen, damit für normale Kunden ohne Kundenkarte einfach ein
+Auftrag angelegt werden kann. Handelt es sich um einen Kunden mit Kundenkarte
+und bekommt dieser Kunde  Vergünstigungen zum Beispiel aufgrund einer erteilten
+Abbuchungserlaubnis, wird diese Vergünstigung beim Kassenkauf nicht gewährt.
+
+<div class="p"><!----></div>
+Anschließend öffnet sich die Artikel-Maske und es können jetzt einfach die
+Artikel eingegeben werden.
+
+<div class="p"><!----></div>
+Wenn alle Artikel eingegeben sind, wird durch den Bezahlknopf der Druck des
+Kassenzettels angestoßen und der Rückgabebetrag ermittelt. Intern wird das alles
+wie bei einem normalen Auftrag gehandelt, der sofort bezahlt wurde. Damit steht
+der Auftrag für Statistiken, Bonusermittlungen etc. zur Verfügung.
+
+<div class="p"><!----></div>
+Weiterhin gibt es verschiedene Reports, die vom einfachen Kassenjournal bis zur
+Aufschlüsselung der Umsätze verschiedener Nutzer, Kassen und Zeiträume geht.
+
+<div class="p"><!----></div>
+
+<h2>Lager- und Bestellwesen</h2>
+Des Weiteren wird im C++-Client die Lagerverwaltung erweitert und soll mit dem
+neu zu programmierenden Bestellwesen verbunden werden. In der Lagerverwaltung
+können beliebig viele Lager angelegt werden. Datenbanktrigger ermitteln jeweils
+den aktuellen Bestand eines Artikels in dem dazugehörigen Lager. Außerdem soll
+eine Verbindung eines jeden Lagervorganges zu den entsprechenden Ein- und
+Ausgangslieferscheinen ermöglicht werden.
+
+<div class="p"><!----></div>
+Ebenfalls werden die Artikelstammdaten erweitert, und zwar um einen
+Mindestbestelllagerbestand und einen Notlagerbestand, um entsprechende Listen zu
+generieren oder Warnungen einzublenden. Über einen Schalter in der
+Mandanten-Konfigurationsdatei soll festgelegt werden, ob die Abbuchung am Lager
+bei Erstellung des Lieferscheins oder der Rechnung erfolgen soll. Durch
+PL/SQL-Routinen und Trigger wird die Konsistenz 
+
+des Lagers gewährleistet. Das
+Bestellwesen soll auch eng mit der Artikelverwaltung verknüpft werden, um
+jeweils preisgünstige Bestellungen heraussuchen zu können. Dazu müssen dann
+allerdings auch Rabatte und Liefermengen berücksichtigt werden.
+
+<div class="p"><!----></div>
+
+<h2>Quellcodeverwaltung</h2>
+Seit Jahren schon gibt es Probleme mit der Verwaltung des Quellcodes und der
+Dokumente, Bug-Meldungen etc. Zudem wurde dieses Programm mit sehr
+unterschiedlichen Ressourcen- und Programmdateien immer komplexer. Nun kam als
+zusätzliche Programmiersprache auch noch C++ hinzu.
+
+<div class="p"><!----></div>
+Also sollte im neuen C++-Client auch als erstes neues Modul eine spezielle
+Projektverwaltung, die als Quellcodeverwaltung genutzt werden kann, programmiert
+werden. Diese sollte natürlich möglichst flexibel sein und es erlauben, selbst
+komplizierte Projekte zu bearbeiten. Dazu kann das Projekt in mehrere
+Teil-Projekte zerlegt werden, z.&nbsp;B. Clients, Server, Setup, Dokumentation, GUI
+und so weiter. Diese wiederum können in Anteile aufgeteilt werden, z.&nbsp;B. die
+Clients in Python-Client, C++-Client und Livecode-Client. Die nächste Aufteilung
+wäre die Eingliederung in Module: Adressen, Artikel, Mandanten,
+Auftragsverwaltung usw. Letztendlich werden dann jedem Modul die 
+zugehörigen Quellcode-Dateien hinzugefügt. Und es kann für jede Gruppe von Dateien 
+bis hin zur einzelnen Datei festgelegt werden, mit welchem Programm die Datei
+bearbeitet wird. Natürlich ist das eine Abkehr von der IDE und viele werden es
+als Rückschritt betrachten, aber in einer komplexen Situation ist Einfachheit
+manchmal nicht zu toppen. Es erinnert eben auch an das alte UNIX/LINUX Prinzip,
+für jede kleine Arbeit das bestmögliche Programm zu nutzen. Daher nutzt C.U.O.N.
+emacs für die Quellcode-Dateien, LyX&nbsp;<a href="http://www.lyx.org/">[15]</a> für die
+Dokumentation und Glade für die GUI.
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2014-08-bilder-Dateien/cuon_quellcode.png" alt="cuon_quellcode.png" style="max-width:100%" /><br /><em>Quellcode-Modul mit C++-Client.</em><br />
+
+<div class="p"><!----></div>
+Die entsprechenden Editoren oder Programme können in jedem Schritt definiert
+werden und so sehr fein aufgeteilt werden. Weiterhin können in jedem Stadium
+Dokumente im DMS hinterlegt werden, ebenso können die Material- und
+Personalressourcen erfasst werden, um ggf. eine Kostenübersicht zu bekommen.
+
+<div class="p"><!----></div>
+
+<h2>Plattformen</h2>
+C.U.O.N. sollte eigentlich plattformübergreifend sein, aber die Entwicklung der
+letzten Jahre hat diese Illusion gründlich zerstört. Der Server läuft
+wahrscheinlich nur unter Linux, und das ist auch eigentlich kein Problem. Der
+Python-Client sollte theoretisch unter Linux und Windows laufen, aber leider
+gibt es unter Windows etliche Probleme, von Android und iOS einmal ganz zu
+schweigen.
+
+<div class="p"><!----></div>
+Der C++-Client soll hier Abhilfe schaffen, aber auch dort gibt es eine Riesenmenge
+an Problemen. Obwohl die Abhängigkeiten extrem verringert wurden (im Prinzip
+nur noch GTK, gcrypt und libcxmlrpc) ist es nicht gelungen, den Client für
+Windows zu kompilieren. Schlimmer noch, er kompiliert auch nicht unter allen
+Linux-Distributionen. Es wurde deshalb die Dokumentation überarbeitet und
+empfohlen, auf Debian Wheezy zu setzen. Ubuntu Trusty Tahr funktioniert nicht!
+Gentoo sollte allerdings ebenfalls funktionieren.
+
+<div class="p"><!----></div>
+Das ist derzeit das größtes Problem und Hilfe vor allem bei der CMakeList.txt
+ist herzlich willkommen, um evtl. doch noch eine exe-Datei für Windows zu
+bekommen.
+
+<div class="p"><!----></div>
+Für Android und iOS bleibt dagegen die Empfehlung, dass das Benutzen von 
+aRDP&nbsp;<a href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP&amp;hl=de">[16]</a>
+oder ähnlichem wohl der bessere Weg ist.
+
+<div class="p"><!----></div>
+Ein
+VirtualBox-Image&nbsp;<a href="http://cuon.org/wb/pages/en/downloads/virtualbox-image.php">[17]</a>
+mit Wheezy und allen C.U.O.N.-Komponenten steht im Downloadbereich zur
+Verfügung, das Image kann zum Testen benutzt werden oder aber als Server in
+kleineren Firmen.
+
+<div class="p"><!----></div>
+
+<h2>Hilfe, Dokumentation, Installer und Quellcode</h2>
+Hilfe ist natürlich immer willkommen, gerade im Bereich XML, HTML und CSS,
+aber auch für die Dokumentation (LyX) und Übersetzungen
+werden Helfer benötigt. Ein weites Betätigungsfeld bieten die alternativen
+Bildschirmmasken, um C.U.O.N. ein variables, moderneres Aussehen zu verleihen.
+Ein umfangreiches Handbuch mit den Administrations-, Benutzer- und
+Beispielbeschreibungen (Deutsch und Englisch) ist auf der
+Projekt-Homepage&nbsp;<a href="http://www.cuon.org/">[18]</a> im PDF- und XHTML-Format vorhanden.
+
+<div class="p"><!----></div>
+Ebenfalls stehen dort sowie auf Sourceforge
+Downloadmöglichkeiten&nbsp;<a href="http://sourceforge.net/projects/cuon/files/cuon/">[19]</a>
+(Installer für Debian/Ubuntu, SuSE/Red Hat und .tgz als plattformunabhängiges
+Format) zur Verfügung.
+
+<div class="p"><!----></div>
+Aktuelle Schnappschüsse von C.U.O.N. kann man über SVN vom
+Subversion-Quellcode&nbsp;<a href="http://sourceforge.net/p/cuon/code/HEAD/tree/">[20]</a> beziehen.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://cuon.org"><tt class="big">http://cuon.org</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Dokumentenmanagement"><tt class="big">https://de.wikipedia.org/wiki/Dokumentenmanagement</tt></a><br />
+[3] <a href="http://www.gnu.org/licenses/gpl.html"><tt class="big">http://www.gnu.org/licenses/gpl.html</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Grafische_Benutzeroberfl%C3%A4che"><tt class="big">https://de.wikipedia.org/wiki/Grafische_Benutzeroberfläche</tt></a><br />
+[5] <a href="http://www.postgresql.org/"><tt class="big">http://www.postgresql.org/</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Lastverteilung_%28Informatik%29"><tt class="big">https://de.wikipedia.org/wiki/Lastverteilung_(Informatik)</tt></a><br />
+[7] <a href="http://pypi.python.org/pypi/txLoadBalancer/"><tt class="big">http://pypi.python.org/pypi/txLoadBalancer/</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/XML-RPC"><tt class="big">https://de.wikipedia.org/wiki/XML-RPC</tt></a><br />
+[9] <a href="http://rsync.samba.org/"><tt class="big">http://rsync.samba.org/</tt></a><br />
+[10] <a href="https://de.wikipedia.org/wiki/Secure_Copy"><tt class="big">https://de.wikipedia.org/wiki/Secure_Copy</tt></a><br />
+[11] <a href="https://de.wikipedia.org/wiki/Ssh"><tt class="big">https://de.wikipedia.org/wiki/Ssh</tt></a><br />
+[12] <a href="http://www.gtk.org/"><tt class="big">http://www.gtk.org/</tt></a><br />
+[13] <a href="https://glade.gnome.org/"><tt class="big">https://glade.gnome.org/</tt></a><br />
+[14] <a href="https://de.wikipedia.org/wiki/Strichcode"><tt class="big">https://de.wikipedia.org/wiki/Strichcode</tt></a><br />
+[15] <a href="http://www.lyx.org/"><tt class="big">http://www.lyx.org/</tt></a><br />
+[16] <a href="https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP&amp;hl=de"><tt class="big">https://play.google.com/store/apps/details?id=com.iiordanov.freeaRDP&amp;hl=de</tt></a><br />
+[17] <a href="http://cuon.org/wb/pages/en/downloads/virtualbox-image.php"><tt class="big">http://cuon.org/wb/pages/en/downloads/virtualbox-image.php</tt></a><br />
+[18] <a href="http://www.cuon.org/"><tt class="big">http://www.cuon.org/</tt></a><br />
+[19] <a href="http://sourceforge.net/projects/cuon/files/cuon/"><tt class="big">http://sourceforge.net/projects/cuon/files/cuon/</tt></a><br />
+[20] <a href="http://sourceforge.net/p/cuon/code/HEAD/tree/"><tt class="big">http://sourceforge.net/p/cuon/code/HEAD/tree/</tt></a><br />
+
+
+<div class="p"><!----></div>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jürgen Hamel</b>
+arbeitet seit über 10 Jahren als Hauptentwickler am C.U.O.N.-Programm. Privat
+ist er ein Aquarien-Fan.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Kassensystem in C.U.O.N.&amp;body=freiesMagazin 08/2014%0AKassensystem in C.U.O.N.%0AJürgen Hamel%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Kassensystem in C.U.O.N.#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_rezension_cpp" name="fm_14_08_rezension_cpp">Rezension: C++: Das komplette Starterkit für den einfachen Einstieg</a></font></h1>von Christian Schnell
+
+<div class="p"><!----></div>
+    <b>D</b><b>as Buch „C++: Das komplette Starterkit für den einfachen Einstieg in die 
+Programmierung“ von Dirk Louis verspricht im Untertitel nicht zu viel und ist
+tatsächlich eine gute Einführung in die C++-Programmierung. Spätestens
+in den Profikursen mag der Einstieg zwar nicht mehr unbedingt einfach
+sein, aber wer wird schon ohne Anstrengung zum (Programmier-)Meister?</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Carl Hanser Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+Das Buch gliedert sich in vier größere Abschnitte, die als Stufen
+bezeichnet werden. Das Ziel in der ersten Stufe ist das Erlernen des
+benötigten Basiswissens und das Entwickeln des ersten eigenen Programms.
+Nach dem üblichen historischen Überblick werden zunächst die
+notwendigen Schritte und Vorbereitungen erläutert. Programmieranfänger
+werden gut an die Hand genommen. Nachdem die Arbeitsweise des
+C++-Compilers erläutert wurde, lernt der Leser im weiteren Verlauf der
+ersten Stufe die Grundlagen. Dazu gehören Daten und Variablen,
+Operatoren, Kontrollstrukturen, eigene Funktionen und Datentypen und
+auch Zeiger und Referenzen. Es wird also auch in der Grundstufe schon
+tief in die Materie eingetaucht. Der Autor versteht es aber, auch
+zunächst abstrakte Probleme und Themen wie zum Beispiel Namensräume so
+zu erklären, dass auch ein Programmieranfänger verstehen wird, was es
+hier wie zu beachten gilt. Wenn man diese ersten 36 Seiten vor der
+Entwicklung des ersten eigenen Programms durchgelesen hat, wird man mit
+Sicherheit einige Fehler von Beginn an vermeiden können.
+
+<div class="p"><!----></div>
+Der weitere Teil der ersten Stufe besteht aus sieben Grundkursen, die
+jeweils ein bestimmtes Thema wie zum Beispiel Daten und Variablen,
+Kontrollstrukturen oder Zeiger und Referenzen behandeln. Die
+Programmerstellung wird dabei sowohl für Visual Studio (welches auch auf der
+Buch-DVD zu finden ist) als auch für den GNU-Compiler auf Linux-Systemen
+erläutert, so dass auch Anfänger auf beiden System gut zurecht kommen sollten.
+Die Inhalte der Grundstufen werden im weiteren Verlauf nacheinander
+abgearbeitet, mit Codebeispielen für die Ausführung auf der Konsole
+dargestellt und erläutert. Immer wieder sind zusätzlich kurze Exkurse zu
+grundsätzlichen Programmieraspekten und Konzepten eingebaut, die diesen
+eher trockenen Teil auflockern. Die Verständnisaufgaben und Übungen am
+Ende der jeweiligen Grundkurse vertiefen die Materie sinnvoll,
+allerdings könnten die Programmieraufgaben auch für Programmieranfänger
+hin und wieder etwas spannender sein.
+
+<div class="p"><!----></div>
+Die zweite Stufe besteht aus verschiedenen Aufbaukursen. Im ersten Kurs
+bekommt der Leser nützliche Hinweise, wie die C++-Standardbibliotheken
+prinzipiell zu benutzen sind. In den folgenden Aufbaukursen
+werden einzelne Elemente der Standardbibliothek detailliert dargestellt.
+Sie widmen sich auch wieder einem bestimmten Thema, zum Beispiel dem
+Lesen und Schreiben von Daten, Datums- und Zeitfunktionen,
+mathematischen Funktionen, den verschiedenen Schleifentypen, Strings usw.
+
+<div class="p"><!----></div>
+Auf den folgenden rund 90 Seiten finden sich in der dritten Stufe vier
+Kurse zum Thema
+Objektorientierte Programmierung. Angefangen mit Klassen und Vererbung
+geht es über die Polymorphie zur Ausnahmebehandlung. Auch hier wird zu
+Beginn wieder ausführlich das zugrunde liegende Konzept erklärt und
+anschließend nacheinander die einzelnen Aspekte der Objektorientierten
+Programmierung erläutert.
+
+<div class="p"><!----></div>
+Der letzte und vierte Teil des Buches besteht aus dem Profikurs. In
+diesem Teil werden fortgeschrittene Themen erklärt, die in den
+vorherigen Kapiteln noch keinen Platz gefunden haben. Hier gibt es noch
+Ergänzungen zu Algorithmen, Zeigern, Templates und regulären Ausdrücken.
+Mancher der Leser wird als Beginner hiervon wohl nicht alles direkt
+benötigen.
+
+<div class="p"><!----></div>
+Im Anhang des Buches befinden sich zunächst die Lösungen zu den Aufgaben
+und Ausführungen zur Buch-DVD. Weiterhin sind dort Zeichensätze, eine
+Syntaxreferenz, Details der Standardbibliothek und ein gut sortierter
+und übersichtlicher Index zu finden.
+
+<div class="p"><!----></div>
+
+<h2>An wen richtet sich das Buch?</h2>
+
+
+Das Buch richtet sich an absolute Programmieranfänger, auch wenn
+fortgeschrittene Nutzer in einigen der Aufbaukurse durchaus Neuigkeiten
+finden mögen. Ein großer Vorteil des Buchs liegt in seinem Aufbau. Man
+wird als Anfänger nicht gleich in den ersten Kapiteln mit Datentypen,
+verschiedenen Funktionen usw. bombardiert, sondern kann sich diese in
+den Aufbaukursen später nach Belieben oder Notwendigkeit heraussuchen
+und behält so besser den Überblick. Man sollte allerdings beachten, dass
+alle im Buch beschriebenen Programme (mit gutem Grund) für die Konsole
+geschrieben wurden. Man sollte also nicht erwarten, nach der Lektüre
+dieses Buches grafische Anwendungen entwickeln zu können. Für die
+Entwicklung von grafischen Nutzeroberflächen benötigt man auf jeden Fall
+weiterführende Literatur.
+
+<div class="p"><!----></div>
+
+<h2>Wie ist es geschrieben?</h2>
+
+
+Dirk Louis ist ein Programmierlehrbuch gelungen, welches sich sehr gut
+lesen lässt. Der Schreibstil ist sachlich locker, aber nicht flapsig.
+Das Auge erfreut sich ebenfalls, denn man findet keine ellenlangen
+Textwüsten im Buch, sondern stattdessen immer wieder Info-Kästen, dazu
+übersichtliche und klare Abbildungen. Die Quelltexte – soweit
+abgedruckt – können einfach aus der PDF-Datei (die man zum Buch kostenlos dazu
+erhält) herauskopiert und in den Editor eingefügt werden.
+
+<div class="p"><!----></div>
+Durch seinen Aufbau in die Grundstufe und verschiedene Aufbaustufen
+finden sich Anfänger schnell zurecht und können sich nach dem Grundkurs
+die Aufbaustufen heraussuchen, die für ihr aktuelles Problem
+wichtig sind. Das führt schneller zu
+Erfolgserlebnissen und weniger Frust, als wenn man erst viele zunächst
+uninteressante Aspekte überblättern muss. Von daher dient der Aufbau
+auch durchaus der Motivation, wobei die Aufgaben in dieser Hinsicht
+nicht besonders gut gestaltet sind. Aber auch als Anfänger kann man sich
+ja eigene Übungen ausdenken.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Neben der Programmiersprache C++ werden auch allgemeine
+Programmierkonzepte gut erläutert und eingeführt. Da auch die
+Installation und die Ausführung der Programme im Buch erklärt werden,
+lohnt sich dieses Buch für Programmieranfänger auf jeden Fall und bietet
+einen guten Einstieg in die C++-Programmierung.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>C++: Das komplette Starterkit für den einfachen Einstieg in die Programmierung&nbsp;<a href="http://www.hanser-fachbuch.de/buch/C/9783446440692">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Dirk Louis </td></tr>
+<tr><td><b>Verlag</b> </td><td>Carl Hanser Verlag, Mai 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>477 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3446440692 </td></tr>
+<tr><td><b>Preis</b> </td><td>24,99 € (gebundene Ausgabe, inkl. PDF), 19,99 € (PDF)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.hanser-fachbuch.de/buch/C/9783446440692"><tt class="big">http://www.hanser-fachbuch.de/buch/C/9783446440692</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Christian Schnell</b>
+nutzt eher die Programmiersprachen Java, PHP und Python, wirft aber auch
+immer mal wieder einen Blick über den Tellerrand, um Neues zu lernen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Rezension: C++: Das komplette Starterkit f%C3%BCr den einfachen Einstieg in die Programmierung&amp;body=freiesMagazin 08/2014%0ARezension: C++: Das komplette Starterkit f%C3%BCr den einfachen Einstieg in die Programmierung%0AChristian Schnell%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Rezension: C++: Das komplette Starterkit f%C3%BCr den einfachen Einstieg in die Programmierung#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_rezension_97_things" name="fm_14_08_rezension_97_things">Rezension: 97 Things Every … Should Know</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+    <b>W</b><b>enn man 97 Personen fragt, was Ihre Meinung zu einem bestimmten Thema ist,
+kann man sicher sein, mehr als 100 Antworten zu erhalten – die sich
+teilweise auch noch widersprechen. Damit das nicht passiert, haben die
+beiden Herausgeber Kevlin Henney und Richard Monson-Haefel einfach weniger
+Personen gefragt, sodass am Ende 97 Tipps zusammengetragen werden konnten,
+die jeder Software-Entwickler bzw. Software-Architekt wissen sollte.</b>
+
+<div class="p"><!----></div>
+
+<h2>97 Things Every Software Architect Should Know</h2>
+
+
+Software Architektur lässt sich ein bisschen mit normaler Architektur
+vergleichen. Man macht sich im Vorfeld viele Gedanken über die Basis und die
+Struktur eines Projekts, damit dieses stabil ist. Und wie bei einem
+fertiggestellten Wolkenkratzer kann man diese Basis im Nachhinein nur sehr
+schwer oder sehr teuer ändern. Das Buch „97 Things Every Software Architect
+Should Know“ soll helfen, bei den zu fällenden Entscheidungen keine Fehler
+zu machen.
+
+<div class="p"><!----></div>
+Die Idee des Buches ist sehr einfach: Zahlreiche Software-Architekten
+erzählen in 97 kleinen Geschichten, was für gute Architektur bzw. einen
+guten Architekten notwendig ist oder was eher zu katastrophalen Ergebnissen
+führen kann. Fast 50 Personen tragen etwas zum Buch bei, das von Richard
+Monson-Haefel zusammengestellt wurde.
+
+<div class="p"><!----></div>
+Der Inhalt des Buches variiert dabei sehr, was auch die Stärke des Buches
+ist. Von Datenbanken über Architektur-Pattern hin zu zwischenmenschlichen
+Beziehungen ist jedes Thema vertreten. Die einzelnen Kapitel sind dabei nur
+sehr lose geordnet, wobei versucht wurde, thematisch zusammengehörende
+Abschnitte auch nacheinander zu setzen.
+
+<div class="p"><!----></div>
+Als Zielgruppe sollten nicht nur Software-Architekten verstanden werden. Auch
+„normale“ Entwickler können aus einigen Bereichen etwas mitnehmen, zumal in
+zahlreichen Firmen bzw. bei Open-Source-Projekten die Trennung zwischen
+Architekt, Designer und Entwickler gar nicht gegeben ist. Hier nimmt eine
+Person alle Posten ein und so ist der Inhalt gerade für diese wichtig.
+
+<div class="p"><!----></div>
+Geprägt wird das Buch natürlich durch zahlreiche Verweise auf Agile Methoden
+und Praktiken wie Scrum&nbsp;<a href="https://de.wikipedia.org/wiki/Scrum">[1]</a> oder
+Kanban&nbsp;<a href="https://de.wikipedia.org/wiki/Kanban_%28Softwareentwicklung%29">[2]</a>. Aber
+auch wer nicht nach diesen Methodiken entwickelt, kann sich vielleicht den
+ein oder anderen Anreiz zur Verbesserung holen.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>97 Things Every Software Architect Should Know&nbsp;<a href="http://shop.oreilly.com/product/9780596522704.do">[3]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Richard Monson-Haefel (Herausgeber) </td></tr>
+<tr><td><b>Verlag</b> </td><td>O'Reilly, 2009 </td></tr>
+<tr><td><b>Umfang</b> </td><td>222 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-0-59652-269-8 </td></tr>
+<tr><td><b>Preis</b> </td><td>34,99$ (Print), 27,99$ (E-Book), 38,49$ (Print+E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+<h2>97 Things Every Programmer Should Know</h2>
+
+
+Mit dem Wort „Programmierer“ verbinden viele Menschen eine Person, die in
+seinem dunklen Kämmerchen stupide Codezeilen in einem Computer hackt. Dabei
+könnte man in den meisten Fällen nicht falscher liegen.
+
+<div class="p"><!----></div>
+Wie oben erklärt,
+umfasst die Arbeit eines Programmierers – dessen bessere Berufsbezeichnung
+Softwareentwickler ist – nicht nur das Eintippen von Code. Es gehört sehr
+viel Geduld, Kreativität und Sozialkompetenz dazu. Diese Dinge werden in „97
+Things Every Programmer Should Know“ angesprochen.
+
+<div class="p"><!----></div>
+Ähnlich wie das obige 97-Dinge-Buch handelt es sich um eine eher lose
+Aneinanderreihung von Tipps diverser erfolgreicher und bekannter
+Programmierer. 73 männliche und weiblicher Vertreter ihrer Zunft geben ihre
+Meinung zum Besten und überschneiden sich dabei sogar manchmal. Die Beiträge
+wurden von Herausgeber Kevlin Henney aber auch entsprechend ausgewählt.
+
+<div class="p"><!----></div>
+Themenbereiche sind unter anderem Code-Kommentare, Testen,
+Versionsverwaltung, Automatisierung und Kundenverständnis. Damit sieht man
+auch, dass die Themenbereiche sich an manchen Stellen auch mit „97 Things
+Every Software Architect Should Know“ überschneiden. Dementsprechend zählen
+nicht nur Entwickler zu der Zielgruppe des Buches, sondern beispielsweise
+finden auch Software-Architekten viele gute Tipps darin.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>97 Things Every Programmer Should Know&nbsp;<a href="http://shop.oreilly.com/product/9780596809492.do">[4]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Kevlin Henney (Herausgeber) </td></tr>
+<tr><td><b>Verlag</b> </td><td>O'Reilly, 2010 </td></tr>
+<tr><td><b>Umfang</b> </td><td>258 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-0-59680-948-5 </td></tr>
+<tr><td><b>Preis</b> </td><td>29,99$ (Print), 24,99$ (E-Book), 32,99$ (Print+E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+<h2>Verfügbarkeit unter einer Freien Lizenz</h2>
+
+
+Interessant ist, dass O'Reilly sich auf ein besonderes Experiment
+eingelassen hat. Zwar stehen beide Bücher nicht unter einer Freien Lizenz, die
+einzelnen Beiträge aber schon. Veröffentlicht wurden diese unter der
+Creative-Commons-Lizenz CC-BY
+3.0&nbsp;<a href="http://creativecommons.org/licenses/by/3.0/deed.de">[5]</a>. So kann man diese
+in seinen eigenen Arbeiten nutzen, ändern (z.&nbsp;B. übersetzen) und verbreiten.
+
+<div class="p"><!----></div>
+
+
+Zusätzlich zum Buch können die einzelnen Beiträge darüber hinaus auf den folgenden
+Webseiten gelesen werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <a href="http://programmer.97things.oreilly.com/"><tt class="big">http://programmer.97things.oreilly.com/</tt></a></li>
+<li> <a href="http://97things.oreilly.com/wiki/index.php/Home_Page_for_97_Things"><tt class="big">http://97things.oreilly.com/wiki/index.php/Home_Page_for_97_Things</tt></a></li>
+</ul>
+
+<div class="p"><!----></div>
+Es handelt sich dabei aber teilweise um die unbearbeiteten Fassungen der
+Beiträge.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Insgesamt sind beide Bücher sehr kurzweilig zu lesen. Jedes Kapitel umfasst
+meist zwei oder drei Seiten und durch die lose Kopplung kann man jederzeit
+aufhören und später mit dem nächsten Kapitel weitermachen ohne den Überblick
+zu verlieren. Sicherlich sind nicht alle Tipps für jeden hilfreich und bei
+einigen mag man auch anderer Meinung sein, aber interessant sind die
+Einblicke in jedem Fall.
+
+<div class="p"><!----></div>
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://de.wikipedia.org/wiki/Scrum"><tt class="big">https://de.wikipedia.org/wiki/Scrum</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Kanban_%28Softwareentwicklung%29"><tt class="big">https://de.wikipedia.org/wiki/Kanban_(Softwareentwicklung)</tt></a><br />
+[3] <a href="http://shop.oreilly.com/product/9780596522704.do"><tt class="big">http://shop.oreilly.com/product/9780596522704.do</tt></a><br />
+[4] <a href="http://shop.oreilly.com/product/9780596809492.do"><tt class="big">http://shop.oreilly.com/product/9780596809492.do</tt></a><br />
+[5] <a href="http://creativecommons.org/licenses/by/3.0/deed.de"><tt class="big">http://creativecommons.org/licenses/by/3.0/deed.de</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+ist Software-Entwickler und Software-Architekt und hat einige interessante
+Tipps aus beiden Büchern mitnehmen können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+
+
+
+                <i><a href="mailto:?subject=Rezension: 97 Things Every ... Should Know&amp;body=freiesMagazin 08/2014%0ARezension: 97 Things Every ... Should Know%0ADominik Wagenführ%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Rezension: 97 Things Every ... Should Know#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_rezension_kids_programmieren" name="fm_14_08_rezension_kids_programmieren">Rezension: Kids programmieren 3D-Spiele mit JavaScript</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>P</b><b>rogrammieren von Null an Lernen mit JavaScript, dann direkt 3D-Programmierung
+und das ganze noch ausschließlich im Browser? Im Internetzeitalter und dem
+omnipräsenten World Wide Web sicherlich ein durchaus zeitgemäßes Konzept. Dies hat
+sich scheinbar auch der O'Reilly-Verlag gedacht, als er sich zur
+Veröffentlichung des Buchs „Kids programmieren 3D-Spiele mit JavaScript“
+entschied.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken O'Reilly für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Auch wenn der Titel das Wort „Kids“ (also Kinder) enthält, ist das Buch (ebenso)
+für alle anderen Interessierten geeignet, die einen lockeren Einstieg in diese
+Thematik suchen. Wie der Titel weiterhin verrät, ist die verwendete
+Programmiersprache JavaScript und alle Beispiele drehen sich um das Thema
+„3-D-Spiele“.
+
+<div class="p"><!----></div>
+
+<h2>Spielerisches</h2>
+
+
+Im Laufe des Buchs werden diverse Spiele entwickelt. Dabei darf natürlich nicht
+erwartet werden, dass die Spiele es in Sachen Story, Komplexität oder Grafik mit
+kommerziellen oder Freeware-Titeln aufnehmen können. Aber es sind immer die
+Grundkomponenten wie zum Beispiel ein zu erreichendes Ziel, Punktezähler,
+Kollisionskontrolle enthalten und die Spiele sind in sich abgeschlossen.
+
+<div class="p"><!----></div>
+Alle Spiele werden auf Basis der JavaScript-Bibliothek
+Three.js&nbsp;<a href="http://threejs.org/">[1]</a> geschrieben und als Programmierumgebung kommt der ICE
+Code Editor&nbsp;<a href="http://gamingjs.com/ice/">[2]</a> zum Einsatz.
+ Was sich im ersten
+Moment nach einer recht starken Einschränkung anhört (welche Entwickler lässt sich
+schon gerne den Editor vorschreiben?) hat auf den zweiten Blick handfeste Vorteile:
+Der interessierte Programmieranfänger muss nichts zusätzlich installieren, sondern braucht
+nur den Browser öffnen, die Seite laden und kann dann loslegen. Der ICE Editor bringt
+nämlich direkt schon fertige Vorlagen mit, welche unter anderem die Bibliothek Three.js laden
+und initialisieren.
+
+<div class="p"><!----></div>
+
+<h2>Programmiertechnisches</h2>
+
+
+Trotz aller „Spielereien“ kommt natürlich das Programmieren bzw. das
+Erlernen von Konzepten nicht zu kurz. Schrittweise bringt der Autor dem Leser
+alle grundlegenden Dinge bei wie Umgang mit Variablen, Funktionsaufrufe und das
+Schreiben eigener Funktionen, Bedingungen und Schleifen, Umgang mit
+JavaScript-Objekten, Event-Verarbeitung und auch die sinnvolle Strukturierung
+von Code.
+
+<div class="p"><!----></div>
+Zusätzlich dazu lernt der Leser noch die Dinge, die für die Spiele- bzw.
+3-D-Programmierung wichtig sind: Gestaltung von Oberflächen, Auswahl der
+richtigen Betrachungsposition, Kollisionskontrolle, Setzen der richtigen
+Beleuchtung für 3-D-Objekte usw.
+
+<div class="p"><!----></div>
+Das ganze ist recht geschickt in die Bespiele verpackt und wird schrittweise in
+gut nachvollziehbaren „Häppchen“ gereicht.
+
+<div class="p"><!----></div>
+
+<h2>Inhaltliches</h2>
+
+
+Da das Buch auf reine Programmieranfänger und Kinder (laut Autor ist das Buch ab
+11 Jahren geeignet) abzielt, ist das Lerntempo wie erwartet sehr gemächlich. Es wird alles
+sehr detailliert und gut nachvollziehbar erklärt, ohne jedoch ausufernd oder
+langatmig zu wirken. Die Schreibweise wird der Zielgruppe sehr gut gerecht, ohne
+kindlich zu wirken. Auch die Übersetzung – das Original des Buchs ist in
+Englisch verfasst – ist sehr gut gelungen. Das Werk liest sich sehr flüssig.
+
+<div class="p"><!----></div>
+Insgesamt gibt es 21 Kapitel, welche in Projektkapitel, in denen ein Spiel
+entwickelt bzw. weiter entwickelt wird, und „normale“ Kapitel, in den Grundlagen etc.
+erklärt werden, unterteilt sind, wobei es deutlich mehr Projektkapitel gibt.
+
+<div class="p"><!----></div>
+Insgesamt umfasst das Buch 344 Seiten, wobei der reine Text-/Lerninhalt „nur”
+251 Seiten umfasst. Die restlichen Seiten bilden die kompletten Quelltexte der
+entwickelten Spiele sowie einen ausführlichen Index ab.
+
+<div class="p"><!----></div>
+
+<h2>Anspruch</h2>
+
+
+Im Vergleich zu vielen anderen Büchern, die sich an Programmiereinsteiger richten, wählt das
+vorliegende Buch einen ganz anderen Weg. Es besteht kein Anspruch, einen
+möglichst umfassenden und tiefen Einstieg in JavaScript zu erreichen, sondern
+vielmehr mit (Spiel-) Spaß praxisnah die Grundlagen zu erlernen, was durchaus
+auch gut gelingt.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Wer einen lebendigen Einstieg in die Programmierung mit JavaScript mit viel
+Praxisnähe und eher wenig Theorie sucht, der ist mit dem Buch „Kids programmieren
+3D-Spiele mit JavaScript“ sicherlich sehr gut beraten. Es bietet einen guten und auch für Anfänger leicht
+verständlichen Einstieg in das Thema. Allerdings muss man nach erfolgreichem
+Durcharbeiten noch die ein oder andere Folgelektüre lesen, da das Buch dafür
+nicht tief genug geht. Weswegen es auch eher keine Lektüre erster Wahl für Leute ist,
+die bereits in einer anderen Sprache programmieren können und lediglich einen schnellen Einstieg in
+JavaScript suchen. Für Kompletteinsteiger – auch jüngeren Alters – ist das Buch
+jedoch durchaus zu empfehlen und liefert einen guten Einstieg in die Javascriptprogrammierung.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i> Da es schade wäre, wenn das Buch bei Jochen Schnelle lediglich im Regal
+verstaubt, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Eine wichtige Rolle als API für das Rendern von 2-D- und 3-D-Grafiken im Browser spielt WebGL (Web Graphics Library). In welcher Stadt hat das Konsortium, das WebGL betreut, sein Hauptquartier?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>10. August 2014, 23:59 Uhr</b> über die Kommentarfunktion
+oder per E-Mail an <img src="freiesMagazin-2014-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> geschickt werden. Die Kommentare
+werden bis zum Ende der Verlosung nicht freigeschaltet. Das Buch wird unter
+allen Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Kids programmieren 3D-Spiele mit JavaScript&nbsp;<a href="http://www.oreilly.de/catalog/progspasskidsger/">[3]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Chris Strom </td></tr>
+<tr><td><b>Verlag</b> </td><td>O'Reilly, 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>344 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-95561-496-6 </td></tr>
+<tr><td><b>Preis</b> </td><td>27,90 € (Print), 22,00 € (PDF)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://threejs.org/"><tt class="big">http://threejs.org/</tt></a><br />
+[2] <a href="http://gamingjs.com/ice/"><tt class="big">http://gamingjs.com/ice/</tt></a><br />
+[3] <a href="http://www.oreilly.de/catalog/progspasskidsger/"><tt class="big">http://www.oreilly.de/catalog/progspasskidsger/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.de/">Webseite</a>)
+interessiert sich generell für Programmiersprachen und verwendet
+JavaScript für eigene, web-basierte Programme.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Rezension: Kids programmieren 3D-Spiele mit JavaScript&amp;body=freiesMagazin 08/2014%0ARezension: Kids programmieren 3D-Spiele mit JavaScript%0AJochen Schnelle%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Rezension: Kids programmieren 3D-Spiele mit JavaScript#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_leserbriefe" name="fm_14_08_leserbriefe">Leserbriefe</a></font></h1>
+
+
+    <b>Für Leserbriefe steht unsere E-Mailadresse
+        <img src="freiesMagazin-2014-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+        Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+    An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+    uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+    sehr viel Lob (was uns natürlich freut), aber vor allem durch
+    Kritik und neue Ideen können wir uns verbessern.
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>Retten von verlorenen Daten mit PhotoRec</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Als derzeit aktiver Nutzer von PhotoRec möchte ich noch einen Tipp
+hinzufügen. In den Optionen von PhotoRec kann man die zu suchenden
+Dateitypen auswählen. Per Default sind alle ausgewählt, was eine nicht
+mehr zu bewältigende Datenflut ergibt. Bei einer 750GB-Platte habe ich
+nach etwa 3 Stunden 450.000 Dateien gefunden.
+Bis etwa 50.000 Dateien konnte Krusader in den Ergebnissen suchen und
+nach etwa 10 Minuten wurde das Ergebnis angezeigt. Bei den genannten
+ursprünglich 450.000 habe ich nach etwa 10 Stunden den Prozess killen
+müssen.
+Beim Recovery sollte man schrittweise nach den verschiedenen Dateitypen
+suchen, nachdem man den vorhergehenden Suchlauf gesichtet und dann
+gelöscht hat.
+
+<div class="p"><!----></div>
+
+
+PhotoRec erlaubt auch das Durchsuchen von Images, die mit TestDisk
+erstellt wurden. Dabei bietet TestDisk je nach Schwere des Unfalls
+verschiedene Optionen an, mit welchen Parametern (z.&nbsp;B. Blockgröße) von
+der Platte gelesen werden soll. Spielt man damit rum, so hat man, wie
+bei meinem zerschossenen XFS, sehr viele Optionen. So war das RAID
+schnell mit etwa 5 Terabyte Images voll. Wohin dann mit den von
+PhotoRec gefundenen Dateien? Ressourcenplanung sollte man schon machen,
+auch wenn man Panik hat. Sicherheit geht vor; also eine 1:1-Kopie von
+der zu analysierenden Platte machen!
+
+<div class="p"><!----></div>
+Noch zu TestDisk: Es können keine XFS-Dateien (Dateinamen) in der
+Vorschau angezeigt werden. Das bestätigte mir der Programmierer per
+Mail. Die Programmeldung „XFS nicht eincompiliert …“ ist irreführend.
+Zitat: „<em>Sorry the message is erronous: TestDisk can't list XFS
+files. You will have to try to recover a partiton table with the XFS
+partition found by TestDisk, mount and list the files using Linux.
+Christophe</em>“ Meine Hoffnung diesbezüglich erfüllte sich nicht, da die
+Wiederherstellung der XFS-Partition fehlschlug. PhotoRec war dann die
+Lösung. Oben im Beitrag wurde erwähnt, dass große Dateien weniger
+Chancen hätten. Mir gelang es, einige große Videos mit 3,5&nbsp;GB
+fehlerfrei zu retten. Grund war meine Entscheidung sofort nach
+Feststellung des Bedienfehlers (Install gestartet) den Rechner
+abzuwürgen und die Festplatte auszubauen. Auf keinen Fall den Rechner
+neu starten! Jeder Mount-Vorgang schreibt Daten auf die Platte.
+        <br /><b>Olaf G.</b> &nbsp;(<a href="http://www.freiesmagazin.de/20140706-juliausgabe-erschienen#comment-3202">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Mathematik mit Open Source</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Sehr interessanter Artikel, nett geschrieben. Jedoch erwartet man nach
+der Überschrift einen wesentlich ausführlicheren Artikel, der mehr,
+auch Nicht-Standard-Software, umfasst.
+        <br /><b>Lennart</b> &nbsp;(<a href="http://www.freiesmagazin.de/20140706-juliausgabe-erschienen#comment-3192">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Tatsächlich sind noch weitere Artikel zu dem Thema geplant, die
+verschiedene Software und verschiedene Themen der Mathematik behandeln.
+Jedoch habe ich neben dem Studium noch zwei, drei andere Projekte
+laufen, so dass ich nicht zu früh versprechen will, wann diese Artikel
+erscheinen werden.
+        <br /><b><i>Tobias Kaulfuß</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Typographie lernen mit Type:Rider</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ich vermisse den Hinweis, dass sich das Spiel auch online spielen lässt
+– einfach auf die arte-Homepage gehen…
+        <br /><b>Jan</b> &nbsp;(<a href="http://www.freiesmagazin.de/20140706-juliausgabe-erschienen#comment-3205">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Bei mir habe ich es leider in keinem Browser (Firefox und Opera) zum
+Laufen bekommen. Ich kenne die Systemvoraussetzungen nicht und wollte
+diese bei mir nicht funktionierende Möglichkeit auch nicht bewerben.
+        <br /><b><i>Dominik</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+
+    Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+    kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+
+<div class="p"><!----></div>
+                <i><a href="mailto:?subject=Leserbriefe&amp;body=freiesMagazin 08/2014%0ALeserbriefe%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2014-08%0A        "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-shareicon.png" alt="fm-shareicon.png" /> Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/381?edit[subject]=Leserbriefe#comment-form "><img src="freiesMagazin-2014-08-bilder-Dateien/fm-commenticon.png" alt="fm-commenticon.png" /> Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_veranstaltungen" name="fm_14_08_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+GNU Hackers Meeting </td><td>München </td><td align="left">15.08.–17.08.2014 </td><td>frei </td><td align="left"><a href="http://www.gnu.org/ghm/2014/munich/"><tt class="big">http://www.gnu.org/ghm/2014/munich/</tt></a> </td></tr>
+<tr><td align="left">FrOSCon </td><td>Sankt Augustin </td><td align="left">23.08.–24.08.2014 </td><td>– </td><td align="left"><a href="http://www.froscon.de/"><tt class="big">http://www.froscon.de/</tt></a> </td></tr>
+<tr><td align="left">MRMCD14 </td><td>Darmstadt </td><td align="left">05.09.–07.09.2014 </td><td>42 EUR </td><td align="left"><a href="https://mrmcd.net/"><tt class="big">https://mrmcd.net/</tt></a> </td></tr>
+<tr><td align="left">Datenspuren </td><td>Dresden </td><td align="left">13.09.–14.09.2014 </td><td>frei </td><td align="left"><a href="http://www.datenspuren.de/"><tt class="big">http://www.datenspuren.de/</tt></a> </td></tr>
+<tr><td align="left">play14 </td><td>Hamburg </td><td align="left">16.09.–20.09.2014 </td><td>10 EUR </td><td align="left"><a href="http://www.play14.de/"><tt class="big">http://www.play14.de/</tt></a> </td></tr>
+<tr><td align="left">Kieler Linuxtage </td><td>Kiel </td><td align="left">19.09.–20.09.2014 </td><td>frei </td><td align="left"><a href="http://www.kieler-linuxtage.de/"><tt class="big">http://www.kieler-linuxtage.de/</tt></a> </td></tr>
+<tr><td align="left">Software Freedom Day </td><td>Weltweit </td><td align="left">20.09.2014 </td><td>frei </td><td align="left"><a href="http://softwarefreedomday.org/"><tt class="big">http://softwarefreedomday.org/</tt></a> </td></tr>
+<tr><td align="left">GUUG FFG2014 </td><td>Bochum </td><td align="left">23.09.–29.09.2014 </td><td>– </td><td align="left"><a href="https://www.guug.de/veranstaltungen/ffg2014/"><tt class="big">https://www.guug.de/veranstaltungen/ffg2014/</tt></a> </td></tr>
+<tr><td align="left">VCFB </td><td>Berlin </td><td align="left">03.10.–05.10.2014 </td><td>– </td><td align="left"><a href="http://www.vcfb.de/"><tt class="big">http://www.vcfb.de/</tt></a> </td></tr>
+<tr><td align="left">8. LIT-OL </td><td>Oldenburg </td><td align="left">17.10.–18.10.2014 </td><td>frei </td><td align="left"><a href="http://www.lit-ol.de"><tt class="big">http://www.lit-ol.de</tt></a> </td></tr>
+<tr><td align="left">Ubucon </td><td>Katlenburg-Lindau </td><td align="left">17.10.–19.10.2014 </td><td>15 EUR </td><td align="left"><a href="http://ubucon.de/"><tt class="big">http://ubucon.de/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2014-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_konventionen" name="fm_14_08_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_14_08_impressum" name="fm_14_08_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+        <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 3. August 2014<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2014-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left"><b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Hauke Goos-Habermann und Maren Hachmann </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_debian_workshop_teil1">Administration von Debian &amp; Co im Textmodus – Teil I</a>  </td></tr>
+<tr><td align="left">Jürgen Hamel </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_cuon">Kassensystem in C.U.O.N.</a>  </td></tr>
+<tr><td align="left">Mirko Lindner </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rhel7">Red Hat Enterprise Linux 7</a>  </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_kernel">Der Juli im Kernelrückblick</a>  </td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rezension_cpp">Rezension: C++: Das komplette Starterkit für den einfachen Einstieg</a>  </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rezension_kids_programmieren">Rezension: Kids programmieren 3D-Spiele mit JavaScript</a>  </td></tr>
+<tr><td align="left">Christian Stankowic </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_spacewalk_teil1">Spacewalk – Teil 1: Einführung, Übersicht und Installation</a>  </td></tr>
+<tr><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2014-08-bilder.html#fm_14_08_rezension_97_things">Rezension: 97 Things Every … Should Know</a>  </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+<tr><td align="left"><b>Satz und Layout</b></td></tr>
+<tr><td align="left">Jonas Dabelow </td><td align="left">Moritz Kiefer </td></tr>
+<tr><td align="left">Christoph Lehmann </td><td align="left">Kai Welke </td></tr>
+
+<tr><td align="left"><b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left">Toni Zimmer </td></tr>
+
+<tr><td align="left"><b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td></tr>
+
+<tr><td align="left"><b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. 
+    Die Kommentar- und Empfehlen-Icons wurden von Maren Hachmann erstellt
+    und unterliegen ebenfalls der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>.
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2014-08-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  6 Aug 2014, 20:36.</small>
+</div>
+</body></html>

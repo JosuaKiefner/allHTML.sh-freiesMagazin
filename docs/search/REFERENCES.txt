@@ -1,0 +1,7 @@
+ This is the reference file for all files delivered with allHTML.sh by Josua Kiefner:
+ - allHTML.sh is licensed under the GNU GPLv3 or (at your option) any later version
+ - start.html and searchresult.html are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License
+ - freiesMagazin (Copyright freiesMagazin) and the logo of freiesMagazin (created by Arne Weinberg) are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License
+ - jquery and all it's subprojects are licensed under the MIT license
+ - the programms for indexing the sites and the materials to implement the search function where provided by PCWelt (http://www.pcwelt.de/ratgeber/Indexsuche-fuer-die-Website-9963262.html ; www.pcwelt.de/PF8JZA); it origanally came from the xsl-webhelpindexer (https://github.com/Myria-de/xsl-webhelpindexer) and the docbook project (https://sourceforge.net/projects/docbook/ ; http://docbook.sourceforge.net/); some of it's files have been modified; for license information, please refer to the mentioned sites
+I don't take any warranty for the completeness and correctness of this document.

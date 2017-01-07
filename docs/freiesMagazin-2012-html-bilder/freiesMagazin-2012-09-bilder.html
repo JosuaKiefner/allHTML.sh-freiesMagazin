@@ -1,0 +1,3859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                                                
+<title>freiesMagazin 09/2012</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Passwortsicherheit | Der August im Kernelrückblick | Tiny & Big – Unterwäschefetischismus deluxe | Redis – Mehr als ein Key-Value-Store | Taskwarrior – What's next? (Teil 2) | Rezension: Schrödinger programmiert C++ | Rezension: Seven Databases in Seven Weeks | Rezension: Android – Apps entwickeln | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 3.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 09/2012" />
+<meta name="language" content="German" />
+
+<style type="text/css"> div.command {background: none repeat scroll 0% 0% rgb(216, 216, 216); color: black; border: 1px solid lightgray; padding: 3px; font-family: monospace; font-size: 1.25em;}</style>
+<style type="text/css"> div.listing {background: none repeat scroll 0% 0% rgb(255, 255, 229); color: black; border: 1px solid lightgray; padding: 3px; font-family: monospace; font-size: 1.25em;}</style>
+<style type="text/css"> div.infobox {background: none repeat scroll 0% 0% rgb(216, 242, 255); color: black; border: 1px solid lightgray; padding: 3px;}</style>
+<style type="text/css"> tt.big {font-size: 1.25em;}</style>
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2012-09-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-09.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>September 2012</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a name="inhalt">Topthemen dieser Ausgabe</a></font></h1>
+
+
+        <font size="+1"><a href="freiesMagazin-2012-09-bilder.html#12_09_passwortsicherheit">Passwortsicherheit</a></font> <br />
+    Nahezu jede Zeitschrift und Internetseite, die sich mit einem PC-nahen Thema beschäftigt, hat irgendwann einmal einen Artikel zum Thema Passwortsicherheit herausgebracht. Diese bestehen meist aus einer Reihe von Regeln, die man als Nutzer beherzigen sollte, damit es nicht zum bösen Erwachen kommt. Der Artikel möchte das Thema von verschiedenen Seiten beleuchten, wobei es hauptsächlich um Passwortsicherheit im Internet geht. So soll sowohl für die Nutzer als auch für die Entwickler von Webseiten, Protokollen und Anwendungen ein kleiner Einblick gegeben werden, wo Probleme liegen können und wie man sie verhindern kann. (<a href="freiesMagazin-2012-09-bilder.html#12_09_passwortsicherheit">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2012-09-bilder.html#12_09_tinyandbig">Tiny &amp; Big – Unterwäschefetischismus deluxe</a></font> <br />
+    Menschen leben und Menschen sterben – und manche sind sogar so freundlich und vererben ihren Verwandten einige ihrer Habseligkeiten damit sie immer in guter Erinnerung behalten werden. Warum ein Großvater seinem Enkel ausgerechnet eine Unterhose vermacht und warum diese Unterhose keine normale Unterhose ist, das und vieles mehr erfährt man beim Spielen des Jump'n'Runs „Tiny&nbsp;&amp;&nbsp;Big – Grandpa's Leftovers“. (<a href="freiesMagazin-2012-09-bilder.html#12_09_tinyandbig">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+        <font size="+1"><a href="freiesMagazin-2012-09-bilder.html#12_09_redis">Redis – Mehr als ein Key-Value-Store</a></font> <br />
+    Einer der populäreren Vertreter der aktuellen Generation der „NoSQL“-Datenbanken ist sicherlich Redis. Dabei fällt in Kombination mit diesem Key-Value-Store gerne das Wort „schnell“. Redis ist in der Tat schnell, hat aber noch eine ganze Menge mehr zu bieten als bloße Geschwindigkeit. Was genau, soll der Artikel zeigen. (<a href="freiesMagazin-2012-09-bilder.html#12_09_redis">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                  
+
+                        
+<h1><font color="#595959"><a name="index">Inhalt</a></font></h1><!-- CONTENT -->
+
+
+<b>Linux allgemein</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_passwortsicherheit">Passwortsicherheit</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_kernel">Der August im Kernelrückblick</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Software</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_tinyandbig">Tiny &amp; Big – Unterwäschefetischismus deluxe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_redis">Redis – Mehr als ein Key-Value-Store</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_taskwarrior_02">Taskwarrior – What's next? (Teil 2)</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Community</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_rezension_schroedinger_cpp">Rezension: Schrödinger programmiert C++</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_rezension_seven_databases">Rezension: Seven Databases in Seven Weeks</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_rezension_android_apps">Rezension: Android – Apps entwickeln</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Magazin</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#12_09_impressum">Impressum</a><br /><!-- CONTENT -->
+
+
+
+<div class="p"><!----></div><!-- CONTENT -->
+<a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_09_editorial">Editorial</a></font></h1>
+    
+
+
+
+<h2>Auf Wiedersehen!</h2>
+
+
+Auf Frühling folgt Sommer, darauf der Herbst und gewöhnlich danach der Winter.
+Die Flüsse tragen das Wasser aus den Bergen ins Meer, und die Sonne geht jeden
+Tag im Osten auf und im Westen unter (zumindest auf der nördlichen Erdhalbkugel).
+Und so ist es auch normal, dass sich das Leben eines Menschen weiterentwickelt,
+sein Privatleben sich (hoffentlich zum Besseren) ändert und für andere Dinge
+nicht mehr so viel Zeit bleibt.
+
+<div class="p"><!----></div>
+So geschehen ist dies bei unserem Redaktionsmitglied Dominik Honnef. Im März
+2009 hat er als Setzer und Layouter angefangen, ist dann im August 2009 zum
+Redakteur aufgestiegen und hat uns (mit einer „kleinen“ 13-monatigen Pause)
+immer tatkräftig und mit viel Einsatzbereitschaft unterstützt.
+
+<div class="p"><!----></div>
+Aus privaten Gründen muss er sich nun leider zurückziehen und anderen
+Aufgaben in der „realen Welt“ widmen. Wir möchten ihm für seine Unterstützung
+danken, wünschen ihm alles Gute für die Zukunft und hoffen auf eine
+eventuelle Rückkehr ins <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Team.
+
+<div class="p"><!----></div>
+Die vakante Stelle im Dreigestirn der Redaktion bleibt aber nicht lange
+unbesetzt. Wir haben schon aus dem Nachwuchsteam einige Anwärter, sodass die
+Redaktion zur nächsten <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Ausgabe wieder vollzählig vor Ihnen stehen kann.
+
+<div class="p"><!----></div>
+
+<h2>Vorträge auf der Ubucon</h2>
+
+
+In der letzten Ausgabe von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> und auf der Webseite&nbsp;<a href="http://www.freiesmagazin.de/20120719-vorschlaege-fuer-freiesmagazin-vortrag-gesucht">[1]</a>
+suchten wir Vorträge für die im Oktober 2012 in Berlin stattfindete
+Ubucon&nbsp;<a href="http://ubucon.de/2012/">[2]</a>. Es gab einige gute Vorschläge in den
+Kommentaren und auch per E-Mail, sodass Dominik Wagenführ (Chefredakteur von
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>) dort zwei Themen präsentieren kann.
+
+<div class="p"><!----></div>
+Zum einen wird über das Thema Lizenzen gesprochen, insbesondere über die
+Creative-Commons-Lizenz&nbsp;<a href="http://de.creativecommons.org/">[3]</a>. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> und die
+Artikel darin stehen alle unter einer Creative-Commons-Lizenz. Im Vortrag
+soll erklärt werden, wozu die CC-Lizenzen da sind und wie man sie korrekt
+anwendet bzw. Creative-Commons-lizenzierte Inhalte nutzen kann. Hierzu wird
+es in der nächsten Ausgabe von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> auch einen ausführlichen Artikel geben.
+
+<div class="p"><!----></div>
+Das zweite Thema betrifft die Erstellung von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> als EPUB. Auch wenn wir
+hierfür viel Hand anlegen müssen, geschieht die Erstellung dennoch völlig
+automatisiert aus den LaTeX-Quellen. Im Vortrag soll der Weg von LaTeX
+zum EPUB erläutert werden, wobei dabei auch erklärt wird, wie man ein PDF
+oder eine HTML-Seite in ein EPUB wandeln kann. Auch hierzu wird es in einer
+der nächsten Ausgaben einen Artikel geben.
+
+<div class="p"><!----></div>
+Es gab noch mehr Vorschläge, u.&nbsp;a. etwas zur <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Geschichte und wie sich
+das Magazin und das Team in den letzten sechs Jahren seit Bestehen verändert
+hat. Hier fanden wir einen Vortrag etwas zu einseitig und für die Zuhörer
+nicht interessant genug. Bei Gelegenheit werden wir die Historie von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+aber aufarbeiten und in einem Artikel präsentieren.
+
+<div class="p"><!----></div>
+
+
+    
+
+
+<h2><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> als RPM-Paket</h2>
+
+
+Nachdem vor kurzem ein Leser <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> in ein Ubuntu-Paket gepackt hat, sodass man
+immer die neueste Ausgabe über die Paketverwaltung geliefert bekommt&nbsp;<a href="http://www.freiesmagazin.de/20120623-freiesmagazin-als-ubuntu-paket">[4]</a>,
+hat sich ein anderer Leser daran ein Beispiel genommen und für RPM-basierende
+Distributionen einen ähnliches Paket erstellt&nbsp;<a href="http://www.freiesmagazin.de/20120816-freiesmagazin-als-rpm-paket">[5]</a>.
+
+<div class="p"><!----></div>
+In seinem Blog&nbsp;<a href="http://saigkill.homelinux.net/entry/freiesmagazin-als-rpm-paket">[6]</a>
+informiert der Leser Sascha Manns darüber, wie man <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter openSUSE,
+Fedora und Mandriva ebenfalls monatlich als Paket über die Paketverwaltung
+beziehen kann. Das Paket enthält dabei sowohl die PDF- als auch die
+EPUB-Ausgabe (mit Bildern).
+
+<div class="p"><!----></div>
+An dieser Stelle sei auch erwähnt, dass fremde Paketquellen (vor allem,
+wenn sehr viel Software in ihnen vorhanden ist) Probleme bei
+Paketaktualisierungen bereiten können. Die Benutzung geschieht also
+auf eigene Gefahr.
+
+<div class="p"><!----></div>
+Daneben erfolgt das Angebot nach wie vor nicht von der <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion direkt,
+sondern ist ein reines Privatangebot. Wer es nutzen möchte, ist herzlich
+dazu eingeladen. Bei Problemen sollte man sich aber an den jeweiligen Betreuer
+wenden.
+
+<div class="p"><!----></div>
+Und nun viel Spaß mit der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/20120719-vorschlaege-fuer-freiesmagazin-vortrag-gesucht"><tt class="big">http://www.freiesmagazin.de/20120719-vorschlaege-fuer-freiesmagazin-vortrag-gesucht</tt></a><br />
+[2] <a href="http://ubucon.de/2012/"><tt class="big">http://ubucon.de/2012/</tt></a><br />
+[3] <a href="http://de.creativecommons.org/"><tt class="big">http://de.creativecommons.org/</tt></a><br />
+[4] <a href="http://www.freiesmagazin.de/20120623-freiesmagazin-als-ubuntu-paket"><tt class="big">http://www.freiesmagazin.de/20120623-freiesmagazin-als-ubuntu-paket</tt></a><br />
+[5] <a href="http://www.freiesmagazin.de/20120816-freiesmagazin-als-rpm-paket"><tt class="big">http://www.freiesmagazin.de/20120816-freiesmagazin-als-rpm-paket</tt></a><br />
+[6] <a href="http://saigkill.homelinux.net/entry/freiesmagazin-als-rpm-paket"><tt class="big">http://saigkill.homelinux.net/entry/freiesmagazin-als-rpm-paket</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+<h1><font color="#595959"><a name="12_09_passwortsicherheit">Passwortsicherheit</a></font></h1>von Florian Satzger
+
+<div class="p"><!----></div>
+        <b>N</b><b>ahezu jede Zeitschrift und Internetseite, die sich mit einem
+PC-nahen Thema beschäftigt, hat irgendwann einmal einen Artikel zum
+Thema Passwortsicherheit herausgebracht. Diese bestehen meist aus
+einer Reihe von Regeln, die man als Nutzer beherzigen sollte, damit
+es nicht zum bösen Erwachen kommt. Dieser Artikel möchte das Thema
+von verschiedenen Seiten beleuchten, wobei es hauptsächlich um
+Passwortsicherheit im Internet geht. So soll sowohl für die Nutzer
+als auch für die Entwickler von Webseiten, Protokollen und
+Anwendungen ein kleiner Einblick gegeben werden, wo Probleme liegen
+können und wie man sie verhindern kann.</b>
+
+<div class="p"><!----></div>
+<b>Hinweis:</b>  Dieser Artikel richtet sich eher an unerfahrene Nutzer und
+sollte keinesfalls als „alleinige Wahrheit“ angesehen werden, da er
+in vielen Punkten meine Meinung widerspiegelt.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Angriffspunkte und Schwachstellen</h2>
+
+
+Für einen etwaigen Angreifer gibt es grundsätzlich drei verschiedene
+Punkte an denen er ansetzen kann:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> der Nutzer bzw. dessen PC</li>
+<li> der Server</li>
+<li> die Kommunikationsstrecke</li>
+</ul>
+
+<div class="p"><!----></div>
+Die Kommunikationsstrecke ist eher selten das Ziel, da Angriffe auf
+sie meist relativ aufwendig sind. Möglich ist hier, z.&nbsp;B. offene
+(oder schwach verschlüsselte) WLAN-Netze oder auch unverschlüsselte
+HTTP-Verbindungen&nbsp;<a href="https://de.wikipedia.org/wiki/Http">[1]</a> – der Standard
+für Webseiten – abzuhören.
+
+<div class="p"><!----></div>
+    Ein anderes Stichwort ist der Man-in-the-middle-Angriff&nbsp;<a href="https://de.wikipedia.org/wiki/Man-in-the-middle-Angriff">[2]</a>.
+Ein Angreifer kann hier die Daten nicht nur ausspionieren, sondern
+sogar gezielt manipulieren. Das Verfahren eignet sich grundsätzlich
+auch für verschlüsselte Verbindungen, ist hier jedoch aufgrund von
+Zertifikaten deutlich schwieriger umzusetzen. Zertifikate können als
+„Personalausweis“ eines Computers (in dem Falle Webservers)
+angesehen werden. Sie sichern die Identität eines Computers über
+kryptographische Verfahren&nbsp;<a href="https://de.wikipedia.org/wiki/Digitales_Zertifikat">[3]</a>.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/passwortsicherheit1.png" alt="passwortsicherheit1.png" style="max-width:100%" /><br /><em>Schema eines Man-in-the-middle-Angriffs.</em><br />
+
+<div class="p"><!----></div>
+
+
+    Auch nicht zu unterschätzen ist die Gefahr abgehörter E-Mails.
+Während die Verbindung zwischen Mailserver und Nutzer meist gut
+(z.&nbsp;B. mittels SSL&nbsp;<a href="https://de.wikipedia.org/wiki/Transport_Layer_Security">[4]</a>)
+verschlüsselt ist, sieht es bei der Kommunikation der Server
+untereinander deutlich schlimmer aus. Hier wird oftmals Klartext
+    übertragen – ein gefundenes Fressen für Angreifer.
+
+<div class="p"><!----></div>
+Häufiger sind Angriffe auf PCs. Für Nicht-Windows-Nutzer relativ
+ungefährlich, weil selten, sind Keylogger und ähnliche
+Spionagesoftware, die versuchen, z.&nbsp;B. über die Tastatureingaben auf
+das Passwort zu schließen – doch auch hier sollte Vorsicht geboten
+sein, z.&nbsp;B. bei Firefox-Add-ons. Größere Gefahren drohen hier durch
+Techniken wie beispielsweise Cross-Site-Scripting
+(XSS)&nbsp;<a href="https://de.wikipedia.org/wiki/Cross-Site-Scripting">[5]</a>. Hierbei
+wird Schadcode von extern in eine Webseite eingeschleust. Neben
+sauberer Programmierung seitens des Webentwicklers schafft hier
+meist auch ein aktueller Browser mit XSS-Schutz Abhilfe – oder aber
+die Deaktivierung von JavaScript, wobei das auch zu eingeschränkter
+Funktionalität auf vielen Webseiten führt. Tiefergehende
+Informationen zu XSS,
+aber auch zu anderen Schwachstellen in
+Webanwendungen finden sich zum Beispiel in Google
+Gruyere&nbsp;<a href="http://google-gruyere.appspot.com/part2#2__cross_site_scripting">[6]</a>.
+
+<div class="p"><!----></div>
+    Am Schlimmsten jedoch sind wahrscheinlich Angriffe auf Webserver.
+Ist der Angreifer einmal auf dem System, stehen ihm womöglich die
+Daten von tausenden Nutzern zur Verfügung. Natürlich sind nur die
+wenigsten Webseitenbetreiber ganz so unvorsichtig und speichern die
+Passwörter im Klartext – meist sind sie entweder verschlüsselt oder
+es wird nur ein sogenannter Hashwert gespeichert.
+
+<div class="p"><!----></div>
+So ein Hashwert hat die Eigenschaft, dass er zwar leicht berechnet
+werden kann, es aber unmöglich ist, auf die Ausgangsdaten zu
+schließen. Vergleichen lässt sich dies mit der Berechnung der
+Quersumme in der Mathematik: Nimmt man die Zahl 18529, so kann man
+leicht die Quersumme 25 berechnen – andersherum ist es aber
+mathematisch unmöglich, von der 25 zurück auf die 18529 zu kommen
+(zumindest nicht eindeutig).
+
+<div class="p"><!----></div>
+Beispiele für häufig verwendete Hashfunktionen (so nennt man die
+Berechnungsvorschrift für einen Hashwert) sind MD5 und SHA, letzteres
+in verschiedenen Varianten&nbsp;<a href="https://de.wikipedia.org/wiki/Hashfunktion">[7]</a>.
+Für eine Passwortabfrage würden dann einfach Hashwerte statt der
+Passwörter selbst verglichen werden.
+
+<div class="p"><!----></div>
+Dem Angreifer bieten sich hier unter anderen folgende Möglichkeiten,
+das Passwort dennoch herauszufinden:
+
+<div class="p"><!----></div>
+    
+<dl compact="compact">
+ <dt><b><b>Brute-Force:</b></b></dt>
+	<dd> Hierbei probiert der Angreifer alle möglichen
+Kombinationen durch, also a, b, c, ..., z, aa, ab, ac, usw.
+</dd>
+ <dt><b><b>Wörterbuchangriff:</b></b></dt>
+	<dd> Wie der Name schon sagt, versucht es der
+Angreifer hier mit Worten aus einem Wörterbuch – oder Kombinationen
+dieser Wörter.
+</dd>
+ <dt><b><b>Regenbogentabelle:</b></b></dt>
+	<dd> Bei einer Regenbogentabelle handelt es sich um einen ähnlichen Angriff wie beim Brute-Force, nur mit dem
+Unterschied, dass die Kombinationen und deren Hashwerte im Voraus
+berechnet werden. Im Internet gibt es Tabellen mit mehreren Terabyte
+Größe, die natürlich weitaus schneller zu durchsuchen sind, als alle
+Kombinationen jedes mal neu zu berechnen&nbsp;<a href="http://www.freerainbowtables.com/">[8]</a>.
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+Zum Thema Brute-Force ist zu sagen, dass diese Methode in den
+letzten Jahren starken Aufwind bekommen hat, insbesondere durch
+aktuelle Technologien wie z.&nbsp;B. Grafikkartenberechnungen
+(GPGPU&nbsp;<a href="https://de.wikipedia.org/wiki/GPGPU">[9]</a>). Der Punkt dabei ist,
+dass Grafikkarten sehr viele Kombinationen (meist mehrere hundert)
+gleichzeitig berechnen können, im Gegensatz zum Hauptprozessor der –
+im Falle von Desktopsystemen – bestenfalls etwa 10 Hashwerte
+gleichzeitig bearbeiten kann. Ein Geschwindigkeitszuwachs um den
+Faktor 100 und höher gegenüber dem Prozessor ist hier ohne
+Schwierigkeiten zu erreichen&nbsp;<a href="http://www.zdnet.com/blog/hardware/cheap-gpus-are-rendering-strong-passwords-useless/13125">[10]</a>.
+
+<div class="p"><!----></div>
+Was man als Nutzer hier grundsätzlich bedenken sollte ist: Kein
+Passwort ist absolut sicher. Mit genügend langem „Durchprobieren“ –
+sei es mittels Wörterbuch, Brute-Force oder dem Aufbau von
+Regenbogentabellen – kann man jedes Passwort erraten. Entscheidend
+ist, es einem Angreifer so schwer zu machen, dass es so lange
+dauert, dass es sich nicht lohnt. Was bringt einem Angreifer
+schließlich ein Passwort, welches er nach 10 Jahren geknackt hat?
+
+<div class="p"><!----></div>
+
+<h2>Sicherheit auf Nutzerseite</h2>
+
+
+Der wichtigste Punkt ist sicherlich, seinen eigenen PC abzusichern.
+Unter Windows gehören neben Updates auch Virenscanner und Firewalls
+zum guten Ton, während es unter Linux üblicherweise reicht, nicht
+benutzte Services wie SSH abzuschalten und das System aktuell zu
+halten – und natürlich nur vertrauenswürdige Software zu
+installieren. Besonderes Augenmerk sollte hier inzwischen auf den
+Browser gelegt werden. Hier bringt es leider auch nicht viel auf ein
+nicht so populäres Programm zurückzugreifen, da unter der Haube doch
+meist wieder die Firefox-eigene Gecko-Engine oder aber Webkit (von
+Safari und Chrome) läuft&nbsp;<a href="https://de.wikipedia.org/wiki/HTML-Rendering">[11]</a>.
+Übrig bleibt somit wie beim System selbst die Empfehlung, die
+Software aktuell zu halten und nur vertrauenswürdige Add-ons zu
+installieren.
+
+<div class="p"><!----></div>
+In fast jedem Ratgeber zum Thema Passwortsicherheit liest man, dass
+für jeden Service unterschiedliche Passwörter verwendet werden
+sollen. Das ist auch logisch – schließlich könnte ein Angreifer auf
+die Idee kommen, das gerade herausgefundene Passwort auch auf
+anderen Webseiten auszuprobieren. Jedoch ist das Problem ja nicht
+nur, jeder Seite ein neues Passwort zu geben, sondern auch, sich
+diese Passwörter zu merken. Eine Möglichkeit sind hier die
+Passwortmanager der Browser oder Programme wie das freie
+KeePass&nbsp;<a href="http://keepass.info/">[12]</a>. Während Ersteres eher als
+unsicher anzusehen ist, da die Passwörter hier im Regelfall wieder
+unverschlüsselt gespeichert werden, ist Letzteres nicht unbedingt
+besonders komfortabel, man muss schließlich jedes Mal extra das
+Passwort nachsehen.
+
+<div class="p"><!----></div>
+Ein Kompromiss besteht meiner Meinung nach darin, nicht jeder Seite
+ein neues Passwort zu geben, sondern zu gruppieren. Webseiten, die
+besonders sicherheitskritisch sind, wie beispielsweise Homebanking,
+bekommen natürlich ein eigenes Passwort. Unkritische Seiten wie
+beispielsweise Foren bekommen hingegen gemeinsam ein Passwort –
+selbst wenn der Angreifer hier Zutritt erlangt, sind die
+Auswirkungen eher gering.
+
+<div class="p"><!----></div>
+Wie oben bereits beschrieben, ist jedes Passwort nach genügend
+langer Zeit zu erraten. Zudem werden auch Computer immer
+leistungsfähiger, diese Zeit verkürzt sich also ständig. Somit empfiehlt
+es sich, zumindest kritische Passwörter regelmäßig zu ändern. Sollte
+ein Angreifer Zugriff darauf erlangt haben, dann wäre es wohl schon
+geändert, bis er es geknackt hat.
+
+<div class="p"><!----></div>
+
+<h3>Sichere Passwörter</h3>
+
+
+Wenn man sich die Angriffstechniken ansieht, kann man auch Regeln
+ableiten, wie ein sicheres Passwort aufgebaut werden sollte. Tunlichst zu vermeiden, ist die Nutzung von real existierenden
+Wörtern, denn Wörterbuchangriffe sind enorm häufig, da sie einfach
+und schnell durchgeführt werden können. Auch die „Verunstaltung“
+solcher Worte mittels Leetspeak&nbsp;<a href="https://de.wikipedia.org/wiki/Leetspeak">[13]</a>
+(also z.&nbsp;B. „4pf3l“ statt „Apfel“) oder durch Anhängen von Zahlen und
+Zeichen stellt für aktuelle Software kein Hindernis dar, da dieser
+Gedankengang natürlich auch Angreifern geläufig ist.
+
+<div class="p"><!----></div>
+
+
+Ein genauerer Blick auf Brute-Force zeigt, dass die Anzahl an
+Möglichkeiten, die abgeprüft werden müssen, grob folgender Formel
+folgt: n=b<sup>l</sup>. b bezeichnet hier die Anzahl an möglichen
+Buchstaben, auch Zeichenvorrat genannt – also z.&nbsp;B. 26 falls nur
+Kleinbuchstaben verwendet werden, 52 wenn auch Großbuchstaben dabei
+sind. l ist die Länge des Passworts. Man sieht also, dass die
+Länge des Passworts am entscheidendsten ist, aber auch Größe des
+Zeichenvorrats eine Rolle spielt. Ein paar Beispiele, um eine
+Vorstellung zu bekommen:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Nur Kleinbuchstaben, 4 Zeichen: knapp 460000 Möglichkeiten</li>
+<li> Klein- und Großbuchstaben, 4 Zeichen: etwa 7,3 Mio. Möglichkeiten</li>
+<li> Nur Kleinbuchstaben, 5 Zeichen: etwa 11,9 Mio. Möglichkeiten</li>
+<li> Klein- und Großbuchstaben, 5 Zeichen: etwa 380 Mio. Möglichkeiten</li>
+</ul>
+
+<div class="p"><!----></div>
+Bedenken muss man hier, dass der Angreifer natürlich meist nicht
+alle Passwörter absuchen muss, um das gewünschte zu knacken, sondern
+im Normalfall schon viel früher „Glück“ hat. Da Brute-Force-Angriffe
+meist ein System haben, wie Passwörter abgeprüft werden, hat dieses
+„Glück“ u.&nbsp;U. deutlich größere Chancen, wenn ein Passwort systematisch
+aufgebaut ist.
+
+<div class="p"><!----></div>
+Ganze Sätze als Passwörter zu nehmen ist schon sehr viel besser,
+jedoch auch nicht 100-prozentig sicher, da sie durch eine
+Kombination aus Brute-Force und Wörterbuch ebenfalls angreifbar
+sind. Beinhaltet ein Wörterbuch beispielsweise 500 Wörter und ist
+der Satz 4 Worte lang, so kann man gemäß obiger Regel auf etwa
+62,5 Milliarden Möglichkeiten. Das klingt viel, ist aber nicht viel
+mehr als ein Passwort mit 6 Zeichen aus Groß- und Kleinbuchstaben.
+
+<div class="p"><!----></div>
+Diese Zahlen helfen natürlich nicht viel, wenn man nicht weiß, wie
+schnell ein Angreifer ist. Am Beispiel des kleinen und
+kostengünstigen Whitepixels&nbsp;<a href="http://blog.zorinaq.com/?e=42">[14]</a>
+sieht man grob die Größenverhältnisse. Das System schafft mit vier
+handelsüblichen Grafikkarten etwa 30 Milliarden Hashberechnungen pro
+Sekunde – obiges Passwort mit 5 Zeichen Groß- und Kleinschreibung wäre
+also im Bruchteil einer Sekunde geknackt.
+
+<div class="p"><!----></div>
+Zusammengefasst besteht ein gutes Passwort also aus einer möglichst
+langen Kombination aus Buchstaben, Zahlen und Sonderzeichen, die
+idealerweise keinem nachvollziehbaren Muster folgen. Bei Buchstaben
+sollte man zudem Groß- und Kleinschreibung verwenden, da so die
+Anzahl an möglichen Passwörtern enorm steigt. Da ein Passwort, das
+zwar gut ist, das man sich aber nicht merken kann, nichts hilft,
+empfiehlt es sich möglicherweise, hier verschiedene Techniken
+anzuwenden. Eine gute Möglichkeit, ein solches Passwort zu erzeugen
+ist beispielsweise, sich einen Satz zu überlegen und nur die
+Anfangsbuchstaben zu verwenden.
+
+<div class="p"><!----></div>
+Also: „Die neue Ausgabe meines Lieblingsmagazins, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>,
+gibt's seit '05 immer am 1. Sonntag des Monats.“ Als Passwort ergibt
+das nach obiger Technik dann „DnAmL,fM,gs'05ia1.SdM.“ Dieses
+Passwort ist durch Länge, Zufälligkeit und Zeichenvorrat ziemlich
+sicher und lässt sich relativ einfach merken oder zumindest wieder
+herleiten.
+
+<div class="p"><!----></div>
+Zu guter Letzt ist natürlich das Programm „Hirn 1.0“ immer das
+Wichtigste, wenn es um Sicherheit geht. Kommt einem eine
+Internetseite „seltsam“ vor, so könnte es sich um eine
+Phishing-Seite&nbsp;<a href="https://de.wikipedia.org/wiki/Phishing">[15]</a> handeln,
+also eine Seite, die durch Imitation der Originalseite versucht, an
+das Passwort des Nutzers zu kommen. Auch ein Hinweis auf ein
+fehlerhaftes Zertifikat beim Aufruf einer Webseite kann ein Hinweis
+auf einen Man-in-the-middle-Angriff sein und sollte nicht einfach
+ignoriert werden.
+
+<div class="p"><!----></div>
+
+<h2>Sicherheit auf Betreiber- und Entwicklerseite</h2>
+
+
+Während bei Nutzern die Thematik inzwischen größtenteils angekommen
+ist – auch wenn Gerüchten zufolge „Passwort“ eines der häufigsten Passworte
+ist&nbsp;<a href="http://www.imperva.com/docs/WP_Consumer_Password_Worst_Practices.pdf">[16]</a> 
+– sind viele Webseiten noch sehr unsicher was die Passwörter ihrer
+Nutzer angeht.
+
+<div class="p"><!----></div>
+
+
+Der Betreiber kann viel für die Sicherheit des Kommunikationswegs
+tun. So wird die Verschlüsselung der Login-Seite mittels SSL oder
+TLS (für den Nutzer zu erkennen am https in der
+Internetadresse&nbsp;<a href="https://de.wikipedia.org/wiki/Https">[17]</a>) – und
+natürlich einem gültigen Zertifikat – einen Angriff auf den
+Kommunikationsweg in den meisten Fällen verhindern können. Dies gilt
+sowohl für Abhörversuche – hier scheitert es an der Verschlüsselung
+– als auch für Man-in-the-middle-Angriffe, da der Angreifer im
+Gegensatz zum echten Server in der Regel kein gültiges Zertifikat hat.
+
+<div class="p"><!----></div>
+Was unbedingt vermieden werden sollte ist, das Passwort im Klartext
+per E-Mail zu versenden. Hier werden nämlich gleich zwei Fehler
+gemacht. Der Schlimmste ist die E-Mail selbst, die, wie oben bereits
+geschrieben, das Internet zum größten Teil unverschlüsselt
+durchquert. Der andere Fehler ist, dass der Betreiber das Passwort
+überhaupt besitzt – das sollte nicht der Fall sein, denn wenn der
+Betreiber das Passwort im Klartext lesen bzw. verschicken kann, kann
+das auch ein Angreifer, der Zugriff auf die Server bekommt.
+
+<div class="p"><!----></div>
+Deutlich besser ist es, nur einen Hashwert des Nutzerpassworts zu
+speichern. Hier entsteht zwar der Nachteil, dass ein vergessenes
+Passwort nicht zugeschickt werden kann, dies sollte aber – wie oben
+erwähnt – sowieso vermieden werden.
+
+<div class="p"><!----></div>
+Doch auch beim Speichern als Hashwert gibt es zumindest zwei
+Unsicherheiten. Zum einen kann ein Angreifer natürlich erkennen,
+wenn mehrere Nutzer das gleiche Passwort haben bzw. wenn ein Nutzer
+das Passwort bei mehreren Seiten im Internet (mit gleicher
+Hashfunktion) verwendet hat, denn das gleiche Passwort gibt
+natürlich auch den gleichen Hashwert. Zum anderen greifen genau hier
+ja auch Angriffe mit Brute-Force, Wörterbüchern und
+Regenbogentabellen an. Sollten die Nutzer entgegen jeglicher
+Empfehlung also unsichere Passwörter verwenden, kann ein Angreifer
+dieses leicht mit der Regenbogentabelle herausfinden.
+
+<div class="p"><!----></div>
+Das Mittel der Wahl nennt sich hier „Salt“&nbsp;<a href="https://de.wikipedia.org/wiki/Salt_%28Kryptologie%29">[18]</a>.
+Unter einem Salt versteht man bei Hashwerten das Hinzufügen von
+zusätzlichem Text zu einem Passwort, bevor die Berechnung gestartet
+wird. Der einfachste Fall ist das Hinzufügen von bereits
+gespeicherten Daten wie z.&nbsp;B. des Nutzernames oder der E-Mail-Adresse;
+minimal zusätzliche Sicherheit bekommt man noch durch zufällig
+gewählte Salts die natürlich extra abgespeichert werden müssen. Die
+meisten Nutzer verwenden schließlich nicht nur das gleiche Passwort
+sondern auch den gleichen Benutzernamen auf verschiedenen Seiten.
+Ein Beispiel dazu: Hat der Nutzer „Anton“ das Passwort „Tirol“
+gewählt, so würde der Betreiber nicht einfach den Hashwert von
+„Tirol“ abspeichern sondern stattdessen den von „AntonTirol“. Ein
+Angreifer erkennt somit nicht mehr, wenn mehrere Nutzer das gleiche
+Passwort haben. Durch die deutlich längeren und nicht ganz so
+einfachen Ausgangsdaten („AntonTirol“ statt „Tirol“) wird auch ein
+Angriff per Regenbogentabelle erschwert. Für eine Absicherung gegen
+Brute-Force und Wörterbuchangriffe dagegen hilft diese Technik
+normalerweise nicht, da der Salt und seine Anwendung ja auch dem
+Angreifer bekannt ist. Er kann also statt den Kombinationen a, b, c, …
+einfach Antona, Antonb, Antonc, … ausprobieren.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Fazit</h2>
+
+
+Es bleibt wichtig, das Thema Passwortsicherheit immer wieder zu
+erwähnen, da auch heute noch viele Fehler – sowohl von Nutzern als
+auch von Betreibern – gemacht werden. Doch gerade mit der steigenden
+Internetnutzung für Bestellungen, Kommunikation und sogar
+Amtsgeschäfte ist ein sicheres – und gesichertes – Passwort das
+A und O.
+
+<div class="p"><!----></div>
+Weitere Informationen zu diesem Thema, insbesondere auch zur
+„Berechnung“ der Sicherheit von Passwörtern finden sich unter
+anderem im entsprechenden Wikipedia-Artikel&nbsp;<a href="https://en.wikipedia.org/wiki/Password_strength">[19]</a> und in dessen
+Linkliste. Viele Links des Artikels wurden der Webseite „How big is
+your Haystack“&nbsp;<a href="https://www.grc.com/haystack.htm">[20]</a> entnommen.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Http"><tt class="big">https://de.wikipedia.org/wiki/Http</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Man-in-the-middle-Angriff"><tt class="big">https://de.wikipedia.org/wiki/Man-in-the-middle-Angriff</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Digitales_Zertifikat"><tt class="big">https://de.wikipedia.org/wiki/Digitales_Zertifikat</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Transport_Layer_Security"><tt class="big">https://de.wikipedia.org/wiki/Transport_Layer_Security</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/Cross-Site-Scripting"><tt class="big">https://de.wikipedia.org/wiki/Cross-Site-Scripting</tt></a><br />
+[6] <a href="http://google-gruyere.appspot.com/part2#2__cross_site_scripting"><tt class="big">http://google-gruyere.appspot.com/part2#2__cross_site_scripting</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Hashfunktion"><tt class="big">https://de.wikipedia.org/wiki/Hashfunktion</tt></a><br />
+[8] <a href="http://www.freerainbowtables.com/"><tt class="big">http://www.freerainbowtables.com/</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/GPGPU"><tt class="big">https://de.wikipedia.org/wiki/GPGPU</tt></a><br />
+[10] <a href="http://www.zdnet.com/blog/hardware/cheap-gpus-are-rendering-strong-passwords-useless/13125"><tt class="big">http://www.zdnet.com/blog/hardware/cheap-gpus-are-rendering-strong-passwords-useless/13125</tt></a><br />
+[11] <a href="https://de.wikipedia.org/wiki/HTML-Rendering"><tt class="big">https://de.wikipedia.org/wiki/HTML-Rendering</tt></a><br />
+[12] <a href="http://keepass.info/"><tt class="big">http://keepass.info/</tt></a><br />
+[13] <a href="https://de.wikipedia.org/wiki/Leetspeak"><tt class="big">https://de.wikipedia.org/wiki/Leetspeak</tt></a><br />
+[14] <a href="http://blog.zorinaq.com/?e=42"><tt class="big">http://blog.zorinaq.com/?e=42</tt></a><br />
+[15] <a href="https://de.wikipedia.org/wiki/Phishing"><tt class="big">https://de.wikipedia.org/wiki/Phishing</tt></a><br />
+[16] <a href="http://www.imperva.com/docs/WP_Consumer_Password_Worst_Practices.pdf"><tt class="big">http://www.imperva.com/docs/WP_Consumer_Password_Worst_Practices.pdf</tt></a><br />
+[17] <a href="https://de.wikipedia.org/wiki/Https"><tt class="big">https://de.wikipedia.org/wiki/Https</tt></a><br />
+[18] <a href="https://de.wikipedia.org/wiki/Salt_%28Kryptologie%29"><tt class="big">https://de.wikipedia.org/wiki/Salt_(Kryptologie)</tt></a><br />
+[19] <a href="https://en.wikipedia.org/wiki/Password_strength"><tt class="big">https://en.wikipedia.org/wiki/Password_strength</tt></a><br />
+[20] <a href="https://www.grc.com/haystack.htm"><tt class="big">https://www.grc.com/haystack.htm</tt></a><br />
+    
+
+<div class="p"><!----></div>
+            
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Florian Satzger</b>&nbsp;(<a href="http://fa-satzger.de/">Webseite</a>) 
+ärgert sich seit Jahren über E-Mails, in denen
+unverschlüsselt Passwörter verschickt werden und versucht Nutzer und
+Webseitenbetreiber auf dieses und andere Sicherheitsproblem
+aufmerksam zu machen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+                <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Passwortsicherheit#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_09_kernel">Der August im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+        <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der
+fortwährend weiterentwickelt wird. Welche Geräte in einem halben
+Jahr unterstützt werden und welche Funktionen neu hinzukommen, erfährt
+man, wenn man den aktuellen Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Linux 3.6</h2>
+
+
+Der Juli endete mit der Freigabe des Kernels 3.5 (siehe „Der Juli im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 08/2012&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2012-08">[1]</a>) und passend dazu läutete Torvalds den August mit der ersten Entwicklerversion des kommenden Linux-Kernels ein&nbsp;<a href="http://www.mail-archive.com/linux-kernel@vger.kernel.org/msg285087.html">[2]</a>. Die überwiegende Zahl der Pull Requests wurde auch bereits in den -rc1 aufgenommen, so auch ein Protokoll zur Übergabe des Systemstarts durch den EFI-Bootloader&nbsp;<a href="https://de.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface">[3]</a>. Hierdurch können Bootloader vereinfacht werden, da sie hiermit einfach nur den Kernel starten müssen. Zusätzlich dürfte dies auch die Startzeiten verkürzen.
+
+<div class="p"><!----></div>
+Der Begriff des Bufferbloat&nbsp;<a href="https://en.wikipedia.org/wiki/Bufferbloat">[4]</a> wird sich auch im Zusammenhang mit Linux 3.6 nicht vermeiden lassen; TSQ (TCP Small Queues) sind ein weiterer Ansatz, der Latenzen bei der Datenübertragung in Netzwerken vermeiden soll. In diesem Fall wird die Größe der Warteschlange für zu sendende Pakete begrenzt, auch werden hier weitere Puffer, wie zum Beispiel die der Linux-eigenen Firewall Netfilter&nbsp;<a href="https://de.wikipedia.org/wiki/Netfilter">[5]</a>, berücksichtigt.
+
+<div class="p"><!----></div>
+Linux 3.6-rc2&nbsp;<a href="https://lkml.org/lkml/2012/8/16/577">[6]</a> ließ sich wieder etwas mehr Zeit und brachte auch nicht viele herausragende Änderungen mit, die über Fehlerkorrekturen hinausgehen. Dazu gehört lediglich tcm_vhost, der Gäste des Virtualisierers KVM&nbsp;<a href="https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine">[7]</a> direkt mit der Kernel-eigenen iSCSI-Target-Implementierung, einer Möglichkeit zur Anbindung von Datenträgern über das Netzwerk, verbinden kann.
+
+<div class="p"><!----></div>
+Rechtzeitig vor dem diesjährigen Kernel Developers Summit und der darauf folgenden Linux Plumbers Conference in San Diego stellte Torvalds dann auch den die dritte Entwicklerversion zur Verfügung&nbsp;<a href="https://lkml.org/lkml/2012/8/22/615">[8]</a>. Sie fiel wieder größer aus als die vorangegangene Version. Dennoch liegen hier überwiegend Fehlerkorrekturen vor. Funktionen oder gar Treiber kamen keine hinzu, sieht man von einzelnen Gerätekennungen oder Erweiterungen ab, die die Unterstützung für z.&nbsp;B. Lenovos Ideapad Z570 oder das LTE-Modem K5006-Z des chinesischen Herstellers ZTE sowie weitere, mit bereits unterstützten Geräten vergleichbare, Hardware ermöglichen.
+
+<div class="p"><!----></div>
+
+<h2>Unterstützte Kernel</h2>
+
+
+Kurz und bündig fiel die E-Mail an die Mailingliste aus&nbsp;<a href="https://lkml.org/lkml/2012/8/20/675">[9]</a>, in der der Entwickler Greg Kroah-Hartman den Stand der von ihm gepflegten Kernelversionen bekannt gibt. Demnach wird Linux 3.0 noch mindestens ein Jahr lang weiter gepflegt, 3.4 für mindestens zwei Jahre. Linux 3.5 wird mit Veröffentlichung von 3.6.1 seine letzte Aktualisierung erhalten&nbsp;<a href="http://www.pro-linux.de/news/1/18763/linux-34-wird-longterm-kernel.html">[10]</a>.
+
+<div class="p"><!----></div>
+Zusätzlich unterhält der Debian-Entwickler Ben Hutchings noch die Version 3.2, die unter anderem im kommenden Debian „Wheezy“ und der aktuellen Ubuntu LTS-Version 12.04 zum Einsatz kommt. Ebenso wie die von Kroah-Hartman betreuten Langzeit-Versionen erhält auch diese monatlich Aktualisierungen.
+
+<div class="p"><!----></div>
+
+<h2>Neuer Wein in alten Schläuchen</h2>
+
+
+Manche Nutzer kennen das: Man setzt auf eine stabile bewährte Distribution und Teile der eigenen Hardware werden nicht erkannt oder funktionieren nicht korrekt. Gerade aktuelle Komponenten benötigen oftmals einen ebenfalls aktuellen Linux-Kernel und dessen Halbwertszeit sank in den letzten Jahren deutlich, was mit auf die teilweise drastisch verkürzten Entwicklungszeiten zurückzuführen ist.
+
+<div class="p"><!----></div>
+Der Entwickler Luis Rodriguez stellte auf dem diesjährigen Linux Collaboration Summit in San Francisco nun einen Ansatz vor, um Treiber aktueller Linux-Kernel auf ältere Version zurückzuportieren&nbsp;<a href="http://www.pro-linux.de/news/1/18745/linux-kernel-backports-neue-treiber-fuer-alte-kernel.html">[11]</a>. Das Projekt Compat-Wireless bewerkstelligt dies bereits seit Linux 2.6.36 für WLAN-Treiber, indem es eine Zwischenschicht zwischen den (älteren) Kernel und den (aktuellen) Treiber einzieht und die Kompatibilität zwischen beiden herstellt. Diese Zwischenschicht soll nun unter dem neuem Namen Compat&nbsp;<a href="https://backports.wiki.kernel.org/">[12]</a> für den Einsatz auch mit anderen als nur den Drahtlos-Treibern weiterentwickelt werden. Anders als der Wein im Bibelzitat soll Compat jedoch nicht zum Platzen des alten Kernels führen, sondern dank einer nur geringen zusätzlichen Last eine längere Lebensdauer für das System bedeuten.
+
+<div class="p"><!----></div>
+
+
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2012-08"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2012-08</tt></a><br />
+[2] <a href="http://www.mail-archive.com/linux-kernel@vger.kernel.org/msg285087.html"><tt class="big">http://www.mail-archive.com/linux-kernel@vger.kernel.org/msg285087.html</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface"><tt class="big">https://de.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface</tt></a><br />
+[4] <a href="https://en.wikipedia.org/wiki/Bufferbloat"><tt class="big">https://en.wikipedia.org/wiki/Bufferbloat</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/Netfilter"><tt class="big">https://de.wikipedia.org/wiki/Netfilter</tt></a><br />
+[6] <a href="https://lkml.org/lkml/2012/8/16/577"><tt class="big">https://lkml.org/lkml/2012/8/16/577</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine"><tt class="big">https://de.wikipedia.org/wiki/Kernel-based_Virtual_Machine</tt></a><br />
+[8] <a href="https://lkml.org/lkml/2012/8/22/615"><tt class="big">https://lkml.org/lkml/2012/8/22/615</tt></a><br />
+[9] <a href="https://lkml.org/lkml/2012/8/20/675"><tt class="big">https://lkml.org/lkml/2012/8/20/675</tt></a><br />
+[10] <a href="http://www.pro-linux.de/news/1/18763/linux-34-wird-longterm-kernel.html"><tt class="big">http://www.pro-linux.de/news/1/18763/linux-34-wird-longterm-kernel.html</tt></a><br />
+[11] <a href="http://www.pro-linux.de/news/1/18745/linux-kernel-backports-neue-treiber-fuer-alte-kernel.html"><tt class="big">http://www.pro-linux.de/news/1/18745/linux-kernel-backports-neue-treiber-fuer-alte-kernel.html</tt></a><br />
+[12] <a href="https://backports.wiki.kernel.org/"><tt class="big">https://backports.wiki.kernel.org/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+wirft gerne einen Blick auf die Kernel-Entwicklung, um mehr über die
+Funktion von Linux zu erfahren und um seine Mitmenschen mit seltsamen
+Begriffen und unverständlichen Abkürzungen verwirren zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Der August im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                
+
+
+
+
+
+
+<h1><font color="#595959"><a name="12_09_tinyandbig">Tiny &amp; Big – Unterwäschefetischismus deluxe</a></font></h1>von Michael Schwarz
+
+<div class="p"><!----></div>
+        
+
+<b>M</b><b>enschen leben und Menschen sterben – und manche sind sogar so
+freundlich und vererben ihren Verwandten einige ihrer Habseligkeiten
+damit sie immer in guter Erinnerung behalten werden. Warum ein
+Großvater seinem Enkel ausgerechnet eine Unterhose vermacht und
+warum diese Unterhose keine normale Unterhose ist, das und vieles
+mehr erfährt man beim Spielen des Jump'n'Runs „<i>Tiny&nbsp;&amp;&nbsp;Big –
+Grandpa's Leftovers</i>“.</b>
+
+<div class="p"><!----></div>
+
+<h2>Über das Spiel</h2>
+
+
+Der Spieler übernimmt die Rolle des technisch voll ausgestatteten
+Tiny, einer menschenähnlichen Fantasiegestalt. Tiny wurde von
+seinem Widersacher, dem 
+kleinen bösartigen „Big“,
+    
+bestohlen und
+verfolgt den Schurken seitdem quer durch die Wüste. Bei dem
+Diebesgut handelt es sich um eine antike Unterhose, ein Erbstück, das
+Tinys Großvater auf einer seiner Expeditionen in der Wüste gefunden
+und kurz vor seinem eigenen Verschwinden dem Helden überlassen hat.
+Die Unterhose, so unscheinbar sie ihrer Machart auch wirken mag,
+besitzt untypischerweise magische Kräfte, die Big im Laufe des
+Abenteuers gekonnt gegen den Hauptcharakter einsetzt und ihm somit
+das Leben schwer macht.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_tiny.jpg" alt="tinyandbig_tiny.jpg" style="max-width:100%" /><br /><em>Tiny: Ein tapferer Abenteurer wie er im Buche steht.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Geschichtsstunde</h2>
+
+
+Mit dem Robotertaxi fährt man in Form des Hauptmenüs auf der Suche
+nach Big quer durch die Wüste. 
+Um sich auf das große Abenteuer
+    vorbereiten zu können, 
+nutzt Tiny eine oftmals angewandte und daher
+vielfach anerkannte Methode: Er, oder viel mehr der Spieler selbst,
+spielt auf seinem Reality Boy, einer Spielkonsole, einige Welten, die
+den Umgang mit dem Spiel näher bringen und die verschiedenen
+Techniken zur Beeinflussung der Spielwelt erklären.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_training.jpg" alt="tinyandbig_training.jpg" style="max-width:100%" /><br /><em>Auf dem Reality Boy werden erste Traingsmissionen absolviert.</em><br />
+
+<div class="p"><!----></div>
+Kurz nach Abschluss der Trainingseinheit hat das Robotertaxi einen
+Totalausfall und Tiny somit eine unsanfte Landung im Wüstensand. In
+einer Grube gefangen sammelt er seine Werkzeuge auf, um sich im
+Anschluss an den Unfall aus seiner misslichen Lage zu befreien.
+
+<div class="p"><!----></div>
+    
+
+Aus der Grube empor geklettert, schaut er in ein tiefes Tal und noch
+ehe er sich selbst die Frage stellen kann, wie er dort hinunter
+kommen soll, verpasst ihm der Unterhosendieb Big hinterrücks einen
+heftigen Tritt in den Hintern. Tiny stürzt hinab und findet sich
+selbst kurze Zeit später am Fuß des Bergs vor einer großen
+Tempelruine.
+
+<div class="p"><!----></div>
+Der Bösewicht ist also ausgemacht. Ab jetzt gilt es Big
+durch die Ruinen, über zerfallene Brücken, auf und letztendlich in
+einer mystischen Pyramide zu jagen, immer nur mit dem einen Ziel vor
+Augen: Das Zurückholen der Unterhose!
+
+<div class="p"><!----></div>
+    
+
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_big.jpg" alt="tinyandbig_big.jpg" style="max-width:100%" /><br /><em>Der Bösewicht in voller Pracht, inklusive Schlüpfer auf dem Kopf.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Erst die Arbeit, dann das Vergnügen</h2>
+
+
+Bevor ganze Welten mit dem Schneidlaser verunstaltet werden können,
+bedarf es eines eher geringen finanziellen Aufwands und ein wenig
+Installationsarbeit. Die Entwickler bieten das Spiel auf ihrer
+Homepage&nbsp;<a href="http://www.tinyandbig.com/">[1]</a> für 12.99$ (10,60€) zum
+Download an. Über Amazon&nbsp;<a href="http://www.amazon.de/Tiny-Big-in-grandpas-leftovers/dp/B008HF9UH4/">[2]</a>
+oder Application Systems Heidelberg&nbsp;<a href="http://www.application-systems.de/tinyandbig/">[3]</a>
+lässt sich das Spiel auch für Sammler oder Liebhaber physischer
+Datenträger in einer Boxed-Version (14,99€) bestellen. Zweitere ist
+für alle unterstützten Systeme gültig, beinhaltet also Linux,
+Windows und Mac-Version des Spiels. Eine Kopierschutz-Gängelung gibt
+es, soweit bekannt, nicht. Sowohl die Download-Variante 
+    als auch der
+Datenträger beinhalten ein tar.gz-Archiv, das es zu entpacken gilt.
+Für Debian bzw. Ubuntu-Benutzer liegt alternativ eine deb-Datei
+zur automatischen Installation bei. Vorab sollten unter Linux die
+Pakete für OpenAL und SDL über den Paketmanager installiert werden.
+
+<div class="p"><!----></div>
+Wer mit dem Kauf liebäugelt, sollte vorab seine Hardwarekonfiguration
+testen. Die Entwickler selbst geben auf ihrer Homepage einen
+Core2duo/Athlon-X2-Prozessor mit mindestens 2.4 GHz und eine
+Grafikkarte der GeForce-8800- oder der Radeon-2900-Serie (oder
+besser) an. Wer sich unsicher ist oder generell einen Blick auf das
+Spiel werfen möchte, sollte vorab die Demo&nbsp;<a href="http://www.tinyandbig.com/games/upthatmountain/">[4]</a>
+von der Homepage herunterladen und testen.
+
+<div class="p"><!----></div>
+
+<h2>Science Fiction Werkzeuge</h2>
+
+
+Ohne seine Spezialausrüstung stünde der Spieler in Form von Tiny
+schnell vor unlösbaren Aufgaben. Bereits in der ersten Landschaft,
+kurz nach einem durch Big verursachten Unfall, sieht man sich mit
+tonnenschwerem Geröll konfrontiert, das ein Weiterkommen
+unmöglich macht. Ohne Kletterpflanzen oder Sprungfedern würden
+Videospielhelden wie Mario&nbsp;<a href="https://de.wikipedia.org/wiki/Super_Mario">[5]</a>
+oder Sonic&nbsp;<a href="https://de.wikipedia.org/wiki/Sonic_%28Computerspielfigur%29">[6]</a>
+an dieser Stelle scheitern. Tiny allerdings ist anders und zieht
+nicht ganz so unvorbereitet wie seine Genre-Kollegen in die
+Schlacht. In seinem Gepäck befindet sich ein sich ständig mit ihm
+unterhaltendes Radio, das darüber hinaus für die musikalische
+Untermalung verantwortlich ist.
+
+<div class="p"><!----></div>
+Neben dieser passiven Spielergänzung gibt es darüber hinaus einen Schneidlaser
+zum Zurechtschneiden von Steinen, Säulen sowie einem Großteil der sonstigen
+Inhalte der Spielwelt. Ganz praktisch ist auch der Haken, um lose Gegenstände durch die Gegend ziehen zu
+können. Und zu guter Letzt wären da auch noch diverse selbst gebastelte Raketen, mit denen es möglich ist,
+Hindernisse mit mächtig viel Rums aus dem Weg zu schaffen.
+
+<div class="p"><!----></div>
+    
+
+
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_haken.jpg" alt="tinyandbig_haken.jpg" style="max-width:100%" /><br /><em>Mit dem Enterhaken kommt der Stein erst richtig ins Rollen.</em><br />
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_laser.jpg" alt="tinyandbig_laser.jpg" style="max-width:100%" /><br /><em>Eine Geländekorrektur der gelaserten Art.</em><br />
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_rakete.jpg" alt="tinyandbig_rakete.jpg" style="max-width:100%" /><br /><em>Dank Rakete fliegen tonnenschwere Steine plötzlich davon.</em><br />
+
+<div class="p"><!----></div>
+    
+
+
+
+<h2>Öfter mal was Neues</h2>
+
+
+Mit einer derart fortgeschrittenen Ausrüstung ausgestattet, bietet der liebe
+Tiny ein gänzlich anderes Spielerlebnis als viele andere Titel des Genres.
+Versucht man sonst statisch vorgegebene und mit Gegnern verseuchte Welten
+möglichst unbeschadet zu überwinden, macht man sich die Landschaft in <i>Tiny&nbsp;&amp;&nbsp;Big</i>
+zum Untertan und verändert diese, 
+um voran zu kommen. Belästigt wird man hierbei
+allenfalls durch den Erzfeind Big, 
+der in manchen Abschnitten versucht,
+        dem
+Helden Felsen auf den Kopf fallen zu lassen. Einen Großteil des Spiels hat man
+allerdings abseits der ständigen Gefahr Zeit, sich mit der Umgebung vertraut zu
+machen und diese im Anschluss zu eigenen Gunsten zu gestalten.
+
+<div class="p"><!----></div>
+Zugegeben, gänzlich ungefährlich ist dieses Unterfangen nicht. Fällt ein
+geschnittener Winkel zu weit aus oder wurde an Objekten über der eigenen
+Spielfigur gewerkt, passiert es, dass Tiny sich im 
+nächsten Moment unter
+    Steinen und Geröll begraben sieht. 
+Spiel vorbei, bitte noch einmal versuchen.
+
+<div class="p"><!----></div>
+Ergänzend dazu ist Tiny auch kein Freund luftiger Höhen. Zwar klettert er im
+Spielverlauf diverse Höhenmeter nach oben und springt von Plattform zu
+Plattform, verfehlt er allerdings sein Ziel oder rutscht anderweitig in die
+Tiefe, beginnt der Levelabschnitt von Neuem.
+
+<div class="p"><!----></div>
+Trotzdem besteht kein Grund, sich als Spieler zu ärgern. Die Entwickler des
+Titels haben eine sehr humane automatische Speicherfunktion eingebaut, die kurz
+nach überwundenen Abschnitten einsetzt. Meist landet man nach einem K.O. direkt
+vor dem verursachenden Hindernis und kann es direkt nochmal versuchen.
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_try_again.jpg" alt="tinyandbig_try_again.jpg" style="max-width:100%" /><br /><em>Autsch! Dieser Level möchte gerne erneut probiert werden.</em><br />
+
+<div class="p"><!----></div>
+Auch besteht praktisch immer die Gefahr, dass man sich das Weiterkommen durch
+den unsachgemäßen Einsatz des Schneidlasers im wahrsten Sinne des Wortes
+verbaut. Mit einem einfachen Tastendruck lassen sich Abschnitte aber auch
+manuell von Neuem beginnen, was alle angestellten Veränderungen der Landschaft
+rückgängig macht.
+
+<div class="p"><!----></div>
+Ein Auge sollte man immer auf Tinys Rücken beziehungsweise das sich dort
+befindende Radio haben. Blinkt es rot auf, ist ein automatischer Speicherpunkt
+erreicht. Zeit zu testen, ob der vor einem liegende Abgrund wirklich so tief
+ist.
+
+<div class="p"><!----></div>
+Wer auf der Jagd nach der Bestleistung ist, sollte generell vorsichtiger sein.
+Die Tode des Hauptcharakters werden gezählt und am Ende des Levels neben
+verschiedenen anderen Errungenschaften aufgezeigt.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_tempel_tief.jpg" alt="tinyandbig_tempel_tief.jpg" style="max-width:100%" /><br /><em>Unachtsame Spieler stürzen allzu oft ins Verderben.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Du sollst vom rechten Pfad abkommen</h2>
+
+
+Abseits des eigentlichen Ziels, der Rückeroberung von Opas antiken Schlüpfer,
+bietet das Spiel viele weitere Nebenaufgaben, die den Umfang erhöhen, die
+Spielzeit verlängern und den Spieler teilweise verzweifeln lassen. Auch wird man
+mit diversen, so manches Mal nicht ganz logischen Herausforderungen
+konfrontiert, die in einer separaten Liste über das Spielmenü aufgelistet
+werden. Den Hügel im eigenen Stadtpark zu erklimmen, ist im realen Leben keine
+nennenswerte Errungenschaft, in <i>Tiny&nbsp;&amp;&nbsp;Big</i> könnte genau dieses bereits eine
+gelöste Herausforderung darstellen.
+
+<div class="p"><!----></div>
+    
+
+
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_hauptmenue.jpg" alt="tinyandbig_hauptmenue.jpg" style="max-width:100%" /><br /><em>Das Hauptmenü ist ebenfalls ein Intro zum Mitlesen.</em><br />
+
+<div class="p"><!----></div>
+Herausforderungen sind nicht gekennzeichnet und manche sind selbst über das Menü
+nicht klar definiert. Die Herausforderung „Traumberuf Zahnarzt“ dient in diesem
+Zusammenhang als eines von einigen Paradebeispielen. Offensichtlicher sind da
+schon eher die „langweiligen Steine“, die Tiny in seiner Sammelwut an der ein
+oder anderen Stelle im Spiel findet und mitnimmt.
+
+<div class="p"><!----></div>
+
+<h2>Was auf die Ohren</h2>
+
+
+Black Pants Game Studio&nbsp;<a href="http://www.tinyandbig.com/team/">[7]</a> hat
+neben den stimmigen Toneffekten auch verschiedenste Indie-Bands in
+das Spiel miteinbezogen. So hört man, während man Tiny durch Täler,
+Schluchten und alte Gemäuer führt, verschiedenste Musikstücke von
+insgesamt 10 verschiedenen Musikgruppen&nbsp;<a href="http://www.tinyandbig.com/soundtrack/">[8]</a>.
+
+<div class="p"><!----></div>
+Wer sich gleich zu Beginn des Spiels durch alle Titel schalten
+möchte, um sich direkt sein Lieblingslied auszusuchen, wird jedoch
+gewollt enttäuscht. Das bereits im weiter vorne im Text genannte
+Radio spielt direkt nach Spielbeginn einen einzigen Musiktitel in
+Dauerschleife. Für musikalische Abwechslung sorgen Kassetten, die
+sich als Objekte oftmals versteckt in der Spielwelt befinden und
+aufgesammelt werden möchten. Folgt man also stets nur den
+grundlegenden Zielen des Spiels ohne nach links und rechts zu
+schauen, verpasst man einige wirklich gut klingende Stücke der
+verschiedenen Interpreten.
+
+<div class="p"><!----></div>
+    
+
+
+    Wer des Suchens überdrüssig ist, greift am Besten zu einem Trick aus
+dem echten Leben abseits des Spiels und ordert die Spielmusik mit
+insgesamt 18 Titeln für 8.99€ (oder mehr) auf der dazu passenden
+Bandcamp-Seite&nbsp;<a href="http://blackpantsgamestudio.bandcamp.com/album/tiny-big-soundtrack">[9]</a>.
+Der Erlös dort geht, so versprechen die Entwickler, zu 100% direkt
+an die Indie-Bands.
+
+<div class="p"><!----></div>
+
+<h2>Kein Spiel ohne Engine</h2>
+
+
+Die aus Deutschland stammende Entwicklerschmiede besteht im Kern aus
+sechs Mitgliedern: drei Programmierern, zwei Trickzeichnern und
+einem Comic-Zeichner. Besonders stolz dürfte das Team rund um Black
+Pants Game Studio auf ihre hauseigene und für <i>Tiny&nbsp;&amp;&nbsp;Big</i> genutzte
+Scape-Engine&nbsp;<a href="http://www.moddb.com/engines/scape">[10]</a> sein. Diese
+wird seit dem Jahr 2002 permanent weiterentwickelt und verbessert,
+ist in Gänze in Iso-C++ geschrieben und auf vielen Plattformen,
+darunter Linux, Windows, Mac und Xbox, lauffähig. Einige Bilddateien
+auf moddb.com verdeutlichen, dass die Scape-Engine nicht nur für
+den comicartigen Stil eines <i>Tiny&nbsp;&amp;&nbsp;Big</i> geeignet ist und lassen auf
+weitere hochwertige Titel aus dem Hause Black Pants Game Studio
+hoffen.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/tinyandbig_tempel.jpg" alt="tinyandbig_tempel.jpg" style="max-width:100%" /><br /><em>Ein mystischer Tempel möchte im Spiel erkundet werden.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Bereits die erste Technik-Demo mit dem Titel „up that mountain“ vor
+einigen Jahren zeigte auf, in welche Richtung sich das Endprodukt
+entwickeln würde. Eben dieses ist den Entwicklern dann
+schlussendlich mit Bravour gelungen. <i>Tiny&nbsp;&amp;&nbsp;Big</i> zeigt an vielen
+Stellen Witz, ist nicht zu schwer, aber auch nicht zu einfach, und
+fügt einige selten bis bislang gar nicht genutzte Methoden und
+Spielweisen in das Genre ein. Wer den Titel durchgespielt hat,
+beginnt dank Highscore-Funktion nochmal von Vorne, um den eigenen
+Rekord zu brechen oder bisher verschollene Kassetten oder
+langweilige Steine zu finden. Spaßvögel können sich praktisch
+stundenlang damit beschäftigen, riesige Brocken aus größer Höhe
+herauszuschneiden, nur um der anschließenden Gesteinslawine
+auszuweichen oder Tiny möglichst kreativ zu begraben.
+
+<div class="p"><!----></div>
+Dabei wird stets auf die sonst so häufig anzutreffende Darstellung
+von Gewalt verzichtet, was den Titel – freigegeben ab 6 Jahren – vor
+allem auch (als Geschenk) für Kinder attraktiv macht. Das Ende des Spiels
+bietet kreativen Geistern Gelegenheit über eine Fortsetzung zu
+mutmaßen und lässt hoffen, dass das Thema <i>Tiny&nbsp;&amp;&nbsp;Big</i> seitens der
+Entwickler noch nicht vom Tisch ist. Kurzum: <i>Tiny&nbsp;&amp;&nbsp;Big</i> ist rundum
+gelungen, kurzweilig, etwas Neues und Fans des Genres absolut zu
+empfehlen.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.tinyandbig.com/"><tt class="big">http://www.tinyandbig.com/</tt></a><br />
+[2] <a href="http://www.amazon.de/Tiny-Big-in-grandpas-leftovers/dp/B008HF9UH4/"><tt class="big">http://www.amazon.de/Tiny-Big-in-grandpas-leftovers/dp/B008HF9UH4/</tt></a><br />
+[3] <a href="http://www.application-systems.de/tinyandbig/"><tt class="big">http://www.application-systems.de/tinyandbig/</tt></a><br />
+[4] <a href="http://www.tinyandbig.com/games/upthatmountain/"><tt class="big">http://www.tinyandbig.com/games/upthatmountain/</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/Super_Mario"><tt class="big">https://de.wikipedia.org/wiki/Super_Mario</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Sonic_%28Computerspielfigur%29"><tt class="big">https://de.wikipedia.org/wiki/Sonic_(Computer"&#223;pielfigur)</tt></a><br />
+[7] <a href="http://www.tinyandbig.com/team/"><tt class="big">http://www.tinyandbig.com/team/</tt></a><br />
+[8] <a href="http://www.tinyandbig.com/soundtrack/"><tt class="big">http://www.tinyandbig.com/soundtrack/</tt></a><br />
+[9] <a href="http://blackpantsgamestudio.bandcamp.com/album/tiny-big-soundtrack"><tt class="big">http://blackpantsgamestudio.bandcamp.com/album/tiny-big-soundtrack</tt></a><br />
+[10] <a href="http://www.moddb.com/engines/scape"><tt class="big">http://www.moddb.com/engines/scape</tt></a><br />
+    
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Michael Schwarz</b>&nbsp;(<a href="http://www.holarse-linuxgaming.de/">Webseite</a>)
+glaubt an Linux als spieletaugliches Betriebssystem
+und setzt sich fleißig dafür ein, diese frohe Kunde unter die Leute
+zu bringen. <i>Tiny&nbsp;&amp;&nbsp;Big</i> wird ihm dafür bei zukünftigen Erläuterungen
+ein exzellentes Beispiel sein.
+    </td></tr></table>
+<br />
+            <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Tiny and Big#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_09_redis">Redis – Mehr als ein Key-Value-Store</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+        
+
+<b>E</b><b>iner der populäreren Vertreter der aktuellen Generation
+der „NoSQL“-Datenbanken ist sicherlich
+<i>Redis</i>&nbsp;<a href="http://www.redis.io/">[1]</a>. Dabei fällt in
+Kombination mit diesem Key-Value-Store gerne das Wort „schnell“.  <i>Redis</i>
+ist in der Tat schnell, hat aber noch eine ganze Menge mehr zu bieten als bloße
+Geschwindigkeit.</b>
+
+<div class="p"><!----></div>
+Die Datenbank ist nämlich kein simples Key-Value-Store, da als Values auch
+komplexere Datentypen möglich sind, dazu später mehr im Detail. Des Weiteren
+kann bei <i>Redis</i> die Geschwindigkeit zugunsten der Datenpersistenz
+feingranular eingestellt werden. Zusätzlich bietet <i>Redis</i> noch einen
+einfach zu handhabenden Publish-Subscribe-Modus, auch dazu später mehr. Ein
+weiterer Punkt, der zur Popularität beiträgt ist, dass es für eine Vielzahl von
+Programmiersprachen Anbindungen an die Datenbank
+gibt&nbsp;<a href="http://www.redis.io/clients">[2]</a>. Und zum Schluss sei noch erwähnt,
+dass <i>Redis</i> sehr aktiv entwickelt wird und eine sehr gute und
+umfangreiche Dokumentation besitzt&nbsp;<a href="http://www.redis.io/documentation">[3]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Was ist ein Key-Value-Store?</h2>
+
+
+Bevor auf <i>Redis</i> an sich eingegangen wird, vorab noch ein kurzer Exkurs,
+was ein Key-Value-Store eigentlich ist. Frei übersetzt bedeutet dies so viel
+wie „Speichern von Schlüssel-Werte-Paaren“.  Was an sich nichts Besonderes ist,
+weil viele Programmiersprachen so etwas auch an Bord haben, in Form von Hashes,
+Hashtables, Dictionaries etc. – nur ohne Datenpersistenz.
+
+<div class="p"><!----></div>
+Würde man ein Key-Value-Store auf eine klassische, relationale Datenbank
+übertragen, dann entspräche dies einer Datenbank mit einer Tabelle, welche
+genau zwei Spalten namens „Key“ und „Value“ besitzt. Nun, dieser Vergleich
+hinkt ein wenig, weil in den meisten Key-Value-Stores Schlüssel „alles“ sind
+und Werte „nichts“. „Nichts“ hier im Sinne von: nicht abfragbar oder
+durchsuchbar. Es kann immer nur der einem Schlüssel zugehörige Wert abgefragt
+werden, umgekehrt ist dies nicht möglich.
+
+<div class="p"><!----></div>
+
+<h2>Was ist anders bei Redis?</h2>
+
+
+Wie bereits weiter oben erwähnt kennt <i>Redis</i> mehrere Datentypen als Werte
+außer bloße Strings, nämlich auch „Lists“, „Hashes“, „Sets“ und „Ordered Sets“.
+Diese werden im Verlauf des Artikels noch genauer vorgestellt.
+
+<div class="p"><!----></div>
+Ebenfalls wurde bereits erwähnt, dass <i>Redis</i> schnell ist, sehr schnell.
+Selbst auf durchschnittlichen Desktop-Rechnern (mit ruhendem Desktop) schafft
+<i>Redis</i> mehr als 100.000 SET-Operation (SET = Schreiben eines einfachen
+Schlüssel-Werte-Paars) und etwas weniger GET-Operationen (GET = Lesen eines
+einfachen Werts zu einem Schüssel). Das Programm belegt grundsätzlich nur einen
+Thread, hält aber per Voreinstellung die Datenbank primär im RAM, wodurch
+natürlich ein Großteil der Geschwindigkeit erklärt ist. Aber <i>Redis</i> kann
+auch so konfiguriert werden, dass die Daten persistent auf die Festplatte
+geschrieben werden, wobei das „Wann“ des Schreibens sehr feingranular zwischen
+„sporadisch“ bis „sofort“ eingestellt werden kann. Somit kann die Datenbank
+individuell an die eigenen Bedürfnisse angepasst werden. Dazu später auch noch
+mehr.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+
+<i>Redis</i> ist zwar in den Paketquellen einiger Linux-Distributionen
+enthalten, in der Regel aber nicht in der aktuellen (oder einer annähernd
+aktuellen) Version.  Da die Installation aus dem Quellcode aber sehr einfach
+ist, ist dies der empfohlene Weg, sowohl unter Linux als auch unter MacOS.
+Windows wird offiziell nicht unterstützt, es gibt jedoch inoffizielle
+Portierungen.
+
+<div class="p"><!----></div>
+Da <i>Redis</i> keine Abhängigkeiten bei der Kompilierung hat, genügt es, wenn
+von der Downloadseite des Projekts&nbsp;<a href="http://www.redis.io/download">[4]</a> die
+aktuellste, stabile Version heruntergeladen und anschließend entpackt wird.
+Nach dem Wechsel in das entpackte Verzeichnis (z.&nbsp;B.  <b><tt class="big">redis-2.4.15</tt></b>)
+reicht ein einfaches <b><tt class="big">make</tt></b>, um das Kompilieren anzustoßen. Ist dieses
+abgeschlossen, ist <i>Redis</i> prinzipiell einsatzbereit. Wer <i>Redis</i>
+systemweit installieren möchte, sodass der Datenbankserver auch beim
+Systemstart automatisch hochgefahren wird, der sollte einen Blick in die Datei
+<b><tt class="big">README</tt></b> werfen, welche ebenfalls im entpackten Verzeichnis zu finden ist.
+
+<div class="p"><!----></div>
+Dieser Artikel verwendet eine einfache, nicht systemweite Installation von
+<i>Redis</i> unter Ubuntu 10.04 LTS mit <i>Redis</i>-Version 2.4.15.
+
+<div class="p"><!----></div>
+
+<h2>Redis starten</h2>
+
+
+Nach der Installation kann nach dem Wechsel ins Verzeichnis <b><tt class="big">src</tt></b> der
+Server mit dem Befehl <b><tt class="big">redis-server</tt></b> gestartet werden. Per Voreinstellung
+läuft der Server dabei im Vordergrund und lauscht auf Port 6379 auf allen
+IP-Adressen. Zum „Spielen“ mit dem Server empfiehlt sich die
+Kommandozeilen-Schnittstelle, welche durch den Aufruf von <b><tt class="big">redis-cli</tt></b>,
+ebenfalls im <b><tt class="big">src</tt></b> Verzeichnis, geöffnet werden kann. Diese wird auch in
+diesem Artikel durchgehend genutzt.
+
+<div class="p"><!----></div>
+Wer sich einen Eindruck von der Geschwindigkeit von <i>Redis</i> machen möchte,
+der kann, wiederum ebenfalls im <b><tt class="big">src</tt></b>-Verzeichnis, den mitgelieferten
+Benchmark durch den Aufruf von <b><tt class="big">redis-benchmark</tt></b> starten.
+
+<div class="p"><!----></div>
+
+<h2>Konfiguration</h2>
+
+
+Die komplette Konfiguration von <i>Redis</i> erfolgt über die Datei
+<b><tt class="big">redis.conf</tt></b>. Diese ist sehr gut kommentiert und dokumentiert und von
+daher weitestgehend selbsterklärend. An dieser Stelle wird deshalb primär auf
+die Einstellungen für die Datenpersistenz eingegangen.
+
+<div class="p"><!----></div>
+Vorab noch ein Hinweis: Wer <i>Redis</i> „nur“ lokal betreibt, der muss den
+Pfad zur Konfigurationsdatei beim Serverstart explizit angeben, da diese nicht
+im gleichen Verzeichnis liegt wie der Server. Wird keine Konfigurationsdatei
+angegeben, wird eine Default-Konfiguration verwendet.
+
+<div class="p"><!----></div>
+Wie bereits erwähnt, hält <i>Redis</i> die Daten in erster Linie im RAM und
+schreibt diese von Zeit zu Zeit in eine Datei auf die Festplatte – wobei die
+Konfiguration auch so geändert werden könnte, dass nie auf Platte geschrieben
+wird.
+
+<div class="p"><!----></div>
+Die Voreinstellungen von <i>Redis</i> sind wie folgt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">save 900 1<br />
+save 300 10<br />
+save 60 10000</div>
+
+<div class="p"><!----></div>
+Die Syntax von <b><tt class="big">save</tt></b> ist:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">save SEKUNDEN SCHREIBVORGÄNGE</div>
+
+<div class="p"><!----></div>
+In der Grundkonfiguration wird die Datenbank also gespeichert, wenn innerhalb
+von 900 Sekunden ein Schlüssel gespeichert (oder geändert) wurde oder innerhalb
+von 300 Sekunden zehn Schlüssel oder innerhalb von 60 Sekunden 10000 Schlüssel.
+
+<div class="p"><!----></div>
+Grundsätzlich können beliebig viele <b><tt class="big">save</tt></b>-Werte vorgegeben werden, je
+nach den eigenen Bedürfnissen. Außerdem lässt sich das Speichern auch jederzeit
+manuell anstoßen, und zwar über den Befehl <b><tt class="big">BGSAVE</tt></b>.
+
+<div class="p"><!----></div>
+Aber selbst bei dem kleinsten save-Intervall von <b><tt class="big">1 1</tt></b> (also jede Sekunde,
+wenn mindestens ein Schlüssel gespeichert wurde) ist keine Datensicherheit von
+100&nbsp;% gegeben, da die Daten, welche innerhalb von einer Sekunden geändert
+wurden (was bei <i>Redis</i> sehr viele sein können, siehe oben) verloren gehen
+können. Für diesen Fall kann in der Konfigurationsdatei der „Append Only Mode“
+aktiviert werden, welcher per Voreinstellung deaktiviert ist. Dazu ist
+das <b><tt class="big">no</tt></b> im Eintrag
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">appendonly no</div>
+
+<div class="p"><!----></div>
+in <b><tt class="big">yes</tt></b>
+zu ändern. Jetzt schreibt <i>Redis</i> alle Änderungen an der Datenbank direkt
+in eine separate Datei und synchronisiert diese per Voreinstellung im
+Sekundentakt mit der Datenbank, wobei auch dieses Intervall einstellbar ist.
+Ist <b><tt class="big">appendonly</tt></b> aktiviert und der <i>Redis</i>-Server stürzt im laufenden
+Betrieb – warum auch immer – ab, dann wird beim Neustart des Servers zuerst die
+appendonly-Datei mit der Datenbank synchronisiert und dann erst der Server
+gestartet, sodass die Datensicherheit gegeben ist. Die appendonly-Einstellung
+ist übrigens komplett unabhängig von den Einstellungen von save (siehe oben),
+beides kann parallel genutzt werden.
+
+<div class="p"><!----></div>
+Der appendonly-Modus „kostet“ natürlich Geschwindigkeit, da wesentlich mehr
+Zugriffe auf die Festplatte erfolgen. Auf meinem Laptop (Lenovo T410 mit Intel
+Core i5 Prozessor, max. 2,67 GHz) brachte der langsamste appendonly-Modus, bei
+dem jede Schlüsseländerung sofort mit der Datenbank synchronisiert wird, im
+Benchmark rund 40.000 einfache SET-Operationen weniger. Zwar sind 80.000 SETs
+immer noch sehr viel, im Vergleich zu ca. 120.000 in der Default-Konfiguration
+von <i>Redis</i> ohne appendonly-Datei aber immerhin 1/3 weniger.
+
+<div class="p"><!----></div>
+
+<h2>Datentypen</h2>
+
+
+Wie bereits weiter oben erwähnt, kennt <i>Redis</i> fünf verschiedene
+Datentypen für Werte, welche im folgenden vorgestellt werden. Für die Datenbank
+sind alle Werte einfach nur eine Folge von Bytes, d.h.  es spielt keine Rolle,
+ob einfache Strings, formatierte Daten (wie JSON oder XML) oder binäre Daten
+geschrieben werden.
+
+<div class="p"><!----></div>
+Weiterhin darf ein Wert eine maximale Länge von 512 Megabytes haben, was auch
+das Speichern von großen (Binär-)Dateien innerhalb eines Werts möglich macht,
+aber leider nicht für z.&nbsp;B. komplette CD-Images reicht.
+
+<div class="p"><!----></div>
+Schlüssel dürfen eine Länge von enormen 2<sup>31</sup> Bytes haben und
+beliebige Zeichen enthalten. Es ist übrigens gängige Praxis bei der Nutzung von
+<i>Redis</i>, dass der Doppelpunkt – auch wenn er für <i>Redis</i> selbst
+keinerlei spezielle Bedeutung hat – zur Strukturierung von Schlüsseln genutzt
+wird. Ein Beispiel wäre z.&nbsp;B. <b><tt class="big">user:1234:email</tt></b>.
+
+<div class="p"><!----></div>
+<i>Redis</i> unterstützt keine Verschachtelung von Datentypen. So kann z.&nbsp;B.
+ein Set nicht aus Hashes oder weiteren Sets bestehen, sondern nur aus Strings.
+
+<div class="p"><!----></div>
+Und zum Abschluss sei noch gesagt, dass jede Operation in <i>Redis</i> atomar
+ist, auch wenn mehrere Werte (z.&nbsp;B. bei einem Hash) zu einem Schlüssel
+geschrieben werden.
+
+<div class="p"><!----></div>
+
+<h3>Strings</h3>
+
+
+Strings sind die einfachste Form der Datentypen. Wie der Name schon sagt,
+stellen sie einfach nur eine Zeichenfolge dar. Die grundlegenden Befehle für
+Strings sind <b><tt class="big">SET SCHLÜSSEL WERT</tt></b> und <b><tt class="big">GET SCHLÜSSEL</tt></b>, wobei ersterer
+Befehl einen Schlüssel in die Datenbank schreibt, letzterer diesen abfragt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SET Rhythmbox Audioplayer<br />
+OK<br />
+redis 127.0.0.1:6379&#62; SET "Quod Libet" Audioplayer<br />
+OK<br />
+redis 127.0.0.1:6379&#62; GET Rhythmbox<br />
+"Audioplayer"<br />
+redis 127.0.0.1:6379&#62; GET Winamp<br />
+(nil)<br />
+redis 127.0.0.1:6379&#62; GET "Quod Libet"<br />
+"Audioplayer"</div>
+
+<div class="p"><!----></div>
+Ist eine Schreiboperation erfolgreich, antwortet <i>Redis</i> mit einem
+einfachen <b><tt class="big">OK</tt></b>, bei erfolgreichen Leseoperationen wird der Wert
+zurückgeliefert. Enthält ein Schlüssel (oder auch ein Wert) ein oder mehrere
+Leerzeichen, muss dieser in Anführungsstriche gesetzt werden.
+
+<div class="p"><!----></div>
+Auch wenn für <i>Redis</i> grundsätzlich alle Werte nur Bytes sind, erkennt die
+Datenbank doch Integerwerte und stellt zum Erhöhen oder Reduzieren eines Werts
+diverse Befehle bereit:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SET counter 1<br />
+OK<br />
+redis 127.0.0.1:6379&#62; GET counter<br />
+"1"<br />
+redis 127.0.0.1:6379&#62; INCR counter<br />
+(integer) 2<br />
+redis 127.0.0.1:6379&#62; GET counter<br />
+"2"<br />
+redis 127.0.0.1:6379&#62; INCRBY counter 5<br />
+(integer) 7<br />
+redis 127.0.0.1:6379&#62; DECR counter<br />
+(integer) 6<br />
+redis 127.0.0.1:6379&#62; DECRBY counter 2<br />
+(integer) 4<br />
+redis 127.0.0.1:6379&#62; GET counter<br />
+"4"</div>
+
+<div class="p"><!----></div>
+    So lassen sich sehr einfach Zähler innerhalb der Datenbank realisieren.
+
+<div class="p"><!----></div>
+Es gibt noch eine Reihe von weiteren Befehlen für Strings. Eine komplette
+Übersicht ist durch den Aufruf von <b><tt class="big">help @string</tt></b> erreichbar.
+
+<div class="p"><!----></div>
+
+<h3>Hashes</h3>
+
+
+Ein weiterer Datentyp sind Hashes. Hier besteht der Wert wiederum aus
+Schlüssel-Werte-Paaren. Die maximale Anzahl der Hashes pro Schlüssel liegt bei
+komfortablen 2<sup>32</sup> (über 4 Milliarden), was mehr als genug ist.
+
+<div class="p"><!----></div>
+Befehle für Hashes erkennt man daran, dass ihnen ein <b><tt class="big">H</tt></b> vorangestellt
+ist. Im folgenden Beispiel werden zwei Schlüssel mit Hashes als Wert angelegt.
+Als erstes dreimal einzeln:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; HSET Winamp type Audioplayer<br />
+(integer) 1<br />
+redis 127.0.0.1:6379&#62; HSET Winamp platform Windows<br />
+(integer) 1<br />
+redis 127.0.0.1:6379&#62; HSET Winamp license closed<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Und jetzt drei mit einem Befehl:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; HMSET Banshee type Audioplayer platform Linux license free<br />
+OK</div>
+
+<div class="p"><!----></div>
+Man kann auch alle Hashes zu einem Schlüssel abfragen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; HGETALL Winamp<br />
+1) "type"<br />
+2) "Audioplayer"<br />
+3) "platform"<br />
+4) "Windows"<br />
+5) "license"<br />
+6) "closed"</div>
+
+<div class="p"><!----></div>
+Und die gezielte Abfrage von nur einem bestimmtem Wert eines Hashs geht
+mittels:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; HGET Banshee platform<br />
+"Linux"</div>
+
+<div class="p"><!----></div>
+Möchte man die Anzahl der Hashes zu einem Schlüssel abfragen, nutzt man
+<b><tt class="big">HLEN</tt></b>:
+
+<div class="p"><!----></div>
+
+<div class="command">redis 127.0.0.1:6379&#62; HLEN Banshee<br />
+(integer) 3</div>
+
+<div class="p"><!----></div>
+Neben <b><tt class="big">HSET</tt></b> kann man mit <b><tt class="big">HDEL</tt></b> einen Hash-Schlüssel auch wieder
+löschen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; HDEL Banshee platform<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Fragt man nun alle Hash-Werte ab, fehlt der eben gelöschte Wert für die
+Plattform:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; HGETALL Banshee<br />
+1) "type"<br />
+2) "Audioplayer"<br />
+3) "license"<br />
+4) "free"</div>
+
+<div class="p"><!----></div>
+<i>Redis</i> hält noch mehr Befehl für den Umgang mit Hashs bereit. Diese
+können über den Aufruf von <b><tt class="big">help @hash</tt></b> angesehen werden.
+
+<div class="p"><!----></div>
+
+<h3>Lists</h3>
+
+
+Lists, also Listen, enthalten in <i>Redis</i> einfach eine Reihe von Strings
+mit unveränderlicher Reihenfolge. Die Datenbank kann neue Werte sowohl am
+Anfang, am Ende, als auch an einem vorzugebenden Index einfügen und entfernen.
+Der Index ist dabei, wie in den meisten Programmiersprachen auch, null-basiert.
+
+<div class="p"><!----></div>
+Dazu ein paar Beispiele. Als Erstes wird ein Wert links zur Liste hinzugefügt.
+Da die Liste noch nicht existiert, wird diese angelegt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LPUSH Audioplayer Banshee<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Jetzt wird ein Wert an einer bestimmten Position hinzugefügt.  Existiert dort
+schon ein Wert, wird dieser direkt überschreiben:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LSET Audioplayer 0 Rhythmbox<br />
+OK</div>
+
+<div class="p"><!----></div>
+Will man alle Werte anzeigen, nutzt man <b><tt class="big">LRANGE</tt></b>. <b><tt class="big">-1</tt></b> bedeutet dabei
+„der 1. Wert von hinten“:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LRANGE Audioplayer 0 -1<br />
+1) "Rhythmbox"</div>
+
+<div class="p"><!----></div>
+Das Einfügen geht auch an verschiedenen Stellen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LPUSH Audioplayer Banshee<br />
+(integer) 2<br />
+redis 127.0.0.1:6379&#62; RPUSH Audioplayer Winamp<br />
+(integer) 3<br />
+redis 127.0.0.1:6379&#62; LINSERT Audioplayer AFTER Banshee "Quod Libet"<br />
+(integer) 4</div>
+
+<div class="p"><!----></div>
+Die Anzeige aller Werte zeigt entsprechend mehr Einträge:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LRANGE Audioplayer 0 -1<br />
+1) "Banshee"<br />
+2) "Quod Libet"<br />
+3) "Rhythmbox"<br />
+4) "Winamp"</div>
+
+<div class="p"><!----></div>
+Mittels <b><tt class="big">LRANGE</tt></b> kann man auch nur Teilbereiche abfragen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LRANGE Audioplayer 0 1<br />
+1) "Banshee"<br />
+2) "Quod Libet"<br />
+redis 127.0.0.1:6379&#62; LRANGE Audioplayer -2 -1<br />
+1) "Rhythmbox"<br />
+2) "Winamp"</div>
+
+<div class="p"><!----></div>
+Die Abfrage der Werte von Index <b><tt class="big">-1</tt></b> bis <b><tt class="big">-2</tt></b> entspricht dem letzten
+und vorletzten Wert.
+
+<div class="p"><!----></div>
+Wie von Queues gewohnt, kann man bei Listen auch den ersten Wert abrufen und
+entfernen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LPOP Audioplayer<br />
+"Banshee"</div>
+
+<div class="p"><!----></div>
+Will man nur einen bestimmten Wert abfragen, nutzt man <b><tt class="big">LINDEX</tt></b>:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LINDEX Audioplayer 1<br />
+"Rhythmbox"</div>
+
+<div class="p"><!----></div>
+Es geht auch komplizierter, z.&nbsp;B. das Entfernen des letzten Werts einer Liste
+und gleichzeitiges Hinzufügen am Anfang einer anderen Liste. Wenn diese nicht
+existiert, wird sie direkt angelegt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; RPOPLPUSH Audioplayer WindowsAudioplayer <br />
+"Winamp"<br />
+redis 127.0.0.1:6379&#62; LRANGE WindowsAudioplayer 0 -1<br />
+1) "Winamp"</div>
+
+<div class="p"><!----></div>
+Wie zu sehen ist beginnen Befehle für Listen entweder mit einem <b><tt class="big">L</tt></b> (für
+„left“, also links) oder einen <b><tt class="big">R</tt></b> (für „right“, also rechts), je nach
+dem, ob die Operation sich auf den Anfang (= links) oder das Ende (=rechts)
+einer Liste auswirkt.
+
+<div class="p"><!----></div>
+<i>Redis</i> kennt noch zwei weitere interessante Kommandos, nämlich ein
+blockierendes <b><tt class="big">RPOP</tt></b> und <b><tt class="big">LPOP</tt></b>. Dabei wird der letzte bzw. der erste
+Werte aus einer Liste geholt. Ist die Liste leer, wird einen vordefinierten
+Zeitraum lang auf ein Element gewartet.
+
+<div class="p"><!----></div>
+Für das folgende Beispiel benötigt man zwei offene <i>Redis</i>-Kommandozeilen.
+Im ersten Terminal wird der erste Wert von der Liste zum Schlüssel
+<b><tt class="big">mein_stack</tt></b> geholt. Ist kein Wert vorhanden, wird max 120 Sekunden
+gewartet:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; BLPOP mein_stack 120</div>
+
+<div class="p"><!----></div>
+Im zweiten Terminal schreibt man den Wert <b><tt class="big">foo</tt></b> in <b><tt class="big">mein_stack</tt></b>:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; LPUSH mein_stack foo<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Wird der Befehl im zweiten Terminal innerhalb von 120 Sekunden ausgeführt,
+erscheint im ersten Terminal die folgende Ausgabe:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">1) "mein_stack"<br />
+2) "foo"<br />
+(20.98s)</div>
+
+<div class="p"><!----></div>
+<b><tt class="big">1)</tt></b> ist der Schlüssel ,<b><tt class="big">2)</tt></b> der Wert und <b><tt class="big">20.98s)</tt></b> die Zeit,
+die gewartet wurde, bevor der Wert verfügbar war. Der äquivalente Befehl zu
+<b><tt class="big">BLPOP</tt></b>, der den letzten Wert einer Liste holt, ist <b><tt class="big">BRPOP</tt></b>. Des
+Weiteren gibt es auch noch <b><tt class="big">BRPOPLPUSH</tt></b>.
+
+<div class="p"><!----></div>
+Eine vollständige Übersicht über alle Befehle für Listen ist über <b><tt class="big">help
+@list</tt></b> abrufbar.
+
+<div class="p"><!----></div>
+
+<h3>Sets</h3>
+
+
+Sets sind eine spezielle Form von Listen, da bei Sets jedes Element nur genau
+einmal vorkommen kann (im Deutschen Mengen genannt). Im Gegensatz zu Listen
+besitzen Sets aber keinen Index, d.h. es gibt keine festen Positionen innerhalb
+eines Sets. Befehlen für ein Set ist immer ein <b><tt class="big">S</tt></b> vorangestellt.
+
+<div class="p"><!----></div>
+Im Folgenden gibt es einige Beispiele zu Sets. Als Erstes werden zwei Sets angelegt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SADD Audioplayer:Windows "Quod Libet"<br />
+(integer) 1<br />
+redis 127.0.0.1:6379&#62; SADD Audioplayer:Linux Rhythmbox<br />
+(integer) 1<br />
+redis 127.0.0.1:6379&#62; SADD Audioplayer:Linux "Quod Libet"<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Abfrage der Anzahl der Werte in einem Set:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SCARD Audioplayer:Linux<br />
+(integer) 2</div>
+
+<div class="p"><!----></div>
+Alle Werte eines Sets kann man mit <b><tt class="big">SMEMBERS</tt></b> ausgeben:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SMEMBERS Audioplayer:Linux<br />
+1) "Quod Libet"<br />
+2) "Rhythmbox"</div>
+
+<div class="p"><!----></div>
+Man kann auch prüfen, ob ein Wert in einem Set enthalten ist.  Mögliche
+Ergebnisse sind dann <b><tt class="big">0</tt></b> = falsch und <b><tt class="big">1</tt></b> = wahr:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SISMEMBER Audioplayer:Linux Banshee<br />
+(integer) 0<br />
+redis 127.0.0.1:6379&#62; SISMEMBER Audioplayer:Linux Rhythmbox<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Gemäß der mathematischen Definition von Mengen kann man auch die Schnittmenge
+zweier Sets bilden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SINTER Audioplayer:Linux Audioplayer:Windows<br />
+1) "Quod Libet"</div>
+
+<div class="p"><!----></div>
+Alle Befehle zu Sets können über den Aufruf von <b><tt class="big">help @set</tt></b> angezeigt
+werden.
+
+<div class="p"><!----></div>
+
+<h3>Sorted Sets</h3>
+
+
+Sorted Sets sind Sets, in denen die Werte eine vorgegebene Reihenfolge haben.
+Diese wird über Integer-Werte festgelegt, welche für jeden Schlüssel mit
+übergeben werden müssen. Im Jargon von <i>Redis</i> heißt die Zahl, welche
+einem Wert zugeordnet ist, „Score“. Die Zählung der Positionen beginnt dabei
+bei Null, wobei dies die schlechteste, also letzte Position ist. Die erste,
+also beste Position hat als Position die Länge des Sets minus 1. Befehlen für
+ein Sorted Set ist immer ein <b><tt class="big">Z</tt></b> vorangestellt.
+
+<div class="p"><!----></div>
+Dazu ein paar Beispiele. Als Erstes werden vier Werte zum Sorted Set
+hinzugefügt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; ZADD Favoriten 50 Rhythmbox<br />
+(integer) 1<br />
+redis 127.0.0.1:6379&#62; ZADD Favoriten 45 Banshee<br />
+(integer) 1<br />
+redis 127.0.0.1:6379&#62; ZADD Favoriten 25 "Quod Libet"<br />
+(integer) 1<br />
+redis 127.0.0.1:6379&#62; ZADD Favoriten 10 Winamp<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Man kann die Anzahl der Werte abfragen, deren Score in einem bestimmten Bereich
+liegt (hier: zwischen und 0 und 100, was gleichbedeutend zu allen Werten ist):
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; ZCOUNT Favoriten 0 100<br />
+(integer) 4</div>
+
+<div class="p"><!----></div>
+Will man die Position eines Werts wissen, nutzt man <b><tt class="big">ZRANK</tt></b>:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; ZRANK Favoriten Rhythmbox<br />
+(integer) 3</div>
+
+<div class="p"><!----></div>
+Und natürlich lässt sich auch der Score zu einem Wert abfragen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; ZSCORE Favoriten Winamp<br />
+"10"</div>
+
+<div class="p"><!----></div>
+Neben der Anzahl der Werte in einem bestimmten Scorebereich, lassen sich auch
+die Werte direkt ausgeben (hier: zwischen Score 40 und 50):
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; ZRANGEBYSCORE Favoriten 40 50<br />
+1) "Banshee"<br />
+2) "Rhythmbox"</div>
+
+<div class="p"><!----></div>
+Nachträglich lässt sich der Score auch veränderen, z.&nbsp;B. kann man den Score von
+Banshee um 15 erhöhen und dann die Position neu abfragen:
+
+<div class="p"><!----></div>
+    
+
+
+<div class="command">redis 127.0.0.1:6379&#62; ZINCRBY Favoriten 15 Banshee<br />
+"60"<br />
+redis 127.0.0.1:6379&#62; ZRANK Favoriten Banshee<br />
+(integer) 3</div>
+
+<div class="p"><!----></div>
+Des Weiteren sind auch Mengenoperationen für Sorted Sets möglich, ähnlich wie
+für normale Sets. Eine vollständige Befehlsübersicht ist über <b><tt class="big">help
+@sorted_sets</tt></b> erreichbar.
+
+<div class="p"><!----></div>
+
+<h3>Lebensdauer von Schlüsseln</h3>
+
+
+Alle Schlüssel können in <i>Redis</i> mit einer Lebensdauer in Sekunden
+versehen werden. Ist die Zeit abgelaufen, wird der Schlüssel mit dem zugehörigen Wert
+automatisch gelöscht. Im Folgenden wird ein Schlüssel-Werte-Paar erzeugt und
+die Lebensdauer auf 10 Sekunden gesetzt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SET temporär ein_wert<br />
+OK<br />
+redis 127.0.0.1:6379&#62; EXPIRE temporär 10<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Erfolgt eine Abfrage innerhalb der 10 Sekunden, wird der Wert zurückgeliefert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; GET temporär<br />
+"ein_wert"</div>
+
+<div class="p"><!----></div>
+Eine Abfrage nach mehr als 10 Sekunden bringt
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; GET temporär<br />
+(nil)</div>
+
+<div class="p"><!----></div>
+Neben dem Befehl <b><tt class="big">EXPIRE</tt></b> kennt <i>Redis</i> auch noch <b><tt class="big">EXPIREAT</tt></b>.
+Der Unterschied ist hier, dass das Ende der Gültigkeit eines Schlüssel absolut
+in Form eines Unix-Timestamps angegeben wird.
+
+<div class="p"><!----></div>
+Für einige Datentypen kennt <i>Redis</i> auch kombinierte Befehle zum
+gleichzeitigen Setzen eines Schlüssel inklusive Lebensdauer. Das obige Beispiel
+kann man auch so realisieren:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SETEX temporär 10 ein_wert</div>
+
+<div class="p"><!----></div>
+Die Lebensdauer kann wie gesagt für alle Arten von Werten festgelegt werden,
+nicht nur für Strings, wie in den obigen Beispielen.
+
+<div class="p"><!----></div>
+
+<h2>Transaktionen</h2>
+
+
+Wie weiter oben bereits erwähnt, ist jede einzelne Operation von <i>Redis</i>
+atomar, auch wenn innerhalb dieser Operation mehrere Werte für einen Schlüssel
+gesetzt werden oder wie bei <b><tt class="big">RPOPLPUSH</tt></b> ein Wert aus einer Liste entfernt
+wird und in eine andere (evtl. neue) geschrieben wird.
+
+<div class="p"><!----></div>
+Nun kann es aber vorkommen, dass mehrere Befehle zusammen aufgeführt werden
+sollen, wie z.&nbsp;B. das Anlegen eines neuen Schlüssel und das Erhöhen eines Zählers.
+Dazu kennt die Datenbank Transaktionen. Hier können mehrere Befehle so
+zusammengefasst werden, sodass diese in ihrer Gesamtheit atomar (= „alle oder
+keiner“) ausgeführt werden.
+
+<div class="p"><!----></div>
+Dazu zwei Beispiele. Im ersten Beispiel wird eine Transaktion eingeleitet, zwei
+Befehle hinzugefügt und die Transaktion dann ausgeführt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; MULTI<br />
+OK<br />
+redis 127.0.0.1:6379&#62; SET foo bar<br />
+QUEUED<br />
+redis 127.0.0.1:6379&#62; INCR counter<br />
+QUEUED<br />
+redis 127.0.0.1:6379&#62; EXEC<br />
+1) OK<br />
+2) (integer) 5</div>
+
+<div class="p"><!----></div>
+Im zweiten Beispiel wird die Transaktion abgebrochen. Somit ändert sich der
+Wert des Schlüssels <b><tt class="big">counter</tt></b> nicht:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; MULTI<br />
+OK<br />
+redis 127.0.0.1:6379&#62; SET spam egg<br />
+QUEUED<br />
+redis 127.0.0.1:6379&#62; INCR counter<br />
+QUEUED<br />
+redis 127.0.0.1:6379&#62; DISCARD<br />
+OK<br />
+redis 127.0.0.1:6379&#62; GET counter<br />
+"5"</div>
+
+<div class="p"><!----></div>
+Die Befehlsübersicht zu Transaktionen ist über <b><tt class="big">help @transactions</tt></b>
+einsehbar.
+
+<div class="p"><!----></div>
+
+<h2>Allgemeine Befehle</h2>
+
+
+Neben den Befehlen für die diversen Datentypen und Befehle für Transaktionen
+kennt <i>Redis</i> noch eine Reihe von allgemeineren Befehlen, unter anderem um
+die Datenbank zu löschen, den Typ eines Schlüssels zu bestimmen oder die
+Datenbank zu wechseln. Die Hilfen dazu sind über die Aufrufe von <b><tt class="big">help
+@server</tt></b>, <b><tt class="big">help @connection</tt></b> und <b><tt class="big">help @generic</tt></b> einsehbar.
+
+<div class="p"><!----></div>
+Apropos Datenbankwechsel: In der Ausgangskonfiguration stehen 16 unabhängige
+Datenbanken zur Verfügung, die Zählung beginnt bei 0.  Die Anzahl kann in der
+Konfigurationsdatei festgelegt werden. Beim Start von <i>Redis</i> wird
+automatisch die Datenbank 0 geladen.
+
+<div class="p"><!----></div>
+Im folgenden Beispiel wird auf die Datenbank <b><tt class="big">1</tt></b> gewechselt, welche leer
+ist. Folglich liefert der <b><tt class="big">GET</tt></b>-Befehl kein Ergebnis. Danach wird wieder
+auf die Datenbank <b><tt class="big">0</tt></b> zurückgewechselt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SELECT 1<br />
+OK<br />
+redis 127.0.0.1:6379[1]&#62; GET counter<br />
+(nil)<br />
+redis 127.0.0.1:6379[1]&#62; SELECT 0<br />
+OK<br />
+redis 127.0.0.1:6379&#62; GET counter<br />
+"5"</div>
+
+<div class="p"><!----></div>
+Wie zu sehen ist, wird in der <i>Redis</i>-Kommandozeile die Nummer der
+Datenbank in eckigen Klammern angezeigt, sofern nicht Datenbank 0 aktiv ist.
+
+<div class="p"><!----></div>
+
+<h2>Publish-Subscribe</h2>
+
+
+Zusätzlich zum Speichern von Schlüssel-Werte-Paaren bietet <i>Redis</i> noch
+ein einfaches Nachrichtensystem namens „Publish-Subscribe“.  Hier können
+Nachrichten auf beliebigen Kanälen (im <i>Redis</i> Jargon: „Channels“)
+abonniert werden. Die Channels müssen dabei vorab nicht definiert werden – der
+Channel-Name kann erst beim Senden der Nachricht frei festgelegt werden.
+
+<div class="p"><!----></div>
+Für das folgende Beispiel werden wieder zwei Terminals benötigt, in denen die
+<i>Redis</i>-Kommandozeile geöffnet ist. Im ersten Terminal wird der Channel
+<b><tt class="big">nachrichten</tt></b> abonniert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; SUBSCRIBE nachrichten<br />
+Reading messages... (press Ctrl-C to quit)<br />
+1) "subscribe"<br />
+2) "nachrichten"<br />
+3) (integer) 1</div>
+
+<div class="p"><!----></div>
+Im zweiten Terminal wird eine Nachricht im Channel <b><tt class="big">nachrichten</tt></b> gesendet:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; PUBLISH  nachrichten "Hallo Welt"<br />
+(integer) 1</div>
+
+<div class="p"><!----></div>
+Der Empfang der Nachricht im Terminal 1 sieht dann so aus:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">1) "message"<br />
+2) "nachrichten"<br />
+3) "Hallo Welt"</div>
+
+<div class="p"><!----></div>
+Leider kann auf der Kommandozeile das Abo nur durch Drücken von
+<i>„Strg“</i>&nbsp;+&nbsp;<i>„C“</i> beendet werden, was gleichzeitig aber die Verbindung zum
+<i>Redis</i>-Server beendet. Läuft die Verbindung über die API einer
+Programmiersprache, dann kann das Abo gemäß des obigen Beispiel über den Befehl
+<b><tt class="big">UNSUBSCRIBE nachrichten</tt></b> regulär beendet werden.
+
+<div class="p"><!----></div>
+Die Hilfe zu Publish-Subscribe ist über <b><tt class="big">help @pubsub</tt></b> erreichbar.
+
+<div class="p"><!----></div>
+
+<h2>Replikation</h2>
+
+
+Eingangs wurde bereits erwähnt, dass <i>Redis</i> in einem einzelnen Thread
+läuft. Im Moment gibt es keine Möglichkeit, <i>Redis</i> horizontal zu
+skalieren. Die Datenbank läuft und liegt immer komplett auf einem Rechner. Ein
+<i>Redis</i>-Cluster ist allerdings für die Zukunft in
+Planung&nbsp;<a href="http://redis.io/topics/cluster-spec/">[5]</a>.
+
+<div class="p"><!----></div>
+<i>Redis</i> beherrscht aber die Master-Slave-Replikation, welche auch sehr
+einfach zu konfigurieren ist. Auf dem Master sind keinerlei Einstellungen
+notwendig, auf dem Slave muss eine Zeile in der weiter oben erklärten
+Konfigurationsdatei geändert werden. Dort gibt es die normalerweise
+auskommentierte Zeile
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">slaveof &lt;masterip&#62; &lt;masterport&#62;</div>
+
+<div class="p"><!----></div>
+Um die Replikation zu aktivieren, ist das Kommentarzeichen vor der Zeile zu
+entfernen und die IP-Adresse des Masters und der Port, auf dem <i>Redis</i>
+läuft, einzutragen. Startet man den als Slave konfigurierten
+<i>Redis</i>-Server, ist die Replikation automatisch aktiv.
+
+<div class="p"><!----></div>
+Es gibt in der Konfigurationsdatei noch einige weitere Detaileinstellungen zur
+Replikation. Diese sind dort aber sehr ausführlich erklärt, sodass hier darauf
+nicht weiter eingegangen wird.
+
+<div class="p"><!----></div>
+
+<h2>Sicherheit</h2>
+
+
+<i>Redis</i> besitzt gewollt (!) nur einen sehr schwachen Mechanismus zur
+Authentifizierung. Wer also einen <i>Redis</i>-Server betreibt, welcher über
+das Netzwerk (öffentlich) erreichbar ist, sollte die Verbindung selbst z.&nbsp;B. per
+Firewall oder SSH absichern.
+
+<div class="p"><!----></div>
+Nichtsdestotrotz gibt es zwei Sicherheitsmechanismen. Der erste ist, dass
+Client-Programme als Erstes den Befehl <b><tt class="big">AUTH Password</tt></b> senden müssen, um
+Zugriff zur Datenbank zu erhalten. Das Password wird in der Konfigurationsdatei
+(im Klartext) festgelegt. Wie den Kommentaren in dieser Datei zu entnehmen ist,
+halten die <i>Redis</i>-Entwickler diesen Schutz selber für schwach. Der
+<b><tt class="big">AUTH</tt></b>-Befehl ist im Prinzip nichts anders als eine spezielle
+<b><tt class="big">GET</tt></b>-Operation. Das heißt selbst auf einem durchschnittlichen Desktop-Rechner
+können aufgrund der Geschwindigkeit von <i>Redis</i> mehr als 100.000
+Passwörter pro Sekunde ausprobiert werden, sodass selbst umfangreichere
+Brute-Force-Attacken mit mehreren Millionen Passwörtern in akzeptabler Zeit
+möglich wären (siehe dazu auch den Artikel <a href="freiesMagazin-2012-09-bilder.html#12_09_passwortsicherheit">„Passwortsicherheit“</a>).
+
+<div class="p"><!----></div>
+Interessanter ist da eher der zweite Sicherheitsmechanismus.  Dieser erlaubt
+es, Befehle umzubenennen – oder direkt ganz zu deaktivieren. Dies erfolgt
+ebenfalls über die Konfigurationsdatei <b><tt class="big">redis.conf</tt></b>.  Dort kann über die Direktive
+<b><tt class="big">rename-command</tt></b> ein Befehl umbenannt werden. Die Direktive kann dabei
+beliebig oft vorkommen.
+
+<div class="p"><!----></div>
+Dazu zwei Beispiele: Werden die beiden folgenden Direktiven in die
+Konfigurationsdatei eingetragen, wird der Befehl <b><tt class="big">GET</tt></b> in
+<b><tt class="big">GEHEIMERBEFEHL</tt></b> umbenannt und der Befehl <b><tt class="big">FLUSHDB</tt></b> (welcher die
+Datenbank löschen würde und daher gegebenenfalls gefährlich sein kann) komplett deaktiviert.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">rename-command GET GEHEIMERBEFEHL<br />
+rename-command FLUSHDB ""</div>
+
+<div class="p"><!----></div>
+Das Ergebnis kann nach dem Neustart des Servers direkt ausprobiert werden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">redis 127.0.0.1:6379&#62; GET counter<br />
+(error) ERR unknown command 'GET'<br />
+redis 127.0.0.1:6379&#62; GEHEIMERBEFEHL counter<br />
+"5"<br />
+redis 127.0.0.1:6379&#62; FLUSHDB<br />
+(error) ERR unknown command 'FLUSHDB'</div>
+
+<div class="p"><!----></div>
+
+<h2>Wer braucht Redis?</h2>
+
+
+Wer bis hierher gelesen hat und noch keine Idee hat, wofür er <i>Redis</i>
+einsetzen könnte, der hat vielleicht in der Tat im Moment kein sinnvolles
+Einsatzfeld.
+
+<div class="p"><!----></div>
+Aufgrund der Geschwindigkeit bietet sich <i>Redis</i> natürlich für alles an,
+bei dem sehr viele Schreib-/Leseoperationen erfolgen und nur ein einzelner Server
+laufen kann (oder darf). Sehr interessant ist auch die Möglichkeit, dass
+Schlüssel mit einer Lebensdauer versehen werden können, wodurch sich
+<i>Redis</i> auch als Cacheserver oder „Zwischenserver“ zwischen der
+Client-Applikation und der eigentlichen Backend-Datenbank anbietet. Im direkten
+Vergleich zu reinen Cache-Servern wie z.&nbsp;B.
+memcached&nbsp;<a href="http://www.memcached.org/">[6]</a> hat <i>Redis</i> hier das Plus,
+dass die Datenbank immer noch gespeichert werden kann.
+
+<div class="p"><!----></div>
+Weiterhin bietet sich <i>Redis</i> natürlich auch an, wenn sich die zu
+speichernde Datenstruktur mit den vorhandenen Datentypen abbilden lässt. Hier
+kann man dann programmseitig eventuell einiges an Programmlogik auf die
+Datenbank verlagern und so Geschwindigkeitsvorteile erzielen.
+
+<div class="p"><!----></div>
+<i>Redis</i> ist aber auch sicherlich keine universale Lösung als Datenbank –
+was seitens der Entwickler aber auch gar nicht gewollt ist. Die Stärken von
+<i>Redis</i> liegen eben in den oben erwähnten Bereichen.
+
+<div class="p"><!----></div>
+Wer noch mehr Inspiration braucht, findet auf der <i>Redis</i>-Webseite eine
+Liste von Projekten und Firmen, welche <i>Redis</i> aktiv
+nutzen&nbsp;<a href="http://www.redis.io/topics/whos-using-redis">[7]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Round-Trips, bitte!</h2>
+
+
+Wer mit <i>Redis</i> entwickelt und die Datenbank einsetzt, sollte eines immer
+bedenken – insbesondere im direkten Vergleich zu relationalen SQL-Datenbanken:
+Round-Trips und De-Normalisierte Daten gehören bei <i>Redis</i> (wie auch bei
+anderen Key-Value-Stores) zur Tagesordnung. Was aber auch nicht weiter schlimm
+ist, da der Overhead bei der Datenbankabfrage im Vergleich zu den
+SQL-Schwergewichten ungleich geringer ist.
+
+<div class="p"><!----></div>
+Dies ist auch schon in dem hier im Artikel verwendeten, sehr trivialen Beispiel
+der Audioplayer sichtbar. Im Abschnitt zu den Hashs wurde für jeden Audioplayer
+die Plattform im Wert des Hash abgelegt. Das nützt nur
+wenig, wenn gefragt wird, welche Audioplayer unter Linux laufen. Als Lösung
+wurde ein eigenes Set namens „Audioplayer:Linux“
+angelegt. Die Plattform-Daten sind somit zweimal in der Datenbank vorhanden.
+
+<div class="p"><!----></div>
+Ein sehr gutes und etwas komplexeres Beispiel zu einer möglichen
+Datenbankstruktur inklusive einer Erklärung zur „Best Practice“ bei der Wahl
+der Schlüsselnamen, ist auch in der offiziellen <i>Redis</i>-Dokumentation zu
+finden&nbsp;<a href="http://www.redis.io/topics/twitter-clone">[8]</a>.  Hier wird ein
+Twitter-Clone mit <i>Redis</i> und PHP verwirklicht.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Key-Value-Store <i>Redis</i> ist ein leistungsstarker Vertreter der
+aktuellen Generation der NoSQL-Datenbanken. Besondere Merkmale sind die
+Schreib-/Lesegeschwindigkeit sowie die fünf möglichen Datentypen für die Werte,
+welche <i>Redis</i> von anderen Datenbanklösungen unterscheiden. Dabei ist
+<i>Redis</i> keine „All-in-One“-Lösung, kann aber im richtigen Einsatz und
+Einsatzgebiet seine Stärken voll ausspielen.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.redis.io/"><tt class="big">http://www.redis.io/</tt></a><br />
+[2] <a href="http://www.redis.io/clients"><tt class="big">http://www.redis.io/clients</tt></a><br />
+[3] <a href="http://www.redis.io/documentation"><tt class="big">http://www.redis.io/documentation</tt></a><br />
+[4] <a href="http://www.redis.io/download"><tt class="big">http://www.redis.io/download</tt></a><br />
+[5] <a href="http://redis.io/topics/cluster-spec/"><tt class="big">http://redis.io/topics/cluster-spec/</tt></a><br />
+[6] <a href="http://www.memcached.org/"><tt class="big">http://www.memcached.org/</tt></a><br />
+[7] <a href="http://www.redis.io/topics/whos-using-redis"><tt class="big">http://www.redis.io/topics/whos-using-redis</tt></a><br />
+[8] <a href="http://www.redis.io/topics/twitter-clone"><tt class="big">http://www.redis.io/topics/twitter-clone</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b> Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.com/">Webseite</a>)
+interessiert sich generell für Datenbanken und verfolgt die Entwicklung von
+Redis seit der Version 1.x, auch wenn er Redis (im Moment) selber nicht
+produktiv im Einsatz hat.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Redis#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_09_taskwarrior_02">Taskwarrior – What's next? (Teil 2)</a></font></h1>von Dirk Deimeke
+
+<div class="p"><!----></div>
+        
+
+<b>D</b><b>er <i>Taskwarrior</i>&nbsp;<a href="http://taskwarrior.org/">[1]</a> ist eine
+Aufgabenverwaltung für die Kommandozeile. Von einfachen To-do-Listen
+bis hin zum Management kleinerer Projekte wird alles durch diese
+Anwendung abgedeckt.</b>
+
+<div class="p"><!----></div>
+Aktuell ist Version 2.1.1, die auch Grundlage dieser Artikelreihe
+ist. In <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 08/2012&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2012-08">[2]</a>
+wurde die Installation von <i>Taskwarrior</i> und die drei Kommandos <b><tt class="big">add</tt></b>,
+<b><tt class="big">ls</tt></b> und <b><tt class="big">done</tt></b> erklärt.
+
+<div class="p"><!----></div>
+Geplant war, in dieser Folge über die Verwendung von Daten (als
+Mehrzahl von Datum) zu berichten. Logischer ist es aber zunächst zu
+erklären, wie Aufgaben modifiziert werden können.
+
+<div class="p"><!----></div>
+Die meisten Ausgaben von <i>Taskwarrior</i> sind farbig. Es lohnt sich, die
+Beispiele nachzuvollziehen, um in den Genuss von „bunt“ zu kommen. :-)
+
+<div class="p"><!----></div>
+
+<h2>Löschen von Aufgaben</h2>
+
+
+Die folgende Aufgabenliste ist ein einfaches Beispiel, in ihr haben sich zwei Fehler eingeschlichen.
+
+<div class="p"><!----></div>
+    
+<div class="command">$ task ls<br />
+<br />
+ID Project Pri Description<br />
+&nbsp;1             Kaffee kochen<br />
+&nbsp;2             fM 09/2012 lesen<br />
+&nbsp;3             Atmen<br />
+&nbsp;4             nicht vergessen<br />
+&nbsp;5             ajfnlasjf<br />
+<br />
+5 tasks</div>
+
+<div class="p"><!----></div>
+
+
+Bei Aufgabe 5 ist eine Katze über die Tastatur gelaufen, sie kann
+gelöscht werden.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task 3 delete<br />
+Permanently delete task 3 'Atmen'?<br />
+(yes/no) yes<br />
+Deleting task 3 'Atmen'.<br />
+Deleted 1 task.</div>
+
+<div class="p"><!----></div>
+
+
+Mit <b><tt class="big">task &lt;ID&#62; delete</tt></b> lassen sich also Aufgaben löschen. Schön wäre
+es, das Kommando zu verwenden, um die richtige Aufgabe zu löschen.
+
+<div class="p"><!----></div>
+
+<h2>Letzte Aktion rückgängig machen</h2>
+
+
+Dummerweise wurde gerade die falsche Aufgabe erwischt. Da hilft <b><tt class="big">task undo</tt></b>.
+Undo kann immer auf die letzte Aktion angewendet werden, die den
+Datenbestand verändert. Aber <b><tt class="big">undo</tt></b> selber kann nicht
+wieder rückgängig gemacht werden, es gibt kein <b><tt class="big">redo</tt></b>.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ task undo<br />
+<br />
+The last modification was made 8/8/2012<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prior Values                   Current Values<br />
+description  Atmen                          Atmen<br />
+entry        8/8/2012                       8/8/2012<br />
+status       pending                        deleted<br />
+uuid         e51007bd-27f3-4ebb-7e9ffa7157  e51007bd-27f3-4ebb-7e9ffa7157<br />
+end                                         8/8/2012<br />
+<br />
+The undo command is not reversible.  Are you sure you want to revert to the previous state? (yes/no) yes</div>
+
+<div class="p"><!----></div>
+
+
+
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/taskwarrior2_undo.png" alt="taskwarrior2_undo.png" style="max-width:100%" /><br /><em>Rückgängig machen einer gelöschten Aufgabe.</em><br />
+
+<div class="p"><!----></div>
+    Mit <b><tt class="big">task 5 delete</tt></b> wird jetzt die Aufgabenliste bereinigt und die
+„richtige falsche“ Aufgabe gelöscht.
+
+<div class="p"><!----></div>
+
+<h2>Verändern von Aufgaben</h2>
+
+
+Aufgabe 3 und 4 in der Liste gehören eigentlich zusammen. Die
+Beschreibung sollte „Atmen nicht vergessen“ heißen.
+
+<div class="p"><!----></div>
+Aus diesem
+Grund wird jetzt die Beschreibung von Aufgabe 3 angepasst und die
+dann überflüssige Aufgabe 4 gelöscht.
+
+<div class="p"><!----></div>
+    
+<div class="command">$ task 3 modify "Atmen nicht vergessen"<br />
+Modifying task 3 'Atmen nicht vergessen'.<br />
+Modified 1 task.<br />
+<br />
+$ task 4 delete<br />
+Permanently delete task 4 'nicht vergessen'? (yes/no) yes<br />
+Deleting task 4 'nicht vergessen'.<br />
+Deleted 1 task.<br />
+<br />
+$ task ls<br />
+<br />
+ID Project Pri Description<br />
+&nbsp;1             Kaffee kochen<br />
+&nbsp;2             fM 09/2012 lesen<br />
+&nbsp;3             Atmen nicht vergessen<br />
+<br />
+3 tasks</div>
+
+<div class="p"><!----></div>
+
+
+Das neu eingesetzte Kommando heißt <b><tt class="big">modify</tt></b>, in der verwendeten
+Form lässt sich mit <b><tt class="big">task &lt;ID&#62; modify 'Neue Beschreibung'</tt></b> die
+Beschreibung der Aufgabe verändern. Im Vorgriff auf später sei
+erwähnt, dass sich nicht nur die Beschreibung mit modify verändern
+lässt.
+
+<div class="p"><!----></div>
+
+<h2>Prioritäten</h2>
+
+
+<i>Taskwarrior</i> kennt vier verschiedene Prioritäten: „keine“ (Priorität
+leer lassen), „niedrig“ (Englisch „low“, Verwendung in <i>Taskwarrior</i> 
+mit Taste <i>„L“</i>), „mittel“ (Englisch „medium“ oder <i>„M“</i>) und „hoch“ („high“ oder
+<i>„H“</i>).
+
+<div class="p"><!----></div>
+Die Aufgaben der Aufgabenliste sollen nach Wichtigkeit priorisiert
+werden, dabei ist Atmen „natürlich“ das Wichtigste, gefolgt von
+Kaffee kochen und zum Schluss kommt das Lesen der September-Ausgabe
+von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task 3 modify priority:H<br />
+Modifying task 3 'Atmen nicht vergessen'.<br />
+Modified 1 task.<br />
+<br />
+$ task 1 modify priority:M<br />
+Modifying task 1 'Kaffee kochen'.<br />
+Modified 1 task.<br />
+<br />
+$ task 2 modify priority:L<br />
+Modifying task 2 'fM 09/2012 lesen'.<br />
+Modified 1 task.<br />
+<br />
+$ task ls<br />
+<br />
+ID Project Pri Description<br />
+&nbsp;3         H   Atmen nicht vergessen<br />
+&nbsp;1         M   Kaffee kochen<br />
+&nbsp;2         L   fM 09/2012 lesen<br />
+<br />
+3 tasks</div>
+
+<div class="p"><!----></div>
+
+
+Die Sortierung der Aufgabenliste hat sich – wie erwartet –
+verändert. Die Aufgabe mit der höchsten Priorität wird hervorgehoben
+dargestellt. Gleichzeitig verändert sich auch die Sortierung,
+höher priorisierte Aufgaben stehen vor niedriger priorisierten Aufgaben.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task priority:H ls<br />
+<br />
+ID Project Pri Description<br />
+&nbsp;3         H   Atmen nicht vergessen<br />
+<br />
+1 task</div>
+
+<div class="p"><!----></div>
+
+
+Mit <b><tt class="big">priority:H</tt></b> vor dem <b><tt class="big">ls</tt></b> lassen sich alle Aufgaben anzeigen,
+die eine hohe Priorität haben, analog gilt das auch für die mittlere
+und niedrige Priorität.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task priority: ls<br />
+No matches.</div>
+
+<div class="p"><!----></div>
+
+
+Momentan sind keine Aufgaben vorhanden, die nicht priorisiert wurden.
+
+<div class="p"><!----></div>
+
+<h2>Projekte</h2>
+
+
+Als letztes Feld der Aufgabenliste fehlen noch die Projekte.
+Projekte werden mit <b><tt class="big">project</tt></b> definiert und erlauben einen freien
+Text. Der Punkt <b><tt class="big">.</tt></b> ist verboten, er wird als Trennzeichen
+verwendet, um Projekte und Unterprojekte zu trennen.
+
+<div class="p"><!----></div>
+Der Aufgabe „fM 09/2012 lesen“ wird das
+Projekt <b><tt class="big">bildung</tt></b> zugewiesen. Die Aufgaben „Atmen nicht vergessen“
+und „Kaffee kochen“ sollen ins Projekt <b><tt class="big">leben</tt></b> kommen, dabei werden
+die Unterprojekte (Subprojekte) <b><tt class="big">genuss</tt></b> und <b><tt class="big">notwendig</tt></b> zum Einsatz
+kommen.
+
+<div class="p"><!----></div>
+Damit sind abschließend alle Felder aus dem Report <b><tt class="big">ls</tt></b> zur Sprache gekommen. 
+
+<div class="p"><!----></div>
+
+<div class="command">$ task 2 modify project:bildung<br />
+<br />
+Modifying task 2 'fM 09/2012 lesen'.<br />
+Modified 1 task.<br />
+The project 'bildung' has changed.  Project 'bildung' is 0% complete (1 of 1 tasks remaining).<br />
+<br />
+$ task 1 modify project:leben.genuss<br />
+<br />
+Modifying task 1 'Kaffee kochen'.<br />
+Modified 1 task.<br />
+The project 'leben.genuss' has changed.  Project 'leben.genuss' is 0% complete (1 of 1 tasks remaining).<br />
+<br />
+$ task 3 modify project:leben.notwendig<br />
+<br />
+Modifying task 3 'Atmen nicht vergessen'.<br />
+Modified 1 task.<br />
+The project 'leben.notwendig' has changed.  Project 'leben.notwendig' is 0% complete (1 of 1 tasks remaining).<br />
+<br />
+$ task ls<br />
+<br />
+ID Project         Pri Description<br />
+&nbsp;3 leben.notwendig H   Atmen nicht vergessen<br />
+&nbsp;1 leben.genuss    M   Kaffee kochen<br />
+&nbsp;2 bildung         L   fM 09/2012 lesen<br />
+<br />
+3 tasks</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Einfache Filter</h2>
+
+
+Dumm wäre es, wenn sich die Aufgaben nicht projektbezogen anzeigen ließen.
+Analog zur Anzeige der Aufgaben einer bestimmten Prioritätsstufe, können die
+Aufgaben eines bestimmten Projektes angezeigt werden.
+
+
+<div class="p"><!----></div>
+    In den drei Beispielen unten kann man sehen, dass die Filterung nach
+<b><tt class="big">project:leben</tt></b> die Aufgaben aller Unterprojekte des Projektes
+<b><tt class="big">leben</tt></b> anzeigt. Im zweiten Beispiel werden nur die Aufgaben des
+Unterprojektes <b><tt class="big">leben.genuss</tt></b> angezeigt. Der dritte Fall ist
+momentan eher akademischer Natur: Filter lassen sich mit „und“
+verknüpfen, es werden alle Aufgaben aus dem Projekt <b><tt class="big">leben</tt></b>
+angezeigt, die mittlere Priorität haben.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task project:leben ls<br />
+<br />
+ID Project         Pri Description<br />
+&nbsp;3 leben.notwendig H   Atmen nicht vergessen<br />
+&nbsp;1 leben.genuss    M   Kaffee kochen<br />
+<br />
+2 tasks<br />
+<br />
+$ task project:leben.genuss ls<br />
+<br />
+ID Project      Pri Description<br />
+&nbsp;1 leben.genuss M   Kaffee kochen<br />
+<br />
+1 task<br />
+<br />
+$ task project:leben priority:M ls<br />
+<br />
+ID Project      Pri Description<br />
+&nbsp;1 leben.genuss M   Kaffee kochen<br />
+<br />
+1 task</div>
+
+<div class="p"><!----></div>
+
+
+Da wäre fast untergegangen, dass sich natürlich auch die
+Beschreibung suchen lässt.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task Kaffee ls<br />
+<br />
+ID Project      Pri Description<br />
+&nbsp;1 leben.genuss M   Kaffee kochen<br />
+<br />
+1 task<br />
+<br />
+$ task f ls<br />
+<br />
+ID Project      Pri Description<br />
+&nbsp;1 leben.genuss M   Kaffee kochen<br />
+&nbsp;2 bildung      L   fM 09/2012 lesen<br />
+<br />
+2 tasks<br />
+<br />
+$ task f priority:L ls<br />
+<br />
+ID Project Pri Description<br />
+&nbsp;2 bildung L   fM 09/2012 lesen<br />
+<br />
+1 task</div>
+
+<div class="p"><!----></div>
+
+
+Der erste Filter zeigt alle Projekte an, die <b><tt class="big">Kaffee</tt></b> in der
+Beschreibung enthalten und der zweite alle Projekte, in denen ein
+<b><tt class="big">f</tt></b> vorkommt. Das dritte Beispiel in diesem Block zeigt, dass auch
+diese Suchen wieder verknüpfbar sind.
+
+<div class="p"><!----></div>
+
+<h2>Zusammenfassung</h2>
+
+
+Um die von der Beschreibung abweichenden Attribute zu setzen, muss
+nicht der Umweg über <b><tt class="big">modify</tt></b> genommen werden. Die in diesem
+Beispiel verwendeten Aufgaben lassen sich auch jeweils mit einem
+Befehl anlegen.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task add project:leben.notwendig priority:H "Atmen nicht vergessen"<br />
+$ task add project:leben.genuss priority:M "Kaffee kochen"<br />
+$ task add project:bildung priority:L "fM 09/2012 lesen"</div>
+
+<div class="p"><!----></div>
+
+
+Aufgaben lassen sich mittels <b><tt class="big">modify</tt></b> verändern und mit <b><tt class="big">delete</tt></b>
+löschen. Die jeweils letzte Veränderung kann mit <b><tt class="big">undo</tt></b>
+zurückgenommen werden. Projekte und Prioritäten helfen dabei, die Aufgaben
+zu sortieren und zu bewerten. Einträge vor <b><tt class="big">ls</tt></b> dienen als Filter,
+dabei kann sowohl nach Beschreibungen als auch nach Attributen und
+sogar nach Kombinationen gefiltert werden.
+
+<div class="p"><!----></div>
+
+<h2>Abkürzungen</h2>
+
+
+Alle Kommandos in <i>Taskwarrior</i> lassen sich bis auf die minimale Länge
+verkürzen, die sie noch eindeutig identifizieren lässt. Das
+konfigurierbare Minimum sind zwei Buchstaben.
+
+<div class="p"><!----></div>
+So ist es beispielsweise möglich, statt <b><tt class="big">delete</tt></b> das schneller zu
+tippende <b><tt class="big">del</tt></b> zu verwenden und an Stelle von <b><tt class="big">project</tt></b> funktioniert
+auch <b><tt class="big">pro</tt></b>.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task add pro:freiesmagazin.artikel pri:H "Komm endlich zu Potte"<br />
+Created task 4.<br />
+The project 'freiesmagazin.artikel' has changed.  Project 'freiesmagazin.artikel' is 0% complete (1 of 1 tasks remaining).</div>
+
+<div class="p"><!----></div>
+
+
+    <b><tt class="big">task show</tt></b> zeigt den Inhalt der Konfiguration an und <b><tt class="big">task config</tt></b>
+kann Konfigurationsvariablen verändern. Anstelle von <b><tt class="big">config</tt></b> ist
+es auch
+    möglich, die Konfigurationsänderungen mit
+einem Editor in die Datei <b><tt class="big">~/.taskrc</tt></b> zu schreiben.
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Das <b><tt class="big">undo</tt></b>-Kommando wirkt nicht bei Konfigurationsänderungen.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ task show abbreviation.minimum<br />
+<br />
+Config Variable      Value<br />
+abbreviation.minimum 2<br />
+<br />
+$ task config abbreviation.minimum 3<br />
+Are you sure you want to add 'abbreviation.minimum' with a value of '3'? (yes/no) yes<br />
+Config file /home/ddeimeke/.taskrc modified.<br />
+<br />
+$ task show abbreviation.minimum<br />
+<br />
+Config Variable      Value<br />
+abbreviation.minimum 3<br />
+<br />
+Some of your .taskrc variables differ from the default values. These are highlighted in color above.</div>
+
+<div class="p"><!----></div>
+
+
+
+<img border="0" src="freiesMagazin-2012-09-bilder-Dateien/taskwarrior2_show.png" alt="taskwarrior2_show.png" style="max-width:100%" /><br /><em>Farbige Darstellung veränderter Standardwerte.</em><br />
+
+<div class="p"><!----></div>
+Mit obigem Befehl wurde als das Minimum an Buchstaben, welche einen
+Befehl eindeutig identifizieren, auf 3 hoch gesetzt (zuvor war es der Wert 2).
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> <i>Taskwarrior</i> zeigt in älteren Versionen den Hinweis „Some of
+your <b><tt class="big">.taskrc</tt></b> variables differ …“ auch an, selbst wenn in der
+Ausgabe nichts farbig hervorgehoben wird. Dieser Fehler wurde Mitte
+August 2012 behoben.
+
+<div class="p"><!----></div>
+    
+<div class="command">$ task config abbreviation.minimum<br />
+Are you sure you want to remove 'abbreviation.minimum'? (yes/no) yes<br />
+Config file /home/ddeimeke/.taskrc modified.<br />
+<br />
+$ task show abbreviation.minimum<br />
+Config Variable      Value<br />
+abbreviation.minimum 2</div>
+
+<div class="p"><!----></div>
+
+
+Wenn der Wert bei <b><tt class="big">config</tt></b> leer gelassen wird, wird die
+entsprechende Konfiguration aus der Datei <b><tt class="big">~/.taskrc</tt></b> gelöscht und
+somit die voreingestellten Werte wieder hergestellt.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task show | wc -l<br />
+225</div>
+
+<div class="p"><!----></div>
+
+
+Es gibt also rund 220 Variablen, die konfiguriert werden können.
+Diese werden alle angezeigt, wenn das <b><tt class="big">| wc -l</tt></b> weggelassen wird.
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+
+
+Die nächste Folge wird sich mit dem grundlegenden Aufbau eines
+<i>Taskwarrior</i>-Kommandos auseinandersetzen und sich anschließendum verschiedene
+Mechanismen zur Terminierung von Aufgaben kümmern.
+
+<div class="p"><!----></div>
+
+<div class="command">$ task 4 done<br />
+Completed task 4 'Komm endlich zu Potte'.<br />
+Completed 1 task.<br />
+The project 'freiesmagazin.artikel' has changed.  Project 'freiesmagazin.artikel' is 100% complete (0 of 1 tasks remaining).<br />
+<br />
+$ task add pro:freiesmagazin.artikel "Artikel für die Oktober-Ausgabe vorbereiten"<br />
+Created task 5.<br />
+The project 'freiesmagazin.artikel' has changed.  Project 'freiesmagazin.artikel' is 50% complete (1 of 2 tasks remaining).</div>
+
+<div class="p"><!----></div>
+
+
+Und kaum hat man eine Aufgabe erledigt, ergibt sich auch schon die
+nächste …
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://taskwarrior.org/"><tt class="big">http://taskwarrior.org/</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2012-08"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2012-08</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dirk Deimeke</b>&nbsp;(<a href="http://d5e.org/">Webseite</a>)
+beschäftigt sich seit 1996 aktiv mit Linux und arbeitet
+seit einigen Jahren als Systemadministrator und System Engineer für
+Linux und Unix. In seiner Freizeit engagiert er sich für
+Open-Source-Software im Projekt Taskwarrior, im Podcast DeimHart und
+im Blog Dirks Logbuch.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                        <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Taskwarrior (Teil 2)#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+
+
+
+
+<h1><font color="#595959"><a name="12_09_rezension_schroedinger_cpp">Rezension: Schrödinger programmiert C++</a></font></h1>von Sujeevan Vijayakumaran
+
+<div class="p"><!----></div>
+        <b>D</b><b>as Buch „Schrödinger programmiert C++“ bietet einen kunterbunten
+Einstieg in die Programmiersprache C++ und geht dabei völlig andere
+Wege, das Wissen zu vermitteln. Im Mittelpunkt des „etwas“ anderen
+Fachbuches steht eine fiktive Person namens Schrödinger, die vom
+Autor Dieter Bär unterrichtet wird. Ausgeschmückt wird das Buch mit
+vielen Farben, beiläufigen Witzen und Illustrationen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Galileo Computing für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Von wem?</h2>
+
+
+Geschrieben wurde das Buch von Dieter Bär, welcher neben C++
+ebenfalls C und Perl programmiert und neuerdings einen Mac nutzt.
+Das Buch enthält zudem auf jeder Seite zahlreiche Illustrationen, die
+den Inhalt gut darstellen. Diese stammen vom freiberuflichen
+Illustrator Leo Leowald.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das Buch ist in 17 Kapitel aufgeteilt und umfasst zusätzlich einen
+Einblick in die Person Schrödingers. Auf insgesamt 688 Seiten
+bekommen Schrödinger und auch die Leser des Buches einen breit
+gefächerten Überblick über das Programmieren in C++.
+
+<div class="p"><!----></div>
+Am Anfang wird zunächst Schrödingers Wohnung in drei jeweils
+einfarbigen Doppelseiten vorgestellt. Fortgeführt wird das Buch
+mit dem Vorwort, in dem beschrieben ist, wie der Autor seinen
+Lehrling Schrödinger kennengelernt hat und er geht auch noch kurz
+darauf ein, wie die Bearbeitung des Buches durch die Einführung des
+C++11-Standards erschwert wurde.
+
+<div class="p"><!----></div>
+In Kapitel 1 (12 Seiten) wird die Einrichtung einer IDE zur
+Programmierung thematisiert, dabei wird auf jedes Betriebssystem
+eingegangen. Präsentiert werden neben plattformunabhängigen IDEs
+wie Netbeans&nbsp;<a href="http://netbeans.org/index_de.html">[1]</a> und
+Eclipse&nbsp;<a href="http://eclipse.org/">[2]</a> auch Microsoft Visual
+Studio&nbsp;<a href="https://www.microsoft.com/germany/visualstudio/">[3]</a>,
+GNOMEs Anjuta&nbsp;<a href="http://anjuta.org/">[4]</a> und Apples
+Clang&nbsp;<a href="http://clang.llvm.org/">[5]</a>.
+
+<div class="p"><!----></div>
+Das zweite Kapitel (15 Seiten) beinhaltet die ersten Schritte
+Schrödingers in C++. Dabei wird aufgezeigt, wie das Grundgerüst eines
+Programmes aufgebaut ist und wie man es unter den drei
+Betriebssystemen Linux, Mac und Windows kompiliert und ausführt.
+
+<div class="p"><!----></div>
+Im dritten Kapitel (16 Seiten) werden die C++-Basistypen erläutert
+und mit vielen Beispielen versehen. Zudem wird darauf eingegangen,
+wie mit diesen Typen gearbeitet werden kann.
+
+<div class="p"><!----></div>
+Im folgenden vierten Kapitel (29 Seiten) dreht sich alles rund um
+die Arbeit mit Zahlen. Schrödinger lernt dabei nicht nur die
+Schwierigkeiten beim Rechnen mit verschiedenen Zahlen kennen,
+sondern auch, was beachtet werden muss, falls man Zahlentypen
+umwandeln muss.
+
+<div class="p"><!----></div>
+Kontrollstrukturen werden im fünften Kapitel (23 Seiten) behandelt.
+Neben <b><tt class="big">if</tt></b>-Abfragen werden selbstverständlich ebenfalls <b><tt class="big">switch-case</tt></b> und
+die verschiedenen Varianten an Schleifen durchgenommen. Unterstützt
+durch die vielen Beispiele und Illustrationen wird
+schnell klar, wie diese Kontrollstrukturen funktionieren.
+
+<div class="p"><!----></div>
+In Kapitel 6 (48 Seiten) bündeln sich die Informationen rund um
+Arrays, Strings, Vektoren, Strukturen und Zeigern. Über die
+Anwendungsmöglichkeiten und Nachteile von C-Strings und C-Arrays
+geht es zu den Möglichkeiten von Vektoren. Gefolgt von Strukturen
+und Enumeratoren geht es dann auf die Thematik der Zeiger zu.
+
+<div class="p"><!----></div>
+Das siebte Kapitel (34 Seiten) legt die Rolle der Funktionen in C++
+dar. Schrödinger wird damit beigebracht, wie man als Programmierer
+doppelten Code vermeidet und wie die Zeiger aus Kapitel 6 genutzt
+werden können, um adressierten Speicher zu sparen. Zudem wird auch
+noch auf das Überladen von Funktionen eingegangen.
+
+<div class="p"><!----></div>
+In Kapitel 8 (46 Seiten) lernt Schrödinger den Präprozessor und
+dessen Anweisungen kennen. Zudem wird auf die verschiedenen
+Schlüsselwörter eingegangen und auch die Namensräume kommen in diesem
+Kapitel nicht zu kurz.
+
+<div class="p"><!----></div>
+Kapitel 9 (51 Seiten) dreht sich rund um Klassen und Objektorientierung. 
+Die Grundlagen der Objektorientierung werden auch in diesem Kapitel mit 
+verschiedenen Beispielen untermalt. Des Weiteren wird auch auf mögliche 
+Fehlerquellen hingewiesen, die entstehen können, wenn die Klasse 
+falsch definiert wird. Zudem wird auch erklärt, was es mit der 
+Datenkapselung auf sich hat.
+
+<div class="p"><!----></div>
+Das zehnte Kapitel (30 Seiten) befasst sich mit dem Überladen von
+Operatoren. Es wird darauf hingewiesen, wann Überladungen von
+Operatoren nützlich sind und auch wann diese hinderlich sein können.
+
+<div class="p"><!----></div>
+In Kapitel 11 (53 Seiten) wird dargestellt, um was es sich bei
+abgeleiteten Klassen handelt. Von der einfachen Vererbung geht es
+hinaus bis zur Mehrfachvererbung. Besonders wird auch darauf
+geachtet, wie man mit den Zugriffsrechten arbeitet und welche
+möglichen Fehlerquellen dort auftauchen könnten.
+
+<div class="p"><!----></div>
+Kapitel 12 (19 Seiten) befasst sich mit den Templates. Thematisiert
+wird dabei die Anwendung des formalen Datentyps als auch die Vor- und
+Nachteile, die man beim Benutzen von Templates beachten sollte.
+
+<div class="p"><!----></div>
+Im Kapitel 13 (33 Seiten) wird auf die Ausnahmebehandlung in C++
+eingegangen. Dabei werden mehrere ineinander verschachtelte
+<b><tt class="big">try-catch</tt></b>-Blöcke behandelt sowie die Ausnahmebehandlung beim
+Einsatz von Templates. Weiterhin wird aufgeführt, welche
+verschiedenen Ausnahmebehandlungen es gibt, wann sie auftreten
+und wie sie abgefangen werden können.
+
+<div class="p"><!----></div>
+Das komplette Kapitel 14 (19 Seiten) behandelt ausschließlich die
+Klasse <b><tt class="big">string</tt></b>. In diesem Kapitel wird darauf eingegangen welche
+verschiedenen Methoden die Klasse mitbringt und wie diese
+intelligent und effizient genutzt werden können.
+
+<div class="p"><!----></div>
+In Kapitel 15 (50 Seiten) wird der Umgang mit Streams und Dateien
+durchgenommen. Zunächst beginnt es mit dem Einsatz von <b><tt class="big">istream</tt></b>
+gefolgt von <b><tt class="big">ostream</tt></b>. Schrödinger wird in diesem Kapitel beigebracht,
+wie er verschiedene Ein- und Ausgaben mit Strömen erzeugen kann.
+
+<div class="p"><!----></div>
+Im vorletzten Kapitel (55 Seiten) wird die Standard Template Library
+behandelt. Besonders betont wird in dem Kapitel, dass man als
+Programmierer auch in C++ nicht das Rad neu erfinden muss. So wird
+der Umgang mit den verschiedenen Containern (<b><tt class="big">vector</tt></b>, <b><tt class="big">deque</tt></b>, <b><tt class="big">list</tt></b>
+sowie <b><tt class="big">stack</tt></b>, <b><tt class="big">queue</tt></b>, <b><tt class="big">map</tt></b> und <b><tt class="big">set</tt></b>) gelehrt.
+
+<div class="p"><!----></div>
+Der C++11-Standard hat in dem Buch ein komplettes eigenes Kapitel
+gewidmet bekommen. Im letzten Kapitel (69 Seiten) wird daher
+ausschließlich über die Neuerungen von C++11 berichtet.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das Buch ist gut für Programmiereinsteiger geeignet. Bereits
+erfahrene C++-Programmierer werden dem Buch nicht sehr viel
+abgewinnen können. Das ganze Buch dreht sich hauptsächlich um die
+fiktive Person namens Schrödinger. Nicht umsonst erhebt das Buch den
+Anspruch, ein „etwas anderes Fachbuch“ zu sein. Der Inhalt ist so
+strukturiert, dass der Autor seinem Lehrling Schrödinger C++
+beibringt. Der Leser wird somit in Form von Schrödinger in dem Buch
+verkörpert. Schrödinger selbst ist dabei eine Person die geringe
+Programmiererfahrung hat und stets über den ganzen Verlauf Fragen
+stellt und Anmerkungen macht, welche auch durchaus häufig vom Leser
+kommen könnten.
+
+<div class="p"><!----></div>
+Das Buch ist durchweg in Farbe gehalten und wird durch zahlreiche
+Illustrationen unterstützt. Die Erklärungen und die dazugehörigen
+Code-Beispiele sind gut gewählt und die Beispiele einfach aber auch
+verständlich gehalten. Durch die Unterstützung der Grafiken
+und Zeichnungen wird das Verständnis für die Thematik sehr gut
+gestützt. Die einzelnen Kapitel sind größtenteils aufeinander
+aufbauend, da immer mal wieder die bereits gelehrten Thematiken in
+späteren Kapitel einfließen.
+
+<div class="p"><!----></div>
+Das gesamte Buch ist umgangssprachlich gehalten. Die Leser und
+besonders Schrödinger werden durchweg geduzt und es wird
+ausschließlich die direkte Rede verwendet. Die Anmerkungen, Fragen
+und Hinweise von Schrödinger sind komplett in handschriftlicher Form
+im Buch enthalten. Auch werden für einige C++-Standards über mehrere
+Kapitel hinweg modifizierte Namen verwendet. So ist häufig von
+Ze-Arrays die Rede, wenn letztendlich C-Arrays gemeint sind. Dieses
+Verhalten verwirrt dabei manchmal, da teilweise nicht klar ist,
+welches nun die richtige Schreibweise ist. Untermalt werden die
+Kapitel reihenweise mit einer dezenten Anzahl an Witzen oder anderen
+nicht fachlichen Anmerkungen, die das Buch durchgehend auflockern.
+Selbst ein Seitenhieb gegen Politiker bleibt da nicht aus.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Dieses Buch eignet sich gut für Programmiereinsteiger in C++. Auch
+Quereinsteiger, die von anderen Programmiersprachen kommen und somit
+schon Erfahrung haben, können dem Buch etwas abgewinnen. Leser, die
+bisher „normale“ Fachbücher gelesen haben, erwartet hier ein völlig
+anderes Konzept zur Vermittlung einer Programmiersprache. Wenn man
+sich als Leser auf dieses ungewohnte Konzept einlässt, hat man 
+viel Spaß an der Lektüre.
+
+<div class="p"><!----></div>
+Man merkt, dass der Autor stets versucht locker zu bleiben und
+witzig zu sein. Meist klappt dies auch sehr gut, manchmal hatte ich
+als Leser eher das Gefühl, nicht Ernst genommen zu werden. Leser, die
+C++ anhand eines seriös geschriebenen Buches erlernen möchten,
+werden mit diesem Buch nicht bedient. Durch den hohen Einsatz von
+Farbe, welcher durchgehend im Buch angewandt wird, verliert man auf
+einigen Seiten den Überblick. Der Beispielcode ist an einigen
+Stellen mit Zahlen versehen, denen Erklärungen folgen. Diese
+Zahlen sind dabei mit Farbklecksen mit den Erklärungen verbunden. An
+einigen Stellen gibt es sehr viele dieser Anmerkungen.
+Man verliert so schnell den Überblick, da dazugehörige
+Abschnitte erst auf der nächsten Seite stehen. Ebenfalls
+verbesserungswürdig ist die Verwendung der Farben. So wird zum
+Beispiel an einigen Stellen lilafarbene Schrift auf dunkelvioletten
+Hintergrund gesetzt, welches dann natürlich eher schlecht lesbar
+ist. Aufgrund der teils übermäßigen Nutzung von verschiedenen
+Farben hat man gelegentlich auch eher das Gefühl, ein Kinderbuch in
+der Hand zu halten, da dies eher ungewöhnlich für ein Fachbuch
+einer Programmiersprache ist.
+
+<div class="p"><!----></div>
+Das Buch ist verhältnismäßig teuer und kostet 50€. Es erscheint in
+einem Softcover. Auf 688 Seiten erlebt man einen guten Überblick
+über das Programmieren in C++, natürlich nur, wenn man sich auf
+dieses Konzept einlässt. Dem Untertitel „ein etwas anderes Fachbuch“
+wird dieses Buch ganz klar gerecht, da hier ein völlig anderer Weg
+gegangen wird. Aufgrund der großen Nutzung der Illustrationen
+würden vermutlich andere Fachbücher mit ähnlichem Seitenumfang mehr
+Inhalt enthalten und gegebenenfalls auch günstiger sein. Wenn man
+sich mit dieser neuartigen Herangehensweise dieses Fachbuchs anfreunden
+kann, dann bietet das Buch einen guten Einstieg in die Welt von C++
+und ermöglicht durch die lockere Art und Weise einen guten
+Ausgangspunkt, um sein Wissen weiter zu vertiefen. Zudem macht das
+Durcharbeiten des Buches durchaus viel Spaß. Fachlich gesehen wird
+auf die wichtigsten Elemente von C++ eingegangen. Positiv in
+Erscheinung tritt dabei, dass ein vollständiges, großes Kapitel dem
+neuen C++11-Standard gewidmet ist. Weitere Anmerkungen zu Neuerungen
+von C++11 sind im Buch verteilt und werden immer dann genannt, wenn
+dies auch zum Thema passt.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Schrödinger programmiert C++&nbsp;<a href="htp://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-2853">[6]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Dieter Bär </td></tr>
+<tr><td><b>Verlag</b> </td><td>Galileo Computing, 2012 </td></tr>
+<tr><td><b>Umfang</b> </td><td>688 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8362-1756-9 </td></tr>
+<tr><td><b>Preis</b> </td><td>Gedruckt: 49,90 €, Online: 44,90 €, Beides: 59,90 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://netbeans.org/index_de.html"><tt class="big">http://netbeans.org/index_de.html</tt></a><br />
+[2] <a href="http://eclipse.org/"><tt class="big">http://eclipse.org/</tt></a><br />
+[3] <a href="https://www.microsoft.com/germany/visualstudio/"><tt class="big">https://www.microsoft.com/germany/visualstudio/</tt></a><br />
+[4] <a href="http://anjuta.org/"><tt class="big">http://anjuta.org/</tt></a><br />
+[5] <a href="http://clang.llvm.org/"><tt class="big">http://clang.llvm.org/</tt></a><br />
+[6] <a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-2853"><tt class="big">http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-2853</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Sujeevan Vijayakumaran</b>&nbsp;(<a href="http://svij.org/">Webseite</a>)
+befasst sich seit etwa einem Jahr beruflich
+mit C++. Dieses Buch diente ihm dabei als erweiterte Einstiegshilfe
+in die Programmiersprache.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Schr%C3%B6dinger programmiert C++#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_09_rezension_seven_databases">Rezension: Seven Databases in Seven Weeks</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+        <b>D</b><b>atenbanken werden seit langer Zeit in der IT eingesetzt, wobei die
+relationalen System lange die dominierende Rolle eingenommen haben.
+Seit einigen Jahren werden aber auch
+die sogenannten „NoSQL“-Datenbanken immer populärer und finden
+entsprechend Verbreitung. Dem Thema „Alternativen zu SQL-Datenbanken“
+widmet sich das vorliegende Buch „Seven Databases in Seven Weeks“.</b>
+
+<div class="p"><!----></div>
+Der Untertitel des Buchs macht noch ein wenig klarer, worum es hier
+geht: „A Guide to Modern Databases and the NoSQL Movement“. Wobei
+nicht ausschließlich NoSQL-Datenbanken betrachtet werden – die erste
+behandelte Datenbank ist das relationale PostgreSQL. Doch dazu
+später mehr.
+
+<div class="p"><!----></div>
+
+<h2>Das Konzept</h2>
+
+
+
+
+Das Konzept hinter dem Buch ist, 
+dass man in relativ
+kurzer Zeit ein breites Spektrum an Datenbanken mit
+unterschiedlichen Stärken – und Schwächen – kennenlernt, um so einen
+besseren Einblick zu gewinnen und, wenn nötig, eine bessere oder
+gezieltere Auswahl treffen kann.
+
+<div class="p"><!----></div>
+Nun muss man sich aber nicht wirklich sieben Wochen am Stück mit den
+sieben Datenbanken zu beschäftigen. Gemäß den Autoren sind die
+Datenbanken gut und problemlos auch an einem Wochenende von Freitag
+bis Sonntag, also in drei Tagen, erforsch- und erlernbar.
+
+<div class="p"><!----></div>
+
+<h2>Datenbankauswahl</h2>
+
+
+Allen Datenbanken ist gemein, dass es eine frei verfügbare und
+verwendbare Version gibt, welche auch unter einer freien Lizenz
+steht. Ansonsten sind aus allen gängigen Spielarten von Datenbanken
+Vertreter im Buch zu finden: PostgreSQL ist eine (klassische)
+relationale Datenbank, Redis und Riak Key-Value-Stores, MongoDB und
+CouchDB dokumentenorientierte Datenbanken, HBase eine
+spaltenorientierte Datenbank mit dem Fokus auf „Big Data“ und Neo4j
+eine Graphdatenbank.
+
+<div class="p"><!----></div>
+Auch wenn für zwei Arten von Datenbanken, nämlich Key-Value-Stores
+und dokumentenorientierten Datenbanken, jeweils zwei Vertreter im
+Buch besprochen werden, so ist deren jeweilige Ausrichtung und
+Stärke so unterschiedlich, dass keine Redundanz der jeweiligen
+Kapitel zu finden ist.
+
+<div class="p"><!----></div>
+
+<h2>Struktur und Inhalt</h2>
+
+
+Die Struktur der jeweiligen Kapitel ist für alle Datenbanken gleich:
+es gibt nach der obligatorischen Einleitung immer drei Unterkapitel
+(eins für jeden Tag). Das erste Kapitel beschäftigt sich immer mit
+den Datenstrukturen der Datenbank und CRUD
+(„Create-Read-Update-Delete“), also den grundlegenden Operation. Das
+zweite Kapitel fokussiert dann mehr auf die jeweiligen Stärken und
+Spezialitäten der Datenbanken, wie z.&nbsp;B. die Indizierung von Daten,
+das Erstellen von speziellen Abfragen usw. Das dritte Unterkapitel
+widmet sich dann dem Speichern von Daten und hierbei
+insbesonders Themen wie Replikation, Nutzung von Datenbank-Clustern
+und welche beiden Punkte die jeweilige Datenbank aus dem
+CAP-Theorem&nbsp;<a href="https://de.wikipedia.org/wiki/CAP-Theorem">[1]</a> abdeckt.
+
+<div class="p"><!----></div>
+Eine Ausnahme von der Kapitelstruktur bildet das dritte Kapitel zum
+Key-Value-Store Redis. Hier wird mit Hilfe der Datenbanken Redis,
+CouchDB und Neo4j sowie node.js (einer serverseitgen
+JavaScript-Bibliothek) eine Musikdatenbank gebaut, wobei hier Redis
+trotzdem im Zentrum steht.
+
+<div class="p"><!----></div>
+Allen Kapiteln zu den verschiedenen Datenbanken ist übrigens noch
+gemein, dass der Umfang ziemlich gleich ist, nämlich circa 40 Seiten.
+
+<div class="p"><!----></div>
+Die Installation wird durchweg für alle Datenbanken nur sehr kurz
+behandelt in Form von ein paar Hinweisen und in der Regel wird
+überhaupt nicht auf das Einrichten von verteilten Clustern
+eingegangen. Dies macht natürlich insofern Sinn, als dass man
+mit diesem Thema auch gut ein eigenes Buch füllen könnte. Werden im
+Buch mehrere Instanzen einer Datenbank genutzt, so laufen diese in
+der Regel auf der gleichen Maschine.
+
+<div class="p"><!----></div>
+Neben den sieben Datenbankkapiteln gibt es noch ein achtes, welches
+nochmals eine Zusammenfassung der vorangegangenen gibt sowie zwei
+Anhänge. Im ersten Anhang gibt es eine recht ausführliche,
+tabellarische Übersicht über die Datenbanken, der zweite Anhang
+bietet eine kurze Einführung ins CAP-Theorem.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Sequenzielles Lesen</h2>
+
+
+Auch wenn die sieben vorgestellten Datenbanken völlig unabhängig
+voneinander sind, empfiehlt es sich doch, dass Buch Kapitel für
+Kapitel zu lesen. Darauf wird auch in der Einleitung hingewiesen.
+Dies liegt darin begründet, dass bestimmte Themen wie z.&nbsp;B.
+MapReduce&nbsp;<a href="https://de.wikipedia.org/wiki/MapReduce">[2]</a> (welches bei mehreren
+Datenbanken zum Einsatz kommt) beim ersten Vorkommen ausführlich
+erklärt und später nur noch kurz referenziert werden.
+
+<div class="p"><!----></div>
+
+<h2>Vorwissen</h2>
+
+
+Apropos Vorwissen: Das Buch ist prinzipiell ohne Vorwissen nutzbar,
+weder zu Programmiersprachen noch zu den Datenbanken. Wo immer
+möglich verwenden die Autoren entweder die REST-Schnittstelle der
+Datenbank (sofern vorhanden) oder die, der Datenbank zugehörige,
+Konsolenschnittstelle.
+
+<div class="p"><!----></div>
+An einigen Stellen wird aber trotzdem auf Ruby zurückgegriffen.
+Nämlich immer dann, wenn es gilt, die Datenbanken mit großen Mengen
+von Daten zu befüllen (siehe unten). Allerdings ist Wissen zu Ruby
+nicht wirklich notwendig, da zum einen nach dem Befüllen der
+Datenbank kein Ruby mehr genutzt wird und zudem auch jedes Programm
+zumindest kurz erklärt wird.
+
+<div class="p"><!----></div>
+Was nichtdestotrotz vorteilhaft sein kann, ist ein wenig
+Grundwissen zu JavaScript. Und zwar deshalb, weil eine Reihe der
+vorgestellten Datenbanken intern JavaScript nutzt, z.&nbsp;B. zum
+Erstellen von Abfragen. Aber es ist, wie gesagt, nicht essenziell,
+um das Buch zu verstehen und nutzen zu können.
+
+<div class="p"><!----></div>
+
+<h2>Beispiele gefällig?</h2>
+
+
+Eine Datenbank macht natürlich nur Sinn, wenn diese mit hinreichend
+viel Daten befüllt ist. Nun haben die meisten (Privat-)Anwender
+aber bei weitem nicht genug Daten, um „große“ Datenbanken wie z.&nbsp;B.
+HBase zu füllen. Von daher gehen hier die Autoren einen relativ
+geschickten Weg, nämlich indem sie auf fertige Daten, welche frei
+verfügbar sind, zurückgreifen und diese dann (wie bereits erwähnt
+via Ruby) in die Datenbank schreiben. Die Datenquelle wird dabei
+immer so gewählt, dass diese bestmöglich zur Datenbank und deren
+Datenstruktur passen, sodass die jeweiligen Stärken klar
+herauskommen.
+
+<div class="p"><!----></div>
+Im Falle von HBase wird dafür z.&nbsp;B. ein Wikipedia-Dump
+verwendet oder im Falle von CouchDB Musikdaten von
+Jamendo.
+
+<div class="p"><!----></div>
+
+<h2>Lesbarkeit und Schreibstil</h2>
+
+
+Das Englisch des Buchs ist durchweg gut verständlich. Mit gutem
+Schulenglisch und den im Datenbankbereich gängigen Fachbegriffen
+ausgerüstet sollte dem Lesevergnügen nichts im Weg stehen.
+Das Buch ist gut und flüssig zu lesen. Der lockere Schreibstil der
+Autoren trägt dazu auch bei.
+
+<div class="p"><!----></div>
+Alle Beispiele sind komplett im Buch
+abgedruckt, sodass auch das Lesen „offline“ ohne Probleme möglich
+ist.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+„Seven Databases in Seven Weeks“ gibt auf 320 Seiten einen sehr guten
+Über- und Einblick in die aktuellen Datenbanken, mit dem Fokus auf
+NoSQL. In jede Datenbank wird kompakt, verständlich und praxisnah
+eingeführt. Die Stärken – aber auch Schwächen – der einzelnen Systeme
+werden sehr gut herausgearbeitet.
+Daher kann
+das vorliegende Buch
+durchweg empfohlen werden.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Seven Databases in Seven Weeks </td></tr>
+<tr><td><b>Autor</b> </td><td>Pragmatic Bookshelf </td></tr>
+<tr><td><b>Verlag</b> </td><td>Eric Redmond, Jim R. Wilson </td></tr>
+<tr><td><b>Umfang</b> </td><td>333 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1-93435-692-0 </td></tr>
+<tr><td><b>Preis</b> </td><td>ca. 24 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/CAP-Theorem"><tt class="big">https://de.wikipedia.org/wiki/CAP-Theorem</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/MapReduce"><tt class="big">https://de.wikipedia.org/wiki/MapReduce</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.com/">Webseite</a>)
+setzt selber MySQL und CouchDB als Datenbanken ein,
+interessiert sich aber auch für alternative Systeme. Das Buch hat ihm
+sehr gut dabei geholfen, einen besseren Ein- und Überblick zu
+bekommen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Seven Databases in Seven Weeks#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="12_09_rezension_android_apps">Rezension: Android – Apps entwickeln</a></font></h1>von Michael Niedermair
+
+<div class="p"><!----></div>
+        <b>D</b><b>as Buch „Android – Apps entwickeln“ stellt eine Einführung in die
+Java-Android-Spieleprogrammierung für Leser ohne Vorkenntnisse dar.
+Das Buch will auf „besonders einfache“ und unterhaltsame Weise
+zeigen, wie man eine Android-Spiele-App in Java Schritt für Schritt
+programmiert, installiert und dann veröffentlicht. Der rote Faden
+dabei ist, eine Spiele-App mit Sound, Animation, Highscore und
+Bestenlisten mit dem Einsatz der Kamera und Sensoren zu entwickeln.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Galileo Computing für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Die zweite Auflage ist recht schnell nach der ersten Auflage
+erschienen (Rezension in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 02/2012&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2012-02">[1]</a>)
+und macht laut Vorwort einen Sprung zu neuen Versionen
+von Eclipse und Android und beseitigt Fehler und Unstimmigkeiten.
+Zudem wurde das Layout leicht geändert.
+
+<div class="p"><!----></div>
+Der Autor Uwe Post ist Chefentwickler einer Firma, die
+Smartphone-Spiele herstellt und nebenbei schreibt er Fachartikel in
+Computerzeitschriften und Science-Fiction-Geschichten, z.&nbsp;B. „Walpar
+Tonnraffir und der Zeigefinger Gottes“, der 2011 den
+Kurd-Laßwitz-Preis&nbsp;<a href="http://www.kurd-lasswitz-preis.de/">[2]</a> und den 
+Deutschen Science-Fiction-Preis&nbsp;<a href="http://www.dsfp.de/">[3]</a> gewann.
+Bei solchen interessanten Bedingungen geht man natürlich mit einer
+gewissen Erwartungshaltung an das Buch heran. Die nächsten Zeilen
+verraten, ob das Buch diesen Erwartungen gerecht wird.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das Buch ist in elf Kapitel mit Vorwort und Index aufgeteilt und
+umfasst 395 Seiten. Am Ende finden sich fünf Seiten Werbung und die
+DVD mit der Entwicklungssoftware (Java, Eclipse, Android-SDK, …) und
+allen Beispielen.
+
+<div class="p"><!----></div>
+Das erste Kapitel (24 Seiten) stellt die Einleitung für das
+Buch dar. Dabei wird beschrieben, für wen das Buch ist, welche
+Technologie hier mit Java und Android zum Einsatz kommt und welche
+Möglichkeiten dahinter stecken. Danach werden anhand von Beispielen,
+wie etwa MapDroyd&nbsp;<a href="http://www.mapdroyd.com/de">[4]</a>, Öffi&nbsp;<a href="http://oeffi.schildbach.de/">[5]</a>, Shaky
+Tower&nbsp;<a href="http://www.heyzap.com/game/shakytower">[6]</a> und vielen mehr, die
+Möglichkeiten von Android gezeigt.
+
+<div class="p"><!----></div>
+Im zweiten Kapitel (29 Seiten) geht es um die Java-Grundlagen für
+Einsteiger. Hier werden Objekte, Klassen, Konstruktoren, Pakete und
+deren Erzeugung, Benutzung etc. besprochen. Danach geht es um
+Variablen, Grundstrukturen, wie z.&nbsp;B. Schleifen und Vererbung.
+
+<div class="p"><!----></div>
+Im dritten Kapitel (20 Seiten) geht es an die Grundlagen: Was für
+einen Rechner/ein Betriebssystem braucht man? Wie installiert man Java
+und Eclipse (es folgt eine Einführung in Eclipse)? Wie installiert
+man das Android-Eclipse-Plugin, das ADT (Android Development Tool)
+und das Android SDK?
+
+<div class="p"><!----></div>
+Die erste App „Sag Hallo“ wird im vierten Kapitel (42 Seiten)
+entwickelt. Dabei wird schrittweise gezeigt, wie man in Eclipse ein
+Android-Projekt anlegt, die erste Activity erzeugt (mit Layout,
+Buttons und entsprechenden Ressourcen-Dateien für z.&nbsp;B. Text und
+vieles mehr) und mit Leben füllt. Dabei werden notwendige
+Java-Grundlagen erläutert, z.&nbsp;B. wie man ein Interface implementiert
+und welche Vorteile dieses Verfahren hat. Ist die App fertig, so
+wird gezeigt, wie man daraus ein APK-Paket erstellt und installiert.
+
+<div class="p"><!----></div>
+Im fünften Kapitel (48 Seiten) geht es an die Spieleentwicklung
+mit dem Ziel „Wie viele Stechmücken kann man in einer Minute
+fangen?“. Dabei wird zuerst gezeigt, wie eine Mücke gezeichnet wird,
+sodass sich diese als Grafik unter Berücksichtigung der
+Bildschirmauflösung einbinden lässt. Danach geht es an die „Game
+Engine“, das entsprechende Layout (Mücke(n), Hintergrund, …),
+Informationen über aktuelle Punktzahl, Runde, gefangene Mücken etc.
+und die verbleibende Spielzeit.
+
+<div class="p"><!----></div>
+Das sechste Kapitel (32 Seiten) widmet sich dem Sound und zeigt,
+wie Animationen realisiert werden. Dabei wird erklärt, wie man Sound
+hinzufügen und spezielle Soundeffekte selber erzeugen und abspielen
+kann. Es folgt, wie man einfache Animationen erzeugen und in Views
+einblenden kann, sodass die Mücken das Fliegen lernen.
+
+<div class="p"><!----></div>
+Im siebten Kapitel (49 Seiten) wird gezeigt, wie man Highscores
+im Internet speichern kann und die Google App Engine verwendet.
+Dabei werden Themen wie Android-HTTP-Client, Threads,
+Background-Threads, HTML Darstellung und Listen mit Adaptern
+behandelt.
+
+<div class="p"><!----></div>
+Im achten Kapitel (19 Seiten)  geht es um die Kamera und
+„Augmented Reality“. Es wird gezeigt, wie man die Kamera verwendet,
+das Ergebnis in einer View anzeigt und die Bilddaten auswertet, sodass Mücken gefangen werden können.
+
+<div class="p"><!----></div>
+Das neunte Kapitel (48 Seiten) beschäftigt sich mit Sensoren, um
+z.&nbsp;B. die Himmelsrichtung zu ermitteln und eine Kompassnadel zu
+realisieren. Das Wissen wird dann dazu genutzt, um zu
+ermitteln, wo denn die Mücken fliegen. Dazu wird auf Grundlagen der
+„Sphärischen Koordinaten“ und die virtuelle Kamera mit Polarwinkel und
+Azimutwinkel eingegangen, um einen Radarschirm zu realisieren.
+Danach geht es um Beschleunigung und Erschütterung, um einen
+Schrittzähler einzubinden. Zuletzt wird das Arbeiten mit
+Geokoordinaten gezeigt und wie man Google Maps nutzt, um Karten und
+Overlays zu verwenden.
+
+<div class="p"><!----></div>
+Das zehnte Kapitel (30 Seiten) enthält Tipps und Tricks, z.&nbsp;B.
+wie man einen Stacktrace ausliest, Logging verwendet und das
+Debugging durchführt. Um eine eigene Note bei Apps zu verwenden,
+wird gezeigt, wie man Komponenten, z.&nbsp;B. Buttons nach seinen eigenen
+Vorstellung designen kann, z.&nbsp;B. durch Verwendung einer
+Hintergrundgrafik.
+
+<div class="p"><!----></div>
+Im elften Kapitel (27 Seiten) wird gezeigt, wie man Apps
+veröffentlicht, ein Entwickler-Konto im Android Market oder anderen
+Stores eröffnet und was dabei zu beachten ist, z.&nbsp;B. wenn man Apps
+verkaufen möchte.
+
+<div class="p"><!----></div>
+Am Ende folgt das Stichwortverzeichnis mit insgesamt sieben Seiten.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das Buch ist für den Android-Anfänger geschrieben und setzt im
+Gegensatz zu anderen Android-Einsteiger-Büchern keine
+Java-Grundkenntnisse voraus. Allgemeine Kenntnisse über
+Programmierung sind aber hilfreich.
+
+<div class="p"><!----></div>
+Das Buch liest sich sehr gut. Es wird durchgängig ein roter Faden
+(Mücken fangen) verwendet. Dabei wird das Beispiel schrittweise und
+spannend immer weiter ausgebaut, so dass am Ende eine schon recht
+umfangreiche Spiele-App entsteht. Alle Code-Beispiele sind
+ausreichend gut erläutert. Im Buch werden nur die wichtigen
+Codeteile abgedruckt, der komplette Code findet sich auf der
+Begleit-DVD.
+
+<div class="p"><!----></div>
+Jeder Anfänger kann der Beschreibung gut folgen und auch der schon
+erfahrene Leser findet das eine oder andere interessante Kapitel.
+Der erfahrene Leser kann ohne weiteres Grundlagenkapitel wie die
+Java-Einführung oder die Eclipse-Installation und Beschreibung
+überspringen, ohne dabei in anderen Kapiteln Probleme zu bekommen.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Das Buch ist für Android-Anfänger geschrieben und für diese sehr gut
+geeignet. Man merkt deutlich, dass der Autor viel Erfahrung in der
+Android-Spiele-Programmierung hat. Durch seine Physikkenntnisse und
+langjährige Autorenerfahrung schafft er es, auch komplexe
+Sachverhalte, wie z.&nbsp;B. die Perspektivendarstellung bei Kameras
+didaktisch und methodisch auf ein verständliches Niveau
+herunterzubrechen, sodass jeder Leser die notwendigen Kenntnisse
+erlangt, ohne mit theoretischem Hintergrund gelangweilt bzw.
+überfordert zu werden.
+
+<div class="p"><!----></div>
+Auch für den fortgeschrittenen Leser finden sich genügend Aspekte,
+so dass das Buch für den Einstieg in die Spielewelt sinnvoll ist.
+
+<div class="p"><!----></div>
+Das Stichwortverzeichnis ist für den Buchumfang ausreichend und
+meist findet man die entsprechenden Stellen schnell. Das Buch hat
+ein Softcover mit umgeschlagenem Deckel, was dem Buch einen deutlich
+stabilen Stand verschafft und die Coverecken leiden nicht so schnell
+durch die Benutzung. Das Preis-Leistungs-Verhältnis (Buch, Umfang, DVD
+und Preis) macht einen sehr guten Eindruck und wirkt nicht überteuert.
+
+<div class="p"><!----></div>
+Mit der im Vorwort getätigten Aussage hätte ich mir hier Neuheiten
+gerade zu Eclipse Juno und Android 4.1 gewünscht. Leider fehlt dies
+total. Nicht alle Screenshots wurden erneuert. Hier wurden trotz
+Ankündigung noch die alten Bilder verwendet, beispielsweise zeigen
+die Eclipse-Android-Plugins die Version 10.x, inzwischen gibt es
+Version 20.x. Auch der ADK-Manager zeigt nur Android 4.0, Android
+4.0.3 und 4.1 fehlen. Auch bei der Software auf der DVD bin ich
+etwas
+
+enttäuscht, da diese aktueller sein könnte: Eclipse Indigo -&#62;
+Eclipse Juno, Android SDK R18 -&#62; R20, JDK 7u3 -&#62; 7u5. Das leicht
+angepasste Layout macht einen besseren Eindruck.
+
+<div class="p"><!----></div>
+Insgesamt betrachtet muss man trotz der Schönheitsfehler der zweiten
+Auflage das Buch inhaltlich als sehr gut bewerten und die anfangs
+gesetzten Erwartungen wurden inhaltlich voll erfüllt. Der Anfänger
+wird hier super motiviert, in die Spieleentwicklung einzusteigen.
+
+<div class="p"><!----></div>
+Allerdings hätten Autor und Verlag die Möglichkeit gehabt, sich zu
+„sehr gut“ noch ein Sternchen als Auszeichnung zu verdienen, was
+leider „in die Hose“ ging.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Android-Apps entwickeln (2. Auflage)&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3158">[7]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Uwe Post </td></tr>
+<tr><td><b>Verlag</b> </td><td>Galileo Computing, 2012 </td></tr>
+<tr><td><b>Umfang</b> </td><td>395 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8362-1947-1 </td></tr>
+<tr><td><b>Preis</b> </td><td>Gedruckt: 24,90 €, Online: 19,90 €, Beides: 32,40 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2012-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2012-02</tt></a><br />
+[2] <a href="http://www.kurd-lasswitz-preis.de/"><tt class="big">http://www.kurd-lasswitz-preis.de/</tt></a><br />
+[3] <a href="http://www.dsfp.de/"><tt class="big">http://www.dsfp.de/</tt></a><br />
+[4] <a href="http://www.mapdroyd.com/de"><tt class="big">http://www.mapdroyd.com/de</tt></a><br />
+[5] <a href="http://oeffi.schildbach.de/"><tt class="big">http://oeffi.schildbach.de/</tt></a><br />
+[6] <a href="http://www.heyzap.com/game/shakytower"><tt class="big">http://www.heyzap.com/game/shakytower</tt></a><br />
+[7] <a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3158"><tt class="big">http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3158</tt></a><br />
+    
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Michael Niedermair</b>
+ist Lehrer an der
+<a href="http://www.bsinfo.musin.de/">Münchener IT-Schule</a> und Koordinator für den Bereich
+Programmierung und Anwendungsentwicklung. Er beschäftigt sich seit
+Jahren mit vielen Programmiersprachen, vor allem Java.
+    </td></tr></table>
+<br />
+            <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Rezension: Android#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                
+
+    
+
+
+
+
+
+
+
+<h1><font color="#595959"><a name="12_09_leserbriefe">Leserbriefe</a></font></h1>
+            <b>Für Leserbriefe steht unsere E-Mailadresse
+            <img src="freiesMagazin-2012-09-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+            Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+        An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+        uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+        sehr viel Lob (was uns natürlich freut), aber vor allem durch
+        Kritik und neue Ideen können wir uns verbessern.
+    
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>EPUB-Ausgabe</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Vielen Dank für Eure Arbeit an <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>.
+
+<div class="p"><!----></div>
+Und an dieser Stelle auch vielen Dank für die Arbeit an der
+EPUB-Version. Ich bin überzeugter Besitzer eines eReaders und habe
+mit diesem Gerät eigentlich zum ersten Mal die Möglichkeit gefunden,
+die lediglich elektronisch vorliegenden Inhalte ernsthaft zu
+konsumieren. Eurer Magazin z.B. hatte ich bis dato lediglich
+interessiert überflogen. Erst mit meinem eReader fange ich jetzt an
+Inhalte im Netz auch tatsächlich zu <b>lesen</b> und längere
+Inhalte zu akzeptieren.
+
+<div class="p"><!----></div>
+Von daher bildet die EPUB-Version für mich erst den Zugang zu eurem
+Magazin, ich bin gewissermaßen eine neu erschlossene Leserschaft.
+
+<div class="p"><!----></div>
+Da viele Eurer Artikel (insbesondere die Reihen) eine Art
+Referenzwert besitzen, also gerne in einer Bibliothek gehalten
+werden wollen, würde ich mir jetzt wünschen, dass auch die alten
+Ausgaben zusätzlich als ePub Version veröffentlicht würden – oder
+noch besser (und aufwendiger, schon klar) einzelne Reihen als
+fortlaufendes sich erweiterndes eBook und einzelne Artikel als
+einzelne Dateien. Vielleicht bin ich mit dem Wunsch nicht allein.
+Vielleicht lässt sich so eine Arbeit auch an eine Community
+ausgliedern.
+        <br /><b>Max Fischer</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Vielen Dank für das schöne Lob! Es freut uns, dass wir auch mit der
+EPUB-Ausgabe neue Leser gewinnen können.
+
+<div class="p"><!----></div>
+Ob und wie viele ältere Ausgaben wir noch konvertieren, ist noch unklar,
+da wie Sie selbst feststellen, dies mit viel Arbeit verbunden ist. Wir
+konvertieren die Artikel auch nicht einfach von LaTeX bzw. HTML
+in ein EPUB, sondern müssen dafür noch zahlreiche Dinge nachbereiten,
+ehe die EPUB-Version so aussieht, wie Sie sie vorliegen haben. Von
+extra Sonderreihen reden wir besser noch gar nicht, das ist ein weiter
+Weg, zumal uns intern das Know-How fehlt, diese Dinge leicht und
+automatisiert zu erstellen.
+
+<div class="p"><!----></div>
+Sie können aber natürlich mit Sigil&nbsp;<a href="https://code.google.com/p/sigil/">[1]</a>
+oder Calibre&nbsp;<a href="http://calibre-ebook.com/">[2]</a> die HTML-Versionen
+relativ leicht in das EPUB-Format konvertieren.
+        <br /><b><i>Matthias Sitte/Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Taskwarrior</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Erst einmal vielen Dank für die Vorstellung dieses Tools. Ich fühlte
+mich im ersten Teil des Textes sehr angesprochen.
+
+Ich habe z.&nbsp;B. das
+genannte todo.sh auch schon mal eine Weile zusammen mit der Python
+Erweiterung Punch.py, die eine Art von Zeiterfassung für die todo.sh
+darstellt.
+
+<div class="p"><!----></div>
+Was mir allerdings in dem Text sehr aufstößt, ist der Umstand, dass
+mal wieder lang und breit dargestellt wird, wie man die Software aus
+den Sourcen kompiliert und die Nutzung des Tools wird auf einen
+Mini-Absatz reduziert mit:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> <b><tt class="big">task add</tt></b></li>
+<li> <b><tt class="big">task ls</tt></b></li>
+<li> <b><tt class="big">done</tt></b></li>
+</ol>
+
+<div class="p"><!----></div>
+Wie man die Software aus einem Repository installiert oder aus den
+Sourcen kompiliert, steht im Zweifel sehr gut auf taskwarrior.org im
+Wiki&nbsp;<a href="http://taskwarrior.org/projects/taskwarrior/wiki">[3]</a>
+beschrieben. Die Nutzung des Tools dann aber auf einen zweiten
+Artikel zu beschränken, empfinde ich persönlich als den falschen Weg
+bzw. als eine schlechte Gewichtung. Man hätte vielleicht auch auf
+die Man-Page task-tutorial hinweisen können.
+        <br /><b>Marcus Franke</b> &nbsp;(<a href="http://www.freiesmagazin.de/20120805-augustausgabe-erschienen#comment-2641">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Es ist eine Serie von Artikeln (mehr als zehn) geplant. Es werden
+nicht „nur“ zwei Artikel sein.
+
+<div class="p"><!----></div>
+Wenn es darum ginge, nur auf das Wiki oder die Manpage hinzuweisen,
+bräuchte ich die Artikel nicht schreiben. Nahezu alle Kommandos sind
+auch auf einer einzigen Din-A4-Seite zu finden&nbsp;<a href="http://www.taskwarrior.org/download/task-2.1.1.ref.pdf">[4]</a>.
+
+<div class="p"><!----></div>
+Der Vorteil einer Artikelserie ist gerade, etwas weiter ausholen zu
+können. Ich richte mich an Einsteiger, die vielleicht auch nicht so
+vertraut mit der englischen Sprache sind. Wenn Dir das Level zu
+niedrig ist, ist die Reihe vielleicht nichts für Dich. Leider kann
+man es nicht jedem Recht machen.
+        <br /><b><i>Dirk Deimeke</i></b> 
+</i>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://code.google.com/p/sigil/"><tt class="big">https://code.google.com/p/sigil/</tt></a><br />
+[2] <a href="http://calibre-ebook.com/"><tt class="big">http://calibre-ebook.com/</tt></a><br />
+[3] <a href="http://taskwarrior.org/projects/taskwarrior/wiki"><tt class="big">http://taskwarrior.org/projects/taskwarrior/wiki</tt></a><br />
+[4] <a href="http://www.taskwarrior.org/download/task-2.1.1.ref.pdf"><tt class="big">http://www.taskwarrior.org/download/task-2.1.1.ref.pdf</tt></a><br />
+    
+
+<div class="p"><!----></div>
+            Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+        kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+    
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/285?edit[subject]=Leserbriefe#comment-form"><i>Die Leserbriefe kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                
+<h1><font color="#595959"><a name="12_09_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+Software Freedom Day </td><td>Weltweit </td><td align="left">15.09.2012 </td><td>frei </td><td align="left"><a href="http://softwarefreedomday.org/"><tt class="big">http://softwarefreedomday.org/</tt></a> </td></tr>
+<tr><td align="left">XDC2012 </td><td>Nürnberg </td><td align="left">19.09.–21.09.2012 </td><td>– </td><td align="left"><a href="http://wiki.x.org/wiki/Events/XDC2012/"><tt class="big">http://wiki.x.org/wiki/Events/XDC2012/</tt></a> </td></tr>
+<tr><td align="left">Ubucon </td><td>Berlin </td><td align="left">19.10.–21.10.2012 </td><td>– </td><td align="left"><a href="http://ubucon.de/"><tt class="big">http://ubucon.de/</tt></a> </td></tr>
+<tr><td align="left">UnFUCK </td><td>Furtwangen </td><td align="left">19.10.–21.10.2012 </td><td>frei </td><td align="left"><a href="http://www.unfuck.eu/"><tt class="big">http://www.unfuck.eu/</tt></a> </td></tr>
+<tr><td align="left">Kieler Linuxtage </td><td>Kiel </td><td align="left">26.10.–27.10.2012 </td><td>frei </td><td align="left"><a href="http://www.kieler-linuxtage.de/"><tt class="big">http://www.kieler-linuxtage.de/</tt></a> </td></tr>
+<tr><td align="left">Brandenburger Linux-Infotag </td><td>Potsdam </td><td align="left">03.11.2012 </td><td>frei </td><td align="left"><a href="http://blit.org/2012/"><tt class="big">http://blit.org/2012/</tt></a> </td></tr>
+<tr><td align="left">World Usability Day </td><td>Weltweit </td><td align="left">08.11.2012 </td><td>– </td><td align="left"><a href="http://www.worldusabilityday.org/de/"><tt class="big">http://www.worldusabilityday.org/de/</tt></a> </td></tr>
+<tr><td align="left">Open-Xchange Summit </td><td>Berlin </td><td align="left">15.11.2012 </td><td>– </td><td align="left"><a href="http://summit.open-xchange.com/"><tt class="big">http://summit.open-xchange.com/</tt></a> </td></tr>
+<tr><td align="left">LibreOffice Hackfest </td><td>München </td><td align="left">23.11.–25.11.2012 </td><td>– </td><td align="left"><a href="http://wiki.documentfoundation.org/Hackfest2011"><tt class="big">http://wiki.documentfoundation.org/Hackfest2011</tt></a> </td></tr>
+<tr><td align="left">LinuxDay </td><td>Dornbirn </td><td align="left">24.11.2012 </td><td>frei </td><td align="left"><a href="http://linuxday.at/"><tt class="big">http://linuxday.at/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2012-09-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a name="12_09_vorschau">Vorschau</a></font></h1>
+
+
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint immer am ersten Sonntag eines Monats. Die Oktober-Ausgabe wird voraussichtlich am 7. Oktober unter anderem mit folgenden Themen veröffentlicht:
+
+<ul>
+<li> Creative Commons</li>
+</ul>
+Es kann leider vorkommen, dass wir aus internen Gründen angekündigte Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                
+<h1><font color="#595959"><a name="12_09_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2012-09-bilder.html#index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                    
+<h1><font color="#595959"><a name="12_09_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 2. September 2012<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><font size="+0"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2012-09-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Dirk Deimeke </td><td align="left"><a href="freiesMagazin-2012-09-bilder.html#12_09_taskwarrior_02">Taskwarrior – What's next? (Teil 2)</a>  </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2012-09-bilder.html#12_09_kernel">Der August im Kernelrückblick</a>  </td></tr>
+<tr><td align="left">Michael Niedermair </td><td align="left"><a href="freiesMagazin-2012-09-bilder.html#12_09_rezension_android_apps">Rezension: Android – Apps entwickeln</a>  </td></tr>
+<tr><td align="left">Florian Satzger </td><td align="left"><a href="freiesMagazin-2012-09-bilder.html#12_09_passwortsicherheit">Passwortsicherheit</a>  </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2012-09-bilder.html#12_09_redis">Redis – Mehr als ein Key-Value-Store</a>, <a href="freiesMagazin-2012-09-bilder.html#12_09_rezension_seven_databases">Rezension: Seven Databases in Seven Weeks</a>  </td></tr>
+<tr><td align="left">Michael Schwarz </td><td align="left"><a href="freiesMagazin-2012-09-bilder.html#12_09_tinyandbig">Tiny &amp; Big – Unterwäschefetischismus deluxe</a>  </td></tr>
+<tr><td align="left">Sujeevan Vijayakumaran </td><td align="left"><a href="freiesMagazin-2012-09-bilder.html#12_09_rezension_schroedinger_cpp">Rezension: Schrödinger programmiert C++</a>  </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<font size="+0"><b>Redaktion</b></td></tr>
+<tr><td align="left">Matthias Sitte </td><td align="left"></td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Satz und Layout</b></td></tr>
+<tr><td align="left">Andreas Breitbach </td><td align="left">Holger Dinkel </td></tr>
+<tr><td align="left">Dominik Frey </td><td align="left">Tobias Kempfer </td></tr>
+<tr><td align="left">Ralph Pavenstädt </td><td align="left">Stefan Wiehler </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left">Toni Zimmer </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td></tr>
+
+<tr><td align="left"><font size="+0"><b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA 3.0 Unported</a>) </td></tr></font></font></font></font></font></font></font></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    
+
+
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  3 Sep 2012, 20:06.</small>
+</div>
+</body></html>

@@ -1,0 +1,2617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                 
+<title>freiesMagazin 11/2015</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Eine Geschichte von Linux | Der Oktober im Kernelrückblick | WPS Office im Test | I2P unter Ubuntu auf dem Raspberry Pi 2 | Rezension: Dokumentation mit Sphinx | Rezension: Software Testing – Concepts and Operations | Rezension: Entwurfsmuster von Kopf bis Fuß | Rezension: Minecraft: Redstone-Guide | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 11/2015" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2015-11-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2015-11.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+          
+
+
+
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>November 2015</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Themen dieser Ausgabe sind u.&nbsp;a.</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_linux_geschichte">Eine Geschichte von Linux</a></font> <br />
+    In diesem Artikel wird die historische Entwicklung von Linux von den ersten Schritten in den Bell Laboratories im Jahre 1965 bis zur Präsentation von Linux 1994 durch Linus Torvalds nacherzählt. (<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_linux_geschichte">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_wps">WPS Office im Test</a></font> <br />
+    Im Linux-Ökosystem gibt es eigentlich für jeden denkbaren Einsatzzweck verschiedene Programme. Das reicht von den Desktopoberflächen bis hin zum Terminal. Lediglich beim Kernel lassen einem die Distributoren selten eine Wahl – wobei Debian hier eine Ausnahme bildet. Eine Ausnahme ist hier der Office-Bereich. In diesen gehört die Office-Suite WPS Office, die in diesem Artikel vorgestellt wird. (<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_wps">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_i2p_raspberry_pi">I2P unter Ubuntu auf dem Raspberry Pi 2 installieren</a></font> <br />
+    Das „Invisible Internet Project“ ist ein Overlay-Netz, welches einen hohen Grad an Anonymisierung bietet. Aufgrund seines geringen Stromverbrauchs eignet sich ein Raspberry Pi hervorragend dazu, einen I2P-Router in Betrieb zu nehmen und damit das Netzwerk zu unterstützen. Der Artikel erklärt, wie man I2P unter Ubuntu auf dem Raspberry Pi installieren kann. (<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_i2p_raspberry_pi">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_toc" name="fm_toc">Inhalt</a></font></h1><!-- CONTENT -->
+
+
+    &nbsp;<br /> <b>Linux allgemein</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_linux_geschichte">Eine Geschichte von Linux</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_kernel">Der Oktober im Kernelrückblick</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Software</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_wps">WPS Office im Test</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_i2p_raspberry_pi">I2P unter Ubuntu auf dem Raspberry Pi 2</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Community</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_sphinx">Rezension: Dokumentation mit Sphinx</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_software_testing">Rezension: Software Testing – Concepts and Operations</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_entwurfsmuster_von_kopf_bis_fuss">Rezension: Entwurfsmuster von Kopf bis Fuß</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_minecraft">Rezension: Minecraft: Redstone-Guide</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Magazin</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-11-bilder.html#fm_15_11_impressum">Impressum</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_editorial" name="fm_15_11_editorial">Editorial</a></font></h1>
+
+
+
+<h2>Rezensenten gesucht</h2>
+
+
+Jeden Monat erhalten wir zahlreiche Bücher für
+Besprechungen angeboten. Die Rezensionen der Titel von Rheinwerk, mitp,
+O'Reilly und Wiley-VCH kann man dann im Magazin nachlesen, und doch
+schaffen es die freiwilligen Rezensenten längst nicht, alle
+interessanten Werke zu lesen.
+
+<div class="p"><!----></div>
+Selbstverständlich soll <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> nicht zu einem reinen Besprechungsorgan
+werden, denn die Artikel, die exklusiv im Magazin erscheinen, sind
+natürlich ein wichtiges Merkmal. Dennoch finden wir es schade, dass zu
+dem einen oder anderen Titel keine Rezension erscheinen kann.
+
+<div class="p"><!----></div>
+Beispiele hierfür sind „Gut gerüstet gegen Überwachung im Web – Wie Sie verschlüsselt mailen, chatten und surfen“&nbsp;<a href="http://www.wiley-vch.de/publish/dt/books/ISBN978-3-527-76061-9/">[1]</a>, „Design Patterns für die Spieleprogrammierung“&nbsp;<a href="http://www.mitp.de/IT-Web/Programmierung/Design-Patterns-fuer-die-Spieleprogrammierung.html">[2]</a>, „Spiele entwickeln mit Unity 5“&nbsp;<a href="https://www.rheinwerk-verlag.de/spiele-entwickeln-mit-unity-5_3827/">[3]</a>,  „Hacks für die Digitale Fotografie – Digitalfotografie mit Arduino und Raspberry Pi“&nbsp;<a href="http://www.oreilly.de/catalog/digfotografiehacksger/index.html">[4]</a>.
+
+<div class="p"><!----></div>
+Wenn Sie jetzt interessiert sind, diese Bücher – oder eines der
+zahlreichen anderen, die sich mit den Themen Programmierung,
+Hardware-Technik, Linux und Open Source beschäftigen, zu
+besprechen, schreiben Sie doch einfach eine E-Mail an 
+<img src="freiesMagazin-2015-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />. Wichtig wäre, dass Sie die Bücher relativ zeitnah lesen 
+und dann eine Bewertung in Form eines zweiseitigen Artikels abgeben 
+können, der über eine Auflistung des Inhaltsverzeichnisses hinausgeht.
+
+<div class="p"><!----></div>
+
+<h2>Programmierwettbewerb, die Zweite</h2>
+
+
+Wie im letzten Editorial angekündigt, soll es auch dieses Jahr wieder einen 
+Programmierwettbewerb geben. Aktuell ist daran gedacht, das Brettspiel
+„Mutant 
+Meeples“&nbsp;<a href="https://boardgamegeek.com/boardgame/109969/mutant-meeples">[5]</a> 
+(basierend auf „Ricochet Robots“) umzusetzen, bei den man Figuren auf einem 
+Spielbrett bewegen muss, um so ein bestimmtes Feld zu erreichen. Leider ist 
+nicht klar, ob diese Aufgabe ggf. zu schwer ist, um hierfür eine AI zu 
+schreiben, die nicht nur stupide alle Möglichkeiten durchtestet (was zu 
+viele wären).
+
+<div class="p"><!----></div>
+Wenn Sie das Spiel kennen, können Sie sich in den Kommentare oder per E-Mail 
+melden und Ihre Meinung mitteilen, ob dies machbar ist oder zu aufwändig 
+wird. Auch andere Ideen für einen Programmierwettbewerb sind willkommen. Je 
+nach Rückmeldung und Aufwand der Engine-Implementierung kann es ggf. sein, 
+dass der Wettbewerb sich dann doch ins nächste Jahr verschiebt.
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.wiley-vch.de/publish/dt/books/ISBN978-3-527-76061-9/"><tt class="big">http://www.wiley-vch.de/publish/dt/books/ISBN978-3-527-76061-9/</tt></a><br />
+[2] <a href="http://www.mitp.de/IT-Web/Programmierung/Design-Patterns-fuer-die-Spieleprogrammierung.html"><tt class="big">http://www.mitp.de/IT-Web/Programmierung/Design-Patterns-fuer-die-Spieleprogrammierung.html</tt></a><br />
+
+[3] <a href="https://www.rheinwerk-verlag.de/spiele-entwickeln-mit-unity-5_3827/"><tt class="big">https://www.rheinwerk-verlag.de/spiele-entwickeln-mit-unity-5_3827/</tt></a><br />
+[4] <a href="http://www.oreilly.de/catalog/digfotografiehacksger/index.html"><tt class="big">http://www.oreilly.de/catalog/digfotografiehacksger/index.html</tt></a><br />
+[5] <a href="https://boardgamegeek.com/boardgame/109969/mutant-meeples"><tt class="big">https://boardgamegeek.com/boardgame/109969/mutant-meeples</tt></a><br />
+
+
+<div class="p"><!----></div>
+
+
+                                <i><a href="mailto:?subject=Editorial&amp;body=freiesMagazin 11/2015%0AEditorial%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Editorial#comment-form">Beitrag kommentieren</a><br /><br /></i><a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_linux_geschichte" name="fm_15_11_linux_geschichte">Eine Geschichte von Linux</a></font></h1>von Jakob Moser
+
+<div class="p"><!----></div>
+    <b>I</b><b>n diesem Artikel wird die historische Entwicklung von Linux von den ersten
+Schritten in den Bell Laboratories im Jahre 1965 bis zur Präsentation von Linux
+1994 durch Linus Torvalds nacherzählt.</b>
+
+<div class="p"><!----></div>
+Alles begann um 1965, als die Bell Laboratories – die Entwicklungsabteilung des
+damals großen Telekommunikationsunternehmens AT&amp;T – zusammen mit dem MIT&nbsp;<a href="http://web.mit.edu/multics-history">[1]</a>
+und General Electric beschlossen, ein neues, proprietäres Betriebssystem für
+Großrechner zu entwickeln.
+
+<div class="p"><!----></div>
+
+<h2>Multics</h2>
+
+
+Die Ideen und Konzepte&nbsp;<a href="http://multicians.org/history.html#tag11">[2]</a> für das neue
+Betriebssystem namens „Multics“ waren gut, doch das System konnte sich nie
+durchsetzen, unter anderem, weil die Hardwareanforderung von Multics viel zu
+groß für die damaligen Computer waren. 
+
+<div class="p"><!----></div>
+Das Entwicklerteam um Multics gab allerdings nicht auf. Sie versuchten
+vergeblich, die Bell Laboratories zum Kauf eines besseren Computers zu überreden,
+und entwickelten gleichzeitig Prototypen eines Dateisystems und einen primitiven
+Kernel. Doch auch dieses Projekt musste das Team einstellen, da die
+Maschinen, für die sie entwickelten, aus den Labors entfernt werden sollten.
+
+<div class="p"><!----></div>
+
+<h2>Unix</h2>
+
+
+Beinahe wäre die Geschichte hier schon zu Ende gewesen, ehe sie so recht
+begonnen hatte, doch es kam anders. Ken Thompson, einer der Entwickler, wollte
+das für Multics geschriebene Spiel „Space Travel“ auf einen ungenutzten
+PDP-7-Minirechner portieren&nbsp;<a href="https://duplox.wzb.eu/endbericht/sabine.htm#toc4">[3]</a>.
+
+<div class="p"><!----></div>
+Da für die PDP-7 aber kein eigenes Entwicklungssystem vorlag und sich so die
+Portierung des Spiels wesentlich schwieriger gestaltete als erwartet,
+entwickelte Ken Thompson zusammen mit Dennis Ritchie, einem weiteren
+Beteiligten, eine Implementierung des von ihnen entwickelten Dateisystems samt
+Prozessmanagement und einigen Programmen, wie zum Beispiel einem Texteditor und
+einem Kommandozeileninterpreter (die Shell).
+
+<div class="p"><!----></div>
+Dieses System erhielt den Namen Unics („Uniplexed Information and Computing
+Service“), aus dem dann später Unix wurde.
+
+<div class="p"><!----></div>
+Unix wurde ab 1971 in einer weiteren Portierung für die PDP-11 (ein Nachfolger
+der PDP-7) im Patentbüro der Bell Laboratories eingesetzt. Außerdem wurde die „AT&amp;T
+Unix Systems Group“ als offizielles Projekt der Bell Laboratories gegründet.
+
+<div class="p"><!----></div>
+Zeitgleich entwickelten Ritchie und Thompson eine Programmiersprache für die
+PDP-7 namens B. Der Nachfolger dieser Sprache für die PDP-11, der auch um diese
+Zeit von Ritchie und Thompson entwickelt wurde, hieß C.
+
+<div class="p"><!----></div>
+1973 war die Neuerstellung von Unix in C, die die Portierung auf andere Rechner
+erleichtern sollte, abgeschlossen.
+
+<div class="p"><!----></div>
+Zur gleichen Zeit wurde Unix auf Anregung des Entwicklers Douglas McIlroy um das
+Konzept der Pipes erweitert, die erlauben, Ausgaben von einem Programm an ein
+anderes Programm weiterzugeben. Pipes sind heute ein Kernelement von Unix.
+
+<div class="p"><!----></div>
+
+<h2>Die Verbreitung von Unix</h2>
+
+
+Bis 1973 lief Unix auf etwa 25 Rechnern innerhalb der Bell Laboratories, doch
+nach einem Vortrag auf einem Symposium der ACM, der ersten wissenschaftlichen
+Gesellschaft für Informatik, stieg das Interesse an Unix innerhalb wie außerhalb
+der Bell Laboratories gewaltig an.
+
+<div class="p"><!----></div>
+Da es AT&amp;T aber aufgrund der Monopolstellung verboten war, neue Märkte – wie zum
+Beispiel den Computermarkt – zu betreten, wurde Unix samt Quellcode nur für den
+Preis der Datenträger verschiedenen Universitäten zur Verfügung gestellt.
+
+<div class="p"><!----></div>
+An der Universität von Kalifornien in Berkley war Unix besonders beliebt und
+wurde unter Ken Thompson, der dort eine Gastprofessur antrat, ab 1976 rapide
+weiterentwickelt – die Universität wurde damit zu einem wichtigen Zentrum der
+Unix-Entwicklung. Ab 1977 veröffentlicht die 
+ 
+Universität eine eigene Distribution „Berkley Software Distribution“ oder einfach nur kurz
+„BSD“.
+
+<div class="p"><!----></div>
+1978 benutzten schon mehr als 600 Computer Unix. 1979 wurde die letzte
+Unix-Version mit freiem Quellcode veröffentlicht, da AT&amp;T nun doch eine
+kommerzielle Vermarktung versuchte.
+
+<div class="p"><!----></div>
+
+<h2>Die Kommerzialisierung von Unix</h2>
+
+
+Auch Microsoft erwarb eine Unix-Lizenz und entwickelte Portierungen für diverse
+Prozessoren unter dem Namen Xenix. Xenix wurde aber 1987 an eine andere Firma
+verkauft, da man sich sonst selbst Konkurrenz zu einem Vorläufer von Windows NT
+gemacht hätte.
+
+<div class="p"><!----></div>
+1983 betrat AT&amp;T offiziell den Computermarkt, um ein auf Unix
+basierendes, unfreies Betriebssystem namens System V zu verkaufen.
+Gleichzeitig veröffentlichte die Universität von Berkley eine neue BSD-Version
+mit offenem Quellcode, aber keiner komplett freien Lizenz. 
+
+<div class="p"><!----></div>
+Dies war der Beginn der „Unix-Kriege“. Sie bestanden vor allem aus der Gründung
+von verschiedenen Allianzen, die verschiedene Zwecke verfolgten und eigene
+Systeme herausbringen wollten. Aus diesen ging am Ende unter anderem eine
+standardisierte Schnittstelle für Unix namens POSIX&nbsp;<a href="https://de.wikipedia.org/wiki/Portable_Operating_System_Interface">[4]</a>
+hervor.
+
+<div class="p"><!----></div>
+1983 rief der US-amerikanische Programmierer Richard Stallman, verärgert über
+die Proprietarisierung von Unix, das GNU-Projekt ins Leben. Dieses bestand aus
+der Entwicklung eines komplett freien Betriebssystems samt dazu passender freier
+Lizenz, die Stallman 1985 veröffentlichte. Der Kernel des Systems, GNU Hurd, ist
+bis heute noch in Entwicklung, doch die GNU General Public
+License&nbsp;<a href="http://www.gnu.org/gnu/manifesto.html">[5]</a>&nbsp;<a href="https://de.wikipedia.org/wiki/GNU_General_Public_License">[6]</a>,
+die das Ändern des Quellcodes und Weiterverbreitung der geänderten Programme
+jedem erlaubte, der das Programm weiterhin unter der GPL verbreitete, sollte
+einige Jahre später noch einmal eine große Rolle spielen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-11-bilder-Dateien/Unix_history-simple.png" alt="Unix_history-simple.png" style="max-width:100%" /><br /><em>Unix und seine Nachfolger und Abspaltungen Minix. <br /><a href="https://commons.wikimedia.org/wiki/File:Unix_history-simple.svg">&#169;&nbsp;Eraserhead1, Infinity0, Sav_vas</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">CC-BY-SA-3.0</a>)</em><br />
+
+<div class="p"><!----></div>
+1987 entwickelte der amerikanische Informatiker Andrew S. Tanenbaum an der
+Freien Universität Amsterdam ein Unix-ähnliches Betriebssystem namens Minix. Die
+Entwicklung war dadurch motiviert, dass der Quellcode von Unix nicht mehr für
+die Universitäten zur Verfügung stand.
+Minix war Tanenbaums Reaktion auf die Unix-Kriege und die immer restriktiveren
+Unix-Lizenzen von AT&amp;T.
+Auch die Lizenzen von Minix waren restriktiv, der Quellcode lag zwar offen; doch
+er durfte nicht verändert oder weiterentwickelt werden.
+
+<div class="p"><!----></div>
+
+<h2>Linux</h2>
+
+
+Am 2. Januar 1991 bestellte ein finnischer Informatiker namens Linus Benedict
+Torvalds sich einen 386er IBM-PC samt Minix. Es dauerte einen Monat, bis Minix
+bei ihm in Finnland eintraf. Innerhalb eines Monats arbeitete sich Torvalds in
+Minix ein, lernte dessen Fähigkeiten und Schwachstellen kennen. Besonders
+ärgerte ihn der Terminal-Emulator von Minix, den er brauchte, um auf den
+Universitätscomputer zuzugreifen.
+Er beschloss einen eigenen Terminal-Emulator zu schreiben. 
+
+<div class="p"><!----></div>
+Etwa einen Monat später war dieses Projekt abgeschlossen; es folgte ein
+Festplatten- und ein Dateisystemtreiber, um Dateien hoch- und herunterzuladen.
+
+<div class="p"><!----></div>
+Das Projekt nahm während der weiteren Entwicklung betriebssystemähnliche Züge
+an. Als er am 3. Juli 1991 in der Minix-Newsgroup nach POSIX fragte&nbsp;<a href="https://groups.google.com/forum/#!original/comp.os.minix/T9SjMGTSpXk/0C2oixEP6qQJ">[7]</a>,
+bot ihm Ari Lemmke, ein Assistent an der Technischen Universität Helsinki,
+FTP-Speicherplatz auf dem Universitätsserver für das Betriebssystem an, das er
+offenbar entwickelte.
+
+<div class="p"><!----></div>
+Am 25. August 1991 schrieb Linus Torvalds den bis heute legendären Usenet-Post,
+beginnend mit den Zeilen
+
+<div class="p"><!----></div>
+„<em>Hello everybody out there using minix - I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones.</em>“
+
+<div class="p"><!----></div>
+(„<em>Hallo alle da draußen, die Minix einsetzen - Ich arbeite an einem (freien) Betriebssystem (nur ein Hobby, wird nicht groß und professionell sein wie GNU) für 386(486)AT-kompatible Rechner.</em>“).&nbsp;<a href="https://groups.google.com/forum/#!original/comp.os.minix/dlNtH7RRrGA/SwRavCzVE7gJ">[8]</a>
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-11-bilder-Dateien/Unix_timeline.png" alt="Unix_timeline.png" style="max-width:100%" /><br /><em>Auf diesem Zeitstrahl sind Linux, Minix und das GNU-System gut sichtbar. <br /><a href="https://commons.wikimedia.org/wiki/File:Unix_timeline.en.svg">&#169;&nbsp;Guillem, Wereon, Hotmocha, Christoph S.</a> (Public Domain)</em><br />
+
+<div class="p"><!----></div>
+Am 17. September 1991 war die Betriebssystem-Shell fertig und Linus Torvalds
+stellte den Linux-Kernel in Version 0.01 mit 10.000 Zeilen Quellcode online.
+
+<div class="p"><!----></div>
+Ari Lemmke gefiel keiner der beiden von Torvalds vorgeschlagenen, teils
+selbstkritischen Namen 
+
+Freax oder Buggix, deswegen nannte er den FTP-Ordner für
+den Kernel kurzerhand „Linux“.
+Torvalds war damit zuerst nicht einverstanden, akzeptierte den Namen aber bald.
+
+<div class="p"><!----></div>
+Anfangs war die kommerzielle Verwertung von Linux verboten. Doch noch 1991
+besuchte Linus 
+Torvalds einen Vortrag von Richard Stallman über das GNU-Projekt
+und verkündete im Januar 1992, das Projekt unter die GNU General Public License
+zu stellen.
+
+<div class="p"><!----></div>
+Mit der Veröffentlichung des Kernels 1.0 am 14. März 1994 und Torvalds'
+anschließender Präsentation davon, die sogar im Fernsehen übertragen wurde,
+endet diese Geschichte.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://web.mit.edu/multics-history"><tt class="big">http://web.mit.edu/multics-history</tt></a><br />
+[2] <a href="http://multicians.org/history.html#tag11"><tt class="big">http://multicians.org/history.html#tag11</tt></a><br />
+[3] <a href="https://duplox.wzb.eu/endbericht/sabine.htm#toc4"><tt class="big">https://duplox.wzb.eu/endbericht/sabine.htm#toc4</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Portable_Operating_System_Interface"><tt class="big">https://de.wikipedia.org/wiki/Portable_Operating_System_Interface</tt></a><br />
+[5] <a href="http://www.gnu.org/gnu/manifesto.html"><tt class="big">http://www.gnu.org/gnu/manifesto.html</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/GNU_General_Public_License"><tt class="big">https://de.wikipedia.org/wiki/GNU_General_Public_License</tt></a><br />
+[7] <a href="https://groups.google.com/forum/#!original/comp.os.minix/T9SjMGTSpXk/0C2oixEP6qQJ"><tt class="big">https://groups.google.com/forum/#!original/comp.os.minix/T9SjMGTSpXk/0C2oixEP6qQJ</tt></a><br />
+[8] <a href="https://groups.google.com/forum/#!original/comp.os.minix/dlNtH7RRrGA/SwRavCzVE7gJ"><tt class="big">https://groups.google.com/forum/#!original/comp.os.minix/dlNtH7RRrGA/SwRavCzVE7gJ</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jakob Moser</b>
+stieg vor einem Jahr von Windows auf Linux um. Er begann mit Ubuntu 14.04, seit
+kurzem nutzt er Arch Linux unter KDE Plasma 5. Dieser Artikel ist sein erster
+Beitrag zu einem Open-Source-Projekt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Eine Geschichte von Linux&amp;body=freiesMagazin 11/2015%0AEine Geschichte von Linux%0AJakob Moser%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Eine Geschichte von Linux#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_kernel" name="fm_15_11_kernel">Der Oktober im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 4.3</h2>
+
+
+Die sonntägliche Veröffentlichung wurde auch bei Linux
+4.3-rc5&nbsp;<a href="https://lkml.org/lkml/2015/10/11/132">[1]</a> beibehalten. Der Stand fiel auf den
+ersten Blick erfreulich kompakt aus, allerdings hatte Torvalds keine Merges aus
+dem Netzwerkbereich aufgenommen, wodurch die Zahl der Änderungen etwas nach
+unten verzerrt wurde. Als Ausgleich dafür traten die ersten Probleme durch die
+neue Funktion <b><tt class="big">strscpy()</tt></b> (siehe „Der September im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+10/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-10">[2]</a>) auf – obwohl sie 
+bislang gar nicht genutzt wird. Allerdings wurden hier auf eine
+Funktion aufgebaut, die nicht in allen Architekturen zur Verfügung
+steht.
+Dadurch wiederum kam es zu Fehlern beim Kompilieren des Kernels für eben diese
+Architekturen. Das Problem wurde mit einer einfachen Definition für die
+PowerPC-Architektur 
+behoben&nbsp;<a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=7a5692e6e533fd379081ab06fb58f3f5ee4d80bc">[3]</a>.
+
+<div class="p"><!----></div>
+Auch die sechste Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2015/10/18/303">[4]</a>
+brachte nur einen kleinen Teil der sonst üblichen Netzwerk-Patches mit und fiel
+damit erneut sehr klein aus. Trotzdem konnte sie einen neuen Treiber
+aufweisen, der Unterstützung für die GPIO-Schnittstelle der UniPhier-Plattform
+ermöglicht, eine System-on-Chip-Architektur&nbsp;<a href="https://de.wikipedia.org/wiki/System-on-a-Chip">[5]</a>, die speziell für die Belange
+bildverarbeitender Anwendungen zugeschnitten wurde. Außerdem wurden bei DAX, das
+die direkte Verarbeitung von Dateien auf Flash-Massenspeichern unter Umgehung
+des eigentlichen Arbeitsspeichers ermöglicht, einige Fehler behoben, die zu
+Deadlocks&nbsp;<a href="https://de.wikipedia.org/wiki/Deadlock_%28Informatik%29">[6]</a> führen konnten.
+Ein Deadlock tritt auf, wenn ein Prozess Ressourcen, wie zum Beispiel einen
+Speicherbereich, gegen Zugriffe anderer Prozesse sperrt, jedoch auf einen anderen
+Prozess warten muss, der die selbe Ressource benötigt. Zwei vorherige
+„Verbesserungen“ für DAX führten zu diesem Verhalten und mussten nun
+größtenteils wieder zurückgenommen werden.
+
+<div class="p"><!----></div>
+Endlich kamen auch die lange vermissten Patches aus dem Umfeld des
+Netzwerkbereichs und sorgten wieder für einen größeren Patch für Linux
+4.3-rc7&nbsp;<a href="https://lkml.org/lkml/2015/10/25/2">[7]</a>. Allerdings waren hier keine
+Neuerungen dabei und die Korrekturen betrafen zumeist nur kleinere Probleme. So
+filterte bislang der Mellanox-Netzwerktreiber weiterhin Pakete anderer
+VLANs&nbsp;<a href="https://de.wikipedia.org/wiki/Virtual_Local_Area_Network">[8]</a>, über spezielle
+Kennzeichnungen der Netzwerkpakete getrennte Teilnetzwerke, heraus, selbst wenn
+die Schnittstelle in den Promiscious
+Mode&nbsp;<a href="https://de.wikipedia.org/wiki/Promiscuous_Mode">[9]</a> versetzt wurde. Dieser
+Modus soll eigentlich jede Filterung seitens Hardware und Netzwerkstack
+unterbinden und direkt an eine Anwendung für die weitere Verarbeitung
+weiterreichen. Normalerweise ignorieren Schnittstellen und Netzwerk-Stack
+Pakete, die nicht an den Rechner selbst gerichtet sind, mit nur wenigen
+Ausnahmen. Somit stellt der Promiscious Mode vor allem ein Mittel zur
+Fehlersuche dar.
+
+<div class="p"><!----></div>
+
+<h2>Misstöne</h2>
+
+
+Anfang Oktober verkündete Intels Entwicklerin Sarah Sharp, die den Hauptanteil
+des USB-3.0-Treiber für Linux beigesteuert hatte, ihren Ausstieg aus der aktiven
+Entwicklung am Linux-Kernel (siehe „Der September im Kernelrückblick“,
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 10/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-10">[2]</a>).
+Dies nahm Matthew Garrett, wie Sarah Sharp ebenfalls Kernel-Entwickler und bis
+Ende Oktober Mitglied im Technical Advisory Board, zum Anlass, um seine weitere
+Mitwirkung am Kernel zurückzufahren. Dabei bezieht er sich jedoch auf eigene
+Erfahrungen in Auseinandersetzungen mit Torvalds, wie beispielsweise dessen
+Anmerkung bezüglich spezifischer sexueller Praktiken zwischen Red Hat und
+Microsoft&nbsp;<a href="https://lkml.org/lkml/2013/2/21/228">[10]</a>. Und so wird Garrett
+Änderungen nicht mehr auf der Entwickler-Liste einreichen, sondern fortan in
+einem eigenen Kernel-Zweig pflegen, dort wird er sich nach eigener Aussage nur
+noch beteiligen, wenn er dafür bezahlt wird, jedoch nicht in seiner Freizeit.
+Die freie Software-Szene biete die Möglichkeit, diesen Ärger zu vermeiden und
+trotzdem zu tun, was ihn interessiere.
+
+<div class="p"><!----></div>
+Garrett arbeitete bereits für Canonical und Red Hat und ist zuletzt im
+Zusammenhang mit seinen Bemühungen, Linux, UEFI und Secure  Boot unter einen Hut
+zu bekommen, ins Rampenlicht gerückt. Hier arbeitete er aktiv an Möglichkeiten
+mit, einen Linux-Kernel auch auf Systemen mit aktiviertem Secure Boot starten zu
+können.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://lkml.org/lkml/2015/10/11/132"><tt class="big">https://lkml.org/lkml/2015/10/11/132</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-10"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-10</tt></a><br />
+[3] <a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=7a5692e6e533fd379081ab06fb58f3f5ee4d80bc"><tt class="big">https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=7a5692e6e533fd379081ab06fb58f3f5ee4d80bc</tt></a><br />
+[4] <a href="https://lkml.org/lkml/2015/10/18/303"><tt class="big">https://lkml.org/lkml/2015/10/18/303</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/System-on-a-Chip"><tt class="big">https://de.wikipedia.org/wiki/System-on-a-Chip</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Deadlock_%28Informatik%29"><tt class="big">https://de.wikipedia.org/wiki/Deadlock_(Informatik)</tt></a><br />
+[7] <a href="https://lkml.org/lkml/2015/10/25/2"><tt class="big">https://lkml.org/lkml/2015/10/25/2</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/Virtual_Local_Area_Network"><tt class="big">https://de.wikipedia.org/wiki/Virtual_Local_Area_Network</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/Promiscuous_Mode"><tt class="big">https://de.wikipedia.org/wiki/Promiscuous_Mode</tt></a><br />
+[10] <a href="https://lkml.org/lkml/2013/2/21/228"><tt class="big">https://lkml.org/lkml/2013/2/21/228</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem Laufenden zu bleiben.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Der Oktober im Kernelr%C3%BCckblick&amp;body=freiesMagazin 11/2015%0ADer Oktober im Kernelr%C3%BCckblick%0AMathias Menzer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Der Oktober im Kernelr%C3%BCckblick#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_wps" name="fm_15_11_wps">WPS Office im Test</a></font></h1>von Gerrit Kruse
+
+<div class="p"><!----></div>
+    <b>I</b><b>m Linux-Ökosystem gibt es eigentlich für jeden denkbaren Einsatzzweck
+verschiedene Programme. Das reicht von den Desktopoberflächen bis hin zum
+Terminal. Lediglich beim Kernel lassen einem die Distributoren selten eine 
+Wahl – wobei Debian hier eine Ausnahme bildet. Eine Ausnahme ist hier der
+Office-Bereich. </b>
+
+<div class="p"><!----></div>
+Neben LibreOffice&nbsp;<a href="https://de.libreoffice.org/">[1]</a> gibt es kaum ernstzunehmende
+Konkurrenten im Linux-Umfeld. Apache OpenOffice darf mittlerweile als tot
+gelten&nbsp;<a href="http://www.pro-linux.de/news/1/22514/stagnation-von-openoffice-erreicht-kritische-ausmasse.html">[2]</a>.
+Es gibt zwar eine Reihe kleinerer Editoren wie Abiword&nbsp;<a href="http://www.abiword.org/">[3]</a>
+oder auch Projekte wie Calligra Office&nbsp;<a href="https://www.calligra.org/">[4]</a>, aber
+diese haben entweder einen enger gefassten Einsatzbereich oder sind schlicht
+noch nicht ausgereift.
+
+<div class="p"><!----></div>
+
+<h2>Der Status quo</h2>
+
+
+LibreOffice steht in direkter OpenOffice/StarOffice-Tradition und blickt dadurch
+auf eine lange Geschichte zurück. Die Freigabe des Quellcodes von StarOffice
+Ende der 1990er bescherte dem Linux-Desktop endlich eine nutzbare Office-Suite.
+Ein direkter Nachfolger von StarOffice gehört seitdem zum Standard-Repertoire
+einer jeden Linux-Distribution. In dieser Tradition steht LibreOffice, das sich
+seit 2010 im Linuxumfeld weitestgehend durchgesetzt hat.
+
+<div class="p"><!----></div>
+Die Document Foundation hat es geschafft, einen regelmäßigen Releasezyklus zu
+etablieren und die Entwicklung in etwas ruhigere Bahnen zu lenken. Man könnte
+allerdings einwenden, dass die Entwicklung sehr ruhig geworden ist. Zwar gibt es
+halbjährlich eine neue Veröffentlichung, aber die Entwickler scheinen vor allem
+mit Aufräumarbeiten „unter der Haube“ beschäftigt zu sein. Waren vor dem Fork
+Projekte wie Renaissance zur Überarbeitung der Anwendungsoberfläche in
+Entwicklung, präsentiert sich LibreOffice heute noch ziemlich genauso wie
+beispielsweise StarOffice 6. Viele Bestandsnutzer wird es freuen, aber wer mal
+über den Tellerrand der Linux-Medien hinaus schaut, kann die hämischen
+Kommentare zum Erscheinungsbild lesen. Die meisten Anwender haben halt nicht
+mehr bis gestern Microsoft Office 97-2003 verwendet, sondern kommen von Office
+2007 bis 2013 (demnächst 2016). Für den wachsenden mobilen Markt scheint man bei
+der Document Foundation auch noch keine Antwort gefunden zu haben, die letzte
+Version ist Pre-Alpha. Unter Berücksichtigung dieser im wahrsten Sinne des
+Wortes oberflächlichen Kritik ist natürlich Softmaker Office auch keine
+Alternative.
+
+<div class="p"><!----></div>
+
+<h2>WPS Office</h2>
+
+
+Neben dem omnipräsenten LibreOffice gibt es aber noch eine weitere Office Suite
+für Linux: WPS Office&nbsp;<a href="http://wps-community.org/">[5]</a> (vormals Kingsoft Office).
+Diese proprietäre Suite wird oft unter den Teppich gekehrt, möglicherweise auch
+weil sie in China entwickelt wird. Interessanterweise scheint es solche
+Berührungsängste im mobilen Segment nicht zu geben, wo Apps aus Asien inzwischen
+weit verbreitet sind. Vor allem im mobilen Bereich haben viele Anwender weniger
+Berührungsängste gegenüber „neuen“ Mitspielern auf dem Office-Markt. WPS hat
+hier schon länger eine recht gute Android-App&nbsp;<a href="https://play.google.com/store/apps/details?id=cn.wps.moffice_eng">[6]</a>
+im Portfolio. Aber das nur am Rande. Für den Desktop-PC war WPS lange keine
+Alternative, weil WPS-Office nur in einer 32 bit-Version vorlag und die
+Entwicklung immer mal wieder pausierte. Die gegenwärtige Alpha19 von WPS-Office
+liegt jedoch sowohl in 32 bit als auch in 64 bit vor, ist paketiert für DEB, RPM und
+als tar.gz-Archiv.
+
+<div class="p"><!----></div>
+
+<h3>Installation</h3>
+
+
+Das Debian-Paket installiert WPS Office sauber nach <b><tt class="big">/opt</tt></b>. Nach der Installation
+finden sich im Startmenü Icons für das Schreibprogramm, die Tabellenkalkulation
+und das Präsentationsprogramm. Damit bietet WPS Office die Kernbestandteile
+einer Office Suite, aber etwas weniger als LibreOffice oder Microsoft Office.
+Dennoch dürfte der Funktionsumfang den meisten Anwendern reichen.
+Office-Datenbankprogramme wie Access oder Base haben schließlich eine
+zahlenmäßig eher limitierte Zielgruppe.
+
+<div class="p"><!----></div>
+Nach der Installation ist WPS Office erst einmal nur englischsprachig. Über die
+Optionen lässt sich eine deutsche Lokalisierung herunterladen. Die Einstellungen
+und lokalen Dateien legt WPS Office wie alle zeitgemäßen Programme im
+Homeverzeichnis des Benutzers unter <b><tt class="big">.config</tt></b> und <b><tt class="big">.local</tt></b> ab.
+
+<div class="p"><!----></div>
+
+<h3>Oberfläche</h3>
+
+
+Das Schreibprogramm ist von Haus aus in einem modernen, an die von Microsoft
+bekannten Ribbons angelehnten Look gehalten. Die Übersetzung ist sehr
+weitreichend, aber es gibt immer noch Lücken, die dann mit englischen Phrasen
+gefüllt werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-11-bilder-Dateien/wps_moderne_ansicht.png" alt="wps_moderne_ansicht.png" style="max-width:100%" /><br /><em>Moderne Ansicht der Oberfläche.</em><br />
+
+<div class="p"><!----></div>
+Optisch integriert es sich hervorragend in das Breeze-Design von Plasma 5 und
+das Schriftbild ist subjektiv ein wenig besser als bei LibreOffice. Dies dürfte
+aber hochgradig abhängig von der jeweiligen Auflösung sein und den Sehgewohnheiten
+des jeweiligen Benutzers. WPS Office integriert sich auch über die Optik hinaus hervorragend in den
+Linux-Desktop. Es stehen alle Systemschriften zur Verfügung und es wird der
+native Dateidialog verwendet.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-11-bilder-Dateien/wps_dateidialog.png" alt="wps_dateidialog.png" style="max-width:100%" /><br /><em>Der Dateidialog von WPS Office.</em><br />
+
+<div class="p"><!----></div>
+Dies ist ein Punkt, den man gar nicht genug hervorheben kann. Schließlich müssen
+Nutzer von Kubuntu 14.04 LTS und Debian Jessie zurzeit mit dem funktionsarmen
+LibreOffice-Dialogfenster auskommen. Bei einem Programm, das letztlich auf
+Dateibasis arbeitet, ist ein nativer Systemdialog unglaublich wertvoll.
+
+<div class="p"><!----></div>
+Die Ribbonoberfläche hat den Vorteil, dass sich sehr viele Menüpunkte
+unterbringen lassen und die einzelnen Optionen durch unterschiedliche Größe
+hervorgehoben werden können.
+
+Herkömmliche Menübänder sind mit vielen Funktionen
+und Schaltflächen schnell überladen und lassen sich wenig intuitiv bedienen. Die
+Menübänder wurden ursprünglich für deutlich weniger Optionen entworfen. Hier
+lohnt sich ein Blick in das alte StarOffice 6.
+
+<div class="p"><!----></div>
+Nichtsdestoweniger kann man auch Anwender verstehen, die ihre liebgewonnene
+Oberfläche nicht aufgeben wollen. Intuitiv ist schließlich vor 
+allem was gewohnt
+ist. WPS Office bietet deshalb einen klassischen Look, der sich an Word 97-2003
+und Open/LibreOffice orientiert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-11-bilder-Dateien/wps_klassische_ansicht.png" alt="wps_klassische_ansicht.png" style="max-width:100%" /><br /><em>Klassische Ansicht der Oberfläche.</em><br />
+
+<div class="p"><!----></div>
+Das ist eine schöne Geste, weil man so allen Anwendern gerecht wird. Eine
+Möglichkeit der Konfliktbeilegung, die im Linux-Umfeld leider viel zu
+selten genutzt wird, weil Entwickler oft den Königsweg gefunden haben wollen.
+
+<div class="p"><!----></div>
+
+
+
+WPS Office bietet ansonsten noch eine Reihe Funktionen, die man von Microsoft
+Office kennt und die in LibreOffice noch nicht implementiert sind. Besonders hervorzuheben sind hier die
+Seitenübersicht, wie man sie auch von den meisten Dokumentenbetrachtern kennt
+oder Tabs für verschiedene Dokumente.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-11-bilder-Dateien/wps_moderne_ansicht_navigationsbereich.png" alt="wps_moderne_ansicht_navigationsbereich.png" style="max-width:100%" /><br /><em>Der Navigationsbereich in der modernen Ansicht.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Kompatibilität</h3>
+
+
+Dieser Punkt leitet über zum größten Schwachpunkt von WPS Office. Die Office
+Suite aus China kann neben dem eigenen Format nur die Formate
+von Microsoft lesen
+und schreiben. Das ist nach jahrelangem Open/LibreOffice-Gebrauch natürlich ein
+absolutes Ausschlusskriterium, aber auch in der Interaktion mit anderen Personen
+schwierig. Microsoft-Formate dominieren zwar immer noch, aber man bekommt auch
+immer häufiger freie Formate zu Gesicht. Am besten ist hier 
+eine Software, die
+alles lesen und schreiben kann, da kann LibreOffice sicherlich seine Stärken
+ausspielen.
+
+<div class="p"><!----></div>
+Allerdings ist die Kompatibilität von WPS Office zu den OOXML-Dateien von
+Microsoft noch ein Stück
+
+besser als bei der freien Konkurrenz. Selbst komplexere
+Dateien sehen aus wie in Office 2010.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+WPS Office ist sowohl vom Funktionsumfang als auch von der Oberfläche eine sehr
+ansprechende
+Office Suite. Sie zeigt, dass man nicht die Finanzmittel eines
+US-amerikanischen Großkonzerns wie Microsoft braucht, um eine zeitgemäße
+Office-Suite auf den Markt zu bringen. Die fehlende Unterstützung für freie
+Office-Formate ist für viele Linuxanwender aber sicherlich ein absolutes
+K.o.-kriterium, da hierdurch eine LibreOffice-Installation auf jedem Gerät
+unumgänglich ist.
+Hinzu kommt die proprietäre Lizenz von WPS Office. 
+
+<div class="p"><!----></div>
+Sollte der Interoperabilitätsaspekt behoben werden, wäre ein Wechsel eine
+ernsthafte Option. In jedem Fall dürfte ernstzunehmende Konkurrenz dem
+Office-Bereich unter Linux nicht schaden, da hierdurch sinnvolle Ideen
+vorangetrieben werden können. Die Monopolstellung einer Software hat
+bisher dem Anwender selten etwas gebracht.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://de.libreoffice.org/"><tt class="big">https://de.libreoffice.org/</tt></a><br />
+[2] <a href="http://www.pro-linux.de/news/1/22514/stagnation-von-openoffice-erreicht-kritische-ausmasse.html"><tt class="big">http://www.pro-linux.de/news/1/22514/stagnation-von-openoffice-erreicht-kritische-ausmasse.html</tt></a><br />
+[3] <a href="http://www.abiword.org/"><tt class="big">http://www.abiword.org/</tt></a><br />
+[4] <a href="https://www.calligra.org/"><tt class="big">https://www.calligra.org/</tt></a><br />
+[5] <a href="http://wps-community.org/"><tt class="big">http://wps-community.org/</tt></a><br />
+[6] <a href="https://play.google.com/store/apps/details?id=cn.wps.moffice_eng"><tt class="big">https://play.google.com/store/apps/details?id=cn.wps.moffice_eng</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Gerrit Kruse</b>&nbsp;(<a href="http://www.curius.de/blog/">Webseite</a>)
+nutzt Linux seit 2007. Als Geisteswissenschaftlicher interessiert er sich für
+die Entwicklungen im Bereich der Textverarbeitung.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=WPS Office im Test&amp;body=freiesMagazin 11/2015%0AWPS Office im Test%0AGerrit Kruse%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=WPS Office im Test#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_i2p_raspberry_pi" name="fm_15_11_i2p_raspberry_pi">I2P unter Ubuntu auf dem Raspberry Pi 2 installieren</a></font></h1>von Manuel Haake
+
+<div class="p"><!----></div>
+    <b>D</b><b>as „Invisible Internet Project“ (kurz: 
+I2P&nbsp;<a href="https://de.wikipedia.org/wiki/I2P">[1]</a>) ist ein Overlay-Netz, welches einen 
+hohen Grad an Anonymisierung bietet. Aufgrund seines geringen Stromverbrauchs 
+eignet sich ein Raspberry Pi hervorragend dazu, einen I2P-Router in Betrieb 
+zu nehmen und damit das Netzwerk zu unterstützen. Der Artikel erklärt, wie 
+man I2P unter Ubuntu auf dem Raspberry Pi installieren kann.</b>
+
+<div class="p"><!----></div>
+
+<h2>Grundlegendes</h2>
+
+
+Der folgende Artikel versteht sich nicht als Einführung zum Thema I2P und 
+setzt einige Begriffe voraus, die bereits in dem Artikel „I2P – Ein anynomes 
+P2P-Netzwerk“ in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 
+05/2013&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2013-05">[2]</a> beschrieben 
+wurden. Vielmehr soll aufgezeigt werden, wie man auf dem Raspberry Pi mit 
+seiner Besonderheit einer ARMv7-Architektur ein Ubuntu als Grundsystem 
+einrichtet und darauf einen I2P-Router installieren kann.
+
+<div class="p"><!----></div>
+Nach erfolgreicher Umsetzung ist es möglich, den Router rund um die Uhr in 
+Betrieb zu nehmen, ohne bei der nächsten Stromabrechnung negative 
+Überraschungen zu erleben. Der 24/7-Betrieb ist natürlich nicht 
+obligatorisch, bietet jedoch wegen der Funktionsweise des I2P-Netzwerkes 
+einige Vorteile:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> Das I2P-Netzwerk ist im Gegensatz zum TOR-Netzwerk vollkommen 
+dezentralisiert. Nach jedem Start des eigenen I2P-Routers baut sich dieser 
+über die Zeit seine eigene „Datenbank“ mit Informationen zu anderen Routern 
+im Netzwerk auf. Eine längere Laufzeit führt zu einer besseren Integration 
+des eigenen Routers ins Netzwerk.</li>
+<li> Der eigene Router wird von anderen Teilnehmern abhängig von seiner 
+Laufzeit für die Datenweitergabe über fremde Tunnel unterschiedlich 
+priorisiert bzw. favorisiert.</li>
+<li> Der Dauerbetrieb eines Routers erhöht die Stabilität und 
+Leistungsfähigkeit des Netzwerkes.</li>
+</ol>
+
+<div class="p"><!----></div>
+Kurzum: Je länger der Router läuft, desto besser ist er für die eigenen 
+Belange ins Netzwerk integriert und desto hilfreicher ist es für das Projekt.
+
+<div class="p"><!----></div>
+
+<h2>Betriebssystemauswahl</h2>
+
+
+Derzeit gibt es mit Ubuntu-Mate 15.04 und Ubuntu 14.04 LTS (Desktopumgebung 
+wahlweise Xfce, LXDE oder KDE) zwei gut funktionierende Ubuntu-Varianten für 
+den Raspberry Pi, deren Installation im Folgenden beschrieben wird. Man muss 
+sich somit zunächst für eine der beiden Varianten entscheiden. Für die 
+spätere Installation des I2P-Routers hat das zugrunde liegende System jedoch 
+keinen Einfluss, da der Installationsprozess in beiden Fällen identisch ist. 
+Auch in puncto Performance sind die beiden vorgestellten Ubuntu-Varianten 
+durchaus vergleichbar, solange man von der Installation von KDE unter Ubuntu 
+14.04 LTS absieht und sich für eine der leichtgewichtigen Desktopumgebungen 
+LXDE oder Xfce entscheidet. Für die meisten Nutzer sollte die zur Verfügung 
+stehende Desktopumgebung den entscheidenden Faktor bei der Auswahl 
+ausmachen. Es sei noch erwähnt, dass die Installation von Ubuntu-Mate 15.04 
+dem eher wenig erfahrenen Nutzern einfacher fallen dürfte, da der 
+Installationsprozess hier komplett in einer grafischen Oberfläche geführt 
+ist. Entscheidet man sich für Ubuntu 14.04 LTS, müssen die grafische 
+Oberfläche und einige Treiber von Hand nachinstalliert werden.
+
+<div class="p"><!----></div>
+
+<h2>Voraussetzungen</h2>
+
+
+Für die Installation wird benötigt:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Ein Raspberry Pi 2 Model B (die Vorgängermodelle der Raspberry Pi 1-Serie 
+werden aufgrund der fehlenden ARM-v7 Architektur nicht unterstützt!)</li>
+<li> Eine ausreichend große und schnelle microSD-Karte (empfohlen: Class 10
+mit min. 6 GB bei Nutzung mit Desktop-Oberfläche und 2 GB Swap-Datei)</li>
+<li> Stromversorgung für den Pi</li>
+<li> HDMI-Kabel zum Anschluss des Monitors</li>
+<li> Eingabegeräte</li>
+<li> Ethernet-Kabel oder kompatibler Wlan-Stick</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<h2>Installation von Ubuntu Mate 15.04</h2>
+
+
+Seit März 2015 gibt es eine Version von Ubuntu Mate 15.04 für den Raspberry 
+Pi 2. Diese basiert auf der armhf-Version von Ubuntu und nicht (wie andere 
+Ubuntu-Varianten für den Raspberry-Pi) auf Ubuntu Snappy Core. Der 
+Installationsprozess ist sehr einfach und komplett in einer grafischen 
+Oberfläche geführt. Während der erste Boot-Vorgang und der 
+Installationsprozess noch recht langsam sind, läuft das System nach dem 
+ersten Neustart im Anschluss der Installation deutlich performanter.
+
+<div class="p"><!----></div>
+
+<h3>Herunterladen und Entpacken des Images</h3>
+
+
+Zunächst lädt man sich von der offiziellen 
+Ubuntu-Mate-Homepage&nbsp;<a href="https://ubuntu-mate.org/raspberry-pi/">[3]</a> das 
+entsprechende Archiv herunter. Dieses enthält das Image, das später auf die 
+microSD-Karte übertragen wird. Empfehlenswert aber optional ist die Prüfung 
+des MD5-Hashwertes nach dem Download. Im Anschluss wird das heruntergeladene 
+Archiv entpackt und man erhält die Datei 
+<b><tt class="big">ubuntu-mate-15.04-desktop-armhf-raspberry-pi-2.img</tt></b>.
+
+<div class="p"><!----></div>
+
+<h2>Image auf microSD-Karte übertragen</h2>
+
+
+Um das Image auf die microSD-Karte zu schreiben, wird der Befehl <b><tt class="big">dd</tt></b> 
+verwendet. Bevor dies geschieht, muss zunächst mit eingebundener 
+microSD-Karte geprüft werden, welchen Gerätenamen die Karte besitzt. Dazu 
+kann man zum Beispiel den Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ df -h</div>
+
+<div class="p"><!----></div>
+
+
+benutzen. Hat man den Gerätenamen (<b><tt class="big">sdx</tt></b>) gefunden, kann das Image nach dem 
+Aushängen aller Partitionen der microSD-Karte auf die Karte geschrieben 
+werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd bs=4M if=/Pfad/zu/Image/ubuntu-mate-15.04-desktop-armhf-raspberry-pi-2.img of=/dev/sdx</div>
+
+<div class="p"><!----></div>
+
+
+Wichtig dabei ist, dass keine einzelne Partition (<b><tt class="big">sdx1</tt></b>, <b><tt class="big">sdx2</tt></b> etc.), 
+sondern die gesamte Karte (<b><tt class="big">sdx</tt></b>) beschrieben wird. Dieser Vorgang kann 
+sehr lange dauern und der Befehl gibt in dieser Zeit keinen Output zurück! 
+Falls man den Fortschritt der Operation sehen möchte, öffnet man ein zweites 
+Terminal und führt dort den folgenden <b><tt class="big">pkill</tt></b>-Befehl aus:
+
+<div class="p"><!----></div>
+
+<div class="command"># pkill -USR1 -n -x dd</div>
+
+<div class="p"><!----></div>
+
+
+Der Befehl <b><tt class="big">dd</tt></b> wird zudem ohne weitere Rückfragen bzw. Sicherheitsabfragen 
+ausgeführt. Bei unachtsamen Aufrufen könnten eventuell wichtige Daten auf 
+anderen Geräten überschrieben werden!
+
+<div class="p"><!----></div>
+
+<h3>Ext4-Partition vergrößern</h3>
+
+
+Nachdem das Image auf die microSD-Karte übertragen ist, befindet sich dort 
+eine kleine Ext4-Partition. Diese muss nun vergrößert werden, damit später 
+genügend Platz für die weitere Installationen vorhanden ist. Am einfachsten 
+ist dies mit GParted zu realisieren. Falls keine weiteren Partitionen auf 
+der microSD-Karte benötigt werden, kann die Ext4-Partition auf den gesamten 
+verfügbaren Platz vergrößert werden. 
+
+<div class="p"><!----></div>
+
+<h3>System starten</h3>
+
+
+Hat man das Image auf die microSD-Karte geschoben und die Ext4-Partition 
+entsprechend vergrößert, kann man die microSD-Karte in den Raspberry Pi einlegen 
+und der Pi kann gestartet werden. Hierzu gibt es keinen Schalter. Der Start 
+erfolgt, sobald man dem Pi Strom zuführt.
+
+<div class="p"><!----></div>
+Nun folgt man dem grafischen Installationsprozess und definiert die 
+gewünschte Sprache, Zeitzone sowie Benutzername und Passwort. Bei der 
+Passworteingabe ist bei Sonderzeichen darauf zu achten, dass das 
+Tastaturlayout im Installationsprozess noch auf Englisch gestellt ist. Nach 
+dem ersten Systemstart kann das Layout über 
+„<em>System -&#62; Einstellungen -&#62; Hardware -&#62; Tastatur</em>“ angepasst werden.
+
+<div class="p"><!----></div>
+Nach erfolgreicher Installation sollte man das System zunächst auf den aktuellen 
+Stand bringen und führt im Terminal die entsprechenden Befehle aus.
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get update<br />
+# apt-get upgrade<br />
+# apt-get dist-upgrade</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Installation von Ubuntu 14.04 LTS als Grundsystem</h2>
+
+
+Die zugrunde liegende Ubuntu-14.04-LTS-Variante baut auf Ubuntu Core auf und 
+kommt out of the box ohne grafische Oberfläche daher. Wahlweise kann jedoch 
+Xfce, LXDE oder KDE nachinstalliert werden. KDE ist allerdings selbst mit 
+abgeschalteten Desktop-Effekten sehr langsam und die Installation von Unity 
+ist aufgrund der fehlenden 3-D-Beschleunigung nicht möglich. Nach einem 
+direkten Vergleich hat sich LXDE subjektiv als performanteste Oberfläche 
+herausgestellt.
+
+<div class="p"><!----></div>
+Die portierte Ubuntu-Version wurde von Ryan Finnie, einem 
+Canonical-Mitarbeiter, erstellt und ist nicht offiziell. Sie wird auf Ryan 
+Finnies 
+Blog&nbsp;<a href="http://www.finnie.org/2015/02/16/raspberry-pi-2-update-ubuntu-14-04-image-available/">[4]</a> 
+sowie im Ubuntu-Wiki&nbsp;<a href="https://wiki.ubuntu.com/ARM/RaspberryPi">[5]</a> zur 
+Verfügung gestellt, jedoch mit dem ausdrücklichen Hinweis darauf, dass eine 
+Versorgung mit Sicherheitsupdates im Gegensatz zum originalen LTS-Kernel 
+nicht garantiert wird.
+
+<div class="p"><!----></div>
+
+<h3>Herunterladen und Verarbeiten des Image</h3>
+
+
+Zunächst lädt man sich auf einer der beiden zuvor genannten Quellen das 
+Image herunter und entpackt es. Im Anschluss überträgt man die so erhaltene 
+Datei <b><tt class="big">yyyy-mm-dd-ubuntu-trusty.img</tt></b> auf die SD-Karte, vergrößert die 
+Ext4-Partition auf mindestens 6 GB und startet den Raspberry Pi mit der 
+eingesteckten SD-Karte. Die genauen Arbeitsschritte hierbei sind den zuvor 
+beschriebenen Schritten im Abschnitt „Ubuntu-Mate als Grundsystem“ oben zu 
+entnehmen und können analog durchgeführt werden.
+
+<div class="p"><!----></div>
+
+<h3>Erste Anmeldung</h3>
+
+
+Nach dem Start des Raspberry Pi mit der vorbereiteten microSD-Karte kann man 
+sich mit dem Nutzername <b><tt class="big">ubuntu</tt></b> und Passwort <b><tt class="big">ubuntu</tt></b> in die 
+Kommandozeile einloggen. Diesen voreingestellten Benutzer sollte man löschen 
+und einen neuen Nutzer samt neuem Passwort erstellen. Dazu legt man zunächst 
+den neuen Nutzer an und fügt ihn einigen Gruppen (darunter <b><tt class="big">sudo</tt></b>) hinzu:
+
+<div class="p"><!----></div>
+
+<div class="command"># adduser BENUTZERNAME<br />
+# usermod -G sudo,audio,adm,video,plugdev BENUTZERNAME</div>
+
+<div class="p"><!----></div>
+
+
+Nun kann man sich als Nutzer <b><tt class="big">ubuntu</tt></b> abmelden
+
+<div class="p"><!----></div>
+
+<div class="command">$ logout</div>
+
+<div class="p"><!----></div>
+
+
+und sich mit dem neuen Benutzernamen und neuen Passwort anmelden. Im 
+Anschluss löscht man den voreingestellten Benutzer <b><tt class="big">ubuntu</tt></b> samt 
+Home-Verzeichnis:
+
+<div class="p"><!----></div>
+
+<div class="command"># deluser --remove-home ubuntu</div>
+
+<div class="p"><!----></div>
+
+
+In den nächsten Schritten werden nun noch einige Einstellungen vorgenommen, 
+die grafische Oberfläche eingerichtet und Raspberry Pi spezifische Treiber 
+nachinstalliert.
+
+<div class="p"><!----></div>
+
+<h3>Locale-Einstellungen anpassen</h3>
+
+
+Für die Benutzung des englischen Desktops mit deutscher Tastaturbelegung 
+sollten zunächst folgende Befehle ausgeführt werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># locale-gen en_US.UTF-8<br />
+# locale-gen de_DE.UTF-8<br />
+# dpkg-reconfigure keyboard-configuration</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>System aktualisieren und gewünschten Desktop installieren</h3>
+
+
+Nach einem Update mittels
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get update<br />
+# apt-get upgrade<br />
+# apt-get dist-upgrade</div>
+
+<div class="p"><!----></div>
+
+
+kann man sich je nach Wunsch eine grafische Oberfläche installieren. Dieser 
+Vorgang kann einige Zeit in Anspruch nehmen. Für die Installation gibt man 
+in die Konsole Folgendes ein:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Für LXDE: <br /><b><tt class="big">sudo apt-get install lubuntu-desktop</tt></b></li>
+<li> Für Xfce: <br /><b><tt class="big">sudo apt-get install xubuntu-desktop</tt></b></li>
+<li> Für KDE (aus Gründen der Performance nicht empfohlen): <b><tt class="big">sudo apt-get install kubuntu-desktop</tt></b></li>
+</ul>
+
+<div class="p"><!----></div>
+Nach der Installation kann der Pi mit dem Befehl
+
+<div class="p"><!----></div>
+
+<div class="command"># shutdown -r now</div>
+
+<div class="p"><!----></div>
+
+
+neu gestartet werden. Beim erneuten Hochfahren kann man sich wie gewohnt an 
+der Benutzeroberfläche anmelden.
+
+<div class="p"><!----></div>
+
+<h3>Zusätzlichen Grafiktreiber installieren</h3>
+
+
+Mit 
+fbturbo&nbsp;<a href="https://launchpad.net/~fo0bar/+archive/ubuntu/rpi2-staging/+build/7006288">[6]</a>
+ist ein Beschleunigter X.Org-Grafiktreiber für den Pi verfügbar, 
+den man installieren und nutzen sollte. Die Installation erfolgt mit:
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get install xserver-xorg-video-fbturbo</div>
+
+<div class="p"><!----></div>
+
+
+Im Anschluss muss man eine <b><tt class="big">xorg.conf</tt></b> erstellen und so konfigurieren, dass 
+der Treiber auch verwendet wird. Dazu installiert man beispielsweise den 
+Editor nano:
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get install nano</div>
+
+<div class="p"><!----></div>
+
+
+und öffnet die <b><tt class="big">/etc/X11/xorg.conf</tt></b> (Zu diesem Zeitpunkt existiert die 
+Datei noch nicht. Sie wird jedoch erzeugt, sobald man sie wie unten 
+beschrieben abspeichert.):
+
+<div class="p"><!----></div>
+
+<div class="command"># nano /etc/X11/xorg.conf </div>
+
+<div class="p"><!----></div>
+
+
+Nun fügt man die folgenden Zeilen in die Datei ein und speichert sie mit der 
+Tastenkombination „<i>Strg</i>“&nbsp;+&nbsp;„<i>X</i>“. Die Rückfrage wird nochmals mit „<i>Y</i>“ und 
+„<i>Enter</i>“ bestätigt:
+
+<div class="p"><!----></div>
+
+<div class="listing">Section "Device"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Identifier "Raspberry Pi FBDEV"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Driver "fbturbo"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Option "fbdev" "/dev/fb0"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Option "SwapbuffersWait" "true"<br />
+EndSection</div>
+
+<div class="p"><!----></div>
+
+
+Um zu prüfen, ob der Treiber auch verwendet wird, sucht man nach einem 
+Neustart in der Datei <b><tt class="big">/var/log/Xorg.0.log</tt></b> nach dem Eintrag:
+
+<div class="p"><!----></div>
+
+<div class="listing">(II)FBTURBO(0): processor: ARM Cortex-A7</div>
+
+<div class="p"><!----></div>
+
+
+Ist dieser vorhanden, wird der Treiber verwendet.
+
+<div class="p"><!----></div>
+Im Anschluss sind noch ein paar Raspberry Pi-spezifische Programme zu 
+installieren und Links zu setzen. Details dazu finden sich bei Bedarf auf 
+der Download-Seite des 
+Images&nbsp;<a href="https://wiki.ubuntu.com/ARM/RaspberryPi#Installation">[7]</a>.
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get install libraspberrypi-bin libraspberrypi-dev<br />
+# ln -s /usr /opt/vc<br />
+# apt-get install libraspberrypi-bin-nonfree</div>
+
+<div class="p"><!----></div>
+
+
+Nach einem Neustart ist der Pi fertig aufgesetzt und kann benutzt werden.
+
+<div class="p"><!----></div>
+
+<h2>Swap-Datei erzeugen</h2>
+
+
+Die beiden beschriebenen Ubuntu-Installationen besitzen standardmäßig keinen 
+Auslagerungsspeicher. Dieser kann optional z.&nbsp;B. mit dem Befehl <b><tt class="big">dphys</tt></b> in 
+einer Datei angelegt werden. Zu beachten ist, dass bei der Installation von 
+dphys automatisch eine Swap-Datei im Verzeichnis <b><tt class="big">/var</tt></b> erzeugt wird, die 
+die doppelte Größe des verfügbaren RAM-Speichers besitzt, im Falle des 
+Raspberry Pi Modell B also etwa 1,9 GB. Man sollte sich zuvor vergewissern, 
+dass ausreichend Platz auf der Ext4-Partition 
+vorhanden ist.
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get install dphys-swapfile</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Installation von JDK 8 für ARM</h2>
+
+
+Die Standard-Java-Installation auf Ubuntu nutzt auf dem Raspberry Pi keine 
+Just-in-Time Compilation (JIT) und interpretiert Java-Code byteweise. Dies 
+führt dazu, dass der I2P-Router zwar damit betrieben werden könnte, jedoch 
+eine unnötig hohe Systemlast auftritt. Aufgrund der begrenzten Ressourcen 
+des Raspberry Pi empfiehlt es sich, JDK 8 für ARM zu installieren. Diese 
+Empfehlung findet sich auch auf der Projektseite von 
+I2P&nbsp;<a href="https://geti2p.net/de/download">[8]</a>.
+
+<div class="p"><!----></div>
+Vor der Installation muss Java SE von der 
+Oracle-Seite&nbsp;<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">[9]</a>
+auf den Pi heruntergeladen werden (Variante: 32bit-Linux ARM v6/v7 Hard Float ABI).
+
+<div class="p"><!----></div>
+Im folgenden Beispiel erfolgt die Installation in den Ordner <b><tt class="big">/opt/java</tt></b>. 
+Die heruntergeladene Datei <b><tt class="big">jdk-8uVERSION-linux-arm32-vfp-hflt.tar.gz</tt></b> 
+liegt im Home-Verzeichnis des Benutzers. Falls abweichende Pfade gewünscht 
+sind, sind diese in den folgenden Codezeilen und bei späteren Einstellungen 
+im I2P-Router entsprechend anzupassen.
+
+<div class="p"><!----></div>
+Zunächst wird das Installationsverzeichnis erstellt:
+
+<div class="p"><!----></div>
+
+<div class="command"># mkdir -p -v /opt/java</div>
+
+<div class="p"><!----></div>
+
+
+Im Anschluss wird das heruntergeladene Paket im Home-Verzeichnis entpackt:
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar xvzf ~/jdk-8uVERSION-linux-arm32-vfp-hflt.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+Dabei wird das Verzeichnis <b><tt class="big">~/jdk1.8.0_VERSION</tt></b> erstellt, welches nun in 
+das Installationsverzeichnis verschoben wird:
+
+<div class="p"><!----></div>
+
+<div class="command"># mv -v ~/jdk1.8.0_VERSION /opt/java</div>
+
+<div class="p"><!----></div>
+
+
+Bei Bedarf kann die heruntergeladene Datei
+<b><tt class="big">~/jdk-8uVERSION-linux-arm32-vfp-hflt.tar.gz</tt></b> noch gelöscht werden, da sie 
+nicht mehr benötigt wird:
+
+<div class="p"><!----></div>
+
+<div class="command">$ rm ~/jdk-8uVERSION-linux-arm32-vfp-hflt.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+Um die Installation abzuschließen, muss dem System noch mitgeteilt 
+werden, dass eine neue JVM vorhanden ist und wo sich diese befindet:
+
+<div class="p"><!----></div>
+
+<div class="command"># update-alternatives --install "/usr/bin/java" "java" "/opt/java/jdk1.8.0_VERSION/bin/java" 1</div>
+
+<div class="p"><!----></div>
+
+
+Zudem muss dem System mitgeteilt werden, dass das JDK der neue systemweite 
+Standard sein soll:
+
+<div class="p"><!----></div>
+
+<div class="command"># update-alternatives --set java /opt/java/jdk1.8.0_VERSION/bin/java</div>
+
+<div class="p"><!----></div>
+
+
+Damit ist die Installation abgeschlossen. Um zu testen, ob alles funktioniert hat, kann man sich die aktuell verwendete Java-Version anzeigen lassen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ java -version<br />
+java version “1.8.0_VERSION“<br />
+Java(TM) SE Runtime Enviroment (build 1.8.0_VERSION-b27)<br />
+Java HotSpot(TM) Client VM (build 25.VERSION-b27, mixed mode</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Installation des I2P-Routers</h2>
+
+
+Grundlegendes zu I2P und seiner Installation wurde bereits in 
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 05/2013 
+beschrieben&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2013-05">[2]</a>. Aufgrund der 
+ARMv7-Architektur des Pi gibt es bei der Installation des I2P-Routers jedoch 
+kleinere Abweichungen.
+
+<div class="p"><!----></div>
+Im Folgenden wird I2P in dem Ordner <b><tt class="big">~/i2pbin</tt></b> im Homeverzeichnis des 
+Benutzers installiert. Ist ein anderer Pfad gewünscht, diesen bitte 
+entsprechend anpassen.
+
+<div class="p"><!----></div>
+
+<div class="command">$ mkdir ~/i2pbin</div>
+
+<div class="p"><!----></div>
+
+
+Ist der Ordner erstellt, lädt man sich auf der 
+I2P-Projektseite&nbsp;<a href="https://geti2p.net/en/download">[10]</a> die Linux-Variante 
+<b><tt class="big">i2pinstall_VERSION.jar</tt></b> herunter und kopiert sie in den erzeugten 
+Installationsordner. 
+<div class="p"><!----></div>
+Alternativ kann die Datei über das Terminal heruntergeladen werden (Versionsnummer anpassen):
+
+<div class="p"><!----></div>
+
+<div class="command">$ cd ~/i2pbin<br />
+$ wget http://mirror.i2p2.de/i2pinstall_VERSION.jar</div>
+
+<div class="p"><!----></div>
+
+
+Jetzt wird die Installation gestartet:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cd ~/i2pbin<br />
+$ java -jar i2pinstall_VERSION.jar -console </div>
+
+<div class="p"><!----></div>
+
+
+Werden die drei nun folgenden Dialoge mit „<i>1</i>“, „<i>Enter</i>“ und „<i>1</i>“ bestätigt, 
+erfolgt die Installation in den Ordner, in dem auch die <b><tt class="big">.jar</tt></b>-Datei liegt, 
+in diesem Fall also <b><tt class="big">~/i2pbin</tt></b>. Zudem wird im Homeverzeichnis ein 
+versteckter Ordner <b><tt class="big">~/.i2p</tt></b> angelegt.
+
+<div class="p"><!----></div>
+Theoretisch könnte der Router nun über den Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ ~/i2pbin/i2prouter start</div>
+
+<div class="p"><!----></div>
+
+
+gestartet werden. Aufgrund der ARM-Architektur funktioniert jedoch der 
+Java-Service-Wrapper nach der Standardinstallation nicht, weswegen man den 
+Router zunächst nicht über <b><tt class="big">~/i2pbin/i2prouter</tt></b> starten kann, sondern nur 
+über den direkten Aufruf von <b><tt class="big">~/i2pbin/runplain.sh</tt></b>. Hier ist also noch etwas Handarbeit nötig, 
+um auch <b><tt class="big">~/i2pbin/i2prouter</tt></b> zum Laufen zu bringen.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Bei Start des i2p-Routers über die <b><tt class="big">runplain.sh</tt></b> wird der 
+Java-Service-Wrapper nicht benutzt und somit vom Router die Einstellungen in 
+der <b><tt class="big">~/i2pbin/wrapper.config</tt></b> ignoriert. Ärgerlich ist das beispielsweise 
+für diejenigen Nutzer, die z.&nbsp;B. aufgrund hoher Bandbreiteneinstellungen den 
+Wert <b><tt class="big">wrapper.java.maxmemory</tt></b> erhöhen wollen.
+
+<div class="p"><!----></div>
+
+<h2>Neuinstallation des Java-Service-Wrappers</h2>
+
+
+Hierzu geht man wie auf der 
+I2P-Projektseite&nbsp;<a href="https://geti2p.net/en/misc/manual-wrapper">[11]</a> beschrieben 
+vor. Zunächst lädt man sich von Tanuki 
+Software&nbsp;<a href="http://wrapper.tanukisoftware.com/doc/english/download.jsp#stable">[12]</a> 
+die aktuelle Version des Java-Service-Wrappers für Linux herunter 
+(32bit-armhf und aus lizenzrechtlichen Gründen die Community-Variante!) und 
+kopiert sie in das Homeverzeichnis.
+
+<div class="p"><!----></div>
+Anschließend wechselt man in einem Terminal in das Homeverzeichnis und 
+entpackt den Wrapper (Versionsbezeichnung beachten):
+
+<div class="p"><!----></div>
+
+<div class="command">$ cd<br />
+$ tar xzf wrapper-linux-armhf-32-VERSION.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+Man erhält das Verzeichnis <b><tt class="big">~/wrapper-linux-armhf-32-VERSION</tt></b>. Jetzt werden 
+einige Dateien aus dem neuen Wrapper-Verzeichnis in den Installationsordner 
+von I2P kopiert (der erste <b><tt class="big">cp</tt></b>-Befehl ersetzt die ausführbare Datei <b><tt class="big">i2psvc</tt></b> durch den Wrapper):
+
+<div class="p"><!----></div>
+
+<div class="command">$ cp ~/wrapper-linux-armhf-32-VERSION/bin/wrapper ~/i2pbin/i2psvc<br />
+$ cp ~/wrapper-linux-armhf-32-VERSION/lib/wrapper.jar ~/i2pbin/lib/<br />
+$ cp ~/wrapper-linux-armhf-32-VERSION/lib/libwrapper.so ~/i2pbin/lib/</div>
+
+<div class="p"><!----></div>
+
+
+Die Installation des Wrappers ist damit beendet. Vor dem Start des Routers 
+muss man in der Datei <b><tt class="big">~/i2pbin/wrapper.config</tt></b> noch den JDK 8 für ARM 
+Installationspfad angeben. Dazu editiert man die Datei wie folgt (die Kommentarzeichen <b><tt class="big">#</tt></b> entfernen, den String 
+<b><tt class="big">VERSION</tt></b> in <b><tt class="big">jdk1.8.0_VERSION</tt></b> entsprechend anpassen):
+
+<div class="p"><!----></div>
+
+<div class="listing"># Java Application<br />
+# wrapper.java.command=java<br />
+# Specify a specific java binary:<br />
+set.JAVA_HOME=/opt/java/jdk1.8.0_VERSION<br />
+wrapper.java.command=%JAVA_HOME%/bin/java<br />
+# Gentoo uses the following:</div>
+
+<div class="p"><!----></div>
+
+
+Nun sollte der I2P-Router auch über den Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ ~/i2pbin/i2prouter start</div>
+
+<div class="p"><!----></div>
+
+
+gestartet werden können. Bei eventuell auftretenden Problemen kann ein Blick 
+in die Logdatei hilfreich sein, die sich in <b><tt class="big">/tmp/wrapper.log</tt></b> befindet.
+
+<div class="p"><!----></div>
+Damit ist die Installation des I2P-Routers abgeschlossen und er kann in 
+vollem Umfang genutzt werden.
+
+<div class="p"><!----></div>
+
+<h2>Anregungen zur Optimierung</h2>
+
+
+Die folgenden Tipps erläutern die gängigsten Möglichkeiten, die Lese- und 
+Schreibvorgänge auf die verwendete microSD-Karte durch das System zu 
+reduzieren, um somit die Lebensdauer der Karte zu erhöhen. Ihre Umsetzung 
+ist optional und je nach weiterer Verwendung bzw. Auslastung des Raspberry 
+Pi nicht immer ratsam.
+
+<div class="p"><!----></div>
+
+<h3>I2P Log-Dateien in Ram auslagern</h3>
+
+
+Man kann die Log-Dateien des I2P-Routers in den RAM auslagern. 
+Entscheidet man sich dafür, muss man in der Datei <b><tt class="big">~/i2pbin/i2prouter</tt></b> in 
+der Variable <b><tt class="big">I2PTEMP</tt></b> den Pfad angeben, in dem die zuvor angelegten 
+RAM-Disk eingebunden wurde. Zudem werden die Variablen <b><tt class="big">PIDDIR</tt></b> und 
+<b><tt class="big">LOGDIR</tt></b> angepasst:
+
+<div class="p"><!----></div>
+
+<div class="listing">I2PTEMP="Pfad/zur/Ram-Disk"<br />
+PIDDIR="$I2PTEMP"<br />
+LOGDIR="$I2PTEMP/logs"</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Journaling deaktivieren</h3>
+
+
+Über den Sinn und Unsinn dieses Schrittes kann man streiten. Letztendlich 
+muss jeder Nutzer für sich selbst entscheiden, ob er die Gefahr eines möglichen 
+Datenverlustes für den (eher geringen) Performance-Vorteil in Kauf nehmen möchte. 
+Entscheidet man sich dafür, kann man das Journaling bei ausgebundener 
+Raspberry-Pi-Systempartition wie folgt deaktivieren (die Partitionsbezeichnung 
+<b><tt class="big">sdx1</tt></b> muss eventuell entsprechend angepasst werden):
+
+<div class="p"><!----></div>
+
+<div class="command"># tune2fs -O ^has_journal /dev/sdx1</div>
+
+<div class="p"><!----></div>
+
+
+Anschließend überprüft man, ob das Journaling tatsächlich deaktiviert wurde. 
+In diesem Fall sollte unter <b><tt class="big">Filesystem features</tt></b> nun kein <b><tt class="big">has_journal</tt></b> 
+mehr aufgeführt sein:
+
+<div class="p"><!----></div>
+
+<div class="command"># tune2fs -l /dev/sdx1</div>
+
+<div class="p"><!----></div>
+
+
+Abschließend wird das Filesystem noch auch Fehler überprüft.
+
+<div class="p"><!----></div>
+
+<div class="command"># e2fsck -f /dev/sdx1</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Swap-Datei auslagern/deaktivieren/löschen</h3>
+
+
+Das Schreiben von Daten aus dem Arbeitsspeicher in die Swap-Datei verursacht 
+viele Schreibvorgänge und verschlechtert die Performance des Systems. Nach 
+Möglichkeit sollte man das System so betreiben, dass ein 
+Auslagerungsspeicher nicht nötig ist. In diesem Fall kann man die Swap-Datei 
+deaktivieren bzw. löschen. Sollen auf dem System jedoch weitere 
+speicherhungrige Programme laufen, kann man die Swap-Datei auch auf eine 
+externe Festplatte auslagern, um die microSD-Karte zu schonen.
+
+<div class="p"><!----></div>
+Wie man diese 3 Varianten unter Verwendung von <b><tt class="big">dphys</tt></b> realisiert, ist in 
+der Manpage von 
+dphys&nbsp;<a href="http://manpages.ubuntu.com/manpages/trusty/man8/dphys-swapfile.8.html">[13]</a> 
+beschrieben.
+
+<div class="p"><!----></div>
+
+<h2>Ältere I2P-Versionen installieren</h2>
+
+
+Zunächst sei deutlich davon abgeraten, ältere Versionen des I2P-Routers zu 
+installieren. Sollte dies dennoch nötig sein, muss bei I2P-Versionen kleiner 0.9.20 die Bibliothek <b>jbigi</b> 
+noch selbst kompiliert werden. Sie optimiert kryptografische Operationen 
+innerhalb des I2P-Routers und beschleunigt diese deutlich. Bei älteren 
+Versionen liest der I2P-Installer die CPU-Version des Raspberry Pi nicht 
+korrekt aus und verwendet somit die falsche vorkonfigurierte ARM-Version der 
+jbigi-Bibliothek. Nähere Informationen hierzu sind dem
+ubuntuusers.de-Wiki&nbsp;<a href="https://wiki.ubuntuusers.de/Howto/I2P_auf_dem_Raspberry_Pi_2">[14]</a> 
+zu entnehmen.
+
+<div class="p"><!----></div>
+
+<h2>Trivia</h2>
+
+
+Unabhängig davon, was man in den Weiten des I2P-Netzwerkes vor hat, sollte 
+man sich stets bewusst machen, dass auch hier keine 100-prozentige 
+Sicherheit und Anonymität gewährleistet werden kann. Zum einen befindet sich 
+I2P noch in der Beta-Phase und ist mit (sehr grob geschätzten) 37000 Routern 
+ein noch recht kleines Netzwerk. Zum anderen ist das Vorhaben, eine auf IP 
+und TCP/UDP basierende Kommunikation komplett sicher und anonym zu gestalten, 
+meines Erachtens nach eine Utopie. Diese Protokolle wurden in ihrem 
+historischen Kontext schlicht nicht dafür geschaffen, dies zu gewährleisten. 
+Es sind jedoch Ansätze wie beispielsweise I2P, die – richtig angewendet – 
+das derzeit höchstmögliche Maß an Sicherheit und Anonymität gewährleisten 
+können. Man kann also durchaus nach bestem Wissen und Gewissen dazu 
+beitragen, diese (aktiv) zu unterstützen.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://de.wikipedia.org/wiki/I2P"><tt class="big">https://de.wikipedia.org/wiki/I2P</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2013-05"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2013-05</tt></a><br />
+[3] <a href="https://ubuntu-mate.org/raspberry-pi/"><tt class="big">https://ubuntu-mate.org/raspberry-pi/</tt></a><br />
+[4] <a href="http://www.finnie.org/2015/02/16/raspberry-pi-2-update-ubuntu-14-04-image-available/"><tt class="big">http://www.finnie.org/2015/02/16/raspberry-pi-2-update-ubuntu-14-04-image-available/</tt></a><br />
+[5] <a href="https://wiki.ubuntu.com/ARM/RaspberryPi"><tt class="big">https://wiki.ubuntu.com/ARM/RaspberryPi</tt></a><br />
+[6] <a href="https://launchpad.net/~fo0bar/+archive/ubuntu/rpi2-staging/+build/7006288"><tt class="big">https://launchpad.net/~fo0bar/+archive/ubuntu/rpi2-staging/+build/7006288</tt></a><br />
+[7] <a href="https://wiki.ubuntu.com/ARM/RaspberryPi#Installation"><tt class="big">https://wiki.ubuntu.com/ARM/RaspberryPi#Installation</tt></a><br />
+[8] <a href="https://geti2p.net/de/download"><tt class="big">https://geti2p.net/de/download</tt></a><br />
+[9] <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"><tt class="big">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</tt></a><br />
+[10] <a href="https://geti2p.net/en/download"><tt class="big">https://geti2p.net/en/download</tt></a><br />
+[11] <a href="https://geti2p.net/en/misc/manual-wrapper"><tt class="big">https://geti2p.net/en/misc/manual-wrapper</tt></a><br />
+[12] <a href="http://wrapper.tanukisoftware.com/doc/english/download.jsp#stable"><tt class="big">http://wrapper.tanukisoftware.com/doc/english/download.jsp#stable</tt></a><br />
+[13] <a href="http://manpages.ubuntu.com/manpages/trusty/man8/dphys-swapfile.8.html"><tt class="big">http://manpages.ubuntu.com/manpages/trusty/man8/dphys-swapfile.8.html</tt></a><br />
+[14] <a href="https://wiki.ubuntuusers.de/Howto/I2P_auf_dem_Raspberry_Pi_2"><tt class="big">https://wiki.ubuntuusers.de/Howto/I2P_auf_dem_Raspberry_Pi_2</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Manuel Haake</b>
+nutzt seit vielen Jahren BSD- und Linux-Systeme. Er interessiert sich für 
+Open-Source-Projekte zum Thema Kryptographie, Anonymisierung und Pentesting.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=I2P auf dem Raspberry Pi 2&amp;body=freiesMagazin 11/2015%0AI2P auf dem Raspberry Pi 2%0AManuel Haake%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=I2P auf dem Raspberry Pi 2#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_rezension_sphinx" name="fm_15_11_rezension_sphinx">Rezension: Software-Dokumentation mit Sphinx</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>S</b><b>phinx&nbsp;<a href="http://sphinx-doc.org/">[1]</a> gilt im Python-Umfeld als der 
+Quasi-Standard zum Erstellen von Dokumentationen von Software. Aber auch in 
+anderen Programmiersprachen und Umgebungen erfreut sich Sphinx einer 
+gewissen Beliebtheit. Das vorliegende Buch „Software-Dokumentation mit 
+Sphinx“&nbsp;<a href="http://literatur.hasecke.com/sachbuecher/software-dokumentation-mit-sphinx">[2]</a> 
+gibt einen umfassenden Einblick in die Nutzung dieses Tools.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Autor des Buches, Jan Ulrich Hasecke, für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Die Popularität von Sphinx rührt daher, dass die Software eben speziell zur 
+Erstellung von (Software-)Dokumentation entwickelt wurde und auch in Sachen 
+Ausgabeformate recht flexibel ist. So ist die Druckvorlage für dieses Buch 
+auch mit Sphinx erstellt worden.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Zu Beginn des 224-seitigen Buchs wird die Installation von Sphinx erklärt, 
+sowohl für Linux als auch für Windows und MacOS X. Es folgt ein kurzes 
+Kapitel dazu, wie ein Dokumentationsprojekt angelegt wird, bevor die Erstellung 
+der Dokumentation an sich erläutert wird. Der Autor gibt hier zuerst eine 
+Einführung in 
+reStructuredText&nbsp;<a href="https://de.wikipedia.org/wiki/ReStructuredText">[3]</a>, der 
+Auszeichnungssprache, welche von Sphinx genutzt wird. Weitere Kapitel 
+erklären dann, mit welchen Mitteln Dokumente strukturiert werden können, wie 
+man Tabellen erstellt und wie Formeln, Grafiken und Graphen eingebunden 
+werden können.
+
+<div class="p"><!----></div>
+Da Sphinx ursprünglich speziell für die Dokumentation von Software 
+entwickelt wurde, erklärt das Buch natürlich auch, welche Mittel Sphinx 
+dafür bietet. Der Schwerpunkt liegt hier auf Python, aber es gibt auch 
+Erklärungen, die sich auf C/C++ und JavaScript beziehen. Außerdem wird 
+gezeigt, wie man aus dem Dokument heraus auf Quellcode verweist, 
+welcher bei GitHub oder Bitbucket liegt.
+
+<div class="p"><!----></div>
+Weitere Kapitel erklären, welche Möglichkeiten es zur Erstellung des 
+Inhaltsverzeichnisses gibt und wie man ein Stichwortverzeichnis oder auch 
+einen Glossar erstellt. Auch auf das Thema Mehrsprachigkeit von Dokumentationen 
+wird kurz eingegangen.
+
+<div class="p"><!----></div>
+Das Überführen der fertigen Dokumentation in das gewünschte Ausgabeformat, 
+und möglichen Optionen dabei, werden natürlich auch in mehreren Kapiteln behandelt. 
+Der Schwerpunkt liegt hier auf den Formaten HTML, EPUB und LaTeX/PDF, 
+weitere mögliche Formate werden aber auch zumindest angerissen.
+
+<div class="p"><!----></div>
+Den Abschluss des Buchs bildet ein recht ausführlicher Index, welcher das 
+Nachschlagen von Informationen erleichtert.
+
+<div class="p"><!----></div>
+
+<h2>Für wen ist das Buch geeignet?</h2>
+
+
+Das Buch ist für alle geeignet, die einen fundierten und umfassenden 
+Einsteig in die Erstellung von Dokumentation mit Sphinx suchen. Erklärt wird 
+alles, was benötigt wird, um Dokumente mit Sphinx zu generieren. Da das Buch 
+aber auch fortgeschrittene Themen behandelt und auch die vielen Optionen des Tools
+recht ausführlich erläutert, kann es später auch immer wieder als 
+Nachschlagewerk dienen.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Insgesamt liest sich das Buch recht flüssig und kurzweilig. Der Autor versteht es 
+sehr gut, Inhalte kompakt und verständlich zu erklären, sodass so gut wie 
+keine Fragen offen bleiben. Wo immer passend und nötig, gibt das Buch Links 
+auf Webseiten an, welche ergänzenden Informationen zu dem gerade Erläuterten 
+geben.
+
+<div class="p"><!----></div>
+An vielen Stellen im Buch findet man kurze Beispiele zu der von Sphinx 
+verwendeten Auszeichnungssprache und den Ergebnissen, welche durch diese erzeugt
+werden. Dies hilft das gerade Erklärte besser nachzuvollziehen und zu visualisieren.
+
+<div class="p"><!----></div>
+Alle Kapitel sind in sich abgeschlossen, sodass Kapitel zu Themen, welche 
+für den jeweiligen Leser nicht von Interesse sind, ohne Probleme 
+übersprungen werden können. Die Verständlichkeit des Buchs leidet darunter 
+nicht.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch „Software-Dokumentation mit Sphinx“ ist ein rundum gelungenes Buch 
+zu diesem Thema, welche sowohl eine gute Einführung bietet als auch später 
+als Nachschlagewerk dienen kann.
+
+<div class="p"><!----></div>
+Grundsätzlich findet man wohl auch alle Information im Internet, jedoch 
+nicht so kompakt zusammengefasst wie im Buch und auch nicht unbedingt in 
+dieser Ausführlichkeit in deutscher Sprache.
+
+<div class="p"><!----></div>
+Wer sich mit Sphinx und dem Thema Software-Dokumentation auseinander setzen möchte, 
+dem kann das Buch uneingeschränkt empfohlen werden.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i>
+Da es schade wäre, wenn das Buch bei Jochen Schnelle nur im
+Regal steht, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Auch wenn Sphinx zu Dokumentation von Software sehr populär ist, so ist die Statue „Große Sphinx von Gizeh“ in Ägypten etwas bekannter. Welches markante Körperteil fehlt der Statue seit 1378?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>8. November 2015, 23:59 Uhr</b>
+über die Kommentarfunktion oder per E-Mail an <img src="freiesMagazin-2015-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />
+geschickt werden. Die Kommentare werden bis zum Ende der
+Verlosung nicht freigeschaltet. Das Buch wird unter allen
+Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Software-Dokumentation mit Sphinx&nbsp;<a href="http://literatur.hasecke.com/sachbuecher/software-dokumentation-mit-sphinx">[2]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Jan Ulrich Hasecke </td></tr>
+<tr><td><b>Verlag</b> </td><td>CreateSpace Independent Publishing Platform </td></tr>
+<tr><td><b>Umfang</b> </td><td>224 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1497448681 </td></tr>
+<tr><td><b>Preis</b> </td><td>24,51 Euro (Print), 8,66 Euro (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://sphinx-doc.org/"><tt class="big">http://sphinx-doc.org/</tt></a><br />
+[2] <a href="http://literatur.hasecke.com/sachbuecher/software-dokumentation-mit-sphinx"><tt class="big">http://literatur.hasecke.com/sachbuecher/software-dokumentation-mit-sphinx</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/ReStructuredText"><tt class="big">https://de.wikipedia.org/wiki/ReStructuredText</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.com/">Webseite</a>)
+hat Sphinx auch schon für die Dokumentation eigener Software-Projekte eingesetzt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Sphinx&amp;body=freiesMagazin 11/2015%0ARezension: Sphinx%0AJochen Schnelle%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Rezension: Sphinx#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_rezension_software_testing" name="fm_15_11_rezension_software_testing">Rezension: Software Testing – Concepts and Operations</a></font></h1>von Sujeevan Vijayakumaran
+
+<div class="p"><!----></div>
+    <b>D</b><b>as Buch „Software Testing – Concepts and 
+Operations“&nbsp;<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118662873,subjectCd-CSJ0.html">[1]</a> 
+ist ein englischsprachiges Fachbuch, welches von den beiden Professoren Ali 
+Mili und Fairouz Tchier geschrieben wurde.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Wiley für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das Buch unterteilt sich in fünf Teile mit insgesamt 16 Kapiteln. Die fünf 
+Teile umfassen knapp 400 Seiten. 
+
+<div class="p"><!----></div>
+Der erste Teil umfasst drei Kapitel und gibt einen Einstieg in die Thematik 
+des Software Testings. Im ersten Kapitel geht es zunächst um Software 
+Engineering an sich, im zweiten Kapitel werden Qualitätsattribute 
+von Software beschrieben. Abgeschlossen wird der erste Teil mit dem dritten Kapitel, 
+in dem es erstmals um Software Testing geht, ganz speziell um den Software Testing 
+Lifecycle.
+
+<div class="p"><!----></div>
+Der zweite Teil dreht sich um die Grundlagen des Software Testings, 
+beginnend mit den Software-Spezifikationen. Anschließend folgt ein weiteres 
+Kapitel über die Korrektheit und die Verifikation von Programmen. Das 
+sechste Kapitel handelt von den verschiedenen Fehlerarten. Abgeschlossen wird 
+der zweite Teil mit einem Kapitel über „Software Testing Taxonomy“, welches 
+systematische Test-Aktivitäten behandelt.
+
+<div class="p"><!----></div>
+Um Software zu testen, werden sehr häufig Testdaten benötigt. Das ist auch 
+Thema des dritten Teil des Buches, beginnend mit einem Kapitel über die 
+generellen Konzepte der Testdaten-Generierung. So gibt es verschiedene Arten 
+von Testdaten, die etwa die Korrektheit bei korrekten und falschen Daten 
+richtig feststellen oder auch um die Robustheit bei fehlerhaften Daten zu 
+prüfen. Das neunte Kapitel behandelt die funktionalen Kriterien der 
+Testdaten-Generierung. So kann man Daten generieren, indem man den Quellcode 
+analysiert oder durch die Analyse des Programmes. Abgeschlossen wird die 
+Thematik der Testdaten-Generierung mit einem Kapitel über die strukturellen 
+Kriterien.
+
+<div class="p"><!----></div>
+Der vorletzte Teil behandelt das Deployment von Tests und der Analyse. Dies 
+beginnt mit „Test Oracle Design“, in dem der Tester ein Programm anhand von 
+der Spezifikation und Testdaten testen soll. Im Anschluss folgt im zweiten 
+Kapitel die Erläuterung, wie man mit den generierten Testdaten einen Test 
+Driver entwickelt. Bei der abschließenden Testausgaben-Analyse geht es 
+prinzipiell darum, was man aus den Ergebnissen erkennen kann.
+
+<div class="p"><!----></div>
+Das Buch schließt mit einem Teil über Test-Management ab. So geht es 
+zunächst um die gegebenen Metriken für das Testen und anschließend um 
+verschiedene Software Testing Tools wie CppTest, Selenium, JMeter und JUnit. 
+Das letzte Kapitel befasst sich mit dem Testen im Produktentwicklungszyklus.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das Buch wurde von zwei Professoren geschrieben, die an zwei verschiedenen 
+Universitäten lehren. Daraus resultiert auch, dass das Buch als Lehrbuch 
+angedacht ist und sich sehr von generellen IT-Fachbüchern unterscheidet.
+
+<div class="p"><!----></div>
+Es 
+ist vollständig in Englisch verfasst und ist äußerst mathematisch. Jedes 
+Kapitel beginnt mit einer kurzen Einführung in das Thema und anschließend 
+folgt sehr viel Theorie, kombiniert mit hoher Mathematik. Personen mit 
+mittelmäßigen Englisch- und Mathematik-Kenntnissen haben es eher schwierig, 
+dem Buch etwas abzugewinnen. Ein gutes mathematisches Verständnis ist 
+deswegen notwendig, weil das ganze Thema vor allem mathematisch bewiesen 
+wird. Insbesondere muss ein Verständnis von Automaten und formalen Sprachen 
+vorhanden sein.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Das komplette Buch umfasst größtenteils nur Theorie. Diese wird, wie schon 
+zuvor erwähnt, anhand von mathematischen Funktionen erklärt. An vielen 
+Stellen wird dies auch mittels Programmcode in der Sprache C 
+erläutert. 
+Jemand, der eher die 
+Tools zum Testen sucht, der kann dem Buch kaum etwas 
+abgewinnen, denn der Fokus liegt ganz klar auf dem theoretischen Verständnis 
+des Software Testing – was sinnvoll ist, um zu verstehen, wie man Software 
+korrekt testen muss, um sowohl funktionale Korrektheit, Stabilität und so weiter 
+zu gewährleisten.
+
+<div class="p"><!----></div>
+Mit knapp 100 Euro ist der Preis des Buches sehr hoch angesetzt. Es richtet 
+sich also eher an die Leute, die sich intensiv mit dem Thema beschäftigen 
+und es im Detail auch in der Theorie mit allen mathematischen Grundlagen 
+verstehen wollen. Für diese kleine Gruppe eignet sich das Buch 
+ziemlich gut, 
+für alle anderen ist es vermutlich eher nichts.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Software Testing – Concepts and Operations&nbsp;<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118662873,subjectCd-CSJ0.html">[1]</a>  </td></tr>
+<tr><td><b>Autor</b> </td><td>Ali Mili, Fairouz Tchier </td></tr>
+<tr><td><b>Verlag</b> </td><td>Wiley, 2015 </td></tr>
+<tr><td><b>Umfang</b> </td><td>400 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1-118-66287-8 </td></tr>
+<tr><td><b>Preis</b> </td><td>99,30 Euro (gebunden), 89,99 Euro (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118662873,subjectCd-CSJ0.html"><tt class="big">http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118662873,subjectCd-CSJ0.html</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Sujeevan Vijayakumaran</b>&nbsp;(<a href="http://svij.org/">Webseite</a>)
+beschäftigt sich hauptsächlich beruflich mit der Qualitätssicherung
+von Software, hat mit Mathematik aber nur am Rande zu tun.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Software Testing&amp;body=freiesMagazin 11/2015%0ARezension: Software Testing%0ASujeevan Vijayakumaran%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Rezension: Software Testing#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_rezension_entwurfsmuster_von_kopf_bis_fuss" name="fm_15_11_rezension_entwurfsmuster_von_kopf_bis_fuss">Rezension: Entwurfsmuster von Kopf bis Fuß</a></font></h1>von Stefan Wichmann
+
+<div class="p"><!----></div>
+    <b>F</b><b>rage: „Kann ein Buch in so einer Aufmachung wirklich Wissen vermitteln?“ 
+Die Antwort auf diese Frage soll die Rezension zu „Entwurfsmuster von Kopf 
+bis Fuß“&nbsp;<a href="http://www.oreilly.de/catalog/hfdesignpat2ger/">[1]</a> zeigen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem O'Reilly-Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Der Titel „Entwurfsmuster von Kopf bis Fuß“ verheißt eine Fülle an 
+Informationen unter Einbeziehung eines kompletten menschlichen Körpers. So 
+umfasst dies nicht nur das Sehen, sondern auch das Greifen und Begreifen der 
+Thematik und tatsächlich: Das Thema wird in Beispielen und Denkansätzen 
+vermittelt, sodass nicht etwa eine Definition zum Entwurfsmuster im 
+Mittelpunkt steht, sondern der Ansatz in Beispielen zu erklären, was ein 
+Entwurfsmuster ist. Und doch ist eine Definition zum Entwurfsmuster im Buch 
+enthalten: Zum Ende hin.
+
+<div class="p"><!----></div>
+So viel sei verraten: Ein Entwurfsmuster ist ein beispielhafter 
+Lösungsansatz zu einem Problem, dass bereits schon einmal gelöst wurde. Es 
+ist vergleichbar mit einem Programmcode, der verwendet wird, um das Rad 
+nicht neu erfinden zu müssen, nur, dass ein Entwurfsmuster nicht 
+wiederverwendbarer Programmcode ist, sondern eben mögliche Ansätze aufzeigt 
+für eine optimale Lösungsfindung.
+
+<div class="p"><!----></div>
+
+<h2>Inhalt, Aufteilung und Stil des Buchs</h2>
+
+
+Frei wiedergegeben handelt es sich bei der Umsetzung des Werkes um ein Buch 
+zum Thema Entwurfsmuster, aufgebaut nach aktuellen Erkenntnissen der 
+Kognitionswissenschaft.
+
+<div class="p"><!----></div>
+Das Cover warnt durch die Aufmachung und lädt zum neugierigen Blättern ein, 
+obwohl der Text um „Jörgs Liebesleben“ und die nachfolgenden Überschriften 
+des Inhaltsverzeichnisses etwas abschrecken.
+
+<div class="p"><!----></div>
+Das erste Kapitel erklärt den Buchaufbau und dient der Einführung. Eine 
+Einführung in diese andere Art des Buchaufbaus tut not, denn schnell ergibt 
+sich beim Durchblättern der Eindruck, neben dem Fachtext eine zwar perfekt 
+umgesetzte Notizsammlung zu Entwurfsmustern und auch zu den verschiedenen 
+Entwurfstypen vor sich zu haben, doch als Fachtext scheint es eher 
+ungeeignet. Die Umsetzung mit handskizzierten Pfeilen und 
+Schreibschrifteinzügen ist ungewöhnlich!
+
+<div class="p"><!----></div>
+Auch wirken die Überschriften zu sehr auf Kuschelkurs zum Schmunzelfaktor 
+(Zitat: „<em>Kaffee- und Tee-Klassen zusammenrühren.</em>“) und selbst der Verweis 
+auf die Seitenzahl („<em>Sie sind hier -</em>“ SeiteXY&#62;) verwundert.
+
+<div class="p"><!----></div>
+Der Stil unterscheidet sich so grundlegend von anderen Fachbüchern, dass es 
+eines Augenblicks bedarf, sich zu überwinden und das Buch ernst zu nehmen. 
+Schnell zeigt sich allerdings, dass es sich lohnt. Statt ein staubtrockenes 
+Fachbuch in die Ecke zu werfen, hält der Leser hier ein Werk in Händen, das 
+ihn bei der Stange hält – und sei es durch eingefügte fiktive Mitstreiter, 
+die ihren Gedanken Ausdruck geben:
+„<em>Jetzt bloß nicht aufgeben! Diesen Code müssen wir…</em>“
+
+<div class="p"><!----></div>
+Beispiele anhand eines Kaugummiautomaten, der eher ausschaut wie zwei 
+Spiegeleier in der Pfanne, lockern den Text ungemein auf. Begriffe sind 
+erklärt, dem Leser wird sogar ein Trampelpfad gezeigt, mit dem er ggf. 
+Bekanntes problemlos überspringen kann – und doch: Auf Seite 591 war das 
+Beispiel zu klein abgedruckt, um es problemlos erfassen zu können.
+
+<div class="p"><!----></div>
+Trotzdem: Ein Buch zu diesem Thema kann langweilig geschrieben sein und alle 
+Fakten berücksichtigen oder eben neue Wege einschlagen. Dies hier ist ein 
+Buch, dass bereits durch den Aufbau besticht und das gut strukturierte 
+Wissen tatsächlich an den Mann bzw. die Frau bringt.
+
+<div class="p"><!----></div>
+
+<h2>Umfang, Qualität und Zielgruppe</h2>
+
+
+Bei diesem Buch geht es darum, das Thema Entwurfsmuster zu verstehen und 
+anzuwenden. Trotz oder gerade durch die aufgelockerten Seiten ist der Umfang 
+angemessen und ausreichend.
+
+<div class="p"><!----></div>
+Der Text ist sehr gut aufbereitet und ansprechend. An den richtigen Stellen 
+findet sich eine auflockernde Grafik, eine Skizze oder eine handschriftliche Notiz, 
+die sich der Leser sonst wohl selbst ins Buch geschrieben hätte. Insgesamt 
+überzeugt das Buch durch die Verarbeitung, jedoch scheinen die Grafiken der 
+jeweiligen Folgeseite etwas durch.
+
+<div class="p"><!----></div>
+Das Buch richtet sich an wissende Programmierer, die sich weiterentwickeln 
+möchten und mit Entwurfsmustern die eigene Arbeit zu verbessern suchen. Hier 
+zeigt sich nach den ersten gelesenen Seiten, dass all die handgemalten 
+Zuordnungen und Hinweise helfen, den Sinn der trockenen Materie zu erfassen.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Um auf die Einstiegsfrage zurückzukommen, ob ein Buch in so einer Aufmachung 
+wirklich Wissen vermitteln kann, ist festzustellen: Ja, es kann!
+
+<div class="p"><!----></div>
+Für alle, die sich dem Thema Entwurfsmuster nähern und schon 
+Programmiererfahrung haben, gibt es eine Kaufempfehlung. Allerdings sei auch 
+gewarnt, dass der Text nicht einfach nur „en bloc“ zu lesen ist. Die 
+vielfältigen Pfeile und Randnotizen wollen auch beachtet werden.
+
+<div class="p"><!----></div>
+Es tut not, sich nicht nur in den Text, sondern auch in handschriftlich 
+dargestellte Textblöcke zu vertiefen, was allerdings wiederum hilft, die 
+Gedankenströme zu einem Wissenspool verschmelzen zu lassen. Von daher ist 
+das Nutzen beider Gehirnhälften für visuelle und textliche Inhalte sicher 
+ein guter Weg, auch wenn diese Form der
+Darstellung in der eigenen 
+beruflichen Praxis allenfalls an einem Flipchart nutzbar ist und eben nicht 
+für Entwurfsmuster.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i>
+Da es schade wäre, wenn das Buch bei Stefan Wichmann nur im
+Regal steht, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Die Dreierregel für Entwurfsmuster besagt a) dass drei Entwickler ein neu entdecktes Entwurfsmuster mittragen müssen oder b) dass der Verfasser eines neuen Musters sich durch den Verkauf mindestens drei seiner Programme qualifiziert hat.</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>8. November 2015, 23:59 Uhr</b>
+über die Kommentarfunktion oder per E-Mail an <img src="freiesMagazin-2015-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />
+geschickt werden. Die Kommentare werden bis zum Ende der
+Verlosung nicht freigeschaltet. Das Buch wird unter allen
+Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Entwurfsmuster von Kopf bis Fuß&nbsp;<a href="http://www.oreilly.de/catalog/hfdesignpat2ger/">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Eric Freeman &amp; Elisabeth Robson mit Kathy Sierra &amp; Bert Bates </td></tr>
+<tr><td><b>Verlag</b> </td><td>O’Reilly, 2. Auflage 2015 </td></tr>
+<tr><td><b>Umfang</b> </td><td>654 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-95561-986-2 </td></tr>
+<tr><td><b>Preis</b> </td><td>49,90 Euro (Druck), 29,90 Euro (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.oreilly.de/catalog/hfdesignpat2ger/"><tt class="big">http://www.oreilly.de/catalog/hfdesignpat2ger/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Stefan Wichmann</b>&nbsp;(<a href="http://stefan-wichmann.de/">Webseite</a>)
+werkelt derzeit an seiner Webseite stefan-wichmann.de herum, veröffentlicht 
+Bücher und schreibt gerne Rezensionen zu Software, Hardware und zu Büchern 
+im Allgemeinen. Er ist unter der E-Mailadresse <b>autor[AT]stefan-wichmann[DOT]de</b> 
+erreichbar.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Entwurfsmuster&amp;body=freiesMagazin 11/2015%0ARezension: Entwurfsmuster%0AStefan Wichmann%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Rezension: Entwurfsmuster#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_rezension_minecraft" name="fm_15_11_rezension_minecraft">Rezension: Let's Play Minecraft: Dein Redstone-Guide</a></font></h1>von Volkmar Mai
+
+<div class="p"><!----></div>
+    <b>Ü</b><b>ber das Kultspiel Minecraft muss vermutlich nicht mehr viel gesagt werden. Eine
+seiner Besonderheiten ist die spieleigene „Elektrizität“ in Form des
+Redstone-Erzes, welches das Bauen semi- bis vollautomatischer Schaltungen und komplexe
+Mechanik aus einfachen Grundbausteinen erlaubt.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem mitp-Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Mit Redstone können so simple Dinge wie sich selbst öffnende Türen, aber auch
+funktionierende Digitaluhren und Spiele-im-Spiel (z.&nbsp;B. Pong oder Mine Sweeper)
+realisiert werden. In diesem Rahmen schickt sich „Let's Play Minecraft – Dein
+Redstone-Guide“&nbsp;<a href="http://www.mitp.de/IT-Web/Lego-Games/Let-s-Play-Minecraft-Dein-Redstone-Guide.html">[1]</a>
+an, den vorangegangenen „Praxis-Guide“ um tiefergehendes Redstone-Wissen zu
+ergänzen.
+
+<div class="p"><!----></div>
+
+<h2>Verspielte Zwillinge</h2>
+
+
+Optisch gleicht der Redstone-Guide seinem älteren Bruder und teilt daher sowohl
+dessen ansprechendes, der Minecraft-Farbenfreude angepasstes Aussehen als
+auch das handliche Format. Auch die große Bilderfülle sorgt abermals für kurzweiliges
+Lesevergnügen – zudem für die nach hinten hin immer komplexer werdenden
+Redstone-Schaltungen eine umfangreiche Bebilderung unabdingbar ist. Neben dem
+Kapitelverzeichnis sorgt ein Schlagwortindex für schnelles Wiederauffinden der
+gesuchten Informationen, ebenso wie eine ausführliche Liste aller Schaltungskomponenten.
+
+<div class="p"><!----></div>
+
+<h2>Rotstein-Werke nach Blaupause</h2>
+
+
+Das Buch wendet sich wie sein Vorgänger an ein jüngeres Publikum und
+duzt den Leser durchgehend, was jedoch nicht stört und sowohl dem
+Altersdurchschnitt der Minecraft-Spieler als auch der überwiegend lockeren
+Einstellung aller Altersklassen seiner Community entspricht. Der Autor Daniel
+Braun hält sich erneut nicht lange mit Grundlagen auf, sondern beginnt bereits
+nach 46 der 224 Seiten mit den ersten Baubeispielen. Diese sind sowohl nach
+Themengebieten wie Haustechnik, halb- und vollautomatischen Farmen, Bahnverkehr
+und Musik, als auch nach der steigenden Schwierigkeit sortiert. Als
+anspruchsvollste Projekte schließen ein Zählwerk mit digitaler Zahlenanzeige und
+kleine motorisierte Luftschiffe den Redstone-Guide ab.
+
+<div class="p"><!----></div>
+
+<h2>Wechselstrom der Gefühle</h2>
+
+
+Wie der Praxis-Guide ist auch dieser Ratgeber auf dem aktuellen Stand von
+Minecraft 1.8. Dies zeigt sich am deutlichsten durch dessen neue Schleimblöcke,
+an denen andere Blöcke kleben bleiben und welche die Grundlage der erwähnten
+Luftschiffe sind. Ebenfalls erfreulich sind die große Bandbreite an
+Anwendungsbeispielen sowie einige sehr detaillierte Erläuterungen, z.&nbsp;B. der
+komplizierten Zustände des Tages- und Nachtlichtsensors. Die Schaltungen sind
+großflächig konzipiert, was zu deren Übersichtlichkeit beiträgt. Eine kompaktere
+Bauweise wäre zwar oft möglich, allerdings auf Kosten der Verständlichkeit.
+Außerdem bleibt dem Leser so auch nach Fertigstellung genug zum weiteren Tüfteln
+übrig.
+
+<div class="p"><!----></div>
+Im Schatten der Redstone-Fackeln findet sich leider erneut die gewisse
+Erklärungsarmut und fehlende Detailtreue, die bereits am Praxis-Guide
+kritisiert wurde (siehe <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 07/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-07">[2]</a>).
+Einerseits werden zwar anfangs die diversen „Strom-“ bzw. Signalquellen wie
+R-Fackeln, Hebel und Druckplatten erklärt, jedoch z.&nbsp;B. nicht die verschiedenen
+Power-Zustände von Blöcken (stark und schwach), die vertikale Signalübertragung,
+das temporäre Ausbrennen von R-Fackeln bei Kurzschlüssen oder neben den
+vorhandenen Logik-Gattern weitere Standard-Komponenten wie Detektoren für
+steigende und fallende Signale (Rising/Falling Edge Detectors). Manche
+essentiellen Grundlagen finden sich nebenbei erwähnt in späteren Kapiteln, wären
+aber besser im vorderen Teil aufgehoben, so z.&nbsp;B. der zweite Modus des
+Komparators und die LIFO-Schaltung.
+In einem Ratgeber sollte ein größerer Grundlagen-Teil zu finden sein.
+
+<div class="p"><!----></div>
+
+<h2>Die Aufgabe bestimmt das Werkzeug</h2>
+
+
+Für wen ist der Redstone-Guide geeignet? Wer Redstone-Technik von der Pike auf
+erlernen will,
+
+findet in diesem Buch zu wenig Grundlagenwissen. Hier sind die
+umfangreichen Wikis und Videos im Netz wahrscheinlich sinnvoller. Geht es
+hingegen um schnelle Ergebnisse ohne zu viel graue (bzw. rote) Theorie, wie es
+vermutlich bei jüngeren Minecraft-Fans der Fall sein dürfte, kann ich das Buch
+wärmstens empfehlen. Es macht sich gut im Bücherregal – eventuell neben seinem
+Kompagnon – und bietet leicht verständliche, vielfältige
+Redstone-Konstruktionen. Das beiliegende Poster ist etwas kleiner als jenes des
+Praxis-Guides und zeigt alle Rezepte der im Buch tabellarisch aufgelisteten
+Redstone-Komponenten. 
+
+<div class="p"><!----></div>
+Eltern sollten wissen, dass das Buch auch die Konstruktion von Fallen,
+TNT-Werfern und einem Luftschiff mit abwerfbaren TNT-Bomben beschreibt und diese
+durchaus passend „Waffen“ nennt, mit denen man „Monster oder Gegner“ virtuell
+töten kann. Wer seinem Kind den Überlebensmodus von Minecraft versagt, weil man
+dort Monster und Tiere mit Schwert und Bogen erlegt, wird sich vielleicht auch
+an diesem Aspekt des Redstone-Guides stören.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i>
+Da es schade wäre, wenn das Buch bei Volkmar Mai nur im
+Regal steht, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Mit welcher Minecraft-Version wurde der Rohstoff eingeführt, der heute Redstone heißt?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>8. November 2015, 23:59 Uhr</b>
+über die Kommentarfunktion oder per E-Mail an <img src="freiesMagazin-2015-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />
+geschickt werden. Die Kommentare werden bis zum Ende der
+Verlosung nicht freigeschaltet. Das Buch wird unter allen
+Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Let's Play Minecraft: Dein Redstone-Guide&nbsp;<a href="http://www.mitp.de/IT-Web/Lego-Games/Let-s-Play-Minecraft-Dein-Redstone-Guide.html">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Daniel Braun </td></tr>
+<tr><td><b>Verlag</b> </td><td>mitp, 1. Auflage 2015 </td></tr>
+<tr><td><b>Umfang</b> </td><td>224 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8266-9678-7 </td></tr>
+<tr><td><b>Preis</b> </td><td>16,99 € (Druck), 12,99 € (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.mitp.de/IT-Web/Lego-Games/Let-s-Play-Minecraft-Dein-Redstone-Guide.html"><tt class="big">http://www.mitp.de/IT-Web/Lego-Games/Let-s-Play-Minecraft-Dein-Redstone-Guide.html</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-07"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-07</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Volkmar Mai</b>
+spielt Minecraft unter Ubuntu Linux seit der Beta-Version 1.8 im Herbst 2011.
+Auf dem privaten Server einiger Freunde ist ein Redstone-Museum sein
+persönliches Steckenpferd.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Minecraft-Redstone-Guide&amp;body=freiesMagazin 11/2015%0ARezension: Minecraft-Redstone-Guide%0AVolkmar Mai%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Rezension: Minecraft-Redstone-Guide#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_leserbriefe" name="fm_15_11_leserbriefe">Leserbriefe</a></font></h1>
+
+
+    <b>Für Leserbriefe steht unsere E-Mailadresse
+        <img src="freiesMagazin-2015-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+        Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+    An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+    uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+    sehr viel Lob (was uns natürlich freut), aber vor allem durch
+    Kritik und neue Ideen können wir uns verbessern.
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>Rezension: Entwurfsmuster</h3>
+            <font color="#595959"><b>-&#62;</b></font>
+Die Antwort auf diese Frage ist nicht ganz so leicht, da ein wenig
+missverständlich formuliert. Sicherlich wäre es besser, statt per Singleton auf
+Objekte zuzugreifen, die Objekte direkt mittels Dependency Injection von außen
+dem Objekt zuzuführen. Damit ließe sich komplett auf die Anwendung von
+Singletons verzichten. Dann gibt es das allgemeine Factory-Muster, wobei man
+eigentlich sagen kann, dass das Singleton-Muster auch nur ein Unterfall des
+Factorymusters ist, das eben nicht allgemein ein Objekt erzeugt (d.h. jedes Mal
+ein neues Objekt erzeugt, sondern nur dann, wenn noch gar keins vorhanden ist).
+Und dann gibt es natürlich auch noch das im Text angesprochene Multion-Muster,
+was eben nicht nur ein Objekt zurückgeben kann, sondern x Objekte (hierfür kann
+man aber auch einfach eine Map innerhalb der jeweiligen Klasse verwenden).
+        &nbsp;<br /><b>Nils</b> &nbsp;(<a href="http://www.freiesmagazin.de/20151011-oktoberausgabe-erschienen#comment-3582">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Die Frage war zwar etwas freier formuliert, aber zielte in die richtige 
+Richtung. Es wurde ein Pattern gesucht, was die gleiche Aufgabe hat wie ein 
+Singleton, es nur anders umsetzt. Die Antwort war das 
+Monostate-Pattern&nbsp;<a href="http://www.objectmentor.com/resources/articles/SingletonAndMonostate.pdf">[1]</a>. 
+Ein Singleton-Objekt stellt sicher, dass es (und seine Daten) nur einmal im 
+System existieren. Beim Monostate-Pattern kann ein Objekt mehrere Instanzen 
+haben, die Daten und Zustände existieren aber nur einmal.
+        &nbsp;<br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Proprietär vs. Open Source</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ich fand schön, einen Artikel zu diesem Thema zu lesen. Wenn ich auch
+Anmerkungen dazu habe, so wäre es mir arg, wenn die dazu beitragen würden,
+dass Autoren aus Furcht vor Kritik nicht schreiben würden. Ich bin nämlich
+sehr froh um den Artikel!
+In der Hoffnung konstruktiv zu sein, nun meine Kommentare:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Was den Titel angeht, so war er mir zu unscharf, gerade auch in Anbetracht der
+Begriffserklärung, hätte er schon „Closed Source vs. Open Source“ heißen
+müssen. Etwas mehr Exaktheit und Klarheit hätte da gut getan.</li>
+<li> Folgende Aussage zu MacOS X finde ich zu stark vereinfacht: 
+„<em>Dieses Argument wird dadurch gestärkt, dass MacOS X unter Fachleuten als relativ unsicher gilt.</em>“
+
+<div class="p"><!----></div>
+Der Unterbau von OS X, Darwin, ist nämlich unixoid und freie Software, insofern
+sollte auf dieser Ebene eine mit GNU/Linux vergleichbare Sicherheitsqualität
+herrschen. Der referenzierte Artikel bezieht sich aber auf die oberen
+Schichten, die Closed Source bzw. einfach eine andere Art von Software sind. Ist
+denn GNU/Linux gegen die dort beschriebenen Probleme immun?</li>
+<li> Und meine dritte Anmerkungen zu folgendem Satz: 
+„<em>Aber auch so bleiben Zweifel, ob die Binärdateien aus diesem Quellcode gebaut wurden.</em>“
+
+<div class="p"><!----></div>
+Die Zweifel dürfen ruhig noch eine Ebene tiefer wurzeln, nämlich in der Frage,
+mit welchem Compiler die Binärdateien aus diesem Quellcode gebaut wurden.
+Dieser wird von Ken Thompson in seinem Turing-Award-Vortrag „Reflections on
+Trusting Trust“ gut verständlich nachgegangen&nbsp;<a href="https://www.win.tue.nl/~aeb/linux/hh/thompson/trust.html">[2]</a>.</li>
+</ul>
+        &nbsp;<br /><b>Meillo</b> &nbsp;(<a href="http://www.freiesmagazin.de/20151011-oktoberausgabe-erschienen#comment-3589">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.objectmentor.com/resources/articles/SingletonAndMonostate.pdf"><tt class="big">http://www.objectmentor.com/resources/articles/SingletonAndMonostate.pdf</tt></a><br />
+[2] <a href="https://www.win.tue.nl/~aeb/linux/hh/thompson/trust.html"><tt class="big">https://www.win.tue.nl/~aeb/linux/hh/thompson/trust.html</tt></a><br />
+
+
+<div class="p"><!----></div>
+    Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+    kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Leserbriefe&amp;body=freiesMagazin 11/2015%0ALeserbriefe%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/444?edit[subject]=Leserbriefe#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_veranstaltungen" name="fm_15_11_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+         
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+OpenRheinRuhr </td><td>Oberhausen </td><td align="left">07.11.–08.11.2015 </td><td>– </td><td align="left"><a href="http://www.openrheinruhr.de/"><tt class="big">http://www.openrheinruhr.de/</tt></a> </td></tr>
+<tr><td align="left">BeGeistert 029 </td><td>Düsseldorf </td><td align="left">07.11.–08.11.2015 </td><td>45 EUR </td><td align="left"><a href="https://www.haiku-os.org/conference/2015_begeistert_029"><tt class="big">https://www.haiku-os.org/conference/2015_begeistert_029</tt></a> </td></tr>
+<tr><td align="left">Linux Presentation Day </td><td>Linux Community </td><td align="left">14.11.2015 </td><td>frei </td><td align="left"><a href="http://www.linux-presentation-day.de/"><tt class="big">http://www.linux-presentation-day.de/</tt></a> </td></tr>
+<tr><td align="left">BSides </td><td>Wien </td><td align="left">21.11.2015 </td><td>frei </td><td align="left"><a href="http://bsidesvienna.at/"><tt class="big">http://bsidesvienna.at/</tt></a> </td></tr>
+<tr><td align="left">LinuxDay </td><td>Dornbirn </td><td align="left">21.11.2015 </td><td>frei </td><td align="left"><a href="http://linuxday.at/"><tt class="big">http://linuxday.at/</tt></a> </td></tr>
+<tr><td align="left">Chaos Communication Congress </td><td>Hamburg </td><td align="left">27.12.–30.12.2015 </td><td>– </td><td align="left"><a href="https://events.ccc.de/"><tt class="big">https://events.ccc.de/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2015-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_vorschau" name="fm_15_11_vorschau">Vorschau</a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint am ersten Sonntag eines Monats. Die Dezember-Ausgabe
+    wird voraussichtlich am 6. Dezember u.&nbsp;a. mit folgenden Themen veröffentlicht:
+    
+<ul>
+<li> Ubucon 2015</li>
+<li> Rezension: Programmieren lernen mit Python
+    </li>
+</ul>
+    Es kann leider vorkommen, dass wir aus internen Gründen angekündigte
+    Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_konventionen" name="fm_15_11_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                         hier auch einfach in einer normalen Shell ein
+                         <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                        <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+        <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_11_impressum" name="fm_15_11_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 1. November 2015<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2015-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Manuel Haake </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_i2p_raspberry_pi">I2P unter Ubuntu auf dem Raspberry Pi 2 installieren</a> </td></tr>
+<tr><td align="left">Gerrit Kruse </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_wps">WPS Office im Test</a> </td></tr>
+<tr><td align="left">Volkmar Mai </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_minecraft">Rezension: Let's Play Minecraft: Dein Redstone-Guide</a> </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_kernel">Der Oktober im Kernelrückblick</a> </td></tr>
+<tr><td align="left">Jakob Moser </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_linux_geschichte">Eine Geschichte von Linux</a> </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_sphinx">Rezension: Software-Dokumentation mit Sphinx</a> </td></tr>
+<tr><td align="left">Sujeevan Vijayakumaran </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_software_testing">Rezension: Software Testing – Concepts and Operations</a> </td></tr>
+<tr><td align="left">Stefan Wichmann </td><td align="left"><a href="freiesMagazin-2015-11-bilder.html#fm_15_11_rezension_entwurfsmuster_von_kopf_bis_fuss">Rezension: Entwurfsmuster von Kopf bis Fuß</a> </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Satz und Layout</b></td></tr>
+<tr><td align="left">Moritz Kiefer </td><td align="left">Benedict Leskovar </td></tr>
+<tr><td align="left">Kai Welke </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+    </td></tr></table>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. 
+    Die Kommentar- und Empfehlen-Icons wurden von Maren Hachmann erstellt
+    und unterliegen ebenfalls der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>.
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2015-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  9 Nov 2015, 07:02.</small>
+</div>
+</body></html>

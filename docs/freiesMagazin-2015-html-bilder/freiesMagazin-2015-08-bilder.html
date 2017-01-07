@@ -1,0 +1,3447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                 
+<title>freiesMagazin 08/2015</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Der Juli im Kernelrückblick | Web Scraping mit R | Modifizieren eines Biblatex-Stils | TeXmacs als Präsentationstool nutzen | Eine kurze Einführung in gnuplot | Das Konsolentool top | Ubuntu Phone: Das Meizu MX4 näher angeschaut | Rezension: Das Arduino-Training – Sehen wie's geht! | Rezension: jQuery in Easy Steps | Rezension: Adventures in Python | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 08/2015" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2015-08-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2015-08.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+          
+
+
+
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>August 2015</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Themen dieser Ausgabe sind u.&nbsp;a.</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_webscraping">Webscraping mit R</a></font> <br />
+    Moderne Web Scraping Tools und APIs erleichtern die gezielte Extraktion von Informationen und Elementen aus dem Internet. Dieser Artikel zeigt, wie mit der freien Statistikumgebung R und entsprechenden R-Paketen strukturierte und unstrukturierte Daten gezielt geladen und anschließend statistisch analysiert werden können. (<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_webscraping">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_biblatex">Modifizieren eines Biblatex-Stils</a></font> <br />
+    Dieser Artikel richtet sich an Nutzer von LaTeX, welche sich erstmals damit konfrontiert sehen, besondere Vorgaben bei der Bibliografie umsetzen zu müssen, welche sich mit Standardstilen nicht vollständig realisieren lassen. (<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_biblatex">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_meizu-review">Ubuntu Phone: Das Meizu MX4 näher angeschaut</a></font> <br />
+    Seit Ende Juni ist das Meizu MX4 in der EU über ein Invite-System zu bestellen. Das Meizu MX4 reiht sich neben dem bq Aquaris E4.5 und dem bq Aquaris E5 als drittes Ubuntu Phone ein. Es ist das erste Phone, welches vom chinesischen Hersteller Meizu erschienen ist. In diesem Artikel wird das Gerät einer näheren Betrachtung unterzogen. (<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_meizu-review">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_toc" name="fm_toc">Inhalt</a></font></h1><!-- CONTENT -->
+
+
+    &nbsp;<br /> <b>Linux allgemein</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_kernel">Der Juli im Kernelrückblick</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Anleitungen</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_webscraping">Web Scraping mit R</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_biblatex">Modifizieren eines Biblatex-Stils</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Software</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_texmacs_praesentationen">TeXmacs als Präsentationstool nutzen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_gnuplot">Eine kurze Einführung in gnuplot</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_top">Das Konsolentool top</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Hardware</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_meizu-review">Ubuntu Phone: Das Meizu MX4 näher angeschaut</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Community</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_rezension_arduino_training">Rezension: Das Arduino-Training – Sehen wie's geht!</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_rezension_jquery_in_easy_steps">Rezension: jQuery in Easy Steps</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_rezension_adventures_python">Rezension: Adventures in Python</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Magazin</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-08-bilder.html#fm_15_08_impressum">Impressum</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_editorial" name="fm_15_08_editorial">Editorial</a></font></h1>
+
+
+
+<h2>Truck Factor</h2>
+
+
+Die kürzlich als Preprint&nbsp;<a href="https://peerj.com/preprints/1233v1/">[1]</a>
+erschienenen Ergebnisse eines Forschungsteams der
+UFMG&nbsp;<a href="https://www.ufmg.br/english/">[2]</a> in Brasilien zeigen auf, dass
+etliche populäre Projekte, die auf GitHub&nbsp;<a href="https://github.com/">[3]</a>
+gehostet werden, von nur ganz wenigen Entwicklern abhängen. Diese Projekte
+könnten also sehr schnell ins Stocken geraten, wenn diese treibenden Kräfte
+ausfielen.
+
+<div class="p"><!----></div>
+Konkret schätzen die Forscher für 133 GitHub-Projekte den sog. „Truck Factor“
+(auch bekannt als „Bus Factor“) ab, mit dem beschrieben wird, wieviele
+Mitarbeiter in einem Softwareprojekt ausfallen können, ohne das Projekt an sich
+zu gefährden:
+„<em>How many or few would have to be hit by a truck (or quit) before the project is incapacitated?</em>“
+Je kleiner dieser Wert ist, desto anfälliger ist das Projekt – der schlechteste
+Wert von 1 besagt, dass beim Ausfall eines beliebigen Mitarbeiters das Projekt
+zum Scheitern verurteilt ist.
+
+<div class="p"><!----></div>
+Die Forscher kommen in ihrer Studie zum Ergebnis, dass knapp die Hälfte der
+untersuchten Projekte einen Truck Factor von nur 1 haben, darunter 
+z.&nbsp;B. Clojure (eine
+Programmier-Sprache&nbsp;<a href="https://github.com/clojure/clojure">[4]</a>).
+Einen etwas höheren Truck Factor von 2 haben Projekte wie Jekyll (ein Generator
+für statische Webseiten&nbsp;<a href="https://github.com/jekyll/jekyll/">[5]</a>) oder
+pdf.js (ein JavaScript-Reader für
+PDF-Dokumente&nbsp;<a href="https://github.com/mozilla/pdf.js/">[6]</a>).
+Ruby&nbsp;<a href="https://github.com/ruby/ruby">[7]</a> hat den Truck Factor 4, die
+Skriptsprache PHP&nbsp;<a href="https://github.com/php/php-src">[8]</a> einen deutlich
+höheren Truck Factor 11, während der
+Linux-Kernel&nbsp;<a href="https://github.com/torvalds/linux">[9]</a> einen sehr hohen
+Truck Factor von 90 besitzt. In der Tat arbeiten viele Entwickler am
+Linux-Kernel mit, aber bislang muss jeder Commit noch Linux-Erfinder Linus
+Torvalds abgesegnet werden. Die Nachfolgefrage ist aber auch in diesem Projekt
+noch nicht geklärt&nbsp;<a href="http://www.bloomberg.com/news/articles/2015-06-16/the-creator-of-linux-on-the-future-without-him">[10]</a>.
+
+<div class="p"><!----></div>
+Auch wenn das Peer Review dieser Arbeit erst begonnen hat, zeigt sie doch
+eine verwundbare Stelle auf. Vielleicht nutzen Sie diese Gelegenheit ja, um
+sich in Zukunft in ihr Lieblingsprojekt einzubringen und so den Truck Factor
+zu erhöhen.
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://peerj.com/preprints/1233v1/"><tt class="big">https://peerj.com/preprints/1233v1/</tt></a><br />
+[2] <a href="https://www.ufmg.br/english/"><tt class="big">https://www.ufmg.br/english/</tt></a><br />
+[3] <a href="https://github.com/"><tt class="big">https://github.com/</tt></a><br />
+[4] <a href="https://github.com/clojure/clojure"><tt class="big">https://github.com/clojure/clojure</tt></a><br />
+[5] <a href="https://github.com/sass/sass"><tt class="big">https://github.com/sass/sass</tt></a><br />
+[6] <a href="https://github.com/jekyll/jekyll/"><tt class="big">https://github.com/jekyll/jekyll/</tt></a><br />
+[7] <a href="https://github.com/mozilla/pdf.js/"><tt class="big">https://github.com/mozilla/pdf.js/</tt></a><br />
+[8] <a href="https://github.com/ruby/ruby"><tt class="big">https://github.com/ruby/ruby</tt></a><br />
+[9] <a href="https://github.com/php/php-src"><tt class="big">https://github.com/php/php-src</tt></a><br />
+[10] <a href="https://github.com/torvalds/linux"><tt class="big">https://github.com/torvalds/linux</tt></a><br />
+[11] <a href="http://www.bloomberg.com/news/articles/2015-06-16/the-creator-of-linux-on-the-future-without-him"><tt class="big">http://www.bloomberg.com/news/articles/2015-06-16/the-creator-of-linux-on-the-future-without-him</tt></a><br />
+
+
+<div class="p"><!----></div>
+
+
+
+
+                                <i><a href="mailto:?subject=Editorial&amp;body=freiesMagazin 08/2015%0AEditorial%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Editorial#comment-form">Beitrag kommentieren</a><br /><br /></i><a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_kernel" name="fm_15_08_kernel">Der Juli im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Die Entwicklung von Linux 4.2</h2>
+
+
+Endete der Juni mit der Freigabe von Linux 4.1 (siehe <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+07/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-07">[1]</a>), so startete der
+Folgemonat mit der Entwicklerversion von Linux
+4.2&nbsp;<a href="https://lkml.org/lkml/2015/7/5/218">[2]</a>. Diese schien sich keinesfalls im
+Schatten irgendeiner anderen Version verstecken zu wollen, denn dazu wäre sie
+viel zu groß.
+Über eine Million Zeilen an Quelltext wurden von den Entwicklern
+modifiziert, wodurch Linux 4.2-rc1 deutlich aus den Versionen der letzten Jahre
+heraussticht. Aus dem 4er- und 3er-Kernel-Zweig übertreffen lediglich zwei
+Versionen den aktuellen Erstling und in beiden Fällen waren Verschiebungen
+großen Mengen an Dateien die Ursache.Die Zahl der
+gelöschten Zeilen bleibt diesmal eher im Normbereich, wodurch der Linux-Kernel
+diesmal besonders stark anwächst.
+
+<div class="p"><!----></div>
+Auslöser des aktuellen Größenwahns ist der neue amdgpu-Treiber. Dieser wird für
+neuere Generationen von AMDs Grafikprozessoren benötigt und soll grundsätzlich
+eine einfachere Userspace-Schnittstelle mitbringen. amdgpu bringt ebenfalls
+umfassende Definitionen für Register mit, die direkt AMDs Datenbanken
+entstammen. Diese Auflistung der von den GPUs genutzten Speicherstellen ist in
+etwa fünfmal größer als der eigentliche Treiber.
+
+<div class="p"><!----></div>
+Ein wenig geruhsamer kam dann Linux
+4.2-rc2&nbsp;<a href="https://lkml.org/lkml/2015/7/12/184">[3]</a> daher. Hier fiel vor allem die
+Verlagerung von rbtree in einen anderen Bereich der Kernel-Quellen auf.
+Red-Black-Trees&nbsp;<a href="https://de.wikipedia.org/wiki/Rot-Schwarz-Baum">[4]</a>, ein sogenannter
+Suchbaum, stellt eine Struktur zum strukturierten Speichern von Daten dar, wie
+dies beispielsweise in Dateisystemen geschieht. Eine prominentere Art ist der
+unter anderem von btrfs genutzte B-Tree&nbsp;<a href="https://de.wikipedia.org/wiki/B-Baum">[5]</a>.
+
+<div class="p"><!----></div>
+Mit ein paar Änderungen mehr konnte dann der
+-rc3&nbsp;<a href="https://lkml.org/lkml/2015/7/19/355">[6]</a> aufwarten. Diese ließen sich
+jedoch schon zum größten Teil mit Fehlerkorrekturen erklären. Ein paar
+Aufräumarbeiten am Code für die Speicherverwaltung verteilten sich über fast alle
+Plattformen.
+
+<div class="p"><!----></div>
+Linux 4.2-rc4&nbsp;<a href="https://lkml.org/lkml/2015/7/26/84">[7]</a> machte ebenfalls noch nicht
+den Eindruck, als könnte die Entwicklung in Bälde zu Ende gehen. Die größte
+Änderung – über ein Viertel der geänderten Quelltextzeilen – entfiel jedoch auf
+die Verschiebung einer speziellen virtio-Implementierung in einen anderen
+Bereich, was jedoch erst einmal keine funktionalen Änderungen mit sich bringt.
+Diese Ein-/Ausgabe-Bibliothek für virtuelle Umgebungen muss unter IBMs
+s390-Architektur mit Command Channels, speziellen Befehlssätzen für
+die Verwaltung von Ein-/Ausgabe-Operationen, umgehen können. 
+Ebenfalls schwer ins Gewicht fiel
+das Entfernen einer neuen Funktion für den Intel-WLAN-Treiber iwlwifi – diesmal
+sind funktionelle Änderungen jedoch erwünscht, denn die Einführung mehrerer
+Warteschlangen für eingehende Netzwerkpakete führt zu Problemen, die die
+Firmware einiger WLAN-Chips zum Absturz brachte.
+
+<div class="p"><!----></div>
+
+<h2>Warten auf den (kd)Bus</h2>
+
+
+Obwohl er bereits für die Aufnahme zum Merge Window für Linux 4.1 vorlag, hat es
+das Interprozess-Kommunikationssystem
+kdbus&nbsp;<a href="https://de.wikipedia.org/wiki/D-Bus#kdbus">[8]</a> wieder nicht in den aktiven
+Kernel geschafft&nbsp;<a href="http://www.pro-linux.de/-0h2157cd">[9]</a>. Während bei 4.1 der Grund
+für die Ablehnung noch in Unzufriedenheiten mit der Implementierung seitens der
+Kernel-Entwickler zu suchen war, stoppte diesmal Hauptentwickler Greg 
+Kroah-Hartman selbst die Aufnahme. Das Team von kdbus wird die Zeit bis zum 
+Beginn des nächsten Entwicklungszyklus noch nutzen, um einige Unstimmigkeiten
+auszuräumen&nbsp;<a href="https://lkml.org/lkml/2015/6/26/512">[10]</a>. 
+<div class="p"><!----></div>
+
+<h2><b><tt class="big">mv ext3 /dev/null</tt></b></h2>
+
+
+Mancher mag kurz innehalten, wenn er von dem Vorschlag liest, dass der Treiber
+für das ext3-Dateisystem&nbsp;<a href="https://de.wikipedia.org/wiki/Ext3">[11]</a> aus Linux entfernt
+werden soll, war dies doch jahrelang das Standard-Dateisystem vieler
+Distributionen&nbsp;<a href="http://www.pro-linux.de/-0h215804">[12]</a>. Doch faktisch dürfte der
+Verlust eher sentimentaler Natur sein. Der Treiber des designierten Nachfolgers
+ext4&nbsp;<a href="https://de.wikipedia.org/wiki/Ext4">[13]</a> kann auch mit ext3-Dateisystemen
+umgehen und soll dies nach dem Willen des derzeitigen ext3-Betreuers künftig
+auch tun&nbsp;<a href="https://lkml.org/lkml/2015/7/15/438">[14]</a>. Auch der Betreuer von ext4,
+Theodore Ts'o, hat sich mittlerweile in die Debatte eingeklinkt und die
+Umstellung befürwortet. So könnte Linux 4.3 nach 14 Jahren der erste Kernel mit
+ext3-Unterstützung, jedoch ohne ext3-Treiber werden.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-07"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-07</tt></a><br />
+[2] <a href="https://lkml.org/lkml/2015/7/5/218"><tt class="big">https://lkml.org/lkml/2015/7/5/218</tt></a><br />
+[3] <a href="https://lkml.org/lkml/2015/7/12/184"><tt class="big">https://lkml.org/lkml/2015/7/12/184</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Rot-Schwarz-Baum"><tt class="big">https://de.wikipedia.org/wiki/Rot-Schwarz-Baum</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/B-Baum"><tt class="big">https://de.wikipedia.org/wiki/B-Baum</tt></a><br />
+[6] <a href="https://lkml.org/lkml/2015/7/19/355"><tt class="big">https://lkml.org/lkml/2015/7/19/355</tt></a><br />
+[7] <a href="https://lkml.org/lkml/2015/7/26/84"><tt class="big">https://lkml.org/lkml/2015/7/26/84</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/D-Bus#kdbus"><tt class="big">https://de.wikipedia.org/wiki/D-Bus#kdbus</tt></a><br />
+[9] <a href="http://www.pro-linux.de/-0h2157cd"><tt class="big">http://www.pro-linux.de/-0h2157cd</tt></a><br />
+[10] <a href="https://lkml.org/lkml/2015/6/26/512"><tt class="big">https://lkml.org/lkml/2015/6/26/512</tt></a><br />
+[11] <a href="https://de.wikipedia.org/wiki/Ext3"><tt class="big">https://de.wikipedia.org/wiki/Ext3</tt></a><br />
+[12] <a href="http://www.pro-linux.de/-0h215804"><tt class="big">http://www.pro-linux.de/-0h215804</tt></a><br />
+[13] <a href="https://de.wikipedia.org/wiki/Ext4"><tt class="big">https://de.wikipedia.org/wiki/Ext4</tt></a><br />
+[14] <a href="https://lkml.org/lkml/2015/7/15/438"><tt class="big">https://lkml.org/lkml/2015/7/15/438</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem Laufenden zu bleiben. und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Der Juli im Kernelr%C3%BCckblick&amp;body=freiesMagazin 08/2015%0ADer Juli im Kernelr%C3%BCckblick%0AMathias Menzer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Der Juli im Kernelr%C3%BCckblick#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_webscraping" name="fm_15_08_webscraping">Web Scraping mit R</a></font></h1>von Markus Herrmann und Barbara Wolf
+
+<div class="p"><!----></div>
+    <b>M</b><b>oderne Web Scraping Tools und APIs erleichtern die gezielte Extraktion von
+Informationen und Elementen aus dem Internet ganz wesentlich, insbesondere wenn
+die Daten nicht als strukturierte Datei zum Download angeboten werden. Mit der
+freien Statistikumgebung R und entsprechenden R-Paketen können strukturierte und
+unstrukturierte Daten gezielt geladen und anschließend statistisch analysiert
+werden.</b>
+
+<div class="p"><!----></div>
+
+<h2>Web Scraping</h2>
+
+
+Als „Web Scraping“ bezeichnet man die Extraktion von Informationen aus
+Webseiten, oder ganz allgemein, aus dem Internet. Der Unterschied zum einfachen
+Kopieren von Informationen aus Internetseiten besteht darin, dass dieser
+Vorgang mittels Softwarelösungen weitgehend automatisiert stattfindet.
+
+<div class="p"><!----></div>
+Diese Vorgehensweise ist im Allgemeinen nicht ungewöhnlich. Beispielsweise
+stellen die Kommandozeilenprogramme <b>GNU Wget</b>&nbsp;<a href="http://www.gnu.org/software/wget">[1]</a>
+oder <b>cURL</b>&nbsp;<a href="http://curl.haxx.se">[2]</a> bereits seit Mitte der 90er Jahre
+Funktionalitäten zum Download von Dateien und Webseiten aus dem Internet zur
+Verfügung und sind in vielen Linux-Distributionen fest integriert.  
+
+<div class="p"><!----></div>
+
+<h3>Web Scraping – neuer Name, alter Hut?</h3>
+
+
+Web Scraping ist also nur ein weiterer neuer Begriff für einen alten Hut? Nicht
+ganz, denn moderne Scraping Tools und APIs erleichtern, im Vergleich zu den eben
+genannten terminalbasierten Diensten, die gezielte Extraktion von Informationen
+und Elementen ganz wesentlich. Insbesondere wenn die Daten nicht als
+strukturierte Datei zum Download angeboten werden, aber dennoch (statistisch)
+weiterverarbeitet werden sollen, bieten entsprechende Tools komfortable
+Lösungen. 
+
+<div class="p"><!----></div>
+
+<h3>Datentransformation &amp; statistische Analyse</h3>
+
+
+Moderne Web Scraping Tools erledigen dabei nicht nur den Download, sondern auch
+die Transformation unstrukturierter (HTML-)Daten in ein geeignetes
+Analyseformat. Beliebte Scraping-Ziele sind beispielsweise HTML-Tabellen.
+
+<div class="p"><!----></div>
+Ein Programm, das sich sowohl für Web Scraping, als auch zur statistischen
+Analyse der „gescrapten“ Daten eignet ist „R“.
+
+<div class="p"><!----></div>
+
+<h2>Was ist R?</h2>
+
+
+R&nbsp;<a href="http://www.r-project.org">[3]</a> ist eine der bekanntesten Entwicklungsumgebungen
+für statistisches Rechnen und wird auf breiter Ebene in Wissenschaft und
+Wirtschaft eingesetzt. R eignet sich dabei sowohl für einfache deskriptive
+Analysen, als auch für komplexe statistische Modellierungen und läuft
+prinzipiell auf allen gängigen Betriebssystemen.
+
+<div class="p"><!----></div>
+Zur Installation stehen Binärpakete und Quellcode zur Verfügung&nbsp;<a href="http://cran.r-project.org">[4]</a>,
+R ist aber auch in einigen systemeigenen Paketmanagern zu finden (z.&nbsp;B. als
+<b>r-base</b> unter Apt&nbsp;<a href="http://cran.r-project.org/bin/linux/ubuntu">[5]</a>).
+
+
+<div class="p"><!----></div>
+
+<h3>„Comprehensive R Archive Network“ (CRAN)</h3>
+
+
+Die Basisinstallation von R kann um eine Vielzahl an Paketen („R-packages“ bzw.
+„library“) erweitert werden, die über das „Comprehensive R Archive Network“
+(CRAN)&nbsp;<a href="http://cran.r-project.org">[4]</a> bezogen werden können.
+
+<div class="p"><!----></div>
+Eine spezielle Sektion zum Thema Webtechnologien&nbsp;<a href="http://cran.r-project.org/web/views/WebTechnologies.html">[6]</a>
+gibt (laufend aktualisiert) einen Überblick über R-packages, die zur Sammlung 
+und zum Download von Daten aus dem Internet dienen. 
+<div class="p"><!----></div>
+
+<h2>R-packages zum „Scrapen“</h2>
+
+
+Im Wesentlichen unterscheiden sich diese R-packages durch die Art des Zugriffs
+auf die Datenquellen im Internet. Hierbei ist meist zwischen cURL-basierten
+Lösungen (low-level) und Paketen mit integrierten API-Anbindungen (high-level)
+zu unterscheiden. Die low-level R-packages „Rcurl“, „XML“, „httr“,
+„rjson“ und „RJSONIO“ sind allerdings so essentiell, dass sie für die meisten
+high-level Lösungen als Abhängigkeit gelistet sind&nbsp;<a href="http://journal.r-project.org/archive/2014-1/mair-chamberlain.pdf">[7]</a>.
+
+<div class="p"><!----></div>
+Die unten folgende Auswahl an R-packages eignet sich besonders für Scraping- und
+Parsing-Aufgaben.  
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>„Low-level“ - Scraping</b></td></tr>
+<tr><td><b>R-Package</b> </td><td><b>Funktion</b> </td></tr>
+<tr><td>XML&nbsp;<a href="http://cran.r-project.org/web/packages/XML">[8]</a>           </td><td>XML-Parser und -Generator </td></tr>
+<tr><td>curl&nbsp;<a href="http://cran.r-project.org/web/packages/curl">[9]</a>         </td><td>Netzwerk-Interface </td></tr>
+<tr><td>RCurl&nbsp;<a href="http://cran.r-project.org/web/packages/RCurl">[10]</a>       </td><td>Netzwerk-Interface </td></tr>
+<tr><td>httr&nbsp;<a href="http://cran.r-project.org/web/packages/httr">[11]</a>         </td><td>Wrapper für RCurl </td></tr>
+<tr><td>rjson&nbsp;<a href="http://cran.r-project.org/web/packages/rjson">[12]</a>       </td><td>JSON-Parser und -Generator </td></tr>
+<tr><td>jsonlite&nbsp;<a href="http://cran.r-project.org/web/packages/jsonlite">[13]</a> </td><td>JSON-Parser und -Generator </td></tr>
+<tr><td>RJSONIO&nbsp;<a href="http://cran.r-project.org/web/packages/RJSONIO">[14]</a>   </td><td>JSON-Parser und -Generator </td></tr>
+<tr><td>selectr&nbsp;<a href="http://cran.r-project.org/web/packages/selectr">[15]</a>   </td><td>CSS-XPath Konverter </td></tr>
+<tr><td>rvest&nbsp;<a href="http://cran.r-project.org/web/packages/rvest">[16]</a>       </td><td>Wrapper für XML und httr </td></tr>
+<tr><td>magrittr&nbsp;<a href="http://cran.r-project.org/web/packages/magrittr">[17]</a> </td><td>Pipe-Operator </td></tr>
+</table>
+
+
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>R-packages mit API-Anbindung</b></td></tr>
+<tr><td><b>R-Package</b> </td><td><b>Funktion</b> </td></tr>
+<tr><td>ggmap&nbsp;<a href="http://cran.r-project.org/web/packages/ggmap">[18]</a>                 </td><td>Google Maps API </td></tr>
+<tr><td>RgoogleMaps&nbsp;<a href="http://cran.r-project.org/web/packages/RgoogleMaps">[19]</a>     </td><td>Google Maps API </td></tr>
+<tr><td>RGoogleDocs&nbsp;<a href="http://www.omegahat.org/RGoogleDocs">[20]</a>                    </td><td>Google Docs API </td></tr>
+<tr><td>googlesheets&nbsp;<a href="https://github.com/jennybc/googlesheets">[21]</a>               </td><td>Google Spreadsheet API </td></tr>
+<tr><td>scholar&nbsp;<a href="http://cran.r-project.org/web/packages/scholar">[22]</a>             </td><td>Google Scholar API </td></tr>
+<tr><td>ganalytics&nbsp;<a href="https://github.com/jdeboer/ganalytics">[23]</a>                   </td><td>Google Analytics API </td></tr>
+<tr><td>rga&nbsp;<a href="https://github.com/skardhamar/rga">[24]</a>                              </td><td>Google Analytics API </td></tr>
+<tr><td>Rfacebook&nbsp;<a href="http://cran.r-project.org/web/packages/Rfacebook">[25]</a>         </td><td>Facebook API </td></tr>
+<tr><td>twittR&nbsp;<a href="http://cran.r-project.org/web/packages/twitteR">[26]</a>              </td><td>Twitter API </td></tr>
+<tr><td>wikipediatrend&nbsp;<a href="http://cran.rstudio.com/web/packages/wikipediatrend">[27]</a> </td><td>stats.grok.se API </td></tr>
+</table>
+
+
+
+<div class="p"><!----></div>
+
+<h2>Web Scraping Beispiele mit R</h2>
+
+
+Die nachfolgenden Beispiele sollen einen ersten Einblick in die
+Anwendungsmöglichkeiten der R-packages <b>rvest</b>, <b>ggmap</b> und <b>ganalytics</b>
+vermitteln. Die Verwendung des „Selector Gadget“ zeigt dabei, wie relevante
+Inhalte einer Website visuell selektiert werden können.
+
+<div class="p"><!----></div>
+
+
+
+
+<h3>Web Scraping mit dem Paket <b>rvest</b></h3>
+
+
+Das Paket <b>rvest</b> ermöglicht Low-Level-Scraping mit R. Im
+Folgenden wird eine Tabelle aus Wikipedia&nbsp;<a href="https://de.wikipedia.org">[28]</a>
+ausgelesen. Tabellen dieser Webseite werden dabei als <b><tt class="big">.wikitable</tt></b>
+referenziert.
+
+<div class="p"><!----></div>
+Das Paket <b>rvest</b> befindet sich auf den CRAN-Spiegelservern und lässt sich
+deshalb komfortabel auf der R-Konsole mit dem Funktionsaufruf
+<b><tt class="big">install.packages("rvest")</tt></b> installieren. Eine allgemeine Beschreibung zur 
+Verwendung des Pakets ist im <b>rvest</b>-Manual&nbsp;<a href="http://cran.r-project.org/web/packages/rvest/rvest.pdf">[29]</a>
+zu finden.
+
+<div class="p"><!----></div>
+Folgendermaßen wird das Paket und die Definition der gewünschten Webseite (hier
+der deutsche Wikipedia Artikel „Liste der Groß- und Mittelstädte in
+Deutschland“) geladen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">&#62; library(rvest)<br />
+&#62; website &lt;- "http://de.wikipedia.org/wiki/Liste_der_Gro%C3%9F-_und_Mittelst%C3%A4dte_in_Deutschland"</div>
+
+<div class="p"><!----></div>
+
+
+Mit der Funktion <b><tt class="big">html</tt></b> ruft man anschließend den Seitenquelltext auf:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; cities &lt;- html(website)</div>
+
+<div class="p"><!----></div>
+
+
+Als Ausgabe erhält man mit <b><tt class="big">cities</tt></b> folgenden unformatierten html-Text (Ausschnitt):
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;td align="left"&#62;Nordrhein-Westfalen&lt;/td&#62;<br />
+&lt;/tr&#62;<br />
+&lt;tr&#62;<br />
+&lt;td&#62;624.&lt;/td&#62;<br />
+&lt;td align="left"&#62;&lt;a href="/wiki/Hockenheim" title="Hockenheim"&#62;Hockenheim&lt;/a&#62;&lt;/td&#62;<br />
+&lt;td&#62;15.670&lt;/td&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Als nächstes extrahiert man die gewünschten Nodes. Im Beispiel werden alle 
+html-Tabellen über <b><tt class="big">.wikitable</tt></b> herausgefiltert. Das Ergebnis ist immer noch
+Quelltext:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; cities &lt;- html_nodes(x = cities, css = ".wikitable")</div>
+
+<div class="p"><!----></div>
+
+
+Nun wandelt man die HTML-Tabellen in rechteckige R-Dataframes für die weitere
+(statistische) Verarbeitung um:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; cities &lt;- html_table(cities)</div>
+
+<div class="p"><!----></div>
+
+
+und wählt den ersten „Dataframe“ aus:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; cities[[1]]</div>
+
+<div class="p"><!----></div>
+
+
+Das Ergebnis findet man weiter unten in der <a href="http://www.freiesmagazin.de/mobil/2015-08-listings/Webscraping_Cities.txt">Ausgabe der Liste der Groß- und Mittelstädte durch „rvest“</a>.
+
+<div class="p"><!----></div>
+
+
+
+
+
+<h4>Elegantes „Forward-Piping“ mit dem R-package <b>magrittr</b></h4>
+
+
+Verschiedene Operationen lassen sich zudem übersichtlich über Pipeline-Kommandos
+mit zusätzlicher Unterstützung des R-Package <b>magrittr</b> kombinieren. Die
+Installation des 
+Pakets erfolgt auch hier über CRAN mit <b><tt class="big">install.packages("magrittr")</tt></b>.
+
+<div class="p"><!----></div>
+Die oben beschriebenen Operationen lassen sich nun elegant mit dem Pipe-Operator <b><tt class="big">%&#62;%</tt></b>
+auf den folgenden Ausdruck verdichten:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; library(magrittr)<br />
+&#62; cities &lt;- html(website) %&#62;% html_nodes(".wikitable") %&#62;% html_table(header = TRUE, fill = TRUE) %&#62;% .[[1]]</div>
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Land   Großstädte   Mittelstädte gesamt<br />
+1     Nordrhein-Westfalen           28            178     20<br />
+2       Baden-Württemberg            9             90     99<br />
+3           Niedersachsen            6             82     88<br />
+4                  Bayern            8             59     67<br />
+5                  Hessen            5             53     58<br />
+6             Brandenburg            1             25     26<br />
+7                 Sachsen            3             22     25<br />
+8          Sachsen-Anhalt            2             23     25<br />
+9         Rheinland-Pfalz            4             16     20<br />
+10     Schleswig-Holstein            2             18     20<br />
+11              Thüringen            2             17     19<br />
+12               Saarland            1              9     10<br />
+13 Mecklenburg-Vorpommern            1              8      9<br />
+14                 Bremen            2              0      2<br />
+15                 Berlin            1              0      1<br />
+16                Hamburg            1              0      1</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2015-08-listings/Webscraping_Cities.txt">Ausgabe der Liste der Groß- und Mittelstädte durch „rvest“.</a></i>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Webscraping mit „rvest“ und dem „Selector Gadget“</h3>
+
+
+Nicht immer ist auf den ersten Blick klar ersichtlich, wie die gewünschten
+html-Nodes angesprochen werden können. Unterstützung bietet hierzu das „Selector
+Gadget“&nbsp;<a href="http://selectorgadget.com">[30]</a>. Durch interaktives Klicken auf einer
+Webseite können zunächst die gewünschten Elemente ausgewählt werden, bevor man
+durch entsprechende Markierungen den „css selector“ erhält, welcher für die spätere
+Auswahl der gewünschten Komponenten verwendet wird.
+
+<div class="p"><!----></div>
+
+
+<h4>Installation des Selector Gadget</h4>
+
+
+Das Selector Gadget ist als „Vignette“ des <b>rvest</b>-Package im CRAN 
+gelistet&nbsp;<a href="http://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html">[31]</a>
+und wird als Browser-Add-on verwendet.
+
+<div class="p"><!----></div>
+Die Installation ist dabei denkbar einfach.
+Im Firefox Browser muss das Add-on lediglich zu den Browser-Lesezeichen
+hinzugefügt werden, für den Chrome Browser wird eine entsprechende Erweiterung
+im Chrome Web Store angeboten&nbsp;<a href="https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb">[32]</a>.
+
+
+<div class="p"><!----></div>
+
+<h4>Aktivierung des Selector Gadget</h4>
+
+
+Nach dem Aufruf einer Webseite muss das Selector Gadget zunächst im Browser
+aktiviert werden. Dies gelingt unter Firefox durch Anklicken des entsprechenden
+Lesezeichens, unter Chrome genügt ein Klick auf das durch die Installation
+angelegte Schaltflächensymbol.
+
+<div class="p"><!----></div>
+
+<h4>Auswahl der gewünschten Elemente</h4>
+
+
+Im unteren rechten Bildschirmbereich steht nach der Aktivierung die Dialogbox
+des Selector Gadgets bereit. Durch Anklicken lassen sich bestimmte Elemente der
+Webseite markieren. Im Beispiel wird der Textbereich „Einführung in LilyPond
+2.18.2“ markiert, welcher dadurch grün hervorgehoben wird. Alle ähnlichen
+Elemente werden nun durch die Farbe Gelb gekennzeichnet und im unteren Fenster
+erscheint die Klasse des CSS-Elements („css-selector“). Alle grün und gelb
+hinterlegten Felder können damit später extrahiert werden. Durch erneutes
+Klicken lassen sich einzelne Elemente auch deaktivieren (durch die Farbe Rot
+gekennzeichnet).
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/webscraping_selectorGadget.png" alt="webscraping_selectorGadget.png" style="max-width:100%" /><br /><em>„Selector Gadget“.</em><br />
+
+<div class="p"><!----></div>
+Folgendermaßen kann der „css selector“  mit rvest verknüpft werden:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; website &lt;- "http://www.freiesmagazin.de/freiesMagazin-2015-05"<br />
+&#62; freiesMagazinMai &lt;- html(website) %&#62;% <br />
+&nbsp;&nbsp;&nbsp;&nbsp;html_nodes("strong") %&#62;%<br />
+&nbsp;&nbsp;&nbsp;&nbsp;html_text()<br />
+&#62; unlist(freiesMagazinMai)</div>
+
+<div class="p"><!----></div>
+
+
+Als Ergebnis erhält man:
+
+<div class="p"><!----></div>
+
+<div class="listing">[1] "Einführung in LilyPond 2.18.2"                    <br />
+[2] "Impress.js-basierte Präsentationen mit Hovercraft"<br />
+[3] "Gesundheit am PC" </div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Paket <b>ggmap</b></h3>
+
+
+Die Hauptfunktionalität des Pakets <b>ggmap</b> besteht zwar in der Visualisierung
+von Geo-Daten in Verbindung mit dem Paket <b>ggplot2</b>&nbsp;<a href="http://cran.r-project.org/web/packages/ggplot2">[33]</a>,
+aber es lassen sich auch einfachere Geocoding-Aufgaben und Routingplanungen 
+mit Hilfe der Google Maps API&nbsp;<a href="https://developers.google.com/maps">[34]</a>
+durchführen. <b>ggmap</b> befindet sich ebenfalls auf den CRAN-Spiegelservern, die
+Installation des Pakets erfolgt daher analog zu <b>rvest</b> und <b>magrittr</b> mit
+<b><tt class="big">install.packages("ggmap")</tt></b>.
+
+<div class="p"><!----></div>
+Als Beispiel schauen wir nach der Geocodierung der Stadt Berlin:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; library(ggmap)<br />
+&#62; geocode("Berlin")<br />
+<br />
+#stdout:<br />
+Information from URL : http://maps.googleapis.com/maps/api/geocode/json?address=Berlin&amp;sensor=false<br />
+Google Maps API Terms of Service : http://developers.google.com/maps/terms<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lon      lat<br />
+1 13.40495 52.52001</div>
+
+<div class="p"><!----></div>
+
+
+Die Initialisierung einer Distanzmatrix für die Städte München, Nürnberg,
+Frankfurt, Hamburg und Berlin könnte so erfolgen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># Städte<br />
+&#62; cities  &lt;- c("München", "Nürnberg", "Frankfurt", "Hamburg", "Berlin")<br />
+<br />
+# Initialisierung einer Distanzmatrix<br />
+&#62; num_cities        &lt;- length(cities)<br />
+&#62; distance_matrix   &lt;- matrix(data = NA, ncol = num_cities, nrow = num_cities)<br />
+&#62; colnames(distance_matrix) &lt;- cities<br />
+&#62; rownames(distance_matrix) &lt;- cities</div>
+
+<div class="p"><!----></div>
+
+
+Anschließend fragt man alle Entfernungen via Google Maps API ab
+und befüllt die Matrix:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; for (i in 1:num_cities){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;for (j in 1:num_cities){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distance_matrix[i,j]  &lt;- as.numeric(mapdist(cities[i], t(cities)[j],  output = "simple", messaging = FALSE)[4])<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;}<br />
+&#62; (distance_matrix          &lt;- round(distance_matrix))</div>
+
+<div class="p"><!----></div>
+
+
+Als Resultat erhält man:
+
+<div class="p"><!----></div>
+
+<div class="listing">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;München Nürnberg Frankfurt Hamburg Berlin<br />
+München         0      169       392     791    584<br />
+Nürnberg      170        0       224     607    449<br />
+Frankfurt     395      226         0     497    551<br />
+Hamburg       791      607       492       0    288<br />
+Berlin        585      437       546     288      0</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3><b>ganalytics</b></h3>
+
+
+Das R-package <b>ganalytics</b> ermöglicht den Zugriff auf die Google Analytics
+API&nbsp;<a href="https://developers.google.com/analytics">[35]</a>. Da dieses Paket nicht über
+CRAN erhältlich ist, muss es aus alternativen Quellen, hier aus einem
+Github-Repository, installiert werden. Dies gelingt komfortabel mit dem 
+R-package <b>devtools</b>, 
+
+welches sich über CRAN mit dem Funktionsaufruf
+<b><tt class="big">install.packages("devtools")</tt></b> beziehen lässt.
+
+<div class="p"><!----></div>
+Anschließend ist die Installation des Pakets <b>ganalytics</b> mittels <b>devtools</b>
+ebenfalls ganz einfach: 
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; devtools::install_github("jdeboer/ganalytics")&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Nun kann man die Verbindung zu Google Analytics herstellen:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; library(ganalytics)<br />
+<br />
+# CLIENT_MAIL,CLIENT_ID, CLIENT_SECRET und VIEW_ID sind entsprechend anzupassen<br />
+&#62; ga_creds &lt;- GoogleApiCreds(<br />
+&nbsp;&nbsp;"&lt;CLIENT_MAIL&#62;",<br />
+&nbsp;&nbsp;&nbsp;list(client_id    = "&lt;CLIENT_ID&#62;",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;client_secret = "&lt;CLIENT_SECRET")<br />
+)<br />
+&#62; query                 &lt;- GaQuery(view = &lt;VIEW_ID&#62;, ga_creds)<br />
+<br />
+# Abfrage der täglichen Anzahl an Sessions von März bis Mai<br />
+&#62; DateRange(query)      &lt;- c("2015-03-01", "2015-05-31")<br />
+&#62; Metrics(query)        &lt;- "sessions"<br />
+&#62; Dimensions(query)     &lt;- "date"<br />
+&#62; query_result          &lt;- GetGaData(query)<br />
+<br />
+# Visualisierung<br />
+&#62; library(ggplot2)<br />
+&#62; analytics_plot        &lt;- ggplot(query_result, aes(x=date, y=sessions))<br />
+&#62; analytics_plot + geom_line()</div>
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2015-08-bilder-Dateien/webscraping_sessions.png" alt="webscraping_sessions.png" style="max-width:100%" /><br /><em>Sessions im gewählten Zeitraum.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Mit der freien Statistikumgebung R und entsprechenden Paketen und
+API-Anbindungen wird Web Scraping zum Kinderspiel. Sollten dabei die verfügbaren
+high-level R-Packages den beabsichtigten Zweck nicht erfüllen, kann mit
+low-level R-Packages ein eigener Workflow erstellt werden. 
+
+<div class="p"><!----></div>
+Für eine tiefergehende praktische Einführung ins Web Scraping kann das 
+Buch „Automated Data Collection with R: A Practical Guide to Web Scraping 
+and Text Mining“&nbsp;<a href="http://www.r-datacollection.com/">[36]</a> empfohlen werden.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.gnu.org/software/wget"><tt class="big">http://www.gnu.org/software/wget</tt></a><br />
+[2] <a href="http://curl.haxx.se"><tt class="big">http://curl.haxx.se</tt></a><br />
+[3] <a href="http://www.r-project.org"><tt class="big">http://www.r-project.org</tt></a><br />
+[4] <a href="http://cran.r-project.org"><tt class="big">http://cran.r-project.org</tt></a><br />
+[5] <a href="http://cran.r-project.org/bin/linux/ubuntu"><tt class="big">http://cran.r-project.org/bin/linux/ubuntu</tt></a><br />
+[6] <a href="http://cran.r-project.org/web/views/WebTechnologies.html"><tt class="big">http://cran.r-project.org/web/views/WebTechnologies.html</tt></a><br />
+[7] <a href="http://journal.r-project.org/archive/2014-1/mair-chamberlain.pdf"><tt class="big">http://journal.r-project.org/archive/2014-1/mair-chamberlain.pdf</tt></a><br />
+[8] <a href="http://cran.r-project.org/web/packages/XML"><tt class="big">http://cran.r-project.org/web/packages/XML</tt></a><br />
+[9] <a href="http://cran.r-project.org/web/packages/curl"><tt class="big">http://cran.r-project.org/web/packages/curl</tt></a><br />
+[10] <a href="http://cran.r-project.org/web/packages/RCurl"><tt class="big">http://cran.r-project.org/web/packages/RCurl</tt></a><br />
+[11] <a href="http://cran.r-project.org/web/packages/httr"><tt class="big">http://cran.r-project.org/web/packages/httr</tt></a><br />
+[12] <a href="http://cran.r-project.org/web/packages/rjson"><tt class="big">http://cran.r-project.org/web/packages/rjson</tt></a><br />
+[13] <a href="http://cran.r-project.org/web/packages/jsonlite"><tt class="big">http://cran.r-project.org/web/packages/jsonlite</tt></a><br />
+[14] <a href="http://cran.r-project.org/web/packages/RJSONIO"><tt class="big">http://cran.r-project.org/web/packages/RJSONIO</tt></a><br />
+[15] <a href="http://cran.r-project.org/web/packages/selectr"><tt class="big">http://cran.r-project.org/web/packages/selectr</tt></a><br />
+[16] <a href="http://cran.r-project.org/web/packages/rvest"><tt class="big">http://cran.r-project.org/web/packages/rvest</tt></a><br />
+[17] <a href="http://cran.r-project.org/web/packages/magrittr"><tt class="big">http://cran.r-project.org/web/packages/magrittr</tt></a><br />
+[18] <a href="http://cran.r-project.org/web/packages/ggmap"><tt class="big">http://cran.r-project.org/web/packages/ggmap</tt></a><br />
+[19] <a href="http://cran.r-project.org/web/packages/RgoogleMaps"><tt class="big">http://cran.r-project.org/web/packages/RgoogleMaps</tt></a><br />
+[20] <a href="http://www.omegahat.org/RGoogleDocs"><tt class="big">http://www.omegahat.org/RGoogleDocs</tt></a><br />
+[21] <a href="https://github.com/jennybc/googlesheets"><tt class="big">https://github.com/jennybc/googlesheets</tt></a><br />
+[22] <a href="http://cran.r-project.org/web/packages/scholar"><tt class="big">http://cran.r-project.org/web/packages/scholar</tt></a><br />
+[23] <a href="https://github.com/jdeboer/ganalytics"><tt class="big">https://github.com/jdeboer/ganalytics</tt></a><br />
+[24] <a href="https://github.com/skardhamar/rga"><tt class="big">https://github.com/skardhamar/rga</tt></a><br />
+[25] <a href="http://cran.r-project.org/web/packages/Rfacebook"><tt class="big">http://cran.r-project.org/web/packages/Rfacebook</tt></a><br />
+[26] <a href="http://cran.r-project.org/web/packages/twitteR"><tt class="big">http://cran.r-project.org/web/packages/twitteR</tt></a><br />
+[27] <a href="http://cran.rstudio.com/web/packages/wikipediatrend"><tt class="big">http://cran.rstudio.com/web/packages/wikipediatrend</tt></a><br />
+[28] <a href="https://de.wikipedia.org"><tt class="big">https://de.wikipedia.org</tt></a><br />
+[29] <a href="http://cran.r-project.org/web/packages/rvest/rvest.pdf"><tt class="big">http://cran.r-project.org/web/packages/rvest/rvest.pdf</tt></a><br />
+[30] <a href="http://selectorgadget.com"><tt class="big">http://selectorgadget.com</tt></a><br />
+[31] <a href="http://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html"><tt class="big">http://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html</tt></a><br />
+[32] <a href="https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb"><tt class="big">https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb</tt></a><br />
+[33] <a href="http://cran.r-project.org/web/packages/ggplot2"><tt class="big">http://cran.r-project.org/web/packages/ggplot2</tt></a><br />
+[34] <a href="https://developers.google.com/maps"><tt class="big">https://developers.google.com/maps</tt></a><br />
+[35] <a href="https://developers.google.com/analytics"><tt class="big">https://developers.google.com/analytics</tt></a><br />
+[36] <a href="http://www.r-datacollection.com/"><tt class="big">http://www.r-datacollection.com/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Markus Herrmann und Barbara Wolf</b>
+beschäftigen sich im Bereich Marketing &amp; Data Sciences unter anderem mit
+Methoden zur Analyse offener (Internet-)Daten.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Web Scraping mit R&amp;body=freiesMagazin 08/2015%0AWeb Scraping mit R%0AMarkus Herrmann und Barbara Wolf%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Web Scraping mit R#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_biblatex" name="fm_15_08_biblatex">Modifizieren eines Biblatex-Stils</a></font></h1>von E. Frank Sandig
+
+<div class="p"><!----></div>
+    <b>D</b><b>ieser Artikel richtet sich an Nutzer von LaTeX, die
+sich erstmals damit konfrontiert sehen, besondere Vorgaben bei der
+Bibliografie umsetzen zu müssen, welche sich mit Standardstilen nicht
+vollständig realisieren lassen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Eine frühere Version des Artikels erschien 2014 im Blog von
+TeXwelt&nbsp;<a href="http://texwelt.de/blog">[1]</a>.</i>
+
+<div class="p"><!----></div>
+
+<h2>Ausgangslage</h2>
+
+
+Schreibt man wissenschaftliche Arbeiten oder Artikel für Fachzeitschriften, so
+wird dafür stets ein Literaturverzeichnis benötigt. LaTeX bietet mit dem Paket
+Biblatex ein hervorragendes Werkzeug zu dessen Erstellung. Dabei gibt es
+Betreuervorgaben, Institutsvorgaben, Normen oder Vorgaben der
+unterschiedlichen Fachpublikationen, wie das Literaturverzeichnis im
+Einzelfall auszusehen hat. Für den Stil „iest“, der im vorliegenden
+Artikel vorgestellt wird, galten am Institut für Eisen- und Stahltechnologie
+der TU Bergakademie Freiberg (IEST) die folgenden Vorgaben:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> knapper numerischer Zitationsstil</li>
+<li> Hervorhebung des Werktitels in geeigneter Weise</li>
+<li> Sortierung des Literaturverzeichnisses nach Reihenfolge der Zitation</li>
+<li> Autoren-, Herausgeber- und Übersetzerangabe als Nachname, Vorname</li>
+<li> durchgehende Angabe der Vornamen als Initialen</li>
+<li> Doppelpunkt nach dem letzten Autoren-, Herausgeber- und Übersetzernamen</li>
+<li> Abkürzen der Autorenliste mit „et al.“ bei mehr als drei Autoren</li>
+</ol>
+
+<div class="p"><!----></div>
+Die Punkte 1 und 2 werden bereits vom Standardstil „numeric-comp“ umgesetzt.
+Punkt 3 lässt sich durch die Paketoption <b><tt class="big">sorting=none</tt></b> beim Laden des
+Paketes Biblatex erreichen. Sucht man über die üblichen Suchmaschinen nach
+Stilen für Bib-latex, so erhält man überwiegend Treffer für das ältere
+BibTeX-System. Diese beiden Systeme sind jedoch, was die Stildateien angeht, nicht
+kompatibel. Obwohl die Vorgaben des IEST keineswegs außergewöhnlich sind,
+war zu Beginn der Arbeit am Stil „iest“ kein vorgefertigter Stil im Internet
+verfügbar, der die obigen Vorgaben vollständig umgesetzt hätte. Dieser
+Umstand gab daher den Ausschlag für die Erstellung eines neuen Stils „iest“. Dieser basiert
+auf „numeric-comp“ und lädt diesen Stil, womit alle Eintragstypen und Felder,
+die der Standardstil unterstützt, auch von „iest“ unterstützt werden.
+
+<div class="p"><!----></div>
+Für einzelne Änderungen, die nur in einem Dokument benötigt werden, lohnt sich
+die Erstellung eines eigenen Stiles nicht. In diesem Fall kann man die
+Änderung in der Präambel des Dokumentes einfügen. Ein eigener Biblatex-Stil
+lohnt sich vor allem, wenn man mehrere Änderungen hat,
+
+man diese immer wieder
+benötigt oder wenn der Bibliografiestil von einer Gruppe von Autoren verwendet
+werden soll (z.&nbsp;B. alle Studenten eines Betreuers, ein Institut, alle
+Autoren bei einer bestimmten Zeitschrift, alle Wissenschaftler eines
+Projekts, alle Projekte eines Trägers usw.).
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/biblatex_numeric-comp.png" alt="biblatex_numeric-comp.png" style="max-width:100%" /><br /><em>Beispiel zum Stil „numeric-comp“.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Vorteile von Biblatex</h2>
+
+
+Die Verwendung des moderneren Pakets Bib-latex bietet gegenüber dem
+älteren
+BibTeX-System eine Reihe von Vorteilen; beim Einsatz selbst wie auch bei der
+Erstellung eigener Stile. So unterstützt Biblatex mehr Felder je Eintragstyp.
+Darunter sind z.&nbsp;B. <b><tt class="big">redactor</tt></b>, <b><tt class="big">shorthand</tt></b>, <b><tt class="big">subtitle</tt></b>, <b><tt class="big">bookauthor</tt></b>,
+<b><tt class="big">booktitle</tt></b> und <b><tt class="big">origlanguage</tt></b>, <b><tt class="big">origlocation</tt></b>, <b><tt class="big">origtitle</tt></b> sowie
+<b><tt class="big">origyear</tt></b>. Ebenso existieren bei Biblatex von Haus aus mehr Eintragstypen
+als bei BibTeX, z.&nbsp;B. <b><tt class="big">@collection</tt></b>, <b><tt class="big">@online</tt></b>,
+<b><tt class="big">@patent</tt></b> und
+<b><tt class="big">@periodical</tt></b>. Darüber hinaus können relativ einfach eigene Eintragstypen
+definiert werden.
+
+<div class="p"><!----></div>
+Viele Einstellungen für die Bibliografie können bereits beim Laden des
+Pakets in Form von Paketoptionen übergeben werden. Darunter sind das Schema
+zur Sortierung der Bibliografie, Block- oder Flattersatz im
+Literaturverzeichnis, Verwendung bibliografischer Abkürzungen, die maximale
+Anzahl der ausgegebenen Namen, Angabe von Seitenzahlen der Zitate in der
+Bibliografie, Ausgabe von ISBN, DOI, URL, ePrint und einiges mehr. Verwendet
+man an Stelle von BibTeX den moderneren Bibliografieprozessor biber zur
+Sortierung, was bei Biblatex voreingestellt ist, so kann man eigene
+Sortierschemata definieren, z.&nbsp;B. <b><tt class="big">name-title-year</tt></b>, und erhält darüber hinaus
+UTF8-Unterstützung für die eigene Literaturdatenbank, welche einen besonderen
+Vorteil darstellt.
+
+<div class="p"><!----></div>
+Es ist möglich, unterschiedliche Zitations- und Bibliografiestile unabhängig
+voneinander zu laden (Paketoptionen <b><tt class="big">citestyle</tt></b> und <b><tt class="big">bibstyle</tt></b>). Biblatex
+bietet zahlreiche unterschiedliche Zitierbefehle, darunter <b><tt class="big">\autocite{}</tt></b>. Das
+Verhalten dieses Befehls lässt sich global über eine Paketoption einstellen.
+Optional bietet Biblatex auch Kompatibilität zum <b>natbib</b> Paket. Das
+Biblatex-Paket unterstützt unterteilte Bibliographien, mehrere Bibliographien
+innerhalb eines Dokuments und separate Listen bibliographischer Abkürzungen.
+Bei all dem ist Biblatex bezüglich der Datenbank abwärtskompatibel, sodass
+man alle alten <b><tt class="big">.bib</tt></b>-Dateien weiterhin verwenden kann. Wie man Biblatex in
+einem Dokument verwendet, kann man dem
+Beispiel&nbsp;<a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.tex">[2]</a>
+entnehmen.
+
+<div class="p"><!----></div>
+Man kann BibTeX zugute halten, dass bereits sehr viele fertige Stile
+existieren, da es das System bereits seit 1985 gibt. Dennoch werden in
+LaTeX-Foren täglich Fragen nach der Umsetzung besonderer Vorgaben,
+die über
+vorhandene Stile hinausgehen, gestellt. Eigene Stile für das ältere System
+können mit <b><tt class="big">makebst</tt></b> nach einem Frage-Antwort-Schema erstellt werden. Jedoch
+lassen sich damit, trotz des relativ großen Zeitaufwandes, Vorgaben häufig
+nicht vollständig umsetzen. Editiert man einen <b><tt class="big">.bst</tt></b>-Stil selbst, so muss
+man dazu BibTeX-Funktionen verwenden, die quasi eine eigene,
+keineswegs
+triviale Sprache darstellen, vgl. die Dokumentation von
+BibTeX&nbsp;<a href="http://www.ctan.org/tex-archive/info/bibtex/tamethebeast/">[3]</a>.
+
+<div class="p"><!----></div>
+Demgegenüber greift Biblatex lediglich optional für die Sortierung der
+Einträge auf BibTeX zurück. Die Formatierung des Literaturverzeichnisses und
+der Zitate erfolgt jedoch über LaTeX-Befehle bzw. Makros. Diese Vorgehensweise
+ist für den erfahrenen LaTeX-Anwender intuitiver, transparenter und
+effizienter als die BibTeX-Programmierung und darüber hinaus der Grund dafür,
+dass einzelne Änderungen in der Präambel des betreffenden Dokuments angegeben
+werden können. Die besondere Effizienz von Biblatex ist u.&nbsp;a. darin begründet,
+dass man bestehende Stile laden und einzelne Teile umdefinieren kann. Dies
+führt dazu, dass der Stil „iest“ mit wenigen Zeilen Quelltext auskommt.
+Aufgrund der Funktionsweise sowie einer Vielzahl an Optionen ist Biblatex
+weitaus flexibler als das BibTeX-System.
+
+<div class="p"><!----></div>
+
+<h2>Informationsquellen</h2>
+
+
+Sucht man im Internet nach Informationen, wie Biblatex-Stile zu erstellen und
+modifizieren sind, so erhält man viele über Foren verstreute
+Informationsschnipsel. Zwei Quellen liefern umfassendere Informationen. Zum
+einen ist das die hervorragende Paketdokumentation von Philipp Lehman mit
+Philip Kime, Audrey Boruvka und Joseph Wright. Die jeweils aktuelle englische
+Version findet man auf
+CTAN&nbsp;<a href="http://ctan.mirrorcatalogs.com/macros/latex/contrib/biblatex/doc/biblatex.pdf">[4]</a>.
+Die lokal mit TeX Live installierte Version kann man auf der Kommandozeile mit
+dem Befehl <b><tt class="big">texdoc biblatex</tt></b> aufrufen. Zu der Frage, wo man die Dokumentation
+findet, gibt es eine Anwenderfrage mit Antworten auf der Seite der
+TeXwelt&nbsp;<a href="http://texwelt.de/wissen/fragen/6725">[5]</a>. Die Dokumentation ist
+umfassend, weshalb sie ob der vielen Möglichkeiten von Biblatex sehr
+umfangreich gehalten ist. Es kann daher relativ lange dauern, alle für die
+eigenen Modifikationen notwendigen Informationen zusammenzusuchen. Dennoch sollte
+sie als offizielle Paketdokumentation im Zweifelsfall die Quelle der Wahl
+sein.
+
+<div class="p"><!----></div>
+Da bei LaTeX, wie so oft im Leben, der Grundsatz „exemplum docet“ gilt, ist
+für ein schnelles Vorankommen beim Bau des eigenen Stils Dominik Waßenhovens
+Artikel aus der DANTE-Zeitschrift „Die TeXnische Komödie“
+4/08&nbsp;<a href="http://www.dante.de/DTK/Ausgaben/dtk08-4.pdf">[6]</a> sehr hilfreich. Der Autor
+erläutert darin die Vorgehensweise am Beispiel von Anforderungen für eine
+geisteswissenschaftliche Publikation. Mit gewissen Modifikationen ist der
+Artikel auf andere Fachgebiete ebenso anwendbar. Die Vorgehensweise bleibt
+gleich, lediglich die Befehle zur Formatierung unterscheiden sich je nach
+Anforderungen. Waßenhovens Artikel geht über den vorliegenden dahingehend
+hinaus, dass auch auf Änderungen in der Darstellung der Werktitel u.ä.
+eingegangen wird, was mit einem etwas größeren Änderungsaufwand verbunden ist.
+Teil 1 des Artikels aus Ausgabe
+2/08&nbsp;<a href="http://www.dante.de/DTK/Ausgaben/2008-2.pdf">[7]</a> geht auf die Grundlagen der
+Arbeit mit Biblatex ein.
+
+<div class="p"><!----></div>
+Eine weiteren Einstieg in Biblatex bietet der Blogartikel „Hilfe zu Biblatex“
+von Marco Daniel&nbsp;<a href="http://texwelt.de/blog/hilfe-zu-biblatex">[8]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Lösungsansätze</h2>
+
+
+Ein vollständiger Stil für Biblatex besteht mindestens aus zwei ASCII-Dateien.
+Eine <b><tt class="big">*.cbx</tt></b>-Datei ist für das Erscheinungsbild der Zitate im Text
+verantwortlich. In einer <b><tt class="big">.bbx</tt></b>-Datei wird die Formatierung der
+Quellenangaben im Literaturverzeichnis festgelegt. Darüber hinaus ist es
+möglich, in einer <b><tt class="big">.lbx</tt></b>-Datei sprachabhängige Einstellungen in Verbindung
+mit einem Sprachpaket wie <b>babel</b> oder <b>polyglossia</b> zu treffen. Man spart
+sehr viel Arbeit, wenn man einen eigenen Stil nicht von Null an neu schreibt,
+sondern einen vorhandenen Stil den eigenen Wünschen oder Vorgaben anpasst.
+Neben den mitgelieferten Standardstilen gibt es eine Reihe spezieller
+Stile&nbsp;<a href="http://ctan.org/topic/biblatex">[9]</a>. Für den Umgang mit Änderungen gibt
+es die nachfolgend erläuterten unterschiedlichen Philosophien.
+
+<div class="p"><!----></div>
+
+<h3>Einen Stil kopieren und ändern</h3>
+
+
+Man speichert die vorhandenen Stildateien unter neuem Namen und ändert die
+Zeilen <b><tt class="big">\ProvidesFile{stilname.cbx}</tt></b> bzw. <b><tt class="big">\ProvidesFile{stilname.bbx}</tt></b>
+entsprechend ab. Dann beginnt man, die Definitionen den eigenen Wünschen
+anzupassen.
+
+<div class="p"><!----></div>
+Dieses Vorgehen ist von Vorteil, wenn man nicht wünscht, dass Änderungen am
+generischen Stil in den eigenen vererbt werden und wenn man sehr viel ändern
+möchte. Ein Nachteil ist, dass man sehr große und unübersichtliche Stildateien
+erhält bzw. die eigenen Änderungen für Dritte schwerer nachvollziehbar sind.
+
+<div class="p"><!----></div>
+
+<h3>Einen Stil laden und nötiges umdefinieren</h3>
+
+
+Man legt neue Stildateien mit dem gewünschten Namen an, lädt mit
+<b><tt class="big">\RequireCitationStyle{vorhandener-stil}</tt></b> bzw.
+<b><tt class="big">\RequireBibliographyStyle{vorhandener-stil}</tt></b>
+einen vorhandenen Stil und definiert das Gewünschte um.
+
+<div class="p"><!----></div>
+Man erhält dabei, vor allem bei wenigen Änderungen, sehr übersichtliche
+Stildateien. Ein möglicher Nachteil ist die Vererbung von Änderungen am
+vorhandenen Stil in den eigenen Stil.
+
+<div class="p"><!----></div>
+Diese Vorgehensweise wurde auf Grund der wenigen nötigen Änderungen für das
+Erstellen des Stils „iest“ gewählt. Der Name „iest“ ist die Abkürzung für
+„Institut für Eisen- und Stahltechnologie“, an dem der hier vorgestellte
+Stil entstand. Es handelt sich um einen Arbeitstitel, welcher, wie so oft,
+nicht mehr geändert wurde.
+
+<div class="p"><!----></div>
+
+<h3>Befehle und ihre Bedeutung</h3>
+
+
+Zunächst zur Datei <b><tt class="big">iest.cbx</tt></b>, die das generelle Erscheinungsbild
+des
+Stils festlegt:
+
+<div class="p"><!----></div>
+
+<div class="listing">\ProvidesFile{iest.cbx}<br />
+\RequireCitationStyle{numeric-comp}<br />
+\endinput</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2015-08-listings/iest.cbx">iest.cbx</a></i>
+
+<div class="p"><!----></div>
+
+
+Zeile 1 macht den Namen der Stildatei für die Zitation bekannt. In Zeile 2
+wird der generische Zitationsstil – hier handelt es sich um den Standardstil
+„numeric-comp“ – geladen. Die letzte Zeile zeigt das Ende der Stildatei an.
+
+<div class="p"><!----></div>
+In der Datei <b><tt class="big">iest.bbx</tt></b> sind folgende Einstellungen zu finden:
+In Zeile 1 wird der Name der Stildatei für die Quellenangaben bekannt gemacht.
+Zeile 2 lädt den generischen Bibliografiestil – hier handelt es sich wie oben
+beschrieben um den Standardstil „numeric-comp“.
+
+<div class="p"><!----></div>
+Ein neues Namensformat mit dem Namen „tubafshort“ wird in Zeile 3 definiert.
+Der zweite Parameter enthält die Befehle zur Formatierung in Form der
+folgenden beiden Makros. Die Abkürzung „tubaf“ im Namen „tubafshort“ bedeutet
+„TU Bergakademie Freiberg“; „short“ steht selbstverständlich für kurz. Es
+handelt sich wiederum um einen Arbeitstitel, der auf den Ort der
+Entstehung verweisen soll und der erhalten blieb.
+
+<div class="p"><!----></div>
+
+<div class="listing">\ProvidesFile{iest.bbx}<br />
+\RequireBibliographyStyle{numeric-comp}<br />
+\DeclareNameFormat{tubafshort}{}<br />
+\usebibmacro{name:last-first}{#1}{#4}{#5}{#7}<br />
+\usebibmacro{name:andothers}<br />
+\DeclareNameAlias{author}{tubafshort}<br />
+\DeclareNameAlias{editor}{tubafshort}<br />
+\DeclareNameAlias{translator}{tubafshort}<br />
+\renewcommand*{\labelnamepunct}{\addcolon\addspace}<br />
+\DefineBibliographyStrings{ngerman}{andothers={et\addabbrvspace al\adddot}}<br />
+\endinput</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2015-08-listings/iest.bbx">iest.bbx</a></i>
+
+<div class="p"><!----></div>
+
+
+Das Makro <b><tt class="big">name:last-first</tt></b> in Zeile 4 gibt Namen in der Form
+„Nachname, Vorname“ zurück. Die weiteren Parameter dienen zur Formatierung der
+Namensangabe. Dabei sind die Variablen entsprechend der Tabelle belegt.
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Variablen zur Formatierung der Namen</b></td></tr>
+<tr><td><b>Variable</b> </td><td><b>Inhalt</b> </td></tr>
+<tr><td><b><tt class="big">#1</tt></b> </td><td>Nachname </td></tr>
+<tr><td><b><tt class="big">#2</tt></b> </td><td>Nachname (Initialen) </td></tr>
+<tr><td><b><tt class="big">#3</tt></b> </td><td>Vorname </td></tr>
+<tr><td><b><tt class="big">#4</tt></b> </td><td>Vorname (Initialen) </td></tr>
+<tr><td><b><tt class="big">#5</tt></b> </td><td>Präfix (z.&nbsp;B. „von“) </td></tr>
+<tr><td><b><tt class="big">#6</tt></b> </td><td>Präfix (Initialen) </td></tr>
+<tr><td><b><tt class="big">#7</tt></b> </td><td>Affix (z.&nbsp;B. „Junior“) </td></tr>
+<tr><td><b><tt class="big">#8</tt></b> </td><td>Affix (Initialen) </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+Folglich gibt das Makro im obigen Fall den vollen Nachnamen, die Initialen des
+Vornamens sowie
+vollständigen Präfix und Affix zurück.
+
+<div class="p"><!----></div>
+Sind mehrere Namen einer Namensart vorhanden, kürzt das in Zeile 5 definierte Makro
+<b><tt class="big">name:andothers</tt></b> nach einer bestimmten Anzahl (standardmäßig drei Namen) die
+Namensliste mit „erster Autor, u.&nbsp;a.“ ab. Die maximale Anzahl der Namen, die vollständig
+ausgegebenen werden sollen, lässt sich über die Paketoption <b><tt class="big">maxnames</tt></b> einstellen.
+
+<div class="p"><!----></div>
+Das neu definierte Namensformat „tubafshort“ wird in den Zeilen 6-8 für die
+Namensarten Autor („author“), Herausgeber („editor“) und Übersetzer
+(„translator“) gewählt.
+
+<div class="p"><!----></div>
+<b><tt class="big">\labelnamepunct</tt></b> enthält die Zeichenfolge, mit der die Namensangabe im
+Literaturverzeichnis abgeschlossen wird. Bei „numeric-comp“ enthält <b><tt class="big">\labelnamepunct</tt></b>
+standardmäßig ein Punkt und ein Leerzeichen. In Zeile 9 wird die Variable mit
+einem Doppelpunkt (<b><tt class="big">\addcolon</tt></b>) und einem Leerzeichen (<b><tt class="big">\addspace</tt></b>) mittels <b><tt class="big">\renewcommand*</tt></b> neu
+belegt.
+
+<div class="p"><!----></div>
+In Zeile 10 wird der in „numeric-comp“ mit „u.&nbsp;a.“ belegte String für die
+Abkürzung bei mehreren Autoren mit „et al.“ neu belegt.
+
+<div class="p"><!----></div>
+
+<h2>Ergebnis</h2>
+
+
+Beim Stil „iest“ gibt es gegenüber „numeric-comp“ keine Änderungen, was den
+Zitationsstil angeht. Dennoch ist es von Vorteil, eine <b><tt class="big">.cbx</tt></b>-Datei
+anzulegen. Dadurch kann der Stil durch die Paketoption <b><tt class="big">style=iest</tt></b>
+eingebunden werden, es ist keine getrennte Angabe von <b><tt class="big">bibstyle</tt></b> und
+<b><tt class="big">citestyle</tt></b> notwendig. Die Option, bspw. den ausführlicheren Zitationsstil
+über <b><tt class="big">citestyle=numeric</tt></b> zu laden, bleibt davon unberührt. Während in
+„numeric-comp“ und damit auch in „iest“ aufeinanderfolgende Quellennummern
+(1,2,3) in der Form 1–3 abgekürzt werden, listet <b><tt class="big">numeric</tt></b> die Quellen
+vollständig auf.
+
+<div class="p"><!----></div>
+Die <b><tt class="big">.cbx</tt></b>-Datei sowie die <b><tt class="big">.bbx</tt></b>-Datei findet sich auf
+GitHub&nbsp;<a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.cbx">[10]</a>&nbsp;<a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.bbx">[11]</a>.
+Dort findet sich ebenso ein
+Anwendungsbeispiel&nbsp;<a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.tex">[2]</a>
+mit einer kleinen
+Literaturdatenbank&nbsp;<a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/quellen-iest.bib">[12]</a>.
+
+<div class="p"><!----></div>
+Die Kommentarzeilen (beginnend mit %) werden von LaTeX nicht interpretiert.
+Sie dienen dazu, Informationen über die Dateien an Anwender oder andere
+Entwickler weiterzugeben.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/biblatex_iest.png" alt="biblatex_iest.png" style="max-width:100%" /><br /><em>Beispiel zum Stil „iest“.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Bezug und Installation des Stils „iest“</h2>
+
+
+Den aktuellen Stand des Stils „iest“ findet man, inklusive Beispiel, stets auf
+GitHub&nbsp;<a href="https://github.com/Ekkehardt/biblatex-iest">[13]</a>. Zur Problemstellung,
+wo eigene Makros und ähnliches zu speichern sind, gibt es eine Frage auf der
+TeXwelt&nbsp;<a href="http://texwelt.de/wissen/fragen/3528">[14]</a>.
+
+<div class="p"><!----></div>
+Die Installation für den aktuell angemeldeten Benutzer in Tex Live unter
+Windows, Linux und MacOS besteht aus nur einem Schritt, in dem
+man die Dateien <b><tt class="big">iest.cbx</tt></b> und <b><tt class="big">iest.bbx</tt></b> nach
+<b><tt class="big">~/texmf/tex/latex/biblatex-iest</tt></b> kopiert. In MacTeX unter MacOS installiert
+man den Stil, indem man die oben genannten Dateien nach
+<b><tt class="big">~/Library/texmf/tex/latex/biblatex-iest</tt></b> kopiert.
+
+<div class="p"><!----></div>
+In MikTeX unter Windows gilt folgende Vorgehensweise:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> Anlegen eines privaten Baumes, zum Beispiel unter <b><tt class="big">~/texmf</tt></b>, der außerhalb des
+  Verzeichnisses der eigentlichen MikTeX-Installation liegen muss</li>
+<li> Kopieren der Dateien <b><tt class="big">iest.cbx</tt></b> und <b><tt class="big">iest.bbx</tt></b> nach
+  <b><tt class="big">~/texmf/tex/latex/biblatex-iest</tt></b></li>
+<li> Registrieren des privaten Baumes als „Root“</li>
+</ol>
+
+<div class="p"><!----></div>
+Für den letzten Punkt startet man das Programm „MikTeX Settings“, klickt im
+Reiter „<em>Roots</em>“ auf die Schaltfläche „<em>Add…</em>“, wählt den obigen Order aus,
+passt ggf. die Suchreihenfolge an und bestätigt das Ganze mit einem Klick auf
+„<em>Übernehmen</em>“.
+
+<div class="p"><!----></div>
+In all diesen Fällen ist <b><tt class="big">~/</tt></b> das Heimatverzeichnis des Benuters,
+der aktuell angemeldet ist.
+
+<div class="p"><!----></div>
+
+<h2>Support</h2>
+
+
+Für Rückfragen steht die E-Mail-Adresse <b>schriftsatz[AT]sandig-fg[DOT]de</b> zur
+Verfügung. Fehlermeldungen, Problemberichte, Verbesserungsvorschläge u.&nbsp;ä.
+können über den GitHub-Issue-Tracker&nbsp;<a href="https://github.com/Ekkehardt">[15]</a>
+eingereicht werden.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://texwelt.de/blog"><tt class="big">http://texwelt.de/blog</tt></a><br />
+[2] <a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.tex"><tt class="big">https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.tex</tt></a><br />
+[3] <a href="http://www.ctan.org/tex-archive/info/bibtex/tamethebeast/"><tt class="big">http://www.ctan.org/tex-archive/info/bibtex/tamethebeast/</tt></a><br />
+[4] <a href="http://ctan.mirrorcatalogs.com/macros/latex/contrib/biblatex/doc/biblatex.pdf"><tt class="big">http://ctan.mirrorcatalogs.com/macros/latex/contrib/biblatex/doc/biblatex.pdf</tt></a><br />
+[5] <a href="http://texwelt.de/wissen/fragen/6725"><tt class="big">http://texwelt.de/wissen/fragen/6725</tt></a><br />
+[6] <a href="http://www.dante.de/DTK/Ausgaben/dtk08-4.pdf"><tt class="big">http://www.dante.de/DTK/Ausgaben/dtk08-4.pdf</tt></a><br />
+[7] <a href="http://www.dante.de/DTK/Ausgaben/2008-2.pdf"><tt class="big">http://www.dante.de/DTK/Ausgaben/2008-2.pdf</tt></a><br />
+[8] <a href="http://texwelt.de/blog/hilfe-zu-biblatex"><tt class="big">http://texwelt.de/blog/hilfe-zu-biblatex</tt></a><br />
+[9] <a href="http://ctan.org/topic/biblatex"><tt class="big">http://ctan.org/topic/biblatex</tt></a><br />
+[10] <a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.cbx"><tt class="big">https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.cbx</tt></a><br />
+[11] <a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.bbx"><tt class="big">https://github.com/Ekkehardt/biblatex-iest/blob/master/iest.bbx</tt></a><br />
+[12] <a href="https://github.com/Ekkehardt/biblatex-iest/blob/master/quellen-iest.bib"><tt class="big">https://github.com/Ekkehardt/biblatex-iest/blob/master/quellen-iest.bib</tt></a><br />
+[13] <a href="https://github.com/Ekkehardt/biblatex-iest"><tt class="big">https://github.com/Ekkehardt/biblatex-iest</tt></a><br />
+[14] <a href="http://texwelt.de/wissen/fragen/3528"><tt class="big">http://texwelt.de/wissen/fragen/3528</tt></a><br />
+[15] <a href="https://github.com/Ekkehardt"><tt class="big">https://github.com/Ekkehardt</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>E. Frank Sandig</b>&nbsp;(<a href="http://sandig-fg.de/">Webseite</a>)
+studiert Werkstoffwissenschaft und -technologie an der TU Bergakademie
+Freiberg. Er beschäftigt sich seit 1999 mit Linux und Open Source und seit
+2007 mit LaTeX. Derzeit entsteht seine Diplomarbeit – natürlich in LaTeX.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Modifizieren eines Biblatex-Stils&amp;body=freiesMagazin 08/2015%0AModifizieren eines Biblatex-Stils%0AE. Frank Sandig%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Modifizieren eines Biblatex-Stils#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_texmacs_praesentationen" name="fm_15_08_texmacs_praesentationen">TeXmacs als Präsentationstool nutzen</a></font></h1>von Walter Eisenhauer
+
+<div class="p"><!----></div>
+    <b>P</b><b>räsentationen sind heute weder in Unternehmen noch in Schule, Wissenschaft
+und Forschung wegzudenken. Ein Großteil der Leser wird dabei auf Office-Pakete
+zurückgreifen, die eine Vielzahl von Formatierungen, Animationen etc. bieten.
+Dabei läuft man aber auch der Gefahr, dass eine Überfrachtung stattfindet, die
+am Ende vom Inhalt ablenkt, oder die Aufmerksamkeit durch die vielen
+Variationen, die man eingestellt hat, überfordert. Der Merksatz
+„Weniger ist
+mehr!“ sollte deshalb immer im Vordergrund stehen.</b>
+
+<div class="p"><!----></div>
+Alternativen bieten sich mit LaTeX an, dazu sind aber unbedingt Vorkenntnisse
+erforderlich. Auch mit Hilfe von GUIs (wie Kile&nbsp;<a href="http://kile.sourceforge.net/">[1]</a>, 
+Texmaker&nbsp;<a href="http://www.xm1math.net/texmaker/">[2]</a> oder Lyx&nbsp;<a href="http://www.lyx.org/">[3]</a>)
+besteht zwar die Chance, schneller hinter die Vorteile solcher Präsentationen zu
+kommen, aber ganz ohne LaTeX-Wissen geht es nicht. Bei Lyx hat man jedoch über
+das Internet oft die Möglichkeit Präsentationen herunterzuladen, die man dann
+wiederum als Vorlage nutzen kann. Lyx mit dem Modul „Beamer“ eignet sich gut für
+Präsentationen und ist total ungebunden, denn die Ausgabe
+erfolgt auf PDF und dies ist auf jedem Geräte normalerweise durch einen Viewer
+nutzbar.
+
+<div class="p"><!----></div>
+Für viele ist TeXmacs ein unbekannter Editor. Im Internet findet man zwar kurze
+Informationen, aber weder umfangreichere Hilfen noch Beispiele. Deshalb ist man
+auf die beigefügten Handbücher angewiesen, die viele Daten und Hilfen erhalten,
+aber einem bei Weitem den Einstieg nicht gänzlich erleichtern, gerade
+weil
+Beispieldaten fehlen. TeXmacs ist für wissenschaftliche Arbeiten gedacht und ist
+eine Mischung aus der LaTeX-Welt und Emacs – zumindest ist dies so nachzulesen.
+Die Möglichkeiten, die TeXmacs bietet, sind so gut wie identisch mit denen von
+LaTeX, haben jedoch einen Vorteil: Man sieht sofort, was man gerade anrichtet.
+
+<div class="p"><!----></div>
+
+<h2>Installation und Einrichtung</h2>
+
+
+Die Installation bei Ubuntu ist ganz einfach, man wählt im Software-Center einfach das einzige
+Paket aus. Die Erweiterung, die dabei steht, funktioniert nicht. Wenn man diese
+anwählt, wird TeXmacs abgewählt, womit dieser Editor nicht zu Verfügung steht.
+
+<div class="p"><!----></div>
+Nach der Installation sind ein paar Grundeinstellungen vorzunehmen, die in der
+nicht gerade aufgeräumt wirkenden Oberfläche zu finden sind: Unter „<em>Datei -&#62; Seite einrichten</em>“
+kann die Voreinstellung der Vorschau, das Druckkommando und so 
+weiter eingestellt werden. Unter 
+
+
+<div class="p"><!----></div>
+„<em>Dokument -&#62; Seite</em>“ sollte man die voreingestellte Version 
+„<em>Papyrus</em>“ durch „<em>Papier</em>“ ersetzen. Papyrus ist eine Format für eine
+unendliche Seite, während Papier das Format DIN A4 und dergleichen übernimmt,
+welches zuvor über „<em>Seite einrichten</em>“ vorgegeben wurde. Schriftarten und Größen
+lassen sich ebenfalls individualisieren.
+
+<div class="p"><!----></div>
+
+<h2>Erstellen einer Präsentation</h2>
+
+
+Wenn eine Präsentation erstellt werden soll, dann erfolgt dies dadurch, dass
+unter „<em>Dokumenten -&#62; Stil</em>“ der Stil „<em>Beamer</em>“ ausgewählt wird. Dadurch ändert sich
+automatisch die Voransicht.
+
+<div class="p"><!----></div>
+Im Gegensatz zu Lyx und anderen LaTeX-Editoren bedeutet dies aber
+nicht, dass
+sich die Anzeige im Menüfeld ändert. Es werden nur darunter zusätzliche Felder
+angezeigt, die sich direkt auf den Beamer beziehen.
+
+<div class="p"><!----></div>
+Die erste Seite (Slide 1) sollte natürlich den Titel beinhalten. Also geht man
+auf „<em>Einfügen -&#62; Titel</em>“. Damit wird auf dem Slide ein klar
+umgrenzter Raum angezeigt. Gibt man
+nun einen Titel ein und drückt „<i>Enter</i>“ wird automatisch „von“
+eingefügt, womit jeder nun die Möglichkeit hat sich als Autor zu verewigen.
+Weitere Möglichkeit über Datum, Untertitel etc. sind ebenfalls über Einfügen
+erreichbar.
+
+<div class="p"><!----></div>
+
+
+Aber man kommt scheinbar nicht aus diesem Feld heraus. Das muss man aber, wenn
+man weiterarbeiten will. Dies gelingt auf eine einfache, aber nicht beschriebene
+Art und Weise: Dazu muss man mit der Maus rechts oder links neben den Rand klicken.
+Nun verschwindet der Rahmen und man kann „normal“ weiterschreiben.
+
+<div class="p"><!----></div>
+Doch dann kommt man ans Ende der ersten Seite. Die Frage, die einem nun
+Rätsel aufgibt, ist, wie man eine zweite Folie aufmacht. Dazu muss man
+als
+Dokumentenstil „Beamer“ ausgewählt haben, sodass in der Menüleiste „<em>Screens</em>“
+erscheint. Klickt man darauf, dann erweitert sich das Feld dahingehend,
+dass in der Spalte am Schluss „<em>Slide 1</em>“ steht. Hinter dem Begriff „<em>Beamer</em>“
+sind jetzt zwei kleine Buttons aufgetaucht, die ein Pluszeichen beinhalten und
+nach links bzw. rechts weisen. Klickt man nach rechts erscheint eine neue leere
+Folie, die nun den Namen „Slide 2“ trägt. Damit ist dieses Problem gelöst.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/Beamer_menueleiste.png" alt="Beamer_menueleiste.png" style="max-width:100%" /><br /><em>Die Menüleiste von TeXmacs nach Auswahl von „Beamer“.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Einfügen von Bildern</h3>
+
+
+Neben Text lassen sich auch Bilder und Plots integrieren. Bilder werden unter
+„<em>Einfügen -&#62; Bild</em>“ ausgewählt, welches wiederum unterschiedliche Möglichkeiten
+bietet. Nutzt man „<em>Bild einfügen</em>“, dann wird ein Dateimanager angezeigt, der
+einem eine Auswahl der Bilder darstellt. Dort wählt man das Bild aus. Es kann
+sein, dass es dann monsterhaft groß wirkt. Über dem Bild erscheint dazu eine
+Eingabefläche, die die Bildgröße in Pixel angibt, die nun auch ein Änderung der
+Größen ermöglicht. Aber Achtung: Höhe und Breite werden nicht 
+
+im gleichen
+Verhältnis angepasst. Entweder, man experimentiert, oder rechnet sich zuvor die
+Anpassung aus. Wenn das Bild 1000 px breit und 500 px hoch wäre und man dann
+1000:500 rechnet, dann wäre die neue Höhe 250 px und die neue Breite 500px.
+Danach kann das Ergebnis sofort integriert werden.
+
+<div class="p"><!----></div>
+Natürlich kann das integrierte Bild auch die korrekte Größe haben und dennoch
+auf PC oder Notebook zu klein herüberkommen. Hier gilt es, die Qualität über einen
+Beamer vorab zu prüfen oder aber eine Änderung der Vorlage durchzuführen.
+
+<div class="p"><!----></div>
+Mit „<em>Einfügen -&#62; Bild -&#62; Draw Image</em>“ besteht die Möglichkeit 
+eigene Zeichnungen sofort zu integrieren. Das Vorgehen erinnert an
+LaTeXDraw&nbsp;<a href="http://latexdraw.sourceforge.net/">[4]</a> und ist nicht gerade einfach zu
+bedienen. Hier ist Üben angesagt. Einfacher ist es mit
+Xfig&nbsp;<a href="http://www.xfig.org/">[5]</a>, Inkscape&nbsp;<a href="https://inkscape.org/de/">[6]</a> etc. zu
+arbeiten und das Ergebnis als Bild einzufügen. Trotzdem: Wer Spaß am
+Experimentieren hat, oder LaTeXDraw kennt, wird damit zurechtkommen.
+
+<div class="p"><!----></div>
+Auch Tabellen sind einfach zu installieren und auszufüllen. Das geht mit
+„<em>Einfügen -&#62; Tabelle</em>“ sogar einfacher als in Lyx.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/Beamer_Slide3.jpg" alt="Beamer_Slide3.jpg" style="max-width:100%" /><br /><em>Darstellung einer Tabelle in einer mit TeXmacs erstellten Präsentation.</em><br />
+
+<div class="p"><!----></div>
+Ist die Präsentation fertig, wird sie mit „<i>Strg</i>“&nbsp;+&nbsp;„<i>F9</i>“ im
+Vollbildmodus
+gestartet. Jedoch genau von dort, wo man sich gerade befindet. Also muss man am
+Anfang auf das Slide gehen, das man als Start vorgesehen hat. Vor und
+zurück
+geht es entweder über „<i>F10</i>“ und „<i>F11</i>“ oder über die
+Bild-Tasten. Auch das Beenden
+funktioniert nur manuell mit Rechtsklick mit der Maus und „<em>Anzeige -&#62; Präsentationsmodus</em>“
+abwählen, der momentan mit einem Häkchen versehen ist, da ja gerade aktiv. Danach 
+ist der Normalmodus erreicht.
+
+<div class="p"><!----></div>
+Die Ausgabe z.&nbsp;B. in pdf oder ps funktioniert nicht gerade komfortabel. Jede
+Seite muss einzeln übersetzt werden. Einen Weg für ein komplettes Exportieren
+fand ich bisher nicht. Wer seine Präsentation aber im einen PDF-Viewer nutzen
+will, der benötigt ein Programm wie PDF Shuffler&nbsp;<a href="http://sourceforge.net/projects/pdfshuffler/">[7]</a>,
+mit dem es möglich ist, einzelne PDF-Dokumente zusammenzufügen.
+
+<div class="p"><!----></div>
+Die Funktion zum Ändern des Hintergrunds von Slides haben die Entwickler gut
+versteckt: Über „<em>Focus -&#62; Ad style package -&#62; Beamer</em>“ kann man aus einer
+kleinen Ausgabe seinen Favoriten wählen. Es funktionieren bisher aber nur die
+Hintergründe „Metal“, „old colors“ oder „Präsentation“, die anderen Hintergründe
+werden bisher nicht übernommen.
+
+<div class="p"><!----></div>
+Die Optionen zu Sound und Animationen sind noch nicht bewertbar, da diese
+bei mehreren Versuchen TeXmacs zum Absturz brachten.
+
+<div class="p"><!----></div>
+Als wissenschaftlich orientiertes Programm sind auch Formeln, Gleichungen etc.
+über Mathematik integrierbar.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Erlernen von Beamer innerhalb von TeXmacs ist relativ einfach möglich
+und jedenfalls leichter als mit LaTeX-Programmoberflächen. Dafür muss man sich
+an eine Nutzeroberfläche gewöhnen, deren Geheimnisse erst mit der Zeit offenbar
+werden. Dafür besteht die Chance, eine Präsentation aufzubauen, die dem Grundsatz
+„weniger ist mehr“ sehr nahe kommt. Wer mehr Möglichkeiten von Beamer nutzen
+will und noch innovativere Präsentationen benötigt, hat es mit Lyx und Konsorten
+besser, dafür ist mehr Einarbeitung notwendig. Office Präsentationen sind
+sicherlich einfacher zu erstellen. Aber sie sind auch leichter für die Zuschauer
+erkennbar. Mit TeXmacs oder LaTeX lassen sich aber aus der Masse herausragende,
+professionelle Präsentationen herstellen.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://kile.sourceforge.net/"><tt class="big">http://kile.sourceforge.net/</tt></a><br />
+[2] <a href="http://www.xm1math.net/texmaker/"><tt class="big">http://www.xm1math.net/texmaker/</tt></a><br />
+[3] <a href="http://www.lyx.org/"><tt class="big">http://www.lyx.org/</tt></a><br />
+[4] <a href="http://latexdraw.sourceforge.net/"><tt class="big">http://latexdraw.sourceforge.net/</tt></a><br />
+[5] <a href="http://www.xfig.org/"><tt class="big">http://www.xfig.org/</tt></a><br />
+[6] <a href="https://inkscape.org/de/"><tt class="big">https://inkscape.org/de/</tt></a><br />
+[7] <a href="http://sourceforge.net/projects/pdfshuffler/"><tt class="big">http://sourceforge.net/projects/pdfshuffler/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Walter Eisenhauer</b>
+nutzt für seine VHS-Schulungen zwar hauptsächlich Lyx für Präsentationen,
+experimentiert aber gerne auch mit anderen Programmen und gibt sein Wissen dann
+gerne weiter.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=TeXmacs&amp;body=freiesMagazin 08/2015%0ATeXmacs%0AWalter Eisenhauer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=TeXmacs#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_gnuplot" name="fm_15_08_gnuplot">Eine kurze Einführung in gnuplot</a></font></h1>von Jens Dörpinghaus
+
+<div class="p"><!----></div>
+    <b>G</b><b>nuplot&nbsp;<a href="http://www.gnuplot.info/">[1]</a> ist ein bekanntes, freies Programm, das verwendet wird, um
+(wissenschaftliche) Daten oder Funktionen in der Ebene oder im Raum zu plotten.
+Es lässt sich sowohl durch eine Kommandozeile als auch durch Skripte steuern,
+was die Anwendung in vielfältigen Einsatzgebieten vereinfacht.
+So können Daten im Serverbereich visualisiert, für Webseiten aufbereitet
+oder in Schule und Studium Funktionen oder Messwerte dargestellt werden.
+Die folgende kleine Einführung soll mit den grundlegenden Funktionen von gnuplot
+vertraut machen.</b>
+
+<div class="p"><!----></div>
+Gnuplot wird seit 1986 entwickelt und ist Anfang diesen Jahres in der Version
+5.0 herausgekommen. Die Kommandozeile lässt sich mit <b><tt class="big">gnuplot</tt></b> starten, es kann
+aber auch ein Skript mit <b><tt class="big">gnuplot skript.plt</tt></b> ausgeführt werden. Der
+Übersichtlichkeit halber soll letzteres Verfahren hier Anwendung finden, alle
+Befehle können aber auch einfach sukzessive in die Kommandozeile von gnuplot
+eingegeben werden, was insbesondere für das Ausprobieren verschiedener Optionen
+nützlich sein kann. Ob die vorgestellten Skripte also mit dem Texteditor der
+Wahl bearbeitet und anschließend mit gnuplot ausgeführt  oder direkt
+interaktiv verwendet werden, ist letztlich dem eigenen Geschmack überlassen.
+
+<div class="p"><!----></div>
+Gnuplot kommt in fast allen bekannten und häufig genutzten Distributionen aus
+der Paketverwaltung und kann – falls nicht schon vorhanden – sehr einfach
+nachinstalliert werden.  
+
+<div class="p"><!----></div>
+
+<h2>Ein erster Funktionsgraph</h2>
+
+
+Der wichtigste Befehl in gnuplot ist wenig überraschend plot. Ein einfacher
+Funktionsgraph kann somit zum Beispiel mit 
+
+<div class="p"><!----></div>
+
+<div class="listing">plot x**2</div>
+
+<div class="p"><!----></div>
+
+
+geplottet werden. Speichert man diese Zeile in einem Texteditor und führt diese mit
+gnuplot aus (s.o.), so  wird die Funktion x<sup>2</sup> gezeichnet. Oft ist es sinnvoll,
+Funktionen direkt zu definieren. Dazu kann z.&nbsp;B. die aus der Schule
+bekannte Notation f(x) genutzt werden (letztlich können Funktionsnamen aber fast
+beliebig gewählt werden).
+
+<div class="p"><!----></div>
+
+<div class="listing">f(x)=x**2<br />
+plot f(x)</div>
+
+<div class="p"><!----></div>
+
+
+Eine Legende kann von gnuplot auch automatisch erzeugt werden. Dabei wird der
+Funktion einfach ein Titelwert übergeben. Textwerte (Strings) können 
+sowohl in einfachen als auch in doppelten Anführungszeichen angegeben werden. 
+
+<div class="p"><!----></div>
+
+<div class="listing">plot f(x) title 'f(x)'</div>
+
+<div class="p"><!----></div>
+
+
+Man kann im plot-Befehl auch mit Kommata getrennt verschiedene Werte oder
+Funktionen angeben:
+
+<div class="p"><!----></div>
+<div class="listing">f(x)=x**2 <br />
+g(x)=x**3 <br />
+plot f(x) title 'f(x)',  g(x) title 'g(x)'
+</div>
+
+<div class="p"><!----></div>
+Anhand dieses Beispiels sieht man gut, dass gnuplot verschiedene Graphen
+parallel darstellen kann. Die Konfiguration der einzelnen Graphen kann man dann
+natürlich an dieser Stelle einfügen. 
+
+<div class="p"><!----></div>
+Weitere Einstellungen kann man mit dem Schlüsselbegriff „set“ setzen. „unset“
+setzt die Variable wieder auf den Standardwert zurück, wenn man in der
+Kommandozeile arbeitet. Setzt man vor dem plot-Befehl beispielsweise
+
+<div class="p"><!----></div>
+
+<div class="listing">set title 'Zwei Graphen'</div>
+
+<div class="p"><!----></div>
+
+
+so wird der Titel der gesamten Darstellung gesetzt. Die Beschriftung der Achsen
+kann man mit „xlabel“ und „ylabel“ setzen, ebenso den dargestellten Wertebereich mit
+„xrange“ und „yrange“. Als Beispiel sei hier
+
+<div class="p"><!----></div>
+
+<div class="listing">set xlabel 'x'<br />
+set ylabel 'y'<br />
+set xrange [-20:20]<br />
+set yrange [-500:500]</div>
+
+<div class="p"><!----></div>
+
+
+angegeben. Dabei entspricht die Notation mit eckigen Klammern einem von–bis,
+also einem abgeschlossenem Intervall. Das Beispiel zeigt anschaulich, dass man
+nur die Werte ändern sollte, wo eine Änderung sinnvoll ist. Überlässt man den
+„yrange“ gnuplot, wird der gesamte Graph dargestellt. Bei den Werten im Intervall
+[-500,500] wird der kubische Graph abgeschnitten. 
+
+<div class="p"><!----></div>
+Zum Abschluss kann man noch ein Gitternetz anzeigen lassen:
+
+<div class="p"><!----></div>
+
+<div class="listing">set grid</div>
+
+<div class="p"><!----></div>
+
+
+Dieses wird automatisch von gnuplot generiert. 
+
+<div class="p"><!----></div>
+
+<h2>Von Punkten und Kurven</h2>
+
+
+Standardmäßig werden die Wertepunkte einer Funktion verbunden. Es können aber
+auch nur die Werte oder verbundene Punkte angezeigt werden. Hier sind der
+Phantasie (fast) keine Grenzen gesetzt. Die entsprechenden Angaben werden dem
+plot-Befehl mit „with“ (oder kurz „w“) übergeben:
+
+<div class="p"><!----></div>
+
+<div class="listing">plot f(x) title 'f(x)' with points, g(x) title 'g(x)' with linespoints</div>
+
+<div class="p"><!----></div>
+
+
+liefert nun eine Darstellung von f(x) mit Wertepunkten und von g(x)
+zusätzlich mit verbundenen Wertepunkten. Die Begriffe „points" und „linespoints“
+sind relativ selbsterklärend, der Standard „lines“ ebenfalls. Mit „lw“ (linewidth)
+kann die Breite der Darstellung geändert werden, mit „lc“ (linecolor) die Farbe und
+mit „lt“ (linetype) die Art der Linie (0 gestrichelt, 1 durchgehend, ...). Dabei
+können immer sowohl die Kurzformen als auch die Langformen genutzt werden,
+solange sie eindeutig sind. Die Farbe kann entweder per einfacher natürlicher
+Zahl oder als RGB-Wert angegeben werden. Als Beispiel sei 
+
+<div class="p"><!----></div>
+
+<div class="listing">plot f(x) title 'f(x)' with lines lw 4, g(x) title 'g(x)' with lines lc 6</div>
+
+<div class="p"><!----></div>
+
+
+angegeben. Ein RGB-Wert kann beispielsweise mit <b><tt class="big">with lines lc rgb"#6495ED"</tt></b>
+angegeben werden. Weitere Werte findet man in Tabellen&nbsp;<a href="http://www.uni-hamburg.de/Wiss/FB/15/Sustainability/schneider/gnuplot/colors.htm">[2]</a>. 
+
+<div class="p"><!----></div>
+Neben „lines“ gibt es auch den Typ „boxes“, der für die Funktionsdarstellung
+natürlich eher unangebracht ist und auf den zu einem späteren Zeitpunkt noch
+eingegangen wird. An dieser Stelle sei aber auch darauf hingewiesen, dass die
+Punkte mit „pointtype“ (0 Punkt, 1 Kreuz,...) geändert werden können und die Größe
+dieser Punkte mit „pointsize“ gesetzt werden kann.  
+
+<div class="p"><!----></div>
+Alle Parameter können vor „plot“ auch global mit „set“ gesetzt werden und gelten
+dann für alle Darstellungen, in denen der Parameter nicht anderweitig gesetzt
+wird. So färbt entsprechend
+
+<div class="p"><!----></div>
+
+<div class="listing">set linecolor rgb"#6495ED"</div>
+
+<div class="p"><!----></div>
+
+
+alle folgenden Darstellungen.  
+
+<div class="p"><!----></div>
+
+<h2>Variablen setzen, Ausgabe kontrollieren</h2>
+
+
+Variablen können mit einem einfachen Gleichheitszeichen zugewiesen werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">var = 4<br />
+vartext = "Text"</div>
+
+<div class="p"><!----></div>
+
+
+Diese können auch direkt gnuplot übergeben werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">gnuplot -e "var=4;vartest="Text skript.plt </div>
+
+<div class="p"><!----></div>
+
+
+Dadurch werden die Möglichkeiten enorm vergrößert. Auch die Ausgabe kann
+angepasst werden. gnuplot unterstützt hier neben Vektorgrafikformaten wie ps
+auch jpg, png, usw. Möchte man als Ausgabe eine png-Datei schreiben, die
+1600x600 Pixel groß ist, kann man das mit
+
+<div class="p"><!----></div>
+
+<div class="listing">ydim = 600<br />
+xdim = 1600<br />
+set terminal png size xdim,ydim</div>
+
+<div class="p"><!----></div>
+
+
+realisieren. Hier werden also zunächst zwei Variablen gesetzt. Man könnte diese
+aber auch per -e an gnuplot übergeben. Gleiches gilt für den Namen der
+Ausgabedatei:
+
+<div class="p"><!----></div>
+
+<div class="listing">set output "Dateiname"</div>
+
+<div class="p"><!----></div>
+
+
+Um in eine Datei zu schreiben, muss am Schluss des Skriptes noch
+
+<div class="p"><!----></div>
+
+<div class="listing">set output</div>
+
+<div class="p"><!----></div>
+
+
+stehen, da ansonsten die Datei nicht geschrieben wird.
+
+<div class="p"><!----></div>
+
+<h2>CSV-Dateien lesen</h2>
+
+
+Sollen statt Funktionen Werte aus einer CSV-Datei geplottet werden, so kann 
+im plot-Befehl an Stelle der Funktion einfach der Dateiname stehen: 
+
+<div class="p"><!----></div>
+
+<div class="listing">plot "datei.csv" using 1:2</div>
+
+<div class="p"><!----></div>
+
+
+wobei dann die 2. Spalte gegen die 1. Spalte aufgetragen wird. Gnuplot erwartet
+hier eine Tabulator-getrennte Datei. Ein anderer Delimiter kann bspw. mit
+
+<div class="p"><!----></div>
+
+<div class="listing">set datafile separator ';' </div>
+
+<div class="p"><!----></div>
+
+
+gesetzt werden. Eine Kommentarzeile beginnt mit einer Raute „#“. Der
+Standarddezimaltrenner ist der Punkt. Er kann aber auch auf das im
+deutschsprachigen Raum geläufige Komma gesetzt werden. 
+
+<div class="p"><!----></div>
+
+<div class="listing">set decimalsign ','</div>
+
+<div class="p"><!----></div>
+
+
+Möchte man also die Datei <b><tt class="big">test.csv</tt></b> 
+
+<div class="p"><!----></div>
+
+<div class="listing">1;2.5<br />
+2;2<br />
+3;4,3<br />
+5;5</div>
+
+<div class="p"><!----></div>
+
+
+plotten, so kann dies folgendermaßen geschehen:
+
+<div class="p"><!----></div>
+
+<div class="listing">set datafile separator ';'<br />
+plot "test.csv" using 1:2 with lines</div>
+
+<div class="p"><!----></div>
+
+
+Man sieht hier, dass dabei noch ein wenig Nacharbeit nötig ist. Zum einen stimmt
+die Beschriftung nicht, zum anderen ist der y-Achsenabschnitt nicht der, den man
+erwarten würde. Beides kann wie folgt geändert werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">set yrange [0:10]<br />
+plot "test.csv" using 1:2 with lines title "Messwerte"</div>
+
+<div class="p"><!----></div>
+
+
+Ein Gitternetz könnte auch sinnvoll sein, was, wie oben beschrieben, mit 
+
+<div class="p"><!----></div>
+
+<div class="listing">set grid</div>
+
+<div class="p"><!----></div>
+
+
+vor dem plot-Befehl aktiviert werden kann.
+
+<div class="p"><!----></div>
+Man kann deutlich erkennen, dass der Wert für x=4 fehlt. Die Linie wird von
+gnuplot einfach „durchgezogen“. 
+
+<div class="p"><!----></div>
+
+<h2>Balkendiagramme</h2>
+
+
+Das Beispiel aus dem vorherigen Abschnitt soll jetzt als Balkendiagramm
+dargestellt werden. Das geht im Prinzip ganz adäquat:
+
+<div class="p"><!----></div>
+
+<div class="listing">plot "test.csv" using 1:2 with boxes title "Messwerte"</div>
+
+<div class="p"><!----></div>
+
+
+Dies führt nun aber zu seltsam verzogenen Balken. Nun kann man zum einen
+die Balkenbreite, zum anderen die Art der Füllung einstellen:
+
+<div class="p"><!----></div>
+
+<div class="listing">set boxwidth 0.4<br />
+set style fill solid</div>
+
+<div class="p"><!----></div>
+
+
+Dadurch kann nun schon ein vertrauteres Bild generiert werden. Die Breite der
+Boxen ist im Normalfall so, dass sich die Boxen berühren. Der Standard ist, 
+dass der Wert nach „boxwidth“ als relativ gesehen wird, d.&nbsp;h. hier wird die Breite der
+Boxen auf 40% gesetzt. Will man die Boxenbreite absolut, d.&nbsp;h. in Einheiten der
+x-Achse setzen, kann man das Schlüsselwort „absolute“ anfügen.  
+
+<div class="p"><!----></div>
+Nun soll die test.csv ein wenig ergänzt werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">1;2.5;1<br />
+2;2;0.5<br />
+3;4,3;2<br />
+4;2;1<br />
+5;5;5</div>
+
+<div class="p"><!----></div>
+
+
+Der entsprechende Plot mit 
+
+<div class="p"><!----></div>
+
+<div class="listing">plot "test.csv" using 1:2 with boxes title "Messwert 1", '' using 1:3 with boxes title "Messwert 2"</div>
+
+<div class="p"><!----></div>
+
+
+ist nun nicht sonderlich zielführend, da alle Werte übereinander geplottet
+werden. Um ein einfaches Balkendiagramm zu realisieren, kann man die Werte
+einfach addieren. Dazu kann mit $ auf die einzelnen Spalten zugegriffen werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">plot "test.csv" using 1:($2+$3) with boxes title "Messwert 1", '' using 1:3 with boxes title "Messwert 2"</div>
+
+<div class="p"><!----></div>
+
+
+Eine Zahl ohne Klammer referenziert dabei auf eine Spalte, innerhalb einer
+Klammer auf die tatsächliche Zahl, Spalten müssen dann mit $ beginnen. Ebenso
+kann man nun natürlich statt der Darstellung als gestapeltes Balkendiagramm auch
+die Balken nebeneinander setzen:
+
+<div class="p"><!----></div>
+
+<div class="listing">plot "test.csv" using 1:2 with boxes title "Messwert 1", '' using ($1+(0.3)):3 with boxes title "Messwert 2"</div>
+
+<div class="p"><!----></div>
+
+
+Neben den normalen Operatoren wie +,-,*,/ gibt es – das wurde schon eingangs
+erwähnt – das Potenzieren mit **. Weitere definierte Funktionen sind exp(x),
+log(x), sin(x), abs(x)... und als Konstante ist etwa pi definiert.
+
+<div class="p"><!----></div>
+Mit diesen Möglichkeiten kann man direkt Datenfehler korrigieren oder
+Berechnungen (z.&nbsp;B. prozentuale Auswertungen) ausführen. 
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+
+
+Diese kurze Einführung kann nur einen ebenso kurzen Einblick in das Arbeiten mit
+gnuplot geben. Es gibt eine Vielzahl von weiteren Möglichkeiten, wie z.&nbsp;B. Fehlerbalken,
+Näherungskurven (fit), Polarkoordinatoren usw. Es lohnt sich, hier auf die
+vielen weiteren Informationsquellen&nbsp;<a href="http://www3.physik.uni-stuttgart.de/studium/praktika/ap/pdf_dateien/Allgemeines/BeschreibungGnuplot.pdf">[3]</a>&nbsp;<a href="http://www.mathematik.hu-berlin.de/~lamour/WR_I_WR_II_Num_I/gnuplotkurs.html">[4]</a>
+im Internet und im Handbuch von gnuplot zurückzugreifen. 
+
+<div class="p"><!----></div>
+Man sieht, gnuplot benötigt etwas Einarbeitungszeit, wenn man wirklich schöne
+Darstellungen braucht. Für das schnelle Plotten „zwischendurch“ geht es
+allerdings schon recht einfach. Wer automatisierte Grafiken erstellen möchte,
+kommt um gnuplot kaum herum. Für alle anderen Zwecke kann es allerdings oft
+schneller gehen, die – oft weniger schönen – automatischen Darstellungen der
+Anwendungen, mit denen man arbeitet, zu nutzen.  
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.gnuplot.info/"><tt class="big">http://www.gnuplot.info/</tt></a><br />
+[2] <a href="http://www.uni-hamburg.de/Wiss/FB/15/Sustainability/schneider/gnuplot/colors.htm"><tt class="big">http://www.uni-hamburg.de/Wiss/FB/15/Sustainability/schneider/gnuplot/colors.htm</tt></a><br />
+[3] <a href="http://www3.physik.uni-stuttgart.de/studium/praktika/ap/pdf_dateien/Allgemeines/BeschreibungGnuplot.pdf"><tt class="big">http://www3.physik.uni-stuttgart.de/studium/praktika/ap/pdf_dateien/Allgemeines/BeschreibungGnuplot.pdf</tt></a><br />
+[4] <a href="http://www.mathematik.hu-berlin.de/~lamour/WR_I_WR_II_Num_I/gnuplotkurs.html"><tt class="big">http://www.mathematik.hu-berlin.de/~lamour/WR_I_WR_II_Num_I/gnuplotkurs.html</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jens Dörpinghaus</b>
+ist immer wieder fasziniert, was man mit einfachen Werkzeugen
+unter Linux erreichen kann.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Eine kurze Einf%C3%BChrung in gnuplot&amp;body=freiesMagazin 08/2015%0AEine kurze Einf%C3%BChrung in gnuplot%0AJens Dörpinghaus%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Eine kurze Einf%C3%BChrung in gnuplot#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_top" name="fm_15_08_top">Das Konsolentool top</a></font></h1>von Jürgen Weidner
+
+<div class="p"><!----></div>
+    <b>W</b><b>er sich über einen langsam laufenden Computer ärgert, kann mit Hilfe
+verschiedener Programme nachschauen, woran es liegt. Das Programm top geht
+jedoch einen Schritt weiter und ermöglicht es dem Nutzer, in laufende Prozesse
+einzugreifen.</b>
+
+<div class="p"><!----></div>
+
+<h2>Prozesse im Allgemeinen</h2>
+
+
+Ein Prozess ist eine Instanz von einem oder mehreren verbundenen Tasks (engl.
+„threads“), die auf dem Computer ausgeführt werden. Einige Prozesse sind
+unabhängig voneinander, andere sind miteinander verbunden. Sie nutzen
+umfangreiche Hardware wie den Prozessor (CPU), Speicher, Arbeitsspeicher,
+Bildschirm etc. Für die Zuteilung der vorhandenen Hardware an die laufenden
+Prozesse ist der Linux-Kernel verantwortlich.
+
+<div class="p"><!----></div>
+Per „control groups“ (oder kurz
+„cgroups“&nbsp;<a href="https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt">[1]</a>&nbsp;<a href="http://www.pro-linux.de/artikel/2/1464/ressourcen-verwaltung-mit-control-groups-cgroups.html">[2]</a>)
+kann man einzelne Prozesse in Gruppen ordnen und Systemressourcen entsprechend
+der Priorität der Gruppe zuweisen. Dies geschieht mit Hilfe des sog.
+Schedulers&nbsp;<a href="https://www.thomas-krenn.com/de/wiki/Linux_I/O_Scheduler">[3]</a>&nbsp;<a href="https://www.fbi.h-da.de/~a.schuette/Vorlesungen/Unix/Skript/C%20Programmierung/Scheduling.pdf">[4]</a>,
+der eine Warteschlange (engl. „queue“) bildet, die nach festgesetzten
+Prioritäten abgearbeitet wird. Um nun Prozesse während der Ausführung
+identifizieren, überwachen und gegebenenfalls beeinflussen zu können, werden
+ihnen vom Betriebssystem die PID (engl. „process ID“) zugeteilt. Üblicherweise
+werden diese PIDs in aufsteigender Form vergeben und bleiben während der
+Systemlaufzeit unverändert.
+
+<div class="p"><!----></div>
+
+<h2>Das Programm top</h2>
+
+
+Um top zu starten, öffnet man zunächst ein Terminal. Nach Eingabe des Befehls
+
+<div class="p"><!----></div>
+
+<div class="command">$ top</div>
+
+<div class="p"><!----></div>
+
+
+füllt sich der Bildschirm mit allerlei Daten. Zuerst zum oberen
+Bereich der Anzeige:
+
+<div class="p"><!----></div>
+
+
+<div class="command">top - 20:14:42 up 57 min,  1 user,  load average: 0.97, 1.11, 1.08 
+Tasks: 140 total,   1 running, 138 sleeping,   0 stopped,   1 zombie 
+Cpu(s): 20.3%us, 3.8%sy, 0.0%ni, 75.2%id, 0.7%wa, 0.0%hi, 0.0%si, 0.0%st 
+Mem:2051164k total,1885820k used,165344k free,114608k buffers 
+Swap:0k total,0k used,0k free,1018520k cached
+</div>
+
+
+<div class="p"><!----></div>
+In Zeile 1 informiert <b><tt class="big">top - 20:14:42 up 57 min</tt></b> über die Uhrzeit und wie
+lange der Rechner bereits genutzt wird. Dahinter folgen die Anzahl der
+eingeloggten User (<b><tt class="big">1 user</tt></b>) sowie mit <b><tt class="big">load average: 0.97, 1.11, 1.08</tt></b> die
+Anzeige der Last, die die CPU zu bearbeiten
+hat&nbsp;<a href="http://www.fibel.org/linux/lfo-0.6.0/node328.html">[5]</a>.
+
+<div class="p"><!----></div>
+Die Last (engl. „load average“) zeigt die CPU-Auslastung der letzten 1, 5 und
+15 Minuten an. Dieser Wert ist durch die Anzahl der vorhandenen logischen
+CPU-Kerne zu teilen, sodass der angezeigte Wert von 1.08 bei einer CPU mit
+zwei logischen Kernen einer Gesamtauslastung von 0.54 bzw. 54% des
+Systems
+entspricht.
+
+<div class="p"><!----></div>
+In der zweiten Zeile ist die Anzahl der gestarteten Prozesse und deren Status
+zu sehen. Bei einem
+
+einem Zombie-Prozess handelt es sich übrigens um einen
+sogenannten Kind-Prozess, der von einem Eltern-Prozess gestartet, aber nicht
+wieder beendet wurde. Diese Zombies sind harmlos, in größeren Mengen blockieren
+sie aber einigen Arbeitsspeicher und PIDs.
+
+<div class="p"><!----></div>
+Die dritte Zeile ist wiederum der CPU-Auslastung gewidmet und zeigt die
+aktuelle, prozentuale Verteilung zwischen verschiedenen Nutzern an.
+Unterschieden wird zwischen folgenden Arten von Programmen:
+
+<div class="p"><!----></div>
+    
+<dl>
+ <dt><b><b><b><tt class="big">us:</tt></b></b></b></dt>
+	<dd> vom Benutzer gestartete Programme mit normaler Priorität
+</dd>
+ <dt><b><b><b><tt class="big">sy:</tt></b></b></b></dt>
+	<dd> vom Kernel verbrauchte CPU-Zeit
+</dd>
+ <dt><b><b><b><tt class="big">ni:</tt></b></b></b></dt>
+	<dd> vom Benutzer gestartete Programme mit niedriger Priorität
+</dd>
+ <dt><b><b><b><tt class="big">id:</tt></b></b></b></dt>
+	<dd> Idle-Modus (ist dieser hoch, ist die Systemauslastung gering, und umgekehrt)
+</dd>
+ <dt><b><b><b><tt class="big">wa:</tt></b></b></b></dt>
+	<dd> die Zahl der Jobs, die auf Rechenzeit warten („waiting“)
+</dd>
+ <dt><b><b><b><tt class="big">hi:</tt></b></b></b></dt>
+	<dd> Hardware-Interrupts
+</dd>
+ <dt><b><b><b><tt class="big">si:</tt></b></b></b></dt>
+	<dd> Software-Interrupts
+</dd>
+ <dt><b><b><b><tt class="big">st:</tt></b></b></b></dt>
+	<dd> Anteil, den sich eine Virtuelle Maschine an CPU-Leistung gönnt („steal time“)
+</dd>
+</dl>
+
+<div class="p"><!----></div>
+
+
+
+Die vierte und fünfte Zeile beziehen sich auf den Arbeitsspeicher und Swap. Zu
+sehen sind der vorhandene Speicherplatz, der derzeit genutzte Anteil und der
+freie, noch zur Verfügung stehende Anteil.
+
+<div class="p"><!----></div>
+Unterhalb des System-Informationsbereichs befindet sich die Prozess-Liste.
+Diese wird standardmäßig in folgende 12 Bereiche untergliedert und 
+spaltenweise präsentiert:
+
+<div class="p"><!----></div>
+    
+<dl>
+ <dt><b><b><b><tt class="big">PID:</tt></b></b></b></dt>
+	<dd> Prozessnummer (process ID)
+</dd>
+ <dt><b><b><b><tt class="big">USER:</tt></b></b></b></dt>
+	<dd> User, der diesen Task gestartet hat
+</dd>
+ <dt><b><b><b><tt class="big">PR:</tt></b></b></b></dt>
+	<dd> Priorität des Prozesses
+</dd>
+ <dt><b><b><b><tt class="big">NI:</tt></b></b></b></dt>
+	<dd> der Nice-Wert
+</dd>
+ <dt><b><b><b><tt class="big">VIRT:</tt></b></b></b></dt>
+	<dd> virtueller Arbeitsspeicher
+</dd>
+ <dt><b><b><b><tt class="big">RES:</tt></b></b></b></dt>
+	<dd> physischer Arbeitsspeicher
+</dd>
+ <dt><b><b><b><tt class="big">SHR:</tt></b></b></b></dt>
+	<dd> geteilter Arbeitsspeicher
+</dd>
+ <dt><b><b><b><tt class="big">S:</tt></b></b></b></dt>
+	<dd> Status
+</dd>
+ <dt><b><b><b><tt class="big">%CPU:</tt></b></b></b></dt>
+	<dd> Anteil des Prozesses an der Auslastung der CPU
+</dd>
+ <dt><b><b><b><tt class="big">%MEM:</tt></b></b></b></dt>
+	<dd> Anteil des Prozesses an der Nutzung des Arbeitsspeichers
+</dd>
+ <dt><b><b><b><tt class="big">TIME+:</tt></b></b></b></dt>
+	<dd> in Anspruch genommene Rechenzeit
+</dd>
+ <dt><b><b><b><tt class="big">COMMAND:</tt></b></b></b></dt>
+	<dd> der dem Prozess zugehörige Befehl
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">&nbsp;PID USER      PR  NI   VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND<br />
+2353 joschi    20   0  1242m 530m  56m S   22 26.5  26:08.70 firefox<br />
+2022 joschi    20   0   462m  66m  20m R   10  3.3   5:31.48 cinnamon<br />
+&nbsp;&nbsp;&nbsp;1 root      20   0   358m   5m   3m S    0  0.1   0:04.14 systemd<br />
+&nbsp;990 root      20   0  3505m 146m 123m S    0  1.8   1:44.76 Xorg </div>
+
+<div class="p"><!----></div>
+
+
+Soweit das reine Monitoring. Interessanter wird es aber, wenn man sich
+anschaut, wie der User mit top selbst und mit Hilfe von top mit dem
+Betriebssystem interagieren kann.
+
+<div class="p"><!----></div>
+Es gibt eine Reihe von Kürzeln, um die Anzeige der von
+top dargestellten Informationen zu personalisieren:
+
+<div class="p"><!----></div>
+    
+<dl>
+ <dt><b><b><b><tt class="big">t:</tt></b></b></b></dt>
+	<dd> verbirgt oder zeigt die Informationen der zweiten und der dritten Zeile
+      im Informationsbereich (Tasks, CPU-Auslastung usw.)
+</dd>
+ <dt><b><b><b><tt class="big">m:</tt></b></b></b></dt>
+	<dd> verbirgt oder zeigt die Informationen der vierten und fünften Zeile im
+      Informationsbereich (dies ist die Auslastung von Arbeitsspeicher und SWAP)
+</dd>
+ <dt><b><b><b><tt class="big">A:</tt></b></b></b></dt>
+	<dd> sortiert die Prozessliste in Reihenfolge des Ressourcenverbrauchs
+</dd>
+ <dt><b><b><b><tt class="big">f:</tt></b></b></b></dt>
+	<dd> öffnet den Konfigurationsbereich, in dem man auswählen kann, welche
+      Details eines Tasks von top dargestellt werden
+</dd>
+ <dt><b><b><b><tt class="big">o:</tt></b></b></b></dt>
+	<dd> konfiguriert die die Reihenfolge in der Liste nach persönlichen
+      Anforderungen
+</dd>
+</dl>
+
+
+<div class="p"><!----></div>
+
+<h2>Arbeiten mit top</h2>
+
+
+Um in den Prozess-Ablauf einzugreifen, gibt es zwei Wege: Um Programme zu
+beenden, die auf 
+Mausklick nicht mehr reagieren, hilft der Befehl <b><tt class="big">k</tt></b> (engl.
+„kill“), der einen bestimmten Task beendet. Nach Eingabe des Befehls fordert
+top die PID des zu beendenden Prozesses und die Bestätigung durch Eingabe des
+zu sendenden
+Abbruchsignals&nbsp;<a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_01.html">[6]</a>.
+
+<div class="p"><!----></div>
+Zur Beeinflussung der Priorität, mit der ein Task ausgeführt wird, dient der
+Befehl <b><tt class="big">r</tt></b> (engl. „renice“), mit dem man die Priorität eines Prozesses erhöhen
+oder verringern kann. Da es sich hierbei für die meisten Nutzer um eine nicht
+alltägliche Aufgabe handelt, hier einige Informationen dazu: Wenn ein System
+sehr langsam läuft, hilft top die Art der Auslastung zu analysieren. Oft genügt
+es dann, einen oder mehrere Prozesse zu beenden und das Problem ist behoben.
+Falls das aber nicht möglich ist, da keiner der laufenden Tasks beendet werden
+darf, kann aber zumindest deren Priorität, mit der sie bearbeitet werden,
+verringert werden und damit die eines derzeit wichtigeren Tasks erhöht werden. Einer
+höheren Priorität werden mehr Rechenzeit des Prozessors eingeräumt und
+umgekehrt.
+
+<div class="p"><!----></div>
+Linux hat, da auf UNIX basierend, dessen System zur Festlegung der Prioritäten
+übernommen. Die höchste Stufe ist -20, die niedrigste 19, d.&nbsp;h. je wichtiger ein
+Prozess ist, desto geringer ist die ihm zugewiesene Zahl. Dieser Wert wird als
+Nice-Wert&nbsp;<a href="http://openbook.rheinwerk-verlag.de/linux/linux_kap26_005.html">[7]</a>&nbsp;<a href="http://www.admin-magazin.de/News/Tipps/ADMIN-Tipp-Nettigkeiten-unter-Linux">[8]</a>
+bezeichnet und wie oben erwähnt in der Spalte <b><tt class="big">NI</tt></b> Protkoll angezeigt. Um den
+Nice-Wert eines Tasks zu erhöhen, muss top als Root gestartet werden. Der
+Nice-Wert eines eigenen Tasks kann zwar ohne Root-Rechte erhöht, nicht aber
+wieder verringert werden.
+
+<div class="p"><!----></div>
+Wer also nicht genau weiß was er tut, sollte top daher nicht als Root starten
+und sich zum Üben nur auf Prozesse beschränken, die ihm als User zugeordnet
+sind. Bei allen anderen Tasks bitte vorher informieren, welche Auswirkungen
+eine Änderung der Priorität auf das laufende System haben kann. Insbesondere
+bei Tasks, die dem Benutzer <b><tt class="big">root</tt></b> zugeordnet sind, verbietet sich jeder
+unbegründete Eingriff.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+top ist verständlich aufgebaut, man kommt sofort damit zurecht. Es bietet nicht
+nur die Überwachung des Systems, sondern auch Möglichkeiten, in laufende
+Prozesse einzugreifen.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt"><tt class="big">https://www.kernel.org/doc/Documentation/cgroups/cgroups.txt</tt></a><br />
+[2] <a href="http://www.pro-linux.de/artikel/2/1464/ressourcen-verwaltung-mit-control-groups-cgroups.html"><tt class="big">http://www.pro-linux.de/artikel/2/1464/ressourcen-verwaltung-mit-control-groups-cgroups.html</tt></a><br />
+[3] <a href="https://www.thomas-krenn.com/de/wiki/Linux_I/O_Scheduler"><tt class="big">https://www.thomas-krenn.com/de/wiki/Linux_I/O_Scheduler</tt></a><br />
+[4] <a href="https://www.fbi.h-da.de/~a.schuette/Vorlesungen/Unix/Skript/C%20Programmierung/Scheduling.pdf"><tt class="big">https://www.fbi.h-da.de/&nbsp;a.schuette/Vorlesungen/Unix/Skript/C Programmierung/Scheduling.pdf</tt></a><br />
+[5] <a href="http://www.fibel.org/linux/lfo-0.6.0/node328.html"><tt class="big">http://www.fibel.org/linux/lfo-0.6.0/node328.html</tt></a><br />
+[6] <a href="http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_01.html"><tt class="big">http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_01.html</tt></a><br />
+[7] <a href="http://openbook.rheinwerk-verlag.de/linux/linux_kap26_005.html"><tt class="big">http://openbook.rheinwerk-verlag.de/linux/linux_kap26_005.html</tt></a><br />
+[8] <a href="http://www.admin-magazin.de/News/Tipps/ADMIN-Tipp-Nettigkeiten-unter-Linux"><tt class="big">http://www.admin-magazin.de/News/Tipps/ADMIN-Tipp-Nettigkeiten-unter-Linux</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jürgen Weidner</b>
+ist ehemaliger, engagierter Autor der nicht mehr existenten Zeitschrift YALM
+(Yet Another Linux Magazine) und nutzt Linux seit 2007.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Das Konsolentool top&amp;body=freiesMagazin 08/2015%0ADas Konsolentool top%0AJürgen Weidner%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Das Konsolentool top#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_meizu-review" name="fm_15_08_meizu-review">Ubuntu Phone: Das Meizu MX4 näher angeschaut</a></font></h1>von Sujeevan Vijayakumaran
+
+<div class="p"><!----></div>
+    <b>S</b><b>eit Ende Juni ist das Meizu MX4 in der EU über ein Invite-System zu bestellen. Es
+wird Zeit, sich das Gerät näher anzuschauen. Das Meizu MX4 wurde von Canonical
+an die sogenannten „Ubuntu Phone Insider“ zur Verfügung gestellt. Das Meizu MX4
+reiht sich neben dem bq Aquaris E4.5 und dem bq Aquaris E5 als drittes Ubuntu
+Phone ein. Es ist das erste Phone, welches vom chinesischen Hersteller Meizu
+erschienen ist.</b>
+
+<div class="p"><!----></div>
+
+<h2>Software</h2>
+
+
+Im Testbericht zum bq Aquaris E4.5&nbsp;<a href="http://www.freiesmagazin.de/20150405-aprilausgabe-erschienen">[1]</a>
+nahm die Software einen großen Teil des Artikels ein. Die vorinstallierte
+Software auf dem Meizu MX4 ist vom Funktionsumfang, den vorinstallierten Scopes
+und Apps identisch zum bq Aquaris E4.5. In den letzten Monaten sind allerdings
+ein paar Software-Updates erschienen, die das 
+Basis-System von 14.10 Utopic
+Unicorn auf 15.04 Vivid Vervet gehoben haben. Außerdem wurden zahlreiche Fehler
+korrigiert und einige Funktionen in den Core-Apps erweitert, so dass der Browser
+zum Beispiel mittlerweile einen privaten Modus beherrscht.
+
+<div class="p"><!----></div>
+Alle Software-Eigenschaften, die mit der verbauten Hardware zusammenhängen,
+werden in den folgenden Abschnitten im Zusammenhang mit der jeweiligen Hardware
+genannt.
+
+<div class="p"><!----></div>
+
+<h2>Hardware</h2>
+
+
+
+<h3>Der Bildschirm</h3>
+
+
+Eines der wohl besten Dinge an diesem Smartphone ist der Bildschirm. Mit einer
+Größe von 5,36 Zoll ist er wahrlich nicht klein, löst aber mit einer Auflösung
+von 1920 x 1152 Pixeln sehr hoch auf. Er kommt damit auf eine Pixeldichte von
+circa 418 ppi. Zum Vergleich: das Aquaris E4.5 hat nur 240 ppi auf 4,5 Zoll.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/meizumx4_vorderseite.jpg" alt="meizumx4_vorderseite.jpg" style="max-width:100%" /><br /><em>Die Vorderseite.</em><br />
+
+<div class="p"><!----></div>
+Unabhängig von den bloßen Zahlen ist der Bildschirm auch subjektiv sehr gut.
+Sowohl Schriften als auch Fotos und App-Icons sind durch die hohe Auflösung
+scharf. Die Helligkeit und die Farben sehen mit dem bloßen Auge geurteilt sehr
+gut aus. Dies trifft auch auf die Blickwinkelstabilität zu.
+
+<div class="p"><!----></div>
+Nachteilig ist jedoch, dass die höhere Auflösung softwareseitig nicht ausgenutzt
+wird. Die App-Icons sind beispielsweise etwas sehr groß. Das gleiche gilt für
+diverse Schriften. Der App-Scope zeigt etwa auf dem MX4 nur drei App-Icons
+nebeneinander an. Dieser Umstand wird aber schon mit dem nächsten
+Update korrigiert, sodass die hohe Auflösung sinnvoller von Apps und
+Scopes genutzt werden kann und mehr Informationen oder Bedienelemente
+dargestellt werden können.
+
+<div class="p"><!----></div>
+
+<h3>Die Kamera</h3>
+
+
+Neben dem Display ist die Kamera hervorzuheben, die sehr gute Fotos macht. Sie
+löst mit 20,7 Megapixeln auf. Während die Kamera vom Aquaris E4.5 eher
+verwaschene Fotos macht, ist dies beim MX4 nicht der Fall: So sind auch die
+Farben satt und kräftig. Selbst an dunklen Orten produziert die Kamera
+verhältnismäßig gute Fotos. Allerdings kam es unter einigen Umständen dazu, dass
+die Kamera im Dunkeln nicht ordentlich fokussiert hat, was wiederum in
+verschwommenen Bildern resultierte.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/meizumx4_photo1.jpg" alt="meizumx4_photo1.jpg" style="max-width:100%" /><br /><em>Fließendes Wasser.</em><br />
+
+<img src="freiesMagazin-2015-08-bilder-Dateien/meizumx4_photo2.jpg" alt="meizumx4_photo2.jpg" style="max-width:100%" /><br /><em>Das Dortmunder U.</em><br />
+
+<img src="freiesMagazin-2015-08-bilder-Dateien/meizumx4_photo3.jpg" alt="meizumx4_photo3.jpg" style="max-width:100%" /><br /><em>An einer Dortmunder Kirche.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Mobilfunk und WLAN</h3>
+
+
+Beim Aquaris E4.5 kritisierten einige Personen, dass das Smartphone keine
+LTE-Frequenzen beherrsche. Das MX4 unterstützt die gängigen LTE-
+Frequenzen, die in Europa genutzt werden. Ebenso unterstützt es HSDPA. Das Smartphone hat
+einen
+Micro-SIM-Einschub, der sich auf der Rückseite befindet. Dafür muss man die
+hintere Abdeckung entfernen.
+
+<div class="p"><!----></div>
+WLAN fehlt natürlich auch nicht. Allerdings gibt es beim Wechsel zwischen
+Mobilfunk-Datenverbindungen und WLAN häufiger Probleme, sodass nicht zuverlässig
+automatisch zwischen diesen umgeschaltet wird. Oft verbindet es sich zum
+Beispiel nicht zu einem der gespeicherten WLAN-Netze wenn diese verfügbar
+sind. Stattdessen wird nach dem WLAN-Passwort gefragt, obwohl dieses bereits
+gespeichert ist. Nach einem manuellen Klick auf das WLAN-Netz verbindet sich das
+Smartphone dann ohne Probleme. Andersherum existiert aber ebenfalls das Problem,
+dass das WLAN-Symbol dargestellt wird, obwohl man das WLAN-Netz schon längst
+verlassen hat. Diese Fehler werden hoffentlich in einem System-Update in naher
+Zukunft korrigiert.
+
+<div class="p"><!----></div>
+
+<h3>Akkuleistung</h3>
+
+
+Der Akku hat eine Kapazität von 3100 mAh. Dieser Akku treibt unter anderem den
+MediaTek Octa-Core Prozessor, 2 GB Arbeitsspeicher und das große Display an.
+Leider ist noch ein Bug im System enthalten, der hin und wieder zuschlägt und
+den Akku innerhalb von einigen Stunden leersaugt, obwohl sich das Gerät
+größtenteils im Standby befand. An diesem Fehler wird allerdings bereits
+gearbeitet und er sollte ebenfalls mit dem nächsten System-Update korrigiert
+sein. Ähnliches war auch schon beim Aquaris E4.5 der Fall, welches erst kurz vor
+der Auslieferung an die Endkunden eine Korrektur erhielt, die den Stromverbrauch
+im Standby gravierend verbessert hat.
+
+<div class="p"><!----></div>
+Obwohl man die Rückseite des Telefons öffnen kann, ist ein einfaches Austauschen
+des Akkus nicht möglich. Dieser ist nämlich fest verbaut und somit nicht einfach
+wechselbar.
+
+<div class="p"><!----></div>
+
+<h3>Verarbeitung, Haptik &amp; Qualität</h3>
+
+
+Die äußerliche Verarbeitung ist sehr gut. Der Rahmen und die Rückseite sind aus
+Aluminium. Es knarzt an keiner Stelle und ist deutlich hochwertiger verarbeitet
+als das Aquaris E4.5. Der Bildschirm wird durch ein Gorilla Glass 3 geschützt.
+Obwohl dieses kratzfest sein soll, erschienen nach wenigen Wochen in der
+Hosentasche die ersten leichten Kratzer. Die Kamera-Linse wird hingegen von
+Saphir-Glas geschützt. Auch die Aluminium-Rückseite hat einen kleinen Kratzer
+abbekommen, diese lässt sich wenigstens problemlos bei Bedarf auswechseln.
+
+<div class="p"><!----></div>
+Insgesamt gibt es drei Hardware-Tasten: Die beiden Lautstärke-Knöpfe auf der
+linken Seite und der Power-Knopf auf der oberen Kante. Dieser Knopf ist
+ungünstig platziert, da er bei einer Ein-Hand-Bedienung nur sehr schwer mit dem
+Zeigefinger erreicht werden kann. Die Tasten selbst lassen sich allerdings gut
+betätigen, sind weder zu fest noch zu lasch.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/meizumx4_hand.jpg" alt="meizumx4_hand.jpg" style="max-width:100%" /><br /><em>Das Meizu MX4 liegt grundsätzlich gut in der Hand.</em><br />
+
+<div class="p"><!----></div>
+Trotz der Größe liegt das Smartphone einigermaßen gut in der Hand. Vor allem am
+Anfang muss man sich stark an die glatte Rückseite gewöhnen. Denn durch diese
+kann das Gerät leicht aus den Händen rutschen, wenn man nicht sorgfältig
+aufpasst.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-08-bilder-Dateien/meizumx4_rueckseite.jpg" alt="meizumx4_rueckseite.jpg" style="max-width:100%" /><br /><em>Die Rückseite.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Leistung</h3>
+
+
+Angetrieben wird das Meizu MX4 von einem MediaTek Octa-Core
+Prozessor&nbsp;<a href="http://www.mediatek.com/en/products/mobile-communications/smartphone1/mt6595/">[2]</a>.
+Diese CPU besteht aus einem ARM Cortex-A17 mit 4 Kernen und einem ARM
+Cortex-A7 ebenfalls mit 4 Kernen. Die CPU folgt der Big.LITTLE-Architektur&nbsp;<a href="https://de.wikipedia.org/wiki/ARM-Architektur#Big.LITTLE">[3]</a>,
+das heißt, dass die höher getakteten Kerne nur bei hoher Rechenlast genutzt
+werden und sonst die schwächeren Kerne beansprucht werden. Daraus ergibt sich
+der Vorteil, dass man sowohl hohe Leistungsfähigkeiten abdecken als auch
+den Energieverbrauch sonst gering halten kann.
+
+<div class="p"><!----></div>
+Obwohl das Smartphone eine theoretisch hohe Leistungsfähigkeit besitzt, flitzt
+es bei der Bedienung nicht so, wie man es sich wünscht – oder wie man es
+von anderen High-End Android-Geräten gewohnt ist. So kommt es weiterhin zu
+Rucklern, wenn man zwischen Scopes wechselt. Das Starten von Core-Apps dauert
+auf dem MX4 um die drei Sekunden, sofern sie nicht schon einmal gestartet
+wurden.
+
+<div class="p"><!----></div>
+Das Gerät besitzt zwar 2 GB Arbeitsspeicher, allerdings laden sich gestartete
+Apps viel zu häufig neu, auch wenn nicht zu viele Anwendungen geöffnet sind.
+Auch dieser Fehler ist bekannt und auch daran wird gearbeitet.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Das Gerät besitzt prinzipiell eine tolle Hardware, insbesondere das Display ist
+sehr gut. Getrübt wird es allerdings durch die eher mittelmäßige
+Software-Unterstützung, die schlechter zu sein scheint als beim Aquaris E4.5.
+Neben den oben genannten Fehlern sind auch noch einige weitere vorhanden. So gibt
+es unterhalb des Displays zwar einen Soft-Home-Button, der auch als
+Notification-LED dienen kann, doch ist dieser noch funktionsunfähig. Beim
+Betätigen des Buttons wird auf den ersten Scope gewechselt. Dies widerspricht
+nicht nur der Benutzerführung von Ubuntu Phone, das vollständig ohne
+Bedienelemente außerhalb des Displays bedienfähig ist, sondern der Home-Button
+wird bei der Durchführung einer Wischgeste vom unteren Bildschirmrand häufig
+unabsichtlich betätigt.
+
+<div class="p"><!----></div>
+Ein weiteres Problem ist die schnelle Hitzeentwicklung des Telefons. Bereits
+beim simplen Nutzen des Geräts wird es sehr schnell sehr heiß. Nicht immer –
+aber je mehr Leistung genutzt wird, desto wärmer wird es. So erreicht die obere
+Hälfte der Rückseite bereits bei normaler Benutzung häufig die 40°C-Marke.
+
+<div class="p"><!----></div>
+Neben den oben genannten Fehler und Ungereimtheiten ist das MX4 im Alltag im
+direkten Vergleich schneller als das Aquaris E4.5, was während der allgemeinen
+Nutzung auffällt. Die Apps starten ein paar Sekunden schneller, teilweise
+doppelt so schnell. Nichtsdestoweniger sind viele System-Elemente häufig am
+Ruckeln und
+
+bedienen sich eher träge, wie es auch beim Aquaris E4.5 der Fall
+ist. Allgemein wirkt es so, als ob das Meizu MX4 im Vergleich zum Aquaris E4.5
+eher schlecht an die vorhandene Hardware angepasst wurde. Vieles wird sich noch durch
+Software-Updates korrigieren lassen, denn auch das Aquaris E4.5 war in den Wochen vor
+der Auslieferung an die Endkunden noch mit einigen Bugs versehen.
+
+<div class="p"><!----></div>
+Das Meizu MX4 lässt sich für knapp 300€ kaufen, sofern man Glück im Invite-Spiel
+hat&nbsp;<a href="http://www.meizu.com/en/ubuntu/features.html">[4]</a>. Wer einen audio-visuellen
+Eindruck von dem Smartphone haben möchte, kann sich dieses Video auf
+YouTube&nbsp;<a href="https://www.youtube.com/watch?v=CRCGdWT952Q">[5]</a> ansehen.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.freiesmagazin.de/20150405-aprilausgabe-erschienen"><tt class="big">http://www.freiesmagazin.de/20150405-aprilausgabe-erschienen</tt></a><br />
+[2] <a href="http://www.mediatek.com/en/products/mobile-communications/smartphone1/mt6595/"><tt class="big">http://www.mediatek.com/en/products/mobile-communications/smartphone1/mt6595/</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/ARM-Architektur#Big.LITTLE"><tt class="big">https://de.wikipedia.org/wiki/ARM-Architektur#Big.LITTLE</tt></a><br />
+[4] <a href="http://www.meizu.com/en/ubuntu/features.html"><tt class="big">http://www.meizu.com/en/ubuntu/features.html</tt></a><br />
+[5] <a href="https://www.youtube.com/watch?v=CRCGdWT952Q"><tt class="big">https://www.youtube.com/watch?v=CRCGdWT952Q</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Sujeevan Vijayakumaran</b>&nbsp;(<a href="http://svij.org/">Webseite</a>)
+gehört zur Gruppe der „Ubuntu Phone Insider“, die sowohl Informationen als
+auch Hardware frühzeitig von Canonical zur Verfügung gestellt bekommen.
+    </td></tr></table>
+<br />
+                                <i><a href="mailto:?subject=Ubuntu Phone: Das Meizu MX4&amp;body=freiesMagazin 08/2015%0AUbuntu Phone: Das Meizu MX4%0ASujeevan Vijayakumaran%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Ubuntu Phone: Das Meizu MX4#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_rezension_arduino_training" name="fm_15_08_rezension_arduino_training">Rezension: Das Arduino-Training – Sehen wie's geht!</a></font></h1>von Christian Schnell
+
+<div class="p"><!----></div>
+    <b>I</b><b>m Videokurs „Das Arduino-Training“&nbsp;<a href="https://www.rheinwerk-verlag.de/das-arduino-training_3742/">[1]</a>
+werden in über 7 Stunden viele Projekte vorgestellt, die mit dem Arduino
+entwickel werden können. Dazu erklärt der Autor Ramin Soleymani die Verwendung von
+zahlreichen Sensoren und weiteren Komponenten, die man mit seinem 
+Arduino&nbsp;<a href="https://www.arduino.cc/">[2]</a> nutzen kann.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Rheinwerk Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+Das erste Kapitel beginnt mit einer kurzen allgemeinen Einführung. Danach legt
+Autor und Sprecher Ramin Soleymani gleich los und stellt eine Auswahl der
+zurzeit verfügbaren Arduino-Boards vor. Auf den Arduino Uno wird anschließend
+genauer eingegangen, da dieser für die meisten der im Buch vorgestellten
+Projekte genutzt wird. Danach werden verschiedene Bauteile gezeigt (Sensoren,
+LED, Motoren, Kabel usw.), die im Verlauf des Videotrainings eingesetzt werden.
+Die wichtigsten davon sind als Bausatz erhältlich, der über einen Link im
+Begleitmaterial zur DVD bestellt werden kann, sodass man sich als Anfänger
+nicht mit dem Zusammensuchen der einzelnen Bauteile beschäftigen muss. Im
+weiteren Verlauf werden verschiedene hilfreiche Werkzeuge zum Arbeiten mit
+Arduino und die Arduino-Homepage detailliert gezeigt, sodass man schnell weiß,
+wo man welche Informationen und Hilfestellungen findet. Nahtlos geht es danach
+über zur Installation der Arduino-Software für Windows, MacOS X und Ubuntu.
+
+<div class="p"><!----></div>
+Das zweite Kapitel beginnt mit der Erklärung einiger elektronischer Grundlagen
+und des Ohmschen Gesetzes, gefolgt von einer Einführung in die
+Arduino-Entwicklungsumgebung. Weiterhin wird in diesem Kapitel der
+grundlegende Aufbau eines Arduino-Sketches erklärt, bevor man schließlich die
+ersten einfachen Programme baut und den Arduino zum Leben erweckt. Die gezeigten
+Beispiele sind anschaulich und können auch von Neulingen gut umgesetzt werden. Man
+kann durch das Video auch problemlos die verschiedenen Steckplätze sehen und
+parallel zum Video mit bauen und programmieren, was manchmal einfach praktischer
+ist als mit einem Buch.
+
+<div class="p"><!----></div>
+Das dritte Kapitel unterteilt sich in kleinere Projekte, bei denen
+man verschiedene Sensoren einsetzt, Nachrichten an den Computer sendet und von
+diesem empfängt. Zwischendrin erklärt der Autor noch das Prinzip der
+Pulsweitenmodulation und die Umwandlung von analogen zu digitalen Signalen.
+Beide Erklärungen sind eher oberflächlich, reichen aber als Grundlage für das 
+Videotraining aus. Zum Schluss programmiert man als erstes
+komplexes Projekt ein Lauflicht, das über einen Drucktaster gesteuert werden
+kann. Auch ein Schieberegister wird hier benutzt, was zuvor sehr ausführlich und
+gut erklärt wird.
+
+<div class="p"><!----></div>
+Im vierten Kapitel baut man mit einem Neigungssensor, einem Piezo und einem
+ATTiny-Microcontroller eine Art Müdigkeitssensor, der beim Abkippen einen Ton
+über den Piezo abgibt. Durch den ATTiny benötigt man den Arduino nur noch zum
+Programmieren und kann den Müdigkeitssensor daher sehr klein bauen. Die
+Funktionsweise und der Aufbau der neuen Komponenten wird ausführlich erklärt und
+man kann auch der Programmierung sehr gut folgen.
+
+<div class="p"><!----></div>
+
+
+Kapitel fünf beschäftigt sich mit Projekten rund um Licht und Ton. Im ersten
+Projekt setzt man unter Verwendung eines Adafruit NeoPixel LED-Streifens eine
+Lichtshow um. Anschließend übt man in kleineren Programmen die Verwendung eines
+Helligkeitsensors und das Erzeugen von Tönen bzw. Melodien. Beides wird
+benötigt, um anschließend ein Theremin zu bauen. Auch das sich anschließende
+Projekt „Die Arduino-Klangmaschine“ verwendet mehrere Sensoren und zeigt schon
+ganz gut, dass man auch komplexe Projekte mit dem Arduino umsetzen kann.
+Hervorzuheben ist in diesem Teil das Darstellen
+
+der Planungsphase vor der
+eigentlichen Umsetzung der Klangmaschine.
+
+<div class="p"><!----></div>
+Im sechsten Kapitel erklärt der Autor die Verwendung der Programmiersprache
+Processing&nbsp;<a href="https://processing.org/">[3]</a> und nutzt diese dazu, um Sensordaten 
+des Arduino auf dem Bildschirm
+zu visualisieren. Ein Programm wird komplett selbst entwickelt, beim zweiten
+Programm wird ein Beispiel, das bei Processing mitgeliefert wurde, zunächst
+erklärt und anschließend weiter entwickelt.
+
+<div class="p"><!----></div>
+Kapitel sieben widmet sich speziell dem Arduino Yún. Er wird hier genutzt, um
+unter anderem ein Programm zur Hausüberwachung zu programmieren. Zunächst wird
+das Board wieder genauer vorgestellt und die WLAN-Verbindung mit dem Yún
+hergestellt. Anschließend wird die Webcam zum Laufen gebracht. Nach dem
+Installieren der Treiber wird das eigentliche Erstellen von Fotos und das 
+Verschicken des Bildes per E-Mail erklärt. Für letzteres wird der Webdienst 
+Temboo&nbsp;<a href="https://temboo.com/">[4]</a> genutzt, mit
+dessen Hilfe viele weitere nützliche Skripte für den Yún in Python erstellt
+werden können. 
+
+<div class="p"><!----></div>
+Im letzten Kapitel werden noch verschiedene mögliche Erweiterungen vorgestellt.
+Man lernt hier zum Beispiel das Auslesen eines Temperatursensors und die Ausgabe
+von Informationen auf einem Display. 
+<div class="p"><!----></div>
+
+
+
+<h2>Kritik</h2>
+
+
+Dieses Videotraining ist eine gute Einführung für das Umsetzen von Projekten mit
+dem Arduino. Die elektronischen Grundlagen und auch die Programmierung werden
+für die gezeigten Projekte ausreichend, darüber hinaus allerdings eher
+oberflächlich behandelt. Dies könnte es für Anfänger 
+erschweren, eigene Projekte
+zu entwickeln, da eine systematische Einführung von Programmiergrundlagen zum
+Beispiel fehlt. Auch auf Fehlersuche und Debugging wird nicht eingegangen.
+Schade ist auch, dass zum Beispiel das Löten nicht genau erklärt und gezeigt
+wird. Gerade solche Dinge könnte man in einem Videotraining einfacher vorführen und zeigen.
+
+<div class="p"><!----></div>
+
+<h3>Qualität der Videos</h3>
+
+
+Das Videotraining ist für Linux (Ubuntu), MacOS X und Windows verfügbar. Die Qualität
+der Videos ist sehr gut, allerdings wirkt der Sprachrhythmus des Autors nicht
+natürlich – teilweise verschluckt der Autor Worte oder spricht sehr stockend.
+Gerade den Sprachrhythmus empfindet man natürlich sehr subjektiv, daher sollte
+man bei Interesse am Videotraining auf jeden Fall vorher auf der Homepage
+in das Video reinschauen, ob einem der Sprecher zusagt.
+
+<div class="p"><!----></div>
+Die technische Umsetzung ist ansonsten sehr gut, es gibt viele Kapitelmarken,
+eine klare Menüführung und eine Suchfunktion. Lesezeichen kann man ebenfalls
+setzen. Die Abspielgeschwindigkeit allerdings lässt sich nicht verändern.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Die vorgestellten Projekte lassen sich wunderbar parallel zum Videotraining mit
+bauen. Zwar finden 
+sich in einem Buch dieser Preisklasse wohl mehr und tiefere
+Informationen als es im Videotraining möglich ist; wer aber lieber ein Video
+schaut statt ein Buch zu lesen, ist mit diesem Videotraining gut bedient.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Das Arduino-Training – Sehen wie's geht!&nbsp;<a href="https://www.rheinwerk-verlag.de/das-arduino-training_3742/">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Ramin Soleymani </td></tr>
+<tr><td><b>Verlag</b> </td><td>Rheinwerk-Verlag, 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>7 Stunden Spielzeit </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8362-3623-2 </td></tr>
+<tr><td><b>Preis</b> </td><td>39,90 € (DVD, Download)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://www.rheinwerk-verlag.de/das-arduino-training_3742/"><tt class="big">https://www.rheinwerk-verlag.de/das-arduino-training_3742/</tt></a><br />
+[2] <a href="https://www.arduino.cc/"><tt class="big">https://www.arduino.cc/</tt></a><br />
+[3] <a href="https://processing.org/"><tt class="big">https://processing.org/</tt></a><br />
+[4] <a href="https://temboo.com/"><tt class="big">https://temboo.com/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Christian Schnell</b>
+nutzt den Arduino für kleine elektronische Spielereien abseits der Laborarbeit.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+
+                                <i><a href="mailto:?subject=Rezension: Arduino-Training&amp;body=freiesMagazin 08/2015%0ARezension: Arduino-Training%0AChristian Schnell%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Rezension: Arduino-Training#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_rezension_jquery_in_easy_steps" name="fm_15_08_rezension_jquery_in_easy_steps">Rezension: jQuery in Easy Steps</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>D</b><b>ie am häufigsten eingesetzte JavaScript-Bibliothek ist 
+jQuery&nbsp;<a href="http://jquery.com/">[1]</a>. Das Buch „jQuery in Easy 
+Steps“&nbsp;<a href="http://ineasysteps.com/products-page/web_development/jquery-in-easy-steps/">[2]</a> 
+möchte Einsteigern zu diesem Thema eine Einführung in den Einsatz 
+der Bibliothek geben. Der Untertitel des Buchs lautet „create dynamic web 
+pages“, was das Anliegen des Buchs klarstellt: Dem Leser soll näher gebracht 
+werden, wie mit Hilfe von jQuery Webseiten dynamischer gestaltet werden 
+können.</b>
+
+<div class="p"><!----></div>
+
+<h2>Der Inhalt</h2>
+
+
+Auf rund 190 Seiten werden dem Leser jQuery und dessen Möglichkeiten 
+schrittweise näher gebracht. Begonnen wird mit einfachen Manipulationen des 
+Inhalts eines HTML-Dokuments, weiter geht es mit animierten Effekten, dem 
+Umgang und Auslösen von Events, dem Einsatz von AJAX bis hin zu ein paar 
+einfachen Beispielen zum Schreiben von Plug-ins. Den Abschluss des Buchs 
+bildet eine jQuery-Referenz sowie ein umfangreicher Index.
+
+<div class="p"><!----></div>
+
+<h2>Voll in Farbe</h2>
+
+
+In Gegensatz zu vielen anderen (IT-)Fachbüchern ist dieses Buch durchgehend 
+in Farbe gedruckt. Dadurch können wichtige Stellen effektiv hervorgehoben 
+werden. Auch der im Buch enthaltene Quellcode ist durchgehend mit 
+Syntax-Hervorhebung abgedruckt, was der Lesbarkeit durchweg zugute kommt.
+
+<div class="p"><!----></div>
+
+<h2>Einfaches Englisch</h2>
+
+
+Apropos Lesbarkeit: Das Buch ist – laut des Umschlagstext – mit 
+Absicht in einfachem und verständlichem Englisch geschrieben. Natürlich sind 
+die im Rahmen des Inhalts notwendigen Fachbegriffe enthalten, aber ansonsten 
+wird komplett auf „Insider-Slang“ verzichtet, sodass das Buch auch mit 
+Schulenglisch gut lesbar und verständlich ist.
+
+<div class="p"><!----></div>
+
+<h2>Beispiele</h2>
+
+
+Alle im Buch dargestellten Inhalte werden an vielen praktischen Beispielen 
+dargestellt. Diese sind zwar immer recht kurz, aber trotzdem prägnant und 
+verständlich, sodass das zuvor Erklärte gut nachvollziehbar ist.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch „jQuery in Easy Steps“ bietet einen guten Einstieg für Neulinge in 
+die behandelte Thematik. Demjenigen, der die ersten Schritte mit jQuery 
+gehen möchte, kann das Buch durchweg empfohlen werden, zumal der Preis für 
+ein IT-Fachbuch relativ günstig ist.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>jQuery in Easy Steps&nbsp;<a href="http://ineasysteps.com/products-page/web_development/jquery-in-easy-steps/">[2]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Mike McGrath  </td></tr>
+<tr><td><b>Verlag</b> </td><td>In Easy Steps Limited, 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>192 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1840786194 </td></tr>
+<tr><td><b>Preis</b> </td><td>16,25 € 
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://jquery.com/"><tt class="big">http://jquery.com/</tt></a><br />
+[2] <a href="http://ineasysteps.com/products-page/web_development/jquery-in-easy-steps/"><tt class="big">http://ineasysteps.com/products-page/web_development/jquery-in-easy-steps/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.com/">Webseite</a>)
+setzt ab und an selber gerne jQuery zur dynamischeren Gestaltung von
+Webseiten ein.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: jQuery in Easy Steps&amp;body=freiesMagazin 08/2015%0ARezension: jQuery in Easy Steps%0AJochen Schnelle%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Rezension: jQuery in Easy Steps#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_rezension_adventures_python" name="fm_15_08_rezension_adventures_python">Rezension: Adventures in Python</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>P</b><b>ython gilt als leicht zu erlernende und einsteigerfreundliche
+Programmiersprache. Entsprechend viel Literatur gibt es für Einsteiger – wie
+auch das vorliegende Buch „Adventures in Python“&nbsp;<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118951794.html">[1]</a>.
+Dieses verfolgt aber – im Gegensatz zu vielen anderen Büchern – einen anderen
+didaktischen Ansatz, um den Spaß am Programmieren zu vermitteln.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Verlag Wiley-VCH für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Der Autor dieses englischsprachigen Buchs, Craig Richardson, verfolgt nämlich
+einen sehr praxisnahen Ansatz, d.&nbsp;h. statt viel Theorie und Kommandozeile wird
+Python in zehn Kapiteln pragmatisch vermittelt. Praxisnah heißt hier, dass in
+den meisten Fällen (kleine) Programme und Spiele programmiert werden. Dabei
+kommen die Python-Bibliotheken Turtle, Tkinter und PyGame zum Einsatz, welche
+für die grafische Ausgabe zuständig sind.
+
+<div class="p"><!----></div>
+
+<h2>Zielgruppe</h2>
+
+
+Der Untertitel des Buchs lautet „10 Awesome Project written especially for young
+people“, was frei übersetzt heißt: „10 großartige Projekte, speziell für jüngere
+Leute“. Zielgruppe sind laut Homepage des Verlags zum Buch&nbsp;<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118951794.html">[1]</a>
+11-15jährige, wobei das Buch weder vom Schreibstil noch von der grafischen Gestaltung
+auffällig oder übertrieben „jugendlich“ wirkt.
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+Wie bereits erwähnt, umfasst das Buch auf ca. 240 Seiten zehn Kapitel, gefolgt
+von einem ca. 20-seitigen Anhang inklusive Index. Sehr vorbildlich ist die sehr
+einsteigerfreundliche Installationsanleitung, welche die Installation von Python
+(und im Anhang auch PyGame) für die Plattformen Windows, MacOS, Ubuntu Linux und
+Raspbian beschreibt. Es folgt eine Beschreibung von IDLE, ebenfalls für alle
+zuvor genannten Plattformen, der in Python enthaltenen Entwicklungsumgebung,
+welche für alle Beispiele im Buch durchgehend verwendet wird.
+
+<div class="p"><!----></div>
+
+<h2>Ein bisschen Konsole, dann viel GUI</h2>
+
+
+Das erste Kapitel ist das einzige, in dem Python-Programme für die Kommandozeile
+geschrieben werden. Hier werden ein paar Grundlagen wie Datentypen und
+Kontrollstrukturen vermittelt. Im zweiten Kapitel werden Grafiken mit Hilfe des
+turtle-Moduls gezeichnet, während im dritten und vierten Programme mit
+grafischer Oberfläche auf Basis von Tkinter entwickelt werden.
+
+<div class="p"><!----></div>
+Das fünfte bis zehnte Kapitel setzt dann auf PyGame für die grafische Ausgabe.
+Diese Kapitel umfassen ca. die Hälfte des Buchs. Hier werden diverse kleine,
+aber voll funktionsfähige Minispiele entwickelt. Deren Komplexität steigert sich
+dann von Kapitel zu Kapitel. Im letzten Kapitel wird dann ein „richtiges“ Spiel
+mit Sprites, Tastatursteuerung und grafischem Hintergrund entwickelt, bei dem
+der Spieler Goldmünzen aufsammeln soll.
+
+<div class="p"><!----></div>
+
+<h2>Konzeptionelles</h2>
+
+
+Wie in der Einleitung bereits erwähnt, verfolgt das Buch nicht den klassischen
+Lehrbuchansatz. Vielmehr wird zu Beginn jedes Kapitels kurz erklärt, was jetzt
+programmiert werden soll. Dann stellt der Autor den zugehörigen Code vor, je
+nach Umfang und Länge auch schrittweise, bevor dieser anschließend erklärt wird.
+Diese Erklärung erfolgt separat in „Digging into the Code“ Boxen, welche auch
+farbig hervorgehoben sind. Dadurch sind dieser Erklärungsboxen sehr präsent und
+können schwerlich übersehen werden.
+
+<div class="p"><!----></div>
+Es wird immer so viel Python erklärt, wie nötig ist, um das vorherige Beispiel
+zu verstehen und nachvollziehen zu können. Weiterführende Erklärung oder eine
+Transformation auf andere mögliche Anwendungsfälle gibt es aber nicht. Dadurch
+ist der Inhalt natürlich sehr fokussiert, aber auch nicht wirklich universell
+anwendbar.
+
+<div class="p"><!----></div>
+
+<h2>Sprache und Darstellung</h2>
+
+
+Das Buch ist in sehr gut verständlichem Englisch geschrieben und sehr gut
+strukturiert. Der Autor setzt massiv auf verschiedene, farblich hervorgehobene
+Informationsboxen, welche zwar stellenweise den Lesefluss etwas stören, aber
+andererseits das Wiederauffinden von Informationen vereinfachen.
+
+<div class="p"><!----></div>
+Außerdem ist das Buch durchgehend in Farbe gedruckt und es enthält viele
+Abbildungen. Was durchaus praktisch ist, da der Leser so immer direkt einen
+Eindruck davon bekommt, wie die grafische Ausgabe des Programms aussehen soll.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch „Adventures in Python“ möchte den Einstieg in die Programmierung mit
+Python praxisnah und „spielend“ vermitteln, was dem Autor auch gut gelingt.
+Allerdings ist das Buch kein klassisches Lehrbuch, d.&nbsp;h. nach dem Lesen kennt der
+Leser „nur“ einen Teil der Konzepte von Python. Wer sich von diesem Konzept 
+angesprochen fühlt und lieber praxisnah als theoretisch lernt, der kann mit 
+diesem Buch nicht viel falsch machen.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i>
+Da es schade wäre, wenn das Buch bei Jochen Schnelle im Regal
+verstaubt, wird es verlost.
+Zusätzlich stellte uns der Verlag Wiley-VCH noch ein zweites Buch zur
+Verfügung, das ebenfalls verlost werden soll.
+Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Wie in der Buchbesprechung erwähnt, kommt in einem Kapitel auch das Python-Modul <b>turtle</b> zum Einsatz, um sogenannte „Turtle Graphics“ zu zeichnen. Welche Programmiersprache war es, die als erstes diese Turtle-Grafik einsetzte?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>9. August 2015, 23:59 Uhr</b>
+über die Kommentarfunktion oder per E-Mail an <img src="freiesMagazin-2015-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />
+geschickt werden. Die Kommentare werden bis zum Ende der
+Verlosung nicht freigeschaltet. Die beiden Bücher werden unter allen
+Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Adventures in Python&nbsp;<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118951794.html">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Craig Richardson </td></tr>
+<tr><td><b>Verlag</b> </td><td>John Wiley &amp; Sons </td></tr>
+<tr><td><b>Umfang</b> </td><td>288 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1118951798 </td></tr>
+<tr><td><b>Preis</b> </td><td>ca. 19,00 € (Print), ca. 17,00 € (E-Book) 
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118951794.html"><tt class="big">http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118951794.html</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.com/">Webseite</a>)
+nutzt Python als bevorzugte Programmiersprache.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Adventures in Python&amp;body=freiesMagazin 08/2015%0ARezension: Adventures in Python%0AJochen Schnelle%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Rezension: Adventures in Python#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_leserbriefe" name="fm_15_08_leserbriefe">Leserbriefe</a></font></h1>
+
+
+    <b>Für Leserbriefe steht unsere E-Mailadresse
+        <img src="freiesMagazin-2015-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+        Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+    An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+    uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+    sehr viel Lob (was uns natürlich freut), aber vor allem durch
+    Kritik und neue Ideen können wir uns verbessern.
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>cut out selected fields of each line of a file</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Der Artikel von Meillo zu CUT hat mir sehr sehr gut gefallen. Ich mag
+Softwaregeschichte als Teil der Technikgeschichte besonders dann, wenn
+einzelne Artefakte systematisch untersucht werden. Inklusive
+Quellenforschung im Archiv hautnah. Klasse! Gerne mehr davon.
+        &nbsp;<br /><b>Christian Imhorst</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150705-juliausgabe-erschienen#comment-3529">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Konkrete Links auf Beiträge</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ich habe eine kurze Ergänzung bzw. Korrektur zur Rezension des Buches
+„Linux – Das umfassende Handbuch“ von Stefan Wichmann in der Ausgabe
+06/2015. Am Ende des Artikels wird ein Gerichtsurteil mit Aktenzeichen
+„22 U 60/13“ mit einem Link referenziert, der weder auf das
+Gerichtsurteil noch auf eine Besprechung desselben führt, sondern
+einfach nur auf die Startseite der Website einer
+Rechtsanswaltskanzlei. Das ist freilich wenig informativ für jemanden,
+der sich tatsächlich für die Materie interessiert. Daher ein Hinweis für
+die Zukunft: Bei Gerichtsurteilen immer das erkennende Gericht mit
+angeben, ganz besonders dann, wenn es sich wie hier nicht um den
+Bundesgerichtshof handelt, sondern lediglich um ein Oberlandesgericht
+(hier OLG Hamm). Das ermöglicht eine Einschätzung der Reichweite und
+Folgenschwere eines Urteils. […] 
+<div class="p"><!----></div>
+Zur Verlinkung auf Urteile kann ich ferner die Seite dejure.org
+empfehlen, die Links zu Volltextveröffentlichungen sammelt
+(Beispiel&nbsp;<a href="https://dejure.org/dienste/vernetzung/rechtsprechung?Text=22%20U%2060/13">[1]</a>). Das
+ermöglicht dem interessierten Leser, eine solche Entscheidung leicht
+nachzulesen, auch wenn einmal kein Besprechungslink einer Kanzlei
+verfügbar sein sollte.
+        &nbsp;<br /><b>Marvin Gülker</b> 
+
+
+<div class="p"><!----></div>
+
+<h3>Mit LaTeX zum E-Book</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ausgezeichneter Artikel, der mir das Verbleiben bei LibreOffice-Jutoh2&nbsp;<a href="http://www.jutoh.com/">[2]</a> leicht
+macht. Auch diese Kombination ist nicht das A und O, aber sie ermöglicht mir
+flüssiges Arbeiten mit wenig Korrekturaufwand.
+        &nbsp;<br /><b>Beat Bucher</b> 
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Eine Quelltext-basierte Alternative zu LaTeX wäre adoc, mit dem sich per se
+EPUB-Dateien erstellen lassen. Allerdings sind hier die Möglichkeiten recht
+eingeschränkt und auch hier ist nicht jede Konvertierung unbedingt perfekt.
+Allerdings entfallen dafür eine Reihe der hier vorgestellten Schwierigkeiten …
+Ein Artikel dazu findet sich in der LinuxUser-Ausgabe 1/2015&nbsp;<a href="http://www.linux-community.de/Internal/Artikel/Print-Artikel/LinuxUser/2015/01/Aus-einer-Quelle/%28language%29/ger-DE">[3]</a>.
+        &nbsp;<br /><b>Karsten</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150705-juliausgabe-erschienen#comment-3531">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Git – Verteilte Versionsverwaltung für Code und Dokumente</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Kleine, wahre Anekdote am Rande: Das Buch hatte ich auch mal angefangen zu
+lesen. Und es ist das einzige Buch, dass ich mit Absicht <b>nicht</b> zu Ende
+gelesen habe. Ich fand das so langatmig und in Details verstrickt, dass
+mir da jegliche Motivation fehlte.
+        &nbsp;<br /><b>Jochen Schnelle</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150705-juliausgabe-erschienen#comment-3517">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Ich hatte das Buch als Neuerscheinung in unserer Bibliothek ausgeliehen und kann
+die in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> aufgeführten Kritikpunkte voll und ganz unterschreiben. Was
+mir – neben den im Artikel angesprochenen Beispielen – fehlte, waren Worte zum
+Thema Git im Team z.&nbsp;B. wann ist es sinnvoll einen neuen Branch zu erstellen oder wie
+kann man im Vorfeld Konflikte vermeiden. Auch „best practice“ Sachen wie „wie
+viel gehört in einen einzelnen Commit“ habe ich vermisst. […] Vielleicht lesen die
+Autoren Eure Rezension und verbessern das Buch in einer neuen Auflage.
+        &nbsp;<br /><b>tuxflo</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150705-juliausgabe-erschienen#comment-3519">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://dejure.org/dienste/vernetzung/rechtsprechung?Text=22%20U%2060/13"><tt class="big">https://dejure.org/dienste/vernetzung/rechtsprechung?Text=22%20U%2060/13</tt></a><br />
+[2] <a href="http://www.jutoh.com/"><tt class="big">http://www.jutoh.com/</tt></a><br />
+[3] <a href="http://www.linux-community.de/Internal/Artikel/Print-Artikel/LinuxUser/2015/01/Aus-einer-Quelle/%28language%29/ger-DE"><tt class="big">http://www.linux-community.de/Internal/Artikel/Print-Artikel/LinuxUser/2015/01/Aus-einer-Quelle/%28language%29/ger-DE</tt></a><br />
+
+
+<div class="p"><!----></div>
+    Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+    kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Leserbriefe&amp;body=freiesMagazin 08/2015%0ALeserbriefe%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-08%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/431?edit[subject]=Leserbriefe#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_veranstaltungen" name="fm_15_08_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+         
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+DebConf15 </td><td>Heidelberg </td><td align="left">15.08.–22.08.2015 </td><td>– </td><td align="left"><a href="http://debconf15.debconf.org/"><tt class="big">http://debconf15.debconf.org/</tt></a> </td></tr>
+<tr><td align="left">Linuxbierwanderung </td><td>Wiltz </td><td align="left">16.08.–23.08.2015 </td><td>frei </td><td align="left"><a href="https://linuxbierwanderung.com/"><tt class="big">https://linuxbierwanderung.com/</tt></a> </td></tr>
+<tr><td align="left">FrOSCon </td><td>Sankt Augustin </td><td align="left">22.08.–23.08.2015 </td><td>frei </td><td align="left"><a href="http://www.froscon.de/"><tt class="big">http://www.froscon.de/</tt></a> </td></tr>
+<tr><td align="left">Interfug </td><td>Dresden </td><td align="left">29.08.–30.08.2015 </td><td>10 EUR </td><td align="left"><a href="https://www.interfug.de/"><tt class="big">https://www.interfug.de/</tt></a> </td></tr>
+<tr><td align="left">MRMCD15 </td><td>Darmstadt </td><td align="left">04.09.–06.09.2015 </td><td>42,20 EUR </td><td align="left"><a href="https://mrmcd.net/"><tt class="big">https://mrmcd.net/</tt></a> </td></tr>
+<tr><td align="left">play15 </td><td>Hamburg </td><td align="left">15.09.–19.09.2015 </td><td>25 EUR </td><td align="left"><a href="http://www.play15.de/"><tt class="big">http://www.play15.de/</tt></a> </td></tr>
+<tr><td align="left">Kieler Open Source und Linux Tage </td><td>Kiel </td><td align="left">18.09.–19.09.2015 </td><td>frei </td><td align="left"><a href="http://kielux.de/"><tt class="big">http://kielux.de/</tt></a> </td></tr>
+<tr><td align="left">VCFB </td><td>Berlin </td><td align="left">03.10.–04.10.2015 </td><td>– </td><td align="left"><a href="http://www.vcfb.de/"><tt class="big">http://www.vcfb.de/</tt></a> </td></tr>
+<tr><td align="left">Ubucon </td><td>Berlin </td><td align="left">23.10.–25.10.2015 </td><td>15 EUR </td><td align="left"><a href="http://ubucon.de/"><tt class="big">http://ubucon.de/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2015-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_vorschau" name="fm_15_08_vorschau">Vorschau</a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint am ersten Sonntag eines Monats. Die September-Ausgabe
+    wird voraussichtlich am 6. September u.&nbsp;a. mit folgenden Themen veröffentlicht:
+    
+<ul>
+<li> Review: bq Aquaris E5 – Ubuntu Edition</li>
+<li> Rezension: Das Sketchnote-Handbuch
+    </li>
+</ul>
+    Es kann leider vorkommen, dass wir aus internen Gründen angekündigte
+    Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_konventionen" name="fm_15_08_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                         hier auch einfach in einer normalen Shell ein
+                         <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                        <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+        <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_08_impressum" name="fm_15_08_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 2. August 2015<br />
+    Erstelldatum: 11. August 2015<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2015-08-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Jens Dörpinghaus </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_gnuplot">Eine kurze Einführung in gnuplot</a> </td></tr>
+<tr><td align="left">Walter Eisenhauer </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_texmacs_praesentationen">TeXmacs als Präsentationstool nutzen</a> </td></tr>
+<tr><td align="left">Markus Herrmann </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_webscraping">Webscraping mit R</a> </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_kernel">Der Juli im Kernelrückblick</a> </td></tr>
+<tr><td align="left">E. Frank Sandig </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_biblatex">Modifizieren eines Biblatex-Stils</a> </td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_rezension_arduino_training">Rezension: Das Arduino-Training – Sehen wie's geht!</a> </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_rezension_jquery_in_easy_steps">Rezension: jQuery in Easy Steps</a>, <a href="freiesMagazin-2015-08-bilder.html#fm_15_08_rezension_adventures_python">Rezension: Adventures in Python</a> </td></tr>
+<tr><td align="left">Sujeevan Vijayakumaran </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_meizu-review">Ubuntu Phone: Das Meizu MX4 näher angeschaut</a> </td></tr>
+<tr><td align="left">Jürgen Weidner </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_top">Das Konsolentool top</a> </td></tr>
+<tr><td align="left">Barbara Wolf </td><td align="left"><a href="freiesMagazin-2015-08-bilder.html#fm_15_08_webscraping">Webscraping mit R</a> </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Satz und Layout</b></td></tr>
+<tr><td align="left">Moritz Kiefer </td><td align="left">Benedict Leskovar </td></tr>
+<tr><td align="left">Kai Welke </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+    </td></tr></table>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. 
+    Die Kommentar- und Empfehlen-Icons wurden von Maren Hachmann erstellt
+    und unterliegen ebenfalls der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>.
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2015-08-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On 11 Aug 2015, 06:27.</small>
+</div>
+</body></html>

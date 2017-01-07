@@ -1,0 +1,3738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                 
+<title>freiesMagazin 04/2016</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Der März im Kernelrückblick | Domainserver für kleines Geld und große Ansprüche | Inkscape für Einsteiger – Teil I: Grundlagen | Emacs – Moderne Antike | VirtualBox 5.0 – Der Einstieg | Pacman – Der Paketmanager von Arch Linux | Rezension: Datenanalyse mit Python | Rezension: R for Dummies | Hacks für die Digitale Fotografie | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 04/2016" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2016-04-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2016-04.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+          
+
+
+
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>April 2016</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Themen dieser Ausgabe sind u.&nbsp;a.</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_kvm">Domainserver für kleines Geld und große Ansprüche</a></font> <br />
+    Dieser Artikel stellt den Aufbau eines Servers für eine kleine (private) Domain vor, bei dem die zur Verfügung zu stellenden Dienste in virtuellen Maschinen gekapselt sind. Zwar kann man auch als Linux-Anfänger ein solches System aufsetzen, jedoch helfen gute Vorkenntnisse dabei, ein solches System schneller aufbauen zu können. (<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_kvm">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_inkscape_teil1">Inkscape für Einsteiger – Teil I</a></font> <br />
+    Dieser Artikel richtet sich an Anfänger im Bereich Vektorgrafik, die sich jedoch bereits mit einfacher Bildbearbeitung (z.&nbsp;B. Fotos nachbearbeiten) auskennen. Er gibt nicht nur eine Einführung in die Grundlagen, die benötigt werden, um das Prinzip „Vektorgrafik“ zu verstehen, sondern erklärt auch, wie Inkscape eigentlich entsteht. (<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_inkscape_teil1">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_emacs">Emacs – Moderne Antike</a></font> <br />
+    Das ursprünglich von Richard Stallman als Texteditor entwickelte Projekt GNU Emacs ist heute weit vielseitiger einsetzbar als es vermutlich je beabsichtigt war – dank seiner Programmierbarkeit und hervorragenden Integration mit Linux. Dieser Artikel soll einen Überblick dazu vermitteln und die Installation sowie einige Einrichtungsmöglichkeiten vorstellen. (<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_emacs">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_toc" name="fm_toc">Inhalt</a></font></h1><!-- CONTENT -->
+
+
+    &nbsp;<br /> <b>Linux allgemein</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_kernel">Der März im Kernelrückblick</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Anleitungen</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_kvm">Domainserver für kleines Geld und große Ansprüche</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_inkscape_teil1">Inkscape für Einsteiger – Teil I: Grundlagen</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Software</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_emacs">Emacs – Moderne Antike</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_virtualbox">VirtualBox 5.0 – Der Einstieg</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_pacman">Pacman – Der Paketmanager von Arch Linux</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Community</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_rezension_datenanalyse_python">Rezension: Datenanalyse mit Python</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_rezension_r_dummies">Rezension: R for Dummies</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_rezension_hacks_digitale_fotografie">Hacks für die Digitale Fotografie</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Magazin</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-04-bilder.html#fm_16_04_impressum">Impressum</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_editorial" name="fm_16_04_editorial">Editorial</a></font></h1>
+
+
+
+<h2>Autoren-Aufruf</h2>
+
+
+In unserer Märzausgabe&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2016-03">[1]</a>
+hatten wir einen Aufruf gestartet, um neue Autoren für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> zu gewinnen, da die
+vorherigen Ausgaben wieder einmal sehr dünn geworden waren. Erfreulicherweise haben
+sich einige neue Autoren gemeldet, die die Leser von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> an ihrem Wissen
+teilhaben lassen möchten. Einige dieser Artikel finden Sie bereits in der
+aktuellen Ausgabe. Auch ein paar schon länger für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> schreibende Autoren sind
+dem Aufruf gefolgt, so dass die vorliegende Ausgabe wieder mit mehr Artikeln
+erscheint. Wir freuen uns sehr darüber und hoffen, dass dieser Trend anhält, so
+dass wir <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> auch in Zukunft veröffentlichen können.
+
+<div class="p"><!----></div>
+
+<h2>Linux und Windows 10</h2>
+Über Microsoft berichten wir in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> naturgemäß eher selten, auch wenn sich die
+Bemühungen Microsofts in Richtung Freie Software in den letzten Jahren doch
+verstärkt haben. Auf der diesjährigen Entwicklerkonferenz Build 2016 stellte
+Microsoft nun ein Linux-Subsystem für Windows 10 vor&nbsp;<a href="https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/">[2]</a>&nbsp;<a href="https://channel9.msdn.com/Events/Build/2016/P488">[3]</a>.
+Es wurde zusammen mit Canonical, dem Ubuntu-Hersteller, entwickelt und
+ermöglicht das Ausführen von Linux-Kommandozeilenprogrammen ohne eine virtuelle
+Maschine oder einen Container. Die Programme müssen nicht extra übersetzt
+werden, so dass man aus dem vollen Software-Programm von Ubuntu schöpfen kann.
+Momentan dient noch Ubuntu 14.04 als Basis, dieses wird jedoch schon bald durch
+Ubuntu 16.04 im Windows Store ersetzt werden. Die Reaktionen auf die Vorstellung 
+waren ziemlich gemischt und es bleibt natürlich abzuwarten, wie sich dieses Projekt
+in der Praxis zeigt und weiter entwickelt, aber gerade Entwickler, die 
+zwischen diesen beiden Welten wechseln müssen, dürfte sich über diese
+Zusammenarbeit freuen.
+
+<div class="p"><!----></div>
+
+<h2>Veränderungen in der Redaktion</h2>
+
+
+Wie bereits in der letzten Ausgabe angekündigt, wird Christian Schnell die
+Redaktion mit der vorliegenden Ausgabe verlassen. Durch familiäre Veränderungen
+muss er den Einsatz für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> etwas zurückschrauben, bleibt dem Team aber als
+Korrektor erhalten. 
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2016-03"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2016-03</tt></a><br />
+[2] <a href="https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/"><tt class="big">https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/</tt></a><br />
+[3] <a href="https://channel9.msdn.com/Events/Build/2016/P488"><tt class="big">https://channel9.msdn.com/Events/Build/2016/P488</tt></a><br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Editorial&amp;body=freiesMagazin 04/2016%0AEditorial%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Editorial#comment-form">Beitrag kommentieren</a><br /><br /></i><a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_kernel" name="fm_16_04_kernel">Der März im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 4.5 entwickelt sich</h2>
+
+
+Eine siebte Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2016/3/6/195">[1]</a> gab es
+noch Anfang März. Sie konnte jedoch nicht mit bahnbrechenden Neuerungen
+aufwarten – zum Glück. Mit ihr ging der Linux-Kernel eines Treibers für einen
+USB-Seriell-Chip verlustig, der jedoch bereits von einem anderen Treiber
+unterstützt wird. Ansonsten kamen noch einige Korrekturen zusammen, die
+insgesamt aber der Veröffentlichung einer Final-Version nicht im Wege standen.
+
+<div class="p"><!----></div>
+Und so gab Torvalds dann nach einem Entwicklungszyklus von 64 Tagen Linux
+4.5&nbsp;<a href="https://lkml.org/lkml/2016/3/14/50">[2]</a> frei. Die Zahl der Änderungen
+gegenüber der siebten Entwicklerversion war zwar gestiegen, beschränkte sich
+jedoch auf Korrekturen, insbesondere wurden das Dateisystem xfs und der
+Infiniband-Treiber von Mellanox Technologies damit bedacht.
+
+<div class="p"><!----></div>
+
+<h2>Linux 4.5 ist fertig</h2>
+
+
+Die Statistik für den neuesten Linux-Kernel ist interessant: Von der Zahl der
+Änderungen her liegt er mit knapp über 13.000 derzeit eher im Mittelfeld, mit
+etwa 2 Millionen geänderter Quelltextzeilen fällt der Patch jedoch erheblich
+größer aus. Doch was bringt das dem Anwender nun?
+
+<div class="p"><!----></div>
+
+<h3>Sichtbar</h3>
+
+
+Eine der wichtigsten Neuerungen dürfte die Unterstützung für AMD
+PowerPlay&nbsp;<a href="https://de.wikipedia.org/wiki/AMD_PowerPlay">[3]</a> sein. Diese Technik dient
+zur Steuerung des Betriebsmodus von AMD/ATI-Grafikkomponenten und regelt deren
+Leistung – und damit indirekt den Energiebedarf. PowerPlay ist bereits in AMDs
+proprietären Catalyst-Treiber enthalten und wurde nun auf den freien amdgpu-
+Treiber portiert. Derzeit werden Grafikprozessoren der Tonga-, Fiji-, Carrizo-
+und Stoney-Serien und damit viele aktuelle Grafikkarten unterstützt. Allerdings
+wird an PowerPlay im Moment noch schwer gearbeitet, deshalb wird es
+standardmäßig noch nicht für alle oben aufgeführten Serien aktiviert.
+
+<div class="p"><!----></div>
+Nicht unbedingt neu, aber aufgewertet kommt der freie vc4-Treiber daher. Dieser
+wurde bereits in Linux 4.4 aufgenommen (siehe „Der Jahreswechsel im
+Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+02/2016&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2016-02">[4]</a>) und liefert
+Unterstützung für die Grafikeinheit der in Raspberry Pi 1 und Raspberry Pi Zero
+verwendeten BCM2835-Prozessoren. Bislang stand jedoch lediglich die 2D-
+Unterstützung zur Verfügung, mit dem aktuellen Kernel bietet vc4 nun auch 3D-
+Beschleunigung.&nbsp;<a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=21de54b3c4d08d2b20e80876c6def0b421dfec2e">[5]</a>
+
+<div class="p"><!----></div>
+In einem sehr frühen Stadium befindet sich die erste Unterstützung für Intels
+Kaby Lake Architektur&nbsp;<a href="https://en.wikipedia.org/wiki/Kaby_Lake">[6]</a>. Deren
+Entwicklungsstand lässt sich durch Anwender schlecht prüfen, da Chips dieser
+Baureihe erst gegen Ende diesen Jahres erwartet werden.
+
+<div class="p"><!----></div>
+
+<h3>Spürbar</h3>
+
+
+Das Dateisystem Btrfs&nbsp;<a href="https://de.wikipedia.org/wiki/Btrfs">[7]</a> wurde um eine weitere
+Möglichkeit ergänzt, um sich freie Speicherstellen merken zu können. Die
+bisherige Umsetzung funktionierte zwar, jedoch stellt die Pflege dieses
+Verzeichnisses insbesondere bei großen Speichersystemen ab etwa 30 Terabyte
+einen Flaschenhals dar. Die neue Umsetzung, „Space Cache v2“, erfordert bei
+Schreib- oder Lösch-Vorgängen weniger Aufwand und ist besser skalierbar. Sie
+wird standardmäßig noch nicht aktiviert, lässt sich beim Einhängen eines 
+Btrfs-Dateisystems jedoch über eine Option aktivieren. Nutzer mit einem Datenvolumen
+unter 20 TB dürften davon jedoch nicht genug profitieren, um diese recht junge
+Funktion schon nutzen zu wollen; ebenso ist Anwendern mit einem Datenvolumen oberhalb
+dieser Grenze zumindest zu einem regelmäßigen Backup zu raten, wenn sie
+`space_cache=v2` nutzen möchten, denn Space Cache v2 gilt derzeit noch als
+experimentell.
+
+<div class="p"><!----></div>
+
+<h3>Wunderbar</h3>
+
+
+Das Herumkopieren von Dateien ist ein alltäglicher Vorgang. Betrachtet man ihn
+genauer, kommt er einem erstaunlich ineffizient vor: Die Daten werden erst von
+einem Dateisystem gelesen, an den Userspace übergeben, das heißt in einen
+Bereich des Arbeitsspeicher, auf den der „kopierende“ Nutzer Zugriff hat,
+kopiert und von dort wieder auf eine andere Stelle im Dateisystem
+beziehungsweise ein anderes Dateisystem weggeschrieben. Linux 4.5 bringt nun
+einen neuen Systemaufruf „copy_file_range()“ mit, mit dem der Zwischenschritt
+über den Speicherbereich des Nutzers übersprungen wird, indem die Daten direkt
+von Datei zu Datei transferiert werden. Der Leistungsgewinn hält sich jedoch
+erst einmal in Grenzen, da die Zugriffszeiten auf die Datenträger hier einen
+größeren Einfluss haben als die des Arbeitsspeichers. Betrachtet man jedoch
+Umgebungen mit Netzwerk-Dateisystemen wie
+NFS&nbsp;<a href="https://de.wikipedia.org/wiki/Btrfs">[6]</a>, wo mit dieser Methode auf die
+Übertragung der Daten vom Server über das Netzwerk zum Client und gegebenenfalls
+wieder zurück eingespart werden kann, liegt hier das Potential für einen
+deutlichen Fortschritt. Praktischerweise bringt die kommende Spezifikation für
+NFS 4.2 auch die Server-seitige Unterstützung hierfür mit und entsprechende
+Anpassungen für Btrfs und 
+CIFS&nbsp;<a href="https://de.wikipedia.org/wiki/Server_Message_Block#Common_Internet_File_System_%28CIFS%29">[8]</a>
+werden schon zusammengeführt.
+
+<div class="p"><!----></div>
+Der bereits etablierte Systemaufruf „madvise()“ erlaubt es einzelnen
+Anwendungen, dem Kernel mitzuteilen, wenn ihnen zugewiesener Speicher nicht
+benötigt wird und ermöglicht so eine optimale Nutzung des Arbeitsspeichers.
+Normalerweise wird ein auf diese Weise zurückgemeldeter Speicher vom Kernel
+freigeräumt oder direkt anderweitig zugewiesen. Der neu eingeführte Marker
+„MADV_FREE“ kann nun Speicherbereich kennzeichnen, der zur Verfügung steht,
+falls er benötigt wird. Er wird daher nicht sofort freigeräumt und für den
+Prozess gesperrt, der ihn bisher in Verwendung hatte, sondern erst, wenn ein
+Speichermangel vorliegt. Dadurch kann Fehlern vorgebeugt werden, die bisweilen
+entstehen, wenn Anwendungen nach kurzer Zeit „ihren“ Speicherbereich doch
+nochmal nutzen möchten. Diese Fehler werden zwar in der Regel abgefangen,
+sorgen jedoch für unnötige Last. Neu ist diese Funktion jedoch nicht;
+verschiedene BSD-
+Systeme&nbsp;<a href="https://de.wikipedia.org/wiki/Berkeley_Software_Distribution">[9]</a>
+nutzen sie schon länger.
+
+<div class="p"><!----></div>
+Die Control Groups (cgroups) sind mittlerweile kaum noch aus der Linux-Welt
+wegzudenken. Anwendungscontainer wie lxc&nbsp;<a href="https://de.wikipedia.org/wiki/LXC">[10]</a> oder
+das bekanntere Docker&nbsp;<a href="https://de.wikipedia.org/wiki/Docker_%28Software%29">[11]</a> setzen
+darauf auf und auch der mit Linux 4.3 eingeführte Forkbomb-Killer (siehe „Der
+November im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+12/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-12">[12]</a>) funktioniert nur dank
+cgroups. Doch deren Verwaltung war bislang nicht gerade optimal. So wurde mit
+Linux 3.16 begonnen, neue hierarchische Verwaltungsstrukturen zu schaffen, um
+die Konfiguration der cgroups zu vereinfachen. Diese Verwaltungsstruktur kann
+wie ein Filesystem mittels des Typs croups2 eingehängt und erforscht oder
+bearbeitet werden. Die Umsetzung wird nun als fertig angesehen. Allerdings fehlt
+derzeit noch der CPU Controller, der vorerst nur über die bisherige Variante
+gesteuert werden kann.
+
+<div class="p"><!----></div>
+Die vorangegangenen Abschnitte stellen nur einen Überblick über die
+interessanten Änderungen dar, Linux 4.5 bringt noch viele weitere mit. Einen
+guten Überblick liefert die englischsprachige Seite Kernel
+Newbies&nbsp;<a href="http://kernelnewbies.org/Linux_4.5">[13]</a> oder heise
+open&nbsp;<a href="http://heise.de/-3132326">[14]</a> in deutscher Sprache.
+
+<div class="p"><!----></div>
+
+<h2>Die Entwicklung von Linux 4.6 startet</h2>
+
+
+Zu Ostern schloss Torvalds das Merge Window für Linux 4.6 und legte die erste
+Entwicklerversion vor&nbsp;<a href="https://lkml.org/lkml/2016/3/26/132">[15]</a>. Sie fällt schon
+jetzt recht umfangreich aus – an die fast 13.000 aufgenommenen Änderungen reicht
+kein -rc1 der vergangenen fünf Jahre heran. Die Zahl der geänderten
+Quelltextzeilen entspricht dagegen eher dem gehobenen Mittelfeld, was auf eher
+viele kleinere Änderungen anstelle weniger großer Patches hinweist. Ein paar
+davon dürften auf die Übernahme einiger Treiber aus dem aktiven Kernel in den
+Staging-Zweig betreffen. Dies passiert üblicherweise, bevor ein Treiber
+endgültig entfernt wird, wie in diesem Falle für sehr alte ISDN-Hardware
+aus den 1990ern. Ebenfalls weichen musste die Unterstützung für die 68360
+System-on-Chip-Architektur, die noch  einige Lücken aufwies und so schon
+jahrelang vor sich hinvegetiert hatte, ohne wirklich nützlich gewesen zu sein.
+
+<div class="p"><!----></div>
+Ein Neuzugang ist OrangeFS&nbsp;<a href="https://en.wikipedia.org/wiki/OrangeFS">[16]</a>, dessen
+Betreuer ein paar Runden drehen mussten, bis die Kernel-Entwickler mit dem Code
+zufrieden waren. OrangeFS ist ein paralleles virtuelles Dateisystem und für den
+Einsatz in großen Rechen-Clustern gedacht. Es soll Daten zwischen mehreren
+Servern aufteilen und darauf parallele Zugriffe ermöglichen.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://lkml.org/lkml/2016/3/6/195"><tt class="big">https://lkml.org/lkml/2016/3/6/195</tt></a><br />
+[2] <a href="https://lkml.org/lkml/2016/3/14/50"><tt class="big">https://lkml.org/lkml/2016/3/14/50</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/AMD_PowerPlay"><tt class="big">https://de.wikipedia.org/wiki/AMD_PowerPlay</tt></a><br />
+[4] <a href="http://www.freiesmagazin.de/freiesMagazin-2016-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2016-02</tt></a><br />
+[5] <a href="https://en.wikipedia.org/wiki/Kaby_Lake"><tt class="big">https://en.wikipedia.org/wiki/Kaby_Lake</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Btrfs"><tt class="big">https://de.wikipedia.org/wiki/Btrfs</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Server_Message_Block#Common_Internet_File_System_%28CIFS%29"><tt class="big">https://de.wikipedia.org/wiki/Server_Message_Block#Common_Internet_File_System_(CIFS)</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/Berkeley_Software_Distribution"><tt class="big">https://de.wikipedia.org/wiki/Berkeley_Software_Distribution</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/LXC"><tt class="big">https://de.wikipedia.org/wiki/LXC</tt></a><br />
+[10] <a href="https://de.wikipedia.org/wiki/Docker_%28Software%29"><tt class="big">https://de.wikipedia.org/wiki/Docker_(Software)</tt></a><br />
+[11] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-12"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-12</tt></a><br />
+[12] <a href="http://kernelnewbies.org/Linux_4.5"><tt class="big">http://kernelnewbies.org/Linux_4.5</tt></a><br />
+[13] <a href="http://heise.de/-3132326"><tt class="big">http://heise.de/-3132326</tt></a><br />
+[14] <a href="https://lkml.org/lkml/2016/3/26/132"><tt class="big">https://lkml.org/lkml/2016/3/26/132</tt></a><br />
+[15] <a href="https://en.wikipedia.org/wiki/OrangeFS"><tt class="big">https://en.wikipedia.org/wiki/OrangeFS</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem Laufenden zu bleiben und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Der M%C3%A4rz im Kernelr%C3%BCckblick&amp;body=freiesMagazin 04/2016%0ADer M%C3%A4rz im Kernelr%C3%BCckblick%0AMathias Menzer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Der M%C3%A4rz im Kernelr%C3%BCckblick#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_kvm" name="fm_16_04_kvm">Domainserver für kleines Geld und große Ansprüche</a></font></h1>von Rolf Schmidt
+
+<div class="p"><!----></div>
+    <b>D</b><b>er folgende Artikel stellt den Aufbau eines Servers für eine kleine (private)
+Domain vor, bei dem die zur Verfügung zu stellenden Dienste in virtuellen
+Maschinen gekapselt sind. Zwar kann man auch als Linux-Anfänger ein solches
+System aufsetzen, jedoch helfen gute Vorkenntnisse dabei, ein solches System
+schneller aufbauen zu können.</b>
+
+<div class="p"><!----></div>
+
+<h2>Einleitung</h2>
+
+
+Die Isolation von Diensten in virtuellen Maschinen hat mehrere Vorteile. Die
+Dienste für den Internetzugang mit Firewall, Router oder dynamischem DNS sind
+samt ihren Konfigurationsdaten funktionsfähig zusammengefasst und können nach
+einem Systemcrash leicht wieder hergestellt oder gar ausfallsicher gespiegelt
+werden.
+
+<div class="p"><!----></div>
+Systemrelevante Rechner können (weiter) optimiert und aktuell gehalten werden,
+ohne dass dies grundsätzliche Einschränkungen des Netzwerks zur Folge hat. So
+kann man beispielsweise den Internetzugangsrechner mit einem anderen
+Betriebssystem wie OpenBSD zur Erhöhung der Sicherheit betreiben oder die
+Festplatte nur lesbar einbinden. Ausprobieren und Testen lässt sich dies
+einfach in einer Kopie der virtuellen Maschine.
+
+<div class="p"><!----></div>
+Arbeitsumgebungen – beispielsweise Entwicklungsumgebungen – können konstant
+gehalten
+
+werden. Dies kann nötig sein, wenn eine komplette Produktentwicklung
+samt der verwendeten Werkzeuge über viele Jahre verfügbar bleiben müssen – z.&nbsp;B.
+müssen Programme, mit denen Steuererklärungen erstellt wurden, 10 Jahre 
+lauffähig aufgehoben werden.
+
+<div class="p"><!----></div>
+Auslagern kann man solche Systeme durch einfaches Verschieben des Plattenimages
+der virtuellen Maschine auf ein Sicherungsmedium. Sollte eine virtuelle
+Maschine kaputt gehen, ist nicht das ganze System unbrauchbar. Das Einspielen einer
+Kopie behebt das Problem.
+
+<div class="p"><!----></div>
+Durch die Kapselung in virtuelle Maschinen können verschiedene Dienste isoliert
+betriebsfähig 
+gehalten werden und dies alles in nur einem Rechner.
+
+<div class="p"><!----></div>
+Virtualisierung ermöglicht also die Diversifizierung der Dienste bei
+gleichzeitiger Zentralisierung der Dienstleistungen.
+
+<div class="p"><!----></div>
+Es gibt aber auch Nachteile, die es zu beachten gilt: Es müssen alle virtuellen
+Maschinen (soweit sie mit einem aktuellen Betriebssystem betrieben werden) regelmäßig
+aktualisiert werden, sofern keine unbeaufsichtigte Aktualisierung eingerichtet
+werden kann oder soll.
+
+<div class="p"><!----></div>
+Eine Sicherung der Maschinen ist unbedingt notwendig und sollte immer den
+aktuellen Stand, also den nach einem Update, verfügbar halten.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/kvm_screenshot.png" alt="kvm_screenshot.png" style="max-width:100%" /><br /><em>Zwei virtuelle Maschinen mit grafischer Benutzeroberfläche unter Linux.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Systembeschreibung</h2>
+
+
+Als Rechner wurde ein gebrauchter Desktop-PC eingesetzt, der eine 64-Bit-CPU
+(CoreDuo) hat. Diese ermöglicht auch die Virtualisierung von 64-Bit
+Betriebssystemen in einer virtuellen Maschine. Allerdings unterstützt der
+Chipsatz des Rechners keine I/O-Virtualisierung.
+
+<div class="p"><!----></div>
+Aufgerüstet wurde der Rechner auf maximal mögliche 8 GByte Hauptspeicher und
+mit einer 500 GByte SSD-Platte. Die Investitionen betrugen weniger als 500 €.
+Ferner wurden dem Fundus eine zweite Netzwerkkarte sowie eine ISDN-Karte
+entnommen und eingebaut. Letztere wird von einem Asterisk-Telefonserver
+verwendet, der wegen fehlender I/O-Virtualisierung auf der Basismaschine laufen
+muss. Die Netzwerkanschlüsse (einer davon ist, wie heute üblich, bereits auf
+dem Board) bedienen den DSL-Anschluss und das lokale Netzwerk (LAN).
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/kvm_serverstruktur.png" alt="kvm_serverstruktur.png" style="max-width:100%" /><br /><em>Struktur des Servers.</em><br />
+
+<div class="p"><!----></div>
+Die internen Verbindungen der verschiedenen virtuellen Maschinen werden mittels
+Software-Switches hergestellt. Da verschiedene unabhängige Verbindungen nötig
+sind, wurden mehrere Switches (für die verschiedenen Netze) aufgesetzt, obwohl
+der verwendete Software-Switch („vde2“) auch die Einrichtung von virtuellen
+LANs ermöglicht.
+
+<div class="p"><!----></div>
+Das private Netz wird im Wesentlichen zur Verbindung des Internetzugangs mit
+dem Router verwendet. So ist sichergestellt, dass der Zugangsrechner keine
+direkte Verbindung zum lokalen Netzwerk hat. Der Zugangsrechner ist nur vom
+Router aus erreichbar und auch nur mittels ssh-key.
+
+<div class="p"><!----></div>
+Am internen Netz sind neben den virtuellen Maschinen auch die physischen
+Rechner sowie Drucker, Scanner und ein WLAN-Router angebunden. Zum Netz der
+demilitarisierten Zone (DMZ) gibt es keine Verbindung von innen. Ein
+Datenaustausch ist nur über ein gemeinsames Verzeichnis möglich.
+
+<div class="p"><!----></div>
+
+<h2>Zur Verfügung gestellte Dienste</h2>
+
+
+Als Dienste laufen neben dem Internetzugang, natürlich mit Firewall, auch die
+üblichen Dienste einer Domain, wie DHCP, Nameserver und der Druckdienst CUPS.
+
+<div class="p"><!----></div>
+
+<h3>Internetzugang</h3>
+
+
+Ohne Internet geht heute in der Computerei fast gar nichts mehr, sodass als
+erstes die virtuelle Maschine mit dem Internetzugang aufgesetzt werden 
+sollte – sonst kann man bei Problemen keine Suchmaschine befragen und sei es nur mit
+einem textonly-Browser wie „elinks“.
+
+<div class="p"><!----></div>
+Dazu muss die Netzwerkkarte, die mit dem DSL-Modem verbunden ist, entweder über
+ein TAP-Gerät (ein vom Kernel bereit gestelltes Software-Netzgerät)
+oder wie hier über einen Software-Switch mit der virtuellen
+Maschine verbunden werden. In der Maschine kann dann eine aktuelle Distribution
+oder auch eine spezielle Firewall-Distribution (z.&nbsp;B. RCP100&nbsp;<a href="https://sourceforge.net/projects/rcp100">[1]</a>) installiert werden.
+
+<div class="p"><!----></div>
+Eine zweite Netzwerkkarte – verbunden mit dem privaten Netz – wird benötigt, um
+die Verbindung zum lokalen Netzwerk bzw. dem Router herzustellen.
+Selbstverständlich muss die virtuelle Maschine die Daten zwischen den
+Netzwerkschnittstellen austauschen können, also ebenfalls
+Routing-Funktionalität haben.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/kvm_internetzugang.png" alt="kvm_internetzugang.png" style="max-width:100%" /><br /><em>Verbindung zum Internet.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Router mit DHCP, DNS, …</h3>
+
+
+Das lokale Netzwerk benötigt weitere Netzwerkdienste. Diese sind mit ihren
+Konfigurationen in einer zweiten virtuellen Maschine zusammengefasst. Es stehen
+ein DHCP-Server für die Verteilung von IP-Adressen sowie ein Namensserver für
+die Auflösung der Rechnernamen im lokalen Netz als auch die Weiterleitung von
+Anfragen an externe Nameserver zur Verfügung. Da die Rechner des lokalen Netzes
+auch Zugriff auf das Internet haben sollen, wird die Weiterleitung zum
+Zugangsrechner durch NAT (network address translation) sichergestellt. Ein
+Proxyserver (privoxy) filtert auf Wunsch viel Werbung aus.
+
+<div class="p"><!----></div>
+Schließlich bietet noch CUPS seine Dienste zum Drucken an und über einen
+„sane“-Server kann von jedem Arbeitsplatz aus eingescannt werden.
+
+<div class="p"><!----></div>
+
+<h3>OpenVPN-Zugang</h3>
+
+
+Da Informationen, die im lokalen Netzwerk zur Verfügung stehen, auch von
+außerhalb erreichbar sein sollen, ist ein sicherer Zugang dafür nötig. Der
+Zugang ist mit OpenVPN eingerichtet und wird von einer eigenen virtuellen
+Maschine zur Verfügung gestellt. Diese Maschine enthält wieder alle
+Konfigurationsdaten und die benötigten Schlüssel für den Betrieb.
+
+<div class="p"><!----></div>
+
+<h3>OwnCloud</h3>
+
+
+Der OwnCloud-Server ist nur intern oder über VPN erreichbar. Hauptaufgabe ist
+es, einen Datei- und Bilderaustauschdienst sowie ein Adressbuch und einen Kalender
+anzubieten. Mittels VPN-App ist auch ein Zugriff per Mobiltelefon möglich.
+
+<div class="p"><!----></div>
+
+<h2>Verschiedene virtualisierte (ältere) Systeme</h2>
+
+
+Alte Rechner lassen sich relativ leicht in virtuelle Maschinen übertragen
+(beispielsweise mit „dd“), sodass alte Arbeiten, Rechnungen oder Spiele
+weiterhin zur Verfügung stehen, ohne das ein separater Rechner dafür „am Leben
+erhalten werden muss“. Diese Rechner sind durch die Firewall des Systems
+geschützt – wenn sie denn Internetzugang brauchen.
+
+<div class="p"><!----></div>
+Gelegentlich können die alten Maschinen (wie freeDOS) nur von qemu – nicht von
+KVM – gestartet werden, da die alte Software mit den Kernelschnittstellen von 
+KVM nicht zurecht kommt.
+
+<div class="p"><!----></div>
+Es gibt beim Autor eine virtuelle Maschine, die eine ältere Distribution
+enthält, um eine LibreOffice Versionen vorhalten zu können, die noch alte Star-
+bzw. OpenOffice-Dokumente anzeigen/konvertieren kann.
+
+<div class="p"><!----></div>
+Solche Maschinen brauchen nur bei Bedarf gestartet zu werden.
+
+<div class="p"><!----></div>
+
+<h2>Zugriffsmöglichkeiten</h2>
+
+
+Der hier beschriebene Server muss und sollte auch nicht unter dem Schreibtisch
+stehen und benötigt bzw. hat keine grafische Oberfläche.  Somit muss der
+Zugriff darauf typischerweise per Netzwerk erfolgen.  Dafür bietet Linux viele
+Möglichkeiten – per SSH, Zugriff auf die Daten per NFS oder auch durch
+Umleitung des gesamten Desktops.
+
+<div class="p"><!----></div>
+Auf den Internetzugangsrechner und den Router kann auch über ein Terminal am
+Server zugegriffen werden, falls es Probleme bei Start der virtuelle Maschine
+gibt – z.&nbsp;B. nach einem Plattencheck oder Update.
+
+<div class="p"><!----></div>
+
+<h3>Mit Curses und tty</h3>
+
+
+Mittels der Curses-Schnittstelle lässt sich die Ausgabe der betreffenden
+virtuellen Maschine auf einem seriellen Terminal, wie den virtuellen
+Linux-Terminals, realisieren.
+
+<div class="p"><!----></div>
+
+<h3>Grafische Systeme</h3>
+
+
+Auf Systemen mit grafischer Oberfläche kann man sich unter Linux z.&nbsp;B. 
+per <b><tt class="big">ssh -Y user@rechner</tt></b> anmelden und dann das gewünschte grafische Programm
+aufrufen. Auch eine Anmeldung auf einem Fremdrechner (remote-login) lässt sich
+durch entsprechende Konfiguration des X-Servers einrichten.
+
+<div class="p"><!----></div>
+Anders sieht es aus, wenn in der virtuellen Maschine kein Linux beziehungsweise kein
+X-Server läuft.
+
+<div class="p"><!----></div>
+
+<h3>SDL</h3>
+
+
+SDL&nbsp;<a href="https://de.wikipedia.org/wiki/Simple_DirectMedia_Layer">[2]</a> ist ein Simple
+DirectMedia Layer und wird für die Ausgabe einer virtuelle Maschine auf einem
+Desktop verwendet. Dies ist dann interessant, wenn man eine virtuelle Maschine
+z.&nbsp;B. auf einen Laptop kopiert hat und sie unter dessen grafischen Oberfläche
+laufen lässt.
+
+<div class="p"><!----></div>
+
+<h3>VNC</h3>
+
+
+VNC&nbsp;<a href="https://de.wikipedia.org/wiki/Virtual_Network_Computing">[3]</a> (steht für
+„virtual network computing“) und ist ein freies Protokoll zur Übertragung der
+Bildschirminhalte eines Rechners über Netzwerk. Für das Protokoll stehen
+verschiedene, auch browserbasierte Viewer zur Verfügung.  Allerdings gibt es
+immer wieder Probleme mit der Synchronisation der Cursor auf dem
+Darstellungsrechner und dem Bildschirm der virtuelle Maschine. Hier hilft die
+Option <b><tt class="big">-usbdevice tablet</tt></b> beim Starten von qemu.
+
+<div class="p"><!----></div>
+VNC-Clients (und Server) gibt es auch für Windows – z.&nbsp;B. im Paket <b>tightvnc</b>.
+
+<div class="p"><!----></div>
+
+<h3>Spice</h3>
+
+
+Das Spice-Protokoll&nbsp;<a href="https://de.wikipedia.org/wiki/SPICE_%28Protokoll%29">[4]</a> wird wohl
+bei RedHat (weiter-) entwickelt und ermöglicht ein komfortables Arbeiten auf
+einem entfernten Rechner, der die Oberfläche von GUI-basierten virtuellen System
+darstellt – ein entsprechender Grafik(karten)treiber für Windows steht zur
+Verfügung. Der Spice-Server ermöglicht zudem auch, den Sound der virtuellen Maschine
+netzwerktransparent durchzuleiten und selbst cut and paste zwischen virtueller
+Maschine und dem Rechner, auf dem die Anzeige erfolgt, ist möglich. USB soll
+ebenfalls zur virtuellen Maschine durchgereicht werden können.
+
+<div class="p"><!----></div>
+
+<h2>Start virtueller Maschinen bei Bedarf</h2>
+
+
+Einige virtuelle Maschinen müssen nicht permanent laufen, sodass man diese nur
+bei Bedarf manuell starten will. Damit man sich dafür nicht immer auf der
+Basismaschine anmelden und das Startskript auf der Command-Line aufrufen muss,
+wurden Startmöglichkeiten mittels xinet und per wake-on-lan implementiert.
+
+<div class="p"><!----></div>
+
+<h3>Mittels xinet</h3>
+
+
+Bei der Ausgabe einer virtuelle Maschine über das Netzwerk, wobei die Daten mittels
+xinet ausgeben werden sollen, müssen diese per Standard-I/O angeboten und
+entgegengenommen werden. Qemu erlaubt es, die Ausgabe von VNC über einen
+Socket zu leiten. Dann können die Daten mittels <b><tt class="big">socat</tt></b> vom Socket abgeholt und
+die Eingaben wieder in den Socket eingespeist werden.
+
+<div class="p"><!----></div>
+Ein beispielhafter Konfigurationseintrag für xinet ist im folgenden Listing aufgezeigt.
+
+<div class="p"><!----></div>
+
+<div class="listing">service vnc5 {<br />
+&nbsp;&nbsp;disable     = no<br />
+&nbsp;&nbsp;type        = UNLISTED<br />
+&nbsp;&nbsp;port        = 5905<br />
+&nbsp;&nbsp;flags       = IPv4<br />
+&nbsp;&nbsp;server = /home/winxp/start-winxp.sh<br />
+&nbsp;&nbsp;server_args = vnc<br />
+&nbsp;&nbsp;socket_type = stream<br />
+&nbsp;&nbsp;protocol    = tcp<br />
+&nbsp;&nbsp;user        = winxp<br />
+&nbsp;&nbsp;groups      = yes<br />
+&nbsp;&nbsp;wait        = no<br />
+}</div>
+
+<div class="p"><!----></div>
+
+
+Nach einem (re-)Start des xinetd-Servers lauscht dieser dann an dem angegebenen
+Port (hier 5905). Wenn sich über diesen Port ein Programm verbindet, wird die
+Zeile <b><tt class="big">server</tt></b> ausgewertet und das darin angegebene Startskript vom
+angegebenen user und mit der Option <b><tt class="big">vnc</tt></b> (steht hinter dem Eintrag
+<b><tt class="big">server_args</tt></b>) aufgerufen. Das zweite Listing zeigt den dafür zuständigen Teil
+des Startskripts (<a href="http://www.freiesmagazin.de/mobil/2016-04-listings/kvm_startvm.txt">Listing startvm()</a>)
+
+<div class="p"><!----></div>
+
+
+<div class="listing">function startVM ( ) {<br />
+&nbsp;&nbsp;(<br />
+&nbsp;&nbsp;&nbsp;&nbsp;flock --nonblock 9 || exit 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;nohup kvm ${OPTIONS[@]} &#62;/dev/null 2&#62;&amp;1<br />
+&nbsp;&nbsp;) 9&#62;"/var/lock/kvm-${IMG}.lock  &amp;  # $IMG enthält den Namen der VM"<br />
+}<br />
+# $OPTIONS ist ein Array mit qemu/kvm Aufrufoptionen<br />
+OPTIONS=("${OPTIONS[@]}" "-vnc unix:${VNC_SOCKET}" "-usbdevice tablet")<br />
+&nbsp;&nbsp;startVM<br />
+&nbsp;&nbsp;number_of_attempts="0"<br />
+&nbsp;&nbsp;max_attempts="10"<br />
+&nbsp;&nbsp;socket_missing="1"<br />
+while [ "$socket_missing" -ne 0 -a "$number_of_attempts" -lt "$max_attempts" ]<br />
+do<br />
+&nbsp;&nbsp;socat -T 0.1 - "UNIX-CONNECT:${VNC_SOCKET}" &#62;/dev/null 2&#62;&amp;1<br />
+&nbsp;&nbsp;socket_missing="$?"<br />
+&nbsp;&nbsp;if [ "$socket_missing" -ne 0 ]<br />
+&nbsp;&nbsp;then<br />
+sleep 0.1 fi<br />
+&nbsp;&nbsp;number_of_attempts="$(($number_of_attempts + 1))"<br />
+done<br />
+if [ "$socket_missing" -eq 0 ]; then<br />
+&nbsp;&nbsp;socat – "UNIX-CONNECT:${VNC_SOCKET}"<br />
+exit $? else<br />
+exit 1 fi</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-04-listings/kvm_startvm.txt">Die <b><tt class="big">startvm()</tt></b>-Funktion.</a></i>
+
+<div class="p"><!----></div>
+
+<h3>Per Wake-On-Lan</h3>
+
+
+Da eine virtuelle Maschine immer eine eindeutige MAC-Adresse benötigt, wenn sie
+im Netzwerk erreichbar sein soll, kam die Idee auf, eine virtuelle Maschine
+mittels Wake-On-Lan zu starten.
+
+<div class="p"><!----></div>
+Natürlich lauscht eine ausgeschaltete virtuelle Maschine nicht am (virtuellen)
+Netzwerk um ein Wake-On-Lan-Paket zu erkennen, sodass diese Aufgabe von einem
+Server – letztlich einem Proxy – übernommen werden musste. Ein Perlprogramm,
+abgeleitet aus dem Programm „wakeonlan“ horcht nun stellvertretend an der
+echten Netzwerkschnittstelle und schaut in einer Tabelle nach, wie der
+zugehörige Rechner heißt, dessen MAC-Adresse empfangen wurde. Steht ein
+entsprechender Eintrag in einer Konfigurationsdatei, so wird die entsprechende
+Maschine gestartet. Mit wake-on-lan können dann sowohl virtuelle als auch reale
+Maschinen eingeschaltet werden.
+
+<div class="p"><!----></div>
+
+<h3>Systemstart</h3>
+
+
+Selbstverständlich sollen Internetzugangsrechner, Router, OpenVPN-Rechner und
+der OwnCloudRechner beim Starten des Servers hochgefahren werden. Dazu
+wird ein entsprechendes Startskript benötigt. Dieses ruft die Startskripte der
+virtuellen Maschinen mit den Optionen auf, die in einem Array in
+<b><tt class="big">/etc/kvm/virtualmachines.conf</tt></b> hinterlegt wurden. Das Startskript der
+virtuelle Maschine verhindert, dass eine Maschine mehrfach gestartet werden
+kann.
+
+<div class="p"><!----></div>
+
+<h3>Beenden einer virtuellen Maschinen</h3>
+
+
+Alle virtuellen Maschinen werden so gestartet, dass sie über einen Socket zur
+virtuellen Hardware, den qemu-monitor erreichbar sind. Über diesen können
+Informationen zur laufenden Maschine erfragt werden (z.&nbsp;B. durch eine
+Terminalanbindung mit <b><tt class="big">unixterm</tt></b>) oder Schnittstellen ein- beziehungsweise
+abgeschaltet werden. Die
+virtuelle
+Maschine selbst kann vom Monitor mittels des Befehls <b><tt class="big">system_powerdown</tt></b>
+beendet werden, was zum geordneten Herunterfahren der Maschine führt, so als ob
+man den Ein-/Ausschalter an einem physisch vorhandenen Rechner gedrückt hätte.
+Diese Möglichkeit nutzt das Skript des Systemstarts beim Shutdown aus, anstatt
+die virtuelle Maschine mit einem Kill-Signal zu beenden.
+
+<div class="p"><!----></div>
+Man kann den <b><tt class="big">system_powerdown</tt></b>-Befehl auch per Commandline-Aufruf auf dem
+Basisrechner mittels <b><tt class="big">socat</tt></b> schicken. Der Befehl sieht dann wie folgt aus:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># echo system_powerdown | socat – UNIX-CONNECT:/var/run/kvm/socket_der_virtuellen Maschine</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Einrichten der Basismaschine</h2>
+
+
+Nach der Grundinstallation wurden folgende Einstellungen vorgenommen, die die
+Zusammenarbeit mit virtuellen Maschinen verbessern:
+
+<div class="p"><!----></div>
+Über das Startskript <b><tt class="big">/etc/rc.local</tt></b> wird die Kerneloption <b><tt class="big">ksm</tt></b> (kurz für Kernel
+Samepage Merging), durch die identischer Programmcode nur einmal im Speicher
+vorgehalten werden kann/soll, aktiviert. Dazu werden in <b><tt class="big">/etc/rc.local</tt></b> folgende
+Zeilen eingefügt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># echo 1 &#62; /sys/kernel/mm/ksm/run<br />
+# echo 200 &#62; /sys/kernel/mm/ksm/sleep_millisecs</div>
+
+<div class="p"><!----></div>
+
+
+In <b><tt class="big">/etc/modules</tt></b> wurde
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">loop max_part=15<br />
+nbd max_part=15</div>
+
+<div class="p"><!----></div>
+
+
+eingetragen, sodass jede einzelne Partition aus bis zu 15 Partitionen eines
+Images einer virtuellen Maschinen ins Filesystem des Basisrechners eingebunden
+werden kann.
+
+<div class="p"><!----></div>
+Alle Partitionen der SSD werden mit der Option <b><tt class="big">discard</tt></b> zur Unterstützung
+der Verwaltung der freien Zellen der SSD eingebunden.
+
+<div class="p"><!----></div>
+Die umfangreiche Netzwerkkonfiguration muss natürlich funktionieren, bevor man
+sich an die Installation der virtuelle Maschinen macht.
+
+<div class="p"><!----></div>
+Alle virtuellen Maschinen können ein externes Verzeichnis einbinden, sodass
+darüber ein Austausch mit der Basismaschine ohne Netzwerkverbindung möglich
+ist. Ferner soll jede Maschine aus Sicherheitsgründen mit den Rechten eines
+eigenen Users laufen.
+
+<div class="p"><!----></div>
+Für die Installation einer virtuellen Maschine entstand ein umfangreiches
+Shellskript. Das Skript legt den User an, gibt diesem die benötigten Rechte
+durch Eintrag in den entsprechenden Gruppen, legt das home-Verzeichnis und ein
+Image für die virtuelle Maschine sowie ein Startskript für die virtuelle
+Maschine mit Einbindung in das interne Netz an. Das Startskript kann mit
+verschiedenen Optionen aufgerufen werden, zum Beispiel um Ausgaben auf dem Terminal des
+Basisrechners anzuzeigen (dafür müssen allerdings Lese- und Schreibrechte für
+den User und das angegebene Terminal eingerichtet worden sein), Ausgaben über
+xinet mit VNC oder mittels des Spice-Protokolls zu ermöglichen oder für die
+Installation einer Bildschirmausgabe mittels VNC auf den Standardport.
+
+<div class="p"><!----></div>
+Dabei wird mit folgenden Konventionen gearbeitet: Der Name der virtuellen
+Maschine ist auch Name des Users und dessen Gruppe sowie des benötigen
+Plattenimages und Teil des Namens des Startskripts.
+
+<div class="p"><!----></div>
+Auf Grund dieser Konventionen kann der Wake-On-Lan-Proxy mit einem Eintrag in
+das Startskript, welches für den Start der virtuellen Maschine benötigt wird,
+das Verzeichnis und den zugeordneten User bestimmen, um die virtuelle Maschine zu
+starten.
+
+<div class="p"><!----></div>
+Eine virtuelle Maschine lässt sich mit dem Standard-Befehl <b><tt class="big">userdel</tt></b> wieder
+problemlos entfernen.
+
+<div class="p"><!----></div>
+
+<h2>Entscheidungen</h2>
+
+
+Vor der Realisierung des gegenwärtigen Systems wurden
+VirtualBox&nbsp;<a href="https://www.virtualbox.org/">[5]</a> mit qemu/KVM, verglichen. Da
+VirtualBox vom Desktop her bekannt war, wurden dessen Handhabbarkeit unter
+Serverbedingungen zuerst untersucht. Schließlich wurde der Server unter
+KVM/qemu aufgesetzt, wofür folgende Kriterien ausschlaggebend waren:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> Ausgaben der virtuellen Maschinen können auch auf Terminals des
+  Basisrechners erfolgen.</li>
+<li> Ausgaben des Bildschirms von virtuellen Maschinen mit grafischer
+  Oberfläche können mittels VNC und/oder besser noch mittels
+  Spice erfolgen.</li>
+<li> qemu/KVM unterstützt SSDs besser. Freigegebener Speicherplatz auf
+  der virtuellen Festplatte meldet qemu/KVM ab Version 2 auch an
+  das Laufwerk.</li>
+<li> KVM/qemu ist für verschiedene Systeme verfügbar, sodass man nicht
+  unbedingt auf x86-64-Bit PCs angewiesen ist. Unter Umständen muss
+  dann die intern verwendete CPU emuliert werden.</li>
+<li> Im Notfall (Fehlkonfiguration) kann ein Image (virtuelle Festplatte)
+  auch in das lokale Dateisystem eingebunden oder mit dem Kernel des
+  Basissystems gestartet werden, z.&nbsp;B. um den Bootloader nach
+  Übertragung eines vorhandenen Systems in eine virtuelle
+  Maschine (physical-to-virtual) neu installieren zu können.</li>
+<li> KVM/qemu kann mit den Images von VirtualBox und VMWare arbeiten,
+  umgekehrt geht es in aller Regel nicht. Somit stehen viele virtuelle
+  Maschinen aus dem Internet per Download (zum Ausprobieren)
+  zur Verfügung.</li>
+</ol>
+
+<div class="p"><!----></div>
+Zur Konfiguration von VirtualBox musste viel Dokumentation durchgearbeitet
+werden – einen Artikel wie den bei 
+Golem&nbsp;<a href="http://www.golem.de/news/virtuelle-maschinen-virtualbox-funktioniert-auch-ohne-grafische-oberflaeche-1603-119609.html">[6]</a>
+gab es nicht. Die Befehle sind sehr länglich mit entsprechend viel
+Potential für Tippfehler. Es dauerte lange, bis die gewünschte
+Netzwerkstruktur und -Anbindung funktionierte. Um Systeme mit grafischer
+Installations-Oberfläche installieren und betreiben zu können, muss bei
+VirtualBox das zugehörige Extension-Pack installiert werden, denn damit wird
+auch ein RDP-Server zur Verfügung gestellt. Darüber kann man sich dann mit
+einem RDP-Viewer, wie z.&nbsp;B. Vinagre die Bildschirmausgaben über Netzwerk holen.
+Es fand sich bei VirtualBox allerdings keine Möglichkeit, die Ausgabe einer
+virtuellen Maschine auf ein Terminal des Hostrechners umzulenken – was sich für
+die beiden wichtigsten virtuellen Maschinen als notwendig erwiesen hat.  Dies
+war letztlich das K.O.-Kriterium. Auch konnte VirtualBox den frei gewordenen
+Plattenplatz innerhalb der virtuellen Maschine nicht der SSD melden; qemu hat
+dieses Feature jedoch implementiert.
+
+<div class="p"><!----></div>
+Bei qemu/KVM kommt man notfalls mit ganz wenigen Parametern zu einer laufenden
+virtuellen Maschine. Allerdings kennt qemu/KVM auch eine Unmenge an Optionen.
+Da die virtuellen Maschinen mittels Skript gestartet werden, sind alle
+Details in die Skripte gepackt. Bei der Suche nach Möglichkeiten,
+ein Image einer virtuellen Maschine in den lokalen Verzeichnisbau einzubinden,
+gab es Anleitungen für qemu oder mit Hilfe von qemu-nbd auch für
+VirtualBox. Da stellte sich die Frage, warum man qemu installieren soll, um
+VirtualBox-Images pflegen zu können?
+
+<div class="p"><!----></div>
+
+<h2>Welche Virtualisierungskonzepte?</h2>
+
+
+Für die Realisierung des Servers kamen nur Systeme in Betracht, die ganze
+Rechner virtualisieren können – keine virtuelle Maschinen, wie beispielsweise
+der Perl-Interpreter oder die Java-Virtuelle-Maschine.  Hier ein kurzer
+Überblick über Virtualisierungskonzepte.
+
+<div class="p"><!----></div>
+
+<h3>Teil-Virtualisierer</h3>
+
+
+Die einfachsten und somit unter Unix-artigen Betriebssystem seit langem
+verfügbaren Programme sind „chroot“ oder das unter BSD vorhandene „jails“.
+Beide ermöglichen den Betrieb von mehreren Programmen – meist Servern (wie FTP-
+oder Webserver) – in einer geschützten Umgebung, ohne dass ein Einbruch in den
+Server einen Durchgriff auf das darunterliegende System ermöglicht. Die
+entsprechenden Programme gehören zum Lieferumfang der Betriebssysteme. Webhoster
+haben in früheren Zeiten damit einfache Dienste abgeschottet.
+
+<div class="p"><!----></div>
+Umfangreichere Systeme der Webhoster sollten für die Kunden auch dezidierte
+Datenbank-, Mail-, FTP- und Webserver zur Verfügung stellen, wobei die Kunden
+diese teilweise selbst verwalten wollen oder sollen. Allerdings müssen
+die Kunden gegeneinander isoliert sein. Dies führte zur Entwicklung von etwas
+umfangreicheren virtuellen Umgebungen wie OpenVZ&nbsp;<a href="https://openvz.org/">[7]</a>,
+LXC – LinuX-Container&nbsp;<a href="https://linuxcontainers.org/">[8]</a> – bis hin zu 
+Docker&nbsp;<a href="https://www.docker.com/">[9]</a>. Diesen allen ist gemeinsam, dass die zur
+Verfügung gestellten Dienste unter dem Kernel des Host-Betriebssystems laufen.
+Damit kümmert sich der Betreiber um Updates. Das heißt aber auch, dass auf
+solchen Systemen letztlich nur Linux-Programme laufen können.
+
+<div class="p"><!----></div>
+
+<h3>Voll-Virtualisierer</h3>
+
+
+Diese bilden (meist) einen PC – bzw. dessen BIOS und (einige) CPU-Befehle – in
+Software nach, sodass dann beliebige Systeme installiert werden können. Eines
+der ersten erschwinglichen Programme war VMWare-Workstation. Eine
+Desktopversion ist noch immer erschwinglich, die Serverversionen gehen jedoch
+erheblich ins Geld.
+
+<div class="p"><!----></div>
+Die Firma Sun entwickelte den Virtualisierer
+VirtualBox&nbsp;<a href="https://www.virtualbox.org/">[5]</a>, der nach dem Aufkauf von Sun durch
+Oracle jetzt über deren Webseiten bezogen werden kann. VirtualBox ist
+kostenlose Software und seit 2010 unter der GPL lizenziert. Die Software wird
+gerne auf Desktop-Systemen eingesetzt, da eine grafische
+Administrationsoberfläche und die grafische Ausgabe die vorhandene grafische
+Umgebung nutzt. Bei einer Serverinstallation ist ein GUI in aller Regel nicht
+gegeben. Virtuelle Maschinen sind per Netzwerk unter VirtualBox nur über das
+Protokoll RDP (steht für Remote Desktop Protokoll) oder ein installiertes <b><tt class="big">ssh</tt></b>
+erreichbar.
+
+<div class="p"><!----></div>
+Ebenfalls unter der GPL veröffentlicht, sind qemu&nbsp;<a href="http://wiki.qemu.org/">[10]</a> und
+KVM&nbsp;<a href="http://www.linux-kvm.org/page/Main_Page">[11]</a> wobei KVM eine Variante von qemu
+ist, die direkt mit den im Kernel vorgesehenen Schnittstellen zur
+Virtualisierung kommuniziert. Dadurch brauchen weniger CPU-Befehle und weniger
+I/O emuliert zu werden; ein Durchgriff auf Systemressourcen ist einfacher und
+somit ist KVM deutlich performanter. Mittlerweile hat IBM qemu/KVM zu der von
+ihnen bevorzugte Virtualisierungsplattform erkoren, was sich auch im
+beschleunigten Entwicklungzyklus niederschlägt und vermutlich auch die längerfristige
+Verfügbarkeit garantiert.
+
+<div class="p"><!----></div>
+Eine Zwischenposition nimmt Xen&nbsp;<a href="http://www.xenproject.org/">[12]</a> ein. Dieses
+System benötigt einen angepassten Kernel auf dem Hostsystem, der es ermöglicht,
+PCI-Geräte an die virtuelle Maschine durchzuleiten. Unter Xen können, auch wenn
+die CPU keine Virtualisierung unterstützt, virtuelle Linux-Maschinen mit
+angepasstem Kernel laufen. Bei voll virtualisierten Systemen, also mit CPU- und
+I/O-Virtualisierung, können auch nicht angepasste Systeme wie Windows
+virtualisiert werden. Xen gibt es in einer freien und einer kommerziellen
+Version.
+
+<div class="p"><!----></div>
+
+<h2>Gründe bzw. Wünsche an das System</h2>
+
+
+Ziel der Implementation war eine schnelle bzw. recht einfache Übertragung
+des Systems auf einen weiteren oder neuen Rechner. Infrastruktur und
+verschiedene Arbeitsumgebungen sollen langfristig zur Verfügung stehen, ohne von
+Hardware (speziell Grafik-, Sound- oder Netzwerkkarten) abhängig zu sein.
+Diese werden dem Gastsystem (unveränderlich) von der virtuellen Maschine zur
+Verfügung gestellt. Wenn also ein Virtualisierer an das Netzwerk kommt, kommt
+auch das Gastsystem dran.
+
+<div class="p"><!----></div>
+Daraus ergibt sich die gewünschte einfache Sicherungsstrategie, denn es
+braucht nur noch eine Datei und das Startskript für jede virtuelle Maschine
+kopiert zu werden, was mit dem Systembefehl <b><tt class="big">cp</tt></b> möglich ist.
+
+<div class="p"><!----></div>
+Ferner sollten verschiedene Umgebungen (pseudo-Hardware und Distribution) zu
+Testzwecken zur Verfügung stehen, um z.&nbsp;B.  Sicherungssystem, Schulungssystem,
+„exotische“ Dateisysteme u.&nbsp;a.  ausprobieren zu können. Vorhandene
+Entwicklungsumgebungen – auch noch aus Zeiten von Windows95 – sollten
+weitgehend lauffähig bleiben.
+
+<div class="p"><!----></div>
+
+<h2>Vorgeschichte</h2>
+
+
+Dem voraus gingen verschiedene Versionen dieses Netzwerks beginnend mit zwei
+ständig laufenden Rechnern, wovon einer die Internetverbindung und einen
+Anrufbeantworter auf ISDN-Basis zur Verfügung stellte. Dieser Rechner wurde in
+einem späteren Konzept auf den Betrieb mittels CD und RAM-Disk umgestellt, was
+zu einer Verbesserung der Sicherheit und einer erste Stromkostenersparnis
+führte, da in diesem Rechner keine Platte mehr Strom verbrauchte.
+
+<div class="p"><!----></div>
+Die dritte
+Variante dieser Domain-Infrastruktur lief auf einem 32-Bit-Rechner unter Xen,
+da Xen das Weiterreichen von PCI-Hardware (hier der ISDN-Karte für den
+Anrufbeantworter) ermöglicht.  Das Xen-System lief von einer SD-Karte im
+24/7-Betrieb, der Router lief nach wie vor von Platte, die jedoch über Nacht
+heruntergefahren wurde. Die ehemals verschiedenen Rechner waren nun logisch in
+einem Rechner zusammengefasst, was zu einer weiteren deutlichen
+Stromkostenersparnis führte. Nachdem die SD-Karte dieses Rechners kaputt
+gegangen war, vermutlich wegen zu vieler Schreiboperationen, musste ein neuer
+Rechner aufgesetzt werden, dessen Aufbau zuvor beschrieben wurde.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://sourceforge.net/projects/rcp100"><tt class="big">https://sourceforge.net/projects/rcp100</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Simple_DirectMedia_Layer"><tt class="big">https://de.wikipedia.org/wiki/Simple_DirectMedia_Layer</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Virtual_Network_Computing"><tt class="big">https://de.wikipedia.org/wiki/Virtual_Network_Computing</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/SPICE_%28Protokoll%29"><tt class="big">https://de.wikipedia.org/wiki/SPICE_(Protokoll)</tt></a><br />
+[5] <a href="https://www.virtualbox.org/"><tt class="big">https://www.virtualbox.org/</tt></a><br />
+[6] <a href="http://www.golem.de/news/virtuelle-maschinen-virtualbox-funktioniert-auch-ohne-grafische-oberflaeche-1603-119609.html"><tt class="big">http://www.golem.de/news/virtuelle-maschinen-virtualbox-funktioniert-auch-ohne-grafische-oberflaeche-1603-119609.html</tt></a><br />
+[7] <a href="https://openvz.org/"><tt class="big">https://openvz.org/</tt></a><br />
+[8] <a href="https://linuxcontainers.org/"><tt class="big">https://linuxcontainers.org/</tt></a><br />
+[9] <a href="https://www.docker.com/"><tt class="big">https://www.docker.com/</tt></a><br />
+[10] <a href="http://wiki.qemu.org/"><tt class="big">http://wiki.qemu.org/</tt></a><br />
+[11] <a href="http://www.linux-kvm.org/page/Main_Page"><tt class="big">http://www.linux-kvm.org/page/Main_Page</tt></a><br />
+[12] <a href="http://www.xenproject.org/"><tt class="big">http://www.xenproject.org/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Rolf Schmidt</b>
+nutzt Linux seit Version 0.99 und arbeitet seit mehr als 15
+Jahren nur unter Linux.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Domainserver&amp;body=freiesMagazin 04/2016%0ADomainserver%0ARolf Schmidt%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Domainserver#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_inkscape_teil1" name="fm_16_04_inkscape_teil1">Inkscape für Einsteiger – Teil I: Grundlagen</a></font></h1>von Maren Hachmann
+
+<div class="p"><!----></div>
+    <b>D</b><b>ieser Artikel richtet sich an Anfänger im Bereich Vektorgrafik, die
+sich jedoch bereits mit einfacher Bildbearbeitung (z.&nbsp;B. Fotos
+nachbearbeiten) auskennen. Er gibt nicht nur eine Einführung in die
+Grundlagen, die benötigt werden, um das Prinzip „Vektorgrafik“ zu verstehen,
+sondern erklärt auch, wie Inkscape eigentlich entsteht.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Inkscape für Einsteiger – Teil I: Grundlagen“ erschien
+erstmals bei Vektorrascheln&nbsp;<a href="http://vektorrascheln.de/posts/2015/Dec/inkscape-fuer-einsteiger-teil-i-grundlagen.html">[1]</a>.</i>
+
+<div class="p"><!----></div>
+
+<h2>Was ist Inkscape?</h2>
+
+
+Inkscape&nbsp;<a href="https://inkscape.org/de/">[2]</a> ist ein Grafikprogramm, mit dem man
+Vektorgrafiken erstellen kann. Es ist quelloffen, das heißt jeder kann den
+Programmcode&nbsp;<a href="http://bazaar.launchpad.net/%7Einkscape.dev/inkscape/trunk/files">[3]</a>
+einsehen, man nennt dies auch „Open Source“. Inkscape steht unter einer
+freien Lizenz (der
+GPL&nbsp;<a href="https://de.wikipedia.org/wiki/GNU_General_Public_License">[4]</a>), die es
+jedem erlaubt, das Programm zu einem beliebigen Zweck zu verwenden, den
+Programmcode zu verändern und es weiterzugeben, und es wird von einer
+Gemeinschaft von engagierten, freiwilligen Entwicklern fortwährend
+verbessert&nbsp;<a href="https://inkscape.org/de/mitmachen/">[5]</a>.  Viele Nutzer
+engagieren sich ebenfalls für Inkscape – zum Beispiel, indem sie anderen
+Nutzern helfen.
+
+<div class="p"><!----></div>
+Es steht also, anders als bei vielen anderen Programmen, keine Firma hinter
+Inkscape, sondern eine über die ganze Welt verstreute Gemeinschaft von
+Freiwilligen mit einem gewählten Vorstand&nbsp;<a href="https://inkscape.org/*board">[6]</a> und
+einer Dachorganisation (Software Freedom Conservancy&nbsp;<a href="http://sfconservancy.org/">[7]</a>),
+die einen rechtlichen Rahmen für die Aktivitäten der Mitwirkenden schafft (z.&nbsp;B.
+damit das Projekt Spenden annehmen kann).
+
+<div class="p"><!----></div>
+Alle, die bei diesem Projekt mitmachen, sind damit Teil der weltweiten
+Inkscape-Community&nbsp;<a href="https://inkscape.org/de/community/">[8]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Was ist eine Vektorgrafik?</h2>
+
+
+Vektorgrafiken bestehen aus einzelnen, voneinander unabhängigen Objekten. Diese
+sind durch ihre geometrischen Eigenschaften definiert, z.&nbsp;B. ein Kreis durch die
+Lage seines Mittelpunktes und die Größe seines Radius. Für unregelmäßige Formen
+mit kurvigen Außenlinien werden die Lage bestimmter Punkte auf der Linie und die
+Krümmung der Linien, die diese Punkte miteinander verbinden, gespeichert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_vektorsterne.png" alt="inkscape_vektorsterne.png" style="max-width:100%" /><br /><em>Diese Vektorsterne unterscheiden sich nur in den Eigenschaften für Füllung und Kontur.</em><br />
+
+<div class="p"><!----></div>
+Alle Objekte in einer Vektorgrafik haben einen Satz an Eigenschaften, die sich
+leicht verändern lassen. So kann man rasch mit einem Klick z.&nbsp;B. die Farbe der
+Füllung oder der Konturlinie eines Objektes komplett ändern, diese entfernen
+oder durch ein Muster ersetzen.
+
+<div class="p"><!----></div>
+Beispiele für solche Eigenschaften sind Füllfarbe, Füllmuster, Füllung mit einem
+Farbverlauf, Farbe der Kontur, Dicke der Kontur, Konturmuster, Art der
+Konturlinie (z.&nbsp;B. gestrichelt, gepunktet usw.) oder die Art von Markern (z.&nbsp;B.
+Pfeile oder andere Symbole) im Verlauf eines Pfades.
+
+<div class="p"><!----></div>
+
+<h2>Vergleich zwischen Vektorgrafik und Rastergrafik</h2>
+
+
+
+<h3>Immer scharf</h3>
+
+
+Eine Vektorgrafik verhält sich anders als z.&nbsp;B. ein Foto, das mit einer
+Digitalkamera aufgenommen worden ist. Digitalfotos sind Rastergrafiken und
+bestehen damit aus einer großen Menge farbiger Punkte, die in einer bestimmten
+Reihenfolge (dem Raster) angeordnet sind. Wenn man beim Betrachten genügend
+Abstand zum Bild einhält, ergibt sich aus all den kleinen Punkten ein sinnvolles
+Bild. Sobald man das Foto aber zu stark vergrößert oder zu nah herangeht, werden
+die einzelnen Bildpunkte erkennbar, das Bild wirkt pixelig.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_blaetter.png" alt="inkscape_blaetter.png" style="max-width:100%" /><br /><em>Beim Vergrößern wird die Rastergrafik pixelig, das Vektorbild (links) bleibt scharf.</em><br />
+
+<div class="p"><!----></div>
+Da Vektorgrafiken in Form einer Anweisung für eine Zeichnung, mit den
+geometrischen Eigenschaften der enthaltenen Objekte, gespeichert sind (quasi als
+Geometrie-Aufgabe für den Computer), muss der Computer zunächst berechnen, wie
+diese auf dem Bildschirm (dessen Bild aus Bildpunkten zusammengesetzt ist)
+dargestellt werden kann.
+
+<div class="p"><!----></div>
+Dabei ist es egal, wie stark man das Bild vergrößert – pixelig wird es nicht.
+Denn der Computer kann die Bildpunkte für die Darstellung am Bildschirm für jede
+Vergrößerungsstufe genau berechnen. So ist eine Vektorgrafik immer scharf (es
+sei denn, man fügt absichtlich Unschärfe hinzu).
+
+<div class="p"><!----></div>
+
+<h3>Leicht änderbar</h3>
+
+
+Vektorgrafiken kann man – im Vergleich zu Rastergrafiken – sehr leicht
+grundlegend verändern, indem man nur einige der Eigenschaften ändert. Von Grün
+zu Rot, mit breitem Rand oder ohne, kleiner oder größer, oder auch mit
+Pünktchenmuster – alles kein Problem. Bei Rastergrafiken müsste hierfür jeder
+Bildpunkt einzeln von einem Programm angeschaut werden – und manchmal ist es gar
+nicht so leicht für das Programm, zu erkennen, welcher Bildpunkt zu welchem
+Objekt gehört, denn eigentlich gibt es ja gar keine Objekte in einer
+Rastergrafik, nur farbige Punkte.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_bunte_blaetter.png" alt="inkscape_bunte_blaetter.png" style="max-width:100%" /><br /><em>Füllung, Kontur und Co. sind bei einer Vektorgrafik leicht zu verändern – bei einer Rastergrafik geht dies nur über komplexe Rechenoperationen. </em><br />
+
+<div class="p"><!----></div>
+
+<h3>Geringere Dateigröße – höherer Rechenaufwand</h3>
+
+
+Vektorgrafiken brauchen – solange sie eine überschaubare Anzahl von Objekten
+enthalten – nur sehr wenig Speicherplatz, da nicht für jeden einzelnen Bildpunkt
+die Information für die Farbe gespeichert werden muss, sondern jede Eigenschaft
+nur einmal pro Objekt gespeichert wird. Dies ist ein Vorteil für Bilder, die auf
+Webseiten verwendet werden sollen, denn so bleibt die übertragene Datenmenge
+klein und die Webseite lädt zügig.
+
+<div class="p"><!----></div>
+Andererseits kann es bei sehr komplexen Bildern länger dauern, diese für die
+Darstellung auf dem Bildschirm aufzubereiten.
+
+<div class="p"><!----></div>
+
+<h3>Unterschiedliche Anwendungsbereiche</h3>
+
+
+Raster- und Vektorbilder haben durch ihre unterschiedlichen Eigenschaften
+jeweils bestimmte Anwendungsbereiche, die sich gegenseitig ergänzen. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_wanze_auf_blatt.jpg" alt="inkscape_wanze_auf_blatt.jpg" style="max-width:100%" /><br /><em>Das Vektorbild (rechts) enthält nur 8 verschiedene Farben, besteht jedoch bereits aus 28000 einzeln definierten Punkten und deren Verbindungslinien. Es lässt sich nur langsam bearbeiten.</em><br />
+
+<div class="p"><!----></div>
+Man verwendet Rasterbilder für Bilder mit vielen verschiedenfarbigen,
+unregelmäßigen Inhalten, also vorrangig für Fotos. Wenn man diese im
+Vektorformat abspeichern wollte, würde es bis zur Darstellung auf dem Bildschirm
+oft sehr lange dauern. Je nachdem wie stark man das Bild deswegen vereinfachen
+möchte, enthielte es auch weniger verschiedene Farben und hätte eine viel
+geringere Qualität. Bei gleicher Qualität hingegen wäre die Dateigröße enorm, da
+für jede vorhandene Farbe ein eigenes Objekt angelegt werden müsste (bei einer
+normalen Fotogröße von 1600x1200 Pixeln könnten dies bis zu 1,9 Millionen Objekte
+werden, falls jedes Pixel eine andere Farbe hat).
+
+<div class="p"><!----></div>
+Vektorbilder verwendet man daher eher für Logos, Clipart, Buttons, Icons und
+andere Grafiken, die sich durch größere, zusammenhängende Farbbereiche
+auszeichnen oder sich gut in einzelne Objekte aufteilen lassen. Es sind 
+aber – abhängig vom dargestellten Objekt und den Fähigkeiten des Künstlers – auch sehr
+realistisch aussehende Zeichnungen möglich, die durch geschickte Verwendung von
+Farbverläufen einen Eindruck dreidimensionaler Tiefe erzeugen.
+
+<div class="p"><!----></div>
+Bevor man sich also in Inkscape stürzt, um das Bild seiner Träume zu gestalten,
+sollte man sich überlegen, ob Inkscape dafür auch das richtige Werkzeug ist.
+Möchte man nur ein Foto bearbeiten oder ein großes, realistisches Bild wie mit
+einem Pinsel malen, so eignen sich andere Programme dafür besser (z.&nbsp;B. The Gimp&nbsp;<a href="http://gimp.org/">[9]</a>
+für Fotobearbeitung oder Krita&nbsp;<a href="http://krita.org/">[10]</a> zum Zeichnen von Gemälden.
+Beide sind ebenfalls Open-Source-Projekte.).
+
+<div class="p"><!----></div>
+
+<h2>Was ist ein SVG?</h2>
+
+
+SVG ist ein Speicherformat für Vektorgrafiken. Die Abkürzung steht für „Scalable
+Vector Graphics“ – skalierbare Vektorgrafiken. Es wird von Inkscape verwendet,
+da es einem offenen Standard folgt, und somit die Dateien, die mit Inkscape
+erstellt worden sind, universell verwendbar sind. Webbrowser, wie z.&nbsp;B. Mozilla
+Firefox, Google Chrome oder auch Microsoft Edge, aber auch viele andere
+Programme, unterstützen diesen Standard.
+
+<div class="p"><!----></div>
+Dies macht es möglich, dass Bilder, die man mit Inkscape erstellt hat, nicht
+„verloren“ sind, sobald man gerade kein Inkscape-Programm zur Verfügung hat. Sie
+können (zumeist) ohne weitere
+
+Änderungen direkt in eine Webseite eingebunden
+werden oder von anderen Programmen (z.&nbsp;B. einem Office-Programm oder
+einem Desktop-Publishing-Programm) bearbeitet werden.
+
+<div class="p"><!----></div>
+Die Organisation, die den SVG-Standard festschreibt, ist das World Wide Web
+Consortium (W3C)&nbsp;<a href="http://www.w3.org/">[11]</a> – das ist die Organisation, die auch die
+Standards für HTML oder CSS (die Sprachen, in denen Webseiten geschrieben und
+gestaltet werden), erarbeitet.
+
+<div class="p"><!----></div>
+Einer der Inkscape-Entwickler ist Mitglied der SVG-Arbeitsgruppe des W3C. Er
+vertritt dort die Interessen von Inkscape und arbeitet mit daran, dass der
+SVG-Standard weiter verbessert wird.
+
+
+<div class="p"><!----></div>
+
+<h2>Grundelemente</h2>
+
+
+Das SVG-Dateiformat kennt eine Reihe von Grundelementen, aus denen Bilder
+aufgebaut werden können. Dies sind (unter anderem) gerade Linien, Linienzüge
+(bestehend aus mehreren, miteinander verbundenen geraden Linien), Pfade
+(bestehend aus einer oder mehreren gekrümmten Linien), Kreise, Ellipsen,
+Rechtecke, Polygone, Texte, Rastergrafiken (ja, auch diese können in einem SVG
+verwendet werden!) und Kopien anderer Objekte (ein und dasselbe Objekt wird dann
+mehrfach in der Zeichnung dargestellt, aber nur das Original kann verändert
+werden).
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_grundelemente.jpg" alt="inkscape_grundelemente.jpg" style="max-width:100%" /><br /><em>Einige SVG-Grundelemente: Pfad, Text, Rasterbild, Kreis, Ellipse, Rechteck.</em><br />
+
+<div class="p"><!----></div>
+Inkscape nutzt nicht alle der verfügbaren Elemente – so werden z.&nbsp;B. gerade
+Linien oder Polygone
+
+auch als „Pfade“ gespeichert. Dafür gibt es in Inkscape
+jedoch einige zusätzliche Elemente, wie zum Beispiel Sterne oder Spiralen –
+diese werden gleichzeitig als Pfad (so dass sie von anderen Programmen gelesen
+werden können) und als Stern/Spirale mit bestimmten Eigenschaften (Länge der
+Sternspitzen, Anzahl der Spiralwindungen, so dass diese Eigenschaften mit
+wenigen Mausklicks verändert werden können) gespeichert.
+
+<div class="p"><!----></div>
+
+<h3>Stapelordnung</h3>
+
+
+Objekte in einem SVG liegen in einer bestimmten Reihenfolge übereinander, so wie
+dies z.&nbsp;B. auch bei einer Photocollage der Fall wäre. So kommt es, dass ein
+Objekt auch von anderen Objekten vollständig verdeckt werden kann.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_stapelordnung.png" alt="inkscape_stapelordnung.png" style="max-width:100%" /><br /><em>Jedes Objekt liegt an einer bestimmten Höhe in der Stapelordnung. Rechts sind die Ellipsen teiltransparent, so dass man das darunterliegende Objekt erkennen kann.</em><br />
+
+<div class="p"><!----></div>
+Und auch wenn zwei Objekte scheinbar einfach nebeneinander liegen, so „wissen“
+sie immer ganz genau, auf welcher Höhe im Stapel sie sich gerade befinden. Ein
+Objekt kann niemals gleichzeitig über und unter einem anderen Objekt liegen, wie
+das zum Beispiel bei einer Hand, die einen Gegenstand umfasst, der Fall wäre.
+Wenn man so etwas darstellen möchte, muss man das Objekt (die Hand) aus mehreren
+Teilen zusammensetzen, die dann über bzw. unter dem anderen Objekt liegen.
+
+<div class="p"><!----></div>
+Diese Stapelordnung kann in Inkscape natürlich auch verändert werden. Neu
+erstellte Objekte liegen immer erst mal ganz oben.
+
+<div class="p"><!----></div>
+
+<h3>Gruppen</h3>
+
+
+Mehrere Objekte können zu einer Gruppe zusammengefasst werden. Diese verhält
+sich dann wie ein einzelnes Objekt. Dies ist bei der Bearbeitung von komplexen
+Zeichnungen sehr hilfreich, denn man kann nach dem Gruppieren ganz einfach die
+gesamte Gruppe verschieben, ihre Farbe oder Konturdicke ändern oder sie auch
+verkleinern und vergrößern, wobei die Lagebeziehungen zwischen den gruppierten
+Objekten erhalten bleiben. Wenn also zum Beispiel ein Gesicht aus einer Gruppe
+mit einem Oval im Hintergrund, zwei Augen, einer Nase und einem Mund besteht, so
+bleibt das Auge immer an der richtigen Stelle, egal ob man das Gesicht staucht,
+streckt, dreht, vergrößert oder verkleinert.
+
+<div class="p"><!----></div>
+
+<h3>Klartext/Baumstruktur</h3>
+
+
+SVG-Grafiken werden im Klartext gespeichert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_hallo_welt.png" alt="inkscape_hallo_welt.png" style="max-width:100%" /><br /><em>Eine SVG-Grafik wird im Klartext gespeichert. </em><br />
+
+<div class="p"><!----></div>
+Wenn man ein SVG-Bild mit einem Texteditor betrachtet, sieht es dann in etwa so aus
+wie in <a href="http://www.freiesmagazin.de/mobil/2016-04-listings/hallo_welt.svg"><b><tt class="big">hallo_welt.svg</tt></b></a>
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="25.468mm" width="80.667mm" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 285.82949 90.241061" xmlns:dc="http://purl.org/dc/elements/1.1/"&#62;<br />
+&nbsp;&nbsp;&lt;defs&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;radialGradient id="radialGradient4173" gradientUnits="userSpaceOnUse" cy="448.57" cx="113.6" gradientTransform="matrix(1 0 0 1.6542 1.5174 -272.63)" r="38.214"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;stop stop-color="#5f0000" offset="0"/&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;stop stop-color="#e11919" offset="1"/&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/radialGradient&#62;<br />
+&nbsp;&nbsp;&lt;/defs&#62;<br />
+&nbsp;&nbsp;&lt;g transform="translate(-50.842 -128.67)"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;rect height="59.383" stroke="#60c447" stroke-width="3.2456" fill="#ffffff" ry="15.159" width="265.81" y="144.1" x="69.237"/&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;g transform="matrix(.59174 0 0 .59174 23.976 -106.19)"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ellipse id="path4172" style="color:#000000;" rx="26.786" ry="38.214" cy="435.11" cx="115.11" fill="url(#radialGradient4173)"/&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;use xlink:href="#path4172" transform="matrix(.5 .86603 -.86603 .5 466.95 137.5)" height="100      &lt;use xlink:href="#path4172" transform="matrix(-0.5 .86603 -.86603 -0.5 581.35 610.64)" height="100      &lt;use xlink:href="#path4172" transform="matrix(-1 0 0 -1 228.8 946.28)" height="100      &lt;use xlink:href="#path4172" transform="matrix(-0.5 -.86603 .86603 -0.5 -238.15 808.78)" height="100      &lt;use xlink:href="#path4172" transform="matrix(0.5 -.86603 .86603 0.5 -352.55 335.64)" height="100    &lt;/g&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;text font-size="48.181px" line-height="125  &lt;/g&#62;<br />
+&lt;/svg&#62;</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2016-04-listings/hallo_welt.svg">hallo_welt.svg</a></i>
+
+<div class="p"><!----></div>
+Jedem, der schon einmal den Quelltext einer Webseite gesehen haben, dürfte die
+Struktur der Datei bekannt vorkommen – was daran liegt, dass HTML und SVG beide
+auf XML basieren. Das ist eine Auszeichnungssprache, die eine baumartige
+Struktur aufweist (ineinander verschachtelte
+Elemente) und bei der jedes Element
+mit &lt;dings&#62; anfängt und mit &lt;/dings&#62; wieder aufhört – oder auch einfach nur
+aussieht wie &lt;dings lange-Liste-mit-Eigenschaften /&#62;, wenn es keinen weiteren
+Inhalt, sondern nur Eigenschaften hat.
+
+<div class="p"><!----></div>
+Der Vorteil an einem solchen Format ist, dass es sowohl von einem Computer als
+auch von einem Menschen einigermaßen gut gelesen werden kann (man sollte für SVG
+jedoch etwas Englisch können). Es kann leicht mit verschiedenen Programmen
+automatisiert bearbeitet werden, so dass z.&nbsp;B. das Austauschen von Namen in
+Besucherausweisen oder von Zahlen auf Eintrittskarten mit einem kurzen Programm
+schnell gemacht ist. Es gibt viele kleine Hilfsprogramme, die einen bei einer
+solchen Aufgabe unterstützen können.
+
+<div class="p"><!----></div>
+Auch kann man problemlos per Hand kleine Änderungen in der Datei vornehmen, zum
+Beispiel, um Animationen daraus zu erstellen.
+
+<div class="p"><!----></div>
+Die meisten Leute möchten ihre Zeichnungen aber wohl doch lieber mit der Maus
+oder dem Grafiktablett bearbeiten, so dass sie sofort sehen, wie sich das Bild
+verändert – und dafür gibt es dann Inkscape!
+
+<div class="p"><!----></div>
+
+<h2>Beispiele</h2>
+
+
+
+<h3>Grafiken</h3>
+
+
+Um einen besseren Eindruck davon zu bekommen, was für eine Art von Bildern man
+mit Inkscape zeichnen kann, kann man sich die Galerie mit Bildern von
+Inkscape-Nutzern&nbsp;<a href="https://inkscape.org/gallery/">[12]</a> auf der
+ Inkscape-Webseite ansehen und in die Openclipart
+Library&nbsp;<a href="https://openclipart.org/">[13]</a> hineinschnuppern. Gerade letztere
+ist eine schöne Möglichkeit, von anderen Nutzern zu lernen, indem man
+das Bild herunterlädt und in Inkscape „seziert“, um zu sehen, wie bestimmte
+Effekte erreicht werden können.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_beispiele.png" alt="inkscape_beispiele.png" style="max-width:100%" /><br /><em>Von einfachen Objekten über Buttons/Icons mit Farbverläufen bis hin zu komplexen Bildern mit Schattierungen oder vektorisierten Zeichnungen und noch vieles mehr lässt sich mit einer Vektorgrafik darstellen.</em><br />
+
+<div class="p"><!----></div>
+
+
+
+<h3>Animationen</h3>
+
+
+Mit Anwendungen wie sozi&nbsp;<a href="http://sozi.baierouge.fr/">[14]</a>, Inkscape-Erweiterungen wie
+JessyInk oder verschiedenen
+JavaScript-Bibliotheken können Animationen oder
+Präsentationen erzeugt werden, die man sich im Webbrowser anschauen kann. Auch
+die Auszeichnungssprachen CSS oder SMIL können zum Animieren von SVG-Bildern
+verwendet werden.
+
+<div class="p"><!----></div>
+Eine Einführung zum Thema gibt es auf der Inkscape-Webseite&nbsp;<a href="https://inkscape.org/de/lernen/animation/">[15]</a>.
+
+<div class="p"><!----></div>
+
+<h3>Plotter, Schneidemaschinen &amp; Co.</h3>
+
+
+Viele Leute nutzen Inkscape gar nicht so sehr zum Erstellen von hübschen
+Grafiken, sondern um damit physische Gegenstände zu fräsen, automatisch
+auszuschneiden, zu bemalen etc. So kann man Inkscape (mittels Erweiterungen)
+unter anderem auch dazu verwenden, Folienschneidemaschinen anzusteuern oder
+Holzdekore mit einem Laser einzubrennen. Auch zum Bemalen von Eiern soll es sich
+hervorragend eignen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/inkscape_eggbot.jpg" alt="inkscape_eggbot.jpg" style="max-width:100%" /><br /><em>Eierbemalen mit dem Eggbot, gcodetools und Inkscape.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Vorbereitung für den nächsten Teil</h2>
+
+
+In diesem (zugegebenermaßen sehr theoretischen) Artikel wurden die Grundlagen
+für das Verständnis von Vektorzeichnungen gelegt. Diese helfen dabei, sich bei
+der Arbeit in Inkscape nicht von den Unterschieden zur gewohnten Rastergrafik
+beziehungsweise Fotobearbeitung verwirren zu lassen.
+
+<div class="p"><!----></div>
+Wer in der nächsten Folge dieser Serie dann selber seine ersten Schritte in
+Inkscape wagen möchte, sollte, falls noch nicht geschehen, Inkscape
+installieren. Die aktuelle Version (0.91, Stand März 2016) kann kostenlos für
+Windows und Mac OS X von der Inkscape-Webseite heruntergeladen&nbsp;<a href="https://inkscape.org/de/herunterladen/">[16]</a>
+werden. Für Linux-Distributionen gibt es auf der Webseite den
+Quellcode&nbsp;<a href="https://inkscape.org/de/herunterladen/">[16]</a>, und auf Launchpad ein
+ppa&nbsp;<a href="https://launchpad.net/%7Einkscape.dev/+archive/ubuntu/stable">[17]</a> für Ubuntu
+und seine Derivate. Einige Linuxdistributionen (aber längst nicht alle, z.&nbsp;B.
+gibt es bei Ubuntu 14.04 noch die Version 0.48.4 von 2012) stellen die aktuelle
+Version auch als Paket in ihrem Repository zur Verfügung.
+
+<div class="p"><!----></div>
+Sollten bei der Installation Probleme auftreten, ist es ratsam, sich zunächst noch
+einmal ganz genau die Anweisungen auf der Download-Seite durchzulesen (insbesondere,
+falls man Mac OS X verwendet). Falls dieses nicht ausreicht und auch eine Suche
+im Internet keine nützlichen Hinweise bringt, kann man auch in einem
+Inkscape-Forum&nbsp;<a href="https://inkscape.org/de/community/">[8]</a>, im
+Chat&nbsp;<a href="https://inkscape.org/de/community/">[8]</a> oder auch in der
+Fragen-und-Antworten-Abteilung&nbsp;<a href="https://answers.launchpad.net/inkscape">[18]</a>
+auf Launchpad um Hilfe bitten.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://vektorrascheln.de/posts/2015/Dec/inkscape-fuer-einsteiger-teil-i-grundlagen.html"><tt class="big">http://vektorrascheln.de/posts/2015/Dec/inkscape-fuer-einsteiger-teil-i-grundlagen.html</tt></a><br />
+[2] <a href="https://inkscape.org/de/"><tt class="big">https://inkscape.org/de/</tt></a><br />
+[3] <a href="http://bazaar.launchpad.net/%7Einkscape.dev/inkscape/trunk/files"><tt class="big">http://bazaar.launchpad.net/%7Einkscape.dev/inkscape/trunk/files</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/GNU_General_Public_License"><tt class="big">https://de.wikipedia.org/wiki/GNU_General_Public_License</tt></a><br />
+[5] <a href="https://inkscape.org/de/mitmachen/"><tt class="big">https://inkscape.org/de/mitmachen/</tt></a><br />
+[6] <a href="https://inkscape.org/*board"><tt class="big">https://inkscape.org/*board</tt></a><br />
+[7] <a href="http://sfconservancy.org/"><tt class="big">http://sfconservancy.org/</tt></a><br />
+[8] <a href="https://inkscape.org/de/community/"><tt class="big">https://inkscape.org/de/community/</tt></a><br />
+[9] <a href="http://gimp.org/"><tt class="big">http://gimp.org/</tt></a><br />
+[10] <a href="http://krita.org/"><tt class="big">http://krita.org/</tt></a><br />
+[11] <a href="http://www.w3.org/"><tt class="big">http://www.w3.org/</tt></a><br />
+[12] <a href="https://inkscape.org/gallery/"><tt class="big">https://inkscape.org/gallery/</tt></a><br />
+[13] <a href="https://openclipart.org/"><tt class="big">https://openclipart.org/</tt></a><br />
+[14] <a href="http://sozi.baierouge.fr/"><tt class="big">http://sozi.baierouge.fr/</tt></a><br />
+[15] <a href="https://inkscape.org/de/lernen/animation/"><tt class="big">https://inkscape.org/de/lernen/animation/</tt></a><br />
+[16] <a href="https://inkscape.org/de/herunterladen/"><tt class="big">https://inkscape.org/de/herunterladen/</tt></a><br />
+[17] <a href="https://launchpad.net/inkscape.dev/+archive/ubuntu/stable"><tt class="big">https://launchpad.net/inkscape.dev/+archive/ubuntu/stable</tt></a><br />
+[18] <a href="https://answers.launchpad.net/inkscape"><tt class="big">https://answers.launchpad.net/inkscape</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Maren Hachmann</b>&nbsp;(<a href="http://vektorrascheln.de/">Webseite</a>)
+verwendet Inkscape für die Grafiken der Kieler Open Source und Linux Tage. Auf
+ihrer Webseite vektorrascheln.de veröffentlicht sie in unregelmäßiger Abfolge
+Artikel und Tutorials zu Inkscape und anderer freier Software.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Inkscape - Teil I: Grundlagen&amp;body=freiesMagazin 04/2016%0AInkscape - Teil I: Grundlagen%0AMaren Hachmann%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Inkscape - Teil I: Grundlagen#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_emacs" name="fm_16_04_emacs">Emacs – Moderne Antike</a></font></h1>von Clemens Radermacher
+
+<div class="p"><!----></div>
+    <b>D</b><b>as ursprünglich von Richard Stallman als Texteditor entwickelte Projekt GNU
+Emacs ist heute weit vielseitiger einsetzbar als es vermutlich je beabsichtigt
+war – dank seiner Programmierbarkeit und hervorragenden Integration mit Linux.
+Der folgende Artikel soll einen Überblick dazu vermitteln und die Installation sowie einige
+Einrichtungsmöglichkeiten vorstellen.</b>
+
+<div class="p"><!----></div>
+
+<h2>Einführung</h2>
+
+
+Schon seit über 30 Jahren wird die Entwicklung von Emacs durch eine
+aktive Community gestaltet und vorangetrieben&nbsp;<a href="https://www.gnu.org/software/emacs/">[1]</a>.
+In jüngster Zeit gewinnt das Projekt wieder mehr an Beachtung und im letzten
+Jahr fand sogar eine Emacs-Konferenz statt&nbsp;<a href="http://emacsconf2015.org/">[2]</a>, auf
+der sich Nutzer austauschen und kennenlernen konnten.
+
+<div class="p"><!----></div>
+Es handelt sich zwar um einen Editor, darüber hinaus bietet Emacs aber auch
+eine Art Plattform zur Entwicklung von eigenständigen Anwendungen. Außer
+graphisch aufwendigeren Programmen lassen sich nahezu alle gängigen
+Desktop-Programme in Emacs reproduzieren.
+
+<div class="p"><!----></div>
+Ein großer Vorteil andere Anwendungen in Emacs zu integrieren, ist, dass man
+ein konsistentes Benutzerinterface erhält. So stehen immer dieselben
+Grundfunktionen zur Verfügung und die Tastenkürzel sowie die Programme selbst
+sind beliebig konfigurierbar.
+
+<div class="p"><!----></div>
+Emacs wird unter anderem genutzt als:
+
+<ul>
+<li> Entwicklungsumgebung</li>
+<li> Vim Emulator</li>
+<li> Webbrowser</li>
+<li> Music Player</li>
+<li> PDF Viewer</li>
+<li> Dateimanager</li>
+<li> Organizer</li>
+<li> Terminal Emulator</li>
+<li> Feedreader</li>
+<li> Email Client</li>
+<li> IRC Client</li>
+<li> Notizverwaltung</li>
+<li> Static Site Generator</li>
+</ul>
+
+<div class="p"><!----></div>
+Der eine oder andere hat sogar seinen Window Manager durch Emacs 
+ersetzt&nbsp;<a href="http://www.howardism.org/Technical/Emacs/new-window-manager.html">[3]</a>
+und dank seiner Erweiterbarkeit und der aktiven Community wird jedes
+neu erdachte Feature anderer Anwendungen nahezu unmittelbar zu
+Emacs portiert. So geschehen zum Beispiel nach dem Launch der innovativen
+Entwicklungsumgebung Light Table&nbsp;<a href="https://www.youtube.com/watch?v=TgHvRcbYJ-8">[4]</a>.
+
+<div class="p"><!----></div>
+Auch modernere Konzepte wie die interaktive Programmierung von
+Browseranwendungen oder der Live-Programmierung von Musik sind in Emacs möglich
+und eröffnen interessante neue
+Anwendungsmöglichkeiten&nbsp;<a href="https://www.youtube.com/watch?v=KZjFVdU8VLI">[5]</a>&nbsp;<a href="https://www.youtube.com/watch?v=4tyTgyzUJqM">[6]</a>&nbsp;<a href="https://vimeo.com/22798433">[7]</a>.
+
+<div class="p"><!----></div>
+In gewisser Weise kann man Emacs mit heutigen Webbrowsern vergleichen. Auch
+Firefox und Co versuchen immer mehr Anwendungen des Desktops einzubinden. Doch
+Emacs besitzt ein besonderes Alleinstellungsmerkmal.
+
+<div class="p"><!----></div>
+Der Editor steht nämlich in der Tradition eines alten, aber sehr mächtigen
+Softwarekonzepts, das auch als „internal reprogrammablity“ bezeichnet
+wird&nbsp;<a href="http://martinfowler.com/bliki/InternalReprogrammability.html">[8]</a>.
+So ist zum
+Beispiel der Code, der beim Drücken einer Taste im Programm ausgeführt wird,
+ohne Weiteres abruf- und veränderbar. Dem Benutzer ist es also freigestellt, das
+Verhalten des Programms nach Belieben zu verändern.
+
+<div class="p"><!----></div>
+Um sich noch einen besseren Eindruck von den Möglichkeiten zu verschaffen, gibt
+es einige Videos, in denen Nutzer vorführen, was mit Emacs möglich ist. Ein
+Video demonstriert beispielsweise das Erstellen eines Spotify-Clients in nur 
+16 Minuten&nbsp;<a href="https://www.youtube.com/watch?v=XjKtkEMUYGc">[9]</a>. Ein anderes zeigt eine
+beeindruckende Umsetzung von „Literate Programming“ in
+Emacs&nbsp;<a href="https://www.youtube.com/watch?v=dljNabciEGg">[10]</a>. 
+Und Interessenten der
+Nutzungsmöglichkeiten von Emacs als Entwicklungsumgebung sollten sich folgende
+Videoreihen nicht entgehen 
+lassen&nbsp;<a href="http://emacsrocks.com/">[11]</a>&nbsp;<a href="http://www.parens-of-the-dead.com/">[12]</a>.
+
+<div class="p"><!----></div>
+Es ist nicht zu leugnen, dass die Konfiguration von Emacs und das Erlernen der
+programminternen Skriptsprache Emacs Lisp viel Zeit und Motivation erfordert.
+Wenn man durchhält, verfügt man aber am Ende über eine mächtige und vielseitige
+Arbeitsumgebung, deren Grenzen im Prinzip alleine durch die eigene Phantasie
+gegeben sind.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+
+Bei vielen Distributionen ist Emacs bereits vorinstalliert, andernfalls wird
+man mit großer Wahrscheinlichkeit in der distributionseigenen Paketverwaltung
+fündig.
+
+<div class="p"><!----></div>
+Möchte man die aktuelle Emacs-Version nutzen und nicht auf ein Update über die
+Paketverwaltung warten, empfiehlt es sich, die manuelle Installation
+über das Archiv der offiziellen Homepage des
+GNU-Projekts&nbsp;<a href="https://www.gnu.org/software/emacs/">[1]</a> vorzunehmen.
+
+<div class="p"><!----></div>
+Aktuell ist die neueste Version 24.5, welche sich über folgende Befehle
+herunterladen und entpacken lässt:
+
+<div class="p"><!----></div>
+
+<div class="command">$ wget http://ftpmirror.gnu.org/emacs/emacs-24.5.tar.gz<br />
+$ tar xzvf emacs-24.5.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+Um Emacs zu kompilieren, folgt man am besten den Hinweisen der Datei <b><tt class="big">INSTALL</tt></b>,
+in der auch die Abhängigkeiten aufgelistet sind. Unter Debian-basierten Systemen
+lassen sich die Abhängigkeiten leicht mit den folgenden Befehlen abhandeln:
+
+<div class="p"><!----></div>
+
+<div class="command"># apt-get install build-essential<br />
+# apt-get build-dep emacs24</div>
+
+<div class="p"><!----></div>
+
+
+Für Distributionen, welche den Paketmanager yum verwenden, gibt es das Tool 
+<b><tt class="big">yum-builddep</tt></b>&nbsp;<a href="http://linux.die.net/man/1/yum-builddep">[13]</a>
+
+<div class="p"><!----></div>
+
+<div class="command"># yum-builddep emacs24</div>
+
+<div class="p"><!----></div>
+
+
+Der eigentliche Kompiliervorgang erfolgt dann mit den gewohnten Befehlen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ ./autogen.sh<br />
+$ ./configure<br />
+$ make<br />
+# make install</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Erste Schritte</h2>
+
+
+Beim ersten Start hinterlässt Emacs wahrscheinlich einen relativ
+unspektakulären Eindruck und die Funktionalität lässt zunächst tatsächlich zu
+wünschen übrig. Auch wenn viele nützliche Pakete bei der Standardinstallation
+bereits integriert sind, werden diese nämlich nicht automatisch aktiviert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/emacs.png" alt="emacs.png" style="max-width:100%" /><br /><em>Emacs nach dem Start.</em><br />
+
+<div class="p"><!----></div>
+Dies hängt unter anderem damit zusammen, dass die Emacs-Entwickler dem Nutzer
+so wenig
+
+Vorgaben wie möglich machen möchten, auf welche Art er Emacs nutzt.
+Böse Zungen behaupten aber auch, die Standardeinstellungen sind gezielt so
+einfach gehalten, damit man dazu gezwungen sei, Emacs Lisp zu lernen.
+
+<div class="p"><!----></div>
+Dieses Konzept geht auch ganz gut auf, denn hat man sich erst mal durch die
+Grundeinstellungen gekämpft und einige Anpassungen getroffen, ist man mit den
+Grundzügen von Emacs bereits etwas vertrauter und schreckt vielleicht vor etwas
+Emacs Lisp Code nicht mehr so schnell zurück wie am Anfang. Wer möchte, kann
+auch eine der populäreren Konfigurationen aus dem Netz verwenden, was für
+Anfänger aber zunächst eine Überforderung bedeuten
+könnte&nbsp;<a href="http://batsov.com/prelude/">[14]</a>&nbsp;<a href="http://spacemacs.org/">[15]</a>&nbsp;<a href="http://eschulte.github.io/emacs24-starter-kit/">[16]</a>.
+
+<div class="p"><!----></div>
+Es ist daher empfehlenswert, sich zu Beginn erst einmal eine eigene Konfigurationsdatei
+anzulegen. Dazu erstellt man in seinem Homeverzeichnis eine Datei namens
+<b><tt class="big">.emacs</tt></b>. In dieser Datei kann man den Emacs Lisp Code hinterlegen, der beim
+Programmstart ausgeführt wird.
+
+<div class="p"><!----></div>
+Das offizielle Paketarchiv GNU Elpa ist bereits in den Quellen vorhanden. Darüber
+hinaus gibt es aber viele Erweiterungen, die dort nicht verfügbar sind. Diese finden sich
+in der Regel im Community betriebenem Melpa-Archiv&nbsp;<a href="https://melpa.org">[17]</a>.
+
+<div class="p"><!----></div>
+Um Melpa zu den Paketquellen hinzuzufügen, trägt man folgenden Code in die eben
+erstellte Konfigurationsdatei ein:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">;; Kommentare beginnen mit einem Semikolon<br />
+<br />
+;; Diese Anweisung lädt das Paket "package", welches die Paketverwaltung in<br />
+;; Emacs bereitstellt. Das ist nötig, um im nächsten Abschnitt die<br />
+;; Archivquellen anzupassen.<br />
+(require 'package)<br />
+<br />
+;; Die Paketquellen sind in der Variable "package-archives" gespeichert. <br />
+;; Zu dieser Liste fügt man mit folgender Anweisung das Melpa-Archiv hinzu.<br />
+(add-to-list 'package-archives<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'("melpa" .<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"https://melpa.org/packages/"))</div>
+
+<div class="p"><!----></div>
+
+
+Nun kann man Emacs starten und Pakete installieren. Eine nennenswerte
+Empfehlung für den Einstieg ist das
+<b><tt class="big">better-defaults</tt></b>-Paket, welches einige sinnvolle Grundeinstellungen vornimmt.
+
+<div class="p"><!----></div>
+Durch  Drücken von „<i>Alt</i>“&nbsp;+&nbsp;„<i>X</i>“ ruft man dazu eine
+Kommandozeile für Emacs-Befehle auf. Hier gibt man den
+Befehl <b><tt class="big">package-install</tt></b> ein und bestätigt mit „<i>Enter</i>“. Danach ist der
+gewünschte Paketname anzugeben, z.&nbsp;B. <b><tt class="big">better-defaults</tt></b>. Sobald
+man mit „<i>Enter</i>“ bestätigt hat, wird das Paket heruntergeladen und installiert.
+Das sich darauf öffnende Fenster kann man zunächst ignorieren und durch
+Drücken der  Taste „<i>Q</i>“ wieder schließen.
+
+<div class="p"><!----></div>
+Bevor man nun eifrig beginnt weitere Pakete zu installieren, sollte man
+versuchen, mehr über den Umgang mit Emacs zu lernen. Zum Glück gibt es
+hierzu
+zahlreiche, informative Tutorials im Internet zu entdecken&nbsp;<a href="http://emacslife.com/">[18]</a>&nbsp;<a href="http://caiorss.github.io/Emacs-Elisp-Programming/">[19]</a>&nbsp;<a href="https://www.masteringemacs.org/">[20]</a>&nbsp;<a href="http://david.rothlis.net/emacs/howtolearn.html">[21]</a>&nbsp;<a href="http://ergoemacs.org/emacs/emacs.html">[22]</a>&nbsp;<a href="https://tuhdo.github.io/index.html">[23]</a>&nbsp;<a href="http://www.ibm.com/developerworks/views/aix/libraryview.jsp?search_by=emacs+editing+environment">[24]</a>&nbsp;<a href="https://www.youtube.com/playlist?list=PLxj9UAX4Em-IiOfvF2Qs742LxEK4owSkr">[25]</a>&nbsp;<a href="https://www.youtube.com/playlist?list=PL3kg5TcOuFlrtDZoA4PmvRqvsRLo8bbI7">[26]</a>.
+
+<div class="p"><!----></div>
+
+
+
+
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://www.gnu.org/software/emacs/"><tt class="big">https://www.gnu.org/software/emacs/</tt></a><br />
+[2] <a href="http://emacsconf2015.org/"><tt class="big">http://emacsconf2015.org/</tt></a><br />
+[3] <a href="http://www.howardism.org/Technical/Emacs/new-window-manager.html"><tt class="big">http://www.howardism.org/Technical/Emacs/new-window-manager.html</tt></a><br />
+[4] <a href="https://www.youtube.com/watch?v=TgHvRcbYJ-8"><tt class="big">https://www.youtube.com/watch?v=TgHvRcbYJ-8</tt></a><br />
+[5] <a href="https://www.youtube.com/watch?v=KZjFVdU8VLI"><tt class="big">https://www.youtube.com/watch?v=KZjFVdU8VLI</tt></a><br />
+[6] <a href="https://www.youtube.com/watch?v=4tyTgyzUJqM"><tt class="big">https://www.youtube.com/watch?v=4tyTgyzUJqM</tt></a><br />
+[7] <a href="https://vimeo.com/22798433"><tt class="big">https://vimeo.com/22798433</tt></a><br />
+[8] <a href="http://martinfowler.com/bliki/InternalReprogrammability.html"><tt class="big">http://martinfowler.com/bliki/InternalReprogrammability.html</tt></a><br />
+[9] <a href="https://www.youtube.com/watch?v=XjKtkEMUYGc"><tt class="big">https://www.youtube.com/watch?v=XjKtkEMUYGc</tt></a><br />
+[10] <a href="https://www.youtube.com/watch?v=dljNabciEGg"><tt class="big">https://www.youtube.com/watch?v=dljNabciEGg</tt></a><br />
+[11] <a href="http://emacsrocks.com/"><tt class="big">http://emacsrocks.com/</tt></a><br />
+[12] <a href="http://www.parens-of-the-dead.com/"><tt class="big">http://www.parens-of-the-dead.com/</tt></a><br />
+[13] <a href="http://linux.die.net/man/1/yum-builddep"><tt class="big">http://linux.die.net/man/1/yum-builddep</tt></a><br />
+[14] <a href="http://batsov.com/prelude/"><tt class="big">http://batsov.com/prelude/</tt></a><br />
+[15] <a href="http://spacemacs.org/"><tt class="big">http://spacemacs.org/</tt></a><br />
+[16] <a href="http://eschulte.github.io/emacs24-starter-kit/"><tt class="big">http://eschulte.github.io/emacs24-starter-kit/</tt></a><br />
+[17] <a href="https://melpa.org"><tt class="big">https://melpa.org</tt></a><br />
+[18] <a href="http://emacslife.com/"><tt class="big">http://emacslife.com/</tt></a><br />
+[19] <a href="http://caiorss.github.io/Emacs-Elisp-Programming/"><tt class="big">http://caiorss.github.io/Emacs-Elisp-Programming/</tt></a><br />
+[20] <a href="https://www.masteringemacs.org/"><tt class="big">https://www.masteringemacs.org/</tt></a><br />
+[21] <a href="http://david.rothlis.net/emacs/howtolearn.html"><tt class="big">http://david.rothlis.net/emacs/howtolearn.html</tt></a><br />
+[22] <a href="http://ergoemacs.org/emacs/emacs.html"><tt class="big">http://ergoemacs.org/emacs/emacs.html</tt></a><br />
+[23] <a href="https://tuhdo.github.io/index.html"><tt class="big">https://tuhdo.github.io/index.html</tt></a><br />
+[24] <a href="http://www.ibm.com/developerworks/views/aix/libraryview.jsp?search_by=emacs+editing+environment"><tt class="big">http://www.ibm.com/developerworks/views/aix/libraryview.jsp?search_by=emacs+editing+environment</tt></a><br />
+[25] <a href="https://www.youtube.com/playlist?list=PLxj9UAX4Em-IiOfvF2Qs742LxEK4owSkr"><tt class="big">https://www.youtube.com/playlist?list=PLxj9UAX4Em-IiOfvF2Qs742LxEK4owSkr</tt></a><br />
+[26] <a href="https://www.youtube.com/playlist?list=PL3kg5TcOuFlrtDZoA4PmvRqvsRLo8bbI7"><tt class="big">https://www.youtube.com/playlist?list=PL3kg5TcOuFlrtDZoA4PmvRqvsRLo8bbI7</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Clemens Radermacher</b>
+nutzt Emacs seit ca. zwei Jahren unter anderem zur Programmierung und arbeitet gerne mit
+Freier Software.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Emacs&amp;body=freiesMagazin 04/2016%0AEmacs%0AClemens Radermacher%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Emacs#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_virtualbox" name="fm_16_04_virtualbox">VirtualBox 5.0 – Der Einstieg</a></font></h1>von Holger Reibold
+
+<div class="p"><!----></div>
+    <b>W</b><b>er kennt das nicht? Man hört von einer interessanten
+Anwendung oder 
+Umgebung, die man gerne einmal ausprobieren möchten. Doch leider 
+stellt sich dann bei näherer Betrachtung heraus, dass man über keine 
+Plattform verfügt, mit der man die Anwendung evaluieren könnte. Wer 
+schon immer mal ohne Bauchschmerzen eine bestimmte Server-Komponente 
+auf ihre Praxistauglichkeit hin testen oder sich einmal in 
+Sicherheitswerkzeuge wie Nmap oder Wireshark einarbeiten wollte, 
+ohne das geeigneten Netzwerk zu haben, für den ist 
+VirtualBox&nbsp;<a href="https://www.virtualbox.org/">[1]</a> die ideale Lösung. </b>
+
+<div class="p"><!----></div>
+In Unternehmen gehören Virtualisierungstechniken längst zum Alltag,
+weil man damit nicht nur schnell und einfach bestimmte Systeme 
+testen, sondern insbesondere weil man bestehende Hardware optimal 
+ausnutzen kann. Aber auch im Privaten ist die Verwendung solcher 
+Tools sinnvoll. Mit VirtualBox steht eine quelloffene Lösung zur 
+Verfügung, die eine beachtliche Bandbreite an Möglichkeiten bietet. 
+Der Name VirtualBox ist dabei Programm, denn man kann mit einer 
+Virtualisierungsumgebung wie VirtualBox auf einem Standard-PC nicht 
+nur andere Betriebssystemplattformen simulieren, sondern sogar
+ganze 
+Netzwerke realisieren. 
+
+<div class="p"><!----></div>
+Das Tolle an VirtualBox: Man kann damit eine andere Rechnerplattform 
+simulieren. Ein 32-Bit 
+
+  
+PC kann mit Hilfe von VirtualBox in eine 
+64-Bit-Plattform verwandelt werden. Außerdem kann man auf einem 
+Rechner mehrere verschiedene Betriebssysteme ausführen. Man kann in 
+verschiedenen virtuellen Maschinen beispielsweise Windows und 
+Linux-Betriebssysteme ausführen. So verwandelt man einen 
+Windows-Rechner in ein vollwertiges Linux-System oder führt auf 
+einem Linux einen Windows-Server aus. Theoretisch kann man beliebig 
+viele virtuelle Systeme, man spricht üblicherweise von virtuellen 
+Maschinen, kurz VM, ausführen. Einzig die Rechnerkapazität bestimmt 
+die Anzahl der ausführbaren Maschinen. VirtualBox ist so 
+leistungsfähig, dass man sogar vollständige Clouds auf einem 
+einzigen Rechner anlegen kann. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/virtualbox_start.png" alt="virtualbox_start.png" style="max-width:100%" /><br /><em>Ein erster Blick auf VirtualBox 5.0. </em><br />
+
+<div class="p"><!----></div>
+
+<h2>Alles Wichtige über VirtualBox auf einen Blick</h2>
+
+
+Nun stellt sich unmittelbar die Frage, welches die praktischen 
+Einsatzszenarien für VirtualBox sind. Einer der wichtigsten 
+Anwendungsbereiche ist bereits genannt worden: Die Ausführung von 
+verschiedenen Betriebssystemen auf einem einzigen Rechner. Damit 
+bieten sich die verschiedensten Anwendungsmöglichkeiten. Man 
+kann 
+
+auf einem Windows-Rechner beispielsweise Anwendungen ausführen, 
+die ansonsten eine andere Rechnerarchitektur verlangen würden. Das 
+ist praktisch und kostensparend, weil man auch ohne einen zweiten 
+Rechner direkt loslegen kann. 
+
+<div class="p"><!----></div>
+Gerade im Enterprise-Umfeld gehen immer mehr Software-Entwickler dazu 
+über, ihre Umgebungen als sogenannte Appliance anzubieten. Auf 
+diesem Weg kann man vorkonfigurierte Installationen mit wenigen 
+Mausklicks einrichten – ein Segen für Entwickler und Anwender 
+gleichermaßen. Besonders einfach kann man auf diesem Weg 
+vollständige Betriebssysteminstallationen sichern und 
+wiederherstellen. 
+
+<div class="p"><!----></div>
+VirtualBox erlaubt es, von Installationen sogenannte Schnappschüsse 
+zu erzeugen, in denen ein bestimmter Zustand festgehalten und dann 
+eingefroren wird. Man kann diesen Zustand jederzeit wieder auflösen. 
+Einer der zentralen Vorteile von VirtualBox: Man kann die vorhandene 
+Hardware optimal ausnutzen und somit die Kosten für Computer (und 
+damit auch für den Stromverbrauch) erheblich senken. In vielen 
+Umgebungen werden jede Menge Ressourcen vergeudet, die man dank 
+einer Virtualisierungslösung effektiv nutzen könnte. 
+
+<div class="p"><!----></div>
+Wenn man konkret mit dem Gedanken spielt, eine 
+Virtualisierungsumgebung einzufügen – und sei es nur zu Testzwecken – so
+sollte man sich zunächst ein wenig mit der Terminologie 
+befassen. Es sind nur einige wenige Begriffe, aber die und deren 
+Bedeutung müssen sitzen.
+
+<div class="p"><!----></div>
+Das „Host-Betriebssystem“, oder einfach nur als Host bezeichnet, ist das System, auf 
+dem die VirtualBox-Installation ausgeführt wird. Es handelt sich 
+dabei um einen physischen Computer, auf dem ein bestimmtes 
+Betriebssystem ausgeführt wird, das dann als Grundlage für die 
+Ausführung einer VirtualBox-Installation dient. VirtualBox kann auf 
+Linux, Mac OS X, Windows und Solaris ausgeführt werden. Die 
+Unterschiede zwischen den verschiedenen VirtualBox-Varianten sind dabei minimal. 
+
+<div class="p"><!----></div>
+Der Gast, man spricht auch vom „Gast-Betriebssystem“ oder Guest OS, 
+wird innerhalb einer virtuellen Umgebung ausgeführt, die von dem 
+Host bereitgestellt wird. VirtualBox kann verschiedene Plattformen 
+simulieren und so die Ausführung aller gängigen Betriebssysteme 
+ermöglichen. Man kann auf einem Host beispielsweise Windows-, Mac OS 
+X-, Linux-, FreeBSD- und OpenBSD-basierte Systeme ausführen – auch 
+gleichzeitig verschiedene oder mehrere eines Typs.
+
+<div class="p"><!----></div>
+Der Begriff der virtuellen Maschine, kurz VM, ist bereits mehrfach 
+gefallen. Dabei handelt es sich um eine spezielle Umgebung, die der 
+VirtualBox-Host für den Gast erzeugt und bereitstellt. 
+Man kann sich den Gast auch als einen Computer im 
+Computer vorstellen.
+
+<div class="p"><!----></div>
+Normalerweise wird diese VM auf dem Desktop-Rechner angezeigt, aber 
+auch ein Remote-Zugriff ist möglich. In einer VM sind verschiedene 
+Parameter hinterlegt, die die Rahmenbedingungen für die Ausführung 
+des Gastes bestimmen. Dabei handelt es sich beispielsweise um die 
+Größe der Gast-Partition, den Prozessortyp, die RAM-Größe, die 
+Netzwerkkonfiguration und vieles mehr. Die Eigenschaften einer VM 
+werden über den VirtualBox Manager konfiguriert, können aber auch 
+über die Konsole manipuliert werden. 
+
+<div class="p"><!----></div>
+Ein weiterer wichtiger Begriff sind die „Virtualbox Guest Additions“ – oder
+zu Deutsch Gasterweiterungen. Diese Erweiterungen werden 
+beispielsweise benötigt, um die Performance des Gastes zu 
+optimieren. Oder wenn man Windows 10 in VirtualBox installieren 
+möchte, benötigt man  ebenfalls eine solche Erweiterung, denn erst 
+sie schaltet zusätzliche Funktionen der virtuellen Maschine frei, 
+etwa das Erstellen gemeinsamer Ordner, die gemeinsame Zwischenablage 
+und erweiterte Grafikkarten-Treiber. VirtualBox kann auf 
+verschiedensten 32- und 64-Bit-Hostsystemen ausgeführt werden. Die 
+Software übernimmt dabei die Rolle des sogenannten Hosted 
+Hypervisors&nbsp;<a href="https://de.wikipedia.org/wiki/Hypervisor">[2]</a>. Man spricht 
+auch gelegentlich von einem Hypervisor Typ 2 – im Unterschied zum 
+Hypervisor Typ 1 (bare metal), der direkt auf der Hardware 
+ausgeführt wird. 
+
+<div class="p"><!----></div>
+Die Unterschiede zwischen VirtualBox auf Linux, Windows oder einem 
+anderen Betriebssystem sind minimal. Der Vorteil davon ist: Man kann virtuelle 
+Maschinen auf einer Plattform X erstellen, dort exportieren und 
+diese dann in der Regel problemlos auf einer Plattform Y wieder 
+importieren. Dabei kommt insbesondere das Open Virtualization Format 
+(OVF) zum Einsatz, das auch von anderen Virtualisierungsumgebungen 
+unterstützt wird. 
+
+<div class="p"><!----></div>
+VirtualBox kann einer VM theoretisch bis zu 32 Prozessoren zuweisen. 
+Dadurch ergeben sich beachtliche Möglichkeiten. VirtualBox 
+unterstützt alle gängigen Hardwarekomponenten, USB, ACPI, iSCSI und 
+mehrere Bildschirme. Eine weitere Besonderheit ist die 
+VM-Gruppenfunktion. Damit kann man mehrere Benutzer und VMs 
+organisieren und verwalten.
+
+<div class="p"><!----></div>
+Auch das Stichwort Remote-Zugriff ist bereits gefallen. Die 
+sogenannte VirtualBox Remote Desktop Extension, kurz VRDE, erlaubt 
+den Fernzugriff auf beliebige virtuelle Maschinen. Diese Erweiterung 
+unterstützt auch das von Microsoft entwickelte Remote Desktop 
+Protocol (RDP).
+
+<div class="p"><!----></div>
+
+<h2>VirtualBox 5.0 in Betrieb nehmen</h2>
+
+
+VirtualBox 5.0 kann auf den verschiedensten Systemen ausgeführt 
+werden. Dabei kann man auch ein wenig angestaubte Rechner 
+reaktivieren und diese als Ausführungsumgebung für die eine oder 
+andere Lösung verwenden, beispielsweise als NAS- oder Backup-Server. 
+
+<div class="p"><!----></div>
+Laut dem Entwicklerteam kann VirtualBox 5.0 unter folgenden 
+Linux-Betriebssystemen eingesetzt 
+werden&nbsp;<a href="https://www.virtualbox.org/wiki/Linux_Downloads">[3]</a>: 
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Ubuntu 12.04, 14.04 und 15.10</li>
+<li> Debian GNU/Linux 6.0 (Squeeze), 7.0 (Wheezy) und 8.0 (Jessie)</li>
+<li> openSUSE 13.1, 13.2 und 42.1</li>
+<li> SUSE Linux Enterprise Server 11</li>
+<li> Fedora 18 bis 23</li>
+<li> Oracle Linux 5, 6 und 7</li>
+<li> Redhat Enterprise Linux 5, 6 und 7</li>
+<li> CentOS 5, 6 und 7</li>
+</ul>
+
+<div class="p"><!----></div>
+Prinzipiell sollte man VirtualBox auch unter jeder anderen 
+Linux-Variante benutzen können, die einen Kernel 2.6 oder 3.x 
+verwendet. VirtualBox kann außerdem unter allen 64-Bit-Solaris 10- und
+11-Versionen eingesetzt werden. 
+
+<div class="p"><!----></div>
+Nachdem man die Systemvoraussetzungen geprüft hat, kann man sich 
+auf dem präferierten Betriebssystem an die Installation machen. 
+
+<div class="p"><!----></div>
+Unter Windows und Mac OS X lädt man sich von der 
+Downloadseite&nbsp;<a href="https://www.virtualbox.org/wiki/Downloads">[4]</a> die 
+entsprechende EXE- bzw. DMG-Datei herunter und führt diese per 
+Doppelklick aus. 
+
+<div class="p"><!----></div>
+Auch die Installation von VirtualBox unter Linux ist einfach. 
+Zunächst sollte man sicherstellen, dass auf dem verwendeten 
+Linux-System der Dynamic Kernel Module Support (DKMS) installiert ist. 
+Diese Funktion sorgt dafür, dass der VirtualBox-Kernel-Mode korrekt 
+arbeitet. Danach greift man zur Installation am einfachsten auf den 
+Paketmanager der jeweiligen Distribution zurück. Dort sollte in der 
+Regel die aktuelle VirtualBox-Version verfügbar sein.
+
+<div class="p"><!----></div>
+Alternativ kann man sich auf der 
+Downloadseite&nbsp;<a href="https://www.virtualbox.org/wiki/Linux_Downloads">[3]</a> 
+das entsprechende Paket als DEB oder RPM herunterladen – oder man 
+wählt den distributionsunabhängigen Installer als RUN-Datei. Die 
+RUN-Datei muss man nach dem Download ausführbar machen und kann 
+danach die Installation starten (der Installer wird hier ohne 
+Versionsbezeichnung abgekürzt):
+
+<div class="p"><!----></div>
+
+<div class="command">$ chmod +x ./VirtualBox.run<br />
+# ./VirtualBox.run install</div>
+
+<div class="p"><!----></div>
+
+
+Man muss anschließend nur noch die VirtualBox-Gäste der Gruppe 
+<b><tt class="big">vboxusers</tt></b> hinzufügen: 
+
+<div class="p"><!----></div>
+
+<div class="command"># usermod -a -G vboxusers benutzername</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Erste Schritte</h2>
+
+
+Unabhängig davon, auf welchem Betriebssystem man VirtualBox 
+installiert, wird immer ein Menüeintrag bzw. eine Verknüpfung zu 
+dem ausführbaren Programm erzeugt. Die 
+VirtualBox-Benutzerschnittstelle ist einfach aufgebaut. Unterhalb 
+der Menü- und Symbolleiste befinden sich links die Liste der 
+angelegten virtuellen Maschinen, rechts die Einstellungen eines 
+markierten VM-Eintrags. 
+
+<div class="p"><!----></div>
+Um  das Erstellen von virtuellen Maschinen so einfach wie möglich zu 
+machen, stellt VirtualBox einen Assistenten zur Verfügung. Um eine 
+virtuelle Maschine anzulegen, klickt man in der 
+VirtualBox-Symbolleiste auf die Schaltfläche „<em>Neu</em>“. Hiermit weist 
+man der neuen virtuellen Maschine in Eingabefeld „<em>Name</em>“ eine 
+Bezeichnung zu. Wenn man eine Bezeichnung verwendet, die sich mit 
+einer unterstützten VM-Umgebung deckt, füllt der Assistent die 
+beiden darunterliegenden Felder aus. Gibt man beispielsweise die 
+Buchstaben „Li“ von „Linux“ ein, nimmt der Assistent an, dass man 
+ein Linux-System anlegen möchte. 
+
+<div class="p"><!----></div>
+Nach der Angabe der Bezeichnung bestimmt man den Typ und die 
+Version. Das Auswahlmenü „<em>Version</em>“ stellt alle unterstützten 
+Betriebssystemvarianten zur Verfügung. Mit „<em>Weiter</em>“ gelangt man zum 
+zweiten Schritt. Wenn man bereits ein wenig mit VirtualBox und den 
+möglichen VM-Einstellungen vertraut ist, kann man anstelle der
+
+geführten Installation auch den Experten-Modus verwenden. Dieser 
+stellt eine Übersicht der möglichen Konfigurationseinstellungen zur 
+Verfügung. Für den Moment folgt man dem Assistenten.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/virtualbox_assistent.png" alt="virtualbox_assistent.png" style="max-width:100%" /><br /><em>Der erste Schritt des VM-Assistenten.</em><br />
+
+<div class="p"><!----></div>
+Mit einem Klick auf „<em>Weiter</em>“ gelangt man zum zweiten Schritt. Der 
+dient der Konfiguration der RAM-Speichergröße. Dazu steht ein 
+Schieberegler zur Verfügung. VirtualBox schlägt einen Wert vor, den 
+man oben verändern kann, wenn das Host-System über ausreichend 
+Speicher verfügt. Man muss dabei darauf achten, dass man dem 
+Host-System weiterhin genug RAM lässt, damit
+
+dieses für alle weiteren Aufgaben genug Speicher besitzt.
+
+<div class="p"><!----></div>
+Mit einem Klick auf „<em>Weiter</em>“ öffnet man den dritten Dialog. In 
+diesem weist man den virtuellen Maschine eine Festplatte zu. 
+VirtualBox generiert standardmäßig für jede virtuelle Maschine eine 
+neue Festplatte und weist dieser automatisch eine empfohlene Größe 
+zu. Diese Größe kann nachträglich jederzeit geändert werden. 
+Alternativ kann man auch eine bestehende oder keine Festplatte 
+verwenden. 
+
+<div class="p"><!----></div>
+Mit einem Klick auf „<em>Erzeugen</em>“ öffnet man den Auswahldialog für den 
+Dateityp der Festplatte. Mit 
+VirtualBox 5.0 können folgende Typen erzeugt 
+werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> VDI – VirtualBox Disk Image</li>
+<li> VMDK – Virtual Machine Disk</li>
+<li> VHD – Virtual Hard Disk</li>
+<li> HDD – Paralells Hard Disk</li>
+<li> QED – QEMU Enhanced Disk</li>
+<li> QCOW – QEMU Copy-on-Write</li>
+</ul>
+
+<div class="p"><!----></div>
+Das Standardformat ist VDI. Die anderen Formate sind insbesondere 
+dann relevant, wenn man auch mit anderen Virtualisierungsumgebungen 
+arbeiten oder Images gegebenenfalls austauschen möchte.
+
+<div class="p"><!----></div>
+Mit „<em>Weiter</em>“ kommt man zum vierten Schritt. Damit bestimmt man die 
+physische Größe der Festplatte. Der zugehörige Dialog stellt 
+zwei Optionen zur Auswahl: „<em>dynamisch alloziert</em>“ und „<em>feste Größe</em>“. 
+Bei der dynamischen Belegung beansprucht die VM so viel 
+Speicherplatz, wie für die Ausführung notwendig ist. Bei der festen 
+Größe wird der für die Maschine vorgesehene Speicherplatz durch eine 
+VirtualBox-Datei reserviert. Standardmäßig verwendet man die 
+dynamische Variante. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/virtualbox_festplatte.png" alt="virtualbox_festplatte.png" style="max-width:100%" /><br /><em>Die Konfiguration einer virtuellen Festplatte.</em><br />
+
+<div class="p"><!----></div>
+Im nächsten Dialog bestimmt man die Bezeichnung der virtuellen 
+Maschine und deren Größe. Über einen Schieberegler kann man wieder 
+die Größe ändern. In der Regel ist es sinnvoll, die Voreinstellungen 
+zu übernehmen und dann im 
+
+laufenden Betrieb gegebenenfalls die 
+notwendigen Änderungen und Anpassungen vorzunehmen. Damit hat der 
+VM-Assistent alle notwendigen Informationen und kann die VM 
+entsprechend den gewünschten Einstellungen erzeugen. Dann klickt man 
+abschließend auf „<em>Erzeugen</em>“, damit VirtualBox die Konfiguration 
+anlegt. 
+
+<div class="p"><!----></div>
+
+<h2>VM ausführen</h2>
+
+
+Nachdem man die erste virtuelle Maschine angelegt hat, ist diese 
+sozusagen startklar. Es wundert manchen Anwender womöglich, dass man 
+mit dieser VM noch kein Betriebssystem verknüpft ist. Das kommt erst 
+beim ersten Start der Umgebung, denn dabei kann man ein 
+Installationsmedium 
+angeben. Um eine VM-Konfiguration zu starten, 
+klickt man in der Übersicht doppelt auf den gewünschten Eintrag. 
+Alternativ kann man über die Schaltfläche „<em>Start</em>“ einen normalen 
+Start, einen ohne GUI und den sogenannten abgekoppelten Start 
+ausführen. 
+
+<div class="p"><!----></div>
+Man verwendet hier die normale Startvariante und startet die oben 
+angelegte VM. Nach einem Moment präsentiert der Dialog die 
+Auswahl des Installationsmediums. VirtualBox geht standardmäßig 
+davon aus, dass sich das Medium in einem 
+CD-/DVD-Laufwerk befindet. Sollten man das System von einer 
+heruntergeladenen ISO-Datei installieren, wechselt man zu dem 
+Download-Ordner und wählt das Image aus. 
+
+<div class="p"><!----></div>
+Man klickt anschließend auf die Schaltfläche „<em>Starten</em>“, um die 
+Installation der virtuellen Maschinen einzuleiten. In der VM-GUI 
+kann man den Installationsvorgang verfolgen und ausführen. 
+VirtualBox und die angelegten virtuellen Maschinen nutzen natürlich 
+die Tastatur und die Maus. Der Host und die Gäste teilen sich diese 
+Geräte. Wenn man mit der Maus in die VM klickt, fängt diese die Maus 
+sozusagen ein. Um die Maus wieder für den Host freizugeben, 
+verwendet man den sogenannten Host Key. In der Statuszeile der 
+VM-GUI wird das Kürzel angezeigt. Abhängig vom verwendeten 
+Host-Betriebssystem kann man verschiedene Tastenkombinationen 
+verwenden. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-04-bilder-Dateien/virtualbox_uebersicht.png" alt="virtualbox_uebersicht.png" style="max-width:100%" /><br /><em>Mehrere virtuelle Maschinen sind in VirtualBox angelegt, eine wird ausgeführt. </em><br />
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Mit VirtualBox 5.0 steht eine tolle Virtualisierungsumgebung zur 
+Verfügung, die die Ausführung von beliebigen Betriebssystemen auf 
+einem Standardrechner erlaubt. Die Umgebung ist derart flexibel und 
+leistungsfähig, dass sie nicht nur im Privaten, sondern auch im 
+Unternehmenseinsatz eine gute Figur macht. 
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://www.virtualbox.org/"><tt class="big">https://www.virtualbox.org/</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Hypervisor"><tt class="big">https://de.wikipedia.org/wiki/Hypervisor</tt></a><br />
+[3] <a href="https://www.virtualbox.org/wiki/Linux_Downloads"><tt class="big">https://www.virtualbox.org/wiki/Linux_Downloads</tt></a><br />
+[4] <a href="https://www.virtualbox.org/wiki/Downloads"><tt class="big">https://www.virtualbox.org/wiki/Downloads</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Holger Reibold</b>&nbsp;(<a href="http://reibold.de/">Webseite</a>)
+promovierte in Informatik und begann in den 1990ern seine Karriere 
+als Fachjournalist und Autor. Er veröffentlichte seitdem zahlreiche 
+Artikel und Bücher. 2005 gründete er den Verlag
+<a href="http://www.brain-media.de/">Brain-Media.de</a>. 
+Dort hat er auch ein Buch „VirtualBox 5.0 kompakt“ mit weiterführenden
+Informationen zu VirtualBox herausgegeben.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=VirtualBox 5.0&amp;body=freiesMagazin 04/2016%0AVirtualBox 5.0%0AHolger Reibold%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=VirtualBox 5.0#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_pacman" name="fm_16_04_pacman">Pacman – Der Paketmanager von Arch Linux</a></font></h1>von Jakob Moser
+
+<div class="p"><!----></div>
+    <b>E</b><b>iner der großen Vorzüge der Linux-Distribution Arch
+Linux&nbsp;<a href="https://wiki.archlinux.de/">[1]</a>
+ist ihr Paketmanager „Pacman“&nbsp;<a href="https://wiki.archlinux.de/title/Pacman">[2]</a> und seine
+Buildtools. Trotz der sehr umfangreichen und vielfältigen Paketauswahl ist Pacman
+schnell und einfach zu bedienen. Dieser Artikel erläutert das Konzept und
+zeigt, wie man mit Pacman Pakete suchen, installieren und entfernen kann.</b>
+
+<div class="p"><!----></div>
+
+<h2>Die offiziellen Repositorys</h2>
+
+
+Die offiziellen Repositorys von Pacman sind „core“, „extra“ und „community“ sowie
+„multilib“ und „testing“, „community-testing“ und „multilib-testing“. Diese
+unterscheiden sich neben den Anforderungen, die an ihre enthaltenden Pakete
+gestellt werden, auch noch in der verwaltenden Nutzergruppe.
+
+<div class="p"><!----></div>
+Die Arch-Linux-Entwickler unterhalten die beiden Repositorys „core“ und
+„extra“. „core“ enthält die Anwendungen, die benötigt werden, um den Rechner zu
+starten, ihn mit dem Internet zu verbinden, Pakete zu erstellen, Dateisysteme zu
+reparieren und das System aufzusetzen. Das Repository hat sehr strenge
+Qualitätsrichtlinien. Programme, die in „core“ aufgenommen werden sollen, müssen
+gut getestet werden und Updates müssen einzeln genehmigt werden. „extra“ enthält
+Pakete, die nicht in „core“ passen, wie zum Beispiel den X-Window-Server,
+Fenster-Manager, Desktopumgebungen, Web-Browser, Mediaplayer, Office-Suiten und
+Programmiersprachen-Interpreter wie Java, Ruby oder Python.
+
+<div class="p"><!----></div>
+Die vertrauten Nutzer („Trusted Users“&nbsp;<a href="https://wiki.archlinux.org/index.php/Trusted_Users">[3]</a>)
+verwalten das Repository „community“. Es enthält Pakete aller Art, die die
+vertrauten Nutzer aufgenommen haben, wie zum Beispiel Schriftarten, Spiele,
+Hintergrundbilder, Seiten aus dem Arch-Wiki, um sie auch offline zu verwenden,
+aber auch „Ernsthafteres“, wie das Cairo-Dock, die C++ GTK Utils, andere
+Programmiersprachen und weitere Desktop-Umgebungen (wie zum Beispiel Cinnamon).
+
+<div class="p"><!----></div>
+Diese Repositorys bilden zusammen mit dem Repository „multilib“
+(32-Bit-Programme und Bibliotheken, die auf 64-Bit-Systemen mangels Komplement
+installiert werden können, wie Skype oder Wine) und den drei
+„testing“-Repositorys (enthalten instabile Pakete und Pakete, die in „core“
+aufgenommen werden sollen), die sogenannten „Offiziellen Repositorys“&nbsp;<a href="https://wiki.archlinux.org/index.php/Official_repositories">[4]</a>.
+
+<div class="p"><!----></div>
+Die offiziellen Repositorys enthalten, wie schon oben angedeutet, eine Vielzahl
+an Programmen – und zwar immer in ihrer aktuellsten Version. Wird ein neues
+Release eines Programms veröffentlicht, ziehen die Repositorys schon nach ein
+paar Tagen nach (jeder Anwender muss sich natürlich selbst überlegen, ob das
+Konzept des Rolling-Releases für seinen Einsatzzweck das passende ist).
+
+<div class="p"><!----></div>
+
+<h2>Das AUR</h2>
+
+
+Ein Trumpf des Arch-Paketsystems wurde bis jetzt außer Acht gelassen,
+nämlich das sogenannte „Arch User Repository“ oder kurz „AUR“&nbsp;<a href="https://wiki.archlinux.de/title/Arch_User_Repository">[5]</a>.
+Im Gegensatz zu den offiziellen Repositorys, die nur vertraute Nutzer oder
+Arch-Entwickler bestücken dürfen, darf hier jeder nach einer Registrierung
+Paketbeschreibungen hochladen.
+
+<div class="p"><!----></div>
+Diese sogenannten „PKGBUILD“-Dateien&nbsp;<a href="https://wiki.archlinux.org/index.php/PKGBUILD">[6]</a>
+sind Shell-Skripte, die alle nötigen Informationen enthalten, um ein Paket mit
+dem Arch Build System&nbsp;<a href="https://wiki.archlinux.de/title/Arch_Build_System">[7]</a> zu
+erzeugen. Dieses erzeugte Paket erhält dann alle für die Installation relevanten
+Daten (Binärdaten, Medien) sowie die Paketinformation (Abhängigkeiten, Name,
+etc.) nun im PKINFO-Format (dieses sieht der PKBUILD recht ähnlich, ist aber
+trotzdem etwas anders aufgebaut).
+
+<div class="p"><!----></div>
+Oft enthält der Tarball mit der PKGBUILD (den man von der AUR-Seite
+herunterladen kann) auch noch andere benötigte Dateien, meist aber nicht den
+Quelltext. Dieser wird beim Buildvorgang dann von „makepkg“
+beispielsweise von einem Git-Repository heruntergeladen und kompiliert.
+
+<div class="p"><!----></div>
+Mit den eingebauten Tools von Arch Linux ist eine Installation von solchen
+Paketen relativ leicht. Man sucht das gewünschte Paket über die
+AUR-Weboberfläche&nbsp;<a href="https://aur.archlinux.org/?setlang=de">[8]</a>, lädt sich den Tarball
+herunter, extrahiert ihn und führt <b><tt class="big">makepkg</tt></b> aus, das die ganze restliche Arbeit
+(Code herunterladen, Abhängigkeiten auflösen, kompilieren, Paket erzeugen und
+installieren) in einem Durchgang erledigt.
+
+<div class="p"><!----></div>
+Einen offiziellen, noch einfacheren Weg wird es laut Arch Wiki nicht geben, da
+so von Nutzern, die etwas aus dem AUR installieren wollen, ein gewisser
+Kenntnisstand, wie zum Beispiel die Fähigkeit, nützliche von schädlichen Paketen
+zu trennen, vorausgesetzt wird.
+
+<div class="p"><!----></div>
+Es gibt jedoch einige inoffizielle Wrapper wie „yaourt“, das
+nicht nur Pacman bedienen kann, sondern auch den AUR-Installationsprozess
+automatisiert, sodass dieser so einfach ist wie eine Paketinstallation aus den
+offiziellen Repositorys. Auch das Update von Paketen aus dem AUR läuft dann mit
+einem Befehl ab.
+
+<div class="p"><!----></div>
+Durch dieses Konzept, das jedem, der Pakete erstellen will, eine Chance gibt,
+das auch – zumindest in eingeschränkter Weise – zu tun, verfügt Arch Linux über
+eine beeindruckend große Menge an Paketen. Gefühlt gibt es ein Paket für jedes
+freie oder unfreie kostenlose, unter Linux lauffähige Programm in der
+aktuellsten Version.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Bedienung</h2>
+
+
+Die hier gezeigten Befehle nutzen nur die offiziellen Repositorys als Grundlage.
+Zur Installation von Paketen aus dem AUR kann „yaourt“ installiert werden; mehr
+dazu später.
+
+<div class="p"><!----></div>
+
+<h3>Suchen von Paketen</h3>
+
+
+Der Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ pacman -Ss Query</div>
+
+<div class="p"><!----></div>
+
+
+sucht nach dem Wort <b><tt class="big">Query</tt></b> in den Namen, Kurzbeschreibungen und
+Beschreibungen der Pakete aus den offiziellen Repositorys. Ausgegeben wird dann
+eine Liste mit Treffern, jeder im Format Repository/Paketname, Version und einer
+Kurzbeschreibung.
+
+<div class="p"><!----></div>
+Es können auch mehrere Abfragen (dann im Format <b><tt class="big">Query1 Query2 … QueryN</tt></b>)
+gemacht werden, um die Trefferliste zusätzlich zu filtern.
+
+<div class="p"><!----></div>
+
+<h3>Installieren von Paketen</h3>
+
+
+Mit dem Befehl
+
+<div class="p"><!----></div>
+
+<div class="command"># pacman -S Paketname</div>
+
+<div class="p"><!----></div>
+
+
+wird das Paket <b>Paketname</b> mit allen seinen Abhängigkeiten installiert.
+Werden – mit Leerzeichen getrennt – mehrere Paketnamen angegeben, werden alle
+diese Pakete installiert.
+
+<div class="p"><!----></div>
+Dieser Befehl installiert ein bereits heruntergeladenes und erzeugtes
+(Binär-)Paket:
+
+<div class="p"><!----></div>
+
+<div class="command"># pacman -U paketname.pkg.tar.xz</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Entfernen von Paketen</h3>
+
+
+Um das Paket <b>Paketname</b> (ohne mit installierte Abhängigkeiten) zu entfernen,
+wendet man folgenden Befehl an:
+
+<div class="p"><!----></div>
+
+<div class="command"># pacman -R Paketname</div>
+
+<div class="p"><!----></div>
+
+
+Zur Entfernung von Paket <b>Paketname</b> und allen Abhängigkeiten, die nicht mehr
+von anderen Paketen benötigt werden, dient der folgende Befehl:
+
+<div class="p"><!----></div>
+
+<div class="command"># pacman -Rs Paketname</div>
+
+<div class="p"><!----></div>
+
+
+Man kann das Paket <b>Paketname</b> entfernen, auch wenn andere Pakete dieses Paket
+als Abhängigkeit haben:
+
+<div class="p"><!----></div>
+
+<div class="command"># pacman -Rdd Paketname</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Das System aktualisieren</h2>
+
+
+Der folgende Befehl aktualisiert zuerst die Paketdatenbanken (dafür sorgt die
+Option <b><tt class="big">y</tt></b>) und sucht danach nach veralteten Paketen im System. Diese werden
+darauf aktualisiert (Option <b><tt class="big">u</tt></b>):
+
+<div class="p"><!----></div>
+
+<div class="command"># pacman -Syu</div>
+
+<div class="p"><!----></div>
+
+
+Die beiden Optionen <b><tt class="big">y</tt></b> und <b><tt class="big">u</tt></b> sollten immer zusammen ausgeführt werden
+(sprich: es sollte kein Datenbankupdate durchgeführt werden, ohne dass auch alle
+Pakete aktualisiert werden), da es ansonsten  aufgrund des
+Rolling-Release-Konzepts Probleme mit nicht mehr kompatiblen Abhängigkeiten
+geben kann.
+
+<div class="p"><!----></div>
+
+<h3>Pacman Rosetta</h3>
+
+
+Im Arch-Linux-Wiki gibt es eine
+Rosetta-Seite&nbsp;<a href="https://wiki.archlinux.org/index.php/Pacman/Rosetta">[9]</a>, die zu
+Pacman-Kommandos die jeweiligen Äquivalente der Paketmanager apt, dnf, zypper
+und emerge auflistet. Diese Übersicht gibt insbesondere Ein- und Umsteigern einen ganz guten
+Überblick, allerdings ist die Seite an einigen Stellen veraltet.
+
+<div class="p"><!----></div>
+
+<h2>Bedienung – Pakete aus dem AUR</h2>
+
+
+
+<h3>Manuelle Installation</h3>
+
+
+Möchte man ein Paket aus dem AUR installieren, sucht man sich zuerst über die
+AUR-Weboberfläche&nbsp;<a href="https://aur.archlinux.org/?setlang=de">[8]</a> das gewünschte Paket aus. Danach
+wählt man rechts auf der Seite „<em>Package Actions -&#62; Download snapshot</em>“
+und speichert den Tarball in einem Ordner. Auf einem Terminal wechselt man nun
+in diesen Ordner, entpackt den Tarball und wechselt in das Verzeichnis der
+entpackten Dateien:
+
+<div class="p"><!----></div>
+
+<div class="command">$ cd pfad/zum/tarball<br />
+$ tar -xvf paketname.tar.gz<br />
+$ cd paketname</div>
+
+<div class="p"><!----></div>
+
+
+Als Nächstes sollte man die entpackten Inhalte und die PKGBUILD darauf prüfen,
+ob diese vertrauenswürdig und seriös sind – schließlich kann jeder Pakete in das
+AUR einspeisen. Zur Prüfung reicht es normalerweise aus, die URL unter „source“
+zu kontrollieren, ob diese zu einer offiziellen (bekannten) Adresse führt –
+genau wie man das zum Beispiel unter Ubuntu mit PPAs machen sollte. Möchte man
+der PKGBUILD etwas genauer auf den Zahn fühlen, sollte man auch noch die
+„build()“ und „install()“-Funktion prüfen. Hat man das überprüft und nichts
+gefunden, was zu beanstanden wäre, kann fortgefahren werden.
+
+<div class="p"><!----></div>
+Mit dem Aufruf von
+
+<div class="p"><!----></div>
+
+<div class="command">$ makepkg -sri</div>
+
+<div class="p"><!----></div>
+
+
+werden der Quellcode heruntergeladen, die Abhängigkeiten installiert, der
+Quellcode kompiliert und das Paket erzeugt und installiert. Die Option <b><tt class="big">s</tt></b>
+sorgt für die Installation der Abhängigkeiten, die Option <b><tt class="big">r</tt></b> sorgt dafür, dass
+nur zum Erstellzeitpunkt benötigte Abhängigkeiten wieder entfernt werden, und
+<b><tt class="big">i</tt></b> sorgt dafür, dass <b><tt class="big">makepkg</tt></b> am Ende der Prozedur das Paket über Pacman
+installiert.
+
+<div class="p"><!----></div>
+Möchte man diese Arbeiten selbst (oder nicht, im Falle von <b><tt class="big">r</tt></b>) erledigen, kann
+man die jeweilige Option auch weglassen und die Pacman-Kommandos selbst
+ausführen.
+
+<div class="p"><!----></div>
+
+<h3>yaourt</h3>
+
+
+Wie oben bereits erwähnt, ist yaourt&nbsp;<a href="https://github.com/archlinuxfr/yaourt">[10]</a>&nbsp;<a href="https://wiki.archlinux.de/title/Yaourt">[11]</a>
+ein Pacman-Wrapper, der nicht nur Pacman, sondern auch das AUR-Repository bedienen kann.
+yaourt befindet sich nur im AUR, nicht in den offiziellen Paketquellen, was
+bedeutet, dass man das Paket (sprich: die PKGBUILD-Datei) nach obiger Anleitung
+herunterladen und installieren muss. <b>yaourt</b> verwendet <b>package-query</b>, ein
+Tool, das wiederum auch nur im AUR vorhanden ist. Zuerst muss also <b>package-query</b>
+installiert werden. Dazu lädt man sich über „<em>Package Actions -&#62; Download snaphost</em>“
+ die package-query-PKGBUILD herunter&nbsp;<a href="https://aur.archlinux.org/packages/package-query/">[12]</a>.
+Danach wechselt man auf einem Terminal in den Ordner, in dem der Tarball liegt,
+entpackt ihn und führt mit dem folgenden Befehl das makepkg-Kommando aus:
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar -xvf pfad/zu/package-query.tar.gz<br />
+$ cd package-query<br />
+$ makepkg -sri</div>
+
+<div class="p"><!----></div>
+
+
+Makepkg lädt die Quellen herunter und kompiliert sie, danach werden sie
+automatisch installiert.
+
+<div class="p"><!----></div>
+Nun kann man <b>yaourt</b> installieren. Dazu lädt man sich – wie gehabt – über
+„<em>Package Actions -&#62; Download snaphost</em>“ das <b>yaourt</b>-Paket
+herunter&nbsp;<a href="https://aur.archlinux.org/packages/yaourt/">[13]</a>.
+
+<div class="p"><!----></div>
+Auch dieses wird nach obigem Prinzip installiert.
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar -xvf pfad/zu/yaourt.tar.gz<br />
+$ cd yaourt<br />
+$ makepkg -sri</div>
+
+<div class="p"><!----></div>
+
+
+
+
+
+<h2>Bedienung von yaourt</h2>
+
+
+Yaourt kann Pakete sowohl aus den offiziellen als auch aus den inoffiziellen
+Paketquellen installieren.
+
+<div class="p"><!----></div>
+
+<h3>Suchen und Installieren von Paketen</h3>
+
+
+Mit dem Befehl <b><tt class="big">yaourt Query</tt></b> sucht man zuerst nach <b><tt class="big">Query</tt></b> in den Namen,
+Kurzbeschreibungen und Beschreibungen der Pakete aus den offiziellen Repositorys
+und dem AUR.
+
+<div class="p"><!----></div>
+Es können auch mehrere Abfragen (dann im Format <b><tt class="big">Query1 Query2 … QueryN</tt></b>)
+gemacht werden, um die Trefferliste zusätzlich zu filtern. Die Trefferliste ist
+im Format: Nummer Repository/Paketname Version Kurzbeschreibung.
+
+<div class="p"><!----></div>
+
+<div class="listing">==&#62; Geben Sie die Nummern der zu installierenden Pakete an […]<br />
+==&#62; ----------------------------------------------------------<br />
+==&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Obiger Prompt erscheint nach Ausgabe der Treffer.
+
+<div class="p"><!----></div>
+In das folgende Eingabefeld kann nun aus der Trefferliste die Nummer des Paketes 
+(oder bei mehreren zu installierenden Paketen die jeweiligen Nummern), das
+installiert werden soll, eingegeben werden. Gibt man hier keine Nummer an,
+sondern drückt einfach nur „<i>Enter</i>“, werden keine Pakete installiert.
+
+<div class="p"><!----></div>
+Wie bei Pacman auch können Pakete mittels
+
+<div class="p"><!----></div>
+
+<div class="command">$ yaourt -S Paketname</div>
+
+<div class="p"><!----></div>
+
+
+
+
+
+
+installiert werden.
+
+<div class="p"><!----></div>
+
+<h3>Entfernen von Paketen</h3>
+
+
+Entfernt werden Pakete wie bei Pacman über
+
+<div class="p"><!----></div>
+
+<div class="command">$ yaourt -R Paketname</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Pakete aktualisieren</h3>
+
+
+Der Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ yaourt -Syua</div>
+
+<div class="p"><!----></div>
+
+
+aktualisiert alle Pakete, sowohl aus den offiziellen Repositorys
+als auch aus dem AUR.
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://wiki.archlinux.de/"><tt class="big">https://wiki.archlinux.de/</tt></a><br />
+[2] <a href="https://wiki.archlinux.de/title/Pacman"><tt class="big">https://wiki.archlinux.de/title/Pacman</tt></a><br />
+[3] <a href="https://wiki.archlinux.org/index.php/Trusted_Users"><tt class="big">https://wiki.archlinux.org/index.php/Trusted_Users</tt></a><br />
+[4] <a href="https://wiki.archlinux.org/index.php/Official_repositories"><tt class="big">https://wiki.archlinux.org/index.php/Official_repositories</tt></a><br />
+[5] <a href="https://wiki.archlinux.de/title/Arch_User_Repository"><tt class="big">https://wiki.archlinux.de/title/Arch_User_Repository</tt></a><br />
+[6] <a href="https://wiki.archlinux.org/index.php/PKGBUILD"><tt class="big">https://wiki.archlinux.org/index.php/PKGBUILD</tt></a><br />
+[7] <a href="https://wiki.archlinux.de/title/Arch_Build_System"><tt class="big">https://wiki.archlinux.de/title/Arch_Build_System</tt></a><br />
+[8] <a href="https://aur.archlinux.org/?setlang=de"><tt class="big">https://aur.archlinux.org/?setlang=de</tt></a><br />
+[9] <a href="https://wiki.archlinux.org/index.php/Pacman/Rosetta"><tt class="big">https://wiki.archlinux.org/index.php/Pacman/Rosetta</tt></a><br />
+[10] <a href="https://github.com/archlinuxfr/yaourt"><tt class="big">https://github.com/archlinuxfr/yaourt</tt></a><br />
+[11] <a href="https://wiki.archlinux.de/title/Yaourt"><tt class="big">https://wiki.archlinux.de/title/Yaourt</tt></a><br />
+[12] <a href="https://aur.archlinux.org/packages/package-query/"><tt class="big">https://aur.archlinux.org/packages/package-query/</tt></a><br />
+[13] <a href="https://aur.archlinux.org/packages/yaourt/"><tt class="big">https://aur.archlinux.org/packages/yaourt/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jakob Moser</b>
+stieg vor einem Jahr von Windows auf Linux um. Er begann mit Ubuntu 14.04, nun
+nutzt er Arch Linux unter KDE Plasma 5. Paketmanager sind seiner Meinung nach einer
+der größten Vorteile der meisten Linux-Distributionen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Pacman&amp;body=freiesMagazin 04/2016%0APacman%0AJakob Moser%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Pacman#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_rezension_datenanalyse_python" name="fm_16_04_rezension_datenanalyse_python">Rezension: Datenanalyse mit Python</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>S</b><b>eit geraumer Zeit erfreut sich Python auch in der (finanz-) technischen Welt
+einer gewissen Beliebtheit bei der Analyse von größeren Datenmengen, der
+Erstellung von  Diagrammen und der Durchführung von Berechnungen. Genau diesen
+Themen widmet sich das Buch „Datenanalyse mit
+Python“&nbsp;<a href="http://www.oreilly.de/catalog/datenanalysemitpythonger/">[1]</a>.</b>
+
+<div class="p"><!----></div>
+
+
+Hauptthemen sind dabei die Tools bzw. Python-Module, die hierfür vielfach
+eingesetzt werden: die erweiterte, interaktive Python-Shell iPython, NumPy
+für die Durchführung von Berechnungen und effiziente Haltung von Daten,
+matplotlib zum Erstellen von Diagrammen und Pandas zur Analyse von Daten.
+
+<div class="p"><!----></div>
+Autor des Buchs ist übrigens Wes McKinney, welcher auch der Hauptautor 
+und -Entwickler von Pandas ist. Gute Voraussetzungen also, dass fundiertes Wissen
+vermittelt wird.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Zu Anfang des Buchs wird in die Nutzung der interaktiven Python-Shell iPython
+eingeführt und deren Vorteile gegenüber der Standard Python-Shell aufgezeigt.
+iPython kommt übrigens auch durchgehend in allen im Buch gezeigt Beispielen
+zum Einsatz. Das folgende Kapitel stellt NumPy vor; der Schwerpunkt liegt
+dabei auf NumPy Arrays, dem zentralen Datenobjekt dieses Python-Moduls.
+
+<div class="p"><!----></div>
+Die folgenden Kapitel beschäftigen sich mit Pandas und der Datenanalyse. In
+vier Kapiteln wird schrittweise in die Möglichkeiten dieses Python-Moduls
+eingeführt. Themen sind unter anderen das Aufbereiten von Daten, Indizierung,
+Transformation, Aggregation, Laden aus externen Quellen, Erstellen von
+Statistiken und vieles mehr. Zu den Themen „Daten aus Zeitreihen“ und „Daten
+aus der Finanzwelt“ gibt es jeweils ein eigenes Kapitel, welches auf
+die Besonderheiten dieser Themen fokussiert.
+
+<div class="p"><!----></div>
+Außerdem findet man im Buch noch ein Kapitel zum Plotten und
+Visualisieren von Daten mit Hilfe von matplotlib. Ein weiteres Kapitel
+behandelt fortgeschrittene Möglichkeiten, welche NumPy zu bieten hat. Dort
+wird z.&nbsp;B. erklärt, wie man Einfluss darauf nehmen kann, wie NumPy intern die
+Daten speichert.
+
+<div class="p"><!----></div>
+Den Abschluss des Buchs bildet ein ca. 50-seitiges Tutorial, welches kurz in
+Python einführt. Der Schwerpunkt des Tutorials liegt darauf, Einsteigern die
+Python-Grundlagen zu vermitteln, die nötig sind, um NumPy und Pandas
+vernünftig nutzen zu können.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das Buch ist aus dem Englischen übersetzt und liest sich durchweg gut und
+flüssig. Allerdings wirkt die Übersetzung an einigen Stellen sehr „direkt“
+und dadurch etwas steif.
+
+<div class="p"><!----></div>
+Wo nötig hat der Autor Grafiken und Diagramme zur Visualisierung des
+Gezeigten eingefügt. Alles ist durchweg in Graustufen gedruckt, aber
+immer gut lesbar.
+
+<div class="p"><!----></div>
+
+<h3>Viele Beispiele</h3>
+
+
+Weiterhin ist es sehr gut, dass der Autor sich nur wenig mit der
+Theorie aufhält und das Wissen im Buch hauptsächlich anhand von
+Beispielen demonstriert. Diese sind durchweg kurz, gut gewählt und prägnant,
+so dass hier beim Lesen immer klar wird, was ein bestimmter Befehl bzw. eine
+Methode eines Objekts bewirkt.
+
+<div class="p"><!----></div>
+Alle Beispiele sind im Buch abgedruckt, sowohl die Eingaben als
+auch die Ausgaben. Somit lässt sich problemlos nachvollziehen, was gerade
+passiert.
+
+<div class="p"><!----></div>
+Außerdem gibt es im Buch mehrere Fallstudien, in denen großen Datenmengen mit
+Pandas analysiert werden (ein Beispiel sind geleistete Spenden im
+US-Wahlkampf 2012). Auch hier gibt der Autor die Quelle der Daten (im
+Internet) an, so dass der interessierte Leser die Daten selber herunterladen
+und die im Folgenden gezeigten Schritte und Analysen mit Hilfe von
+Pandas Schritt für Schritt nachvollziehen kann.
+
+<div class="p"><!----></div>
+
+<h2>Zielgruppe</h2>
+
+
+Primäre Zielgruppe des Buchs sind Einsteiger in das Thema Datenanalyse mit
+Hilfe von
+
+Python. Grundsätzlich eignet sich das Buch auch für
+Python-Neulinge, wenn zuerst die Einführung in Python im Anhang des Buchs
+gelesen wird – allerdings ist diese zu kurz, um Python umfassend
+zu erlernen.
+Wer schon Kenntnisse in NumPy und Pandas hat, findet in dem Buch
+wahrscheinlich auch einige neue Informationen bzw. Beispiele zur
+Datenanalyse, dies ist aber nicht der Schwerpunkt und macht einen eher
+kleinen Teil des Buchs aus.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch „Datenanalyse mit Python“ führt fundiert, umfassend und anhand
+vieler Beispiele in dieses Thema ein. Schwächen bzw. Schwachpunkte gibt es
+keine, sodass das Buch jedem Interessiertem uneingeschränkt empfohlen werden
+kann.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Datenanalyse mit Python&nbsp;<a href="http://www.oreilly.de/catalog/datenanalysemitpythonger/">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Wes McKinney </td></tr>
+<tr><td><b>Verlag</b> </td><td>O'Reilly, 2015 </td></tr>
+<tr><td><b>Umfang</b> </td><td>478 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-96009-000-7 </td></tr>
+<tr><td><b>Preis</b> </td><td>39,90 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.oreilly.de/catalog/datenanalysemitpythonger/"><tt class="big">http://www.oreilly.de/catalog/datenanalysemitpythonger/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor.net.blogspot.com/">Webseite</a>)
+programmiert bevorzugt in Python und hat mit Hilfe des Buchs in NumPy und Pandas „hineingeschnuppert“.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Datenanalyse mit Python&amp;body=freiesMagazin 04/2016%0ARezension: Datenanalyse mit Python%0AJochen Schnelle%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Rezension: Datenanalyse mit Python#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_rezension_r_dummies" name="fm_16_04_rezension_r_dummies">Rezension: R for Dummies</a></font></h1>von Jens Dörpinghaus
+
+<div class="p"><!----></div>
+    <b>D</b><b>as Buch „R for Dummies“&nbsp;<a href="http://www.wiley-vch.de/publish/en/books/ISBN978-1-119-05580-8/">[1]</a>
+von Andrie de Vries und Joris Meys ist 2015 in zweiter Auflage bei Wileys
+erschienen und hat einen Umfang von 418 Seiten. Es ist ein recht typisches Buch
+der „... for Dummies“-Reihe.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Wiley-VCH für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Es wird gleich in der Einleitung festgehalten „<em>We can't guarantee that you'll be a guru if you read this book</em>“,
+aber es gibt trotzdem eine bemerkenswerte Themenvielfalt im Buch. Rechtfertigt
+das einen Preis von knapp 30 Euro? Werfen wir also einen genaueren Blick auf den
+Inhalt.
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+Nach einer Einführung unterteilt sich das Buch in sechs Teile, den Abschluss
+macht ein gut gefüllter Index. R wird ja allgemein als Sprache zur Lösung von
+statistischen Problemen wahrgenommen. Wer hierfür eine schnelle Einführung
+erwartet, wird enttäuscht – erst ab dem 4. Teil wird dieser Aspekt behandelt. So
+ist der erste Teil eine generelle Einführung – „Getting Started with R
+Programming“ – und führt auf 41 Seiten langsam und gut lesbar in die Arbeit mit
+R ein. 
+
+<div class="p"><!----></div>
+Der zweite Teil – „Getting Down to Work in R“ – baut darauf relativ
+zügig auf und vermittelt die Grundzüge der Programmierung in R. Datentypen,
+Arithmetik, Lesen und Schreiben von Daten, Zeit- und Datumsangaben und
+(mehrdimensionale) Vektoren sind für fast 100 Seiten Thema. Dabei wird stark
+darauf geachtet, dem Leser vektorbasiertes Arbeiten schmackhaft zu machen. Zu
+Recht, kann man doch nur so die Vorteile von R vollends ausschöpfen. 
+
+<div class="p"><!----></div>
+Bis Seite 220 geht es im dritten Teil – „Coding in R“ – dann ans Eingemachte:
+Funktionen, If-Abfragen, Schleifen, Debugging und ein ganzes Kapitel zur Hilfe
+und zur Dokumentation. Umfangreich, mit Beispielen, aber auch mit wenigen
+Tiefenbohrungen präsentiert sich dieser Teil. 
+
+<div class="p"><!----></div>
+Auf über 100 Seiten kommt dann der vierte Teil – „Making the Data Talk“ – mit
+den von einigen Lesern vielleicht lang ersehnten Themen Analyse von Daten. Dabei
+geht es zunächst darum, die Daten nach R zu importieren um sie dann zu
+verarbeiten bzw. zu manipulieren. Erst dann werden Themen der deskriptiven
+Statistik behandelt. Der fünfte Abschnitt – „Working with Graphics“ – ist ganz
+dem Plotten von Grafiken gewidmet. Zunächst mir Bordmitteln, in einem
+abschließenden Abschnitt auch mit ggplot2. 
+
+<div class="p"><!----></div>
+Der letzte Teil – „The Part of Tens“ – wird wiederum nur für ein ausgewähltes Publikum
+interessant sein: „Zehn Dinge, die man in R machen kann und die man sonst in
+Excel getan hätte“ oder „Zehn Tipps für den Umgang mit Paketen“. Ein Anhang
+beschäftigt sich zudem mit der Installation von R und RStudio sowie mit dem für
+das Buch erstellten <b>rfordummies</b>-Paket. 
+
+<div class="p"><!----></div>
+
+<h2>Wie ist es geschrieben?</h2>
+
+
+Was kann man da zu einem „... for Dummies“-Buch sagen? Es ist im gewohnten,
+leicht lesbaren und manchmal etwas schnoddrigen Duktus dieser Reihe geschrieben.
+Auch auf Englisch ist es ohne große Sprachkenntnisse einfach zu verstehen. Mit
+vielen Beispielen, Infoboxen und dem übersichtlichen, wenn auch manchmal
+chaotischen Satz der Reihe ist das Wesentliche leicht zu erfassen. Die
+ersten
+Teile sind klar für Anfänger ohne Programmiererfahrung geschrieben, das Niveau
+steigt aber gegen Ende stark an. Trotzdem kann man auch als „alter Hase“ immer
+wieder interessante Anmerkungen finden. Im Vorwort vermerken die Autoren,
+dass das Werk auch als Nachschlagewerk nutzbar ist. 
+
+<div class="p"><!----></div>
+
+<h2>Für wen ist es geschrieben?</h2>
+
+
+So ist das Buch auch für Menschen, die schon mit R arbeiten, als Nachschlagewerk
+brauchbar. Für absolute Anfänger ist es nur unter der Auflage empfehlenswert,
+dass sie wirklich R als eine Programmiersprache lernen wollen – sonst ist die
+Hürde am Anfang doch zu hoch. Auch muss darauf hingewiesen werden, dass dieses
+Buch keine Statistik vermittelt. Es wird stets davon ausgegangen, dass der Leser
+weiß, wovon die Rede ist. 
+
+<div class="p"><!----></div>
+
+<h2>Fazit </h2>
+
+
+Es ist schwierig ein Fazit zu ziehen, denn die Erwartungen an ein Buch über R
+sind wohl äußerst verschieden. Möchte man einfach Statistik betreiben, ohne
+Programmierkenntnisse zu haben, könnte dieses Buch eine Empfehlung 
+sein – zumindest wenn sich der Leser wirklich in die Thematik einarbeiten möchte.
+Dann aber hat er ein gutes Buch in der Hand, dass ihm bei den ersten Schritten
+hilft und ihm später als Nachschlagewerk zur Verfügung steht.
+Statistikkenntnisse sind dafür aber eine absolute Voraussetzung! Für den schon
+erfahrenen Programmierer ist es sicher nicht von Nachteil, sich vor dem Kauf das
+Inhaltsverzeichnis anzuschauen. Es gibt durchaus auch Werke, die einen weniger
+großen Schwerpunkt auf die Einführung in die Programmiersprache legen. Sonst
+bekommt man hier für relativ kleines Geld eine gute Einführung in die
+Besonderheiten von R. 
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>R for Dummies&nbsp;<a href="http://www.wiley-vch.de/publish/en/books/ISBN978-1-119-05580-8/">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Andrie de Vries, Joris Meys </td></tr>
+<tr><td><b>Verlag</b> </td><td>Wiley, 2015 </td></tr>
+<tr><td><b>Umfang</b> </td><td>432 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1-119-05580-8 </td></tr>
+<tr><td><b>Preis</b> </td><td>31,90 € (Print), 20,99 € (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.wiley-vch.de/publish/en/books/ISBN978-1-119-05580-8/"><tt class="big">http://www.wiley-vch.de/publish/en/books/ISBN978-1-119-05580-8/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jens Dörpinghaus</b>
+ist Mathematiker und arbeitet beruflich mit verschiedenster wissenschaftlicher
+Software. 
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: R for Dummies&amp;body=freiesMagazin 04/2016%0ARezension: R for Dummies%0AJens Dörpinghaus%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Rezension: R for Dummies#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_rezension_hacks_digitale_fotografie" name="fm_16_04_rezension_hacks_digitale_fotografie">Hacks für die Digitale Fotografie</a></font></h1>von Karsten Günther
+
+<div class="p"><!----></div>
+    <b>D</b><b>as Buch „Hacks für die Digitale Fotografie“ von Peter
+Recktenwald&nbsp;<a href="http://www.oreilly.de/catalog/digfotografiehacksger/">[1]</a> 
+„führt in […] über 50 detaillierte
+Hacks zu Hochgeschwindigkeits- und Zeitrafferfotografie, Lichtschrankenbau,
+Schall- und Lichtsensoren, Tropfenfotografie, Motorensteuerung und
+Kamerafernsteuerung […]“ ein. Dabei wendet sich der Autor an den
+ambitionierten Fotoamateur, der für kleines Geld professionelle Lösungen selbst
+bauen möchte. Das klingt interessant.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem O’Reilly-Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das gut 370 Seiten umfassende Buch gliedert sich in
+sechs Kapitel, die jeweils mehrere „Hacks“ als eigenständige
+Themen behandeln.
+
+<div class="p"><!----></div>
+Wie bei Hardware-bezogenen Büchern heute üblich, beginnt der Autor mit
+„Elektronik für Dummies“, den „Grundlagen der C/C++-Programmierung“ und den
+„Ersten Schritten mit dem Arduino“. Auf Seite 51 beginnt dann der Autor mit dem
+Bau des „Arduino Belichtungsmessers“.
+
+<div class="p"><!----></div>
+In Kapitel 2 beginnt auf Seite 89 mit „Nützliche Tools“ eine Sammlung ganz
+unterschiedlicher Hacks, die nur zum Teil etwas mit Elektronik – wohl aber der
+Fotografie – zu tun haben, beispielsweise einem „Fotoaufnahmetisch“ (das ist
+eine Lichtbox) und einem verschiebbaren Stativträger („Fotoslider“), gefolgt
+von einem Hack zu „Werkzeugen und Verbrauchsmaterialien“. Los geht es
+allerdings mit einer „Einführung in Fritzing“ (eine Freie Software zum
+Entwerfen elektronischer Schaltungen)&nbsp;<a href="http://fritzing.org">[2]</a> und einem
+mit „Windows-Tools für den Raspberry Pi“ überschriebenen Hack.
+
+<div class="p"><!----></div>
+Kapitel 3 widmet sich dann dem zentralen Projekt dieses Buches, dem Bau eines
+„Foto-Controllers“. Gemeint ist ein Arduino-basiertes Steuergerät, mit dem sich
+Kameras automatisch oder fern auslösen, Blitze steuern und Sensoren auswerten
+lassen. Die Hacks in diesem Kapitel sind sehr ausführlich, weisen auch auf
+viele, leider immer wieder auftretenden Probleme bei der Hardwarebeschaffung
+hin und versuchen Abhilfen oder Alternativen aufzuzeigen.
+
+<div class="p"><!----></div>
+
+<h2>Kritik und Fazit</h2>
+
+
+Leider ist das Zielpublikum des Buches nicht klar. Aufgrund der 
+umfangreichen Einführungen könnte man erwarten, dass es sich um ein reines
+Anfängerbuch handelt. Dafür sind die Themen aber zu speziell und die Projekte zu
+komplex.
+
+<div class="p"><!----></div>
+Ob die Hacks allerdings ambitionierten (Hobby-)Fotografen wirklich
+einen Nutzen bringen, ist unklar. Denn der Aufwand ist doch erheblich, bis
+beispielsweise der Foto-Controller fertig, und damit nutzbar, ist. Auch ist die
+Kombination von Arduino und Raspberry Pi aus technischer Sicht nachvollziehbar,
+für den Anwender – der sich in zwei ganz unterschiedliche Technologien
+einarbeiten muss – aber bedauerlich.
+
+<div class="p"><!----></div>
+<b>Fazit:</b> Ob die knapp 35 Euro in dieses Buch gut investiert sind, sollte
+sich der Leser gut überlegen und mindestens das Inhaltsverzeichnis vor
+dem Kauf genau studieren.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Hacks für die Digitale Fotografie&nbsp;<a href="http://www.oreilly.de/catalog/digfotografiehacksger/">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Peter Reckenwaldt </td></tr>
+<tr><td><b>Verlag</b> </td><td>O’Reilly, 1. Auflage 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>384 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-95561-644-1 </td></tr>
+<tr><td><b>Preis</b> </td><td>34,90 € (Print), 28,80 € (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.oreilly.de/catalog/digfotografiehacksger/"><tt class="big">http://www.oreilly.de/catalog/digfotografiehacksger/</tt></a><br />
+[2] <a href="http://fritzing.org"><tt class="big">http://fritzing.org</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Karsten Günther</b>
+fotografiert seit vielen Jahren und hat sich lange Zeit mit elektronischen
+Schaltungen beschäftigt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Hacks f%C3%BCr die Digitale Fotografie&amp;body=freiesMagazin 04/2016%0AHacks f%C3%BCr die Digitale Fotografie%0AKarsten Günther%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Hacks f%C3%BCr die Digitale Fotografie#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_leserbriefe" name="fm_16_04_leserbriefe">Leserbriefe</a></font></h1>
+
+
+    <b>Für Leserbriefe steht unsere E-Mailadresse
+        <img src="freiesMagazin-2016-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+        Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+    An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+    uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+    sehr viel Lob (was uns natürlich freut), aber vor allem durch
+    Kritik und neue Ideen können wir uns verbessern.
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> auf dem Linux Presentation Day</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Mein Name ist Peter Scholz und ich bin einer der Helfer beim LPD 
+2016 in Leipzig. Wärt Ihr damit einverstanden, dass man euer Magazin 
+auf dem LPD vorstellt und vielleicht auch digital oder gedruckt 
+verteilt? Da ich mich mit den rechtlichen Gegebenheiten nicht 
+auskenne, weiß ich auch noch nicht, was dabei ggf. beachtet werden 
+müsste. Und sofern das machbar wäre. Habt ihr vielleicht auch 
+digitale Vorlagen für Informationsblätter oder Plakate, die zur 
+Präsentation eures Magazins verwendet werden könnten?
+        &nbsp;<br /><b>Peter Scholz</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Zu ersten beiden Fragen lautet die Antwort: „Ja, 
+selbstverständlich.“ Wir leben von den Lesern und freuen uns, wenn 
+andere das Magazin weiter publik machen.
+Beachten muss man nur, dass das Impressum immer mit verteilt wird, 
+weil dort die Lizenzinformationen stehen. Auf jeder Seite steht zwar 
+auch extra die CC-Lizenz drauf, aber das Impressum erklärt das noch 
+einmal etwas ausführlicher.
+
+<div class="p"><!----></div>
+Mit Werbematerial können wir leider nicht dienen, da wir bisher noch 
+nie in der Art Werbung für das Magazin gemacht haben. Auf unserer 
+Webseite steht unser Logo zum Download zur
+Verfügung&nbsp;<a href="http://www.freiesmagazin.de/extras">[1]</a>. Dort steht auch,
+wie man das Logo verwenden kann.
+        &nbsp;<br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>openSUSE 42.1</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ich möchte anregen, sich eine Meinung durch eigene Tests zu bilden. Es 
+besteht die Möglichkeit, dass einzelne Erfahrungen zur generellen 
+Produktqualität stilisiert werden. Im konkreten Fall habe ich den direkten 
+Vergleich von openSuSe 13.1, 13.2 und 42.1 in virtuellen Maschinen 
+durchgespielt, nachdem ich vor längerer Zeit mal 13.1 als Zweitsystem auf 
+echter Hardware hatte.
+
+<div class="p"><!----></div>
+Fazit: Es gibt keine allumfassende Wahrheit. Ich habe 13.1 von der Hardware 
+verbannt, weil einige Sachen nicht liefen, weil die Verzeichnisstruktur bei 
+SuSe anders ist und manche Verwaltungstools ins Leere greifen. Der 
+FTP-Server z.&nbsp;B. war nicht mit Webmin zu administrieren, nur per Terminal.
+
+<div class="p"><!----></div>
+Derzeit habe ich 13.2 und 42.1 in virtuellen Maschinen und gucke mehrmals im 
+Monat nach Updates. Nach dem Update hatte 13.2 plötzlich keine 
+Netzwerkverbindung mehr und 42.1 lief wie gewohnt (besser).
+
+<div class="p"><!----></div>
+Man darf auch nicht vergessen, dass der Autor des Beitrages nur mal schnell 
+eine Testinstallation gemacht hat und sich nicht um Details kümmern konnte. 
+Ich will damit sagen, dass man sich kein allumfassende Meinung nur durch 
+Lesen bilden kann und manches selbst ausprobieren muss. Jeder Anwender hat 
+andere Hardware und der Kernel oder das System allgemein ändert die 
+Verfügbarkeit von Treibern. Schon deshalb hat jeder Nutzer seine eigene 
+kleine Wahrheit und wird andere Sachen berichten können.
+
+<div class="p"><!----></div>
+Ob eine Distribution für einen selbst geeignet ist, muss jeder selbst 
+entscheiden. Kriterien zur Auswahl eines brauchbaren Systems sollte nicht 
+das Bling-Bling oder der Super-Welcome-Sound sein. Ich gucke hier nach der 
+Verbreitung auf dem Markt, ob der Community-Support umfangreich ist und ob 
+die Update-Server immer verfügbar sind. Weiterhin, ob die Security-Pachtes 
+schnell genug kommen und mit der Technik unter der Haube dem Mainstream 
+gefolgt wird. Meine (!) Wahrheit an dieser Stelle lautet also RedHat, 
+Ubuntu, Debian und openSuSe, jeweils mit deren Derivaten, solange sie vom 
+richtigen Update-Mirror versorgt werden. Hände weg von kleinen 
+Bastel-Distributionen, solange man zum Rest der Welt kompatibel sein muss.<br />
+        &nbsp;<br /><b>Olaf G.</b> &nbsp;(<a href="http://www.freiesmagazin.de/20160103-januarausgabe-erschienen#comment-3659">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Artikelübersicht auf der Webseite</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Wäre es eventuell für Euch möglich, eine automatische Unterseite zu 
+erstellen, in der die Titel der Anleitungen und Kurztipps, verlinkt 
+mit der jeweiligen Download-Seite, aufgelistet sind? Das wäre für 
+Eure SEO gut und ich hätte die Möglichkeit, alle alten und die 
+kommenden Artikel automatisiert in die Datenbank von
+user-archiv.de&nbsp;<a href="http://user-archiv.de/">[2]</a> aufzunehmen.
+Beispiel:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> dCore</li>
+<li> Einführung in Typo3</li>
+<li> Review: Steam Controller</li>
+</ul>
+
+<div class="p"><!----></div>
+jeweils verlinkt mit der Download-Übersichtsseite für Ausgabe 02/2016,
+also <a href="http://www.freiesmagazin.de/freiesMagazin-2016-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2016-02</tt></a>.
+
+<div class="p"><!----></div>
+Das vorhandene Archiv ist dafür nicht geeignet, weil nur die 
+Ausgaben-Nummer als Linktext erscheint. Ich wollte eigentlich die 
+bisherigen Anleitungen archivieren, aber es uns/mir zuviel Arbeit, 
+Aufsatzthemen und Links zu kombinieren.
+        &nbsp;<br /><b>Peter Burkes</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Eine Übersicht aller Artikel mit verlinkten Ausgaben gibt es in der
+Jahresübersicht&nbsp;<a href="http://www.freiesmagazin.de/ftp/2015/freiesMagazin-2015-Index.pdf">[3]</a>.
+Diese liegt aber nur als PDF vor und verlinkt auch nicht den
+Artikelnamen, sondern der Link ist bei der Ausgabenummer. 
+
+<div class="p"><!----></div>
+Ansonsten haben wir für die Gesamtübersicht eine (bisher noch
+undokumentierte) XML-Schnittstelle:
+<a href="http://www.freiesmagazin.de/freiesmagazin.xml"><tt class="big">http://www.freiesmagazin.de/freiesmagazin.xml</tt></a>.
+Wenn man die XML-Daten einliest, hat man alle Artikel seit
+Oktober 2009 zusammen. Bei jeder Ausgabe ist dann auch der Link
+zur Übersichtsseite zu finden.
+
+<div class="p"><!----></div>
+Wir erstellen die XML-Daten zwar seit 2009, aber wussten nie genau,
+was wir damit anfangen können. Die Idee war, dass ggf. jemand ein
+Tool dafür schreibt, welches die Daten ausliest und in einer Art
+Suchmaske anzeigt und zum Beispiel direkt einen Artikel zum Download
+anbietet. Vielleicht findet sich ja ein Leser dafür …
+        &nbsp;<br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Editorial <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 03/2016</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Das letzte Editorial klang ein wenig wehmütig. Ich möchte deshalb 
+mal einige Gedanken loswerden.
+
+<div class="p"><!----></div>
+Seit etwa zwei Jahren bin ich Leser des Magazins und lese auch die 
+Kommentare, bei denen ich mich auch öfter mal verewigt habe. 
+Aufgefallen ist mir die Bandbreite an Leserschaft. Das führt dazu, 
+dass ich über manche Sachen schmunzeln muss und andererseits in den 
+Artikeln mit Sachen konfontriert werden, die scheinbar für Profis 
+gemacht sind. Manche Sachen lese ich vollständig, während ich auch 
+mal Monatsausgaben fast ganz ausgelassen habe. Zusammengefasst, die 
+Bandbreite ist zu groß und nicht strukturiert. Ich hatte öfter mal 
+im Kommentar meine Tipps hinterlassen und versuchte 
+Richtigstellungen zu aus meiner Sicht grob schrägen Ansichten. Klar 
+gibt es verschiedene Ansichten und man sollte sachlich bleiben und 
+auch beim Thema. So vermisse ich eine Rubrik oder Unterseite zu 
+einfachen Problemlösungen des Alltags. Es müssen keine langen 
+Fachartikel sein, aber es gibt auch schnelle unkonventionelle 
+Lösungen, die man in „Quick-Tipps“ verpacken könnte. Dazu würde ich 
+strukturierte Linküberschriften nach Thema geordnet favorisieren und 
+auch unbedingt eine flache Hierarchie mit sehr vielen Links pro 
+Seite und ohne Bilder-Firlefanz. Vor 15 Jahren gab es solche 
+„Linkfarmen“ noch im Internet und sie waren praktisch.
+
+<div class="p"><!----></div>
+Natürlich ist mir klar, dass das auch Verwaltungsaufwand erfordert 
+und genau hier liegt der Hase im Pfeffer. Hier kann man Kommentare 
+schreiben, für die ein Formular existiert und der Text kommt an 
+passender Stelle an. Also warum nicht auch für diese „Quick-Tipps“ 
+sowas erstellen, wo der Editor gleich seinen Text eingibt? Korrektur 
+und Freigabe kann ja weiterhin von der Redaktion erledigt werden.
+Zumindest ich halte nichts von LaTeX. Ein Kollege hat damit 
+seine Studienarbeit geschrieben und ich werde mir LaTeX niemals 
+antun! Versprochen.
+
+<div class="p"><!----></div>
+Zur Bandbreite: ich finde es schön, dass man ohne viel Klickarbeit 
+durch das ganze Magazin kommt. Trotzdem finde ich eine 
+Themenstruktur wie bei den großen Portalen angebracht. Prosa sollte 
+vom Programmierkram getrennt werden. Ein zweispaltiges Design wäre 
+an manchen Stellen wünschenswert. Brauche ich den 
+Eröffnungsscreenshot für eine Installation als Bild in voller 
+Breite? Nein. Brauche ich überhaupt für jedes Derivat einer 
+Distribution eine Basis-Installationsanleitung? Nein. Andere Medien 
+beschreiben mehr das Feeling, die Freude an manchen kleinen Tools, 
+die das Erlebnis steigern. Nun mache ich ja sein etwa zwei Jahren 
+eine Recherche zur Marktübersicht gängiger funktionierender 
+Distributionen. Aber außer Red Hat, Debian/Ubuntu und zwei 
+BSD-Derivate gibt es nichts, was man uneingeschränkt empfehlen 
+könnte. Dabei achte ich auf Austauschbarkeit von Informationen, 
+Sicherheit, Spiegel-Stabilität und allgemein die Professionalität 
+der Veröffentlichungen. Einen letzten Kommentar hatte ich zu 
+OpenSuSe hinterlassen (Anm. der Redaktion: siehe oben).
+Jetzt muss ich selber suchen, wo das war. 
+Findet man nicht mehr. Wie kann denn ein Leser mit dem Wunsch eine 
+Info wieder zu finden einfach nochmal nachsehen? Geht nicht so 
+einfach.
+
+<div class="p"><!----></div>
+Mir geht es nicht um die Erstellung eines Forums mit allen sozialen 
+Problemen drumrum, nein. Infos sammeln, einsortieren, eine 
+Wissendatenbank/Nachschlagewerk bauen und so Traffic zur Webseite 
+generieren. Dabei nicht die großen kopieren, sondern die gewählte 
+Nische ausfüllen. Die Optik muss Interesse wecken. Zu viele 
+Unterebenen in der Menüstruktur sind der Tod für jede Seite. Als 
+mehrfacher Besucher möchte ich die Struktur der Seite verinnerlicht 
+haben. Nur dann fühle ich mich da zuhause. Als Vergleich: Zu 
+komplizierte Elektronik-Shops besuche ich nicht mehr. Ich kaufe 
+woanders. Ein Beispiel für eine übersichtliche Link-Struktur
+ist How2Power.com&nbsp;<a href="http://www.how2power.com/search/index.php">[4]</a>.
+
+<div class="p"><!----></div>
+Ich habe nicht vergessen, dass alles Ihre Freizeit ist und 
+freiwillig. Ich glaube, nichts erwähnt zu haben, was nicht Sie im 
+Team nicht in kurzer Zeit umsetzen könnten, falls die Vorschläge 
+Anklang finden.
+
+<div class="p"><!----></div>
+Falls das Magazin weiter besteht möchte ich gern hier und da mal 
+eine Tipp besteuern. Als großer Texteschreiber sehe ich mich aber 
+nicht, da die diplomatische Ausdrucksweise nicht mein Steckenpferd 
+ist. 
+        &nbsp;<br /><b>Olaf G.</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Vielen Dank für den ausführlichen Leserbrief.
+
+<div class="p"><!----></div>
+Die Vielfalt des Magazins sehen wir als allgemeine Stärke. So 
+sprechen wir sowohl Linux-Einsteiger als auch Profis damit an. 
+<div class="p"><!----></div>
+Eine Linkliste wiederum gäbe keinen guten Inhalt für ein Magazin ab. 
+Als Blogeintrag oder Teil eines Wikis ist dies sicherlich eine gute 
+Idee, als „Artikel“ in einem Magazin läse sich das sehr seltsam. 
+
+<div class="p"><!----></div>
+Zusätzlich muss man als Autor für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> kein LaTeX können. Ganz 
+im Gegenteil steht in den Autorenrichtlinien, dass wir gerade keine 
+LaTeX-Dateien erwarten, da diese bei der Korrektur mehr Arbeit 
+machen. Reintext ist völlig okay und dann geht dies auch über unser 
+Kontaktformular, falls jemand seinen Text darin schreiben möchte.
+
+<div class="p"><!----></div>
+Bezüglich der Bilder: Diese sind in der Regel reine Zierde und 
+dienen nur zur Abwechslung des Auges, da der Durchschnittsleser 
+riesige Textblöcke schwerer verarbeiten kann. Aus dem Grund gibt es 
+auch eine HTML- und EPUB-Ausgabe ohne Bilder (was auch etwas mit 
+Barrierefreiheit zu tun hat).
+
+<div class="p"><!----></div>
+Eine bessere Suche für Inhalte in den Ausgaben oder der Webseite
+wünschen wir uns auch. Die oben erwähnten XML-Daten wären eine
+Möglichkeit, eine ähnliche Strukturierung und Übersicht wie bei
+How2Power.com zu erhalten. Aber in unserem Team haben wir weder
+die Zeit noch die Kompetenz diese Daten zu verarbeiten oder
+darzustellen. Wenn sich da nicht jemand findet, der hieraus
+etwas Sinnvolles erstellen kann, muss man vorerst mit der normalen
+Webseiten-Suche auskommen, um Inhalte zu finden.
+        &nbsp;<br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.freiesmagazin.de/extras"><tt class="big">http://www.freiesmagazin.de/extras</tt></a><br />
+[2] <a href="http://user-archiv.de/"><tt class="big">http://user-archiv.de/</tt></a><br />
+[3] <a href="http://www.freiesmagazin.de/ftp/2015/freiesMagazin-2015-Index.pdf"><tt class="big">http://www.freiesmagazin.de/ftp/2015/freiesMagazin-2015-Index.pdf</tt></a><br />
+[4] <a href="http://www.how2power.com/search/index.php"><tt class="big">http://www.how2power.com/search/index.php</tt></a><br />
+
+
+<div class="p"><!----></div>
+    Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+    kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Leserbriefe&amp;body=freiesMagazin 04/2016%0ALeserbriefe%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/465?edit[subject]=Leserbriefe#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_veranstaltungen" name="fm_16_04_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+         
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+Augsburger Linux-Infotag </td><td>Augsburg </td><td align="left">16.04.2016 </td><td>frei </td><td align="left"><a href="http://www.luga.de/"><tt class="big">http://www.luga.de/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Wien </td><td>Wien </td><td align="left">28.04.–30.04.2016 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">MiniDebConf Vienna </td><td>Wien </td><td align="left">28.04.–01.05.2016 </td><td>frei </td><td align="left"><a href="http://debienna.at/minidebconf_vie2016/"><tt class="big">http://debienna.at/minidebconf_vie2016/</tt></a> </td></tr>
+<tr><td align="left">Grazer Linuxtage </td><td>Graz </td><td align="left">29.04.–30.04.2016 </td><td>frei </td><td align="left"><a href="http://www.linuxtage.at/"><tt class="big">http://www.linuxtage.at/</tt></a> </td></tr>
+<tr><td align="left">Linux Presentation Day </td><td>Linux Community </td><td align="left">30.04.2016 </td><td>frei </td><td align="left"><a href="http://www.linux-presentation-day.de/"><tt class="big">http://www.linux-presentation-day.de/</tt></a> </td></tr>
+<tr><td align="left">VCF Europa </td><td>München </td><td align="left">30.04.–01.05.2016 </td><td>– </td><td align="left"><a href="http://www.vcfe.org/"><tt class="big">http://www.vcfe.org/</tt></a> </td></tr>
+<tr><td align="left">LUG-Camp </td><td>Bruchsal </td><td align="left">05.05.–08.05.2016 </td><td>75 EUR </td><td align="left"><a href="https://lugcamp.lugbruchsal.de/"><tt class="big">https://lugcamp.lugbruchsal.de/</tt></a> </td></tr>
+<tr><td align="left">UnFUCK </td><td>Furtwangen </td><td align="left">05.05.–08.05.2016 </td><td>frei </td><td align="left"><a href="http://www.unfuck.eu/"><tt class="big">http://www.unfuck.eu/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Eisenstadt </td><td>Eisenstadt </td><td align="left">20.05.–21.05.2016 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">GPN16 </td><td>Karlsruhe </td><td align="left">26.05.–29.05.2016 </td><td>– </td><td align="left"><a href="http://gulas.ch/"><tt class="big">http://gulas.ch/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2016-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_vorschau" name="fm_16_04_vorschau">Vorschau</a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint am ersten Sonntag eines Monats. Die Mai-Ausgabe
+    wird voraussichtlich am 1. Mai u.&nbsp;a. mit folgenden Themen veröffentlicht:
+    
+<ul>
+<li> Inkscape für Einsteiger – Teil 2
+    </li>
+</ul>
+    Es kann leider vorkommen, dass wir aus internen Gründen angekündigte
+    Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_konventionen" name="fm_16_04_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                         hier auch einfach in einer normalen Shell ein
+                         <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                        <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+        <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_16_04_impressum" name="fm_16_04_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 3. April 2016<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2016-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Jens Dörpinghaus </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_rezension_r_dummies">Rezension: R for Dummies</a> </td></tr>
+<tr><td align="left">Karsten Günther </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_rezension_hacks_digitale_fotografie">Hacks für die Digitale Fotografie</a> </td></tr>
+<tr><td align="left">Maren Hachmann </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_inkscape_teil1">Inkscape für Einsteiger – Teil I: Grundlagen</a> </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_kernel">Der März im Kernelrückblick</a> </td></tr>
+<tr><td align="left">Jakob Moser </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_pacman">Pacman – Der Paketmanager von Arch Linux</a> </td></tr>
+<tr><td align="left">Clemens Radermacher </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_emacs">Emacs – Moderne Antike</a> </td></tr>
+<tr><td align="left">Holger Reibold </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_virtualbox">VirtualBox 5.0 – Der Einstieg</a> </td></tr>
+<tr><td align="left">Rolf Schmidt </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_kvm">Domainserver für kleines Geld und große Ansprüche</a> </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2016-04-bilder.html#fm_16_04_rezension_datenanalyse_python">Rezension: Datenanalyse mit Python</a> </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Kai Welke </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Satz und Layout</b></td></tr>
+<tr><td align="left">Benedict Leskovar </td><td align="left">Thomas Schwemm </td></tr>
+<tr><td align="left">Kai Welke </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+    </td></tr></table>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. 
+    Die Kommentar- und Empfehlen-Icons wurden von Maren Hachmann erstellt
+    und unterliegen ebenfalls der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>.
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2016-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  2 Apr 2016, 23:01.</small>
+</div>
+</body></html>

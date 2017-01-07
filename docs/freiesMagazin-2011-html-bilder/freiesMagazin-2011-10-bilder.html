@@ -1,0 +1,3646 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+           "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<meta name="description" content="Die Nachteile der Paketabhängigkeiten | Der September im Kernelrückblick | PHP-Programmierung – Teil 1: HTML | Remote-Actors in Scala | Python – Teil 9: Ab ins Netz! | Aptana Studio – Eine leistungsfähige Web-Entwicklungsumgebung | Rezension: Einführung in die Android-Entwicklung | Rezension: VirtualBox – Installation, Anwendung, Praxis | Editorial | Vierter Programmierwettbewerb | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89">
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                                                
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><title>freiesMagazin 10/2011</title><link type="text/css" rel="stylesheet" href="freiesMagazin-2011-10-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx"><body style="font: 0.85em Tahoma, sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2011-10.html">Zur Version ohne Bilder</a></font><hr />
+
+<div class="p"><!----></div>
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font></font>&nbsp;&nbsp;<font color="#595959"><font size="+4"><b>Oktober 2011</b></font></font> <font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+<font color="#595959"><font size="+3"><b>Topthemen dieser Ausgabe</b></font></font><br />
+
+<div class="p"><!----></div>
+        <font size="+1"><a href="freiesMagazin-2011-10-bilder.html#11_10_python9">Python – Teil 9: Ab ins Netz!</a></font> <br />
+    Nachdem im letzten Teil dieser Reihe Generator-Funktionen ebenso wie List Comprehensions und Generator Expressions vorgestellt wurden, soll es in diesen Teil wieder etwas praktischer werden. Es werden die urllib-Bibliotheken von Python vorgestellt und ein entsprechendes Beispiel besprochen. (<a href="freiesMagazin-2011-10-bilder.html#11_10_python9">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2011-10-bilder.html#11_10_aptana">Aptana Studio – Eine leistungsfähige Web-Entwicklungsumgebung</a></font> <br />
+    Jeder der sich im Laufe der Zeit mit Webentwicklung ernsthafter beschäftigt, kommt einmal an den Punkt, bei dem man sich überlegt professionellere Entwicklungswerkzeuge einzusetzen, die einem die Arbeit erleichtern. Ein sehr mächtiges Programm für die Webentwicklung stellt Aptana Studio bereit, welches zum Teil als echte freie Alternative zu Adobe Dreamweaver gesehen werden kann. (<a href="freiesMagazin-2011-10-bilder.html#11_10_aptana">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+        <font size="+1"><a href="freiesMagazin-2011-10-bilder.html#11_10_wettbewerb4">Vierter <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb</a></font> <br />
+    Am Anfang waren es bunte Glitzersteinchen, danach blecherne Roboter, im dritten Wettbewerb musste man vor Zombies flüchten und diesmal geht es um den schnöden Mammon, den ein schwerreicher Multimillionär unter die Leute bringen will. (<a href="freiesMagazin-2011-10-bilder.html#11_10_wettbewerb4">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                  
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a name="index">Inhalt</a><a name="index">
+</a></font></h1>
+
+<br />
+<b>Linux allgemein</b><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_paketabhaengigkeiten">Die Nachteile der Paketabhängigkeiten</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_kernel">Der September im Kernelrückblick</a><br />
+<br />
+<b>Anleitungen</b><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_php1">PHP-Programmierung – Teil 1: HTML</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_remoteactors">Remote-Actors in Scala</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_python9">Python – Teil 9: Ab ins Netz!</a><br />
+<br />
+<b>Software</b><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_aptana">Aptana Studio – Eine leistungsfähige Web-Entwicklungsumgebung</a><br />
+<br />
+<b>Community</b><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_android">Rezension: Einführung in die Android-Entwicklung</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_virtualbox-rezension">Rezension: VirtualBox – Installation, Anwendung, Praxis</a><br />
+<br />
+<b>Magazin</b><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_editorial">Editorial</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_wettbewerb4">Vierter Programmierwettbewerb</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_leserbriefe">Leserbriefe</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_veranstaltungen">Veranstaltungen</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_vorschau">Vorschau</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_konventionen">Konventionen</a><br />
+<a href="freiesMagazin-2011-10-bilder.html#11_10_impressum">Impressum</a><br />
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_editorial">Editorial</a><a name="11_10_editorial">
+</a></font></h1>
+    
+
+<div class="p"><!----></div>
+
+<h2>Programmierwettbewerb, die Vierte</h2>
+
+<div class="p"><!----></div>
+Nach einem Jahr ist es wieder einmal so weit: Ein neuer
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb startet&nbsp;<a href="http://www.freiesmagazin.de/20111001-vierter-freiesmagazin-programmierwettbewerb-gestartet">[1]</a>.
+Wir haben uns die Kritik des letzten Wettbewerbs zu Herzen genommen 
+und sowohl die Aufgabe als auch die Kommunikation mit dem Server 
+vereinfacht, sodass nun vermutlich jeder Programmierwillige 
+teilnehmen kann.
+
+<div class="p"><!----></div>
+Kurz zusammengefasst geht es darum, über mehrere Runden hinweg mit 
+einem abwechselnden Angebot von Punkten das bestmögliche Ergebnis 
+für sich selbst zu erzielen. Dummerweise hat der Gegner auch immer 
+ein Mitspracherecht, ob die Punkte so aufgeteilt werden, wie man es 
+selbst vorschlägt. Und wenn es schlimm kommt, gehen alle leer aus.
+
+<div class="p"><!----></div>
+Die Umsetzung ist sicherlich einfach, eine gute Taktik zu entwerfen 
+erfordert aber etwas Gehirnschmalz. Wir hoffen, mit der Aufgabe 
+zahlreiche Teilnehmer zu gewinnen. 
+
+<div class="p"><!----></div>
+Der Wettbewerb läuft vom <b>1.&nbsp;Oktober 2011</b> bis zum
+<b>30.&nbsp;November 2011</b> und zu gewinnen gibt es für die drei 
+besten Teilnehmer wieder Gutscheine von Amazon. Die genauen Details
+zur Aufgabe und zur Teilnahme kann man im <a href="freiesMagazin-2011-10-bilder.html#11_10_wettbewerb4">Artikel zum Wettbewerb</a> nachlesen.
+
+<div class="p"><!----></div>
+
+<h2>Mehr als vier Leute bei der Umfrage</h2>
+
+<div class="p"><!----></div>
+Immer mal wieder erreicht uns von unseren Lesern die Bitte, Artikel 
+aus <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> einzeln abrufbar bereitzustellen. Um das Interesse der 
+Leser besser einschätzen zu können, lief daher eine dreiwöchige 
+Umfrage auf unserer Webseite mit reger Beteiligung&nbsp;<a href="http://www.freiesmagazin.de/20110828-sollen-artikel-einzeln-abrufbar-sein">[2]</a>.
+
+<div class="p"><!----></div>
+Das Ergebnis ist hierbei recht eindeutig: Fast die Hälfte (47&nbsp;%, 
+256 Stimmen) der Leser ist mit der aktuellen Komplettausgabe in 
+HTML- bzw. PDF-Format zufrieden. Dagegen stehen 16&nbsp;% (88 
+Stimmen), die sich einzelne PDF-Artikel wünschen. Fast gleichauf 
+mit 15&nbsp;% (85 Stimmen) sind die Vertreter, die lieber 
+HTML-Einzelartikel haben wollen. Die Gruppe, die beide Angebote 
+zusammen favorisiert, macht noch einmal 10&nbsp;% (57 Stimmen) aus. Der 
+Ersatz der HTML-Komplettversion durch eines der beiden Angebote 
+konnte aber nur wenige Teilnehmer begeistern (11&nbsp;%, 63 Stimmen). 
+
+<div class="p"><!----></div>
+Die Umfrage sollte uns zunächst einmal zeigen, wie groß das 
+Interesse der Leser an Einzelartikeln ist, denn die Erstellung von 
+Einzelartikeln als PDF- oder als HTML-Version kostet auch einiges 
+an Arbeit, wie sogar ein Leser bemerkte: „<em>Für ein kostenloses 
+Magazin finde ich den Arbeitswand für die Aufbereitung und 
+Bereitstellung von Einzelartikeln zu hoch.</em>“ Zusätzlich ist die 
+eigene Erstellung von separaten PDF-Artikeln unter Linux dank der 
+eingebauten PDF-Druckfunktion bei den meisten PDF-Betrachtern kein 
+Problem und von jedem Interessenten ohne Weiteres selbst 
+durchzuführen.
+
+<div class="p"><!----></div>
+Im Zuge der Umfrage wurde uns auch mitgeteilt, dass die Bezeichnung 
+„Mobilversion“ für die
+
+    
+HTML-Ausgabe nicht mehr passend ist, da sich 
+einige Leser darunter eher eine Online-Variante oder ePub-Version 
+vorstellen. Aus dem Grund haben wir die Bezeichnung „Mobilversion“ 
+fallengelassen und werden in Zukunft nur „HTML-Version“ schreiben, 
+sodass jeder weiß, was ihn hinter dem jeweiligen Link erwartet.
+
+<div class="p"><!----></div>
+
+<h2>Aus Drei mach Vier</h2>
+
+<div class="p"><!----></div>
+In der Septemberausgabe von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-09">[3]</a>
+konnte man bereits lesen, dass wir das Team massiv verstärkt haben. 
+Um diese Massen an Mitarbeitern auch unter Kontrolle halten zu 
+können, musste sich aber auch in der Redaktion etwas verändern.
+
+<div class="p"><!----></div>
+Frank Brungräber, der seit knapp einem Jahr die Redaktion 
+verstärkte, muss etwas kürzer treten und wird fortan „nur“ noch als 
+Korrektor für uns tätig sein. Die entstehenden Lücke wird durch 
+Matthias Sitte gefüllt, der aus den Reihen der Setzer und Layouter 
+ins Redaktionsteam aufgestiegen ist. Damit aber nicht genug, auch 
+ein alter Bekannter schaut wieder vorbei: Dominik Honnef, früher 
+bereits Redakteur bei <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>, nimmt seinen alten Posten wieder auf, 
+sodass die Redaktion nun mit vier Leuten wie geschmiert arbeiten 
+kann.
+
+<div class="p"><!----></div>
+Wir danken Frank für seine bisherige Unterstützung in der Redaktion und die beiden alteingessenen 
+Redakteure wünschen den beiden „Neuen“ viel Spaß bei ihren 
+neuen Aufgaben.
+
+<div class="p"><!----></div>
+
+<h2>Captcha: Zwei und Zwei ist Vier</h2>
+
+<div class="p"><!----></div>
+Auch <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ist nicht vor Spam gefeit. Sie, die Leser, werden davon 
+wenig mitbekommen, da Kommentare von uns moderiert werden, aber uns 
+erreichen dafür umso mehr E-Mails aufgrund von Kommentaren mit 
+zweifelhaften Werbeangeboten.
+
+<div class="p"><!----></div>
+Damit wir nicht einen Großteil unserer Zeit damit verbringen, solche 
+Kommentare zu löschen, blenden wir seit etwa drei Wochen einen 
+einfachen Captcha&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/CAPTCHA">[4]</a>
+ein, welcher korrekt beantwortet werden muss, damit uns Ihre 
+Kommentare erreichen.
+
+<div class="p"><!----></div>
+Natürlich denken wir hier an die Barrierefreiheit, weswegen der 
+Captcha aus einer einfachen Rechenaufgabe besteht und nicht etwa 
+aus einem schwer erkennbaren Brei aus Buchstaben, den es abzutippen 
+gäbe.
+
+<div class="p"><!----></div>
+Wir hoffen, dass diese kleine Hürde, Kommentare abzugeben, Ihre 
+Schreibfreude nicht hemmt, sodass uns und vor allem die Autoren 
+auch in Zukunft weiterhin zahlreiche Hinweise und Vorschläge 
+erreichen.
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/20111001-vierter-freiesmagazin-programmierwettbewerb-gestartet"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/20111001-vierter-freiesmagazin-programmierwettbewerb-gestartet</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.freiesmagazin.de/20110828-sollen-artikel-einzeln-abrufbar-sein"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/20110828-sollen-artikel-einzeln-abrufbar-sein</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.freiesmagazin.de/freiesMagazin-2011-09"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2011-09</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/CAPTCHA"><tt style="font-size: 1.3em;">https://secure.wikimedia.org/wikipedia/de/wiki/CAPTCHA</tt></a><br />
+
+<div class="p"><!----></div>
+                        <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_paketabhaengigkeiten">Die Nachteile der Paketabhängigkeiten</a><a name="11_10_paketabhaengigkeiten">
+</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        <b>A</b><b>ls einer der großen Vorteile von Linux-Distributionen wird 
+oft die Paketverwaltung genannt. Man muss sich nicht mehr mühsam 
+irgendwelche Software im Netz von Drittanbietern suchen, sondern 
+erhält eigentlich alles, was man braucht, aus einem großen 
+Pakettopf (Repository), dessen Inhalt dazu in der Regel noch 
+getestet ist. Dennoch hat diese Art der Paketverwaltung auch 
+Nachteile.</b>
+
+<div class="p"><!----></div>
+
+<h2>Vor- und Nachteile</h2>
+
+<div class="p"><!----></div>
+Ein Vorteil einer zentralen Paketverwaltung ist die Verfügbarkeit 
+von Software, die man sich nicht selbst aus dem Internet besorgen 
+muss. Ein weiterer Vorteil der Paketverwaltung ist auch, dass sich 
+die installierten Programme darüber aktuell halten lassen. Man muss 
+also nicht mehr manuell wie in anderen Betriebssystemen das Netz nach 
+Updates durchforsten (falls die Software das nicht bereits alleine 
+macht), sondern erhält hier auch alles frei Haus.
+
+<div class="p"><!----></div>
+Schlecht ist es natürlich, wenn man mal Software benötigt, die nicht 
+im Repository vorhanden ist. Sei es, weil man eine neuere Version 
+eines Programmes benötigt (z.&nbsp;B. wegen nerviger Bugs in der im 
+Repository vorhandenen Version) oder ein Programm keinen 
+Paketverwalter (Maintainer) gefunden hat, sodass es gar nicht im 
+Repository zu finden ist. Das eigenständige Bauen der Pakete kann 
+da schon ein Kampf gegen diverse Abhängigkeiten sein.
+
+<div class="p"><!----></div>
+Wieso Abhängigkeiten? Auch das wird oft als Vorteil der Linux-Pakete 
+gepriesen. Ein Paket enthält nur das, was es selbst benötigt, 
+nicht mehr. Wenn man also beispielsweise eine GUI 
+in Qt (einem GUI-Framwork von Nokia/Trolltech) schreibt, muss man 
+nicht Qt selbst mit ausliefern. Da man es aber zur Benutzung der 
+GUI braucht, muss jeder Qt auf seinem Rechner haben. In der Regel 
+funktioniert dieses Modell sehr gut, da die Linux-Distributionen 
+meist Repositorys mit ähnlicher Paketauswahl haben.
+
+<div class="p"><!----></div>
+Was daraus als Vorteil abgeleitet wird: Wenn in einem Paket X ein 
+Fehler auftritt und zwanzig andere Pakete (Paket A bis Paket T) 
+dieses benutzen, muss dennoch nur Paket X aktualisiert werden. 
+Würden die Pakete A bis T den Inhalt von X immer selbst mitliefern, 
+müssten Pakete A bis T ausgebessert und aktualisiert werden.
+
+<div class="p"><!----></div>
+
+<h2>Theorie und Praxis</h2>
+
+<div class="p"><!----></div>
+So weit die Theorie, in der Praxis funktioniert das nämlich aus dem 
+einfachen Grund der Paketabhängigkeiten nicht. Die Pakete A bis T 
+oben hängen nämlich nicht nur von Paket X ab, sondern von Paket X 
+in der Version Y. Wenn der Fehler ausgebessert wird, entsteht ein 
+Paket X in der Version Y', man könnte es auch X' nennen. Die Pakete 
+A bis T hängen nach wie vor vom fehlerhaften Paket X ab. Um denen 
+also klar zu machen, dass sie X' nehmen soll, muss man sie 
+anpassen. Es entstehen neue Pakete A' bis T'.
+
+<div class="p"><!----></div>
+    Das Ende vom Lied? Tritt ein Fehler in einem Paket auf, von dessen 
+Version (!) viele andere Pakete abhängig sind, müssen alle diese 
+zusammen aktualisiert werden.
+
+Eine Abhängigkeit der Art „größer 
+gleich Version X“ hilft natürlich nicht, weil dann ja auch immer 
+noch Version X als benutzbar gelten würde.
+
+<div class="p"><!----></div>
+Schön zu sehen war dies im Oktober 2010 bei einem Qt4-Fehler&nbsp;<a href="https://launchpad.net/bugs/634774">[1]</a>,
+der für Abstürze in Webkit-Browsern sorgte. Behoben wurde der Fehler 
+(vermutlich) in dem Paket <b>libqtcore4</b>. Das Paket hatte nur
+1&nbsp;MB und wäre schön leicht herunterzuladen gewesen. Mit der 
+Fehlerbehebung hatte sich die Versionsnummer aber ebenso von
+<b><tt style="font-size: 1.3em;">4:4.6.2-0ubuntu5</tt></b> auf <b><tt style="font-size: 1.3em;">4:4.6.2-0ubuntu5.1</tt></b> geändert. Das 
+führte dazu, dass so gut wie alle anderen Qt-Pakete, die von der 
+Core-Bibliothek abhängen (21 Stück an der Zahl), ebenfalls 
+aktualisiert werden mussten. Das resultierte dann im Endeffekt in 
+einem Download von 22,7 MB. Und das nur, weil eine Zeile Code
+(übertrieben ausgedrückt) in einem Programm angepasst werden musste.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/qt-abhaengigkeiten.png" /><br /><em>Ein geändertes Paket zieht 21 weitere Anpassungen nach sich.</em><br />
+
+<div class="p"><!----></div>
+Ähnlich lief es Ende September 2011 nach der Kompromittierung der
+Server der Zertifizierungsstelle „DigiNotar“&nbsp;<a href="http://www.heise.de/newsticker/meldung/CA-Hack-Noch-mehr-falsche-Zertifikate-1334098.html">[2]</a>.
+Im Zuge dessen wurde die Zertifikate in den Anwendungen gelöscht
+bzw. als nicht vertrauenswürdig eingestuft. Das führte auch dazu,
+dass, obwohl nur an wenigen Stellen Code angepasst werden musste, viele
+Pakete aktualisiert wurden, damit diese nicht mehr von der
+fehlerbehafteten Version abhängen.
+
+<div class="p"><!----></div>
+
+<h2>Kleine Verbesserungen</h2>
+
+<div class="p"><!----></div>
+Natürlich ist die Downloadgröße in dem Fall ein Problem der 
+Ubuntu-Paketverwaltung. Gäbe es in Ubuntu inkrementelle Updates (es 
+wird aus einem Paket nur neu heruntergeladen, was sich wirklich 
+geändert hat), wäre das Problem nicht so gravierend. Es würde 
+in den abhängigen Paketen einfach nur die Datei ausgetauscht 
+werden, in der steht, dass das Paket X mit der neuen Version Y' 
+benutzt werden sollte. Aber selbst dieses inkrementelle Update 
+beseitigt nicht die Anzahl der anzupassenden Pakete.
+
+<div class="p"><!----></div>
+Der Beitrag soll klarmachen, dass auch Schatten ist, wo es Licht 
+gibt. In der Regel hat eine zentrale Paketverwaltung immense 
+Vorteile. Und wer Erfahrung im Kompilieren hat, hat auch mit der 
+Installation neuerer Software selten ein Problem. Dennoch wandelt 
+sich der Vorteil des Änderns eines Fehlers in einem Paket manchmal 
+auch zum Nachteil.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://launchpad.net/bugs/634774"><tt style="font-size: 1.3em;">https://launchpad.net/bugs/634774</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.heise.de/newsticker/meldung/CA-Hack-Noch-mehr-falsche-Zertifikate-1334098.html"><tt style="font-size: 1.3em;">http://www.heise.de/newsticker/meldung/CA-Hack-Noch-mehr-falsche-Zertifikate-1334098.html</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+genießt die Vorteile einer Paketverwaltung, verflucht sie aber
+manchmal auch, wenn die Updates wieder so groß sind.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Die Nachteile der Paketabh%C3%A4ngigkeiten#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_kernel">Der September im Kernelrückblick</a><a name="11_10_kernel">
+</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+        <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Einbrüche, Umbauten und Abhilfe</h2>
+Der September 2011 war ein recht düsterer Monat für die Linux-Entwickler – die meiste Zeit stand kernel.org nicht zur Verfügung. Der Grund dafür liegt in dem bereits im August erfolgten Einbruch bei kernel.org (siehe „Der August im Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 09/2011&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-09">[1]</a>). Dass Mitte September auch noch ein Einbruch auf linux.com vermeldet werden musste&nbsp;<a href="http://www.pro-linux.de/news/1/17482/linuxcom-gehackt.html">[2]</a>, verbesserte die Lage keinesfalls, weder kernel.org noch linux.com standen bei Redaktionsschluss zur Verfügung.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/kernel_org.png" /><br /><em>Dieser Hinweis ziert kernel.org seit vier Wochen.</em><br />
+
+<div class="p"><!----></div>
+Die Betreiber nahmen sich Zeit, um die Infrastruktur, die für die Entwiklung des Linux-Kernels genutzt wird, zu überarbeiten und die Sicherheit der Server mit neuen Konzepten zu verbessern. So verkündete H. Peter Anvin zwischenzeitlich&nbsp;<a href="https://lkml.org/lkml/2011/9/23/357">[3]</a>, dass Entwickler künftig keinen Shell-Zugang mehr erhalten werden, sondern die Quellen mittels gitolite pflegen. Dieser Dienst soll einen sicheren Betrieb von Git-Repositorien ermöglichen. Anvin wies auf die fehlenden Möglichkeiten für die Nutzung von Server-seitigen Skripten im Zusammenhang mit gitolite hin. Die
+    
+Kernel-Entwickler werden neue SSH-Schlüssel für den Zugriff auf gitolite erhalten und die ersten Git-Trees sollten laut Anvin in Kürze auf kernel.org zur Verfügung stehen. Weitere Dienste sollen später folgen.
+
+<div class="p"><!----></div>
+Die Entwicklung des Kernels selbst durfte natürlich nicht stillstehen, sodass Torvalds kurzerhand den Entwickler-Zweig auf die Code-Hosting-Plattform github&nbsp;<a href="http://de.wikipedia.org/wiki/GitHub">[4]</a> hochlud und dort zur Verfügung stellte&nbsp;<a href="http://www.pro-linux.de/news/1/17456/kernel-quellen-vorlaeufig-auf-github.html">[5]</a>. Dies funktionierte gut genug, dass Stimmen laut wurden die forderten, der Linux-Kernel möge weiterhin auf github
+    entwickelt werden&nbsp;<a href="http://www.internetnews.com/blog/skerner/linux-should-move-to-github-permanently.html">[6]</a>. Linux könne von den Werkzeugen, der Web-basierten Oberfläche und der Sicherheit von github profitieren, so die Meinung. 
+
+<div class="p"><!----></div>
+
+<h2>Linux 3.1</h2>
+Die Ankündigung, dass sich der Quellcode des Kernels nun auf github befinde, ließ Torvalds bei Veröffentlichung der fünften Vorabversion verlauten&nbsp;<a href="https://lkml.org/lkml/2011/9/4/92">[7]</a>. Die Zahl der Änderungen hielt sich in einem sehr engen Rahmen, da das Git-Repository von kernel.org die überwiegende Zeit nicht verfügbar war, um Commits der Entwickler entgegenzunehmen. Auch -rc6&nbsp;<a href="https://lkml.org/lkml/2011/9/14/33">[8]</a> wies recht wenige Änderungen auf, in erster Linie Korrekturen an den ARM- und OpenRISC-Architekturen. Und weil ohne kernel.org ein Merge Window keinen Sinn ergeben würde, gab Torvalds dann noch den 3.1-rc7 frei&nbsp;<a href="https://lkml.org/lkml/2011/9/21/468">[9]</a>. Darin enthalten waren Korrekturen für verschiedene Probleme, unter anderem für ein Problem in der Dateisystem-Abstraktionsschicht vfs, das im Zusammenhang mit dem Netzwerk-Dateisystem NFS auftrat. Ansonsten enthielt auch diese Vorabversion in das übliche Grundrauschen kleinerer Änderungen, von dem sich der SCSI-Bereich gerade noch mit Korrekturen am qla2xxx-Treiber und einiges Fixes an iSCSI, einer Methode zur Nutzung von SCSI über das Netzwerk, abhob. Wirklich marginal waren die Änderungen bei der achten Vorabversion&nbsp;<a href="https://lkml.org/lkml/2011/9/27/532">[10]</a>, die ebenfalls mangels der Verfügbarkeit von kernel.org veröffentlicht wurde. Gerade einmal 66 geänderte Dateien beherbergen eine kleinere Aktualisierung an perf, dem Kernel-eigenen Leistungs-Messwerkzeug, sowie eine Überarbeitung der Temperatur-Schnittstelle von hwmon, dem Hardware-Überwachungs-Tool.
+
+<div class="p"><!----></div>
+Torvalds kündigte an, das Merge Window für 3.2 erst nach seinem Urlaub zu öffnen, sodass Linux 3.1 erst Mitte Oktober verfügbar sein dürfte&nbsp;<a href="http://www.pro-linux.de/news/1/17530/linux-kernel-31-laesst-auf-sich-warten.html">[11]</a>. Sicher ist jetzt schon, dass der Trend der kürzeren Releasezyklen diesmal einen herben Dämpfer erfahren wird.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2011-09"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2011-09</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.pro-linux.de/news/1/17482/linuxcom-gehackt.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/17482/linuxcom-gehackt.html</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="https://lkml.org/lkml/2011/9/23/357"><tt style="font-size: 1.3em;">https://lkml.org/lkml/2011/9/23/357</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://de.wikipedia.org/wiki/GitHub"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/GitHub</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://www.pro-linux.de/news/1/17456/kernel-quellen-vorlaeufig-auf-github.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/17456/kernel-quellen-vorlaeufig-auf-github.html</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://www.internetnews.com/blog/skerner/linux-should-move-to-github-permanently.html"><tt style="font-size: 1.3em;">http://www.internetnews.com/blog/skerner/linux-should-move-to-github-permanently.html</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="https://lkml.org/lkml/2011/9/4/92"><tt style="font-size: 1.3em;">https://lkml.org/lkml/2011/9/4/92</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="https://lkml.org/lkml/2011/9/14/33"><tt style="font-size: 1.3em;">https://lkml.org/lkml/2011/9/14/33</tt></a><br />
+
+<div class="p"><!----></div>
+[9] <a href="https://lkml.org/lkml/2011/9/21/468"><tt style="font-size: 1.3em;">https://lkml.org/lkml/2011/9/21/468</tt></a><br />
+
+<div class="p"><!----></div>
+[10] <a href="https://lkml.org/lkml/2011/9/27/532"><tt style="font-size: 1.3em;">https://lkml.org/lkml/2011/9/27/532</tt></a><br />
+
+<div class="p"><!----></div>
+[11] <a href="http://www.pro-linux.de/news/1/17530/linux-kernel-31-laesst-auf-sich-warten.html"><tt style="font-size: 1.3em;">http://www.pro-linux.de/news/1/17530/linux-kernel-31-laesst-auf-sich-warten.html</tt></a><br />
+
+<div class="p"><!----></div>
+    
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+hält einen Blick auf die Entwicklung des Linux-Kernels und wartet sehnsüchtig auf die Wiederinbetriebnahme von kernel.org. 
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Der September im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_php1">PHP-Programmierung – Teil 1: HTML</a><a name="11_10_php1">
+</a></font></h1>von Patrick Eigensatz
+
+<div class="p"><!----></div>
+        
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<b>P</b><b>HP wird als Programmiersprache zur Generierung dynamischer Websites 
+benutzt. Laut Wikipedia&nbsp;<a href="http://de.wikipedia.org/wiki/PHP">[1]</a> werden 
+rund drei Viertel aller dynamischen Websites durch PHP generiert. Diese 
+Serie soll – vor allem Anfängern in der (Web-)Programmierung – einen 
+Einblick in die Web- und Datenbankprogrammierung mit PHP und MySQL 
+verschaffen. In dieser Reihe wird viel Theorie gelernt. Am besten 
+ist es, wenn man zwischen den einzelnen Kapitel wieder etwas 
+ausprobiert und an einem kleinen Beispiel programmiert, um das 
+Gelernte zu verfestigen. Eventuell gibt es ja auch einen richtigen 
+Anwendungszweck bei den Lesern.</b>
+
+<div class="p"><!----></div>
+Dynamische Websites werden überall dort eingesetzt, wo sich der 
+Seiteninhalt von Aufruf zu Aufruf verändert. Wird man auf einer 
+Seite mit einem „Hallo + Benutzername“ begrüsst, ist das meist 
+schon PHP. Eine andere Möglichkeit zur dynamischen Erstellung von 
+Seiten wäre die Benutzung von lokalen Skriptsprachen, z.&nbsp;B.
+JavaScript. Deren Benutzung, beispielsweise für Logins, ist aber aus 
+Sicherheitsgründen unbrauchbar.
+
+<div class="p"><!----></div>
+Zur Ausführung von PHP-Skripten wird
+allerdings ein Webserver mit PHP-Unterstützung verlangt. Heute 
+bieten praktisch alle Webhoster PHP-Unterstützung an. Falls man 
+keine Website hat und auch keine aufschalten möchte, kann man sich 
+einen lokalen Webserver (Apache) aufsetzen. 
+
+<div class="p"><!----></div>
+
+<h2>Einrichtung des Webservers</h2>
+
+<div class="p"><!----></div>
+Für die Benutzung des Webservers installiert man die Pakete 
+<b>apache2</b>, <b>libapache2-mod-php5</b> und <b>php5</b>.
+    
+
+<div class="p"><!----></div>
+Die Webseitendateien werden von Apache in <b><tt style="font-size: 1.3em;">/var/www</tt></b> gesucht,
+weshalb normalerweise 
+root-Rechte für den Zugriff notwendig sind. Dies kann man umgehen, 
+indem man sich selbst in die Gruppe <b><tt style="font-size: 1.3em;">www-data</tt></b> hinzufügt:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+#&nbsp;adduser&nbsp;$USER&nbsp;www-data
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Danach weist man <b><tt style="font-size: 1.3em;">www-data</tt></b> die entsprechenden Rechte zu:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+#&nbsp;find&nbsp;/var/www&nbsp;-type&nbsp;d&nbsp;-exec&nbsp;chmod&nbsp;770&nbsp;{}&nbsp;\;
+#&nbsp;find&nbsp;/var/www&nbsp;-type&nbsp;f&nbsp;-exec&nbsp;chmod&nbsp;660&nbsp;{}&nbsp;\;
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Die Konfiguration wird in diesem Artikel nicht näher beschrieben, sie
+kann aber im ubuntuusers-Wiki nachgelesen werden&nbsp;<a href="http://wiki.ubuntuusers.de/Apache">[2]</a>.
+    
+
+<div class="p"><!----></div>
+Wer ganz schnell und einfach, ohne große Mühe – und nur zum Testen –
+eine Serverinstallation einrichten will, der sollte sich XAMPP
+(Apache, MySQL, PHP, Perl) ansehen&nbsp;<a href="http://www.apachefriends.org/de/xampp-linux.html">[3]</a>.
+Auch für Leser, die Windows benutzen, ist dies eine Möglichkeit.
+Diese Installation sollte aber auf keinen Fall für richtige,
+produktive Zwecke eingesetzt werden, da Updates nicht
+automatisch eingespielt werden und die Konfiguration nicht unbedingt die sicherste ist.
+Installiert wird XAMPP laut der deutschen
+Anleitung in <b><tt style="font-size: 1.3em;">/opt/lampp</tt></b> (bzw. <b><tt style="font-size: 1.3em;">C:\xampp</tt></b>). Falls es unter Linux Probleme
+mit dem Zugriff gibt, müssen dem Verzeichnis <b><tt style="font-size: 1.3em;">/opt/lampp/htdocs</tt></b>, in dem
+die Webseiten abgelegt werden, mit dem chown-Befehl die Rechte gewährt werden:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+#&nbsp;chown&nbsp;$USER&nbsp;/opt/lampp/htdocs
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Danach kann die ganze XAMPP-Konfiguration mit dem Befehl
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+#&nbsp;/opt/lampp/lampp&nbsp;start
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+bzw. (in Windows) über das Controlpanel, das mitinstalliert wurde, 
+gestartet werden. Mehr Informationen zu XAMPP und zur Installation  
+    
+findet man im ubuntuusers-Wiki&nbsp;<a href="http://wiki.ubuntuusers.de/XAMPP">[4]</a>.
+
+<div class="p"><!----></div>
+Laufen die Server, so sollte man über <b><tt style="font-size: 1.3em;">http://127.0.0.1/</tt></b> bzw. 
+<b><tt style="font-size: 1.3em;">http://localhost/</tt></b> seine Seiten sehen können. Bei XAMPP kommt hier 
+die Übersicht. Es empfielt sich
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+#&nbsp;/opt/lampp/lampp&nbsp;security
+</pre>
+
+<div class="p"><!----></div>
+auszuführen. Damit wird überprüft, ob die Standardpasswörter bereits 
+ersetzt wurden. Wenn nicht, kann man dort direkt seine Passwörter 
+eingeben. In Windows erreicht man dies unter dem Menüpunkt 
+„<em>Security</em>“. 
+
+<div class="p"><!----></div>
+Wird in der URL oben nur ein Ordner angegeben, so wird 
+standardmässig die Datei <b><tt style="font-size: 1.3em;">index.html</tt></b> oder <b><tt style="font-size: 1.3em;">index.php</tt></b> in diesem 
+Ordner geöffnet. Ist keine solche Datei vorhanden, wird in der 
+Regel das Verzeichnis aufgelistet, was manchmal unerwünscht ist, 
+oder der Browser wird mit einem <b><tt style="font-size: 1.3em;">403 – Access forbidden</tt></b> 
+zurückgewiesen.
+
+<div class="p"><!----></div>
+
+<h2>Die HTML-Grundlagen</h2>
+
+<div class="p"><!----></div>
+
+<h3>Eine einfache HTML-Seite</h3>
+
+<div class="p"><!----></div>
+Um eine dynamische Webseite erstellen zu können, muss man zuerst 
+wissen, wie man eine statische Website erstellt. Leser, die bereits 
+HTML-Kenntnisse haben, können dieses Tutorial überspringen und sich auf nächsten Monat freuen.
+
+<div class="p"><!----></div>
+HTML-Dateien sind nicht binär und können daher mit einem ganz 
+normalen Texteditor bearbeitet werden. Gedit (Standard-Editor unter 
+GNOME) und Kate (Standard-Editor unter KDE) bringen auch eine 
+schöne Syntaxvorhebung mit. Es gibt aber sehr viele Editoren – 
+sogenannte IDEs (Integrated Development Enviroments) – die sich 
+auch auf die dynamische Webseitenprogrammierung spezialisiert haben 
+und daher später nützlich sein könnten. HTML ist case-insensitive, 
+beachtet also die Groß-/Kleinschreibung nicht.
+
+<div class="p"><!----></div>
+Jede HTML-Seite beginnt mit einem einfachen <b><tt style="font-size: 1.3em;">&lt;html&#62;</tt></b> und endet mit 
+einem  <b><tt style="font-size: 1.3em;">&lt;/html&#62;</tt></b>. Fast alle sogenannte „Tags“ haben in HTML einen 
+Anfang (<b><tt style="font-size: 1.3em;">&lt;…&#62;</tt></b>) und ein Ende (<b><tt style="font-size: 1.3em;">&lt;/…&#62;</tt></b>). Solche Tags muss man sich als 
+eine Art „Container“ vorstellen, in der wiederum neue „Container“ 
+und Inhalte sein können. Eine Seite mit dem Inhalt
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+Hallo
+Welt
+</pre>
+
+<div class="p"><!----></div>
+sieht wie folgt aus:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&lt;html&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hallo&lt;br&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welt
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&#62;
+&lt;/html&#62;
+</pre>
+
+<div class="p"><!----></div>
+    Der <b><tt style="font-size: 1.3em;">&lt;body&#62;</tt></b>-Tag wird benötigt, um dem Browser zu zeigen, wo
+sich der eigentliche, sichtbare Inhalt der Seite befindet.
+Auch er wird mit einem <b><tt style="font-size: 1.3em;">&lt;/body&#62;</tt></b> geschlossen. <b><tt style="font-size: 1.3em;">&lt;br&#62;</tt></b> steht für das
+englische „break“ und bewirkt einen Zeilenumbruch.
+
+<div class="p"><!----></div>
+
+<h3>Textformatierungen in HTML</h3>
+
+<div class="p"><!----></div>
+Die Einrückungen dienen nur der Lesbarkeit. Man könnte auch alles auf eine 
+Zeile pressen.
+    
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&lt;html&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&#62;Dies&nbsp;ist&nbsp;ein&nbsp;Beispiel&lt;/title&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;b&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;font&nbsp;color="FF0000"&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ein&nbsp;roter,&nbsp;fetter&nbsp;Text
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/font&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/b&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;font&nbsp;color="blue"&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ein&nbsp;blauer,&nbsp;kursiver&nbsp;Text
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/i&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/font&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&#62;
+&lt;/html&#62;
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-10-listings/Beispiel.html">Beispiel.html</a></i>
+
+<div class="p"><!----></div>
+Hier wird zusätzlich der <b><tt style="font-size: 1.3em;">&lt;head&#62;</tt></b>-Tag eingeführt in dem sich der
+Seitentitel zwischen <b><tt style="font-size: 1.3em;">&lt;title&#62;</tt></b> und <b><tt style="font-size: 1.3em;">&lt;/title&#62;</tt></b> befindet. <b><tt style="font-size: 1.3em;">&lt;head&#62;</tt></b> sollte nicht
+mit dem Protokollheader verwechselt werden, den man später antreffen wird.
+
+<div class="p"><!----></div>
+Wer mit einer englischen Version eines Office-Paketes arbeitet, dem sind
+die Begriffe „bold“ für fett, „italic“ für kursiv und „underlined“ für
+unterstrichen sicher bekannt. Alles zwischen <b><tt style="font-size: 1.3em;">&lt;b&#62;</tt></b> und <b><tt style="font-size: 1.3em;">&lt;/b&#62;</tt></b> wird also fett
+dargestellt.
+
+<div class="p"><!----></div>
+<b><tt style="font-size: 1.3em;">&lt;font color="FF0000"&#62;</tt></b> bewirkt eine rote Einfärbung des Textes. 
+<b><tt style="font-size: 1.3em;">FF0000</tt></b> ist der hexadezimale Farbcode für rot. Keinesfalls muss man 
+überall hexadezimale Codes verwenden, man kann 
+    
+auch einfach <b><tt style="font-size: 1.3em;">red</tt></b> 
+schreiben. Eine Liste mit vielen Farbcodes findet man auf der Webseite farbtabelle.at&nbsp;<a href="http://www.farbtabelle.at/">[5]</a>.
+
+<div class="p"><!----></div>
+Bestimmte Tags haben verschiedene Parameter, die man übergeben kann. 
+Zu fast jedem Parameter gibt es auch Argumente. Argumente werden 
+hinter dem Parameternamen und einem Gleichheitszeichen und zwischen 
+doppelten Anführungszeichen übergeben.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start
+font&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tagname
+color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parameter
+=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zuweisung
+"FF0000"&nbsp;&nbsp;Argument
+&#62;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ende
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h3>Tabellen</h3>
+
+<div class="p"><!----></div>
+Tabellen werden fast überall in der Webentwicklung gebraucht, wo 
+etwas schön strukturiert aussehen soll. Tabellen werden mit 
+<b><tt style="font-size: 1.3em;">&lt;table&#62;</tt></b> eingeleitet und hören mit <b><tt style="font-size: 1.3em;">&lt;/table&#62;</tt></b> auf. Zelleninhalte 
+werden zwischen Zellen (<b><tt style="font-size: 1.3em;">&lt;td&#62;…&lt;/td&#62;</tt></b>) eingetragen. Diese wiederum 
+werden zwischen einzelne Zeilen (<b><tt style="font-size: 1.3em;">&lt;tr&#62;…&lt;/tr&#62;</tt></b>) gesetzt. Das mag 
+sich kompliziert anhören, ist aber in der Praxis leicht. Hier eine 
+einfache Tabelle:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+1a&nbsp;&nbsp;&nbsp;&nbsp;1b&nbsp;&nbsp;&nbsp;&nbsp;1c
+2a&nbsp;&nbsp;&nbsp;&nbsp;2b&nbsp;&nbsp;&nbsp;&nbsp;2c
+</pre>
+
+<div class="p"><!----></div>
+und der HTML-Quellcode:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&lt;html&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;table&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&#62;1a&lt;/td&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&#62;1b&lt;/td&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&#62;1c&lt;/td&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&#62;2a&lt;/td&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&#62;2b&lt;/td&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&#62;2c&lt;/td&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&#62;
+&lt;/html&#62;
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-10-listings/Tabelle.html">Tabelle.html</a></i>
+
+<div class="p"><!----></div>
+Natürlich kann man seinen Text innerhalb von 
+<b><tt style="font-size: 1.3em;">&lt;td&#62;</tt></b> und <b><tt style="font-size: 1.3em;">&lt;/td&#62;</tt></b> auch noch formatieren. 
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&lt;html&#62;
+&nbsp;&nbsp;&lt;body&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;form&nbsp;action="nameausgeben.php"&nbsp;method="GET"&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="angegebenername"&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type="submit"&nbsp;value="Absenden"&#62;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&#62;
+&nbsp;&nbsp;&lt;/body&#62;
+&lt;/html&#62;
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-10-listings/Formular.html">Formular.html</a></i>
+
+<div class="p"><!----></div>
+
+<h3>Formulare</h3>
+
+<div class="p"><!----></div>
+Formulare stellen einen sehr wichtigen Teil der dynamischen 
+Webseitenentwicklung dar, da man über solche Daten erfassen kann. 
+Der Tag, um ein Formular zu erstellen, lautet <b><tt style="font-size: 1.3em;">&lt;form&#62;</tt></b>. Er benötigt zwei Parameter, um zu wissen, was es mit den eingegebenen 
+Daten machen soll. 
+<div class="p"><!----></div>
+Jedes Eingabefeld, besser gesagt, jede Eingabemöglichkeit wird durch 
+den <b><tt style="font-size: 1.3em;">&lt;input&#62;</tt></b>-Tag repräsentiert. Auch <b><tt style="font-size: 1.3em;">&lt;input&#62;</tt></b> benötigt Parameter, 
+z.&nbsp;B. um zu wissen, ob es sich um ein Textfeld, eine Auswahlbox oder 
+einen Button handelt.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Das <b><tt style="font-size: 1.3em;">action</tt></b>-Argument des <b><tt style="font-size: 1.3em;">&lt;form&#62;</tt></b>-Tags liefert einen Verweis zu 
+einem (meist) 
+serverseitigen Programm, an das die Daten gesendet 
+werden. <b><tt style="font-size: 1.3em;">method</tt></b> ist die Art, wie sie versendet 
+werden. 
+<div class="p"><!----></div>
+Der Input-Tag vom Typ <b><tt style="font-size: 1.3em;">text</tt></b> ist ein einfaches Eingabefeld. Es hat 
+den Namen <b><tt style="font-size: 1.3em;">angegebenername</tt></b>. Mit PHP kann man später auf diesen Wert 
+über eine Variable zugreifen. Deshalb sollte jedes Input-Feld einen 
+eigenen Namen haben. Mit <b><tt style="font-size: 1.3em;">submit</tt></b> wird ein Absendebutton erstellt, 
+der das Formular und die Daten an das Programm   
+    
+sendet. <b><tt style="font-size: 1.3em;">value</tt></b> bezeichnet den Text, der auf dem Button steht. Wer 
+das Formular sendet, gelangt zu einem „404 Error“, da das 
+Programm <b><tt style="font-size: 1.3em;">nameausgeben.php</tt></b> 
+noch fehlt.
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+Nun könnte man ein Formular erstellen, das Formular in eine Tabelle 
+packen und formatierten Text dazu schreiben. Auf SelfHTML&nbsp;<a href="http://de.selfhtml.org/html/">[6]</a> findet man
+eine Komplettreferenz aller HTML-Tags. 
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://de.wikipedia.org/wiki/PHP"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/PHP</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://wiki.ubuntuusers.de/Apache"><tt style="font-size: 1.3em;">http://wiki.ubuntuusers.de/Apache</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.apachefriends.org/de/xampp-linux.html"><tt style="font-size: 1.3em;">http://www.apachefriends.org/de/xampp-linux.html</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://wiki.ubuntuusers.de/XAMPP"><tt style="font-size: 1.3em;">http://wiki.ubuntuusers.de/XAMPP</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://www.farbtabelle.at/"><tt style="font-size: 1.3em;">http://www.farbtabelle.at/</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://de.selfhtml.org/html/"><tt style="font-size: 1.3em;">http://de.selfhtml.org/html/</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Patrick Eigensatz</b>&nbsp;(<a href="http://www.patrickeigensatz.bplaced.net/">Webseite</a>) 
+befasst sich seit einigen Jahren mit
+der Entwicklung von Webanwendungen und hat dadurch
+viele Erfahrungen im Bereich PHP gesammelt.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=PHP-Programmierung - Teil 1: HTML#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+            
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_remoteactors">Remote-Actors in Scala</a><a name="11_10_remoteactors">
+</a></font></h1>von Stefan Bradl
+
+<div class="p"><!----></div>
+        <b>I</b><b>m letzten Artikel „Parallelisierung mit Scala“ (siehe <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+05/2011&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-05">[1]</a>) ging es
+um die Nutzung des Actor-Modells zur Parallelisierung. Dadurch
+konnten Programme – im Vergleich zu herkömmlicher nebenläufiger
+Programmierung – einfacher implementiert werden. Ein nächster
+Schritt besteht nun darin, das Actor-Modell nicht nur dazu zu
+nutzen, mehrere Prozessorkerne auf einem Rechner besser
+auszulasten, sondern auch um über Rechnergrenzen hinweg zu
+kommunizieren.</b>
+
+<div class="p"><!----></div>
+
+<h2>Wieso keine Sockets?</h2>
+
+<div class="p"><!----></div>
+Warum benötigt man nun Remote-Actors, wenn auch einfache
+Sockets&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Socket_%28Software%29">[2]</a>
+genutzt werden könnten? Dazu muss man sich vorstellen, wie ein
+Server mehrere Clients behandeln kann. Im einfachsten Fall wird für
+jeden einzelnen Client ein Thread erstellt. Soll über den Server
+eine Kommunikation zwischen den Clients stattfinden, so muss an
+dieser Stelle einiger Aufwand betrieben werden, um alle Threads zu
+synchronisieren. Außerdem ist die Erstellung eines Threads pro
+Client nicht gerade performant, da es zu häufigen Threadwechseln
+innerhalb des Betriebssystems kommen kann. Des Weiteren können über
+Sockets selten direkt Strings versendet und empfangen werden. Diese
+müssen zuerst in Byte-Arrays umgewandelt werden. Vor allem beim
+Empfangen von Daten tritt das Problem auf, dass Daten in mehreren
+kleinen „Häppchen“ eintreffen können. Für die eben aufgeführten
+Punkte bieten die im Folgenden beschriebenen Remote-Actors eine
+große Hilfestellung.
+
+<div class="p"><!----></div>
+
+<h2>Was sind Remote-Actors?</h2>
+
+<div class="p"><!----></div>
+Remote-Actors sind eine einfache Erweiterung des normalen
+Actor-Modells. Durch diese Erweiterung ist es möglich, Actors auf
+verschiedenen Rechnern miteinander Nachrichten austauschen zu
+lassen. Das Senden und Empfangen von Daten geschieht auf einer sehr
+viel höheren Abstraktionsstufe als es bei der Socket-Programmierung
+
+der Fall ist und auch die Verwaltung mehrerer Clients wird auf ein
+Minimum an Programmieraufwand reduziert.
+
+<div class="p"><!----></div>
+Aus einem normalen Actor kann auf sehr einfache Weise ein
+Remote-Actor erzeugt werden. In Scala sehen Grundgerüste für die
+
+ beiden Actors wie folgt aus:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+class&nbsp;MyServer&nbsp;extends&nbsp;Actor&nbsp;{
+&nbsp;&nbsp;alive(2345)
+&nbsp;&nbsp;register('myServer,&nbsp;this)
+&nbsp;&nbsp;start
+
+&nbsp;&nbsp;def&nbsp;act&nbsp;{
+&nbsp;&nbsp;}
+}
+
+class&nbsp;MyClient&nbsp;extends&nbsp;Actor&nbsp;{
+&nbsp;&nbsp;alive(1234)
+&nbsp;&nbsp;register('myClient,&nbsp;this)
+&nbsp;&nbsp;start
+
+private&nbsp;var&nbsp;serverNode&nbsp;=&nbsp;select(Node("127.0.0.1",&nbsp;2345,&nbsp;'myServer))
+
+&nbsp;&nbsp;def&nbsp;act&nbsp;{
+&nbsp;&nbsp;}
+}
+</pre>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2011-10-listings/myServer.scala">myServer.scala</a></i>
+
+<div class="p"><!----></div>
+Es werden die zwei Funktionen <b><tt style="font-size: 1.3em;">alive</tt></b> (Zeilen 2 und 11) und
+<b><tt style="font-size: 1.3em;">register</tt></b> (Zeile 3 und 12) benötigt. Die erste der beiden
+Funktionen ermöglicht es, den Actor über einen als Parameter
+    
+angegebenen TCP-Port zu erreichen. Mit der zweiten Methode wird es
+möglich, einem Actor einen Namen zuzuweisen, unter dem er
+angesprochen werden kann.
+
+<div class="p"><!----></div>
+Um von einem anderen Rechner auf den registrierten Actor
+zuzugreifen, wird die Funktion <b><tt style="font-size: 1.3em;">select</tt></b> (Zeile 15) genutzt. Diese
+Funktion liefert eine Referenz auf den entfernten Actor zurück.
+
+<div class="p"><!----></div>
+
+<h2>Ein einfaches Chat-Programm</h2>
+
+<div class="p"><!----></div>
+Als Beispiel für diesen Artikel wird ein Chat-Programm entwickelt.
+Dieses soll aus einem konsolenbasierten Server und einem oder
+mehreren Clients mit einer grafischen Benutzeroberfläche bestehen.
+Die Benutzeroberfläche soll lediglich ein Nachrichtenfenster, ein
+Eingabefeld und einen „<em>Senden</em>“-Knopf enthalten.
+
+<div class="p"><!----></div>
+Als erstes muss sich ein Client mit dem Server verbinden. Sendet
+einer der Clients nun eine 
+Nachricht an den Server, so wird diese
+automatisch an alle verbundenen Clients weitergeleitet.
+
+<div class="p"><!----></div>
+Dank der Möglichkeit mit wenig Quelltext sehr viel auszudrücken,
+benötigen Client und Server zusammen nicht einmal 150 Zeilen. Um
+den Quelltext übersichtlicher zu gestalten, wird eine feste IP für
+alle Clients und den Server verwendet. Dabei handelt es sich um die
+127.0.0.1, also localhost. Zum Testen und Ausprobieren reicht das
+aus. Der Server ist außerdem so eingestellt, dass er auf Port 1234
+läuft. Um mehrere Clients lokal testen zu können, kann der Port,
+auf welchem die Clients Nachrichten empfangen, als
+Kommandozeilenparameter mitgegeben werden.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/remote_actors-chatclients.png" /><br /><em>Drei Chat-Clients unterhalten sich.</em><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h3>Der Server</h3>
+
+<div class="p"><!----></div>
+Der Server behandelt in seiner <b><tt style="font-size: 1.3em;">act</tt></b>-Methode einkommende Nachrichten.
+Diese können entweder Log-ins oder normale Chatmitteilungen sein.
+Um diese zu unterscheiden, werden zwei einfache reguläre Ausdrücke
+verwendet. Dank der Funktion <b><tt style="font-size: 1.3em;">r</tt></b> können diese einfach aus einem
+String-Literal erstellt werden:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+val&nbsp;loginMessage&nbsp;=&nbsp;"""LOGIN:(\w+):(\d+)""".r
+val&nbsp;incomingMessage&nbsp;=&nbsp;"""SEND:(\w+):([\w\s,.]+)""".r
+</pre>
+
+<div class="p"><!----></div>
+Beim Eintreffen einer Log-in-Nachricht wird der Client-Actor in
+einer Liste gespeichert. Dank dieser Liste können Nachrichten
+später an alle Clients verteilt werden. Die Funktion für die
+Reaktion auf einen Login ist wie folgt definiert:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+def&nbsp;registerClient(username:&nbsp;String,&nbsp;port:&nbsp;Int)&nbsp;{
+&nbsp;&nbsp;println("%s&nbsp;logged&nbsp;in".format(username))
+&nbsp;&nbsp;val&nbsp;client&nbsp;=&nbsp;select(Node("127.0.0.1",&nbsp;port),&nbsp;'chatClient)
+&nbsp;&nbsp;clients&nbsp;=&nbsp;client&nbsp;::&nbsp;clients
+&nbsp;&nbsp;client&nbsp;!&nbsp;"SERVER:LOGIN_SUCCEEDED"&nbsp;
+}
+</pre>
+
+<div class="p"><!----></div>
+Mit der Funktion <b><tt style="font-size: 1.3em;">select</tt></b> in Zeile drei wird der Remote-Actor des
+Clients ausgewählt. Auf welchem Port dieser läuft, sendet der
+Client mit. Der zurückgegebene Actor wird dann in der
+bereits angesprochenen Liste gespeichert (Zeile 4). Anschließend
+wird dem Client in Zeile fünf noch eine Erfolgsnachricht gesendet.
+Dazu wird die aus dem letzten Artikel bekannte Methode <b><tt style="font-size: 1.3em;">!</tt></b>
+genutzt.  
+
+<div class="p"><!----></div>
+Als nächstes folgt die Funktion zum Verteilen einer Nachricht:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+def&nbsp;sendToAllClients(from:&nbsp;String,&nbsp;msg:&nbsp;String)&nbsp;=&nbsp;clients&nbsp;foreach&nbsp;{
+&nbsp;&nbsp;_&nbsp;!&nbsp;"%s&#62;&nbsp;%s".format(from,&nbsp;msg)&nbsp;}
+</pre>
+
+<div class="p"><!----></div>
+Um den Code kurz zu halten wird der Platzhalter <b><tt style="font-size: 1.3em;">_</tt></b> verwendet.
+Dieser steht für das aktuelle Element der Liste von Clients, über
+die gerade mittels <b><tt style="font-size: 1.3em;">foreach</tt></b> iteriert wird. Innerhalb von <b><tt style="font-size: 1.3em;">foreach</tt></b>
+    
+wird dann die entsprechende Nachricht an den aktuellen Client
+gesendet.
+
+<div class="p"><!----></div>
+    
+<h3>Der Client</h3>
+
+<div class="p"><!----></div>
+Der Client besteht, wie der Server auch, aus einer einzigen Klasse.
+Diese erbt sowohl von Actor als auch von SimpleSwingApplication.
+    
+Dadurch können sehr schnell einfache Benutzeroberflächen erstellt
+werden. Auch der Client verwendet einfache reguläre Ausdrücke zur
+Identifikation der Nachrichten:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+val&nbsp;loginMessage&nbsp;=&nbsp;"""OUT:LOGIN:(\w+)""".r
+val&nbsp;loginSucceeded&nbsp;=&nbsp;"SERVER:LOGIN_SUCCEEDED".r
+val&nbsp;sendMessage&nbsp;=&nbsp;"""OUT:([\w\s,.]+)""".r
+</pre>
+
+<div class="p"><!----></div>
+Interessant ist an dieser Stelle, dass die ausgehenden Nachrichten
+ebenfalls an den Client-Actor gesendet werden. Dazu werden sie mit
+dem Präfix <b><tt style="font-size: 1.3em;">OUT:</tt></b> versehen. Dies geschieht in der Methode, welche
+beim Klicken auf den „<em>Senden</em>“-Button ausgeführt wird:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+case&nbsp;ButtonClicked(`sendButton`)&nbsp;=&#62;&nbsp;inputField.text.trim&nbsp;match&nbsp;{
+&nbsp;&nbsp;case&nbsp;""&nbsp;=&#62;
+&nbsp;&nbsp;case&nbsp;msg&nbsp;=&#62;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;ChatClient&nbsp;!&nbsp;"OUT:"&nbsp;+&nbsp;msg
+&nbsp;&nbsp;&nbsp;&nbsp;this.inputField.text&nbsp;=&nbsp;""
+&nbsp;&nbsp;}
+&nbsp;&nbsp;this.inputField.text&nbsp;=&nbsp;""
+}
+</pre>
+
+<div class="p"><!----></div>
+Durch die regulären Ausdrücke wird einfach zwischen eingehender und
+ausgehender Nachricht unterschieden. Die Behandlung einer 
+    
+Log-in-Nachricht ist ähnlich wie im Server implementiert:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+case&nbsp;loginMessage(username)&nbsp;=&#62;&nbsp;{
+&nbsp;&nbsp;this.username&nbsp;=&nbsp;username
+&nbsp;&nbsp;server&nbsp;=&nbsp;select(Node("127.0.0.1",&nbsp;1234),&nbsp;'chatServer)
+&nbsp;&nbsp;server&nbsp;!&nbsp;"LOGIN:%s:%d".format(username,&nbsp;port)
+}
+</pre>
+
+<div class="p"><!----></div>
+Bekommt der Client die Erfolgsmeldung vom Server, so wird im
+Textfeld eine entsprechende Nachricht angezeigt:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+messageArea.append("Login&nbsp;erfolgreich\n")
+</pre>
+
+<div class="p"><!----></div>
+Der gesamte Quelltext mit einer kleinen Anleitung zur Kompilation
+und Ausführung kann bei GitHub&nbsp;<a href="https://github.com/madrenegade/ScalaChat">[3]</a>
+gefunden werden.
+
+<div class="p"><!----></div>
+    
+<h2>Fazit</h2>
+
+<div class="p"><!----></div>
+Der traditionelle Weg, mittels Socket-Programmierung verteilte
+Systeme zu programmieren, ist sehr aufwändig und fehleranfällig. Auf
+einer niedrigen Abstraktionsebene müssen Daten versendet und
+empfangen werden. Handelt es sich um eine Client-Server-Anwendung
+mit mehreren Clients, so müssen diese auf der Serverseite verwaltet
+werden.
+
+<div class="p"><!----></div>
+Viele dieser Arbeiten entfallen bei der Verwendung von
+Remote-Actors. Das Verfahren bietet eine hohe Abstraktion und
+vorhandene Actors können sehr einfach in Remote-Actors umgewandelt
+werden. Der Beispielcode für das Chat-Programm beweist
+eindrucksvoll die Mächtigkeit der Sprache Scala und die Verbindung
+mit Remote-Actors.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2011-05"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2011-05</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Socket_%28Software%29"><tt style="font-size: 1.3em;">https://secure.wikimedia.org/wikipedia/de/wiki/Socket_%28Software%29</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="https://github.com/madrenegade/ScalaChat"><tt style="font-size: 1.3em;">https://github.com/madrenegade/ScalaChat</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Stefan Bradl</b>
+ist Informatikstudent an der Hochschule Zittau/Görlitz.
+Während seines Praktikums hat er sich mit der Programmiersprache
+Scala vertraut gemacht und seine Bachelorarbeit zum Thema
+„Parallelisierung funktionaler Programme“ geschrieben.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+            <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Remote-Actors in Scala#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_python9">Python – Teil 9: Ab ins Netz!</a><a name="11_10_python9">
+</a></font></h1>von Daniel Nögel
+
+<div class="p"><!----></div>
+        
+<div class="p"><!----></div>
+<b>N</b><b>achdem im letzten Teil dieser Reihe Generator-Funktionen ebenso wie
+List Comprehensions und Generator Expressions vorgestellt wurden (siehe
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 07/2011&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-07">[1]</a>),
+soll es in diesen Teil wieder etwas praktischer werden. Es werden die
+<b><tt style="font-size: 1.3em;">urllib</tt></b>-Bibliotheken von Python vorgestellt und ein entsprechendes
+Beispiel besprochen.</b>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Besprechung der Übungen</h2>
+
+<div class="p"><!----></div>
+Bevor das neue Thema aufgegriffen wird, sollen kurz mögliche
+Lösungen der Übungsaufgaben des vorherigen Teils vorgestellt werden.
+
+<div class="p"><!----></div>
+Zunächst sollte eine Generator-Funktion geschrieben werden, die über
+jedes Zeichen einer gegebenen Datei iteriert. Eine solche Funktion
+könnte wie folgt implementiert werden:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+import&nbsp;codecs
+def&nbsp;iter_chars(path):
+&nbsp;&nbsp;&nbsp;&nbsp;with&nbsp;codecs.open(path,&nbsp;encoding="utf-8",&nbsp;mode="r")&nbsp;as&nbsp;handle:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;line&nbsp;in&nbsp;handle
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;char&nbsp;in&nbsp;line:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;char
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Das Einlesen einer Datei mit dem Context-Handler <b><tt style="font-size: 1.3em;">with</tt></b> wurde
+bereits in Teil 6 dieser Reihe vorgestellt (siehe <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+03/2011&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-03">[2]</a>). Die
+geöffnete Datei wird dabei an den Namen <b><tt style="font-size: 1.3em;">handle</tt></b> gebunden. Beim
+Iterieren über das
+Datei-Objekt (Zeile 3) wird der Inhalt der Datei
+zeilenweise zurückgegeben und an den Namen <b><tt style="font-size: 1.3em;">line</tt></b> gebunden. Beim
+Iterieren über die Zeichenkette <b><tt style="font-size: 1.3em;">line</tt></b> werden wiederum die
+einzelnen Zeichen abgearbeitet und an den Namen <b><tt style="font-size: 1.3em;">char</tt></b> gebunden. Es
+fehlt nur noch das Schlüsselwort <b><tt style="font-size: 1.3em;">yield</tt></b>, um die gewünschte
+Generator-Funktion zu vervollständigen. Die Funktion könnte nun wie
+folgt aufgerufen werden:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+for&nbsp;char&nbsp;in&nbsp;iter_chars(DATEINAME):
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;char
+</pre>
+
+<div class="p"><!----></div>
+Eine Besonderheit ist die Funktion <b><tt style="font-size: 1.3em;">open()</tt></b> aus dem <b><tt style="font-size: 1.3em;">codecs</tt></b>-Modul.
+Es erlaubt das Einlesen einer Datei mit einer bestimmten Kodierung.
+So werden Fehler verhindert, andernfalls würden etwa in diesem
+Beispiel Umlaute in UTF-8-kodierten Dateien als zwei Zeichen
+gezählt werden&nbsp;<a href="http://docs.python.org/howto/unicode.html#reading-and-writing-unicode-data">[3]</a>.
+
+<div class="p"><!----></div>
+Als zweite Übung war eine List Comprehension (LC) gefordert, die für
+die Zahlen von 1 bis 100 Tupel der jeweiligen Zahlen und ihrer
+Quadratwurzel in einer Liste ablegt. Hilfreich dazu ist das Modul
+<b><tt style="font-size: 1.3em;">math</tt></b>, mit dessen Funktion <b><tt style="font-size: 1.3em;">sqrt()</tt></b> sich Quadratwurzeln von Zahlen
+berechnen lassen:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&#62;&#62;&#62;&nbsp;import&nbsp;math
+&#62;&#62;&#62;&nbsp;[(number,math.sqrt(number))&nbsp;for&nbsp;number&nbsp;in&nbsp;xrange(1,101)]
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Dieses Beispiel sollte nach der Lektüre von Teil 8 dieser Reihe (siehe
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 07/2011&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-07">[1]</a>),
+ohne größere Probleme verständlich sein. Ein wenig anspruchsvoller
+ist da schon die Ergänzungsaufgabe, in diese Liste nur jene Zahlen
+aufzunehmen, deren Quadratwurzel natürlich ist. Letztlich ist dafür
+aber lediglich eine kleine Ergänzung der LC erforderlich:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&#62;&#62;&#62;&nbsp;[(number,math.sqrt(number))&nbsp;for&nbsp;number&nbsp;in&nbsp;xrange(1,101)&nbsp;if&nbsp;math.sqrt(number).is_integer()]
+[(1,&nbsp;1.0),&nbsp;(4,&nbsp;2.0),&nbsp;(9,&nbsp;3.0),&nbsp;(16,&nbsp;4.0),&nbsp;(25,&nbsp;5.0),&nbsp;(36,&nbsp;6.0),&nbsp;(49,&nbsp;7.0),&nbsp;(64,&nbsp;8.0),&nbsp;(81,&nbsp;9.0),&nbsp;(100,&nbsp;10.0)]
+</pre>
+
+<div class="p"><!----></div>
+Die Methode <b><tt style="font-size: 1.3em;">is_integer()</tt></b> gibt dabei jeweils „wahr“ zurück, wenn
+eine gegebene Fließkommazahl (etwa 3.0) eine Ganzzahl ist. Nur
+diese Zahlen werden so in die Liste aufgenommen. Alternativ könnte
+hier auch der Modulo-Operator <b><tt style="font-size: 1.3em;">%</tt></b> eingesetzt werden, um Zahlen auf
+ihre Ganzzahligkeit zu testen.
+
+<div class="p"><!----></div>
+Statt <b><tt style="font-size: 1.3em;">xrange</tt></b> ließe sich grundsätzlich auch <b><tt style="font-size: 1.3em;">range</tt></b> verwenden. Zwar
+legt <b><tt style="font-size: 1.3em;">range</tt></b> dazu erst eine komplette Liste der Zahlen von 1 bis
+100 im Speicher ab, dieser Nachteil kommt aber erst bei großen
+Listen zum Tragen&nbsp;<a href="http://docs.python.org/library/functions.html#xrange">[4]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Die Tore der Welt</h2>
+
+<div class="p"><!----></div>
+Bei <b><tt style="font-size: 1.3em;">urllib</tt></b>&nbsp;<a href="http://docs.python.org/library/urllib.html">[5]</a> und
+<b><tt style="font-size: 1.3em;">urllib2</tt></b>&nbsp;<a href="http://docs.python.org/library/urllib2.html">[6]</a> handelt
+es sich gewissermaßen um Tore zum „World Wide Web“. Mit <b><tt style="font-size: 1.3em;">urllib</tt></b>
+lassen sich beispielsweise bequem Dateien aus dem Internet lokal
+speichern oder Webseiten auslesen. Die genaue Verteilung der
+Funktionalität über die beiden Module ist bisweilen etwas
+irritierend – hier hilft es am ehesten, sich anhand der Beispiele
+zu orientieren. In Python3 wurde diesbezüglich etwas aufgeräumt.
+
+<div class="p"><!----></div>
+Um beispielsweise die Bing-Ergebnisseite für einen beliebigen
+Suchbegriff auszulesen, ließe sich folgender Code verwenden:
+
+<div class="p"><!----></div>
+    
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+import&nbsp;urllib
+import&nbsp;urllib2
+url&nbsp;=&nbsp;"http://bing.com/search"
+params&nbsp;=&nbsp;urllib.urlencode({"q":"test"})
+handle&nbsp;=&nbsp;urllib2.urlopen("{0}?{1}".format(url,&nbsp;params))
+print&nbsp;handle.read()
+</pre>
+
+<div class="p"><!----></div>
+    
+Es werden zunächst <b><tt style="font-size: 1.3em;">urllib</tt></b> und <b><tt style="font-size: 1.3em;">urllib2</tt></b> importiert und schließlich
+die auszulesende URL an den Namen <b><tt style="font-size: 1.3em;">url</tt></b> gebunden. Die Funktion
+<b><tt style="font-size: 1.3em;">urllib.urlencode</tt></b> erstellt aus einem Dict von Schlüsseln und
+Werten eine Zeichenkette mit dem Format
+<b><tt style="font-size: 1.3em;">Schlüssel1=Wert1&amp;Schlüssel2=Wert2</tt></b>. Dabei werden unter anderem Leerzeichen
+und Umlaute prozentkodiert&nbsp;<a href="http://de.wikipedia.org/wiki/URL_Encoding">[7]</a>.
+
+<div class="p"><!----></div>
+In Zeile 5 wird die URL geöffnet und ein sogenanntes
+„file-like object“ an den Namen <b><tt style="font-size: 1.3em;">handle</tt></b> gebunden. „file-like“
+bedeutet in diesem Kontext, dass die Netzwerkobjekte sich ähnlich
+verhalten wie gewöhnliche Dateien. So unterstützen sie
+beispielsweise die Methoden <b><tt style="font-size: 1.3em;">read()</tt></b>, <b><tt style="font-size: 1.3em;">readlines()</tt></b> oder <b><tt style="font-size: 1.3em;">info()</tt></b>.
+Auch kann über sie iteriert werden.
+
+<div class="p"><!----></div>
+Im obigen Beispiel wird das gesamte Objekt (sprich die
+Bing-Ergebnisseite) in einem Rutsch ausgelesen und mittels
+<b><tt style="font-size: 1.3em;">print</tt></b> auf der Standardausgabe ausgegeben. Ebenso könnte der
+Inhalt an einen Namen gebunden werden und etwa mit einem
+HTML-Parser weiterverarbeitet werden – wenngleich für derartige
+Anwendungen natürlich immer eine Lösung via API vorzuziehen ist.
+
+<div class="p"><!----></div>
+        Anbieter wie Google oder Wikipedia unterbinden derartige
+automatisierte Suchen sogar.
+
+<div class="p"><!----></div>
+Wer dennoch Seiten mit <b><tt style="font-size: 1.3em;">urllib</tt></b> auslesen möchte, sollte unbedingt
+daran denken, die erhaltenen Zeichenketten korrekt zu dekodieren.
+Abhängig von der Kodierung der jeweiligen Seite, kann es sonst zu
+Darstellungsfehlern kommen.
+
+<div class="p"><!----></div>
+Mit folgendem, sehr einfachen Beispiel könnte aber beispielsweise die
+externe IP-Adresse des Rechners ermittelt werden:
+
+<div class="p"><!----></div>
+    
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+import&nbsp;re
+import&nbsp;urllib2
+
+url&nbsp;=&nbsp;"http://checkip.dyndns.com/"
+handle&nbsp;=&nbsp;urllib2.urlopen(url)
+content&nbsp;=&nbsp;handle.read()
+result&nbsp;=&nbsp;re.search("[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+",&nbsp;content)
+if&nbsp;result:
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;result.group(0)
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;"Keine&nbsp;IP&nbsp;gefunden"
+</pre>
+
+<div class="p"><!----></div>
+In Zeile 1 wird das Modul <b><tt style="font-size: 1.3em;">re</tt></b> importiert, mit dem sich reguläre
+Ausdrücke in Python erzeugen lassen. Danach wird auch hier eine URL
+geöffnet, ausgelesen und der Inhalt an <b><tt style="font-size: 1.3em;">content</tt></b> gebunden. Der
+reguläre Ausdruck in Zeile 7 definiert vereinfacht gesagt das
+„Aussehen“ einer IP-Adresse. Mit der Funktion <b><tt style="font-size: 1.3em;">search</tt></b> wird
+<b><tt style="font-size: 1.3em;">content</tt></b> nach Vorkommen dieser Zeichenkette durchsucht. Die
+Treffer werden als <b><tt style="font-size: 1.3em;">SRE_Match</tt></b>-Objekt an <b><tt style="font-size: 1.3em;">result</tt></b> gebunden. Wenn es
+Treffer gab (Zeile 8), wird die erste gefundene IP-Adresse auf der
+Standardausgabe ausgegeben (Zeile 9).
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> In Python3 wurde die Funktionalität der Bibliotheken <b><tt style="font-size: 1.3em;">urllib</tt></b>
+und <b><tt style="font-size: 1.3em;">urllib2</tt></b> auf die Module <b><tt style="font-size: 1.3em;">urllib.request</tt></b>, <b><tt style="font-size: 1.3em;">urllib.parse</tt></b> und
+<b><tt style="font-size: 1.3em;">urllib.error</tt></b> verteilt. Genauere Informationen zu den Änderungen
+finden sich im Netz&nbsp;<a href="http://diveintopython3.org/porting-code-to-python-3-with-2to3.html#urllib">[8]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Ins Netz damit!</h2>
+
+<div class="p"><!----></div>
+Natürlich lassen sich mit Hilfe der <b><tt style="font-size: 1.3em;">urllib</tt></b>-Bibliotheken nicht nur
+Internetseiten auslesen, sondern auch Dateien zu Servern übertragen.
+
+<div class="p"><!----></div>
+Im Folgenden soll ein nicht sehr umfangreiches Skript vorgestellt
+werden. Es lädt eine Datei bei einem sogenannten „One-Click-Hoster“
+hoch – in diesem Fall zu der Plattform der „PirateBay“-Macher
+bayfiles.com. Diese Seite bietet eine recht einfache
+Schnittstelle&nbsp;<a href="http://bayfiles.com/api">[9]</a>, über die Dateien hochgeladen
+und gelöscht werden können.
+
+<div class="p"><!----></div>
+Zunächst soll nur etwas hochgeladen werden. Ein Blick in die
+Dokumentation offenbart, welches Verhalten die Schnittstelle
+erwartet:
+
+<div class="p"><!----></div>
+
+<ol type="1">
+<li> Es erfolgt eine <b><tt style="font-size: 1.3em;">GET</tt></b>-Anfrage an
+<a href="http://api.bayfiles.com/v1/file/uploadUrl"><tt style="font-size: 1.3em;">http://api.bayfiles.com/v1/file/uploadUrl</tt></a>
+Diese liefert zwei temporär gültige URLs zurück. Eine URL für den
+Upload und eine URL für den Fortschritt des Uploads.
+<div class="p"><!----></div>
+</li>
+
+<li> Danach folgt der <b><tt style="font-size: 1.3em;">HTTP-POST</tt></b> an die so erhaltene Upload-URL. Dabei
+wird die zu übertragende Datei mit dem Feld <b><tt style="font-size: 1.3em;">file</tt></b> übergeben.
+<div class="p"><!----></div>
+</li>
+
+<li> Nach erfolgreichem Upload liefert die Upload-URL verschiedene
+Informationen über die Datei zurück. So erhält man Download-URL,
+sha1-Prüfsumme und den Lösch-Link.
+<div class="p"><!----></div>
+</li>
+
+<li> Alle Antworten des Servers werden im sogenannten
+„JSON-Format“&nbsp;<a href="http://de.wikipedia.org/wiki/JSON">[10]</a> geliefert. Dieses
+Format erlaubt es, Datenstrukturen über das Netz zu übertragen, so
+dass die Rückgaben des Servers schnell in eine Python-Datenstruktur
+umgewandelt werden können.
+
+<div class="p"><!----></div>
+</li>
+</ol>
+
+<div class="p"><!----></div>
+Für die Übersichtlichkeit soll der Aufwand möglichst gering gehalten
+werden, daher wird die Datei anonym (d.&nbsp;h. ohne vorherigen Log-in) an
+den Server übertragen.
+
+<div class="p"><!----></div>
+Für die Umsetzung in Python gibt es zunächst noch eine
+Einschränkung: Von Haus aus ist <b><tt style="font-size: 1.3em;">urllib</tt></b> nicht in der Lage,
+ein <b><tt style="font-size: 1.3em;">HTTP-POST</tt></b> in der Kodierung <b><tt style="font-size: 1.3em;">multipart/form-data</tt></b> durchzuführen.
+Diese Kodierung wird von der Bayfiles-Schnittstelle aber erwartet.
+Abhilfe schafft das Zusatzmodul <b><tt style="font-size: 1.3em;">poster</tt></b>&nbsp;<a href="http://atlee.ca/software/poster/">[11]</a>,
+das <b><tt style="font-size: 1.3em;">urllib</tt></b> um die Möglichkeit erweitert, so ein <b><tt style="font-size: 1.3em;">HTTP-POST</tt></b>
+durchzuführen. Erforderlich ist hier Version 0.8.1 oder höher. Sehr
+bequem kann dieses Paket mit dem Programm easy_install
+installiert werden, das sich in Ubuntu beispielsweise im Paket
+<b>python-setuptools</b> befindet. Es genügt dann ein einfacher Aufruf
+von
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+#&nbsp;easy_install&nbsp;poster&#62;=0.8.1
+</pre>
+
+<div class="p"><!----></div>
+Um das JSON-Format verarbeiten zu können, wird das Modul
+<b><tt style="font-size: 1.3em;">simplejson</tt></b> eingesetzt. Dieses findet sich in allen gängigen
+Linux-Distributionen und kann beispielsweise unter Ubuntu über das
+Paket <b>python-simplejson</b> nachinstalliert werden.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Der Übersicht halber wird das fertige Skript hier nicht abgedruckt,
+sondern nur zum Download angeboten: <a href="http://www.freiesmagazin.de/mobil/2011-10-listings/beam2bay\_simple.py">beam2bay_simple.py</a>.
+
+<div class="p"><!----></div>
+
+<h2>Analyse des Upload-Skriptes</h2>
+
+<div class="p"><!----></div>
+Was passiert genau in dem Skript?
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+import&nbsp;os
+import&nbsp;sys
+import&nbsp;poster
+import&nbsp;urllib
+import&nbsp;urllib2
+import&nbsp;simplejson
+</pre>
+
+<div class="p"><!----></div>
+Zunächst werden die erforderlichen Importe durchgeführt. Die Module
+<b><tt style="font-size: 1.3em;">os</tt></b> und <b><tt style="font-size: 1.3em;">sys</tt></b> sind bereits hinreichend bekannt, die Module
+<b><tt style="font-size: 1.3em;">urllib</tt></b> und <b><tt style="font-size: 1.3em;">urllib2</tt></b> wurden ebenfalls oben vorgestellt. Das neue
+Modul <b><tt style="font-size: 1.3em;">simplejson</tt></b> wird sich darum kümmern, die Antworten des
+Servers in Python-Datenstrukturen zu übersetzen.
+
+<div class="p"><!----></div>
+Der Befehl
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+poster.streaminghttp.register_openers()
+</pre>
+
+<div class="p"><!----></div>
+meldet die Zusatzfunktionalität des <b><tt style="font-size: 1.3em;">poster</tt></b>-Moduls bei <b><tt style="font-size: 1.3em;">urllib2</tt></b>
+an, sodass dieses wie gewohnt verwendet werden kann.
+
+<div class="p"><!----></div>
+Die zentrale Funktion des Skriptes ist die Funktion <b><tt style="font-size: 1.3em;">upload_file()</tt></b>.
+Sie erwartet einen Parameter <b><tt style="font-size: 1.3em;">path</tt></b>, also den Pfad der
+hochzuladenden Datei. In Zeile 40 ruft sie zunächst die Funktion
+<b><tt style="font-size: 1.3em;">get_upload_url()</tt></b> auf. Diese führt Schritt eins von oben aus und
+stellt eine <b><tt style="font-size: 1.3em;">GET</tt></b>-Anfrage an den Server. Das Vorgehen ist dabei
+bereits bekannt. Neu ist lediglich
+die Tatsache, dass die Antwort des Servers durch das Modul
+<b><tt style="font-size: 1.3em;">simplejson</tt></b> weiterverarbeitet wird:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+info&nbsp;=&nbsp;simplejson.loads(content)
+if&nbsp;info["error"]&nbsp;==&nbsp;u"":
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;info["uploadUrl"],&nbsp;info["progressUrl"]
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;BeamException(info["error"])
+</pre>
+
+<div class="p"><!----></div>
+Der Inhalt (<b><tt style="font-size: 1.3em;">content</tt></b>) wird zunächst an die Funktion <b><tt style="font-size: 1.3em;">loads</tt></b> des
+Moduls <b><tt style="font-size: 1.3em;">simplejson</tt></b> übergeben. Antwortet der Server also mit einer
+Zeichenkette wie (gekürzt):
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+{"error":"","uploadUrl":"http:\/\/s6.baycdn.com\/upload\/4013ab9a\/4e7360f8\/6\/0?X-Progress-ID=...","progressUrl":"http:\/\/s6.baycdn.com\/progress\/?X-Progress-ID=..."}
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+macht <b><tt style="font-size: 1.3em;">simplejson</tt></b> daraus ein Python-Dict:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+{
+&nbsp;"error":"",
+&nbsp;"uploadUrl":"http://s6.baycdn.com/upload/4013ab9a/4e7360f8/6/0?X-Progress-ID=...",
+&nbsp;"progressUrl":"http://s6.baycdn.com/progress/?X-Progress-ID=..."
+}
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Das ist unglaublich bequem, da die Antwort des Servers nicht mehr
+umständlich geparst und ausgewertet werden muss. Sie wird direkt in
+eine verwendbare Datenstruktur umgewandelt und an den Namen <b><tt style="font-size: 1.3em;">info</tt></b>
+gebunden (Zeile 32).
+
+<div class="p"><!----></div>
+Wenn der Eintrag <b><tt style="font-size: 1.3em;">error</tt></b> des Dicts nur eine leere Zeichenkette
+enthält, wurde der Vorgang laut BayFiles-Dokumentation erfolgreich
+abgeschlossen und die Felder <b><tt style="font-size: 1.3em;">uploadUrl</tt></b> und <b><tt style="font-size: 1.3em;">progressUrl</tt></b>
+enthalten gültige URLs. Diese werden als Rückgabewert der Funktion
+<b><tt style="font-size: 1.3em;">get_upload_url()</tt></b> zurückgegeben (Zeile 34). Ist <b><tt style="font-size: 1.3em;">info["error"]</tt></b>
+nicht leer, ist ein Fehler aufgetreten. In Zeile 36 wird
+entsprechend eine Exception ausgelöst.
+
+<div class="p"><!----></div>
+In Zeile 40 werden die Rückgabewerte der Funktion <b><tt style="font-size: 1.3em;">get_upload_url()</tt></b>
+an die Namen <b><tt style="font-size: 1.3em;">upload_url</tt></b> und <b><tt style="font-size: 1.3em;">progress_url</tt></b> gebunden. Von
+Interesse ist hier aber nur die erste URL. Diese wird in Zeile 42 an
+die Funktion <b><tt style="font-size: 1.3em;">poster.encode.multipart_encode()</tt></b>  übergeben.
+Diese erwartet als ersten Parameter ein Dict, das die Namen der
+gewünschten Felder als Schlüssel und die dazugehörigen Daten als
+Werte angibt. In diesem Fall ist es also das Dict <b><tt style="font-size: 1.3em;">"file":
+open(path)</tt></b>. Als weiterer Parameter wird hier <b><tt style="font-size: 1.3em;">cb=show_progress</tt></b>
+übergeben. Dabei handelt es sich um eine sogenannte
+Callback-Funktion. Während des Uploads wird diese Funktion in
+regelmäßigen Abständen aufgerufen, so dass man den aktuellen
+Fortschritt ausgeben kann. Die Funktion <b><tt style="font-size: 1.3em;">multipart_encode()</tt></b>
+erstellt nun ein <b><tt style="font-size: 1.3em;">HTTP-POST</tt></b>-Request mit der gewünschten
+<b><tt style="font-size: 1.3em;">multipart</tt></b>-Kodierung. Es gibt einen Generator und eine
+Zeichenkette zurück, die an die Namen <b><tt style="font-size: 1.3em;">datagen</tt></b> und <b><tt style="font-size: 1.3em;">headers</tt></b>
+gebunden werden.
+
+<div class="p"><!----></div>
+Bei <b><tt style="font-size: 1.3em;">headers</tt></b> handelt es sich schlicht um den Kopf der
+<b><tt style="font-size: 1.3em;">HTTP-POST</tt></b>-Anfrage. <b><tt style="font-size: 1.3em;">datagen</tt></b> ist ein Generator, der nach und nach
+die zu übertragende Datei ausliest. In Zeile 44 werden
+<b><tt style="font-size: 1.3em;">upload_url</tt></b>, <b><tt style="font-size: 1.3em;">datagen</tt></b> und <b><tt style="font-size: 1.3em;">headers</tt></b> an ein
+<b><tt style="font-size: 1.3em;">urllib2.Request</tt></b>-Objekt&nbsp;<a href="http://docs.python.org/library/urllib2.html#urllib2.Request">[12]</a>
+übergeben. Dieses Objekt wird an den Namen <b><tt style="font-size: 1.3em;">request</tt></b> gebunden und in
+Zeile 45 statt einer URL an die Funktion <b><tt style="font-size: 1.3em;">urllib2.urlopen</tt></b>
+übergeben.
+
+<div class="p"><!----></div>
+Das mutet zunächst merkwürdig an: Warum wird die Seite nicht direkt
+über <b><tt style="font-size: 1.3em;">urllib2.urlopen()</tt></b> ausgelesen wie in den Beispielen zuvor?
+Dies hängt damit zusammen, dass <b><tt style="font-size: 1.3em;">urlopen()</tt></b> letztlich nur zwei
+Methoden kennt: <b><tt style="font-size: 1.3em;">GET</tt></b> und <b><tt style="font-size: 1.3em;">POST</tt></b> in der Kodierung
+<b><tt style="font-size: 1.3em;">application/x-www-form-urlencoded</tt></b>. Dies genügt für viele Fälle.
+Möchte man darüber hinaus aber auf den HTTP-Header zugreifen, wird
+zunächst ein Request-Objekt erstellt, das tiefgreifendere
+Manipulationen zulässt.
+
+<div class="p"><!----></div>
+Die eigentliche Kommunikation findet aber so oder so über die
+Funktion <b><tt style="font-size: 1.3em;">urlopen</tt></b> statt. Diese verarbeitet sowohl URLs als auch
+Request-Objekte. Sie öffnet also eine Verbindung zu dem externen
+Server, überträgt die Daten und macht die Antwort des Servers als
+„file-like-object“ zugänglich, das an den Namen <b><tt style="font-size: 1.3em;">response</tt></b> gebunden
+wird. Der Inhalt der Antwort wird in Zeile 47 mit der Methode
+<b><tt style="font-size: 1.3em;">read()</tt></b> ausgelesen und an den Namen <b><tt style="font-size: 1.3em;">info</tt></b> gebunden.
+
+<div class="p"><!----></div>
+Hier wiederholt sich das JSON-Spiel: Die Antwort wird durch
+<b><tt style="font-size: 1.3em;">simplejson.loads()</tt></b> in ein Python-Dict umgewandelt. Ist
+<b><tt style="font-size: 1.3em;">info["error"]</tt></b> leer (also == ), gab es keine Fehler. In diesem
+Fall enthält das Dict <b><tt style="font-size: 1.3em;">info</tt></b> (wie der Dokumentation zu entnehmen
+ist) allerlei Informatioenen, die ab Zeile 53 in einer sehr
+einfachen Tabelle ausgegeben werden.
+
+<div class="p"><!----></div>
+Ist <b><tt style="font-size: 1.3em;">error != </tt></b>, trat ein Fehler auf. In dem Fall wird wiederum
+eine Exception ausgelöst.
+
+<div class="p"><!----></div>
+Bleibt nur noch die Funktion <b><tt style="font-size: 1.3em;">show_progress</tt></b>. Diese Funktion wird
+während der Übertragung der Daten an den Server immer wieder
+ausgelöst, i.&nbsp;d.&nbsp;R. nach 4096 übertragenen Byte. Ihr werden dabei
+zwei Werte übergeben: einmal die bereits übertragenen Daten
+(<b><tt style="font-size: 1.3em;">current</tt></b>) und die Gesamtgröße der zu übertragenden Daten
+(<b><tt style="font-size: 1.3em;">total</tt></b>). Aus diesen lässt sich leicht der Fortschritt in Prozent
+ermitteln.
+
+<div class="p"><!----></div>
+Eine kleine Besonderheit ist die Ausgabe über <b><tt style="font-size: 1.3em;">sys.stdout.write()</tt></b>.
+Damit wird ebenso wie mit <b><tt style="font-size: 1.3em;">print</tt></b> auf die Standardausgabe
+geschrieben, allerdings ist etwas mehr Kontrolle über die
+Ausgabe möglich. Der Fortschrittsangabe ist die Zeichenkette <b><tt style="font-size: 1.3em;">\r</tt></b>
+(Wagenrücklauf) angehängt. Dies setzt den Cursor wieder auf den Anfang
+der Zeile, sodass die nächste Ausgabe die vorherige Ausgabe
+überschreibt. Durch <b><tt style="font-size: 1.3em;">sys.stdout.flush()</tt></b> wird der interne Buffer
+der Standardausgabe geleert, sprich auf den Bildschirm gebracht.
+
+<div class="p"><!----></div>
+Bleibt zuletzt noch der Block <b><tt style="font-size: 1.3em;">if __name__ == "__main__":</tt></b>. Er ist
+bereits aus vorherigen Beispielen bekannt. Der Rumpf wird
+ausgeführt, wenn das Skript als eigenständiges Programm gestartet
+und nicht als Modul importiert wird. Hier wird nur überprüft, ob
+ein zusätzlicher Parameter übergeben wurde und ob es sich dabei um
+eine gültige Datei handelt. Ist dies der Fall, wird der
+entsprechende Pfad an die Funktion <b><tt style="font-size: 1.3em;">upload_file()</tt></b> übergeben,
+andernfalls wird eine Fehlermeldung ausgegeben.
+
+<div class="p"><!----></div>
+
+<h2>Gedanken zur weiteren Entwicklung</h2>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Eine anständige Parameterbehandlung wäre wünschenswert, wobei das
+Modul <b><tt style="font-size: 1.3em;">argparse</tt></b>&nbsp;<a href="http://docs.python.org/dev/library/argparse.html">[13]</a>
+helfen kann. Aber auch getrennte Benutzerkonten für den Upload
+könnten unterstützt werden. Eine erweiterte Version dieses Skriptes wurde bei
+Launchpad&nbsp;<a href="https://launchpad.net/beam2bay">[14]</a> abgelegt.
+
+<div class="p"><!----></div>
+Mit <b><tt style="font-size: 1.3em;">urllib</tt></b>, <b><tt style="font-size: 1.3em;">urllib2</tt></b> und <b><tt style="font-size: 1.3em;">simplejson</tt></b> wurden in diesem Artikel
+einige Module vorgestellt, die für viele Web-APIs von Bedeutung
+sind. Wer auf die Schnittstelle von
+Jamendo&nbsp;<a href="http://developer.jamendo.com/de/wiki/Musiclist2Api">[15]</a>
+zugreifen möchte oder mit der
+Twitter-API&nbsp;<a href="https://dev.twitter.com/docs/open-source-examples#Python">[16]</a>
+experimentiert, wird diesen Modulen begegnen.
+
+<div class="p"><!----></div>
+
+<h2>Kleine Übung</h2>
+
+<div class="p"><!----></div>
+Zur Vertiefung des Gelernten bietet es sich an, ein kleines
+Download-Skript zu schreiben, das eine größere Binärdatei aus dem
+Internet herunterlädt und lokal speichert. Folgende Anforderungen
+werden gestellt:
+
+<ol type="1">
+<li> Herunterladen einer Binärdatei aus dem Web
+<div class="p"><!----></div>
+</li>
+
+<li> Ausschließliche Nutzung des Moduls <b><tt style="font-size: 1.3em;">urllib2</tt></b>
+<div class="p"><!----></div>
+</li>
+
+<li> Darstellung des Fortschritts
+
+<div class="p"><!----></div>
+</li>
+</ol>
+
+<div class="p"><!----></div>
+Ein kleiner Tipp bezüglich des Fortschritts: Ein mit
+<b><tt style="font-size: 1.3em;">urllib2.urlopen</tt></b> geöffnetes Objekt kennt die Methode <b><tt style="font-size: 1.3em;">info()</tt></b>. Das
+so erhaltene Info-Objekt hat wiederum eine Methode <b><tt style="font-size: 1.3em;">getheaders()</tt></b>,
+über das die Eigenschaft <b><tt style="font-size: 1.3em;">Content-Length</tt></b> ausgelesen werden kann.
+So ist es möglich, die Größe einer entfernten Datei zu ermitteln.
+Es sei allerdings darauf hingewiesen, dass diese Information nicht
+zwingend bei jedem Download vorausgesetzt werden
+kann&nbsp;<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.13">[17]</a>.
+
+<div class="p"><!----></div>
+Wer die Fortsetzung begonnener Downloads unterstützen möchte, sollte
+einen Blick auf den Range-Header werfen&nbsp;<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35">[18]</a>.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2011-07"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2011-07</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2011-03"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2011-03</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://docs.python.org/howto/unicode.html#reading-and-writing-unicode-data"><tt style="font-size: 1.3em;">http://docs.python.org/howto/unicode.html#reading-and-writing-unicode-data</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://docs.python.org/library/functions.html#xrange"><tt style="font-size: 1.3em;">http://docs.python.org/library/functions.html#xrange</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://docs.python.org/library/urllib.html"><tt style="font-size: 1.3em;">http://docs.python.org/library/urllib.html</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://docs.python.org/library/urllib2.html"><tt style="font-size: 1.3em;">http://docs.python.org/library/urllib2.html</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="http://de.wikipedia.org/wiki/URL_Encoding"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/URL_Encoding</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://diveintopython3.org/porting-code-to-python-3-with-2to3.html#urllib"><tt style="font-size: 1.3em;">http://diveintopython3.org/porting-code-to-python-3-with-2to3.html#urllib</tt></a><br />
+
+<div class="p"><!----></div>
+[9] <a href="http://bayfiles.com/api"><tt style="font-size: 1.3em;">http://bayfiles.com/api</tt></a><br />
+
+<div class="p"><!----></div>
+[10] <a href="http://de.wikipedia.org/wiki/JSON"><tt style="font-size: 1.3em;">http://de.wikipedia.org/wiki/JSON</tt></a><br />
+
+<div class="p"><!----></div>
+[11] <a href="http://atlee.ca/software/poster/"><tt style="font-size: 1.3em;">http://atlee.ca/software/poster/</tt></a><br />
+
+<div class="p"><!----></div>
+[12] <a href="http://docs.python.org/library/urllib2.html#urllib2.Request"><tt style="font-size: 1.3em;">http://docs.python.org/library/urllib2.html#urllib2.Request</tt></a><br />
+
+<div class="p"><!----></div>
+[13] <a href="http://docs.python.org/dev/library/argparse.html"><tt style="font-size: 1.3em;">http://docs.python.org/dev/library/argparse.html</tt></a><br />
+
+<div class="p"><!----></div>
+[14] <a href="https://launchpad.net/beam2bay"><tt style="font-size: 1.3em;">https://launchpad.net/beam2bay</tt></a><br />
+
+<div class="p"><!----></div>
+[15] <a href="http://developer.jamendo.com/de/wiki/Musiclist2Api"><tt style="font-size: 1.3em;">http://developer.jamendo.com/de/wiki/Musiclist2Api</tt></a><br />
+
+<div class="p"><!----></div>
+[16] <a href="https://dev.twitter.com/docs/open-source-examples#Python"><tt style="font-size: 1.3em;">https://dev.twitter.com/docs/open-source-examples#Python</tt></a><br />
+
+<div class="p"><!----></div>
+[17] <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.13"><tt style="font-size: 1.3em;">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.13</tt></a><br />
+
+<div class="p"><!----></div>
+[18] <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35"><tt style="font-size: 1.3em;">http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35</tt></a><br />
+
+<div class="p"><!----></div>
+    
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Daniel Nögel</b>&nbsp;(<a href="http://danielnoegel.de/">Webseite</a>)
+beschäftigt sich seit drei Jahren mit Python. Ihn überzeugt besonders die
+intuitive Syntax und die Vielzahl der Bibliotheken.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+    
+            <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Python - Teil 9: Ab ins Netz!#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+            
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_aptana">Aptana Studio – Eine leistungsfähige Web-Entwicklungsumgebung</a><a name="11_10_aptana">
+</a></font></h1>von Patrick Meyhöfer
+
+<div class="p"><!----></div>
+        
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<b>J</b><b>eder der sich im Laufe der Zeit mit Webentwicklung ernsthafter
+beschäftigt, kommt einmal an den Punkt, bei dem man sich überlegt
+professionellere Entwicklungswerkzeuge einzusetzen, die einem die Arbeit
+erleichtern.</b>
+
+<div class="p"><!----></div>
+Ein sehr mächtiges Programm für die Webentwicklung stellt hierfür <i>Aptana
+Studio</i> (im Folgenden nur noch kurz: <i>Aptana</i>) bereit, welches zum Teil als
+echte freie Alternative zu Adobe Dreamweaver gesehen werden kann.
+
+<div class="p"><!----></div>
+    
+<div class="p"><!----></div>
+
+<h2>Allgemeines und Installation</h2>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Der große Vorteil von <i>Aptana</i>&nbsp;<a href="http://www.aptana.com/products/studio3">[1]</a>
+liegt in der Plattformunabhängigkeit, da es auf der populären
+Entwicklungsumgebung Eclipse aufsetzt (lediglich eine
+Java-Laufzeitumgebung wird benötigt). Für die Installation gibt es zwei
+verschiedene
+Möglichkeiten. Entweder man nutzt auf der Downloadseite
+&nbsp;<a href="http://www.aptana.com/products/studio3/download">[2]</a> die sogenannte
+Standalone-Version oder man lädt sich ein Eclipse-Plug-in (aktuell benötigt
+man die Version 3.5 oder höher) herunter. Sofern man mit weiteren
+    Programmiersprachen in Eclipse entwickelt, bietet sich das Plug-in eher an,
+da man dann sehr einfach mit seinen gewohnten Einstellungen direkt
+weiterarbeiten kann. Dies kann, wie alle Plug-ins in Eclipse, direkt über
+„<em>Help&nbsp;-&#62;&nbsp;Install New Software</em>“ installiert werden.
+
+<div class="p"><!----></div>
+<i>Aptana</i> ist mit zwei
+verschiedenen Lizenzen versehen, u.&nbsp;a. der GPL v3 und der eigens
+geschaffenen Lizenz Aptana Public Licence. Als Gründe nennt <i>Aptana</i> die
+Freiheit für 
+die Entwickler, wenn einmal die GPL v3 nicht die optimale
+Lizenz sei&nbsp;<a href="http://wiki.appcelerator.org/display/tis/Legal+and+Licensing">[3]</a>.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/aptana-o.png" /><br /><em>Die Oberfläche von Aptana.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Funktionen</h2>
+
+<div class="p"><!----></div>
+Durch die enge Verzahnung mit Eclipse bietet <i>Aptana</i> auch dessen
+grundsätzliche Funktionalitäten und Komfortmöglichkeiten. So sind
+beispielsweise Code-Vervollständigung, Syntax-Hervorhebung, automatische
+Schließung von geöffneten Tags oder ein Debugger direkt integriert.
+In der letzten aktuellen Version 3.04 vom 15.08.11 bringt <i>Aptana</i> die
+Integration der neuesten HTML5- und CSS3-Spezifikationen mit, die es
+somit erlauben die modernen Fähigkeiten der Browser auszunutzen.
+
+<div class="p"><!----></div>
+Dabei unterstützt <i>Aptana</i> folgende Sprachen:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Javascript (mit vielen zusätzlichen Bibliotheken wie jQuery, Adobe Spry u.&nbsp;v.&nbsp;m.)
+<div class="p"><!----></div>
+</li>
+
+<li> Ruby
+<div class="p"><!----></div>
+</li>
+
+<li> Rails
+<div class="p"><!----></div>
+</li>
+
+<li> PHP
+<div class="p"><!----></div>
+</li>
+
+<li> Python
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/aptana-ftp.png" /><br /><em>Integrierter FTP-Client.</em><br />
+
+<div class="p"><!----></div>
+Besonders praktisch gestaltet sich die gute Unterstützung durch den
+implementierten FTP-Client, der u.&nbsp;a. auch SFTP und FTPS unterstützt.
+Möchte man z.&nbsp;B. einige schnelle Änderungen an einer Webseite vornehmen, ruft
+man die Datei über den Projektexplorer normal auf, die Datei wird per FTP
+vom Server übertragen und nach dem Speichern direkt auf den Webserver
+synchronisiert, wodurch man nicht ständig Tools wie Filezilla u.&nbsp;a.
+einsetzen muss.
+
+<div class="p"><!----></div>
+Zusätzlich bietet <i>Aptana</i> die Möglichkeit, verschiedene
+Versionskontrollsysteme wie Git oder SVN zu nutzen. Auch ein eigener
+lokaler Webserver kann für die Entwicklung und den Test von
+Webentwicklungen eingebunden werden, ebenso besitzt <i>Aptana</i> aber auch einen
+eigenen Open-Source-Webserver mit dem Namen Aptana Jaxer, der sich
+insbesondere für Ajax-Anwendungen eignet und auf der Mozilla Gecko
+    
+    
+Engine
+basiert. Für weitere Informationen liegt auch eine umfangreiche
+Dokumentation vor&nbsp;<a href="http://wiki.appcelerator.org/display/tis/Documenting+Code">[4]</a>.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Tipps für den praktischen Alltag</h2>
+
+<div class="p"><!----></div>
+Eine extrem gute Erleichterung bei der Nutzung von <i>Aptana</i> stellt die
+Unterstützung von Zen Coding dar. Zen Coding&nbsp;<a href="http://en.wikipedia.org/wiki/Zen_Coding">[5]</a>
+ist ein Plug-in, welches es ermöglichen soll, durch Eingabe kurzer
+Abkürzungen vollständigen, syntaktisch korrekten Code zu erzeugen. Als
+Beispiel sei hier auf ein Übersichtsblatt des Entwicklers auf Google Code
+für die einzelnen Befehle hingewiesen&nbsp;<a href="http://zen-coding.googlecode.com/files/ZenCodingCheatSheet.pdf">[6]</a>.
+Zen Coding lässt sich wie auch das <i>Aptana</i>-Plug-in über die
+Erweiterungsschnittstelle von Eclipse installieren, nähere Informationen
+zur Installation liefert die Seite des Plug-in-Entwicklers&nbsp;<a href="https://github.com/sergeche/eclipse-zencoding#readme">[7]</a>.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/aptana-code_completion_css.png" /><br /><em>CSS-Code-Vervollständigung mit Anzeige unterstützter Browserversionen.</em><br />
+
+<div class="p"><!----></div>
+    Beispiele können das klarer zeigen.
+Gibt man ein reserviertes HTML-Tag ein, z.&nbsp;B.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+span
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+und drückt die <i>„Tab“</i>-Taste, wird dies automatisch zu
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&lt;span&#62;&nbsp;&lt;/span&#62;
+</pre>
+
+<div class="p"><!----></div>
+ergänzt.
+
+<div class="p"><!----></div>
+Möchte man zusätzlich eine ID vergeben, ist dies mit einer nachgestellten
+Raute (wie das Tag auch in CSS angesprochen wird) möglich. Aus
+<b><tt style="font-size: 1.3em;">div#header</tt></b> wird demzufolge <b><tt style="font-size: 1.3em;">&lt;div id="header"&#62; &lt;/div&#62;</tt></b>. Bei Klassen
+funktioniert das selbe Prinzip mit einem Punkt (<b><tt style="font-size: 1.3em;">.</tt></b>).
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Ebenfalls sehr gut gelöst ist die mögliche Multiplikation von Elementen,
+die zusätzlich mit den vorangegangenen Methoden kombiniert werden können.
+Gibt man z.&nbsp;B.
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+ul#nav&#62;li*5
+</pre>
+
+<div class="p"><!----></div>
+ein, wird daraus:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&lt;ul&nbsp;id="nav"&#62;
+&nbsp;&nbsp;&lt;li&#62;&lt;/li&#62;
+&nbsp;&nbsp;&lt;li&#62;&lt;/li&#62;
+&nbsp;&nbsp;&lt;li&#62;&lt;/li&#62;
+&nbsp;&nbsp;&lt;li&#62;&lt;/li&#62;
+&nbsp;&nbsp;&lt;li&#62;&lt;/li&#62;
+&lt;/ul&#62;
+</pre>
+
+<div class="p"><!----></div>
+Einige weitere Beispiele und weitere Kombinationsmöglichkeiten kann man
+sich hierzu auch auf Youtube ansehen&nbsp;<a href="http://www.youtube.com/watch?v=ug84Ypwqfzk">[8]</a>.
+Aus eigener Erfahrung hat sich gezeigt, dass es eine enorme Zeitersparnis
+bedeutet, sofern man sich erstmal mit der Syntax der Abkürzungen vertraut
+gemacht hat.
+
+<div class="p"><!----></div>
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/aptana-doku.png" /><br /><em>Direkte Möglichkeit, Dokumentationen wie z.&nbsp;B. für CSS aufzurufen.</em><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Mögliche Alternativen</h2>
+
+<div class="p"><!----></div>
+Auch wenn <i>Aptana</i> ein reichhaltiges Angebot an Funktionalitäten bietet, ist
+es nur ein Angebot von einigen guten Alternativen unter Linux. So ist ein
+häufiger Kritikpunkt an <i>Aptana</i>, dass es zu lange
+    
+beim Programmstart
+braucht, bis es einsetzbar ist, und es zu viele Ressourcen benötigt im
+Gegensatz zu einem leichtgewichtigen Editor. Dies ist der Tatsache
+geschuldet, dass es auf Eclipse und Java mit ihrem vielseitigem
+Funktionsumfang aufsetzt.
+
+<div class="p"><!----></div>
+Daher seien hier ein paar empfehlenswerte und leichtgewichtigere
+Alternativen genannt, die i.&nbsp;d.&nbsp;R. alle über die Paketverwaltung installiert
+werden können oder bereits in den Distributionen vorinstalliert sind:
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Die Standard-Editoren Gedit und Kate bieten viele gute Funktionen, wie
+   Syntax-Hervorhebung von Haus aus an.
+<div class="p"><!----></div>
+</li>
+
+<li> Geany – leistungsstärker als Gedit und Kate, u.&nbsp;a. mit
+   Code-Vervollständigung und Template-Unterstützung
+<div class="p"><!----></div>
+</li>
+
+<li>
+       
+   Bluefish – enthält umfangreiche Funktionen, z.&nbsp;B. Assistenten,
+   Dokumentationen zu PHP, CSS etc., und Zugriff über FTP
+<div class="p"><!----></div>
+</li>
+
+<li> Quanta Plus – sticht besonders durch die Möglichkeit hervor, nach dem
+   WYSIWYG-Prinzip Webseiten zu erstellen, d.&nbsp;h. ohne großartige Kenntnisse
+   eine Webseite zu erstellen
+<div class="p"><!----></div>
+</li>
+
+<li> vim – gewöhnungsbedürftig, aber mit den richtigen Plug-ins eine mächtige
+   Alternative
+<div class="p"><!----></div>
+</li>
+
+<li> Notepad++ – leider nur für Windows
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Einen umfangreicheren Test hat hierzu Frank Brunner in seinem Blog
+veröffentlicht&nbsp;<a href="http://www.ubuntu-center.de/878/webeditoren-unter-ubuntulinux-teil-1/">[9]</a>.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+<div class="p"><!----></div>
+Ein wesentlicher Grund für <i>Aptana</i> war für mich, neben der großen
+Vielfältigkeit an Funktionen und Anpassungen an die persönlichen
+Bedürfnisse, die Plattformunabhängigkeit, um auf allen Systemen die
+gleiche vertraute Entwicklungsumgebung zu besitzen. Wer sich mit Eclipse
+wohlfühlt, der wird sich auch sehr schnell in <i>Aptana</i> zurechtfinden,
+dennoch muss jeder für sich die passende Lösung suchen, wodurch ein Blick
+auf die Alternativen stets eine Option sein sollte.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.aptana.com/products/studio3"><tt style="font-size: 1.3em;">http://www.aptana.com/products/studio3</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.aptana.com/products/studio3/download"><tt style="font-size: 1.3em;">http://www.aptana.com/products/studio3/download</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://wiki.appcelerator.org/display/tis/Legal+and+Licensing"><tt style="font-size: 1.3em;">http://wiki.appcelerator.org/display/tis/Legal+and+Licensing</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://wiki.appcelerator.org/display/tis/Documenting+Code"><tt style="font-size: 1.3em;">http://wiki.appcelerator.org/display/tis/Documenting+Code</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://en.wikipedia.org/wiki/Zen_Coding"><tt style="font-size: 1.3em;">http://en.wikipedia.org/wiki/Zen_Coding</tt></a><br />
+
+<div class="p"><!----></div>
+[6] <a href="http://zen-coding.googlecode.com/files/ZenCodingCheatSheet.pdf"><tt style="font-size: 1.3em;">http://zen-coding.googlecode.com/files/ZenCodingCheatSheet.pdf</tt></a><br />
+
+<div class="p"><!----></div>
+[7] <a href="https://github.com/sergeche/eclipse-zencoding#readme"><tt style="font-size: 1.3em;">https://github.com/sergeche/eclipse-zencoding#readme</tt></a><br />
+
+<div class="p"><!----></div>
+[8] <a href="http://www.youtube.com/watch?v=ug84Ypwqfzk"><tt style="font-size: 1.3em;">http://www.youtube.com/watch?v=ug84Ypwqfzk</tt></a><br />
+
+<div class="p"><!----></div>
+[9] <a href="http://www.ubuntu-center.de/878/webeditoren-unter-ubuntulinux-teil-1/"><tt style="font-size: 1.3em;">http://www.ubuntu-center.de/878/webeditoren-unter-ubuntulinux-teil-1/</tt></a><br />
+
+<div class="p"><!----></div>
+            
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Patrick Meyhöfer</b>&nbsp;(<a href="http://pmeyhoefer.de/blog/">Webseite</a>)
+hat viele verschiedene Web-Entwicklungsumgebungen unter
+allen Systemen ausgetestet.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+    
+            <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Aptana Studio#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+            
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_android">Rezension: Einführung in die Android-Entwicklung</a><a name="11_10_android">
+</a></font></h1>von Michael Niedermair
+
+<div class="p"><!----></div>
+        
+<div class="p"><!----></div>
+<b>D</b><b>as Buch stellt eine Einführung in die Java-Android-Programmierung dar, für
+Leser, die schon Java-Erfahrung haben. Dabei werden die Android-Architektur,
+das entsprechende Application-Framework und die Bibliotheken erläutert. Im
+Lauf des Buches wird dabei schrittweise eine Twitter-ähnliche Anwendung
+entwickelt.</b>
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+Das Buch ist in 15 Kapitel mit Index aufgeteilt und umfasst 249 Seiten. Jedes
+Kapitel wird dabei mit einer kurzen Zusammenfassung abgeschlossen. Ein kurzes
+Vorwort mit Danksagung leitet das Buch ein.
+
+<div class="p"><!----></div>
+Abgeschlossen wird das Buch mit
+einer Seite über den Autor, den Übersetzer, das übliche „Kolophon“ bei
+O`Reilly-Büchern und einigen Seiten Werbung für andere Bücher.
+
+<div class="p"><!----></div>
+Das erste Kapitel (5 Seiten) gibt einen Überblick über Android. Was ist
+Android, welche Geschichte steckt dahinter, welche Motivation hat hier Google
+und welche Versionen gibt es?
+
+<div class="p"><!----></div>
+Im zweiten Kapitel (7 Seiten) wird die Systemstruktur behandelt. Dabei geht es
+um Sicherheit, Funktionsumfang und verwendete native Bibliotheken. Es wird auf
+Davlink, die spezielle virtuelle Maschine für Android, eingegangen und welchen
+Zusammenhang es hier mit Java und der Java Virtual Machine gibt. Am Ende
+geht es um „Apps“, deren Signierung und deren Vertrieb.
+
+<div class="p"><!----></div>
+Im dritten Kapitel (11 Seiten) folgt eine Kurzeinführung in die
+Android-Entwicklungsumgebung (ADK), wie man diese installiert und wie man sie
+zusammen mit Eclipse verwendet. Abgerundet wird das Kapitel mit einer „Hallo
+Welt“-App, die Schrittweise in Eclipse erstellt wird. Dabei wird besonders
+erläutert, welche Aufgabe die Minifestdatei, der Layout-XML-Code, die
+String-Datei und die R-Datei hat. Zum Schluss wird die App im Emulator
+gestartet.
+
+<div class="p"><!----></div>
+Das vierte Kapitel (9 Seiten) behandelt die grundlegenden Bausteine, wie
+Activities und deren Zyklen, Intents, Services, Content-Provider,
+Broadcat-Receiver und Application-Context. Diese werden kurz erläutert, so
+dass diese in den weiteren Kapitel verwendet werden können.
+
+<div class="p"><!----></div>
+Schwerpunkt des fünften Kapitels (10 Seiten) ist das Yamba-Projekt (eine
+Twitter-ähnliche Anwendung) und welche Komponenten / Funktionen in welchem
+Kapitel hinzugefügt werden.
+
+<div class="p"><!----></div>
+Im sechsten Kapitel (36 Seiten) steht die Android-Benutzerschnittstelle im
+Mittelpunkt. Hier wird das Layout und die Views erläutert und wie man die
+verschiedenen Layout-Manager und Widgets verwendet. Dabei wird der erste Teil
+der App entwickelt, der Textnachrichten verschicken kann.
+
+<div class="p"><!----></div>
+Das siebte Kapitel (18 Seiten) behandelt das Dateisystem und ein Optionsmenü.
+Die App wird erweitert, so dass Einstellungen gespeichert werden können und
+ein Menü eingebaut wird. Am Ende wird hier kurz auf die Benutzerdatenpartition
+und die Datensystemsicherheit eingegangen.
+
+<div class="p"><!----></div>
+Im achten Kapitel (18 Seiten) lautet das Stichwort „Services“. Die App wird so
+erweitert, dass diese im Hintergrund regelmäßig Nachrichten vom entsprechenden
+Dienst holt.
+
+<div class="p"><!----></div>
+Die App wird im neunten Kapitel (19 Seiten) so umgebaut, dass die Nachrichten
+in der Datenbank landen. Dazu wird SQLite verwendet und gezeigt, wie man die
+vier Grundoperationen (CRUD – Create, Read, Update und Delete) ausführt und
+eine entsprechende Tabelle erstellt.
+
+<div class="p"><!----></div>
+Im zehnten Kapitel (24 Seiten) geht es im Listen und Adapter. Dabei wird die
+App erneut erweitert, so dass die Daten aus der Datenbank gelesen werden und
+der Text entsprechend scrollbar ist. Somit kann dann die App Nachrichten
+senden, abrufen, in einer Datenbank speichern und in einem optisch
+ansprechenden GUI anzeigen.
+
+<div class="p"><!----></div>
+Im elften Kapitel (14 Seiten) wird auf Broadcast-Receiver eingegangen und wie
+damit „Nachrichten“ von einem Teil der App an den anderen Teil oder andere
+Apps geschickt werden können.
+
+<div class="p"><!----></div>
+Das zwölfte Kapitel (14 Seiten) erklärt, wie Daten über die Grenzen einer
+App-Sandbox mit Hilfe von Content-Providern weitergereicht werden. Hiermit ist
+es z.&nbsp;B. möglich, Daten aus den Kontakten direkt zu verwenden.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Das dreizehnte Kapitel (27 Seiten) beschäftigt sich mit System-Services, wie
+zum Beispiel dem Location-Service (z.&nbsp;B. über WLAN oder GPS), dem
+Sensor-Service, dem Uhr-Service, dem Telefon-Service, dem Bluetooth-Service
+und viele mehr.
+Anhand einer Kompass-App werden einige obiger Services verwendet.
+
+<div class="p"><!----></div>
+Im vierzehnten Kapitel (11 Seiten) geht es um die Android-Interface-Definition-Language, kurz AIDL,
+und wie man diese nutzt, um einen Log-Service aufzubauen.
+
+<div class="p"><!----></div>
+Das Native Development Kit (NDK) steht im Mittelpunkt des fünfzehnten Kapitels
+(11 Seiten). Es wird  angesprochen und gezeigt, wie man den Code von nativen C
+oder C++ Bibliotheken aufrufen kann.
+
+<div class="p"><!----></div>
+Der Index am Ende umfasst sechs Seiten und beinhaltet Stichwörter, Methoden
+und wichtige Dateien.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+Das Buch ist für den Android-Anfänger geschrieben und setzt Java-
+Grundkenntnisse voraus. Hat man zusätzlich Erfahrung in der GUI-Programmierung
+(z.&nbsp;B. mit AWT oder Swing) fallen einem die Beispiele und GUI-Zusammenhänge
+deutlich leichter. Das Buch liest sich sehr gut, alle Beispiele sind
+ausreichend gut erläutert und alle „Stolperstellen“ werden ausführlich
+erläutert. Jeder Anfänger kann diesen gut folgen und auch für den schon etwas
+erfahrenen Leser finden sich immer wieder interessante Stellen.
+
+<div class="p"><!----></div>
+Durch die schrittweise Entwicklung einer doch komplexen App liest sich das
+Buch recht spannend und nach jedem Kapitel wartet man schon darauf, das
+nächste zu lesen. Ein roter Faden zieht sich durch das gesamte Buch.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+Das Buch ist für Android-Anfänger geschrieben und dafür sehr gut geeignet. Man
+merkt deutlich, dass der Autor viel Erfahrungen mit Schulungen und Kursen zu
+dem Thema hat und ein Experte auf diesem Gebiet ist. Alle Beispiele und die
+komplette Beispiel-App sind methodisch und didaktisch sehr gut aufgebaut, alle
+„Fallstricke“ und „Stolpersteine“ werden gut umschifft, so dass man dem Inhalt
+sehr gut folgen kann.
+
+<div class="p"><!----></div>
+Für das Twitter-ähnliche Beispiel hat der Autor einen
+eigenen Server-Dienst bereitgestellt, wo die App getestet werden kann, ohne
+dass bei Fehlern evtl. Nachrichten in die ganze Welt gepostet werden.
+
+<div class="p"><!----></div>
+Einziger Kritikpunkt ist das Stichwortverzeichnis. Dies scheint etwas lieblos
+erstellt worden zu sein. Es gibt leider viele Einträge, die fünf und mehr
+Verweise haben, jedoch der Haupteintrag ist nicht hervorgehoben, was für den
+Leser eine längere Suche mit sich bringt.
+
+<div class="p"><!----></div>
+Gesamt betrachtet muss man das Buch noch als sehr gut bewerten, jedoch sollte
+bei einer Neuauflage der Index dringend verbessert werden.
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="2" align="center"><font size="+0"><b>Buchinformationen</b></font></td></tr>
+<tr><td width="43"><b>Titel</b> </td><td width="237">Einführung in die Android Entwicklung </td></tr>
+<tr><td width="43"><b>Autor</b> </td><td width="237">Marko Gargenta, übers. v. Lars Schulten </td></tr>
+<tr><td width="43"><b>Verlag</b> </td><td width="237">O`Reilly, Juli 2011 </td></tr>
+<tr><td width="43"><b>Umfang</b> </td><td width="237">249+23 Seiten </td></tr>
+<tr><td width="43"><b>ISBN</b> </td><td width="237">978-3-86899-114-7 </td></tr>
+<tr><td width="43"><b>Preis</b> </td><td width="237">29,90 € </td></tr>
+<tr><td width="43">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Michael Niedermair</b>
+ist Lehrer an der <a href="http://www.bsinfo.musin.de/">Münchener IT-Schule</a>
+und unterrichtet Programmierung, Datenbanken und IT-Technik.
+Er beschäftigt sich seit Jahren mit vielen Programmiersprachen, vor allem Java.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+                        <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Rezension: Android#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_virtualbox-rezension">Rezension: VirtualBox – Installation, Anwendung, Praxis</a><a name="11_10_virtualbox-rezension">
+</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+        
+<div class="p"><!----></div>
+<b>V</b><b>irtualisierung ist in, auch bei „normalen“ Desktop-Anwendern. 
+Aufgrund der auch unter Heimanwendern weit verbreiteten 
+Mehrkernprozessoren und deren Rechenleistung ist dies auch weiter kein 
+Problem. Und gerade im Bereich der Endbenutzer erfreut sich VirtualBox 
+einer gewissen Beliebtheit. Den praktischen Einsatz dieser Software 
+möchte das vorliegende Buch näher bringen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Verlag Galileo Computing für 
+die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+VirtualBox ist nicht zuletzt deshalb populär, weil es von Anfang an 
+kostenlos war, zumindest für Privatanwender. Hinzu kommt noch, dass 
+das Programm seit jeher das Erstellen von virtuellen Maschinen 
+erlaubt, was bei Marktführer VMware zumindest zu Beginn in den 
+kostenlosen Versionen nicht ohne weiteres möglich war. 
+
+<div class="p"><!----></div>
+Des weiteren 
+gibt es schon lange eine Open-Source-Version (wenn auch mit leicht 
+eingeschränktem Funktionsumfang), außerdem ist der Virtualisierer 
+gleichermaßen für Windows, Linux und MacOS verfügbar.
+
+<div class="p"><!----></div>
+Das Buch „VirtualBox – Installation, Anwendung, Praxis“ ist vor 
+kurzem in einer aktualisierten 2. Auflage erschienen, wobei es sich um 
+eine fest gebundene Ausgabe handelt. Diese beinhaltet auch die Nutzung 
+der aktuellen Version 4 der Virtualisierungssoftware. Der erklärte 
+Fokus des Buchs liegt dabei auf Einsteigern und Anfängern, wobei 
+gleichzeitig aber auch Tipps und Tricks für fortgeschrittene Nutzer 
+gegeben werden sollen.
+
+<div class="p"><!----></div>
+
+<h2>Inhaltliches</h2>
+Entsprechend ist das Buch auch aufgebaut. Die ersten zwei Kapitel 
+behandeln einige grundlegende Themen zu Hardware, Personal Computern 
+sowie Grundlagen und Grundbegriffe der Virtualisierung. 
+
+<div class="p"><!----></div>
+Die folgenden drei Kapitel beschreiben dann die Konfiguration und die Installation 
+von Windows und Linux, im Buch durchgehend Ubuntu Linux, in einer 
+virtuellen Maschine. Diese drei Kapitel bauen dabei hierarchisch 
+aufeinander auf, d.&nbsp;h. der Autor, Dirk Becker, selber als Administrator 
+tätig, beginnt mit einer allgemeinen Installation, wo nur einige 
+grundlegende Dinge wie eine virtuelle Platte und ähnliches angelegt werden. 
+
+<div class="p"><!----></div>
+Danach werden immer speziellere Themen besprochen, wie z.&nbsp;B. die 
+Installation von Gasterweiterungen, Fernzugriff, gemeinsame Ordner von 
+Gast- und Hostsystem bis hin zu virtuellen Netzwerken mehrerer 
+virtueller Maschinen und Teleporting. 
+
+<div class="p"><!----></div>
+Das folgende sechste Kapitel 
+beschäftigt sich dann mit der Migration und dem Import virtueller 
+Maschinen. 
+
+<div class="p"><!----></div>
+Darauf folgt ein rund zehnseitiges Kapitel, in dem häufig 
+auftretende Probleme, deren Ursachen und mögliche Lösungen aufgezeigt 
+werden. 
+
+<div class="p"><!----></div>
+Den Abschluss der Buchs bildet als achtes Kapitel eine 
+Befehlsreferenz der Kommandozeilentools von VirtualBox.
+
+<div class="p"><!----></div>
+
+<h2>Vollständige Erklärungen</h2>
+Inhaltlich ist das Buch recht komplett. Es werden alle Möglichkeiten 
+und Optionen von VirtualBox aufgezeigt. Dazu gehören auch spezielle
+Anwendungen wie der Betrieb eines Servers via VBoxHeadless. 
+
+<div class="p"><!----></div>
+Weiterhin ist positiv anzumerken, dass der Autor schon recht früh explizit auf 
+die Nutzung der in VirtualBox enthaltenen Kommandozeilentools eingeht 
+und die jeweiligen Kommandos am Ende jedes Unterkapitels zu finden 
+sind. Windows, primär in den Versionen 7 und XP, werden zusammen mit 
+Linux das ganze Buch über gleichwertig behandelt, sowohl als Gast- als 
+auch als Hostsystem. Richtigerweise wird auch ziemlich zu Anfang des 
+Buches auf mögliche Lizenzprobleme von Windows bzw. proprietärer 
+Software im Allgemeinen bei Mehrfachinstallationen in verschiedenen 
+virtuellen Rechner hingewiesen. 
+
+<div class="p"><!----></div>
+Gut ist auch, dass im Buch immer wieder „über den Tellerrand” geschaut wird, d.&nbsp;h. an verschiedenen Stellen 
+wird auch ein Blick auf die Möglichkeiten anderer Virtualisierer wie 
+z.&nbsp;B. VMware geworfen. Weiterhin findet man an vielerlei Stellen 
+Hinweise, ab welcher Version von VirtualBox ein bestimmtes Feature 
+vorhanden ist, sodass das Buch auch für Nutzer von VirtualBox 2.x 
+oder 3.x von Interesse sein kann.
+
+<div class="p"><!----></div>
+
+<h2>Auffälligkeiten</h2>
+
+<div class="p"><!----></div>
+Lediglich im Kapitel 4 „Praxisbeispiele“ gibt es zwei Stellen, die 
+auffällig sind. Zum einem schreibt der Autor zu Beginn von Abschnitt 
+4.2 „Eine virtuelle Maschine mit Windows XP“, dass er davon 
+ausgehe, dass jeder Leser eine WinXP Version zur Hand habe – eine etwas 
+gewagte und zu allgemeine Annahme. 
+
+<div class="p"><!----></div>
+Im folgenden Kapitel 4.3 „Ein System mit Linux“ wird gesagt, dass Ubuntu ein Festplatten-Image mit 
+ca. 20 GByte benötigt – tatsächlich kommt Ubuntu aber mit rund 1/3 
+dieses Platzes aus. Beide Punkte sind aber eher Kleinigkeiten als 
+wirklich tragisch. Je nach Wissensstand sind die ersten beiden Kapitel vielleicht etwas zu 
+ausführlich geraten. Auf etwas mehr als 40 Seiten wird eine allgemeine 
+Einführung gegeben. Diese ist fast komplett VirtualBox-unspezifisch 
+und könnte mit
+minimalen Modifikationen auch jedes Buch zum Thema 
+Virtualisierung einleiten. Wie gesagt, für Anfänger und Einsteiger ist dies wahrscheinlich hilfreich, fortgeschrittene Anwender können 
+diese Kapitel jedoch schnell durchlesen bzw. komplett auslassen.
+
+<div class="p"><!----></div>
+
+<h2>Gut zu lesen</h2>
+Der Schreibstil des Autors ist durchweg flüssig und gut zu lesen. Der 
+primären Zielgruppe des Buchs, Einsteiger in die Virtualisierung, wird 
+er voll gerecht. Alle Erklärungen sind gut nachvollziehbar und 
+ausführlich, ohne jedoch langatmig zu sein. Wiederholungen gibt es fast 
+keine. Hinzu kommt noch, dass das Buch eine Vielzahl von 
+Bildschirmfotos enthält, welche den Text unterstützen. Alle 
+Abbildungen und Bilder sind dabei in Graustufen gedruckt.
+
+<div class="p"><!----></div>
+
+<h2>Zusammenfassung</h2>
+Das Buch „VirtualBox – Installation, Anwendung, Praxis“ kann 
+besonders Einsteigern sehr empfohlen werden. Diese erhalten eine 
+fundierte, ausführliche und gut zu lesende Einführung in die 
+praktische Nutzung von VirtualBox zur Desktopvirtualisierung. Dabei 
+beginnt das Buch bei den ersten Schritten, lässt aber auch 
+fortgeschrittene Themen nicht aus. 
+
+<div class="p"><!----></div>
+Für fortgeschrittene Nutzer ist 
+sicherlich auch der ein oder andere Abschnitt zu fortgeschrittenen 
+Konfigurationen oder auch die Referenz der VirtualBox-Kommandozeilentools 
+von Interesse. Allerdings sollten diese Nutzer 
+vielleicht vorher einen Blick in das Buch werfen, um zu prüfen, ob die 
+Anschaffung wirklich lohnt. Für Einsteiger hingegen besteht kein 
+Grund, nicht zuzugreifen.
+
+<div class="p"><!----></div>
+
+<h2>Quizfrage</h2>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Und weil es ja schade wäre, wenn das Buch bei 
+Jochen Schnelle im Bücherregal verstaubt, verlosen wir „VirtualBox – 
+Installation, Anwendung, Praxis“ an die erste Person, die uns 
+folgende Frage beantworten kann:
+
+<div class="p"><!----></div>
+„<em>An welcher Virtualisierungsoftware hat Innotek mitprogrammiert, bevor 
+mit der Entwicklung des eigenen Produkts VirtualBox begonnen wurde?</em>“
+
+<div class="p"><!----></div>
+Antworten können wie immer über den Kommentarlink am Ende des 
+Artikels oder per E-Mail an <img src="freiesMagazin-2011-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />
+eingesendet werden.
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="2" align="center"><font size="+0"><b>Buchinformationen</b></font></td></tr>
+<tr><td width="43"><b>Titel</b> </td><td width="237">VirtualBox – Installation, Anwendung, Praxis </td></tr>
+<tr><td width="43"><b>Autor</b> </td><td width="237">Dirk Becker </td></tr>
+<tr><td width="43"><b>Verlag</b> </td><td width="237">Galileo Computing </td></tr>
+<tr><td width="43"><b>Umfang</b> </td><td width="237">327 Seiten </td></tr>
+<tr><td width="43"><b>ISBN</b> </td><td width="237">978-3-8362-1778-1 </td></tr>
+<tr><td width="43"><b>Preis</b> </td><td width="237">29,90 € </td></tr>
+<tr><td width="43">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="1" align="center"><font size="+0"><b>Autoreninformation</b></font></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.com/">Webseite</a>)
+interessiert sich für Virtualisierung im allgemeinen 
+und setzt privat neben KVM/QEMU auch VirtualBox ein.
+</td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Rezension: VirtualBox#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+            
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_wettbewerb4">Vierter <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb</a><a name="11_10_wettbewerb4">
+</a></font></h1>        
+<div class="p"><!----></div>
+<b>A</b><b>m Anfang waren es bunte Glitzersteinchen, danach blecherne Roboter,
+im dritten Wettbewerb musste man vor Zombies flüchten und diesmal geht
+es um den schnöden Mammon, den ein schwerreicher Multimillionär unter
+die Leute bringen will.</b>
+
+<div class="p"><!----></div>
+
+<h2>Vorgeschichte</h2>
+
+<div class="p"><!----></div>
+Ein Multimillionär verdient täglich so viel Geld, dass er gar nicht
+mehr weiß, wohin damit. Anstatt einen neuen Geldspeicher zu bauen,
+will er das Geld lieber in einem Experiment unter die Leute bringen.
+Dazu lädt er zwei Testsubjekte ein und begrüßt sie mit den Worten:
+„Ich habe hier 1000 Euro. Das Geld gebe ich Testsubjekt A. Dieses
+muss dann einen selbst festgelegten Betrag X zwischen 0 und 1000 dem
+Testsubjekt B anbieten. Das kann also auch alles oder nichts sein!
+Testsubjekt B hat nun zwei Möglichkeiten: Entweder es akzeptiert den
+Betrag X. Dann erhält Testsubjekt B den Betrag X und Testsubjekt A
+natürlich den Restbetrag 1000-X. Testsubjekt B kann das Angebot aber
+auch ablehnen. Dann bekommt keiner die 1000 Euro und ich behalte das
+Geld. Damit es ausgeglichen ist, gebe ich danach Testsubjekt B ebenfalls
+1000 Euro, welches auf die gleicher Art und Weise handeln muss.“
+
+<div class="p"><!----></div>
+Beide Testsubjekte schauen erstaunt und wollen sich schon miteinander
+abstimmen, um einen größtmöglichen Gewinn zu erhalten, aber da springt
+der Millionär dazwischen: „Na na, Reden ist verboten. Ihr werdet beide
+in verschiedene Räume gesetzt und könnt nur über eine reine
+Zahlentastatur miteinander kommunizieren und die Beträge anbieten,
+annehmen oder ablehnen.“ Die beiden Testsubjekte sind enttäuscht,
+aber machen dennoch mit, schließlich gibt es viel Geld zu gewinnen.
+
+<div class="p"><!----></div>
+„Ach, noch was.“ sagt der Millionär. „Das Spielchen wiederholen
+wir insgesamt 2500 Mal, weil es so viel Spaß macht. Ich bin gespannt,
+wer von Euch beiden mit mehr Geld nach Hause geht.“
+
+<div class="p"><!----></div>
+Sicherheitshinweis: Der obige Text ist fiktiv! Uns ist kein Millionär
+bekannt, der sein Geld so unter den Leuten verteilen will. Sorry!
+
+<div class="p"><!----></div>
+
+<h2>Spielprinzip</h2>
+
+<div class="p"><!----></div>
+Das Spielprinzip wurde in der Vorgeschichte schon exakt wiedergegeben.
+Von allen Teilnehmern treten immer zwei gegeneinander in einem Match an.
+In jedem Match gibt es 2500 Runden. Pro Runde muss der jeweilige
+Startspieler einen Wert zwischen 0 und 1000 anbieten. Der andere
+Spieler erfährt diesen Betrag und muss diesen annehmen oder ablehnen.
+Danach werden beide über den gewonnenen Betrag informiert und der
+Startspieler wechselt.
+Nach seinem Gebot und Annahme/Ablehnung ist
+eine gesamte Runde zu Ende und es 
+beginnt die nächste, wobei der Startspieler wieder wechselt.
+
+<div class="p"><!----></div>
+Dieses Spiel spielt jeder Spieler gegen jeden anderen Spieler. Das
+heißt, bei vier Spielern gibt es insgesamt 4&#183;3 Spiele. Bei fünf
+Spieler sind es 5&#183;4 Spiele, bei N Spielern somit N&#183;(N&#8722;1) Spieler. Da
+nacheinander jeder gegen jeden spielt, spielt also auch Spieler A
+gegen B und Spieler B gegen A (Hin- und Rückrunde). 
+
+<div class="p"><!----></div>
+Um Zufallstreffern aus dem Weg zu gehen, wird dieser Ablauf 100 Mal 
+wiederholt und aus den Punkten der Mittelwert gebildet. Dies soll 
+helfen, zufällige Gewinne etwas zu relativieren.
+
+<div class="p"><!----></div>
+Obwohl das Spielprinzip so einfach ist, ist die Taktik ganz
+spielentscheidend, schließlich will man seinen Gewinn maximieren.
+Ist man zu gierig und bietet nur eine geringe Punktzahl an, lehnt
+der Mitspieler wohl einfach ab. Auf der anderen Seite sollte man
+als Mitspieler auch nicht immer ablehnen, da man so auch keinen
+Gewinn einstreichen kann. 
+<div class="p"><!----></div>
+Dass die Teilnehmer vorher und während des Spiels nicht miteinander
+kommunizieren können, ist ein essentieller Bestandteil des Spiels.
+In der Spieltheorie nennt sich dieses Experiment 
+„Ultimatumspiel“&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Ultimatumspiel">[1]</a>. 
+Hilfreich sind vielleicht auch die Hinweise zum ähnlich gelagerten 
+Gefangenendilemma&nbsp;<a href="https://secure.wikimedia.org/wikipedia/de/wiki/Gefangenendilemma">[2]</a>.
+Auf der Webseite findet man auch viele Strategien, die man umsetzen
+kann. Dabei sollte man aber beachten, dass alle Mitspieler nun ebenfalls
+diese Taktiken kennen. Wer es schafft, die Taktik seines Mitspielers
+zu erraten (daher die 2500 aufeinanderfolgenden Spiele), kann
+sein eigenes Verhalten gegebenenfalls entsprechend anpassen.
+
+<div class="p"><!----></div>
+
+<h2>Spielengine</h2>
+
+<div class="p"><!----></div>
+Die Spielengine ist in C++ geschrieben; die Kommunikation mit den 
+Bots geschieht aber allein über Standardeingabe und -ausgabe. Das 
+heißt, jeder Bot muss einfach nur die Standardeingabe abfragen, um 
+Nachrichten zu empfangen, und danach seine Antwort auf der 
+Standardausgabe ausgeben. Dies sollte es bei
+der Umsetzung extrem einfach machen.
+
+<div class="p"><!----></div>
+Im Download ist ein Beispielbot mit drei sehr simplen Taktiken
+enthalten, der sich jede Runde gleich verhält. Diesen Bot kann man
+als Sparringpartner für eine eigene Implementierung benutzen. Man
+sollte aber nicht davon ausgehen, dass sich alle echten Gegner
+genauso verhalten.
+
+<div class="p"><!----></div>
+<a href="ftp://ftp.freiesmagazin.de/2011/freiesmagazin-2011-10-contest.tar.gz">Download der Spielenengine</a>
+
+<div class="p"><!----></div>
+Die Spielengine kann nach dem Download und Entpacken einfach mit 
+<b><tt style="font-size: 1.3em;">make</tt></b> kompiliert werden. Ein C++-Compiler ist natürlich Pflicht. 
+Für einen ersten Testlauf sollte man noch die Dateien unter 
+<b><tt style="font-size: 1.3em;">bots/dummybot</tt></b> ebenfalls mit <b><tt style="font-size: 1.3em;">make</tt></b> kompilieren.
+
+<div class="p"><!----></div>
+Danach kann man einen einzelnen Durchlauf z.&nbsp;B. mittels
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+$&nbsp;./start.sh&nbsp;2500&nbsp;"bots/dummybot/bot&nbsp;simple"&nbsp;"bots/dummybot/bot&nbsp;random"
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+ablaufen lassen. Den kompletten Wettbewerb startet man über
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+$&nbsp;./start_contest.sh&nbsp;2500
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+Eine Kurzanleitung hierzu befindet sich in der Datei <b><tt style="font-size: 1.3em;">README</tt></b>.
+
+<div class="p"><!----></div>
+Weil die Anfrage sicher kommt: Wir können nicht anbieten, dass
+die Engine als Programm auf unserem Server läuft und die Teilnehmer
+dort gleich online gegen andere Mitspieler-Bots antreten können.
+Dies hat vor allem sicherheitsrelevante Gründe. Stattdessen kann uns
+jeder Teilnehmer aber seinen Bot zuschicken und wir testen diesen
+dann lokal bei uns.
+
+<div class="p"><!----></div>
+
+<h2>Eigenen Bot erstellen</h2>
+
+<div class="p"><!----></div>
+Wie oben geschrieben, geschieht die Kommunikation mit der Spielengine
+über die Standardeingabe und -ausgabe.
+
+<div class="p"><!----></div>
+Folgende Kommandos müssen <b>eingehend</b> verstanden werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b><tt style="font-size: 1.3em;">RUNDEN &lt;WERT&#62;</tt></b> – Anzahl der insgesamt zu spielenden Runden. Es ist
+geplant, 2500 Runden zu spielen. Da die Zahl aber ggf. aus Zeitgründen
+variiert wird, sollte man den Bot entsprechend variabel kodieren.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">RUNDE &lt;WERT&#62;</tt></b> – Eine neue Runde startet. Der Rundenzähler beginnt
+  bei 1.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">ANGEBOT &lt;WERT&#62;</tt></b> – Die vom Mitspieler angebotene Punkte. <b><tt style="font-size: 1.3em;">&lt;WERT&#62;</tt></b> liegt
+zwischen 0 und 1000.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">PUNKTE &lt;WERT&#62;</tt></b> – Die Engine teilt mit, wie viele Punkte man erhält.
+<b><tt style="font-size: 1.3em;">&lt;WERT&#62;</tt></b> liegt zwischen 0 und 1000. Die Punkte kann man auch selbst
+mitzählen und den übertragenen Wert zur Kontrolle nutzen.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">START</tt></b> – Man muss einen Wert zwischen 0 und 1000 anbieten.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">ENDE</tt></b> – Das Spiel ist zu Ende, man kann aufhören den Bot laufen
+zu lassen.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">JA</tt></b> – Das eigene Angebot wurde vom Mitspieler angenommen.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">NEIN</tt></b> – Das eigene Angebot wurde vom Mitspieler abgelehnt.
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+    Folgende Kommandos müssen <b>ausgehend</b> verschickt werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b><tt style="font-size: 1.3em;">JA</tt></b> – Man nimmt das Angebot des Mitspieler an.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">NEIN</tt></b> – Man lehnt das Angebot vom Mitspieler ab.
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt style="font-size: 1.3em;">&lt;WERT&#62;</tt></b> – Antwort auf das Kommando <b><tt style="font-size: 1.3em;">START</tt></b>; d.&nbsp;h. das Angebot an den Gegner. Der Wert <b><tt style="font-size: 1.3em;">&lt;WERT&#62;</tt></b> muss zwischen 0 und 1000 liegen.
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<img border="0" src="freiesMagazin-2011-10-bilder-Dateien/wettbewerb-kommunikation.png" /><br /><em>Kommunikation zwischen Servern und Bots.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Auswertung</h2>
+
+<div class="p"><!----></div>
+Die wichtigste Frage ist sicherlich noch: Wie werden die Gewinner 
+des Wettbewerbs ermittelt? Dies geht ganz einfach. Für jedes Spiel
+zweier Bots wird die Punktzahl gespeichert, welche diese erreicht
+haben. Nachdem alle Bots gegeneinander gespielt haben, wird diese
+Punktezahl addiert. Wer dann die meisten Punkte hat, hat gewonnen.
+
+<div class="p"><!----></div>
+Wenn man z.&nbsp;B. die drei Dummybots einmal über
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+$&nbsp;./start_contest.sh&nbsp;2500&nbsp;&#62;&nbsp;results.out
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+gegeneinander spielen lässt und die Auswertung mittels des Skriptes
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+$&nbsp;./check_results.tcl&nbsp;results.out
+</pre>
+
+<div class="p"><!----></div>
+ 
+<div class="p"><!----></div>
+durchführt, ergibt sich so eine
+Ausgabe:
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(255, 255, 229); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bot&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minus&nbsp;&nbsp;&nbsp;Won&nbsp;&nbsp;Draw&nbsp;Lost&nbsp;&nbsp;&nbsp;
+1.&nbsp;"simple"&nbsp;&nbsp;&nbsp;6682555&nbsp;&nbsp;&nbsp;&nbsp;4515445&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;
+2.&nbsp;&nbsp;&nbsp;"more"&nbsp;&nbsp;&nbsp;5631484&nbsp;&nbsp;&nbsp;&nbsp;4344516&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;
+3.&nbsp;"random"&nbsp;&nbsp;&nbsp;3859961&nbsp;&nbsp;&nbsp;&nbsp;7314039&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;
+</pre>
+
+<div class="p"><!----></div>
+Der Bot <b><tt style="font-size: 1.3em;">simple</tt></b> hat also den ersten Platz erzielt, weil er die
+meisten Pluspunkte gesammelt hat.
+
+<div class="p"><!----></div>
+Sollte es dazu kommen, dass zwei Bots den gleichen Platz belegen, 
+entscheiden die Minuspunkte. Entgegen mancher Erwartung ist bei 
+Gleichstand ein hoher Wert von Vorteil, da dieser gewinnt. Wieso 
+das? Ganz einfach: Wer es schafft, die meisten Punkte zu ergattern, 
+aber gleichzeitig so spielt, dass auch die anderen Spieler nicht 
+leer ausgehen (man bedenke, dass es um virtuelles Geld geht und man 
+seinen „Gegner“ nicht in Grund und Boden wirtschaften muss), hat 
+aus Gemeinschaftssicht definitiv besser gehandelt.
+
+<div class="p"><!----></div>
+Zu gewinnen gibt es natürlich auch wieder etwas. Diesmal sind wir
+weg von festen Preisen bzw. Gutscheinen gekommen und wollen
+die Preise ergebnisorientiert vergeben. Das heißt, die ersten drei
+Plätze mit den meisten Punkten gewinnen einen Gutschein. Der Wert
+ist abhängig von den erzielten Pluspunkten. Da die erreichten
+    
+ Punkte
+von der Anzahl der gespielten Spiele und diese wiederum von der
+Anzahl der Teilnehmer abhängen (siehe oben), muss der Wert
+herausgerechnet werden.
+
+<div class="p"><!----></div>
+Die ersten drei Plätze erhalten somit einen Amazon-Buchgutschein
+im Wert von
+
+<div class="p"><!----></div>
+    
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+</td><td nowrap="nowrap" align="center">
+P
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div> ( 20000&#183;N&#183;(N&#8722;1) )<br /></td><td nowrap="nowrap" align="center">
+,</td></tr></table>
+</td></tr></table>
+
+
+
+<div class="p"><!----></div>
+wobei P die erzielten Pluspunkte sind und N die Anzahl der 
+Teilnehmer am Wettbewerb. (Die Konstante 20000 ist notwendig, weil 
+wir sonst mehrere Millionen an Preisgeld ausgeben müssten. ;) )
+
+<div class="p"><!----></div>
+
+<h2>Taktische Hinweise</h2>
+
+<div class="p"><!----></div>
+Es folgen hier ein paar Hinweise, die bei der Erstellung des Bots 
+bzw. einer Taktik helfen könnten.
+
+<div class="p"><!----></div>
+Kaum einer der Mitspieler wird mehr als 500 Punkte anbieten. Auf so 
+ein tolles Angebot sollte man also nicht warten. Das heißt, man 
+muss sich wohl oder übel damit abfinden, dass der Gegner nur 
+Angebote macht, bei denen er besser dasteht. Der Trick ist es, dass 
+man dies durch die Hin- und Rückrunde in den 2500 Runden so dreht, 
+dass man am Ende besser dasteht.
+
+<div class="p"><!----></div>
+Wobei es auch nicht zwingend erforderlich ist, dass man in jedem 
+Spiel besser dasteht als der Gegner, da die Gesamtsumme aller 
+Spiele zählt. Als (schlechtes) Beispiel kann man sich den 
+Beispielbot mit der Taktik <b><tt style="font-size: 1.3em;">more</tt></b> anschauen. Dieser kann rein 
+taktisch kein Spiel verlieren, da er immer 499 anbietet und nur 
+Angebote größer 500 annimmt. Da kaum ein Gegenspieler die 499 
+Punkte liegen lässt, bekommt der Bot also auch Punkte und gewinnt 
+so immer (ganz knapp) jedes Spiel. Dadurch, dass er aber so oft das 
+gegnerische Angebot ablehnt, erhält er keine Punkte und steht somit 
+nicht zwingend als bester Spieler da.
+
+<div class="p"><!----></div>
+Auf der anderen Seite sollte man natürlich auch nicht jedes Angebot
+annehmen. Bietet der Gegner nur 1 Punkt, geht man bei der Annahme
+zwar nicht leer aus, aber viel erreicht man nicht damit und der Gegner
+erhält einen großen Vorsprung. Wo man seine eigene Schmerzgrenze
+zieht und ob diese fest oder dynamisch ist, muss man selbst
+entscheiden.
+
+<div class="p"><!----></div>
+Das eigene Ergebnis hängt sehr stark von den gegnerischen Spielern 
+und Spielen ab. Wie bei dem <b><tt style="font-size: 1.3em;">more</tt></b>-Bot sieht man, dass man zwar 
+persönlich den besten Bot haben kann. Wenn die anderen Mitspieler 
+aber aufgrund einer anderen Taktik mehr Punkte untereinander 
+aufteilen, kann man am Ende nicht gewinnen. Es empfiehlt sich, den 
+Wikipedia-Artikel zum Ultimatumspiel durchzulesen und die 
+psychologische Komponente der anderen Programmierer nicht außer 
+Acht zu lassen.
+
+<div class="p"><!----></div>
+Wer es schafft, die Taktik des Gegners zu erraten, hat gute Karten, 
+einen optimalen Gewinn zu erzielen. Wenn der Gegner natürlich wie 
+der <b><tt style="font-size: 1.3em;">more</tt></b>-Bot spielt und nur Angebote größer 500 annimmt, hilft 
+einem das nur wenig weiter. In der Regel wird aber kaum 
+ein Bot so restriktiv agieren.
+
+<div class="p"><!----></div>
+Ganz wichtig: Am Ende gewinnt der Bot, der in Zusammenspiel mit 
+allen Gegenspielern die beste Taktik hatte. Käme theoretisch ein 
+weiterer Bot hinzu, der nicht zwingend gut sein muss, kann sich die 
+Platzierung bzw. die Punkteverteilung zu Gunsten oder Ungunsten der 
+eigenen Person verschieben. Dies sollte man bei der Teilnahme am 
+Wettbewerb nicht vergessen.
+
+<div class="p"><!----></div>
+
+<h2>Teilnahmebedingungen</h2>
+
+<div class="p"><!----></div>
+Der Wettbewerb ist frei für jeden, der teilnehmen möchte (mit 
+Ausnahme der <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Teammitglieder). Das Spielprinzip und 
+die Technik ist mit Absicht simpel gehalten, sodass man für die 
+reine Implementierung des Grundgerüsts nur ein bis zwei Stunden 
+benötigen wird. Für die eigentliche Taktik seines Bots muss man 
+vermutlich etwas länger nachdenken.
+
+<div class="p"><!----></div>
+Die Programmiersprache ist wie immer jedem freigestellt. Da die
+Schnittstelle nur stdin und stdout zur Kommunikation nutzt, sollte
+es keinerlei Anbindungsprobleme geben.
+
+<div class="p"><!----></div>
+Für die Teilnahme am Wettbewerb gibt es zwei Bedingungen.
+Die erste Bedingung ist, dass der Bot für einen Komplettdurchlauf 
+gegen sich selbst über das Startskript oben (<b><tt style="font-size: 1.3em;">start.sh</tt></b>) auf dem 
+Wettbewerbsrechner nicht mehr als eine Minute benötigt. Die Zeit 
+kann man mittels
+
+<div class="p"><!----></div>
+
+<pre style="background: rgb(216, 216, 216); border:1px solid lightgray; padding: 3px; font-size: 1.3em;">
+$&nbsp;time&nbsp;./start.sh&nbsp;2500&nbsp;"bots/dummybot/bot&nbsp;simple"&nbsp;"bots/dummybot/bot&nbsp;simple"
+(II)&nbsp;Runden:&nbsp;2500&nbsp;Spieler&nbsp;1:&nbsp;2500000&nbsp;Spieler&nbsp;2:&nbsp;2500000
+
+real&nbsp;&nbsp;&nbsp;&nbsp;0m0.807s
+user&nbsp;&nbsp;&nbsp;&nbsp;0m0.412s
+sys&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0m0.428s
+</pre>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+messen. Entscheidend ist, dass bei <b><tt style="font-size: 1.3em;">real</tt></b> eine Null vor dem <b><tt style="font-size: 1.3em;">m</tt></b> steht.
+(Obige Zeitangabe hilft grob, die Leistung des eigenen Rechners
+einzuschätzen. Man sollte natürlich nebenbei keine Videobearbeitung
+laufen lassen oder den Kernel kompilieren.) 
+<div class="p"><!----></div>
+Die zweite Bedingung ist, dass der Quellcode selbst verfasst wurde 
+und unter einer freien Lizenz vorliegt. (Hilfe bei der Auswahl 
+einer geeigneten Lizenz bieten wir gerne an.)
+
+<div class="p"><!----></div>
+Der Wettbewerb startet am <b>1. Oktober 2011</b> und läuft bis zum
+<b>30. November 2011</b> (dies ist der Einsendeschluss). Jeder Teilnehmer kann 
+mit genau einem Bot teilnehmen, mehrfache Ausbesserungen sind bis 
+zum Einsendeschluss aber möglich. Im Dezember 2011 findet dann die 
+Auswertung statt, sodass pünktlich zum Weihnachtsfest die Gewinner 
+bekannt gegeben werden können.
+
+<div class="p"><!----></div>
+Wir wünschen allen Teilnehmern viel Erfolg und freuen uns über
+zahlreiche Einsendungen. Für Fragen und Hinweise steht die
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion unter <img src="freiesMagazin-2011-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> natürlich
+zur Verfügung.
+
+<div class="p"><!----></div>
+        <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Ultimatumspiel"><tt style="font-size: 1.3em;">https://secure.wikimedia.org/wikipedia/de/wiki/Ultimatumspiel</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="https://secure.wikimedia.org/wikipedia/de/wiki/Gefangenendilemma"><tt style="font-size: 1.3em;">https://secure.wikimedia.org/wikipedia/de/wiki/Gefangenendilemma</tt></a><br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Vierter freiesMagazin-Programmierwettbewerb#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+
+<div class="p"><!----></div>
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a name="11_10_leserbriefe">Leserbriefe</a><a name="11_10_leserbriefe">
+</a></font></h1>
+            <b>Für Leserbriefe steht unsere E-Mailadresse
+            <img src="freiesMagazin-2011-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+            Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+        An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+        uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+        sehr viel Lob (was uns natürlich freut), aber vor allem durch
+        Kritik und neue Ideen können wir uns verbessern.
+    
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+<div class="p"><!----></div>
+
+<h3>Windowmanager-Artikel</h3>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Ich habe mit großem Interesse Euren i3-Artikel gelesen und hoffe, 
+dass Ihr in Zukunft auch mal die Windowmanager wmii und awesome 
+vorstellt. Auch ein Vergleich der drei als Abschluss einer kleinen 
+WM-Serie fände ich großartig. Zum Thema „großartig“: Der Artikel, der 
+erläutert hat, was genau bei einem HTTP-Request passiert, ist das 
+beste, was ich je zum Einstig in die Netztechnik gelesen habe! 
+Vielen Dank!
+
+<div class="p"><!----></div>
+Ich hatte ja gehofft, dass Ihr Euch nach Python vielleicht Ruby oder 
+Bash zuwendet. Aber das kommt vieleicht noch.
+        <br /><b>Malte Simon</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Was zukünftige Themen wie awesome, Ruby oder Bash angeht, so sind wir
+auf unserer Leserschaft angewiesen, die sich mit dem Thema auskennt und
+dazu einen Artikel schreiben möchte. Bei uns arbeiten ja nur freiwillige
+Autoren, die über das schreiben, was sie kennen. Wir können niemanden
+ein Thema aufzwingen.
+
+<div class="p"><!----></div>
+Zu wmii hatten wir aber bereits zwei Artikel: „Der Windowmanager
+wmii (windows manager improved)“ in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 07/2007&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2007-07">[1]</a> und “wmii: Weitere
+Konfiguration” in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 12/2009&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2009-12">[2]</a>.
+In den letzten Jahren hat sich hier sicherlich einiges getan, sodass ein
+Update hierzu sicherlich nicht schlecht wäre.
+
+<div class="p"><!----></div>
+Vielleicht findet sich nach der Anregung ja unter unseren Lesern
+jemand, der sich mit den Themen auskennt. Zusätzlich habe ich die
+Wünsche auch auf unsere Artikelwunschliste gesetzt&nbsp;<a href="http://www.freiesmagazin.de/artikelwuensche">[3]</a>.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>xkcd-Comics</h3>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Ein Leser hat die Frage nach den Mouse-Over-Texten der xkcd-Comics 
+aufgeworfen. Die Aussage von Dominik Wagenführ dazu war, dass 
+Mouse-Over-Texte nur vom Adobe Reader unterstützt würden. Daher 
+zwei Vorschläge, die mir in den Sinn kamen:
+
+<ul>
+<li> Die Texte kopfüber auf der gleichen Seite abdrucken. Es scheint
+ein geeignetes LaTeX-Paket zu geben&nbsp;<a href="http://en.wikibooks.org/wiki/LaTeX/Packages/Rotating">[4]</a>.
+<div class="p"><!----></div>
+</li>
+
+<li> Die Texte normal auf der nächsten Seite abdrucken.
+
+<div class="p"><!----></div>
+</li>
+</ul>
+        <br /><b>Martin P.</b> &nbsp;(<a href="http://www.freiesmagazin.de/20110904-septemberausgabe-erschienen#comment-2070">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Vielen Dank für den Hinweis. Das Abdrucken neben/über einem Comic 
+wird dann schwer, wenn der Begleittext sehr lang ist, wie zum 
+Beispiel bei xkcd-Comic 955&nbsp;<a href="http://xkcd.com/955/">[5]</a>. Diesen 
+Text bekommen wir nicht sinnvoll irgendwo unter, ohne dass es 
+störend wirkt. Eine Auflistung auf der nächsten Seite wirkt 
+natürlich auch etwas seltsam, maximal eine Zusammenfassungsseite 
+könnten wir uns vorstellen.
+
+<div class="p"><!----></div>
+Alles in allem ist die derzeitige Lösung mit dem Link auf die 
+Originalseite, wo man dann den Zusatztext im Browser lesen kann, 
+leider noch die beste Alternative.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Code Hosting, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 09/2011</h3>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Ein großer, im Artikel nicht aufgeführter Vorteil von SourceForge 
+gegenüber anderen Anbietern ist, dass ein kompletter 
+Webhosting-Service inklusive PHP, Perl und MySQL mit angeboten 
+wird. Man kann also problemlos ein eigenes CMS für sein Projekt 
+aufsetzen. Normalerweise muss man dafür sehr viel Geld in die Hand 
+nehmen.
+        <br /><b>Michael</b> &nbsp;(<a href="http://www.freiesmagazin.de/20110904-septemberausgabe-erschienen#comment-2012">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Trinity, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 09/2011</h3>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Nur zur Richtigstellung: Es ging ja damals nicht in erster Linie 
+darum, auf Biegen und Brechen am Althergebrachten festzuhalten, 
+sondern einen funktionierenden Desktop weiter zu nutzen, denn von 
+einem funktionierenden Desktop war KDE4 noch sehr lange nach 
+Einführung entfernt. Was mich persönlich damals z.&nbsp;B. extrem gestört 
+hat, war, dass die ganzen Shortcuts nicht mehr so funktioniert 
+haben wie zuvor, von dem Akonadi/Nepomuk-Trauerspiel mal ganz zu 
+schweigen, der Desktop, wie man ihn gewohnt war, war plötzlich weg
+[und] das sehr gute Kontact/Kmail war plötzlich unzuverlässig. (Wie das 
+alles jetzt aussieht, kann ich nicht beurteilen, da ich KDE nicht 
+mehr nutze).
+
+<div class="p"><!----></div>
+Wenn man einen Desktop zum Arbeiten (ja, richtig zum Geld verdienen) 
+nutzt, stört einfach jede aufgezwungene Veränderung.
+
+<div class="p"><!----></div>
+Der Artikel offenbart einmal mehr die Kluft zwischen Nutzer und 
+Entwickler. Ich habe wirklich schon vielen Diskussionen rund um 
+KDE4 beigewohnt, es läuft immer wieder darauf hinaus, dass die 
+Nutzer das Gefühl haben, die Entwickler denken sich „geile“ Sachen 
+aus, die kein Mensch braucht und vernachlässigen dabei das 
+Bug-Hunting. Und die Entwickler verstehen gar nicht, wie man nur so 
+unflexibel sein kann und warum man die tollen „geilen“ Funktionen 
+nicht würdigt.
+
+<div class="p"><!----></div>
+Und als Admin kann ich sagen, dass von meinen Nutzern keiner die 
+ganzen „geilen“ Funktionen von KDE4 genutzt hat, z.&nbsp;B. diese 
+virtuelle Arbeitsumgebungsgeschichte. Mir ist grade entfallen, wie 
+die hieß, zumal sie mit mehr als einem Monitor ohnehin nicht 
+funktionierte.
+
+<div class="p"><!----></div>
+Du [Anmerkung der Redaktion: Martin Gräßlin] schreibst: „<em>Über 
+die Themeingfunktionalität und die vielseitigen 
+Einstellungsmöglichkeiten lässt sich auch sehr leicht ein Desktop 
+nachbauen, der aussieht und sich verhält wie KDE 3.5.</em>“ Aber das ist 
+eben erst jetzt so, nach vielen Versionen (und Jahren). Und manche 
+Dinge wurden auch nur auf massiven Druck der User eingezogen, z.&nbsp;B. 
+die Möglichkeit den Desktop traditionell zu nutzen.
+
+<div class="p"><!----></div>
+Und man hatte und hat immer das Gefühl, dass die Entwickler die 
+Nutzer unglaublich störend und doof finden, weil die sich einfach 
+nicht zu ihrem Glück zwingen lassen wollen und sowieso doof sind.
+
+<div class="p"><!----></div>
+Ich bin deiner Meinung, dass ein Feature-Freeze von 2005 nicht mehr 
+zeitgemäß ist, aber man muss schon auch genau sein bei der 
+Betrachtung, wie es dahin kam.
+        <br /><b>Lars Behrens</b> &nbsp;(<a href="http://www.freiesmagazin.de/20110904-septemberausgabe-erschienen#comment-2007">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Der Artikel hat den aktuellen Stand mit KDE Plasma 4.7 betrachtet. 
+Es ist meiner Meinung nach völlig irrelevant, ob in der 
+Vergangenheit keine Feature-Kompatibilität mit KDE 3.5 bestand. 
+Dies ist heutzutage erreicht und weit übertroffen. Dass in der 
+Vergangenheit nicht alles optimal war (aus verschiedenen Gründen), 
+ist bekannt und sollte endlich auch mal abgehakt werden.
+
+<div class="p"><!----></div>
+Ich möchte auch einfach noch einmal darauf hinweisen, dass ich als 
+Entwickler, wie im Artikel erwähnt, erst mit dem Release von 4.0 
+dazugestoßen bin und somit in keinster Weise Einfluss auf die 
+Entscheidungen zu diesem Zeitpunkt hatte.
+        <br /><b><i>Martin Gräßlin</i></b> 
+</i>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Technisch gesehen stimme ich dem Author ja zu, Trinity hat zuwenig 
+Manpower für einen kompletten Desktop.
+
+<div class="p"><!----></div>
+Bloß sollten sich die KDE4-Entwickler dann mal die Frage stellen, 
+warum es überhaupt zu Trinity gekommen ist. Ein sehr interessanter 
+Artikel dazu findet sich in der aktuellen „Linux intern“. KDE3 war 
+von der Bedienbarkeit ausgereift und die Nutzer konnten gut damit 
+umgehen. KDE4 geht mir (auch wenn ich ihn bisher nutze und damit 
+zurechtkomme) einfach nur tierisch auf die Nerven. Die Workspaces 
+und Widgets, so nett sie gemeint sind, sind deutlich unpraktischer 
+als einfach wie früher eine nette kleine Programmverknüpfung in die 
+Schnellstartleiste oder auf den Desktop zu legen. Dann noch nach 
+Namen sortieren und am Gitter ausrichten und fertig war der 
+aufgeräumte Desktop. Heute krampft man sich einen ab damit.
+
+<div class="p"><!----></div>
+Sorry, aber auch wenn Trinity vielleicht wenig Chancen hat, ich 
+würde ihn gern benutzen. Und den Kommentar des Autors, sich einen 
+anderen Desktop zu suchen, finde ich reichlich dreist. Wenn die 
+KDE-Entwickler lieber für sich als für die Nutzer entwickeln, 
+werden das einige Nutzer aber wohl tun müssen. Allein aufgrund 
+dieses Kommentars werde ich wohl drüber nachdenken müssen.
+        <br /><b>Linuxgirl</b> &nbsp;(<a href="http://www.freiesmagazin.de/20110904-septemberausgabe-erschienen#comment-2003">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+So leid es mir für die Nutzer tut, es ist einfach nicht möglich 
+Software zu entwickeln, die allen Menschen gleich gut gefällt. 
+Software und auch ihre Entwickler unterliegen einem ständigen 
+Wandel. Dabei kann es leider auch passieren, dass manche 
+Nutzergruppen, die zuvor angesprochen wurden, nun nicht mehr 
+angesprochen werden, dafür aber neue. Unter Linux hat man 
+glücklicherweise die Möglichkeit aus verschiedenen Desktops zu 
+wählen und es ist daher komplett in Ordnung, dass ein Desktop nicht 
+alle Nutzergruppen anspricht, sondern sich spezialisiert.
+
+<div class="p"><!----></div>
+Daher ist es natürlich auch zu begrüßen, wenn es eine Desktop-Shell 
+gibt, die die Bedürfnisse der nun enttäuschten ehemaligen
+KDE-3.5-Nutzer abdeckt. Ein zentraler Punkt des Artikels war, dass
+Trinity dies jedoch nicht bietet, da es versucht, komplett KDE 3.5 
+weiterzuentwickeln, anstatt nur eine weitere Desktop-Shell in Art 
+von KDE 3.5 bereitzustellen.
+        <br /><b><i>Martin Gräßlin</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Fenstermanager i3, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 09/2011</h3>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Ich finde es ja gut, dass ihr einen Artikel über i3 veröffentlicht. 
+Eine kurze Rücksprache mit mir [Anmerkung der Redaktion: Michael 
+Stapelberg ist der Initiator von i3] wäre allerdings zu empfehlen 
+gewesen, dann hätte ich euch folgendes schon im Vorfeld mitteilen 
+können:
+
+<ol type="1">
+<li> i3 benutzt in aktueller Version (v4, seit über einem Monat als 
+stabile Version veröffentlicht) keine Tabelle mehr als 
+Datenstruktur, sondern einen Baum. Das wirkt sich durchaus auf die 
+Bedienung und Tastenkombinationen aus. Einige der 
+Tastenkombinationen sind damit obsolet.
+<div class="p"><!----></div>
+</li>
+
+<li> Für Fedora gibt es seit langer Zeit i3-Pakete, für openSUSE 
+sind welche in Arbeit.
+<div class="p"><!----></div>
+</li>
+
+<li> xdm bietet (AFAIK) keinen Auswahlmechanismus, um automatisch 
+eine vordefinierte Xsession zu starten. Der Eintrag <b><tt style="font-size: 1.3em;">exec i3</tt></b> 
+sollte in die Datei <b><tt style="font-size: 1.3em;">~/.xsession</tt></b>, die Datei <b><tt style="font-size: 1.3em;">~
+/.xinitrc</tt></b> wird von den Programmen <b><tt style="font-size: 1.3em;">xinit</tt></b> bzw. <b><tt style="font-size: 1.3em;">startx</tt></b> ausgewertet, die man aus Sicherheitsgründen nicht 
+verwenden sollte.
+<div class="p"><!----></div>
+</li>
+
+<li> dmenu muss nicht installiert werden, ist aber empfohlen. Man 
+kann Programme auch aus einem Terminal heraus oder über die 
+IPC-Schnittstelle starten.
+<div class="p"><!----></div>
+</li>
+
+<li> Die Begrenzung von 10 Arbeitsflächen ist etwas 
+missverständlich formuliert. Tatsächlich hat man soviel 
+Arbeitsflächen wie der Arbeitsspeicher hergibt, aber nur die ersten 
+10 sind standardmäßig konfiguriert. Das hält niemand davon ab, z.&nbsp;B.
+über die IPC-Schnittstelle die restlichen zu benutzen.
+<div class="p"><!----></div>
+</li>
+
+<li> Statt dzen2 empfehlen wir zwischenzeitlich die bei i3 
+mitgelieferte i3bar. Diese unterstützt den Dock-Modus (inklusive 
+Positionierung am oberen oder unteren Bildschirmrand) korrekt und 
+bietet in der aktuellen Entwicklerversion Unterstützung für 
+Tray-Icons (wie z.&nbsp;B. vom NetworkManager). Die unschöne manuelle 
+Positionierung entfällt damit komplett.
+<div class="p"><!----></div>
+</li>
+
+<li> Dass i3lock nur auf Ubuntu mit Cairo-Unterstützung kompiliert 
+wurde, ist falsch. Im Gegenteil wurde (meines Wissens nach) nur auf 
+Arch Linux die Cairo-Unterstützung weggelassen, weil dort im 
+Cairo-Paket das XCB-Backend deaktiviert ist (i3lock benutzt XCB und 
+damit auch das Cairo-XCB-Backend).
+<div class="p"><!----></div>
+</li>
+
+<li> Die aktuelle Version von i3status (v2.3) erkennt das <b><tt style="font-size: 1.3em;">output_format</tt></b> automatisch anhand von der Befehlszeile, mit der 
+man es startet. Weiterhin sollte man natürlich nicht die 
+systemweite <b><tt style="font-size: 1.3em;">/etc/i3status.conf</tt></b> editieren, sondern sie 
+zunächst nach <b><tt style="font-size: 1.3em;">~/.i3status.conf</tt></b> kopieren und dort 
+editieren.
+
+<div class="p"><!----></div>
+</li>
+</ol>
+        <br /><b>Michael (Stapelberg)</b> &nbsp;(<a href="http://www.freiesmagazin.de//20110904-septemberausgabe-erschienen#comment-2006">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Vielen Dank für die zahlreichen Anmerkungen. Einige der 
+angesprochenen Punkte sind aber mehr unserem 
+Veröffentlichungsprozess anzukreiden und nicht dem Autor. Der Autor 
+schrieb den Artikel Ende Juli 2011, als Version 4 von i3 noch nicht 
+veröffentlicht war. Demzufolge konnte er auch nicht auf die 
+Neuerungen und Änderungen in seinem Artikel eingehen. Eine 
+nachträgliche Änderung wäre nur schwer möglich gewesen, da der 
+Artikel bereits im August gesetzt wurde, um dann gleich Anfang 
+September veröffentlicht zu werden.
+
+<div class="p"><!----></div>
+Hier haben sich also Redaktionsschluss für Artikel und 
+Veröffentlichung der neuen Version von i3 unglücklich 
+überschnitten, wofür wir um Entschuldigung bitten.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2007-07"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2007-07</tt></a><br />
+
+<div class="p"><!----></div>
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2009-12"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/freiesMagazin-2009-12</tt></a><br />
+
+<div class="p"><!----></div>
+[3] <a href="http://www.freiesmagazin.de/artikelwuensche"><tt style="font-size: 1.3em;">http://www.freiesmagazin.de/artikelwuensche</tt></a><br />
+
+<div class="p"><!----></div>
+[4] <a href="http://en.wikibooks.org/wiki/LaTeX/Packages/Rotating"><tt style="font-size: 1.3em;">http://en.wikibooks.org/wiki/LaTeX/Packages/Rotating</tt></a><br />
+
+<div class="p"><!----></div>
+[5] <a href="http://xkcd.com/955/"><tt style="font-size: 1.3em;">http://xkcd.com/955/</tt></a><br />
+
+<div class="p"><!----></div>
+                Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+        kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+    
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/245?edit[subject]=Leserbriefe#comment-form"><i>Die Leserbriefe kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                            
+<h1><font color="#595959"><a name="11_10_veranstaltungen">Veranstaltungskalender</a><a name="11_10_veranstaltungen">
+</a></font></h1>
+
+<div class="p"><!----></div>
+        
+<table border="1">
+<tr><td colspan="5" align="center"><font size="+0"><b>Messen</b></font></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td width="0"><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td width="0"><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+OpenExpo </td><td width="0">Bern </td><td align="left">05./06.10.2011 </td><td width="0">25 CHF </td><td align="left"><a href="http://www.openexpo.ch/"><tt style="font-size: 1.3em;">http://www.openexpo.ch/</tt></a> </td></tr>
+<tr><td align="left">Ubucon 2011 </td><td width="0">Leipzig </td><td align="left">14.-16.10.2011 </td><td width="0">10 EUR </td><td align="left"><a href="http://www.ubucon.de/"><tt style="font-size: 1.3em;">http://www.ubucon.de/</tt></a> </td></tr>
+<tr><td align="left">Kieler Open Source und Linux Tage </td><td width="0">Kiel </td><td align="left">28./29.10.2011 </td><td width="0">frei </td><td align="left"><a href="http://www.kieler-linuxtage.de/"><tt style="font-size: 1.3em;">http://www.kieler-linuxtage.de/</tt></a> </td></tr>
+<tr><td align="left">BeGeistert 024 </td><td width="0">Düsseldorf </td><td align="left">29./30.10.2011 </td><td width="0">35 EUR </td><td align="left"><a href="http://www.begeistert.org/faq"><tt style="font-size: 1.3em;">http://www.begeistert.org/faq</tt></a> </td></tr>
+<tr><td align="left">Brandenburger Linux-Infotag </td><td width="0">Potsdam </td><td align="left">06.11.2011 </td><td width="0">frei </td><td align="left"><a href="http://blit.org/2011"><tt style="font-size: 1.3em;">http://blit.org/2011</tt></a> </td></tr>
+<tr><td align="left">World Usability Day </td><td width="0">Weltweit </td><td align="left">10.11.2011 </td><td width="0">– </td><td align="left"><a href="http://www.worldusabilityday.org/de"><tt style="font-size: 1.3em;">http://www.worldusabilityday.org/de</tt></a> </td></tr>
+<tr><td align="left">OpenRheinRuhr </td><td width="0">Oberhausen </td><td align="left">12./13.11.2011 </td><td width="0">– </td><td align="left"><a href="http://www.openrheinruhr.de/"><tt style="font-size: 1.3em;">http://www.openrheinruhr.de/</tt></a> </td></tr>
+<tr><td align="left">KNF-Kongress </td><td width="0">Nürnberg </td><td align="left">20.11.2011 </td><td width="0">– </td><td align="left"><a href="http://www.franken.de/veranstaltungen"><tt style="font-size: 1.3em;">http://www.franken.de/veranstaltungen</tt></a> </td></tr>
+<tr><td align="left">13. LinuxDay </td><td width="0">Dornbirn </td><td align="left">26.11.2011 </td><td width="0">frei </td><td align="left"><a href="http://linuxday.at/"><tt style="font-size: 1.3em;">http://linuxday.at/</tt></a> </td></tr>
+<tr><td align="left">        </td></tr></table>
+
+
+    <font size=1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an<img src="freiesMagazin-2011-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a name="11_10_vorschau">Vorschau</a><a name="11_10_vorschau">
+</a></font></h1>
+
+<div class="p"><!----></div>
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint immer am ersten Sonntag eines Monats. Die November-Ausgabe wird voraussichtlich am 6. November unter anderem mit folgenden Themen veröffentlicht:
+
+<ul>
+<li> Pixelfreie Screenshots
+<div class="p"><!----></div>
+</li>
+
+<li> Freie Software in der Schule
+
+<div class="p"><!----></div>
+</li>
+</ul>
+Es kann leider vorkommen, dass wir aus internen Gründen angekündigte Artikel verschieben müssen. Wir bitten dafür um Verständnis.<br />
+<a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+                                
+<h1><font color="#595959"><a name="11_10_konventionen">Konventionen</a><a name="11_10_konventionen">
+</a></font></h1>
+
+<div class="p"><!----></div>
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td width="59"><b><tt style="font-size: 1.3em;">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td width="59"><b><tt style="font-size: 1.3em;">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt style="font-size: 1.3em;">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td width="59"><b><tt style="font-size: 1.3em;">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt style="font-size: 1.3em;">/home/BENUTZERNAME</tt></b> </td></tr></table>
+<br />
+        <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+
+<div style="background: #FFFFFF;">
+    
+<table>
+<tr><td colspan="3" align="left">                        
+<h1><font color="#595959"><a name="11_10_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a><a name="11_10_impressum">
+</a></font></h1></td></tr>
+<tr><td colspan="3" align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF und HTML einmal monatlich.</td></tr>
+<tr><td colspan="3" align="left"> </td></tr>
+<tr><td align="left"></td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Kontakt</b></font></td></tr>
+<tr><td align="left"></td><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2011-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left"></td><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left"></td><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+<tr><td align="left"></td><td align="left"></td><td align="left"></td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Autoren dieser Ausgabe</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Michael Niedermair </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_android">Rezension: Einführung in die Android-Entwicklung</a> </td></tr>
+<tr><td align="left"></td><td align="left">Patrick Meyhöfer </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_aptana">Aptana Studio – Eine leistungsfähige Web-Entwicklungsumgebung</a> </td></tr>
+<tr><td align="left"></td><td align="left">Patrick Eigensatz </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_php1">PHP-Programmierung – Teil 1: HTML</a> </td></tr>
+<tr><td align="left"></td><td align="left">Daniel Nögel </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_python9">Python – Teil 9: Ab ins Netz!</a> </td></tr>
+<tr><td align="left"></td><td align="left">Stefan Bradl </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_remoteactors">Remote-Actors in Scala</a> </td></tr>
+<tr><td align="left"></td><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_kernel">Der September im Kernelrückblick</a> </td></tr>
+<tr><td align="left"></td><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_virtualbox-rezension">Rezension: VirtualBox – Installation, Anwendung, Praxis</a> </td></tr>
+<tr><td align="left"></td><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2011-10-bilder.html#11_10_paketabhaengigkeiten">Die Nachteile der Paketabhängigkeiten</a> </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Logo-Design</b></font></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left">Arne Weinberg (<a href="http://www.gnu.org/copyleft/fdl.html">GNU FDL</a>) </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr></table>
+
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"></td></tr>
+<tr><td colspan="3" align="left">Erscheinungsdatum: 2. Oktober 2011</td></tr>
+<tr><td align="left"></td></tr>
+<tr><td align="left"></td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Redaktion</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Dominik Honnef </td><td align="left">Thorsten Schmidt </td></tr>
+<tr><td align="left"></td><td align="left">Matthias Sitte </td><td align="left"></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Satz und Layout</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Ralf Damaschke </td><td align="left">Andrej Giesbrecht </td></tr>
+<tr><td align="left"></td><td align="left">Tobias Kempfer </td><td align="left">Nico Maikowski </td></tr>
+<tr><td align="left"></td><td align="left">Ralph Pavenstädt </td><td align="left"></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Korrektur</b></font></td></tr>
+<tr><td align="left"></td><td align="left">Daniel Braun </td><td align="left">Andreas Breitbach </td></tr>
+<tr><td align="left"></td><td align="left">Frank Brungräber </td><td align="left">Bastian Bührig </td></tr>
+<tr><td align="left"></td><td align="left">Stefan Fangmeier </td><td align="left">Mathias Menzer </td></tr>
+<tr><td align="left"></td><td align="left">Florian Rummler </td><td align="left">Karsten Schuldt </td></tr>
+<tr><td align="left"></td><td align="left">Janis von Seggern </td><td align="left">Stephan Walter </td></tr>
+<tr><td align="left"></td><td align="left">Toni Zimmer </td><td align="left"></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td colspan="3" align="left"><font size="+0"><b>Veranstaltungen</b></font></td></tr>
+<tr><td align="left"></td><td colspan="2" align="left">Ronny Fischer </td></tr>
+<tr><td align="left"></td><td colspan="2" align="left"> </td></tr>
+<tr><td align="left">    </td></tr></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren. Das <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Logo
+    wurde von Arne Weinberg erstellt und unterliegt der
+    <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2011-10-bilder.html#index">Zum Index</a><br /><hr />
+
+<div class="p"><!----></div>
+</div>
+<br /><br /><hr /><small>File translated from
+T<sub><font size=1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size=1">T</font></sub>H</a>,
+version 3.89.<br />On  2 Oct 2011, 09:26.</small>
+</div>
+</body></html>

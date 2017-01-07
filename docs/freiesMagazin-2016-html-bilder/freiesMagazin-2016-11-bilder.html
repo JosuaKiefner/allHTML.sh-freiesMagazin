@@ -1,0 +1,2426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 4.08" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+ <style type="text/css"><!--
+ .tiny {font-size:30%;}
+ .scriptsize {font-size:xx-small;}
+ .footnotesize {font-size:x-small;}
+ .smaller {font-size:smaller;}
+ .small {font-size:small;}
+ .normalsize {font-size:medium;}
+ .large {font-size:large;}
+ .larger {font-size:x-large;}
+ .largerstill {font-size:xx-large;}
+ .huge {font-size:300%;}
+ --></style>
+
+<title>freiesMagazin 11/2016</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Der Oktober im Kernelrückblick | Verschlüsselte Server-Backups mit Duply und Duplicity | Scribus in der Praxis | KeeWeb: Passwörter sicher speichern | Test: Life is Strange – Emotionale Zeitreise | Spieltipp: Don't take it personally, babe, it just ain't your story | Test: The Curious Expedition – ein Roguelike-Abenteuer für Forscher und Entdecker | Rezension: Scrum | Editorial | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 11/2016" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2016_05.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2016-11-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><div><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2016-11.html" style="font-size:2em;">Zur Version ohne Bilder</a><hr class="sigilChapterBreak" />
+
+<div class="huge"><b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span>&nbsp;<span style="color:#595959"><b>November 2016</b></span></div>
+<span class="larger">(ISSN 1867-7991)</span><br />
+
+
+
+
+<h1 id="fm_inhalt"><span style="color:#595959">Themen dieser Ausgabe sind u.&nbsp;a.</span></h1>
+
+<div class="p"><!----></div>
+    <div class="large"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_duplicity">Verschlüsselte Server-Backups mit Duply und Duplicity</a></div> 
+    Backups in lesbarer Form irgendwo im Netz ablegen? Keine gute Idee. Backups hingegen zuerst vollständig verschlüsseln und danach auf einen beliebigen Online-Speicherplatz wegschieben? Eine gute Idee! Genau das kann Duplicity und dank Duply vereinfacht sich dessen Handhabung auf wenige, sehr einfache Befehle. (<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_duplicity">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <div class="large"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_keeweb">KeeWeb: Passwörter sicher speichern</a></div> 
+    Der freie Passwortmanager KeeWeb ist knapp ein Jahr nach dem Start in der Version 1.3 veröffentlicht worden. Die Applikation unterstützt unter anderem KeePass-Datenbanken und ermöglicht es, Passwörter sicher auf einem lokalen Server oder in einer Cloud zu verwalten. Wir stellen Ihnen die recht junge Anwendung vor. (<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_keeweb">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <div class="large"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_life_is_strange">Test: Life is Strange – Emotionale Zeitreise</a></div> 
+    „Life is Strange“ besteht aus insgesamt fünf Episoden, wovon die erste Episode kostenlos spielbar ist. Der Frage, für wen es sich lohnt, die kostenpflichtigen Episoden 2-5 dazu zu kaufen, wird in diesem Test nachgegangen. (<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_life_is_strange">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_toc"><span style="color:#595959">Inhalt</span></h1><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+ <b>Linux allgemein</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_kernel">Der Oktober im Kernelrückblick</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+ <b>Anleitungen</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_duplicity">Verschlüsselte Server-Backups mit Duply und Duplicity</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_scribus">Scribus in der Praxis</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+ <b>Software</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_keeweb">KeeWeb: Passwörter sicher speichern</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_life_is_strange">Test: Life is Strange – Emotionale Zeitreise</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_not_your_story">Spieltipp: Don't take it personally, babe, it just ain't your story</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_the_curious_expedition">Test: The Curious Expedition – ein Roguelike-Abenteuer für Forscher und Entdecker</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+ <b>Community</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_rezension_scrum">Rezension: Scrum</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+ <b>Magazin</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2016-11-bilder.html#fm_16_11_impressum">Impressum</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+
+
+
+<h1 id="fm_16_11_editorial"><span style="color:#595959">Editorial</span></h1>
+
+<div class="p"><!----></div>
+
+<h2>Abschiedsgrüße</h2>
+
+Letzten Monat kündigten wir im Editorial und auf der 
+Webseite&nbsp;<a href="http://www.freiesmagazin.de/20161002-freiesmagazin-schliesst-die-seiten">[1]</a>
+an, dass <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> mit der Dezemberausgabe die Pforten schließt.
+
+<div class="p"><!----></div>
+Die Reaktion darauf war sehr positiv – also im Sinne der Anzahl, denn über 30 
+Leser-Reaktionen konnten wir damit erringen. Die meisten bedauerten den Schritt 
+und bedankten sich – wofür wir uns an dieser Stelle bedanken wollen. Wir freuen 
+uns über diese Resonanz und können die Bühne so mit dem Gefühl verlassen, 
+dass es da draußen Menschen gab, die das Magazin genossen haben.
+
+<div class="p"><!----></div>
+Die Leserbriefe verschieben aber aufgrund des Umfangs auf die letzte Ausgabe, 
+da wir denken, dass dies auch einen schönen Abschluss für das Magazin bietet.
+
+<div class="p"><!----></div>
+An der Stelle gab es aber eine Frage, die wir in Kürze beantworten wollen: Die 
+Webseite soll in irgendeiner Form erhalten bleiben, sodass man mindestens 
+weiterhin die alten <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span>-Ausgaben herunterladen und anschauen kann. Wie genau 
+wir das umsetzen, wird sich aber noch zeigen.
+
+<div class="p"><!----></div>
+
+<h2>Abo-Funktion</h2>
+
+Pünktlich zur Verabschiedung hat uns Leser Christoph Anfang Oktober eine E-Mail 
+zukommen lassen, dass er auf seiner 
+Webseite&nbsp;<a href="http://www.monochromec.com/fm/">[2]</a> einen Dienst eingerichtet hat, 
+der eine Zustellung der PDF- oder EPUB-Ausgabe von <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> per E-Mail ermöglicht.
+
+<div class="p"><!----></div>
+Ja, diese Funktion kommt sehr spät – wir in der Redaktion haben bisher den 
+Aufwand gescheut, da der Bedarf laut unserer Umfrage im 
+Juni&nbsp;<a href="http://www.freiesmagazin.de/20160610-separate-e-mail-abonnementen-funktion">[3]</a> 
+eher gering war. Dennoch Danke an Christoph für diese Möglichkeit!
+
+<div class="p"><!----></div>
+Sicherheitshalber aber ein Hinweis: Der Dienst stammt nicht von <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> und wir 
+wissen auch nicht, was mit den eingegeben Daten geschieht.
+
+<div class="p"><!----></div>
+
+<h2>Letzte Chance</h2>
+
+Wer noch einen Artikel zu <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> beitragen will, hat noch bis zum 18. November die Möglichkeit. Dann ist Redaktionsschluss für die Dezemberausgabe. Schickt Euren Artikel einfach per E-Mail an <img src="freiesMagazin-2016-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<div class="p"><!----></div>
+Wir wünschen Ihnen nun viel Spaß mit der neuen und vorletzten Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span>-Redaktion
+
+<div class="p"><!----></div>
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="http://www.freiesmagazin.de/20161002-freiesmagazin-schliesst-die-seiten"><tt>http://www.freiesmagazin.de/20161002-freiesmagazin-schliesst-die-seiten</tt></a><br />
+[2] <a href="http://www.monochromec.com/fm/"><tt>http://www.monochromec.com/fm/</tt></a><br />
+[3] <a href="http://www.freiesmagazin.de/20160610-separate-e-mail-abonnementen-funktion"><tt>http://www.freiesmagazin.de/20160610-separate-e-mail-abonnementen-funktion</tt></a><br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Editorial&amp;body=freiesMagazin 11/2016%0AEditorial%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Editorial#comment-form">Beitrag kommentieren</a><br /><br /></i><a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_kernel"><span style="color:#595959">Der Oktober im Kernelrückblick</span></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 4.8</h2>
+
+Der Linux-Kernel 4.8 erschien Anfang Oktober nach 71 Tagen
+Entwicklungszeit&nbsp;<a href="https://lkml.org/lkml/2016/10/2/102">[1]</a>.
+Die vorangegangene Woche verlief recht ruhig und brachte außer ein
+paar letzten „Reverts“ vor dem Release, also Rücknahmen zuvor eingereichter
+Änderungen, hauptsächlich kleinere Fehlerkorrekturen an den x86- und MIPS-
+Architekturen mit.
+
+<div class="p"><!----></div>
+Eine der auffälligsten Änderungen – beim Blick in den Quellcode – war
+die Umstellung großer Teile der Kernel-Dokumentation auf 
+Sphinx&nbsp;<a href="http://www.sphinx-doc.org">[2]</a>. Dadurch soll die im Moment teilweise 
+unterschiedlich
+gehandhabte Dokumentation besser verzahnt und damit für die Entwickler
+nützlicher werden.
+
+<div class="p"><!----></div>
+Einige Nutzer immerhin könnten von der Aufnahme eines Treibers profitieren, der
+die Ansteuerung von N-trig-Touchscreens erlaubt. Geräte dieses Herstellers
+kommen unter anderem in Microsofts Surface 3 und Surface Pro 3 zum Einsatz. 
+<div class="p"><!----></div>
+Ein weiterer hinzugekommener Treiber unterstützt den Broadcom-Chipsatz BCM2837,
+bekannt aus dem Raspberry Pi 3.
+Damit können künftige Linux-System für den „Raspi“ auf Binärtreiber verzichten,
+zumindest soweit es rein um den Einplatinenrechner selbst geht.
+
+<div class="p"><!----></div>
+Im Grafikumfeld gibt es für Intel-Grafik nun Unterstützung, um virtuellen
+Maschinen direkten Zugang zum Grafikkern zu geben. Dies würde den virtuellen
+Maschinen erlauben, auf die Hardwarebeschleunigung für 3-D oder Video-Dekodierung
+zurückzugreifen und damit einiges an Rechenleistung der CPU sparen. Leider
+wird aktuell nur Intels Broadwell-Familie unterstützt und hierfür werden auch
+spezielle Anpassungen benötigt, die im Moment nur für 
+KVM 
+und Xen 
+verfügbar sind. Ob und wann weitere Virtualisierer wie Virtualbox oder VMware in
+den Genuss von Unterstützung kommen und ob Linux-Distributoren ihre Pakete von
+KVM und/oder Xen entsprechend anpassen ist derzeit ungewiss.
+
+<div class="p"><!----></div>
+Die Technik „AMD Overdrive“ wird nun vom AMDGPU-Treiber unterstützt und erlaubt
+damit, dass AMDs Radeon-Grafikchips ohne zusätzliche Software übertaktet werden
+können. 
+<div class="p"><!----></div>
+Für die meisten Nutzer nicht sichtbar, wurde die Verwendung von „Kernel-
+ASLR“&nbsp;<a href="https://de.wikipedia.org/wiki/Address_Space_Layout_Randomization">[3]</a>
+ausgeweitet. Es werden nun auch 64-Bit-Systeme der verbreiteten x86-Architektur
+unterstützt und weitere Speicherbereiche des Kernels damit adressiert, außerdem
+wurden Probleme im Zusammenhang mit dem Ruhezustands-/Bereitschaftsmodus
+behoben. ASLR soll das gezielte Ausnutzen von Speicherüberläufen zum Ausweiten
+von Privilegien verhindern, indem die vom Kernel genutzten Speicherbereiche
+nicht an immer festen Adressen liegen, sondern zufällig „erwürfelt“ werden.
+
+<div class="p"><!----></div>
+Weiterhin wurden Vorbereitungen getroffen, um Kernel Stacks nicht mehr festen
+Adressbereichen zuzuordnen, sondern virtuell zuweisen zu können – eine Funktion,
+die in Linux 4.9 aufgenommen wird. Über die Vielzahl der weiteren Änderungen
+gibt diesmal der Artikel „Die Neuerungen von Linux 4.8“ im Kernel-Log von Heise
+Online&nbsp;<a href="http://heise.de/-3283402">[4]</a> ausführlich Auskunft.
+
+<div class="p"><!----></div>
+
+<h2>Die Entwicklung von Linux 4.9</h2>
+
+Das Merge Window für Linux 4.9 
+schloss sich diesmal einen Tag
+früher. Obwohl Torvalds dies hin und wieder tut, um die Entwickler zu „erziehen“,
+lag der Grund diesmal in
+der Menge der Änderungen. Tatsächlich liegt Linux
+4.9-rc1&nbsp;<a href="https://lkml.org/lkml/2016/10/15/112">[5]</a> mit über 15000 Änderungen
+sogar über den meisten Final-Versionen der letzten Jahre.
+
+<div class="p"><!----></div>
+Ein guten Anteil daran hat Greybus. Dabei handelt es sich jedoch nicht um einen
+Konkurrenten zu kdbus, das ja zur Kommunikation von Prozessen untereinander
+gedacht ist, sondern um einen Hardware-Bus. Greybus sollte für das
+zwischenzeitlich eingestampfte Projekt
+Ara&nbsp;<a href="https://de.wikipedia.org/wiki/Project_Ara">[6]</a> die Kommunikation der
+austauschbaren Hardware-Module untereinander sicherstellen. Obwohl mit Projekt
+Ara der Hauptgrund für die Entwicklung von Greybus nun Geschichte ist, setzen
+andere, darunter Motorola und Toshiba, weiterhin auf dieses System, sodass es
+mit Greg Kroah-Hartmann als Fürsprecher in den aktiven Kernel-Zweig aufgenommen
+wurde. 
+
+<div class="p"><!----></div>
+Eine weitere bemerkenswerte Neuerung trägt den Namen „virtually
+mapped kernel stack allocations“. Kernel Stacks sind kleine Abschnitte innerhalb
+des vom Kernel reservierten Speicherbereichs, die laufenden Prozessen zugeordnet
+sind und von diesen genutzt werden, um Aktionen im System-Kontext vom Kernel
+ausführen zu lassen. Bislang waren diese Bereiche auf feste Speicheradressen
+adressiert, nun können sie wie virtueller Speicher verwaltet werden. Die
+Vorteile dabei sind, dass die Kernel Stacks nun in der Größe anpassbar sind und
+dass Speicherüberläufe damit erkannt und abgefangen werden können.
+
+<div class="p"><!----></div>
+Ausgerechnet diese Neuerung schien zuerst für einige Abstürze verantwortlich zu
+sein, wie Torvalds bei der Freigabe der zweiten
+Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2016/10/23/203">[7]</a> verlauten ließ. Er
+bat ausdrücklich darum, die Option <b><tt>CONFIG_VMAP_STACK</tt></b> zu aktivieren und an den
+Bemühungen zur Fehlersuche teilzunehmen. Wer dies meiden wollte, sollte diese
+Option jedoch ausschalten. Doch das dürfte nicht wirklich viel gebracht haben,
+denn als Ursache des Fehlers entpuppte sich später eine Race
+Condition&nbsp;<a href="https://de.wikipedia.org/wiki/Race_Condition">[8]</a> in der Warteschlange für
+Zugriffe auf Block Devices.
+
+<div class="p"><!----></div>
+Ansonsten war der Patch von Seiten der Größe her eher moderat mit lediglich 282
+Commits. Neben den ersten Fehlerkorrekturen finden sich darunter auch zwei neue
+Treiber: ein Treiber für die 
+IPMI-Schnittstelle&nbsp;<a href="https://de.wikipedia.org/wiki/Intelligent_Platform_Management_Interface">[9]</a>
+von AST2400- und AST2500-Prozessoren
+für das Management von Server-Hardware. Ein weiterer Treiber unterstützt  den
+Hardware-Zeitgeber und seine verschiedenen Funktionsweisen der quelloffenen
+Prozessorplattform J-Core&nbsp;<a href="http://j-core.org/">[10]</a>, die seit Linux 4.8 erstmals
+unterstützt wird. Das Besondere an J-Core ist, dass sich diese Prozessoren
+mittels frei programmierbarer FPGA&nbsp;<a href="http://xkcd.com/456/">[11]</a> selbst „bauen“ lassen.
+
+<div class="p"><!----></div>
+
+Linux 4.9-rc3&nbsp;<a href="https://lkml.org/lkml/2016/10/29/405">[12]</a> brachte in erster Linie
+die zuvor erwähnte Kenntnis, dass <b><tt>VMAP_STACK</tt></b> nicht die Ursache der Probleme 
+bei -rc2 war und der Fehler wohl jenseits gezielter Stresstests eher nicht
+aufgetaucht sein dürfte. Ansonsten fiel die aktuelle Entwicklerversion relativ
+übersichtlich aus.
+So brachte sie in erster Linie Korrekturen mit, insbesondere
+für die erst jüngst eingeführten Reflinks im Dateisystem XFS. Diese ermöglichen
+schnelle „Kopiervorgänge“ großer Dateien, indem lediglich ein neuer Satz an
+Metadaten angelegt und auf das Ausgangsobjekt verwiesen wird.
+
+<div class="p"><!----></div>
+
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="https://lkml.org/lkml/2016/10/2/102"><tt>https://lkml.org/lkml/2016/10/2/102</tt></a><br />
+[2] <a href="http://www.sphinx-doc.org"><tt>http://www.sphinx-doc.org</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Address_Space_Layout_Randomization"><tt>https://de.wikipedia.org/wiki/Address_Space_Layout_Randomization</tt></a><br />
+[4] <a href="http://heise.de/-3283402"><tt>http://heise.de/-3283402</tt></a><br />
+[5] <a href="https://lkml.org/lkml/2016/10/15/112"><tt>https://lkml.org/lkml/2016/10/15/112</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Project_Ara"><tt>https://de.wikipedia.org/wiki/Project_Ara</tt></a><br />
+[7] <a href="https://lkml.org/lkml/2016/10/23/203"><tt>https://lkml.org/lkml/2016/10/23/203</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/Race_Condition"><tt>https://de.wikipedia.org/wiki/Race_Condition</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/Intelligent_Platform_Management_Interface"><tt>https://de.wikipedia.org/wiki/Intelligent_Platform_Management_Interface</tt></a><br />
+[10] <a href="http://j-core.org/"><tt>http://j-core.org/</tt></a><br />
+[11] <a href="http://xkcd.com/456/"><tt>http://xkcd.com/456/</tt></a><br />
+[12] <a href="https://de.wikipedia.org/wiki/Copy-On-Write"><tt>https://de.wikipedia.org/wiki/Copy-On-Write</tt></a><br />
+[13] <a href="https://lkml.org/lkml/2016/10/29/405"><tt>https://lkml.org/lkml/2016/10/29/405</tt></a><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem Laufenden zu bleiben.
+und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Der Oktober im Kernelr%C3%BCckblick&amp;body=freiesMagazin 11/2016%0ADer Oktober im Kernelr%C3%BCckblick%0AMathias Menzer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Der Oktober im Kernelr%C3%BCckblick#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_duplicity"><span style="color:#595959">Verschlüsselte Server-Backups mit Duply und Duplicity</span></h1>von David Schroff
+
+<div class="p"><!----></div>
+    <b>B</b><b>ackups in lesbarer Form irgendwo im Netz ablegen? Keine gute Idee. Backups
+hingegen zuerst vollständig verschlüsseln und danach auf einen beliebigen
+Online-Speicherplatz wegschieben? Eine gute Idee! Genau das kann
+Duplicity&nbsp;<a href="http://duplicity.nongnu.org/">[1]</a> und dank
+Duply&nbsp;<a href="http://duply.net/">[2]</a> vereinfacht sich dessen Handhabung auf wenige,
+sehr einfache Befehle.</b>
+
+<div class="p"><!----></div>
+Duplicity erlaubt die Erstellung voller und inkrementeller Backups
+verschlüsselt auf ganz unterschiedliche Backup-Speicherplätze. Zum Beispiel auf
+einen beliebigen FTP-Server, per Webdav oder SSH/SCP auf einem Backup-Server,
+in die Amazon S3 Cloud oder sogar auf einen Online-Speicherplatz wie Dropbox
+und Megaupload. Dank der GPG-Verschlüsselung noch bevor das Backup den eigenen
+Server verlässt, ist ein Datenklau so gut wie ausgeschlossen. Eine vollständige
+Liste der unterstützten Dienste findet sich auf der
+Duplicity-Projektseite&nbsp;<a href="http://duplicity.nongnu.org/">[1]</a>.
+
+<div class="p"><!----></div>
+Duply und Duplicity besitzen keine grafische Oberfläche und eignen sich deshalb
+vor allem für automatisierte Server-Backups. Für den Desktop gibt es das
+Werkzeug Déjà Dup&nbsp;<a href="https://wiki.ubuntuusers.de/Déjà_Dup/">[3]</a>, das mit einer
+grafischen Oberfläche ebenfalls auf Wunsch verschlüsselte Backups erstellt.
+
+<div class="p"><!----></div>
+
+<h2>Duply in der Praxis</h2>
+
+Duply dient als Wrapper für Duplicity und reduziert die Handhabung von
+Sicherung und Wiederherstellung auf das Nötigste. Die folgenden Beispiele
+verdeutlichen die Einfachheit von Duply:
+
+<div class="p"><!----></div>
+
+<div class="command">
+// Status der vollen und inkrementellen<br />
+// Backups anzeigen<br />
+# duply mybackupprofile status<br />
+
+<br />
+// Backup erstellen<br />
+# duply mybackupprofile backup<br />
+
+<br />
+// Aktuell gelöschten Pfad<br />
+// wiederherstellen, vor 3 Tagen<br />
+# duply mybackupprofile restore /tmp 3D<br />
+
+<br />
+// Einzelne Datei wiederherstellen,<br />
+// unter neuem Namen abspeichern, aus <br />
+// dem letzten Backup<br />
+# duply mybackupprofile fetch etc/passwd /tmp/passwd_restored<br />
+
+<br />
+// Einen Ordner wiederherstellen, unter<br />
+// neuem Namen abspeichern, vor 7 Tagen<br />
+# duply mybackupprofile fetch etc /tmp/etc_folder_restored 7D<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+<img src="freiesMagazin-2016-11-bilder-Dateien/duply_status.png" alt="duply_status.png" style="max-width:100%" /><br /><em>Status von Duplicity.</em><br />
+
+<div class="p"><!----></div>
+<b>Tipp</b>: Der Pfad im Backup muss ohne beginnendes Slash angegeben werden, also
+<b><tt>etc</tt></b> anstatt <b><tt>/etc</tt></b>.
+
+<div class="p"><!----></div>
+Duply bietet natürlich noch weitere Befehle zur Verwaltung eines Backups an.
+Eine Übersicht aller Möglichkeiten kann mit <b><tt># duply usage</tt></b> aufgerufen werden.
+
+<div class="p"><!----></div>
+Die Ausführungen der Backups werden per Cronjob angelegt, einen Daemon gibt es
+nicht. Es können auch gleich mehrere Befehle mit einem Verbindungsstrich
+hintereinander gelegt werden; so reduziert sich eine Sicherung mit
+Verifizierung und Löschung nicht mehr benötigter, alter Backups auf eine Zeile,
+hier am Beispiel eines täglichen Backups um 04:30 Uhr:
+
+<div class="p"><!----></div>
+
+<div class="listing">
+30 4 * * * /usr/local/bin/duply mybackupprofile backup_verify_purge --force<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Ob Duply damit ein volles oder inkrementelles Backup erstellt, entscheidet das
+Programm anhand der Einstellungen in der <b><tt>conf</tt></b>-Datei.  Neben dieser
+Konfiguration beachtet Duply im selben Verzeichnis die optionalen Dateien
+<b><tt>exclude</tt></b>, <b><tt>include</tt></b>, <b><tt>pre</tt></b> und <b><tt>post</tt></b>.
+
+<div class="p"><!----></div>
+
+<h2>Duply und Duplicity installieren</h2>
+
+Duply sowie Duplicity können im Repository der verwendeten
+Linux-Distribution vorliegen, sie sind aber höchstwahrscheinlich
+veraltet. Die Entwicklung von Duply und Duplicity geht auch 2016 weiter; es
+empfiehlt sich daher, eine aktuelle Version der beiden Werkzeuge zu
+installieren.
+
+<div class="p"><!----></div>
+Als Vorbereitung zur Duplicity-Installation müssen mindestens folgende Pakete
+installiert werden:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b>python-dev</b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b>librsync-dev</b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b>ncftp</b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b>lftp</b>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+<b>Tipp</b>: Je nachdem, mit welchem Protokoll ein Backup abgelegt werden soll,
+können noch zusätzliche Abhängigkeiten benötigt werden. Die Dokumentation von
+Duplicity beinhaltet eine Liste der
+Abhängigkeiten&nbsp;<a href="http://duplicity.nongnu.org/duplicity.1.html#toc30">[4]</a>, die
+gegebenenfalls noch installiert werden sollten. Bestenfalls wird eine
+Fehlermeldung beim Ausführen des ersten Sicherungen auf fehlende Abhängigkeiten
+hinweisen.
+
+<div class="p"><!----></div>
+Nun kann Duplicity von der offiziellen
+Webseite&nbsp;<a href="http://duplicity.nongnu.org/">[1]</a> auf den Server geladen, an einen
+beliebigen Ort entpackt und am Schluss mit Python installiert werden:
+
+<div class="p"><!----></div>
+
+<div class="command">
+# python setup.py install<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Damit ist die Duplicity-Installation abgeschlossen. Als nächstes wird Duply von
+deren Projekt-Webseite&nbsp;<a href="http://duply.net/">[2]</a> auf den Server nach
+<b><tt>/usr/local/bin/duply</tt></b> kopiert und ausführbar gemacht. Duply selbst besteht aus
+einem einzigen Bash-Script mit über 2300 Zeilen.
+
+<div class="p"><!----></div>
+
+<div class="command">
+# chmod u+x /usr/local/bin/duply<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Als letzter Schritt muss zwingend ein GPG-Schlüssel erstellt werden, denn ohne
+Schlüsselpaar gibt es kein verschlüsseltes Backup. Eine interaktive
+Schlüssel-Erstellung wird so gestartet:
+
+<div class="p"><!----></div>
+
+<div class="command">
+# gpg --gen-key<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Die Schlüssel-Erstellungsroutine stellt einige Fragen und erzeugt anschließend
+das Schlüsselpaar. Ein Schlüssel mit 2048 Bit gilt derzeit noch als sicher. Die
+anderen auszufüllenden Angaben sind selbsterklärend.
+
+<div class="p"><!----></div>
+<b>Tipp</b>: Auf Servern, auf denen „nichts los ist“, kann die Erstellung eines großen
+Schlüssels lange dauern. Eine Umgehungslösung wäre, vorher das Programm
+„haveged“&nbsp;<a href="http://www.issihosts.com/haveged/">[5]</a> zu installieren. Haveged befüllt das System direkt nach der
+Installation immerzu mit mehr zufälliger Entropy und ist in den meisten
+Distributionspaketquellen enthalten.
+
+<div class="p"><!----></div>
+GPG wird dem Schlüssel eine zufällige Bezeichnung vergeben, diese
+Schlüssel-Bezeichnung muss im nächsten Schritt in der Duply-Konfiguration mit
+angegeben werden. Die Ausgabezeile wird beispielsweise so aussehen:
+
+<div class="p"><!----></div>
+
+<div class="command">
+gpg: key 275A04C3 marked as ultimately trusted<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Alternativ kann mittels <b><tt>gpg --list-keys</tt></b> die vorhin erstellte
+Schlüsselbezeichnung aufgerufen werden.
+
+<div class="p"><!----></div>
+<b>Tipp</b>: Zwei Dinge sind bei einem Komplettverlust des Servers ab jetzt
+überlebenswichtig: Das Schlüssel-Passwort und das generierte
+Schlüsselpaar selbst. Das Passwort muss man sich natürlich gut merken,
+die Schlüsseldateien müssen gesichert werden. Letzteres kann etwas
+später erledigt werden: Duply legt die Schlüsselpaare im Profilordner
+als Dateien ab, nachdem ein erstes Backup durchgeführt worden ist. Also
+sichert man sich den kompletten Duply-Profilordner nach der ersten
+Sicherung separat.
+
+<div class="p"><!----></div>
+<b>Tipp</b>: GPG-Keys können auch als Batch vollautomatisch erstellt
+werden. Dieses Vorgehen lohnt sich, wenn Duply/Duplicity auf mehrere
+Server automatisiert ausgerollt werden soll. Hierzu benötigt man das
+Kommando <b><tt>gpg –gen-key --batch /tmp/gpg_property_datei</tt></b>. Die
+zwingend benötigten Angaben der Batch-Datei können auf GnuGPG.org
+nachgelesen&nbsp;<a href="https://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html">[6]</a>
+werden. Hier ein Beispiel:
+
+<div class="p"><!----></div>
+
+<div class="listing">
+Key-Type: 1<br />
+Key-Length: 2048<br />
+Subkey-Type: 1<br />
+Subkey-Length: 2048<br />
+Name-Real: Duply-GPG-Key<br />
+Name-Email: root@localhost<br />
+Expire-Date: 0<br />
+Passphrase: MEINPASSWORT<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Der nachfolgende Befehl erstellt das Duply-Backupprofil. Der Name kann frei
+gewählt werden und lautet in diesem Beispiel <b><tt>mybackupprofile</tt></b>:
+
+<div class="p"><!----></div>
+
+<div class="command">
+# duply mybackupprofile create<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Duply generiert damit einen Profilordner unter
+<b><tt>/root/.duply/mybackupprofile</tt></b>.
+
+<div class="p"><!----></div>
+
+<h2>Duply konfigurieren</h2>
+
+Die Datei <b><tt>/root/.duply/mybackupprofile/conf</tt></b> ist eine benutzbare Vorlage für
+die Konfigurationsdatei und wird jetzt für die eigenen Bedürfnisse angepasst.
+Es müssen einzelne Zeilen einkommentiert werden, das <b><tt>#</tt></b>-Zeichen zu Beginn
+der Zeilen muss also entfernt werden.
+
+<div class="p"><!----></div>
+
+<div class="listing">
+GPG_KEY='275A04C3'<br />
+GPG_PW='MeinPasswort'<br />
+TARGET='ftp://benutzername:passwort@hostname.com:21/mybackupprofile'<br />
+SOURCE='/'<br />
+FILENAME='.duplicity-ignore'<br />
+DUPL_PARAMS="$DUPL_PARAMS --exclude-if-present '$FILENAME'"<br />
+MAX_AGE=1M<br />
+MAX_FULL_BACKUPS=2<br />
+MAX_FULLBKP_AGE=1M<br />
+DUPL_PARAMS="$DUPL_PARAMS --full-if-older-than $MAX_FULLBKP_AGE "<br />
+VOLSIZE=25<br />
+DUPL_PARAMS="$DUPL_PARAMS --volsize $VOLSIZE "<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Diese Beispielkonfiguration erstellt ein Backup auf einen FTP-Server mit
+einigen Eigenschaften:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Der Backup-Job wird alle Ordner/Dateien unterhalb <b><tt>/</tt></b> (Rootpfad) sichern, mit Ausnahme der angegebenen Pfade in der exclude-Datei.
+<div class="p"><!----></div>
+</li>
+
+<li> Monatlich wird ein Full-Backup angestoßen, wovon maximal 2 vorhanden sein müssen.
+<div class="p"><!----></div>
+</li>
+
+<li> Alle Ordner und dessen Unterordner, der die leere Datei <b><tt>.duplicity-ignore</tt></b> enthält, werden vom Backup-Job ignoriert.
+<div class="p"><!----></div>
+</li>
+
+<li> Das Backup wird auf dem Ziel-FTP in 25 MB Häppchen abgelegt.
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Exclude-Datei: In <b><tt>/root/.duply/mybackupprofile/exclude</tt></b> werden
+untereinander mit einem Minuszeichen beginnend diejenigen Pfade
+angegeben, die in einem Linux-Systembackup überflüssig sind. Mit den
+gängigsten Linux-Distributionen sind das folgende Pfade:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b><tt>/sys</tt></b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt>/dev</tt></b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt>/proc</tt></b>
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt>/tmp</tt></b>
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+<b><tt>pre/post</tt></b>-Dateien: Optional. Darin können eigene Bash-Scripte abgelegt
+werden, welche vor und nach dem Backup ausgeführt werden sollen.
+Vielleicht möchte man vor jeder Sicherung einen Mysqldump ausführen und
+nach jedem Backup wieder löschen.
+
+<div class="p"><!----></div>
+Duply ist nun vollständig einsatzfähig. Beim Start der ersten Sicherung
+wird ein Full-Backup angestoßen. Jedes weitere Ausführen
+derselben Zeile generiert inkrementelle Sicherungen, bis das in der
+<b><tt>conf</tt></b>-Datei gesetzte Zeitlimit der nächsten vollständigen Datensicherung
+erreicht wird.
+
+<div class="p"><!----></div>
+
+<div class="command">
+# duply mybackupprofile backup<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+<h2>Duply GPG-Schlüssel sicher verwahren &amp; Disaster Recovery</h2>
+
+Ohne Schlüssel und ohne Passwort ist eine Wiederherstellung der Datensicherung
+unmöglich! Aus diesem einfachen Grund speichert man jetzt den kompletten 
+Duply-Profilordner weg: <b><tt>/root/.duply/mybackupprofile</tt></b>.  Darin enthalten sind auch
+die zwingend benötigten GPG-Schlüssel, welche Duply mit der ersten
+Datensicherung automatisch exportiert hat. Eine Vorgehensweise könnte sein, ein
+TAR-Archiv zu erstellen, dieses wiederum mit <b><tt>gpg -c meinArchiv.tar</tt></b> mit einem
+GPG-Passwort zu versehen und an mehreren Orten weit weg vom Server
+abzuspeichern. 
+
+<div class="p"><!----></div>
+Falls tatsächlich einmal die Festplatte irreparabel zerstört wird, kann der
+Profilordner unter <b><tt>/root/.duply/mybackupprofile</tt></b> in die frische
+Systeminstallation hineinkopiert werden. GPG muss die Schlüssel der Sicherungen
+kennen und ihnen vertrauen. Das Einlesen der GPG-Keys in den sogenannten
+GPG-Keyring gelingt mit <b><tt>--import</tt></b>:
+
+<div class="p"><!----></div>
+
+<div class="command">
+# gpg --import /root/.duply/mybackupprofile/gpgkey.275A04C3.sec.asc<br />
+# gpg --import /root/.duply/mybackupprofile/gpgkey.275A04C3.pub.asc<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Danach muss dieser Schlüssel noch als „ultimately trusted“
+markiert werden, denn sonst würde Duply bei der Wiederherstellung mit
+einer Fehlermeldung abbrechen:
+
+<div class="p"><!----></div>
+
+<div class="command">
+# gpg --edit-key '275A04C3'<br />
+# trust<br />
+# 5 = I trust ultimately<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Ab diesem Zeitpunkt kann die Datensicherung mit den üblichen
+Befehlen <b><tt>duply mybackupprofile restore</tt></b> oder
+<b><tt>duply mybackupprofile fetch</tt></b> wiederhergestellt werden.
+
+<div class="p"><!----></div>
+<b>Tipp</b>: Duplys Datensicherung ist dateibasiert, es weiß also nicht,
+welche RPM/DEB-Pakete installiert sind. Es erstellt auch keine
+Mysqldumps selbstständig. Daher lohnen sich in der Praxis zweierlei
+Dinge: Erstens täglich eine Text-Datei erstellen und in die Sicherung
+inkludieren, worin die Information aller installierten RPM/DEB-Pakete
+abgelegt sind. Zweitens das unter Debian beliebte Paket automysqlbackup
+installieren, womit sofort und ohne Konfigurationsaufwand täglich ein
+Mysqldump aller Datenbanken unter <b><tt>/var/lib/automysqlbackup</tt></b> erstellt
+wird.
+
+<div class="p"><!----></div>
+
+<h2>Nachteile von Duply in der Praxis</h2>
+
+Duply macht vieles richtig: es vereinfacht Duplicity auf angenehme Weise, die
+Benutzung geht leicht von der Hand und eine Sicherung sowie Wiederherstellung
+funktioniert.
+
+<div class="p"><!----></div>
+Leider aber ist Duply/Duplicity von Grund auf nicht die schnellste
+Backup-Variante: Hardlinks werden nicht unterstützt, Backup und Restore
+brauchen durch die Ver- und Entschlüsselung natürlich etwas mehr Zeit und in
+aller Regel ist der verwendete Backup-Speicherplatz auch noch ein langsam
+erreichbarer FTP- oder Cloudstorage.
+
+<div class="p"><!----></div>
+Eine vollständige Sicherung von 200 GB auf einen langsamen FTP kann durchaus
+mehrere Stunden dauern. Der Restore für einzelne Dateien dauert, je weiter weg
+das letzte Full-Backup war, zwischen 20 Sekunden bis zu 10 Minuten. Für extrem
+zeitkritische Wiederstellung ist Duply/Duplicity also eher die zweite Wahl.
+Daher sollte man zunächst die Wiederherstellung einzelner Dateien oder
+kompletter Ordner testen.
+
+<div class="p"><!----></div>
+Ein weiterer Nachteil sind die noch nicht ausgereiften Status-Abfragen. Es
+gibt zwar mit dem Kommando <b><tt>duply mybackupprofile list</tt></b> eine Ausgabe aller
+Dateien im Backup, diese lässt sich aber nicht auf einzelne Dateien und deren
+verschiedenen Versionen eingrenzen. In der Praxis ist das eher selten
+gewünscht, insofern bleibt dieser Nachteil mehr eine kosmetische Sache. In die
+gleiche Kerbe schlägt die fehlende Anzeige, wie groß eine einzelne Sicherung
+tatsächlich ist. Die Angabe der Größe gibt Duply in Volumes an, nicht etwa in
+Megabyte oder Gigabyte.
+
+<div class="p"><!----></div>
+Duply holt sich für die Wiederherstellung des letzten, inkrementellen Backups
+alle Dateiversionen seit der letzten vollständigen Sicherung. Damit besteht
+die Gefahr, dass bei einer korrupten Backup-Ablage der ganze Rattenschwanz an
+inkrementellen Backups unbrauchbar wird. In der Theorie wird darauf
+hingewiesen, in der Praxis dürfte das nicht wirklich passieren.
+
+<div class="p"><!----></div>
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="http://duplicity.nongnu.org/"><tt>http://duplicity.nongnu.org/</tt></a><br />
+[2] <a href="http://duply.net/"><tt>http://duply.net/</tt></a><br />
+[3] <a href="https://wiki.ubuntuusers.de/Déjà_Dup/"><tt>https://wiki.ubuntuusers.de/Déjà_Dup/</tt></a><br />
+[4] <a href="http://duplicity.nongnu.org/duplicity.1.html#toc30"><tt>http://duplicity.nongnu.org/duplicity.1.html#toc30</tt></a><br />
+[5] <a href="http://www.issihosts.com/haveged/"><tt>http://www.issihosts.com/haveged/</tt></a><br />
+[6] <a href="https://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html"><tt>https://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html</tt></a><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>David Schroff</b>&nbsp;(<a href="https://games4linux.de/">Webseite</a>)
+verwendet Duply/Duplicity auf seinen Web-Servern
+seit fünf Jahren.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Duply und Duplicity&amp;body=freiesMagazin 11/2016%0ADuply und Duplicity%0ADavid Schroff%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Duply und Duplicity#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_scribus"><span style="color:#595959">Scribus in der Praxis</span></h1>von Holger Reibold
+
+<div class="p"><!----></div>
+    <b>E</b><b>s ist hinlänglich bekannt, dass Scribus ein hervorragendes DTP-Programm 
+ist, das sich durchaus mit kommerziellen Produkten wie InDesign &amp; Co. messen 
+kann. Scribus stellt eine Fülle an Funktionen für das Gestalten und 
+Bearbeiten von Texten und sonstigen Elementen zur Verfügung. Man muss sie 
+nur effektiv einzusetzen verstehen. Auf den ersten Blick ist auch nicht 
+ersichtlich, dass man auch ein Inhaltsverzeichnis anlegen kann – allerdings 
+nicht so komfortabel wie bei Textverarbeitungsprogrammen. Dieser Artikel 
+stellt verschiedene Möglichkeiten für den Praxiseinsatz von Scribus vor. </b>
+
+<div class="p"><!----></div>
+Wenn man einen Textrahmen anlegt und diesen mit ersten Eingaben füllt oder 
+einen Text in den Textrahmen lädt, verwendet Scribus die Formatierungen, die 
+man mit dem „<em>Eigenschaften</em>“-Dialog vorgenommen hat. Doch in der Praxis 
+erweist sich die Gestaltung als sehr mühsam und umständlich. Zum Glück hat 
+Scribus auch hierfür das passende Werkzeug: den Story Editor.
+
+<div class="p"><!----></div>
+
+<h2>Der Story-Editor</h2>
+
+Der Story-Editor ist eine Art abgespeckter Editor, der alle wichtigen 
+Funktionen für die Formatierung von Textbausteinen bietet. Der Aufruf des 
+Story Editors erfolgt über das Menü „<em>Bearbeiten -&#62; Text bearbeiten</em>“, mit der 
+Tastenkombination „<i>Strg</i>“&nbsp;+&nbsp;„<i>T</i>“ oder aus dem Kontextmenü des Textrahmens mit 
+„<em>Text bearbeiten</em>“. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/scribus_storyeditor.png" alt="scribus_storyeditor.png" style="max-width:100%" /><br /><em>Der Story Editor in Aktion.</em><br />
+
+<div class="p"><!----></div>
+In der Kopfzeile zeigt er den Titel des Textrahmens an. Darunter findet man 
+die Menü- und die Symbolleiste. Die Menüleiste stellt eine Fülle von 
+nützlichen Funktionen zur Verfügung. Mit dem Befehl „<em>Datei -&#62; Text entfernen</em>“ 
+kann man den im Editor geladenen Text löschen. 
+
+<div class="p"><!----></div>
+Wenn man den Text an anderer Stelle weiterverwenden möchte, führt man den 
+Befehl „<em>Datei -&#62; In Datei speichern</em>“ aus und bestimmt im 
+„<em>Speichern</em>“-Dialog das 
+Zielverzeichnis. Auf diesem Weg kann man Texte der Textrahmen einfach und 
+unkompliziert als Textdatei sichern. Auch das Laden von anderen Texten ist 
+über das „<em>Datei</em>“-Menü möglich. 
+
+<div class="p"><!----></div>
+Im „<em>Bearbeiten</em>“-Menü findet man typische Funktionen für das Kopieren, 
+Ausschneiden und Einfügen. Hier findet man auch die Suchen und 
+Ersetzen-Funktion. Aus dem Story Editor kann man außerdem mit dem Befehl 
+„<em>Bearbeiten -&#62; Schriftvorschau</em>“ auf den gleichnamigen Dialog zugreifen, mit 
+dem man sich einen Überblick über das Schriftbild unbekannter Schriften 
+verschafft. 
+
+<div class="p"><!----></div>
+Ein weiteres Highlight des Story Editors ist das „<em>Einfügen</em>“-Menü. Hier 
+stehen unzählige Symbole und Zeichen zur Verfügung, die man in seinen Texten 
+verwenden kann, beispielsweise verschiedene Schrägstrichvarianten, 
+Anführungszeichen, Leerzeichen und Ligaturen. Im Menü „<em>Einstellungen</em>“ kann 
+man außerdem die Hintergrundfarbe 
+
+ändern. Diese Änderung bezieht sich 
+lediglich auf die Darstellung im Editor, nicht aber auf den Textrahmen 
+selbst. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/scribus_einfuegen.png" alt="scribus_einfuegen.png" style="max-width:100%" /><br /><em>Das Einfügen von unterschiedlichen Zeichen und Symbolen. </em><br />
+
+<div class="p"><!----></div>
+Die wichtigsten Funktionen des Editors sind über die Symbolleiste verfügbar. 
+Hier stehen folgende Funktionen zur Verfügung (von links nach rechts): 
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Text entfernen
+<div class="p"><!----></div>
+</li>
+
+<li> Von Datei laden
+<div class="p"><!----></div>
+</li>
+
+<li> In Datei speichern
+<div class="p"><!----></div>
+</li>
+
+<li> Änderungen übernehmen
+<div class="p"><!----></div>
+</li>
+
+<li> Änderungen ignorieren
+<div class="p"><!----></div>
+</li>
+
+<li> Text neu von Textrahmen 
+
+<div class="p"><!----></div>
+</li>
+
+<li> Textrahmen auffrischen
+<div class="p"><!----></div>
+</li>
+
+<li> Suche und Ersetzen
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Die Funktion „<em>Suche und Ersetzen</em>“ hat es wirklich in sich. Sie stellt für 
+die Suche nach Elementen in einem Textrahmen folgende Filter zur Verfügung: 
+Text, Stil, Ausrichtung, Schrift, Schriftgröße, Effekt, Füllfarbe, Tonwert,
+Randfarbe und Tonwert. 
+Mit der Suchfunktion spürt man zuverlässig beliebige 
+Inhalte auf und kann sie textrahmenweit durch eine Korrektur ersetzen. 
+
+<div class="p"><!----></div>
+Unterhalb der Symbolleiste findet man weitere Leisten, deren Funktionen mit 
+denen der 
+Kategorie „<em>Text</em>“ des „<em>Eigenschaften</em>“-Dialogs entsprechen: 
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Schrift verändern
+<div class="p"><!----></div>
+</li>
+
+<li> Stil verändern
+<div class="p"><!----></div>
+</li>
+
+<li> Zeicheneinstellungen bearbeiten
+<div class="p"><!----></div>
+</li>
+
+<li> Umrissfarbe verändern
+<div class="p"><!----></div>
+</li>
+
+<li> Füllfarbe verändern 
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/scribus_suchen.png" alt="scribus_suchen.png" style="max-width:100%" /><br /><em>Der Dialog „<em>Suchen und Ersetzen</em>“ des Story Editors.</em><br />
+
+<div class="p"><!----></div>
+Hat man in der Stilverwaltung von Scribus verschiedene Stile angelegt, kann 
+man im Story Editor einfach auf die angelegten Stilkonfigurationen 
+zurückgreifen. Der Story Editor präsentiert unterhalb der Leisten den 
+Bearbeitungsbereich für die Texte. Links findet man die Stil-Leiste, mit der 
+man jedem Absatz einen verfügbaren Stil zuweist. 
+
+<div class="p"><!----></div>
+Um den Absatzstil zu ändern, klickt man links auf die entsprechende 
+Dokumenthöhe und wählt dann aus dem Pop-up-Dialog den gewünschten Stil aus. 
+Innerhalb des Textbereichs kann man  mithilfe der rechten Maustaste einige 
+Funktionen wie das Rückgängigmachen, Kopieren, Ausschneiden, Löschen und 
+alles Auswählen ausführen. 
+
+<div class="p"><!----></div>
+Im unteren Bereich des Story Editors findet man die Statusleiste. Die ist 
+zweigeteilt und verrät links, wie viele Wörter und Zeichen der aktuelle 
+Absatz umfasst. Rechts erfährt man, wie viele Absätze, Wörter und Zeichen 
+das gesamte Dokument besitzt. 
+
+<div class="p"><!----></div>
+
+<h2>Inhaltsverzeichnis erstellen</h2>
+
+Mit den Stilfunktion und dem Story Editor verfügt Scribus über wichtigste 
+Werkzeuge für das Erstellen, Bearbeiten und Gestalten von Texten. Doch 
+Scribus hat noch weit mehr zu bieten. So kann man beispielsweise ein 
+Inhaltsverzeichnis generieren, die Silbentrennung verwenden oder Text 
+automatisch formatieren. 
+
+<div class="p"><!----></div>
+Will man eine umfangreiche Broschüre oder sogar ein Buch mit Scribus 
+gestalten, benötigt das Dokument in der Regel auch ein Inhaltsverzeichnis. 
+Von Textverarbeitungen wie MS Word oder OpenOffice Writer bzw. LibreOffice 
+Writer weiß man, dass es keine Hexerei ist, ein umfangreiches Dokument samt 
+Inhaltsverzeichnis erzeugen. 
+
+<div class="p"><!----></div>
+Ganz so einfach ist es allerdings bei Scribus nicht.
+Anhand eines sehr einfachen Beispiels zeigt der folgende 
+Abschnitt, wie man in Scribus ein Inhaltsverzeichnis generieren kann.
+
+<div class="p"><!----></div>
+
+<ol type="1">
+<li> Zunächst legt man ein mehrseitiges Dokument an oder öffnet ein bestehendes. 
+
+<div class="p"><!----></div>
+</li>
+
+<li> Auf der ersten Seite erzeugt man drei Textrahmen, einen für den 
+Dokumententitel, einen für das kommende Inhaltsverzeichnis und einen für die 
+ersten Absätze des Dokuments.
+<div class="p"><!----></div>
+</li>
+
+<li> Dann weist man  den verschiedenen Textrahmen eine Bezeichnung zu. Den 
+zweiten Rahmen bezeichnet man über den „<em>Eigenschaften</em>“-Dialog 
+beispielsweise mit „<em>Inhaltsverzeichnis</em>“.
+<div class="p"><!----></div>
+</li>
+
+<li> Dann ruft man die Eigenschaften des Dokumentenobjekts mit dem Befehl 
+„<em>Datei -&#62; Dokument einrichten -&#62; Eigenschaften des Dokumententyps</em>“ auf und 
+erzeugt ein neues Attribut. Dann klickt man die Schaltfläche „<em>Hinzufügen</em>“, 
+dann in das Feld „<em>Wert</em>“ und bestätigen den Eintrag mit „<em>OK</em>“.
+<div class="p"><!----></div>
+</li>
+
+<li> Dann führt man den Menübefehl „<em>Datei -&#62; Dokument einrichten -&#62; Inhaltsverzeichnisse</em>“ 
+aus. Dort klickt man auf die Schaltfläche „<em>Hinzufügen</em>“, um ein neues 
+Inhaltsverzeichnis anzulegen.
+<div class="p"><!----></div>
+</li>
+
+<li> Als Nächstes bestimmt man im Auswahlmenü „<em>Bezeichnung</em>“ des 
+Dokumentenobjekts das Objekt, in diesem Fall besitzt es die Bezeichnung 
+„<em>Inhaltsverzeichnis</em>“. Dann ordnet man dem Verzeichnis im Auswahlmenü 
+„<em>Zielrahmen</em>“ den Eintrag „<em>Inhaltsverzeichnis</em>“ zu. Die Eingaben bestätigt 
+man mit „<em>OK</em>“.
+<div class="p"><!----></div>
+</li>
+
+<li> Dann markiert man den zweiten Textrahmen mit der rechten Maustaste und führt 
+den Befehl „<em>Attribute</em>“ aus. Scribus präsentiert das Fenster 
+„<em>Eigenschaften des Seitenobjekts</em>“. Man klickt auf „<em>Hinzufügen</em>“ und wählt im 
+Auswahlmenü „<em>Name</em>“ den Eintrag „<em>Inhaltsverzeichnis</em>“ aus. In das Feld „<em>Wert</em>“ 
+gibt man den Eintrag im Inhaltsverzeichnis an.
+<div class="p"><!----></div>
+</li>
+
+<li> Entsprechend geht man mit den weiteren Seiten vor und erzeugt dort jeweils 
+weitere Einträge für das Inhaltsverzeichnis.
+<div class="p"><!----></div>
+</li>
+
+<li> Hat man alle Textrahmen entsprechend markiert, fügt man das 
+Inhaltsverzeichnis an der gewünschten Position ein. Dazu platziert man den 
+Cursor in dem dafür vorgesehenen Textrahmen und führt den Menübefehl 
+„<em>Extras -&#62; Inhaltsverzeichnis</em>“ erstellen aus.
+<div class="p"><!----></div>
+</li>
+
+<li> Scribus fügt das Inhaltsverzeichnis in den gewünschten Textrahmen ein. Man 
+kann sich dann an die Bearbeitung des Verzeichnisses machen und beispielsweise 
+verschiedene Absatzstile testen. 
+
+<div class="p"><!----></div>
+</li>
+</ol>
+
+<div class="p"><!----></div>
+In der Praxis ist es gerade bei umfangreichen Dokumenten sinnvoll, die 
+Zwischenüberschriften, die im Inhaltsverzeichnis stehen sollen, in eigenen 
+Textrahmen zu platzieren. Entsprechend geht man vor, wenn man einen Index 
+anlegen will. Es bietet sich außerdem an, derlei Dokumentelemente als 
+Vorlage zu sichern, damit man sich beim nächsten Dokument die Arbeit 
+wesentlich einfacher macht. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/scribus_inhaltsverzeichnis.png" alt="scribus_inhaltsverzeichnis.png" style="max-width:100%" /><br /><em>Die Zuweisung von Inhaltsverzeichnis und Dokumentobjekt sowie Zielrahmen. </em><br />
+
+<div class="p"><!----></div>
+
+<h2>Silbentrennung</h2>
+
+Die Silbentrennung ist ein sehr wichtiges typografisches Gestaltungsmittel, 
+mit dem man den in den Textrahmen zur Verfügung stehenden Raum optimal 
+ausnutzen kann. Die Silbentrennung folgt festen orthografischen Regeln und 
+kann in Scribus automatisiert durchgeführt werden. Die Silbentrennung ist 
+ein nützliches Hilfsmittel, um die Lesbarkeit und das Erscheinungsbild von 
+Texten zu optimieren. Unschöne Lücken werden so durch Text gefüllt und es 
+ergibt sich in der Regel ein deutlich besseres Gesamtbild. 
+
+<div class="p"><!----></div>
+In den Programmeinstellungen kann man die Silbentrennung konfigurieren und 
+an die jeweiligen Bedürfnisse anpassen. Man kann die Einstellungen für die 
+Silbentrennung programmweit, aber auch individuell für jedes Dokument 
+festlegen. Die dokumentenspezifischen Einstellungen sind über das Menü 
+„<em>Datei -&#62; Dokument einrichten -&#62; Silbentrennung</em>“ verfügbar. 
+
+<div class="p"><!----></div>
+Besonders wichtig bei den dokumentbezogenen Einstellungen ist, dass man die 
+Sprache des Dokuments korrekt einrichtet. Wenn man also mit Scribus 
+Dokumente in unterschiedlichen Sprachen erstellt, sollte man auf die 
+korrekte Sprachkonfiguration achten. In den Programm- bzw. 
+Dokumenteneinstellungen kann man eigene Vorschläge hinterlegen, wie 
+bestimmte Wörter zu trennen sind.
+
+<div class="p"><!----></div>
+Um die Silbentrennung auf den aktuellen Textrahmen anzuwenden, markiert man 
+diesen und führt den Menübefehl „<em>Extras -&#62; Silbentrennung anwenden</em>“ aus. 
+Dabei ist zu beachten, dass die Trennung immer nur auf den markierten 
+Textrahmen angewendet wird. Man kann also für einen Rahmen die 
+Silbentrennung verwenden und bei anderen auf die Trennung verzichten. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/scribus_silbentrennung.png" alt="scribus_silbentrennung.png" style="max-width:100%" /><br /><em>Die Konfiguration der Silbentrennung. </em><br />
+
+<div class="p"><!----></div>
+
+<h2>Text über Textfilter formatieren</h2>
+
+Scribus bietet verschiedene Möglichkeiten für die Textformatierung. 
+Besonders bequem und komfortabel: Man kann vorbereitete Texte mithilfe eines 
+Textfilters formatieren. Da in Scribus die unterschiedlichsten 
+Ausgangsdokumente, genauer deren Inhalte verwendet werden, ist es besonders 
+hilfreich, wenn man den Import mit speziellen Filtern automatisieren kann. 
+
+<div class="p"><!----></div>
+Das Grundprinzip dabei: Man führt im zu importierenden Text speziellen 
+Markierungen, sogenannte Tags ein (wie man sie von HTML-Dokumenten kennt), 
+die dann entsprechend von Scribus verarbeitet werden. Will man zudem in 
+Dokumenten ein identisches Layout verwenden, ist es ratsam, eine Vorlage 
+anzulegen, die bestimmte Vorgaben z.&nbsp;B. die Formatierung von Absätzen, 
+Überschriften etc. macht. 
+
+<div class="p"><!----></div>
+In der Praxis kann man beispielsweise eine Vorlage mit drei Vorgaben 
+anlegen: „<em>Ü1</em>“, „<em>A1</em>“ und „<em>A2</em>“. Bei „<em>Ü1</em>“ handelt es sich um die 
+Überschrift erster Ebene, bei „<em>A1</em>“ und „<em>A2</em>“ um zwei unterschiedliche 
+Absatzformate. Das Dokument mit diesen Voreinstellungen speichert man über 
+das „<em>Datei</em>“-Menü als Vorlage. 
+
+<div class="p"><!----></div>
+Als Nächstes macht man sich an die Bearbeitung des Textes, den man mit dem 
+Filter verarbeiten möchte. Hierfür definiert man verschiedene Tags:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> <b><tt>\U1</tt></b> – Absatzstil, der die erste Überschrift formatiert
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt>\A1</tt></b> – Absatzstil, der den ersten Absatz des Fließtextes formatiert
+<div class="p"><!----></div>
+</li>
+
+<li> <b><tt>\A2</tt></b> – Absatzstil, der alle weiteren Absätze des Fließtextes formatiert
+
+<div class="p"><!----></div>
+</li>
+</ul>
+
+<div class="p"><!----></div>
+Diese Tags müssen im Ausgangsdokument an den Stellen platziert werden, 
+denen man die definierten Absatzstile zuweisen möchte. Dazu kopiert man den 
+Ausgangstext in einen beliebigen Editor, fügt die Tags ein und speichert 
+diesen. 
+
+<div class="p"><!----></div>
+Als Nächstes erzeugt man in Scribus einen Textrahmen und importiert den Text 
+mit dem Menübefehl „<em>Datei -&#62; Importieren -&#62; Text laden</em>“.
+Dann wählt man im Fenster „<em>Öffnen</em>“ 
+im Listenfeld „<em>Importer</em>“ die Option „<em>Textfilter</em>“ aus und bestätigt die 
+Wahl mit „<em>OK</em>“. 
+
+<div class="p"><!----></div>
+Der nächste Schritt dient dem Erstellen eines Textfilters. Dabei meldet sich 
+der gleichnamige Dialog, in dem man für die drei Absatzformate drei 
+Filterkonfigurationen anlegt. Dazu wählt man im ersten Auswahlmenü den 
+Eintrag „<em>Anwender</em>“, im zweiten die Option „<em>Absatzstil</em>“ und dann den 
+angelegten Absatzstil „<em>Ü1</em>“ aus. 
+
+<div class="p"><!----></div>
+Mit der zweiten Zeile der ersten Filterbedingung bestimmt man die 
+durchzuführende Aktion. Da die  Überschrift mit <b><tt>\U1</tt></b> markiert ist, wählt 
+man im ersten Auswahlmenü „<em>Absätze beginnen mit</em>“ und gibt in das zweite 
+Eingabefeld „<em>\U1</em>“ ein. Entsprechend geht man mit den Absatz-Tags „<em>A1</em>“ und 
+„<em>A2</em>“ vor. Um weitere Bedingungen anzulegen, klickt man auf das Pluszeichen 
+am Ende einer Zeile. Dann weist man dem Filter in dem unteren Eingabefeld 
+noch eine Bezeichnung zu. Um den Filter auszuführen, betätigt man die 
+„<em>OK</em>“-Taste. Der Text wird beim Importieren formatiert. 
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+Scribus genügt längst semi-professionellen Anforderungen im DTP-Bereich. Das 
+Programm bietet mit dem Story Editor ein komfortabler Werkzeug für das 
+Bearbeitung und Formatieren von Texten. Auch die Verwendung der 
+Silbentrennung ist einfach. Ein wenig umständlich gestaltet sich das 
+Erstellen von Inhaltsverzeichnissen. Doch dafür kann man Formatierungen auch 
+weitgehend automatisieren – man muss nur wissen, wie es geht. 
+
+<div class="p"><!----></div>
+
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>Holger Reibold</b>&nbsp;(<a href="http://reibold.de/">Webseite</a>)
+promovierte in Informatik und begann in den 1990ern seine Karriere als 
+Fachjournalist und Autor. Er veröffentlichte seitdem zahlreiche Artikel und 
+Bücher. 2005 gründete er den Verlag Brain-Media.de.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Scribus in der Praxis&amp;body=freiesMagazin 11/2016%0AScribus in der Praxis%0AHolger Reibold%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Scribus in der Praxis#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_keeweb"><span style="color:#595959">KeeWeb: Passwörter sicher speichern</span></h1>von Mirko Lindner
+
+<div class="p"><!----></div>
+    <b>D</b><b>er freie Passwortmanager KeeWeb ist knapp ein Jahr nach dem Start in der
+Version 1.3 veröffentlicht worden. Die Applikation unterstützt unter anderem
+KeePass-Datenbanken und ermöglicht es, Passwörter sicher auf einem lokalen
+Server oder in einer Cloud zu verwalten. Wir stellen Ihnen die recht junge
+Anwendung vor.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Keeweb: Passwörter sicher speichern“ erschien erstmals bei Pro-Linux&nbsp;<a href="http://www.pro-linux.de/artikel/2/1847/keeweb-passw%C3%B6rter-sicher-speichern.html">[1]</a>.</i>
+
+<div class="p"><!----></div>
+
+<h2>Allgemein</h2>
+
+KeePass&nbsp;<a href="http://keepass.info/">[2]</a> gehört zu den bekanntesten Passwortmanagern
+unter Windows. Die Lösung 
+verschlüsselt die gesamte Datenbank, welche unter
+anderem Benutzernamen oder Passwörter in Klartext enthalten kann. Die Datenbank
+selbst kann wiederum durch einen Hauptschlüssel gesichert werden, der zwingend
+zur Entschlüsselung eingegeben werden muss. Zudem kann auch eine Schlüsseldatei
+benutzt werden, die separat auf einem mobilen Medium gespeichert werden sollte.
+Der Schlüssel und die Schlüsseldatei bilden bei gleichzeitiger Benutzung einen
+gemeinsamen Schlüssel, was die Entropie des Schlüssels erhöht und die Lösung
+noch besser gegen Angriffe schützt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/keeweb-13.png" alt="keeweb-13.png" style="max-width:100%" /><br /><em>Der freie Passwortmanager KeeWeb.</em><br />
+
+<div class="p"><!----></div>
+Während KeePass1, auch „Classic“ genannt, unter Linux nur auf Umwegen
+installiert werden 
+konnte, unterstützt die zweite Version das freie
+Betriebssystem durchgehend. Grund dafür ist die Implementierung in C# und die
+damit einhergehende Portabilität mittels Mono. Wer allerdings weder Mono noch
+die teils gewöhnungsbedürftige Oberfläche einsetzen will, ist auf
+Fremdanwendungen, wie beispielsweise KeePassX&nbsp;<a href="https://www.keepassx.org/">[3]</a>
+oder KeePassC&nbsp;<a href="http://raymontag.github.io/keepassc/">[4]</a>, angewiesen. Mit KeeWeb
+existiert aber auch eine freie Alternative, die nicht nur die Datenbank von
+KeePass2 lesen kann, sondern auch durch eine Plattformunabhängigkeit und eine
+leichte Bedienung überzeugen will.
+
+<div class="p"><!----></div>
+
+<h2>Erste Schritte mit KeeWeb</h2>
+
+KeeWeb ist, wie der Name bereits suggeriert, eine Webanwendung und wird sowohl
+im Quellcode wie auch in Form eines selbst gehosteten Pakets angeboten. In der
+Praxis bedeutet das, dass die Lösung entweder lokal auf einem Desktop oder aber
+auf einem Server installiert werden kann. Als Ablage für Datenbanken unterstützt
+KeeWeb verschiedene Dienste, darunter eine lokale Speicherung oder verteilte
+Ablage in der Cloud. Das Programm lädt dabei die Datenbank automatisch herunter,
+speichert darin verschlüsselt die gewünschten Informationen und lädt die
+geänderten Daten wieder autark auf den Server hoch.
+
+<div class="p"><!----></div>
+Die Installation von KeeWeb kann auf dreierlei Arten erfolgen. Zum einen kann
+die Lösung bereits vorkompiliert heruntergeladen und lokal als sogenannte
+Desktop-Anwendung gestartet werden, zum anderen kann sie als Service auf dem
+Server des Autors eingesetzt werden. Eine dritte Möglichkeit ist die
+Installation auf einem eigenen Server, die sich ebenso als recht unkompliziert
+erweist. Dazu reicht es, die Daten der Lösung herunterzuladen und die
+bereitgestellte <b><tt>index.html</tt></b>-Datei auf die entsprechende Stelle auf dem
+hauseigenen Web-Server zu kopieren:
+
+<div class="p"><!----></div>
+
+<div class="command">
+# git clone https://github.com/keeweb/keeweb.git<br />
+# cd keeweb/<br />
+# git checkout -t origin/gh-pages<br />
+# cp index.html /SERVER_HTML/<br />
+# chown WWWUSER /SERVER_HTML/index.html<br />
+# chmod 600 /SERVER_HTML/index.html<br />
+
+</div>
+
+<div class="p"><!----></div>
+
+Wer dagegen KeeWeb lieber selbst aus den Quellen kompilieren möchte, muss ein wenig mehr
+Mühe in die Installation investieren und benötigt unter anderem <b><tt>nodejs</tt></b>, <b><tt>npm</tt></b> und
+<b><tt>grunt</tt></b>. <b><tt>grunt-cli</tt></b> kann mit dem Kommando <b><tt>npm install grunt-cli -g</tt></b>
+global installiert werden. Zudem müssen noch diverse Module installiert sein,
+damit das <b><tt>grunt</tt></b>-Kommando das Paket korrekt bilden kann. Das fertige Paket findet
+sich nun im Verzeichnis
+<b><tt>dist</tt></b>.
+
+<div class="p"><!----></div>
+
+<h2>Datenablage</h2>
+
+Ja nach Art wird dann KeeWeb entweder mittels des Kommandos <b><tt>./KeeWeb</tt></b>
+(Desktop-Anwendung) oder durch das Aufrufen von <b><tt>index.html</tt></b> (Web-Service)
+gestartet. Die Oberfläche der Anwendung unterscheidet sich dabei nicht wirklich.
+Was sich allerdings unterscheidet, ist die Art der Datenspeicherung. Denn KeeWeb
+selbst unterscheidet, von welcher Stelle die Anwendung aufgerufen wurde.
+
+<div class="p"><!----></div>
+Wurde KeeWeb als Desktop-App erstellt und gestartet, ermöglicht die Lösung eine
+nahtlose Arbeit mit lokalen Dateien. Läuft das Werkzeug dagegen auf einem
+entfernten Server, sei es als Service oder in der Cloud, können Daten zwar von
+einem lokalen System eingelesen werden, alle Änderungen werden aber in der
+Anwendung gespeichert. Will man sie dann wieder lokal auf dem Dateisystem
+ablegen, müssen die Datenbankbestände explizit exportiert werden.
+
+<div class="p"><!----></div>
+Freilich betrifft die Vorgehensweise nur die lokale Speicherung der Daten und
+hat keinen Einfluss auf die Speicherung auf einem entfernten Server. Hier werden
+die Daten sofort synchronisiert und müssen weder manuell abgeglichen noch
+exportiert werden. Als Anbieter kommt dabei entweder ein eigener DAV-Server oder
+ein Dienstleister wie Dropbox, GoogleDrive oder OneDrive infrage. Je nach
+Dienstleister muss KeeWeb dann entsprechend konfiguriert werden. Bei WebDAV
+reicht es, die URL des Servers einzutragen und notfalls die Zugangsdaten zu
+ergänzen. Dropbox benötigt den API-Schlüssel und GoogleDrive oder OneDrive
+entsprechende Authentifizierungen.
+
+<div class="p"><!----></div>
+
+<h2>Der Einsatz</h2>
+
+KeeWeb kann, wie schon das Original, zur Speicherung von Informationen genutzt
+werden. Die Datenbank der Anwendung kann sowohl als Passwortablage dienen als
+auch als Ort, in dem alle wichtigen Daten abgespeichert werden. Dank der
+Möglichkeit, Einträge auch um Anhänge zu ergänzen, lassen sich auch Dokumente in
+die Datenstruktur einbinden.
+
+<div class="p"><!----></div>
+Wird die Anwendung zum ersten Mal aufgerufen, ist es notwendig, entweder eine
+bereits bestehende KeePass-Datenbank einzulesen oder eine neue zu erstellen. Bei
+einer neuen Datenbank kann unter „<em>Einstellungen</em>“ nicht nur der Name der
+Datenbank festgelegt werden, sondern auch ihr
+Speicherort, das Master-Passwort
+sowie beispielsweise der Backup-Ort.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/keeweb-neue-datenbank.png" alt="keeweb-neue-datenbank.png" style="max-width:100%" /><br /><em>Neue Datenbank wird angelegt.</em><br />
+
+<div class="p"><!----></div>
+Die Benutzung der Anwendung gestaltet sich intuitiv. Neben bereits
+vordefinierten Feldern, wie beispielsweise „Passwort“ oder „Benutzer“ können
+auch selbst erstellte Felder generiert werden. Dazu reicht es, auf das Feld
+neben „mehr“ zu klicken und einen neuen Wert einzugeben. Ein weiterer Klick auf
+den Feldnamen „Neues Feld“ ermöglicht dann die Umbenennung des Feldnamens. So
+ist es beispielsweise möglich, Templates für verschiedene Bereiche zu erstellen,
+die später nur noch mit Daten gefüllt werden müssen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/keeweb-einstellungen-einer-datenbank.png" alt="keeweb-einstellungen-einer-datenbank.png" style="max-width:100%" /><br /><em>Einstellungen einer Datenbank.</em><br />
+
+<div class="p"><!----></div>
+Als Typen unterstützt die Anwendung eine sichtbare oder eine unsichtbare Anzeige
+der Daten. Erst bei einem Klick auf das mittels Sternen unkenntlich gemachte
+Feld wird der Inhalt dargestellt. Alternativ können Nutzer auf den Feldnamen
+klicken, was dazu führt, dass der Inhalt des Feldes in die Zwischenablage
+kopiert wird – eine durchaus nützliche Funktion, um beispielsweise schnell
+Benutzernamen oder Passwörter zu kopieren, ohne sie zuvor aufdecken zu müssen.
+
+<div class="p"><!----></div>
+Gespeicherte Einträge können gruppiert, mit Tags versehen oder farblich markiert
+werden. Zudem lassen sich direkt in der Anwendung parallel auch mehrere
+Datenbanken öffnen, was eine noch flexiblere Ablage der Daten ermöglicht. Jede
+der Datenbanken kann nämlich auf einem anderen Ort liegen und mittels eines
+separaten Passworts abgesichert sein.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/keeweb-ablage-eines-passworts.png" alt="keeweb-ablage-eines-passworts.png" style="max-width:100%" /><br /><em>Ablage eines Passworts.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+KeeWeb ist eine interessante Anwendung, die das Speichern von Daten in einem
+Format ermöglicht, das durch eine Vielzahl von Anwendungen unterstützt wird. So
+lassen sich mühelos zuvor 
+in dem Werkzeug gespeicherte Daten zwischen diversen
+Systemen transferieren, bearbeiten und wieder einlesen. Die darin gespeicherten
+Daten können sowohl Passwörter als auch vertrauliche Daten oder Dokumente sein.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/keeweb-einfache-anzeige-von-daten.jpg" alt="keeweb-einfache-anzeige-von-daten.jpg" style="max-width:100%" /><br /><em>Einfache Anzeige von Daten.</em><br />
+
+<div class="p"><!----></div>
+Die Oberfläche des Tools ist durchdacht und klar strukturiert. Die Bearbeitung
+der Daten geht schnell von der Hand, und Funktionen wie das verdeckte Kopieren von
+Daten will man bereits nach wenigen Einsätzen nicht mehr missen. Doch auch die
+unaufgeregte und strukturierte Anzeige der Daten überzeugt.
+
+<div class="p"><!----></div>
+Störend ist dagegen, dass KeeWeb durchaus noch wichtige Funktionen, wie
+beispielsweise den Druck oder das Teilen, missen lässt. Zudem ließ in unseren
+Tests die Stabilität der WebDAV-Verbindung noch zu wünschen übrig. Wie schnell
+die Entwicklung voranschreitet, konnte man
+allerdings bei diesem Fehler sehen.
+Denn noch während der Text verfasst wurde, hat der Autor den Fehler korrigiert.
+
+<div class="p"><!----></div>
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="http://www.pro-linux.de/artikel/2/1847/keeweb-passw%C3%B6rter-sicher-speichern.html"><tt>http://www.pro-linux.de/artikel/2/1847/keeweb-passwörter-sicher-speichern.html</tt></a><br />
+[2] <a href="http://keepass.info/"><tt>http://keepass.info/</tt></a><br />
+[3] <a href="https://www.keepassx.org/"><tt>https://www.keepassx.org/</tt></a><br />
+[4] <a href="http://raymontag.github.io/keepassc/"><tt>http://raymontag.github.io/keepassc/</tt></a><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>Mirko Lindner</b>&nbsp;(<a href="http://www.pro-linux.de/">Webseite</a>)
+befasst sich seit 1990 mit Unix. Seit 1998 ist er aktiv in die Entwicklung 
+des Kernels eingebunden. 
+Daneben ist er einer der Betreiber von Pro-Linux.de.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=KeeWeb&amp;body=freiesMagazin 11/2016%0AKeeWeb%0AMirko Lindner%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=KeeWeb#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_life_is_strange"><span style="color:#595959">Test: Life is Strange – Emotionale Zeitreise</span></h1>von David Schroff
+
+<div class="p"><!----></div>
+    <b>L</b><b>ife is Strange&nbsp;<a href="http://www.lifeisstrange.com/">[1]</a> besteht aus insgesamt fünf Episoden, wovon die erste 
+kostenlos spielbar ist. Der Frage, für wen es sich lohnt, die kostenpflichtigen
+Episoden 2-5 dazu zu kaufen, wird in diesem Test nachgegangen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Test: Life is Strange – Emotionale Zeitreise“ erschien
+zuvor auf
+games4linux.de&nbsp;<a href="https://games4linux.de/test-life-is-strange-emotionale-zeitreise/">[2]</a>.</i>
+
+<div class="p"><!----></div>
+Die Zeit der Jugend prägt einen jeden Menschen auf seine Art. Gemeinsam mit
+Freunden werden spaßige Dinge erlebt, traurige und verrückte Dinge überstanden,
+es werden Freundschaften aufgekündigt, nur um sie Tage später wieder zu
+schließen. Die Schule mit den unterschiedlichsten Mitschülern ist ein
+anstrengender Ort und nicht selten möchte man einigen Gleichaltrigen einen
+Stempel mit den Worten „Tussi“, „Playboy“ oder „Milliardärs-Sohn“ auf die Stirn
+klatschen.
+
+<div class="p"><!----></div>
+In so einer typischen Welt lebt Maxine „Max“ Caulfield, die vom Spieler
+übernommene Protagonistin. Doch der Schein einer vermeintlich normalen Jugend
+trügt, das stellt sich gleich zu Beginn der ersten Episode heraus: Durch einen
+tragischen Vorfall mit ihrer Freundin Cloe muss Max erkennen, dass sie die
+Zeit zurückdrehen kann. Auf einen Schlag ist nichts mehr so, wie es war.
+Besonders der Umstand, dass die Umwelt von Max auf ihre Zeitreisen reagiert,
+lässt im Spielverlauf
+
+ein Feuerwerk an Emotionen hochgehen, welches kaum einen
+Spieler kalt lässt.
+
+<div class="p"><!----></div>
+Alle Episoden zusammen veranschlagen ungefähr 13 Spielstunden. Die Linux-Fassung wurde von Feral Interactive&nbsp;<a href="https://www.feralinteractive.com/">[3]</a>
+im Juli 2016 veröffentlicht.
+
+<div class="p"><!----></div>
+
+<h2>Geschichte</h2>
+
+Die emotionale Story von „Life is Strange“ bildet den Kern des Spiels. Annähernd
+alle 
+Entscheidungen von Maxine verändern die Beziehungen zu den betroffenen
+Menschen. Allesamt Mitmenschen, zu denen Max jeweils eine besondere Beziehung
+hat: Die einen mag sie, die anderen mag sie nicht. Wie sie diese Beziehungen
+weiterhin führt, darf der Spieler entscheiden. 
+<div class="p"><!----></div>
+Den roten Faden stellt die Freundschaft zu Cloe und gleichzeitig die mysteriösen
+Geschehnisse dar. Das Internat „Blackwell Academy“ umgeben
+
+viele Fragen, die
+einer Antwort bedürfen: Wieso besitzt der reiche Schnösel eine Pistole? Weshalb
+verfolgt der Stiefvater von Cloe, seinerseits angestellt für die Security am
+Internat, die introvertierte Mitschülerin Kate Marsh? Und überhaupt: Wo zum
+Kuckuck steckt das seit Monaten vermisste Mädchen Rachel Amber?
+In dieser
+Kleinstadt gehen unbestritten merkwürdige Dinge vor.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/LifeIsStrange-Test-Games4Linux-01.jpg" alt="LifeIsStrange-Test-Games4Linux-01.jpg" style="max-width:100%" /><br /><em>So einiges an der „Blackwell Academy“ läuft falsch. Was geht hier vor?</em><br />
+
+<div class="p"><!----></div>
+Die Tatsache, dass Max die Zeit zurückdrehen kann, inszeniert das Spiel mit
+aufrichtiger
+Leidenschaft: Cloe möchte einen Beweis dafür und so sagt Max Cloe kurzerhand die Zukunft voraus.
+Hierauf flippt Cloe fast
+völlig aus: „Hey Max, ist das geil! Wir können die ganze Welt verändern!“,
+kreischt sie vor Freude. „Los komm, lass uns raus gehen und unmögliche Dinge
+anstellen!“ Als Spieler huscht einem unweigerlich ein breites Grinsen über das
+Gesicht. Ja, das ist cool!
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/LifeIsStrange-Test-Games4Linux-04.jpg" alt="LifeIsStrange-Test-Games4Linux-04.jpg" style="max-width:100%" /><br /><em>Viele Entscheidungen dürfen direkt in den Zwischensequenzen getroffen werden. Das kommt dem flüssigen Spielgefühl zugute.</em><br />
+
+<div class="p"><!----></div>
+An vielen Stellen konfrontiert uns das Story-Adventure mit ganz alltäglichen
+Problemen, und immer wieder hilft uns eine kurze Zeitreise zurück in die
+Vergangenheit, um die vermeintlich beste Lösung zu finden.
+
+<div class="p"><!----></div>
+„Life is Strange“ schafft es über alle fünf Episoden hinweg, sehr viele
+Gefühlswallungen an den Spieler zu vermitteln. Die Geschichte zwischen Max und
+Cloe nimmt an Fahrt auf, es passiert ununterbrochen etwas Trauriges, etwas
+Schönes, Nachdenkliches oder Verrücktes – und der Spieler ist jedes Mal mitten drin.
+
+<div class="p"><!----></div>
+Das Ende von Episode 3 stellt einen ganz besonderen Höhepunkt dar, der mit den
+Worten „Oh mein Gott!“ vielleicht schon jetzt, noch vor dem Show-down in Episode
+5, zu ein paar Tränen führt. Spätestens zu Beginn von Akt 4 drängt sich die
+Frage auf: Was, wenn jede neue Entscheidung, die man trifft, alles nur noch 
+schlimmer macht, obwohl man eigentlich nur Gutes tun möchte?
+
+<div class="p"><!----></div>
+
+<h2>Gameplay</h2>
+
+Abseits der Zeitreise und den vielen Dialogen zählt auch das Entdecken, ein
+bisschen wie ein Detektivspiel, zur Hauptaufgabe von Max. Immer dort, wo die
+Geschichte weitergeht, darf Maxine die Umgebung erkunden und kommt dank ihrer
+Fähigkeit an Gegenstände oder Informationen heran, die sonst unerreichbar
+gewesen wären. Schwer wird das Spiel dabei nie. Vereinzelt wirkt die Sucherei
+langatmig, wenn man einen dringend benötigten Gegenstand nicht sofort findet, die
+fortlaufende Geschichte entschädigt dann aber rasch wieder.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/LifeIsStrange-Test-Games4Linux-05.jpg" alt="LifeIsStrange-Test-Games4Linux-05.jpg" style="max-width:100%" /><br /><em>Max erhält auf ihr Smartphone immer wieder SMS von Freunden wie Feinden. Das hängt mit den getroffenen Entscheidungen zusammen.</em><br />
+
+<div class="p"><!----></div>
+Als schlecht zu bezeichnen bleibt lediglich ein Abschnitt im letzten, fünften
+Akt in Erinnerung: Während „Life is Strange“ seinem Ende entgegenrennt und das
+Ziel zum Greifen nahe ist, muss der Spieler unverhofft eine nervige
+Schleich-Passage durchlaufen. Dieser Abschnitt möchte zwar das Geschehene
+aufarbeiten, nervt dabei aber nur. Das ist schade und fühlt sich an wie ein
+versehentlicher Klecks in dem sonst passenden Gesamtbild.
+
+<div class="p"><!----></div>
+Am Ende des Spiels wird man erkennen müssen, dass die Entscheidungen zwar
+innerhalb der Episoden einen starken Einfluss haben, aber nicht auf das
+effektive Spielende. Davon gibt es durchaus unterschiedliche und als Spieler
+steht man unweigerlich vor der Entscheidung, das Ende zu wählen, das für einem
+selbst das richtige Ende ist. Doch was ist in diesem Spiel schon richtig, und
+was falsch?
+
+<div class="p"><!----></div>
+
+<h2>Grafik</h2>
+
+„Life is Strange“ basiert auf einer verbesserten Unreal-3-Engine. Die
+Lichtstimmung überzeugt, wenngleich die Details der Welt, der Umgebung und aller
+Charakteren etwas mau sind. Doch für diese Art von Story-Spiel passt der
+Grafikstil und wirkt nur in einem Punkt störend: der Mimik.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/LifeIsStrange-Test-Games4Linux-06.jpg" alt="LifeIsStrange-Test-Games4Linux-06.jpg" style="max-width:100%" /><br /><em>Die Grafikeinstellungen lassen rudimentäre Änderungen zu.</em><br />
+
+<div class="p"><!----></div>
+Leider werde alle animierten Gesichter den tollen Sprechern nicht gerecht. Am
+deutlichsten fällt das während des Show-downs in Episode 5 auf. Während die
+englischen Sprecher einen fantastischen Job abliefern, lassen sich die Gefühle
+nur schlecht aus den Gesichtern der Charaktere ablesen. Hier hätte der
+Entwickler DONTNOD Entertainment mehr Zeit investieren sollen.
+
+<div class="p"><!----></div>
+Als Mindestvoraussetzung wird eine Nvidia  GTX 640 bzw. Radeon R9 270 angegeben.
+Für ein ruckelfreies Vergnügen sollte dennoch mindestens eine GTX 760 verbaut
+sein. Bei AMD-Grafikkarten gibt es Probleme, das Spiel unter SteamOS ans Laufen
+zu bekommen. Für den Linux-Desktop gibt der Entwickler einen Mesa 11.2-Treiber
+als Mindestvoraussetzung an, versäumt es aber, die empfohlene AMD-Grafikkarte
+anzugeben.
+
+<div class="p"><!----></div>
+Das Spiel wurde in 1920×1080 auf einem Gaming-Laptop mit einer Nvidia 960M
+getestet. Das entspricht in etwa einer Desktop-Grafikkarte im Leistungsbereich
+einer Nvidia 7xx GTX. Ruckler sind keine aufgetreten.
+
+<div class="p"><!----></div>
+
+<h2>Sound</h2>
+
+Dank der exzellenten Synchronsprecher ist die flache Mimik zu verschmerzen.
+Allgemein erscheint die Vertonung in allen Punkten gelungen, alle Charaktere
+haben eine perfekte Stimme erhalten.
+
+<div class="p"><!----></div>
+Einen weiterer Kniff für emotionale Höhenflüge beinhaltet die Musik, die an
+gewissen Stellen geschickt eingespielt wird. Wenn Max zum Beispiel in den Bus
+steigt und sich vom Stress des Alltags lösen möchte, steckt sie sich Kopfhörer
+ins Ohr – die Umgebung wird leiser, die Musik umgibt den Spieler wie ein warmes
+Tuch. Und zwar so lange, bis der Spieler eine Taste drückt.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+„Life is Strange“ richtet sich an Menschen, die Gefühle zulassen und nicht
+blockieren. Wen Entscheidungen und deren (traurige) Konsequenzen in Spielen
+generell kalt lassen, wird es weniger genießen können. Lässt man hingegen dem
+Spiel die Freiheit sich zu entfalten und saugt die Spielwelt in sich auf, wartet
+als Belohnung ein emotionales Feuerwerk. Ganz klar eine Empfehlung für
+Story-Enthusiasten!
+
+<div class="p"><!----></div>
+Ja, Max's Freundin Cloe ähnelt dem Typ, der gemeinhin als „Emo“ bezeichnet wird,
+aber genau das bringt das Spiel fantastisch zur Geltung: Die Jugend, die darin
+erlebten Undinge der Kindheit und eine unzertrennliche Freundschaft zwischen
+zwei Mädchen.
+
+<div class="p"><!----></div>
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="http://www.lifeisstrange.com/"><tt>http://www.lifeisstrange.com/</tt></a><br />
+[2] <a href="https://games4linux.de/test-life-is-strange-emotionale-zeitreise/"><tt>https://games4linux.de/test-life-is-strange-emotionale-zeitreise/</tt></a><br />
+[3] <a href="https://www.feralinteractive.com/"><tt>https://www.feralinteractive.com/</tt></a><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>David Schroff</b>&nbsp;(<a href="https://games4linux.de/">Webseite</a>)
+spielt seit 2012 unter Linux, aktuell mit Linux Mint
+18. Beruflich ist er im Bereich Middleware auf Linux-Servern unterwegs.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Life is Strange&amp;body=freiesMagazin 11/2016%0ALife is Strange%0ADavid Schroff%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Life is Strange#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_not_your_story"><span style="color:#595959">Spieltipp: Don't take it personally, babe, it just ain't your story</span></h1>von Jakob Moser
+
+<div class="p"><!----></div>
+    <b>D</b><b>ie Visual Novel&nbsp;<a href="https://de.wikipedia.org/wiki/Japanisches_Adventure">[1]</a> „Don't
+take it personally, babe, it just ain't your
+story“&nbsp;<a href="http://scoutshonour.com/donttakeitpersonallybabeitjustaintyourstory/">[2]</a>
+spielt im Jahr 2027 und wurde von Spieleentwicklerin Christine
+Love&nbsp;<a href="http://loveconquersallgam.es/">[3]</a> geschaffen. Der Spieler schlüpft in die Rolle des
+Highschool-Lehrers John Rook, der Zugriff auf alle Nachrichten hat, die die
+Schüler sich untereinander über das soziale Netzwerk AmieConnect schicken.</b>
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/Not_you_story_mainmenu.jpg" alt="Not_you_story_mainmenu.jpg" style="max-width:100%" /><br /><em>Das Hauptmenü.</em><br />
+
+<div class="p"><!----></div>
+So erfährt man von den Leben von sieben Schülern, ihren Beziehungen und
+ihrer Entwicklung. Außerdem thematisiert das Spiel die Bedeutung von 
+Privatsphäre, die bei den Schülern in der Zukunft einen anderen Stellenwert
+hat als heute.
+
+<div class="p"><!----></div>
+Die Geschichte spielt die meiste Zeit in einer privaten Highschool in Ontario
+und ist in sieben Kapitel geteilt, eines für jeden der Protagonisten. Das
+Spielprinzip ist klassisch für Visual Novels: Als Spieler klickt man sich durch
+Gespräche und Gedanken, gelegentlich muss man
+sich zwischen verschiedenen möglichen Aktionen entscheiden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/Not_you_story_gameplay.jpg" alt="Not_you_story_gameplay.jpg" style="max-width:100%" /><br /><em>Ein innerer Monolog von John Rook.</em><br />
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/Not_you_story_choosing.jpg" alt="Not_you_story_choosing.jpg" style="max-width:100%" /><br /><em>Hier hat man die Qual der Wahl.</em><br />
+
+<div class="p"><!----></div>
+Die Besonderheit des Spiels, dass man als Spieler die Nachrichten der Schüler
+mitlesen kann,
+wurde über ein kleines Nachrichtensymbol rechts oben umgesetzt.
+Leuchtet es auf, kann man durch einen Klick die Nachrichten lesen, die sich die
+Schüler gerade schreiben. Über das Briefsymbol kann man die eigenen Mails lesen
+(diese Funktion kommt im Spiel aber nur wenige Male zum Einsatz) und über das
+Einstellungsmenü kann man Spielstände laden, speichern und das Spiel beenden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/Not_you_story_messages.jpg" alt="Not_you_story_messages.jpg" style="max-width:100%" /><br /><em>Sie haben neue Nachrichten.</em><br />
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2016-11-bilder-Dateien/Not_you_story_conversation.jpg" alt="Not_you_story_conversation.jpg" style="max-width:100%" /><br /><em>Ein privates Gespräch.</em><br />
+
+<div class="p"><!----></div>
+In jedem Kapitel lernt man einen der Schüler besser kennen: Im ersten Kapitel
+die schüchterne Arianna, im zweiten Kapitel den schweigsamen
+Riesen Nolan und im
+dritten Kapitel das notorisch deprimierte Mädchen Isabella. Im vierten Kapitel
+erfährt man mehr über die brave, fleißige Charlotte, im fünften über die wegen
+ihrer Art unbeliebten Taylor. Kapitel sechs handelt von der aufgedrehten Kendall
+und im siebten Kapitel erfährt man mehr über den Jungen Akira.
+
+<div class="p"><!----></div>
+Man erlebt mit, wie neue Beziehungen und Freundschaften entstehen (manchmal muss
+man sogar dabei helfen) und sieht, wie alte Beziehungen sich auflösen oder
+Konflikte beigelegt werden.
+
+<div class="p"><!----></div>
+Auch in den Lehrer, der seine ganz persönlichen Probleme hat, kann man sich im
+Laufe des Spiels immer besser hineinversetzen.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+Das Spiel wurde mithilfe der auf Python basierenden Visual-Novel-Engine
+Ren'Py&nbsp;<a href="http://renpy.org/">[4]</a> erstellt und lässt sich von der Homepage des 
+Spiels&nbsp;<a href="http://scoutshonour.com/donttakeitpersonallybabeitjustaintyourstory/">[2]</a>
+herunterladen. Das Paket sollte alle benötigten Bibliotheken (Python&nbsp;<a href="https://www.python.org/">[5]</a> und
+Pygame&nbsp;<a href="http://www.pygame.org/hifi.html">[6]</a>) enthalten – wenn wider Erwarten etwas nicht funktioniert, kann man
+Python 2 und Pygame aber natürlich auch über den Paketmanager installieren. Das
+Spiel kann über die Datei <b><tt>don't take it personally, babe.sh</tt></b> gestartet werden.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+Wer gerne in Beziehungskomplexe eintaucht und kein Problem damit hat, lange
+Dialoge zu lesen, der sollte mit diesem Spiel voll auf seine Kosten kommen. Die
+verschiedenen Charaktere sind interessant und tiefgründig gestaltet, die
+Umgebungen sind hübsch und die Handlung ist fesselnd – ein Muss für jeden
+Visual-Novel-Fan.
+
+<div class="p"><!----></div>
+Für jeden, der mit diesem Spiel auf den Geschmack gekommen ist, steht auf der
+Ren'Py-Homepage eine Liste an Visual Novels&nbsp;<a href="http://games.renpy.org/">[7]</a>, die
+mit dieser Engine erstellt wurden, bereit.
+
+<div class="p"><!----></div>
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="https://de.wikipedia.org/wiki/Japanisches_Adventure"><tt>https://de.wikipedia.org/wiki/Japanisches_Adventure</tt></a><br />
+[2] <a href="http://scoutshonour.com/donttakeitpersonallybabeitjustaintyourstory/"><tt>http://scoutshonour.com/donttakeitpersonallybabeitjustaintyourstory/</tt></a><br />
+[3] <a href="http://loveconquersallgam.es/"><tt>http://loveconquersallgam.es/</tt></a><br />
+[4] <a href="http://renpy.org/"><tt>http://renpy.org/</tt></a><br />
+[5] <a href="https://www.python.org/"><tt>https://www.python.org/</tt></a><br />
+[6] <a href="http://www.pygame.org/hifi.html"><tt>http://www.pygame.org/hifi.html</tt></a><br />
+[7] <a href="http://games.renpy.org/"><tt>http://games.renpy.org/</tt></a><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>Jakob Moser</b>
+nutzt seit längerer Zeit Linux,
+im Moment Arch Linux. Auf das Spiel und
+seinen ideellen Vorgänger „digital“ ist er über das ubuntuusers-Wiki gestoßen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Don't take it personally ...&amp;body=freiesMagazin 11/2016%0ADon't take it personally ...%0AJakob Moser%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Don't take it personally ...#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_the_curious_expedition"><span style="color:#595959">Test: The Curious Expedition – ein Roguelike-Abenteuer für Forscher und Entdecker</span></h1>von Dennis Weller
+
+<div class="p"><!----></div>
+    <b>A</b><b>uf der Suche nach Abenteuern, Schätzen und Ruhm kann man sich im 
+rundenbasierten Roguelike „The Curious 
+Expedition“&nbsp;<a href="http://curious-expedition.com/">[1]</a> auf den Weg machen und die 
+goldenen Pyramide in sechs Expeditionen finden. Doch das ist leichter gesagt 
+als getan, wie der Artikel zeigt.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Test: The Curious Expedition“ erschien erstmals bei 
+Games4Linux&nbsp;<a href="https://games4linux.de/test-the-curious-expedition-ein-roguelike-abenteuer-fuer-forscher-und-entdecker/">[2]</a>.</i>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Da das Entwickler-Studio Maschinen-Mensch die Bilder nicht unter 
+einer freien Creative-Commons-Lizenz freigeben wollte, kommt der Artikel 
+ohne Bilder aus.</i>
+
+<div class="p"><!----></div>
+In „The Curious Expedition“ begibt man sich mit einer von 17 bekannten 
+Persönlichkeiten des 19. Jahrhunderts auf Forschungsreise. Die Mitglieder 
+des Clubs der Entdecker schließen eine Wette darüber ab, wer in sechs Expeditionen die 
+meisten Schätze bergen und dadurch Ruhm erlangen kann. Der ist wichtig, um 
+zu gewinnen, denn wer nach den sechs Reisen am meisten Ruhm hat, gewinnt. 
+Doch gilt es zunächst, diese überhaupt erfolgreich abzuschließen.
+
+<div class="p"><!----></div>
+Dabei findet man allerhand Ruinen, verlassene Lager, Schreine und selbst 
+Dörfer von indigenen Völkern. Auch wilden Tieren und anderen Gegnern muss 
+man sich stellen. Darunter finden sich Krokodile, Hyänen und Tiger. Selbst 
+gigantische Skorpione, Mumien, Riesenspinnen und sogar Dinosaurier stellen 
+sich den Forschern von Zeit zu Zeit in den Weg.
+
+<div class="p"><!----></div>
+
+<h2>Der Club der Forscher und Entdecker</h2>
+
+Zuallererst wählt man seinen Charakter aus. Ganz am Anfang steht lediglich 
+Charles Darwin zu Auswahl. Im Laufe des Spiels schaltet man durch das 
+Erreichen von bestimmten Voraussetzungen dann nach und nach die anderen 16 
+Charaktere frei. Zu Darwin gesellen sich noch Marie Curie, Richard Francis 
+Burton, Frederick Courtney Selous, Mary Kingsley, Johan Huizinga, Marcus 
+Garvey, Aleister Crowley, Nikola Tesla, Amelia Earhart, Alexandra 
+David-Neel, Dion Fortune, Freya Stark, Isabella Bird, Harriet Tubman, Ada 
+Lovelace und H.P. Lovecraft.
+
+<div class="p"><!----></div>
+Alle diese Personen haben verschiedene Besonderheiten. Daher sollte man sich 
+gut überlegen, wen man wählt, da dies im Wesentlichen den Spielstil 
+beeinflussen kann. So ist Mary Kingsley Pazifistin und kann daher im Kampf 
+keine Waffen nutzen. Frederick Selous hingegen startet gleich mit einem 
+Jagdgewehr und hat zudem den Bonus des Dschungelforschers, was ihn und seine 
+Begleiter weniger geistige Gesundheit kostet, wenn sie sich durch dichte 
+Wälder begeben.
+
+<div class="p"><!----></div>
+Die Spezialität von Richard Burton sind Sprachen. Daher fällt es ihm nicht 
+schwer, sich mit den Bewohnern der bereisten Orte zu verständigen und 
+er bekommt, zusammen mit seinen Begleitern, einen kostenlosen Platz zum 
+Schlafen angeboten. Oder H.P. Lovecraft. Er ist der einzige Charakter, der 
+das berüchtigte Necronomicon sicher nutzen kann, ohne zu schnell verrückt zu 
+werden. Ihn kostet die Anwendung nur 35 statt 70 der geistigen Gesundheit.
+
+<div class="p"><!----></div>
+Diese benötigt man für die Fortbewegung im Spiel. Dabei kostet jeder Zug 
+einen festgelegten Grundwert, zu dem weitere Kosten für die Entfernung und 
+die Art der überquerten Felder kommen. Daher sollte man sich jeden Zug gut 
+überlegen und, wegen des Grundwerts, möglichst weite Distanzen pro Zug 
+hinter sich bringen, um seinen Verstand zu schonen. Das Durchqueren von 
+Wäldern oder Sümpfen kostet dabei mehr geistige Gesundheit als wenn man über 
+Wiesen und Felder läuft.
+
+<div class="p"><!----></div>
+
+<h2>Die Mächte des Wahnsinns</h2>
+
+Sinkt der Wert der geistigen Gesundheit auf Null, so fangen die Mitglieder 
+der Gruppe an, verrückt zu werden. Sie beginnen, mit anderen zu streiten, 
+reden mit Personen, die nicht da sind oder nehmen sich aus Verzweiflung das 
+Leben. Es kann aber auch passieren, dass sie zu Kannibalen werden oder euren 
+Packesel schlachten wollen.
+
+<div class="p"><!----></div>
+Auch der vom Spieler gewählte Charakter ist davor nicht gefeit. Dem 
+entgegenwirken kann man nur, wenn man dafür sorgt, dass die geistige 
+Gesundheit immer wieder aufgefüllt wird. Dazu kann man Schokolade naschen 
+oder, hat man einen Koch bei sich, Fleisch von besiegten Tieren essen. Auch 
+Alkohol sorgt für ein wenig mehr Seelenheil in „The Curious Expedition“, 
+bringt aber auch die Gefahr mit sich, dass Begleiter zu Alkoholikern werden.
+
+<div class="p"><!----></div>
+Sollte man sich in der Nähe eines Dorfes befinden, kann man dort nächtigen 
+und ein paar Zugpunkte zurückzugewinnen. Man kann auch jederzeit zum 
+Schiff zurückkehren und dort schlafen, um den selben Effekt zu erzielen. 
+Außerdem gibt es noch religiöse Missionen, bei denen man gegen einen nicht 
+unbeträchtlichen Gegenwert übernachten darf.
+
+<div class="p"><!----></div>
+
+<h2>Geld allein macht auch nicht glücklich</h2>
+
+Die Währung in „The Curious Expedition“ setzt sich aus Geld und aus 
+Gegenständen zusammen. Während man mit dem Geld vor jeder Reise Ausrüstung 
+kaufen oder die Kapazität seiner Lasttiere aufbessern kann, nutzt man 
+während der Expedition die Gegenstände, um zu handeln. Jedes Objekt hat 
+einen Wert (der auch mal Null sein kann) und kann als Zahlungsmittel in 
+Dörfern, Missionen und bei Händlern eingesetzt werden.
+
+<div class="p"><!----></div>
+Weitere Gegenstände findet man unter anderem beim Erkunden von Höhlen, 
+Schreinen und Götzenstatuen. Allerdings sollte man sich bewusst sein, dass 
+die Einheimischen nicht gerade erfreut sind, sollte man sich ihre Opfergaben 
+zu Eigen machen oder heilige Kultstätten entweihen. Zudem kann es sein, dass 
+man durch seinen gemeinen Diebstahl in Tempeln nicht nur die ansässigen Kulturen 
+verärgert, sondern sogar riesige Katastrophen wie Brände, Überschwemmungen 
+oder Dürre auslöst.
+
+<div class="p"><!----></div>
+
+Vielleicht könnte man die Schätze à la Indiana Jones einfach austauschen, in 
+der Hoffnung, das selbe Gewicht mit seinen hoffentlich wertlosen 
+Gegenständen auszugleichen? In jedem Fall muss man damit rechnen, dass man 
+bei seinen Beutezügen den Zorn der Bewohner auf sich zieht, was nicht 
+unbedingt erwünscht ist.
+
+<div class="p"><!----></div>
+
+<h2>Bitte recht freundlich</h2>
+
+Die Stimmung der Einheimischen ist wichtig, damit sie dem Spieler beim 
+Besuch ihres Dorfes wohlgesonnen sind und sich nicht gegen ihn stellen. Die 
+Gefühlslage lässt sich übrigens auch durch Spenden heben, indem man 
+Gegenstände beim Handel anbietet, ohne eine Gegenleistung zu fordern oder 
+indem man Güter mit deutlich mehr Wert als dem der Handelsobjekte der 
+Einwohner abgibt.
+
+<div class="p"><!----></div>
+
+Nur dann ist es auch möglich, Bewohner zu rekrutieren, damit sie sich der 
+Gruppe anschließen. Meist haben diese aber recht schnell Heimweh und werden 
+den Spieler nach der Expedition wieder verlassen, um in ihr Dorf 
+zurückzukehren. Mit etwas Glück überreden die Würfel den neuen Begleiter 
+aber mitzukommen, um für weitere Reisen zur Verfügung zu stehen.
+
+<div class="p"><!----></div>
+Einfacher zu handhaben sind da Tiere wie Esel oder Büffel. Diese bekommen 
+kein Heimweh und können aufgebessert werden, um mehr Gegenstände zu tragen. 
+Bei Kämpfen stehen sie jedoch nicht zur Seite, sollten diese stattfinden. 
+Dagegen können Hunde, sollten sich diese in der Gruppe befinden, kräftig 
+austeilen.
+
+<div class="p"><!----></div>
+
+<h2>Das Kampfsystem</h2>
+
+Kämpfe werden in klassischer Pen-&amp;-Paper-Rollenspiel-Manier mit Würfeln 
+ausgetragen. Daher ist auch die Wahl der Gefährten wichtig, damit man die 
+Würfel der Hauptperson dem eigenen Spielstil nach möglichst gewinnbringend 
+mit anderen Würfelarten ergänzt. So gibt es Würfel für den Angriff, für die 
+Verteidigung, zur Unterstützung und Magie. Dazu kommen noch spezielle Würfel 
+für besondere Waffen, Patronen oder Tiere. 
+<div class="p"><!----></div>
+Würfe lassen sich kombinieren, um noch stärkere Angriffe auszuführen oder um 
+sich besser zu schützen. Geht man aus einem Kampf als Sieger hervor, so 
+bekommt man meistens Felle oder Zähne der tierischen Gegner, die entweder 
+getauscht werden können oder sich in Geld oder Ruhm umwandeln lassen. Auch 
+Fleisch bekommt man ab und zu, welches von einem Koch in eine essbare Mahlzeit 
+umgewandelt werden kann. Je nach Level des Kochs bekommt man mehr geistige 
+Gesundheit zurück.
+
+<div class="p"><!----></div>
+
+Es ist auch möglich, vor Kämpfen zu fliehen. Dabei kann es passieren, dass 
+man Gegenstände oder gleich ganze Mitstreiter verliert. Es bleibt über das 
+gesamte Spiel also, nicht nur in Kämpfen, ein ständiges Abwägen der 
+gegebenen Situationen, um hoffentlich die richtige Entscheidung zu treffen. 
+Letztlich geht es nur ums Überleben, denn das ist die Voraussetzung, um die 
+nächste Reise in Angriff nehmen zu können.
+
+<div class="p"><!----></div>
+
+<h2>Auf ein Neues</h2>
+
+Bei „The Curious Expedition“ ist, wie es sich für einen Vertreter der 
+Roguelikes gehört, das Spiel zu Ende, sobald man stirbt. Das kann manchmal 
+schneller passieren als einem lieb ist. Auch wenn ein Durchgang des Spiels 
+nur etwa zwei bis drei Stunden an Zeit beansprucht, so bietet es doch 
+einiges an Wiederspielwert, zumal es den wenigsten gelingen wird, gleich 
+beim ersten Mal ans Ziel zu kommen. Es wird nicht nur bei einem Neustart 
+bleiben.
+
+<div class="p"><!----></div>
+Auch die Rollenspiel-Elemente machen den Titel sehr interessant. Neben den 
+rundenbasierten Würfelkämpfen gibt es auch Erfahrungspunkte. Entdeckt man 
+auf einer Karte drei neue Gebiete, bekommt man einen Punkt, welchen man auf 
+seine Gefährten verteilen kann, um deren Eigenschaften zu verbessern.
+
+<div class="p"><!----></div>
+Man sollte aber auch darauf achten, dass sie einem treu bleiben, damit diese 
+nicht umsonst vergeben wurden. Es kann nämlich vorkommen, dass man von 
+Begleitern der Expedition verlassen wird, wenn zu viele 
+Meinungsverschiedenheiten eintreten. Dass die Begleiter auch sterben können, ist 
+nicht nur durch die Kämpfe, sondern auch durch Krankheiten oder Verletzungen 
+ein weiteres Risiko.
+
+<div class="p"><!----></div>
+
+Vor jeder Reise bekommt man in der Regel auch einen Auftrag zugewiesen, den 
+es zu erfüllen gilt. Schafft man das, so wird man dafür belohnt. Es ist aber 
+kein Muss, den Auftrag anzunehmen, sollte dieser zu schwierig oder nicht 
+sinnvoll erscheinen. Auch die verschiedenen Charaktere bereichern das Spiel 
+auf ihre Art und verleihen jedem neuen Durchgang eine weitere Herausforderung.
+
+<div class="p"><!----></div>
+Zudem nehmen die wählbaren Figuren nicht nur durch ihre vom Spiel 
+zugewiesenen Eigenschaften, sondern auch durch ihre Persönlichkeiten 
+weiteren Einfluss auf das Geschehen. So kann es passieren, dass Lovecraft, 
+welcher bekannterweise in seinen jüngeren Jahren nicht sehr offen für andere 
+Kulturen war, einen Begleiter in einem Gespräch von seiner Sichtweise 
+überzeugt und ihn dadurch zum Rassisten macht.
+
+<div class="p"><!----></div>
+Es sind gerade diese kleinen Details, diese besonderen Eigenschaften, für 
+die sich die Entwickler ins Zeug gelegt haben, um jedem der 17 Forscher 
+einen besonderen Charme zu verleihen. Dadurch bekommt das Spiel 
+nochmal etwas mehr Würze und lässt den Spieler das eine oder 
+andere Mal aufgrund der Geschehnisse schmunzeln, auch wenn diese nicht 
+unbedingt zum Lachen sind.
+
+<div class="p"><!----></div>
+
+<h2>Abenteuer mit Wiederspielwert</h2>
+
+Die verschiedenen Persönlichkeiten, die zur Auswahl stehen, bieten alleine 
+schon genügend Variationen für viele unterschiedliche Herausforderungen. 
+Dazu kommt noch das Ressourcenmanagement und die komplett zufallsgenerierten 
+Welten, wodurch jeder Durchgang anders abläuft und es immer Neues zu 
+entdecken gibt.
+
+<div class="p"><!----></div>
+Auch kann man sich lange Zeit mit den vielen unterschiedlichen 
+Herangehensweisen auseinandersetzen und neue Ansätze ausprobieren. Oder man 
+versucht, das Spiel ganz ohne Kämpfe zu bestehen oder es zu beenden, ohne 
+Schätze zu rauben. Dadurch wird es natürlich sehr schwierig, sich die 
+nächste Expedition zu finanzieren und sich nebenbei auch noch genug Ruhm zu 
+erarbeiten, um als Sieger aus der Wette hervorzugehen.
+
+<div class="p"><!----></div>
+Kehrt man nämlich erfolgreich von einer Reise zurück, so muss man sich 
+entscheiden, welche der gefundenen Schätze man behält, um sie auf die 
+nächste Reise mitzunehmen, oder ob man sie verkauft, um mehr finanzielle 
+Mittel für die Ausrüstung der Expedition zu haben. Man kann die Fundstücke 
+aber auch an ein Museum spenden, um dafür Ruhm zu bekommen – und auf den 
+kommt es letzten Endes an, damit man das Spiel gewinnen kann.
+
+<div class="p"><!----></div>
+Die beiden letztgenannten Möglichkeiten, das Spiel ohne Kämpfe oder ohne 
+Schätze zu rauben zu beenden, sind nebenbei Voraussetzungen, um weitere 
+Charaktere freizuschalten. Wem das jetzt alles etwas zu viel auf einmal ist, 
+dem sei das offizielle Wiki zum Spiel 
+empfohlen&nbsp;<a href="http://curious-expedition.wikia.com/wiki/Curious_Expedition_Wiki">[3]</a>. 
+Allerdings steht dieses, wie auch das Spiel selbst, zum momentanen 
+Zeitpunkt nur auf englisch zur Verfügung.
+
+<div class="p"><!----></div>
+
+<h2>Sprachbarriere</h2>
+
+Sollte das Spiel erfolgreich genug sein, dass die Entwickler auch weiterhin 
+genügen Ressourcen haben, um weiter an „The Curious Expedition“ zu arbeiten, 
+so sollen gleich mehrere Übersetzungen 
+folgen&nbsp;<a href="https://steamcommunity.com/app/358130/discussions/0/620713633864893543/#c617336568065249115">[4]</a>. 
+Da die Entwickler selbst aus Deutschland kommen, sollte eine deutsche 
+ziemlich sicher sein. Auch über eine Möglichkeit, die Community einzubinden, 
+wird momentan nachgedacht.
+
+<div class="p"><!----></div>
+„The Curious Expedition“ wurde von 
+Maschinen-Mensch&nbsp;<a href="http://maschinen-mensch.com/">[5]</a> entwickelt. Dieser 
+Entwickler setzt sich momentan aus zwei ehemaligen Mitarbeitern des 
+deutschen Studios Yager zusammen, welche dort unter anderem an „Spec Ops: 
+The Line“ beteiligt waren. Maschinen-Mensch hat seinen Sitz, ebenso wie der 
+frühere Arbeitgeber, in Berlin.
+
+<div class="p"><!----></div>
+„The Curious Expedition“ ist auf Steam, GOG und im Humble Store erhältlich. 
+Den wirklich gelungenen und sehr passenden Soundtrack gibt es für 8,99 Euro 
+auf Steam. Laut der Shop-Seite handelt es sich dabei allerdings um einen DLC, 
+der das Spiel voraussetzt. Ein Glück, dass dieser auch auf Bandcamp angeboten 
+wird&nbsp;<a href="https://selbstserum.bandcamp.com/album/the-curious-expedition-original-soundtrack">[6]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Endergebnis</h2>
+
+„The Curious Expedition“ lädt zu einer abenteuerlichen Wette ein, bei der es 
+nicht nur um Ruhm und Schätze geht, sondern auch ums bloße Überleben. Untermalt 
+wird das Ganze von einem stimmungsvollen Soundtrack, der den Spieler bei seinen 
+Reisen begleitet. Die vielen verschiedenen Charaktere bieten dabei mit ihren 
+Eigenheiten und den sehr zu ihnen passenden möglichen Auswirkungen genug 
+Anreize für viele unterhaltsame Spielstunden.
+
+<div class="p"><!----></div>
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="http://curious-expedition.com/"><tt>http://curious-expedition.com/</tt></a><br />
+[2] <a href="https://games4linux.de/test-the-curious-expedition-ein-roguelike-abenteuer-fuer-forscher-und-entdecker/"><tt>https://games4linux.de/test-the-curious-expedition-ein-roguelike-abenteuer-fuer-forscher-und-entdecker/</tt></a><br />
+[3] <a href="http://curious-expedition.wikia.com/wiki/Curious_Expedition_Wiki"><tt>http://curious-expedition.wikia.com/wiki/Curious_Expedition_Wiki</tt></a><br />
+[4] <a href="https://steamcommunity.com/app/358130/discussions/0/620713633864893543/#c617336568065249115"><tt>https://steamcommunity.com/app/358130/discussions/0/620713633864893543/#c617336568065249115</tt></a><br />
+[5] <a href="http://maschinen-mensch.com/"><tt>http://maschinen-mensch.com/</tt></a><br />
+[6] <a href="https://selbstserum.bandcamp.com/album/the-curious-expedition-original-soundtrack"><tt>https://selbstserum.bandcamp.com/album/the-curious-expedition-original-soundtrack</tt></a><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>Dennis Weller</b>&nbsp;(<a href="https://games4linux.de/">Webseite</a>)
+ist seit 2004 begeisterter Linux-Anhänger, ausgebildeter Mediengestalter 
+und studiert nebenher Digitale Medien. Seine Begeisterung für Spiele startet
+mit einem Amiga 500 und einem Game Boy aus dem Jahre 1990.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Test: The Curious Expedition&amp;body=freiesMagazin 11/2016%0ATest: The Curious Expedition%0ADennis Weller%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Test: The Curious Expedition#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_rezension_scrum"><span style="color:#595959">Rezension: Scrum</span></h1>von Sujeevan Vijayakumaran
+
+<div class="p"><!----></div>
+    <b>D</b><b>as Buch „Scrum – Produkte zuverlässig und schnell entwickeln“ von Autor Boris
+Gloger&nbsp;<a href="http://www.hanser-fachbuch.de/buch/Scrum/9783446447233">[1]</a> ist ein Buch über
+das Vorgehensmodell für Projekt- und Produktmanagement Scrum und ist mittlerweile in der
+fünften Auflage erschienen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Hanser für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+Das Buch umfasst insgesamt 353 Seiten und unterteilt sich in 10 Kapitel. Zuerst
+beginnt das Buch mit den grundlegenden Informationen zu Scrum: Dort werden
+Fragen zu den Prinzipien, Geschichten und die Hintergründe erläutert. Im zweiten
+Kapitel folgt dann die Erläuterung der Rollen: Wer ist der Product Owner, was
+macht der Scrum-Master und welches sind die weiteren wichtigen Rollen und was
+machen diese?
+
+<div class="p"><!----></div>
+Die ersten beiden Kapitel geben zunächst einen Einstieg in die Thematik, die in
+den darauf folgenden Kapiteln weiter vertieft werden. So geht es im dritten
+Kapitel um das strategische Planen in Scrum, wo es um die Vision, das Product
+Backlog und das Schätzen geht. Das anschließende vierte Kapitel beschreibt
+dann, wie der Sprint mit den zuvor geplanten Tätigkeiten abläuft. Dabei geht es
+um den kompletten Sprint-Zyklus: Sprint Planning, Daily Scrum, Sprint Review und
+die Sprint-Retrospektive.
+
+<div class="p"><!----></div>
+Die übrigen Kapitel gehen weiter auf die weiteren nützlichen Themen ein. In
+Kapitel 5 geht es um das Reporting, wo verschiedene Charts vorgestellt werden,
+mitsamt Beispielen, Einsatzzwecken und Vor- und Nachteilen. Interessant ist
+auch das sechste Kapitel, wo es um die Skalierung von Scrum geht. Der Autor
+zeigt verschiedene Ansätze von Scrum Teams in verschiedenen Größen, Lagen und
+Strukturierungen und wie diese effizient arbeiten können.
+
+<div class="p"><!----></div>
+Das Buch schließt in den letzten drei der zehn Kapitel ab; im
+achten Kapitel geht es um Leadership, Emotion und Kreativität, gefolgt vom
+Management im neunten Kapitel. Das letzte Kapitel zeigt nochmals kurz an zwei
+Fallstudien, wie Firmen mit Scrum arbeiten.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+Das Buch wurde von Boris Gloger geschrieben. Laut der Autoreninformation auf
+dem Buchrücken ist er der bekannteste Scrum-Berater im deutschsprachigen Raum und
+hat namhafte Unternehmen beraten. Diese Kenntnisse und Erfahrungen, die der
+Autor in seiner täglichen Arbeit gesammelt hat, merkt man quasi auf jeder Seite
+des Buches.
+
+<div class="p"><!----></div>
+Der Autor beschreibt viele Dinge in seinem Buch äußerst ausführlich und sehr gut
+nachvollziehbar. Die Erläuterungen werden durch den Einsatz von Einschüben
+aufgelockert. In diesen Einschüben werden häufig Personen und Konversationen
+nachgespielt, welche die eine oder andere zuvor erklärte Eigenschaft von Scrum
+verdeutlichen soll. Diese Konversationen werden durch fiktive Personen in ihren
+Rollen – sei es mit oder ohne Scrum – dargestellt. Auch wenn diese eigentlich
+fiktiv sind, bilden sie wohl doch sehr häufig die Wirklichkeit ab. Die Beispiele
+dürfte wohl fast jeder Software-Entwickler nachvollziehen können, insbesondere
+wenn es um Funktionen und Hierarchien in Firmen, Geld, Strukturierung und die
+Planung von Projekten geht. Der Autor stellt im Vorwort klar, dass er
+unzufrieden ist, wie unproduktiv viele Firmen und Projekte arbeiten und möchte
+dies ändern. Und diese zahlreichen unproduktiven und ineffektiven Arbeitsweisen
+macht er in seinem Buch sehr gut deutlich.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+Die jahrelange Erfahrung des Autors in diesem Business spiegelt sich sehr stark
+im Buch wieder. An vielen Stellen werden Fehler und Verbesserungsmöglichkeiten
+genau dann aufgezeigt, wenn man sich dies als Leser selbst
+
+fragt. Viele Edge-Cases – vor
+allem in den vorhandenen Strukturen von Firmen – werden abgedeckt. 
+
+<div class="p"><!----></div>
+Die zahlreichen
+Einschübe mit den fiktiven Gesprächen bilden die zuvor beschriebenen Probleme
+sehr gut ab und es bleiben generell wenige Fragen offen. Vor allem die
+Projekt-Beispiele machen das Buch nicht trocken und langweilig, sondern regen
+auch zum Nachdenken an.
+
+<div class="p"><!----></div>
+Das Buch ist mit einem Preis von knapp 40€ wahrlich nicht billig, dürfte aber
+für viele Teams, die zu Scrum wechseln wollen, eine gute Investition sein, um das
+tägliche Arbeiten effektiver, zufriedener und produktiver zu gestalten – und das
+wohl für jeden Teilnehmer im Scrum-Prozess.
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="2" align="center"><div class="normalsize"><b>Buchinformationen</b></div></td></tr>
+<tr><td><b>Titel</b> </td><td>Scrum – Produkte zuverlässig und schnell entwickeln&nbsp;<a href="http://www.hanser-fachbuch.de/buch/Scrum/9783446447233">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Boris Gloger </td></tr>
+<tr><td><b>Verlag</b> </td><td>Hanser, 2016 </td></tr>
+<tr><td><b>Umfang</b> </td><td>353 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3446447233 </td></tr>
+<tr><td><b>Preis</b> </td><td>39,99 € (Buch), 31,99 € (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <span style="color:#595959"><span class="large">Links</span></span><br />
+[1] <a href="http://www.hanser-fachbuch.de/buch/Scrum/9783446447233"><tt>http://www.hanser-fachbuch.de/buch/Scrum/9783446447233</tt></a><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="1" align="center"><div class="normalsize"><b>Autoreninformation</b></div></td></tr>
+<tr><td align="left"><b>Sujeevan Vijayakumaran</b>&nbsp;(<a href="http://www.svij.org/">Webseite</a>)
+arbeitet neben dem Studium als Software-Entwickler
+in einem Unternehmen, in dem Scrum eingesetzt wird.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Scrum&amp;body=freiesMagazin 11/2016%0ARezension: Scrum%0ASujeevan Vijayakumaran%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2016-11%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/486?edit[subject]=Rezension: Scrum#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_veranstaltungen"><span style="color:#595959">Veranstaltungskalender</span></h1>
+
+<div class="p"><!----></div>
+        
+<table border="1" class="tabular">
+<tr><td colspan="5" align="center"><div class="normalsize"><b>Messen</b></div></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+Ubucon Europe </td><td>Essen </td><td align="left">18.11.–20.11.2016 </td><td>– </td><td align="left"><a href="http://ubucon.eu/"><tt>http://ubucon.eu/</tt></a> </td></tr>
+<tr><td align="left">BSides </td><td>Wien </td><td align="left">22.11.2016 </td><td>frei </td><td align="left"><a href="http://bsidesvienna.at/"><tt>http://bsidesvienna.at/</tt></a> </td></tr>
+<tr><td align="left">LinuxDay </td><td>Dornbirn </td><td align="left">26.11.2016 </td><td>frei </td><td align="left"><a href="http://linuxday.at/"><tt>http://linuxday.at/</tt></a> </td></tr>
+<tr><td align="left">Chaos Communication Congress </td><td>Hamburg </td><td align="left">27.12.–30.12.2016 </td><td>100 EUR </td><td align="left"><a href="https://events.ccc.de/congress/2016"><tt>https://events.ccc.de/congress/2016</tt></a> </td></tr>
+<tr><td align="left">Global Game Jam </td><td>Weltweit </td><td align="left">20.01.–22.01.2017 </td><td>frei </td><td align="left"><a href="http://globalgamejam.org/"><tt>http://globalgamejam.org/</tt></a> </td></tr>
+<tr><td align="left">FOSDEM </td><td>Brüssel </td><td align="left">04.02.–05.02.2017 </td><td>– </td><td align="left"><a href="https://fosdem.org/"><tt>https://fosdem.org/</tt></a> </td></tr>
+<tr><td align="left">Chemnitzer Linux-Tage </td><td>Chemnitz </td><td align="left">11.03.–12.03.2017 </td><td>– </td><td align="left"><a href="http://chemnitzer.linux-tage.de/"><tt>http://chemnitzer.linux-tage.de/</tt></a> </td></tr>
+<tr><td align="left">Easterhegg </td><td>Frankfurt/M. </td><td align="left">14.04.–17.04.2017 </td><td>– </td><td align="left"><a href="https://easterhegg.eu/"><tt>https://easterhegg.eu/</tt></a> </td></tr>
+</table>
+
+    <span class="small">(Alle Angaben ohne Gewähr!)</span>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2016-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_vorschau"><span style="color:#595959">Vorschau</span></h1>
+
+<div class="p"><!----></div>
+    <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> erscheint am ersten Sonntag eines Monats. Die Dezember-Ausgabe
+    wird voraussichtlich am 4. Dezember u.&nbsp;a. mit folgenden Themen veröffentlicht:
+    
+<ul>
+<li> Automatisierung mit Jenkins 2.0
+<div class="p"><!----></div>
+</li>
+
+<li> Gaming-Maus im Linux Test: Roccat Kova 2016
+<div class="p"><!----></div>
+</li>
+
+<li> Rezension: NODE.js - Professionell hochperformante Software entwickeln
+    
+<div class="p"><!----></div>
+</li>
+</ul>
+    Es kann leider vorkommen, dass wir aus internen Gründen angekündigte
+    Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_konventionen"><span style="color:#595959">Konventionen</span></h1>
+
+<div class="p"><!----></div>
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table class="tabular">
+<tr><td><b><tt>$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt>#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                         hier auch einfach in einer normalen Shell ein
+                         <b><tt>sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt>~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                        <b><tt>/home/BENUTZERNAME</tt></b> </td></tr></table>
+        <a href="freiesMagazin-2016-11-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+<h1 id="fm_16_11_impressum"><span style="color:#595959">Impressum <span class="large">ISSN 1867-7991</span></span></h1>
+
+    <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 6. November 2016<br />
+
+<div class="p"><!----></div>
+    
+<table class="tabular">
+<tr><td align="left"><div class="normalsize"><b>Kontakt</b></div></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2016-11-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<div class="normalsize"><b>Autoren dieser Ausgabe</b></div></td></tr>
+<tr><td align="left">Mirko Lindner </td><td align="left"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_keeweb">KeeWeb: Passwörter sicher speichern</a> </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_kernel">Der Oktober im Kernelrückblick</a> </td></tr>
+<tr><td align="left">Jakob Moser </td><td align="left"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_not_your_story">Spieltipp: Don't take it personally, babe, it just ain't your story</a> </td></tr>
+<tr><td align="left">Holger Reibold </td><td align="left"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_scribus">Scribus in der Praxis</a> </td></tr>
+<tr><td align="left">David Schroff </td><td align="left"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_duplicity">Verschlüsselte Server-Backups mit Duply und Duplicity</a>, <a href="freiesMagazin-2016-11-bilder.html#fm_16_11_life_is_strange">Test: Life is Strange – Emotionale Zeitreise</a> </td></tr>
+<tr><td align="left">Sujeevan Vijayakumaran </td><td align="left"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_rezension_scrum">Rezension: Scrum</a> </td></tr>
+<tr><td align="left">Dennis Weller </td><td align="left"><a href="freiesMagazin-2016-11-bilder.html#fm_16_11_the_curious_expedition">Test: The Curious Expedition – ein Roguelike-Abenteuer für Forscher und Entdecker</a> </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<div class="normalsize"><b>Redaktion</b></div></td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+<tr><td align="left">Kai Welke </td><td align="left"></td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<div class="normalsize"><b>Satz und Layout</b></div></td></tr>
+<tr><td align="left">Benedict Leskovar </td><td align="left">Kai Welke </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<div class="normalsize"><b>Korrektur</b></div></td></tr>
+<tr><td align="left">Frank Brungräber </td><td align="left">Vicki Ebeling </td></tr>
+<tr><td align="left">Stefan Fangmeier </td><td align="left">Mathias Menzer </td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Karsten Schuldt </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<div class="normalsize"><b>Veranstaltungen</b></div></td></tr>
+<tr><td align="left">Ronny Fischer </td><td align="left"></td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<div class="normalsize"><b>Logo-Design</b></div></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+    </td></tr></table>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. 
+    Die Kommentar- und Empfehlen-Icons wurden von Maren Hachmann erstellt
+    und unterliegen ebenfalls der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>.
+    <b><span style="color:#595959">freies</span></b><span style="color:#FF630A">Magazin</span> unterliegt als Gesamtwerk
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    
+<small>File translated from
+T<sub><span class="small">E</span></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><span class="small">T</span></sub>H</a>,
+version 4.08.<br />On  6 Nov 2016, 12:32.</small>
+</div></div>
+</body></html>

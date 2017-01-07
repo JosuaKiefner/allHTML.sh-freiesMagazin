@@ -1,0 +1,16 @@
+var doStem = true;
+//List of indexed files.
+fl = new Array();
+fl["0"]= "index.html";
+fl["1"]= "3.html";
+fl["2"]= "searchresult.html";
+fl["3"]= "2.html";
+fl["4"]= "1.html";
+fl["5"]= "verwandlung/Die_Verwandlung.html";
+fil = new Array();
+fil["0"]= "index.html@@@Der Goldene Topf@@@null";
+fil["1"]= "3.html@@@DRITTE VIGILIE@@@Nachrichten von der Familie des Archivarius Lindhorst. Veronikas blaue Augen. Der Registrator Heerbrand...";
+fil["2"]= "searchresult.html@@@Suchergebnis@@@Suchergebnis...";
+fil["3"]= "2.html@@@ZWEITE VIGILIE@@@Wie der Student Anselmus für betrunken und wahnwitzig gehalten wurde. — Die Fahrt über die Elbe. — Die Bravourarie des Kapellmeisters Gra...";
+fil["4"]= "1.html@@@ERSTE VIGILIE@@@Die Unglücksfälle des Studenten Anselmus. Des Konrektors Paulmann Sanitätsknaster und die goldgrünen Schlangen...";
+fil["5"]= "verwandlung/Die_Verwandlung.html@@@Die Verwandlung@@@Die Verwandlung...";

@@ -1,0 +1,2324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                                                
+<title>freiesMagazin 02/2013</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Der Januar im Kernelrückblick | Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil I | Bilder verkleinern und versenden | awesome – Ein Tiling-Fenstermanager | OpenPhoenux GTA04 Smartphone | Rezension: Bildbearbeitung mit Gimp 2.8 | Rezension: „Node – Up and Running“ und „Node.js & Co.“ | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 3.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 02/2013" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2013-02-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2013-02.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>Februar 2013</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Topthemen dieser Ausgabe</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_awesome">awesome – Ein Tiling-Fenstermanager</a></font> <br />
+    Neben den großen Desktopumgebungen wie GNOME oder KDE kann man auch leichtgewichtigere Fenstermanager wie Xfce oder LXDE verwenden. Eine besondere Klasse davon sind die so genannten Tiling-Fenstermanager. Diese ordnen alle Fenster automatisch so an, dass sie sich nicht überschneiden. Es ist also nur noch selten nötig, ein Fenster zu verschieben oder seine Größe zu ändern. awesome ist einer dieser Tiling-Fenstermanager. (<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_awesome">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_openphoenux">OpenPhoenux GTA04: Offenes Smartphone feiert Erfolge</a></font> <br />
+    Das „OpenPhoenux GTA04“-Projekt, welches der Asche der Openmoko-Community entsprang und von Golden Delicious Computers tatkräftig unterstützt wird, wurde ins Leben gerufen, um auf Basis moderner ARM-Hardware ein Smartphone zu  entwickeln, das den Prinzipien freier Hard- und Software entspricht. Das Projekt hat den großen Meilenstein „Serie 1 produzieren und ausliefern“ erfolgreich abgeschlossen und bietet nun Interessenten die Möglichkeit, ein Gerät aus „Serie 2“ zu erwerben. (<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_openphoenux">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+
+
+<a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                  
+
+                        
+<h1><font color="#595959"><a id="fm_index" name="fm_index">Inhalt</a></font></h1>
+
+<b>Anleitungen</b><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_kernel">Der Januar im Kernelrückblick</a><br />
+<br />
+<b>Anleitungen</b><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_ffox_addonsdk1">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil I</a><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_resize">Bilder verkleinern und versenden</a><br />
+<br />
+<b>Software</b><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_awesome">awesome – Ein Tiling-Fenstermanager</a><br />
+<br />
+<b>Hardware</b><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_openphoenux">OpenPhoenux GTA04 Smartphone</a><br />
+<br />
+<b>Community</b><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_rezension_gimp">Rezension: Bildbearbeitung mit Gimp 2.8</a><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_rezension_node_js">Rezension: „Node – Up and Running“ und „Node.js&nbsp;&amp;&nbsp;Co.“</a><br />
+<br />
+<b>Magazin</b><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_editorial">Editorial</a><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_leserbriefe">Leserbriefe</a><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_veranstaltungen">Veranstaltungen</a><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_vorschau">Vorschau</a><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_konventionen">Konventionen</a><br />
+<a href="freiesMagazin-2013-02-bilder.html#fm_13_02_impressum">Impressum</a><br />
+
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_02_editorial" name="fm_13_02_editorial">Editorial</a></font></h1>
+    
+
+
+
+<h2>Ende des sechsten Programmierwettbewerbs</h2>
+
+
+Der sechste <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Programmierwettbewerb&nbsp;<a href="http://www.freiesmagazin.de/sechster_programmierwettbewerb">[1]</a>
+ist zu Ende und war, was die Teilnehmeranzahl angeht, wieder ein großer
+Erfolg. 20 Teilnehmer haben einen Bot eingereicht und dabei wieder in den
+verschiedensten Sprachen (C++, Java, Python, Scala, Mono, Ruby) ihre
+Ideen umgesetzt.
+
+<div class="p"><!----></div>
+Dabei haben sogar zwei Schulklassen des Gymnasiums
+Egg&nbsp;<a href="http://www.borg.at/">[2]</a> teilgenommen. Unter Lehrer Dominik Bartenstein 
+wurden in mehreren Gruppen Bots geschrieben und die zwei besten nahmen am 
+Wettbewerb teil. Es freut uns, dass der Wettbewerb sogar als Schulstoff 
+benutzt werden kann, um Schüler und Schülerinnen an Linux und Freie Software 
+heranzuführen.
+
+<div class="p"><!----></div>
+Die Auswertung der Bots läuft derzeit, sodass diese auf allen Inselfeldern 
+eintausend Mal ihr Können zeigen sollen. Die durchschnittlichen 
+Rundenzahlen pro Inselfeld werden addiert und der Bot mit den meisten Runden 
+gewinnt.
+
+<div class="p"><!----></div>
+
+<h2>Statistiken des Jahres 2012</h2>
+
+
+Das Jahr 2012 ist vorbei und es soll wieder eine kleine Statistik gezeigt 
+werden. Insgesamt wurden 116 Artikel in den 12 <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Ausgaben geschrieben, was fast 
+10 Artikel pro Ausgabe macht. Die 116 Artikel wurden von 31 Autoren 
+verfasst, wovon nur eine Handvoll mit <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> direkt zu tun hat. Dies zeigt, 
+dass externe Autoren und (Einmal-)Beiträge sehr wichtig für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> sind und 
+den Inhalt des Magazins sehr stark ausmachen. Die Gesamtseitenanzahl beläuft 
+sich auf 575 Seiten, was also ungefähr 48 pro Ausgabe sind.
+
+<div class="p"><!----></div>
+Die Downloadzahlen entwickelten sich moderat und lagen zwischen 6000 und 7000
+Downloads für die jeweils neueste PDF-Ausgabe. Im November gab es einen starken
+Ausreißer nach oben, der aber eher auf falsche Messmethoden zurückzuführen ist.
+Die Downloadzahlen für die HTML- und EPUB-Versionen liegen mit 3000 bis 2000
+stark darunter, werden sich in diesem Jahr aber vermutlich der PDF-Ausgabe
+weiter nähern.
+
+<div class="p"><!----></div>
+    <img src="freiesMagazin-2013-02-bilder-Dateien/statistik-downloads-2012.png" alt="statistik-downloads-2012.png" style="max-width:100%" /><br /><em>Downloadzahlen <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 2012.</em><br />
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß beim Lesen der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/sechster_programmierwettbewerb"><tt class="big">http://www.freiesmagazin.de/sechster_programmierwettbewerb</tt></a><br />
+[2] <a href="http://www.borg.at/"><tt class="big">http://www.borg.at/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+<h1><font color="#595959"><a id="fm_13_02_kernel" name="fm_13_02_kernel">Der Januar im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+        <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der
+fortwährend weiterentwickelt wird. Welche Geräte in einem halben
+Jahr unterstützt werden und welche Funktionen neu hinzukommen, erfährt
+man, wenn man den aktuellen Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Linux 3.8</h2>
+
+
+Die dritte Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2013/1/9/791">[1]</a> stellte so etwas wie die Rückkehr zur normalen Entwicklung nach den Weihnachtstagen und dem Jahreswechsel dar. Die Zahl der Änderungen spiegelte den Umfang der Arbeiten auf dem Weg zu einer möglichst stabilen Final-Version wider. 
+
+<div class="p"><!----></div>
+So finden sich Verbesserungen und Korrekturen an den Radeon-Treibern ebenso wie Aktualisierungen an der <b><tt class="big">MAINTAINERS</tt></b>-Datei, die die für die jeweiligen Kernel-Zweige zuständigen Betreuer aufführt, und Aufräumarbeiten im Umfeld der Hotplug-Geräte. Weiter stechen noch Änderungen an den Treibern für das System-on-Chip-System Exynos&nbsp;<a href="https://en.wikipedia.org/wiki/Exynos_%28system_on_chip%29">[2]</a> hervor, dessen neueste Generation Samsung gerade erst auf der CES&amp;nbsp;<a href="http://www.cesweb.org/">[3]</a> der Öffentlichkeit präsentiert hatte.
+
+<div class="p"><!----></div>
+Linux 3.8-rc4&nbsp;<a href="https://lkml.org/lkml/2013/1/17/634">[4]</a> konnte unter anderem Korrekturen und Verbesserungen am WLAN-Stack mac80211 und den freien Grafik-Treiber Nouveau und Radeon vorweisen. Besonders interessant dürfte hier jedoch ein neu aufgenommener WLAN-Treiber für eine Chipsatz des Chipdesigners Wilocity sein, der als PCI-Gerät Wireless PCIe (wPCIe) zur Verfügung stellen kann. wPCIe nutzt eine 60-GHz-Funktechnik – im Gegensatz zu den herkömmlichen WLAN-Frequenzen im 2,4-GHz- bzw. 5-GHz-Bereich – um Geräte an das System anzubinden. Die 60-GHz-Technik soll dabei Datenübertragungsraten im Gigabit-Bereich ermöglichen.
+
+<div class="p"><!----></div>
+Die fünfte Entwicklerversion musste leider ohne die sonst übliche Freigabe-E-Mail auskommen, sie wurde lediglich auf Google Plus angekündigt&nbsp;<a href="https://plus.google.com/+Linux/posts/M6654LE9set">[5]</a>. Dafür entspann sich in den Kommentaren ein kurzer Austausch darüber, ob der Spiele-Dienst Steam&amp;nbsp;<a href="https://de.wikipedia.org/wiki/Steam">[6]</a> mit einem aktuellen Entwickler-Kernel funktioniere und wo die Probleme zu suchen seien. 
+
+<div class="p"><!----></div>
+3.8-rc5 hat einige Korrekturen für btrfs mit an Bord, ebenso wie für das neue Dateisystem f2fs und den Virtualisierer Xen. Nur eine kleine Änderung an der <b><tt class="big">MAINTAINERS</tt></b>-Datei&nbsp;<a href="https://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=6d26b3a187467299851e758f60121a2a71a7962d">[7]</a> weist darauf hin, doch über sein Google-Plus-Konto&amp;nbsp;<a href="https://plus.google.com/111104121194250082892/posts/KW3TdRYwjr9">[8]</a> gab der langjährige Entwickler Alan Cox&amp;nbsp;<a href="https://de.wikipedia.org/wiki/Alan_Cox">[9]</a> bekannt, dass er sich einige Zeit aus familiären Gründen von der Linux-Welt und seinem derzeitigen Arbeitgeber Intel zurückziehen werde. 
+
+<div class="p"><!----></div>
+Cox gilt als einer der ersten Linux-Entwickler. 2003 pausierte er schon einmal, um seinen MBA&nbsp;<a href="https://de.wikipedia.org/wiki/Master_of_Business_Administration">[10]</a> abzuschließen. Seine Verantwortlichkeiten in Bezug auf den Linux-Kernel wird für die Dauer seiner Abwesenheit Greg Kroah-Hartman übernehmen&amp;nbsp;<a href="http://www.pro-linux.de/news/1/19374/alan-cox-zieht-sich-zurueck.html">[11]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Die Absicherung von Kexec</h2>
+
+
+Im Zuge der Absicherung des Bootvorgangs durch UEFI Secure Boot und signierte Bootloader wird nun Kexec beleuchtet&nbsp;<a href="http://www.golem.de/news/secure-boot-signierte-elf-dateien-sollen-linux-absichern-1301-96971.html">[12]</a>. Dabei handelt es sich um eine Funktion des Linux-Kernels, mit dem ein weiterer Kernel unter Umgehung eines Bootloaders direkt gestartet werden kann. 
+
+<div class="p"><!----></div>
+Dies lässt sich auch zum Ausführen eines nicht gesicherten Systems nutzen, sodass hier Handlungsbedarf besteht. Ein Ansatz wäre, nur noch signierte ELF-Dateien&nbsp;<a href="https://de.wikipedia.org/wiki/Executable_and_Linking_Format">[13]</a>, Binärdateien die direkt ausführbaren Code enthalten, durch Kexec starten zu lassen. 
+
+<div class="p"><!----></div>
+Noch handelt es sich dabei um einen Vorschlag, der allerdings auf einige Probleme nicht eingeht, die die Einschränkung auf signierte ELF-Dateien mit sich bringen, doch diese Gedankenspiele sind ein weiterer Schritt auf dem Weg zum zunehmend geschlossenen Linux-Desktop.
+
+<div class="p"><!----></div>
+
+<h2>Neuer LTSI-Kernel</h2>
+
+
+Die Long-Term Support Initiative (LTSI)&nbsp;<a href="http://ltsi.linuxfoundation.org/">[14]</a> ist ein Projekt der Linux Foundation, das Linux-Kernel-Versionen bereitstellen soll, die über lange Zeit gepflegt werden. Dies soll insbesondere der Industrie helfen, Linux als Plattform für zum Beispiel Unterhaltungsgeräte mit einem langen Lebenszyklus zu nutzen, ohne auf die Möglichkeit weiterer Aktualisierungen verzichten zu müssen. So werden Korrekturen von Fehlern und Sicherheitslücken aus neueren Kernel-Versionen zurückportiert und in den LTSI-Kerneln zur Verfügung gestellt. Stand bislang nur Linux 3.0 als LTSI-Release zur Verfügung, wurde nun mit Linux 3.4 ein weiterer, etwas aktuellerer und trotzdem gut abgehangener Kernel zur Verfügung gestellt&amp;nbsp;<a href="http://www.pro-linux.de/news/1/19365/ltsi-kernel-34-erschienen.html">[15]</a>.
+
+<div class="p"><!----></div>
+
+
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://lkml.org/lkml/2013/1/9/791"><tt class="big">https://lkml.org/lkml/2013/1/9/791</tt></a><br />
+[2] <a href="https://en.wikipedia.org/wiki/Exynos_%28system_on_chip%29"><tt class="big">https://en.wikipedia.org/wiki/Exynos_(system_on_chip)</tt></a><br />
+[3] <a href="http://www.cesweb.org/"><tt class="big">http://www.cesweb.org/</tt></a><br />
+[4] <a href="https://lkml.org/lkml/2013/1/17/634"><tt class="big">https://lkml.org/lkml/2013/1/17/634</tt></a><br />
+[5] <a href="https://plus.google.com/+Linux/posts/M6654LE9set"><tt class="big">https://plus.google.com/+Linux/posts/M6654LE9set</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Steam"><tt class="big">https://de.wikipedia.org/wiki/Steam</tt></a><br />
+[7] <a href="https://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=6d26b3a187467299851e758f60121a2a71a7962d"><tt class="big">https://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commitdiff;h=6d26b3a187467299851e758f60121a2a71a7962d</tt></a><br />
+[8] <a href="https://plus.google.com/111104121194250082892/posts/KW3TdRYwjr9"><tt class="big">https://plus.google.com/111104121194250082892/posts/KW3TdRYwjr9</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/Alan_Cox"><tt class="big">https://de.wikipedia.org/wiki/Alan_Cox</tt></a><br />
+[10] <a href="https://de.wikipedia.org/wiki/Master_of_Business_Administration"><tt class="big">https://de.wikipedia.org/wiki/Master_of_Business_Administration</tt></a><br />
+[11] <a href="http://www.pro-linux.de/news/1/19374/alan-cox-zieht-sich-zurueck.html"><tt class="big">http://www.pro-linux.de/news/1/19374/alan-cox-zieht-sich-zurueck.html</tt></a><br />
+[12] <a href="http://www.golem.de/news/secure-boot-signierte-elf-dateien-sollen-linux-absichern-1301-96971.html"><tt class="big">http://www.golem.de/news/secure-boot-signierte-elf-dateien-sollen-linux-absichern-1301-96971.html</tt></a><br />
+[13] <a href="https://de.wikipedia.org/wiki/Executable_and_Linking_Format"><tt class="big">https://de.wikipedia.org/wiki/Executable_and_Linking_Format</tt></a><br />
+[14] <a href="http://ltsi.linuxfoundation.org/"><tt class="big">http://ltsi.linuxfoundation.org/</tt></a><br />
+[15] <a href="http://www.pro-linux.de/news/1/19365/ltsi-kernel-34-erschienen.html"><tt class="big">http://www.pro-linux.de/news/1/19365/ltsi-kernel-34-erschienen.html</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+wirft gerne einen Blick auf die Kernel-Entwicklung, um mehr über die
+Funktion von Linux zu erfahren
+und um seine Mitmenschen mit seltsamen
+Begriffen und unverständlichen Abkürzungen
+verwirren zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=Januar im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                
+
+
+<h1><font color="#595959"><a id="fm_13_02_ffox_addonsdk1" name="fm_13_02_ffox_addonsdk1">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil I: Einführung</a></font></h1>von Markus Brenneis
+
+<div class="p"><!----></div>
+        <b>D</b><b>er Firefox-Browser ist nicht zuletzt deshalb bei vielen beliebt, weil sein 
+Funktionsumfang einfach mit sogenannten 
+Erweiterungen&nbsp;<a href="https://support.mozilla.org/de/kb/Erweiterungen%20in%20Firefox%20verwenden">[1]</a> 
+vergrößert werden kann. Wie man selbst Erweiterungen für Firefox 
+erstellen kann, wird in dieser Artikelreihe erklärt.</b>
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Wer sofort loslegen möchte, kann den ersten Abschnitt überspringen.
+
+<div class="p"><!----></div>
+
+<h2>Zur Geschichte der Add-ons</h2>
+
+
+Add-ons&nbsp;<a href="https://developer.mozilla.org/docs/Addons">[2]</a> fügen neue Funktionen 
+zu Mozilla-Anwendungen wie Firefox und Thunderbird hinzu. Zu den Add-ons 
+gehören Themes, die das Aussehen der Anwendung verändern, Plug-ins wie Flash 
+und Java, Suchmaschinen und die Erweiterungen (engl. Extensions).
+
+<div class="p"><!----></div>
+Vor einigen Jahren war es noch so, dass die Erweiterungen mit Hilfe von 
+JavaScript&nbsp;<a href="https://de.wikipedia.org/wiki/JavaScript">[3]</a>, 
+CSS&nbsp;<a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets">[4]</a> und 
+XUL&nbsp;<a href="https://de.wikipedia.org/wiki/XUL">[5]</a>, einer XML-basierten 
+Beschreibungssprache, in der die Benutzeroberfläche von Firefox geschrieben 
+ist, erstellt wurden. Dies hatte den Vorteil, dass den Entwicklern keine 
+Grenzen bei der Entwicklung gesetzt waren und sehr komplexe Erweiterungen 
+entstehen konnten. Es hat aber den Nachteil, dass ein Neustart des Browsers 
+erforderlich ist, um die Erweiterung nutzen zu können. Außerdem ist der 
+Einstieg in die Entwicklung nicht sehr einfach möglich, da die 
+Mozilla-eigene Auszeichnungssprache XUL beherrscht werden muss.
+
+<div class="p"><!----></div>
+                    Um die Entwicklung der Erweiterungen zu Vereinfachen und dabei gleich den 
+Neustart-Zwang abzuschaffen, hat Mozilla 2011 das 
+Jetpack-Projekt&nbsp;<a href="https://de.wikipedia.org/wiki/Jetpack_%28Firefox-Projekt%29">[6]</a> 
+ins Leben gerufen. Ergebnis des Projekts sind der Add-on-Builder und das 
+Add-on-SDK&nbsp;<a href="https://addons.mozilla.org/de/developers/builder">[7]</a>, die es 
+erlauben, Erweiterungen unter Benutzung der Webtechnologien JavaScript, CSS 
+und HTML&nbsp;<a href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language">[8]</a> zu 
+schreiben. Im selben Jahr wurde auch das 
+Bootstrapping&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Extensions/Bootstrapped_extensions">[9]</a>
+eingeführt, das es auch klassischen Erweiterungen 
+ermöglicht, ohne Neustart installiert zu werden.
+
+<div class="p"><!----></div>
+Der Add-on-Builder ist eine Entwicklungsumgebung, die direkt in Firefox
+ausgeführt wird. Der Quellcode wird bei Mozilla gespeichert.
+Zur Nutzung ist 
+ein Benutzerkonto erforderlich und natürlich auch eine Internetverbindung. Das
+Add-on-SDK (Software Development Kit, auf Deutsch etwa „Werkzeugsammlung zur 
+Softwareentwicklung“) kann auch ohne Internetverbindung benutzt werden, der 
+Quellcode ist lokal gespeichert und man kann jeden beliebigen Texteditor zum 
+Schreiben des Quelltextes verwenden.
+
+
+<div class="p"><!----></div>
+    In dieser Artikelreihe wird das Add-on-SDK verwendet. Wer am Add-on-Builder 
+interessiert ist, findet im How-To von Sören 
+Hentzschel&nbsp;<a href="http://www.soeren-hentzschel.at/mozilla/firefox/2011/09/17/how-to-simple-firefox-erweiterung-in-wenigen-minuten-erstellen-dank-add-on-sdk/">[10]</a> 
+ausführliche Informationen.
+
+<div class="p"><!----></div>
+
+<h2>Einrichten des Add-on-SDK</h2>
+
+
+Um das Add-on-SDK nutzen zu können, müssen (selbstverständlich) Firefox und 
+Python&nbsp;<a href="https://de.wikipedia.org/wiki/Python_%28Programmiersprache%29">[11]</a> 
+installiert sein. Letzteres gehört bei den meisten Linux-Distributionen zum 
+Standardinstallationsumfang, ansonsten kann es über die Paketverwaltung 
+nachinstalliert werden. Das SDK kann von der 
+Add-on-SDK-Seite&nbsp;<a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/tutorials/installation.html">[12]</a>
+über den Link
+„<em>tarball</em>“&nbsp;<a href="https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz">[13]</a>
+heruntergeladen werden.
+
+<div class="p"><!----></div>
+Die heruntergeladene Datei kann an einem beliebigen Ort entpackt werden, 
+entweder in einem Dateimanager über Rechtsklick und
+„<em>Archiv hierher auspacken</em>“ oder in einer Konsole über
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar -xf addon-sdk.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+Anschließend wechselt man in einer Bash (die Shell ist wichtig, da das
+„einsourcen“ sonst nicht funktioniert) mit dem <b><tt class="big">cd</tt></b>-Befehl in das
+Verzeichnis mit den entpackten Daten und führt
+
+<div class="p"><!----></div>
+
+<div class="command">$ source bin/activate</div>
+
+<div class="p"><!----></div>
+
+
+aus. Wenn alles funktioniert hat, wird man von dem SDK begrüßt und ein 
+<b><tt class="big">(addon-sdk-1.12)</tt></b> vor dem Benutzernamen zeigt an, dass das SDK geladen ist 
+und verwendet werden kann.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/ffox_addonsdk_installation.png" alt="ffox_addonsdk_installation.png" style="max-width:100%" /><br /><em>Das SDK wurde entpackt, installiert und eine leere Erweiterung wurde erstellt.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Erstellen und Ausführen der ersten Erweiterung</h2>
+
+
+Nun kann es an die eigentliche Arbeit gehen. Zunächst ist es sinnvoll, einen 
+eigenen Ordner für die Erweiterung anzulegen. Dann wechselt man in der 
+Konsole in diesen Ordner und führt den Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ cfx init</div>
+
+<div class="p"><!----></div>
+
+
+aus. Dieser erstellt das Grundgerüst der Erweiterung. Mit dem Befehl
+
+<div class="p"><!----></div>
+
+<div class="command">$ cfx run</div>
+
+<div class="p"><!----></div>
+
+
+kann die Erweiterung getestet werden. Wird dieser Befehl zum ersten Mal 
+ausgeführt, wird zunächst eine ID für die Erweiterung erstellt.
+
+<div class="p"><!----></div>
+Jetzt sollte man die Datei 
+<b><tt class="big">package.json</tt></b>&nbsp;<a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/package-spec.html">[14]</a>
+bearbeiten. Diese enthält standardmäßig den Namen der Erweiterung und des 
+Autors, eine kurze Beschreibung, die Lizenz, die Versionsnummer und die 
+automatisch generierte ID. Die bearbeitete Datei könnte dann so aussehen:
+
+<div class="p"><!----></div>
+    
+
+
+<div class="listing">{<br />
+&nbsp;&nbsp;"name": "meine-erweiterung", <br />
+&nbsp;&nbsp;"license": "GPL 3.0", <br />
+&nbsp;&nbsp;"author": "Markus Brenneis", <br />
+&nbsp;&nbsp;"version": "0.1", <br />
+&nbsp;&nbsp;"fullName": "Meine Erweiterung", <br />
+&nbsp;&nbsp;"id": "jid1-RSMHU8JbD6sBDA", <br />
+&nbsp;&nbsp;"description": "Eine Beispiel-Erweiterung"<br />
+}</div>
+
+<div class="p"><!----></div>
+        
+
+Führt man
+
+<div class="p"><!----></div>
+
+<div class="command">$ cfx run</div>
+
+<div class="p"><!----></div>
+
+
+ein zweites Mal aus, öffnet sich ein Firefox-Fenster. Dabei wird nicht das 
+Standardprofil&nbsp;<a href="http://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten">[15]</a>
+von Firefox verwendet, sondern ein leeres Profil. Das hat 
+den Vorteil, dass man sich damit sein Standardprofil nicht beschädigen 
+und die Erweiterung mit den Standardeinstellungen von Firefox testen kann.
+
+<div class="p"><!----></div>
+Da noch keinerlei Funktionen implementiert wurden, sieht man von der 
+Erweiterung auf den ersten Blick nichts. Nur im Add-ons-Manager
+(„<em>Extras&nbsp;-&#62;&nbsp;Add-ons</em>“) in der Kategorie „<em>Erweiterungen</em>“ erkennt
+man, dass die Erweiterung 
+installiert ist. Das soll sich nun ändern.
+
+<div class="p"><!----></div>
+
+<h2>Ein kleines Symbol</h2>
+
+
+Der Hauptcode der Erweiterung befindet sich in der Datei <b><tt class="big">main.js</tt></b> im Ordner 
+<b><tt class="big">lib</tt></b>. Um z.&nbsp;B. ein Symbol in der 
+Add-on-Leiste&nbsp;<a href="http://support.mozilla.org/de/kb/was-ist-die-add-on-leiste">[16]</a> 
+anzuzeigen, fügt man folgenden Code in die Datei ein:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">var widgets = require("widget");<br />
+&nbsp;<br />
+var widget = widgets.Widget({<br />
+&nbsp;&nbsp;id: 'wikipedia-icon',<br />
+&nbsp;&nbsp;label: 'Wikipedia',<br />
+&nbsp;&nbsp;content: '&lt;b style="font-family:Times"&#62;W&lt;/b&#62;'<br />
+});</div>
+
+<div class="p"><!----></div>
+In der ersten Zeile wird das Modul 
+<b><tt class="big">widget</tt></b>&nbsp;<a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/widget.html">[17]</a>
+geladen, das es erlaubt, Inhalte zur Add-on-Leiste hinzuzufügen. 
+Anschließend wird ein Widget erstellt, welches die ID <b><tt class="big">wikipedia-icon</tt></b>, die 
+Beschriftung <b><tt class="big">Wikipedia</tt></b> und den Inhalt <b><tt class="big">&lt;b style="font-family:Times"&#62;W&lt;/b&#62;</tt></b> 
+hat. Wie man sieht, darf der Inhalt, der in der Add-on-Leiste erscheint, 
+HTML-Code enthalten. Die Beschriftung wird als 
+Tooltip&nbsp;<a href="https://de.wikipedia.org/wiki/Tooltip">[18]</a> verwendet.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/ffox_addonsdk_wikipedia_icon.png" alt="ffox_addonsdk_wikipedia_icon.png" style="max-width:100%" /><br /><em>Ein „W“ wird unten rechts auf der Add-on-Leiste angezeigt.</em><br />
+
+<div class="p"><!----></div>
+Testet man nun den Code mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ cfx run</div>
+
+<div class="p"><!----></div>
+
+
+erscheint unten rechts im Firefox-Fenster ein „W“.
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+
+
+Die Erweiterung kann bisher noch nichts Spektakuläres, das soll sich aber 
+noch ändern. Im nächsten Teil der Reihe soll es möglich sein, den auf einer
+Seite markierten Begriff in Wikipedia nachzuschlagen.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://support.mozilla.org/de/kb/Erweiterungen%20in%20Firefox%20verwenden"><tt class="big">https://support.mozilla.org/de/kb/Erweiterungen in Firefox verwenden</tt></a><br />
+[2] <a href="https://developer.mozilla.org/docs/Addons"><tt class="big">https://developer.mozilla.org/docs/Addons</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/JavaScript"><tt class="big">https://de.wikipedia.org/wiki/JavaScript</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Cascading_Style_Sheets"><tt class="big">https://de.wikipedia.org/wiki/Cascading_Style_Sheets</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/XUL"><tt class="big">https://de.wikipedia.org/wiki/XUL</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Jetpack_%28Firefox-Projekt%29"><tt class="big">https://de.wikipedia.org/wiki/Jetpack_(Firefox-Projekt)</tt></a><br />
+[7] <a href="https://addons.mozilla.org/de/developers/builder"><tt class="big">https://addons.mozilla.org/de/developers/builder</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"><tt class="big">https://de.wikipedia.org/wiki/Hypertext_Markup_Language</tt></a><br />
+[9] <a href="https://developer.mozilla.org/en-US/docs/Extensions/Bootstrapped_extensions"><tt class="big">https://developer.mozilla.org/en-US/docs/Extensions/Bootstrapped_extensions</tt></a><br />
+[10] <a href="http://www.soeren-hentzschel.at/mozilla/firefox/2011/09/17/how-to-simple-firefox-erweiterung-in-wenigen-minuten-erstellen-dank-add-on-sdk/"><tt class="big">http://www.soeren-hentzschel.at/mozilla/firefox/2011/09/17/how-to-simple-firefox-erweiterung-in-wenigen-minuten-erstellen-dank-add-on-sdk/</tt></a><br />
+[11] <a href="https://de.wikipedia.org/wiki/Python_%28Programmiersprache%29"><tt class="big">https://de.wikipedia.org/wiki/Python_(Programmiersprache)</tt></a><br />
+[12] <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/tutorials/installation.html"><tt class="big">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/tutorials/installation.html</tt></a><br />
+[13] <a href="https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz"><tt class="big">https://ftp.mozilla.org/pub/mozilla.org/labs/jetpack/jetpack-sdk-latest.tar.gz</tt></a><br />
+[14] <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/package-spec.html"><tt class="big">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/dev-guide/package-spec.html</tt></a><br />
+[15] <a href="http://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten"><tt class="big">http://support.mozilla.org/de/kb/benutzerprofile-mit-ihren-persoenlichen-daten</tt></a><br />
+[16] <a href="http://support.mozilla.org/de/kb/was-ist-die-add-on-leiste"><tt class="big">http://support.mozilla.org/de/kb/was-ist-die-add-on-leiste</tt></a><br />
+[17] <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/widget.html"><tt class="big">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/widget.html</tt></a><br />
+[18] <a href="https://de.wikipedia.org/wiki/Tooltip"><tt class="big">https://de.wikipedia.org/wiki/Tooltip</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Markus Brenneis</b>&nbsp;(<a href="http://gulp21.github.com/">Webseite</a>)
+hat 2007 sein erstes Firefox-Add-on geschrieben und 2012 
+beim Entwickeln der Erweiterung LanguageToolFx erstmals das Add-on-SDK 
+benutzt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=Firefox- Add-on-SDK - Teil 1#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_02_resize" name="fm_13_02_resize">Bilder verkleinern und versenden</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        <b>U</b><b>nter Windows XP gibt es eine Funktion, mit der man in der Explorer-Bilderansicht
+mehrere Bilder auswählen kann und dann links auf „<em>Per E-Mail versenden</em>“ klickt.
+Man erhält eine einfache Auswahl, wie stark man die Bilder verkleinern will.
+Die Bilder werden automatisch verkleinert und in eine E-Mail eingefügt.
+Vor kurzem sagte jemand, dies gehe unter Windows so einfach und unter Linux
+sei das so umständlich mit den Standardmitteln. Der Artikel soll zeigen, wie
+man dies (vereinfacht) auch unter Linux lösen kann.</b>
+
+<div class="p"><!----></div>
+
+<h2>Voraussetzungen</h2>
+
+
+Damit das im folgenden Text erklärte Skript funktioniert, muss 
+ImageMagick&nbsp;<a href="http://www.imagemagick.org/">[1]</a> installiert sein. Am 
+einfachsten geht dies über die Paketverwaltung mit dem Paket <b><tt class="big">imagemagick</tt></b>. 
+Das Programm wird benötigt, um die Bilder zu verkleinern.
+
+<div class="p"><!----></div>
+Die Idee zur Lösung ist einfach: Man schreibt zuerst ein Skript, welches
+die Bilder verkleinert und in eine E-Mail anhängt. Im zweiten Schritt hängt
+man dieses Skript dann in den Dateimanager der eigenen Wahl ein.
+
+<div class="p"><!----></div>
+Achtung: Nicht jeder Dateimanager kann benutzerdefinierte Skripte einhängen.
+Der Artikel zeigt dies nur beispielhaft am Dateimanager
+Thunar&nbsp;<a href="http://wiki.ubuntuusers.de/Thunar">[2]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Skript schreiben</h2>
+
+
+Zuerst wird das Skript erstellt. Hierfür speichert man die unten stehende 
+Datei unter dem Namen <b><tt class="big">resize.sh</tt></b> ab. Der Ablageort ist dabei egal, sollte 
+aber dauerhaft existieren (also nicht im Ordner <b><tt class="big">/tmp</tt></b>). Wer Thunar nutzt, 
+kann es z.&nbsp;B. einfach unter <b><tt class="big">~/.config/Thunar/</tt></b> abspeichern.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">#!/bin/bash<br />
+ALLFILES=""<br />
+<br />
+for FILE in "$@"<br />
+do<br />
+&nbsp;&nbsp;&nbsp;&nbsp;BASENAME=`basename "$FILE" | sed 's/ /_/g'`<br />
+&nbsp;&nbsp;&nbsp;&nbsp;rm -rf "/tmp/$BASENAME"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;convert -geometry 640x640 "$FILE" "/tmp/$BASENAME"<br />
+&nbsp;&nbsp;&nbsp;&nbsp;ALLFILES+="--attach /tmp/$BASENAME "<br />
+done<br />
+<br />
+xdg-email $ALLFILES</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-02-listings/resize.sh">resize.sh</a></i>
+
+<div class="p"><!----></div>
+Das Skript ist sehr einfach. In Zeile 4 wird über alle Argumente (<b><tt class="big">$@</tt></b>) 
+iteriert. Dies werden die verschiedenen Bilddateien sein.
+
+<div class="p"><!----></div>
+In Zeile 6 holt man sich den „Basename“ des Bildes. Dies ist der reine 
+Bildname mit Dateiendung oder irgendeine Pfadangabe davor. Der sed-Ausdruck 
+wandelt zusätzlich alle Leerzeichen in Unterstriche. Der Grund ist, dass der
+Befehl zum Versenden der E-Mail nicht mit Leerzeichen in Dateinamen
+zurechtkommt und diese daher vorher entfernt werden müssen.
+
+<div class="p"><!----></div>
+
+
+In Zeile 7 entfernt man ein theoretisch bereits bestehendes Bild mit 
+gleichen Namen im <b><tt class="big">/tmp</tt></b>-Verzeichnis und konvertiert dann in Zeile 8 das 
+aktuelle Bild mittels des ImageMagick-Programms <b><tt class="big">convert</tt></b> dorthin. Die Größe 
+wird hier fest mit einer Maximalbreite oder -höhe von 640 Bildpunkten 
+angegeben. Wer die Bilder größer haben möchte, kann dort z.&nbsp;B. <b><tt class="big">800x800</tt></b> 
+angeben oder die <b><tt class="big">-geometry</tt></b>-Angabe ganz weglassen, wenn das Bild in 
+Originalgröße verschickt werden soll. Aber Achtung: Bei heutigen 
+Digitalkameras haben Bilder gerne mal eine Größe von mehreren Megabyte. Der 
+E-Mail-Empfänger freut sich meist nicht so sehr über so eine große E-Mail.
+
+<div class="p"><!----></div>
+Alle Bilder werden dann in Zeile 9 in eine Liste <b><tt class="big">ALLFILES</tt></b> gesteckt. Zum
+Versenden als Anhang bekommt jedes Bild noch den Zusatz <b><tt class="big">--attach</tt></b>
+vorangestellt.
+
+<div class="p"><!----></div>
+Zeile 12 nutzt dann das freie Programm
+<b><tt class="big">xdg-open</tt></b>&nbsp;<a href="http://portland.freedesktop.org/xdg-utils-1.0/xdg-open.html">[3]</a>,
+um die Bilder in einer E-Mail zu verschicken. <b><tt class="big">xdg-open</tt></b> ist dabei
+Desktop-unabhängig und öffnet das per Standard genutzte E-Mailprogramm.
+
+<div class="p"><!----></div>
+Es ist auch möglich, dass man anstelle <b><tt class="big">xdg-open</tt></b> direkt das E-Mail-Programm
+seiner Wahl angibt, wie z.&nbsp;B. Thunderbird oder Icedove.
+    
+Deren Syntax zum
+Erstellen einer E-Mail mit Anhang ist aber anders, sodass die Liste <b><tt class="big">ALLFILES</tt></b>
+dafür angepasst werden müsste.
+
+<div class="p"><!----></div>
+Nach dem Abspeichern muss man die Datei <b><tt class="big">resize.sh</tt></b> noch ausführbar machen.
+Entweder erledigt man dies über die Eigenschaften der Datei im Dateimanager
+oder im Terminal über
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ chmod +x resize.sh</div>
+
+<div class="p"><!----></div>
+ 
+
+Man muss sich dafür natürlich zuvor mit <b><tt class="big">cd</tt></b> in den richtigen Ordner, wo
+das Skript liegt, bewegen.
+
+<div class="p"><!----></div>
+Das Skript ist damit fertig und man könnte bereits im Terminal Bilder 
+verschicken. Es ist sogar sinnvoll, dies einmal im Terminal zu testen, um zu 
+schauen, ob es Probleme mit dem Versand gibt. Die Konsole verrät hier meist 
+mehr.
+
+<div class="p"><!----></div>
+    
+
+
+<div class="command">$ resize.sh ~/Bilder/bild1.png ~/Bilder/bild2.png</div>
+
+<div class="p"><!----></div>
+ 
+
+
+<h2>Skript in Thunar einbinden</h2>
+
+
+In Thunar kann man über die „Benutzerdefinierten Aktionen“ das Kontextmenü
+des Dateimanagers leicht erweitern&nbsp;<a href="http://wiki.ubuntuusers.de/Thunar/Benutzerdefinierte_Aktionen">[4]</a>.
+Hierzu klickt man in Thunar auf „<em>Bearbeiten&nbsp;-&#62;&nbsp;Benutzerdefinierte Aktionen</em>“
+und erstellt dort über die Schaltfläche mit dem Plus eine neue Aktion mit
+folgenden Eigenschaften:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Name: Bilder verkleinern und versenden</li>
+<li> Befehl: <b><tt class="big">~/.config/Thunar/resize.sh %F</tt></b></li>
+</ul>
+
+<div class="p"><!----></div>
+
+
+Der Pfad muss natürlich auf den echten Ablageort des Skriptes angepasst
+werden. Ganz wichtig ist aber die Option <b><tt class="big">%F</tt></b> des Befehls. Dieser gibt an,
+dass alle ausgewählten Dateien im Dateimanager an das Skript <b><tt class="big">resize.sh</tt></b>
+übergeben werden. Vergisst man dies oder schreibt man den Ausdruck falsch,
+wird entweder nur das erste Bild korrekt übergeben und verschickt oder der
+Eintrag „<em>Bilder verkleinern und versenden</em>“ taucht bei einer Mehrfachauswahl
+gar nicht erst auf.
+
+<div class="p"><!----></div>
+Im Reiter „<em>Dateizuordnung</em>“ sollte man nur ein Kreuz bei „<em>Bilddateien</em>“
+setzen und sonst nirgends. Dies sorgt dafür, dass nicht aus Versehen
+Textdateien verkleinert werden sollen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/resize_thunar.png" alt="resize_thunar.png" style="max-width:100%" /><br /><em>Aktion für den Dateimanager Thunar.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Andere Dateimanager</h3>
+
+
+Den GNOME-Dateimanager Nautilus kann man ebenfalls leicht mit Skripten
+erweitern&nbsp;<a href="http://wiki.ubuntuusers.de/Nautilus/Skripte">[5]</a>.
+
+<div class="p"><!----></div>
+Auch unter KDE kann man mit Hilfe des KDE-Servicemenüs den Dateimanager
+Dolphin dazu überreden, das
+Skript einzubinden&nbsp;<a href="http://wiki.ubuntuusers.de/KDE-Servicemen%C3%BCs">[6]</a>. 
+
+<div class="p"><!----></div>
+Für andere Dateimanager sollte man am besten in der Beschreibung
+nachschauen, ob diese eigene Skripte im Kontextmenü anzeigen können.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.imagemagick.org/"><tt class="big">http://www.imagemagick.org/</tt></a><br />
+[2] <a href="http://wiki.ubuntuusers.de/Thunar"><tt class="big">http://wiki.ubuntuusers.de/Thunar</tt></a><br />
+[3] <a href="http://portland.freedesktop.org/xdg-utils-1.0/xdg-open.html"><tt class="big">http://portland.freedesktop.org/xdg-utils-1.0/xdg-open.html</tt></a><br />
+[4] <a href="http://wiki.ubuntuusers.de/Thunar/Benutzerdefinierte_Aktionen"><tt class="big">http://wiki.ubuntuusers.de/Thunar/Benutzerdefinierte_Aktionen</tt></a><br />
+[5] <a href="http://wiki.ubuntuusers.de/Nautilus/Skripte"><tt class="big">http://wiki.ubuntuusers.de/Nautilus/Skripte</tt></a><br />
+[6] <a href="http://wiki.ubuntuusers.de/KDE-Servicemen%C3%BCs"><tt class="big">http://wiki.ubuntuusers.de/KDE-Servicemenüs</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+benötigt das Skript selbst nicht, hat es aber für einen Linux-Einsteiger
+geschrieben, der die Funktionalität von Windows vermisste.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=Bilder verkleinern und versenden#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+<h1><font color="#595959"><a id="fm_13_02_awesome" name="fm_13_02_awesome">awesome – Ein Tiling-Fenstermanager</a></font></h1>von Sven Hertle
+
+<div class="p"><!----></div>
+        <b>N</b><b>eben den großen Desktopumgebungen wie GNOME oder KDE kann man auch
+leichtgewichtigere Fenstermanager wie Xfce oder LXDE verwenden. Eine besondere Klasse davon sind
+die so genannten Tiling-Fenstermanager. Diese ordnen alle Fenster automatisch so
+an, dass sie sich nicht überschneiden. Es ist also nur noch selten nötig, ein
+Fenster zu verschieben oder seine Größe zu ändern.
+<i>awesome</i>&nbsp;<a href="http://awesome.naquadah.org/">[1]</a> ist einer dieser
+Tiling-Fenstermanager.</b>
+
+<div class="p"><!----></div>
+
+
+    Zu Beginn kann dieses Konzept recht verwirrend sein, aber sobald man sich an das
+Arbeiten mit einem Tiling-Fenstermanager gewöhnt hat, ist man damit schneller
+und produktiver als mit gewöhnlichen Fenstermanagern. <i>awesome</i> wendet sich, wie
+die meisten Tiling-Fenstermanager, an Nutzer, die gerne viele
+Konfigurationsmöglichkeiten haben. Man wird von <i>awesome</i> aber nicht dazu
+gezwungen, sich ausführlich mit der Konfiguration zu beschäftigen. Auch
+Einsteigern kann man empfehlen, sich <i>awesome</i> einmal anzuschauen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/awesome-fenster.png" alt="awesome-fenster.png" style="max-width:100%" /><br /><em><i>awesome</i> mit mehreren Fenstern.</em><br />
+
+<div class="p"><!----></div>
+    Der Fenstermanager kann komplett über die Tastatur gesteuert werden, großteils
+ist aber auch die Bedienung mit der Maus möglich. Da <i>awesome</i> ein relativ neuer
+Fenstermanager ist, unterstützt er viele Freedesktop
+Standards&nbsp;<a href="http://www.freedesktop.org/">[2]</a>, z.B. das Benachrichtigungsfeld (System
+Tray) oder Popups mit Nachrichten wie man es aus GNOME oder KDE gewohnt ist.
+<i>awesome</i> kann auch sehr gut mit mehreren Bildschirmen umgehen.
+
+<div class="p"><!----></div>
+Die Konfiguration von <i>awesome</i> erfolgt über die Programmiersprache Lua&nbsp;<a href="http://www.lua.org/">[3]</a>. Alle
+Komponenten des Fenstermanagers entsprechen Lua Modulen. Die Konfigurationsdatei
+ist ein Lua-Programm, das alle Komponenten initialisiert und konfiguriert.
+Dadurch kann man die einzelnen Komponenten sehr frei konfigurieren oder diese
+auch entfernen. Dies hat im Gegensatz zu vielen anderen Tiling-Fenstermanagern
+auch den Vorteil, dass nicht für jede Komponente wie z.&nbsp;B. das Programmmenü ein
+extra Programm gestartet werden muss, man aber auch nicht weniger
+Konfigurationsmöglichkeiten hat.
+
+<div class="p"><!----></div>
+Dieser Artikel bezieht sich nur auf <i>awesome 3</i>, frühere Versionen wurden komplett
+anders konfiguriert. Version 3 des Fenstermanagers befindet sich in den
+Paketquellen aller gängigen Distributionen mit Ausnahme von Fedora. Dort gibt es
+Probleme mit Abhängigkeiten von Programmbibliotheken. Informationen dazu findet
+man im <i>awesome</i>-Wiki&nbsp;<a href="http://awesome.naquadah.org/wiki/Awesome-3-fedora">[4]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+
+Der Fenstermanager wird durch das Paket <b>awesome</b> über die Paketverwaltung
+installiert.
+Um <i>awesome</i> zu nutzen, muss dieser beim Login als Fenstermanager gewählt werden.
+Im Normalfall kann <i>awesome</i> einfach beim Anmelden im Login-Manager wie GDM oder
+KDM ausgewählt werden. Bei einigen anderen Login-Managern, wie z.&nbsp;B. XDM, muss
+die Datei <b><tt class="big">~/.xsession</tt></b> bearbeitet werden:
+
+<div class="p"><!----></div>
+    
+<div class="listing">#!/bin/sh<br />
+exec awesome</div>
+
+<div class="p"><!----></div>
+Es reicht nicht aus, <i>awesome</i> im Terminal auszuführen, da zuvor der X-Server
+gestartet werden muss, aber noch kein anderer Fenstermanager laufen darf, wie z.&nbsp;B.
+Metacity oder Mutter bei GNOME.
+
+<div class="p"><!----></div>
+
+<h2>Bedienung</h2>
+
+
+
+<h3>Überblick</h3>
+
+
+Beim Start befindet sich am oberen Bildschirmrand eine Leiste, die viele
+Funktionen bietet: Ganz links findet man ein Knopf, der bei einem Klick
+das Hauptmenü erscheinen lässt. Rechts davon ist die Liste mit den Tags. Diese
+sind hier einfach von 1 bis 9 durchnummeriert. Daneben ist die Fensterliste, in
+der alle Fenster mit den gewählten Tags angezeigt werden. Ganz rechts sieht man
+das aktuelle Layout, nach dem die Fenster angeordnet werden. Außerdem findet man
+dort eine Uhr und das Benachrichtigungsfeld, das vermutlich noch leer ist.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/awesome-panel.png" alt="awesome-panel.png" style="max-width:100%" /><br /><em>Obere Leiste von <i>awesome</i>.</em><br />
+
+<div class="p"><!----></div>
+Im Benachrichtigungsfeld kann z.&nbsp;B. der GNOME-Netzwerkmanager angezeigt werden.
+Das entsprechende Applet wird über nm-applet gestartet. Genauso kann man andere
+Applets für Energieverwaltung oder ähnliches benutzen.
+
+
+<div class="p"><!----></div>
+    Bevor nun die Steuerung von <i>awesome</i> genauer betrachtet wird, müssen noch ein
+paar Grundbegriffe geklärt werden.
+
+<div class="p"><!----></div>
+
+<h3>Tags</h3>
+
+
+<i>awesome</i> basiert auf Tags. Ein ähnliches Konzept kennen die meisten Linux-Nutzer
+von den verbreiteten Desktop-Umgebungen. Dort kann man mehrere virtuelle
+Desktops nutzen. So kann man beispielsweise auf der einen Arbeitsfläche den
+Browser geöffnet haben und surfen. Auf einer anderen Arbeitsfläche kann man dann
+mehrere andere Fenster öffnen und damit arbeiten. Das Trennen auf verschiedenen
+Arbeitsflächen hat den Vorteil, dass man schnell zwischen diesen hin und her
+wechseln kann.
+
+<div class="p"><!----></div>
+Dies ist bei <i>awesome</i> fast so umgesetzt: Jedem Fenster wird
+mindestens ein Tag zugeordnet, wobei alle Fenster angezeigt werden, die einen
+bestimmten Tag haben. Der Tag entspricht also etwa einem Desktop. Das besondere
+im Vergleich zu gewöhnlichen Arbeitsflächen ist, dass ein Fenster auch mehrere
+Tags haben kann. Im Vergleich kann es sich also auf mehreren Arbeitsflächen
+gleichzeitig befinden. Genau so können auch mehrere Tags gleichzeitig angezeigt
+werden. <i>awesome</i> ordnet die Fenster dann immer so an, dass sich nichts
+überschneidet.
+
+<div class="p"><!----></div>
+
+<h3>Layouts</h3>
+
+
+Die Layouts bestimmen, wie die Fenster angeordnet werden. Beim Starten von
+<i>awesome</i> ist das Floating-Layout ausgewählt. Dabei wird kein Tiling angewendet,
+sondern die Fenster verhalten sich, wie man es gewohnt ist: Man kann sie
+verschieben und ihre Größe ändern (wie das geht, kommt später).
+
+<div class="p"><!----></div>
+Die meisten Layouts ordnen die Fenster ähnlich einer Tabelle an. In der einen
+Hälfte des Bildschirms werden die Fenster meist größer dargestellt, in der
+anderen werden die restlichen Fenster kleiner dargestellt. Dieses Verhalten wird
+immer durch das Bild oben rechts in der Leiste beschrieben.
+
+<div class="p"><!----></div>
+Es gibt noch ein paar exotischere Layouts, bei denen die Fenster beispielsweise
+spiralförmig kleiner werden. Außerdem gibt es Layouts, die immer ein Fenster im
+Vollbild zeigen – einmal mit der oberen Leiste und einmal wirklich auf dem
+ganzen Bildschirm.
+
+<div class="p"><!----></div>
+
+<h3>Steuerung</h3>
+
+
+<i>awesome</i> wird über Tastenkombinationen gesteuert, von denen hier nur die
+wichtigen genannt werden. Alle Tastenkombinationen können in der Manpage von
+<i>awesome</i> nachgelesen werden. Sie enthalten immer die Taste <i>„Mod4“</i>,
+womit die
+<i>„Windows“</i>-Taste gemeint ist. Diese wird auch <i>„Super“</i>-Taste genannt. Bei Mac handelt
+es sich hier um die <i>„Command“</i>-Taste.
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Allgemein</b></td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„Enter“</i>     </td><td>Terminal öffnen </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„R“</i>         </td><td>Eingabeaufforderung im Panel </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„Shift“</i>&nbsp;+&nbsp;<i>„C“</i>  </td><td>Fenster schließen </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„Space“</i>     </td><td>nächstes Layout </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Fenster</b></td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„J“</i>           </td><td>Fokus auf nächstes Fenster </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„K“</i>           </td><td>Fokus auf vorheriges Fenster </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„Shift“</i>&nbsp;+&nbsp;<i>„J“</i>    </td><td>Wechsel mit nächstem Fenster </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„Shift“</i>&nbsp;+&nbsp;<i>„K“</i>    </td><td>Wechsel mit vorherigem Fenster </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„Strg“</i>&nbsp;+&nbsp;<i>„Space“</i> </td><td>Fenster aus Tiling auskoppeln bzw. ins Tiling zurückholen </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Tags</b></td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„1-9“</i>        </td><td>auf Tag 1-9 wechseln </td></tr>
+<tr><td><i>„Mod4“</i>&nbsp;+&nbsp;<i>„Shift“</i>&nbsp;+&nbsp;<i>„1-9“</i> </td><td>Fenster auf Tag 1-9 verschieben </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+Es benötigt ein wenig Übung, bis man mit <i>awesome</i> zurecht kommt, wenn man noch
+keinen Tiling-Fenstermanager verwendet hat. Am Anfang ist, wie gesagt, das Floating Layout
+ausgewählt, die Fenster werden also nicht automatisch angeordnet. Deshalb sollte
+man erst einmal mit <i>„Mod4“</i>&nbsp;+&nbsp;<i>„Space“</i> in ein Tiling Layout wechseln.
+
+<div class="p"><!----></div>
+Zum Üben öffnet man am besten ein paar Terminals und Programme, verschiebt die
+Fenster und probiert alle Tastenkombinationen aus den Tabellen aus.
+
+<div class="p"><!----></div>
+Um Fenster mit der Maus zu verschieben oder deren Größe zu ändern, muss <i>„Mod4“</i>
+gedrückt sein. Mit der linken Maustaste kann man dann das Fenster verschieben,
+mit der rechten wird die Größe geändert.
+
+<div class="p"><!----></div>
+Für den Anfang empfiehlt es sich, ein Cheatsheet mit allen Tastenkombinationen
+auszudrucken.
+Einen guten Überblick bietet das Cheatsheet von cmichi auf
+GitHub&nbsp;<a href="http://github.com/cmichi/awesome-cheatsheet">[5]</a>. Wer gerne bastelt,
+kann auch mein Cheatsheet in Form eines Würfels verwenden&nbsp;<a href="http://home.in.tum.de/~hertle/#awesome-cube">[6]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Konfiguration</h2>
+
+
+Sobald man mit der Steuerung von <i>awesome</i> zurecht kommt, kann man sich mit den
+vielen Konfigurationsmöglichkeiten beschäftigen. Man konfiguriert <i>awesome</i> über
+das Lua Skript <b><tt class="big">rc.lua</tt></b>. Programmierkenntnisse in Lua sind für kleinere Änderungen
+nicht nötig.
+
+<div class="p"><!----></div>
+Die Konfigurationsdatei <b><tt class="big">rc.lua</tt></b> befindet sich im Ordner <b><tt class="big">/etc/xdg/awesome</tt></b>. Damit
+die Einstellungen nur für den aktuellen Nutzer geändert werden, sollte der
+Inhalt dieses Ordners zuerst nach <b><tt class="big">~/.config/awesome</tt></b> kopiert werden.
+
+<div class="p"><!----></div>
+Die Datei <b><tt class="big">rc.lua</tt></b> wird beim Start von <i>awesome</i> ausgeführt. Im Laufe des Skripts
+werden die Layouts, Tags, das Menü,das Panel und alle Tastenkombinationen
+definiert. Die Datei ist gut kommentiert, was das Bearbeiten erleichtert.
+Kommentare beginnen in Lua mit <b><tt class="big">--</tt></b>. 
+
+<div class="p"><!----></div>
+
+<h3>Tags</h3>
+
+
+In der Standardkonfiguration werden die Tags mit den Ziffern 1 bis 9 benannt. Man
+kann die Tags beliebig umbenennen. In der Konfigurationsdatei werden die Tags so
+definiert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">-- {{{ Tags<br />
+-- Define a tag table which hold all screen tags.<br />
+tags = {}<br />
+for s = 1, screen.count() do<br />
+&nbsp;&nbsp;&nbsp;&nbsp;-- Each screen has its own tag table.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])<br />
+end</div>
+
+<div class="p"><!----></div>
+Man kann statt den Zahlen auch Wörter verwenden, die man in Anführungszeichen
+setzen muss:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">tags[s] = awful.tag({ "www", "chat", "mail", 4, 5, 6, 7, 8, 9 }, s, layouts[1])</div>
+
+<div class="p"><!----></div>
+So kann man die Tags beliebig umbenennen. Um die Änderungen zu übernehmen, muss
+<i>awesome</i> neugestartet werden: Dies kann über das Menü oder mit der
+Tastenkombinationen <i>„Mod4“</i>&nbsp;+&nbsp;<i>„Strg“</i>&nbsp;+&nbsp;<i>„R“</i> geschehen. Aber Achtung: Wenn ein Fehler in
+der Datei <b><tt class="big">rc.lua</tt></b> ist, startet <i>awesome</i> nicht mehr richtig. Es gibt eine
+Möglichkeit, die Konfiguration auf Fehler zu überprüfen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ awesome -k</div>
+
+<div class="p"><!----></div>
+
+
+Dies bietet allerdings keine Garantie, dass wirklich kein Fehler
+vorhanden ist. Syntaxfehler kann man so aber immerhin verhindern.
+
+<div class="p"><!----></div>
+
+<h3>Layouts</h3>
+
+
+Alle verfügbaren Layouts werden in <b><tt class="big">rc.lua</tt></b> in der Variable <b><tt class="big">layouts</tt></b> gespeichert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">layouts =<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;awful.layout.suit.floating,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;awful.layout.suit.tile,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+}</div>
+
+<div class="p"><!----></div>
+Um das Standardlayout zu ändern, muss folgende Zeile bearbeitet werden. Die
+Namen der Tags sind dabei egal.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">tags[s] = awful.tag({ "www", "chat", "mail", "work", 5, 6, 7, 8, 9 }, s,<br />
+layouts[1])</div>
+
+<div class="p"><!----></div>
+Die Ziffer bei <b><tt class="big">layouts[1]</tt></b> bezeichnet die Position des Layouts in der Liste,
+beginnend bei 1. Der Standard ist hier also Floating. Damit Tiling verwendet
+wird, muss die Ziffer z.&nbsp;B. auf 2 geändert werden.
+
+<div class="p"><!----></div>
+Es ist auch möglich, für jeden Tag ein eigenes Layout zu bestimmen, oder sogar,
+auf jedem Bildschirm die Tags unterschiedlich zu konfigurieren. Wie dies geht,
+wird in den FAQ&nbsp;<a href="http://awesome.naquadah.org/wiki/FAQ#How_to_change_the_default_window_management_layout.3F">[7]</a>
+beschrieben.
+
+<div class="p"><!----></div>
+    
+<h3>Rules</h3>
+
+
+<i>awesome</i> ermöglicht es, Regeln für Programmfenster zu erstellen und einem
+Programm immer die gleichen Eigenschaften zuzuweisen. So kann man z.&nbsp;B.
+erreichen, dass der Browser stets den Tag „www“ bekommt.
+
+<div class="p"><!----></div>
+In der Konfigurationsdatei steht fast am Ende:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">-- {{{ Rules<br />
+awful.rules.rules = {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{ rule = { class = "MPlayer" },<br />
+&nbsp;&nbsp;&nbsp;&nbsp;properties = { floating = true } },<br />
+&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+
+<div class="p"><!----></div>
+Hier wird bestimmt, dass MPlayer im Floating-Modus startet. Durch hinzufügen
+folgender Regel startet Firefox immer auf Tag 1. Auch wenn dieser „www“ heißt,
+wird er dennoch mit der Nummer 1 angesprochen.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">{ rule = { class = "Firefox" },<br />
+&nbsp;&nbsp;&nbsp;&nbsp;properties = { tag = tags[1][1] } },</div>
+
+<div class="p"><!----></div>
+Bei <b><tt class="big">tags[1][1]</tt></b> steht die erste Ziffer für den Bildschirm, also Bildschirm 1, die
+zweite für den Tag, also Tag 1. Möchte man, dass Firefox auf Tag 3 auf dem
+zweiten Bildschirm startet, müsste es <b><tt class="big">tags[2][3]</tt></b> heißen.
+
+<div class="p"><!----></div>
+Nun stellt sich noch die Frage, wie man an den Klassennamen für eine Regel
+kommt. Dies ist mit dem Programm xprop aus dem Paket <b>x11-utils</b> möglich:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ xprop WM_CLASS</div>
+
+<div class="p"><!----></div>
+
+
+Nach dem Klick auf ein Fenster wird der Klassenname ausgegeben. Für xterm sieht
+die Ausgabe so aus:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">WM_CLASS(STRING) = "xterm", "UXTerm"</div>
+
+<div class="p"><!----></div>
+Der Klassenname ist der zweite Name, hier also <b><tt class="big">UXTerm</tt></b>. Der erste Name, hier
+<b><tt class="big">xterm</tt></b>, kann mit der Variable <b><tt class="big">instance</tt></b> abgefragt werden. Wichtig ist, dass die
+neuen Regeln zwischen den äußeren Klammern stehen.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">awful.rules.rules = {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;-- Hier müssen alle neuen Regeln hin<br />
+}<br />
+-- Und nicht hier</div>
+
+<div class="p"><!----></div>
+Weitere Informationen über die Regeln findet man in der Referenz von <i>awesome</i>&nbsp;<a href="http://awesome.naquadah.org/doc/api/modules/awful.rules.html">[8]</a>.
+
+<div class="p"><!----></div>
+
+<h3>Eigene Tastenkombinationen</h3>
+
+
+Es ist auch möglich, eigene Tastenkombinationen hinzuzufügen oder die
+vorhandenen zu ändern. Die Definition der Tastenkombinationen beginnt so:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">-- {{{ Key bindings<br />
+globalkeys = awful.util.table.join(<br />
+&nbsp;&nbsp;&nbsp;&nbsp;awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),</div>
+
+<div class="p"><!----></div>
+Die Variable <b><tt class="big">modkey</tt></b> wird am Anfang der Datei als <i>„Mod4“</i> definiert. Um das Programm
+xterm mit der Tastenkombination <i>„Alt“</i>&nbsp;+&nbsp;<i>„T“</i> zu starten, ist folgender Eintrag nötig.
+Statt <b><tt class="big">Alt</tt></b> muss man <b><tt class="big">Mod1</tt></b> schreiben.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">awful.key({"Mod1"}, "t", function () awful.util.spawn("/usr/bin/xterm") end),</div>
+
+<div class="p"><!----></div>
+Ein weiteres Beispiel ist das Ändern der Lautstärke über die entsprechenden
+Tasten. Dabei wird das Programm amixer verwendet und der Masterkanal um 5&nbsp;%
+lauter oder leiser gestellt.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">awful.key({}, "XF86AudioRaiseVolume", function ()<br />
+awful.util.spawn("/usr/bin/amixer -q set Master 5\%+", false) end),<br />
+awful.key({}, "XF86AudioLowerVolume", function ()<br />
+awful.util.spawn("/usr/bin/amixer -q set Master 5\%-", false) end),<br />
+awful.key({}, "XF86AudioMute", function () awful.util.spawn("/usr/bin/amixer -q set Master toggle", false) end),</div>
+
+<div class="p"><!----></div>
+Die Keycodes der Tasten erhält man im Übrigen durch das Programm xev, das wie
+xprop auch im Paket <b>x11-utils</b> enthalten ist.
+
+<div class="p"><!----></div>
+
+<h3>Menü</h3>
+
+
+Das Menü wird ebenfalls in der Datei <b><tt class="big">rc.lua</tt></b> definiert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">mymainmenu = awful.menu({ items = {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{ "awesome", myawesomemenu, beautiful.awesome_icon },<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{ "Debian", debian.menu.Debian_menu.Debian },<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{ "open terminal", terminal }<br />
+}})  </div>
+
+<div class="p"><!----></div>
+<b><tt class="big">mymainmenu</tt></b> ist das Hauptmenü, das beim Klick auf das Menüsymbol erscheint. In
+dieses Menü wird das in der Datei zuvor definierte <b><tt class="big">myawesomemenu</tt></b> und das Menü
+mit den Programmen eingebunden. Außerdem enthält es einen Eintrag, um ein
+Terminal zu starten.
+
+<div class="p"><!----></div>
+Ein Menüeintrag ist immer gleich aufgebaut: Der erste Parameter ist der
+angezeigte Name. Als Zweites wird ein Befehl angegeben, der ausgeführt wird,
+oder ein weiteres Menü. Zuletzt kann noch ein Icon angegeben werden, was aber
+nicht notwendig ist. Falls der Pfad zu einem Icon falsch ist oder das
+Dateiformat nicht unterstützt wird, wird das ganze Untermenü nicht angezeigt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/awesome-menu.png" alt="awesome-menu.png" style="max-width:100%" /><br /><em>Automatisch erstelltes Programmmenü unter Debian.</em><br />
+
+<div class="p"><!----></div>
+Unter Debian und Ubuntu wird das Programmmenü in der Datei
+<b><tt class="big">/etc/xdg/awesome/debian/menu.lua</tt></b> automatisch erstellt und aktualisiert. Diese
+Datei wird am Anfang der <b><tt class="big">rc.lua</tt></b> eingebunden:
+
+<div class="p"><!----></div>
+    
+
+
+<div class="listing">require("debian.menu")</div>
+
+<div class="p"><!----></div>
+    Der Ordner <b><tt class="big">/etc/xdg/awesome/debian</tt></b> muss auch nach <b><tt class="big">~/.config/awesome</tt></b> kopiert
+werden, damit das Einbinden immer noch funktioniert. Dies hat allerdings den
+Nachteil, dass das Menü nicht mehr weiter aktualisiert wird.
+
+<div class="p"><!----></div>
+Eine Möglichkeit wäre das Aktualisieren der lokalen Menükonfiguration durch ein
+Skript. Dies ist im <i>awesome</i>-Wiki beschrieben&nbsp;<a href="http://awesome.naquadah.org/wiki/Awful.menu#Tips">[9]</a>.
+
+<div class="p"><!----></div>
+Man kann das Menü auch manuell pflegen. Dies hat den Vorteil, dass es
+übersichtlicher bleibt.
+
+<div class="p"><!----></div>
+    
+<h3>Hintergrundbild</h3>
+
+
+Das Hintergrundbild wird im verwendeten Thema definiert. Dieses wird am Anfang
+der <b><tt class="big">rc.lua</tt></b> eingebunden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">beautiful.init("/usr/share/awesome/themes/default/theme.lua")</div>
+
+<div class="p"><!----></div>
+Für Änderungen empfiehlt es sich wieder, die entsprechenden Datei ins
+Benutzerverzeichnis zu kopieren. Hier sollte also
+<b><tt class="big">/usr/share/awesome/themes/default/theme.lua</tt></b> nach <b><tt class="big">~/.config/awesome</tt></b> kopiert
+werden. Die oben genannte Zeile in <b><tt class="big">rc.lua</tt></b> muss dann entsprechend angepasst
+werden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">beautiful.init(awful.util.getdir("config") .. "/theme.lua")</div>
+
+<div class="p"><!----></div>
+Statt <b><tt class="big">awful.util.getdir("config")</tt></b> kann man natürlich auch den kompletten Pfad
+angeben. So funktioniert die Konfiguration aber auch, wenn sich das
+Benutzerverzeichnis ändert.
+
+<div class="p"><!----></div>
+Um das Hintergrundbild zu ändern, muss die folgende Zeile in der Datei <b><tt class="big">theme.lua</tt></b>
+bearbeitet werden:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/default/background.png" }</div>
+
+<div class="p"><!----></div>
+Hier kann nun der Pfad zum neuen Hintergrund eingetragen werden. Das Programm
+awsetbg ist ein Wrapper, der ein passendes Programm sucht, um das Bild
+anzuzeigen, wie z.&nbsp;B. feh.
+
+<div class="p"><!----></div>
+awsetbg bietet auch die Funktion, das letzte Hintergrundbild wieder zu setzen.
+In der Datei <b><tt class="big">theme.lua</tt></b> muss dann stehen:
+
+<div class="p"><!----></div>
+    
+
+
+<div class="listing">theme.wallpaper_cmd = { "awsetbg -l" }</div>
+
+<div class="p"><!----></div>
+Jetzt setzt man sich das gewünschte Hintergrundbild einfach mit awsetbg und es
+wird bei jedem Starten wieder gesetzt. Das hat den Vorteil, dass man zum Ändern
+des Bildes nichts an der Konfigurationsdatei ändern muss.
+
+<div class="p"><!----></div>
+Über ein Thema kann man das Aussehen von <i>awesome</i> auch noch weiter anpassen.
+Genauere Informationen dazu findet man wieder im <i>awesome</i>-Wiki&nbsp;<a href="http://awesome.naquadah.org/wiki/Beautiful">[10]</a>.
+Dort gibt es auch eine Sammlung von Themes&nbsp;<a href="http://awesome.naquadah.org/wiki/Beautiful_themes">[11]</a>.
+
+<div class="p"><!----></div>
+
+<h3>Widgets</h3>
+
+
+Widgets können zu der oberen Leiste hinzugefügt werden und zeigen dann bestimmte
+    Informationen an. Es gibt einige Bibliotheken für <i>awesome</i>, die Widgets für alle
+möglichen Zwecke bereitstellen. Hier sollen nur Vicious&nbsp;<a href="http://git.sysphere.org/vicious/about/">[12]</a>
+und Obvious&nbsp;<a href="http://awesome.naquadah.org/wiki/Obvious">[13]</a> genannt werden.
+Widgets können nicht nur Text, sondern auch Graphen, Bilder und 
+Fortschrittsbalken anzeigen.
+
+<div class="p"><!----></div>
+In den oben genannten Bibliotheken gibt es z.&nbsp;B. Widgets, um die Lautstärke, CPU
+Temperatur, Netzwerk Traffic oder ähnliches anzuzeigen. Auch ist es möglich
+Daten aus MPD (Music Player Daemon) auszulesen oder die Anzahl der ungelesenen
+Mails anzuzeigen.
+
+<div class="p"><!----></div>
+Man kann sich natürlich auch eigene Widgets schreiben. Es ist zudem möglich, den
+Inhalt mit einem Shell-Skript zu erzeugen. Mit dem Programm awesome-client
+können die Widgets über das D-Bus-System verändert werden.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+<i>awesome</i> ermöglicht sehr produktives Arbeiten, da man sich kaum um die Anordnung
+der Fenster kümmern muss. Das Konzept ist anfangs zwar etwas
+gewöhnungsbedürftig, aber es lohnt sich auf jeden Fall.
+
+<div class="p"><!----></div>
+<i>awesome</i> kann sehr flexibel konfiguriert werden. In diesem Artikel konnten
+natürlich bei weitem nicht alle Möglichkeiten genannt werden. Viele weitere
+Informationen und Ideen findet man auf der Projekthomepage&nbsp;<a href="http://awesome.naquadah.org/">[1]</a>,
+besonders im Wiki der Seite und den FAQ.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://awesome.naquadah.org/"><tt class="big">http://awesome.naquadah.org/</tt></a><br />
+[2] <a href="http://www.freedesktop.org/"><tt class="big">http://www.freedesktop.org/</tt></a><br />
+[3] <a href="http://www.lua.org/"><tt class="big">http://www.lua.org/</tt></a><br />
+[4] <a href="http://awesome.naquadah.org/wiki/Awesome-3-fedora"><tt class="big">http://awesome.naquadah.org/wiki/Awesome-3-fedora</tt></a><br />
+[5] <a href="http://github.com/cmichi/awesome-cheatsheet"><tt class="big">http://github.com/cmichi/awesome-cheatsheet</tt></a><br />
+[6] <a href="http://home.in.tum.de/~hertle/#awesome-cube"><tt class="big">http://home.in.tum.de/~hertle/#awesome-cube</tt></a><br />
+[7] <a href="http://awesome.naquadah.org/wiki/FAQ#How_to_change_the_default_window_management_layout.3F"><tt class="big">http://awesome.naquadah.org/wiki/FAQ#How_to_change_the_default_window_management_layout.3F</tt></a><br />
+[8] <a href="http://awesome.naquadah.org/doc/api/modules/awful.rules.html"><tt class="big">http://awesome.naquadah.org/doc/api/modules/awful.rules.html</tt></a><br />
+[9] <a href="http://awesome.naquadah.org/wiki/Awful.menu#Tips"><tt class="big">http://awesome.naquadah.org/wiki/Awful.menu#Tips</tt></a><br />
+[10] <a href="http://awesome.naquadah.org/wiki/Beautiful"><tt class="big">http://awesome.naquadah.org/wiki/Beautiful</tt></a><br />
+[11] <a href="http://awesome.naquadah.org/wiki/Beautiful_themes"><tt class="big">http://awesome.naquadah.org/wiki/Beautiful_themes</tt></a><br />
+[12] <a href="http://git.sysphere.org/vicious/about/"><tt class="big">http://git.sysphere.org/vicious/about/</tt></a><br />
+[13] <a href="http://awesome.naquadah.org/wiki/Obvious"><tt class="big">http://awesome.naquadah.org/wiki/Obvious</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Sven Hertle</b>&nbsp;(<a href="http://home.in.tum.de/~hertle/">Webseite</a>)
+studiert Informatik an der TU München. Er verwendet Linux seit fünf
+Jahren und hat mit Ubuntu angefangen. Inzwischen nutzt er Debian und awesome auf
+allen seinen Rechnern.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=awesome#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+<h1><font color="#595959"><a id="fm_13_02_openphoenux" name="fm_13_02_openphoenux">OpenPhoenux GTA04: Offenes Smartphone feiert Erfolge</a></font></h1>von Lukas Märdian
+
+<div class="p"><!----></div>
+        
+
+<b>D</b><b>as „OpenPhoenux GTA04“-Projekt, welches der Asche der Openmoko-Community 
+entsprang und von Golden Delicious Computers tatkräftig unterstützt wird, wurde
+ins Leben gerufen, um auf Basis moderner ARM-Hardware ein Smartphone zu 
+entwickeln, das den Prinzipien freier Hard- und Software entspricht. Das 
+Projekt hat den großen Meilenstein „Serie 1 produzieren und ausliefern“ 
+erfolgreich abgeschlossen und bietet nun Interessenten die Möglichkeit, ein Gerät
+aus „Serie 2“ zu erwerben.</b>
+
+<div class="p"><!----></div>
+    
+<h2>Der Ursprung</h2>
+
+
+Die Geschichte der freien Smartphones begann, als Openmoko Inc. 2007 die
+ersten vollständig offenen Smartphones Neo 1973 (GTA01) und später Neo
+Freerunner (GTA02) ausgelieferte. Leider musste Openmoko jedoch im Jahre
+2009 die ehrgeizigen Bemühungen um eine offene Smartphone-Plattform – im
+seit dieser Zeit hart umkämpften Smartphone-Markt – aus finanziellen Gründen
+aufgeben.
+
+<div class="p"><!----></div>
+Doch Dank der Offenheit ihrer ersten Produkte (Schaltpläne,
+Hardware-Spezifikationen,
+    Software) ermöglichten sie, dass Enthusiasten aus
+der Openmoko-Gemeinschaft, welche aus den
+Fehlern von Openmoko Inc. gelernt haben, eine neue und von Openmoko Inc.
+unabhängige, offene Smartphone-Plattform
+entwickeln konnten, die weitestgehend dem Stand der Technik entspricht. Mit
+„Golden Delicious Computers“ (kurz Goldelico, einem der deutschen Openmoko-Händler) fand
+sich dann auch ein professioneller Partner, um das Vorhaben zu realisieren –
+das OpenPhoenux GTA04&nbsp;<a href="http://blog.slyon.de/2012/12/21/openmoko-openphoenux-gta04-jumps-off">[1]</a>
+war geboren.
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2013-02-bilder-Dateien/openphoenux-ursprung.jpg" alt="openphoenux-ursprung.jpg" style="max-width:100%" /><br /><em>GTA04, eine offene Hardware-Plattform.</em><br />
+
+<div class="p"><!----></div>
+
+
+<div class="infobox"><b>Technische Daten:</b>
+
+<ul>
+<li> 1GHz ARM Cortex-A8 Prozessor (DM3730)</li>
+<li> PowerVR-Grafik integriert (SGX530)</li>
+<li> 2,8 Zoll Touchscreen (480x640)</li>
+<li> 3G-Modem, HSDPA (Option GTM601)</li>
+<li> 512 MB RAM</li>
+<li> 1 GB interner Speicher &amp; Mikro-SD-Karte (bis zu 32 GB)</li>
+<li> WLAN, Bluetooth, GPS, FM-Transceiver</li>
+<li> Accelerometer, Kompass, Gyroskop, barometrischer Höhenmesser</li>
+<li> USB 2.0 OTG, 2.5 mm Headset, internes &amp; externes GPS, Video-Out</li>
+</ul>
+</div>
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2013-02-bilder-Dateien/openphoenux_daten.jpg" alt="openphoenux_daten.jpg" style="max-width:100%" /><br /><em>GTA04-Board, passt in Openmoko Gehäuse.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Prototypen</h2>
+
+
+Goldelico und die Enthusiasten aus der Openmoko-Gemeinschaft starteten mit
+der Idee, ein BeagleBoard in ein Neo-Freerunner-Gehäuse zu packen, welches mit
+einem USB-UMTS-Dongle verbunden wurde. Dies war der erste Prototyp
+GTA04A1, welcher Ende 2010 angekündigt und auf dem OHSW 2010 und der
+FOSDEM 2011 präsentiert wurde.
+
+<div class="p"><!----></div>
+    <img src="freiesMagazin-2013-02-bilder-Dateien/openphoenux_prototypen.jpg" alt="openphoenux_prototypen.jpg" style="max-width:100%" /><br /><em>Openmoko Beagle Hybrid, erster Prototyp 2010.</em><br />
+
+<div class="p"><!----></div>
+Anschließend begannen sie, all diese Komponenten auf einer einzigen Platine
+zu integrieren, welche der Größe der Neo 1973/Freerunner PCBs
+        
+entsprach. So
+wurde ein Mainboard/Prozessor-Upgrade für Openmoko-Smartphones möglich.
+Der aktualisierte ARM-Prozessor (Single-Core) von 2010
+bewältigt mühelos alle üblichen Smartphone-Tätigkeiten und ist zudem
+noch stromsparender als viele Quad-Core-ARMs aus 2013. Gehäuse,
+Bildschirm, Akku, Antennen und
+    Lautsprecher können von alten Openmokos
+wiederverwendet, mittels 3D-Druck selbst produziert (Gehäuse)
+oder separat erworben werden.
+Es stellte sich allerdings
+heraus, dass dieser zweite Prototyp (GTA04A2) noch einige Layoutfehler
+enthielt. Eine Überarbeitung dessen führte schließlich zu den GTA04A3 „Early-
+Adopter“-Boards, die Mitte 2011 an etwa 20 Entwickler
+    
+verteilt wurden, so dass
+diese mit der Software-Entwicklung für die Plattform beginnen konnten.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Die erste Produktionsreihe (2012)</h2>
+
+
+Der nächste Schritt war, interessierte Menschen mit der Idee einer neuen
+offenen Smartphone-Plattform zu erreichen, um das Gerät in größeren Chargen
+produzieren zu können und somit den Preis dafür in einen akzeptablen Bereich
+zu drücken. Dazu wurde das Projekt von Freiwilligen auf verschiedenen Messen
+wie der FOSDEM 2012, der OpenMobility 2012, den Linuxwochen 2012 und
+dem LinuxTag 2012 vorgestellt.
+    Um die erste große Produktion des GTA04A4
+(eine überarbeitete Variante des GTA04A3) finanzieren zu können, sammelte
+Goldelico Vorbestellungen von Interessenten aus der Openmoko-Gemeinschaft. 
+Mit der „Group-Tour“ schafften sie es, etwa 250 Vorbestellungen
+zu sammeln und waren somit in der Lage die erste große OpenPhoenux-Produktion
+zu starten.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/openphoenux_serie1.jpg" alt="openphoenux_serie1.jpg" style="max-width:100%" /><br /><em>Boards in der Dampfphasen-Lötmaschine.</em><br />
+
+<div class="p"><!----></div>
+Leider stellte sich heraus, dass die „Massenproduktion“ elektronischer Geräte
+einige Schwierigkeiten mit sich brachte. Goldelico musste daher eine Menge
+Probleme innerhalb der Fertigungslinie (vor allem im Lötprozess) finden,
+analysieren und lösen, was viel Zeit in Anspruch nahm. Wegen all der Probleme
+mussten einige Vorbesteller bis zu einem Jahr warten, um endlich ihre Geräte
+ausgeliefert zu bekommen. Am Ende des Jahres 2012 waren schließlich alle
+Probleme gelöst und die „Group-Tour“ konnte erfolgreich beendet werden. Das
+GTA04 Team ist jetzt sehr glücklich, diesen großen Meilenstein erreicht zu
+haben. Nun, da etwa 300 GTA04s (A3 &amp; A4) verteilt wurden, scheint auch das
+Interesse in der Linux/FOSS-Gemeinschaft für das
+Openmoko/OpenPhoenux-Projekt 
+wieder zu steigen. Um dieses gestiegene Interesse in eine offenere
+Zukunft des Smartphone-Sektors zu investieren, würde Goldelico gerne mehr
+GTA04s der Revision A5 (enthält Detailverbesserungen gegenüber dem A4)
+produzieren.
+
+<div class="p"><!----></div>
+„<em>Jetzt, da wir endlich alles über die Massenproduktion gelernt haben […], ist es
+Zeit die nächste [Produktionsreihe] zu starten.</em>“ (Dr. Schaller, Golden Delicious
+Computers)
+
+<div class="p"><!----></div>
+
+<h2>Die nächste Produktionsreihe (2013)</h2>
+
+
+Um die zweite Produktionsreihe von rund 200 weiteren GTA04 Boards zu
+finanzieren, begann Goldelico vor kurzem erneut damit, Vorbestellungen zu
+sammeln&nbsp;<a href="http://lists.goldelico.com/pipermail/community/2012-December/000176.html">[2]</a>.
+Die Produktion sollte dieses Mal reibungslos verlaufen, da es keine
+großen Veränderungen gab und der Herstellungsprozess nun bekannt ist. Die
+Produktion soll im März 2013 beginnen und die Boards sollten kurz danach
+versandfertig sein. Interessenten finden
+    
+    
+    
+    weitere Informationen zur Vorbestellung
+der neuen A5-Boards im Handheld-Linux-Shop.
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2013-02-bilder-Dateien/openphoenux_serie2.jpg" alt="openphoenux_serie2.jpg" style="max-width:100%" /><br /><em>GTA04 in großer Produktionsreihe.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Das OpenPhoenux-Ökosystem</h2>
+
+
+Während der Arbeiten an der nächsten Revision des GTA04 und dem Lösen der
+Produktionsprobleme, begann Goldelico mit anderen Geräten auf GTA04-Basis
+zu experimentieren. So ist
+es kein Geheimnis, dass es bereits den Prototyp
+eines offenen GTA04-Tablets (OpenPhoenux 7004) gibt und GTA04-PDAs für
+professionelle Einsatzzwecke (OpenPhoenux 3704), z.&nbsp;B. zum Einsatz in der
+Logistik (RFID), im Messwesen (GPS) oder für Outdoor-Aufgaben (großes,
+sonnenlichttaugliches Display und langlebige Batterie), bereits jetzt verfügbar
+sind.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/openphoenux_oekosystem1.jpg" alt="openphoenux_oekosystem1.jpg" style="max-width:100%" /><br /><em>OpenPhoenux 7004, das GTA04-Tablet.</em><br />
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/openphoenux_oekosystem2.jpg" alt="openphoenux_oekosystem2.jpg" style="max-width:100%" /><br /><em>OpenPhoenux 2804, das GTA04-Smartphone.</em><br />
+
+<div class="p"><!----></div>
+Auch die Software für das GTA04-Smartphone (OpenPhoenux 2804) ist bereits
+in einem guten Zustand. Neben dem auf Debian (Squeeze) basierenden „hardware-validation“ 
+Image, gibt es bereits die Debian-basierte Distribution „QtMoko“&nbsp;<a href="http://qtmoko.sourceforge.net/">[3]</a>
+und die FSO-basierte Distribution „SHR“&nbsp;<a href="http://www.shr-project.org/">[4]</a>, mit welchen das GTA04 für 
+Linux-Liebhaber bereits als Alltagstelefon nutzbar ist. Darüber hinaus ist eine
+Portierung von Replicant&nbsp;<a href="http://replicant.us/">[5]</a> (einem komplett freien
+Android) in Arbeit.
+Durch freie Kernel und Treiber ist die
+Plattform aber auch für zukünftige Smartphone-Betriebssysteme wie
+„FirefoxOS“ oder „Ubuntu Phone“ geeignet (ein Debian-Unterbau existiert
+bereits).
+
+<div class="p"><!----></div>
+Alles in allem scheinen die
+GTA04-Besitzer in der OpenPhoenux-Gemeinschaft mit ihren Geräten recht
+zufrieden sein, so ist es auch Nikolaus Schaller von Goldelico:
+„<em>[…] Ich genieße jeden Tag Mitglied dieser OpenPhoenux Gemeinschaft zu sein.
+Lasst den OpenPhoenux im nächsten Jahr auf ein neues Level fliegen!</em>“ (Dr.
+Schaller, Golden Delicious Computers)
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://blog.slyon.de/2012/12/21/openmoko-openphoenux-gta04-jumps-off"><tt class="big">http://blog.slyon.de/2012/12/21/openmoko-openphoenux-gta04-jumps-off</tt></a><br />
+[2] <a href="http://lists.goldelico.com/pipermail/community/2012-December/000176.html"><tt class="big">http://lists.goldelico.com/pipermail/community/2012-December/000176.html</tt></a><br />
+[3] <a href="http://qtmoko.sourceforge.net/"><tt class="big">http://qtmoko.sourceforge.net/</tt></a><br />
+[4] <a href="http://www.shr-project.org/"><tt class="big">http://www.shr-project.org/</tt></a><br />
+[5] <a href="http://replicant.us/"><tt class="big">http://replicant.us/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Lukas Märdian</b>&nbsp;(<a href="http://blog.slyon.de/">Webseite</a>)
+arbeitet als Mitglied der
+<a href="http://lists.openmoko.org/mailman/listinfo/community">Openmoko-Community</a>
+an der <a href="http://www.freesmartphone.org/">FreeSmartphone.org-Middleware</a>
+und der SHR-Distribution mit. Seit dem entstehen des Openmoko-Nachfolgers
+GTA04 arbeitet er aktiv an diesem Projekt mit.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=OpenPhoenux GTA04#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+<h1><font color="#595959"><a id="fm_13_02_rezension_gimp" name="fm_13_02_rezension_gimp">Rezension: Bildbearbeitung mit Gimp 2.8</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+        <b>E</b><b>ines der Open-Source-Programme, die sich auf allen großen
+Betriebssystemen großer Beliebtheit erfreuen, ist das Bildbearbeitungsprogramm
+GIMP&nbsp;<a href="http://www.gimp.org/">[1]</a>.
+Im Mai 2012 erschien die neueste Version
+GIMP 2.8&nbsp;<a href="http://www.pro-linux.de/news/1/18330/gimp-28-freigegeben.html">[2]</a>,
+der sich Autor Winfried Seimert in dem Buch „Bildbearbeitung mit Gimp 2.8“
+widmet.</b>
+
+<div class="p"><!----></div>
+
+
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem <a href="http://www.it-fachportal.de/">bhv-Verlag</a> für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+„Bildbearbeitung mit Gimp 2.8“ beginnt ganz klassisch mit einer Einleitung
+und erklärt, was GIMP ist und dass es als Open-Source-Programm unter
+einer freien Lizenz (GPL&nbsp;<a href="http://www.gnu.org/licenses/gpl-3.0.html">[3]</a>)
+verbreitet wird. Schade ist, dass der Autor Winfried Seimert nicht erklärt, 
+was diese freie Lizenz genau für die Benutzer bedeutet. Im Buch wird der 
+Begriff eher als synonym für die kostenlose Verfügbarkeit gebraucht.
+
+<div class="p"><!----></div>
+Da wundert es nicht, wenn im Buch auch nur auf Windows eingegangen wird.
+Sicherlich wird erwähnt, dass GIMP für Linux und Mac
+    
+
+
+verfügbar ist,
+aber weder bei der
+Installationserklärung wird darauf eingegangen, noch findet
+man auf der beiliegenden CD 
+etwas anderes als die Windows-Installationsdatei.
+
+<div class="p"><!----></div>
+Nach Einleitung und Installation folgen in den einzelnen Kapiteln die 
+wichtigsten Punkte, die man beim Umgang mit GIMP wissen sollte: Ebenen, 
+Bildoptimierung, Freistellen, Filter und Fotomontage und -retusche. 
+Auf den 
+192 Seiten erhält man also einen guten Überblick über die Fähigkeiten des 
+Bildbearbeitungsprogramms.
+
+<div class="p"><!----></div>
+Am Anfang jedes Kapitels steht dabei als kleine Vorschau auch, was die Ziele
+des folgenden Kapitels sind und was man dabei lernen kann. Dies motiviert
+zum einen beim Lesen, zum anderen erfährt man auch gleich, ob das Kapitel
+für einen überhaupt relevant ist.
+
+<div class="p"><!----></div>
+
+<h2>Anspruch und Zielgruppe</h2>
+
+
+Das Buch richtet sich klar an Leute, die mit GIMP bisher wenige bis gar keine
+Berührungspunkte hatten. So wird auch am Anfang erklärt, wie man eine Datei
+öffnet oder was Tooltips sind. Dies sind Dinge, die einem normalen
+Computerbenutzer von anderen Programmen schon bekannt sind und in GIMP leicht
+intuitiv erschlossen werden könnten.
+
+<div class="p"><!----></div>
+Glücklicherweise wird nicht nur die reine Funktionalität von GIMP
+aufgelistet, sondern anhand von Beispielen gezeigt, was eine bestimmte Option
+bewirkt. 
+
+<div class="p"><!----></div>
+Dennoch, und das erwähnt der Autor auch am Anfang, lernt man GIMP
+am besten kennen, wenn es neben dem Buch auch gleich bedient wird. So kann man bei eigenen Bildern sehen, was ein bestimmter Filter oder ein bestimmtes Werkzeug bewirken.
+
+<div class="p"><!----></div>
+Abbildungen helfen beim Verständnis, wobei die teilweise an Tutorials
+angelehnten Bedienungsschritte oft zu wenig zeigen, als dass sie wirklich
+aus dem Buch allein verständlich wären. 
+
+<div class="p"><!----></div>
+Dennoch gelingt der Spagat
+recht gut, auch mit bloßen Worten zu beschreiben, was die Bildbearbeitung
+leistet. Vor allem Hintergründe werden dabei auch erklärt, die zum
+Verständnis einiger Bildbearbeitungstechniken wichtig sind.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Kritik am Buch gibt es wenig. Auf den weniger als 200 Seiten ist so viel
+erklärt, wie möglich war. Dabei dient das Buch nicht als Referenz (so
+wie z.&nbsp;B. das Buch „GIMP – kurz &amp; gut“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 
+03/2010&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-03">[4]</a>), sondern
+bietet wirkliche Anleitungen zum Mitmachen. Die Anleitungen halten sich aber
+natürlich in Grenzen. 
+
+<div class="p"><!----></div>
+Die erzielten Ergebnisse sind sehr einfach und fern von
+einer professionellen Bildbearbeitung. Vor allem bei der Foto-Montage und
+-retusche kann man zwar etwas lernen, aber wenn man die Anleitung nur so
+befolgt, sieht man, dass ein Laie am Werk war.
+
+<div class="p"><!----></div>
+Die zahlreichen Abbildungen
+helfen dabei 
+natürlich sehr, auch wenn man GIMP
+gerade nicht zur Hand hat. Leider sind alle Abbildungen nur in Graustufen
+gehalten. Prinzipiell schadet das nicht, wenn aber der Farbtonkreis erklärt
+oder ein Beispiel, um rote Augen zu entfernen, gezeigt wird, dann geht
+definitiv der Sinn verloren.
+Die Vorher-Nachher-Bilder sehen dann einfach nur
+identisch aus.
+
+<div class="p"><!----></div>
+Schade ist, dass oft nur auf Windows eingegangen wird bzw. Windows-Spezifika
+erklärt werden. Das fängt bei der Erstellung von Screenshots und der Anbindung
+an den Scanner an und hört beim Hinzufügen von Plug-ins nicht auf. Da GIMP
+aus der Open-Source-Ecke und Linux kommt, wäre dies schon wünschenswert. 
+
+<div class="p"><!----></div>
+Auch
+auf die CD hätte man etwas mehr draufpacken können als eine 72-MB-große
+Installationsdatei für Windows. Videotutorials wären sicherlich großartig,
+aber dafür gibt es andere, gute Bücher (wie z.&nbsp;B. das Buch „GIMP 2.8“ von
+Georg Hornung&nbsp;<a href="http://www.it-fachportal.de/shop/buch/GIMP%202.8/detail.html,b171164">[5]</a>).
+
+<div class="p"><!----></div>
+Auf die Eigenheiten von GIMP 2.8 wird seltsamerweise nirgends im Buch
+eingegangen. So werden keinerlei Besonderheiten erwähnt. Das hat den Vorteil,
+dass man so gut wie alle Anleitungen auch unter GIMP 2.6 nachmachen kann. 
+
+<div class="p"><!----></div>
+Der
+Nachteil ist, dass man nicht immer genau weiß, ob man es nachmachen kann.
+Theoretisch hätte das Buch aber einfach nur „Bildbearbeitung mit Gimp” heißen
+können.
+
+<div class="p"><!----></div>
+
+
+    Vom Inhalt her fehlt wenig. Etwas vermissen könnte man als GIMP-Kenner
+vielleicht nur das Freistellen mittels der Schnellauswahlmaske (<i>„Shift“</i>&nbsp;+&nbsp;<i>„Q“</i>),
+die bei vielen Nutzern beliebt ist, dafür aber auch ähnlich wie die
+Vordergrundauswahl funktioniert, die wiederum erklärt wird.
+
+<div class="p"><!----></div>
+Alles in allem ist „Bildbearbeitung mit Gimp 2.8” eine interessante,  
+kurze und preiswerte Lektüre, wobei man sich schon fragen muss, ob man die
+Tutorials im Internet nicht besser und ausführlicher wiederfindet – zumal
+nicht auf die Neuerung von GIMP 2.8 eingegangen wird.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i>Da es schade wäre, wenn das Buch bei Dominik Wagenführ
+im Bücherregal verstaubt, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Wie heißt das GIMP-Maskottchen?</em>“
+
+<div class="p"><!----></div>
+Die Antworten können bis zum <b>10. Februar 2013, 23:59 Uhr</b> über die 
+Kommentarfunktion unterhalb des Artikels oder per E-Mail an 
+<img src="freiesMagazin-2013-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> geschickt werden. Die Kommentare werden aber bis 
+zum Ende der Verlosung nicht freigeschaltet. Das Buch wird nach Ablauf der 
+Frist unter den Einsendern mit der richtigen Antwort verlost. Der Rechtsweg 
+ist wie immer ausgeschlossen! 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-02-bilder-Dateien/gimp_rezension.jpg" alt="gimp_rezension.jpg" style="max-width:100%" /><br /><em>„Bildbearbeitung mit Gimp 2.8“.</em><br />
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Bildbearbeitung mit Gimp 2.8&nbsp;<a href="http://www.it-fachportal.de/shop/buch/Bildbearbeitung%20mit%20GIMP%202.8/detail.html,b177423">[6]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Winfried Seimert </td></tr>
+<tr><td><b>Verlag</b> </td><td>bhv, 2012 </td></tr>
+<tr><td><b>Umfang</b> </td><td>192 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8266-7561-4 </td></tr>
+<tr><td><b>Preis</b> </td><td>12,95 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.gimp.org/"><tt class="big">http://www.gimp.org/</tt></a><br />
+[2] <a href="http://www.pro-linux.de/news/1/18330/gimp-28-freigegeben.html"><tt class="big">http://www.pro-linux.de/news/1/18330/gimp-28-freigegeben.html</tt></a><br />
+[3] <a href="http://www.gnu.org/licenses/gpl-3.0.html"><tt class="big">http://www.gnu.org/licenses/gpl-3.0.html</tt></a><br />
+[4] <a href="http://www.it-fachportal.de/shop/buch/Bildbearbeitung%20mit%20GIMP%202.8/detail.html,b177423"><tt class="big">http://www.it-fachportal.de/shop/buch/Bildbearbeitung mit GIMP 2.8/detail.html,b177423</tt></a><br />
+[5] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-03"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2010-03</tt></a><br />
+[6] <a href="http://www.it-fachportal.de/shop/buch/GIMP%202.8/detail.html,b171164"><tt class="big">http://www.it-fachportal.de/shop/buch/GIMP 2.8/detail.html,b171164</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+nutzt GIMP regelmäßig, um die Screenshots für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> aufzubereiten.
+Daneben setzt er es auch privat ein, um Bilder zu verbessern.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=Bildbearbeitung mit Gimp 2.8#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_02_rezension_node_js" name="fm_13_02_rezension_node_js">Rezension: „Node – Up and Running“ und „Node.js&nbsp;&amp;&nbsp;Co.“</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+        
+
+<b>D</b><b>ie JavaScript-Bibliothek Node.js&nbsp;<a href="http://nodejs.org/">[1]</a> dient zum 
+Erstellen von performanten, hochskalierbaren Webapplikation, wobei Node.js 
+serverseitig läuft, d.h. die Serverapplikation mit JavaScript/Node.js 
+erstellt wird. Aufgrund der Popularität und Flexibilität der Bibliothek ist 
+es auch nicht weiter verwunderlich, dass sich die IT-Autoren und Verlage dem 
+Thema widmen. In dem Artikel sollen zwei Bücher zu Node.js besprochen werden.</b>
+
+<div class="p"><!----></div>
+Die zwei Bücher zu Node.js sind zum einen das englischsprachige „Node – 
+Up and Running“ aus dem Hause O'Reilly (das inzwischen auch unter dem 
+Titel „Einführung in Node.js“ als deutsche Übersetzung erhältlich
+ist&nbsp;<a href="http://www.oreilly.de/catalog/nodeupandrunningger/index.html">[2]</a>) und 
+zum anderen das deutschsprachige „Node.js&nbsp;&amp;&nbsp;Co.“ aus dem dpunkt.verlag. 
+Beide Bücher haben das gleiche Ziel: schrittweise in die Node.js-Bibliothek 
+einführen, grundlegende Konzepte vorstellen, die Kern-APIs besprechen sowie 
+einen Blick auf den sehr reichhaltigen Fundus an Erweiterungen (im 
+Node.js-Kontext „Module“ genannt) werfen.
+
+<div class="p"><!----></div>
+Auch die Zielgruppe ist für beide Bücher die gleiche, nämlich 
+Applikationsentwickler, welche bereits (zumindest Grund-)Kenntnisse in 
+JavaScript haben und die Vorteile von Node.js für sich nutzen wollen.
+
+<div class="p"><!----></div>
+
+<h2>Umfang der Bücher</h2>
+
+
+Das Buch „Node – Up and Running“ ist im Vergleich zu anderer IT-Literatur 
+ziemlich dünn. Die Autoren Tom Hughes-Croucher und Mike Wilson, beides 
+selber aktive Entwickler, vermitteln das Wissen rund um die 
+JavaScript-Bibliothek auf „nur“ 170 Seiten. 
+
+<div class="p"><!----></div>
+Das Buch „Node.js&nbsp;&amp;&nbsp;Co.“, dessen 
+Autor Golo Roden ebenfalls ein erfahrener und aktiver Entwickler ist, 
+vermittelt das Thema auf 340 Seiten, also genau dem doppelten Seitenumfang. 
+
+<div class="p"><!----></div>
+Das Format der Bücher ist ähnlich, die Schriftgröße in „Node – Up and 
+Running“ ist etwas kleiner. Nichtsdestoweniger ist „Node.js&nbsp;&amp;&nbsp;Co.“ 
+umfangreicher. Doch dazu später mehr.
+
+<div class="p"><!----></div>
+
+<h2>Gemeinsamkeiten …</h2>
+
+
+Da beide Bücher einen Einstieg in das Thema Node.js bieten möchten, gibt es 
+natürlich eine Reihe von Gemeinsamkeiten, zumal die Kern-API der Bibliothek 
+auch recht übersichtlich ist.
+
+<div class="p"><!----></div>
+Begonnen wird in beiden Fällen mit einer Einführung in Node.js, also warum 
+dieses auf JavaScript setzt und welche Vorteile es gegenüber anderen 
+serverseitigen Lösungen bietet. 
+
+<div class="p"><!----></div>
+Weiterhin werden in beiden Büchern die 
+Kern-APIs wie der HTTP-Server, der EventEmitter, Socket-Communication, I/O 
+und die Node.js-eigene Paketverwaltung vorgestellt. Außerdem besprechen 
+beide Bücher die Anbindung von Node.js an verschiedene Datenbanken und 
+Datenbanktypen sowie an die recht populären Erweiterung 
+„Express“&nbsp;<a href="http://expressjs.com/">[3]</a>, eine Bibliothek zur Entwicklung von 
+Webapplikationen, welche wiederum auf Node.js aufsetzt. Auch das Erweitern 
+von Node.js mittels eigener Module wird in beiden Büchern thematisiert, in 
+„Node – Up and Running“ aber deutlich kürzer als in „Node.js&nbsp;&amp;&nbsp;Co.“.
+
+<div class="p"><!----></div>
+Beide Bücher enthalten eine Vielzahl von Beispielen, welche das jeweilige 
+Thema mit Beispielcode unterstützen. Die meisten Codebeispiele sind recht 
+kurz, aber in sich abgeschlossen und gut verständlich.
+
+<div class="p"><!----></div>
+Bilder und Abbildungen werden in beiden Büchern recht sparsam verwendet. 
+„Node – Up and Running“ enthält einige Grafiken zur Visualisierung von 
+bestimmten Themen, „Node.js&nbsp;&amp;&nbsp;Co.“ enthält einige Bildschirmfotos von 
+Applikationen bzw. dem Ergebnis des vorher gezeigten Beispielcodes. Alle 
+Bilder und Abbildungen sind in Graustufen gedruckt.
+
+<div class="p"><!----></div>
+
+<h2>… und Unterschiede</h2>
+
+
+Neben den oben erwähnten Gemeinsamkeiten gibt es aber auch eine Reihe von 
+Unterschieden. Aufgrund des Seitenumfangs ist es nicht weiter verwunderlich, 
+dass „Node.js&nbsp;&amp;&nbsp;Co.“ auf mehr Themen eingeht als „Node – Up and Running“. 
+
+<div class="p"><!----></div>
+So werden beispielsweise die Themen Debugging und Testen von Applikationen 
+recht ausführlich behandelt. Des Weiteren gibt es Kapitel zum Zusammenspiel 
+der beiden JavaScript-Template-Engines Jade&nbsp;<a href="http://jade-lang.com/">[4]</a> und 
+Stylus&nbsp;<a href="http://learnboost.github.com/stylus/">[5]</a> mit JavaScript sowie ein 
+eigenes Kapitel zum Erstellen von verteilten Anwendungen mit Node.js.
+
+<div class="p"><!----></div>
+Zusätzlich zu den kurzen Beispielen wird im Buch „Node.js&nbsp;&amp;&nbsp;Co.“ das Projekt 
+Silkveil&nbsp;<a href="https://github.com/goloroden/silkveiljs">[6]</a>, welches ebenfalls vom 
+Autor des Buchs stammt, für Beispiele herangezogen. Dabei wird die 
+Applikation im Verlauf des Buchs sukzessive entwickelt und erweitert. 
+
+<div class="p"><!----></div>
+Nach 
+jedem Hauptkapitel fließt das vorher Gezeigte und Erklärte in den 
+Programmcode ein. Alle relevanten Codeänderungen sind im Buch abgedruckt.
+
+<div class="p"><!----></div>
+Aber auch das dünnere „Node – Up and Running“ enthält einige 
+Unterkapitel, welche so in dem anderen Buch nicht vorkommen. Das sind 
+beispielsweise die als „Helper APIs“ bezeichneten Node.js-Module zum Thema 
+DNS und Kryptographie.
+
+<div class="p"><!----></div>
+„Node – Up and Running“ ist ca. drei Monate früher erschienen und geht 
+daher „nur“ auf Node.js in der Version 0.6.x ein, während in „Node.js&nbsp;&amp;&nbsp;Co.“ 
+schon die Version 0.8.x verwendet wird, da diese zwischenzeitlich erschienen 
+war. 
+
+<div class="p"><!----></div>
+Für eine Einführung in Node.js ist dies jedoch eher nebensächlich. 
+Außerdem entwickelt sich Node.js aktuell immer noch ziemlich schnell, sodass 
+letztendlich alle Autoren und Verlage mit einer schnellen „Alterung“ ihrer 
+Bücher zu kämpfen haben.
+
+<div class="p"><!----></div>
+
+<h2>Schreibstil und Lesbarkeit</h2>
+
+
+Beide Bücher sind gut lesbar. Die Autoren pflegen einen flüssigen 
+Schreibstil, wobei der von „Node – Up and Running“ tendenziell etwas 
+lockerer ist. Das Englisch des Buchs aus dem Hause O'Reilly ist durchweg gut 
+verständlich. Schulenglisch sollte dafür ausreichend sein.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Beide Bücher bieten einen guten und fundierten Einstieg in die Nutzung von 
+Node.js. Vordergründig bietet „Node.js&nbsp;&amp;&nbsp;Co.“ bei doppeltem Umfang und einem 
+Mehrpreis von 10 Euro gegenüber dem anderen Buch ein besseres 
+Preis-Leistungsverhältnis. Das Buch „Node – Up and Running“ ist jedoch 
+kompakter und kommt schneller auf den Punkt, sodass der Leser schneller einen 
+Überblick bekommt. Dieser ist dafür bei „Node.js&nbsp;&amp;&nbsp;Co.“ umfassender, 
+zumindest was die Anzahl der Themen angeht.
+
+<div class="p"><!----></div>
+Welches Buch „besser“ ist, muss jeder Leser letztendlich für sich 
+selber entscheiden. Dazu sollte man vor dem Kauf vielleicht einen Blick in 
+beide Bücher in der Buchhandlung seines Vertrauens werfen.
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Node – Up and Running&nbsp;<a href="http://shop.oreilly.com/product/0636920015956.do">[7]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Tom Hughes-Croucher, Mike Wilson </td></tr>
+<tr><td><b>Verlag</b> </td><td>O'Reilly </td></tr>
+<tr><td><b>Umfang</b> </td><td>170 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-1449398583 </td></tr>
+<tr><td><b>Preis</b> </td><td>22,95 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Node.js&nbsp;&amp;&nbsp;Co.&nbsp;<a href="http://www.dpunkt.de/buecher/3852/node.js-%26amp%3B-co..html">[8]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Golo Roden </td></tr>
+<tr><td><b>Verlag</b> </td><td>dpunkt.verlag </td></tr>
+<tr><td><b>Umfang</b> </td><td>334 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3898648295 </td></tr>
+<tr><td><b>Preis</b> </td><td>32,90 €
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://nodejs.org/"><tt class="big">http://nodejs.org/</tt></a><br />
+[2] <a href="http://www.oreilly.de/catalog/nodeupandrunningger/index.html"><tt class="big">http://www.oreilly.de/catalog/nodeupandrunningger/index.html</tt></a><br />
+[3] <a href="http://expressjs.com/"><tt class="big">http://expressjs.com/</tt></a><br />
+[4] <a href="http://jade-lang.com/"><tt class="big">http://jade-lang.com/</tt></a><br />
+[5] <a href="http://learnboost.github.com/stylus/"><tt class="big">http://learnboost.github.com/stylus/</tt></a><br />
+[6] <a href="https://github.com/goloroden/silkveiljs"><tt class="big">https://github.com/goloroden/silkveiljs</tt></a><br />
+[7] <a href="http://shop.oreilly.com/product/0636920015956.do"><tt class="big">http://shop.oreilly.com/product/0636920015956.do</tt></a><br />
+[8] <a href="http://www.dpunkt.de/buecher/3852/node.js-%26amp%3B-co..html"><tt class="big">http://www.dpunkt.de/buecher/3852/node.js-&amp;-co..html</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.de/">Webseite</a>)
+programmiert zwar bevorzugt in Python, das Thema Node.js hat 
+ihn jedoch auch interessiert. Beide Bücher haben ihm geholfen, einen 
+besseren Ein- und Überblick zu diesem Thema zu bekommen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=Rezension Node.js#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+        <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+            
+
+
+<h1><font color="#595959"><a id="fm_13_02_leserbriefe" name="fm_13_02_leserbriefe">Leserbriefe</a></font></h1>
+            <b>Für Leserbriefe steht unsere E-Mailadresse
+            <img src="freiesMagazin-2013-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+            Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+        An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+        uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+        sehr viel Lob (was uns natürlich freut), aber vor allem durch
+        Kritik und neue Ideen können wir uns verbessern.
+    
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>Magazin-Abo</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ich wollte mal fragen, ob Ihr geplant habt, eine Variante zum
+implementieren, die neuen Ausgaben automatisiert abzuholen.
+
+<div class="p"><!----></div>
+Ich dachte da an z.&nbsp;B. ein RSS-Feed, der statt Videos PDF, EPUB oder
+HTML-Archive ausliefert. Oder an sowas wie eine Auslieferung per E-Mail.
+
+<div class="p"><!----></div>
+Wenn Ihr bei der Umsetzung und Evaluierung Hilfe braucht, sagt mir Bescheid,
+ich teste und bastle gerne an sowas.
+        <br /><b>Andre Klärner</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Per E-Mail liefern wir mit Absicht nichts aus, auch keine Benachrichtigung,
+weil die Datenschutzrichtlinien für die Speicherung solcher
+persönlicher Daten in Deutschland enorm sind. Wir sind nur
+Privatpersonen und können und wollen dies nicht erfüllen.
+
+<div class="p"><!----></div>
+Was die Auslieferung per RSS-Feed angeht ließe sich ggf. etwas machen.
+Hier stehen wir mit Andre Klärner in Kontakt.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Leserreaktionen zum SoftMaker-Artikel</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Jetzt muss ich doch mal die Antwort auf den Leserbrief über Softmaker-Office 
+kommentieren. ;-)
+
+<div class="p"><!----></div>
+Wenn in dieser Antwort gesagt wird „<em>SoftMaker Office kann natürlich ganz 
+normal mit Open Document umgehen, wie fast jede andere Office-Suite auch.</em>“, 
+widerspricht das sogar dem Artikel aus <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 12/2012, um den es 
+ursprünglich geht. Darin wird nämlich ausdrücklich erwähnt, das SoftMaker 
+Office lediglich Open-Document-Texte unterstützt, mit Open-Document-Tabellen 
+und -Präsentationen jedoch nichts anfangen kann. Und wie man den Screenshots 
+des Artikels entnehmen kann, funktioniert sogar der Im- und Export von 
+Open-Document-Texten nur suboptimal.
+        <br /><b>Frank W.</b> &nbsp;(<a href="http://www.freiesmagazin.de/20130106-januarausgabe-erschienen#comment-2799">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Dies war in der Tat eine Falschaussage meinerseits bzw. setze ich (leider) 
+sehr oft Open Document Format mit Open Document Text gleich. Das heißt, ein 
+Open Document Text aus OpenOffice und LibreOffice kann SoftMaker Office 
+öffnen und bei meinem Test auch korrekt anzeigen. Mein Fazit damals im 
+Artikel „Test: OpenDocument-Format für den Datenaustausch“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 04/2011&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2011-04">[1]</a> war:
+
+<div class="p"><!----></div>
+„<em>Wenn überall OpenOffice.org oder TextMaker als Programm der Wahl 
+eingesetzt wird, sind zwar kleinere Probleme vorhanden, mit denen man aber 
+meist leben kann.</em>“
+
+<div class="p"><!----></div>
+Aber hier kommen unterschiedliche Tester wohl auch immer zu 
+unterschiedlichen Ergebnissen.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2011-04"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2011-04</tt></a><br />
+    
+
+<div class="p"><!----></div>
+                Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+        kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+    
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/314?edit[subject]=Leserbriefe#comment-form"><i>Die Leserbriefe kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                            
+<h1><font color="#595959"><a id="fm_13_02_veranstaltungen" name="fm_13_02_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+CeBIT </td><td>Hannover </td><td align="left">05.03.–09.03.2013 </td><td>40 EUR </td><td align="left"><a href="http://www.cebit.de/"><tt class="big">http://www.cebit.de/</tt></a> </td></tr>
+<tr><td align="left">Chemnitzer Linux-Tage </td><td>Chemnitz </td><td align="left">16.03.–17.03.2013 </td><td>8 EUR </td><td align="left"><a href="http://chemnitzer.linux-tage.de"><tt class="big">http://chemnitzer.linux-tage.de</tt></a> </td></tr>
+<tr><td align="left">Augsburger Linux-Infotag </td><td>Augsburg </td><td align="left">23.03.2013 </td><td>frei </td><td align="left"><a href="http://www.luga.de/"><tt class="big">http://www.luga.de/</tt></a> </td></tr>
+<tr><td align="left">Easterhegg </td><td>Paderborn </td><td align="left">29.03.–01.04.2013 </td><td>– </td><td align="left"><a href="http://www.easterhegg.eu/"><tt class="big">http://www.easterhegg.eu/</tt></a> </td></tr>
+<tr><td align="left">Edu Days </td><td>Krems </td><td align="left">03.04.–04.04.2013 </td><td>frei </td><td align="left"><a href="http://www.edudays.at"><tt class="big">http://www.edudays.at</tt></a> </td></tr>
+<tr><td align="left">Grazer Linuxtage </td><td>Graz </td><td align="left">20.04.2013 </td><td>frei </td><td align="left"><a href="http://www.linuxtage.at/"><tt class="big">http://www.linuxtage.at/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Wien </td><td>Wien </td><td align="left">02.05.–02.05.2013 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2013-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                            
+<h1><font color="#595959"><a id="fm_13_02_vorschau" name="fm_13_02_vorschau">Vorschau</a></font></h1>
+
+
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint immer am ersten Sonntag eines Monats. Die März-Ausgabe wird voraussichtlich am 3. März unter anderem mit folgenden Themen veröffentlicht:
+
+<ul>
+<li> PNG-Bilder (automatisch) optimieren</li>
+<li> Rezension: PC-Netzwerke – Das umfassende Handbuch</li>
+</ul>
+Es kann leider vorkommen, dass wir aus internen Gründen angekündigte Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                    
+<h1><font color="#595959"><a id="fm_13_02_konventionen" name="fm_13_02_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                    
+<h1><font color="#595959"><a id="fm_13_02_impressum" name="fm_13_02_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 3. Februar 2013<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2013-02-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left"><b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Markus Brenneis </td><td align="left"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_ffox_addonsdk1">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil I: Einführung</a>  </td></tr>
+<tr><td align="left">Sven Hertle </td><td align="left"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_awesome">awesome – Ein Tiling-Fenstermanager</a>  </td></tr>
+<tr><td align="left">Lukas Märdian </td><td align="left"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_openphoenux">OpenPhoenux GTA04: Offenes Smartphone feiert Erfolge</a>  </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_kernel">Der Januar im Kernelrückblick</a>  </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_rezension_node_js">Rezension: „Node – Up and Running“ und „Node.js&nbsp;&amp;&nbsp;Co.“</a>  </td></tr>
+<tr><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2013-02-bilder.html#fm_13_02_resize">Bilder verkleinern und versenden</a>, <a href="freiesMagazin-2013-02-bilder.html#fm_13_02_rezension_gimp">Rezension: Bildbearbeitung mit Gimp 2.8</a>  </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Matthias Sitte </td><td align="left">Sujeevan Vijayakumaran </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+<tr><td align="left"><b>Satz und Layout</b></td></tr>
+<tr><td align="left">Holger Dinkel </td><td align="left">Dominik Frey </td></tr>
+<tr><td align="left">Tobias Kempfer </td><td align="left">Stefan Wiehler </td></tr>
+
+<tr><td align="left"><b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left">Toni Zimmer </td></tr>
+
+<tr><td align="left"><b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td></tr>
+
+<tr><td align="left"><b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA 3.0 Unported</a>) </td></tr></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2013-02-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  3 Feb 2013, 09:41.</small>
+</div>
+</body></html>

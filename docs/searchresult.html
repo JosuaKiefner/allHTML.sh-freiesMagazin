@@ -1,0 +1,63 @@
+<!--Diese Seite wurde mithilfe des bash-Skriptes allHTML.sh, Copyright 2016 Josua Kiefner und lizenziert unter der Gnu GPL v3, erstellt. Die Suchfunktion entstammt dem xsl-webhelpindexer und dem DocBook project. Für weitere Informationen, siehe github.com/JosuaKiefner/allHTML.sh-freiesMagazin-->
+<!--Diese Seite, freiesMagazin (Copyright freiesMagazin) sowie das Logo von freiesMagazin (erstellt von Arne Weinberg) sind lizenziert unter einer Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz (https://creativecommons.org/licenses/by-sa/4.0)-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Suchergebnis" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="search/fm-logo-standalone.png">
+<link type="text/css" rel="stylesheet" href="search/css/themes/default/jquery.mobile-1.4.5.min.css"/>
+<script type="text/javascript" src="search/js/jquery.js"></script>
+<script type="text/javascript" src="search/js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="search/js/main.js"></script>
+<script type="text/javascript" src="search/common/browserDetect.js"></script>
+<script type="text/javascript" src="search/common/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="search/common/jquery/jquery.ui.all.js"></script>
+<script type="text/javascript" src="search/common/jquery/jquery.cookie.js"></script>
+<script type="text/javascript" src="search/common/jquery/treeview/jquery.treeview.min.js"></script>
+<script type="text/javascript" src="search/l10n.js"></script>
+<script type="text/javascript" src="search/htmlFileInfoList.js"></script>
+<script type="text/javascript" src="search/nwSearchFnt.js"></script>
+<script type="text/javascript" src="search/stemmers/de_stemmer.js"></script>
+<script type="text/javascript" src="search/index-1.js"></script>
+<script type="text/javascript" src="search/index-2.js"></script>
+<script type="text/javascript" src="search/index-3.js"></script>
+<script type="text/javascript" src="search/common/main.js"></script>
+<script type="text/javascript" src="search/js/cookies.js"></script>
+<link rel="stylesheet" type="text/css" href="search/css/style.css" />
+<title>
+Suchergebnis
+</title>
+<noscript>
+<div class="noscriptmsg">
+Sie müssen JavaScript für diese Seite aktivieren, damit die Suche funktioniert.
+</div>
+</noscript>
+</head>
+<body>
+
+<div style="margin:1em">
+<form onsubmit="window.location.href='searchresult.html'; Verifie(searchForm);" name="searchForm" class="searchForm" style="display: block; max-width: 50em; margin-bottom: 2em">
+<img onclick="window.location.href='start.html';" id="fm-Logo" src="search/fm-logo-standalone.png" style="float:left; height: 2.5em" />
+<img onclick="window.location.href='searchresult.html'; Verifie(searchForm);"  src="search/search-black.png" id="doSearch" tabindex="1" style="float: right; margin: 0; height: 2.5em"><!--<p id="center">-->
+<!--<div id="TextToSearch" style="display:table-cell">-->
+<span style="display: block; overflow: hidden; padding-left: 1.5em; padding-right: 0.5em; height: 2.5em"><input type="search" data-role="none" id="textToSearch" name="textToSearch"  placeholder="Wonach suchen Sie?" data-clear-btn="true" tabindex="1" style="width: 100%; font-size: 1em; height: 2.5em; line-height: 1.5em;"> </span>
+</p>
+</form>
+
+<div id="searchresult"></div>
+<div id="content">
+<div id="main">
+<div id="content_idx">
+<div id="searchResults">
+<center></center>
+</div>
+</div> <!-- main end -->
+</div> <!-- Content end -->
+</div>
+<p>Diese Seite wurde mithilfe des bash-Skriptes allHTML.sh, Copyright 2016 Josua Kiefner und lizenziert unter der Gnu GPL v3, erstellt. Die Suchfunktion entstammt dem xsl-webhelpindexer und dem DocBook project. Für weitere Informationen, siehe <a target="_blank" href="https://github.com/JosuaKiefner/allHTML.sh-freiesMagazin">github.com/JosuaKiefner/allHTML.sh-freiesMagazin</a>.</p>
+<p>Diese Seite, freiesMagazin (Copyright freiesMagazin) sowie das Logo von freiesMagazin (erstellt von Arne Weinberg) sind lizenziert unter einer <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.</p>
+</div>
+</body>
+</html>

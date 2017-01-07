@@ -1,0 +1,4029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                  
+<title>freiesMagazin 10/2013</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Datenschutz als Illusion | Der September im Kernelrückblick | Desaster Recovery mit Hilfe der richtigen Backup Strategie | Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil VII: Netzwerk-Anfragen | PowerDNS – die andere VerBINDung | Rezension: Dropbox – Sicher speichern und effektiv arbeiten in der Cloud | Rezension: Android-Apps entwickeln für Einsteiger | Rezension: Node.js – Das umfassende Handbuch | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 3.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 10/2013" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2013-10-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2013-10.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>Oktober 2013</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Topthemen dieser Ausgabe</a></font></h1>
+
+
+        <font size="+1"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_Desaster_Recovery">Desaster Recovery mit Hilfe der richtigen Backup Strategie</a></font> <br />
+    Unter dem Begriff Desaster Recovery versteht man in der Informationstechnik die Notfallwiederherstellung nach einem Ausfall von Hardware, Software oder Infrastruktur. Der Artikel soll die Grundlagen vermitteln, um Desaster Recovery zu verstehen und bei der Auswahl geeigneter Sicherungs- oder Wiederherstellungsmaßnahmen helfen. (<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_Desaster_Recovery">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+        <font size="+1"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_powerdns">PowerDNS – die andere VerBINDung</a></font> <br />
+    Für ein Projekt, bei dem skript-gesteuert DNS-Einträge gesetzt werden sollten, war der Autor auf der Suche nach einer gangbaren Lösung. Der Artikel zeigt, wie man mit Hilfe des Programms PowerDNS das Problem lösen kann. (<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_powerdns">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+              
+
+                        
+<h1><font color="#595959"><a id="fm_index" name="fm_index">Inhalt</a></font></h1><!-- CONTENT -->
+
+<b>Linux allgemein</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_datenschutz_als_illusion">Datenschutz als Illusion</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_kernel">Der September im Kernelrückblick</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Anleitungen</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_Desaster_Recovery">Desaster Recovery mit Hilfe der richtigen Backup Strategie</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_ffox_addonsdk7">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil VII: Netzwerk-Anfragen</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Software</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_powerdns">PowerDNS – die andere VerBINDung</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Community</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_rezension_dropbox">Rezension: Dropbox – Sicher speichern und effektiv arbeiten in der Cloud</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_rezension_android">Rezension: Android-Apps entwickeln für Einsteiger</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_rezension_nodejs">Rezension: Node.js – Das umfassende Handbuch</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Magazin</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_13_10_impressum">Impressum</a><br /><!-- CONTENT -->
+
+
+
+<div class="p"><!----></div><!-- CONTENT -->
+<a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_10_editorial" name="fm_13_10_editorial">Editorial</a></font></h1>
+    
+
+
+
+<h2>Auf Wiedersehen, svij!</h2>
+
+
+Vor circa einem Jahr fing Sujeevan Vijayakumaran (kurz svij, weil sonst 
+niemand seinen Namen richtig aussprechen kann) bei <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> als Redakteur an. 
+In diesem Jahr unterstützte er das Team tatkräftig und übernahm vor allem 
+den Kontakt mit den Autoren.
+
+<div class="p"><!----></div>
+Aus zeitlichen Gründen musste Sujeevan uns leider Anfang Oktober verlassen, 
+sodass die Redaktion wieder nur aus zwei Mitglieder besteht. Es ist noch 
+nicht klar, ob wir ein drittes Redaktionsmitglied suchen. Vorerst versuchen 
+wir in der Redaktion mit vier Händen auszukommen.
+
+<div class="p"><!----></div>
+Wir danken Sujeevan für seine Hilfe im letzten Jahr und bleiben auf alle 
+Fälle in Kontakt – was vor allem daran liegt, dass es Überschneidungen mit 
+anderen Communitys gibt, wo man tätig ist.
+
+<div class="p"><!----></div>
+
+<h2>Ubucon 2013 in Heidelberg</h2>
+
+
+In einer Woche ist es wieder so weit. Ab Freitag trifft sich die 
+deutschsprachige Ubuntu-Community zur Ubucon 2013 in 
+Heidelberg&nbsp;<a href="http://ubucon.de/2013/">[1]</a>. An drei Tagen steht ein 50-stündiges 
+Programm an, wobei so gut wie jeder Linux-Aspekt abgedeckt wird. 
+Angesprochen werden sowohl Einsteiger als auch fortgeschrittene 
+Linux-Benutzer.
+
+<div class="p"><!----></div>
+Wer noch nie auf einem Linux-Event war, sollte unbedingt in Heidelberg 
+vorbeischauen. Die Atmosphäre ist immer sehr freundlich und jeder Neue wird 
+normalerweise sofort mit eingebunden. Und vielleicht erspäht man sogar den 
+einen oder anderen <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Mitarbeiter.
+
+<div class="p"><!----></div>
+
+<h2>Neuer Programmierwettbewerb</h2>
+
+
+In der letzten Ausgabe fragten wir, welche Aufgabe Teil des nächstens <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+-Programmierwettbewerbs werden soll. Die Ergebnisse der Umfrage wurden 
+ausgewertet&nbsp;<a href="http://www.freiesmagazin.de/20130909-ergebnisse-der-abstimmung-fuer-programmierwettbewerb">[2]</a>
+und es gab eine recht deutliche Präferenz für das Tron-Spiel. 
+Bei den potentiellen Wettbewerbsteilnehmern waren sowohl die Tron-Aufgabe als 
+auch das Vegas-Spiel gleich beliebt.
+
+<div class="p"><!----></div>
+Leider können wir nicht garantieren, dass wir die Tron-Aufgabe bis Dezember 
+2013 umsetzen können. Das heißt, gegebenenfalls setzen wir zuerst die etwas
+einfachere Aufgabe des Vegas-Würfelspiels um. Das „Light Cycle Race“ wird
+aber auf alle Fälle kommen – vielleicht dann aber erst im nächsten Jahr.
+
+<div class="p"><!----></div>
+Und nun wünschen wir viel Spaß beim Lesen der neuen Ausgabe.
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://ubucon.de/2013/"><tt class="big">http://ubucon.de/2013/</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/20130909-ergebnisse-der-abstimmung-fuer-programmierwettbewerb"><tt class="big">http://www.freiesmagazin.de/20130909-ergebnisse-der-abstimmung-fuer-programmierwettbewerb</tt></a><br />
+    
+
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+<h1><font color="#595959"><a id="fm_13_10_datenschutz_als_illusion" name="fm_13_10_datenschutz_als_illusion">Datenschutz als Illusion</a></font></h1>von Stefan Betz
+
+<div class="p"><!----></div>
+    <b>E</b><b>s ist das Jahr 2013. Ein Jahr, in dem so gut wie jeder ständig gegen einen 
+Grundsatz aus dem Datenschutz verstößt: die Datensparsamkeit. Hintergrund 
+von diesem Grundsatz ist, dass man Daten, die nicht entstehen oder zumindest 
+nicht gespeichert werden, auch nicht besonders schützen muss. Dieser 
+Grundsatz ist eigentlich eine gute Idee, aber leider machen es gerade 
+moderne Anwendungen immer schwerer, diesem Grundsatz zu entsprechen. Der
+Artikel soll weniger Lösungen aufzeigen, sondern eher zum Nachdenken anregen,
+was man mit seinen eigenen Daten macht.</b>
+
+<div class="p"><!----></div>
+Ein weiterer Punkt ist ebenso wichtig: Viele verlassen sich beim Thema
+Datenschutz zu sehr auf Schlangenöl&nbsp;<a href="https://de.wikipedia.org/wiki/Schlangen%C3%B6l">[1]</a>
+wie Privatsphäreeinstellungen von Facebook (und anderen sozialen Netzwerken) 
+oder die entsprechenden Einstellungen von dem Smartphone.
+
+<div class="p"><!----></div>
+
+<h2>Soziale Netzwerke</h2>
+
+
+Gerade Facebook stellt ein sehr gutes Beispiel dar. Es gibt sehr viele Leute, die 
+ihre Einstellungen sehr restriktiv gewählt haben. Eine (grundlegend) gute 
+Idee, jedoch sammelt Facebook mit großer Wahrscheinlichkeit unabhängig von 
+den Einstellungen trotzdem die Daten, da ein Filtern der Informationen an 
+der Quelle wesentlich aufwändiger ist, als die Daten einfach im 
+Benutzerprofil auszublenden.
+
+<div class="p"><!----></div>
+Wieder andere Menschen verwenden kein Facebook 
+im Glauben daran, dass Facebook auf diese Art kein Profil über einen 
+erstellen kann. Aber das stimmt nicht ganz. Es ist für Facebook egal, ob man 
+einen Konto dort hat oder nicht, ein Profil wird dennoch erstellt. Andere 
+soziale Netzwerke verhalten sich hier nicht wesentlich anders. Ermöglicht 
+wird dies über große Werbenetzwerke und die fast überall vorhandenen „Social 
+Buttons“ (Liken, Sharen, Retweeten), welche permanent das Surfverhalten 
+aufzeichnen und zu einem ansehnlichen Profil zusammenfassen.
+
+<div class="p"><!----></div>
+
+<h2>Smartphones</h2>
+
+
+Ein Smartphone ist nicht besser. Technisch gesehen handelt es sich dabei um 
+tragbare PCs, auf welchen man Firmen wie Microsoft, Apple oder Google einen 
+Administrationszugang geschenkt hat. Herr über seine Daten ist man auf 
+diesen Geräten nicht. Das sind eher die eben genannten großen Anbieter, 
+welche sich aktuell einen Kampf mit den Mobilfunkprovidern darüber liefern, 
+wem der Kunde gehört.
+
+<div class="p"><!----></div>
+Dass ein Administrator auf einem System machen kann, was er will, ist den 
+meisten bekannt. Nur so funktioniert z.&nbsp;B. auch die Remote-Installation oder 
+Deinstallation von Anwendungen. Dass es für 
+einen Administrator aber auch egal ist, ob die Standorteinstellungen 
+datenschutztechnisch eher positiv gewählt wurden, ist für diesen 
+zusätzlichen, freiwillig gewählten Administrator kein Hindernis.
+
+<div class="p"><!----></div>
+
+<h2>Shopping</h2>
+
+
+Auch beim Einkaufen (nicht nur im Internet) verschenken viele Leute sehr 
+gerne ihre Daten, Wünsche und Neigungen. Fast jeder hat schon über Amazon 
+etwas bestellt und viele nutzen das Versandhaus ausschließlich. Der Dienst 
+weiß dann, welche Filme man mag und welche Bücher man liest. Der 
+Logout-Button ist dabei eine Illusion, falls jemand auf die Idee kommt, man 
+könne sich einfach abmelden und alles wird gut.
+
+<div class="p"><!----></div>
+Für das Geschenk (die eigenen Daten) bekommen man von den Anbietern dann 
+tolle Empfehlungen, die zum Kauf von anderen Artikeln verleiten sollen und 
+die wir vielleicht sogar haben wollen.
+
+<div class="p"><!----></div>
+Am schönsten für diese Anbieter (Amazon, eBay,&nbsp;…) ist es aber, wenn man 
+deren Browser-Add-on nutzt, um sich damit einen „Universal-Wunschzettel“ zu erstellen. 
+Man ermöglicht damit, dass der Shop alle Bewegungen im Internet vollständig 
+erfassen kann und das Profil, das bisher nur auf Einkäufe im Shop ermittelt 
+wurde, wesentlich zu erweitern.
+
+<div class="p"><!----></div>
+
+<h2>Abhilfe</h2>
+
+
+Es gibt es zwei Möglichkeiten, wie man mit dieser Situation umgehen kann:
+
+<div class="p"><!----></div>
+
+<ol>
+<li> Verhindern, dass die Daten entstehen</li>
+<li> Daten für eigene Zwecke verwenden</li>
+</ol>
+
+<div class="p"><!----></div>
+
+<h3>Verhinderung von Daten</h3>
+
+
+Erst gar keine Daten entstehen zu lassen ist ohne Zweifel die sicherste 
+Möglichkeit, um zu verhindern, dass man Daten liefert, die man nicht 
+verteilen wollte. Hierzu gibt es sehr viele Möglichkeiten. Am wichtigsten 
+sind sicherlich die Erweiterungen für den Browser wie z.&nbsp;B. 
+Ghostery&nbsp;<a href="https://www.ghostery.com/">[2]</a>,
+Adblock Plus&nbsp;<a href="https://adblockplus.org/">[3]</a> oder auch
+HTTPS Everywhere&nbsp;<a href="https://www.eff.org/https-everywhere">[4]</a>. Wenn man diese 
+verwendet, sorgt man dafür, dass lästige Tracking-Dienste einen durch 
+Werbung und Social-Media-Funktionen nicht mehr erfassen können. Man kann 
+also selektiv wählen, wer die eigenen Daten bekommt. Je nach Einstellung 
+erhalten die Entwickler dieser Erweiterungen noch einen Teil der Daten, aber 
+diese sind uns (mehr oder weniger) bekannt und nicht zu vergleichen mit der 
+anonymen Menge von mehreren Hundert Tracking-Diensten, die einen täglich 
+erfassen.
+
+<div class="p"><!----></div>
+Beim Shopping eignet sich der private Browser-Modus prima als Zusatz. 
+Hiermit kann man sehr bequem nach Musik, Filmen und anderen Produkte auf 
+Amazon &amp; Co. suchen, ohne das hinterlegte Profil zu erweitern. Erst bei der 
+echten Bestellung wechselt man zurück in die normale Sitzung und kauft 
+gezielt den ausgewählten Artikel. Das Resultat ist ein Profil mit 
+Empfehlungen auf Amazon, die dem echten Kaufverhalten entsprechen und sehr 
+wenig Angriffsfläche bietet für Dinge, die Amazon einfach nichts angehen.
+
+<div class="p"><!----></div>
+Zum Thema Verhinderung gehört auch die Auswahl an Diensten, welchen man die 
+eigenen Daten anvertraut.
+
+<div class="p"><!----></div>
+So sollte man überlegen, bei welchen der großen 
+sozialen Dienste wie Google+, Twitter oder Facebook man wirklich ein Konto 
+benötigt. Wenn man nicht will, dass Dienste die eigenen Daten erhalten, dann 
+sollte man ihnen diese auch nicht geben. Ein Foto, das man privat auf 
+Facebook teilt, ist eben trotzdem ein Datensatz, der für Facebook vorhanden 
+und nutzbar 
+ist&nbsp;<a href="http://www.internet-law.de/2013/09/facebook-will-wieder-mal-nutzerdaten-ko
+mmerziell-verwerten.html">[5]</a>.
+
+<div class="p"><!----></div>
+
+<h3>Eigennützige Verwendung</h3>
+
+
+Oft ist es aber so, dass man die Ermittlung und Speicherung von Daten nicht 
+wirklich verhindern kann. Dinge, die auf seinem Android-Smartphone sind, 
+sollte man wie Dinge behandeln, die man Google geschenkt hat. Hier sollte 
+man sich nicht der Illusion hingeben, Herr über diese Daten zu sein. Aber 
+man kann versuchen, aus der unangenehmen Situation das Beste zu machen: Die 
+Daten zur eigenen Verwendung nutzen!
+
+<div class="p"><!----></div>
+Das kann dann auch ein Grund sein, wieso man Dinge wie den Android Device 
+Manager oder die Standortfreigabe von Google+ nutzt, denn die Daten sind 
+schon vorhanden, nur nicht einsehbar. Durch die 
+Verwendung der Standortdaten oder der Remote Administration erhält man 
+zumindest einen gewissen Komfort und zum anderen weiß man 
+zumindest zu einem Teil, welche Daten (und Möglichkeiten) der Anbieter 
+wirklich hat.
+
+<div class="p"><!----></div>
+
+<h2>Verschlüsselung</h2>
+
+
+Verschlüsselung (insbesondere HTTPS&nbsp;<a href="https://de.wikipedia.org/wiki/HTTPS">[6]</a>) ist 
+für das Thema „Datenschutz als Illusion“ übrigens keine Lösung.<br />
+Auch bei einer 
+Ende-zu-Ende-Verschlüsselung&nbsp;<a href="https://de.wikipedia.org/wiki/Ende-zu-Ende-Verschl%C3%BCsselung">[7]</a> 
+fallen noch sehr viele Daten (Metadaten&nbsp;<a href="https://de.wikipedia.org/wiki/Metadaten">[8]</a>)
+an, welche für zahlreiche Zwecke ausreichend sind. Spätestens dann, wenn man 
+große Anbieter wie Google oder Amazon nutzt, handelt es sich nur noch um 
+eine Verschlüsselung für den Transport der Daten. Die Illusion, etwas zu 
+verbergen, wird hierdurch beim Laien noch verstärkt, da diese oft glauben, 
+dass Verschlüsselung etwas mit Datenschutz zu tun hat, was aber nicht 
+zwangsläufig so ist.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Schlangen%C3%B6l"><tt class="big">https://de.wikipedia.org/wiki/Schlangenöl</tt></a><br />
+[2] <a href="https://www.ghostery.com/"><tt class="big">https://www.ghostery.com/</tt></a><br />
+[3] <a href="https://adblockplus.org/"><tt class="big">https://adblockplus.org/</tt></a><br />
+[4] <a href="https://www.eff.org/https-everywhere"><tt class="big">https://www.eff.org/https-everywhere</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/HTTPS"><tt class="big">https://de.wikipedia.org/wiki/HTTPS</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Ende-zu-Ende-Verschl%C3%BCsselung"><tt class="big">https://de.wikipedia.org/wiki/Ende-zu-Ende-Verschlüsselung</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Metadaten"><tt class="big">https://de.wikipedia.org/wiki/Metadaten</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Stefan Betz</b>&nbsp;(<a href="http://blog.stefan-betz.net/">Webseite</a>)
+ist Hobby-Administrator und
+gesellschaftskritischer Nerd mit einem Hang zu den Themen Sicherheit, Überwachung
+und Datenschutz.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Datenschutz als Illusion#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_10_kernel" name="fm_13_10_kernel">Der September im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 3.11</h2>
+
+
+Für die Septemberausgabe von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> hat es gerade nicht mehr gereicht,
+doch kurz nach deren Veröffentlichung gab Torvalds „Linux for Workgroups“
+frei&nbsp;<a href="https://lkml.org/lkml/2013/9/2/402">[1]</a>. Die Änderungen zur vorangegangenen
+Entwicklerversion blieben überschaubar. So kann Linux 3.11 in vielerlei Hinsicht
+keine Superlative bieten: Es gab Kernel-Versionen, die mehr Änderungen
+auswiesen, und auch welche mit weniger Änderungen, auch die Anzahl der
+geänderten Quellcodezeilen liegt eher im Mittelfeld. Mit 64 Tagen
+Entwicklungszeit kommt man den Express-Kernels Linux 3.5 und Linux 3.10
+zwar sehr nahe, aber immerhin haben es von den bislang 12 Versionen der 
+3er-Kernel-Serie immerhin fünf auf diesen Wert oder darunter geschafft. Womit der
+jüngste Spross der Linux-Kernel-Familie glänzen kann, muss also unter seinen
+inneren Werten gesucht werden.
+
+<div class="p"><!----></div>
+Die ARM-Architektur erhielt auch mit Linux 3.11 einen guten Teil Aufmerksamkeit.
+Sowohl auf 32- als auch 64-Bit-Systemen werden nun große Speicherseiten
+unterstützt. Dadurch wird die Zuweisung großer Mengen an Arbeitsspeicher
+verbessert, da hier auch größere Speicherstückchen als die sonst üblichen 4 KiB
+verwendet werden können. Der Gewinn liegt in einfacheren Abläufen in der
+Speicherverwaltung und schnelleren Zugriffen, da die  genutzten Speicherbereiche
+eines Prozesses hierdurch weniger wild über den zur Verfügung stehenden
+Arbeitsspeicher verteilt werden.
+
+<div class="p"><!----></div>
+Ein zweiter Punkt ist die neu hinzu gekommene Unterstützung für die
+Virtualisierungslösungen KVM und Xen auf 64-Bit-ARM-Systemen, die somit künftig
+als Gastgeber für Virtuelle Maschinen in Betracht kommen. Nebenbei wurde mit
+einem Patch auch die Behandlung eines Registers (ein Speicherbereich innerhalb
+des Prozessors selbst) korrigiert. Dadurch wird nun die Ausführung von 
+Windows-RT-Anwendungen unter Linux mittels 
+Wine&nbsp;<a href="https://de.wikipedia.org/wiki/Wine">[2]</a> ermöglicht, da Windows RT 
+auf ARM basiert.
+
+<div class="p"><!----></div>
+Da Zugriffe auf den Auslagerungsspeicher recht zeitintensiv sein können, wird
+mit verschiedenen Mitteln versucht, dies zu vermeiden. Zswap geht hier einen
+neuen Weg, indem es Speicherseiten abfängt, die normalerweise wegen
+Speichermangels ausgelagert werden würden. Anstatt sie dann auf den
+üblicherweise auf einem Massenspeicher befindlichen Swap-Bereich zu verschieben,
+werden sie in einen im Arbeitsspeicher befindlichen komprimierten Bereich
+abgelegt. Obwohl auch bei Komprimierung und Entkomprimierung Verzögerungen
+auftreten, fallen diese doch meist nicht so schwerwiegend aus wie beim Zugriff
+auf eine Festplatte.
+
+<div class="p"><!----></div>
+Lustre&nbsp;<a href="https://en.wikipedia.org/wiki/Lustre_%28file_system%29">[3]</a> ist als
+Dateisystem für den Nutzer eines Linux-Desktop nicht direkt interessant, hat
+jedoch bereits eine lange Geschichte und zeugt von der Vielseitigkeit von Linux.
+Lustre wird bereits seit 1999 entwickelt, bislang außerhalb des Linux-Kernels,
+und wurde 2003 erstmalig bei einem Hochleistungs-Rechner-Verbund, dem MCR Linux
+Cluster&nbsp;<a href="http://www.top500.org/system/167394">[4]</a>, genutzt. Seither wird Lustre
+beständig weiterentwickelt; es kann mittlerweile zehntausende von 
+Rechner-Knoten in einem Cluster bedienen und dabei mehrere Petabyte an 
+Speicher verwalten, die über hunderte von Servern verteilt sein können. 
+Es verwundert dann kaum noch, dass Lustre in sechs der 
+Top-Ten-Supercomputer zum Einsatz kommt. Der nun in den Linux-Kernel 
+aufgenommene und derzeit noch als experimentell markierte Code
+liefert die Client-Unterstützung, also den Zugriff auf ein 
+Lustre-Dateisystem.
+
+<div class="p"><!----></div>
+Mit NFS wurde ein anderes, eher Nutzer-nahes Dateisystem weiterentwickelt. Der
+Standard NFS 4.2 ist noch nicht in trockenen Tüchern, doch die Arbeiten an der
+Umsetzung unter Linux laufen bereits. NFS 4.2 wird einige Verbesserungen bringen
+wie zum Beispiel Server-Kopiervorgänge. Bislang wurde beim Kopieren einer Datei
+von einem Verzeichnis eines Servers in ein anderes diese Datei erst aus dem
+Server-Verzeichnis auf den lokalen Rechner kopiert und von dort dann in das
+andere Serververzeichnis. NFS 4.2 ermöglicht nun, solche Operationen
+ausschließlich auf dem Server durchzuführen, was sowohl Zeit spart als auch die
+übertragene Datenenge gering hält. Eine weitere Änderung ermöglicht nun Labels
+für NFS, wodurch sich Regeln des Sicherheits- und Zugriffssteuerungsmechanismus
+SELinux nun auch auf NFS anwenden lässt.
+
+<div class="p"><!----></div>
+Das Flag O_TMPFILE ermöglicht die Erstellung spezieller temporärer Dateien.
+Diese werden zwar angelegt, sind im Dateisystem jedoch nicht sichtbar und werden
+gelöscht, sobald sie wieder geschlossen werden. Was sich zuerst etwas sinnfrei
+anhört, hat jedoch zwei sehr reale Anwendungsfälle: Zum einen werden hierdurch
+temporäre Dateien zum Beispiel  für die Zwischenspeicherung von Daten möglich,
+die vor konkurrierenden Zugriffen sicher sind. Zum anderen können so auch
+Dateien erstellt und befüllt werden, die zuerst nicht zugreifbar sind, danach
+jedoch, mit anderen Rechten versehen, schnell zur Verfügung stehen können.
+
+<div class="p"><!----></div>
+Eine netzwerktechnische Neuerung soll die Wartezeit von Anwendungen auf die
+Weitergabe eingetroffener Netzwerkpakete verringern. Bei den heutigen
+Netzwerkbandbreiten ist es nicht sinnvoll, dass der Netzwerkstack ankommende
+Pakete mit einem Interrupt an das System meldet&nbsp;- die Unterbrechungen würden so
+häufig auftreten, dass ein Arbeiten kaum mehr möglich wäre. So werden lediglich ab
+und an Anfragen nach eingegangenem Verkehr an den Netzwerkstack gesendet. Dies
+geschieht in festen Intervallen, die jedoch in manchen Fällen zu lang sein
+können und dadurch zu unerwünschten Verzögerungen in Programmabläufen führen
+können. Nun können Anwendungen ein kürzeres Intervall für bestimmte Netzwerk-Sockets
+anfordern und damit die Wartezeiten in einzelnen Fällen reduzieren.
+Diese Funktion gibt es derzeit nur für drei Gerätetreiber, doch weitere
+werden bald folgen.
+
+<div class="p"><!----></div>
+Nutzer von Grafikkarten der Radeon-Familie werden sich freuen, dass erste
+Anstrengungen unternommen wurden, um das dynamische Energiemanagement dieser
+Geräte nutzen zu können. Bereits die betagten Grafikprozessoren der R600-Serie
+sollen dies unterstützen und von den Änderungen profitieren können, sobald die
+Entwickler den Code als stabil genug betrachten, um die
+„Experimental“-Markierung zu entfernen.
+
+<div class="p"><!----></div>
+Dies war lediglich ein kleiner Ausschnitt aus den Änderungen des jüngsten
+Linux-Kernels. Eine vollständige Auflistung bietet auch diesmal wieder die
+englischsprachige Seite Kernel Newbies&nbsp;<a href="http://kernelnewbies.org/Linux_3.11">[5]</a>;
+dort findet sich auch eine Auflistung der Architektur-spezifischen
+Änderungen sowie neuer und erweiterter
+Treiber&nbsp;<a href="http://kernelnewbies.org/Linux_3.11-DriversArch">[6]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Linux 3.12</h2>
+
+
+Zwei Wochen nach Veröffentlichung von Linux 3.11 beendete Torvalds den Zeitraum
+für die Aufnahme großer Änderungen und gab Linux
+3.12-rc1&nbsp;<a href="https://lkml.org/lkml/2013/9/16/473">[7]</a> frei. Auch wenn der Ausfall
+der SSD seines 
+Arbeitsrechners&nbsp;<a href="https://plus.google.com/u/0/+LinusTorvalds/posts/V81f6d7QK9j">[8]</a> 
+kurz für Furore sorgte, hatte dies auf das Merge Window
+letztlich keine große Auswirkung.
+
+<div class="p"><!----></div>
+Auch der Name des Kernels hat sich wieder geändert - „Linux for Workgroups“
+wurde zuerst „Suicidal Squirrel“ (Lebensmüdes Eichhörnchen) getauft, während
+zeitgleich das an Windows 3.11 erinnernde Bootlogo wieder entfernt wurde. Das
+vor ein Auto gelaufene Eichhörnchen wurde dann jedoch von einem Frosch getoppt,
+der während eines Raketenstarts ins Blickfeld einer Kamera geblasen
+wurde&nbsp;<a href="https://plus.google.com/102150693225130002912/posts/9Gjr58KUJcH">[9]</a> und
+so lautet der Name nun „One Giant Leap for Frogkind“ (Ein großer Sprung für die
+Froschheit).
+
+<div class="p"><!----></div>
+Zu den Neuerungen zählt die Unterstützung für Kernel
+Modesetting&nbsp;<a href="https://de.wikipedia.org/wiki/Mode-Setting#Mode-Setting_im_Kernel-Space">[10]</a> 
+für die Grafikkomponente der häufig in Smartphones eingesetzten
+Snapdragon-Prozessoren. Unter anderem wird hierdurch der Einsatz einer HDMI-Schnittstelle vereinfacht, da die Einstellung der Grafikkomponente durch den
+Kernel selbst vorgenommen werden kann und nicht auf Userspace-Anwendungen
+zurückgegriffen werden muss. Ebenso wird die Unterstützung für Nvidias 
+Optimus-Technologie&nbsp;<a href="https://de.wikipedia.org/wiki/Nvidia_Optimus">[11]</a> 
+Einzug halten, die es ermöglicht, den GeForce-Grafikprozessor nach Bedarf 
+zu aktivieren oder auszuschalten und entsprechend zwischen hoher 
+Grafikleistung oder niedrigem Energieverbrauch wählen zu können. 
+Bislang waren hierfür externe Treiber notwendig.
+
+<div class="p"><!----></div>
+Die zweite Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2013/9/23/639">[12]</a> konnte
+dann hauptsächlich mit Korrekturen, zum Beispiel an den Radeon-Treibern und am
+Dateisystem Btrfs aufwarten. Auch die Tätigkeiten am erst in Linux 3.11
+eingeführten Dynamischen Energie-Management (DPM) der Radeon-Chips wurden
+fortgeführt. Letztlich war jedoch ein Teil der Kernel-Entwickler auf der
+LinuxCon und der Linux Plumbers Conference gebunden, sodass sich die Gesamtzahl
+der Änderungen recht beschaulich ausnahm. Das änderte sich auch bei Linux
+3.12-rc3&nbsp;<a href="https://lkml.org/lkml/2013/9/29/281">[13]</a> nicht. Auch hier entfielen
+wieder einige Änderungen auf Radeon-DPM. Einige Reverts, also Rücknahmen von
+eingepflegten Änderungen, gab es auch, hier hatte Andrew Morton einige
+Optimierungen für die Speicherverwaltung zu früh aufgenommen, da sich einige
+Entwickler über die Umsetzung der Änderung noch nicht einig sind.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://lkml.org/lkml/2013/9/2/402"><tt class="big">https://lkml.org/lkml/2013/9/2/402</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Wine"><tt class="big">https://de.wikipedia.org/wiki/Wine</tt></a><br />
+[3] <a href="https://en.wikipedia.org/wiki/Lustre_%28file_system%29"><tt class="big">https://en.wikipedia.org/wiki/Lustre_(file_system)</tt></a><br />
+[4] <a href="http://www.top500.org/system/167394"><tt class="big">http://www.top500.org/system/167394</tt></a><br />
+[5] <a href="http://kernelnewbies.org/Linux_3.11"><tt class="big">http://kernelnewbies.org/Linux_3.11</tt></a><br />
+[6] <a href="http://kernelnewbies.org/Linux_3.11-DriversArch"><tt class="big">http://kernelnewbies.org/Linux_3.11-DriversArch</tt></a><br />
+[7] <a href="https://lkml.org/lkml/2013/9/16/473"><tt class="big">https://lkml.org/lkml/2013/9/16/473</tt></a><br />
+[8] <a href="https://plus.google.com/u/0/+LinusTorvalds/posts/V81f6d7QK9j"><tt class="big">https://plus.google.com/u/0/+LinusTorvalds/posts/V81f6d7QK9j</tt></a><br />
+[9] <a href="https://plus.google.com/102150693225130002912/posts/9Gjr58KUJcH"><tt class="big">https://plus.google.com/102150693225130002912/posts/9Gjr58KUJcH</tt></a><br />
+[10] <a href="https://de.wikipedia.org/wiki/Mode-Setting#Mode-Setting_im_Kernel-Space"><tt class="big">https://de.wikipedia.org/wiki/Mode-Setting#Mode-Setting_im_Kernel-Space</tt></a><br />
+[11] <a href="https://de.wikipedia.org/wiki/Nvidia_Optimus"><tt class="big">https://de.wikipedia.org/wiki/Nvidia_Optimus</tt></a><br />
+[12] <a href="https://lkml.org/lkml/2013/9/23/639"><tt class="big">https://lkml.org/lkml/2013/9/23/639</tt></a><br />
+[13] <a href="https://lkml.org/lkml/2013/9/29/281"><tt class="big">https://lkml.org/lkml/2013/9/29/281</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem laufenden zu bleiben und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Der September im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+<h1><font color="#595959"><a id="fm_13_10_Desaster_Recovery" name="fm_13_10_Desaster_Recovery">Desaster Recovery mit Hilfe der richtigen Backup Strategie</a></font></h1>von Andreas Klein
+
+<div class="p"><!----></div>
+    
+
+<b>U</b><b>nter dem Begriff Desaster Recovery&nbsp;<a href="https://de.wikipedia.org/wiki/Disaster_Recovery">[1]</a>
+versteht man in der Informationstechnik die
+Notfallwiederherstellung nach einem Ausfall von Hardware, Software oder
+Infrastruktur.
+Der Artikel soll die Grundlagen vermitteln, um Desaster Recovery zu verstehen
+und bei der Auswahl geeigneter Sicherungs- oder Wiederherstellungsmaßnahmen
+helfen.</b>
+
+<div class="p"><!----></div>
+Kommt es als Folge eines
+Ausfalls von Hardware, Software oder Infrastruktur
+zu einem Datenverlust, so hängt die
+gesamte Wiederherstellung maßgeblich von der Vollständigkeit und Aktualität der
+zuvor erstellten Datensicherungen ab. Um diese möglichst effizient zu
+gewährleisten, kann eine Kombination aus verschieden regelmäßig auszuführenden
+Sicherungsarten&nbsp;<a href="https://de.wikipedia.org/wiki/Datensicherung#Sicherungsarten">[2]</a>
+zum Tragen kommen.
+
+<div class="p"><!----></div>
+Zwar gibt es einige auf dem Markt befindliche Komplettlösungen zur
+Notfallwiederherstellung, die alle ihre Vorzüge haben mögen und dennoch nie für
+alle Bedingungen gleichermaßen gut geeignet sein werden, genauso wenig wie es
+jenes sagenumwobene Fabelwesen, die eierlegende Wollmilchsau gibt&nbsp;<a href="https://de.wikipedia.org/wiki/Eierlegende_Wollmilchsau">[3]</a>.
+Diese Speziallösungen sollen in diesem Artikel daher nicht besprochen werden.
+
+<div class="p"><!----></div>
+Stattdessen soll hier versucht werden, einige Grundlagen zu vermitteln, die
+helfen sollen, die Funktionsweise eines PC insoweit zu verstehen, als es um
+den Startvorgang, das Einlesen, Speichern und Reorganisieren dort verwendeter
+Datenstrukturen sowie deren Wiederherstellung geht. Zu diesem Zweck soll
+sich hier auf die Verwendung von weit verbreiteten Standardprogrammen beschränkt
+werden.
+
+<div class="p"><!----></div>
+Mit Hilfe dieser Grundlagen sollte die Wahl der jeweils
+erforderlichen Sicherungs- oder Wiederherstellungsmaßnahmen besser
+getroffen werden können. Auch die abschließende Beurteilung, ob und welches zu
+verwendende Sicherungsprogramm sinnvoll eingesetzt werden kann, basiert nicht
+zuletzt auf der Kenntnis dieser Grundlagen.
+
+<div class="p"><!----></div>
+
+<h2>Grundlagen der Datensicherung</h2>
+
+
+Unter einer Datensicherung&nbsp;<a href="https://de.wikipedia.org/wiki/Datensicherung">[4]</a>,
+versteht man das teilweise oder vollständige Kopieren der auf einem
+Computer vorhandenen Daten auf ein anderes (häufig transportables)
+Speichermedium oder Computersystem. Das Gegenteil dieser Datensicherung heißt
+Datenwiederherstellung.
+
+<div class="p"><!----></div>
+Zur Auswahl der passenden Backup-Strategie sind im Vorfeld ein paar Überlegungen
+anzustellen, wie z.&nbsp;B.
+
+<div class="p"><!----></div>
+
+
+
+<ul>
+<li> Was soll gesichert werden? (ein Betriebssystem, Nutzerdaten oder bestimmte Datenblöcke)</li>
+<li> Wieso soll gesichert werden? (gesetzliche Auflagen, privates Interesse)</li>
+<li> Wie viel soll gesichert werden? (Komplettbackup/differentielles Backup/inkrementelles Backup)</li>
+<li> Wie oft und wie schnell soll gesichert werden? (im laufenden Betrieb inkl. damit verbundener Ausfallzeiten, täglich)</li>
+<li> Wie und wie schnell soll der Zugriff auf die gesicherten Daten erfolgen?
+(einzelne Dateien oder Archivdatei, einzelne Blöcke oder Datenträger-Abbild/
+Image)</li>
+</ul>
+
+<div class="p"><!----></div>
+
+
+
+
+Bei der Auswahl der richtigen Vorgehensweise zur Datensicherung oder
+Wiederherstellung gilt es unter anderem Folgendes zu beachten:
+Unterstützt das zu sichernde Dateisystem Dateirechte, so spielt der Erhalt
+dieser meist eine wichtige Rolle für die Funktionalität der zu sichernden
+Programme. Somit ist bei der Sicherung unbedingt darauf zu achten, dass die Dateirechte&nbsp;<a href="https://de.wikipedia.org/wiki/Unix-Dateirechte">[5]</a>
+erhalten bleiben.
+
+<div class="p"><!----></div>
+So würden typische Linux-Dateirechte, wie zum Beispiel <b><tt class="big">rwxrw-r--</tt></b> verloren gehen,
+wenn man solche Dateien einfach auf andere Partitionen oder Festplatten kopiert,
+die mit einem Dateisystem wie z.&nbsp;B. FAT oder NTFS formatiert sind. Dieser Verlust
+ließe sich unter den genannten Voraussetzungen vermeiden, indem man die Dateien
+zuvor und unter Wahrung der Dateirechte in eine Archivdatei packt.
+Doch auch innerhalb gleicher Dateisysteme lauern Stolperfallen, die beachtet
+werden müssen.
+
+<div class="p"><!----></div>
+So gilt es, die
+richtigen Parameter zur Wahrung der Dateirechte beim Programmaufruf zu übergeben
+oder ggf. im Dateimanager einzustellen (Bsp.: <b><tt class="big">cp -a</tt></b> oder <b><tt class="big">rsync -a</tt></b>).
+Auch sollte man darauf achten, versteckte Dateien,
+wie sie häufig unterhalb des Home-Verzeichnisses
+Verwendung finden, in die Sicherung einzuschließen. In Dateimanagern unter einer grafischen (Benutzer-)Oberfläche
+muss man diese meist erst einmal sichtbar machen, damit sie beim Kopieren
+ebenfalls übertragen werden.
+
+<div class="p"><!----></div>
+Die physikalische Position von Dateien auf rotierenden Datenträgern spielt eine
+maßgebliche Rolle für die Geschwindigkeit des Betriebssystemzugriffs darauf.
+Daher empfiehlt es sich, die Systempartition und die ggf. vorhandene
+Swap-Partition möglichst an den Anfang der Festplatte – also nach außen – zu legen,
+da dort die Schreib-/Lesegeschwindigkeit einer Festplatte am höchsten ist.
+Sollten zwei Festplatten vorhanden sein, so empfiehlt es sich, Swap- und
+Systempartition auf verschiedenen Platten zu beheimaten.
+Selbstverständlich ist auch die Datentransferrate von CD-/DVD-Laufwerken außen am
+höchsten. Im Gegensatz zur Festplatte befindet sich der organisatorische Anfang
+der Daten jedoch innen.
+
+<div class="p"><!----></div>
+Noch maßgeblicher ist die physikalische Position bestimmter Daten für einen
+funktionierenden Start des Betriebssystems. Deshalb kommt dem Speicherort des
+Bootloaders&nbsp;<a href="https://de.wikipedia.org/wiki/Bootloader">[6]</a> und der Partitionstabelle&nbsp;<a href="https://de.wikipedia.org/wiki/Partitionstabelle">[7]</a>,
+zuständig für die Organisation der Datenstrukturen, eine besondere Bedeutung zu.
+
+<div class="p"><!----></div>
+Genauere Kenntnisse darüber sind für die Auswahl und Umsetzung der jeweils
+geeigneten Backup-, Restore- oder Reparatur-Strategie essentiell.
+Zum besseren Verständnis sollte man daher zunächst die chronologischen Vorgänge
+beim Booten eines BIOS-basierten Standard-PCs betrachten.
+Bei Verwendung von GPT&nbsp;<a href="https://de.wikipedia.org/wiki/GUID_Partition_Table">[8]</a>-partitionierten
+Festplatten oder beim Booten per (U)EFI&nbsp;<a href="https://de.wikipedia.org/wiki/UEFI">[9]</a>
+weichen die im Folgenden getroffenen Aussagen teilweise erheblich ab.
+
+<div class="p"><!----></div>
+
+<h2>Startreihenfolge von x86-Architektur-PCs</h2>
+
+
+
+
+
+
+Nach dem Einschalten des PC erfolgt zunächst der POST&nbsp;<a href="https://de.wikipedia.org/wiki/Power_On_Self-Test">[10]</a>,
+dann initialisiert das BIOS&nbsp;<a href="https://de.wikipedia.org/wiki/BIOS">[11]</a> die Hardware.
+Danach springt es zu dem im BIOS deklarierten ersten verfügbaren Boot-Device und
+liest dessen ersten Sektor in den Arbeitsspeicher.
+Falls der Sektor an seinem Ende mit der richtigen Signatur (55AA) versehen ist, führt das BIOS ihn aus.
+Ansonsten wird eine Fehlermeldung ausgegeben.
+Bei gültiger Signatur wird als Nächstes der Bootloader-Code ausgeführt, der
+unter anderem die Partitionstabellen auswertet, falls diese vorhanden sind (siehe VBR&nbsp;<a href="https://de.wikipedia.org/wiki/Volume_Boot_Record">[12]</a>).
+Das ist auch der Grund, warum
+einem Standard-BIOS nichts von der Existenz der einzelnen Partitionen bekannt
+ist.
+
+<div class="p"><!----></div>
+Der weitere Bootvorgang hängt maßgeblich vom ausgeführten Bootloader und der
+BIOS-Implementierung ab und kann daher recht unterschiedlich ausfallen, zumal es
+so etwas wie einen BIOS-Standard gar nicht gibt.
+
+<div class="p"><!----></div>
+
+
+
+<h3>Bootloader</h3>
+
+
+Ursprüngliche Bootloader suchen in der Partitionstabelle nach einer sichtbaren,
+aktiven primären Partition. Ist diese vorhanden, so wird nach dem Prinzip des
+Chainloading&nbsp;<a href="https://de.wikipedia.org/wiki/Bootloader#Chain-Loader">[13]</a> deren
+Boot-Sektor geladen und ausgeführt. Erst dadurch wird dann das eigentliche
+Betriebssystem geladen.
+
+<div class="p"><!----></div>
+Viele alternative Bootmanager halten sich nicht an diese Konvention und zeigen
+stattdessen ein Auswahlmenü oder Ähnliches an, um übersichtlich und flexibel das
+Booten auch von nicht als aktiv gekennzeichneten primären wie auch logischen
+Partitionen zu erlauben.
+
+<div class="p"><!----></div>
+Es gibt BIOS-Implementationen, bei denen das Booten aller Betriebssysteme fehlschlägt, falls
+keine oder mehrere Partitionen mit dem „active flag“ gekennzeichnet sind. Dabei
+benötigt vor allem Windows eine Partition mit dieser Kennzeichnung, um davon
+booten zu können.
+
+<div class="p"><!----></div>
+Besonders schlanke Bootloader finden vollständig Platz im MBR.
+Passt der Bootloader-Code dagegen nicht vollständig in die ersten 440 Byte des
+MBR, so wird meist in verschiedenen Stufen (Stages) gebootet.
+Diese verteilen sich über mehrere nacheinander zu ladende Dateien, die
+gelegentlich „Stage“ zuzüglich einer Nummer im Namen tragen.
+Besagte erste 440 Byte des MBR enthalten dann u.&nbsp;a. die erste Stufe.
+Der physikalische Speicherort der zweiten zu ladenden Stufe ist fest im
+Bootloader-Code des MBR als Verweis auf den als nächsten zu ladenden Sektor
+hinterlegt.
+
+<div class="p"><!----></div>
+Das ist nötig, weil zu diesem frühen Zeitpunkt noch kein Dateisystem-Treiber zur
+Verfügung steht, um die Datei unter ihrem Pfad ansprechen zu können. Nach dem
+Laden der zweiten Stufe steht dann ein Dateisystemtreiber zur Verfügung, um
+weitere zu ladende Stufen oder Dateien per Pfadangabe, also unabhängig von ihrer
+physikalischen Position (Sektor-Nummer) auf dem Datenträger, ansprechen zu können.
+
+<div class="p"><!----></div>
+Ein fehlender, verschobener oder defekter Bootloader im MBR eines zum Booten
+ausgewählten Laufwerkes führt dazu, dass nicht von der Festplatte gebootet
+werden kann, selbst wenn in einer seiner Partitionen ein intaktes Betriebssystem
+residiert. Gleiches gilt für die zweite zu ladende Stufe bei mehrstufigen
+Bootloadern.
+
+<div class="p"><!----></div>
+
+<h3>Master Boot Record (MBR)</h3>
+
+
+Der Master Boot Record&nbsp;<a href="https://de.wikipedia.org/wiki/Master_Boot_Record">[14]</a> ist der
+erste Datenblock (Sektor 0, Größe: 512 Byte) eines in Partitionen aufgeteilten
+Speichermediums wie beispielsweise einer Festplatte oder eines USB-Sticks.
+Optional kann der MBR auch einen Bootloader enthalten.
+
+<div class="p"><!----></div>
+
+
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="3" align="center"><b>Aufbau des MBR</b></td></tr>
+<tr><td align="left"><b>Adresse</b> </td><td align="left"><b>Funktion/Inhalt</b> </td><td align="left"><b>Größe (Bytes)</b> </td></tr>
+<tr><td align="left">0x0000 / 0           </td><td align="left">Boot-Loader (Programmcode)        </td><td align="left">440 </td></tr>
+<tr><td align="left">0x01B8 / 440         </td><td align="left">Disk-Signatur (seit Windows 2000) </td><td align="left">4 </td></tr>
+<tr><td align="left">0x01BC / 444         </td><td align="left">Null (0x0000)                     </td><td align="left">2 </td></tr>
+<tr><td align="left">0x01BE / 446         </td><td align="left">Partitionstabelle (4 Partitionen á 16 Byte) </td><td align="left">64 </td></tr>
+<tr><td align="left">0x01FE / 510         </td><td align="left">MBR-Signatur (0xAA55)             </td><td align="left">2 </td></tr>
+<tr><td align="left"></td><td align="left">Gesamt                            </td><td align="left">512 </td></tr>
+</table>
+
+
+
+<div class="p"><!----></div>
+
+
+Speichermedien, die nicht in Partitionen unterteilt sind, wie zum Beispiel Disketten
+oder CDs, enthalten keinen MBR. Hier wird der erste Datenblock als Bootsektor
+oder auch Boot Record&nbsp;<a href="https://de.wikipedia.org/wiki/Bootsektor">[15]</a>,
+bei FAT-Dateisystemen auch als VBR&nbsp;<a href="https://de.wikipedia.org/wiki/Volume_Boot_Record">[12]</a>, bezeichnet.
+
+<div class="p"><!----></div>
+
+
+
+
+Der Linux-Befehl
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># if=/dev/zero of=&lt;Festplatten-Device&#62; bs=1 count=4 seek=440 conv=notrunc</div>
+
+<div class="p"><!----></div>
+
+
+überschreibt die Disk-Signatur mit Nullen, was für die Zuordnung von
+Laufwerksbuchstaben zu Partitionen unter Windows (seit Version 2000) von
+entscheidender Bedeutung ist.
+
+<div class="p"><!----></div>
+
+<h2>DOS-Partitionstabelle (De-facto-Standard)</h2>
+
+
+Nur der MBR beinhaltet die Partitionstabelle&nbsp;<a href="https://de.wikipedia.org/wiki/Partitionstabelle">[7]</a>,
+welche die Aufteilung des Datenträgers beschreibt.
+Das Löschen der Partitionstabelle oder ein Defekt des MBR führen dazu, dass die
+Daten auf der Festplatte nicht mehr zugeordnet werden können.
+Es gibt drei Arten von Partitionen: primäre, erweiterte und
+
+logische Partitionen. Eine primäre Partition verweist
+auf einen Bereich der Festplatte, der Dateien enthalten kann.
+
+<div class="p"><!----></div>
+Eine erweiterte Partition enthält im Gegensatz dazu keine Dateien, sondern
+dient quasi als Container für weitere logische Partitionen. Daher sollte sie
+sinnvollerweise so groß gewählt werden, dass sie den verbleibenden
+Speicherplatz maximal ausnutzt. Die Summe aller darin erzeugten logischen
+Partitionen sollten wiederum den gesamten Platz der erweiterten Partition
+verwenden.
+
+<div class="p"><!----></div>
+Allerdings ist in der Partitionstabelle des MBR kein
+Platz übrig zum Verweis auf
+die logischen Partitionen.
+Aus diesem Grunde enthält eine vorhandene
+erweiterte Partition als relativen ersten Sektor
+den sogenannten Partitionssektor, der eine erweiterte Partitionstabelle enthält.
+Der Sektor ähnelt in seinem Aufbau dem des MBR, allerdings ohne dessen
+Bootloader-Code. Außerdem werden von den theoretisch möglichen vier nur die ersten zwei Einträge in der erweiterten
+Partitionstabelle genutzt.
+
+<div class="p"><!----></div>
+Der erste Eintrag beschreibt die logische Partition. Dessen Startsektor wird
+immer relativ zur Position dieser erweiterten Partitionstabelle angegeben.
+Der zweite Eintrag kann eine Verkettung zu einer weiteren erweiterten
+Partitionstabelle enthalten und hat immer den Typ 5&nbsp;<a href="http://www.win.tue.nl/~aeb/partitions/partition_types-1.html">[16]</a>.
+Im Startsektor dieses Eintrags wird immer relativ zum Sektor der ersten
+erweiterten Partition verwiesen.  Diese wiederum bietet Platz für ein weiteres
+logisches Laufwerk und so fort. So
+entsteht quasi eine Kette von erweiterten Partitionstabellen, die jeweils ein
+logisches Laufwerk beschreiben.
+
+<div class="p"><!----></div>
+
+
+Erst durch diesen Trick wurde es möglich, mehr als vier Partitionen pro
+Festplatte zu verwenden. Der jeweils erste Sektor einer primären oder logischen
+Partition kann ebenfalls als Bootsektor bezeichnet und verwendet werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-10-bilder-Dateien/desasterRecovery_Partitionen.png" alt="desasterRecovery_Partitionen.png" style="max-width:100%" /><br /><em>Verteilung von MBR, Partitionen und erweiterten Partitionstabellen auf dem Datenträger.</em><br />
+
+<div class="p"><!----></div>
+Der Nachteil von logischen Partition besteht demnach darin, dass deren
+verkettete Partitionstabellen quer über die Festplatte verstreut sind.
+
+<div class="p"><!----></div>
+Diese erweiterten Partitionstabellen liegen jeweils
+im relativen ersten Sektor der entsprechenden logischen Partitionen.
+Das macht die Datensicherung aufwendiger und erhöht das Risiko von
+Datenverlust durch Anwenderfehler, da durch das Löschen einer logischen
+Partition auch alle folgenden nicht mehr sichtbar sind, selbst wenn deren
+Struktur noch vorhanden ist.
+
+<div class="p"><!----></div>
+
+<h2>Kategorien der Backup-Programme</h2>
+
+
+
+<h3>Zugriff auf Dateiebene</h3>
+
+
+Programme, die auf Dateiebene arbeiten, wissen nichts über die physikalische
+Position oder Organisation der Daten auf der Festplatte, denn darum kümmert sich
+der Dateisystemtreiber des laufenden Betriebssystems.
+Deshalb muss dieser Treiber auch das zu sichernde Dateisystem unterstützen.
+Zu erkennen sind solche Programme daran, dass sich die Dateien im Zugriff
+befinden müssen, um diese sichern zu können.
+Betriebssystem-übergreifend gesprochen sind die Dateien also vom Anwender zu sehen,
+Linux-spezifisch ausgedrückt sind diese dabei eingehängt.
+
+<div class="p"><!----></div>
+
+<h3>Image-Programme</h3>
+
+
+Image-Programme arbeiten eine Ebene tiefer, greifen also direkt auf die Hardware zu, um deren
+Datenblöcke bzw. Sektoren eigenständig auszulesen.
+Damit diese Image-Sicherungsprogramme nicht mit den Dateisystemtreibern des Betriebssystems
+kollidieren, sind die zu sichernden Partitionen vorher auszuhängen.
+Deshalb kann nicht ohne Weiteres von einer Partition, auf der ein Betriebssystem läuft, ein
+konsistentes Image-Backup&nbsp;<a href="https://de.wikipedia.org/wiki/Speicherabbild">[17]</a> gezogen
+werden, es sei denn es handelt sich um ein Dateisystem mit
+Snapshot-Unterstützung. Daher empfiehlt es sich, von einer anderen Partition
+oder von einem Live-System zu starten.
+
+<div class="p"><!----></div>
+Größe, Struktur und Dateirechte der gesicherten Daten bleiben in der Image-Datei
+erhalten, deshalb kann diese auch problemlos auf Dateisystemen ohne
+Rechte-Unterstützung abgelegt werden, sofern deren maximale unterstützte
+Dateigröße nicht überschritten wird. Eine Wiederherstellung mit Standard-Tools
+ist nur auf einer mindestens gleich großen Zielpartition möglich. Ist sie
+größer, bleibt der überschüssige Platz solange ungenutzt, bis die Partition
+nachträglich vergrößert wird.
+
+<div class="p"><!----></div>
+Es gibt aber auch freie Speziallösungen wie zum Beispiel Clonezilla&nbsp;<a href="http://clonezilla.org/">[18]</a>
+zum Klonen von
+Images auf kleinere Zielpartitionen, unter der Voraussetzung, dass die Anzahl der
+belegten Quell-Datenblöcke nicht die Anzahl der zur Verfügung stehenden
+Ziel-Datenblöcke übersteigt. Doch auch diese komfortablen Werkzeuge können
+zuweilen an exotischen Aufgaben scheitern, so wie es kürzlich beim Klonen einer
+meiner Testsysteme geschah. Auszug aus der Clonezilla-Log-Datei:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">Unpacking grub-legacy (from .../grub-legacy_0.97-67_i386.deb) ...<br />
+[1;33mWarning! Found grub partition (/dev/sdb1) file system is ext4! The grub 1<br />
+from Debian Linux does not support file system ext4! Skip re-installing grub 1.<br />
+The restored OS might fail to boot.</div>
+
+<div class="p"><!----></div>
+
+
+
+
+Dann ist es nützlich, wenn man die Grundlagen zur manuellen Vorgehensweise
+beherrscht.
+
+<div class="p"><!----></div>
+
+<h2>Grundlegende Betrachtungen vor der Datensicherung</h2>
+
+
+Auf einige Dateien eines laufenden Betriebssystems kann unter bestimmten Bedingungen nicht
+einmal lesend zugegriffen werden.
+Andere wiederum werden erst zur Laufzeit erzeugt oder verändern sich im Betrieb,
+wie z.&nbsp;B. Gerätedateien&nbsp;<a href="https://de.wikipedia.org/wiki/Ger%C3%A4tedatei">[19]</a> oder temporäre
+Dateien&nbsp;<a href="https://de.wikipedia.org/wiki/Tempor%C3%A4re_Datei">[20]</a>.
+Daher ist es nicht ohne Weiteres möglich, alle Dateien eines laufenden Betriebssystems
+konsistent zu sichern. Es bedarf dazu bestimmter Voraussetzungen wie z.&nbsp;B.
+Snapshot-fähiger Dateisysteme.
+Diese versuchen, alle Schreibzugriffe des laufenden Systems für einen Moment zu
+unterbinden, um von diesem Zustand dann einen Schnappschuss&nbsp;<a href="https://de.wikipedia.org/wiki/Schnappschuss_%28Informationstechnologie%29">[21]</a>
+zu erstellen.
+
+<div class="p"><!----></div>
+
+
+Auf Systemen ohne Snapshot-Unterstützung kann man, mit genauer Kenntnis der
+kritischen Dateien, diese von der Live-Sicherung exkludieren und somit den
+größten Teil der Dateien im laufenden Betrieb sichern – auch regelmäßig
+inkrementell.
+
+<div class="p"><!----></div>
+Dabei handelt es sich jedoch nicht mehr um ein
+Komplettbackup oder eine Eins-zu-eins-Kopie
+des laufenden Systems, auch wenn sich daraus mit zusätzlichem Aufwand
+wieder ein lauffähiges System erstellen lässt.
+Eine initial erstellte Vollsicherung sollte aber im Zweifelsfall wenigstens
+einmal vorhanden sein.
+
+<div class="p"><!----></div>
+RAID-Systeme&nbsp;<a href="https://de.wikipedia.org/wiki/RAID">[22]</a> spiegeln permanent mindestens
+zwei Festplatten und erhöhen dadurch die Ausfallsicherheit gegen
+Festplattendefekte. Gegen Fehler wie z.&nbsp;B. versehentliches Löschen helfen sie
+jedoch nicht, weshalb der alte Leitspruch gilt: Ein RAID ist kein Backup und ersetzt
+es demnach auch nicht. 
+<div class="p"><!----></div>
+All diese Techniken dienen in erster Linie dazu, wartungsbedingte Ausfallzeiten –
+auch zur Erstellung von Backups – auf ein Minimum zu reduzieren.
+
+<div class="p"><!----></div>
+Eine kurze Downtime spielt im privaten Umfeld aber eher eine untergeordnete
+Rolle, weshalb RAID- oder Snapshot-fähige Dateisysteme hier keine Voraussetzung
+sein sollen. Stattdessen sollen möglichst einfache und allgemeingültige Wege
+der Datensicherung aufzeigt werden.
+
+<div class="p"><!----></div>
+Als Ausgangspunkt zur Erzeugung eines
+vollständigen Systembackups soll eine
+beliebige Linux-Live-CD dienen.
+
+<div class="p"><!----></div>
+Als Voraussetzung sollten auf dieser folgende Pakete vorhanden sein: <b>ntfs-3g</b>,
+wenn NTFS formatierte Datenträger verwendet werden sollen, <b>dd</b>, <b>rsync</b>, <b>netcat</b> zum
+Klonen und Kopieren, <b>sfdisk</b>, <b>fdisk</b>, <b>gdisk</b>, <b>gparted</b> zum Partitionieren, ein
+simpler Text-Editor für Konfigurationsdateien und eine installationsfähige
+Version des bevorzugten Bootloaders zur Wiederherstellung.
+
+<div class="p"><!----></div>
+Natürlich muss die Live-CD zur verwendeten Hardware kompatibel, also darauf
+bootfähig sein. Sollen auch Programme unter einer grafischen
+Benutzer-Oberfläche, wie z.&nbsp;B. GNU-parted Verwendung finden, so muss darauf
+ebenfalls ein Windowmanager startfähig sein. Außerdem sollte man wissen, wie
+man auf dem Live-System die Root-Rechte erlangt.
+
+<div class="p"><!----></div>
+
+
+Sollte keine Live-CD vorhanden sein, kann man die
+schlanke und flexible SystemRescueCD&nbsp;<a href="http://www.sysresccd.org/Online-Manual-DE">[23]</a>
+verwenden, die alle genannten Anforderungen abdeckt.
+
+<div class="p"><!----></div>
+
+<h3>Sichere in der Zeit, dann hast Du in der Not</h3>
+
+
+Soll eine Datenwiederherstellung auf dem Ursprungsmedium sofort wieder bootfähig
+sein, so muss das bereits bei der Art der Datensicherung berücksichtigt werden,
+indem zumindest alle am Bootprozess beteiligten Sektoren mit absolutem Bezug mit
+gesichert werden.
+
+<div class="p"><!----></div>
+Vom MBR abgesehen ist es jedoch gar nicht so einfach herauszufinden, wo sich
+diese befinden, um nur gezielt diese zu sichern. Um solche Details braucht man
+sich nicht kümmern, wenn man stattdessen ein Image-Backup der gesamten
+Festplatte erstellt.
+
+<div class="p"><!----></div>
+Jedoch benötigt es sehr viel Zeit, solch eine Eins-zu-eins-Kopie der gesamten Festplatte
+zu erstellen. Zwar gibt es schneller sichernde Programme, die in der Lage sind,
+vom Dateisystem als unbelegt oder gelöscht gekennzeichnete Blöcke von der
+Sicherung auszusparen, woraus der Geschwindigkeitsvorteil resultiert. Das
+funktioniert jedoch nur bei vom Programm unterstützten Dateisystemen und somit
+nicht generell – ganz im Gegensatz zu dd. Dafür ist dd langsamer, da es alle
+Blöcke sequenziell liest.
+
+<div class="p"><!----></div>
+Angenommen, man hat einen PC oder einen Laptop mit vorinstalliertem proprietären Betriebssystem,
+von dem man weder eine Installations-DVD noch eine selbst erstellte
+Wiederherstellungs-DVDs besitzt.
+
+<div class="p"><!----></div>
+Eventuell kennt man sich noch nicht gut genug mit seinem System aus, um zu
+beurteilen, ob sich darauf versteckte Partitionen mit Wiederherstellungs-Images
+befinden, von denen im Bedarfsfall das System wiederhergestellt werden kann.
+Auch weiß man vielleicht nicht, ob auf der Festplatte zwischen den Partitionsgrenzen oder
+an bestimmten Sektorpositionen Daten abgelegt sind, die zum Funktionieren des
+Systems erforderlich sind.
+
+<div class="p"><!----></div>
+Man möchte aber den aktuellen Zustand der Festplatte sichern, um diese im
+Bedarfsfall genau so wiederherstellen zu können.
+Dann sollten man ein Image-Backup des gesamten Datenträgers erstellen, um auf
+der sicheren Seite zu sein.
+
+<div class="p"><!----></div>
+Hat man solch ein Backup erst einmal erstellt und gesichert, so kann man seiner
+Experimentierfreudigkeit ohne Reue freien Lauf lassen. Für den Fall, dass mal
+etwas nicht wie erwartet funktioniert,
+kann man durch ein Restore jederzeit wieder zum vorherigen Stand
+zurückkehren. So kann man gefahrlos z.&nbsp;B. freie Betriebssysteme installieren
+und testen, Dual- oder Mehrfach-Boot-Systeme nach persönlichen Vorlieben
+einrichten und weitere Erfahrungen sammeln.
+
+<div class="p"><!----></div>
+Bekanntlich führen viele Wege zum Ziel, weshalb man sich den individuell
+passenden heraussuchen sollte.
+Auf einem aktuellen Linux-Live-System würde die erste Festplatte des PC
+typischerweise als <b><tt class="big">sda</tt></b> erkannt werden, die zweite dann als <b><tt class="big">sdb</tt></b>, ganz gleich ob
+diese intern verbaut oder extern per USB verbunden ist.
+
+<div class="p"><!----></div>
+
+
+Die Laufwerksbezeichnungen muss man also an die jeweiligen Verhältnisse
+anpassen. In den Beispielen werden die Bezeichnungen <b><tt class="big">sdx</tt></b> stets
+für den gesamten Datenträger stehen, <b><tt class="big">sdxn</tt></b> für eine Partition
+des Datenträgers, wie z.&nbsp;B. <b><tt class="big">sda1</tt></b>.<br />
+Das hat sich in der Praxis bewährt, da durch
+stupides Abtippen keine Aktionen ausgelöst werden, sofern
+keine Platte <b><tt class="big">sdx</tt></b> vorhanden ist.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Einstieg in die Praxis</h2>
+
+
+
+
+Zuerst startet man den PC mit der Live-CD, holt sich die Root-Rechte und erzeugt einen
+Einhängepunkt zum Einhängen der Backup-Festplatte. In den Beispielen wird
+<b><tt class="big">/mnt/backup</tt></b> benutzt, was man ggf. vorher selbst mittels
+<b><tt class="big">mkdir -p /mnt/backup</tt></b> erstellen muss.
+
+<div class="p"><!----></div>
+Dann wird eine ausreichend große und mit dem Dateisystem seines Vertrauens
+formatierte Partition dort eingehängt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># mount /dev/sdxn /mnt/backup</div>
+
+<div class="p"><!----></div>
+
+
+Falls eine NTFS-formatierte Platte zur Sicherung verwendet werden soll, bindet
+man sie so ein:
+
+<div class="p"><!----></div>
+
+<div class="command"># ntfs-3g /dev/sdxn /mnt/backup</div>
+
+<div class="p"><!----></div>
+
+
+Die Festplatte, von der das Image-Backup gezogen wird, soll wie bereits erwähnt
+nicht eingehängt sein.
+Einen kurzen Überblick über die Laufwerksinformationen erhält man u.&nbsp;a. mit
+<b><tt class="big">lsblk</tt></b>.
+
+<div class="p"><!----></div>
+
+<h2>Sichern auf Block-Ebene</h2>
+
+
+
+<h3>Image Backups mit dd (dump device) </h3>
+
+
+Die Umkehrung jedes Backup-Befehls zur Wiederherstellung wird zur Vervollständigung jeweils zusätzlich
+aufgeführt, im Text jedoch nicht mehr detailliert
+behandelt.
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx bs=4MB of=/mnt/backup/Devname-sdx.img<br />
+# dd if=/mnt/backup/Devname-sdx.img of=/dev/sdx bs=4MB</div>
+
+<div class="p"><!----></div>
+
+
+Der erste Befehl erstellt ein Backup des gesamten Datenträgers in eine Image-Datei der exakt
+gleichen Größe. Vorher muss sichergestellt werden, dass auf dem Zielmedium ausreichend Platz
+vorhanden ist, da dd diesen nicht prüft.
+
+<div class="p"><!----></div>
+In der resultierenden Image-Datei wird ungefähr der unbelegte Bereich des
+Datenträgers an Platz verschwendet.
+Möchte man diese Verschwendung vermeiden, so kann man die Image-Datei wie folgt
+komprimieren:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx bs=4MB | gzip --best &#62; /mnt/backup/Devname-sdx.img.gz<br />
+# gunzip –c /mnt/backup/Devname-sdx.img.gz | dd of=/dev/sdx bs=4MB</div>
+
+<div class="p"><!----></div>
+
+
+
+
+<b>Tipp zur Kompressionssteigerung:</b>
+Auch wenn die Platte aktuell vielleicht nur zu 30% belegt ist, so kann es sein,
+dass durch vielfältige Dateioperationen in der Vergangenheit diese einmal bis zu
+100% belegt war. Auch wenn diese einst belegten Sektoren nun wieder freigegeben
+sind, so enthalten diese dennoch schlecht zu komprimierende Daten.
+Soll also die komprimierte Image-Datei besonders klein werden, egal welches
+Kompressionsverfahren verwendet wird, so ist vorher auf Dateiebene der gesamte
+freie Platz der zu sichernden Festplatte oder Partition mit Nullen zu füllen,
+indem diese in eine Datei geschrieben werden, die anschließend sofort wieder
+gelöscht werden muss.
+Ansonsten gäbe es unerwünschte Effekte
+wegen Speichermangels, besonders wenn man
+diesen Schritt als vorbereitende Maßnahme vor der Sicherung aus einem
+laufenden Linux-System heraus durchführt.
+
+<div class="p"><!----></div>
+Wenn man es jedoch von der Live-CD aus erledigen möchten, so muss man nun jede
+der einzelnen Quell-Partitionen unter den zuvor erstellten Einhängepunkten
+einhängen, z.&nbsp;B. unter <b><tt class="big">/mnt/sdxn</tt></b> und diese dann voll schreiben.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># dd if=/dev/zero of=/mnt/sdxn/Null.txt; rm /mnt/sdxn/Null.txt</div>
+
+<div class="p"><!----></div>
+
+
+Die Partitionen sollten zur Sicherheit wieder ausgehängt werden und erst dann sollte man den vorigen dd-Befehl
+zur Sicherung mit Kompression ausführen.
+
+<div class="p"><!----></div>
+Angenommen, man unterliegt aufgrund des Dateiformates seines Ziel-Laufwerkes
+einer Datei-Größenbeschränkung von 2 GB. Dann kann man die Image-Datei wie folgt
+aufsplitten:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx bs=4MB |gzip | split -b 2000m /mnt/backup/Devname-sdx.img.gz<br />
+# gunzip –dc /mnt/backup/Devname-sdx.img.gz | dd of=/dev/sdx bs=4MB</div>
+
+<div class="p"><!----></div>
+
+
+Übrigens: Die angegebene Blocksize (<b><tt class="big">bs</tt></b>) von 4 MB deklariert die Speichermenge,
+die von den Blöcken des Datenträgers in einem Durchgang in den Cache eingelesen
+wird. Bei passend gewählten Werten, abhängig von der Hardware, kann man die
+Lese-/Schreibgeschwindigkeit steigern. Dieser Wert muss also nicht zwingend der
+Blockgröße des Datenträgers entsprechen, sondern sollte zur
+Performance-Steigerung angepasst werden. Definiert  man keine Blocksize, wird
+als Standardgröße 512 Byte verwendet.
+
+<div class="p"><!----></div>
+Die <b><tt class="big">bs=block size</tt></b> – mit einem Wert von z.&nbsp;B. 32k, 512k, 1MB oder 4MB – hat aber nicht nur
+Einfluss auf die Geschwindigkeit, sondern auch darauf, wie viele Daten bei
+defekten Blöcken verworfen werden.
+Um möglichst viele Daten zu retten, ist die
+Blockgröße möglichst klein zu wählen, was jedoch die
+Lese-/Schreibgeschwindigkeit verringert.
+Wenn dd auf defekte Sektoren trifft, bricht es den Vorgang ab.
+Mit der Option <b><tt class="big">conv=noerror</tt></b> werden die defekten Blöcke dagegen einfach
+übersprungen.
+
+<div class="p"><!----></div>
+Die Zieldaten werden dadurch aber um so mehr gekürzt, je größer die Blockgröße
+für das Auslesen der defekten Blöcke gewählt wurde. Daher gilt es bei defekten
+Datenträgern, die Blocksize zu verringern, trotzdem wird das Ergebnis vom
+Ursprung abweichen.
+
+
+<div class="p"><!----></div>
+Das Programm ddrescue&nbsp;<a href="http://www.linux-community.de/Internal/Artikel/Print-Artikel/LinuxUser/2004/08/Mit-dd_rescue-defekte-Partition-wiederherstellen">[24]</a>
+sorgt hier für Verbesserung des
+Resultates und ist daher das Werkzeug der Wahl, wenn es um die Datenrettung von
+defekten Datenträgern geht.
+
+<div class="p"><!----></div>
+Durch geschicktes Parametrieren kann man sein Verhalten dahingehend steuern,
+dass es im ersten Durchlauf nur die intakten Sektoren ausliest und die
+Sektornummern mit Lesefehlern in eine Log-Datei schreibt, um sich diesen in
+einem späteren zweiten Durchlauf intensiver zu widmen.
+
+<div class="p"><!----></div>
+Diese Strategie erhöht die Chance, bis zum Totalausfall des Laufwerkes
+möglichst viele Daten zu retten.
+Die Anzahl der wiederholten Leseversuche pro Sektor lässt sich entsprechend
+über Parameter steuern.
+Jede damit gerettete Information ergänzt so nachträglich die im ersten
+Durchlauf erzeugte Image-Datei.
+
+<div class="p"><!----></div>
+Eine von vielen Möglichkeiten, dies zu erreichen, könnte so aussehen:
+
+<div class="p"><!----></div>
+
+<div class="command"># ddrescue -f -v -n /dev/sdx /mnt/backup/rescue.img /mnt/backup/rescue.log<br />
+# ddrescue -d -f -r10 /dev/sdx /mnt/backup/rescue.img /mnt/backup/rescue.log</div>
+
+<div class="p"><!----></div>
+
+
+Das mit ddrescue gerettete Image kann man wieder mit dd, so wie im ersten
+Restore-Beispiel gezeigt, auf eine intakte, mindestens gleich große Festplatte
+wiederherstellen.
+
+<div class="p"><!----></div>
+Sinnvoll ist auch die eindeutige Benennung der Image-Dateien, damit eine
+spätere Zuordnung zweifelsfrei erfolgen kann.
+Beispielsweise könnte durch Hardware-Veränderungen des Systems <b><tt class="big">sdc</tt></b> zu <b><tt class="big">sdb</tt></b>
+werden. Auch die UUID ist nicht unbedingt beständig oder eindeutig, da eine
+geklonte Partition dieselbe UUID wie deren Ursprung erhält.
+Das sorgt für interessante Effekte bei zwei Festplatten in einem System mit
+gleicher UUID, wenn diese mit nur einem UUID-Eintrag in der <b><tt class="big">fstab</tt></b> nacheinander
+eingebunden werden. Empfehlenswert ist daher die Vergabe eindeutiger Namen für die
+Sicherungs-Images, z.&nbsp;B. anhand der Ausgabe von <b><tt class="big">ls -l /dev/disk/by-id/</tt></b> der
+jeweils geklonten Platte oder Partition.
+
+<div class="p"><!----></div>
+Noch ein Tipp für alle ungeduldigen Zeitgenossen, die während lange andauernder
+dd-Operationen die Ungewissheit plagt, ob das Programm vielleicht abgestürzt sein
+mag oder wie weit es wohl fortgeschritten ist.
+Man kann dd den aktuellen Status entlocken, indem man es kurz anhält, allerdings
+ohne es gänzlich abzubrechen.
+Am besten auf einer anderen Konsole oder einem anderen
+X-Terminal so:
+
+<div class="p"><!----></div>
+
+<div class="command"># killall -USR1 dd</div>
+
+<div class="p"><!----></div>
+
+
+oder wiederkehrend alle (N) Sekunden: 
+<div class="p"><!----></div>
+
+<div class="command"># watch -n N kill -USR1 `pidof dd`</div>
+
+<div class="p"><!----></div>
+
+
+Um den Status zu sehen, muss man zurück auf die vorherige Konsole wechseln. Zum Beenden
+der Ausgabe, muss man den watch-Befehl mit <i>„Strg“</i>&nbsp;+&nbsp;<i>„C“</i> abbrechen.
+Weitere nützliche Tipps zu dd lassen sich
+auf Wikipedia&nbsp;<a href="https://de.wikipedia.org/wiki/Dd_%28Unix%29">[25]</a>
+nachlesen.
+
+<div class="p"><!----></div>
+Natürlich kann man aus einem Image der gesamten Festplatte auch gezielt einzelne
+Bereiche extrahieren.
+So kann man beispielsweise nur den in den ersten 440 Byte enthaltenen Bootloader
+Wiederherstellen:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/mnt/backup/Devname-sdx.img of=/dev/sdx bs=440 count=1</div>
+
+<div class="p"><!----></div>
+
+
+oder aber den gesamten MBR wiederherstellen:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/mnt/backup/Devname-sdx.img of=/dev/sdx bs=512 count=1</div>
+
+<div class="p"><!----></div>
+
+
+Möchte man aus dem zuvor erstellen Image einzelne Dateien extrahieren, so braucht man das Image nur in einen existierenden Einhängepunkt, hier <b><tt class="big">/mnt/Image-sdx</tt></b>, wie folgt einhängen:
+
+<div class="p"><!----></div>
+
+<div class="command"># mount -o loop /mnt/backup/Devname-sdx.img /mnt/Image-sdx</div>
+
+<div class="p"><!----></div>
+
+
+Danach kann man per copy, rsync oder einem Dateimanager einzelne
+Dateien kopieren oder auch ganze Verzeichnisbäume synchronisieren.
+
+<div class="p"><!----></div>
+Wer statt eine Image-Datei zu erstellen lieber gleich den gesamten Datenträger
+auf einen anderen, mindestens gleich großen klonen möchte, könnte zum Beispiel
+so vorgehen:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx of=/dev/sdy</div>
+
+<div class="p"><!----></div>
+
+
+Schneller geht es mit
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx of=/dev/sdy bs=4MB</div>
+
+<div class="p"><!----></div>
+
+
+Ist der Zieldatenträger größer, so ist der überschüssige Platz erst einmal nicht
+nutzbar. Um diesen Platz zu erschließen, muss man entweder die jeweils letzte
+Partition in ihrer Größe aufziehen oder stattdessen eine weitere dahinter
+anlegen, die den verbleibenden Platz ausnutzt.
+Per Kommandozeile könnte ein Befehl für ein ext-Dateisystem dann zum Beispiel so
+aussehen, dies ist aber im Bedarfsfall zu prüfen und anzupassen:
+
+<div class="p"><!----></div>
+
+<div class="command"># e2fsck -f -y /dev/sdyn; resize2fs -p -f /dev/sdyn</div>
+
+<div class="p"><!----></div>
+
+
+Sehr komfortabel und intuitiv für viele unterstützte Dateisysteme geht das
+Gleiche mit dem Programm GNU-parted unter einer grafischen Oberfläche.
+
+<div class="p"><!----></div>
+Dasselbe gilt natürlich beim Klonen der Festplatte mit dd über ein sicheres
+internes Netzwerk, z.&nbsp;B. unter Verwendung von Netcat&nbsp;<a href="https://de.wikipedia.org/wiki/Netcat">[26]</a>.
+
+<div class="p"><!----></div>
+Dazu gilt es, zuerst den Zielrechner mit der Live-CD zu starten, Root-Rechte
+zu erlangen, die Netzwerkkarte einzurichten, die IP-Adresse zu notieren, die Zielplatte
+nicht einzuhängen und dort mit diesem Befehl beginnen, da hierdurch ein auf Port
+1234 lauschender Server-Dienst gestartet wird, der sich nach einmaliger
+Ausführung beendet.
+
+<div class="p"><!----></div>
+
+
+Auf dem Zielrechner (der die Daten empfängt):
+
+<div class="p"><!----></div>
+
+<div class="command"># nc -l -p 1234 | dd of=/dev/sdx bs=2MB</div>
+
+<div class="p"><!----></div>
+
+
+Auf dem Quellrechner (der die Daten versendet):
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx bs=2MB | nc IP.of.Target 1234</div>
+
+<div class="p"><!----></div>
+
+
+
+
+<b><tt class="big">IP.of.Target</tt></b> ist durch IP-Adresse des Zielrechners zu ersetzen. Der Port ist nahezu
+beliebig, muss aber auf beiden PCs gleich lauten.
+
+<div class="p"><!----></div>
+
+<h3>Weniger ist manchmal mehr</h3>
+
+
+Der Nachteil dieser alles umfassenden Sicherung wird aber stets die
+benötigte Zeit bleiben, worunter naturgemäß deren Aktualität leidet. Steht diese
+im Vordergrund, so wird man sich andere Sicherungsstrategien wünschen.
+Kleinere Einheiten lassen sich schließlich schneller sichern und begünstigen
+dadurch regelmäßigere Sicherungen.
+
+<div class="p"><!----></div>
+Kennt man sein System gut genug, um zu wissen, ob und welche Teile man auf
+Block-Ebene sichern muss, so kann man diese entsprechend gezielt per Image
+sichern. Den Rest des Systems, erst recht die Nutzerdaten, kann man dann auf
+Dateiebene sichern, inkrementell oder differenziell, um Zeit zu sparen und um
+durch regelmäßige Backups die Sicherheit zu erhöhen.
+So ist man im Fehlerfall durch gezielte Wiederherstellung der betroffenen
+Programme oder Dateien schnell wieder einsatzbereit.
+
+<div class="p"><!----></div>
+
+<h3>MBR sichern</h3>
+
+
+Wie bereits erwähnt
+enthält der MBR das gesamte Partitionsschema, falls der Datenträger nur primäre
+Partitionen verwendet.
+
+<div class="p"><!----></div>
+Der folgende Befehl führt das Backup durch:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx of=/mnt/backup/MBR_von_sdx.img bs=512 count=1</div>
+
+<div class="p"><!----></div>
+
+
+Ein Restore ist mit dem folgenden Befehl möglich:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/mnt/backup/MBR_von_sdx.img of=/dev/sdx bs=512 count=1</div>
+
+<div class="p"><!----></div>
+
+
+Ein Restore des Bootloaders kann mit diesem Befehl erledigt werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/mnt/backup/MBR_von_sdx.img of=/dev/sdx bs=440 count=1</div>
+
+<div class="p"><!----></div>
+
+
+Zum Überprüfen kleiner MBR-Images kann das Kommando <b><tt class="big">hexdump</tt></b>
+oder für größere Images auch <b><tt class="big">file Dateiname.img</tt></b> verwendet werden.
+
+<div class="p"><!----></div>
+<b>Achtung:</b> Beim Restore des gesamten MBR wird auch die Partitionstabelle
+überschrieben. Dies kann zu Datenverlust führen, wenn nach der letzten Sicherung
+des Bootsektors die Partitionierung geändert wurde. Mit <b><tt class="big">bs=440</tt></b> bleibt die
+Partitionstabelle dagegen erhalten, weil dabei nur der Bootloader
+zurückgeschrieben wird (siehe auch Aufbau des MBR&nbsp;<a href="https://de.wikipedia.org/wiki/Master_Boot_Record">[14]</a>)!
+
+<div class="p"><!----></div>
+
+<h3>Partitionsschema inkl. erweiterter Partitionstabellen sichern</h3>
+
+
+
+
+
+
+Bei der Verwendung von mindestens einer logischen Partition, also z.&nbsp;B. ab
+<b><tt class="big">sdx5</tt></b> aufwärts, wird der Befehl <b><tt class="big">sfdisk</tt></b> aus dem Paket <b>util-linux</b> empfohlen.
+
+<div class="p"><!----></div>
+Der Parameter <b><tt class="big">-d</tt></b>, auf eine Platte angewandt, zeigt die Partitionstabelle an:
+
+<div class="p"><!----></div>
+
+<div class="command"># sfdisk -d /dev/sdx</div>
+
+<div class="p"><!----></div>
+
+
+Diese kann man nun sichern:
+
+<div class="p"><!----></div>
+
+<div class="command"># sfdisk -d /dev/sdx &#62; /mnt/backup/extPartTable_sdx.sf</div>
+
+<div class="p"><!----></div>
+
+
+Ein Restore kann man dann ebenfalls durchführen, die Platte muss aber dabei ausgehängt sein:
+
+<div class="p"><!----></div>
+
+<div class="command"># sfdisk /dev/sdx &lt; /mnt/backup/extPartTable_sdx.sf</div>
+
+<div class="p"><!----></div>
+
+
+Beim Wiederherstellen sollte man gleich zuerst zumindest den Bootloader oder aber den gesamten MBR
+mithilfe von dd wiederherstellen, bevor man dann das gesicherte Partitionsschema inklusive aller
+erweiterten Partitionstabelle(n) wiederherstellt. Danach muss ein Neustart oder
+das Aushängen und wieder Einhängen dieses Geräts oder der Befehl <b><tt class="big">partprobe</tt></b>
+erfolgen, damit die neue Tabelle dem Kernel aktiv bekannt gemacht wird.
+
+<div class="p"><!----></div>
+Sollte jedoch die Partitionstabelle defekt und die Daten auf der Platte
+sehr wichtig und man sich selbst nicht vollständig sicher
+sein, dass man auch wirklich die aktuelle Partitionssicherung von dieser Platte
+vor sich hat, empfiehlt sich eher, die Reparatur einer defekten
+Partitionstabelle&nbsp;<a href="http://www.linupedia.org/opensuse/Reparieren_einer_defekten_Partitionstabelle">[27]</a>
+zu versuchen, da sonst die Daten darauf inkonsistent werden.
+Dazu wird mit Testdisk&nbsp;<a href="http://www.cgsecurity.org/wiki/TestDisk_DE">[28]</a> die
+Platte untersucht, um die gefundenen Partitionstabellen-Fragmente und/oder
+Filesystem-Markierungen wieder zu einer Partitionstabelle zusammenzusetzen.
+Für weitere Sonderfälle gibt es einen guten Artikel bei linupedia.org&nbsp;<a href="http://www.linupedia.org/opensuse/Partitionstabelle_sichern_und_wiederherstellen">[29]</a>.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Aktuell ist eine Partitionstabelle, wenn es nach ihrer Erstellung keine
+Repartitionierung des zugrunde liegenden Datenträgers gegeben hat (selbst wenn
+das Jahre her ist und die Dateien darauf tausendfach verändert wurden).
+
+<div class="p"><!----></div>
+
+<h3>GPT sichern</h3>
+
+
+Falls der Datenträger anstelle einer DOS-Partitionstabelle mit herkömmlichem
+MBR bereits das neuere Partitionsschema GPT&nbsp;<a href="https://de.wikipedia.org/wiki/GUID_Partition_Table">[8]</a> verwendet,
+welches bis zu 128 primäre
+Partitionen ermöglicht, lässt sich ein Backup wie folgt erstellen:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdx of=MBR_von_sdx.img bs=512 count=34</div>
+
+<div class="p"><!----></div>
+
+
+Folglich lautet der Befehl zum Restore:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=MBR_von_sdx.img of=/dev/sdx bs=512 count=34</div>
+
+<div class="p"><!----></div>
+
+
+Mit diesem Befehl lässt sich das GPT-Schema löschen:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/zero of=/dev/sdx bs=512 count=34</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Einzelne Partitionen sichern</h3>
+
+
+
+
+Die Vorgehensweise ist identisch wie zuvor beim Sichern der gesamten Datenträger,
+lediglich die Bezeichnungen sind entsprechend zu ändern (statt <b><tt class="big">sda</tt></b> gibt man nun
+<b><tt class="big">sda1</tt></b> bzw. die entsprechende Nummer <b><tt class="big">n</tt></b> an).
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sdxn bs=4MB of=/mnt/backup/PartName_sdxn.img</div>
+
+<div class="p"><!----></div>
+
+
+
+<h3>Versteckte Daten sichern</h3>
+
+
+Gesichert wird zwischen dem MBR und dem Beginn der ersten Partition.
+Diese Bereiche werden gelegentlich von Recovery-Tools oder Bootloadern genutzt.
+Dazu gilt es auf dem jeweiligen Datenträger herauszufinden, in welchem Sektor die
+erste Partition beginnt und  welche Sektorgröße dieser verwendet.
+
+<div class="p"><!----></div>
+Das Beispiel
+zeigt typische 512 Byte/Sektor an:
+
+<div class="p"><!----></div>
+
+<div class="command"># sfdisk -d /dev/sda<br />
+Device Boot    Start       End      #sectors  Id  System<br />
+/dev/sda1            63  81915434   81915372  83  Linux<br />
+/dev/sda2      81915435 163830869   81915435  83  Linux<br />
+/dev/sda3   * 163830870 245746304   81915435  83  Linux<br />
+/dev/sda4     245746305 976768064  731021760  83  Linux</div>
+
+<div class="p"><!----></div>
+
+
+Hier beginnt die erste Partition an Sektor 63. Es soll alles zwischen MBR und
+Sektor 63 gesichert werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># dd if=/dev/sda of=/Pfad/src-hidden-data.img skip=1 bs=512 count=62<br />
+62+0 records in<br />
+62+0 records out<br />
+31744 bytes (32 kB) copied, 0,00106052 s, 29,9 MB/s<br />
+&nbsp;9  Sichern auf Dateiebene</div>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Sichern auf Dateiebene</h2>
+
+
+Dabei kann sogar der Zieldatenträger kleiner sein als seine Quelle,
+vorausgesetzt der belegte Platz reicht aus.
+Partitionen, in denen Programme enthalten sind, bei welchen die
+Sektorposition eine Rolle spielt, sind aber weiterhin per Image zu klonen, da es sonst zu Problemen kommt.
+Linux-Systeme sind von solchen Restriktionen eher nicht betroffen – vom
+Bootloader einmal abgesehen. Dieser kann jedoch entweder wie zuvor gezeigt per
+dd separat übertragen werden oder man installiert ihn nachträglich manuell.
+
+<div class="p"><!----></div>
+Diese Vorgehensweise eignet sich auch sehr gut zum Umsortieren von
+Partitionsschemata, z.&nbsp;B. für den Fall, dass die auf dem Quelldatenträger weit
+hinten liegende System- und Swap-Partitionen
+auf dem Zieldatenträger weiter
+nach vorn verlagert werden sollen.
+Oder vielleicht will man beim Übertragen der
+Daten von der Quelle zum Ziel
+das Dateisystem konvertieren, vielleicht von
+Reiser zu ext4 oder von ext4 zu Btrfs.
+
+<div class="p"><!----></div>
+Bei gewünschter Weiterverwendung muss man das Partitionsschema von der Quell- zur
+Zielplatte übertragen. Ansonsten kann man nach neuen Bedürfnissen und Platzverhältnissen
+die Partitionen manuell auf der Zielplatte anlegen, formatieren und
+benennen. Besonders komfortabel geht das alles in einem Durchgang mit GNU-parted.
+
+<div class="p"><!----></div>
+Im folgenden Beispiel soll das o.&nbsp;g. Partitionsschema von <b><tt class="big">sda</tt></b> als Quelle dienen.
+Dieses kann auf <b><tt class="big">sdb</tt></b> übertragen werden oder aber es wird
+manuell dort mit dem Programm der Wahl erstellt. Die Partitionen im Ziel
+muss man dann ggf. mit dem neuen Dateisystem formatieren.
+
+<div class="p"><!----></div>
+
+<h3>Sichern durch Kopieren</h3>
+
+
+Nun muss man unterhalb von <b><tt class="big">/mnt</tt></b> folgende Einhängepunkte erzeugen: <b><tt class="big">sda1</tt></b>
+bis <b><tt class="big">sda4</tt></b> und ebenso für <b><tt class="big">sdb1</tt></b> bis <b><tt class="big">sdb4</tt></b>.
+
+<div class="p"><!----></div>
+Dann muss man die Partitionen entsprechend zugeordnet einhängen:
+
+<div class="p"><!----></div>
+
+<div class="command"># mount /dev/sda1 /mnt/sda1</div>
+
+<div class="p"><!----></div>
+
+
+bis
+
+<div class="p"><!----></div>
+
+<div class="command">mount /dev/sda4 /mnt/sda4</div>
+
+<div class="p"><!----></div>
+
+
+sowie die analogen Befehle für <b><tt class="big">sdb</tt></b>.
+
+<div class="p"><!----></div>
+Nun gilt es alle Inhalte von <b><tt class="big">sda1</tt></b> nach <b><tt class="big">sdb1</tt></b>, <b><tt class="big">sda2</tt></b> zu <b><tt class="big">sdb2</tt></b> etc. zu kopieren, egal
+ob auf der Konsole mit <b><tt class="big">cp</tt></b> oder mit dem Dateimanager der Wahl. Dann sollte man
+jedoch daran denken, alle Dateien einzuschließen.
+
+<div class="p"><!----></div>
+
+<div class="command"># cp -a /mnt/sda1/* /mnt/sdb1</div>
+
+<div class="p"><!----></div>
+
+
+falls <b><tt class="big">cp</tt></b> selbst <b><tt class="big">-f</tt></b> („force“) stets interaktiv ist,
+hilft der Aufruf mit absolutem Pfad.
+
+<div class="p"><!----></div>
+
+<div class="command"># /bin/cp -a(u,f) /mnt/sda1/* /mnt/sdb1</div>
+
+<div class="p"><!----></div>
+
+
+ist für das Update bereits vorhandener Dateien. 
+<div class="p"><!----></div>
+Soll dagegen die Reihenfolge der Partitionsinhalte  geändert werden, so werden
+statt einer eins-zu-eins-Kopie die Daten durch das Kopieren verlagert.
+
+<div class="p"><!----></div>
+Beispiel: Das System liegt im Quell-Datenträger auf <b><tt class="big">sda3</tt></b>, soll nun aber im
+Zieldatenträger physikalisch möglichst weit nach außen, also auf <b><tt class="big">sdb1</tt></b> geraten, um die Zugriffszeit zu verringern.
+Dann würde man analog dazu entsprechend umstellen und später noch die <b><tt class="big">fstab</tt></b> und
+abhängig vom Bootloader, zum Beispiel die <b><tt class="big">grub.conf</tt></b> entsprechend anpassen.
+
+<div class="p"><!----></div>
+Noch flexibler geht das alles jedoch mit Rsync.
+
+<div class="p"><!----></div>
+
+<h3>Sichern mit Rsync</h3>
+
+
+Das Synchronisierungsprogramm bietet Optionen, um Dateieigenschaften zu
+erhalten, arbeitet mit SSH zusammen und eignet sich ideal, um auch große
+Datenmengen schnell, auch übers Netzwerk (auch via Internet, dann aber besser
+Verschlüsselt mit <b><tt class="big">-e</tt></b>), zu übertragen.
+
+<div class="p"><!----></div>
+Besonders vorteilhaft ist Rsync, wenn auf der Zielseite schon eine ältere Kopie
+vorliegt, denn es überprüft, welche Unterschiede zwischen Quelle und Ziel
+existieren und überträgt nur die geänderten Teile der Daten.
+Rsync vergleicht die Daten zweier Speicherorte miteinander. Der grundsätzliche
+Aufruf lautet daher:
+
+<div class="p"><!----></div>
+
+<div class="command"># rsync [Optionen] Quelle Ziel</div>
+
+<div class="p"><!----></div>
+
+
+Hier ist die Wahl von Quelle und Ziel entscheidend. Zu beachten ist vorher,
+in welche Richtung  man synchronisiert, um einen Datenverlust auszuschließen.
+Rsync bietet eine Hilfe zum Prüfen des Datentransfers: Zusammen mit der Option
+<b><tt class="big">-n</tt></b> startet das Programm lediglich einen Testlauf und verrät, welche Operationen es
+durchführen möchte.
+
+<div class="p"><!----></div>
+Es folgen ein paar simple Beispiele zu den vielfältigen Kombinationsmöglichkeiten, in
+Anlehnung an die obigen <b><tt class="big">cp</tt></b>-Befehle.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Der Parameter  <b><tt class="big">-a</tt></b> beinhaltet die häufig erforderlichen Parameter
+<b><tt class="big">-rlptgoD</tt></b>. Beide Variationen erfordern allerdings Root-Rechte.
+
+<div class="p"><!----></div>
+
+<div class="command"># rsync -a --progress --stats --del /mnt/sda1/ /mnt/sdb1/</div>
+
+<div class="p"><!----></div>
+
+
+Wichtig ist jeweils der abschließende Schrägstrich nach der Pfadangabe, im
+Gegensatz zum vorherigen <b><tt class="big">cp</tt></b>-Befehl.
+
+<div class="p"><!----></div>
+<b><tt class="big">--progress</tt></b> zeigt den Fortschritt an, benötigt allerdings zusätzliche Zeit, <b><tt class="big">--stats</tt></b>
+zeigt die Übertragungsstatistik erst am Ende, <b><tt class="big">--del</tt></b> löscht noch während der
+Übertragung auf dem Ziel Dateien, die auf dem Quelldatenträger  nicht vorhanden sind.
+Weitere Parameter mit den zugehörigen Erklärungen zu den hier verwendeten findet man in der Manpage.
+
+<div class="p"><!----></div>
+Das ganze sollte man dann für alle Partitionen durchführen, entweder nacheinander oder
+gleichzeitig von verschiedenen Konsolen aus.
+
+<div class="p"><!----></div>
+Wer sein System bereits vollständig geklont hat und es als Zweitsystem im
+gleichen Rechner verwendet, der musste einige Anpassungen der Pfade an <b><tt class="big">fstab</tt></b> und
+zum Beispiel <b><tt class="big">grub.conf</tt></b> vornehmen.
+Wenn man die Systeme auf die hier beschriebene Art nur
+aktualisieren möchte, so ist es sinnvoll die geänderten Dateien oder besser den
+gesamten Bootloader vom Synchronisieren durch Rsync auszuschließen:
+
+<div class="p"><!----></div>
+
+<div class="command"># rsync -a --del --exclude=/boot/ --exclude=/etc/fstab /mnt/sda1/ /mnt/sdb1/</div>
+
+<div class="p"><!----></div>
+
+
+Wer viel und regelmäßig zu exkludieren hat, schreibt die Pfade und Dateien besser in
+eine Textdatei untereinander.
+Dann kann man diese mit <b><tt class="big">--exclude-from=Exclude_Datei</tt></b> als Option einbinden und muss
+sie nicht jedes Mal erneut eingeben.
+
+<div class="p"><!----></div>
+Möchten man unter den oben genannten Vorbedingungen die gleichen Partitionen mittels
+Rsync übers Netzwerk auf die Festplatte eines anderen Rechners übertragen, so
+sähe der Rsync-Aufruf so aus. Auf dem Quellrechner:
+
+<div class="p"><!----></div>
+
+<div class="command"># rsync -a --progress --del /mnt/sda1/ root@IP.of.Target:/mnt/sdb1/</div>
+
+<div class="p"><!----></div>
+
+
+Auf dem Zielrechner:
+
+<div class="p"><!----></div>
+
+<div class="command"># rsync -a --progress --del root@IP.of.Source.PC:/mnt/sda1/ /mnt/sdb1/</div>
+
+<div class="p"><!----></div>
+
+
+Anschließend wird man aufgefordert, das Root-Passwort des jeweils anderen PC
+einzugeben (sofern die Authentifizierung nicht über SSH-Schlüssel läuft), bevor die Übertragung beginnt. Das gelingt natürlich nur, wenn dort
+bereits der ssh-Daemon läuft und wenn sich die beiden Rechner im gleichen
+Subnetz befinden.
+
+<div class="p"><!----></div>
+
+
+
+
+Bei <b><tt class="big">IP.of.Target</tt></b> muss man die IP-Adresse des Zielrechners einsetzen, bei
+<b><tt class="big">IP.of.Source</tt></b> dagegen die IP des Quellrechners.
+
+<div class="p"><!----></div>
+
+<h3>Nutzerdaten sichern</h3>
+
+
+Möchte man lediglich regelmäßig alle seine Nutzerdaten auf eine separate
+Festplatte sichern und das aus einem installierten Linux heraus, also ohne
+eine Live-CD zu booten, so braucht man lediglich dafür Sorge zu tragen, dass kein Nutzer
+angemeldet ist. Dann wechselt man auf die Konsole als root, hängt die
+Sicherungsplatte ein, zum Beispiel wieder unter <b><tt class="big">/mnt/backup</tt></b> und kopiert wiederum per
+<b><tt class="big">cp</tt></b> oder dem Dateimanager, unter Einschluss aller versteckten Dateien, entweder das
+gesamte <b><tt class="big">/home</tt></b> Verzeichnis oder nur einzelne ausgewählte Verzeichnisse auf das
+Sicherungsmedium.
+
+<div class="p"><!----></div>
+Alternativ und etwas einfacher kann man natürlich Rsync benutzt.
+Man synchronisiert das <b><tt class="big">/home</tt></b>-Verzeichnis zum
+Sicherungsmedium mittels des Befehls:
+
+<div class="p"><!----></div>
+
+<div class="command"># rsync -a --progress --del /home/ /mnt/backup/</div>
+
+<div class="p"><!----></div>
+
+
+Vielleicht auch ohne  <b><tt class="big">--delete</tt></b> Anweisung, für den Fall, dass die in der Quelle
+nicht mehr existenten Dateien noch in dem Backup bewahrt werden sollen, falls
+dafür noch genügend Platz zur Verfügung steht.
+
+<div class="p"><!----></div>
+
+<h2>Bootloader nachträglich installieren/reparieren</h2>
+
+
+Vielleicht hatte der eine oder andere schon einmal das Problem, dass der
+Bootloader beschädigt wurde und das System nun nicht mehr startfähig war. Die
+Gründe dafür können vielfältig sein.
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Die Installation eines anderen OS oder einer zusätzlich installierten
+Distribution hat, womöglich ohne Rückfrage oder durch eigenen Irrtum, den
+bisherigen Bootloader überschrieben.</li>
+<li> Die Bootloader-Installationsroutine der Distribution schlägt aus
+unerfindlichen Gründen fehl.</li>
+<li> Ein Distributionsupgrade/Kernelupdate schlägt fehl und der PC bootet nicht
+mehr. Der Installer bietet keine separate Installationsroutine für den
+Bootloader an, eine Neuinstallation wäre dadurch erforderlich.</li>
+<li> Man hat mehrere Distributionen parallel installiert und möchte dafür Sorge
+tragen, dass jede ihren eigenen Bootloader mitbringt, damit sie sich bei
+künftigen Updates nicht mehr gegenseitig beeinflussen. Stattdessen  möchte man
+lieber die einzelnen Bootloader per Chainloading miteinander verbinden.</li>
+<li> Die Vorgabe der Distribution gefällt nicht, weshalb man deren Bootloader durch
+einen anderen ersetzen möchte.</li>
+<li> Man hat sein System geklont, die neuen Rahmenbedingungen machen nun eine
+Neuinstallation des Bootloaders erforderlich.</li>
+</ul>
+
+<div class="p"><!----></div>
+Um den Bootloader zu reparieren oder wunschgemäß anzupassen, ist es also von
+Vorteil, wenn man in der Lage ist, den Bootloader seiner Wahl separat zu
+installieren und zu kontrollieren. Dabei kann die Wahl des jeweiligen
+Bootloaders technischen Gegebenheiten geschuldet sein oder sie ist einfach nur eine
+Frage des Geschmacks.
+Es muss also nicht zwingend der mit der jeweiligen Distribution vertriebene
+Bootloader sein.
+Es gibt eine Fülle von Bootloadern&nbsp;<a href="https://de.wikipedia.org/wiki/Bootloader#Liste_von_Bootloadern">[30]</a>.
+Bei Bedarf
+sollte man sich also mit der Dokumentation zum Bootloader seiner Wahl vertraut
+machen.
+
+<div class="p"><!----></div>
+Im Folgenden soll jedoch besonders auf die näheren Details zu GRUB-Legacy
+eingegangen werden.
+
+<div class="p"><!----></div>
+
+
+
+
+
+<h2>GRUB – Grand Unified Bootloader</h2>
+
+
+GRUB (Legacy) in der Versionen 0.9x war bis vor kurzem der am häufigsten
+verwendete Bootloader unter Linux. Allerdings wird er nicht mehr aktiv
+weiterentwickelt, er funktioniert aber nach wie vor auf den meisten Systemen recht
+zuverlässig.
+
+<div class="p"><!----></div>
+GRUB2 wird seit Version 2.x als stabil bezeichnet und gewinnt – nicht zuletzt
+durch seine UEFI-Unterstützung&nbsp;<a href="https://de.wikipedia.org/wiki/UEFI">[9]</a> –
+stetig an Bedeutung.
+
+<div class="p"><!----></div>
+Die folgenden Informationen sollen die notwendigen Kenntnisse vermitteln, um GRUB auch
+nachträglich korrekt installieren und reparieren zu können, was im Fehlerfall
+extrem hilfreich sein kann.
+
+<div class="p"><!----></div>
+Auch sollte hierdurch klar werden, warum sich GRUB nicht ohne Weiteres
+vollständig sichern lässt, ohne ein Image-Backup der gesamten Festplatte zu
+erstellen, was oftmals nicht gewünscht oder nicht hilfreich ist.
+
+<div class="p"><!----></div>
+Ein Linux-Bootloader hat eigentlich nur die Aufgabe, den Kernel und die ggf.
+zugehörige initramdisk in den Arbeitsspeicher zu laden, sodass der Kernel
+starten kann.<br />
+Diese beiden Dateien werden meist als <b><tt class="big">vmlinuz</tt></b> und <b><tt class="big">initrd</tt></b> bezeichnet, oft aber
+auch als
+<b><tt class="big">kernel+Name+Arch.+Vers.Nr.</tt></b> und als <b><tt class="big">initramfs+Name+Arch.+Vers.Nr.</tt></b> benannt.
+Gespeichert sind diese dann auf einem von Linux lesbaren Dateisystem wie z.&nbsp;B.
+ext, jfs, reiserfs, xfs, etc. Innerhalb dieses Dateisystems lautet der Speicherort der
+beiden Dateien meist <b><tt class="big">/boot</tt></b> oder sie liegen im Root-Verzeichnis <b><tt class="big">/</tt></b>.
+
+<div class="p"><!----></div>
+Das Problem ist, dass normale Programme die Unterstützung des laufenden
+Betriebssystems benötigen, um auf ein Dateisystem zugreifen zu können.
+GRUB kann also nicht die Betriebssystem-Unterstützung verwenden, um auf das Dateisystem
+zuzugreifen, da das Betriebssystem zum Einschaltzeitpunkt des PC ja noch nicht zur Verfügung
+steht.
+
+<div class="p"><!----></div>
+Natürlich kann man auch ohne Dateisystem-Unterstützung Dateien in den Speicher
+laden, indem man eine statische Liste der Sektoren verwendet, die mit den
+jeweiligen Start- und Endpunkten der zu ladenden Dateien korrespondiert. So
+arbeiten einige andere Bootloader. 
+<div class="p"><!----></div>
+Das hat jedoch den Nachteil, dass bei einer Änderung von Position oder Größe der
+zu ladenden Dateien, z.&nbsp;B. nach einem Kernelupdate, diese Liste vor dem nächsten
+Startvorgang aktualisiert werden muss, da sonst das System nicht mehr bootet.
+GRUB dagegen ist flexibler, denn es ist in der Lage, auf das Dateisystem
+zuzugreifen, um die Dateien zu laden. Dadurch spielt es keine Rolle, ob diese in
+ihrer Größe oder Lage innerhalb ihres Suchpfades nachträglich verändert wurden.
+Diese Flexibilität hat allerdings auch ihren Preis, weshalb GRUB so groß wurde,
+dass er in bis zu drei Stufen ausgeführt werden muss.
+
+<div class="p"><!----></div>
+
+<h3>Funktionsweise von GRUB1 und den drei möglichen Stufen</h3>
+
+
+Beim Systemstart wird zuerst die kleine Stage 1 aus den ersten 440 Byte des MBR
+eingelesen und ausgeführt.
+Diese Stage 1 zeigt statisch auf den Beginn des Sektors, in dem sich die nächste
+zu ladende Stage befindet.
+Falls vorhanden, ist es die Stage 1.5, ansonsten wird direkt die Stage 2
+geladen.
+
+<div class="p"><!----></div>
+Wird also nachträglich die Position der zweiten zu ladenden Stage-Datei (1.5
+oder 2) verändert, so kann GRUB nicht mehr korrekt starten. Die statische
+Verknüpfung wird bei der GRUB-Installation in der Stage 1 erzeugt.
+
+<div class="p"><!----></div>
+Falls die mittelgroße Stage 1.5 vorhanden ist, so enthält diese den
+Dateisystemtreiber für den dynamischen Zugriff – also per
+Partitionsnummer und Dateipfad – auf das Dateisystem, unter dem die Stage 2 sowie
+alle zugehörigen GRUB-Dateien gespeichert sind.
+In diesem Fall kann die Stage-2-Datei nachträglich gefahrlos verschoben werden.
+
+<div class="p"><!----></div>
+Es gibt für die unterschiedlichen Dateisysteme viele unterschiedliche
+Stage-1.5-Dateien, von denen jedoch nur die eine benötigte installiert wird.
+Stage 2 ist die größte aller Stufen. Sie enthält die Dateisystemtreiber für alle
+von GRUB unterstützten Dateisysteme,  stellt das Bootmenü dar und ermöglicht es,
+den Kernel und die InitialRamDisk zu laden, um letztlich Linux zu booten.
+
+<div class="p"><!----></div>
+
+<h4>Physikalische Lage auf dem Datenträger</h4>
+
+
+Die Stage 1 befindet sich entweder im MBR oder aber im Boot-Sektor einer
+Partition, weil sie nur dort vom BIOS
+aus zu erreichen ist.
+
+<div class="p"><!----></div>
+Die Stage 1.5 kann leider an vielen nicht vorhersagbaren Plätzen wie z.&nbsp;B. nicht
+allozierter oder auch nur ungenutzten Plattenbereichen abgelegt werden.
+Der beste Platz ist dabei der, der künftig am unwahrscheinlichsten verschoben
+oder überschrieben wird.
+
+<div class="p"><!----></div>
+Wenn die Stage 1 im MBR liegt, dann wird die Stage 1.5 am liebsten in den
+Bereich zwischen dem ersten Sektor und dem Beginn der ersten Partition
+geschrieben. Aus Gründen der geometrischen Ausrichtung beginnt die erste
+Partition nicht am zweiten Sektor, also nicht direkt hinter dem MBR (erster
+Sektor).
+So bleibt dazwischen Platz, um die gesamte Stage 1.5 dort unterzubringen.
+
+<div class="p"><!----></div>
+Für die Stage 2 reicht dieser Platz meist jedoch nicht aus, es sei denn man hat
+manuell den Beginn der ersten Partition weiter nach hinten verlagert, um den
+nötigen Platz zu schaffen.
+Sollte der Platz dort für die Stage 2 jedoch reichen, dann wird sie unter Umständen dort
+abgelegt und statisch verknüpft.
+
+<div class="p"><!----></div>
+Auch kann die Stage 1.5 im ersten Sektor einer Partition abgelegt werden, wenn
+ein Dateisystem den dafür notwendigen Raum frei lässt. ReiserFS z.&nbsp;B. startet
+erst am Offset 65536 einer Partition, was 64 Kilobyte Platz dafür frei ließe.
+
+<div class="p"><!----></div>
+Wenn eine Stage 1.5 existiert, dann liegt die Stage 2 liegt bei unixoiden
+Betriebssystemen normalerweise in der Datei <b><tt class="big">/boot/grub/stage2</tt></b>, die dann an einem
+beliebigen Platz auf der Platte liegen kann.
+
+<div class="p"><!----></div>
+
+<h4>Allgemeines</h4>
+
+
+Die „Stage 2“ liest die Konfiguration aus <b><tt class="big">/boot/grub/menu.lst</tt></b> oder
+<b><tt class="big">/boot/grub/grub.conf</tt></b> ein, zeigt ein Bootmenü an in dem der Nutzer auswählen kann was er booten möchte
+und lädt anschließend den Kernel
+sowie dessen Image oder startet den Bootloader eines anderen Betriebssystems wie
+Windows oder eines anderen
+zusätzlich installierten Linux auf einer anderen
+Partition.
+
+<div class="p"><!----></div>
+Durch anwenderseitige Installationsfehler oder nachträgliche
+Windows-Installationen (diese ersetzen den vorhandenen Bootloader grundsätzlich,
+denn sie dulden keine anderen Götter neben sich), kommt es gelegentlich zum
+Überschreiben des vorherigen Bootloaders.
+Wenn man es vorher versäumt hat diesen zu sichern, empfiehlt sich die erneute
+Installation von GRUB.
+Das Risiko ist gering, denn es wird lediglich der Bootloader im MBR und nicht die
+Partitionstabelle überschrieben.
+Zusätzlich wird in der definierten Partition
+das Verzeichnis <b><tt class="big">/boot/grub/</tt></b> mit einigen Dateien erzeugt.
+Eine bereits vorhandene <b><tt class="big">grub.conf</tt></b> wird übernommen.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> GRUB weist Gerätenamen auf Grundlage des BIOS zu. Wenn man seine BIOS-Einstellungen
+ändert, können sich auch die Buchstaben und Ziffern der Geräte
+dadurch ändern. Durch Ändern der Bootreihenfolge der Geräte muss man womöglich
+auch die GRUB-Konfiguration ändern. Sonst kann es dazu kommen, dass das System nicht mehr bootet.
+
+<div class="p"><!----></div>
+
+<h3>GRUB mit der SystemRescueCD installieren</h3>
+
+
+Der hier beschriebene Vorgang ist der bevorzugte Weg, gültig für GRUB Legacy
+(aber nicht für GRUB2 wegen dessen abweichender Syntax).
+
+<div class="p"><!----></div>
+Gebootet wird mit der SystemRescueCD&nbsp;<a href="http://www.sysresccd.org/Online-Manual-DE">[24]</a>.
+Dort existieren unterhalb von <b><tt class="big">/mnt/</tt></b> gleich
+einige unbenutzte Einhängepunkte, in die man die Partition einhängen muss, auf
+welcher die <b><tt class="big">/boot/grub/</tt></b>-Dateien installiert werden sollen. Der Einfachheit halber
+nimmt man <b><tt class="big">/mnt/custom</tt></b>, natürlich geht auch jeder andere oder selbst erzeugte
+Einhängepunkt, aber die Syntax muss dann entsprechen angepasst werden.
+Beliebige Live-CDs, die diese Voraussetzungen erfüllen, sollten ebenfalls
+funktionieren.
+
+<div class="p"><!----></div>
+Los geht es mit dem gängigsten Szenario:
+GRUB in den MBR schreiben und <b><tt class="big">/boot/grub/</tt></b> soll auf <b><tt class="big">sda1</tt></b> installiert werden.
+
+<div class="p"><!----></div>
+
+<h3>Beispiel 1</h3>
+
+
+
+
+
+
+<div class="command"># mount /dev/sda1 /mnt/custom<br />
+# grub-install --recheck --root-directory=/mnt/custom /dev/sda</div>
+
+<div class="p"><!----></div>
+
+
+Zuerst muss man die alte <b><tt class="big">grub.conf</tt></b> unter <b><tt class="big">/boot/grub/</tt></b> kopieren oder
+erzeugen, wenn sie nicht vorhanden ist. Danach kopiert/installiert man das
+Betriebssystem/Kernel und ggf. vorhandene Initrd nach <b><tt class="big">/boot/</tt></b>,
+sofern nicht vorhanden.
+
+<div class="p"><!----></div>
+Danach muss man neu starten und testen ob es funktioniert. Falls nicht,
+ggf. obige Konstellation
+mit der GRUB-Shell durchführen:
+
+<div class="p"><!----></div>
+
+<div class="command"># grub<br />
+root (hd0,0)<br />
+setup (hd0)<br />
+quit</div>
+
+<div class="p"><!----></div>
+
+
+Die Bezeichnung <b><tt class="big">hd0,0</tt></b> entspricht dabei <b><tt class="big">sda1</tt></b> (als
+Zielpartition für die Stage 2 in <b><tt class="big">/boot/grub</tt></b>) und die Angabe
+<b><tt class="big">&lt;hd0&#62;</tt></b> entspricht <b><tt class="big">sda</tt></b> (als Ziel für den MBR).
+
+<div class="p"><!----></div>
+Nun sollte es aber gehen, vorausgesetzt die <b><tt class="big">grub.conf</tt></b> stimmt.
+
+<div class="p"><!----></div>
+
+<h3>Beispiel 2</h3>
+
+
+
+
+Das Gleiche funktioniert natürlich mit jedem beliebigen Ziel, in das <b><tt class="big">/boot/grub</tt></b>
+geschrieben werden soll. Hier wären dann lediglich folgende Änderungen bei der
+Installation vorzunehmen:
+
+<div class="p"><!----></div>
+
+<div class="command"># mount /dev/sdxn /mnt/custom<br />
+# grub-install --recheck --root-directory=/mnt/custom /dev/sda</div>
+
+<div class="p"><!----></div>
+
+
+Zuerst muss man die alte <b><tt class="big">grub.conf</tt></b> unter <b><tt class="big">/boot/grub/</tt></b> kopieren oder
+erzeugen, sofern sie noch nicht vorhanden ist. Danach kopiert und installiert man das
+Betriebssystem/Kernel und eine gegebenenfalls vorhandene Initrd nach <b><tt class="big">/boot/</tt></b>,
+sofern diese nicht ohnehin schon vorhanden sind.
+
+<div class="p"><!----></div>
+Danach muss man neu starten und testen ob es funktioniert hat. Falls nicht,
+ggf. obige Konstellation
+mithilfe der GRUB-Shell durchführen:
+
+<div class="p"><!----></div>
+
+<div class="command"># grub<br />
+root (hd1,4)<br />
+setup (hd0)<br />
+quit</div>
+
+<div class="p"><!----></div>
+
+
+Die Bezeichnung <b><tt class="big">hd1,4</tt></b> entspricht <b><tt class="big">sdb5</tt></b> (als Zielpartition für die Stage 2 in <b><tt class="big">/boot/grub</tt></b>) und die Angabe <b><tt class="big">&lt;hd0&#62;</tt></b> entspricht <b><tt class="big">sda</tt></b> (als Ziel für den MBR).
+
+<div class="p"><!----></div>
+
+<h3>Beispiel 3</h3>
+
+
+
+
+Beispiel 3 verwendet das Chainloader-Prinzip.
+Hierzu muss GRUB Nr. 1 exakt wie in Beispiel 1 installiert werden.
+In der <b><tt class="big">grub.conf</tt></b> des ersten Betriebssystems muss man zusätzlich noch folgenden Eintrag beim Bootloader hinzufügen:
+
+<div class="p"><!----></div>
+
+<div class="listing">title = Linux<br />
+rootnoverify (hd1,1)<br />
+chainloader +1</div>
+
+<div class="p"><!----></div>
+
+
+GRUB Nr. 2 installiert man in den Boot-Sektor der zweiten Partition
+der zweiten Platte (<b><tt class="big">sdb2</tt></b>):
+
+<div class="p"><!----></div>
+
+<div class="command"># mount /dev/sdb2 /mnt/custom<br />
+# grub-install --recheck --root-directory=/mnt/custom /dev/sdb2</div>
+
+<div class="p"><!----></div>
+
+
+Dann muss man die alte <b><tt class="big">grub.conf</tt></b> unter <b><tt class="big">/boot/grub/</tt></b> kopieren oder
+erzeugen, wenn sie nicht vorhanden ist. Danach kopiert/installiert man das
+Betriebssystem/Kernel und ggf. vorhandene Initrd nach <b><tt class="big">/boot/</tt></b>,
+sofern diese nicht vorhanden sind.
+
+<div class="p"><!----></div>
+Danach muss man neu starten und testen ob es funktioniert. Falls nicht,
+ggf. obige Konstellation
+mit der GRUB-Shell durchführen:
+
+<div class="p"><!----></div>
+
+<div class="command">#grub<br />
+root (hd1,1)<br />
+setup (hd1,1)<br />
+quit</div>
+
+<div class="p"><!----></div>
+
+
+Das erste <b><tt class="big">hd1,1</tt></b> entspricht <b><tt class="big">sdb2</tt></b> (als Zielpartition für die Stage 2 in <b><tt class="big">/boot/grub</tt></b>). Das zweite <b><tt class="big">hd1,1</tt></b> entspricht dem ersten Sektor (Bootsektor)
+von <b><tt class="big">sdb2</tt></b> als Ziel für die Stage 1 des zweiten auf dem System
+installierten Bootloaders.
+
+<div class="p"><!----></div>
+<b>Hinweis:</b> Der o.g. Parameter <b><tt class="big">--recheck</tt></b> ist besonders dann zu empfehlen, wenn die
+<b><tt class="big">Drive.map</tt></b> (Laufwerkszuordnung zum BIOS) nicht stimmt oder eine Fehlermeldung
+ausgibt, was meistens beim Start einer Live-Umgebung der Fall ist. Beim lokalen
+Rechnerstart kann man ihn meist weglassen, also wenn man z.&nbsp;B. einen zweiten oder
+dritten GRUB in die jeweiligen System-Partitionen hinzufügen möchte.
+
+<div class="p"><!----></div>
+Durch die oben gezeigte Vorgehensweise ist kein umständliches vorheriges
+chroot erforderlich, nur um GRUB per Paketmanager zu installieren, so wie es
+manche Reparaturanleitung empfiehlt.
+
+<div class="p"><!----></div>
+
+<h3>Problemfälle aus der Praxis</h3>
+
+
+Bei kuriosen Fehlern, die sich trotz mehrfacher Neuinstallation von GRUB
+anscheinend nicht beseitigen lassen, sollte man am besten Folgendes als
+mögliche Ursache überprüfen:
+
+<div class="p"><!----></div>
+Zeigt der symbolische Link im Verzeichnis <b><tt class="big">/boot/grub/menu.lst</tt></b> auf die Datei
+<b><tt class="big">grub.conf</tt></b> im gleichen Verzeichnis? Das ist z.&nbsp;B. bei Gentoo ein symbolischer Link
+auf die <b><tt class="big">grub.conf</tt></b>. 
+<div class="p"><!----></div>
+Zeigt der symbolische Link im Verzeichnis <b><tt class="big">/boot/boot</tt></b> auf das gleichnamige
+Verzeichnis und lässt einen beim Betreten immer tiefer nach <b><tt class="big">/boot/boot/</tt></b> abtauchen,
+dann ist das so korrekt.
+Ansonsten heißt es nun, den falschen Link händisch zu korrigieren oder zu löschen
+und dann GRUB erneut zu installieren.
+
+<div class="p"><!----></div>
+Ohne vorherige Korrektur oder Löschen würde sich nichts ändern, denn diese
+Dateien werden beim erneuten Installieren beibehalten!
+
+<div class="p"><!----></div>
+Natürlich kann man im Zweifelsfall auch das gesamte <b><tt class="big">/boot</tt></b>-Verzeichnis rekursiv
+löschen, GRUB neu installieren, den Kernel wieder ins <b><tt class="big">/boot</tt></b> kopieren und dann
+mit der GRUB-Shell so wie zuvor mit dem <b><tt class="big">root</tt></b>- und <b><tt class="big">setup</tt></b>-Befehl alles nochmal
+installieren/verifizieren. Danach sollte alles wieder wie gewünscht funktionieren.
+
+<div class="p"><!----></div>
+
+<h2>Backup oder kein Backup</h2>
+
+
+Man kann die Nutzer in zwei Gruppen einteilen: Diejenigen, die regelmäßig
+Backups durchführen, und diejenigen, die noch niemals einen Datenträgerdefekt
+hatten.
+
+<div class="p"><!----></div>
+Als Eigenmotivation, künftig zur ersten Gruppe zählen zu wollen, braucht man
+nur etwas näher darüber nachdenken, was der Verlust der eigenen
+Daten für einen selbst bedeuten würde.
+
+<div class="p"><!----></div>
+Die Grundlagen zum Sichern vor und Wiederherstellen nach dem Ernstfall sollten
+nun vorhanden sein.
+So kann man künftig auftretenden Hardwaredefekten oder Datenverlusten schon
+etwas gelassener entgegen sehen und ist im Ernstfall, der leider fast
+immer irgendwann eintritt, wieder zeitnah
+einsatzbereit.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Disaster_Recovery"><tt class="big">https://de.wikipedia.org/wiki/Disaster_Recovery</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Datensicherung#Sicherungsarten"><tt class="big">https://de.wikipedia.org/wiki/Datensicherung#Sicherungsarten</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Eierlegende_Wollmilchsau"><tt class="big">https://de.wikipedia.org/wiki/Eierlegende_Wollmilchsau</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Datensicherung"><tt class="big">https://de.wikipedia.org/wiki/Datensicherung</tt></a><br />
+[5] <a href="https://de.wikipedia.org/wiki/Unix-Dateirechte"><tt class="big">https://de.wikipedia.org/wiki/Unix-Dateirechte</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Bootloader"><tt class="big">https://de.wikipedia.org/wiki/Bootloader</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Partitionstabelle"><tt class="big">https://de.wikipedia.org/wiki/Partitionstabelle</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/GUID_Partition_Table"><tt class="big">https://de.wikipedia.org/wiki/GUID_Partition_Table</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/UEFI"><tt class="big">https://de.wikipedia.org/wiki/UEFI</tt></a><br />
+[10] <a href="https://de.wikipedia.org/wiki/Power_On_Self-Test"><tt class="big">https://de.wikipedia.org/wiki/Power_On_Self-Test</tt></a><br />
+[11] <a href="https://de.wikipedia.org/wiki/BIOS"><tt class="big">https://de.wikipedia.org/wiki/BIOS</tt></a><br />
+[12] <a href="https://de.wikipedia.org/wiki/Volume_Boot_Record"><tt class="big">https://de.wikipedia.org/wiki/Volume_Boot_Record</tt></a><br />
+[13] <a href="https://de.wikipedia.org/wiki/Bootloader#Chain-Loader"><tt class="big">https://de.wikipedia.org/wiki/Bootloader#Chain-Loader</tt></a><br />
+[14] <a href="https://de.wikipedia.org/wiki/Master_Boot_Record"><tt class="big">https://de.wikipedia.org/wiki/Master_Boot_Record</tt></a><br />
+[15] <a href="https://de.wikipedia.org/wiki/Bootsektor"><tt class="big">https://de.wikipedia.org/wiki/Bootsektor</tt></a><br />
+[16] <a href="http://www.win.tue.nl/~aeb/partitions/partition_types-1.html"><tt class="big">http://www.win.tue.nl/~aeb/partitions/partition_types-1.html</tt></a><br />
+[17] <a href="https://de.wikipedia.org/wiki/Speicherabbild"><tt class="big">https://de.wikipedia.org/wiki/Speicherabbild</tt></a><br />
+[18] <a href="http://clonezilla.org/"><tt class="big">http://clonezilla.org/</tt></a><br />
+[19] <a href="https://de.wikipedia.org/wiki/Ger%C3%A4tedatei"><tt class="big">https://de.wikipedia.org/wiki/Gerätedatei</tt></a><br />
+[20] <a href="https://de.wikipedia.org/wiki/Tempor%C3%A4re_Datei"><tt class="big">https://de.wikipedia.org/wiki/Temporäre_Datei</tt></a><br />
+[21] <a href="https://de.wikipedia.org/wiki/Schnappschuss_%28Informationstechnologie%29"><tt class="big">https://de.wikipedia.org/wiki/Schnappschuss_(Informationstechnologie)</tt></a><br />
+[22] <a href="https://de.wikipedia.org/wiki/RAID"><tt class="big">https://de.wikipedia.org/wiki/RAID</tt></a><br />
+[23] <a href="http://www.sysresccd.org/Online-Manual-DE"><tt class="big">http://www.sysresccd.org/Online-Manual-DE</tt></a><br />
+[24] <a href="http://www.linux-community.de/Internal/Artikel/Print-Artikel/LinuxUser/2004/08/Mit-dd_rescue-defekte-Partition-wiederherstellen"><tt class="big">http://www.linux-community.de/Internal/Artikel/Print-Artikel/LinuxUser/2004/08/Mit-dd_rescue-defekte-Partition-wiederherstellen</tt></a><br />
+[25] <a href="https://de.wikipedia.org/wiki/Dd_%28Unix%29"><tt class="big">https://de.wikipedia.org/wiki/Dd_(Unix)</tt></a><br />
+[26] <a href="https://de.wikipedia.org/wiki/Netcat"><tt class="big">https://de.wikipedia.org/wiki/Netcat</tt></a><br />
+[27] <a href="http://www.linupedia.org/opensuse/Reparieren_einer_defekten_Partitionstabelle"><tt class="big">http://www.linupedia.org/opensuse/Reparieren_einer_defekten_Partitionstabelle</tt></a><br />
+[28] <a href="http://www.cgsecurity.org/wiki/TestDisk_DE"><tt class="big">http://www.cgsecurity.org/wiki/TestDisk_DE</tt></a><br />
+[29] <a href="http://www.linupedia.org/opensuse/Partitionstabelle_sichern_und_wiederherstellen"><tt class="big">http://www.linupedia.org/opensuse/Partitionstabelle_sichern_und_wiederherstellen</tt></a><br />
+[30] <a href="https://de.wikipedia.org/wiki/Bootloader#Liste_von_Bootloadern"><tt class="big">https://de.wikipedia.org/wiki/Bootloader#Liste_von_Bootloadern</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Andreas Klein</b>
+beschäftigt sich bereits seit 1988 mit eigener PC-Hardware und -Software und
+verfügt, dank konsequenter Datensicherung, noch über etliche Daten aus dieser
+Zeit.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Desaster Recovery mit Hilfe der richtigen Backup Strategie#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_10_ffox_addonsdk7" name="fm_13_10_ffox_addonsdk7">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil VII: Netzwerk-Anfragen</a></font></h1>von Markus Brenneis
+
+<div class="p"><!----></div>
+    <b>D</b><b>er letzte Artikel zum Thema „Firefox-Erweiterungen mit dem Add-on-SDK 
+erstellen“ ist schon wieder zwei Monate 
+her&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2013-08">[1]</a>. Nach der kleinen 
+Sommerpause werden in diesem Teil Netzwerk-Anfragen behandelt.</b>
+
+<div class="p"><!----></div>
+
+<h2>Probleme mit dem bisherigen Ansatz</h2>
+
+
+Die Erweiterung erfüllt ihren Zweck, ein markiertes Wort in der Wikipedia 
+nachzuschlagen, bisher ganz gut. Allerdings kann es auch vorkommen, dass im 
+Panel bis auf den gesuchten Begriff keinerlei Text angezeigt wird und der 
+Benutzer somit nicht die gewünschten Informationen erhält.
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2013-10-bilder-Dateien/ffox_addonsdk_7_panel_alt.png" alt="ffox_addonsdk_7_panel_alt.png" style="max-width:100%" /><br /><em>Das Panel enthält keine für den Benutzer hilfreiche Informationen.</em><br />
+
+<div class="p"><!----></div>
+Besser wäre es, wenn immer nur die Artikeleinleitung, also der erste Absatz 
+des Wikipediaartikels, angezeigt würde.
+
+<div class="p"><!----></div>
+
+<h2>Lösung mithilfe der MediaWiki-API</h2>
+
+
+Es gibt die Möglichkeit, mithilfe einer Programmierschnittstelle 
+(API = Application Programming 
+Interface,&nbsp;<a href="https://de.wikipedia.org/wiki/Programmierschnittstelle">[2]</a>)
+den ersten Text eines Artikels 
+abzufragen&nbsp;<a href="https://de.wikipedia.org/wiki/Hilfe:API">[3]</a>. Die API kann den 
+Artikelinhalt und andere Informationen unter anderem im sogenannten 
+JSON-Format (JavaScript Object Notation&nbsp;<a href="https://de.wikipedia.org/wiki/JSON">[4]</a>) 
+zurückgeben; dieses Format kann
+einfach 
+in JavaScript verarbeitet werden.
+
+<div class="p"><!----></div>
+
+
+Die Ausgabe der API für die Anfrage 
+<a href="https://de.wikipedia.org/w/api.php?action=query&amp;format=json&amp;prop=extracts&amp;exintro&amp;titles=OpenStreetMap">https://de.wikipedia.org/w/api.php?action=query&amp;format=json&amp;prop=extracts&amp;exintro&amp;titles=OpenStreetMap</a>,
+welche die Einleitung des Wikipedia-Artikels über OpenStreetMap anfordert, 
+sieht (gekürzt) z.&nbsp;B. so aus:
+
+<div class="p"><!----></div>
+
+<div class="listing">{<br />
+&nbsp;"query": {<br />
+&nbsp;&nbsp;"pages": {<br />
+&nbsp;&nbsp;&nbsp;"1616095": {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;"pageid": 1616095,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ns": 0,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"title": "OpenStreetMap",<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"extract": "&lt;p&#62;&lt;b&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenStreetMap&lt;/b&#62; ist ein<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;freies Projekt, das f\u00fcr<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jeden frei nutzbare Geodaten<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sammelt (Open Data). [...]<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;erforderlich.&lt;/p&#62;"<br />
+&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;}<br />
+&nbsp;}<br />
+}</div>
+
+<div class="p"><!----></div>
+        
+
+Tipp: Ersetzt man das <b><tt class="big">json</tt></b> in der Adresse durch <b><tt class="big">jsonfm</tt></b>, d.&nbsp;h. 
+<a href="https://de.wikipedia.org/w/api.php?action=query&amp;format=jsonfm&amp;prop=extracts&amp;exintro&amp;titles=OpenStreetMap">https://de.wikipedia.org/w/api.php?action=query&amp;format=jsonfm&amp;prop=extracts&amp;exintro&amp;titles=OpenStreetMap</a>,
+wird die Ausgabe als formatiertes, für Menschen übersichtlicheres HTML-Dokument
+angezeigt.
+
+<div class="p"><!----></div>
+Nun muss die Erweiterung, statt den Artikel direkt im Panel zu laden, eine 
+solche Anfrage an die API senden und aus der Antwort den Text nach dem 
+<b><tt class="big">extract</tt></b> extrahieren.
+
+<div class="p"><!----></div>
+
+<h2>Stellen von Netzwerk-Anfragen</h2>
+
+
+Um solche Anfragen zu stellen, benutzt man das SDK-Modul 
+<b><tt class="big">request</tt></b>&nbsp;<a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/request.html">[5]</a>,
+welches zunächst eingebunden werden muss:
+
+<div class="p"><!----></div>
+
+<div class="listing">var requests = require("sdk/request");</div>
+
+<div class="p"><!----></div>
+
+
+Die resultierende Funktion <b><tt class="big">openArticleInPanelHotkey</tt></b> ist in Listing 1 abgedruckt.
+
+<div class="p"><!----></div>
+
+<div class="listing">function openArticleInPanelHotkey()<br />
+{<br />
+&nbsp;&nbsp;requests.Request({<br />
+&nbsp;&nbsp;&nbsp;&nbsp;url: "https://" + simpleprefs.prefs.language + ".wikipedia.org/w/api.php?action=query&amp;format=json&amp;prop=extracts&amp;exintro&amp;titles=" + selectedText,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;onComplete: function(response) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var pageContents=response.json.query.pages;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pageContents=pageContents[Object.keys(pageContents)].extract;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;panel.port.emit("displayContent", pageContents);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;}).get();<br />
+}</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2013-10-listings/ffox_addon_sdk_7_openarticleinpanelhotkey.js">openArticleInPanelHotkey.js</a></i>
+
+<div class="p"><!----></div>
+Die Anfrage hat zwei Eigenschaften: <b><tt class="big">url</tt></b> gibt an, welche Adresse 
+aufgerufen werden soll. Nach <b><tt class="big">onComplete</tt></b> steht eine Funktion, welche die 
+Antwort der Anfrage verarbeitet; die Antwort wird als Parameter <b><tt class="big">response</tt></b> 
+übergeben. Das abschließende
+<b><tt class="big">get()</tt></b> sorgt dafür, dass die Anfrage sofort 
+ausgeführt wird.
+
+<div class="p"><!----></div>
+Die <b><tt class="big">onComplete</tt></b>-Funktion geht bei der Verarbeitung in drei Schritten vor:
+
+<div class="p"><!----></div>
+In der ersten Zeile der Funktion wird die Antwort im JSON-Format ausgelesen 
+(<b><tt class="big">respone.json</tt></b>) und dann wird auf die Eigenschaft <b><tt class="big">query</tt></b> und 
+Untereigenschaft <b><tt class="big">pages</tt></b> (<b><tt class="big">.query.pages</tt></b>) zugegriffen. Der Wert (ein Teil 
+des JSON-Objekts) wird in der Variablen <b><tt class="big">pageContents</tt></b> hinterlegt.
+
+<div class="p"><!----></div>
+Wie oben in der Beispiel-Ausgabe gesehen, ist der Name der nächsten 
+Eigenschaft die Artikel-ID, die vor der Anfrage nicht bekannt ist und 
+deshalb mit <b><tt class="big">Object.keys(pageContents)</tt></b> ausgelesen werden muss; mit der 
+Funktion <b><tt class="big">keys</tt></b> erhält man die Namen aller Eigenschaften des
+JSON-Objekts. 
+Somit erhält man den Artikelauszug mit 
+<b><tt class="big">pageContents[Object.keys(pageContents)].extract</tt></b>.
+
+
+<div class="p"><!----></div>
+Dieser wird schließlich in einer Nachricht an das Panel gesendet.
+
+<div class="p"><!----></div>
+
+<h2>Anpassung des Panel-Codes</h2>
+
+
+Jetzt muss der Code des Panels noch so angepasst werden, dass die Nachricht 
+sinnvoll verarbeitet wird, der Nachrichteninhalt also im Panel dargestellt 
+wird.
+
+<div class="p"><!----></div>
+Zunächst wird ein neuer, leerer Textabschnitt in 
+der Datei
+<b><tt class="big">panel.html</tt></b> zwischen den 
+<b><tt class="big">body</tt></b>-Tags angelegt, der später mit dem Artikeltext gefüllt werden soll:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;div id="articleContents"&#62;&lt;/div&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Als nächstes wird <b><tt class="big">panel.js</tt></b> ergänzt, sodass der Text auf den mit der Nachricht <b><tt class="big">displayContent</tt></b> übergebenen Text gesetzt wird:
+
+<div class="p"><!----></div>
+
+<div class="listing">self.port.on(<br />
+&nbsp;&nbsp;"displayContent",<br />
+&nbsp;&nbsp;function(pageContents) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("articleContents").innerHTML = pageContents;<br />
+&nbsp;&nbsp;}<br />
+);</div>
+
+<div class="p"><!----></div>
+
+
+<b>Sicherheitshinweis:</b> Es sei angemerkt, dass die Verwendung von 
+<b><tt class="big">innerHTML</tt></b>&nbsp;<a href="http://de.selfhtml.org/javascript/objekte/all.htm#inner_html">[6]</a> 
+zum Setzen des Textes hier zu dem gewünschten Ergebnis führt,
+dass die 
+Formatierungen (Fettdruck etc.) aus dem Wikipediaartikel erhalten bleiben. 
+Daneben birgt dies aber auch ein erhebliches 
+Sicherheitsrisiko&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/API/element.innerHTML#Security_considerations">[7]</a>:
+Jeder HTML-Code, der von der MediaWiki-API zurückgegeben wird, wird von 
+Firefox im Panel ausgeführt. Theoretisch wäre es auch möglich, dass 
+JavaScript-Code enthalten ist, der dann mit den Rechten der Erweiterung im
+jetzigen Zustand ausgeführt würde. Deshalb müsste korrekterweise der Inhalt von 
+<b><tt class="big">pageContents</tt></b> noch auf sicherheitskritischen Code geprüft werden oder der 
+Text mit anderen Methoden gesetzt werden (z.&nbsp;B. mit 
+<b><tt class="big">textContent</tt></b>&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/API/node.textContent">[8]</a>, 
+wobei dabei die Formatierung verloren ginge).
+
+<div class="p"><!----></div>
+
+<div class="listing">body {<br />
+&nbsp;&nbsp;overflow: hidden;<br />
+}<br />
+<br />
+#articleContents {<br />
+&nbsp;&nbsp;position: relative;<br />
+&nbsp;&nbsp;top: 20px;<br />
+}</div>
+
+<div class="p"><!----></div>
+
+
+Zuletzt wird der Artikel im Panel noch etwas zurechtgerückt und die 
+Scrollbalken entfernt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-10-bilder-Dateien/ffox_addonsdk_7_panel_neu.png" alt="ffox_addonsdk_7_panel_neu.png" style="max-width:100%" /><br /><em>In der überarbeiteten Fassung ist der eigentliche Text sichtbar.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Probleme der Lösung</h2>
+
+
+Auf den ersten Blick scheint diese Lösung (bis auf das erwähnte 
+Sicherheitsproblem) gut zu funktionieren, aber es gibt noch ein paar andere 
+Probleme:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Der Titel des Artikels wird nicht angezeigt.</li>
+<li> Wenn es keinen passenden Artikel gibt, wird nichts angezeigt.</li>
+<li> Weiterleitungen zu einem anderen Artikel (z.&nbsp;B. von „Firefox“ zu
+„Mozilla Firefox“) werden nicht unterstützt.</li>
+</ul>
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-10-bilder-Dateien/ffox_addonsdk_7_panel_weiterleitung.png" alt="ffox_addonsdk_7_panel_weiterleitung.png" style="max-width:100%" /><br /><em>Die Erweiterung kann im jetzigen Zustand nicht mit Weiterleitungen umgehen.</em><br />
+
+<div class="p"><!----></div>
+Die Lösung dieser „Schönheitsprobleme“ soll nicht Thema der Artikelreihe 
+sein, da nur die grundsätzliche Funktionsweise von Netzwerkanfragen 
+behandelt werden sollte. 
+
+<div class="p"><!----></div>
+
+<h2>Abschluss</h2>
+
+
+Wie immer ist die vollständige Erweiterung als Archiv 
+<a href="http://www.freiesmagazin.de/mobil/2013-10-listings/ffox\_addonsdk\_7.tar.gz"><b><tt class="big">ffox_addonsdk_7.tar.gz</tt></b></a> und als installierbare Erweiterung 
+<a href="http://www.freiesmagazin.de/mobil/2013-10-listings/ffox\_addonsdk\_7.xpi"><b><tt class="big">ffox_addonsdk_7.xpi</tt></b></a> verfügbar.
+
+<div class="p"><!----></div>
+Dieser Teil stellt das vorläufige Ende der Artikelreihe dar. Bei größeren 
+SDK-Neuerungen oder
+Leseranfragen (Leserbriefe sind sehr willkommen)
+ist eine Fortsetzung der Reihe möglich.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2013-08"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2013-08</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Programmierschnittstelle"><tt class="big">https://de.wikipedia.org/wiki/Programmierschnittstelle</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Hilfe:API"><tt class="big">https://de.wikipedia.org/wiki/Hilfe:API</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/JSON"><tt class="big">https://de.wikipedia.org/wiki/JSON</tt></a><br />
+[5] <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/request.html"><tt class="big">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/modules/sdk/request.html</tt></a><br />
+[6] <a href="http://de.selfhtml.org/javascript/objekte/all.htm#inner_html"><tt class="big">http://de.selfhtml.org/javascript/objekte/all.htm#inner_html</tt></a><br />
+[7] <a href="https://developer.mozilla.org/en-US/docs/Web/API/element.innerHTML#Security_considerations"><tt class="big">https://developer.mozilla.org/en-US/docs/Web/API/element.innerHTML#Security_considerations</tt></a><br />
+[8] <a href="https://developer.mozilla.org/en-US/docs/Web/API/node.textContent"><tt class="big">https://developer.mozilla.org/en-US/docs/Web/API/node.textContent</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Markus Brenneis</b>&nbsp;(<a href="http://gulp21.github.io/">Webseite</a>)
+hat 2007 sein erstes Firefox-Add-on geschrieben und 2012 beim Entwickeln der 
+Erweiterung LanguageToolFx erstmals das Add-on-SDK benutzt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Firefox-Erweiterungen mit dem Add-on-SDK erstellen - Teil VII: Netzwerk-Anfragen#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+<h1><font color="#595959"><a id="fm_13_10_powerdns" name="fm_13_10_powerdns">PowerDNS – die andere VerBINDung</a></font></h1>von Benjamin Fleckenstein
+
+<div class="p"><!----></div>
+    <b>F</b><b>ür ein Projekt, bei dem – skript-gesteuert – DNS-Einträge gesetzt werden
+sollten, war der Autor auf der Suche nach einer gangbaren Lösung.</b>
+
+<div class="p"><!----></div>
+
+<h2>Zunächst, was ist DNS überhaupt?</h2>
+
+
+Ein Mensch kann sich Namen wesentlich leichter merken als Nummern, ein
+Computer jedoch kommt mit Nummern wesentlich besser klar als mit Namen. Für
+einen Menschen ist es somit am einfachsten sich <b><tt class="big">www.freiesmagazin.de</tt></b> zu
+merken, ein Computer muss aber wissen, dass es sich dabei um die IP-Adresse
+<b><tt class="big">46.4.183.98</tt></b> handelt. Diese Zuordnung von Name zu Adresse macht das
+„Domain Name System”, kurz DNS&nbsp;<a href="https://de.wikipedia.org/wiki/Domain_Name_System">[1]</a>.
+
+<div class="p"><!----></div>
+Das DNS besteht aus vielen tausenden Rechnern, sogenannten Nameservern.
+Diese Nameserver verwalten jeweils eine (oder mehrere) Zonen, für die sie
+zuständig sind. Es gibt z.&nbsp;B. Nameserver, die für <b><tt class="big">freiesmagazin.de</tt></b>
+zuständig sind, andere sind für <b><tt class="big">nbkr.net</tt></b> zuständig, und wieder andere
+sind für alles, was mit <b><tt class="big">de</tt></b> endet, zuständig. Eine Zone entspricht somit
+einem Teil einer Domain, es muss nicht immer die vollständige Domain sein,
+wie <b><tt class="big">freiesmagazin.de</tt></b>, es könnte auch eine Subdomain wie
+<b><tt class="big">home.nbkr.net</tt></b> sein.
+
+<div class="p"><!----></div>
+Das System ist hierarchisch aufgebaut, d.&nbsp;h., der Server, der für <b><tt class="big">de</tt></b>
+zuständig ist, würde eine Frage nach <b><tt class="big">freiesmagazin.de</tt></b> mit einem Verweis
+auf den zuständigen Nameserver beantworten. Erst der zuständige Nameserver
+würde dann die gewünschte Antwort liefern.
+
+<div class="p"><!----></div>
+
+<h2>Warum möchte man selbst einen Nameserver betreiben?</h2>
+
+
+Der Betrieb eines eigenen Nameservers ist nicht trivial und lohnt sich für
+einen einzelnen Webauftritt in der Regel nicht. Muss man aber viele Domains
+verwalten, ist man mit eigenen Nameservern in der Regel flexibler, gerade
+was Automatisierung angeht.
+
+<div class="p"><!----></div>
+
+<h2>Zum eigentlichen Projekt</h2>
+
+
+Hintergrund ist die Automatisierung von Systeminstallationen. Der Autor
+wollte in der Lage sein, mit Hilfe eines Python-Skriptes
+virtuelle Server installieren zu lassen. Ein Teil davon ist das Setzen von
+DNS-Einträgen für die neuen Maschinen. Hierfür war es notwendig, dass das
+Skript diese Einträge automatisch setzen kann. Dafür wurde eine neue
+Lösung im Bereich DNS benötigt, denn wie in vermutlich vielen Umgebungen
+wurde bisher auf BIND&nbsp;<a href="https://de.wikipedia.org/wiki/BIND">[2]</a> als DNS-Server
+gesetzt.
+
+<div class="p"><!----></div>
+Dieser Dinosaurier eines DNS-Servers leistet gute Dienste, kann seine
+Konfiguration aber erst mal nur aus Zonendateien – einfachen Textdateien,
+die keiner strengen Formatierung folgen – lesen.
+
+<div class="p"><!----></div>
+Solche Textdateien sind mit einem Skript schwer zu bearbeiten:
+Üblicherweise hat ein solches Skript sehr viele reguläre Ausdrücke, um nach
+den passenden Textstellen zu suchen, was die Wartbarkeit nicht gerade
+erhöht.
+
+<div class="p"><!----></div>
+BIND9 bietet eine MySQL-Schnittstelle, sodass die Daten eben aus einer
+Datenbank statt aus einer Zonendatei gelesen werden. Leider ist diese
+Schnittstelle nicht bei jeder Distribution aktiviert und insbesondere im
+konkreten Fall, bei welchem Ubuntu 12.04 eingesetzt wurde, hätte das
+bedeutet, dass BIND selbst zu kompilieren gewesen wäre. Da BIND eine
+Software ist, bei der immer mal wieder gravierende Fehler auftreten, hätte
+man bei jeder neuen Version BIND erneut manuell kompilieren müssen.
+Entsprechend war selbst
+kompilieren auch keine Lösung.
+
+<div class="p"><!----></div>
+Wenn ein Admin vor einem entsprechenden Problem steht, tut er was alle Menschen
+tun: Man benutzt eine Suchmaschine.
+Schnell ergab sich, dass PowerDNS&nbsp;<a href="https://www.powerdns.com/opensource.html">[3]</a>
+ein vollwertiger Ersatz für BIND sein kann und es darüber hinaus auch mit
+verschiedenen Datenbackends umgehen kann, u.&nbsp;a. mit MySQL, PostgreSQL und SQLite.
+
+<div class="p"><!----></div>
+PowerDNS ist in den Paketquellen enthalten, unter Ubuntu 12.04 zeigte sich
+aber, dass nur eine etwas ältere Version 3.0 (aktuell ist 3.3) enthalten
+ist. Bei ersten Tests war erkennbar, dass diese Version einen Bug
+enthält&nbsp;<a href="http://www.nexaphor.com/artikel/freiesmagazin/powerdns">[4]</a>.
+Glücklicherweise bietet die Homepage von PowerDNS die neueste Version auch
+als Paket an&nbsp;<a href="https://www.powerdns.com/downloads.html">[5]</a>.
+
+<div class="p"><!----></div>
+
+
+
+
+Das Paket enthält alle vorhandenen Backends, die gewünschte Datenbank muss
+man aber manuell einrichten. Man installiert also den MySQL-Server über
+die Paketverwaltung. Anschließend muss man zunächst die Datenbank selbst
+erzeugen, das Datenbankschema einspielen und die Berechtigungen für
+PowerDNS setzen.
+
+<div class="p"><!----></div>
+Leider liefert weder das PowerDNS-Paket selbst noch die Version in den
+Paketquellen einen einwandfreien SQL-Dump. Somit muss man die Datenbank wirklich
+selbst erzeugen. Ausgehend vom Ubuntu-Paket und der PowerDNS-Dokumentation
+erhält man den folgenden Dump: <a href="http://www.freiesmagazin.de/mobil/2013-10-listings/powerdns_dump.sql"><b><tt class="big">powerdns_dump.sql</tt></b></a>.
+
+<div class="p"><!----></div>
+Diesen Dump
+speichert man als <b><tt class="big">sql.dump</tt></b> und kann ihn dann in eine neue Datenbank
+einfügen. Der Einfachheit halber nennt man diese Datenbank <b><tt class="big">dns</tt></b>. Die
+notwendigen Kommandos sind entsprechend:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">$ mysql -u root -p -e "CREATE DATABASE dns;"<br />
+$ mysql -u root -p &lt; ./sql.dump dns</div>
+
+<div class="p"><!----></div>
+
+
+Nun gilt es nur noch, PowerDNS den Zugriff auf diese Datenbank zu gewähren:
+
+<div class="p"><!----></div>
+
+<div class="command">$ mysql -u root -p<br />
+&#62; GRANT ALL ON dns.* TO pdns@localhost IDENTIFIED BY 'neuespasswort';<br />
+&#62; FLUSH PRIVILEGES;</div>
+
+<div class="p"><!----></div>
+
+
+Jetzt, da die Datenbank eingerichtet ist, muss man PowerDNS an diese
+anbinden. Dies bewerkstelligt man über die Konfigurationsdatei
+<b><tt class="big">/etc/powerdns/pdns.conf</tt></b>. Am Ende dieser Datei fügt man ein:
+
+<div class="p"><!----></div>
+
+<div class="listing">gmysql-host=localhost<br />
+gmysql-dbname=dns<br />
+gmysql-user=pdns<br />
+gmysql-password=neuespasswort<br />
+gmysql-dnssec=no</div>
+
+<div class="p"><!----></div>
+
+
+Darüber ist es von Vorteil die folgenden Einträge ebenfalls zu setzen.
+
+<div class="p"><!----></div>
+
+<div class="listing">default-soa-mail=root.example.com<br />
+default-soa-name=ns1.example.com<br />
+soa-expire-default=604800<br />
+soa-minimum-ttl=3600<br />
+soa-refresh-default=10800<br />
+soa-retry-default=3600</div>
+
+<div class="p"><!----></div>
+
+
+Der Sinn dieser Einträge wird später im Artikel
+erkennbar.
+
+<div class="p"><!----></div>
+Abschließend muss man PowerDNS noch mitteilen, dass es das MySQL-Backend
+auch starten soll. Hierfür sucht man in der Konfigurationsdatei nach dem
+Stichwort
+<b><tt class="big">launch=</tt></b>, entfernt gegebenenfalls das Kommentarzeichen und
+fügt <b><tt class="big">gmysql</tt></b> an.
+
+<div class="p"><!----></div>
+Anschließend kann man PowerDNS über das Init-Skript neu starten. Die
+weitere Konfiguration, also das Hinzufügen von Domains und DNS-Einträgen,
+kann live erfolgen.
+
+<div class="p"><!----></div>
+Um eine neue Domain zu konfigurieren, muss man diese einerseits in der
+<b><tt class="big">domains</tt></b>-Tabelle anlegen, andererseits sind bestimmte Mindest-Records zu
+setzen.
+
+<div class="p"><!----></div>
+Um beispielsweise die Domain <b><tt class="big">example.com</tt></b> zu konfiguieren, würde man
+zunächst diese Domain in die <b><tt class="big">domains</tt></b>-Tabelle eintragen. Hierfür startet
+man den MySQL-Client und wechselt zur Datenbank <b><tt class="big">dns</tt></b>:
+
+<div class="p"><!----></div>
+
+<div class="command">$ mysql -u pdns -p<br />
+&#62; use dns;</div>
+
+<div class="p"><!----></div>
+
+
+Nun kann man den Eintrag hinzufügen:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; INSERT INTO domains (name, type) VALUES ('example.com', 'NATIVE');</div>
+
+<div class="p"><!----></div>
+
+
+Der Wert von <b><tt class="big">type</tt></b> bestimmt dabei, ob die Domain nur von diesem
+Nameserver verwaltet wird (<b><tt class="big">NATIVE</tt></b>), ob dieser Nameserver der Master
+einer Domain ist (<b><tt class="big">MASTER</tt></b>) und somit bei Updates die Slaves
+benachrichtigen soll, oder ob es sich um einen Slave (<b><tt class="big">SLAVE</tt></b>) handelt.
+
+<div class="p"><!----></div>
+Der nächste Schritt besteht im Anlegen der minimal notwendigen
+DNS-Records. Konkret geht es um den „Start of Authority”, kurz
+SOA-Eintrag,
+und um die Nameserver einer Domain. Der SOA-Eintrag ist ein
+vergleichsweise komplexer Eintrag. Er enthält die E-Mail-Adresse des
+administrativen Kontaktes, den Namen des primären DNS-Servers einer Domain
+und mehrere Zeitwerte, unter anderem für die Mindestgültigkeitsdauer der
+Einträge. Nun zeigt sich auch der Sinn hinter den <b><tt class="big">soa</tt></b>-Einträgen in der
+Konfigurationsdatei: Die Werte für den SOA-Eintrag sind für alle Domains,
+die von einer Organisation verwaltet werden, meistens identisch. Über die
+Konfigurationsdatei können so die Standardwerte gesetzt werden, die,
+sollten konkrete Werte in der Datenbank fehlen, an deren Stelle
+ausgeliefert werden. Dadurch wird der SOA-Eintrag in der
+Datenbank trivial.
+
+<div class="p"><!----></div>
+Zunächst benötigt man die ID der eben eingetragenen Domain:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; SELECT id FROM domains WHERE name = 'example.com';</div>
+
+<div class="p"><!----></div>
+
+
+Da es sich im Beispiel um die erste eingetragene Domain handelt, ist auch die ID
+entsprechend 1. Nun kann man den SOA und die NS-Einträge setzen:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62; INSERT INTO records (domain_id, type, name, content) VALUES (1, 'SOA', 'example.com', NULL);<br />
+&#62; INSERT INTO records (domain_id, type, name, content) VALUES (1, 'NS', 'ns1.example.com', NULL);<br />
+&#62; INSERT INTO records (domain_id, type, name, content) VALUES (1, 'NS', 'ns2.example.com', NULL);</div>
+
+<div class="p"><!----></div>
+
+
+Sobald die Einträge gesetzt sind, ist die Konfiguration auch schon aktiv.
+Ein Neuladen entfällt in dem Fall.
+
+<div class="p"><!----></div>
+Neben dieser Basisfunktionalität bietet PowerDNS noch einige weitere
+Features, die den täglichen Betrieb oder auch die Migration vereinfachen.
+
+<div class="p"><!----></div>
+Hat man vorher BIND verwendet, so müsste man nun natürlich die ganzen
+vorhandenen Einträge manuell aus der BIND-Konfiguration in die Datenbank
+übertragen. Glücklicherweise liefert PowerDNS ein Skript namens
+<b><tt class="big">zone2sql</tt></b> mit. Dieses Skript wandelt die BIND-Konfiguration in einen
+SQL-Dump. Es gibt einige Optionen, je nach Backend und
+BIND-Konfigurationsdetails. Für diesen
+Beispielfall reicht folgendes aus:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command"># zone2sql --gmysql --named-conf=/etc/bind/named.conf &#62; bind.dump</div>
+
+<div class="p"><!----></div>
+
+
+Den so erzeugten SQL-Dump kann man über den folgenden Befehl einspielen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ mysql -u root -p dns &lt; bind.dump</div>
+
+<div class="p"><!----></div>
+
+
+Für PowerDNS gibt es auch eine Webschnittstelle.
+Das „PowerAdmin”
+genannte Werkzeug&nbsp;<a href="http://www.poweradmin.org">[6]</a> ist ein PHP-Skript, das
+die Verwaltung der Zonendaten und Einträge per Browser ermöglicht. Es
+bietet auch ein Usermanagement, sodass man die Verwaltung von bestimmten
+Zonen an andere Personen übertragen kann, ohne dass diese direkten Zugriff
+auf die Datenbank benötigen oder einen eigenen Nameserver betreiben müssen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2013-10-bilder-Dateien/poweradmin_screenshot.png" alt="poweradmin_screenshot.png" style="max-width:100%" /><br /><em>Bearbeitung einer Zone mit PowerAdmin.</em><br />
+
+<div class="p"><!----></div>
+Zu guter Letzt sei noch auf das Feature hingewiesen, dass PowerDNS
+„Supermaster” nennt. Der Betrieb einer DNS-Infrastruktur sollte eigentlich
+aus mindestens zwei Maschinen bestehen: dem Master-Nameserver, auf dem die
+DNS-Daten gepflegt werden, und einem oder mehreren Slave-Nameservern,
+welche diese Daten nur kopieren und sie, im Sinne von Ausfallsicherheit
+und Lastverteilung, an die Clients weiterreichen.
+
+<div class="p"><!----></div>
+Es lässt sich nicht vermeiden, dass dieses
+Konzept zusätzlichen
+Administrationsaufwand mit sich bringt. Zwar
+kopiert der Slave-Nameserver
+
+alle Daten vom Master automatisch, allerdings
+muss ihm mitgeteilt werden, für welche Zonen er überhaupt ein
+Slave-Nameserver ist. Das heißt im Klartext: bei jeder neuen Zone muss man
+diese auf zwei Maschinen anlegen.
+
+<div class="p"><!----></div>
+PowerDNS kontert diese Anforderung mit dem Konzept des Supermasters. Ein
+Slave erhält einmalig bei der Installation die Information, welcher Server
+der Supermaster ist. Teilt ihm dieser Supermaster dann mit, dass es für
+eine Zone ein Update gibt, so übernimmt der Slave nicht nur die geänderten
+Daten, sondern konfiguriert sich für diese Zone selbst als Slave, sofern
+noch nicht geschehen.
+
+<div class="p"><!----></div>
+Das Einrichten einer Zone auf dem Slave entfällt somit, was den
+administrativen Aufwand wieder auf die Pflege eines einzelnen Servers
+reduziert.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+PowerDNS ist ein sehr komfortabler DNS-Server, welcher sich dank multipler
+Backends auch deutlich leichter in automatische Setups einbinden lässt, als dies mit
+BIND möglich wäre. Zusätzliche Features wie WebGUI und Supermaster-Konzept
+erleichtern die Administration noch darüber hinaus.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Domain_Name_System"><tt class="big">https://de.wikipedia.org/wiki/Domain_Name_System</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/BIND"><tt class="big">https://de.wikipedia.org/wiki/BIND</tt></a><br />
+[3] <a href="https://www.powerdns.com/opensource.html"><tt class="big">https://www.powerdns.com/opensource.html</tt></a><br />
+[4] <a href="http://www.nexaphor.com/artikel/freiesmagazin/powerdns"><tt class="big">http://www.nexaphor.com/artikel/freiesmagazin/powerdns</tt></a><br />
+[5] <a href="https://www.powerdns.com/downloads.html"><tt class="big">https://www.powerdns.com/downloads.html</tt></a><br />
+[6] <a href="http://www.poweradmin.org"><tt class="big">http://www.poweradmin.org</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Benjamin Fleckenstein</b>
+ist leidenschaftlicher Systemadministrator und betreut gegenwärtig die
+Plattformen namhafter Kunden
+eines mittelständischen Telekommunikations-
+und Hostingunternehmens in Frankfurt/Main.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=PowerDNS - die andere VerBINDung#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+
+
+
+
+<h1><font color="#595959"><a id="fm_13_10_rezension_dropbox" name="fm_13_10_rezension_dropbox">Rezension: Dropbox – Sicher speichern und effektiv arbeiten in der Cloud</a></font></h1>von Christian Schnell
+
+<div class="p"><!----></div>
+    <b>I</b><b>n seinem Buch „Dropbox” beschreibt der Autor detailliert die Installation
+und Nutzung von Dropbox&nbsp;<a href="https://www.dropbox.com/">[1]</a> sowohl als
+Onlinespeicher als auch als Backup-Lösung. Auf Sicherheitsaspekte und
+Verschlüsselungsmöglichkeiten geht er ebenfalls ein und erläutert diese
+durch seinen lockeren Schreibstil und zahlreiche Screenshots vor allem auch für
+Laien verständlich.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem mitp-Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+Das Buch enthält inklusive Index 207 Seiten, die in 10 Kapitel aufgeteilt
+sind. Noch vor dem ersten Kapitel wird auf acht Seiten ein kurzer Überblick
+über Dropbox gegeben, in dem die Entwicklung von Dropbox skizziert
+und die grundlegende Arbeitsweise und die Sicherheit des Programms
+erläutert wird. Am Ende folgt ein Abschnitt über Hilfe- und
+Support-Möglichkeiten bei Fragen zu Dropbox. Freundlicherweise gibt der
+Autor hier auch seine E-Mail-Adresse an, falls man aufgrund von neueren
+Versionen Anleitungen aus dem Buch nicht mehr nachvollziehen kann.
+
+<div class="p"><!----></div>
+Wie bei den meisten Büchern über ein Programm findet sich auch hier im
+ersten Kapitel eine Installationsanleitung. Diese ist sehr ausführlich
+gestaltet und geht auf die Anmeldung bei Dropbox und die verschiedenen
+möglichen Plattformen zur Installation ein. Neben Tipps zur Erzeugung
+eines sicheren Passwortes schreibt der Autor auch, welche Daten er seiner
+Dropbox anvertrauen würde und welche nicht (bzw. nicht unverschlüsselt).
+Es folgt ein Abschnitt, wie die Dateien im Dropbox-Ordner synchronisiert
+werden und wie dabei auftretende Konflikte gelöst werden können.
+Abgeschlossen wird Kapitel 1 mit ein paar Abschnitten über die AGB von
+Dropbox, sodass man kurz und bündig erfährt, worauf man als Nutzer zu
+achten hat.
+
+<div class="p"><!----></div>
+In Kapitel zwei werden weitere Einstellungen der Desktop-Anwendung (zum
+Beispiel die selektive Synchronisation) erläutert und der
+Dropbox-Webdienst vorgestellt.
+
+<div class="p"><!----></div>
+Im dritten Kapitel erklärt der Autor die Nutzung der offiziellen
+Dropbox-Apps anhand von Android- bzw. Apple-Geräten. Nach der Installation
+geht er auch auf die Unterschiede im Vergleich zur Desktop- und
+Webanwendung ein. Gerade was die automatische Synchronisation betrifft,
+gibt es hier einige Besonderheiten. Praktisch ist auch die Liste der
+Dateiformate, die direkt in der Dropbox-App betrachtet werden können.
+
+<div class="p"><!----></div>
+In den Kapiteln vier und fünf liegt der Schwerpunkt auf dem Freigeben von
+Ordnern bzw. Freigabelinks. Zunächst werden in Kapitel 4 die generellen
+Unterschiede und Funktionen von freigegebenen Ordnern und Freigabelinks
+anhand von praktischen Beispielen erläutert, bevor im fünften Kapitel der
+Umgang mit der Bilder- und Kamera-Funktion von Dropbox und insbesondere
+das Erstellen und Freigeben von Bildergalerien erklärt wird.
+
+<div class="p"><!----></div>
+Das sechste und längste Kapitel bietet einen Einblick in Apps von
+Drittanbietern, die in irgendeiner Weise Dropbox einbinden bzw. die seine
+Funktionen erweitern. Die meisten Apps werden nur kurz mit Namen genannt,
+für welche Plattformen sie verfügbar sind und kurz beschrieben, welche
+Funktion die App hat. Nur wenige Apps wie
+Vimeo&nbsp;<a href="https://vimeo.com/">[2]</a>,
+IFTTT&nbsp;<a href="https://ifttt.com/">[3]</a> (If this then that),
+Jotform&nbsp;<a href="http://www.jotform.com/">[4]</a> und
+YNAB&nbsp;<a href="http://www.youneedabudget.com/">[5]</a> (You need a budget) werden
+ausführlicher erklärt und ihre Funktionen erläutert.
+
+<div class="p"><!----></div>
+Im siebten Kapitel erläutert der Autor den Einsatz von Dropbox als
+Datensicherungswerkzeug. Die Vorteile einer Cloud-Lösung wie Dropbox
+werden natürlich hervorgehoben, aber der Autor gibt auch Hinweise, welche
+Daten er persönlich seiner Dropbox anvertraut und welche dort eher nicht
+hingehören, beziehungsweise was auf jeden Fall verschlüsselt werden sollte. Auf das
+Thema Verschlüsselung geht er an dieser Stelle auch ausführlicher ein und
+stellt die Verschlüsselungswerkzeuge TrueCrypt und BoxCryptor im Detail
+vor. Am Ende des Kapitels folgen noch ein paar Abschnitte über die
+Wiederherstellung von älteren Versionen einer Datei beziehungsweise die
+Packrat-Option von Dropbox.
+
+<div class="p"><!----></div>
+In Kapitel acht erfährt man, wie man über die Dropbox-Homepage die
+Einstellungen seines Dropbox-Zugangs verwaltet und welche Optionen zur
+Einrichtung vorhanden sind. Im zweiten Teil kann man lesen, wie man ein
+Upgrade auf einen kostenpflichtigen Zugang mit mehr Speicherplatz
+durchführen kann und welche Möglichkeiten es gibt, z.&nbsp;B. durch
+Weiterempfehlung von Dropbox an Freunde mehr kostenlosen Speicherplatz zu
+bekommen.
+
+<div class="p"><!----></div>
+Im nächsten Kapitel geht es speziell um das Thema Sicherheit. Der Leser
+lernt hier zum einen, welche Sicherheitsmechanismen Dropbox selbst einsetzt
+(zum Beispiel Datentransfer über eine SSL-Verbindung). Zum anderen wird auch das
+zweistufige Login-Verfahren erklärt, welches den Zugriff auf das
+Dropbox-Konto mit gestohlenen Zugangsdaten alleine unmöglich macht.
+Zusätzlich zeigt der Autor, wie man die Freigabe von Ordnern überwachen
+kann, um so seine Dropbox auf unbefugten Zugriff zu überprüfen.
+
+<div class="p"><!----></div>
+Das zehnte und letzte Kapitel beschäftigt sich nicht mehr mit Dropbox,
+sondern listet alternative Anbieter und Programme auf, die sich im Preis
+oder den angebotenen Funktionen unterscheiden. Viel mehr als ein oder zwei
+Sätze zum Programm selbst und die Preisstaffelung erfährt man allerdings nicht.
+Diese Übersicht ist also eher als Ausgangspunkt für eine eigene, ausführlichere Recherche
+zu sehen, ob eines der Konkurrenz-Produkte doch besser zu einem passt als
+Dropbox selbst.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+An mehreren Stellen stolpert man beim Lesen, da sich ganze Sätze
+wiederholen, Worte fehlen und inhaltliche Doppelungen auftreten. Da
+hätte ein besseres Lektorat helfen können. Inhaltlich gibt es
+wenig zu kritisieren. Eventuell hätte der Autor noch mehr auf die Risiken
+der intensiven Cloud-Nutzung hinweisen können. Sei es, dass man sich als
+Nutzer auf die Verfügbarkeit zu sehr verlässt oder Gefahren in Bezug auf
+den Datenschutz unterschätzt, auch wenn letzterer mehrfach kurz angerissen wird.
+Zugegebenermaßen sind die Überwachungsaktivitäten durch die Geheimdienste
+aber erst nach Veröffentlichung des Buches publik geworden, sodass sich
+der Leser sein eigenes Urteil muss.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch lässt sich insgesamt gut lesen und ist durch die vielen
+Screenshots und gründlichen Anleitungen vor allem für Laien ein guter
+Einstieg in Dropbox. Man findet leicht die gesuchten Funktionen und
+Anleitungen.
+Fortgeschrittenen Nutzern dürfte das Buch jedoch
+nur wenig Neues bieten.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i> Da es schade wäre, wenn das Buch bei Christian Schnell im
+Regal verstaubt, wird es verlost. Die Gewinnfrage lautet:
+
+<div class="p"><!----></div>
+„<em>Wie viel Speicherplatz bietet Dropbox standardmäßig beim kostenlosen Standardzugang?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>13. Oktober 2013, 23:59 Uhr</b> über die
+Kommentarfunktion oder per E-Mail an
+<img src="freiesMagazin-2013-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> geschickt werden. Die Kommentare werden bis
+zum Ende der Verlosung nicht freigeschaltet. Das Buch wird unter den
+Einsendern, welche die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Dropbox&nbsp;<a href="http://www.it-fachportal.de/shop/buch/Dropbox/detail.html,b188453">[6]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Christian Schilling </td></tr>
+<tr><td><b>Verlag</b> </td><td>mitp </td></tr>
+<tr><td><b>Umfang</b> </td><td>216 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8266-9457-8 </td></tr>
+<tr><td><b>Preis</b> </td><td>€ 16,95
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://www.dropbox.com/"><tt class="big">https://www.dropbox.com/</tt></a><br />
+[2] <a href="https://vimeo.com/"><tt class="big">https://vimeo.com/</tt></a><br />
+[3] <a href="https://ifttt.com/"><tt class="big">https://ifttt.com/</tt></a><br />
+[4] <a href="http://www.jotform.com/"><tt class="big">http://www.jotform.com/</tt></a><br />
+[5] <a href="http://www.youneedabudget.com/"><tt class="big">http://www.youneedabudget.com/</tt></a><br />
+[6] <a href="http://www.it-fachportal.de/shop/buch/Dropbox/detail.html,b188453"><tt class="big">http://www.it-fachportal.de/shop/buch/Dropbox/detail.html,b188453</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Christian Schnell</b>
+ist Neurowissenschaftler und nutzt Cloud-Anwendungen
+beruflich für den Datenaustausch mit anderen Forschern.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Rezension: Dropbox - Sicher speichern und effektiv arbeiten in der Cloud#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_10_rezension_android" name="fm_13_10_rezension_android">Rezension: Android-Apps entwickeln für Einsteiger</a></font></h1>von Michael Niedermair
+
+<div class="p"><!----></div>
+    
+
+<b>D</b><b>as Buch „Android-Apps entwickeln für Einsteiger“
+ist eine Einführung in die Java-Android-Spiele-Programmierung
+für Leser ohne Vorkenntnisse. Das Buch will auf „besonders einfache“
+und unterhaltsame Weise zeigen, wie man eine Android-Spiele-App in Java
+Schritt für Schritt programmiert, installiert und dann veröffentlicht. Der
+rote Faden dabei ist, eine Spiele-App mit Sound, Animation, Highscore und
+Bestenlisten mit dem Einsatz der Kamera und Sensoren zu entwickeln.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Galileo Computing für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Die dritte Auflage ist nun nach einem Jahr erschienen, und laut Vorwort
+wurde sie aktualisiert, die Tools auf den aktuellen Stand gebracht und die
+Hinweise und Vorschläge der Leser eingearbeitet.
+
+<div class="p"><!----></div>
+Der Autor Uwe Post ist Chefentwickler einer Firma, die Smartphone-Spiele
+herstellt und nebenbei schreibt er Fachartikel in Computerzeitschriften
+und Science-Fiction-Geschichten, z.&nbsp;B. „Walpar Tonnraffir und der
+Zeigefinger Gottes“, der 2011 den Kurd-Laßwitz-Preis und den Deutschen
+Science-Fiction-Preis gewann. Bei solchen interessanten Bedingungen und
+der sehr guten Kritik der zweiten Auflage geht man natürlich mit einer
+hohen Erwartungshaltung an das Buch heran. Die nächsten Zeilen verraten,
+ob das Buch diesen Erwartungen gerecht wird.
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das Buch ist in elf Kapitel mit Vorwort und Index aufgeteilt und umfasst
+409 Seiten (etwas mehr als die zweite Auflage). Am Ende finden sich sechs
+Seiten Werbung und die DVD mit der Entwicklungssoftware (unter anderem Java, Eclipse und
+Android-SDK) für Linux, Windows und Mac, dem HTML-Buch „Java ist auch
+eine Insel“ aus demselben Verlag und allen Beispielen als Eclipse-Projekt.
+
+<div class="p"><!----></div>
+Das erste Kapitel umfasst 25 Seiten und stellt die Einleitung für das Buch dar.
+Darin wird beschrieben, an wen sich das Buch richtet, welche Technologie hier mit
+Java und Android zum Einsatz kommt und welche Möglichkeiten dahinter
+stecken. Danach werden anhand von mehreren Beispielen, wie etwa MapDroyd, Öffi,
+Shaky Tower und vielem mehr die Möglichkeiten von Android gezeigt.
+
+<div class="p"><!----></div>
+Im zweiten Kapitel (30 Seiten) geht es um die Java-Grundlagen für
+Einsteiger. Hier werden Objekte, Klassen, Konstruktoren, Pakete und deren
+Erzeugung, Benutzung etc. besprochen. Danach geht es um Variablen,
+Grundstrukturen wie z.&nbsp;B. Schleifen und Vererbung. Dabei wird immer auf
+das Openbook „Java ist auch eine Insel“&nbsp;<a href="http://openbook.galileocomputing.de/javainsel/">[1]</a> verwiesen.
+
+<div class="p"><!----></div>
+
+
+Im dritten Kapitel (29 Seiten) geht es an die Grundlagen: Was für einen
+Rechner/Betriebssystem brauche ich? Wie installiere ich Java und Eclipse
+(es folgt eine Einführung in Eclipse)? Wie installiere ich das
+Android-Eclipse-Plugin, das ADT (Android Development Tool) und das Android
+SDK?
+
+<div class="p"><!----></div>
+Die erste App „Sag Hallo“ wird im vierten Kapitel (44 Seiten) entwickelt.
+Dabei wird schrittweise gezeigt, wie man in Eclipse ein Android-Projekt
+anlegt, die erste Activity erzeugt (mit Layout, Buttons und
+entsprechenden Ressourcen-Dateien für beispielsweise Text und vieles mehr) und mit
+Leben erfüllt. Dabei werden die notwendigen Java-Grundlagen erläutert, z.&nbsp;B. wie
+man ein Interface implementiert und welche Vorteile dieses Verfahren hat.
+Ist die App fertig, so wird gezeigt, wie man daraus ein APK-Paket erstellt
+und installiert.
+
+<div class="p"><!----></div>
+Im fünften Kapitel (51 Seiten) geht es an die Spielentwicklung mit dem Ziel
+„Wie viele Stechmücken kann man in einer Minute fangen?“ Dabei wird
+zuerst gezeigt, wie eine Mücke gezeichnet wird, sodass sich diese als
+Grafik unter Berücksichtigung der Bildschirmauflösung einbinden lässt.
+Danach geht es an die „Game Engine“, das entsprechende Layout (Mücke(n),
+Hintergrund usw.), Informationen über aktuelle Punktzahl, Runde, gefangene
+Mücken etc. und die verbleibende Spielzeit.
+
+<div class="p"><!----></div>
+Das sechste Kapitel (34 Seiten) widmet sich dem Sound und zeigt, wie
+Animationen realisiert werden. Dabei wird erklärt, wie man Sound
+hinzufügen und spezielle Soundeffekte selber erzeugen und abspielen kann.
+Es folgt, wie man einfache Animationen erzeugen und in Views einblenden
+kann, sodass die Mücken das Fliegen lernen.
+
+<div class="p"><!----></div>
+Im siebten Kapitel (49 Seiten) wird gezeigt, wie man Highscores im
+Internet speichern kann und die Google App Engine verwendet. Dabei werden
+Themen wie Android-HTTP-Client, Threads, Background-Threads,
+HTML-Darstellung und Listen mit Adaptern behandelt.
+
+<div class="p"><!----></div>
+Im achten Kapitel (19 Seiten) geht es um die Kamera und „Augmented
+Reality“&nbsp;<a href="https://de.wikipedia.org/wiki/Augmented_Reality">[2]</a>.
+Es wird gezeigt, wie man die Kamera verwendet, das Ergebnis in
+einer View anzeigt und die Bilddaten auswertet, sodass Mücken gefangen
+werden können.
+
+<div class="p"><!----></div>
+
+
+Das neunte Kapitel (48 Seiten) beschäftigt sich mit Sensoren, um z.&nbsp;B. die
+Himmelsausrichtung zu ermitteln und eine Kompassnadel zu realisieren.
+Diese Grundlagen werden dann dazu genutzt, um zu ermitteln, wo denn die
+Mücken fliegen. Dazu wird auf Grundlagen der „sphärischen Koordinaten“&nbsp;<a href="https://de.wikipedia.org/wiki/Kugelkoordinaten">[3]</a>
+und die virtuelle Kamera mit Polarwinkel und Azimutwinkel eingegangen, um
+einen Radarschirm zu realisieren. Danach geht es um Beschleunigung und
+Erschütterung, um einen Schrittzähler einzubinden. Zuletzt wird das
+Arbeiten mit Geokoordinaten gezeigt und wie man Google Maps nutzt, um
+Karten und Overlays zu verwenden.
+
+<div class="p"><!----></div>
+Das zehnte Kapitel (26 Seiten) enthält Tipps und Tricks, z.&nbsp;B. wie man eine
+Stacktrace ausliest, Logging verwendet und das Debugging durchführt. Um
+eine eigene Note bei Apps zu verwenden, wird gezeigt, wie man Komponenten,
+z.&nbsp;B. Buttons, nach seinen eigenen Vorstellung designen kann, beispielsweise
+durch Verwendung einer Hintergrundgrafik.
+
+<div class="p"><!----></div>
+Im elften Kapitel (26 Seiten) wird gezeigt, wie man Apps veröffentlicht,
+ein Entwickler-Konto im Android Market oder anderen Stores eröffnet und
+was dabei zu beachten ist, z.&nbsp;B. wenn man Apps verkaufen möchte.
+
+<div class="p"><!----></div>
+Am Ende folgt das Stichwortverzeichnis mit insgesamt sieben Seiten.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das Buch ist für den Android-Anfänger geschrieben und setzt im Gegensatz
+zu anderen Android-Einsteiger-Büchern keine Java-Grundkenntnisse voraus.
+Allgemeine Kenntnisse über Programmieren sind aber hilfreich.
+
+<div class="p"><!----></div>
+Das Buch liest sich sehr gut. Es wird durchgängig ein roter Faden (Mücken
+fangen) verwendet. Dabei wird das Beispiel schrittweise und spannend immer
+weiter ausgebaut, so dass am Ende eine schon recht umfangreiche Spiele-App
+entsteht. Alle Code-Beispiele sind ausreichend gut erläutert. Im Buch
+werden nur die wichtigen Codeteile abgedruckt, der komplette Code findet
+sich auf der Begleit-DVD.
+
+<div class="p"><!----></div>
+Jeder Anfänger kann der Beschreibung gut folgen und auch der schon
+erfahrene Leser findet das eine oder andere interessante Kapitel. Der
+erfahrene Leser kann ohne weiteres Grundlagenkapitel wie die
+Java-Einführung oder die Eclipse-Installation und Beschreibung
+überspringen, ohne dabei in anderen Kapitel Probleme zu bekommen.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Das Buch ist für Android-Anfänger geschrieben und dafür sehr gut geeignet.
+Man merkt deutlich, dass der Autor viele Erfahrungen in der
+Android-Spiele-Programmierung hat. Durch seine Physik-Kenntnisse und
+langjährige Autorenerfahrung schafft er es, auch komplexe Sachverhalte,
+wie z.&nbsp;B. die Perspektivendarstellung bei Kameras didaktisch und methodisch
+auf ein verständliches Niveau herunterzubrechen, sodass jeder Leser die
+notwendigen Kenntnisse erlangt, ohne mit theoretischem Hintergrund
+gelangweilt bzw. überfordert zu werden.
+
+<div class="p"><!----></div>
+Auch für den fortgeschrittenen Leser finden sich genügend Aspekte, sodass
+das Buch für den Einstieg in die Spielewelt sinnvoll ist.
+
+<div class="p"><!----></div>
+Das Stichwortverzeichnis ist für den Buchumfang ausreichend und meist
+findet man die entsprechenden Stellen schnell. Das Buch hat in der dritten
+Auflage ein Softcover. Die Variante der zweiten Auflage mit umgeschlagenem
+Deckel, der dem Buch einen deutlich stabileren Stand verschafft und die
+Coverecken durch die Benutzung nicht so schnell leiden lässt, ist leider
+weggefallen, was sehr schade ist. Ein Daumenkino zeigt zusätzlich die
+Kapitel an.
+
+<div class="p"><!----></div>
+Das Preis-Leisungsverhältnis (Buch, Umfang, DVD und Preis) macht einen
+sehr guten Eindruck und wirkt nicht überteuert.
+
+<div class="p"><!----></div>
+Im Gegensatz zur zweiten Auflage wurden viele Screenshots erneuert und auf
+den aktuellen Stand gebracht. Auch die Software auf der DVD hat einen
+recht aktuellen Stand.
+
+<div class="p"><!----></div>
+Insgesamt betrachtet muss man die dritte Auflage als sehr gut bewerten. Die
+in der zweiten Auflage noch vorhandenen Schönheitsfehler wurden beseitigt, und die anfangs
+gesetzten Erwartungen wurden hier auch vollständig erfüllt – ein „Sternchen“ zum sehr gut
+kann hier ohne Bedenken erteilt werden. Der Anfänger wird in dieser Ausgabe super
+motiviert, in die Spieleentwicklung einzusteigen. Schade ist nur das
+Softcover ohne umgeschlagenen Deckel.
+
+<div class="p"><!----></div>
+
+
+Für meinen Ergänzungsunterricht Android dieses Schuljahr habe ich jeweils
+für jeden Schüler dieses Buch besorgt.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Android-Apps entwickeln für Einsteiger&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3470">[4]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Uwe Post </td></tr>
+<tr><td><b>Verlag</b> </td><td>Galileo Computing, 2013 </td></tr>
+<tr><td><b>Umfang</b> </td><td>409 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8362-2629-5 </td></tr>
+<tr><td><b>Preis</b> </td><td>24,90 € (online 19,90 €)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://openbook.galileocomputing.de/javainsel/"><tt class="big">http://openbook.galileocomputing.de/javainsel/</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Augmented_Reality"><tt class="big">https://de.wikipedia.org/wiki/Augmented_Reality</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Kugelkoordinaten"><tt class="big">https://de.wikipedia.org/wiki/Kugelkoordinaten</tt></a><br />
+[4] <a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3470"><tt class="big">http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3470</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Michael Niedermair</b>
+ist Lehrer an der <a href="http://www.bsinfo.musin.de/">Münchener IT-Schule</a> und
+Koordinator für den Bereich Programmierung und Anwendungsentwicklung. Er
+hat dort das Zusatzangebot „Androidprogrammierung“ konzipiert und
+eingeführt und stellt es gerade auf die Lernplattform Moodle um.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Rezension: Android-Apps entwickeln f%C3%BCr Einsteiger#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_13_10_rezension_nodejs" name="fm_13_10_rezension_nodejs">Rezension: Node.js – Das umfassende Handbuch</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>D</b><b>ie Bibliothek Node.js&nbsp;<a href="http://nodejs.org/">[1]</a> erfreut sich in der 
+Webentwicklung großer und stetig wachsender Beliebtheit. Mit ihrer Hilfe 
+lassen sich schnell und unkompliziert serverseitige Applikationen in 
+JavaScript erstellen. Außerdem ist Node.js einfach und flexibel erweiterbar. 
+Diese Beliebtheit hat den Verlag Galileo Computing wohl auch dazu bewogen, 
+ein neues Buch zu diesem Thema zu veröffentlichen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Galileo Computing für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Wer regelmäßig <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> liest, wird sich vielleicht daran erinnern, 
+dass in der Ausgabe 
+2/2013&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2013-02">[2]</a> bereits zwei 
+Bücher zu Node.js besprochen wurden. Die Unterschiede zum vorliegenden Werk 
+sind, dass es zum einem mit 469 Seiten umfangreicher ist (was sich auch im 
+Untertitel „Das umfassende Handbuch“ widerspiegelt). Zum anderen behandelt 
+das Buch die aktuellste Version der Bibliothek 0.10.x, während die anderen 
+Bücher „nur“ die älteren Versionen 0.6 bzw. 0.8. beschreiben.
+
+<div class="p"><!----></div>
+
+<h2>Von der Basis auf erklärt bis zu den Webanwendungen</h2>
+
+
+Nach der obligatorischen Einleitung beginnt das Buch erst einmal ganz von vorne, 
+nämlich mit der Erklärung der JavaScript-Engine 
+V8&nbsp;<a href="http://de.wikipedia.org/wiki/V8_%28JavaScript-Implementierung%29">[3]</a>, welche 
+Node.js zugrunde liegt, sowie einer Erklärung und Interna zu den 
+Kernbibliotheken. Danach geht es weiter mit Kapiteln zur Installation, den
+Basismodulen, dem Erstellen von eigenen Klassen sowie dem Thema NPM („Node 
+Package Manager“), der node-eigenen Modulverwaltung.
+
+<div class="p"><!----></div>
+Das fünfte Kapitel beschäftigt sich mit der Ein- und Ausgabe von Dateien, bevor dann nach knapp 
+190 Seiten die erste echte (wenn auch kleine) Serverapplikation erstellt 
+wird. Hier wird sowohl die Server- als auch die Clientseite behandelt.
+
+<div class="p"><!----></div>
+Weiter geht es dann
+mit Themenblöcken über asynchrone Programmierung, 
+Datenbankanbindung, Qualitätssicherung mit Hilfe von Tests und Codeanalyse, 
+Deployment und Sicherheitsaspekten.
+
+<div class="p"><!----></div>
+Auf den letzten rund 100 Seiten wird das Thema „Server mit Node.js“ 
+nochmals aufgegriffen und 
+mittels der drei Beispielprojekte
+„Multi-Page 
+Webapplikation“, „Single-Page Webapplikation“ und „Echtzeit Webapplikation“ 
+im Detail praktisch erläutert.
+Den Abschluss des Buchs bildet ein äußerst 
+ausführlicher Index.
+
+<div class="p"><!----></div>
+
+<h2>Stärken des Buchs und kleinere Stolpersteine</h2>
+
+
+Im Gegensatz zu anderen Büchern wählt der Autor Sebastian Springer,
+selbst ein erfahrener Webentwickler,
+einen strikten „Bottom-Up“-Ansatz, d.&nbsp;h. es werden 
+erst einmal alle Grundlagen behandelt, bevor es konkreter an 
+Beispielprojekte geht. Für das tiefergehende und nachhaltige Verständnis von 
+Node.js ist das sicherlich ein guter Weg. Sowieso wird im Buch durchweg sehr 
+akribisch und detailliert erklärt, „dünn drüber“ ist nirgends zu finden, was 
+gut ist.
+
+<div class="p"><!----></div>
+Mit Beispielen geizt der Autor auch an keiner Stelle, es gibt reichlich 
+Quelltexte, welche das Erklärte praktisch zeigen. Alle Listings sind 
+komplett abgedruckt, so dass man das Buch auch auch ohne Probleme „offline“ 
+lesen kann.
+
+<div class="p"><!----></div>
+Auch wenn die zuvor erwähnten detaillierten Erklärungen grundsätzlich sehr gut 
+sind, meint es der Autor an manchen Stellen wohl doch etwas zu gut. Einige 
+Erklärungen und Hinweise wiederholen sich sehr oft bzw. zu oft. Ein Beispiel 
+hierfür ist der Hinweis, dass Node.js die Datenein- und -ausgabe sowohl synchron 
+als auch asynchron beherrscht. Dies ist vollkommen richtig, wird aber 
+mindestens 20mal im Buch erwähnt.
+
+<div class="p"><!----></div>
+Ob die detaillierte Einführung in die JavaScript-Engine V8, welche nach 
+meiner Ansicht mit leichtem Hang zu Glorifizierung geschrieben ist, in 
+dieser Tiefe nötig ist, muss jeder selbst entscheiden. Immerhin ist der Teil 
+für das spätere Verständnis des Buchs nicht notwendig, sodass man diese 
+Seiten auch überspringen könnte.
+
+<div class="p"><!----></div>
+Bei der Installation von Paketen und Node.js wird im Buch zwar von „Linux“ 
+gesprochen, aber behandelt werden „nur” die Debian-basierten Distribution. 
+Hinweise zu Red Hat oder auch Suse findet man nirgends, obwohl diese 
+Distributionen 
+ja zumindest im Serverbereich
+auch recht verbreitet sind.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das Buch lässt sich zwar gut lesen, aber nicht wirklich zügig oder besonders 
+flüssig. Dies ist durch die Akribie der Erklärungen und die stellenweise 
+allzu häufigen Wiederholungen bedingt. Außerdem wirken dadurch manche 
+Abschnitte etwas langatmig, besonders im mittleren Teil des Buchs.
+
+<div class="p"><!----></div>
+In den letzten Kapiteln mit den praktischen Beispielen funktioniert der 
+Lesefluss dann aber wieder wesentlich besser.
+
+<div class="p"><!----></div>
+Alles in allem überwiegen in dem Buch aber klar die Stärken. Wer eine 
+fundierte und ausführliche Einführung in Node.js sucht und auch gerne etwas 
+längere Erklärungen liest, liegt bei diesem Buch auf jeden Fall richtig. 
+Wer hingegen möglichst schnell eine Server-Applikation starten möchte, der 
+sollte sich das Buch bei einem Buchhändler seiner Wahl erst ansehen. Weder 
+der Aufbau des Buchs noch die Tiefe der Erklärungen sind auf den „schnellen 
+Start“ ausgelegt, sondern vielmehr auf das erwähnte weitergehende Verständnis.
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i> Da es schade wäre, wenn das Buch bei Jochen Schnelle verstaubt, wird es verlost. Dazu ist folgende Frage zu beantworten:
+
+<div class="p"><!----></div>
+„<em>In welchem Jahr sprach Ryan Dahl, der „Erfinder“ von Node.js, erstmals auf einer JavaScript-Konferenz öffentlich über das Projekt?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>13. Oktober 2013, 23:59 Uhr</b> über die
+Kommentarfunktion oder per E-Mail an
+<img src="freiesMagazin-2013-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> geschickt werden. Die Kommentare werden bis
+zum Ende der Verlosung nicht freigeschaltet. Das Buch wird unter den
+Einsendern, die die Frage richtig beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Node.js – Das umfassende Handbuch&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3319">[4]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Sebastian Springer </td></tr>
+<tr><td><b>Verlag</b> </td><td>Galileo Computing, 2013 </td></tr>
+<tr><td><b>Umfang</b> </td><td>469 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3836221191 </td></tr>
+<tr><td><b>Preis</b> </td><td>34,90 Euro
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://nodejs.org/"><tt class="big">http://nodejs.org/</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2013-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2013-02</tt></a><br />
+[3] <a href="http://de.wikipedia.org/wiki/V8_%28JavaScript-Implementierung%29"><tt class="big">http://de.wikipedia.org/wiki/V8_(JavaScript-Implementierung)</tt></a><br />
+[4] <a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3319"><tt class="big">http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-3319</tt></a><br />
+    
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.de/">Webseite</a>)
+hat zwar selber noch keine Applikation mit Node.js umgesetzt, interessiert 
+sich aber für die Bibliothek und deren Möglichkeiten.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Rezension: Node.js - Das umfassende Handbuch#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+<h1><font color="#595959"><a id="fm_13_10_leserbriefe" name="fm_13_10_leserbriefe">Leserbriefe</a></font></h1>
+            <b>Für Leserbriefe steht unsere E-Mailadresse
+            <img src="freiesMagazin-2013-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+            Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+        An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+        uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+        sehr viel Lob (was uns natürlich freut), aber vor allem durch
+        Kritik und neue Ideen können wir uns verbessern.
+    
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>Fedora 19</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Ein interessanter Artikel, wobei ich nicht ganz mit dem Fazit einverstanden
+bin. „Die neuste Technik in Linux“ kann man vielleicht schon so auslegen,
+wie im Artikel, doch das, was der Benutzer sieht, ist eben nicht nur
+Geschmacksache. Die Desktop-Umgebungen (Windows, iOS7, Ubuntu) sind ja
+allgemein im Umbruch und Fedora scheint da an Altem und Bewährtem
+festzuhalten: keinerlei neueste Technik also.
+
+<div class="p"><!----></div>
+Vielleicht müsste man dazu sogar einen eigenen Artikel erstellen und ich
+würde es begrüssen, wenn die neuen Desktopumgebungen etwas ausführlicher
+behandelt werden. Es geht mir darum, die neuen Bedienungskonzepte besser zu
+verstehen. Ich habe da schon viel in Foren darüber gelesen und da ärgern
+sich einige nur schon über die Verschiebung der Minimierung, Maximierung und
+Schließen-Icons von rechts nach links im Fenstertitel. Interessant daran
+sind die Begründungen für die Veränderungen: effizienteres Arbeiten. Dieses
+Argument wird aber auch zur Begründung des Ärgers verwendet.
+
+<div class="p"><!----></div>
+Auch die Ubuntu Dash mit der Suchfunktion, fast genau gleich in Windows 8
+wiederzufinden, gehören zu den neuen Bedienkonzepten; wer schreibt da
+wem ab? Für die, denen eh nicht alles schnell genug gehen kann und keinerlei
+Ressourcen für eine graphische Benützeroberfläche hergeben wollen, gibt's ja
+die (Server-)Installation ohne GUI – auch bei Windows 2012. Wieder eine
+eigenartige Parallele zwischen diesen ansonsten komplett unterschiedlichen
+Betriebssystemen.
+
+<div class="p"><!----></div>
+Es scheint, dass es da übergeordnet eine hohe Anforderung zur Bedienung der
+Systeme gibt, die in den erwähnten OS unterschiedlich umgesetzt werden – mit
+erstaunlich vergleichbarem Resultat. Der GNOME2-/XP-Startbutton-Stil
+scheint tot [zu sein]!
+        <br /><b>Ice</b> &nbsp;(<a href="http://www.freiesmagazin.de/20130901-septemberausgabe-erschienen#comment-2961">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+
+<h3>Printversion</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Gibt es Ihr Magazin auch in Druckform im Zeitschriftenhandel zu kaufen?
+        <br /><b>Osmund Schmidt</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Nein, die Druckkosten wäre viel zu hoch, wenn wir das aus privater
+Tasche finanzieren würden wollen. Zusätzlich soll <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> frei
+bleiben, was bei uns „kostenlos” mit einschließt.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Steam – Fluch oder Segen?</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Danke für den schönen Artikel, der gerade auch mich als Nicht-Zocker doch
+ein wenig aufklärt. :)
+Ich muss allerdings gestehen, dass ich bisweilen wenig Verständnis habe,
+dass Linux-Nutzer Firmen mit proprietären Produkten das Geld hinterher
+werfen, aber anfangen zu knausern, wenn mal ein freies Projekt/Spiel ein
+paar tausend Euro per Crowdfunding haben will. Letzten Endes ist es doch
+genau die Offenheit, die man haben will und damit, dass man ein Spiel auch
+auf andere Plattformen portieren kann, wie es ja mit den (einfachen)
+veröffentlichten Spielen der Publisher (Doom, DukeNukem3D, ...) auch
+passierte.
+        <br /><b>MM</b> &nbsp;(<a href="http://www.freiesmagazin.de/20130901-septemberausgabe-erschienen#comment-2962">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Mein Eindruck ist schon, dass Spiele mit entsprechendem Potential auf
+Kickstarter auch entsprechende Erfolge feiern können. Ein negativer Aspekt
+ist jedoch weiterhin der (im Artikel schon erwähnte) Vorbehalt von großen
+Entwicklern/Publishern, ihre Spiele auch für Linux zu veröffentlichen. Und
+hier sehe ich die Chance, dass Steam die nötige Basis und Kundenbindung
+schaffen kann, um weitere Entwickler für das Betriebssystem Linux zu gewinnen.
+        <br /><b><i>Florian E.J. Fruth</i></b> 
+</i>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Sie schreiben in Ihrem Artikel, das „wichtigste Argument“ für Steam sei in
+Ihren Augen „die Verbesserung der Treiber-Situation unter Linux“. Gerade an
+dieser Stelle jedoch befürchte ich große Einbußen für alle
+Linux-Distributionen neben Ubuntu, das in Zukunft bekanntlich auf Mir setzen
+wird, aber die primäre Plattform für Steam ist. Graphikchiphersteller wie
+NVIDIA werden womöglich nur noch für Mir entwickeln, sodass proprietäre
+Treiber für Wayland, das Canonical konsequent ignoriert, niemals erscheinen
+werden, mit der Folge, dass ein Großteil der Grafikkarten nicht mit Wayland,
+sondern nur mit Mir ordentlich funktionieren wird und Linux-Distributionen
+abseits von Ubuntu den Charakter von nutzerfeindlichen Frickelkonstruktionen
+bekommen werden. In meinen Augen ist Steam zwar eine Chance für Ubuntu, für
+Linux allgemein als Desktopsystem eher eine Gefahr.
+        <br /><b>Marvin Gülker</b> &nbsp;(<a href="http://www.freiesmagazin.de/20130901-septemberausgabe-erschienen#comment-2964">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Ubuntus Mir ist ein großer Themenkomplex, der ähnlich wie Steam sein Pro und
+Kontra hat. Aktuell sehe ich hierbei auch eher Nachteile. Jedoch glaube ich
+nicht, dass NVIDIA und AMD sich ausschließlich um Mir kümmern werden, da
+vor allem kommerzielle Distributionen wie SuSE und Redhat wahrscheinlich
+weiterhin auf Wayland + KDE/GNOME setzen werden (nicht nur als
+Display-Server, sondern auch Quadro-Karten als „Numbercruncher“ spielen
+hierbei eine Rolle). Insofern kann es sein, das Mir analog zu XFree86 und
+OpenOffice zwar existieren wird, aber nicht mehr von Bedeutung ist. Eine
+zweite Alternative wäre, dass sich Mir durchsetzt und zum führenden System
+wird. Dann müssen über kurz oder lang jedoch die anderen Distribution auf
+den Ubuntu-Zug aufspringen, ob sie wollen oder nicht. In welche Richtung sich
+dies entwickeln wird, wage ich jedoch nicht abzuschätzen.
+        <br /><b><i>Florian E.J. Fruth</i></b> 
+</i>
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Festzuhalten sei auch noch, dass Valve ab 2014 mit eigener Hardware die
+Wohnzimmer der Spielewelt mit einem Linux-basierenden Betriebssystem erobern
+will&nbsp;<a href="http://store.steampowered.com/livingroom/">[1]</a>. Es wurde zwar nicht
+gesagt, aber es ist davon auszugehen, dass das System
+nicht Ubuntus Mir nutzen wird sondern den herkömmlichen X-Server.
+Ob es dann in Zukunft in Richtung Mir oder doch eher Wayland geht,
+wird sich zeigen.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://store.steampowered.com/livingroom/"><tt class="big">http://store.steampowered.com/livingroom/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+            Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+        kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+    
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/345?edit[subject]=Leserbriefe#comment-form"><i>Die Leserbriefe kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a id="fm_13_10_veranstaltungen" name="fm_13_10_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+Ubucon </td><td>Heidelberg </td><td align="left">11.10.–13.10.2013 </td><td>15 EUR </td><td align="left"><a href="http://ubucon.de/"><tt class="big">http://ubucon.de/</tt></a> </td></tr>
+<tr><td align="left">Linux Info Tag </td><td>Landau </td><td align="left">19.10.2013 </td><td>frei </td><td align="left"><a href="http://www.lug-ld.de/linux-info-tag/"><tt class="big">http://www.lug-ld.de/linux-info-tag/</tt></a> </td></tr>
+<tr><td align="left">OpenRheinRuhr </td><td>Oberhausen </td><td align="left">09.11.–10.11.2013 </td><td>5 EUR </td><td align="left"><a href="http://www.openrheinruhr.de/"><tt class="big">http://www.openrheinruhr.de/</tt></a> </td></tr>
+<tr><td align="left">World Usability Day </td><td>Weltweit </td><td align="left">14.11.2013 </td><td>– </td><td align="left"><a href="http://www.worldusabilityday.org/de/"><tt class="big">http://www.worldusabilityday.org/de/</tt></a> </td></tr>
+<tr><td align="left">Linux Info Tage </td><td>Oldenburg </td><td align="left">15.11.–16.11.2013 </td><td>frei </td><td align="left"><a href="http://www.lit-ol.de/"><tt class="big">http://www.lit-ol.de/</tt></a> </td></tr>
+<tr><td align="left">LinuxDay </td><td>Dornbirn </td><td align="left">23.11.2013 </td><td>frei </td><td align="left"><a href="http://linuxday.at/"><tt class="big">http://linuxday.at/</tt></a> </td></tr>
+<tr><td align="left">KNF-Kongress </td><td>Nürnberg </td><td align="left">24.11.2013 </td><td>10 EUR </td><td align="left"><a href="http://www.franken.de/veranstaltungen/"><tt class="big">http://www.franken.de/veranstaltungen/</tt></a> </td></tr>
+<tr><td align="left">Chaos Communication Congress </td><td>Hamburg </td><td align="left">27.12.–30.12.2013 </td><td>– </td><td align="left"><a href="http://events.ccc.de/congress/2013"><tt class="big">http://events.ccc.de/congress/2013</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2013-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a id="fm_13_10_vorschau" name="fm_13_10_vorschau">Vorschau</a></font></h1>
+
+
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint am ersten Sonntag eines Monats. Die November-Ausgabe
+wird voraussichtlich am 3. November u.&nbsp;a. mit folgenden Themen veröffentlicht:
+
+<ul>
+<li> Das Buch zu Android Tablets</li>
+<li> Ein Rückblick auf die Ubucon 2013</li>
+</ul>
+Es kann leider vorkommen, dass wir aus internen Gründen angekündigte Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                            
+<h1><font color="#595959"><a id="fm_13_10_konventionen" name="fm_13_10_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                    
+<h1><font color="#595959"><a id="fm_13_10_impressum" name="fm_13_10_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 6. Oktober 2013<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2013-10-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left"><b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Stefan Betz </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_datenschutz_als_illusion">Datenschutz als Illusion</a>  </td></tr>
+<tr><td align="left">Markus Brenneis </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_ffox_addonsdk7">Firefox-Erweiterungen mit dem Add-on-SDK erstellen – Teil VII: Netzwerk-Anfragen</a>  </td></tr>
+<tr><td align="left">Benjamin Fleckenstein </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_powerdns">PowerDNS – die andere VerBINDung</a>  </td></tr>
+<tr><td align="left">Andreas Klein </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_Desaster_Recovery">Desaster Recovery mit Hilfe der richtigen Backup Strategie</a>  </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_kernel">Der September im Kernelrückblick</a>  </td></tr>
+<tr><td align="left">Michael Niedermair </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_rezension_android">Rezension: Android-Apps entwickeln für Einsteiger</a>  </td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_rezension_dropbox">Rezension: Dropbox – Sicher speichern und effektiv arbeiten in der Cloud</a>  </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2013-10-bilder.html#fm_13_10_rezension_nodejs">Rezension: Node.js – Das umfassende Handbuch</a>  </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+<tr><td align="left"><b>Satz und Layout</b></td></tr>
+<tr><td align="left">Dominik Frey </td><td align="left">Moritz Kiefer </td></tr>
+<tr><td align="left">Christoph Lehmann </td></tr>
+
+<tr><td align="left"><b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left">Toni Zimmer </td></tr>
+
+<tr><td align="left"><b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td></tr>
+
+<tr><td align="left"><b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">CC-BY-SA 3.0 Unported</a>) </td></tr></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2013-10-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  5 Oct 2013, 20:01.</small>
+</div>
+</body></html>

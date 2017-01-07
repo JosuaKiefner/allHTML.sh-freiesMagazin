@@ -1,0 +1,3869 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                                                  
+<title>freiesMagazin 03/2014</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Kurzvorstellung: elementary OS | Pinguine haben kurze Beine – Die Laufzeiten der Linuxdistributionen | Der Februar im Kernelrückblick | WLAN-AP mit dem Raspberry Pi | Scratch-2-Tutorial | Präsentationen mit HMTL und reveal.js | Roll'm Up - Ein altes Flipperspiel neu entdeckt | Spielend programmieren: Interview mit Horst Jens | Rezension: Schrödinger programmiert Java | Rezension: Wien wartet auf Dich! – Produktive Projekte und Teams | Editorial | Leserbriefe | Veranstaltungen | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 03/2014" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2014-03-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2014-03.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>März 2014</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+                        
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Topthemen dieser Ausgabe</a></font></h1>
+
+
+        <font size="+1"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_wlan_ap_raspberrypi">WLAN-AP mit dem Raspberry Pi</a></font> <br />
+    Der Raspberry Pi ist ein sehr vielseitiges Gerät, das unter anderem auch zum Betreiben vielfältiger Netzwerkdienste verwendet werden kann. So ist es auch möglich, einen eigenständigen WLAN Access Point (AP) mit ihm zu betreiben, was in dem Artikel näher erläutert werden soll. (<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_wlan_ap_raspberrypi">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_scratch2_tutorial">Scratch-2-Tutorial</a></font> <br />
+    Scratch ist eine grafische Programmieroberfläche. In diesem Tutorial werden die Neuheiten von Scratch in der Version 2.0 vorgestellt. Konstruiert wird ein kleines Spiel, bei welchem man Abwurfwinkel und Abwurfgeschwindigkeit einstellen muss, um einen Ball auf (mehrere) Fledermäuse zu schießen. (<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_scratch2_tutorial">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+        <font size="+1"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_reveal_js">Präsentationen mit HTML und reveal.js</a></font> <br />
+    Klassischerweise werden Präsentationen und Vorträge mit Desktop-Programmen wie PowerPoint, Impress oder Keynote erstellt. Eine Alternative ist die Kombination aus HTML, CSS und JavaScript, die durch den Einsatz der JavaScript-Bibliothek reveal.js noch deutlich vereinfacht wird. (<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_reveal_js">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+              
+
+                        
+<h1><font color="#595959"><a id="fm_index" name="fm_index">Inhalt</a></font></h1><!-- CONTENT -->
+
+<b>Linux allgemein</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_elementaryOS">Kurzvorstellung: elementary OS</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_linux_laufzeit">Pinguine haben kurze Beine – Die Laufzeiten der Linuxdistributionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_kernel">Der Februar im Kernelrückblick</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Anleitungen</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_wlan_ap_raspberrypi">WLAN-AP mit dem Raspberry Pi</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_scratch2_tutorial">Scratch-2-Tutorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_reveal_js">Präsentationen mit HMTL und reveal.js</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Software</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_rollmup">Roll'm Up - Ein altes Flipperspiel neu entdeckt</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Community</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_interview_horst_jens">Spielend programmieren: Interview mit Horst Jens</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_rezension_schroedinger_java">Rezension: Schrödinger programmiert Java</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_rezension_wien_wartet">Rezension: Wien wartet auf Dich! – Produktive Projekte und Teams</a><br /><!-- CONTENT -->
+<br /><!-- CONTENT -->
+<b>Magazin</b><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_konventionen">Konventionen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_14_03_impressum">Impressum</a><br /><!-- CONTENT -->
+
+
+
+<div class="p"><!----></div><!-- CONTENT -->
+<a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_14_03_editorial" name="fm_14_03_editorial">Editorial</a></font></h1>
+    
+
+
+
+<h2>Mehr Linuxspiele</h2>
+
+
+Fast jede Woche gibt es irgendwo im Internet ein neues Spiele-Bundle, 
+welches auch Spiele für Linux bereitstellt. Sei es das Humble 
+Bundle&nbsp;<a href="https://www.humblebundle.com/">[1]</a>, das Indie Royale 
+Bundle&nbsp;<a href="http://www.indieroyale.com/">[2]</a> oder eines der vielen anderen. 
+Daneben gibt es natürlich noch den Humble 
+Store&nbsp;<a href="https://www.humblebundle.com/store">[3]</a>, 
+Desura&nbsp;<a href="http://www.desura.com/">[4]</a> und 
+Steam&nbsp;<a href="http://store.steampowered.com/">[5]</a>, 
+bei denen man ebenfalls Linux-Spiele erwerben kann.
+
+<div class="p"><!----></div>
+Vor allem bei der Verkaufsplattform von Valve stieg die Anzahl der 
+Linux-Spiele im letzten Jahr um den Faktor 4&nbsp;<a href="http://www.pro-linux.de/news/1/20797/steam-anzahl-an-linux-spielen-vervierfacht-sich.html">[6]</a>.
+Waren es im Februar 2013 nur 60 Spiele für Linux, sind es 
+jetzt schon über 300. Die meisten kommen dabei von verschiedenen 
+Indie-Entwicklerstudios.
+
+<div class="p"><!----></div>
+Auch wenn die großen Spielestudios fehlen, wird man mit Linux-Spielen 
+geradezu überschüttet. Die Qualität variiert, aber es gibt zahlreiche sehr 
+gute „Perlen“. Daher würden wir uns freuen, wenn wir mehr Spielerezensionen in 
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> lesen könnten. Bisher hat vor allem Redakteur Dominik Wagenführ 
+fleißig gedaddelt und geschrieben, aber es gibt sicherlich noch mehr Gamer 
+da draußen. Wer also gerne mal sein Lieblings-Linuxspiel vorstellen will,
+schreibt einfach eine E-Mail an <img src="freiesMagazin-2014-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+<div class="p"><!----></div>
+Um ein ehemaliges Mitglied der Sternenflotte zu zitieren: „<em>Play more games!</em>“ 
+– und schickt uns die Rezension zu! :)
+
+<div class="p"><!----></div>
+
+<h2>Rezensenten gesucht</h2>
+
+
+Wer gerne liest, der schreibt auch gern? Das muss nicht zwingend gelten, aber 
+ähnlich wie bei den Spielen oben gibt es sehr viele <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Leser, die privat 
+oder beruflich Computer-Fachbücher lesen müssen – oder das sogar freiwillig 
+tun.
+Genau diese wollen wir ansprechen, denn wir suchen immer neue Rezensenten, 
+die die Bücher der bekannten Verlage Galileo, mitp-Verlag, O'Reilly oder 
+Carl-Hanser-Verlag lesen und rezensieren. 
+
+<div class="p"><!----></div>
+Wenn Sie Interesse haben, schicken Sie eine kleine Kostprobe
+eines Buches, dass Sie gelesen haben, an <img src="freiesMagazin-2014-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />. Wenn alles passt, sollte
+der Zusendung einiger Bücher je nach Interessengebiet nichts im Wege stehen.
+
+<div class="p"><!----></div>
+Und nun wünschen wir Ihnen viel Spaß mit der neuen Ausgabe
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://www.humblebundle.com/"><tt class="big">https://www.humblebundle.com/</tt></a><br />
+[2] <a href="http://www.indieroyale.com/"><tt class="big">http://www.indieroyale.com/</tt></a><br />
+[3] <a href="https://www.humblebundle.com/store"><tt class="big">https://www.humblebundle.com/store</tt></a><br />
+[4] <a href="http://www.desura.com/"><tt class="big">http://www.desura.com/</tt></a><br />
+[5] <a href="http://store.steampowered.com/"><tt class="big">http://store.steampowered.com/</tt></a><br />
+[6] <a href="http://www.pro-linux.de/news/1/20797/steam-anzahl-an-linux-spielen-vervierfacht-sich.html"><tt class="big">http://www.pro-linux.de/news/1/20797/steam-anzahl-an-linux-spielen-vervierfacht-sich.html</tt></a><br />
+    
+
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Editorial#comment-form"><i>Das Editorial kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+
+<h1><font color="#595959"><a id="fm_14_03_elementaryOS" name="fm_14_03_elementaryOS">Kurzvorstellung: elementary OS</a></font></h1>von Enrico Zschemisch
+
+<div class="p"><!----></div>
+    <b>N</b><b>eben den großen Desktopumgebungen KDE&nbsp;<a href="http://www.kde.org/">[1]</a> und 
+GNOME&nbsp;<a href="http://www.gnome.org/">[2]</a> gibt es noch viele andere. Eine davon ist 
+elementary OS&nbsp;<a href="http://elementaryos.org/">[3]</a>, die in diesem Artikel
+vorgestellt werden soll.</b>
+
+<div class="p"><!----></div>
+
+<h2>Einleitung</h2>
+
+
+elementary OS entstand aus dem elementary-GTK- und -Symbol-Thema früherer 
+Tage und ist heute eine Distribution mit eigenem Desktop und einigen eigenen 
+Programmen. Das aktuelle Release „Luna“ basiert auf Ubuntu 12.04 
+LTS&nbsp;<a href="http://www.ubuntu.com/">[4]</a> und wird sowohl für x86 (32 bit) als auch 
+für amd64 (64 bit) angeboten.
+
+<div class="p"><!----></div>
+Alternativ kann der Desktop über Ubuntus Paketmanager und das 
+elementary-OS-PPA&nbsp;<a href="https://launchpad.net/~elementary-os/+archive/stable">[5]</a> 
+nachinstalliert werden. Das Entwickler-Team stellt nur Pakete für Ubuntu 
+bereit, für andere Distributionen fehlt es an Manpower.
+
+<div class="p"><!----></div>
+Als technische Grundlage für den Desktop dient 
+Clutter&nbsp;<a href="http://blogs.gnome.org/clutter/">[6]</a>, das auch bei GNOME 3 zum 
+Einsatz kommt. Eine OpenGL-Unterstützung seitens der verwendeten Treiber ist 
+also Pflicht.
+
+<div class="p"><!----></div>
+
+<h2>Aufbau und mitgelieferte Programme</h2>
+
+
+elementary OS besteht aus einem Dock am unterem Rand und einem Panel am 
+oberen. Die Ähnlichkeiten zu Apple MacOS X sind eindeutig erkennbar. Das 
+Panel beherbergt den Anwendungsstarter in der linken Ecke und 
+Standardelemente wie Uhr mit Kalender, Tray für laufende Programme,
+Akku-Anzeige, WLAN-Anzeige, usw.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-desktop.jpg" alt="eos-desktop.jpg" style="max-width:100%" /><br /><em>elementary OS nach dem ersten Start.</em><br />
+
+<div class="p"><!----></div>
+Im Gegensatz zu Windows (im Desktop-Modus) oder KDE und GNOME 2 gibt es 
+keine Taskbar mit laufenden Anwendungen. Anwendungen werden gestartet und im 
+Dock angezeigt. Mit einem Klick auf das entsprechende Symbol wird das 
+Programm minimiert beziehungsweise wieder angezeigt.
+
+<div class="p"><!----></div>
+Der Anwendungsstarter in der linken oberen Ecke ist dem von Unity in Ubuntu 
+sehr ähnlich. Gestartet wird er mit Klick auf den Button oder der 
+Tastenkombination „<i>Alt</i>“&nbsp;+&nbsp;„<i>F2</i>“. Dann reicht es, einfach draufloszutippen und es 
+werden die Treffer angezeigt. Im Gegensatz zu Unity werden hier
+
+
+keine 
+Suchbegriffe und IP-Addressen ins Internet
+übertragen&nbsp;<a href="http://www.heise.de/open/artikel/Die-Woche-Freie-Software-nach-PRISM-1936353.html">[7]</a>.
+
+<div class="p"><!----></div>
+Die vier Ecken des Desktops lassen sich mit Aktionen konfigurieren. 
+
+<div class="p"><!----></div>
+
+<h3>Fenstermanager Gala</h3>
+
+
+Gala&nbsp;<a href="http://elementaryos.org/journal/meet-gala-window-manager">[8]</a> ist der 
+Fenstermanager in elementary OS. Neben grundsätzlichem Fenstermanagement 
+unterstützt Gala die Positionierung von Programmen auf einem Gitter: Bewegt 
+man ein Programmfenster an die linke oder rechte Kante des Bildschirms, so 
+wird es auf die linke oder rechte Hälfte maximiert. Die obere Kante hingegen 
+maximiert das Programmfenster auf den gesamten Bildschirm.
+
+<div class="p"><!----></div>
+Arbeitsbereiche (im Englischen „Workspaces“) werden genauso unterstützt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-gala-workspaces.jpg" alt="eos-gala-workspaces.jpg" style="max-width:100%" /><br /><em>Der Desktop mit mehreren offenen Workspaces.</em><br />
+
+<div class="p"><!----></div>
+Um einen schnellen Überblick über alle gerade ausgeführten
+Programme zu bekommen und 
+um zu einem bestimmten Programm zu wechseln, bringt Gala ein passendes 
+Feature mit. Von der Übersicht aus lassen sich die Programme auch direkt 
+beenden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-gala-window-overview.jpg" alt="eos-gala-window-overview.jpg" style="max-width:100%" /><br /><em>Laufende Programme in der Übersicht.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Mitgelieferte Programme</h2>
+
+
+Neben einigen kleinen Programmen wie einem Taschenrechner und einem 
+Terminal liefert elementary OS zusätzliche Programme mit, die an den 
+Desktop bestmöglich angepasst sind. 
+
+<div class="p"><!----></div>
+
+<h3>Noise</h3>
+
+
+Noise ist der Musikplayer von elementary OS. Im Großen und Ganzen wirkt das 
+Programm wie eine Kopie von Rhythmbox. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-noise.png" alt="eos-noise.png" style="max-width:100%" /><br /><em>Der Musikplayer “Noise” mit Spaltenansicht.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Maya</h3>
+
+
+Maya ist ein Kalenderprogramm für elementary OS. Momentan lassen sich nur 
+lokale Kalender nutzen, sodass Mayas
+Nutzen je nach Anwendungsprofil 
+eingeschränkt ist. Auch gibt es keinerlei Einstellungen für Maya, sodass man 
+mit den Standards vorlieb nehmen muss. Die sind zumindest für Deutschland 
+ungewöhnlich, so fängt die Woche am Sonntag statt am Montag an.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-calendar-maya.png" alt="eos-calendar-maya.png" style="max-width:100%" /><br /><em>Das Kalenderprogramm Maya mit einem neuen leeren Kalender.</em><br />
+
+<div class="p"><!----></div>
+Mit CalDAV oder ActiveSync kann Maya nicht umgehen, es gibt nur einen 
+lokalen Kalender.
+
+<div class="p"><!----></div>
+
+<h3>Switchboard</h3>
+
+
+Switchboard ist das Programm, um Einstellungen vorzunehmen. Vom Prinzip her 
+ähnelt es dem Einstellungsprogramm von Unity und GNOME.
+Switchboard ist 
+kein Ersatz oder eine
+Alternative
+
+zu GSettings oder dconf, sondern 
+ein grafisches Frontend für selbige, um alle Einstellungen des 
+Systems an zentraler Stelle zusammenzufassen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-switchboard.png" alt="eos-switchboard.png" style="max-width:100%" /><br /><em>Die Systemeinstellungen im Überblick.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Pantheon Files</h3>
+
+
+Pantheon Files ist der Dateimanager und ist ähnlich wie viele andere Dateimanager 
+aufgebaut. Für externe Datenträger wie USB-Sticks wird in der linken Spalte sowohl 
+der Füllstand als auch ein Knopf zum sicheren Auswerfen des Datenträgers angeboten. 
+Es lassen sich eigene Favoriten definieren, um schnell zwischen 
+Verzeichnissen zu navigieren. Daneben gibt es drei Ansichten: Gitter, Liste und Spalten.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-pantheon.png" alt="eos-pantheon.png" style="max-width:100%" /><br /><em>Der Dateimanager Pantheon Files.</em><br />
+
+<div class="p"><!----></div>
+Der Spalten-Modus erinnert stark an Apples Finder in MacOS X.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/eos-pantheon1.png" alt="eos-pantheon1.png" style="max-width:100%" /><br /><em>Pantheon im Spalten-Modus erinnert an den MacOS-X-Finder.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Mit dem etwas anderen Bedienkonzept ist elementary OS definitiv eine 
+Alternative zu den 
+etablierten Größen KDE und
+GNOME. Wie KDE und GNOME setzt 
+auch elementary OS eine OpenGL-Unterstützung der Grafikkarte voraus, bleibt 
+bei den tatsächlich genutzten Hardware-Ressourcen jedoch so sparsam wie 
+möglich&nbsp;<a href="http://elementaryos.org/docs/user-guide/technical-specifications">[9]</a>.
+
+<div class="p"><!----></div>
+Über die nächste Version „Isis“ ist kaum etwas bekannt. Angekündigt wurde 
+sie im August 2013 und das Release soll zusammen mit Ubuntu 14.04 im April 
+2014 erfolgen. Selbst die geplanten Änderungen sind nur schwer zu 
+finden&nbsp;<a href="http://elementaryos.org/journal/on-testing-isis">[10]</a>. Das 
+Entwickler-Team postet im Projekt Blog&nbsp;<a href="http://elementaryos.org/journal">[11]</a> 
+vergleichsweise wenig.
+
+Etwas mehr Kommunikation wäre aus Nutzersicht 
+wünschenswert.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.kde.org/"><tt class="big">http://www.kde.org/</tt></a><br />
+[2] <a href="http://www.gnome.org/"><tt class="big">http://www.gnome.org/</tt></a><br />
+[3] <a href="http://elementaryos.org/"><tt class="big">http://elementaryos.org/</tt></a><br />
+[4] <a href="http://www.ubuntu.com/"><tt class="big">http://www.ubuntu.com/</tt></a><br />
+[5] <a href="https://launchpad.net/~elementary-os/+archive/stable"><tt class="big">https://launchpad.net/~elementary-os/+archive/stable</tt></a><br />
+[6] <a href="http://blogs.gnome.org/clutter/"><tt class="big">http://blogs.gnome.org/clutter/</tt></a><br />
+[7] <a href="http://www.heise.de/open/artikel/Die-Woche-Freie-Software-nach-PRISM-1936353.html"><tt class="big">http://www.heise.de/open/artikel/Die-Woche-Freie-Software-nach-PRISM-1936353.html</tt></a><br />
+[8] <a href="http://elementaryos.org/journal/meet-gala-window-manager"><tt class="big">http://elementaryos.org/journal/meet-gala-window-manager</tt></a><br />
+[9] <a href="http://elementaryos.org/docs/user-guide/technical-specifications"><tt class="big">http://elementaryos.org/docs/user-guide/technical-specifications</tt></a><br />
+[10] <a href="http://elementaryos.org/journal/on-testing-isis"><tt class="big">http://elementaryos.org/journal/on-testing-isis</tt></a><br />
+[11] <a href="http://elementaryos.org/journal"><tt class="big">http://elementaryos.org/journal</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Enrico Zschemisch</b>
+nutzt elementary OS seit Luna Beta 1 im November 2012 tagtäglich beruflich
+und am Wochenende auf einem HP Elitebook 2560p.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Kurzvorstellung: elementary OS#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_14_03_linux_laufzeit" name="fm_14_03_linux_laufzeit">Pinguine haben kurze Beine – Die Laufzeiten der Linuxdistributionen</a></font></h1>von Daniel Schneider
+
+<div class="p"><!----></div>
+    <b>L</b><b>inux ist ein unheimlich fortschrittliches System – die Entwicklung verläuft 
+rasant, und die vielfältigen Neuerungen kommen meist auch recht schnell beim 
+Anwender an. Doch genau das ist nicht immer gewünscht. Die 
+Fortschrittlichkeit wird zum Nachteil, wenn sich zu oft zu viel ändert. 
+Natürlich gibt es eine große Schar an Interessierten, die stets das Neueste 
+vom Neuesten ausprobieren will. Doch es gibt auch die Gruppe, die ein Linux 
+einmal installieren will – und dann möglichst lange ohne böse Überraschungen 
+damit arbeiten. Die Gruppe, die sich nicht um des Systems willen mit 
+selbigem beschäftigen will.</b>
+
+<div class="p"><!----></div>
+
+<h2>Laufzeiten der Linuxdistributionen</h2>
+
+
+Die Verfügbarkeit von Sicherheitsupdates der Linuxdistributionen ist im 
+Vergleich zu etwa Windowsversionen 
+teilweise lächerlich gering – obwohl man auch 
+dort sein System nicht ewig laufen lässt, sondern vielleicht aus anderen 
+Gründen gezwungen ist,
+es neu zu installieren – sei es, weil man es 
+„zerkonfiguriert“, „zerinstalliert“ hat, oder mal wieder der nächstbeste 
+Trojaner unterwegs war.
+
+<div class="p"><!----></div>
+Dem großen Vorteil von Linux – der Stabilität – wird somit der Wind aus den 
+Segeln genommen, wenn man das theoretisch unbegrenzt lauffähige System 
+trotzdem immer wieder neu installieren oder aktualisieren muss, weil die 
+Distributoren 
+
+
+
+<div class="p"><!----></div>
+ihre Unterstützung mit Sicherheitsaktualisierungen einstellen.
+
+<div class="p"><!----></div>
+Natürlich kann man auch ein Linux problemlos nach Ende der offiziellen 
+Unterstützung weiter nutzen – doch wenn man keine großen Sicherheitslücken 
+riskieren will, muss man sich selbst um Updates kümmern. Angesichts der 
+Vielzahl von Paketen, aus denen sich eine Distribution zusammensetzt, ein 
+Unterfangen, das den Normalanwender und auch den Fortgeschrittenen in der 
+Regel deutlich überfordert. Einen Browser z.&nbsp;B. kann man problemlos noch eine 
+Zeit lang selbst aktuell halten, doch sobald es tiefer ins System geht, hört 
+der Spaß auf.
+
+<div class="p"><!----></div>
+Doch das Ziel, einmal Linux zu installieren und dann möglichst lange damit 
+glücklich zu sein, ist in der Tat gar nicht so einfach mit den gängigen 
+Distributionen zu realisieren. Erst vor kurzer Zeit hat Ubuntu den 
+Unterstützungszeitraum halbiert – und wer denkt, bei den anderen Distributionen sähe 
+es viel besser aus, ist leider auf dem falschen Dampfer. Gerade die Distributionen, 
+die sich mit einsteigerfreundlicher Oberfläche und Konfiguration empfehlen, 
+haben meist eine kurze Mindesthaltbarkeitszeit.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/linux-laufzeit-uebersicht.png" alt="linux-laufzeit-uebersicht.png" style="max-width:100%" /><br /><em>Die aktuellen Lebenszyklen gängiger Distributionen auf einen Blick.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Ubuntu</h3>
+
+
+Ubuntu&nbsp;<a href="http://www.ubuntu.com/">[1]</a> erscheint 
+ungefähr
+jedes halbe Jahr neu – 
+allerdings wird es nicht einmal ein Jahr lang unterstützt.
+Lediglich neun Monate 
+Unterstützung sichert Canonical 
+Nutzern seiner
+Ubuntu-Versionen seit 2013 (im 
+Gegensatz zu 18 Monaten zuvor) zu.
+
+<div class="p"><!----></div>
+Wer sich also einen Tag vor Erscheinen der nächsten Version ein Ubuntu 
+installiert, muss es nach drei Monaten schon wieder auf die nächste Version 
+aktualisieren, um auf der sicheren Seite zu sein.
+
+<div class="p"><!----></div>
+
+<h3>Ubuntu LTS</h3>
+
+
+Aber da gibt es ja auch noch 
+LTS&nbsp;<a href="http://wiki.ubuntuusers.de/Long_Term_Support">[2]</a>.
+Alle zwei Jahre wird eine 
+Ubuntu-Version zur LTS-Version, also langzeitunterstützten Version (Long 
+Term Support) erklärt.
+
+<div class="p"><!----></div>
+Für diese Versionen wird fünf Jahre lang Unterstützung geboten, damit 
+letztlich sogar mehr als bei der Basis – Debian – selber. Das macht den 
+Malus der Neun-Monatsunterstützung der regulären Versionen wieder mehr als 
+wett.
+
+<div class="p"><!----></div>
+Wer sich einen Tag vor Erscheinen der Folgeversion ein Ubuntu installiert, 
+sollte also darauf achten, dass er zur LTS-Variante greift – die dann 
+allerdings auch schon mal ein Jahr älter sein kann als die gerade aktuelle 
+Version.
+
+<div class="p"><!----></div>
+
+<h3>Fedora</h3>
+
+
+Fedora&nbsp;<a href="https://fedoraproject.org/de/">[3]</a> erscheint ca. jedes halbe Jahr, meist 
+im Mai und November. Unterstützt wird eine Distribution mindestens bis zum 
+Erscheinen der übernächsten, in der Praxis bedeutet das 13 Monate. Versionen 
+mit Langzeitunterstützung gibt es bei Fedora nicht. Somit kann man eine 
+Fedora-Installation ohne gravierende Änderungen maximal ein Jahr am Stück 
+nutzen.
+
+<div class="p"><!----></div>
+
+<h3>Linux Mint</h3>
+
+
+Linux Mint&nbsp;<a href="http://linuxmint.com/">[4]</a> orientiert sich bei seinen 
+Veröffentlichungen stark am zugrunde liegenden Ubuntu und kopiert daher auch 
+dessen Supportzyklen. Statt wie bisher
+anderthalb Jahre bekommt man auf die 
+neuesten Linux-Mint-Versionen nur noch die Hälfte der Zeit Garantie. Und da 
+Mint
+in der Regel
+einen Monat nach Ubuntu erscheint, verkürzt sich der 
+Supportzeitraum auf magere acht Monate.
+
+<div class="p"><!----></div>
+Von Ubuntu übernimmt Mint allerdings auch den LTS-Zweig und bietet aktuell 
+für Version 13 (von 2012) noch Support bis 2017.
+
+<div class="p"><!----></div>
+
+<h3>Mageia</h3>
+
+
+Mageia&nbsp;<a href="https://www.mageia.org/de/">[5]</a> soll alle neun Monate erscheinen, die 
+Versionen werden jedoch bis zum Erscheinen der übernächsten Version 
+unterstützt, also insgesamt 18 Monate.
+
+<div class="p"><!----></div>
+In der Praxis erschien Mageia aber bislang ziemlich genau im 
+Ein-Jahres-Abstand, sodass die übernächste Version noch nicht bereitsteht, 
+wenn die Unterstützung der aktuellen Version endet. Somit ist man letztlich 
+doch wieder gezwungen, die jeweils aktuelle Version zu installieren, will 
+man ohne Unterbrechung ein sicheres Mageia nutzen.
+
+<div class="p"><!----></div>
+Die jeweils anderthalbjährige Unterstützung einer Version wird jedoch 
+eingehalten.
+
+<div class="p"><!----></div>
+
+<h3>openSUSE</h3>
+
+
+Die grüne Distribution soll alle acht Monate in einer neuen Version 
+erscheinen und tut es auch; die geplanten Veröffentlichungen werden bei 
+openSUSE&nbsp;<a href="http://www.opensuse.org/de/">[6]</a> meist eingehalten. Wie bei Mageia 
+werden die Versionen anderthalb Jahre unterstützt, das Überspringen einer 
+Version ist bei openSUSE daher problemlos möglich.
+
+<div class="p"><!----></div>
+Langzeitversionen gibt es bei openSUSE eigentlich nicht, das bei openSUSE 
+angesiedelte Community-Projekt 
+Evergreen&nbsp;<a href="http://en.opensuse.org/openSUSE:Evergreen">[7]</a> bemüht sich 
+allerdings um die Verlängerung der Unterstützung: Es springt ein, wenn der 
+Support eigentlich endet und übernimmt für weitere anderthalb Jahre die 
+Versorgung mit Sicherheitsupdates.
+
+<div class="p"><!----></div>
+Mit Hilfe der Community kommen openSUSE-Installationen auf insgesamt drei 
+Jahre Unterstützung, wenn man die Evergreen-Repositorien einbindet. Jedoch 
+wird nicht jede openSUSE-Version unterstützt, die letzten drei etwa wurden 
+ausgelassen.
+
+<div class="p"><!----></div>
+
+<h3>Debian</h3>
+
+
+Debian&nbsp;<a href="http://www.debian.org/">[8]</a> kennt keine festen 
+Veröffentlichungszeiträume. Etwa alle zwei Jahre gibt es eine neue stabile 
+Version – und der Support endet nicht mit dem Erscheinen der nächsten 
+Version, sondern die Distribution wird, als „oldstable“ deklariert und 
+mindestens ein Jahr lang weiterhin mit Sicherheitsaktualisierungen versorgt. 
+Somit kann man Debian etwa drei Jahre am Stück nutzen.
+
+<div class="p"><!----></div>
+
+<h3>CentOS</h3>
+
+
+CentOS&nbsp;<a href="https://www.centos.org/">[9]</a> ist die nichtkommerzielle Variante von 
+Red Hat Enterprise Linux, der Business-Distribution von Red 
+Hat&nbsp;<a href="http://www.redhat.com/">[10]</a>. Während RHEL nicht käuflich erworben werden 
+kann, sondern nur im Rahmen von Supportverträgen zu beziehen ist, steht 
+CentOS allen Interessierten unentgeltlich zur Verfügung. War CentOS bislang 
+ein inoffizieller Klon von Red Hat Enterprise Linux, so gehört CentOS seit 
+Anfang des Jahres 2014 offiziell zu Red Hat.
+
+<div class="p"><!----></div>
+Wie auch RHEL wird CentOS 10 
+Jahre lang unterstützt. Man erhält hier für Linux-Verhältnisse also 
+tatsächlich Uralt-Software. Wer z.&nbsp;B. jetzt CentOS 6 installiert, ist damit 
+auf dem Software-Stand von 2011, erhält aber ein sicheres System bis 2020.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Wer einmal Linux installieren und sich dann möglichst wenig um das System 
+kümmern möchte, der kommt an den Unternehmens- und LTS-Versionen nicht 
+vorbei. Ubuntu und Linux Mint in der LTS-Variante sind eine gute Wahl, auch 
+openSUSE bietet dank des Evergreen-Projekts inoffizielle LTS-Unterstützung.
+
+<div class="p"><!----></div>
+Debian und Red-Hat-Abkömmlinge wie CentOS oder Scientific Linux bieten von 
+Haus aus eine längere Unterstützung, wobei gerade letztere meist länger 
+halten als die Festplatte.
+
+<div class="p"><!----></div>
+Fedora, Mageia und die regulären Versionen von Ubuntu, openSUSE und Linux 
+Mint sind wegen der aktuellen Softwareauswahl zwar attraktiv, eignen sich 
+hingegen kaum für das Aufsetzen von verlässlichen Rundum-sorglos-Systemen, 
+an denen man länger als ein paar Monate Freude hat.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.ubuntu.com/"><tt class="big">http://www.ubuntu.com/</tt></a><br />
+[2] <a href="http://wiki.ubuntuusers.de/Long_Term_Support"><tt class="big">http://wiki.ubuntuusers.de/Long_Term_Support</tt></a><br />
+[3] <a href="https://fedoraproject.org/de/"><tt class="big">https://fedoraproject.org/de/</tt></a><br />
+[4] <a href="http://linuxmint.com/"><tt class="big">http://linuxmint.com/</tt></a><br />
+[5] <a href="https://www.mageia.org/de/"><tt class="big">https://www.mageia.org/de/</tt></a><br />
+[6] <a href="http://www.opensuse.org/de/"><tt class="big">http://www.opensuse.org/de/</tt></a><br />
+[7] <a href="http://en.opensuse.org/openSUSE:Evergreen"><tt class="big">http://en.opensuse.org/openSUSE:Evergreen</tt></a><br />
+[8] <a href="http://www.debian.org/"><tt class="big">http://www.debian.org/</tt></a><br />
+[9] <a href="https://www.centos.org/"><tt class="big">https://www.centos.org/</tt></a><br />
+[10] <a href="http://www.redhat.com/"><tt class="big">http://www.redhat.com/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Daniel Schneider</b>&nbsp;(<a href="http://www.knetfeder.de/linux/">Webseite</a>)
+ist Wissenschaftslektor und ITler, nutzt
+Linux seit 2003 privat und beruflich, schreibt unter dem Stichwort
+„Pinguinzubehör“ über freie Software und freut sich, wenn er seine
+Rechner nicht nächsten Monat schon wieder neu aufsetzen muss.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Pinguine haben kurze Beine - Die Laufzeiten der Linuxdistributionen#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_14_03_kernel" name="fm_14_03_kernel">Der Februar im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 3.14</h2>
+
+
+Der Februar begann mit der Schließung des Merge Windows, das diesmal mit zwei
+Wochen wieder zu der gewohnten Dauer
+zurückkehrte&nbsp;<a href="https://lkml.org/lkml/2014/2/2/176">[1]</a>. Torvalds wies auch
+gleich darauf hin, dass die neue Kernel-Versionsnummer 3.14 durchaus an
+Pi&nbsp;<a href="https://de.wikipedia.org/wiki/Kreiszahl">[2]</a> erinnert, er jedoch allen
+diesbezüglichen Namensvorschlägen eine Absage erteilen wird. Die
+Blödsinn-Kernel-Namen würden so einfach nicht funktionieren. Und so trägt Linux 3.14
+nun „Shuffling Zombie Juror“ als Namen, zu dem er sich vermutlich sowohl von
+einem Schreibtisch mit
+Laufband&nbsp;<a href="https://plus.google.com/102150693225130002912/posts/ZpofpaZ8ZTa">[3]</a>
+als auch seiner Bürgerpflicht als Geschworener inspirieren ließ.
+
+<div class="p"><!----></div>
+Der junge Kernel hat umfangreiche Korrekturen und Weiterentwicklungen für die
+neue Firewall-Infrastruktur nftables mit an Bord und auch im Umfeld der
+Grafiktreiber wurde eifrig gearbeitet. Kritische Prozesse können künftig von
+SCHED_DEADLINE&nbsp;<a href="http://www.pro-linux.de/-0h2150cd">[4]</a> profitieren, das den
+Completely Fair Scheduler (CFS) um die Möglichkeit erweitert, Prozesse mit
+sehr hoher Priorität zu betreiben.
+
+<div class="p"><!----></div>
+Linux 3.14-rc2&nbsp;<a href="https://lkml.org/lkml/2014/2/9/372">[5]</a> fiel vergleichsweise
+kompakt aus, auch wenn Torvalds argwöhnte, dass die Kernel-Entwickler ihre
+Pull Requests nur für einen späteren Zeitpunkt zurückhalten würden. Er wurde
+nicht enttäuscht, die dritte
+Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2014/2/16/120">[6]</a> fiel wieder
+umfangreicher aus. Unter den Änderungen waren wieder Korrekturen für nftables
+und den Radeon-Grafiktreibern sowie die Rücknahme einiger Änderungen an den
+USB-3.0-Treibern.
+
+<div class="p"><!----></div>
+Den größten Anteil am -rc4&nbsp;<a href="https://lkml.org/lkml/2014/2/23/234">[7]</a> stellte
+ein Patch dar, mit dem die Einrückung im Quelltext des Dateisystems ReiserFS
+lesbarer gemacht wurde. Der Red-Hat-Entwickler Dave Jones nahm sich dieses
+Themas an, da er sich jedes Mal, wenn er darüber stolpert, übergeben müsse. Er
+hielt sich dabei nicht an die Grenze von 79 Zeichen pro Zeile, dafür sehe der
+Code jetzt wie C aus.
+
+<div class="p"><!----></div>
+
+<h2>Kernel patchen im Live-Betrieb</h2>
+
+
+„Beim Laufen die Schuhe neu besohlen“ ist eine bekannte Redensart, die der
+Person, auf die sie sich bezieht, nicht sehr schmeichelt. Doch genau daran mag
+man denken, wenn man davon hört, dass der Linux-Kernel im laufenden Betrieb
+aktualisiert werden soll. Gleich zwei bekannte Linux-Distributoren, Suse und
+Red Hat, haben innerhalb weniger Tage entsprechende Projekte angekündigt.
+Dabei sind sie jedoch nicht die ersten …
+
+<div class="p"><!----></div>
+Bereits 2008 stellte der MIT-Student
+Jeff Arnold ein solches Projekt vor (siehe „Kernel-Rückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+05/2008&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2008-05">[8]</a>), bei dem er
+Aktualisierungen als Kernel-Module bereit stellte und in den Linux-Kernel
+nachlud. Arnold gründete mit dieser Technik ein Unternehmen (Ksplice Inc.),
+das 2011 von Oracle übernommen wurde. Nützlich ist „Hot-Patching“, „Runtime
+Patching“ oder „Rebootless Updating“ überall dort, wo zwar Aktualisierungen
+und Korrekturen von Sicherheitslücken schnell eingespielt werden sollen, ein
+Neustart des jeweiligen Systems jedoch unerwünscht ist. Da Ksplice auf
+seiner Website&nbsp;<a href="https://www.ksplice.com/">[9]</a> über 700 Kunden angibt, scheint
+Bedarf vorhanden zu sein.
+
+<div class="p"><!----></div>
+Suse hat nun kGraft angekündigt&nbsp;<a href="http://www.pro-linux.de/-0h2150fc">[10]</a>, das
+ähnlich arbeiten soll, jedoch auf Methoden und Techniken zurückgreift, die in
+den letzten Jahren in Linux aufgenommen wurden. Dies sorgt dafür, dass kGraft,
+das der Entwickler Vojtěch Pavlík noch als unpolierten Prototypen bezeichnet,
+erstaunlich einfach gehalten ist. kGraft ist darauf beschränkt, komplette
+Funktionsaufrufe und deren referenzierte Konstanten auszutauschen, doch das
+schränke die Nutzbarkeit nach Aussage des Entwicklers nicht spürbar ein.
+
+<div class="p"><!----></div>
+Die Red-Hat-Entwicklerin Linda Wang zog dann auf der devconf.cz mit der
+Ankündigung nach&nbsp;<a href="https://www.youtube.com/watch?v=xJmD3TfJEO4">[11]</a>, beim
+kommenden Collaboration Summit Ende März ein eigenes Kernel-Hot-Patching-Tool
+namens Kpatch vorzustellen&nbsp;<a href="http://www.pro-linux.de/-0h215116">[12]</a>. Red Hat greift
+dabei ebenfalls auf Methoden zurück, die der Linux-Kernel selbst zur Verfügung
+stellt.
+
+<div class="p"><!----></div>
+Die beiden Vorstöße von Red Hat und Suse werden Open-Source-Projekte sein. Im
+Gegensatz zu Ksplice, dessen Open-Source-Version seit dem Kauf durch Oracle
+nicht mehr aktualisiert wurde, besteht bei den beiden neuen Projekten ein
+Hoffnungsschimmer, dass es zumindest eine Variante schafft, irgendwann in den
+Linux-Kernel aufgenommen zu werden. Doch das liegt noch in weiter Ferne! Bis
+dahin dürften noch einige Zwischenstopps zum Neubesohlen notwendig werden.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://lkml.org/lkml/2014/2/2/176"><tt class="big">https://lkml.org/lkml/2014/2/2/176</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Kreiszahl"><tt class="big">https://de.wikipedia.org/wiki/Kreiszahl</tt></a><br />
+[3] <a href="https://plus.google.com/102150693225130002912/posts/ZpofpaZ8ZTa"><tt class="big">https://plus.google.com/102150693225130002912/posts/ZpofpaZ8ZTa</tt></a><br />
+[4] <a href="http://www.pro-linux.de/-0h2150cd"><tt class="big">http://www.pro-linux.de/-0h2150cd</tt></a><br />
+[5] <a href="https://lkml.org/lkml/2014/2/9/372"><tt class="big">https://lkml.org/lkml/2014/2/9/372</tt></a><br />
+[6] <a href="https://lkml.org/lkml/2014/2/16/120"><tt class="big">https://lkml.org/lkml/2014/2/16/120</tt></a><br />
+[7] <a href="https://lkml.org/lkml/2014/2/23/234"><tt class="big">https://lkml.org/lkml/2014/2/23/234</tt></a><br />
+[8] <a href="http://www.freiesmagazin.de/freiesMagazin-2008-05"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2008-05</tt></a><br />
+[9] <a href="https://www.ksplice.com/"><tt class="big">https://www.ksplice.com/</tt></a><br />
+[10] <a href="http://www.pro-linux.de/-0h2150fc"><tt class="big">http://www.pro-linux.de/-0h2150fc</tt></a><br />
+[11] <a href="https://www.youtube.com/watch?v=xJmD3TfJEO4"><tt class="big">https://www.youtube.com/watch?v=xJmD3TfJEO4</tt></a><br />
+[12] <a href="http://www.pro-linux.de/-0h215116"><tt class="big">http://www.pro-linux.de/-0h215116</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem laufenden zu bleiben und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Der Februar im Kernelr%C3%BCckblick#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+<h1><font color="#595959"><a id="fm_14_03_wlan_ap_raspberrypi" name="fm_14_03_wlan_ap_raspberrypi">WLAN-AP mit dem Raspberry Pi</a></font></h1>von Marvin Gülker
+
+<div class="p"><!----></div>
+    <b>D</b><b>er Raspberry Pi&nbsp;<a href="http://www.raspberrypi.org">[1]</a> ist ein sehr vielseitiges
+Gerät, das unter anderem auch zum Betreiben vielfältiger Netzwerkdienste
+verwendet werden kann. So ist es auch möglich, einen eigenständigen
+WLAN Access Point (AP)&nbsp;<a href="https://de.wikipedia.org/wiki/Wireless_Access_Point">[2]</a>
+mit ihm zu betreiben, was hier näher erläutert werden soll.</b>
+
+<div class="p"><!----></div>
+Der Betrieb eines Wireless Local Area Network (WLAN) gehört
+mittlerweile wohl zu fast jedem Haushalt dazu. Schließt man heute einen
+Vertrag über die Zurverfügungstellung von Internet ab, so erhält man
+im Regelfalle von seinem jeweiligen Anbieter zum Abschluss des
+Vertrags ein Multifunktionsgerät, das neben der reinen Funktion, eine
+Verbindung zum größeren Netz des Internetanbieters (Wide Area Network,
+WAN) und mithin zum Internet herzustellen, das heißt als Modem zu
+fungieren, auch die Möglichkeit bietet, ein Drahtlosnetzwerk
+aufzubauen. Die interne Funktionsweise dieser Geräte bleibt vonseiten
+des Herstellers meist unter Verschluss, geschweige denn, dass man einen
+Konsolenzugriff auf das zumeist als Linux-Variante ausgeführte
+Betriebssystem erhielte. Prominente Ausnahmen von dieser Regel sind
+Hersteller wie Linksys oder AVM, die ihren Abnehmern einen relativ
+problemlosen Zugriff auf Shell und Betriebssystem gewähren.
+
+<div class="p"><!----></div>
+Router sind zumeist hochspezialisierte Geräte, die darauf getrimmt
+sind, ihren Haupteinsatzzweck gut und anderweitige Aufgaben überhaupt
+nicht erfüllen zu können. In den meisten Geräten kommen stromsparende
+RISC-Prozessoren zum Einsatz; in neuester Zeit kommen mehr und mehr
+Geräte auf den Markt, deren Prozessor in ARM-Architektur gefertigt
+ist. Diese Rahmenbedingungen machen es denkbar schwierig, selbst bei
+einem verhältnismäßig offenen System beliebige Dienste auf der
+Hardware zu betreiben. Zu schnell erreicht man die Kapazität des oft
+nur geringen RAMs, anspruchsvollere Rechenaufgaben geraten zur
+Geduldsprobe. Dieser Artikel will sich daher damit beschäftigen, wie
+man mit gewöhnlicher Hardware einen eigenen WLAN Access Point betreibt,
+zu dem weitere Dienste nach Belieben zu- oder abgeschaltet werden
+können und dessen Hardware den angestrebten Aufgaben entsprechend
+größtenteils frei gewählt werden kann. Zum Einsatz kommt im konkreten
+Fall der Einplatinencomputer Raspberry Pi, doch sind die Erklärungen
+generisch und können auf jedes vollwertige Linux-System auf
+Systemd-Basis angewandt werden.
+
+<div class="p"><!----></div>
+
+<h2>Voraussetzungen</h2>
+
+
+Für den Betrieb eines eigenen WLANs sind einige Rahmenbedingungen
+erforderlich. Als erster und wichtigster Punkt ist hier eine
+funktionsfähige WLAN-Hardware zu nennen, die zwingend im Master-Modus
+betrieben werden können muss. Die Suche nach einer solchen gestaltet sich
+schnell schwierig, denn obwohl die Unterstützung der einzelnen
+Linuxtreiber für spezifische Chipsätze der Website des
+Linuxkernels&nbsp;<a href="http://wireless.kernel.org/en/users/Drivers">[3]</a> entnommen
+werden kann, ist es aus den Produktbeschreibungen meist nicht ersichtlich,
+welcher Chipsatz in einem USB-WLAN-Adapter verbaut ist, bis man die
+Gelegenheit hatte, ihn selbst zu testen. Persönlich hat der Autor einen
+TL-WN722N von TP-Link&nbsp;<a href="http://www.amazon.de/TP-Link-TL-WN722N-Wireless-LAN-Adapter-150Mbps/dp/B005LJIK4I/ref=sr_1_5">[4]</a>
+im Einsatz, der allerdings nicht mehr hergestellt wird. Der verbaute
+Chipsatz stammt von Atheros und wird vom renommierten ath9k-Modul
+vollständig unterstützt.
+
+<div class="p"><!----></div>
+
+<div class="command">$ lsusb | grep 802.11<br />
+Bus 001 Device 006: ID 0cf3:9271 Atheros Communications, Inc. AR9271 802.11n</div>
+
+<div class="p"><!----></div>
+
+
+Speziell für den Raspberry Pi ist zum Betrieb eines WLANs mit einem
+solchen WLAN-USB-Adapter zusätzlich ein USB-Hub mit eigener
+Stromversorgung erforderlich, da die vom Pi über die USB-Ports
+gelieferte Spannung nicht ausreicht, um einen stabilen WLAN-Betrieb zu
+gewährleisten. Häufige Ausfälle und Verbindungsabbrüche sind die
+Folge. Läuft alles gut, könnte die Interface-Liste so aussehen:
+
+<div class="p"><!----></div>
+
+<div class="command">$ ip link list<br />
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&#62; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default<br />
+&nbsp;&nbsp;&nbsp;&nbsp;link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br />
+[...]<br />
+4: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&#62; mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000<br />
+&nbsp;&nbsp;&nbsp;&nbsp;link/ether b8:27:eb:fe:1c:c1 brd ff:ff:ff:ff:ff:ff<br />
+5: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&#62; mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000<br />
+&nbsp;&nbsp;&nbsp;&nbsp;link/ether f8:1a:67:21:d2:a7 brd ff:ff:ff:ff:ff:ff<br />
+[...]</div>
+
+<div class="p"><!----></div>
+
+
+<b><tt class="big">eth0</tt></b> stellt hierbei das am Pi in Revision B ohnehin vorhandene
+Ethernet-Interface da, <b><tt class="big">wlan0</tt></b> repräsentiert den USB-WLAN-Adapter.
+
+<div class="p"><!----></div>
+Auf der Softwareseite ist die Installation des WLAN-Daemons
+hostapd&nbsp;<a href="http://hostap.epitest.fi/hostapd/">[5]</a> erforderlich. Will man
+IP-Adressen nicht statisch vergeben, so ist zudem die Installation eines
+IP-Management-Daemons wie dnsmasq&nbsp;<a href="http://www.thekelleys.org.uk/dnsmasq/doc.html">[6]</a>
+ratsam, der sowohl zur Vergabe von IPv4-Adressen per DHCP als auch zur
+Versendung von IPv6-Router-Advertisements verwendet werden kann. Die
+entsprechenden Pakete sollten in den Repositorys aller gängigen
+Distributionen aufzufinden sein.
+
+<div class="p"><!----></div>
+Die Notwendigkeit beider Dienste zeigt die klare
+Aufgabenteilung: hostapd ist nur für die
+Verschlüsselung der Drahtlosverbindung zuständig. Clients, die
+diese erste Hürde mit korrektem Passwort überwinden, wären ohne einen
+dahinter verfügbaren DHCP-Server (oder eine anderweitige
+IP-Konfiguration) 
+trotzdem nicht in der Lage, eine
+Verbindung zum Netzwerk aufzubauen.
+
+<div class="p"><!----></div>
+
+<h2>Konfiguration</h2>
+
+
+
+<h3>Kernel</h3>
+
+
+Der Pi muss die vom Ethernet-Interface angenommenen Pakete auf das
+WLAN-Interface weiterleiten und umgekehrt. Mit anderen Worten: Er
+fungiert als Router, also als Knotenpunkt zwischen zwei physikalisch
+getrennten Netzen (hier dem Kabelnetz und dem Drahtlosnetz). Diese
+„Durchleitungsfunktion“ von Linux ist aus Sicherheitsgründen
+standardmäßig deaktiviert, kann aber leicht wie folgt aktiviert
+werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># sysctl net/ipv4/conf/all/forwarding=1<br />
+# sysctl net/ipv6/conf/all/forwarding=1</div>
+
+<div class="p"><!----></div>
+
+
+Diese Befehle setzen für alle vorhandenen Netzwerkinterfaces den
+Weiterleitungsstatus für den momentanen Boot. Eine dauerhafte
+Aktivierung lässt sich durch Anlegen der Datei
+<b><tt class="big">/etc/sysctl/90-ipforwarding.conf</tt></b> (auf einigen Distributionen
+durch Anpassung der Datei <b><tt class="big">/etc/sysctl.conf</tt></b>) erreichen:
+
+<div class="p"><!----></div>
+
+<div class="listing">net.ipv4.ip_forward = 1<br />
+net.ipv6.conf.all.forwarding = 1</div>
+
+<div class="p"><!----></div>
+
+
+Selbstverständlich können diese Optionen auch nur für diejenigen
+Interfaces gesetzt werden, für die es gewünscht wird.
+
+<div class="p"><!----></div>
+
+<h3>hostapd</h3>
+
+
+Der WLAN-Dienst hostapd wird mittels der Datei
+<b><tt class="big">/etc/hostapd/hostapd.conf</tt></b> konfiguriert.
+Standardmäßig ist diese Datei mit einer
+Fülle von Konfigurationsdirektiven bestückt, die allerdings nur als
+Beispiele zu verstehen sind und die dementsprechend nicht
+einschüchternd wirken sollten. hostapd ermöglicht hochkomplexe
+Setups mit WPA-Enterprise-Verschlüsselung&nbsp;<a href="https://de.wikipedia.org/wiki/Wi-Fi_Protected_Access">[7]</a>,
+externem RADIUS-Server&nbsp;<a href="https://de.wikipedia.org/wiki/RADIUS_%28Protokoll%29">[8]</a>
+und Authentifikation gegen LDAP&nbsp;<a href="https://de.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">[9]</a>,
+die für das übliche Heim-WLAN allerdings sowohl Overkill als auch zu
+schwer zu warten sind. Die Reduktion auf das Wesentliche ergibt eine
+Konfiguration, die der folgenden ähneln wird:
+
+<div class="p"><!----></div>
+
+<div class="listing"># Interface<br />
+interface=wlan0<br />
+driver=nl80211<br />
+<br />
+# Main settings<br />
+ssid=Mein tolles WLAN<br />
+channel=11<br />
+hw_mode=g<br />
+country_code=DE<br />
+<br />
+# Security<br />
+wpa=3<br />
+wpa_key_mgmt=WPA-PSK<br />
+wpa_pairwise=TKIP<br />
+rsn_pairwise=CCMP<br />
+wpa_passphrase=geheime_passphrase<br />
+auth_algs=1<br />
+<br />
+<br />
+# Logging<br />
+logger_syslog=-1<br />
+logger_syslog_level=2<br />
+<br />
+# Misc<br />
+max_num_sta=60<br />
+<br />
+# Files<br />
+deny_mac_file=/etc/hostapd/hostapd.deny</div>
+
+<div class="p"><!----></div>
+
+
+Diese Konfiguration setzt sich aus verschiedenen Elementen
+zusammen. Zunächst die grundlegenden Einstellungen: Die Einstellung
+interface gibt den Namen des Netzwerkinterfaces an, das von hostapd
+in den master-Modus versetzt werden soll, im konkreten Fall ist dies
+derjenige des WLAN-USB-Adapters. Mit <b><tt class="big">driver=nl80211</tt></b> legt man den
+Interfacetyp fest, das heißt wie hostapd das Interface anspricht. Für
+alle gängigen WLAN-Verwendungen ist hier stets <b><tt class="big">nl80211</tt></b> zu wählen,
+womit auf das mac80211-Subsystem des Kernels zurückgegriffen wird.
+
+<div class="p"><!----></div>
+<b><tt class="big">ssid</tt></b> legt den Namen des WLANs fest, so, wie er von den typischen
+Client-Programmen angezeigt wird. <b><tt class="big">channel</tt></b> legt die Frequenz fest,
+auf der das WLAN gefunkt werden soll; eine Übersicht, in der
+Kanalnummer und Frequenz gegenübergestellt werden, kann in der
+englischen Wikipedia eingesehen werden&nbsp;<a href="https://en.wikipedia.org/wiki/List_of_WLAN_channels">[10]</a>.
+Allerdings dürfen nicht alle theoretisch möglichen Frequenzen genutzt
+werden; hierzulande regelt die Bundesnetzagentur die für WLAN zulässigen
+Frequenzbereiche. Die für den Heimgebrauch freigegebenen Frequenzen können
+auf der Website der Behörde separat für WLAN im
+2,4 GHz-Bereich&nbsp;<a href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Allgemeinzuteilungen/2013_10_WLAN_2,4GHz_pdf.pdf?__blob=publicationFile&amp;v=4">[11]</a>
+und 5 GHz-Bereich&nbsp;<a href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Allgemeinzuteilungen/2010_07_WLAN_5GHz_pdf.pdf?__blob=publicationFile&amp;v=3">[12]</a>
+eingesehen werden. Die Nutzung nicht genehmigter Frequenzen stellt nach
+§149 Abs. 1 Nr. 10 TKG&nbsp;<a href="http://dejure.org/gesetze/TKG/149.html">[13]</a> eine
+Ordnungswidrigkeit da, die nach §149 Abs. 2 Satz 1 3. Variante TKG&nbsp;<a href="http://dejure.org/gesetze/TKG/149.html">[13]</a>
+mit einem Bußgeld von bis zu 500.000 Euro geahndet werden kann. Der Parameter
+<b><tt class="big">country_code</tt></b> instruiert hostapd, die im jeweiligen Land geltenden
+Vorschriften hinsichtlich der Kanal- und Sendeleistungsgrenzen zu beachten. Allein
+auf ihn verlassen sollte man sich aus naheliegenden Gründen jedoch nicht.
+
+<div class="p"><!----></div>
+Die Kanäle 9 und 10 sind üblicherweise nicht zu empfehlen, da sie
+häufig Opfer von Interferenzen durch Mikrowellenherde
+werden. Ansonsten ist es ratsam, die in der Umgebung bereits
+genutzten Kanäle mit Werkzeugen wie iwlist(8) festzustellen und zum
+Zwecke möglichst geringer Interferenz einen noch nicht genutzten Kanal
+auszuwählen.
+
+<div class="p"><!----></div>
+
+<div class="command"># ip link set wlan0 up<br />
+# iwlist wlan0 scan | grep -A1 Channel:<br />
+&nbsp;&nbsp;Channel:1<br />
+&nbsp;&nbsp;Frequency:2.412 GHz (Channel 1)<br />
+--<br />
+&nbsp;&nbsp;Channel:6<br />
+&nbsp;&nbsp;Frequency:2.437 GHz (Channel 6)<br />
+--<br />
+&nbsp;&nbsp;Channel:104<br />
+&nbsp;&nbsp;Frequency:5.25 GHz<br />
+# ip link set wlan0 down</div>
+
+<div class="p"><!----></div>
+
+
+Im Beispiel sind die Kanäle 1, 6 und 104 bereits von WLANs belegt,
+wobei letzterer ein Kanel aus dem 5GHz-Bereich ist und dementsprechend
+ohnehin erst einmal zu ignorieren ist (die meisten handelsüblichen
+USB-WLAN-Adapter sind nicht in der Lage, 5 GHz im Master-Modus zu
+stemmen). Es sollte daher ein Kanal gewählt werden, der von den
+belegten Kanälen 1 und 6 möglichst weit entfernt ist; in der
+Beispielkonfiguration ist dies Kanal 11.
+
+<div class="p"><!----></div>
+Die abschließende Angabe <b><tt class="big">hw_mode=g</tt></b> legt den Modus fest, in dem
+hostapd das Interface betreiben wird. Es handelt sich dabei um den
+letzten Buchstaben des entsprechenden IEEE 802.11-Standards, wie
+folgender Tabelle entnommen werden kann:
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="3" align="center"><b>WLAN-Frequenzbereiche</b></td></tr>
+<tr><td align="left"><b>Wert</b> </td><td align="left"><b>Standard</b> </td><td align="left"><b>Frequenz</b> </td></tr>
+<tr><td align="left">a    </td><td align="left">IEEE 802.11a  </td><td align="left">5 GHz </td></tr>
+<tr><td align="left">b    </td><td align="left">IEEE 802.11b  </td><td align="left">2,4 GHz </td></tr>
+<tr><td align="left">g    </td><td align="left">IEEE 802.11g  </td><td align="left">2,4 GHz </td></tr>
+<tr><td align="left">ad   </td><td align="left">IEEE 802.11ad </td><td align="left">60 GHz </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+Aufbauend auf diese Standards kann zusätzlich IEEE 802.11n aktiviert
+werden, indem die weiteren Direktiven 80211n und <b><tt class="big">ht_capab</tt></b> gesetzt
+werden. Dies ist für die ordnungsgemäße Funktion eines gewöhnlichem
+Heim-WLANs jedoch nicht erforderlich und soll daher auch nicht weiter
+behandelt werden. Generell sollte von g als solidem Standardwert nur
+nach vorangegangener Überlegung abgewichen werden.
+
+<div class="p"><!----></div>
+Die im Block „Security“ angebenen Einstellungen regeln, wie hostapd
+die Sicherheit des WLANs konzipiert. Der maßgebliche Parameter an
+dieser Stelle ist <b><tt class="big">wpa=3</tt></b>, womit nach Wahl des Clients sowohl WPA als
+auch WPA2 als Verschlüsselungsmethode erlaubt wird. Wer nur WPA2 will,
+setzt <b><tt class="big">wpa=2</tt></b>. <b><tt class="big">wpa_key_mgmt=WPA-PSK</tt></b> legt das Verfahren der
+Schlüsselverwaltung fest. WPA-PSK steht dabei für das Verfahren des
+Pre-shared Keys (PSK)&nbsp;<a href="https://de.wikipedia.org/wiki/Pre-shared_key">[14]</a>, also des
+vorgegebenen Netzwerkschlüssels. Weniger technisch ausgedrückt meint dies
+einfach das, was man vom üblichen Heim-WLAN kennt: Es wird ein einzelner
+WLAN-Schlüssel vergeben, der für jedermann gilt. Optional können mit
+diesem Verfahren auch mehrere zulässige WLAN-Schlüssel verwaltet werden
+(dies erfordert allerdings die Zurhilfenahme einer weiteren Option
+<b><tt class="big">wpa_psk_file</tt></b>). Der andere erlaubte Wert für <b><tt class="big">wpa_key_mgmt</tt></b> ist WPA-EAP,
+besser bekannt als „WPA Enterprise“, bei dem mit Benutzernamen und -passworten
+gearbeitet werden kann, was sich offenbar insbesondere an
+Universitäten großer Beliebtheit erfreut. Dessen Konfiguration ist
+allerdings weitaus komplexer und soll hier nicht Gegenstand sein.
+
+<div class="p"><!----></div>
+<b><tt class="big">wpa_pairwise</tt></b> legt die für WPA zu verwendenden
+Verschlüsselungsalgorithmen fest, <b><tt class="big">rsn_pairwise</tt></b> diejenigen für
+WPA2. Zur Auswahl stehen das sicherere CCMP&nbsp;<a href="https://de.wikipedia.org/wiki/CCMP">[15]</a>
+und das für ältere Geräte geeignete TKIP&nbsp;<a href="https://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol">[16]</a>
+(oder auch beide), wobei Geräte, die WPA2 unterstützen, im Regelfall auch
+CCMP als Verschlüsselungsalgorithmus verstehen. Lediglich einige
+Windows-Treiber haben wohl Probleme mit der Kombination aus WPA und CCMP,
+sodass man beim Betrieb eines WPA-WLANs von dessen Verwendung absehen
+sollte. Da WPA nicht mehr als sicher angesehen wird&nbsp;<a href="https://de.wikipedia.org/wiki/Wi-Fi_Protected_Access#Angriffsm.C3.B6glichkeiten">[17]</a>
+und üblicherweise WPA2 als Alternative empfohlen wird, sollte die
+Notwendigkeit für das angreifbare TKIP im Laufe der nächsten Zeit
+vermutlich absinken; noch gibt es aber wohl genügend Geräte, die WPA2
+überhaupt nicht unterstützen. Die folgende Tabelle stellt die Kombination
+der einzelnen Direktiven noch einmal klar:
+
+<div class="p"><!----></div>
+    
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="3" align="center"><b>Verschlüsselungsmethoden</b></td></tr>
+<tr><td align="left"><b><tt class="big">wpa=n</tt></b>   </td><td align="left"><b>Verschlüsselung</b> </td><td align="left"><b>Anwendbare Direktiven</b> </td></tr>
+<tr><td align="left"><b><tt class="big">wpa=1</tt></b>   </td><td align="left">WPA             </td><td align="left"><b><tt class="big">wpa_pairwise</tt></b> </td></tr>
+<tr><td align="left"><b><tt class="big">wpa=2</tt></b>   </td><td align="left">WPA2            </td><td align="left"><b><tt class="big">rsn_pairwise</tt></b> </td></tr>
+<tr><td align="left"><b><tt class="big">wpa=3</tt></b>   </td><td align="left">WPA und WPA2    </td><td align="left"><b><tt class="big">wpn_pairwise</tt></b> und <b><tt class="big">rsn_pairwise</tt></b> </td></tr>
+</table>
+
+
+<div class="p"><!----></div>
+<b><tt class="big">wpa_passphrase</tt></b> schließlich legt – wenig überraschend – den
+Netzwerkschlüssel fest, dessen Verwendung zuvor mittels
+<b><tt class="big">wpa_key_mgmt=WPA-PSK</tt></b> angefordert wurde. Mittels <b><tt class="big">auth_algs=1</tt></b> wird
+der Authentifizierungsalgorithmus als „open auth“ festgelegt. Die
+Werte 2 und 3 sind nur für WEP-Verschlüsselung sinnvoll und können, da
+gegen WEP ohnehin genügend Angriffe bekannt sind&nbsp;<a href="https://de.wikipedia.org/wiki/Wired_Equivalent_Privacy#Schwachstellen">[18]</a>,
+getrost außen vor gelassen werden.
+
+<div class="p"><!----></div>
+Übrig bleiben nur noch einige Feineinstellungen. <b><tt class="big">logger_syslog=-1</tt></b>
+instruiert hostapd, die Nachrichten aller Komponenten gleichermaßen
+in das Syslog zu schreiben, <b><tt class="big">logger_syslog_level=2</tt></b> filtert
+Nachrichten, deren Wichtigkeit unter „info“ liegt, heraus. Von
+größerem Interesse ist die Option <b><tt class="big">max_num_sta</tt></b>, mit der angegeben
+wird, wie viele Clients sich maximal am AP anmelden können. Hier
+sollte man einen Wert wählen, der grob der Anzahl der erwarteten
+Nutzer entspricht und die Hardware (Raspberry Pi!) bei gleichzeitiger
+Nutzung des WLANs durch all diese Nutzer nicht überfordert; IEEE
+802.11 legt als Obergrenze 2007 Clients fest. Über <b><tt class="big">deny_mac_file</tt></b>
+lassen sich Clients, deren MAC-Adressen denen in der angegebenen Datei
+entsprechen, von der Nutzung des WLANs ausschließen. 
+
+Da MAC-Adressen
+sehr leicht zu fälschen sind, sollte hierin aber keinesfalls eine
+große Sicherheitsbarriere gesehen werden. Die Datei selbst enthält
+einfach nur eine zeilenweise Auflistung verbotener MAC-Adressen, etwa
+so:
+
+<div class="p"><!----></div>
+
+<div class="listing"># List of MAC addresses that are not allowed to authenticate (IEEE 802.11)<br />
+# with the AP.<br />
+00:20:30:40:50:60<br />
+00:ab:cd:ef:12:34<br />
+00:00:30:40:50:60</div>
+
+<div class="p"><!----></div>
+
+
+Damit ist die Konfiguration von hostapd abgeschlossen. Umfangreiche
+Dokumentation ist in Form einer Beispieldatei&nbsp;<a href="http://hostap.epitest.fi/cgit/hostap/plain/hostapd/hostapd.conf">[19]</a>
+sowie auf der Website von Linux&nbsp;<a href="http://wireless.kernel.org/en/users/Documentation/hostapd">[20]</a>
+verfügbar.
+
+<div class="p"><!----></div>
+
+<h3>dnsmasq</h3>
+
+
+Ein laufendes WLAN ist ja schön und gut, wenn allerdings kein
+DHCP-Server verfügbar ist, der IP-Adressen vergibt, hilft das
+wenig. Bei der Zuteilung von IP-Adressen an das WLAN gibt es
+grundsätzlich mehrere Möglichkeiten, die um das Problem kreisen, wie
+Pakete von der einen physikalischen Seite des Netzwerks (Kabelnetz)
+auf die andere (WLAN) geroutet werden können und umgekehrt. Von den
+unten vorgestellten Varianten kommt nur Möglichkeit 1 ohne Subnetz für
+das WLAN aus, da in allen anderen Fällen die Pakete zunächst den AP
+als Zwischenstation passieren müssen, wo sie bis zur IP-Ebene
+„ausgepackt“ und dann auf dem neuen Interface wieder „eingepackt“ und
+weitergeschickt werden (das ist die typische Routerfunktion). Daraus
+ergibt sich, dass ein Client im Kabelnetz K1 einen Client im WLAN-Netz
+W1 zwar über die IP adressieren, nicht aber direkt erreichen kann. K1
+muss die Zwischenstation, den AP, kennen, um zu wissen, wohin er sein
+Paket zunächst versenden soll. Angelehnt an die Syntax von ip(8)
+könnte man sagen, er muss wissen, via welchen Knoten er das Paket
+versenden soll. Mit diesem Wissen wird das an W1 adressierte Paket
+zunächst zum AP geschickt,
+der seinerseits direkt sowohl K1 als auch
+W1 ohne weitere Zwischenstation erreichen kann.
+
+<div class="p"><!----></div>
+
+<img src="freiesMagazin-2014-03-bilder-Dateien/wlan_ap_netzwerk_aufbau.png" alt="wlan_ap_netzwerk_aufbau.png" style="max-width:100%" /><br /><em>Grundlegender physikalischer Netzwerkaufbau.</em><br />
+
+
+
+<div class="p"><!----></div>
+
+
+
+<ol>
+<li> Ein externer DHCP-Server (etwa das bekannte Multifunktionsgerät des
+  Internetanbieters) übernimmt die Adressvergabe auch im WLAN,
+  ohne eigenes Subnetz für dasselbe. Dies erfordert einen
+  bridge-fähigen WLAN-Chipsatz, der allerdings nur selten verfügbar
+  ist.</li>
+<li> Auf dem AP läuft ein DHCP-Daemon, der die Adressvergabe nur für das
+  WLAN übernimmt. Der Rest des Netzwerks wird von einem anderen,
+  schon vorhandenen DHCP-Daemon verwaltet. In dieser Variante würde
+  man ein eigenes Subnetz für das WLAN verwenden, um K1 mitteilen zu
+  können, wohin es die an WLAN-Clients adressierten Pakete überhaupt
+  zunächst hin verschicken muss.</li>
+<li> Auf dem AP läuft ein DHCP-Daemon, der die Adressvergabe für das
+  gesamte Netzwerk, also sowohl das Kabel- als auch das WLAN-Netz,
+  übernimmt. Auch hier würde man separate Subnetze für Kabel- und
+  WLAN-Teil des Netzwerks wählen.</li>
+</ol>
+
+<div class="p"><!----></div>
+In Ermangelung spezialisierter WLAN-Bridge-Hardware stellt
+die zweite Möglichkeit
+den einfachst gangbaren Weg dar. Nimmt man als 
+kabelgebundenes Netz
+192.168.0.0/24 sowie für das WLAN-Netz 192.168.1.0/24 an und geht ferner
+davon aus, dass sich das Multifunktionsgerät des Internetanbieters,
+das die Verbindung zum Internet ermöglicht, im Kabelnetzwerk befindet
+und auf die Adresse 192.168.0.1/24 hört, so ergibt sich das in
+der Abbildung oben auf dieser Seite
+dargestellte erweiterte Schema. Da der Access Point als Übergangspunkt
+zwischen zwei Netzen fungiert, benötigt er zwei IP-Adressen, je eine
+aus einem Netz. Konkret auf den Raspberry Pi bezogen ließe sich dieses
+Schema folgendermaßen umsetzen:
+
+<div class="p"><!----></div>
+
+<div class="command"># ip addr add 192.168.0.2/24 dev eth0<br />
+# ip addr add 192.168.1.1/24 dev wlan0</div>
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2014-03-bilder-Dateien/wlan_ap_netzwerk_aufbau_ipv4.png" alt="wlan_ap_netzwerk_aufbau_ipv4.png" style="max-width:100%" /><br /><em>Netzwerkaufbau mit IPv4-Adressen.</em><br />
+
+<div class="p"><!----></div>
+Mit diesem Vorwissen kann die Konfiguration von dnsmasq, einem
+DHCP-Daemon, in Angriff genommen werden. Der Dienst wird über die Datei
+<b><tt class="big">/etc/dnsmasq.conf</tt></b> konfiguriert, die wie folgt aussehen könnte:
+
+<div class="p"><!----></div>
+
+<div class="command"># Target interface<br />
+interface=wlan0<br />
+<br />
+# DHCP range for Wifi<br />
+dhcp-range=192.168.1.2,192.168.1.254,6h<br />
+<br />
+# DNS<br />
+dhcp-option=option:dns-server,192.168.0.1<br />
+<br />
+# log-dhcp</div>
+
+<div class="p"><!----></div>
+
+
+Die erste Direktive ist relativ selbsterklärend; sie legt das
+Interface fest, auf dem dnsmasq lauschen soll. Lässt man sie ganz
+weg, lauscht dnsmasq auf allen verfügbaren Interfaces. Mit der
+nächsten Direktive wird der Adressraum angegeben, aus dem der Daemon
+IPv4-Adressen vergibt. Hier sollte man darauf achten, sowohl die
+reservierten Adressen für Netzwerk und Broadcast (192.168.1.0,
+192.168.1.255) als auch die Adresse auszunehmen, die der AP im
+WLAN-Netz für sich selbst beansprucht (192.168.1.1), um unnötige
+Prüfungen auf Adresskollisionen zu vermeiden.
+
+<div class="p"><!----></div>
+dnsmasq ist ein ausgesprochen vielseitiger Daemon. Neben der bloßen
+Funktion als DHCP-Server kann er unter anderem auch dazu verwendet
+werden, DNS-Dienste und IPv6-Router-Advertisements bereitzustellen. Da
+der vorliegende Artikel sich jedoch ausschließlich mit der
+Bereitstellung eines funktionsfähigen WLANs befasst, soll diese
+erweiterte Konfiguration Aufgabe des Lesers sein; für den Moment soll
+es
+
+ausreichen, den anfragenden WLAN-Clients als DNS-Server das
+Multifunktionsgerät des Internetanbieters zu empfehlen, was mithilfe
+der Direktive <b><tt class="big">dhcp-option</tt></b> geschieht. Das DHCP-Protokoll unterstützt
+eine ganze Reihe von Optionen, die an die Clients übermittelt werden
+und die über die bloße Vergabe von IP-Adressen weit hinausgehen; alle
+offiziell von dnsmasq unterstützten Optionen lassen sich
+mithilfe des Befehls
+
+<div class="p"><!----></div>
+
+<div class="command">$ dnsmasq --help dhcp</div>
+
+<div class="p"><!----></div>
+
+
+mit Optionsnummer und -name ausgeben. Die im Beispiel auskommentierte
+Direktive <b><tt class="big">log-dhcp</tt></b> veranlasst dnsmasq, die an jeden einzelnen
+Client versendeten DHCP-Optionen detailliert im Syslog zu
+protokollieren; wer nachschaut, wird feststellen, dass der Daemon schon
+standardmäßig eine ganze Reihe von Optionen sendet, von denen
+insbesondere die netzwerkspezifischen herauszuheben sind:
+
+<div class="p"><!----></div>
+
+<div class="listing">[...]<br />
+dnsmasq-dhcp[4725]: 3013853912 sent size:  4 option:  1 netmask 255.255.255.0<br />
+dnsmasq-dhcp[4725]: 3013853912 sent size:  4 option: 28 broadcast 192.168.1.255<br />
+dnsmasq-dhcp[4725]: 3013853912 sent size:  4 option:  3 router 192.168.1.2<br />
+dnsmasq-dhcp[4725]: 3013853912 sent size:  4 option:  6 dns-server  192.168.0.1<br />
+[...]</div>
+
+<div class="p"><!----></div>
+
+
+Solange dnsmasq mithilfe der <b><tt class="big">dhcp-option</tt></b>-Direktive nichts
+Abweichendes mitgeteilt wird, geht der Dienst davon aus, dass er
+selbst auf dem für die Clients maßgeblichen Router läuft. Daraus
+ergibt sich, dass die für die Clients notwendigen Routingoptionen wie
+die Netzmaske/Präfixlänge (<b><tt class="big">netmask</tt></b>, hier 255.255.255.0 = /24), der
+Broadcast des Netzes (<b><tt class="big">broadcast</tt></b>, hier 192.168.1.255) und ganz besonders
+der Default-Gateway (<b><tt class="big">router</tt></b>, hier 192.168.1.2) alle der
+Netzwerkkonfiguration des Rechners entnommen werden, auf dem dnsmasq
+läuft. Daher entsprechen die oben gezeigten Optionen bis auf die
+manuell gesetzte Option 6 (<b><tt class="big">dns-server</tt></b>) auch haargenau der
+Netzwerkkonfiguration des Raspberry Pi. Die so übersendeten
+DHCP-Optionen werden vom DHCP-Client auf dem Client-Rechner
+ausgewertet, der sich um die Konfiguration des Netzwerkinterfaces des
+Clients kümmert.
+
+<div class="p"><!----></div>
+Die vollständige Dokumentation zur Konfigurationsdatei von dnsmasq
+kann dessen Manpage dnsmasq(8) entnommen werden.
+
+<div class="p"><!----></div>
+
+<h3>Das Multifunktionsgerät</h3>
+
+
+Auch das bisher nur am Rande vorgekommene Multifunktionsgerät des
+Internetanbieters muss ein wenig umkonfiguriert werden, um ihm
+mitzuteilen, wie es die Clients in Kabel- und WLAN-Netz erreichen
+kann. Jedes etwas bessere Gerät bietet die Möglichkeit, die fest
+zugewiese IP und deren Präfixlänge zu verändern sowie statische
+Routen zu hinterlegen. Da die Clients im Kabelnetzwerk ihre IP-Adresse
+nicht vom AP, sondern vom Multifunktionsgerät beziehen, besteht für
+sie keine Möglichkeit zu wissen, wohin sie Pakete für das WLAN-Netz
+schicken sollen. Sie senden, sofern nicht jeder Client einzeln
+entsprechend konfiguriert wird, alles an ihr Standardziel (default
+gateway), in diesem Falle das Multifunktionsgerät. Es ist daher
+zweckmäßig, diesem beizubringen, an das WLAN-Subnetz adressierte
+Pakete an den AP zu routen, der diese dann entsprechend weiterleiten
+kann. Da die Weboberflächen dieser Geräte von Hersteller zu Hersteller
+denkbar verschieden aufgebaut sind, können an dieser Stelle leider
+keine genauen Hinweise gegeben werden, wie dies zu bewerkstelligen
+ist; oftmals muss man einen „Experten-“ oder „erweiterten Modus“
+anwählen, bevor man die „sensiblen“ Einstellungen betreffend das
+Routing verändern kann. Zunächst ist als neue statische Adresse und
+Präfixlänge 192.168.0.1/24 zu wählen. Für ältere Router, die statt
+nach Präfixlängen nach den veralteten Subnetzmasken fragen, kann man
+eine entsprechende Konvertierungstabelle&nbsp;<a href="http://www.rjsmith.com/CIDR-Table.html">[21]</a>
+bemühen. Sodann fügt man eine einzelne statische Route ein, die alle an
+das WLAN-Netz adressierten Pakete an den AP weiterleitet. Das
+entsprechende Shell-Kommando würde so aussehen:
+
+<div class="p"><!----></div>
+
+<div class="command"># ip route add 192.168.1.0/24 via 192.168.0.2</div>
+
+<div class="p"><!----></div>
+
+
+Als Zieladresse ist - logischerweise - die Kabelnetz-Adresse des 
+Access Points
+zu wählen. Auch hier kann natürlich zur Konvertierung
+Präfixlänge/Subnetzmaske eine Tabelle bemüht werden.
+
+<div class="p"><!----></div>
+dnsmasq teilt sich wie zuvor schon beschrieben den WLAN-Clients
+ohnehin selbst als Default-Gateway mit, sodass eine Konfiguration
+der einzelnen WLAN-Clients hinsichtlich der Routen unnötig ist. Der AP
+fungiert für die WLAN-Clients sowohl als Gateway zum Internet als auch
+zum Kabelnetz. Umgekehrt senden die Kabel-Clients ihre Pakete alle an
+das Multifunktionsgerät des Internetanbieters, auf dem gerade eben die
+neue statische Route hinterlegt wurde; erreicht dieses ein an einen
+WLAN-Client adressiertes Paket, so wird es dieses an 192.168.0.2, den
+AP, weiterleiten, der weiß, wohin es weiter zu übermitteln
+ist. Darüber hinaus ist es allerdings wichtig zu wissen, dass ohne die
+Hinterlegung der statischen Route im Multifunktionsgerät ein nicht
+unerhebliches Routingproblem entstünde: Zwar würden Pakete aus
+dem WLAN-Netz korrekt ins Internet geroutet, die Antwort des
+entfernten Internetservers jedoch würde nur bis zum
+Multifunktionsgerät gelangen, das nicht wüsste, wohin mit dem
+unbekannten Subnetz. Die Pakete würden verworfen und der WLAN-Client
+würde nie eine Antwort auf seine Anfragen erhalten.
+
+<div class="p"><!----></div>
+Nicht vergessen werden sollte auch, den DHCP-Server des
+Multifunktionsgeräts so einzustellen, dass er keine Adressen im
+Bereich des DHCP-Servers auf dem AP, d.&nbsp;h. keine Adressen im
+Raum 192.168.1.0/24, vergibt.
+
+<div class="p"><!----></div>
+
+<h3>Services</h3>
+
+
+Die Startreihenfolge von dnsmasq und hostapd ist nicht ganz
+willkürlich. dnsmasq verweigert schlicht den Dienst am Interface,
+wenn sich dieses nicht in irgendeinem aktiven Zustand
+befindet. Unglücklicherweise hängt (zumindest unter Arch Linux) die
+Service-Datei von dnsmasq in keinster Weise von derjenigen von
+hostapd ab, sodass die Funktionalität des DHCP-Servers beim
+Systemstart ein bloßes Zufallsprodukt ist. Um dem Abhilfe zu schaffen,
+muss die Servicedatei von dnsmasq so angepasst werden, dass sie auf
+hostapd Rücksicht nimmt. Dazu wird zunächst die Standard-Service-Datei in
+den Admininistrationsbereich kopiert (die Dateien in <b><tt class="big">/etc</tt></b> haben
+für Systemd Vorrang vor denen in <b><tt class="big">/usr</tt></b>):
+
+<div class="p"><!----></div>
+
+<div class="command"># cp /usr/lib/systemd/system/dnsmasq.service /etc/systemd/system</div>
+
+<div class="p"><!----></div>
+
+
+Die so neu gewonnene Datei namens <b><tt class="big">/etc/systemd/system/dnsmasq.service</tt></b> wird um
+die Zeile <b><tt class="big">After=hostapd.service</tt></b> im Abschnitt „Unit“ ergänzt,
+sodass sie im Ergebnis wie folgt lautet:
+
+<div class="p"><!----></div>
+
+<div class="listing">[Unit]<br />
+Description=A lightweight DHCP and caching DNS server<br />
+After=network.target<br />
+After=hostapd.service<br />
+Documentation=man:dnsmasq(8)<br />
+<br />
+[Service]<br />
+Type=dbus<br />
+BusName=uk.org.thekelleys.dnsmasq<br />
+ExecStartPre=/usr/bin/dnsmasq --test<br />
+ExecStart=/usr/bin/dnsmasq -k --enable-dbus --user=dnsmasq --pid-file<br />
+ExecReload=/bin/kill -HUP $MAINPID<br />
+<br />
+[Install]<br />
+WantedBy=multi-user.target<br />
+Alias=dbus-uk.org.thekelleys.dnsmasq</div>
+
+<div class="p"><!----></div>
+
+
+Nun können die Dienste in den Systemstart eingetragen und gestartet
+werden:
+
+<div class="p"><!----></div>
+
+<div class="command"># systemctl enable hostapd<br />
+# systemctl enable dnsmasq<br />
+# systemctl start hostapd<br />
+# systemctl start dnsmasq</div>
+
+<div class="p"><!----></div>
+
+
+Läuft alles gut, so kann nun das neue, hausgebastelte WLAN verwendet
+werden.
+
+<div class="p"><!----></div>
+
+<h2>Weiterführendes</h2>
+
+
+Dieser Artikel beschreibt lediglich eine Minimalkonfiguration. Mit
+einem voll funktionstüchtigen AP lässt sich jedoch noch sehr viel mehr
+machen; so kann etwa ein SixXS-Tunnelendpunkt 
+für
+
+IPv6&nbsp;<a href="https://de.wikipedia.org/wiki/Liste_von_IPv6-Tunnelbroker">[22]</a>
+verwaltet und so das heimische Netz
+mit IPv6 ausgestattet, dnsmasq
+um DNS- und IPv6-Router-Advertisement-Funktionalität erweitert
+oder OpenVPN als sicherer Hafen für Fernverbindungen 
+ins heimische Netz
+betrieben werden. Viele weitere Anwendungen sind denkbar, die nun
+nicht mehr von der verschlossenen Hardware des Internetanbieters
+blockiert werden. Es lebe die freie und quelloffene Software!
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.raspberrypi.org"><tt class="big">http://www.raspberrypi.org</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Wireless_Access_Point"><tt class="big">https://de.wikipedia.org/wiki/Wireless_Access_Point</tt></a><br />
+[3] <a href="http://wireless.kernel.org/en/users/Drivers"><tt class="big">http://wireless.kernel.org/en/users/Drivers</tt></a><br />
+[4] <a href="http://www.amazon.de/TP-Link-TL-WN722N-Wireless-LAN-Adapter-150Mbps/dp/B005LJIK4I/ref=sr_1_5"><tt class="big">http://www.amazon.de/TP-Link-TL-WN72... </tt></a><br /> [5] <a href="http://hostap.epitest.fi/hostapd/"><tt class="big">http://hostap.epitest.fi/hostapd/</tt></a><br />
+[6] <a href="http://www.thekelleys.org.uk/dnsmasq/doc.html"><tt class="big">http://www.thekelleys.org.uk/dnsmasq/doc.html</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Wi-Fi_Protected_Access"><tt class="big">https://de.wikipedia.org/wiki/Wi-Fi_Protected_Access</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/RADIUS_%28Protokoll%29"><tt class="big">https://de.wikipedia.org/wiki/RADIUS_(Protokoll)</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol"><tt class="big">https://de.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol</tt></a><br />
+[10] <a href="https://en.wikipedia.org/wiki/List_of_WLAN_channels"><tt class="big">https://en.wikipedia.org/wiki/List_of_WLAN_channels</tt></a><br />
+[11] <a href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Allgemeinzuteilungen/2013_10_WLAN_2,4GHz_pdf.pdf?__blob=publicationFile&amp;v=4"><tt class="big">http://www.bundesnetzagentur.de/... /2013_10_WLAN_2,4GHz_pdf.pdf... </tt></a><br />[12] <a href="http://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/Unternehmen_Institutionen/Frequenzen/Allgemeinzuteilungen/2010_07_WLAN_5GHz_pdf.pdf?__blob=publicationFile&v=3"><tt class="big">http://www.bundesnetzagentur.de/... /2010_07_WLAN_5GHz_pdf.pdf... </tt></a><br />[13] <a href="http://dejure.org/gesetze/TKG/149.html"><tt class="big">http://dejure.org/gesetze/TKG/149.html</tt></a><br />
+[14] <a href="https://de.wikipedia.org/wiki/Pre-shared_key"><tt class="big">https://de.wikipedia.org/wiki/Pre-shared_key</tt></a><br />
+[15] <a href="https://de.wikipedia.org/wiki/CCMP"><tt class="big">https://de.wikipedia.org/wiki/CCMP</tt></a><br />
+[16] <a href="https://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol"><tt class="big">https://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol</tt></a><br />
+[17] <a href="https://de.wikipedia.org/wiki/Wi-Fi_Protected_Access#Angriffsm.C3.B6glichkeiten"><tt class="big">https://de.wikipedia.org/wiki/Wi-Fi_Protected_Access#Angriffsm.C3.B6glichkeiten</tt></a><br />
+[18] <a href="https://de.wikipedia.org/wiki/Wired_Equivalent_Privacy#Schwachstellen"><tt class="big">https://de.wikipedia.org/wiki/Wired_Equivalent_Privacy#Schwachstellen</tt></a><br />
+[19] <a href="http://hostap.epitest.fi/cgit/hostap/plain/hostapd/hostapd.conf"><tt class="big">http://hostap.epitest.fi/cgit/hostap/plain/hostapd/hostapd.conf</tt></a><br />
+[20] <a href="http://wireless.kernel.org/en/users/Documentation/hostapd"><tt class="big">http://wireless.kernel.org/en/users/Documentation/hostapd</tt></a><br />
+[21] <a href="http://www.rjsmith.com/CIDR-Table.html"><tt class="big">http://www.rjsmith.com/CIDR-Table.html</tt></a><br />
+[22] <a href="https://de.wikipedia.org/wiki/Liste_von_IPv6-Tunnelbroker"><tt class="big">https://de.wikipedia.org/wiki/Liste_von_IPv6-Tunnelbroker</tt></a><br />
+    
+
+<div class="p"><!----></div>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Marvin Gülker</b>&nbsp;(<a href="http://www.quintilianus.eu/">Webseite</a>)
+ist Jura-Student, Programmierer und höchst interessiert
+an allem, was mit Netzwerken unter Linux zu tun hat.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=WLAN-AP mit dem Raspberry Pi#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_14_03_scratch2_tutorial" name="fm_14_03_scratch2_tutorial">Scratch-2-Tutorial</a></font></h1>von Horst Jens
+
+<div class="p"><!----></div>
+    <b>S</b><b>cratch&nbsp;<a href="http://scratch.mit.edu/">[1]</a> ist eine grafische Programmieroberfläche.
+In diesem Tutorial werden die Neuheiten von Scratch in der Version 2.0
+vorgestellt. Konstruiert wird ein kleines Spiel, bei welchem man Abwurfwinkel und
+Abwurfgeschwindigkeit einstellen muss, um einen Ball auf (mehrere) Fledermäuse zu
+schießen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Scratch 2 Tutorial“ erschien erstmals im RIS
+Journal 01&nbsp;<a href="http://spielend-programmieren.at/risjournal/001/scratch/">[2]</a>.</i>
+
+<div class="p"><!----></div>
+
+<h2>Scratch</h2>
+
+
+Die erste Version der Programmieroberfläche Scratch wurde 2003 von der
+Abteilung Lifelong Kindergarten Group&nbsp;<a href="http://llk.media.mit.edu/">[3]</a>
+des MIT Media Labs (Massachusetts Institute of 
+Technology&nbsp;<a href="http://www.media.mit.edu/">[4]</a>) entwickelt. Scratch ist 
+bis zur Version 1.4 freie Software (GPL-lizenziert). Der Sourcecode der 
+neueren Version (Scratch 2.0) ist laut Scratch-Homepage noch nicht 
+verfügbar, wird aber vermutlich ebenfalls frei lizenziert werden.
+
+<div class="p"><!----></div>
+Scratch 2.0 läuft rein im Webbrowser. Außer einer Internetverbindung
+und einem modernen Webbrowser (mit installiertem Adobe Flash) ist keine
+Installation erforderlich. Auf der Scratch-Website wird auch eine noch
+experimentelle Offline-Version&nbsp;<a href="http://scratch.mit.edu/scratch2download/">[5]</a>
+zum Download angeboten.
+
+<div class="p"><!----></div>
+In Scratch selbst können bewegbare, animierbare Grafiken – sogenannte
+Sprites&nbsp;<a href="https://de.wikipedia.org/wiki/Sprite_%28Computergrafik%29">[6]</a> – mit Skripten
+programmiert werden, ohne einen einzigen Befehl eintippen zu müssen. Stattdessen
+werden Logik-Blöcke ähnlich wie Puzzle-Steine mit der Maus aneinandergefügt.
+Dadurch eignet sich Scratch sehr gut für Programmieranfänger und Schulen, um
+z.&nbsp;B. kleine Spiele, Filme oder Animationen zu erstellen.
+
+<div class="p"><!----></div>
+Scratch wird mit einigen Grafiken und Soundeffekten ausgeliefert, welche
+löblicherweise alle unter
+
+Creative Commons (CC-BY-SA
+3.0&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/">[7]</a>) lizenziert sind
+(ausgenommen davon sind das Scratch-Markenzeichen, die Scratch-Katze und das
+-Logo). Die mit Scratch erstellten Spiele lassen sich per Knopfdruck
+weltweit veröffentlichen („<em>Share</em>“) wodurch sie ebenfalls CC-BY-SA 3.0 lizenziert
+sind. Durch die „<em>Look-inside</em>“-Funktion kann man jedes veröffentlichte Werk auf der
+Scratch-Website klonen („<em>Remix</em>“) und umbauen, ähnlich wie bei „erwachsenen“
+Code-Repositorys.
+
+<div class="p"><!----></div>
+
+<h2>Account anlegen</h2>
+
+
+Der erste Schritt, um mit Scratch arbeiten zu können, besteht darin, sich auf der
+Scratch-Homepage kostenlos zu registrieren und einen Scratch-Account 
+anzulegen. Sodann kann mittels „<em>New project</em>“ der 
+Scratch-Programmiereditor aufgerufen werden. Man sieht das Scratch-Maskottchen,
+eine orange Katze. 
+
+<div class="p"><!----></div>
+
+
+Es empfiehlt sich zu diesem Zeitpunkt das 
+Scratch-Projekt zu benennen (anstatt „Untitled“ im Feld oben einen 
+eigenen Namen hineintippen, z.&nbsp;B. „Wurfdemo“) sowie die Spracheinstellung 
+auf Englisch umzustellen (Weltkugel-Icon direkt rechts vom
+Scratch-Schriftzug oben links). Der Grund dafür ist, dass in fast allen
+Programmiersprachen englische Befehlsnamen verwendet werden und man sich
+(und seinen Schülern) nichts Gutes damit tut, „Wenn sonst“ anstatt das
+international gebräuchliche „If else“ lernen zu lassen. Die
+Spracheinstellungen lassen sich jederzeit ändern.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_sprites.png" alt="scratch_sprites.png" style="max-width:100%" /><br /><em>Sprites.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Anlegen der vier Sprites</h2>
+
+
+Die orange Katze kann man gleich löschen und erstellt stattdessen vier eigene
+Sprites: Eine Fledermaus (bat), einen Pfeil (nach rechts schauend), ein
+Wurfgeschoss (Basketball) sowie einen dicken grünen Strich (Wiese). Die ersten
+drei Sprites kann man (mit Hilfe des kleinen „<em>New sprite</em>“-Icons) aus dem
+Scratch-Katalog übernehmen, die Wiese wird mit Hilfe des Scratch-Editors selbst
+gezeichnet (Vektormodus).
+
+<div class="p"><!----></div>
+Im Prinzip kann man alle Sprites selber zeichnen oder
+eigene Grafiken hochladen: Zu beachten ist dabei, dass man die Rechte an den
+Grafiken haben sollte (sonst gibt es rechtliche Probleme, sobald man das
+Scratch-Spiel veröffentlicht) und
+
+dass das Wurfgeschoss rund gewählt wird, da es
+bei einem nicht-runden Flugobjekt (Ball, Kanonenkugel) auffällt, wenn sich das
+Flugobjekt nicht in Flugrichtung dreht.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_vier_sprites.png" alt="scratch_vier_sprites.png" style="max-width:100%" /><br /><em>Die vier benötigten Sprites.</em><br />
+
+<div class="p"><!----></div>
+Noch sind alle vier Sprites starr und unbewegt, da ihnen die Anweisungen fehlen.
+Zuerst kümmert man sich um ein paar globale Variablen.
+
+<div class="p"><!----></div>
+
+<h3>Globale Variablen</h3>
+
+
+Eine Variable kann man sich wie eine Sparbüchse vorstellen: Ein Behälter
+mit einem Namen (z.&nbsp;B. Klassenkasse), in dem ein sich über die Zeit
+ändernder Betrag enthalten ist. Globale Variablen bedeuten bei Scratch, dass
+alle Sprites diese Variablen sehen (und verändern) dürfen. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_globale_variablen.png" alt="scratch_globale_variablen.png" style="max-width:100%" /><br /><em>Globale Variablen.</em><br />
+
+<div class="p"><!----></div>
+Für dieses Beispiel werden folgende globale Variablen benötigt: Gravitation
+(gravity), Winkel, Kraft, Punkte und Level. Die Namen der Variablen sind
+beliebig wählbar. Allerdings sollte man das Zielpublikum bedenken: Wenn man sein
+Scratch-Projekt weltweit veröffentlichen will, sind englische Namen (oder noch
+besser selbsterklärende Grafiken) besser geeignet als deutsche Namen. Man
+erzeugt eine Variable durch Klicken auf den orangen „<em>Data</em>“-Knopf in der
+Bildschirmmitte und danach durch Klick auf den weißen „<em>Make a Variable</em>“-Button.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_globale_variablen_werte.png" alt="scratch_globale_variablen_werte.png" style="max-width:100%" /><br /><em>Werte der globalen Variablen.</em><br />
+
+<div class="p"><!----></div>
+Bei Erzeugung einer globalen Variable muss der schwarze Optionskreis 
+„<em>for all Sprites</em>“ gesetzt sein. Hat man die vier Variablen erzeugt, so finden sie
+sich als orange, verschiebbare Beschriftung im Spielfeld links wieder. Ob eine
+Variable überhaupt angezeigt wird, kann man mit einem Häkchen in der
+Bildschirmmitte vor dem Variablennamen festlegen. Die ersten drei Variablen
+sollen per Maus einstellbare Werte haben (Sliders): Dazu auf mit der rechten
+Maustaste im Fenster oben links auf die Variablen-Beschriftungen klicken und
+erst „<em>Slider</em>“ und dann „<em>Set Slider min and max</em>“ anklicken. Bei Gravity wählt
+man -20.00 bis 0.00 (die zwei Nullen hinter dem Dezimalpunkt sind wichtig), für
+Winkel Werte zwischen 0.00 und 90.00 und für Kraft Werte zwischen 0.00 und
+100.00 eingegeben. Punkte und Level bekommen keine Slider,
+sondern dienen rein
+der Anzeige der Variablenwerte.
+
+<div class="p"><!----></div>
+
+<h3>Wiese</h3>
+
+
+Nun zu den Skripten für die einzelnen Sprites. Am unkompliziertesten ist das
+Wiesen-Sprite: Es tut gar nichts und steht einfach nur herum. Sein Daseinszweck
+besteht – neben hübsch auszuschauen – darin, den Basketball bei Berührung erkennen
+zu lassen, dass sein Flug vorbei ist. Mit dem „<em>Vergrößern/Verkleinern</em>“-Icon (oben
+rechts) kann die Größe eines Sprites verändert werden. Die Wiese sollte den
+ganzen unteren Bildschirmrand ausfüllen. Wie jedes Sprite kann sie per Drag-and-drop
+(linke Maustaste gedrückt halten) verschoben werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_sprites_settings.png" alt="scratch_sprites_settings.png" style="max-width:100%" /><br /><em>Einstellungsmöglichkeiten für Sprites.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Pfeil</h3>
+
+
+Relativ einfach zu programmieren ist das Skript für den (nach rechts
+schauenden) Pfeil. Er symbolisiert Abwurfwinkel und
+Abwurfgeschwindigkeit. Diese beiden globalen Variablen lassen sich
+sowohl per Maus als auch per Tastatur (Pfeiltasten) verändern, wenn man
+das folgende Skript richtig
+
+nachbaut. Dazu wird das Pfeil-Sprite 
+angeklickt und danach die folgenden Befehle aneinandergefügt:
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_pfeil_sprite.png" alt="scratch_pfeil_sprite.png" style="max-width:100%" /><br /><em>Die Programmierung des Pfeil-Sprites.</em><br />
+
+<div class="p"><!----></div>
+
+
+<b>Hinweis:</b> Der „Code“ für die Sprites kann in den Bildern und auch nur
+dort nachgelesen werden. In der HTML- und EPUB-Version ohne Bilder sind
+diese verlinkt.
+
+<div class="p"><!----></div>
+
+
+Die braunen, halbrunden „Buckel“ findet man unter dem Menüpunkt „<em>Events</em>“. Die
+orangen Befehle „<em>set</em>“ (setze) und „<em>change</em>“ (verändere) findet man unter „<em>data</em>“.
+Die gelbe „<em>forever</em>“-Schleife findet man unter „<em>Control</em>“, den blauen
+„<em>point in direction</em>“-Befehl unter „<em>Motion</em>“ und den violetten „<em>set size</em>“-Befehl
+unter „<em>Looks</em>“. Die grünen Minus- und Plus-Operatoren finden sich unter 
+„<em>Operators</em>“. Auch wenn man nicht versteht, was die Befehle im Einzelnen tun, kann
+man sie (sogar ohne Lesekenntnisse) nachbasteln.
+
+<div class="p"><!----></div>
+Nun zum Programmablauf: Die „<em>grüne Fahne</em>“ (rechts oben im Spielfeld) startet das
+Spiel. Danach werden mit den „set“-Befehlen die Startwerte für die globalen
+Variablen gesetzt – der letzte Spieler hat sie möglicherweise
+verstellt. Die wie ein Schraubstock aussehende „forever“-Schleife wiederholt
+(loop) endlos die von ihr eingezwickten Befehle: Das Pfeil-Sprite dreht sich in
+Richtung des angegebenen Winkels. (Die Berechnung (90°-Winkel) ist erforderlich, 
+da Scratch 2 den Winkel 0 nach oben zeigen lässt und nicht nach rechts.) Per
+
+
+Klick auf das blaue „<em>i</em>“-Symbol beim Pfeil-Sprite kann eine Detailansicht
+geöffnet werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_pfeil_sprite_details.png" alt="scratch_pfeil_sprite_details.png" style="max-width:100%" /><br /><em>Detail-Ansicht des Pfeil-Sprites.</em><br />
+
+<div class="p"><!----></div>
+
+
+Dort den „<em>Rotation style</em>“ auf 360° (linkes Icon) einstellen.
+Der „<em>set size to (100 + Kraft)%</em>“-Befehl sorgt dafür, dass der Pfeil
+schrumpft und wächst. Das „100 +“ ist notwendig, damit der Pfeil auch bei
+einem Kraftwert von 0 sichtbar bleibt. Die vier „<em>when key pressed</em>“-Befehle 
+erlauben die Veränderung von Winkel und Kraft mit den Pfeiltasten.
+
+<div class="p"><!----></div>
+
+<h3>Fledermaus</h3>
+
+
+Ein ganz anderes Biest ist das Skript der Fledermaus, hier ist mehr zu
+tun. Das Fledermaus-Sprite besteht aus zwei (oder mehr) Bildern, um im Spiel
+animiert flattern zu können. Also auf das Fledermaus-Sprite klicken, oben
+mittig auf „<em>Costumes</em>“ klicken und per Katalog-Icon (links neben dem
+Pinsel) ein zweites Fledermaus-Kostüm hinzufügen. Praktischerweise
+sind
+im Scratch-Katalog gleich zwei passende Fledermaus-Kostüme enthalten.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_fledermaus_costumes.png" alt="scratch_fledermaus_costumes.png" style="max-width:100%" /><br /><em>Die beiden Kostüme der Fledermaus.</em><br />
+
+<div class="p"><!----></div>
+Wer künstlerisch begabt ist, kann noch mehr Fledermaus-Kostüme
+hinzufügen, wodurch die Animation im fertigen Spiel flüssiger
+aussieht. Ein beliebter Trick ist es, ein Kostüm öfter zu duplizieren (per
+Rechtsklick) und dann in jedem Kostüm z.&nbsp;B. die Augenfarbe zu ändern –
+dadurch entsteht später ein „glühender Augen“-Effekt, der gut ausschaut
+und nicht allzu viel Arbeit erfordert.
+
+<div class="p"><!----></div>
+Zuerst einmal braucht die Fledermaus eine private Variable: Das
+Fledermaus-Sprite anklicken, von „<em>Costumes</em>“ wieder auf „<em>Scripts</em>“
+wechseln,
+
+
+auf „<em>Data</em>“ klicken, „<em>Make a Variable</em>“ anklicken, 
+„<em>for this sprite only</em>“ einstellen und den Namen „dx“ vergeben. 
+Diese Variable muss nicht ständig sichtbar sein, deshalb das Häkchen 
+wegnehmen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_fledermaus_variablen.png" alt="scratch_fledermaus_variablen.png" style="max-width:100%" /><br /><em>Die Variablen der Fledermaus.</em><br />
+
+<div class="p"><!----></div>
+Wie man sieht, bleiben die globalen Variablen sichtbar, wenn man das
+Fledermaus-Sprite anklickt. Die private Variable „dx“ wird unsichtbar,
+wenn man zwischendurch ein anderes Sprite (z.&nbsp;B. die Wiese) anklickt. Das
+bedeutet, dass jedes Sprite unabhängig voneinander eine private Variable
+namens „dx“ haben kann, ohne dass diese Variablen sich gegenseitig in
+die Quere kommen. „dx“ steht übrigens für „Delta-x“ und meint die
+Geschwindigkeit auf der x-Achse (Rechts-Links-Bewegung). Man kann auch
+jeden beliebigen anderen Namen vergeben.
+
+<div class="p"><!----></div>
+Das Skript für die Fledermaus ist etwas aufwendiger zu programmieren:
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_fledermaus_sprite.png" alt="scratch_fledermaus_sprite.png" style="max-width:100%" /><br /><em>Die Programmierung des Fledermaus-Sprites.</em><br />
+
+<div class="p"><!----></div>
+Der blaue „<em>if on edge, bounce</em>“-Befehl dient nur zur Erklärung, er kann auch
+weggelassen werden. Da er nicht an einen „Buckel“ angedockt ist, wird er sowieso
+nicht ausgeführt. Zur Erläuterung: Der Code unter der grünen Fahne setzt zu
+Spielstart die globalen Variablen Level und Punkte auf den Wert 0 und macht das
+Fledermaus-Sprite unsichtbar. Kurz zuvor wird aber noch ein sichtbarer Klon
+des Fledermaus-Sprites erzeugt.
+
+<div class="p"><!----></div>
+Der eigentliche Progammcode beginnt mit „<em>When i start as a clone</em>“. Was macht
+der frisch erzeugte Fledermaus-Klon? Er bekommt von den grünen 
+„<em>pick random number</em>“-Befehlen eine zufällige Position (x- und y- Koordinate,
+blau) zugewiesen
+und eine zufällige Geschwindigkeit (private Variable dx, orange). Danach wird
+per „<em>reset timer</em>“ (hellblau) eine interne Stoppuhr auf Null gesetzt und eine
+sehr große „<em>Forever</em>“-Schleife abgearbeitet: Zuerst bewegt sich die Fledermaus
+mit der Geschwindigkeit „dx“ in Flugrichtung („<em>move</em>“-Befehl, blau). Der blaue
+„<em>set rotation style to left-right</em>“-Befehl bei Spielstart hat dafür gesorgt,
+dass die Fledermaus nicht nach einer Richtungsänderung mit dem Kopf nach unten
+fliegt. Die zwei gelben „<em>if</em>“-Befehle testen, ob sich die blaue x-Position der
+Fledermaus in verbotenen Bereichen (größer als 210 oder kleiner als -210)
+befindet und dreht ggf. die Fledermaus in eine andere Richtung. Diesen Teil
+hätte eigentlich der blaue „<em>if on edge, bounce</em>“-Befehl erledigen sollen,
+allerdings führte dies dazu, dass die Fledermaus
+immer wieder hilflos flatternd in der Wand stecken blieb. Die x- und y-Position
+eines Punktes auf dem Spielfeld erfährt man, indem man den Mauszeiger dorthin
+bewegt und die Koordinaten rechts unten unter dem Spielfeld abliest.
+
+<div class="p"><!----></div>
+Danach kommt ein vierfach verschachtelter „<em>if</em>“-Befehl bei dem sich alles
+um eine Kollisionserkennung mit dem Basketball dreht:
+Da auf Berührung zwischen Fledermaus und Basketball mehrmals pro Sekunde
+getestet wird (pro dargestelltem Bild), kann der Basketball gar nicht so schnell von
+der Fledermaus abprallen (dazu später mehr) und würde pro Treffer
+mehrere Kollisionserkennungen auslösen. Deshalb wird mit der Abfrage
+der hellblauen „<em>Timer</em>“-Variable sichergestellt, dass seit der letzten Berührung
+mehr als eine Sekunde vergangen ist und erst dann weitergemacht.
+
+<div class="p"><!----></div>
+In diesem Fall wird die globale Variable „Punkte“ um eins erhöht
+(„<em>change</em>“) und falls die Punktezahl glatt durch 5 teilbar ist (Punkte
+modulo 5 = 0), kommt der Spieler in den nächsthöheren Level. Dabei
+wird aber nicht einfach nur die globale Variable „Level“ erhöht, sondern
+ein sogenanntes „Event“ generiert und per „<em>broadcast</em>“-Kommando
+verkündet. Anschließend wird die Stoppuhr per „<em>reset timer</em>“ (hellblau)
+wieder auf 0 zurückgesetzt und noch ein „<em>reflect</em>“-Event per „<em>broadcast</em>“
+versendet, damit der Basketball weiß, dass er von der Fledermaus
+abprallen soll.
+
+<div class="p"><!----></div>
+Parallel dazu wird ein zweiter „<em>when i start as a clone</em>“-Befehl
+ausgeführt. Der sorgt dafür, dass die Fledermaus sichtbar ist („<em>show</em>“,
+violett) und wechselt alle 0.05 Sekunden (Dezimalpunkt) das
+Fledermaus-Kostüm. Dadurch entsteht der Flatter-Effekt bzw. die Animation.
+
+<div class="p"><!----></div>
+Am seltsamsten ist vermutlich der braune 
+„<em>When i receive next Level</em>“-Befehl: Hier wird erst ein neuer 
+Fledermaus-Klon generiert und danach der aktuelle Klon mit „<em>delete this clon</em>“
+gelöscht. Warum? Das kann man testen, wenn man den „<em>delete this clon</em>“-Befehl einmal
+weglässt und das fertige Spiel ein paar Runden lang spielt: Exponentielles
+Fledermauswachstum droht! Erklärung: Jede Fledermaus, auch die unsichtbare
+Ursprungs-Fledermaus, reagiert auf den „NextLevel-Event“. Wenn eine unsichtbare
+und eine sichtbare Fledermaus jeweils einen sichtbaren Klon erzeugen, gibt es bei
+Level 2 schon drei sichtbare und eine unsichtbare Fledermaus.
+Bei Level 3 sind es dann schon sieben sichtbare Fledermäuse, bei
+Level 4 schon fünfzehn usw.
+
+<div class="p"><!----></div>
+
+<h3>Basketball</h3>
+
+
+Nun zum schwierigsten Sprite-Skript, dem für den Basketball. Zunächst
+braucht der Basketball gleich drei unsichtbare, private Variablen,
+nämlich
+
+
+„dx“, „dy“ und „fliegt“. Letztere ist ein sogenanntes „Flag“ oder
+auch „boolesche Variable“: Sie soll nur zwei verschiedene Werte annehmen
+können, nämlich „der Basketball fliegt“ oder eben „der Basketball
+fliegt nicht“. Dies wird durch die beiden Werte 1 (fliegt)
+und 0 (fliegt nicht) realisiert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_basketball_private_variablen.png" alt="scratch_basketball_private_variablen.png" style="max-width:100%" /><br /><em>Die drei privaten Variablen des Basketball-Sprites.</em><br />
+
+<div class="p"><!----></div>
+Delta-X und Delta-Y hingegen sind 
+Vektoren&nbsp;<a href="https://de.wikipedia.org/wiki/Vektor">[8]</a> und geben die 
+Fluggeschwindigkeit in der x-Achse (links-rechts) bzw. in der y-Achse
+(oben-unten) an. Beide zusammengenommen beschreiben, ob der Ball schräg fliegt.
+
+<div class="p"><!----></div>
+Der Code für den Ball benutzt die dunkel-violette
+„<em>More Blocks</em>“-Funktionalität von Scratch 2, um ein Unterprogramm zu realisieren:
+
+<div class="p"><!----></div>
+Die „Ball ins Eck“-Subroutine wird von drei 
+verschiedenen Stellen  
+
+aufgerufen und stellt den Ball wieder in die Ecke links unten, knapp
+über die Wiese.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_basketball_sprite.png" alt="scratch_basketball_sprite.png" style="max-width:100%" /><br /><em>Die Programmierung des Ball-Sprites.</em><br />
+
+<div class="p"><!----></div>
+Delta-X und Delta-Y werden über die Cosinus- bzw. Sinus-Funktion von
+Scratch berechnet:
+
+dorthin fliegt der Ball. Die Schwerkraft (gravity)
+zieht die ganze Zeit über den Ball nach unten und verändert sein
+Delta-Y. Wenn der Basketball die Wiese berührt oder die Taste „<i>E</i>“ gedrückt
+wurde, hört er auf zu fliegen und wird in die Ecke teleportiert. Außerdem
+lauscht der Basketball auf den „<em>reflect</em>“-Event, welcher von einem
+beliebigen Fledermaus-Klon via „<em>broadcast</em>“ gesendet werden kann: In diesem Fall
+drehen sich Delta-X und Delta-Y um, der Ball wird reflektiert.
+
+<div class="p"><!----></div>
+
+
+
+
+<img src="freiesMagazin-2014-03-bilder-Dateien/scratch_spiel.png" alt="scratch_spiel.png" style="max-width:100%" /><br /><em>Das komplette Spiel.</em><br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://scratch.mit.edu/"><tt class="big">http://scratch.mit.edu/</tt></a><br />
+[2] <a href="http://spielend-programmieren.at/risjournal/001/scratch/"><tt class="big">http://spielend-programmieren.at/risjournal/001/scratch/</tt></a><br />
+[3] <a href="http://llk.media.mit.edu/"><tt class="big">http://llk.media.mit.edu/</tt></a><br />
+[4] <a href="http://www.media.mit.edu/"><tt class="big">http://www.media.mit.edu/</tt></a><br />
+[5] <a href="http://scratch.mit.edu/scratch2download/"><tt class="big">http://scratch.mit.edu/scratch2download/</tt></a><br />
+[6] <a href="https://de.wikipedia.org/wiki/Sprite_%28Computergrafik%29"><tt class="big">https://de.wikipedia.org/wiki/Sprite_(Computergrafik)</tt></a><br />
+[7] <a href="http://creativecommons.org/licenses/by-sa/3.0/"><tt class="big">http://creativecommons.org/licenses/by-sa/3.0/</tt></a><br />
+[8] <a href="https://de.wikipedia.org/wiki/Vektor"><tt class="big">https://de.wikipedia.org/wiki/Vektor</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Horst Jens</b>&nbsp;(<a href="http://spielend-programmieren.at/">Webseite</a>)
+ist Gründer der Firma Spielend-Programmieren und bietet dort für Jugendliche 
+und Schulen Open-Source-Game-Programming-Kurse an.
+Daneben veröffentlicht er 
+das <a href="http://spielend-programmieren.at/doku.php/de:ris:start">RIS Journal</a> 
+und einen <a href="http://biertaucher.at">Podcast</a>.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Scratch-2-Tutorial#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_14_03_reveal_js" name="fm_14_03_reveal_js">Präsentationen mit HTML und reveal.js</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    
+
+<b>K</b><b>lassischerweise werden Präsentationen und Vorträge mit Desktop-Programmen wie
+PowerPoint, Impress oder Keynote erstellt. Eine Alternative ist die Kombination
+aus HTML, CSS und JavaScript, die durch den Einsatz der
+JavaScript-Bibliothek reveal.js&nbsp;<a href="http://lab.hakim.se/reveal-js/">[1]</a> noch deutlich
+vereinfacht wird.</b>
+
+<div class="p"><!----></div>
+reveal.js stellt alles Notwendige bereit, um schnell und einfach eine HTML-basierte
+Präsentation zu erstellen. Dazu reichen auch rudimentäre HTML-Kenntnisse, sofern
+man keine (größeren) individuellen Anpassungen vornehmen möchte.
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+
+Um reveal.js zu nutzen, lädt man sich zuerst die aktuelle, stabile Version von
+der Download-Seite&nbsp;<a href="https://github.com/hakimel/reveal.js/releases">[2]</a> herunter
+und entpackt sie in ein beliebiges Verzeichnis. Danach ist die Bibliothek
+einsatzbereit. Wer testen möchte, ob alles auch wirklich funktioniert, der ruft
+die Datei <b><tt class="big">index.html</tt></b> auf, die sich in dem entpackten Verzeichnis befindet.
+
+<div class="p"><!----></div>
+
+<h2>Grundgerüst</h2>
+
+
+Das minimale Grundgerüst einer Präsentation, welche aus nur zwei Folien besteht,
+sieht mit reveal.js wie folgt aus:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;!doctype html&#62;<br />
+&lt;html lang="de"&#62;<br />
+&nbsp;&nbsp;&lt;head&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&#62;Minimale reveal.js Präsentation&lt;/title&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="css/reveal.min.css"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="css/theme/default.css" id="theme"&#62;<br />
+&nbsp;&nbsp;&lt;/head&#62;<br />
+&nbsp;&nbsp;&lt;body&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="reveal"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="slides"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&#62;Eine Präsentation mit reveal.js&lt;/h1&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&#62;Hier ist die zweite Folie&lt;/p&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="lib/js/head.min.js"&#62;&lt;/script&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="js/reveal.min.js"&#62;&lt;/script&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reveal.initialize({<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;controls: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;progress: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;history: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;center: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theme: Reveal.getQueryHash().theme, // available themes are in /css/theme<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition: Reveal.getQueryHash().transition || 'default' // default/cube/page/concave/zoom/linear/fade/none<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&#62;<br />
+&nbsp;&nbsp;&lt;/body&#62;<br />
+&lt;/html&#62;</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2014-03-listings/fm_reveal_1.html">fm_reveal_1.html</a></i>
+
+<div class="p"><!----></div>
+Es werden die zwei benötigten Stylesheets geladen, die beiden JavaScript-Bibliotheken und dann,
+
+im letzten <b><tt class="big">&lt;script&#62;</tt></b>-Abschnitt,
+die grundlegende Konfiguration vorgenommen.
+
+<div class="p"><!----></div>
+Es werden die zwei benötigten Stylesheets geladen, die beiden benötigten
+JavaScript-Bibliotheken und dann, im letzten <b><tt class="big">&lt;script&#62;</tt></b>-Abschnitt,
+die grundlegende Konfiguration vorgenommen.
+
+<div class="p"><!----></div>
+Die eigentliche Präsentation, also die Folien, stehen zwischen den beiden
+HTML-Tags <b><tt class="big">&lt;div class="reveal"&#62;</tt></b> und <b><tt class="big">&lt;div class="slides"&#62;</tt></b>. Jede Folie wird dabei
+von einem <b><tt class="big">&lt;section&#62;</tt></b>-Tag umschlossen.
+
+<div class="p"><!----></div>
+
+<h2>Eigene Präsentation erstellen</h2>
+
+
+Durch das Hinzufügen bzw. Editieren von Sektionen werden weitere Folie
+hinzugefügt. Grundsätzlich können dabei alle gültigen HTML-Tags zum Einsatz
+kommen. Die Überschrift erster Ebene <b><tt class="big">&lt;h1&#62;</tt></b> ist dabei für den Präsentationstitel
+gedacht, so dass auf Folgefolien „nur“ noch <b><tt class="big">&lt;h2&#62;</tt></b>, <b><tt class="big">&lt;h3&#62;</tt></b> usw. benutzt werden sollte.
+
+<div class="p"><!----></div>
+Ist die Präsentation fertig erstellt, kann die HTML-Datei im Verzeichnis, in
+dem auch die Dateien bzw. Verzeichnisse von reveal.js liegen, gespeichert
+werden. Zum Betrachten wird diese dann einfach im Browser aufgerufen.
+
+<div class="p"><!----></div>
+
+<h2>Präsentation betrachten</h2>
+
+
+Ist die Datei <b><tt class="big">fm_reveal_1.html</tt></b> im Browser geladen, sieht man direkt die erste Folie. Alle
+(halbwegs) aktuellen Browser mit aktiviertem JavaScript sollten dabei keinerlei
+Probleme haben, alles korrekt darzustellen. Details zur Browser-Unterstützung
+findet man auf der Projektseite unter
+Browser-Support&nbsp;<a href="https://github.com/hakimel/reveal.js/wiki/Browser-Support">[3]</a>.
+
+<div class="p"><!----></div>
+Gesteuert, also vor und zurück, wird die Präsentation mit den Cursor-Tasten. Ein
+Druck auf „<i>Esc</i>“ wechselt in die Folienübersicht, ein Mausklick auf die
+entsprechende Folie springt direkt dorthin. Mit „<i>B</i>“ kann die Präsentation
+pausiert werden, d.&nbsp;h. der Bildschirm wird abgedunkelt. Ein weiterer Druck auf
+„<i>B</i>“ bringt die Präsentation zurück. Mit einem Tastendruck auf „<i>Pos 1</i>“ geht es 
+zurück an den Anfang der Navigation.
+
+<div class="p"><!----></div>
+
+<h2>Horizontale und vertikale Navigation</h2>
+
+
+Im obigen Beispiel liegen die beiden Folien linear hintereinander. reveal.js
+kennt aber zusätzlich noch eine vertikale Navigation, also quasi „Unterfolien“.
+Dazu verschachtelt man die <b><tt class="big">&lt;section&#62;</tt></b>-Tags einfach. Im folgenden Beispiel werden
+der zweiten Folie aus dem Beispiel des Grundgerüsts zwei Unterfolien hinzugefügt.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">&lt;section&#62;<br />
+&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&#62;Das ist die zweite Folie&lt;/p&#62;<br />
+&nbsp;&nbsp;&lt;/section&#62;  <br />
+&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Unterfolie 1<br />
+&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Unterfolie 2<br />
+&nbsp;&nbsp;&lt;/section&#62;<br />
+&lt;/section&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Gelangt man zur 2. Folie, so kann ebenfalls mit der Cursor-Tasten (Cursor hoch,
+Cursor runter) durch die „darunter“ liegenden Folien navigiert werden.
+
+<div class="p"><!----></div>
+
+<h2>Links zwischen Folien</h2>
+
+
+Die Präsentation muss aber nicht linear durchlaufen werden, es können über Links
+auch direkt Folien aufgerufen werden. Dies geht auf zwei Arten.
+
+<div class="p"><!----></div>
+Zum einem kann die Folie über ihre Nummer angesprochen werden. Die ist übrigens
+auch immer in der Adressleiste des Browsers sichtbar. Der folgenden Link würde
+direkt auf die Folie mit dem Text „Unterfolie 2“ aus dem Beispiel oben führen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">&lt;a href="#/2/2"&#62;Link zu Unterfolie 2&lt;/a&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Zum anderen kann einer oder mehreren Sektion(en) eine <b><tt class="big">id</tt></b> gegeben werden, über
+die die Folie dann verlinkbar ist.
+
+<div class="p"><!----></div>
+Wird der <b><tt class="big">&lt;section&#62;</tt></b>-Tag der zweiten Folie z.&nbsp;B. so geändert:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">&lt;section id="zweite_folie"&#62;</div>
+
+<div class="p"><!----></div>
+
+
+so würde der Link
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">&lt;a href="#zweite_folie"&#62;Zur 2. Folie&lt;/a&#62;</div>
+
+<div class="p"><!----></div>
+
+
+darauf verweisen. Diese Variante sollte man bevorzugen, denn die
+Nummer eine Folie ändert sich spätestens dann, wenn davor noch weitere eingefügt werden.
+
+<div class="p"><!----></div>
+
+<h2>Text einblenden</h2>
+
+
+Manchmal ist es auch gewollt, dass nach und nach Punkte/Texte auf einer Folie
+eingeblendet werden. Dies ist auch mit reveal.js möglich. Dazu muss dem
+einzublendendem HTML-Element lediglich die CSS-Klasse fragment zugeordnet
+werden. Wenn folgende Sektion im Beispiel hinzugefügt wird:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;section&#62;<br />
+&nbsp;&nbsp;&lt;p&#62;Eine Liste:&lt;/p&#62;<br />
+&nbsp;&nbsp;&lt;ul&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="fragment"&#62;Erstens&lt;/li&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="fragment"&#62;Zweitens&lt;/li&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="fragment"&#62;Drittens&lt;/li&#62;<br />
+&nbsp;&nbsp;&lt;/ul&#62;</div>
+
+<div class="p"><!----></div>
+
+
+So würde beim Wechsel auf diese Folie nur der Text „Eine Liste:“ angezeigt
+werden und mit jedem Druck auf die Cursor-Taste nach rechts ein weiterer Punkt.
+<b><tt class="big">class=fragment</tt></b> kann übrigens auch auf andere HTML-Elemente angewendet werden,
+nicht nur auf Listenelemente.
+
+<div class="p"><!----></div>
+Alternativ gibt es noch die Möglichkeit, Elemente hervorzuheben statt
+einzublenden. Wird das <b><tt class="big">class=fragment</tt></b> durch <b><tt class="big">class=fragment grow</tt></b> ersetzt, so
+sind alle Listenpunkte sichtbar, werden beim Durchlaufen aber größer. reveal.js
+kennt hier auch noch eine ganze Reihe anderer Effekte wie z.&nbsp;B. Einfärben,
+Kleiner werden, Verschwinden lassen usw.
+
+<div class="p"><!----></div>
+
+<h2>Einbinden von Markdown-Syntax</h2>
+
+
+Folien können in reveal.js aber nicht nur in reinem HTML erstellt werden, es
+wird auch die Auszeichnungssprache
+Markdown&nbsp;<a href="https://de.wikipedia.org/wiki/Markdown">[4]</a> unterstützt.
+
+<div class="p"><!----></div>
+Damit die Markdown-Syntax korrekt interpretiert wird, müssen im letzten
+<b><tt class="big">&lt;script&#62;</tt></b>-Block des Grundgerüsts die folgenden Zeilen ergänzt werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">dependencies: [<br />
+&nbsp;&nbsp;{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },<br />
+&nbsp;&nbsp;{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }<br />
+&nbsp;&nbsp;]</div>
+
+<div class="p"><!----></div>
+
+
+Nun kann z.&nbsp;B. folgender Sektion, die Markdown enthält, hinzugefügt werden:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;section data-markdown&#62;<br />
+&nbsp;&nbsp;&lt;script type="text/template"&#62;<br />
+&nbsp;&nbsp;## Markdown<br />
+&nbsp;&nbsp;Ein *bisschen* Markdown **Syntax** hier.<br />
+&nbsp;&nbsp;&lt;/script&#62;<br />
+&lt;/section&#62;</div>
+
+<div class="p"><!----></div>
+
+
+Die komplette geänderte Präsentationsdatei sieht dann so aus:
+
+<div class="p"><!----></div>
+
+<div class="listing">&lt;!doctype html&#62;<br />
+&lt;html lang="de"&#62;<br />
+&nbsp;&nbsp;&lt;head&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&#62;Minimale reveal.js Präsentation&lt;/title&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="css/reveal.min.css"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="css/theme/default.css" id="theme"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- der folgende script-Block wird zum Generieren eines PDF<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;im Browser Google Chrome benötigt--&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&#62;<br />
+			document.write( '&lt;link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print"&#62;' );<br />
+		&lt;/script&#62;<br />
+&nbsp;&nbsp;&lt;/head&#62;<br />
+&nbsp;&nbsp;&lt;body&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="reveal"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="slides"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&#62;Eine Präsentation mit reveal.js&lt;/h1&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#/2/2"&#62;Link zur Unterfolie 2&lt;/a&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section id="zweite_folie"&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&#62;Hier ist die zweite Folie&lt;/p&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;  <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unterfolie 1<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unterfolie 2<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#zweite_folie"&#62;Zur 2. Folie&lt;/a&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&#62;Eine Liste:&lt;/p&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="fragment grow"&#62;Erstens&lt;/li&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="fragment grow"&#62;Zweitens&lt;/li&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="fragment grow"&#62;Drittens&lt;/li&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section data-markdown&#62;<br />
+		  &lt;script type="text/template"&#62;<br />
+		  ## Markdown<br />
+		  Ein *bisschen* Markdown **Syntax** hier.<br />
+		  &lt;/script&#62;<br />
+	    &lt;/section&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="lib/js/head.min.js"&#62;&lt;/script&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="js/reveal.min.js"&#62;&lt;/script&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&#62;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reveal.initialize({<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;controls: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;progress: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;history: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;center: true,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;theme: Reveal.getQueryHash().theme, // available themes are in /css/theme<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dependencies: [<br />
+&nbsp;&nbsp;{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },<br />
+&nbsp;&nbsp;{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }<br />
+&nbsp;&nbsp;]<br />
+&nbsp;&nbsp;});<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&#62;<br />
+&nbsp;&nbsp;&lt;/body&#62;<br />
+&lt;/html&#62;</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2014-03-listings/fm_reveal_2.html">fm_reveal_2.html</a></i>
+
+<div class="p"><!----></div>
+
+
+
+<h2>Weitere Möglichkeiten</h2>
+
+
+Das sind natürlich längst nicht alle Möglichkeiten, die reveal.js bietet. So kann
+ z.&nbsp;B. auch das Erscheinungsbild der Folien und die Art des
+Folienübergangs beeinflusst werden. Außerdem kann man die Präsentation auch in
+einen Automatikmodus versetzen, so dass alle X Sekunden eine neue Folie
+erscheint.
+
+<div class="p"><!----></div>
+Einen sehr guten Einblick über die vielfältigen weiteren Möglichkeiten bietet die
+Datei <b><tt class="big">index.html</tt></b>, die standardmäßig mit installiert wird.
+
+<div class="p"><!----></div>
+Des Weiteren bietet die Projektseite bei 
+Github&nbsp;<a href="https://github.com/hakimel/reveal.js">[5]</a> einen guten Überblick, besonders 
+über die verschiedenen Konfigurations- bzw. Initialisierungsmöglichkeiten. Dort 
+wird auch beschrieben, wie man auf JavaScript Events, die reveal.js erzeugt,
+reagieren kann bzw. wie man eigene Events erzeugt.
+
+<div class="p"><!----></div>
+
+<h2>Export</h2>
+
+
+Da reveal.js eine Reihe von CSS- und JavaScript-Dateien benötigt, lassen sich
+so erstellte Präsentationen nicht ohne Weiteres weitergeben. Jedenfalls nicht,
+ohne dem Empfänger einen ganzen Schwung Dateien schicken zu müssen. Hier sind
+PowerPoint &amp; Co. im Vorteil, da hier alles in einer (wenn auch vielleicht
+großen) Datei liegt.
+
+<div class="p"><!----></div>
+Eine Möglichkeit zur Weitergabe ist, die Präsentation als PDF-Datei zu
+speichern. Dies funktioniert aktuell aber nur mit dem Browser Google Chrome.
+Details dazu findet man
+auf der Projektseite&nbsp;<a href="https://github.com/hakimel/reveal.js#pdf-export">[6]</a>.
+
+<div class="p"><!----></div>
+
+
+
+<h2>Alternativen</h2>
+
+
+Möchte man nicht mit einem der eingangs genannten Office- oder anderen
+Desktop-Programmen präsentieren, so gibt es auch im Bereich HTML noch weitere
+Möglichkeiten.
+
+<div class="p"><!----></div>
+deck.js&nbsp;<a href="http://imakewebthings.com/deck.js/">[7]</a> ist ein weiteres HTML-, CSS- und
+JavaScript-basiertes System, das aber einfacher als reveal.js ist. Das
+ebenfalls HTML-basierte impress.js&nbsp;<a href="http://bartaz.github.io/impress.js/">[8]</a>
+verfolgt einen völlig anderen Ansatz der Darstellung: Die Darstellung ist 
+nicht mehr klassisch-sequentiell, sondern man kann dynamisch in 2-D und 3-D
+zwischen den Daten bzw. dem Text „herumfliegen“.
+
+<div class="p"><!----></div>
+Wer gar kein HTML verwenden möchte, der kann Präsentationen auch mit Hilfe von LaTeX
+und der Beamer-Klasse&nbsp;<a href="https://de.wikipedia.org/wiki/Beamer_%28LaTeX%29">[9]</a>
+erzeugen.
+
+<div class="p"><!----></div>
+
+<h2>Zusammenfassung</h2>
+
+
+reveal.js ist eine einfache und elegante Möglichkeit, Präsentationen für den
+Browser mittels HTML, CSS und JavaScript zu erzeugen.
+
+<div class="p"><!----></div>
+Die Einstiegshürde ist dabei sehr niedrig. Präsentationen im Standardlayout sind
+sehr schnell angelegt. Wer möchte, kann aber trotzdem detaillierten Einfluss auf
+Darstellung und Ablauf der Präsentationen nehmen.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://lab.hakim.se/reveal-js/"><tt class="big">http://lab.hakim.se/reveal-js/</tt></a><br />
+[2] <a href="https://github.com/hakimel/reveal.js/releases"><tt class="big">https://github.com/hakimel/reveal.js/releases</tt></a><br />
+[3] <a href="https://github.com/hakimel/reveal.js/wiki/Browser-Support"><tt class="big">https://github.com/hakimel/reveal.js/wiki/Browser-Support</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Markdown"><tt class="big">https://de.wikipedia.org/wiki/Markdown</tt></a><br />
+[5] <a href="https://github.com/hakimel/reveal.js"><tt class="big">https://github.com/hakimel/reveal.js</tt></a><br />
+[6] <a href="https://github.com/hakimel/reveal.js#pdf-export"><tt class="big">https://github.com/hakimel/reveal.js#pdf-export</tt></a><br />
+[7] <a href="http://imakewebthings.com/deck.js/"><tt class="big">http://imakewebthings.com/deck.js/</tt></a><br />
+[8] <a href="http://bartaz.github.io/impress.js/"><tt class="big">http://bartaz.github.io/impress.js/</tt></a><br />
+[9] <a href="https://de.wikipedia.org/wiki/Beamer_%28LaTeX%29"><tt class="big">https://de.wikipedia.org/wiki/Beamer_(LaTeX)</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.de/">Webseite</a>)
+hat bisher für seine (beruflichen) Präsentationen PowerPoint benutzt. In Zukunft
+wird er aber auch für bestimmte Anwendungen auch reveal.js in Betracht ziehen.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Pr%C3%A4sentationen mit HMTL und reveal.js#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+<h1><font color="#595959"><a id="fm_14_03_rollmup" name="fm_14_03_rollmup">Roll'm Up - Ein altes Flipperspiel neu entdeckt</a></font></h1>von Hans-Joachim Baader
+
+<div class="p"><!----></div>
+    <b>E</b><b>in 16 Jahre altes Flipperspiel für Linux, von dem kein Quellcode verfügbar 
+ist, wird wieder zum Leben erweckt. Dabei muss man nur geringfügige 
+Anpassungen an seinem System vornehmen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Der Artikel „Roll'm Up“ erschien erstmals bei 
+Pro-Linux&nbsp;<a href="http://www.pro-linux.de/artikel/2/1663/rollm-up-ein-altes-flipperspiel-neu-entdeckt.html">[1]</a>.</i>
+
+<div class="p"><!----></div>
+
+<img src="freiesMagazin-2014-03-bilder-Dateien/rollmup-startbildschirm.jpg" alt="rollmup-startbildschirm.jpg" style="max-width:100%" /><br /><em>Roll'm-Up-Startbildschirm.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Hintergrund</h2>
+
+
+Zur Werbestrategie der niederländischen Brauerei 
+Dommelsch&nbsp;<a href="http://www.dommelsch.nl/">[2]</a> gehörte es eine Zeit lang, kostenlose 
+Spiele zu veröffentlichen, natürlich mit dem eigenen Logo. Sie simulieren 
+typische Spiele, die man in Kneipen findet, wie Billard (Pool'm Up), Darts 
+(Dart'm Up) oder Flipperautomaten (Roll'm Up). Das 1998 veröffentlichte 
+Flipperspiel „Roll'm
+
+
+<div class="p"><!----></div>
+Up“ stellt dabei eine Besonderheit dar, da es auch in 
+einer Linux-Version herausgegeben wurde. Soweit bekannt, sollte es das 
+einzige Spiel der Serie mit einer Linux-Ausgabe bleiben.
+
+<div class="p"><!----></div>
+Roll'm Up wurde von einer Entwicklergruppe namens „Lost Boys“ programmiert, 
+deren Webseite heute allerdings nicht mehr existiert. Das Spiel wurde in 
+einem generischen Tar-Paket verteilt, das unter allen damaligen 
+Linux-Distributionen lauffähig war. Doch läuft es auch heute noch? Die 
+Antwort lautet erfreulicherweise: Ja. Aber man muss etwas dafür tun, die 
+Bordmittel aktueller Distributionen reichen nicht aus.
+
+<div class="p"><!----></div>
+Ist es Roll'm Up überhaupt wert, dass man es noch einmal entstaubt? Immerhin 
+fiel es in den letzten Jahren weitgehend dem Vergessen anheim. Doch wer sich 
+noch erinnern kann, wird bestätigen, dass es im Vergleich mit den wenigen 
+Alternativen damals recht gut war. Kein
+Wunder, wurde es doch für damals 
+aktuelle PCs 
+entwickelt, was gute Grafik und guten Sound bedingte. 
+
+Flipperspiele, die gleichwertig oder besser waren,
+blieben für Linux in den 
+letzten 16 Jahren Mangelware. Lediglich über Wine oder Emulatoren konnte man 
+besser flippern.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/rollmup-titelbildschirm.jpg" alt="rollmup-titelbildschirm.jpg" style="max-width:100%" /><br /><em>Roll'm-Up-Titelbildschirm.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Installation</h2>
+
+
+Roll'm Up ist über Tech Week 
+Europe&nbsp;<a href="http://downloads.techweekeurope.co.uk/22252/roll-m-up-1/">[3]</a> oder 
+von Pro-Linux&nbsp;<a href="http://www.pro-linux.de/files/rollemup/Rollemup.tar.gz">[4]</a> zu 
+bekommen. Das Tar-Archiv kann mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ tar tvzf Rollemup.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+entpackt werden. Das resultierende Verzeichnis <b><tt class="big">Rollemup</tt></b> setzt man anschließend mit 
+
+<div class="p"><!----></div>
+
+<div class="command">$ chown -R $USER Rollemup</div>
+
+<div class="p"><!----></div>
+
+
+auf den richtigen Besitzer. Mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ cd Rollemup<br />
+$ ./Rollemup</div>
+
+<div class="p"><!----></div>
+
+
+kann man das Spiel starten. Das wird ziemlich sicher mit einer Fehlermeldung enden, zum Beispiel:
+
+<div class="p"><!----></div>
+
+<div class="command">error while loading shared libraries: libstdc++.so.2.8: cannot open shared object file: No such file or directory</div>
+
+<div class="p"><!----></div>
+
+
+Das erste Problem ist, dass die meisten aktuellen Systeme 64-bittig sind, 
+was es 1998 (im x86-Bereich) noch gar nicht gab. Es ist als erstes nötig, 
+die 32-Bit-Bibliotheken zu installieren, was aufgrund der 
+Multiarch-Fähigkeit der meisten Distributionen kein Problem mehr darstellt. 
+Es werden nur <b>libc</b>, <b>libX11</b> (und einige zugehörige Bibliotheken), 
+<b>libpthread</b> und <b>libstdc++.so.2.8</b> benötigt, wovon die ersten drei 
+absolute Basisbibliotheken darstellen. Wie sich zeigt, sind die aktuellen 
+Versionen dieser Bibliotheken vollständig kompatibel mit einem Programm von 
+1998.
+
+<div class="p"><!----></div>
+Ein Problem stellt lediglich <b>libstdc++.so.2.8</b> dar, da diese Bibliothek in 
+genau dieser Version 
+vorliegen muss. Keine aktuelle Distribution enthält 
+diese Version, und selbst im Internet ist es schwer, sie zu finden. Für 
+RPM-basierte Distributionen bietet der FTP-Server für Roll'm 
+Up&nbsp;<a href="ftp://ftp.bgtelecom.ru/pub/Linux/app/games/">[5]</a> ein RPM-Paket (ebenfalls auf 
+auf Pro-Linux 
+erhältlich&nbsp;<a href="http://www.pro-linux.de/files/rollemup/libstdc++-2.8.1-1.i386.rpm">[6]</a>).
+Dieses lässt sich auch problemlos installieren. Hier hat RPM einen 
+Vorteil, da es wenig Abhängigkeitsprüfungen vornimmt. Eine andere Quelle ist 
+ein 
+RPM-Paket&nbsp;<a href="ftp://ftp.sunet.se/pub/Linux/distributions/redhat/redhat-archive/redhat/linux/5.2/en/os/i386/RedHat/RPMS/libstdc++-2.8.0-14.i386.rpm">[7]</a>
+aus einem alten Archiv von Red Hat 5.2, das auch mit anderen Distributionen 
+funktioniert.
+
+<div class="p"><!----></div>
+Für Debian ist es nicht so leicht, da die Debian-Archive nicht so weit 
+zurückreichen (man könnte aber auch das obige RPM-Paket mit alien 
+installieren). Man kann die erste der fünf ISO-Dateien von Debian 2.0 
+herunterladen, sofern man sie 
+findet&nbsp;<a href="http://mirror.debianforum.de/debian-iso-archive/hamm/i386/">[8]</a> und 
+daraus das Paket extrahieren. Überraschenderweise lässt sich das Paket 
+problemlos installieren (dazu muss man Root sein):
+
+<div class="p"><!----></div>
+
+<div class="command"># dpkg -i libstdc++2.8_2.90.29-0.6.deb</div>
+
+<div class="p"><!----></div>
+
+
+Hat man keine Root-Rechte oder will das Paket nicht installieren, kann man 
+die Bibliothek immer noch folgendermaßen extrahieren, da ein Debian-Paket 
+ein tar-Archiv ist:
+
+<div class="p"><!----></div>
+
+<div class="command">$ ar x libstdc++2.8_2.90.29-0.6.deb<br />
+$ tar tvzf data.tar.gz</div>
+
+<div class="p"><!----></div>
+
+
+Man benötigt lediglich die Datei <b><tt class="big">usr/lib/libstdc++.so.2.8.0</tt></b>, die man 
+einfach in das <b><tt class="big">Rollemup</tt></b>-Verzeichnis kopiert (auch diese Datei ist auf 
+Pro-Linux 
+erhältlich&nbsp;<a href="http://www.pro-linux.de/files/rollemup/libstdc++.so.2.8">[9]</a>).
+
+<div class="p"><!----></div>
+Das war es! Ist die Bibliothek systemweit installiert, kann man das Spiel 
+jetzt wie oben beschrieben starten. Liegt sie dagegen im 
+Rollemup-Verzeichnis, startet man mit
+
+<div class="p"><!----></div>
+
+<div class="command">LD_LIBRARY_PATH= ./Rollemup</div>
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2014-03-bilder-Dateien/rollmup-demo.jpg" alt="rollmup-demo.jpg" style="max-width:100%" /><br /><em>Automatisch ablaufende Demo.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Das Spiel</h2>
+
+
+Zum Spiel gibt es recht wenig zu sagen. Mit der „<i>Esc</i>“-Taste gelangt man zu 
+einer Highscore- und Übersichtsseite, rechts oben kann man (nur mit der Maus 
+bedienbar) ein Menü aufklappen. Einstellungsmöglichkeiten gibt es nur 
+wenige, hauptsächlich für den Sound.
+
+<div class="p"><!----></div>
+In seltenen Fällen kann das Programm einmal abstürzen, in der Regel kann man 
+jedoch lange durchspielen.
+
+<div class="p"><!----></div>
+
+<h3>Tastatur</h3>
+
+
+Ein kleiner Schönheitsfehler von Roll'm Up ist, dass es für eine englische 
+Tastatur geschrieben ist. Dort ergeben die gewählten Tasten „<i>Y</i>“ und „<i>/</i>“ 
+für die Steuerung der Paddles Sinn, auf der deutschen Tastatur sind sie 
+unspielbar. Leider bietet das Spiel keine Einstellmöglichkeiten dafür, auch 
+nicht über die X-Ressourcen, die es offenbar nicht benutzt.
+
+<div class="p"><!----></div>
+Somit bleibt nur eine Möglichkeit: Die Tastatur vorübergehend auf Englisch 
+umzuschalten. Die 
+
+Desktopumgebungen bieten dafür diverse Möglichkeiten. Hier 
+soll kurz die Möglichkeit vorgestellt werden, dies unter KDE zu 
+automatisieren.
+
+<div class="p"><!----></div>
+Der Schlüssel hierfür ist das Programm qdbus, das man ggf. nachinstallieren 
+muss. Zuerst kann
+
+man nachsehen, welche Tastaturlayouts unter KDE 
+konfiguriert sind:
+
+<div class="p"><!----></div>
+
+<div class="command">$ qdbus org.kde.keyboard /Layouts org.kde.KeyboardLayouts.getLayoutsList<br />
+de(nodeadkeys)<br />
+us</div>
+
+<div class="p"><!----></div>
+
+
+Ist kein <b><tt class="big">us</tt></b> oder anderes englisches Layout vorhanden, muss man eines in 
+den Systemeinstellungen hinzufügen (oder man ruft <b><tt class="big">kcmshell4 kcm_keyboard</tt></b> 
+auf). Mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ qdbus org.kde.keyboard /Layouts org.kde.KeyboardLayouts.setLayout us</div>
+
+<div class="p"><!----></div>
+
+
+kann man nun die Umschaltung genauso vornehmen, wie man sie mit dem 
+Tastaturlayout-Applet durchführen kann. Das alles kann man zu einem kleinen 
+Skript kombinieren, das man im Rollemup-Verzeichnis anlegt:
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">#!/bin/sh<br />
+cd $(dirname $0)<br />
+qdbus org.kde.keyboard /Layouts org.kde.KeyboardLayouts.setLayout us &#62; /dev/null<br />
+./Rollemup<br />
+qdbus org.kde.keyboard /Layouts org.kde.KeyboardLayouts.setLayout "de(nodeadkeys)" &#62; /dev/null</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2014-03-listings/rollemup-start.sh">rollemup-start.sh</a></i>
+
+<div class="p"><!----></div>
+
+
+
+
+
+<h2>Alternativen</h2>
+
+
+Wie schon erwähnt, gab es bislang wenige native Flipper-Spiele für Linux. 
+Drei freie Spiele sind mir bekannt:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Super Happy Fun Pinball&nbsp;<a href="http://sourceforge.net/projects/cs-pinball/">[10]</a>, 
+ein eher primitives Spiel, das zuletzt 2002 aktualisiert wurde.</li>
+<li> Emilia Pinball&nbsp;<a href="http://pinball.sourceforge.net/">[11]</a>, ein ansprechendes,
+wenn auch einfaches Spiel, das zwar zuletzt 2004 aktualisiert wurde, aber
+unter dem Namen „Pinball“ auch in aktuellen Distributionen noch zu finden
+ist. Es enthält auch einen Editor für neue Tische.</li>
+<li> Linball&nbsp;<a href="http://linball.sourceforge.net/">[12]</a>, ein ebenfalls einfaches
+Spiel, das seit 2009 anscheinend kein Update mehr erfahren hat.</li>
+</ul>
+Unter Emulatoren wie MAME/MESS kann man Flipper von unterschiedlicher 
+grafischer Qualität, aber großem Spielspaß laufen lassen, sofern man die 
+nötigen ROMs findet. Es gibt eine Reihe von DOS-Spielen, vor allem Pinball 
+Dreams, die in DOSBox&nbsp;<a href="http://www.dosbox.com/">[13]</a> und vermutlich auch unter 
+DOSEMU&nbsp;<a href="http://www.dosemu.org/">[14]</a> laufen. Wesentlich mehr Spiele gibt es 
+für Microsoft Windows, wobei das ganze Spektrum von proprietär bis 
+vollständig frei vertreten ist. Viele davon sollten sich unter 
+Wine&nbsp;<a href="http://www.winehq.org/">[15]</a> ausführen lassen. Einige Projekte haben native 
+Linux-Versionen im Visier.
+
+<div class="p"><!----></div>
+Ein kommerzielles Spiel mit nativer Linux-Version ist seit 2013 erhältlich: 
+Hyperspace Pinball&nbsp;<a href="http://www.desura.com/games/hyperspace-pinball">[16]</a>. Es 
+kostet offenbar 1,99 Euro und man muss sich auf der Desura-Plattform 
+anmelden, um es nutzen zu können. Auch Steam, das mit seiner Hinwendung zu 
+Linux seit 2012 Furore machte, wird im Laufe des Jahres 2014 mindestens ein 
+Flipperspiel in einer Linux-Version anbieten: Pinball 
+Arcade&nbsp;<a href="http://www.pro-linux.de/news/1/20642/pinball-arcade-fuer-linux-angekuen
+digt.html">[17]</a>. Dieses Spiel soll sich durch eine besonders detaillierte 
+Simulation realer Tische auszeichnen. Es wird in der Basisversion kostenlos 
+sein, die zahllosen Zusatzpakete sind dann käuflich zu erwerben.
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.pro-linux.de/artikel/2/1663/rollm-up-ein-altes-flipperspiel-neu-entdeckt.html"><tt class="big">http://www.pro-linux.de/artikel/2/1663/rollm-up-ein-altes-flipperspiel-neu-entdeckt.html</tt></a><br />
+[2] <a href="http://www.dommelsch.nl/"><tt class="big">http://www.dommelsch.nl/</tt></a><br />
+[3] <a href="http://downloads.techweekeurope.co.uk/22252/roll-m-up-1/"><tt class="big">http://downloads.techweekeurope.co.uk/22252/roll-m-up-1/</tt></a><br />
+[4] <a href="http://www.pro-linux.de/files/rollemup/Rollemup.tar.gz"><tt class="big">http://www.pro-linux.de/files/rollemup/Rollemup.tar.gz</tt></a><br />
+[5] <a href="ftp://ftp.bgtelecom.ru/pub/Linux/app/games/"><tt class="big">ftp://ftp.bgtelecom.ru/pub/Linux/app/games/</tt></a><br />
+[6] <a href="http://www.pro-linux.de/files/rollemup/libstdc++-2.8.1-1.i386.rpm"><tt class="big">http://www.pro-linux.de/files/rollemup/libstdc++-2.8.1-1.i386.rpm</tt></a><br />
+[7] <a href="ftp://ftp.sunet.se/pub/Linux/distributions/redhat/redhat-archive/redhat/linux/5.2/en/os/i386/RedHat/RPMS/libstdc++-2.8.0-14.i386.rpm"><tt class="big">ftp://ftp.sunet.se/pub/Linux/distributions/redhat/redhat-archive/redhat/linux/5.2/en/os/i386/RedHat/RPMS/libstdc++-2.8.0-14.i386.rpm</tt></a><br />
+[8] <a href="http://mirror.debianforum.de/debian-iso-archive/hamm/i386/"><tt class="big">http://mirror.debianforum.de/debian-iso-archive/hamm/i386/</tt></a><br />
+[9] <a href="http://www.pro-linux.de/files/rollemup/libstdc++.so.2.8"><tt class="big">http://www.pro-linux.de/files/rollemup/libstdc++.so.2.8</tt></a><br />
+[10] <a href="http://sourceforge.net/projects/cs-pinball/"><tt class="big">http://sourceforge.net/projects/cs-pinball/</tt></a><br />
+[11] <a href="http://pinball.sourceforge.net/"><tt class="big">http://pinball.sourceforge.net/</tt></a><br />
+[12] <a href="http://linball.sourceforge.net/"><tt class="big">http://linball.sourceforge.net/</tt></a><br />
+[13] <a href="http://www.dosbox.com/"><tt class="big">http://www.dosbox.com/</tt></a><br />
+[14] <a href="http://www.dosemu.org/"><tt class="big">http://www.dosemu.org/</tt></a><br />
+[15] <a href="http://www.winehq.org/"><tt class="big">http://www.winehq.org/</tt></a><br />
+[16] <a href="http://www.desura.com/games/hyperspace-pinball"><tt class="big">http://www.desura.com/games/hyperspace-pinball</tt></a><br />
+[17] <a href="http://www.pro-linux.de/news/1/20642/pinball-arcade-fuer-linux-angekuen
+digt.html"><tt class="big">http://www.pro-linux.de/news/1/20642/pinball-arcade-fuer-linux-angekuen
+digt.html</tt></a><br />
+    
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Hans-Joachim Baader</b>&nbsp;(<a href="http://pro-linux.de/">Webseite</a>)
+befasst sich seit 1993 mit Linux. 1994 schloss er erfolgreich sein 
+Informatikstudium ab, machte die Softwareentwicklung zum Beruf
+und ist einer der Betreiber von Pro-Linux.de.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Roll'm Up - Ein altes Flipperspiel neu entdeckt#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+
+
+
+
+<h1><font color="#595959"><a id="fm_14_03_interview_horst_jens" name="fm_14_03_interview_horst_jens">Spielend programmieren: Interview mit Horst Jens</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+    <b>E</b><b>s gibt verschiedene Ansätze, wie man Programmieren lernt: Entweder durch 
+langjährige, berufliche Erfahrung, durch ein „Lerne Programmieren in 21 
+Tagen“&nbsp;<a href="http://abstrusegoose.com/249">[1]</a> oder durch praktische Übungen. 
+Horst JENS versucht den spielerischen Ansatz. Vor kurzem brachte er ein 
+neues Open-Source-Magazin heraus, zu dem wir ihn etwas befragt haben.</b>
+
+<div class="p"><!----></div>
+
+<h2>Über die Person</h2>
+
+
+Horst 
+Jens&nbsp;<a href="http://spielend-programmieren.at/doku.php/de:personen:horst:start">[2]</a> ist 
+Gründer und Kursleiter von 
+spielend-programmieren.at&nbsp;<a href="http://www.spielend-programmieren.at/">[3]</a>. Er bietet 
+dort vor allem für Schüler Kurse an, um über Spiele in die Programmierung 
+einzuführen. Hierfür setzt er auf Linux und Open Source.
+
+<div class="p"><!----></div>
+
+<h2>Über das Magazin</h2>
+
+
+Mitte Januar veröffentlichte Horst Jens die erste Ausgabe des 
+RIS-Journals&nbsp;<a href="http://spielend-programmieren.at/doku.php/de:ris:start">[4]</a>. RIS 
+steht für „Remix, Improve, Share“ und das Magazin
+beschäftigt sich mit
+Themen rund um 
+Open Source, Linux und natürlich Programmierung. Das Magazin selbst wird
+in den Formaten PDF und EPUB sowie Online veröffentlicht.
+
+<div class="p"><!----></div>
+Da die Inhalte im Magazin alle unter einer 
+Creative-Commons-Lizenz&nbsp;<a href="http://de.creativecommons.org/">[5]</a> stehen, können sie 
+für eigene Projekte oder Blogs verwendet werden. So wird in dieser Ausgabe 
+von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> auch der <a href="freiesMagazin-2014-03-bilder.html#fm_14_03_scratch2_tutorial">Scratch-Artikel</a> von 
+Horst Jens republiziert.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2014-03-bilder-Dateien/ris-journal-1.jpg" alt="ris-journal-1.jpg" style="max-width:100%" /><br /><em>Titelseite des RIS-Journals.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Im Interview</h2>
+
+
+
+<font color="#595959"><b>-&#62;</b></font><b>
+Hallo Horst, erzähle doch etwas über Dich und was Du beruflich machst.
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ich heiße Horst Jens und lebe in Wien. Ich bin Einzelunternehmer 
+(selbstständig) und bringe Kindern und Jugendlichen mit meiner Firma 
+spielend-programmieren.at&nbsp;<a href="http://spielend-programmieren.at/">[6]</a> bei, wie sie 
+ihre eigenen (Open-Source-)Spiele erstellen und publizieren. 
+
+
+<div class="p"><!----></div>
+
+<font color="#595959"><b>-&#62;</b></font><b>
+Du hast kürzlich ein Open-Source-Magazin herausgebracht. Was war die Idee 
+dafür?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Die Idee für das RIS-Journal hatte ich, nachdem ich mit den üblichen 
+Marketing-Methoden (Inserate, Google Adwords, Plakate, Flyer, Messestände 
+etc.) unzufrieden war. Ich besuche öfter Schulen, um dort Workshops 
+anzubieten, es nervte mich, die Direktion um Erlaubnis 
+fragen zu müssen, ob ich in der Schule meine Plakate aufhängen darf.
+
+
+<div class="p"><!----></div>
+Jetzt habe ich eine Zeitschrift, die hoffentlich einmal so gut sein wird, 
+dass sich die Schulen auf eigene Kosten Exemplare ausdrucken und dadurch 
+Werbung für mich machen.
+
+<div class="p"><!----></div>
+Eine andere Idee, die ich schon länger hatte, war ein Magazin exklusiv für 
+FLOSS-Spiele&nbsp;<a href="https://de.wikipedia.org/wiki/FLOSS">[7]</a> zu machen. So wie die 
+Hochglanz-Computerspiele-Magazine, die es jetzt noch gibt und die ich als 
+Jugendlicher gerne gelesen habe. Leider werden dort aus nachvollziehbaren 
+Gründen nur kommerzielle Spiele rezensiert.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Wieso ein eigenes Magazin und keine Teilnahme an bereits bestehenden 
+Projekten wie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ich möchte mein eigenes Projekt machen, so wie ich es mir vorstelle. 
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> imponiert mir wegen der Creative-Commons-Lizenzierung und 
+wegen der verwendeten Technik (Querformat, veröffentlichte LaTeX-Vorlagen). 
+Es hat aber eine etwas andere Zielgruppe und Blattlinie als ich. Das 
+RIS-Journal soll beispielsweise auch für eine (noch) nicht sehr 
+technik-affine Deutschlehrerin interessant sein. 
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Wie lange hast Du an der ersten Ausgabe gearbeitet?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Wirklich intensiv gearbeitet habe ich eine Woche in den Weihnachtsferien 
+2012/13 und dann circa zwei Wochen lang in den Weihnachtsferien 2013/14. 
+Insgesamt also drei Wochen, dazwischen lag aber ein Jahr Pause.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Gibt es Gründe für die Pause?
+</b>
+
+<div class="p"><!----></div>
+Ich habe ein anderes Projekt verfolgt, welches sehr zeitaufwendig war, 
+mittlerweile aber abgeschlossen ist.
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Haben noch andere Menschen an dem Magazin mitgewirkt?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ja, inklusive mir selbst haben 18 Autoren/Interviewpartner für die ersten 20 
+Artikel gesorgt. Dazu kommen indirekte Helfer, die bspw. eine freie 
+Grafik erstellt haben, die ich für ein Bild verwenden konnte, oder die eine 
+Veranstaltung organisieren, die ich in den Kalender schreiben kann etc.
+
+
+<div class="p"><!----></div>
+Ich habe zum Teil Artikel übersetzt, die bereits unter Creative Commons 
+BY-SA&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">[8]</a> lizenziert 
+waren. Zum Teil habe ich angefragt, ob ich Artikel unter der CC-Lizenz 
+übersetzen und publizieren darf. Ich habe zwar alle Autoren angeschrieben, 
+aber manchmal gar keine Antwort erhalten – was dank CC-Lizenz aber auch 
+nicht wichtig war.
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Nicht alle Originaltexte unterliegen einer freien Lizenz (wenn man die 
+jeweiligen Webseiten besucht). Wie aufwendig war die Einholung der Erlaubnis 
+zu der Veröffentlichung unter einer CC-Lizenz?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+E-Mail schreiben und zwei Wochen warten: Also nicht so aufwendig. Aufwendig 
+war es, nur jene Artikel verwenden zu können, für die ich eine Erlaubnis 
+bekam. Tipp: Vorher gar nicht erst mit dem Übersetzen anfangen; das macht 
+nur traurig.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Kam es denn oft vor, dass Du die Erlaubnis nicht erhalten hast?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Dass ich eine Antwort, aber keine Erlaubnis bekam, war eher selten.
+Häufiger vorgekommen ist, dass ich überhaupt keine Antwort bekam.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Du nutzt bereits die Creative-Commons-Version 4.0? Hat es bestimmte 
+Gründe, wieso Du nicht die bisher am weitesten verbreitete Version 3.0 
+nutzt?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ich will immer das Neueste, Tollste und Beste haben. Version&nbsp;4 klingt ergo 
+besser als Version&nbsp;3.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Jedenfalls hört sich das nach einer ganzen Menge an Leuten an. Suchst Du 
+dann überhaupt noch Helfer für künftige Ausgaben?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ja, ich suche noch Helfer. 
+Ich kann von
+Korrekturlesern angefangen
+über Leute, die Bilder druckfertig machen, Interviewpartner/Autoren bis hin zu Layoutern jede Menge Hilfe brauchen. Ich 
+zahle allerdings nichts. :-(
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Bist Du mit der ersten Ausgabe voll zufrieden oder siehst du Verbesserungsbedarf?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ich bin nicht zufrieden damit, z.&nbsp;B. musste ich jeden Artikel  mehrmals
+Korrekturlesen und finde trotzdem immer noch Fehler. Allerdings nutzt es mir 
+nichts, noch ein Jahr herumzutrödeln. Besser ich veröffentliche öfter und 
+lerne aus meinen Fehlern für die nächste Ausgabe.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Also ganz im Sinne der Open-Source-Mentalität „Release early, release 
+often“&nbsp;<a href="http://de.wikipedia.org/wiki/Release_early,_release_often">[9]</a>. Wie bist 
+Du denn überhaupt auf die vielen interessanten Menschen gestoßen, die Dir 
+ein Interview gegeben haben?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ich lese sehr viele Blogs und interessiere mich beruflich für alles, was mit 
+Unterrichten, Spiele programmieren und Freier Software zu tun hat. Außerdem 
+gibt es in Wien eine kleine
+Spiele-Entwickler-Szene, die dank 
+der Veranstaltungen des 
+SUBOTRON-Shops&nbsp;<a href="http://subotron.com/veranstaltungen/all/">[10]</a> gut vernetzt ist.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Viele Texte sind Übersetzungen. Wie aufwendig war dies im Gegensatz zum 
+Abdruck des englischen Originals?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Aufwendiger! Aber ich brauche die Zeitschrift, um Schüler und Lehrer für 
+meine Angebote zu interessieren. Da ist es meiner Ansicht nach besser, ich 
+mache die Texte so einfach konsumierbar wie möglich. Daneben glaube ich, 
+viele (amerikanische) Autoren hätten mir die Erlaubnis zum Publizieren unter 
+CC-BY-SA auf Englisch nicht gegeben, aus Angst, sie könnten Geld verlieren. 
+Da sie am deutschsprachigen Markt sowie nichts verdienen, waren sie bei einer 
+Übersetzung mit der Erteilung der Erlaubnis großzügiger.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Du weist in dem Journal ein paarmal auf Spenden hin. Wenn keine oder 
+nicht genug Spenden eingehen, würdest Du das Journal nicht mehr anfertigen 
+und herausbringen?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Nein, ich würde es trotzdem herausbringen. Ich möchte Werbung für meine 
+Dienstleistungen machen und außerdem den Open-Source-Gedanken in die 
+öffentlichen Schulen pumpen. Ich sehe nicht, wer das sonst macht. Ich würde 
+aufhören, wenn ich nach ein paar Ausgaben keinerlei Feedback bekomme und 
+merke, dass sich niemand für das RIS-Journal interessiert.
+
+
+<div class="p"><!----></div>
+Die Spendenadressen sollen es den Leuten, die das wollen, erleichtern, mir 
+Geld zukommen zu lassen. Außerdem biete ich jedem Autor an, eigene 
+Spendenadressen unter seinem Artikel zu veröffentlichen.
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Hast Du schon Rückmeldungen, ob Du mit dem Journal Schüler erreicht hast?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Ich habe letzte Woche den Scratch-Artikel in einer Schule erfolgreich in 
+einem Workshop eingesetzt. Ob die Schüler freiwillig auf die Idee gekommen 
+wären, den Artikel zu lesen und Scratch zu lernen, kann ich nicht sagen. 
+Zumindest waren sie nicht abgeneigt und haben die Pause durchgearbeitet.
+
+
+<div class="p"><!----></div>
+Ansonsten habe ich noch sehr wenig Leserfeedback bekommen. Ich hoffe auf 
+junge Autoren, die eigene Artikel im RIS-Journal publizieren wollen und dann 
+das RIS-Journal im Freundeskreis  bekannt machen.
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Das Magazin hast Du mit LaTeX erstellt? Wieso kein DTP-Programm wie 
+Scribus?
+</b>
+
+<div class="p"><!----></div>
+<font color="#FF630A"><b>&lt;-</b></font>
+Das frage ich mich mittlerweile auch. :-) Die Idee ist, dass es mit 
+Pandoc ein Tool gibt, welches bequem aus LaTeX verschiedene andere Formate 
+erstellen kann (z.&nbsp;B. EPUB, HTML etc.). Außerdem wollte ich mich immer schon 
+mit LaTeX befassen und die Zeitschrift war ein schöner Vorwand. Vielleicht 
+mache ich die nächste Ausgabe mit Scribus.
+
+
+<div class="p"><!----></div>
+<font color="#595959"><b>-&#62;</b></font><b>
+Dann wünschen wir Dir viel Erfolg mit dem Magazin und Deiner Firma. 
+Vielen Dank für das Interview!
+</b>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://abstrusegoose.com/249"><tt class="big">http://abstrusegoose.com/249</tt></a><br />
+[2] <a href="http://spielend-programmieren.at/doku.php/de:personen:horst:start"><tt class="big">http://spielend-programmieren.at/doku.php/de:personen:horst:start</tt></a><br />
+[3] <a href="http://www.spielend-programmieren.at/"><tt class="big">http://www.spielend-programmieren.at/</tt></a><br />
+[4] <a href="http://spielend-programmieren.at/doku.php/de:ris:start"><tt class="big">http://spielend-programmieren.at/doku.php/de:ris:start</tt></a><br />
+[5] <a href="http://de.creativecommons.org/"><tt class="big">http://de.creativecommons.org/</tt></a><br />
+[6] <a href="http://spielend-programmieren.at/"><tt class="big">http://spielend-programmieren.at/</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/FLOSS"><tt class="big">https://de.wikipedia.org/wiki/FLOSS</tt></a><br />
+[8] <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de"><tt class="big">http://creativecommons.org/licenses/by-sa/4.0/deed.de</tt></a><br />
+[9] <a href="http://de.wikipedia.org/wiki/Release_early,_release_often"><tt class="big">http://de.wikipedia.org/wiki/Release_early,_release_often</tt></a><br />
+[10] <a href="http://subotron.com/veranstaltungen/all/"><tt class="big">http://subotron.com/veranstaltungen/all/</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+ist Chefredakteur von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> und freut sich, wenn auch andere 
+Open-Source-Magazine freies Wissen verbreiten.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Spielend programmierend: Interview mit Horst Jens#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_14_03_rezension_schroedinger_java" name="fm_14_03_rezension_schroedinger_java">Rezension: Schrödinger programmiert Java </a></font></h1>von Michael Niedermair
+
+<div class="p"><!----></div>
+    <b>D</b><b>as Buch „Schrödinger programmiert Java“ ist eine humorvolle, stark 
+bebilderte Einführung für den absoluten Anfänger in Java. An vielen 
+Beispielen und Übungen wird im „Schrödinger-Stil“ dem Anfänger Schritt für 
+Schritt gezeigt, wie man Java programmiert. Es werden viele 
+Themenbereiche, beispielsweise Streams, Threads, Swing, JavaFX, angesprochen. 
+Dabei wird Java 7 und 8 behandelt.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken Galileo Computing für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Der Autor Philip Ackermann ist Software-Entwickler am Fraunhofer-Institut 
+für Angewandte Informationstechnologie FIT. Wissenschaftlich befasst er sich 
+außerdem mit der modellbasierten Simulation und Evaluierung von mobilen und 
+Web 2.0-Anwendungen. 
+
+<div class="p"><!----></div>
+
+<h2>Was steht drin?</h2>
+
+
+Das Buch ist in insgesamt 18 Kapitel mit Vorspann, Vorwort und 
+Stichwortverzeichnis unterteilt.
+
+<div class="p"><!----></div>
+Das erste Kapitel (38 Seiten) ist eine Einführung in Java.
+In ihm werden der Compiler und die Laufzeitumgebung erklärt
+und es wird gezeigt, wie man Eclipse installiert und 
+damit das erste Programm erstellt.
+
+<div class="p"><!----></div>
+Das zweite Kapitel (38 Seiten) beschäftigt sich mit grundlegenden Datentypen 
+und Variablen. Danach geht es an das Rechnen (+, &#8722;, *, /, %), die 
+Genauigkeit bei „Kommazahlen“, das Konvertieren von Datentypen, Unicode und 
+Vergleichsoperationen.
+
+<div class="p"><!----></div>
+Das dritte Kapitel (36 Seiten)  beschäftigt sich mit Kontrollstrukturen wie 
+if, while etc.
+
+<div class="p"><!----></div>
+Das vierte Kapitel (34 Seiten) widmet sich ganz den Zeichenketten. 
+Angefangen vom Definieren eines Strings, den Vergleich, das Zerlegen, das 
+Suchen und Ersetzen usw.
+
+<div class="p"><!----></div>
+Ab dem fünften Kapitel (64 Seiten) beginnt die Objektorientierte Programmierung
+(OOP&nbsp;<a href="https://de.wikipedia.org/wiki/Objektorientierte_Programmierung">[1]</a>). Hier
+geht es um Klassen, Objekte und Methoden. Zwischendurch wird der Heap erläutert
+und wie man diesen mit VisualVM&nbsp;<a href="https://en.wikipedia.org/wiki/VisualVM">[2]</a>
+grafisch darstellen kann. Das Kapitel wird mit der Beschreibung des Stacks
+abgeschlossen.
+
+<div class="p"><!----></div>
+Das sechste Kapitel (34 Seiten) erweitert die OOP mit der Vererbung, gefolgt 
+mit dem siebten Kapitel (38 Seiten) mit abstrakten Klassen und Interfaces.
+
+<div class="p"><!----></div>
+An die „Datentöpfe“ geht es im achten Kapitel (52 Seiten): Arrays, 
+Collections und Maps. Die Stichworte sind hier: Erzeugen, hinzufügen, 
+löschen, finden, sortieren, … Abgeschlossen wird das Kapitel mit dem Thema 
+Lambda.
+
+<div class="p"><!----></div>
+Im neunten Kapitel (35 Seiten) wird gezeigt, wie man mit Fehlern umgeht und diese 
+mit Exceptions „fängt“.
+
+<div class="p"><!----></div>
+Das Thema Generics folgt im zehnten Kapitel (27 Seiten), es zeigt wie man 
+dies bei Listen, in der Vererbung, bei Interfaces etc. anwendet.
+
+<div class="p"><!----></div>
+Das elfte Kapitel (34 Seiten) widmet sich den Dateien, Verzeichnisse, den 
+Streams und der Serialisierung von Objekten.
+
+<div class="p"><!----></div>
+Wie man parallele Verarbeitung mit Threads programmiert, diese 
+synchronisiert und Deadlocks vermeidet, zeigt das zwölfte Kapitel (40 
+Seiten). 
+
+<div class="p"><!----></div>
+Das dreizehnte Kapitel (16 Seiten) zeigt, wie man Programme weitergibt und 
+die Dokumentation mit javadoc erstellt.
+
+<div class="p"><!----></div>
+Der XML-Verarbeitung widmet sich das vierzehnte Kapitel (44 Seiten), vom 
+Lesen, Durcharbeiten mittels Iterator bzw. Cursor, bis zum Schreiben.
+
+<div class="p"><!----></div>
+Das fünfzehnte Kapitel (34 Seiten) zeigt die Anbindung an Datenbanken 
+mittels JDBC und die Anwendung von SQL.
+
+<div class="p"><!----></div>
+Das sechzehnte Kapitel (44 Seiten) beschäftigt sich mit der GUI, einmal 
+mittels Swing (siehe <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 
+12/2009&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2009-12">[3]</a>) und dann mit der 
+neuesten GUI-Variante JavaFX.
+
+<div class="p"><!----></div>
+Das siebzehnte Kapitel (44 Seiten) ist eine Sammelbecken für die Themen 
+Internationalisierung, Lokalisierung, Formatierung, Pattern Matching und 
+reguläre Ausdrücke.
+
+<div class="p"><!----></div>
+Das Testen der Java-Klassen mittels JUnit&nbsp;<a href="http://junit.org/">[4]</a> und das 
+Starten mittels „Java Web 
+Start“&nbsp;<a href="https://www.java.com/de/download/faq/java_webstart.xml">[5]</a> beinhaltet 
+das achtzehnte Kapitel (24 Seiten).
+
+<div class="p"><!----></div>
+Am Ende folgt das Stichwortverzeichnis mit insgesamt acht Seiten.
+
+<div class="p"><!----></div>
+
+<h2>Wie liest es sich?</h2>
+
+
+Das Buch hat einen sehr lockeren und humorvollen Schreibstil und ist mit 
+sehr vielen Grafiken versehen – eben ein typisches „Schrödinger-Buch“. Es 
+setzt keine Java-Kenntnisse voraus und richtet sich an den Java-Einsteiger. 
+Gewisse Programmiergrundlagen sind aber von Vorteil.
+
+<div class="p"><!----></div>
+Wenn man den Stil des Buches mag, kommt man damit sehr gut zurecht. Einzig 
+störend ist, dass man bei den Lösungen zu den Übungen etc. das Buch umdrehen 
+muss.
+
+<div class="p"><!----></div>
+Die Beispiele bzw. Kommandos lassen sich sehr gut nachvollziehen. Man kann 
+der Beschreibung gut folgen, diese wird durch zahlreiche Grafiken ergänzt 
+und auch der schon erfahrene Leser findet das eine oder andere interessante 
+Kapitel. Kennt man sich mit dem Inhalt eines Kapitels schon aus, kann man 
+dieses ohne Probleme überspringen und mit dem nächsten Kapitel weiter machen.
+
+<div class="p"><!----></div>
+
+<h2>Kritik</h2>
+
+
+Das Buch ist für Java-Anfänger geschrieben und wenn man mit dem 
+„Schrödinger-Stil“ klar kommt, sehr gut für diese geeignet. Der Quelltext 
+wird durch sehr viele Fußnoten erklärt, sodass meist keine Fragen mehr offen 
+bleiben. Das Stichwortverzeichnis ist für den Buchumfang sehr gut und man 
+findet die entsprechenden Stellen schnell.
+
+<div class="p"><!----></div>
+Das Buch hat ein Softcover, was bei 700 Seiten und intensiver Nutzung leicht 
+zu „Ausfallerscheinungen“ bei einzelnen Blättern führen kann. Das 
+Preis-Leistungsverhältnis (Buch, Farbdruck, Umfang und Preis) macht einen 
+sehr guten Eindruck und wirkt nicht überteuert.
+
+<div class="p"><!----></div>
+Gesamt betrachtet muss man das Buch als sehr gut für den Einstieg in Java 
+bewerten. Arbeitet man sich aber tiefer in die einzelnen Gebiete ein, so ist 
+dann bald vertiefte Zusatzliteratur notwendig.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Schrödinger programmiert Java&nbsp;<a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-2565">[6]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Philip Ackermann  </td></tr>
+<tr><td><b>Verlag</b> </td><td>Galileo Computing 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>704 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-8362-1740-8 </td></tr>
+<tr><td><b>Preis</b> </td><td>44,90 € (Print), 39,90 € (Online)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="https://de.wikipedia.org/wiki/Objektorientierte_Programmierung"><tt class="big">https://de.wikipedia.org/wiki/Objektorientierte_Programmierung</tt></a><br />
+[2] <a href="https://en.wikipedia.org/wiki/VisualVM"><tt class="big">https://en.wikipedia.org/wiki/VisualVM</tt></a><br />
+[3] <a href="http://www.freiesmagazin.de/freiesMagazin-2009-12"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2009-12</tt></a><br />
+[4] <a href="http://junit.org/"><tt class="big">http://junit.org/</tt></a><br />
+[5] <a href="https://www.java.com/de/download/faq/java_webstart.xml"><tt class="big">https://www.java.com/de/download/faq/java_webstart.xml</tt></a><br />
+[6] <a href="http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-2565"><tt class="big">http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-2565</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Michael Niedermair</b>
+ist Lehrer an der <a href="https://www.bsinfo.eu/">Münchener IT-Schule</a>, ist 
+Koordinator für den Bereich Programmierung und Anwendungsentwicklung und 
+unterrichtet seit vielen Java und Co.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Rezension: Schr%C3%B6dinger programmiert Java #comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+<h1><font color="#595959"><a id="fm_14_03_rezension_wien_wartet" name="fm_14_03_rezension_wien_wartet">Rezension: Wien wartet auf Dich! – Produktive Projekte und Teams</a></font></h1>von Dominik Wagenführ
+
+<div class="p"><!----></div>
+    <b>I</b><b>mmer öfter werden Menschen in der IT-Branche als Ware angesehen. Der Name 
+„Human Resources“ für die Personalabteilung macht das klar. Dass es sich bei 
+den Entwicklern aber um Menschen handelt, soll das Buch „Wien wartet auf 
+Dich!“ von Tom DeMarco und Timothy Lister zeigen.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Carl-Hanser-Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Inhalt</h2>
+
+
+Die Kernaussage des Buches „Wien wartet auf Dich!“ ist: Menschen sind 
+Individuen und keine austauschbaren Teile wie bei einer Maschine. Auf diese 
+Art wollen DeMarco und Lister zeigen, wie man bessere Teams schaffen und 
+Projekte besser voranbringen kann.
+
+<div class="p"><!----></div>
+Aufgeteilt ist das Buch in sechs Teile, die sich mit Management, der 
+Arbeitsumgebung, den Menschen und dem Team beschäftigt. Alle Details können 
+im Inhaltsverzeichnis auf der Webseite nachgelesen 
+werden&nbsp;<a href="http://www.hanser-fachbuch.de/buch/Wien+wartet+auf+Dich/9783446438958">[1]</a>.
+
+<div class="p"><!----></div>
+Einige der Inhalte wird man mitunter als Angestellter in einer (größeren) 
+IT-Firma sofort wiedererkennen. Der Aha-Effekt „Ja, das machen wir genauso 
+(falsch)!“ tritt beim Lesen des Öfteren auf. So kennen viele das Phänomen 
+der verschenkten Arbeitszeit in unnötigen Meetings, das Sträuben gegen 
+Änderungen (was aber ein bisschen in der Natur des Menschen liegt) oder das 
+nervige Telefon, dass einen keine fünf Minuten in Ruhe arbeiten lässt.
+
+<div class="p"><!----></div>
+Hierzu passt auch das Thema „Flow“&nbsp;<a href="https://de.wikipedia.org/wiki/Flow_%28Psychologie%29">[2]</a> (auf Deutsch „Fluss“, manchmal auch „in the zone“ genannt),
+was im Buch angesprochen wird und die meisten 
+Programmierer zu Genüge kennen. Man fängt an in die Tasten zu hauen und als 
+man das nächste Mal auf die Uhr schaut, sind vier Stunden vergangen. In der 
+heutigen Zeit kommt aber wegen der häufigen Unterbrechungen durch Kollegen, 
+E-Mails oder Telefonate oft gar kein Flow mehr zustande.
+
+<div class="p"><!----></div>
+Erwähnt werden auch einige bekannte Gegebenheiten, wie das Parkinsonsche 
+Gesetz&nbsp;<a href="https://de.wikipedia.org/wiki/Parkinsonsche_Gesetze">[3]</a>, dass aussagt, 
+dass Arbeit sich genau in dem Maß ausdehnt, wie Zeit für ihre Erledigung zur 
+Verfügung steht. Oder der 
+Hawthorne-Effekt&nbsp;<a href="https://de.wikipedia.org/wiki/Hawthorne-Effekt">[4]</a>, der 
+(abstrahiert auf das Thema) aussagt, dass Mitarbeiter besser arbeiten, wenn 
+sie an etwas Neuem (oder unter neuen Bedingungen) arbeiten.
+
+<div class="p"><!----></div>
+Zwischen den einzelnen Abschnitten gibt es immer wieder kleinere Anekdoten 
+von Tom DeMarco und Timothy Lister, die aus ihren jahrelangen Erfahrungen 
+mit anderen Projekten berichten. Mitunter sind diese heiter, manchmal zum 
+Kopf schütteln und oft erkennt man sich oder seine Firma vielleicht sogar 
+wieder.
+
+<div class="p"><!----></div>
+
+<h2>Zielgruppe</h2>
+
+
+Die Zielgruppe für dieses Buch sind Manager oder Teamleiter jeder Art. Dies 
+muss nicht zwingend in einer großen Firma der Fall sein, auch diverse 
+Open-Source-Projekte sind hierarchisch angeordnet und werden von einem Kopf 
+angeleitet, der hieraus etwas mitnehmen kann.
+
+<div class="p"><!----></div>
+Für die Mitarbeiter in einem Team ist das Buch eher deprimierend, da man 
+mitunter sieht, wie gutes Management aussehen kann. Vergleicht man dann die 
+eigene Arbeit damit, kommen einem vielleicht die Tränen. Nicht ganz so 
+pessimistisch betrachtet, kann man aber auch als Mitarbeiter ein paar Dinge 
+lernen, die im eigenen Team vielleicht nicht optimal laufen und von einem 
+selbst beeinflusst werden können.
+
+<div class="p"><!----></div>
+Wer noch kein Geburtstagsgeschenk für seinen Vorgesetzten hat, sollte 
+überlegen, ihm dieses Buch zu schenken. Wie bei verschenktem Parfüm könnte 
+es aber auch sein, dass dieses Geschenk missinterpretiert wird. Also bitte 
+sehr vorsichtig dieses Thema auf den Tisch bringen – es sollte aber auf den 
+Tisch gebracht werden, denn Manager können hier noch etwas lernen.
+
+<div class="p"><!----></div>
+Ein guter Teamleiter würde das Buch auf alle Fälle durchlesen und zumindest 
+versuchen, einiges davon umzusetzen. Denn viele Tipps von DeMarco und Lister 
+sind wirklich sinnvoll und hilfreich, um ein Team zu stärken und das Projekt 
+zu fördern – was in der Regel auch immer Ziel des Teamleiters sein sollte.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Auch wenn das Buch eher für Manager ist, kann wohl jeder etwas mitnehmen. 
+Beide Autoren schreiben mit einem lockeren und unterhaltsamen Stil, der 
+öfters – vor allem bei den Anekdoten – zum Schmunzeln anregt. Und 
+selbst wenn man nur einen Bruchteil braucht, ist es keine vertane Zeit, das 
+Buch zu lesen.
+
+<div class="p"><!----></div>
+Einige Aussagen von DeMarco und Lister haben mir sehr gut gefallen. So zum 
+Beispiel, dass man einem Team grundsätzlich erlauben sollte, Fehler zu 
+machen, um daraus zu lernen. Ohne die Möglichkeit dazu gibt es keinerlei 
+Versuche und Experimente und auch keine Innovationen. Auch hängen geblieben 
+ist der Satz, dass Menschen unter Zeitdruck nicht besser arbeiten, nur 
+schneller – etwas, was man an der eigenen Arbeit vielleicht auch sieht. 
+
+<div class="p"><!----></div>
+Das beste Zitat des Buches ist aber (S.34):
+„<em>Die Aufgabe eines Managers besteht nicht darin, seine Mitarbeiter zur Arbeit anzuhalten, sondern ihnen die Arbeit zu ermöglichen.</em>“
+Mehr muss man dazu nicht sagen …
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i></i> Da es schade wäre, wenn das Buch bei Dominik Wagenführ im Regal 
+verstaubt, wird es verlost. Dazu ist folgende Frage zu beantworten:
+
+<div class="p"><!----></div>
+„<em>Der Titel des Buches „Wien wartet auf Dich!“ leitet sich von einem bekannten Lied ab. Vom welcher Künstler stammt das Lied?</em>“
+
+<div class="p"><!----></div>
+
+
+Die Antwort kann bis zum <b>9. März 2014, 23:59 Uhr,</b> über die 
+Kommentarfunktion oder per E-Mail an redaktion@freiesmagazin.de geschickt 
+werden. Die Kommentare werden bis zum Ende der Verlosung nicht 
+freigeschaltet. Das Buch wird unter allen Einsendern, die die Frage richtig 
+beantworten konnten, verlost.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Wien wartet auf Dich! (3. Auflage)&nbsp;<a href="http://www.hanser-fachbuch.de/buch/Wien+wartet+auf+Dich/9783446438958">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Tom DeMarco, Timothy Lister  </td></tr>
+<tr><td><b>Verlag</b> </td><td>Carl-Hanser-Verlag, 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>274 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-446-43895-8 </td></tr>
+<tr><td><b>Preis</b> </td><td>19,99 € (Buch und E-Book), 15,99 € (nur E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.hanser-fachbuch.de/buch/Wien+wartet+auf+Dich/9783446438958"><tt class="big">http://www.hanser-fachbuch.de/buch/Wien+wartet+auf+Dich/9783446438958</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Flow_%28Psychologie%29"><tt class="big">https://de.wikipedia.org/wiki/Flow_(Psychologie)</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Parkinsonsche_Gesetze"><tt class="big">https://de.wikipedia.org/wiki/Parkinsonsche_Gesetze</tt></a><br />
+[4] <a href="https://de.wikipedia.org/wiki/Hawthorne-Effekt"><tt class="big">https://de.wikipedia.org/wiki/Hawthorne-Effekt</tt></a><br />
+    
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Dominik Wagenführ</b>&nbsp;(<a href="http://www.deesaster.org/blog/">Webseite</a>)
+arbeitet in der IT-Branche als angestellter Entwickler. Bei <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> wechselt
+er die Rollen und versucht als Chefredakteur das Team zu leiten.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Rezension: Wien wartet auf Dich! - Produktive Projekte und Teams#comment-form"><i>Diesen Artikel kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+    
+
+
+<h1><font color="#595959"><a id="fm_14_03_leserbriefe" name="fm_14_03_leserbriefe">Leserbriefe</a></font></h1>
+            <b>Für Leserbriefe steht unsere E-Mailadresse
+            <img src="freiesMagazin-2014-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+            Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+        An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+        uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+        sehr viel Lob (was uns natürlich freut), aber vor allem durch
+        Kritik und neue Ideen können wir uns verbessern.
+    
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>Äquivalente Windowsprogramm unter Linux - Teil 4: Grafik- und Bildbearbeitung (2)</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Was ich [..] schmerzlich unter Linux vermisse ist eine Alternative zu 
+Irfanview&nbsp;<a href="http://www.irfanview.com/">[1]</a>. Wieso? Weil man mit einer 
+einzigen Anwendungen Bilder sichten und scannen und auch mal schnell 
+verändern (skalieren, beschneiden, …) kann. Hängen geblieben bin ich bei 
+Mirage&nbsp;<a href="http://mirageiv.sourceforge.net/">[2]</a>, das aber in Sachen 
+Usability IrfanView deutlich hinterher hängt.
+        <br /><b>MM</b> &nbsp;(<a href="http://www.freiesmagazin.de/20140202-februarausgabe-erschienen#comment-3067">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Ich kenne leider auch keine Alternative, aber vielleicht gibt es ja einen
+Leser da draußen, der etwas weiß. In den Kommentaren wurde zumindest die
+Lösung über Wine&nbsp;<a href="http://www.winehq.org/">[3]</a> vorgeschlagen.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Erinnerung</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+„<em>Wer jeden Monat an die neue Ausgabe erinnert werden will, kann auch den
+RSS-Feed abonnieren.</em>“ Welche Möglichkeiten habe ich noch (sonst habe ich nix gefunden)?
+        <br /><b>Detlef Bieritz</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Updates bzgl. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> gibt es auch über Google+, Facebook und Twitter (siehe 
+Kasten „Soziale Netzwerke“ in der rechten Spalte der Webseite). Allerdings 
+sind diese Seiten nicht „offiziell“, sondern werden von Teammitgliedern 
+betrieben. Der RSS-Feed wird dagegen immer aus den aktuellen News der
+<b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Webseite erstellt und ist damit immer auf dem neuesten Stand.
+        <br /><b><i>Matthias Sitte</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Begriff GNU/Linux</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Man denkt viel klarer, wenn man in den richtigen Begriffen denkt. Linux ist nur 
+ein Kernel. Das heißt, es gibt kein Linux-Betriebssystem. Das Betriebssystem, 
+was Ihr meint, heißt GNU.
+
+<div class="p"><!----></div>
+Es ist nicht sinnvoll, überhaupt von Open Source zu reden, außer vielleicht um 
+sich von dieser Idee und Bewegung zu distanzieren. Open-Source-Software ist 
+Freie Software – die Open-Sourceler sind nur zu feige, sie so zu nennen. Denn 
+es geht bei dieser Sache nur um die Freiheit. Dass der Quellcode dafür 
+verfügbar sein muss, ist ein technisches Detail, das niemanden interessiert. 
+Open Source ist ein Ablenkungsmanöver.
+        <br /><b>Max Moritz Sievers</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Sie haben prinzipiell recht, aber wir leben in der Realität. Auch wenn
+es vielen Linux-Anhänger nicht wahrhaben wollen, hat sich der Begriff
+„GNU/Linux“ für das Betriebssystem nicht etabliert und wird es aufgrund
+der Sperrigkeit vermutlich auch nie.
+
+<div class="p"><!----></div>
+Wenn jemand den Begriff „Linux“ erklärt, würde ich erwarten, dass er
+diese feine Unterscheidung macht. In allen anderen Fällen reicht
+zumindest uns aus, vom Linux-Betriebssystem oder gar von
+-Betriebssystemen zu reden.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Diskriminierender Comic</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Der Comic in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Ausgabe 02/2014&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2014-02">[4]</a> auf Seite 34 ist
+männerfeindlich und 
+menschenverachtend. Würde man die Geschlechter vertauschen, wäre der Autor 
+erstens nicht auf diese Idee gekommen und hätte sich zweitens nicht getraut, 
+den Comic zu zeichnen. Und veröffentlichen hätte er ihn natürlich auch nicht 
+können. Leider gibt es nach Jahrzehnten der Gehirnwäsche in dieser Richtung 
+heute eine Reihe von Frauen, die glauben, es sei keine Sachbeschädigung, kein 
+Diebstahl und keine Körperverletzung, wenn Frauen sie an Männern bzw. deren 
+Eigentum begehen. So etwas sollte ein Magazin, das angeblich die Welt 
+verbessern will, nicht unterstützen.
+
+<div class="p"><!----></div>
+Abgesehen vom geschlechtlichen Aspekt ist die Aussage des Comics auch gänzlich 
+abzulehnen. Wenn einem nicht gefällt, was jemand sagt oder schreibt, darf und 
+sollte man deswegen noch nicht zur Gewalt greifen. Ich finde, auch der Staat 
+sollte sich zurückhalten. Denn wer noch nicht einmal sagen darf, was er will, 
+ist ein Sklave.
+
+<div class="p"><!----></div>
+Ihr könntet nun einwenden, daß der Comic die rüden Anmachen einiger Männer 
+gegenüber Frauen problematisiert und natürlich witzig sein soll. Jeder regt 
+sich über Anmachen auf – doch wie kommt man eigentlich zum
+[Geschlechtsverkehr] (Anmerkung der Redaktion: Hier stand im Original ein
+anderes, nicht ganz so formelles Wort.), wenn man 
+niemals seine Absicht zum Ausdruck bringt?
+        <br /><b>Max Moritz Sievers</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Wie Sie sagen, ist es ein Comic. Es ist kein Aufruf zur Gewalt gegen
+irgendwen, sondern soll das eigentliche Problem aufzeigen, dass es
+teilweise heute in diesem Medium bzw. der Computer-Branche allgemein
+immer noch gibt.
+
+<div class="p"><!----></div>
+Eine Männerfeindlichkeit oder gar Menschenverachtung kann ich daher in
+dem Comic nicht erkennen. Ganz im Gegenteil unterstützen wir die
+Botschaft, dass Frauen in der IT-Welt und im Internet als menschliche
+Wesen behandelt werden sollen, d.&nbsp;h. so wie man jede andere männliche
+Person ebenfalls behandeln würde.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Neue Lektüre</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Vor gut fünf Jahren zu Linux „konvertiert“, der gängelnden Windows-Welt
+überdrüssig, bin ich heute zum ersten Mal – leider zum ersten Mal –
+auf Ihr Magazin gestoßen.
+
+<div class="p"><!----></div>
+Als „Alttäter” noch mit CP/M, CCP/M und DOS aufgewachsen, habe ich
+mich zwar oft bei Linux an diese Welt erinnert gefühlt, aber bislang fast
+jedes Problem lösen können.
+Heute findet man „für jede Antwort auch das richtige Problem“. :)
+Das gab's Ende der 70er-, Anfang der 80er-Jahre halt nicht.
+Das Internet hat hier eine unendliche Wissenstiefe gebracht.
+
+<div class="p"><!----></div>
+Bislang habe ich mich bei c't, Ubuntu-User (bis zur Einstellung letztes Jahr)
+und seitdem bei Linux-User „schlau“ gemacht.
+Sie dürfen versichert sein, dass ich Ihr Leser werde und mir die
+zurückliegenden Ausgaben sukzessive durchlesen werde. Ich bin mal gespannt,
+wie weit es hier zurückreicht.
+        <br /><b>Norbert Borkowski</b> 
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Es freut uns, dass wir auch nach acht Jahren Bestehen immer noch
+alteingesessene Linux- bzw. Computer-Nutzer für das Magazin begeistern
+können. Wir hoffen, dass Sie auch in den älteren Ausgaben interessante Themen
+finden.
+        <br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+    <font color="#595959"><font size="+1">Links</font></font><br />
+        
+[1] <a href="http://www.irfanview.com/"><tt class="big">http://www.irfanview.com/</tt></a><br />
+[2] <a href="http://mirageiv.sourceforge.net/"><tt class="big">http://mirageiv.sourceforge.net/</tt></a><br />
+[3] <a href="http://www.winehq.org/"><tt class="big">http://www.winehq.org/</tt></a><br />
+[4] <a href="http://www.freiesmagazin.de/freiesMagazin-2014-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2014-02</tt></a><br />
+    
+
+
+<div class="p"><!----></div>
+            Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+        kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+    
+
+<div class="p"><!----></div>
+        <a href="http://www.freiesmagazin.de/comment/reply/362?edit[subject]=Leserbriefe#comment-form"><i>Die Leserbriefe kommentieren</i></a><br /><br />
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                                
+<h1><font color="#595959"><a id="fm_14_03_veranstaltungen" name="fm_14_03_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+CeBIT </td><td>Hannover </td><td align="left">10.03.–14.03.2014 </td><td>60 EUR </td><td align="left"><a href="https://www.cebit.de/"><tt class="big">https://www.cebit.de/</tt></a> </td></tr>
+<tr><td align="left">Hardware Freedom Day </td><td>Weltweit </td><td align="left">15.03.2014 </td><td>frei </td><td align="left"><a href="http://hfday.org/"><tt class="big">http://hfday.org/</tt></a> </td></tr>
+<tr><td align="left">Chemnitzer Linux-Tage </td><td>Chemnitz </td><td align="left">15.03.–16.03.2014 </td><td>8 EUR </td><td align="left"><a href="http://chemnitzer.linux-tage.de/"><tt class="big">http://chemnitzer.linux-tage.de/</tt></a> </td></tr>
+<tr><td align="left">FOSSGIS </td><td>Berlin </td><td align="left">19.03.–21.03.2014 </td><td>frei </td><td align="left"><a href="https://www.fossgis.de/konferenz/2014/"><tt class="big">https://www.fossgis.de/konferenz/2014/</tt></a> </td></tr>
+<tr><td align="left">Augsburger Linux-Infotag </td><td>Augsburg </td><td align="left">22.03.2014 </td><td>frei </td><td align="left"><a href="http://www.luga.de/"><tt class="big">http://www.luga.de/</tt></a> </td></tr>
+<tr><td align="left">Libre Graphics Meeting  </td><td>Leipzig </td><td align="left">02.04.–05.04.2014 </td><td>– </td><td align="left"><a href="http://libregraphicsmeeting.org"><tt class="big">http://libregraphicsmeeting.org</tt></a> </td></tr>
+<tr><td align="left">Grazer Linuxtage </td><td>Graz </td><td align="left">04.04.–05.04.2014 </td><td>frei </td><td align="left"><a href="http://www.linuxtage.at/"><tt class="big">http://www.linuxtage.at/</tt></a> </td></tr>
+<tr><td align="left">Easterhegg </td><td>Stuttgart </td><td align="left">18.04.–21.04.2014 </td><td>42 EUR </td><td align="left"><a href="https://eh14.easterhegg.eu/"><tt class="big">https://eh14.easterhegg.eu/</tt></a> </td></tr>
+<tr><td align="left">Bug Squashing Party </td><td>Salzburg </td><td align="left">25.04.–27.04.2014 </td><td>frei </td><td align="left"><a href="https://wiki.debian.org/BSP/2014/04/at/Salzburg"><tt class="big">https://wiki.debian.org/BSP/2014/04/at/Salzburg</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Wien </td><td>Wien </td><td align="left">08.05.–10.05.2014 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">LinuxTag </td><td>Berlin </td><td align="left">08.05.–10.05.2014 </td><td>– </td><td align="left"><a href="http://www.linuxtag.org/"><tt class="big">http://www.linuxtag.org/</tt></a> </td></tr>
+<tr><td align="left">droidcon </td><td>Berlin </td><td align="left">08.05.–10.05.2014 </td><td>– </td><td align="left"><a href="http://de.droidcon.com/"><tt class="big">http://de.droidcon.com/</tt></a> </td></tr>
+<tr><td align="left">openQRM Community Summit </td><td>Berlin </td><td align="left">20.05.2014 </td><td>frei </td><td align="left"><a href="http://www.openqrm-enterprise.com/"><tt class="big">http://www.openqrm-enterprise.com/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Eisenstadt </td><td>Eisenstadt </td><td align="left">23.05.–24.05.2014 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Linz </td><td>Linz </td><td align="left">26.05.–01.06.2014 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2014-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+
+                                                            
+<h1><font color="#595959"><a id="fm_14_03_konventionen" name="fm_14_03_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                      hier auch einfach in einer normalen Shell ein
+                      <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                      <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+                                    
+<h1><font color="#595959"><a id="fm_14_03_impressum" name="fm_14_03_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 2. März 2014<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2014-03-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+<tr><td align="left"><b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Hans-Joachim Baader </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_rollmup">Roll'm Up - Ein altes Flipperspiel neu entdeckt</a>  </td></tr>
+<tr><td align="left">Marvin Gülker </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_wlan_ap_raspberrypi">WLAN-AP mit dem Raspberry Pi</a>  </td></tr>
+<tr><td align="left">Horst Jens </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_scratch2_tutorial">Scratch-2-Tutorial</a>  </td></tr>
+<tr><td align="left">Michael Niedermair </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_rezension_schroedinger_java">Rezension: Schrödinger programmiert Java</a> </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_kernel">Der Februar im Kernelrückblick</a>  </td></tr>
+<tr><td align="left">Daniel Schneider </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_linux_laufzeit">Pinguine haben kurze Beine – Die Laufzeiten der Linuxdistributionen</a>  </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_reveal_js">Präsentationen mit HMTL und reveal.js</a>  </td></tr>
+<tr><td align="left">Dominik Wagenführ </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_interview_horst_jens">Spielend programmieren: Interview mit Horst Jens</a>, <a href="freiesMagazin-2014-03-bilder.html#fm_14_03_rezension_wien_wartet">Rezension: Wien wartet auf Dich!</a> </td></tr>
+<tr><td align="left">Enrico Zschemisch </td><td align="left"><a href="freiesMagazin-2014-03-bilder.html#fm_14_03_elementaryOS">Kurzvorstellung: elementary OS</a>  </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+<tr><td align="left"><b>Satz und Layout</b></td></tr>
+<tr><td align="left">Dominik Frey </td><td align="left">Moritz Kiefer </td></tr>
+<tr><td align="left">Christoph Lehmann </td><td align="left"></td></tr>
+
+<tr><td align="left"><b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left">Toni Zimmer </td></tr>
+
+<tr><td align="left"><b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td></tr>
+
+<tr><td align="left"><b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr></table>
+
+
+<div class="p"><!----></div>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk ebenso
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 3.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2014-03-bilder.html#fm_index">Zum Index</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  2 Mar 2014, 12:46.</small>
+</div>
+</body></html>

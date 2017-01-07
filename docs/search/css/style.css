@@ -1,0 +1,72 @@
+a:link {
+    color: #70340D;
+}
+a:visited {
+ color: #595959;
+}
+a:hover {
+    color: #6C757A;
+}
+html {
+    direction: ltr;
+}
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font: 0.8em Tahoma,sans-serif;
+    margin-left: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    font-family: Arial,"Trebuchet MS",Tahoma,sans-serif;
+    font-weight: bold;
+    margin: 1em 0 0.75em;
+    padding: 0;
+}
+h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.4em;
+}
+p {
+    padding-left: 1em;
+}
+ul {
+    margin: 0.5em 0em 0em 0em;
+    padding: 0em 1em 0em 2em;
+}
+.star ul.star { 
+    LIST-STYLE: none; 
+    MARGIN: 0; 
+    PADDING: 0; 
+    WIDTH: 85px;
+    /* was 100 */ 
+    HEIGHT: 20px;
+    LEFT: 1px; 
+    TOP: -5px; 
+    POSITION: relative; 
+    FLOAT: right; 
+    BACKGROUND: url('../common/images/starsSmall.png') repeat-x 0 -25px;
+}
+.star li { 
+    PADDING: 0; 
+    MARGIN: 0; 
+    FLOAT: left; 
+    DISPLAY: block; 
+    WIDTH: 85px;
+    /* was 100 */
+    HEIGHT: 20px; 
+    TEXT-DECORATION: none; 
+    text-indent: -9000px; 
+    Z-INDEX: 20; 
+    POSITION: absolute; 
+    PADDING: 0; 
+}
+.star li.curr { 
+    BACKGROUND: url('../common/images/starsSmall.png') left 25px; 
+    FONT-SIZE: 1px; 
+}
+.highlight { background-color: #B3B4B4; }

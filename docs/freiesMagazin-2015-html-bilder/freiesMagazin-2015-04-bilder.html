@@ -1,0 +1,2959 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="GENERATOR" content="TtH 3.89" />
+ <style type="text/css"> div.p { margin-top: 7pt;}</style>
+ <style type="text/css"><!--
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ td div.norm {line-height:normal;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;} 
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;} --></style>
+
+                                                 
+<title>freiesMagazin 04/2015</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="de" />
+<meta name="publisher" content="Dominik Wagenführ" />
+<meta name="author" content="freiesMagazin-Autoren" />
+<meta name="description" content="Der März im Kernelrückblick | Octave – Teil 3: Numerische Integration und Matrizen | Android Google-frei konfigurieren und Alternativen einrichten | Ubuntu Phone: Das bq Aquaris E4.5 näher angeschaut | Rezension: Network Hacking | Rezension: Raspberry Pi Kochbuch | Rezension: Hello World! Programmieren für Kids und andere Anfänger | Editorial | Leserbriefe | Veranstaltungen | Vorschau | Konventionen | Impressum" />
+<meta name="keywords" content="freiesMagazin, freies, Magazin, Linux, Open Source" />
+<meta name="copyright" content="CC-BY-SA 4.0 Unported" />
+<meta name="issn" content="1867-7991" />
+<meta name="title" content="freiesMagazin 04/2015" />
+<meta name="language" content="German" />
+
+<link type="text/css" rel="stylesheet" href="fm_mobil_2013_08.css" />
+
+<link type="text/css" rel="stylesheet" href="freiesMagazin-2015-04-bilder-Dateien/fm_mobil_2016_05.css" />
+</head>
+<div id="content_idx">
+<body style="font-family: sans-serif;"><font size="5"><a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2015-04.html">Zur Version ohne Bilder</a></font><hr class="sigilChapterBreak" />
+
+
+          
+
+
+
+
+
+<font size="+4"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<font color="#595959"><b>April 2015</b></font></font><br />
+<font size="+2">(ISSN 1867-7991)</font><br />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_inhalt" name="fm_inhalt">Themen dieser Ausgabe</a></font></h1>
+
+
+    <font size="+1"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_octave_3">Octave – Teil 3: Numerische Integration und Matrizen</a></font> <br />
+    Nachdem im zweiten Teil der Octave-Reihe Funktionen und das Plotten von Graphen behandelt wurden, geht es im dritten Teil an eher komplexe Themen wie die Programmierung und das Entwerfen von eigenen Funktionen. Auch werden Vektoren und Matrizen ausführlich behandelt. (<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_octave_3">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_android_ohne_google">Android Google-frei konfigurieren und Alternativen einrichten</a></font> <br />
+    Android ist das populärste und am weitesten verbreitete Smartphone-Betriebssystem. Obwohl es auf freier Software basiert, ist in der Standardversion eine enge Verzahnung zu Google und seinen Diensten gegeben. Dieser Artikel richtet sich an alle Anwender mit Grundkenntnissen in Linux und fortgeschrittenen Kenntnissen in Android, die die Kontrolle über ihr Gerät zurückerobern wollen und durch ein Google-freies Android den Datenverkehr zum Google-Server und Telefonressourcen einsparen wollen. (<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_android_ohne_google">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+    <font size="+1"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_ubuntuphone">Ubuntu Phone: Das bq Aquaris E4.5 näher angeschaut</a></font> <br />
+    Vor zwei Jahren wurde das Projekt „Ubuntu Touch“ bei Canonical aus der Taufe gehoben. Jetzt läuft der Verkauf des ersten Ubuntu-Smartphones des spanischen Herstellers bq an. Weitere Geräte von Meizu folgen im Laufe des Jahres. In diesem Artikel werden sowohl das Betriebssystem als auch das Smartphone von bq genauer unter die Lupe genommen. (<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_ubuntuphone">weiterlesen</a>) <br />
+    <br />
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_toc" name="fm_toc">Inhalt</a></font></h1><!-- CONTENT -->
+
+
+    &nbsp;<br /> <b>Linux allgemein</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_kernel">Der März im Kernelrückblick</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Anleitungen</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_octave_3">Octave – Teil 3: Numerische Integration und Matrizen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_android_ohne_google">Android Google-frei konfigurieren und Alternativen einrichten</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Hardware</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_ubuntuphone">Ubuntu Phone: Das bq Aquaris E4.5 näher angeschaut</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Community</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_rezension_network_hacking">Rezension: Network Hacking</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_rezension_raspberry_kochbuch">Rezension: Raspberry Pi Kochbuch</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_rezension_programmieren_kids">Rezension: Hello World! Programmieren für Kids und andere Anfänger</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+&nbsp;<br /> <b>Magazin</b> <br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_editorial">Editorial</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_leserbriefe">Leserbriefe</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_veranstaltungen">Veranstaltungen</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_vorschau">Vorschau</a><br /><!-- CONTENT -->
+<a href="freiesMagazin-2015-04-bilder.html#fm_15_04_konventionen">Konventionen</a><br /><!-- CONTENT -->
+
+<div class="p"><!----></div><!-- CONTENT -->
+    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" /><!-- CONTENT -->
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_editorial" name="fm_15_04_editorial">Editorial</a></font></h1>
+
+
+
+<h2>Autoren gesucht</h2>
+
+
+Aufmerksame Leser haben mit Sicherheit bemerkt, dass sich in der aktuellen 
+Ausgabe weniger Artikel als üblich finden. Die drei „Topthemen“, die 
+normalerweise auf der Titelseite angekündigt werden und eine Auswahl der 
+besten Artikel der Ausgabe darstellen mussten in ein normales „Themen“ 
+umbenannt werden, weil die Ausgabe überhaupt nur drei größere Artikel bereit 
+hält. Ansonsten gibt es nur noch die Rezensionen und den Kernelrückblick.
+
+<div class="p"><!----></div>
+Wir sind also auch auf der Suche nach neuen Autoren, die ihre Artikel rund 
+um die Themen Open Source, Linux und Freie Software gerne bei <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 
+veröffentlichen möchten, denn ohne diese Autoren wären die Layouter und 
+Korrektoren arbeitslos. Da <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> keine feste Autorenmannschaft hat, sind wir 
+auf Zusendungen aus der Community angewiesen.
+
+<div class="p"><!----></div>
+Dabei gilt: (Fast) jeder kann einen Artikel über das schreiben, was ihn
+interessiert. Eigentlich müssen Sie dafür nur Spaß am Schreiben haben und sich
+verständlich ausdrücken können, sodass jeder Leser Ihren Artikel oder Ihre
+Anleitungen nachvollziehen kann. Gerne gesehen sind vor allem
+Softwarevorstellungen und Spiele, aber auch HowTos oder Tutorials wünschen sich
+unsere Leser sehr. Ideen für Artikel finden sich zum Beispiel auf unserer
+Artikelwunschliste&nbsp;<a href="http://www.freiesmagazin.de/artikelwuensche">[1]</a>. Wir
+sind allerdings immer offen für ganz neue Vorschläge aus den Bereichen
+Linux, Freie Software und Open Source.
+
+<div class="p"><!----></div>
+Auch ein Blick in die
+Autorenrichtlinien&nbsp;<a href="http://www.freiesmagazin.de/system/files/autorenrichtlinien-20140501.pdf">[2]</a>
+lohnt sich, denn dort steht viel Wissenswertes über das Verfassen von Artikeln
+für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>, das uns die Arbeit in der Redaktion erleichtert und eine
+gleichbleibende Qualität von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> sicherstellt.
+
+<div class="p"><!----></div>
+Wenn Sie also Interesse haben, etwas für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> zu schreiben, schicken Sie
+und eine E-Mail an <img src="freiesMagazin-2015-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> mit Ihren Ideen bzw. Artikelentwürfen,
+sodass <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> auch im neunten Bestehungsjahr wieder viele interessante Artikel
+für die Leser veröffentlichen kann.
+
+<div class="p"><!----></div>
+
+<h2>Wechsel im Team</h2>
+
+
+In der aktuellen Ausgabe haben Jonas Dabelow und Christoph Lehmann zum 
+letzten Mal Artikel für <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> gesetzt und verlassen leider aus Zeitgründen 
+das Team. Wir möchten uns bei beiden herzlich für die gute Zusammenarbeit 
+bedanken.
+
+<div class="p"><!----></div>
+Da wir damit zur Zeit nur noch zwei Layouter im Team haben, möchten wir an 
+dieser Stelle nach neuen Helfern suchen, die <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> mitgestalten wollen. Für 
+den Satz und das Layout kommt das Textsatzsystem LaTeX&nbsp;<a href="https://de.wikipedia.org/wiki/LaTeX">[3]</a> zum Einsatz, sodass etwas Wissen auf 
+diesem Gebiet nicht schaden kann. Das Magazin ist aber so gehalten, dass 
+sehr viel mit Makros gearbeitet wird und nicht zwingend LaTeX-Profis 
+gefordert sind, um das Magazin zu setzen. Zusätzlich wird das Grundgerüst 
+eines Artikels automatisiert von einem Skript erledigt, sodass es 
+hauptsächlich um die „Feinarbeit“ des Artikels geht. Als Layouter muss man 
+die Bilder an die richtige Stelle im Text setzen und, um schöne Umbrüche 
+oder Textverteilung zu erreichen, auch mitunter selbst einmal etwas am Text 
+ändern. Diese Eigenschaft und ein Auge für gutes Layout sind wichtiger als 
+alle LaTeX-Kenntnisse.
+
+<div class="p"><!----></div>
+Daneben wäre Wissen im Umgang mit dem Versionskontrollsystem Subversion (SVN
+&nbsp;<a href="http://subversion.apache.org/">[4]</a>) gut, ist aber nicht zwingend 
+erforderlich. Die wenigen SVN-Befehle, die dazu benötigt werden, sind 
+schnell erlernt – auch Dank einer hervorragenden Dokumentation. Zusätzlich 
+stehen in den meisten Linux-Distributionen und Desktopumgebungen auch 
+grafische Oberflächen für die Verwaltung in einem SVN-Repository bereit, 
+sodass man nicht zwingend die Konsole bedienen muss – auch wenn es darüber 
+manchmal schneller geht.
+
+<div class="p"><!----></div>
+Zwei Dinge sind uns bei einer Mitarbeit wichtig: Lernbereitschaft und
+langzeitiges Engagement. Vor allem der zweite Punkt ist wichtig, da die
+Einarbeitung in das Magazin etwas Zeit kostet und sich nur lohnt, wenn der- oder
+diejenige länger dabei sein kann. So können wir besser planen und Aufgaben
+besser verteilen. Als Gegenleistung für die ehrenamtliche Tätigkeit winkt aber
+kein Geld, sondern „nur“ die eigene Freude daran, an einem Community-Projekt
+mitzuwirken und der Gemeinschaft etwas zurückgeben zu können.
+
+<div class="p"><!----></div>
+Wenn wir nun Ihr Interesse geweckt haben, sind Sie herzlich eingeladen, sich
+bis zum Erscheinen der nächsten Ausgabe am 3. Mai 2015 unter <img src="freiesMagazin-2015-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> bei
+uns zu melden. Wir beantworten natürlich auch gerne Fragen, die sich vorab
+stellen.
+
+<div class="p"><!----></div>
+
+<h2><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> am Kiosk – leider doch nicht!</h2>
+
+
+Unser Aprilscherz dieses Jahr versprach eine Druckversion von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> an den 
+Kiosken deutschlandweit&nbsp;<a href="http://www.freiesmagazin.de/20150401-freiesmagazin-als-druckausgabe-am-kiosk">[5]</a>
+. Leider handelte es sich dabei wie gesagt nur um einen Scherz und <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 
+wird vorerst nicht am Kiosk erscheinen&nbsp;<a href="http://www.freiesmagazin.de/20150402-korrektur-freiesmagazin-doch-nicht-als-d
+ruckausgabe-am-kiosk">[6]</a>. Der organisatorische Aufwand, aber vor allem auch die 
+Kosten für eine Druckausgabe liegen viel zu hoch. Zusätzlich wird Druckmarkt 
+wird immer schwächer, es wäre daher unsinnig, dorthin zu expandieren. 
+Linux-Magazine gibt es am Kiosk auch schon genug, daher wird <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> da nicht 
+mitmischen wollen.
+
+<div class="p"><!----></div>
+Wir freuen uns aber sehr über die vielen Kommentare, die zeigen, dass der 
+Scherz gut angekommen ist. So fragte jemand, wie denn die Autorenvergütung 
+aussehe, ob man pro Seite, Wort oder Artikel bezahlt wird. Und auch nach 
+einem Abonnement und einer Freundschaftswerbung wurde gefragt. 
+
+<div class="p"><!----></div>
+Wir haben in dem Zuge im Übrigen nicht die Grafikdesigner des Heise Verlags 
+abgeworben. ;) Wir möchten uns an dieser Stelle auch sehr herzlich bei Maren 
+Hachmann für die Gestaltung des Covers der „Erstausgabe“ bedanken!
+
+<div class="p"><!----></div>
+Das Layout des Mozilla-Artikels wurde aber tatsächlich mit LaTeX 
+erstellt, welches auf einer Vorlage eines Vortrags von 2009
+basiert&nbsp;<a href="http://www.deesaster.org/latex-magazinerstellung.php">[7]</a>.
+Das kleine Beispiel 
+zeigt dann mitunter auch die Fähigkeiten von LaTeX, auch wenn diese 
+Nutzungsart sicherlich nicht zu den Standardanwendungsfällen des 
+Textsatzsystems gehört.
+
+<div class="p"><!----></div>
+Wir hoffen jedenfalls, dass jeder mit dem Aprilscherz seine Freude hatte und 
+niemand zu traurig ist, dass es doch keine Druckversion von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> geben wird.
+Und damit wünschen wir allen Lesern viel Spaß mit der neuen Ausgabe!
+
+<div class="p"><!----></div>
+Ihre <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>-Redaktion
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.freiesmagazin.de/artikelwuensche"><tt class="big">http://www.freiesmagazin.de/artikelwuensche</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/system/files/autorenrichtlinien-20140501.pdf"><tt class="big">http://www.freiesmagazin.de/system/files/autorenrichtlinien-20140501.pdf</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/LaTeX"><tt class="big">https://de.wikipedia.org/wiki/LaTeX</tt></a><br />
+[4] <a href="http://subversion.apache.org/"><tt class="big">http://subversion.apache.org/</tt></a><br />
+[5] <a href="http://www.freiesmagazin.de/20150401-freiesmagazin-als-druckausgabe-am-kiosk"><tt class="big">http://www.freiesmagazin.de/20150401-freiesmagazin-als-druckausgabe-am-kiosk</tt></a><br />
+[6] <a href="http://www.freiesmagazin.de/20150402-korrektur-freiesmagazin-doch-nicht-als-druckausgabe-am-kiosk"><tt class="big">http://www.freiesmagazin.de/20150402-korrektur-freiesmagazin-doch-nicht-als-druckausgabe-am-kiosk</tt></a><br />
+[7] <a href="http://www.deesaster.org/latex-magazinerstellung.php"><tt class="big">http://www.deesaster.org/latex-magazinerstellung.php</tt></a><br />
+
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Editorial&amp;body=freiesMagazin 04/2015%0AEditorial%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Editorial#comment-form">Beitrag kommentieren</a><br /><br /></i><a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_kernel" name="fm_15_04_kernel">Der März im Kernelrückblick</a></font></h1>von Mathias Menzer
+
+<div class="p"><!----></div>
+    <b>B</b><b>asis aller Distributionen ist der Linux-Kernel, der fortwährend
+weiterentwickelt wird. Welche Geräte in einem halben Jahr unterstützt werden und
+welche Funktionen neu hinzukommen, erfährt man, wenn man den aktuellen
+Entwickler-Kernel im Auge behält.</b>
+
+<div class="p"><!----></div>
+
+<h2>Linux 4.0 noch nicht ganz fertig</h2>
+
+
+Ein wenig verspätet wurde Linux 4.0-rc2&nbsp;<a href="https://lkml.org/lkml/2015/3/3/572">[1]</a>
+freigegeben, was einem Fehler auf Torvalds Mac Mini geschuldet war. Dieser wurde
+durch älteren Code hervorgerufen, der auf neu eingeführte Methoden zur
+Behandlung von Quellen für die Generierung der Grafikausgabe gestoßen war. Der
+Fehler wurde mit einem Patch von Daniel Vetter behoben, woraufhin Torvalds den
+-rc2 inklusive des Patches veröffentlichte.
+
+<div class="p"><!----></div>
+In Vergleich zum Vorgänger fiel die dritte
+Entwicklerversion&nbsp;<a href="https://lkml.org/lkml/2015/3/8/216">[2]</a> zwar recht groß aus,
+allerdings lag 4.0-rc2 eher unter dem Durchschnitt der letzten Versionen. Der
+Umfang kam in erster Linie durch Merges einiger Patch-Sammlungen aus David
+Millers Netzwerk-Zweig und Dave Arlies DRM-Zweig sowie zweier Sammlungen von
+Korrekturen für ASoC (ALSA System on Chip) und Samsungs
+Exynos-Architektur&nbsp;<a href="https://de.wikipedia.org/wiki/Samsung_Exynos">[3]</a> zustande. Doch
+selbst diese Erweiterungen und Korrekturen stufte Torvalds zu diesem Zeitpunkt als
+unkritisch ein. Weiterhin wurde der „Code of Conflict“ aufgenommen (siehe unten).
+
+<div class="p"><!----></div>
+Eine größere Sammlung an Patches mit Fehlerkorrekturen für ARM-SoC
+(System-on-Chip auf Basis der ARM-Architektur) machte dann einen guten Teil der 
+Änderungen
+am -rc4&nbsp;<a href="https://lkml.org/lkml/2015/3/15/180">[4]</a> aus. Den zweitgrößten Einschlag
+erzeugte das Verschieben eines größeren Codeschnipsels in einen anderen Bereich,
+was von Umbauarbeiten am Gadget-Framework herrührte. Gadget ermöglicht es, Linux
+auch als USB-Gerät (Device) zu nutzen. Dem gegenüber steht die Verwendung als
+USB-Host (Controller), als des steuernden Teils im USB-Verbund, was den meisten
+Anwendern geläufiger sein dürfte.
+
+<div class="p"><!----></div>
+Linux 4.0-rc5&nbsp;<a href="https://lkml.org/lkml/2015/3/23/1">[5]</a> wies die gleiche Zahl an
+Commits auf wie sein Vorgänger. Ein großer Teil der Änderungen kam wieder aus
+David Millers Netzwerk-Zweig, der dort eine ganze Reihe an Fehlerkorrekturen
+gesammelt hatte. Ein weiterer Merge betraf das Dateisystem btrfs und lieferte
+hierfür eine Zahl an Korrekturen. Den Rest machten hauptsächlich kleinere
+Änderungen aus, die sich überwiegend auf die Grafik- und Netzwerktreiber
+verteilten sowie auf Korrekturen des Gadget-Frameworks.
+
+<div class="p"><!----></div>
+Jüngster Spross der Entwickler-Linie ist Linux
+4.0-rc6&nbsp;<a href="https://lkml.org/lkml/2015/3/29/248">[6]</a>, der erstmals den Eindruck
+erweckt, dass das Ende des Entwicklungszyklus naht. Dennoch kann -rc6 die schon
+länger erwartete Korrektur von Performance-Problemen der 
+NUMA-Speicherarchitektur&nbsp;<a href="https://de.wikipedia.org/wiki/Non-Uniform_Memory_Access">[7]</a>
+aufweisen. NUMA ermöglicht es auf Mehrprozessor-Systemen, dass alle CPUs auf die
+Speicherbereiche der anderen Prozessoren zugreifen können und vermeidet damit
+unnötige Kopier- und Verschiebe-Aktionen der Daten in einen gemeinsamen
+Speicherbereich, wenn diese anderen Prozessoren zur Verfügung stehen müssen.
+Allerdings fielen diese Korrekturen vergleichsweise kompakt aus, an der Zahl der
+geänderten Quelltextzeilen gemessen. Deutlich stärker machten sich wieder einmal
+Korrekturen aus dem Netzwerk- und ARM-Umfeld bemerkbar.
+
+<div class="p"><!----></div>
+
+<h2>Konfliktbehaftet </h2>
+
+
+In den Reihen der Kernel-Entwickler geht es bisweilen rau zu. Manche Diskussion
+wird mit sehr eindeutigen Worten und Formulierungen gewürzt und auch der
+Hauptentwickler Linus Torvalds greift gerne im Ton daneben. Eben dieser
+Umgangston auf den Kernel-Mailing-Listen wurde schon öfter kritisiert. Oftmals
+führt dies zu Konflikten, die dann mit scharfen Worten geführt werden. Reichen
+Neulinge oder weniger robuste Gemüter Patches ein und geraten sie dann zwischen
+die Fronten oder werden gar Ziel solcher Kritik, ist es verständlich, wenn ihnen
+die Lust vergeht.
+
+<div class="p"><!----></div>
+Greg Kroah-Hartmann legte nun einen Patch vor, um den Linux-Kernel mit einem
+„Code of Conflict“ zu 
+versehen&nbsp;<a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=b0bc65729070b9cbdbb53ff042984a3c545a0e34">[8]</a>.
+Dieser
+recht kurze Text stellt klar, dass persönliche Angriffe nicht akzeptabel sind.
+Fühlt sich jemand angegriffen, so wird auf das Technical Advisory
+Board&nbsp;<a href="http://www.linuxfoundation.org/programs/advisory-councils/tab">[9]</a> verwiesen,
+dessen
+Mitglieder dann vermitteln sollen. Diesem Gremium gehören neben Greg
+Kroah-Hartmann unter anderem auch der Maintainer des Echtzeit-Linux-Zweiges Thomas
+Gleixner oder die mit der Pflege der USB-Treiber betraute Sarah Sharp an.
+
+<div class="p"><!----></div>
+Auch den wohl wichtigsten Punkt liefert der neue Code of Conflict mit: „Seid
+großartig zueinander!“
+
+<div class="p"><!----></div>
+
+<h2>kdbus im Kernel</h2>
+
+
+Wurde in Linux 3.19 gerade erst mit Binder ein System zur
+Interprozesskommunikation (IPC) aufgenommen (siehe „Der Februar im
+Kernelrückblick“, <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>
+03/2015&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-03">[10]</a>), ist auch schon
+wieder kdbus im Gespräch. Nach etwas über einem Jahr Entwicklungszeit scheinen
+am aktuellen Satz an Patches keine größeren Beanstandungen mehr zu bestehen,
+weshalb diese nun in den linux-next-Zweig aufgenommen 
+wurden&nbsp;<a href="http://www.pro-linux.de/-0h21566d">[11]</a>. Damit steht kdbus nun direkt vor der
+Aufnahme in die
+kommende Entwicklerversion des Linux-Kernels und dürfte damit ab Linux 4.1 mit
+an Bord sein, sofern keine unerwarteten Fehler mehr auftreten.
+
+<div class="p"><!----></div>
+
+<h2>Pflaster gegen Hammer</h2>
+
+
+Seit März macht eine als „Rowhammer“&nbsp;<a href="https://de.wikipedia.org/wiki/Rowhammer">[12]</a>
+bekannte Methode zur Speichermanipulation die Runde. Diese erlaubt es, sich
+höhere Rechte auf einem Linux-System zu verschaffen, nur indem bestimmte
+Speicherstellen gelesen werden. Die Ursache liegt allerdings in der Hardware,
+konkret in
+DRAM-Speicherchips&nbsp;<a href="https://de.wikipedia.org/wiki/Dynamic_Random_Access_Memory">[13]</a>, wo
+der Zugriff auf bestimmte Speicherstellen die Bits benachbarter Speicherstellen
+kippen kann. Schafft ein Angreifer es, dieses Verhalten gezielt einzusetzen, so
+sind neben Abstürzen des Systems auch die Manipulation von Daten im
+Arbeitsspeicher möglich. Letzteres kann auch dazu genutzt werden, gezielt die
+Rechte eigener Prozesse auszuweiten. Allerdings sind die Hürden hierfür sehr
+hoch, da genaue Kenntnisse über den Aufbau der im Zielsystem eingesetzten
+Hardware erforderlich sind. Obwohl dadurch breit gestreute Angriffe sehr
+unwahrscheinlich sind, ist diese Schwachstelle äußerst beunruhigend, da ihre
+Beseitigung grundsätzlich den Austausch von Hardware erforderlich macht.
+
+<div class="p"><!----></div>
+Auch wenn sich das Problem nicht auf der Betriebssystemseite lösen lässt, so
+kann es dennoch umgangen oder erschwert werden. Ein Patch soll künftig Auskunft
+über die physischen Speicheradressen eines Prozesses nur noch für Benutzer mit
+Superuser-Rechten erlauben&nbsp;<a href="http://www.pro-linux.de/-0h21567e">[14]</a>. Der eigentliche
+Angriff ist zwar immer noch machbar, aber der Angreifer kann nicht einfach
+auslesen, welche Adressen für ihn von Interesse sind. Dieses kleine, gerade
+einmal drei Codezeilen messende Pflästerchen wurde bereits in -rc5 aufgenommen
+und ist damit im kommenden Linux-Kernel enthalten.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="https://lkml.org/lkml/2015/3/3/572"><tt class="big">https://lkml.org/lkml/2015/3/3/572</tt></a><br />
+[2] <a href="https://lkml.org/lkml/2015/3/8/216"><tt class="big">https://lkml.org/lkml/2015/3/8/216</tt></a><br />
+[3] <a href="https://de.wikipedia.org/wiki/Samsung_Exynos"><tt class="big">https://de.wikipedia.org/wiki/Samsung_Exynos</tt></a><br />
+[4] <a href="https://lkml.org/lkml/2015/3/15/180"><tt class="big">https://lkml.org/lkml/2015/3/15/180</tt></a><br />
+[5] <a href="https://lkml.org/lkml/2015/3/23/1"><tt class="big">https://lkml.org/lkml/2015/3/23/1</tt></a><br />
+[6] <a href="https://lkml.org/lkml/2015/3/29/248"><tt class="big">https://lkml.org/lkml/2015/3/29/248</tt></a><br />
+[7] <a href="https://de.wikipedia.org/wiki/Non-Uniform_Memory_Access"><tt class="big">https://de.wikipedia.org/wiki/Non-Uniform_Memory_Access</tt></a><br />
+[8] <a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=b0bc65729070b9cbdbb53ff042984a3c545a0e34"><tt class="big">https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/commit/?id=b0bc65729070b9cbdbb53ff042984a3c545a0e34</tt></a><br />
+[9] <a href="http://www.linuxfoundation.org/programs/advisory-councils/tab"><tt class="big">http://www.linuxfoundation.org/programs/advisory-councils/tab</tt></a><br />
+[10] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-03"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-03</tt></a><br />
+[11] <a href="http://www.pro-linux.de/-0h21566d"><tt class="big">http://www.pro-linux.de/-0h21566d</tt></a><br />
+[12] <a href="https://de.wikipedia.org/wiki/Rowhammer"><tt class="big">https://de.wikipedia.org/wiki/Rowhammer</tt></a><br />
+[13] <a href="https://de.wikipedia.org/wiki/Dynamic_Random_Access_Memory"><tt class="big">https://de.wikipedia.org/wiki/Dynamic_Random_Access_Memory</tt></a><br />
+[14] <a href="http://www.pro-linux.de/-0h21567e"><tt class="big">http://www.pro-linux.de/-0h21567e</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Mathias Menzer</b>&nbsp;(<a href="http://www.menzer.net/">Webseite</a>)
+behält die Entwicklung des Linux-Kernels im Blick, um über kommende Funktionen
+von Linux auf dem Laufenden zu bleiben und immer mit interessanten Abkürzungen
+und komplizierten Begriffen dienen zu können.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Der M%C3%A4rz im Kernelr%C3%BCckblick&amp;body=freiesMagazin 04/2015%0ADer M%C3%A4rz im Kernelr%C3%BCckblick%0AMathias Menzer%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Der M%C3%A4rz im Kernelr%C3%BCckblick#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_octave_3" name="fm_15_04_octave_3">Octave – Teil 3: Numerische Integration und Matrizen</a></font></h1>von Jens Dörpinghaus
+
+<div class="p"><!----></div>
+    <b>N</b><b>achdem im zweiten Teil Funktionen und das Plotten von Graphen behandelt wurden,
+geht es nun an eher komplexe Themen wie die Programmierung und das Entwerfen von
+eigenen Funktionen. Auch werden Vektoren und Matrizen behandelt.</b>
+
+<div class="p"><!----></div>
+Im vorherigen Abschnitt des letzten Artikels aus der Octave-Reihe (siehe Ausgabe
+02/2015 von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-02">[1]</a>)
+wurde bereits eine Funktion f definiert. Aus der Schule kennt man die
+Integration, die man dort im Allgemeinen durch das Berechnen einer Stammfunktion
+löst. Anschaulich geht es um die Berechnung des Flächeninhaltes zwischen dem
+Graphen der Funktion f und der x-Achse. Es ist aber zum einen nicht immer
+möglich, eine Stammfunktion anzugeben und oft ist es einfach zweckmäßig eine
+numerische Näherung dieses Wertes zu bestimmen. Das soll an dieser Stelle die
+Motivation sein, ein erstes numerisches Problem zu lösen und Schleifen zu
+benutzen.
+
+<div class="p"><!----></div>
+
+<h2>Numerische Integration mit der Trapezformel, for-Schleifen</h2>
+
+
+Als Näherungsformel soll die Trapezformel angewandt werden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/octave3_trapezformel.png" alt="octave3_trapezformel.png" style="max-width:100%" /><br /><em>Skizze zur Trapezformel.</em><br />
+
+<div class="p"><!----></div>
+Dazu wählt man zwei x-Werte a und b, zwischen denen man den Flächeninhalt
+wie folgt annähert:
+
+<div class="p"><!----></div>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+T(f) : = </td><td nowrap="nowrap" align="center">
+1
+<div class="hrcomp"><hr noshade="noshade" size="1"/></div>2<br /></td><td nowrap="nowrap" align="center">
+( f(a) + f(b) )&#183;(b&#8722;a)</td></tr></table>
+</td></tr></table>
+
+
+
+<div class="p"><!----></div>
+Diese Formel kann entweder über die Formeln von Newton-Cotes mit äquidistanten
+Stützstellen hergeleitet werden, oder es kann ganz anschaulich argumentiert
+werden. Der Flächeninhalt zwischen den Punkten a und b auf der x-Achse
+wird dabei durch eine Gerade approximiert, also
+angenähert. Der Flächeninhalt
+des Quadrates kann durch (b&#8722;a)f(a), der des Dreieckes durch
+[1/2](b&#8722;a)(f(b)&#8722;f(a)
+angegeben werden. Addiert man beide Werte, so kommt man auf die obige Formel.
+Hier wurde stillschweigend angenommen, dass f(a) &#8804; f(b) ist. Gilt dies
+nicht, kommt man aber trotzdem auf dieselbe Formel. Diese kann man direkt
+eingeben, wenn man die Funktionsdefinitionen aus dem zweiten Teil der 
+Octave-Reihe (siehe Ausgabe 02/2015 von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-02">[1]</a>)
+im Pfad liegen hat:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">&#62;&#62; a=2;<br />
+&#62;&#62; b=4;<br />
+&#62;&#62; 1/2* ( f(a) + f(b)) * (b-a)<br />
+ans =  20</div>
+
+<div class="p"><!----></div>
+
+
+Anschaulich kann man eine Grafik erstellen mit
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; x=a:0.1:b;<br />
+&#62;&#62; plot (x,f(x),'-',[a,b],[f(a),f(b)],'-r');</div>
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2015-04-bilder-Dateien/octave3_naehrungsfunktion.png" alt="octave3_naehrungsfunktion.png" style="max-width:100%" /><br /><em>Die Funktion f und die Näherungsfunktion durch die Trapezformel (rot).</em><br />
+
+<div class="p"><!----></div>
+Zunächst wird also die Funktion f geplottet und dann die Näherungsfunktion in
+rot dargestellt. Es ist sinnvoll, die Trapezformel in eine separate Funktion
+auszugliedern:
+
+<div class="p"><!----></div>
+
+<div class="listing">function I = trapez(a,b,fa,fb)<br />
+&nbsp;&nbsp;I = (1/2)* ( fa + fb) * (b-a);<br />
+end</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2015-04-listings/trapez.m">trapez.m</a></i>
+
+<div class="p"><!----></div>
+
+
+Diese wird wieder unter einem Dateinamen, der dem Funktionsnamen entspricht,
+gespeichert. Ein kurzer Test mit 
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; trapez(a,b,f(a),f(b))<br />
+ans =  20</div>
+
+<div class="p"><!----></div>
+
+
+liefert dasselbe Ergebnis. Man kann nun auf einem bestimmtes Intervall
+mit einer bestimmten Schrittweite die Ergebnisse der Trapezformel auf
+Teilintervallen zusammensetzen, um so ein genaueres Ergebnis zu
+erhalten. Die Idee ist, das Intervall [a,b] auf der
+x-Achse in gleiche Abstände s einzuteilen. Dann
+bekommt man Intervalle [a,a+s], [a+s, a+2s], ...,
+[b&#8722;s,b] auf die wieder die Trapezformel angewandt werden
+kann. Den Abstand s nennt man Schrittweite. Eine Funktion mit
+kleinerer Schrittweite kann „genauer“ approximiert werden kann. Dazu
+nutzt man folgende Funktion:
+
+<div class="p"><!----></div>
+
+<div class="listing">function I = zusammengesetztTrapez(a,b,schrittweite)<br />
+&nbsp;&nbsp;% Liste von Stuetzpunkten<br />
+&nbsp;&nbsp;x = a:schrittweite:(b-schrittweite);<br />
+&nbsp;&nbsp;integral = 0;<br />
+&nbsp;&nbsp;% Trapezformel anwenden<br />
+&nbsp;&nbsp;for stuetzpunkt = x,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;stuetzpunkt2 = stuetzpunkt + schrittweite;  <br />
+&nbsp;&nbsp;&nbsp;&nbsp;integral = integral + trapez(stuetzpunkt, stuetzpunkt2, f(stuetzpunkt), f(stuetzpunkt2));<br />
+&nbsp;&nbsp;end;<br />
+&nbsp;&nbsp;I = integral;<br />
+end</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2015-04-listings/zusammengesetztTrapez.m">zusammengesetztTrapez.m</a></i>
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2015-04-bilder-Dateien/octave3_trapezformel2.png" alt="octave3_trapezformel2.png" style="max-width:100%" /><br /><em>Skizze zur zusammengesetzten Trapezformel.</em><br />
+
+<div class="p"><!----></div>
+Die Funktion liefert eine Näherung I des Integrals zurück. Das Integral wird
+von a bis b mit fester Schrittweite berechnet. Die erste Zeile ist ein
+sogenannte Kommentar. Kommentare fangen mit einem Prozentzeichen an und werden von
+Octave ignoriert, d.&nbsp;h. man kann sie nutzen, um dort Zusatzinformationen zum
+Verstehen des Quellcodes zu hinterlegen.
+
+<div class="p"><!----></div>
+In x wird also die Liste von Stützpunkten gespeichert; diese Schreibweise
+wurde schon oben eingeführt. Da man im Folgenden die Trapezformel immer für das
+Intervall [stuetzpunkt, stuetzpunkt+schrittweite] anwendet, kann in dieser
+Liste der rechte Rand des Intervalls [a,b] entfallen. Zunächst ist die Summe
+der Formeln 0.
+
+<div class="p"><!----></div>
+Nun kommt noch eine Neuerung hinzu, die sogenannte for-Schleife. Dieser
+kann eine Menge von Werten übergeben werden und für jeden dieser Werte
+wird dann der Codeblock der Schleife ausgeführt. Die for-Schleife wird mit
+end abgeschlossen.  In diesem konkreten Fall nimmt sie jeden Wert aus
+x und bezeichnet ihn mit stuetzpunkt. Der rechte Stützpunkt
+ist jeweils stuetzpunkt + schrittweite, sodass man dem Wert des
+Integrals nun den Wert der Trapezformel dieses Teilintervals
+hinzufügt.
+
+<div class="p"><!----></div>
+Zum Schluss gibt die Funktion die gebildete Summe als I zurück. Das kann man
+sofort testen:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; zusammengesetztTrapez(0,12,4)<br />
+ans =  608</div>
+
+<div class="p"><!----></div>
+
+
+Dies berechnet also das Integral der Funktion f (zur Erinnerung, es ist
+f(x)=x<sup>2</sup> gesetzt, dies kann aber beliebig geändert werden) zwischen 0 und
+12 mit der Schrittweite 4. Wenn man man sukzessive kleinere Schrittweiten wählt,
+sieht man, dass sich die Näherungsformel der eigentlichen Lösung 576 annähert:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; zusammengesetztTrapez(0,12,2)<br />
+ans =  584<br />
+&#62;&#62; zusammengesetztTrapez(0,12,0.5)<br />
+ans =  576.50</div>
+
+<div class="p"><!----></div>
+
+
+Das soll im folgenden Abschnitt etwas systematischer untersucht werden.
+
+<div class="p"><!----></div>
+
+<h2>Analyse der zusammengesetzten Trapezformel, Vektoren</h2>
+
+
+Der Wert von x im vorherigen Abschnitt wurde bisher als
+„Liste“ bezeichnet.  Das ist anschaulich richtig; genau genommen
+handelt es sich aber um einen Vektor. Vektoren können praktisch aus
+beliebig vielen Einträgen bestehen:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">&#62;&#62; x=[1,2,3,4]<br />
+x =<br />
+&nbsp;&nbsp;&nbsp;1   2   3   4<br />
+<br />
+&#62;&#62; x=[1,2]<br />
+x =<br />
+&nbsp;&nbsp;&nbsp;1   2<br />
+<br />
+&#62;&#62; x=1:1:4<br />
+x =<br />
+&nbsp;&nbsp;&nbsp;1   2   3   4</div>
+
+<div class="p"><!----></div>
+
+
+Man kann Vektoren also nicht nur direkt eingeben, sondern auch in der
+Von-Schrittweite-Bis-Schreibweise.
+
+<div class="p"><!----></div>
+Auf bestimmte Elemente eines Vektors kann natürlich auch direkt
+zugegriffen werden, wie man das etwa von Arrays oder Listen aus
+anderen Programmiersprachen schon kennt. Dazu kann man einzelne Elemente in
+normale Klammern setzen oder aber auch ganze Bereiche eines Vektors
+angeben:
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">&#62;&#62; x(2)<br />
+ans =  2<br />
+&#62;&#62; x(4)<br />
+ans =  4<br />
+&#62;&#62; x(1:2)<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;1   2</div>
+
+<div class="p"><!----></div>
+
+
+Weiter gibt es das Schlüsselwort end, mit dem die Länge des Vektors
+angegeben wird. So können Elemente eines Vektors entfernt oder auch neue hinzugefügt werden.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">&#62;&#62; x(end + 1) = 6<br />
+x =<br />
+&nbsp;&nbsp;&nbsp;1   2   3   4   6<br />
+<br />
+&#62;&#62; x = x(1:end -1)<br />
+x =<br />
+&nbsp;&nbsp;&nbsp;1   2   3   4</div>
+
+<div class="p"><!----></div>
+
+
+Es gibt zwei Aspekte, die anhand des Beispiel aus dem vorherigen
+Abschnitt ergänzt werden können. Zum einen kann die zuvor definierte Funktion der
+zusammengesetzten Trapezformel nun auch um einen Plot ergänzt werden –
+man möchte schließlich auch sehen, was man berechnet hat.
+
+<div class="p"><!----></div>
+Das entsprechende Intervall [a,b] mit der Schrittweite war schon in x
+gespeichert, allerdings fehlt noch der rechte Rand b. Weiter soll mit xg
+noch eine für einen Plot geeignete Darstellung des Intervalls gegeben werden.
+Damit kann die Funktion geplottet werden.
+
+<div class="p"><!----></div>
+
+
+
+<div class="listing">xg = a:0.1:b;<br />
+x(end + 1)=b;<br />
+<br />
+plot (x,f(x),'-',xg,f(xg),'-');</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2015-04-listings/plotFunction.m">plotFunction.m</a></i>
+
+<div class="p"><!----></div>
+
+
+Führt man nun die Funktion mit denselben drei Schrittweiten wie im vorherigen
+Abschnitt aus, sieht man anschaulich, wie sich die Näherungsfunktion der
+eigentlichen Funktion annähert. Das kann nun aber auch systematisch untersucht
+werden. 
+
+<div class="p"><!----></div>
+Hierfür kann man eine Funktion definieren, die eine ganze Testreihe ausführt. Dazu
+benötigt sie eine Liste von Schrittweiten sowie den Anfang a und das Ende b
+des Intervalls.
+
+<div class="p"><!----></div>
+
+<div class="listing">function liste = testreihe(a,b,listeschrittweiten)<br />
+&nbsp;&nbsp;for schrittweite = listeschrittweiten,<br />
+&nbsp;&nbsp;&nbsp;&nbsp;liste(end +1) =   zusammengesetztTrapez(a,b,schrittweite);<br />
+&nbsp;&nbsp;end;<br />
+end</div>
+
+<div class="p"><!----></div>
+<i>Listing: <a href="http://www.freiesmagazin.de/mobil/2015-04-listings/testreihe.m">testreihe.m</a></i>
+
+<div class="p"><!----></div>
+
+
+Diese Funktion muss nun wieder in einer Datei mit einem Dateinamen,
+der mit dem Funktionsnamen übereinstimmt, gespeichert werden. Allgemein muss
+in Octave der Dateiname nicht mit dem Funktionsnamen übereinstimmen
+und es können theoretisch beliebig viele Funktionen in einer Datei
+gespeichert werden. Zum einen aus Gründen der Übersichtlichkeit, zum
+anderen auch aus Kompatibilitätsgründen hat sich aber das Verfahren
+eingebürgert, nur eine Funktion pro Datei zu verwenden und den Namen
+entsprechend zu wählen. 
+<div class="p"><!----></div>
+Die Funktion <b><tt class="big">testreihe</tt></b> berechnet also mit der Liste von Schrittweiten
+verschiedene Näherungen, indem sie für jedes Element in der Liste die Funktion
+zusammengesetztTrapez aufruft.
+
+<div class="p"><!----></div>
+Ein erster Test liefert nun eine schöne Übersicht, wie sich bei kleineren
+Schrittweiten die zusammengesetzte Trapezformel der Lösung annähert.
+
+<div class="p"><!----></div>
+
+
+
+<div class="command">&#62;&#62; x=[4,2,1,0.5,0.1,0.01]<br />
+x =<br />
+&nbsp;&nbsp;&nbsp;4.000000   2.000000   1.000000   0.500000   0.100000   0.010000<br />
+<br />
+&#62;&#62; testreihe(a,b,x)<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;608.00   584.00   578.00   576.50   576.02   576.00</div>
+
+<div class="p"><!----></div>
+
+
+Dies kann man auch plotten. Dazu wird diese Liste in der Variable l gespeichert.
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; l = testreihe(a,b,x);</div>
+
+<div class="p"><!----></div>
+
+
+Den absoluten Fehler kann man errechnen, indem man den Betrag von der Differenz
+der Optimallösung und der Näherungslösung bestimmt:
+
+<div class="p"><!----></div>
+
+<br clear="all" /><table border="0" width="100%"><tr><td>
+<table align="center" cellspacing="0"  cellpadding="2"><tr><td nowrap="nowrap" align="center">
+e<sub><div class="roman">abs</div></sub> = &#124; l<sub><div class="roman">opt</div></sub> &#8722; l<sub><div class="roman">approx</div></sub> &#124;</td></tr></table>
+</td></tr></table>
+
+
+
+<div class="p"><!----></div>
+Den Betrag kann man mit <b><tt class="big">abs</tt></b> bestimmen und die richtige Lösung des Integrals ist 576. 
+Geplottet wird der absolute Fehler durch:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; plot (1:6, abs( 576 -l))<br />
+&#62;&#62; xlabel ('Rechnung');<br />
+&#62;&#62; ylabel ('Absoluter Fehler');</div>
+
+<div class="p"><!----></div>
+
+
+<img src="freiesMagazin-2015-04-bilder-Dateien/octave3_absoluterFehler.png" alt="octave3_absoluterFehler.png" style="max-width:100%" /><br /><em>Der Plot des absoluten Fehlers.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Rechnen mit Matrizen und Vektoren</h2>
+
+
+Erste Rechnungen mit Matrizen und Vektoren wurden im vorherigen Abschnitt schon
+ausgeführt. Bevor man weitergeht, ist es an dieser Stelle wichtig, die
+Unterscheidung zwischen elementweisen und normalen Verknüpfungen zu betrachten. Diese unterscheiden sich wie folgt:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Die normalen Verknüpfungen +,-,*,/,^ stellen die normale Matrixaddition, -multiplikation etc. dar.</li>
+<li> Die elementweisen Verknüpfungen .+,.-,.*,./,.^ verknüpfen den zweiten Operator mit jedem Element des ersten Operators.</li>
+</ul>
+
+<div class="p"><!----></div>
+Man kann dies an einigen einfachen Beispielen illustrieren.
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; A = [1,2;3,4];<br />
+&#62;&#62; A.*2<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;2   4<br />
+&nbsp;&nbsp;&nbsp;6   8<br />
+<br />
+&#62;&#62; A*2<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;2   4<br />
+&nbsp;&nbsp;&nbsp;6   8</div>
+
+<div class="p"><!----></div>
+
+
+Hier fällt auf, dass Octave selbstständig die Multiplikation mit einem
+Skalar ausführt, unabhängig davon ob man die richtige Verknüpfung
+auswählt. Anders sieht es jedoch bei der Multiplikation der Matrix A
+mit einem Vektor aus. Beim komponentenweisen Multiplizieren sucht
+Octave automatisch nach den passenden Elementen. Beim normalen
+Multiplizieren ist das Ergebnis ein Vektor.
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; A.*[2;3]<br />
+warning: product: automatic broadcasting operation applied<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;&nbsp;2    4<br />
+&nbsp;&nbsp;&nbsp;&nbsp;9   12<br />
+<br />
+&#62;&#62; A*[2;3]<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;&nbsp;8<br />
+&nbsp;&nbsp;&nbsp;18</div>
+
+<div class="p"><!----></div>
+
+
+Direkt ersichtlich ist auch der Unterschied zwischen dem elementweisen
+Potenzieren einer Matrix und der Matrixpotenzierung:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; A.^2<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;&nbsp;1    4<br />
+&nbsp;&nbsp;&nbsp;&nbsp;9   16<br />
+<br />
+&#62;&#62; A^2<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;&nbsp;7   10<br />
+&nbsp;&nbsp;&nbsp;15   22<br />
+<br />
+&#62;&#62; A*A<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;&nbsp;7   10<br />
+&nbsp;&nbsp;&nbsp;15   22</div>
+
+<div class="p"><!----></div>
+
+
+An dieser Stelle sei auch die Berechnung der Determinante, <b><tt class="big">det(A)</tt></b>, angesprochen. 
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; det(A)<br />
+ans = -2</div>
+
+<div class="p"><!----></div>
+
+
+Die Determinante gibt z.&nbsp;B. Aufschluss darüber, ob eine quadratische Matrix A
+invertierbar ist. Sie kann auch angewendet werden, um die Frage zu klären, ob ein
+lineares Gleichungssystem Ax=b lösbar ist. Mehr Informationen gibt es in der Wikipedia&nbsp;<a href="https://de.wikipedia.org/wiki/Determinante_(Mathematik)">[2]</a>.
+
+<div class="p"><!----></div>
+
+<h2>Links- und Rechtsdivision, Lösen von linearen Gleichungssystemen</h2>
+
+
+Weitere Fallstricke bei den elementaren Operatoren gibt es auch bei der
+Division. Das Dividieren von Matrizen ist ein komplexes Thema und mathematisch
+so nicht ganz exakt, da eine Matrixdivision nicht definiert ist. 
+
+<div class="p"><!----></div>
+In Octave ist eine Umkehrung der Matrixmultiplikation allerdings definiert, und
+zwar als Links- und Rechtsdivision x\y und x/y:
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; A = [1,2;3,4];<br />
+&#62;&#62; B=[3,4;5,6];<br />
+&#62;&#62; C=A*B<br />
+C =<br />
+&nbsp;&nbsp;&nbsp;13   16<br />
+&nbsp;&nbsp;&nbsp;29   36<br />
+<br />
+&#62;&#62; C/B<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;1   2<br />
+&nbsp;&nbsp;&nbsp;3   4<br />
+<br />
+&#62;&#62; A\C<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;3.0000   4.0000<br />
+&nbsp;&nbsp;&nbsp;5.0000   6.0000</div>
+
+<div class="p"><!----></div>
+
+
+Laut Dokumentation ist die Rechtsdivision x/y definiert als 
+x/y=(inverse (y&#8242;) * x&#8242;)&#8242;
+und die Linksdivision x\y definiert als
+x\y=inverse (x) * y
+Das sollte man stets im Hinterkopf behalten und diese Funktionen nicht
+leichtfertig anwenden. 
+
+<div class="p"><!----></div>
+A\b hat weiter die Funktion, das lineare Gleichungssystem Ax=b zu lösen. 
+
+<div class="p"><!----></div>
+
+<div class="command">&#62;&#62; b=[1;2];<br />
+&#62;&#62; A\b<br />
+ans =<br />
+&nbsp;&nbsp;&nbsp;0.00000<br />
+&nbsp;&nbsp;&nbsp;0.50000</div>
+
+<div class="p"><!----></div>
+
+
+Hierbei benutzt Octave die Gauß-Elimination oder die QR-Zerlegung. Bei
+singulären oder schlecht konditionierten Matrizen wird eine Warnmeldung
+angezeigt, trotzdem sollte die Funktion ebenfalls nicht ohne weitere Prüfung
+angewendet werden. 
+
+<div class="p"><!----></div>
+Zur Erinnerung: Ein lineares Gleichungssystem hat entweder keine, eine oder
+unendlich viele Lösungen. Die von Octave berechnete Lösung ist also entweder die
+eine Lösung, eine beliebige von unendlich vielen oder keine Lösung, da Octave
+nur eine Näherungslösung anzeigt.
+
+<div class="p"><!----></div>
+
+<h2>Ausblick</h2>
+
+
+Natürlich ist diese kleine Artikelreihe nur eine sehr kurze Einführung gewesen.
+Trotzdem wurden die wesentlichen Handwerkszeuge behandelt.
+
+<div class="p"><!----></div>
+Mit Octave kann man noch viel mehr machen, etwa symbolisches Rechnen mit dem
+symbolic-Package, Statistik, usw. Es lohnt sich, einfach die Augen offen zu
+halten. 
+
+<div class="p"><!----></div>
+Wer sich noch ausgiebiger mit Octave beschäftigen möchte, kann sich in die
+Octave-Dokumentation einlesen&nbsp;<a href="https://www.gnu.org/software/octave/doc/interpreter/index.html">[3]</a>.
+Im Octave-Wiki&nbsp;<a href="http://wiki.octave.org/Main_Page">[4]</a> gibt es noch weitere Beispiele
+und Anleitungen. Da Octave weitestgehend kompatibel zu Matlab ist, sind auch
+Dokumentationen und Anleitungen für dieses kommerzielle Programm oftmals hilfreich.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-02"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-02</tt></a><br />
+[2] <a href="https://de.wikipedia.org/wiki/Determinante_(Mathematik)"><tt class="big">https://de.wikipedia.org/wiki/Determinante_(Mathematik)</tt></a><br />
+[3] <a href="https://www.gnu.org/software/octave/doc/interpreter/index.html"><tt class="big">https://www.gnu.org/software/octave/doc/interpreter/index.html</tt></a><br />
+[4] <a href="http://wiki.octave.org/Main_Page"><tt class="big">http://wiki.octave.org/Main_Page</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jens Dörpinghaus</b>
+arbeitet seit vielen Jahren mit Matlab und Octave. Da er privat 
+ausschließlich freie Software einsetzt, verfolgt er die Entwicklung von 
+Octave gespannt.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Octave - Teil 3&amp;body=freiesMagazin 04/2015%0AOctave - Teil 3%0AJens Dörpinghaus%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Octave - Teil 3#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_android_ohne_google" name="fm_15_04_android_ohne_google">Android Google-frei konfigurieren und Alternativen einrichten</a></font></h1>von Roman Buchheit
+
+<div class="p"><!----></div>
+    <b>A</b><b>ndroid ist das populärste und am weitesten verbreitete Smartphone-Betriebssystem.
+Obwohl es auf freier Software basiert, ist in der Standardversion eine enge
+Verzahnung zu Google und seinen Diensten gegeben. Dieser Artikel richtet sich an
+alle Anwender mit Grundkenntnissen in Linux und fortgeschrittenen Kenntnissen in
+Android, die die Kontrolle über ihr Gerät zurückerobern wollen und durch ein
+Google-freies Android den Datenverkehr zum Google-Server und Telefonressourcen
+einsparen wollen.</b>
+
+<div class="p"><!----></div>
+Der Artikel stellt eine Anleitung zum Entfernen der Google-Dienste und zum
+Ersetzen derselbigen durch unabhängige, alternative Dienste vor. Somit ist der
+zweite Abschnitt des Artikels auch für Leser nützlich, die sich für eine
+Google-freie Custom ROM (z.&nbsp;B. Cyanogenmod&nbsp;<a href="http://www.cyanogenmod.org/">[1]</a>)
+entschieden haben und gerne einen Teil des durch die Google-Dienste bekannten
+Komforts aus offenen Alternativen einrichten wollen. Dazu gehört ein Ersatz der
+App-Quelle (Google Play Store), alternative Dienste zur automatischen Kalender-
+und Kontaktsynchronisierung (Google Contacts und Google Calender), eine
+Alternative zur offiziellen YouTube-App und eine provisorische Lösung zum
+Installieren und Aktualisieren von unverzichtbaren Google Play Store Apps über
+einen Desktop-Computer. Der Artikel zeigt die Einrichtung eines Google-freien
+Android, ohne dass man als Nutzer Einschränkungen oder Komfortverlust in Kauf 
+nehmen muss.
+
+<div class="p"><!----></div>
+
+<h2>Vorbereitungen</h2>
+
+
+Beim Befolgen dieses Artikels ist es nicht notwendig, eine neue ROM (Firmware) auf sein
+Smartphone aufzuspielen. Jedoch wird ein Smartphone mit Root-Rechten benötigt.
+
+<div class="p"><!----></div>
+
+<h3>Rooten des Android-Systems</h3>
+
+
+Wie das bei verschiedenen Modellen funktioniert, kann zum Beispiel auf Androidpit&nbsp;<a href="http://www.androidpit.de/de/android/wiki/view/Root">[2]</a>
+oder bei xda-developers&nbsp;<a href="http://xda-developers.com/">[3]</a> nachgelesen werden. Weitere
+Informationen zum Rooten von Android-Telefonen finden sich auch im Droidwiki&nbsp;<a href="http://www.droidwiki.de/Root">[4]</a>.
+
+<div class="p"><!----></div>
+Es ist zu beachten, dass bei falschem Vorgehen das Telefon zerstört werden kann
+und im Normalfall durch die Änderung der Software die Garantie des Herstellers
+verloren geht. Man sollte daher genau aufpassen, dass man die passende Anleitung
+zu seinem Modell heraussucht. Außerdem ist es zu empfehlen, vor der Umsetzung
+dieses Artikels alle wichtigen Daten des Handys zu sichern. Falls es zu
+Problemen kommt, kann im Notfall immer der Werkszustand wiederhergestellt werden
+bzw. eine Sicherungskopie zurückgespielt werden.
+
+<div class="p"><!----></div>
+
+<h3>Vorbereitungen der Android"=Systemeinstellungen</h3>
+
+
+Als erstes muss in den Einstellungen die Erlaubnis erteilt werden, Nicht-Market
+Anwendungen zu installieren. Bei Android 2.3 findet sich diese Option unter
+„<em>Einstellungen -&#62; Anwendungen -&#62; Unbekannte Herkunft</em>“. Bei den neueren
+Android-Versionen sollte es ähnlich zu finden sein. Diese Option erlaubt, dass
+nach dem Entfernen des Google Play Store Apps aus alternativen Quellen
+installiert werden können. Um Apps von einem Linux Computer aus über das
+Terminal auf dem Telefon zu installieren, muss außerdem der Debug-Modus
+aktiviert werden. Unter Android 2.3 findet sich diese Option unter „<em>Einstellungen -&#62; Anwendungen -&#62; Entwicklung -&#62; Debug-Modus</em>“.
+
+<div class="p"><!----></div>
+
+<h2>Notwendige Apps aus dem Play Store installieren</h2>
+
+
+Für diese Anleitung wird eine Reihe von Apps benötigt. Am einfachsten ist es,
+wenn diese vor dem Entfernen der Google Dienste aus dem Play Store installiert
+werden.
+
+<div class="p"><!----></div>
+Für das Blockieren der Google-Dienste wird die App Chef's App Freezer&nbsp;<a href="https://play.google.com/store/apps/details?id=com.chef.freezer">[5]</a>
+benötigt. Es ist wichtig zu wissen, dass diese App Root-Rechte benötigt, das heißt
+das Telefon muss schon erfolgreich gerootet worden sein, bevor die App benutzt
+werden kann.
+
+<div class="p"><!----></div>
+Für die automatische Synchronisation von Kontakt- und Kalenderdaten mit einem
+alternativen Cloud-Server kann ich die kostenpflichtigen Apps CardDAV-Sync&nbsp;<a href="https://play.google.com/store/apps/details?id=org.dmfs.carddav.Sync">[6]</a>
+und CalDav-Sync&nbsp;<a href="https://play.google.com/store/apps/details?id=org.dmfs.caldav.lib">[7]</a>
+empfehlen. Als kostenlose Alternativen finden sich jedoch auch die älteren
+Beta-Versionen CardDAV-Sync free beta für die Konaktsynchronisation und CalDAV
+Sync Free Beta (ab Android 4.0) für die Kalender-Synchronisation im Google Play
+Store. Über F-Droid (siehe unten) kann man außerdem auch Open-Source Apps wie
+DAVdroid
+
+(ab Android 4.0) für die Kontakt- und Kalendersynchronisation
+installieren. 
+
+<div class="p"><!----></div>
+
+<h2>Google-Dienste deaktivieren</h2>
+
+
+Zunächst werden die Google Dienste mit Chef's App Freezer blockiert. Bei
+geöffneter App wird eine Liste aller installierten Apps angezeigt. 
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/android_chefsapp.png" alt="android_chefsapp.png" style="max-width:100%" /><br /><em>Die Oberfläche von Chef's App Freezer.</em><br />
+
+<div class="p"><!----></div>
+Um eine App einzufrieren, wird sie in der Liste herausgesucht und die Option
+„<em>Freeze</em>“ gewählt. Unter Android 2.3/Cyanogenmod 7 müssen folgende Apps
+eingefroren werden, um alle Google-Dienste auf dem Smartphone zu
+blockieren:
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Google Backup Transport</li>
+<li> Google Kalender synchronisieren</li>
+<li> Google One Time Init</li>
+<li> Google Partner Setup</li>
+<li> Google Play Store</li>
+<li> Google Play Dienste</li>
+<li> Google-Kontakte synchronisieren</li>
+<li> Google-Services-Framework</li>
+<li> Market Feedback Agent</li>
+<li> Market-Apps Installation</li>
+<li> Market-Updater</li>
+<li> Netzwerkstandort</li>
+<li> News &amp; Wetter</li>
+</ul>
+
+<div class="p"><!----></div>
+Es ist sehr wahrscheinlich, dass bei einer anderen Android-Version andere bzw.
+zusätzliche Apps eingefroren werden müssen. Hier muss einfach ein bisschen die
+Liste durchgesucht und probiert werden, bis man davon ausgehen kann, dass
+alle Google-Dienste blockiert sind. Falls ein Dienst wieder aktiviert werden
+soll, wird er in der Liste Frozen herausgesucht und die Option „<em>Unfreeze</em>“
+ausgewählt. Nach einem Neustart des Geräts sollte die App dann wieder normal
+funktionieren.
+
+<div class="p"><!----></div>
+Nachdem alle Google-Dienste blockiert wurden, wird das Telefon neugestartet. Die
+Google-Apps sollten jetzt aus dem Launcher verschwunden sein. Auch unter
+„<em>Einstellungen -&#62; Konten &amp; Synchr.</em>“ sollte das Google-Konto nicht mehr angezeigt
+werden. Das Telefon ist jetzt Google-frei. Als Nächstes werden die Alternativen
+zu den Google-Diensten eingerichtet.
+
+<div class="p"><!----></div>
+
+<h2>Einrichtung von Alternativen</h2>
+
+
+
+<h3>App-Quelle</h3>
+
+
+Als erstes wird die wichtigste App-Quelle abseits von Google Play eingerichtet.
+Mit dem Browser des Smartphones lädt man die F-Droid-App&nbsp;<a href="https://f-droid.org/">[8]</a> 
+herunter. Installiert wird sie durch Auswählen der APK-Datei im Dateibrowser des 
+Smartphones.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/android_fdroid.png" alt="android_fdroid.png" style="max-width:100%" /><br /><em>Die Oberfläche von F-Droid.</em><br />
+
+<div class="p"><!----></div>
+Mit der F-Droid-App steht unabhängig vom Play Store eine Quelle zum Suchen und
+Installieren von neuen Apps zur Verfügung. Alle Apps sind Open Source und
+kostenlos. Die Paketquellen müssen vor dem Suchen nach Updates manuell
+aktualisiert werden. Das geschieht über die Schaltfläche mit den Pfeilen oben
+rechts in der Ecke. Im Reiter „<em>Aktualisierungen</em>“ sieht man, wenn eine neue
+Version von bereits installierten Apps zur Verfügung steht. Aktualisierungen
+werden durch einzelnes Auswählen in der Liste der Apps installiert.
+
+<div class="p"><!----></div>
+
+<h3>Automatische Kalender- und Kontaktsynchronisierung</h3>
+
+
+Als nächstes muss eine alternative Cloud abseits von Google für den Kalender und
+die Kontakte eingerichtet werden. Eine Open-Source Lösung hierfür ist
+OwnCloud&nbsp;<a href="http://wiki.ubuntuusers.de/ownCloud">[9]</a>. Anbieter findet man zum Beispiel
+in einer Liste bei ownCloud&nbsp;<a href="https://owncloud.org/providers/">[10]</a>,
+wobei
+
+auch kostenlose Anbieter mit Serverstandort in Deutschland in der Liste
+aufgeführt sind. Die
+Anleitung sollte prinzipiell für alle OwnCloud-Angebote
+funktionieren.
+
+<div class="p"><!----></div>
+In einem beliebigen Internet-Browser kann man sich seine Google-Kontakte unter
+„<em>Google Mail -&#62; Meine Kontakte -&#62; Mehr -&#62; Exportieren ...</em>“ in eine vcf-Datei
+exportieren. Unbedingt sollten hierbei die Optionen „<em>Alle Kontakte</em>“ und
+„<em>vCard-Format</em>“
+aktiviert sein.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/android_owncloud.png" alt="android_owncloud.png" style="max-width:100%" /><br /><em>Die Kontakteinstellungen in der Web-Oberfläche von OwnCloud.</em><br />
+
+<div class="p"><!----></div>
+Nach Einrichten des OwnCloud-Kontos kann in der Web-Oberfläche die
+Kontaktdatei auf den alternativen Server importiert werden. Dafür wählt man
+„<em>Kontakte -&#62; Einstellungen (Zahnrad-Symbol) -&#62; Importieren</em>“ für die Kontakte aus. Im
+selben Dialog kann unter dem Weltkugel-Symbol der CardDAV-Link eingesehen werden
+und sollte notiert werden. Für den Kalender wählt man „<em>Kalender -&#62; Einstellungen (Zahnrad-Symbol)</em>“.
+Es können der Name, die Zeitzone usw. des Kalenders eingestellt werden. Das
+Weltkugel-Symbol zeigt auch hier wieder den CalDAV-Link an, der notiert werden
+sollte.
+
+<div class="p"><!----></div>
+Um vom Smartphone aus auf den Server zuzugreifen, müssen die notierten
+CardDAV-
+und CalDAV-Links sowie die Zugangsdaten von OwnCloud in den Apps für die
+CardDAV- und CalDAV-Synchronisation angegeben werden. Bei den Apps CardDAV-Sync
+und CalDAV-Sync ist dieser Vorgang selbsterklärend. Die Apps synchronisieren so
+wie vorher die Google-Dienste Kontakte und Kalenderdaten automatisch
+zwischen dem Server und dem Smartphone sowie beliebigen weiteren Geräten. Zum
+Beispiel kann auch problemlos in Thunderbird eine Synchronisation zum
+OwnCloud-Server eingerichtet werden. Im Internet finden sich
+Thunderbird"=Erweiterungen für den Zugriff auf CalDAV- und CardDAV-Server.
+
+<div class="p"><!----></div>
+
+<h3>YouTube Alternative</h3>
+
+
+Die offizielle YouTube-App verweigert ohne eingerichtetes Google-Konto ihren
+Dienst. Als alternative kann TubeMate&nbsp;<a href="http://tubemate.net/">[11]</a> benutzt werden.
+Die App bietet zahlreiche Zusatzfunktionen im Vergleich zur offiziellen App an,
+so zum Beispiel das Herunterladen von Videos. 
+
+<div class="p"><!----></div>
+
+<h3>Unverzichtbare Google-Play-Apps installieren und aktualisieren</h3>
+
+
+Auch mit einem Google-freien Smartphone muss nicht unbedingt auf Apps aus dem
+Google Play Store verzichtet werden. Hierfür wird die Software Raccoon&nbsp;<a href="http://www.onyxbits.de/raccoon">[12]</a>
+eingesetzt. Nach dem Herunterladen der jar-Datei öffnet man ein Terminal,
+wechselt in das Verzeichnis der Datei und startet das Programm mit
+
+<div class="p"><!----></div>
+
+<div class="command">$ java -jar raccoon-3.3.jar </div>
+
+<div class="p"><!----></div>
+
+
+Das Paket <b>openjdk-7-jre</b> muss hierbei installiert sein.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/android_raccoon.png" alt="android_raccoon.png" style="max-width:100%" /><br /><em>Die Programmoberfläche von Raccoon.</em><br />
+
+<div class="p"><!----></div>
+Unter „<em>Datei -&#62; Neues Archiv</em>“ wird in Raccoon der Google-Account angeben. Das
+Archiv wird standardmäßig unter <b><tt class="big">~/Raccoon/archives</tt></b> gespeichert, wo man in
+Unterordnern auch die APK-Dateien aller heruntergeladenen Apps findet. Über
+„<em>Suchen</em>“  können sodann alle kostenlosen und bereits mit dem angegebenen Google
+Account gekauften Apps heruntergeladen werden.
+
+Falls man neue Apps kaufen will,
+kann man dies direkt über den Playstore&nbsp;<a href="http://play.google.com">[13]</a> im Webbrowser
+machen und die App anschließend mit Raccoon herunterladen. Wählt man bei Raccoon
+„<em>Datei -&#62; Update</em>“, wird automatisch eine Liste mit Aktualisierungen aller Apps,
+die bereits mit Raccoon heruntergeladen wurden, angezeigt. 
+Auf diese Weise
+kann man leicht
+seine Google-Play-Apps aktuell halten.
+
+<div class="p"><!----></div>
+Mit Raccoon heruntergeladene Apps kann man bequem über Android Device Bridge
+(ADB) vom Computer aus installieren, wenn das Smartphone über ein USB-Kabel
+angeschlossen ist. Dazu  muss erst das Paket <b>android-tools-adb</b> mit der
+Paketverwaltung installiert werden. Dann kopiert man über den Dateimanager alle
+zu installierenden APK-Dateien in einen einzelnen Ordner. Nachdem das Telefon
+über USB angeschlossen wurde, kann mittels
+
+<div class="p"><!----></div>
+
+<div class="command">$ adb devices</div>
+
+<div class="p"><!----></div>
+
+
+geprüft werden, ob es richtig erkannt wird. Dann wechselt man im Terminal zum
+Verzeichnis mit den APK-Dateien und führt 
+
+<div class="p"><!----></div>
+
+<div class="command">$ for file in *.apk; do adb install -r $file; done</div>
+
+<div class="p"><!----></div>
+
+
+aus. Die Option <b><tt class="big">-r</tt></b> steht für „reinstall“, d.&nbsp;h. bereits auf dem Telefon
+vorhandene Versionen werden neu installiert, was für Updates notwendig ist. 
+
+<div class="p"><!----></div>
+Generell funktionieren die meisten Apps auch ohne Google-Dienste. Allerdings
+kann es vor allem bei Apps, die Google Maps benutzen, zu Fehlermeldungen kommen.
+Außerdem ist zu beachten, dass die Positionsfindung per GPS ohne Google-Ortung
+wesentlich länger dauert.
+
+<div class="p"><!----></div>
+
+<h2>Ausgangszustand wiederherstellen</h2>
+
+
+Sollte doch wieder Google auf dem Smartphone benötigt
+werden, so ist es ausreichend, die blockierten Google-Dienste in Chef's App
+Freezer wieder aufzutauen.  Die eingefrorenen Apps werden in der Liste
+Frozen angezeigt und per Option „<em>Unfreeze</em>“ wieder aktiviert. 
+
+<div class="p"><!----></div>
+Nach einem Neustart sind alle Google-Dienste wieder verfügbar und der
+Google-Account kann wieder eingerichtet werden.   
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.cyanogenmod.org/"><tt class="big">http://www.cyanogenmod.org/</tt></a><br />
+[2] <a href="http://www.androidpit.de/de/android/wiki/view/Root"><tt class="big">http://www.androidpit.de/de/android/wiki/view/Root</tt></a><br />
+[3] <a href="http://xda-developers.com/"><tt class="big">http://xda-developers.com/</tt></a><br />
+[4] <a href="http://www.droidwiki.de/Root"><tt class="big">http://www.droidwiki.de/Root</tt></a><br />
+[5] <a href="https://play.google.com/store/apps/details?id=com.chef.freezer"><tt class="big">https://play.google.com/store/apps/details?id=com.chef.freezer</tt></a><br />
+[6] <a href="https://play.google.com/store/apps/details?id=org.dmfs.carddav.Sync"><tt class="big">https://play.google.com/store/apps/details?id=org.dmfs.carddav.Sync</tt></a><br />
+[7] <a href="https://play.google.com/store/apps/details?id=org.dmfs.caldav.lib"><tt class="big">https://play.google.com/store/apps/details?id=org.dmfs.caldav.lib</tt></a><br />
+[8] <a href="https://f-droid.org/"><tt class="big">https://f-droid.org/</tt></a><br />
+[9] <a href="http://wiki.ubuntuusers.de/ownCloud"><tt class="big">http://wiki.ubuntuusers.de/ownCloud</tt></a><br />
+[10] <a href="https://owncloud.org/providers/"><tt class="big">https://owncloud.org/providers/</tt></a><br />
+[11] <a href="http://tubemate.net/"><tt class="big">http://tubemate.net/</tt></a><br />
+[12] <a href="http://www.onyxbits.de/raccoon"><tt class="big">http://www.onyxbits.de/raccoon</tt></a><br />
+[13] <a href="http://play.google.com"><tt class="big">http://play.google.com</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Roman Buchheit</b>
+nutzt seit drei Jahren privat hauptsächlich Linux-Systeme. Auf dem Desktop ist
+er mit Ubuntu unterwegs, in die Android-Welt ist er ebenfalls vor drei Jahren
+eingestiegen.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+
+
+                                <i><a href="mailto:?subject=Android Google-frei&amp;body=freiesMagazin 04/2015%0AAndroid Google-frei%0ARoman Buchheit%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Android Google-frei#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_ubuntuphone" name="fm_15_04_ubuntuphone">Ubuntu Phone: Das bq Aquaris E4.5 näher angeschaut</a></font></h1>von Sujeevan Vijayakumaran
+
+<div class="p"><!----></div>
+    <b>V</b><b>or zwei Jahren wurde das Projekt „Ubuntu Touch“ bei Canonical aus der Taufe
+gehoben. Jetzt läuft der Verkauf des ersten Ubuntu-Smartphones des spanischen
+Herstellers bq an. In diesem Artikel werden sowohl das Betriebssystem als auch das
+Smartphone genauer unter die Lupe genommen.</b>
+
+<div class="p"><!----></div>
+Bereits vor knapp anderthalb Jahren wurde die erste offizielle Version von
+Ubuntu Phone (damals noch Ubuntu Touch) veröffentlicht. Ein genauer Blick auf
+die damalige Version findet sich in Ausgabe 11/2013 von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font>&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2013-11">[1]</a>.
+
+<div class="p"><!----></div>
+Seitdem ist viel Zeit vergangen, und auch am System hat sich sehr viel
+getan,
+weshalb in diesem Artikel ein kompletter Überblick von Anfang an gegeben wird.
+Schließlich ist dies die erste Veröffentlichung zu Ubuntu Phone, das es
+auf
+einem Smartphone vorinstalliert zu kaufen gibt.
+
+<div class="p"><!----></div>
+
+<h2>Die Software</h2>
+
+
+Die Bedienung von Ubuntu unterscheidet sich grundsätzlich von
+anderen mobilen Betriebssystemen, wie etwa Android oder iOS. Die größte Besonderheit
+ist die Gesten-Steuerung, die man von jedem Rand des Bildschirms
+ausführen kann.
+
+<div class="p"><!----></div>
+
+<h3>Bedienung &amp; Scopes</h3>
+
+
+Beim allerersten Start des Smartphones erscheint zunächst eine Einführung in die
+Bedienung von Ubuntu Phone, in dem die bereits angesprochene
+Gesten-Steuerung
+kurz erläutert wird. Diese Einführung sollte jeder, der noch kein Ubuntu Phone
+ausprobiert hat, mitmachen, denn sie weist kurz, knapp und völlig ausreichend
+in die Bedienung ein. Anschließend folgt das mögliche Setzen eines
+Zugriffsschutzes. Dies kann entweder ein Muster, eine PIN, ein Passwort oder
+eben kein Zugriffsschutz sein.
+
+<div class="p"><!----></div>
+Beim Betätigen der Power-Taste erscheint zunächst der Welcome-Screen. Dieser
+zeigt einige Informationen zur Tagesnutzung an. Darunter ist etwa die Anzahl der
+empfangenen und gesendeten SMS-Nachrichten, erreichte und getätigte Anrufe und
+die Anzahl der geschossenen Fotos und Videos. Den Welcome-Screen kann man nach
+links oder rechts zur Seite wischen, wo dann der gesetzte Sperrmechanismus zum
+Entsperren des Gerätes erscheint.
+
+<div class="p"><!----></div>
+
+<h4>Was sind Scopes?</h4>
+
+
+Nach dem Entsperren landet man auf dem ersten von einigen vorinstallierten
+Scopes. Scopes ist einer der Ansätze, die Canonical besonders
+hervorhebt. Bei
+Scopes handelt es sich um aggregierte Inhalte, die aus verschiedenen Quellen auf
+den Bildschirm gebracht werden. Es soll damit überflüssig sein, jede
+App, von der man Informationen haben möchte, einzeln zu öffnen. Stattdessen kann
+man Scopes eher als Zusammenfassung mehrerer Informationen und Inhalte aus vielen
+verschiedenen Quellen ansehen. Ubuntu Phone geht damit einen anderen Ansatz als
+etwa Android, iPhone oder Firefox OS, wo die sogenannten „Home-Screens“ fast
+nur aus App-Icons und einigen Widgets bestehen, die sich in einem Raster anordnen.
+Der Vorteil, der sich bei Ubuntu Phone hieraus ergibt, ist, dass man eben nicht
+viele einzelne Quellen durchgehen muss, sondern diese direkt auf dem Bildschirm
+präsentiert werden.
+
+<div class="p"><!----></div>
+
+<h4>Die vorinstallierten Scopes</h4>
+
+
+Standardmäßig landet man nach dem Entsperren auf dem Heute-Scope. Dieser zeigt
+einige Informationen an, die quasi den Tag beschreiben. Darunter fällt natürlich
+das aktuelle Datum. Es zeigt zudem die Sonnenaufgangs- sowie Sonnenuntergangszeit
+an. Weiterhin wird das Wetter am Morgen, Mittag und Abend dargestellt – jeweils
+mit den Temperaturen. Darunter folgen dann noch die heutigen Termine, der nächste
+Urlaubs- bzw. Feiertag, eine Liste von letzten Anrufen und Mitteilungen sowie
+Nachrichten von heute und Trends auf Twitter.
+
+<div class="p"><!----></div>
+Mit einem Wisch nach links erreicht man das zweite Scope, in diesem Falle das
+„NearBy“-Scope. Wie der Name schon aussagt, sammelt dieses Scope Daten aus der
+näheren Umgebung. Wie auf dem Heute-Scope werden hier die aktuellen
+Wetter-Daten angezeigt. Über den Dienst yelp werden weiterhin Sehenswürdigkeiten
+und weitere Dinge in der Nähe angezeigt. Darunter fallen 
+
+Restaurants,
+Werkstätten oder auch Schulen aus der unmittelbaren Nähe. Damit das Scope die
+
+passenden Informationen angeben kann, wird auf Geo-Lokalisierung
+zurückgegriffen. Zudem werden Fotos von Flickr und Wikipedia-Artikel über Dinge
+aus der Nähe präsentiert. Ein weiteres interessantes Feature des NearBy-Scopes
+ist die Angabe der Stimmung, auf dessen Basis das Scope andere Daten liefert.
+Als Stimmungen kann man unter folgenden Auswahlmöglichkeiten wählen: 
+
+<div class="p"><!----></div>
+
+<ul>
+<li> Mir ist langweilig.</li>
+<li> Unterwegs.</li>
+<li> Ich habe Hunger.</li>
+<li> Ich habe Durst.</li>
+<li> Ich bin gestresst.</li>
+</ul>
+
+<div class="p"><!----></div>
+Wenn man also unterwegs ist, dann werden neben dem Wetter auch noch die Bus-
+und Bahnhaltestellen in der unmittelbaren Umgebung abgebildet. Weiterhin werden
+die Geldautomaten in der Nähe dargestellt. Beim Klick auf einen dieser Standorte
+startet HERE Maps und zeigt den Weg an. Bei den weiteren Stimmungen werden
+andere entsprechende Orte angezeigt. Wenn man etwa Hunger hat, diverse
+Restaurants, wenn man Durst hat, diverse Kneipen. Ist man hingegen
+gestresst, dann werden Schuh- und Modeläden präsentiert.
+
+<div class="p"><!----></div>
+Das dritte Scope ist denkbar einfach. Es handelt sich hierbei lediglich um den
+App-Launcher, in dem die installierten Apps in einem Raster angeordnet sind. Die
+Apps sind unterteilt in zwei Gruppen. Oben werden zunächst einige häufig
+genutzte App-Icons dargestellt, darunter die Telefon-, Nachrichten- und Kamera-App.
+Die übrigen Apps sind unterhalb der ersten Gruppe alphabetisch im Raster
+angeordnet. Über das Auswahlmenü kann man die Apps nach Kategorien sortieren,
+etwa Kommunikation, Social Networking oder Musik &amp; Audio.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_today-scope.jpg" alt="ubuntuphone_today-scope.jpg" style="max-width:100%" /><br /><em>Heute-Scope.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_nearby-scope.jpg" alt="ubuntuphone_nearby-scope.jpg" style="max-width:100%" /><br /><em>NearBy-Scope.</em><br />
+
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_apps-scope.jpg" alt="ubuntuphone_apps-scope.jpg" style="max-width:100%" /><br /><em>App-Scope.</em><br />
+
+<div class="p"><!----></div>
+Das vierte Scope ist das „News“-Scope. Als Nachrichten-Quellen dienen zahlreiche,
+in der
+
+Hauptsache englischsprachige, Nachrichten-Seiten wie BBC, Endgadget oder
+Euronews. Zwar lassen sich die Quellen konfigurieren, aber leider beschränken
+sich die Einstellungen nur auf das Aktivieren und Deaktivieren der vorgegebenen
+Quellen.
+
+<div class="p"><!----></div>
+Als weitere vorinstallierte und standardmäßig aktivierte Scopes sind die Musik-,
+Video-, und Foto-Scopes vorhanden. All diese Scopes zeigen sowohl lokale als auch
+online verfügbare Inhalte an. Wenn man zum Beispiel Fotos geschossen, Videos
+gemacht und Musik auf das Smartphone übertragen hat, dann werden diese alle auf
+den jeweiligen Scopes dargestellt. Je nach Scope werden zusätzlich zufällige
+Inhalte von YouTube, SoundCloud, Facebook-Fotos, Instagram oder Flickr
+angezeigt. Die entsprechenden Accounts müssen dafür gegebenenfalls hinzugefügt
+werden.
+
+<div class="p"><!----></div>
+Die oben aufgezählten Scopes sind sowohl vorinstalliert als auch ab Werk
+aktiviert. Es gibt im Auslieferungszustand noch zahlreiche weitere Scopes. Wenn
+man sich auf einem der Scopes befindet, reicht ein Wisch vom unteren Rand
+des Bildschirmes. Dort werden sowohl die Namen der aktivierten als auch die
+verfügbaren, aber nicht aktivierten Scopes aufgelistet. Die Scopes lassen
+sich durch das Drücken des daneben liegenden „<em>Stern-Buttons</em>“ aktivieren bzw.
+deaktivieren. Unter den ausgelieferten Scopes sind unter anderem viele einzelne
+Webseiten wie BBC, cnet, Amazon, eBay oder Reddit vorhanden. Diese Scopes sind
+dabei explizit auf die jeweiligen Webseiten zugeschnitten. So lassen sich die
+Webseiten über die Scope-Suche durchsuchen und auch eine Trefferliste wird etwa
+bei Amazon- oder eBay-Suchen angezeigt. Wenn man aber eine Nachricht lesen oder
+einen Artikel kaufen möchte, dann öffnet sich der Browser.
+
+<div class="p"><!----></div>
+Scopes sollen sich recht einfach erstellen lassen, weshalb man für einzelne
+Webseiten oder Shops für Ubuntu Phone nicht aufwendig eine App programmieren
+muss, sondern auch ein Scope völlig ausreicht. Praktisch ist hierbei, dass diese
+direkt auf den Home-Scopes verfügbar sind. Nachteilig ist allerdings,
+dass man zwar eine quasi unbegrenzte Anzahl an Scopes hinzufügen kann, die
+Übersicht darunter aber stark leidet, sodass man dann viel zu oft zwischen
+den Scopes wischen muss, um auf ein spezielles Scope zu gelangen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_news-scope.jpg" alt="ubuntuphone_news-scope.jpg" style="max-width:100%" /><br /><em>Nachrichten-Scope.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_music-scope.jpg" alt="ubuntuphone_music-scope.jpg" style="max-width:100%" /><br /><em>Musik-Scope.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_foto-scope.jpg" alt="ubuntuphone_foto-scope.jpg" style="max-width:100%" /><br /><em>Foto-Scope.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_video-scope.jpg" alt="ubuntuphone_video-scope.jpg" style="max-width:100%" /><br /><em>Video-Scope.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Die Gesten</h3>
+
+
+Eine der Gesten, die man von allen vier Seiten des Bildschirms durchführen
+kann, wurde bereits erwähnt. Das ist die Wischgeste vom unteren Rand nach oben.
+Diese Geste ist jeweils spezifisch für die aktive, geöffnete App.
+
+<div class="p"><!----></div>
+Die übrigen drei sind globale Gesten, die man von (fast) jedem Punkt im System
+ausführen kann. Nutzern des Unity-Desktops ist die linke App-Launcher-Leiste
+bereits bekannt. Diese gibt es auch am Smartphone. Zum Aktivieren reicht eine kurze
+Wischgeste vom linken Bildschirmrand. Wenn man allerdings eine lange Geste aus
+derselben Richtung durchführt, gelangt man zurück auf die Scopes – sofern man
+sich nicht auf eben diesen befindet.
+
+<div class="p"><!----></div>
+Der rechte Bildschirmrand ist ebenfalls mit zwei Gesten belegt. Bei einem kurzen
+Wisch 
+
+wechselt man direkt auf die zuletzt genutzte App. Wenn man diese Geste
+erneut durchführt, wechselt man wieder zurück auf die vorherige App. Man wechselt
+also bei dieser Geste genau zwischen den zwei zuletzt genutzten Apps. Bei einem
+langen Wisch erreicht man eine 3D-Übersicht über alle zur Zeit geöffneten Apps.
+Wenn man dort angelangt ist, kann man einzelne Apps mit dem Wischen nach oben
+oder unten beenden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_anruf-verpasst.png" alt="ubuntuphone_anruf-verpasst.png" style="max-width:100%" /><br /><em>Ein verpasster Anruf, eine SMS und ein Tweet in den Benachrichtigungen.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_notifications-sms.png" alt="ubuntuphone_notifications-sms.png" style="max-width:100%" /><br /><em>Zwei SMS in den Benachrichtigungen.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_wlan.png" alt="ubuntuphone_wlan.png" style="max-width:100%" /><br /><em>WLAN-Einstellungen.</em><br />
+
+<div class="p"><!----></div>
+Am oberen Bildschirmrand finden sich sowohl die Benachrichtigungen als auch die
+Schnelleinstellungen. Darunter fallen die Einstellungen zur Geo-Lokalisierung,
+Netzwerk, Klang, Akku oder auch Zeit und Datum. Praktisch ist hier vor allem, dass
+man die Geste direkt an dem Icon ansetzen kann und dabei dann die richtigen
+Einstellungen ausgerollt werden. Wenn man allerdings aus Versehen doch das falsche
+Icon erwischt hat, kann man noch während des Herunterziehens der Leiste zwischen
+den Einstellungen mit einem Rechts- oder Linksdrall wechseln.
+
+<div class="p"><!----></div>
+
+<h3>Core- und System-Apps</h3>
+
+
+Ubuntu Phone kommt mit einigen vorinstallierten Anwendungen. Einige sind echte
+native Apps, während andere Anwendungen Web-Apps sind, die in eine App geschachtelt
+wurden. 
+
+<div class="p"><!----></div>
+
+<h4>Telefon</h4>
+
+
+Mit einem Ubuntu Phone kann man natürlich auch telefonieren. Hierfür gibt es die
+Telefon-App, welche diese Funktion abdeckt. Die App ist simpel aufgebaut, da sie
+schlicht aus einem Nummernfeld besteht. Oben besitzt die App zwei Buttons: Der
+eine führt zu den Kontakten, während der andere zu den Telefon-Einstellungen
+wechselt. Da es sich bei dem bq Aquaris E4.5 um ein Dual-Sim-Smartphone handelt,
+kann man sowohl einen Anruf von der ersten als auch von der zweiten Karte
+durchführen. Über die Wischgeste von der unteren Kante des Bildschirms gelangt
+man zur Anrufliste, in der man entweder alle empfangenen oder getätigten Anrufe
+oder auch nur die verpassten Anrufe anzeigen lassen kann.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_anruf.png" alt="ubuntuphone_anruf.png" style="max-width:100%" /><br /><em>Ein ankommender Anruf.</em><br />
+
+<div class="p"><!----></div>
+Bei eingehenden Anrufen erscheint die Benachrichtigung auf der oberen Hälfte
+des Bildschirms. So sieht man nicht nur den ggf. gespeicherten Namen des Kontaktes,
+sondern auch die 
+
+Telefonnummer. Außerdem hat man natürlich die Möglichkeit, den Anruf an-
+oder abzulehnen. Beim 
+
+Ablehnen kann man wahlweise gleichzeitig auch eine SMS hinterher
+schicken.
+
+<div class="p"><!----></div>
+
+<h4>Nachrichten</h4>
+
+
+Bei der Nachrichten-App handelt es sich um die App zum Empfangen und Versenden
+von SMS und MMS. Die Nachrichten werden in der Übersicht untereinander sortiert
+und gruppiert nach dem Datum angezeigt. Mit einer Wischgeste von unten kann man
+eine SMS verfassen, deren Empfänger man entweder aus den Kontakten auswählen kann oder man
+tippt einfach die Nummer bzw. den Namen des Kontaktes sowie die Nachricht ein.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_sms-toddy.jpg" alt="ubuntuphone_sms-toddy.jpg" style="max-width:100%" /><br /><em>SMS-Ansicht von einem Kontakt.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_sms-uebersicht.jpg" alt="ubuntuphone_sms-uebersicht.jpg" style="max-width:100%" /><br /><em>Übersicht aller SMS-Nachrichten.</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Kontakte</h4>
+
+
+Die Kontakte-App listet alle Kontakte jeweils mit dem vollen gespeicherten Namen
+inklusive eines Profilbildes alphabetisch untereinander auf. 
+
+Während des
+Scrollens erscheint ein klickbares Alphabet, mit dessen Hilfe man direkt zu den
+Kontakten mit einem bestimmten Anfangsbuchstaben springen kann. Wie auch bei der
+Nachrichten-App ist in dieser App die Wischgeste von unten belegt, mit der man
+man einen neuen Kontakt hinzufügen kann.
+
+<div class="p"><!----></div>
+Die Kontakte lassen sich online synchronisieren. Zur Zeit ist dies allerdings
+nur mit Google möglich. Ein Support für CardDav außerhalb von Google ist (noch)
+nicht vorhanden. Das Konto lässt sich 
+
+über die Online-Konten in den
+Systemeinstellungen konfigurieren; dazu später mehr.
+
+<div class="p"><!----></div>
+
+<h4>Kamera</h4>
+
+
+Die Kamera ermöglicht sowohl das Fotografieren als auch die Aufnahme von Videos.
+Beides ist mit der Front- als auch mit der Rückkamera möglich. Beim
+Fotografieren kann man einige Einstellungen vornehmen, etwa die
+Geo-Lokalisierung, den Blitz oder HDR an- und ausschalten. Zusätzlich kann man
+sich ein Raster anzeigen lassen, um das Smartphone beim Fotografieren richtig
+auszurichten. Weiterhin ist es möglich, die Qualität der Fotos zwischen „Fein“,
+„Normal“ und „Einfach“ umzuschalten. Zu guter Letzt ist auch noch ein
+Selbstauslöser-Timer mit 5 oder 15 Sekunden Laufzeit vorhanden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_app-camera.jpg" alt="ubuntuphone_app-camera.jpg" style="max-width:100%" /><br /><em>Die Kamera-App.</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Browser</h4>
+
+
+Der Browser ist mit grundlegenden Funktionen ausgestattet. Die Adresszeile ist
+mittlerweile nach oben gewandert, dort kann man neben der URL-Eingabe auch die
+aktuelle Seite als Favorit speichern. Einstellungen gibt es allerdings keine, sodass
+man über das Menü lediglich neue Tabs öffnen, zwischen diesen wechseln,
+den Verlauf ansehen und die aktuelle URL mit anderen Apps teilen kann.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_browser.png" alt="ubuntuphone_browser.png" style="max-width:100%" /><br /><em>Der Browser.</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Uhr</h4>
+
+
+Die Uhr-Anwendung zeigt nicht nur die aktuelle Uhrzeit des aktuellen Standortes
+an, sondern es gibt auch die Möglichkeit, die Uhrzeiten von anderen Städten aus
+anderen Ländern anzuzeigen. Weiterhin ist auch der Wecker in der Uhr-App
+implementiert, mit dem man sowohl einmalige als auch sich regelmäßig wiederholende
+Weckzeiten nutzen kann.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_uhr.jpg" alt="ubuntuphone_uhr.jpg" style="max-width:100%" /><br /><em>Die Uhr-Anwendung.</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Galerie</h4>
+
+
+Die Galerie zeigt die auf dem Smartphone enthaltenen Fotos an. Man kann in der
+App sowohl horizontal als auch vertikal scrollen. Die App gruppiert die Fotos
+pro Tag. Die einzelnen Tage lassen sich 
+
+vertikal scrollen, während man die Fotos
+innerhalb eines Tages horizontal scrollen kann. Außerdem 
+
+ist es möglich, Alben
+zu erstellen, indem man ausgewählte Fotos gruppiert. Wenn man nicht die Alben
+oder die Tagesansicht nutzen möchte, kann man auch auf eine normale
+Raster-Ansicht umschalten. Wenn man ein Foto geöffnet hat, hat man zudem noch
+simple Bearbeitungsmöglichkeiten. So kann man etwa einen Ausschnitt erstellen,
+das Bild drehen oder es automatisch verbessern lassen.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_galerie.jpg" alt="ubuntuphone_galerie.jpg" style="max-width:100%" /><br /><em>Die Galerie.</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Telegram</h4>
+
+
+Als einzige Messaging-App ist Telegram vorinstalliert. Andere Messenger, wie
+Google Hangout, Threema, Facebook-Messenger oder WhatsApp sind zum jetzigen
+Zeitpunkt nicht für Ubuntu Touch verfügbar. Um Telegram zu nutzen, ist eine
+Registrierung bei Telegram nötig, die mittels der Telefonnummer geschieht. 
+Andere Kontakte erreicht man ebenfalls über die Telefonnummern, die aus den
+gespeicherten Kontakten entnommen werden.
+
+<div class="p"><!----></div>
+Die App unterstützt das Chatten zwischen einzelnen Personen oder auch in einer
+Gruppe. Man kann neben Textnachrichten auch Bilder oder Videos versenden.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_telegram.jpg" alt="ubuntuphone_telegram.jpg" style="max-width:100%" /><br /><em>Der Telegram-Messenger.</em><br />
+
+<div class="p"><!----></div>
+
+<h4>Weitere Apps</h4>
+
+
+Neben den bereits aufgelisteten Apps gibt es natürlich noch einige weitere Apps,
+wie etwa die Musik-, Wetter- oder auch die Aufgaben-App. Der Musik-Player spielt
+Musik ab, die man mit verschiedenen Einstellungen sortieren kann, etwa nach
+Genres, Titeln, Alben, Interpreten oder nach zuletzt verwendeten Stücken. Es
+gibt auch die Möglichkeit Wiedergabelisten zu erstellen.
+
+<div class="p"><!----></div>
+Die Wetter-App ist simpel gehalten, dort kann man seinen Standort entweder über
+die Geo-Lokalisierung festlegen oder man tippt ihn selbst ein. Angezeigt wird
+die aktuelle Temperatur sowie die höchste und die niedrigste Temperatur des
+Tages. Über einen weiteren Klick kann man sich weitere Daten, wie Luftfeuchtigkeit, 
+Windgeschwindigkeit, Regenwahrscheinlichkeit und den UV-Index anzeigen lassen.
+Wenn man allerdings eine stündliche oder eine 10-Tages-Vorschau des Wetters
+ansehen möchte, wird man auf den Browser weitergeleitet, auf die Webseite von „The Weather
+Channel“.
+
+<div class="p"><!----></div>
+Auch gibt es eine simple Aufgaben-App, in der man Aufgaben mit Fälligkeitsdatum
+anlegen kann. Angelegte Aufgaben werden an dem entsprechenden Fälligkeitsdatum
+auch auf dem Heute-Scope angezeigt.
+
+<div class="p"><!----></div>
+Alle vorherigen genannten Anwendungen sind native Apps. Einige vorinstallierte
+sind keine native Anwendungen, sondern WebApps, wie z.&nbsp;B. für Amazon,
+eBay, Facebook, GMail, Twitter oder YouTube. Diese WebApps sind letztendlich nur
+mobile Webseiten, die in einem eingelassenen Webbrowser angezeigt werden. Doch
+unterstützen einige der Apps auch Benachrichtigungen. Wenn man etwa in einem
+Tweet erwähnt wird, bekommt man eine Benachrichtigung – oder auch wenn man in
+seinem GMail-Konto eine E-Mail empfängt.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_here-maps.jpg" alt="ubuntuphone_here-maps.jpg" style="max-width:100%" /><br /><em>HERE-Maps.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>System-Einstellungen</h3>
+
+
+Die System-Einstellungen unterteilen sich in vier Kategorien. Unter „Netzwerk“
+finden sich die Einstellungen zu WLAN, Mobilfunk und Bluetooth. Unter
+„Persönliches“ kann man dagegen den Hintergrund ändern oder Einstellungen an
+Audio, Sprache und Text durchführen. Ebenfalls kann man dort Online-Konten
+hinzufügen, die von Apps oder Scopes genutzt werden können. Dies sind Evernote,
+Soundcloud, Flickr, Facebook, Ubuntu One, Twitter, Fitbit, Instagram, Video und
+Google. Zudem lassen sich die Benachrichtigungen von Apps deaktivieren, falls
+man keine wünscht. In der Kategorie „System“ finden sich sechs Unterkategorien
+wie Akku-, Helligkeit- und Telefon-Einstellungen. Weiterhin gibt es
+Einstellungen für Zeit und Datum, Sicherheit und Datenschutz sowie
+Aktualisierungen. Unter „Sicherheit &amp; Datenschutz“ kann man etwa den
+Standortzugriff pro App regulieren oder auch generell dem System verweigern.
+
+
+<div class="p"><!----></div>
+Unter keine Kategorie fallen Rotationssperre, Flugzeugmodus,
+Informationen zum Gerät sowie die Möglichkeit das Telefon zurückzusetzen.
+
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_systemeinstellungen.jpg" alt="ubuntuphone_systemeinstellungen.jpg" style="max-width:100%" /><br /><em>Systemeinstellungen.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_standortzugriff.jpg" alt="ubuntuphone_standortzugriff.jpg" style="max-width:100%" /><br /><em>Standortzugriff.</em><br />
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_geraeteinfo.jpg" alt="ubuntuphone_geraeteinfo.jpg" style="max-width:100%" /><br /><em>Geräte-Informationen.</em><br />
+
+<div class="p"><!----></div>
+
+<h3>Ubuntu Store</h3>
+
+
+Im Ubuntu Store kann man weitere Apps und Scopes herunterladen und
+installieren. Aktuell (21.02.2015) sind über 700 Apps und Scopes
+im Store gelistet. Darunter nicht nur kostenfreie Apps, sondern auch Apps, für
+die man bezahlen muss.
+
+<div class="p"><!----></div>
+Ein Entwickler hat eine inoffizielle Webseite&nbsp;<a href="https://appstore.bhdouglass.com/apps">[2]</a>
+für den Store erstellt, in dem alle im Store verfügbaren Apps aufgelistet werden.
+
+<div class="p"><!----></div>
+Die Qualität der Apps ist unterschiedlich. So gibt es sehr viele Apps, bei denen
+es sich lediglich um geschachtelte WebApps handelt. Nutzer finden im Store Apps
+wie das Terminal, das eine vollständige Befehlszeile auf das Smartphone bringt.
+Wer einen E-Mail-Client sucht, der findet mit „Dekko“ eine Mail-App, die noch im
+Betastadium ist. In ihr kann man den Zugang zum E-Mail-Konto über IMAP
+einrichten. Wie geschrieben befindet sich Dekko allerdings noch in der
+Entwicklung, weshalb einige Features fehlen. So können E-Mails nur manuell
+abgerufen werden, da es keinen Push-Support gibt. Ebenfalls befindet sich im
+Store eine Kalender-Anwendung, welche wie die Kontakte-App nur mit Google
+synchronisieren kann. Wer viel mit öffentlichen Verkehrsmitteln unterwegs ist,
+für den gibt es die native App „Fahrplan“, womit man seine Fahrten planen und
+seine Verbindungen überprüfen kann.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_bq2.jpg" alt="ubuntuphone_bq2.jpg" style="max-width:100%" /><br /><em>Das bq Aquaris E4.5.</em><br />
+
+<div class="p"><!----></div>
+
+<h2>Die Hardware</h2>
+
+
+Das bq Aquaris E4.5 wird von einem Quadcore-MediaTek-Prozessor mit einer
+Taktfrequenz von 
+
+1,3 GHz angetrieben. Das Display misst eine Diagonale von 4,5
+Zoll bei einer Auflösung von 540x960 Pixeln. Eingebaut sind zudem 1 GB
+Arbeitsspeicher sowie 8 GB interner Speicher, wovon 2,5 GB vom System belegt
+sind. Der Speicher lässt sich mittels einer microSD-Karte um maximal weitere 32
+GB erweitern.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_bq_rueckseite.jpg" alt="ubuntuphone_bq_rueckseite.jpg" style="max-width:100%" /><br /><em>Die Rückseite.</em><br />
+
+<div class="p"><!----></div>
+Das Smartphone ist 6,7 cm breit und 13,7 cm hoch. Auf der Vorderseite befindet
+sich oberhalb des Displays die Hörmuschel sowie die Frontkamera, die mit 5
+Megapixel auflöst. Links neben der Frontkamera befindet sich zudem noch eine
+Benachrichtigungs-LED. Auf der Rückseite befindet sich oben links die zweite
+Kamera mit einer Auflösung von 8 Megapixel, darunter ist ein Dual-Flash-Blitz.
+
+<div class="p"><!----></div>
+<img src="freiesMagazin-2015-04-bilder-Dateien/ubuntuphone_bq_notificationLED.jpg" alt="ubuntuphone_bq_notificationLED.jpg" style="max-width:100%" /><br /><em>Die Benachrichtigungs-LED.</em><br />
+
+<div class="p"><!----></div>
+Das Gerät ist mit 9 mm relativ dünn und mit einem Gewicht von 123 Gramm auch
+nicht zu schwer. An der unteren Kante befindet sich der microUSB-Anschluss zum
+Laden des Geräts und zum Übertragen von Daten. Weiterhin sind dort Lautsprecher
+eingebaut, die in einer angenehmen Lautstärke eine durchaus akzeptable
+Soundqualität bieten. An der oberen Hälfte der linken Kante befinden sich zwei
+microSIM-Einschübe, womit zwei SIM-Karten gleichzeitig betrieben werden können.
+Die obere Kante beinhaltet einen 3,5-mm-Klinkenanschluss für Kopfhörer sowie
+einen microSD-Slot.
+
+<div class="p"><!----></div>
+
+<h3>Die Kamera</h3>
+
+
+Die Kamera auf der Rückseite löst mit 8 Megapixel auf. Wenn man Fotos oder
+Videos auf dem Gerät aufnimmt und diese dort direkt anschaut, dann sehen sie
+ganz ansehnlich aus. Übertragt man diese allerdings auf einen Rechner, dann
+sieht man, dass die Qualität eher mittelmäßig ist. So sind Farben eher
+verwaschen und die Farbdarstellung ist selbst bei guten Lichtverhältnissen nicht
+optimal. Besonders bei schlechten Lichtverhältnissen werden die
+Schwächen der Kamera deutlich. So neigt sie schon bei leichter Dunkelheit zu
+verschwommenen Bildern mit starkem Rauschen.
+
+<div class="p"><!----></div>
+Nicht vergessen sollte man allerdings, dass viele Smartphones in dem Preissegment rund um
+170&nbsp;Euro keine sonderlich gute Kamera haben. 
+
+<div class="p"><!----></div>
+Für kleine Schnappschüsse zwischendurch ist sie jedoch ausreichend.
+
+<div class="p"><!----></div>
+
+<h3>Haptik und Qualität</h3>
+
+
+Die Haptik des Smartphones ist gut. Es liegt gut in der Hand und lässt sich
+angenehm bedienen. Die Rückseite ist aus glattem, harten Kunststoff, sodass man
+es fest in der Hand halten muss, da es leicht rutscht. Das Gerät ist gut
+verarbeitet, denn es knarzt an keiner Stelle. Die einzigen Tasten an der rechten
+Kante des Gerätes liegen an einer gut erreichbaren Stelle und lassen sich gut
+betätigen.
+
+<div class="p"><!----></div>
+Das Smartphone hat ein ansprechendes Design, da das Display quasi auf dem Rest
+des Gerätes aufliegt. Nach etwa zwei Wochen Benutzung ohne Schutzhülle hat die
+Rückseite keinerlei Macken oder Kratzer abbekommen. Anders sieht es allerdings
+auf der Vorderseite aus: Hier bekommt der
+Bildschirmrahmen an einigen Stellen leicht 
+kleine Dellen. Diese Dellen und Abnutzungen sind spürbar und mit einem
+guten Blick auch sichtbar. Das Display bekommt ohne Schutz ebenfalls
+Kleinigkeiten ab, so dass auch hier kleine Kratzer zu sehen sind. Relativiert
+werden muss dies allerdings, da man diese nur bei einem genauen Blick mit guten
+Augen erkennen kann. Trotzdem sollte man vermeiden, einen Schlüsselbund und das
+Smartphone in derselben Hosentasche mitzuschleppen – was bei dem vorliegenden
+Gerät außerdem nicht geschehen ist.
+
+<div class="p"><!----></div>
+
+<h2>Der Gesamteindruck</h2>
+
+
+Bislang wurde in diesem Artikel sowohl die Hardware als auch die Software
+anhand der vorhandenen Funktionen neutral betrachtet. Wichtig ist
+allerdings auch der Gesamteindruck, etwa wie gut oder wie schlecht die eine oder
+andere Funktion arbeitet.
+
+<div class="p"><!----></div>
+Allgemein macht sowohl das System an sich als auch das Smartphone einen guten
+Eindruck. Es lässt sich durch die vielen Gesten gut bedienen, erfordert zu
+Beginn allerdings eine etwas steilere Lernphase. Wenn man sich aber einige
+Minuten mit dem Gerät und dem System beschäftigt hat, dann hat man den Dreh
+relativ schnell heraus. Zu Beginn ist es normal, dass man ungewollte Aktionen
+ausführt, da man eine Geste durchgeführt hat, die man so gar nicht wollte.
+Deutlich wird das, wenn man zwischen den verschiedenen Scopes wechselt. Hier
+muss man aufpassen, dass die Wischgeste immer von der Mitte des Displays
+ausgeführt wird. Schon wenn man zu nah am rechten Rand ist, findet man sich
+plötzlich in einer ganz anderen Anwendung wieder, da man
+
+die App gewechselt hat.
+Verstärkt wird diese Eigenheit dadurch, dass man nicht nur zwischen Scopes
+wechseln kann, sondern auch innerhalb eines Teilbereiches eines Scopes
+horizontal scrollen kann.
+
+<div class="p"><!----></div>
+Das System ist grundsätzlich flott und man hat größtenteils keine
+„Schweigeminuten“, in denen das Smartphone nicht reagiert. In den zwei Wochen
+Benutzung ist das Gerät nur einmal vollständig abgestürzt. Für ein Gerät mit
+einem System, das frisch auf dem Markt ist, ist das gar nicht so schlecht. Die
+Core Apps starten schnell, lassen sich gut bedienen und bieten einen guten
+Eindruck, wie gut programmierte Ubuntu-Touch-Apps aussehen sollten.
+
+<div class="p"><!----></div>
+Langsam ist das Smartphone beziehungsweise das System an einigen Stellen leider auch. Dies
+merkt man deutlich, wenn man Informationen von mehreren Scopes gleichzeitig
+aktualisieren möchte. Hierbei hängt sich die Oberfläche hin und wieder auf,
+fängt sich nach einigen Sekunden allerdings in der Regel wieder. Zu Wartezeiten
+kommt es auch hin und wieder bei der Galerie-App, insbesondere dann, wenn man
+einige Fotos geschossen hat und anschließend die Galerie öffnet. Dann baut sich
+die Übersicht der Galerie eher langsam auf, bis alle Fotos geladen sind. Beim
+ersten Öffnen der geschossenen Bilder kommt es manchmal zu Wartezeiten von bis
+zu fünf Sekunden.
+
+<div class="p"><!----></div>
+Zusammenfassend lässt sich sagen, dass das System noch einige kleinere Schwächen
+hat. Die meisten der groben Ungereimtheiten davon sollten sich über
+Software-Updates korrigieren lassen. Aktualisierungen des Systems werden
+monatlich ausgeliefert. Fehler lassen sich wie auch beim Desktop-Ubuntu auf
+Launchpad&nbsp;<a href="https://launchpad.net">[3]</a> melden. Der Akku ist soweit in Ordnung und
+hält bei normaler Nutzung mit einer Stunde eingeschaltetem Display etwa einen
+vollen Tag durch. Je nach Nutzung variiert natürlich die Akku-Laufzeit. Zur Zeit
+plagt das Smartphone leider ein Bug, weshalb es hin und wieder auch bei
+Nichtnutzung innerhalb von 10 Stunden einen leeren Akku hat. An der Behebung des
+Fehlers wird allerdings gearbeitet; dieser wird dann über eines der
+monatlichen Updates hoffentlich zeitnah gefixt.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Canonical hat mit dem bq Aquaris E4.5 sein erstes Ubuntu Phone veröffentlicht.
+Die mittelmäßige Hardware macht sich – wenn überhaupt – durch das eher niedrig
+aufgelösten Display bemerkbar. Der spanische Hersteller bq liefert für 170 Euro
+ein Gerät, was sich von der Verarbeitungsqualität in dem Preissegment nicht vor
+anderen Herstellern verstecken muss. Das System hat zwar noch einige
+kleine Fehler und Ungereimtheiten, doch ist dies für ein erstes Gerät durchaus
+verständlich. Mit den Scopes und der Gesten-Bedienung bietet Ubuntu Phone eine
+Besonderheit und kann sich von Konkurrenzplattformen differenzieren.
+
+<div class="p"><!----></div>
+Das wohl meistgewünschte Feature, das Telefon auch als Desktop-Rechner benutzen
+zu können, ist in diesem Gerät nicht enthalten. Diese Funktion war ursprünglich
+für das Ubuntu Edge&nbsp;<a href="http://ikhaya.ubuntuusers.de/2013/07/22/ubuntu-edge-mit-32-millionen-zum-high-end-ubuntu-smartphone/?highlight=edge">[4]</a>
+angekündigt worden. Eine erste Implementierung dieses Features soll schon zu
+Ubuntu 16.04 verfügbar sein. Wichtig für Ubuntu Phone ist zudem, dass sich die
+Plattform und das Ökosystem weiterentwickeln, sodass das App- und Scope-Angebot
+weiter wächst.
+
+<div class="p"><!----></div>
+Ob dieses Gerät sich für den Alltag empfehlen lässt, ist schwer zu sagen,
+insbesondere da die Anforderungen jedes Nutzers unterschiedlich sind. Es ist
+momentan eher geeignet für „Early-Adopter“, Ubuntu-Enthusiasten und vor allem
+Entwickler. Um die breite Masse zu erreichen, fehlt noch einiges an Arbeit.
+Insbesondere muss ein Ökosystem um das Betriebssystem entstehen, was sich aber nur
+langsam entwickelt. Man darf also gespannt sein, wie die Reise von Ubuntu Phone
+weitergeht und wohin sie führt.
+
+<div class="p"><!----></div>
+Wer einen audiovisuellen Eindruck vom Gerät haben möchte, der kann sich ein
+Hands-on Video auf YouTube&nbsp;<a href="https://www.youtube.com/watch?v=k6SkaqtKtbg">[5]</a>
+anschauen.
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.freiesmagazin.de/freiesMagazin-2013-11"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2013-11</tt></a><br />
+[2] <a href="https://appstore.bhdouglass.com/apps"><tt class="big">https://appstore.bhdouglass.com/apps</tt></a><br />
+[3] <a href="https://launchpad.net"><tt class="big">https://launchpad.net</tt></a><br />
+[4] <a href="http://ikhaya.ubuntuusers.de/2013/07/22/ubuntu-edge-mit-32-millionen-zum-high-end-ubuntu-smartphone/?highlight=edge"><tt class="big">http://ikhaya.ubuntuusers.de/2013/07/22/ubuntu-edge-mit-32-millionen-zum-high-end-ubuntu-smartphone/?highlight=edge</tt></a><br />
+[5] <a href="https://www.youtube.com/watch?v=k6SkaqtKtbg"><tt class="big">https://www.youtube.com/watch?v=k6SkaqtKtbg</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Sujeevan Vijayakumaran</b>&nbsp;(<a href="http://svij.org/">Webseite</a>)
+ist seit über vier Jahren in der deutschen Ubuntu-Community aktiv und wurde von
+Canonical zum Launch Event nach London eingeladen.     </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Ubuntu Phone: bq Aquaris E4.5&amp;body=freiesMagazin 04/2015%0AUbuntu Phone: bq Aquaris E4.5%0ASujeevan Vijayakumaran%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Ubuntu Phone: bq Aquaris E4.5#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_rezension_network_hacking" name="fm_15_04_rezension_network_hacking">Rezension: Network Hacking</a></font></h1>von Stefan Wichmann
+
+<div class="p"><!----></div>
+    <b>H</b><b>acken bedeutet, in ein System einzudringen. Aber wer möchte schon 
+kompromittiert werden? Es ist also Zeit, Gegenmaßnahmen zu ergreifen! Die 
+Frage ist: Hilft das Buch „Network 
+Hacking“&nbsp;<a href="http://www.franzis.de/fachbuecher/internet-netzwerk/network-hacking-4.auflage">[1]</a>
+mit dem Untertitel „Professionelle Angriffs- und Verteidigungstechniken“?</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Franzis Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+
+<h2>Inhalt und Aufteilung des Buches</h2>
+
+
+Der Blick in das Inhaltsverzeichnis verspricht viel und zeugt von der guten 
+Gliederung, auf die bereits die Rezension zur zweiten Auflage in der 
+Novemberausgabe 2010 von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> 
+einging&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2010-11">[2]</a>. Wer anhand der 
+Kapitelunterteilung in „Werkzeuge für Angriff und Verteidigung“, 
+„Angriffsszenarien und Abwehrmechanismen“ oder „Prävention und Prophylaxe“ 
+und den jeweiligen Unterszenarien nicht die benötigte Information findet, 
+schlägt im Stichwortverzeichnis nach. Minimale Vorkenntnisse reichen aus, um 
+beispielsweise das Tool in Erfahrung zu bringen, mit dem sich Passworte aus 
+dem Datenverkehr ausspähen lassen (Antwort: Sniffer).
+
+<div class="p"><!----></div>
+Auch helfen die Kurzüberschriften auf jeder Buchseite, schnell das gewünschte 
+Kapitel zu finden. Querverweise auf Internetseiten sind übersichtlich auf 
+der jeweiligen Buchseite auffindbar, sodass schnell Zusatzinformationen im 
+Internet aufgerufen werden können, ohne in einen Anhang vorblättern und die 
+aktuelle Buchseite zuschlagen zu müssen. 
+
+<div class="p"><!----></div>
+
+<h2>Zielgruppe</h2>
+
+
+Anfänger in der Thematik finden in dem Buch wertvolle Hinweise. Sofern ein 
+Tool oder eine Problematik näher beleuchtet wird, stellt das Autorengespann 
+die Informationen gut und für Einsteiger ausreichend dar.
+
+<div class="p"><!----></div>
+
+<h2>Stil</h2>
+
+
+Das Buch ist lesernah und interessant geschrieben. Die Screenshots sind 
+hilfreich, jedoch wirken Logausschnitte manchmal etwas zu lang und laden 
+eher zum Überblättern ein.
+
+<div class="p"><!----></div>
+
+<h2>Verständlichkeit</h2>
+
+
+Die kompakten Informationen zu den Tools bieten einen ausreichenden 
+Überblick, um Sinn und Nutzen zu erfassen. Auch Einsteiger in der Thematik 
+werden mit diesem Buch gut zurechtkommen, ohne dass EDV-Profis verlangt 
+werden.
+
+<div class="p"><!----></div>
+
+<h2>Umfang</h2>
+
+
+Dass es sich um die vierte Auflage des Bestsellers handelt, macht sich an 
+Stellen bemerkbar, an denen auf Veteranen eingegangen wird. Bereits in 
+früheren Ausgaben haben die Autoren (Zitat):
+„<em>den damals schon leicht veralteten, skriptgesteuerten Omega Scanner vorgestellt</em>“.
+Auf gleicher Seite liest sich dann:
+„<em>Wir weisen […] darauf hin, dass die […] verwendeten Angriffstechniken technisch z.T. stark veraltet sind.</em>“
+
+<div class="p"><!----></div>
+Da der Klappentext des Buches das Ziel definiert, Methoden potentieller 
+Diebe kennenzulernen, sind Hinweise auf gestrige Methoden 
+allenfalls am Rande interessant. Zum Vergleich: Wer sich über aktuelle 
+Tuningmaßnahmen im Autosport informieren möchte, wird sich nicht für
+die 
+spezielle Behufung von Rennpferden interessieren. Auf der anderen Seite 
+wurden derlei Hinweise kurz genug verfasst, um nicht allzu sehr ins Gewicht 
+zu fallen.
+
+<div class="p"><!----></div>
+Die Aufzählung der vielen Angriffsmöglichkeiten und Tools führte während der 
+Durcharbeitung zu dem Eindruck, dass dieses Thema durchaus als Kompendium in 
+mehreren Teilen umgesetzt werden könnte. Momentan werden Tools teilweise lediglich 
+benannt, ohne die Vorzüge und Möglichkeiten ausreichend vorzustellen, so zum Beispiel bei 
+den Programmen Optix Pro oder Cybergate Excel.
+
+<div class="p"><!----></div>
+Fast zu übersehen ist der Hinweis auf die Featurelisten und Bedienparameter 
+der im Buch vorgestellten Hacking-Tools auf der Buchrückseite. Leider 
+handelt sich bei diesen Informationen lediglich um Hilfsseiten, die 
+beispielsweise durch <b><tt class="big">ettercap --help</tt></b> problemlos auf dem eigenen System 
+ausgegeben werden können. 
+
+<div class="p"><!----></div>
+
+<h2>Qualität</h2>
+
+
+Rechtschreibung und Fachlichkeit des Buches sind unbestritten in guter 
+Aufmachung und ohne Druckfehler umgesetzt. Das Cover ist passend zum Thema 
+originell und ansprechend gestaltet. Insgesamt liegt das Buch durch die 
+Coveroberfläche angenehm in der Hand.
+
+<div class="p"><!----></div>
+Das in Deutschland gedruckte Buch lässt sich durch das verwendete Papier gut 
+durchblättern. Insgesamt ist die gesamte Verarbeitung überzeugend. 
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Selbst 660 Seiten reichen nicht aus, um die angesprochenen Tools ausreichend 
+vorzustellen. Somit sind die Autoren gezwungen, eine Auswahl zu treffen und 
+stellvertretend für die Themen sinnvolle Beispiele herauszuarbeiten. Das 
+hier kürzlich in einer Buchrezension betrachtete Programm 
+Wireshark&nbsp;<a href="http://www.freiesmagazin.de/freiesMagazin-2015-01">[3]</a> beispielsweise 
+wird auf 7 Seiten erwähnt, aber, und das ist das Ziel des Buches, der 
+interessierte Leser findet die benötigten Basisinformationen für das weitere 
+Studium der Thematik. Der zu Beginn der Rezension angesprochene Untertitel 
+ist somit voll gerechtfertigt.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Network Hacking&nbsp;<a href="http://www.franzis.de/fachbuecher/internet-netzwerk/network-hacking-4.auflage">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Dr. Peter Kraft/Andreas Weyert </td></tr>
+<tr><td><b>Verlag</b> </td><td>Franzis Verlag, 4. Auflage (Februar 2014) </td></tr>
+<tr><td><b>Umfang</b> </td><td>660 Seiten, broschiert </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-645-60317-1 </td></tr>
+<tr><td><b>Preis</b> </td><td>40,00 Euro
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.franzis.de/fachbuecher/internet-netzwerk/network-hacking-4.auflage"><tt class="big">http://www.franzis.de/fachbuecher/internet-netzwerk/network-hacking-4.auflage</tt></a><br />
+[2] <a href="http://www.freiesmagazin.de/freiesMagazin-2010-11"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2010-11</tt></a><br />
+[3] <a href="http://www.freiesmagazin.de/freiesMagazin-2015-01"><tt class="big">http://www.freiesmagazin.de/freiesMagazin-2015-01</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Stefan Wichmann</b>&nbsp;(<a href="http://tinyurl.com/stefan-wichmann">Webseite</a>)
+veröffentlichte selbst Fachbücher im EDV-Umfeld und arbeitet mit Solaris und 
+Linuxsystemen. 
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Network Hacking&amp;body=freiesMagazin 04/2015%0ARezension: Network Hacking%0AStefan Wichmann%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Rezension: Network Hacking#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_rezension_raspberry_kochbuch" name="fm_15_04_rezension_raspberry_kochbuch">Rezension: Raspberry Pi Kochbuch</a></font></h1>von Jochen Schnelle
+
+<div class="p"><!----></div>
+    <b>D</b><b>er Raspberry Pi&nbsp;<a href="http://www.raspberrypi.org/">[1]</a> ist ein preiswerter und
+äußerst populärer Minicomputer, der sich für eine Vielzahl von Aufgaben,
+Spielereien und Basteleien eignet. Und eben dafür liefert das vorliegende Buch
+„Raspberry Pi Kochbuch“&nbsp;<a href="http://www.oreilly.de/catalog/raspberrypicbger/">[2]</a>
+eine ganze Mengen von „Rezepten“.</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken O'Reilly für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Insgesamt bietet das Buch mehr als 200 Rezepte, wobei im Kontext des Buchs ein
+Rezept ein in sich abgeschlossener Abschnitt ist. Jedes Rezept ist identisch
+aufgebaut und besteht aus den vier Teilen „Problem“, „Lösung“, „Diskussion“ und
+„Siehe auch“. Letzteres sind weiterführende Links oder auch Querverweise auf
+andere Rezepte. Der Teil „Problem“ ist in der Regel bei allen Rezepten kurz
+gehalten, die Länge der Abschnitte „Lösung” und „Diskussion“ variiert je nach
+Komplexität des Problems von wenigen Zeilen bis hin zu zwei bis drei Seiten.
+
+<div class="p"><!----></div>
+
+<h2>Breites Themenspektrum</h2>
+
+
+Rezepte zu ähnlichen Themen sind in Kapiteln zusammengefasst. Diese decken ein
+recht breites Spektrum ab und beginnen „ganz vorne“, nämlich beim Setup und der
+Inbetriebnahme des Raspberry Pi. Es folgen Kapitel zur Netzwerk- und
+Internetkonfiguration, dem Umgang mit dem Betriebssystem – im Rahmen des Buchs
+wird die Linuxdistribution Raspbian verwendet – sowie einiger darin enthaltener
+Programme wie Internetbrowser, Mediaplayer etc.
+
+<div class="p"><!----></div>
+
+<h2>Einführung in Python</h2>
+
+
+Die darauf folgenden drei Kapitel geben dann auf rund 50 Seiten eine Einführung
+in die Programmiersprache Python&nbsp;<a href="https://www.python.org/">[3]</a>, da diese später
+auch für die Ansteuerung der elektronischen Schaltungen benötigt wird. Das dafür
+benötigte Wissen wird auch kompakt und gut verständlich vermittelt, ist aber
+natürlich keine vollständige bzw. umfassende Einführung in Python.
+
+<div class="p"><!----></div>
+
+<h2>Elektronik-Basteleien</h2>
+
+
+Den Hauptteil des Buchs, nämlich rund 200 der insgesamt 408 Seiten,
+nehmen die sieben Kapitel zum Thema Elektronik-Basteleien und
+elektronische Schaltungen ein.  Dabei wird eine breite Spanne von
+Schaltungen vorgestellt, angefangen vom einfachen Ein- und Ausschalten
+einer LED über Transistorschaltungen, Motoren und Sensoren zur
+Temperatur- und Entfernungsmessung bis hin zu komplexeren Beispielen
+wie der Ansteuerung von Displays.
+
+<div class="p"><!----></div>
+
+<h2>Raspberry Pi und Arduino</h2>
+
+
+Innerhalb der Elektronikkapitel ist wiederum das umfangreichste das zum Thema
+„gemeinsame Nutzung von Raspberry Pi und Arduino“&nbsp;<a href="http://www.arduino.cc/">[4]</a>.
+Darin wird auf ca. 70 Seiten in diversen Rezepten beschrieben, wie man die
+(besseren) Möglichkeiten des Arduino in Sachen Ansteuerung von externen
+Schaltungen mit der einfacheren Programmierbarkeit des Raspberry Pi einsetzt.
+
+<div class="p"><!----></div>
+
+<h2>Visualisierung</h2>
+
+
+Viele der elektronischen Schaltungen, die im Rahmen des Buchs behandelt
+werden,
+sind als schematisches Bild im Buch gezeigt. Zwar sind die Abbildungen durchweg
+in Graustufen gedruckt, aber nichtsdestotrotz sehr gut „lesbar“. Dadurch wird
+der Nachbau der Schaltung deutlich vereinfacht und somit werden auch Fehler
+minimiert.
+
+<div class="p"><!----></div>
+
+<h2>Lesbarkeit</h2>
+
+
+Insgesamt liest sich das Buch sehr flüssig. Alle Rezepte sind kompakt und in
+sich geschlossen, sodass in der Regel keine Fragen offen bleiben. Durch die
+Unterteilung des Buchs in Rezepte ist es zumindest in den Kapiteln zu den
+elektronischen Schaltungen möglich, Rezepte, die nicht weiter von Interesse sind, zu
+überspringen, ohne dass die Verständlichkeit anderer Rezepte darunter leidet.
+
+<div class="p"><!----></div>
+
+<h2>Verständlichkeit</h2>
+
+
+Insgesamt sind die Rezepte alle sehr gut verständlich und ausführlich genug erklärt.
+Allerdings ist das Buch dennoch eher nicht für Totaleinsteiger geeignet, denn dazu ist
+das Tempo in einigen Kapiteln doch etwas zu hoch. Wer aber zumindest eine minimale
+Ahnung von Linux und elektronischen Schaltungen hat, der wird keinerlei Probleme
+haben.
+
+<div class="p"><!----></div>
+
+<h2>Fazit</h2>
+
+
+Das vorliegende „Raspberry Pi Kochbuch“ liefert eine Vielzahl von Rezepten rund
+um die Nutzung des Raspberry Pi. Der Schwerpunkt liegt dabei auf
+Elektronikbasteleien. Wer einen Raspberry Pi besitzt, eine leise Ahnung von Linux
+und Elektronik hat, aber nicht richtig weiß, was er mit seinem Raspberry Pi
+anfangen soll, dem kann dieses Buch durchweg empfohlen werden.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Raspberry Pi Kochbuch&nbsp;<a href="http://www.oreilly.de/catalog/raspberrypicbger/">[2]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Simon Monk </td></tr>
+<tr><td><b>Verlag</b> </td><td>O'Reilly Verlag, 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>408 Seiten </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-95561-638-0 </td></tr>
+<tr><td><b>Preis</b> </td><td>29,90 Euro (Print), 24,00 Euro (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.raspberrypi.org/"><tt class="big">http://www.raspberrypi.org/</tt></a><br />
+[2] <a href="http://www.oreilly.de/catalog/raspberrypicbger/"><tt class="big">http://www.oreilly.de/catalog/raspberrypicbger/</tt></a><br />
+[3] <a href="https://www.python.org/"><tt class="big">https://www.python.org/</tt></a><br />
+[4] <a href="http://www.arduino.cc/"><tt class="big">http://www.arduino.cc/</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Jochen Schnelle</b>&nbsp;(<a href="http://noisefloor-net.blogspot.de/">Webseite</a>)
+besitzt selbst auch einen Raspberry Pi, den er ab und an für Bastelprojekte einsetzt. 
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Raspberry Pi Kochbuch&amp;body=freiesMagazin 04/2015%0ARezension: Raspberry Pi Kochbuch%0AJochen Schnelle%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Rezension: Raspberry Pi Kochbuch#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_rezension_programmieren_kids" name="fm_15_04_rezension_programmieren_kids">Rezension: Hello World! Programmieren für Kids und andere Anfänger</a></font></h1>von Vicki Ebeling
+
+<div class="p"><!----></div>
+    <b>W</b><b>enn ich groß bin, möchte ich Programmierer werden! – Dieser Satz begegnete mir
+in den letzten Monaten recht häufig. Abgesehen von der Ahnung, dass der
+Berufswunsch „irgendwas mit Computern“ den Klassikern „Lokführer“ und
+„Feuerwehrmann“ den Rang abzulaufen scheint, stellt sich die Frage: Wie können
+Kinder und Jugendliche erfolgreich ins Programmieren einsteigen?</b>
+
+<div class="p"><!----></div>
+<b>Redaktioneller Hinweis:</b> <i>Wir danken dem Carl Hanser Verlag für die Bereitstellung eines Rezensionsexemplares.</i>
+
+<div class="p"><!----></div>
+Natürlich gibt es privilegierte Kids, die auf einen erwachsenen Profi in ihrem
+Umfeld zurückgreifen können, der im Idealfall auch noch Lust auf gemeinsame
+Abenteuer an der Tastatur hat. Für alle anderen bietet sich ein geführter
+Einstieg durch ein Medium an. Ein ansprechend gestaltetes Lehrbuch, das sich in
+meiner Arbeit der schulischen Berufsberatung bewährt hat, möchte ich hier
+vorstellen.
+
+<div class="p"><!----></div>
+
+<h2>Zielgruppe </h2>
+
+
+Warren Sande legt mit seinem Werk „Hello World! Programmieren für Kids und
+andere Anfänger“&nbsp;<a href="http://www.hanser-fachbuch.de/buch/Hello+World/9783446438064">[1]</a> 
+eine Einführung in Python 2.x vor, die sich speziell an junge Menschen und
+andere Spielebegeisterte wendet. Sande schrieb es für und mit der Unterstützung
+seines Sohns Carter, der als Versuchsobjekt und Co-Autor gleichermaßen fungierte
+und ab und zu auch selbst zu Wort kommt.
+
+<div class="p"><!----></div>
+Das Buch fängt ganz am Anfang an, setzt also kaum Vorkenntnisse voraus. Es
+erklärt zum Beispiel detailliert, wie man Python von der beiliegenden CD
+installiert und warum man eigentlich Programmiersprachen braucht („Alle Computer
+verwenden innen den Binärcode, aber Menschen sprechen ‚Binär‘ meistens nicht
+besonders gut“). Theoretisch braucht man keinen kompetenten Erwachsenen,
+um das Buch zu nutzen, sobald die Lesefähigkeit des Kindes ausreicht. Der Autor
+geht auf viele Fragen und Sinnzusammenhänge ein, die einem erwachsenen Leser
+vielleicht gar nicht in den Sinn gekommen wären (z.&nbsp;B. dass man am Ende jeder
+Zeile die Eingabetaste drücken muss).
+
+<div class="p"><!----></div>
+Der Leser wird trotzdem immer auf Augenhöhe angesprochen und erwirbt nach und
+nach das nötige Fachwissen und Sicherheit. Aufgelockert wird der Text durch
+zahlreiche ansprechende Illustrationen und Comics.
+
+<div class="p"><!----></div>
+Natürlich können auch erwachsene Leser das Buch nutzen. Es ist kein Problem,
+einzelne Kapitel oder Beispiele zu überspringen.
+
+<div class="p"><!----></div>
+
+<h2>Aufbau des Lehrgangs</h2>
+
+
+Die 27 Kapitel des Buches behandeln jeweils ein Teilthema (z.&nbsp;B. 4. Datentypen,
+8. Schleifen, 14. Objekte) und bauen aufeinander auf. In Kapitel 1 wird Python
+installiert und die integrierte Entwicklungsumgebung IDLE&nbsp;<a href="https://en.wikipedia.org/wiki/IDLE_%28Python%29">[2]</a>
+ausprobiert, ab Kapitel 6 werden grafische Benutzeroberflächen verwendet. Ab
+Kapitel 16 wird dann der Einfachheit halber das Python-Modul „Pygame“ benutzt,
+um Grafikelemente und Sound einzubinden.
+
+<div class="p"><!----></div>
+Die Anwendungsbeispiele sind so oft wie möglich als kleine Spiele gestaltet.
+Schon auf Seite 13 tippt man sein erstes Spiel ein („Zahlen raten“), das
+zum Ausprobieren mit anderen einlädt. Die Beispiele werden allmählich komplexer
+und binden immer mehr Elemente ein. Als umfangreichstes Spielprojekt kann eine
+KI für den Roboter-Kampf auf einem Koordinatensystem erstellt werden.
+
+<div class="p"><!----></div>
+Der Code der Beispiele ist wie in IDLE farbig und gegebenenfalls mit
+Kommentaren versehen
+abgedruckt. Der Autor empfielt, jedes Beispiel einmal abzutippen, um sich mit
+der Logik vertraut zu machen. Diese Grundlage kann dann je nach persönlicher
+Vorliebe verändert werden. Am Ende jedes Kapitels gibt es Quizfragen, die mit
+den neuen Informationen des Kapitels beantwortet werden können. Außerdem findet
+man oft auch Ideen für weiterführende Aufgaben, mit denen man sein Wissen
+anwenden kann.
+
+<div class="p"><!----></div>
+Außer der reinen Python-Programmierung erfährt der Leser noch einige
+interessante Zusammenhänge in den Rubriken „Die gute alte Zeit“ (z.&nbsp;B. als
+Computer mit Basic liefen), „Denken wie ein (Python-)Programmierer“ und wie so
+oft ganz nebenbei auch über Mathematik, wie zum Beispiel die e-Notation bei sehr großen bzw.
+sehr kleinen Zahlen.
+
+<div class="p"><!----></div>
+
+<h2>Erste Schritte mit Open-Source-Software</h2>
+
+
+Kann dieser Lehrgang auch unter Linux genutzt werden? Ja, denn theoretisch
+benötigt der Leser nicht mehr Vorkenntnisse über sein Betriebssystem als für die
+Erstellung von Textdateien und das Surfen im Internet. Python selbst ist mit
+Windows, Mac und Linux kompatibel. Im Lehrgang wird (vermutlich aufgrund der
+größeren Verbreitung) von einem Windows-Rechner ausgegangen. Auf der beiliegenden
+CD sind jedoch sowohl eine Python-Installationsdatei für Debian und seine
+verwandten Systeme vorhanden als auch eine passende deutsche Installationsanleitung 
+und die Beispielcodes mit Kommentaren.
+
+<div class="p"><!----></div>
+Dass die Wahl auf Python als Programmiersprache fiel, begründet Autor Warren
+Sande (neben einigen anderen Vorteilen) auch mit der Tatsache, dass die Software
+frei verfügbar und quelloffen ist. Es kann ja nur von Vorteil sein, gute
+Erfahrungen mit Open-Source-Software zu machen.
+
+<div class="p"><!----></div>
+
+<h2>Fazit </h2>
+
+
+Das Lehrwerk von Warren Sande ist ansprechend gestaltet und trifft mit dem
+motivierenden Thema „Spiele selbst machen“ das Interesse der Zielgruppe. Die
+Erläuterungen und Anweisungen sind durchdacht und kindgerecht. Kinder und
+Jugendliche ab der 4. Klasse können mit diesem Buch sinnvoll erste Schritte beim
+Programmieren mit Python machen.
+
+<div class="p"><!----></div>
+Förderlich wäre es, wenn die Junior-Programmierer beim
+Erarbeiten der fast 500 Seiten Lehrgang jemanden an ihrer Seite hätten.
+Das ist
+zwar inhaltlich nicht zwingend nötig, erhält aber die Motivation und vergrößert
+den Spaß.
+
+<div class="p"><!----></div>
+„Hello World!“ ist als Print-Ausgabe mit CD oder auch als Ebook erhältlich. Wer
+lieber mit Python 3.x (statt hier 2.x) einsteigen möchte und sich mit einem PDF
+begnügt, könnte auch mal einen Blick in das kostenlose Ebook „Schlangengerangel
+für Kinder“&nbsp;<a href="http://python-verband.org/informieren/news/schlangengerangel-fuer-kinder">[3]</a>
+des Python Software Verbands e.&nbsp;V. werfen.
+
+<div class="p"><!----></div>
+Übrigens haben in meinem Umfeld nicht nur PC-Freaks und angehende Programmierer
+gute Erfahrungen mit „Hello World“ gemacht, sondern auch weniger
+computerbegeisterte Schülerinnen
+
+und Schüler, die sich im Unterricht nicht
+ausreichend gefordert fühlten. Positiv für das logische Denken ist diese
+Beschäftigung allemal.
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="2" align="center"><b>Buchinformationen</b></td></tr>
+<tr><td><b>Titel</b> </td><td>Hello World! Programmieren für Kids und andere Anfänger&nbsp;<a href="http://www.hanser-fachbuch.de/buch/Hello+World/9783446438064">[1]</a> </td></tr>
+<tr><td><b>Autor</b> </td><td>Warren Sande, Carter Sande </td></tr>
+<tr><td><b>Verlag</b> </td><td>Carl Hanser Verlag, 2., aktualisierte und erweiterte Auflage 2014 </td></tr>
+<tr><td><b>Umfang</b> </td><td>501 Seiten, mit CD </td></tr>
+<tr><td><b>ISBN</b> </td><td>978-3-446-43806-4 </td></tr>
+<tr><td><b>Preis</b> </td><td>29,99 Euro (Print), 23,99 Euro (E-Book)
+        </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+            <font color="#595959"><font size="+1">Links</font></font><br />
+[1] <a href="http://www.hanser-fachbuch.de/buch/Hello+World/9783446438064"><tt class="big">http://www.hanser-fachbuch.de/buch/Hello+World/9783446438064</tt></a><br />
+[2] <a href="https://en.wikipedia.org/wiki/IDLE_%28Python%29"><tt class="big">https://en.wikipedia.org/wiki/IDLE_(Python)</tt></a><br />
+[3] <a href="http://python-verband.org/informieren/news/schlangengerangel-fuer-kinder"><tt class="big">http://python-verband.org/informieren/news/schlangengerangel-fuer-kinder</tt></a><br />
+
+
+<div class="p"><!----></div>
+        
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="1" align="center"><b>Autoreninformation</b></td></tr>
+<tr><td align="left"><b>Vicki Ebeling</b>
+ist Sonderpädagogin und war vom langatmigen, theoretischen Informatikunterricht
+in ihrer eigenen Schulzeit ernüchtert.
+    </td></tr></table>
+<br />
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Rezension: Hello World!&amp;body=freiesMagazin 04/2015%0ARezension: Hello World!%0AVicki Ebeling%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Rezension: Hello World!#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+    
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_leserbriefe" name="fm_15_04_leserbriefe">Leserbriefe</a></font></h1>
+
+
+    <b>Für Leserbriefe steht unsere E-Mailadresse
+        <img src="freiesMagazin-2015-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> zur Verfügung - wir freuen uns über Lob,
+        Kritik und Anregungen zum Magazin.</b>
+
+<div class="p"><!----></div>
+    An dieser Stelle möchten wir alle Leser ausdrücklich ermuntern,
+    uns auch zu schreiben, was nicht so gut gefällt. Wir bekommen
+    sehr viel Lob (was uns natürlich freut), aber vor allem durch
+    Kritik und neue Ideen können wir uns verbessern.
+
+<div class="p"><!----></div>
+
+<h2>Leserbriefe und Anmerkungen</h2>
+
+
+
+<h3>Privacy Guide</h3>
+
+
+
+<h3>Kernelrückblick</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+Auch wenn deine Artikelreihe schon fast selbstverständlich ist, möchte ich dir
+hiermit herzlich danken. Danke dafür, dass Du eine Zusammenfassung der
+Entwicklung schreibst. Durch Personen wie Dich habe ich einen groben Einblick
+in die Linuxentwicklung und muss mir nicht selber die vielen Patches durchlesen.
+        &nbsp;<br /><b>txt.file</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150301-maerzausgabe-erschienen#comment-3438">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Danke, es tut gut zu hören, dass nicht nur die Korrektoren von <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> den
+Kernelrückblick lesen. ;-)
+        &nbsp;<br /><b><i>Mathias Menzer</i></b> 
+</i>
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+Sehr schöner Überblick über verschiedene Möglichkeiten, der Überwachung zu
+begegnen. Bei den beiden „safebrowsing“-Optionen habe ich allerdings lieber die
+„.enabled“-Varianten genutzt und entsprechend auf „false“ gesetzt. Außerdem
+fällt mir noch startSSL ein, für kostenlose S/MIME-Zertifikate.
+        &nbsp;<br /><b>txt.file</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150301-maerzausgabe-erschienen#comment-3437">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Danke für die Rückmeldung. Ich würde nicht soweit gehen, Safebrowsing
+grundsätzlich als schlecht zu bezeichnen. Solange ein Vergleich mit lokalen
+Listen (die regelmäßig aktualisiert werden) stattfindet, stellt es aus meiner
+Sicht einen gewissen Mehrwert dar. StartSSL habe ich aus dem Grund nicht
+aufgenommen, da es mit dem „kostenlos“ nicht so ganz stimmt. [Die Firma
+verlangt] für Revocation von SSL-Zertifikaten Geld. An der
+Heartbleed-Sicherheitslücke haben die sich eine goldene Nase verdient.
+        &nbsp;<br /><b><i>Marcus Moeller</i></b> 
+</i>
+
+<div class="p"><!----></div>
+
+<h3>Rezension: Raspberry Pi für Kids</h3>
+
+
+            <font color="#595959"><b>-&#62;</b></font>
+[…] Ich habe genau dieses Modell gekauft und habe mir den PiFace-Aufsatz zur
+Steuerung von externer Elektronik zugelegt. Nur mühselig war ansatzweise
+Dokumentation zu finden und außerdem gibt es zwei unterschiedliche Python-Syntaxen,
+die beide nicht funktionieren. Nur die vom Hersteller gelieferten fertigen
+Module funktionieren, die aber auch nicht einfach so herumliegen, sondern erst mal
+auf dem System gefunden werden müssen. Ganz abgesehen davon, dass man als
+Anfänger den Kram nicht interpretieren kann. Ich habe da einen ganz großen
+Widerspruch gefunden, dass es scheinbar so viele Anwendungen gibt, aber nirgends
+vernünftige Python-Dokumentation Schritt für Schritt. Außerdem ist die
+Python-Konsole was anderes als Python-Software für den Desktop. Zumindest das
+habe ich kapiert. Doch wo ist der Unterschied, wenn es doch dasselbe sein
+sollte: „Python“? Das hier vorgestellte Buch weckt da Hoffnung für Aufklärung.
+Bitte mehr solche Hilfestellung.
+        &nbsp;<br /><b>Olaf Grimm</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150301-maerzausgabe-erschienen#comment-3442">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+            <font color="#595959"><b>-&#62;</b></font>
+[Ich wollte] an dieser Stelle die Gelegenheit nutzen „Vielen Dank für das
+regelmäßige Magazin!“ zu sagen. Vielleicht habt ihr ja einmal Lust (englische)
+Gastbeiträge aufzunehmen? Ich bin beispielsweise kürzlich über das Libre
+Graphics Magazin gestolpert, das sieht auch sehr interessant aus.
+        &nbsp;<br /><b>Simon</b> &nbsp;(<a href="http://www.freiesmagazin.de/20150301-maerzausgabe-erschienen#comment-3445">Kommentar</a>)
+
+
+<div class="p"><!----></div>
+        <font color="#FF630A"><b>&lt;-</b></font>    <i>
+Da <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ein Magazin für den deutschsprachigen Markt sein soll, haben wir
+für uns festgelegt, keine englischen Artikel zu veröffentlichen. Was wir 
+ab und zu schon gemacht haben, ist interessante Artikel ins Deutsche zu
+übersetzen. Das ist aber oft aufwändiger als einen Artikel selbst zu
+schreiben. Wenn das Interesse besteht und die Lizenz eines Artikels es zulässt,
+sind Übersetzungen auch in <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> gerne gesehen.
+        &nbsp;<br /><b><i>Dominik Wagenführ</i></b> 
+</i>
+
+<div class="p"><!----></div>
+    Die Redaktion behält sich vor, Leserbriefe gegebenenfalls zu
+    kürzen. Redaktionelle Ergänzungen finden sich in eckigen Klammern.
+
+<div class="p"><!----></div>
+                                <i><a href="mailto:?subject=Leserbriefe&amp;body=freiesMagazin 04/2015%0ALeserbriefe%0ARedaktion%0A%0Ahttp://www.freiesmagazin.de/freiesMagazin-2015-04%0A        ">Beitrag teilen</a>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        <a href="http://www.freiesmagazin.de/comment/reply/419?edit[subject]=Leserbriefe#comment-form">Beitrag kommentieren</a><br /><br /></i>    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_veranstaltungen" name="fm_15_04_veranstaltungen">Veranstaltungskalender</a></font></h1>
+
+
+         
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><td colspan="5" align="center"><b>Messen</b></td></tr>
+<tr><td align="left"><b>Veranstaltung</b> </td><td><b>Ort</b> </td><td align="left"><b>Datum</b> </td><td><b>Eintritt</b> </td><td align="left"><b>Link</b> </td></tr>
+<tr><td align="left">
+UnFUCK </td><td>Furtwangen </td><td align="left">17.04.–19.04.2015 </td><td>frei </td><td align="left"><a href="http://www.unfuck.eu/"><tt class="big">http://www.unfuck.eu/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Eisenstadt </td><td>Eisenstadt </td><td align="left">17.04.–18.04.2015 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">Grazer Linuxtage </td><td>Graz </td><td align="left">24.04.–25.04.2015 </td><td>frei </td><td align="left"><a href="http://www.linuxtage.at/"><tt class="big">http://www.linuxtage.at/</tt></a> </td></tr>
+<tr><td align="left">VCF Europa </td><td>München </td><td align="left">01.05.–03.05.2015 </td><td>– </td><td align="left"><a href="http://www.vcfe.org/"><tt class="big">http://www.vcfe.org/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Wien </td><td>Wien </td><td align="left">07.05.–09.05.2015 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">LUG Camp </td><td>Bergneustadt </td><td align="left">14.05.–17.05.2015 </td><td>– </td><td align="left"><a href="http://www.bluefrogs.de/"><tt class="big">http://www.bluefrogs.de/</tt></a> </td></tr>
+<tr><td align="left">Linuxwochen Linz </td><td>Linz </td><td align="left">16.05.–17.05.2015 </td><td>frei </td><td align="left"><a href="http://linuxwochen.at/"><tt class="big">http://linuxwochen.at/</tt></a> </td></tr>
+<tr><td align="left">BerlinSides </td><td>Berlin </td><td align="left">29.05.–01.06.2015 </td><td>– </td><td align="left"><a href="https://berlinsides.org/"><tt class="big">https://berlinsides.org/</tt></a> </td></tr>
+<tr><td align="left">GPN15 </td><td>Karlsruhe </td><td align="left">04.06.–07.06.2015 </td><td>– </td><td align="left"><a href="http://gulas.ch/"><tt class="big">http://gulas.ch/</tt></a> </td></tr>
+<tr><td align="left">Chaos Singularity </td><td>BIEL </td><td align="left">12.06.–14.06.2015 </td><td>20 CHF </td><td align="left"><a href="http://www.cosin.ch/"><tt class="big">http://www.cosin.ch/</tt></a> </td></tr>
+</table>
+
+    <font size="-1">(Alle Angaben ohne Gewähr!)</font>
+
+<div class="p"><!----></div>
+    Sie kennen eine Linux-Messe, welche noch nicht auf der Liste zu
+    finden ist? Dann schreiben Sie eine E-Mail mit den Informationen zu
+    Datum und Ort an <img src="freiesMagazin-2015-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" />.
+ 
+
+<div class="p"><!----></div>
+<a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_vorschau" name="fm_15_04_vorschau">Vorschau</a></font></h1>
+
+
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint am ersten Sonntag eines Monats. Die Mai-Ausgabe
+    wird voraussichtlich am 3. Mai u.&nbsp;a. mit folgenden Themen veröffentlicht:
+    
+<ul>
+<li> Einführung in LilyPond</li>
+<li> Rezension: Linux-Server für Einsteiger
+    </li>
+</ul>
+    Es kann leider vorkommen, dass wir aus internen Gründen angekündigte 
+    Artikel verschieben müssen. Wir bitten dafür um Verständnis.
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_konventionen" name="fm_15_04_konventionen">Konventionen</a></font></h1>
+
+
+    An einigen Stellen benutzen wir Sonderzeichen mit einer bestimmten
+    Bedeutung. Diese sind hier zusammengefasst:<br />
+        
+<table>
+<tr><td><b><tt class="big">$</tt></b>:  </td><td align="left">Shell-Prompt </td></tr>
+<tr><td><b><tt class="big">#</tt></b>:  </td><td align="left">Prompt einer Root-Shell – Ubuntu-Nutzer können
+                         hier auch einfach in einer normalen Shell ein
+                         <b><tt class="big">sudo</tt></b> vor die Befehle setzen.</td></tr>
+<tr><td><b><tt class="big">~</tt></b>: </td><td align="left">Abkürzung für das eigene Benutzerverzeichnis
+                        <b><tt class="big">/home/BENUTZERNAME</tt></b> </td></tr></table>
+            <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+
+<div class="p"><!----></div>
+    
+<h1><font color="#595959"><a id="fm_15_04_impressum" name="fm_15_04_impressum">Impressum <font size="+1">ISSN 1867-7991</font></a></font></h1>
+
+
+        <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> erscheint als PDF, EPUB und HTML einmal monatlich.<br />
+    Erscheinungsdatum: 5. April 2015<br />
+
+<div class="p"><!----></div>
+    
+<table>
+<tr><td align="left"><b>Kontakt</b></td></tr>
+<tr><td align="left">E-Mail </td><td align="left"><img src="freiesMagazin-2015-04-bilder-Dateien/redaktionmail.png" alt="redaktion ETT freiesmagazin PUNKT de" height="17" width="168" align="top" /> </td></tr>
+<tr><td align="left">Postanschrift </td><td align="left"><b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> </td></tr>
+<tr><td align="left"></td><td align="left">c/o Dominik Wagenführ </td></tr>
+<tr><td align="left"></td><td align="left">Beethovenstr. 9/1 </td></tr>
+<tr><td align="left"></td><td align="left">71277 Rutesheim </td></tr>
+<tr><td align="left">Webpräsenz </td><td align="left"><a href="http://www.freiesmagazin.de/">http://www.freiesmagazin.de/</a> </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Autoren dieser Ausgabe</b></td></tr>
+<tr><td align="left">Roman Buchheit </td><td align="left"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_android_ohne_google">Android Google-frei konfigurieren und Alternativen einrichten</a> </td></tr>
+<tr><td align="left">Jens Dörpinghaus </td><td align="left"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_octave_3">Octave – Teil 3: Numerische Integration und Matrizen</a> </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_rezension_programmieren_kids">Rezension: Hello World! Programmieren für Kids und andere Anfänger</a> </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_kernel">Der März im Kernelrückblick</a> </td></tr>
+<tr><td align="left">Jochen Schnelle </td><td align="left"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_rezension_raspberry_kochbuch">Rezension: Raspberry Pi Kochbuch</a> </td></tr>
+<tr><td align="left">Sujeevan Vijayakumaran </td><td align="left"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_ubuntuphone">Ubuntu Phone: Das bq Aquaris E4.5 näher angeschaut</a> </td></tr>
+<tr><td align="left">Stefan Wichmann </td><td align="left"><a href="freiesMagazin-2015-04-bilder.html#fm_15_04_rezension_network_hacking">Rezension: Network Hacking</a> </td></tr>
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Redaktion</b></td></tr>
+<tr><td align="left">Christian Schnell </td><td align="left">Matthias Sitte </td></tr>
+<tr><td align="left">Dominik Wagenführ (Verantwortlicher Redakteur) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Satz und Layout</b></td></tr>
+<tr><td align="left">Jonas Dabelow </td><td align="left">Moritz Kiefer </td></tr>
+<tr><td align="left">Christoph Lehmann </td><td align="left">Kai Welke </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Korrektur</b></td></tr>
+<tr><td align="left">Daniel Braun </td><td align="left">Frank Brungräber </td></tr>
+<tr><td align="left">Vicki Ebeling </td><td align="left">Stefan Fangmeier </td></tr>
+<tr><td align="left">Mathias Menzer </td><td align="left">Christian Schnell </td></tr>
+<tr><td align="left">Karsten Schuldt </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Veranstaltungen</b></td></tr>
+<tr><td align="left">Ronny Fischer </td><td align="left"></td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+<b>Logo-Design</b></td></tr>
+<tr><td align="left">Arne Weinberg (<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">CC-BY-SA 4.0 Unported</a>) </td></tr>
+
+
+<tr><td align="left">
+<div class="p"><!----></div>
+    </td></tr></table>
+    Dieses Magazin wurde mit LaTeX erstellt. Mit vollem Namen
+    gekennzeichnete Beiträge geben nicht notwendigerweise die Meinung
+    der Redaktion wieder. Wenn Sie <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> ausdrucken möchten, dann
+    denken Sie bitte an die Umwelt und drucken Sie nur im Notfall. Die
+    Bäume werden es Ihnen danken. ;-) <br />
+
+<div class="p"><!----></div>
+        Soweit nicht anders angegeben, stehen alle Artikel, Beiträge und Bilder in
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unter der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>. Das Copyright liegt
+    beim jeweiligen Autor. 
+    Die Kommentar- und Empfehlen-Icons wurden von Maren Hachmann erstellt
+    und unterliegen ebenfalls der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 International</a>.
+    <b><font color="#595959">freies</font></b><font color="#FF630A">Magazin</font> unterliegt als Gesamtwerk
+    der&nbsp;<a href="http://creativecommons.org/licenses/by-sa/4.0/deed.de">Creative-Commons-Lizenz CC-BY-SA 4.0 Unported</a> mit Ausnahme der
+    Inhalte, die unter einer anderen Lizenz hierin veröffentlicht
+    werden. Das Copyright liegt bei Dominik Wagenführ. Es wird erlaubt,
+    das Werk/die Werke unter den Bestimmungen der Creative-Commons-Lizenz
+    zu kopieren, zu verteilen und/oder zu modifizieren.
+    Die xkcd-Comics stehen separat unter der&nbsp;<a href="http://creativecommons.org/licenses/by-nc/2.5/">Creative-Commons-Lizenz CC-BY-NC 2.5 Generic</a>. Das Copyright liegt
+    bei&nbsp;<a href="http://www.xkcd.com/">Randall Munroe</a>.<br />
+
+<div class="p"><!----></div>
+    <a href="freiesMagazin-2015-04-bilder.html#fm_toc">Zum Inhaltsverzeichnis</a><br /><hr class="sigilChapterBreak" />
+
+<div class="p"><!----></div>
+
+<small>File translated from
+T<sub><font size="-1">E</font></sub>X
+by <a href="http://hutchinson.belmont.ma.us/tth/">
+T<sub><font size="-1">T</font></sub>H</a>,
+version 3.89.<br />On  5 Apr 2015, 20:32.</small>
+</div>
+</body></html>
