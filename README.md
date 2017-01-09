@@ -43,6 +43,7 @@ Die heruntergeldenen und angepassten Inhalte inklusive der Suchfunktion können 
 Die Lizenz zusätzlicher Software von Drittanbietern kann variieren
 
 Copyright © 2016 Josua Kiefner
+
 Copyleft <img src="Copyleft.svg.png" height=12.5em> 2016 Josua Kiefner
 
 Dieses Programm ist Freie Software: Sie können es unter den Bedingungen
