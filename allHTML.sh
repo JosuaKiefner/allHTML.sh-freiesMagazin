@@ -25,6 +25,8 @@
 #SETTINGS (1=yes, 0=no)
 pictures=1
 wgetQuiet=1
+zipCompression=0
+targzCompression=0
 #SETTINGSEND
 
 
@@ -273,17 +275,26 @@ sed -i 's/THISISANAND/\&/g' search/htmlFileInfoList.js
 sed -i 's/THISISASLASH/\//g' start.html
 sed -i 's/THISISANAND/\&/g' start.html
 
-#packing every year in seperate .tar.gz archive
+#optional: packing every year in seperate .zip and/or .tar.gz archive
 echo "Packing all files in .tar.gz archives."
 for year in {2008..2016}
 do
 folderStart="freiesMagazin-$year-html"
-tar cvzf ${folderStart}${folderEnd}.tar.gz ${folderStart}${folderEnd}
-zip -r ${folderStart}${folderEnd}.zip ${folderStart}${folderEnd}
+if [ "$targzCompression" == "1" ]; then
+    tar cvzf ${folderStart}${folderEnd}.tar.gz ${folderStart}${folderEnd}
+fi
+if [ "$zipCompression" == "1" ]; then
+    zip -r ${folderStart}${folderEnd}.zip ${folderStart}${folderEnd}
+fi
+
 done
 
-#packing files for search function in .tar.gz archive
-tar cvzf freiesMagazin-Suche.tar.gz search start.html searchresult.html
-zip -r freiesMagazin-Suche.zip search start.html searchresult.html
+#optional: packing files for search function in .zip and/or .tar.gz archive
+if [ "$targzCompression" == "1" ]; then
+    tar cvzf freiesMagazin-Suche.tar.gz search start.html searchresult.html
+fi
+if [ "$zipCompression" == "1" ]; then
+    zip -r freiesMagazin-Suche.zip search start.html searchresult.html
+fi
 
 echo "Congratulations! allHTML.sh finished it's job and now it's up to you to make the best out of it."
