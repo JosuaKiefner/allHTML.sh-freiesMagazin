@@ -9,6 +9,16 @@ Eine Online-Verson finden sie unter folgendem Link: https://josuakiefner.github.
 * Indexierung aller Ausgaben mithilfe externer Programme und Implementierung einer auf externen JavScript-Skripten basierten Suchfunktion, welche auch ohne Webserver genutzt werden kann
 * optionale Komprimierung der einzelnen Jahrgänge und der zusätzlichen Seiten und Skripte im .zip und/oder im .tar.gz-Format
 
+##Ergebnisse
+Die heruntergeldenen und angepassten Inhalte inklusive der Suchfunktion können auf verschiedene Arten bezogen werden:
+* Ausführen von allHTML.sh: 
+** Herunterladen des Skriptes mit den zusätzlichen Dateien aus den <a target="_blank" href="freiesmagazin.de">Releases</a>
+** Extrahieren
+** ausführbar machen mit (sudo) chmod 777 allHTML.sh (Root-Rechte werden benötigt)
+** Jahrgänge werden am selben Ort wie allHTML.sh gespeichert
+* Herunterladen der komprimierten Jahrgänge von der <a target="_blank" href="https://github.com/JosuaKiefner/allHTML.sh-freiesMagazin/releases">Releases-Seite</a>
+* Klonen des Repositories, welches in /docs die Dateien der Online-Version enthält
+
 ##Abhängigkeiten
 * cd
 * cp
@@ -23,6 +33,11 @@ Eine Online-Verson finden sie unter folgendem Link: https://josuakiefner.github.
 * sed
 * wget
 * zip
+
+#verwendete Projekte
+* <a target="_blank" href="freiesmagazin.de">freiesMagazin</a> (Inhalte)
+* <a target="_blank" href="https://github.com/Myria-de/xsl-webhelpindexer">xsl-webhelpindexer</a> aus dem <a target="_blank" href="http://docbook.sourceforge.net/">DocBook Project</a>, bezogen von <a target="_blank" href="http://www.pcwelt.de/ratgeber/Indexsuche-fuer-die-Website-9963262.html">PC-WELT</a> (Indexierung und Suchfunktion)
+* <a target="_blank" href="jquery.com">jquery</a> sowie <a target="_blank" href="jquerymobile.com">jquery mobile</a> (JavaScript-Bibliotheken)
 
 ##Lizenz
 Die Lizenz zusätzlicher Software von Drittanbietern kann variieren
