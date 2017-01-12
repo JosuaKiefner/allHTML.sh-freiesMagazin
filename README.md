@@ -34,10 +34,12 @@ Die heruntergeldenen und angepassten Inhalte inklusive der Suchfunktion können 
 * wget
 * zip
 
-#verwendete Projekte
+##verwendete Projekte
 * <a target="_blank" href="freiesmagazin.de">freiesMagazin</a> (Inhalte)
 * <a target="_blank" href="https://github.com/Myria-de/xsl-webhelpindexer">xsl-webhelpindexer</a> aus dem <a target="_blank" href="http://docbook.sourceforge.net/">DocBook Project</a>, bezogen von <a target="_blank" href="http://www.pcwelt.de/ratgeber/Indexsuche-fuer-die-Website-9963262.html">PC-WELT</a> (Indexierung und Suchfunktion)
 * <a target="_blank" href="jquery.com">jquery</a> sowie <a target="_blank" href="jquerymobile.com">jquery mobile</a> (JavaScript-Bibliotheken)
+
+Vielen Dank an alle Beteiligten dieser Projekte für die großartige Arbeit.
 
 ##Lizenz
 Die Lizenz zusätzlicher Software von Drittanbietern kann variieren
