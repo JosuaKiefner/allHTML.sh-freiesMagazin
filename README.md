@@ -12,10 +12,10 @@ Eine Online-Verson finden sie unter folgendem Link: https://josuakiefner.github.
 ##Ergebnisse
 Die heruntergeldenen und angepassten Inhalte inklusive der Suchfunktion können auf verschiedene Arten bezogen werden:
 * Ausführen von allHTML.sh: 
-** Herunterladen des Skriptes mit den zusätzlichen Dateien aus den <a target="_blank" href="freiesmagazin.de">Releases</a>
-** Extrahieren
-** ausführbar machen mit (sudo) chmod 777 allHTML.sh (Root-Rechte werden benötigt)
-** Jahrgänge werden am selben Ort wie allHTML.sh gespeichert
+    * Herunterladen des Skriptes mit den zusätzlichen Dateien aus den <a target="_blank" href="https://github.com/JosuaKiefner/allHTML.sh-freiesMagazin/releases">Releases</a>
+    * Extrahieren
+    * ausführbar machen mit (sudo) chmod 777 allHTML.sh (Root-Rechte werden benötigt)
+    * Jahrgänge werden am selben Ort wie allHTML.sh gespeichert
 * Herunterladen der komprimierten Jahrgänge von der <a target="_blank" href="https://github.com/JosuaKiefner/allHTML.sh-freiesMagazin/releases">Releases-Seite</a>
 * Klonen des Repositories, welches in /docs die Dateien der Online-Version enthält
 
@@ -45,6 +45,7 @@ Vielen Dank an alle Beteiligten dieser Projekte für die großartige Arbeit.
 Die Lizenz zusätzlicher Software von Drittanbietern kann variieren
 
 Copyright © 2016 Josua Kiefner
+
 Copyleft <img src="Copyleft.svg.png" height=12.5em> 2016 Josua Kiefner
 
 Dieses Programm ist Freie Software: Sie können es unter den Bedingungen
