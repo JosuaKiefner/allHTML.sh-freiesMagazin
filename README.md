@@ -1,5 +1,5 @@
 #allHTML.sh freiesMagazin
-Eine Online-Verson finden sie unter folgendem Link: https://josuakiefner.github.io/allHTML.sh-freiesMagazin/start.html
+Eine Online-Version finden sie unter folgendem Link: https://josuakiefner.github.io/allHTML.sh-freiesMagazin/start.html
 
 ##Funktionen
 * Herunterladen aller im HTML-Format verfügbaren Ausgaben von <a target="_blank" href="freiesmagazin.de">freiesMagazin</a>, wahlweise mit oder ohne Bilder
