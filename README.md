@@ -1,7 +1,7 @@
-#allHTML.sh freiesMagazin
+# allHTML.sh freiesMagazin
 Eine Online-Version finden sie unter folgendem Link: https://josuakiefner.github.io/allHTML.sh-freiesMagazin/start.html
 
-##Funktionen
+## Funktionen
 * Herunterladen aller im HTML-Format verfügbaren Ausgaben von <a target="_blank" href="freiesmagazin.de">freiesMagazin</a>, wahlweise mit oder ohne Bilder
 * Sortieren der Dateien nach Jahrgang und Ausgabe
 * Anpassung der Seiten zur lokalen Nutzung und zur Nutzung auf Mobilgeräten
@@ -9,7 +9,7 @@ Eine Online-Version finden sie unter folgendem Link: https://josuakiefner.github
 * Indexierung aller Ausgaben mithilfe externer Programme und Implementierung einer auf externen JavScript-Skripten basierten Suchfunktion, welche auch ohne Webserver genutzt werden kann
 * optionale Komprimierung der einzelnen Jahrgänge und der zusätzlichen Seiten und Skripte im .zip und/oder im .tar.gz-Format
 
-##Ergebnisse
+## Ergebnisse
 Die heruntergeldenen und angepassten Inhalte inklusive der Suchfunktion können auf verschiedene Arten bezogen werden:
 * Ausführen von allHTML.sh: 
     * Herunterladen des Skriptes mit den zusätzlichen Dateien aus den <a target="_blank" href="https://github.com/JosuaKiefner/allHTML.sh-freiesMagazin/releases">Releases</a>
@@ -19,7 +19,7 @@ Die heruntergeldenen und angepassten Inhalte inklusive der Suchfunktion können 
 * Herunterladen der komprimierten Jahrgänge von der <a target="_blank" href="https://github.com/JosuaKiefner/allHTML.sh-freiesMagazin/releases">Releases-Seite</a>
 * Klonen des Repositories, welches in /docs die Dateien der Online-Version enthält
 
-##Abhängigkeiten
+## Abhängigkeiten
 * cd
 * cp
 * echo
@@ -34,14 +34,14 @@ Die heruntergeldenen und angepassten Inhalte inklusive der Suchfunktion können 
 * wget
 * zip
 
-##verwendete Projekte
+## verwendete Projekte
 * <a target="_blank" href="freiesmagazin.de">freiesMagazin</a> (Inhalte)
 * <a target="_blank" href="https://github.com/Myria-de/xsl-webhelpindexer">xsl-webhelpindexer</a> aus dem <a target="_blank" href="http://docbook.sourceforge.net/">DocBook Project</a>, bezogen von <a target="_blank" href="http://www.pcwelt.de/ratgeber/Indexsuche-fuer-die-Website-9963262.html">PC-WELT</a> (Indexierung und Suchfunktion)
 * <a target="_blank" href="jquery.com">jquery</a> sowie <a target="_blank" href="jquerymobile.com">jquery mobile</a> (JavaScript-Bibliotheken)
 
 Vielen Dank an alle Beteiligten dieser Projekte für die großartige Arbeit.
 
-##Lizenz
+## Lizenz
 Die Lizenz zusätzlicher Software von Drittanbietern kann variieren
 
 Copyright © 2016 Josua Kiefner
